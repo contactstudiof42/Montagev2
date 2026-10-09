@@ -20,7 +20,7 @@
 | PASSE | 05 overshoot dépasse la cible | pic 107.187 à t=0.56 s (cible 100 ; dépassement théorique max ≈ v/w·e^(-decay·t)) |
 | PASSE | 05 overshoot se pose | t=3 s -> 100 |
 | PASSE | 05 inactif pendant les clés | t=0.25 -> 50 (attendu 50) |
-| ÉCHOUE | 05 overshoot sur tableau 2D | t=0.7 -> [100, 50] |
+| PASSE | 05 overshoot sur tableau 2D | t=0.6 -> [106.99, 53.49] (1er essai à t=0.7 tombait pile sur un passage à zéro : sin(0.2·2π·2.5)=0) |
 | PASSE | 06 écho (5 images de retard) | t=0.6 s -> [40, 0] (leader à t=0.4 -> 40) |
 | PASSE | 07 ease() mappe et borne | p=0,20,40,60,100 -> 0, 0, 50, 100, 100 |
 | PASSE | 08 remap 50 % | t=3 s, in=1 s -> 1 s de source (attendu 1) |
@@ -33,4 +33,4 @@
 | PASSE | 11 respiration vide en pause et cyclique | pause = 100 %, t=4.6 = t=0.6 |
 | PASSE | 11 expiration asymétrique | mi-expiration -> 101.17 % (< 102 = relâche rapide puis se pose) |
 
-Total : 31 passent, 1 échouent. Node v22.22.0.
+Total : 32 passent, 0 échouent. Node v22.22.0.

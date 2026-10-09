@@ -37,7 +37,9 @@ Version 1 (session 1, 2026-10-09), tirée des fiches `culture/` (Murch, Schoonma
 - Sur les réseaux sans son, le rythme doit aussi se lire visuellement.
 
 ## Mesurer le rythme (labo, à développer)
-- Détection de coupes : `ffmpeg -i film.mp4 -vf "scdet=threshold=10" -f null -` [THÉORIQUE pour ce dépôt, à tester session 2] → liste des temps de coupe → durées de plans → histogramme.
+- Détection de coupes [TESTÉ EN LABO, session 1 — `labo/rythme/RESULTATS.md`] :
+  `ffmpeg -i film.mp4 -vf "scdet=threshold=10,metadata=print:key=lavfi.scd.time:file=-" -f null - 2>/dev/null | grep -o "lavfi.scd.time=[0-9.]*" | cut -d= -f2`
+  → temps des coupes → durées de plans → histogramme. Fiable sur coupes franches (8/8 au centième) ; **rate les fondus enchaînés** ; entre plans très proches, descendre le seuil à 3 (risque de faux positifs, à tester sur matériau réel).
 
 ## À faire
 - Atelier : un même matériau monté sur trois tempos ; critique comparée.

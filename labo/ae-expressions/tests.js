@@ -48,8 +48,8 @@ for (const f of files) {
   check('05 overshoot dépasse la cible', max > 100, `pic ${r(max)} à t=${tMax.toFixed(2)} s (cible 100 ; dépassement théorique max ≈ v/w·e^(-decay·t))`);
   check('05 overshoot se pose', Math.abs(fin - 100) < 0.01, `t=3 s -> ${r(fin)}`);
   check('05 inactif pendant les clés', Math.abs(pendant - 50) < 1e-6, `t=0.25 -> ${r(pendant)} (attendu 50)`);
-  const v2 = run('05-overshoot-inertiel.js', { time: 0.7, keys: [{ t: 0, v: [0, 0], interp: 'linear' }, { t: 0.5, v: [100, 50], interp: 'linear' }] });
-  check('05 overshoot sur tableau 2D', Array.isArray(v2) && v2[0] > 100 && v2[1] > 50, `t=0.7 -> ${r(v2)}`);
+  const v2 = run('05-overshoot-inertiel.js', { time: 0.6, keys: [{ t: 0, v: [0, 0], interp: 'linear' }, { t: 0.5, v: [100, 50], interp: 'linear' }] });
+  check('05 overshoot sur tableau 2D', Array.isArray(v2) && v2[0] > 100 && v2[1] > 50, `t=0.6 -> ${r(v2)} (1er essai à t=0.7 tombait pile sur un passage à zéro : sin(0.2·2π·2.5)=0)`);
 }
 // 06 écho
 {
