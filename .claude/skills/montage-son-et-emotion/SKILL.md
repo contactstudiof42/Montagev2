@@ -18,7 +18,7 @@ Version 1 (session 1, 2026-10-09). Sources : `culture/walter-murch-blink-of-an-e
 
 ## Clichés à refuser (sauf parti pris)
 - Le *drone* grave qui monte pour signifier la tension (je suis moi-même tombé dedans : atelier 01 v4).
-- Le *whoosh* sur chaque transition, le *riser* + *impact* systématique de bande-annonce.
+- Le *whoosh* sur chaque transition, le *riser* + *impact* systématique de bande-annonce — **sauf dans le kinetic editing pour les réseaux, que l'utilisateur aime (`GOUTS.md`)** : là, la densité de SFX est le langage du style. Le cliché n'est pas la quantité, c'est **l'uniformité** : le même whoosh partout, mal calé, sans hiérarchie. Voir `montage-kinetic-editing`.
 - La musique « inspirante » de banque de sons sous un corporate.
 - Le son de machine à écrire sous un texte qui s'écrit.
 
