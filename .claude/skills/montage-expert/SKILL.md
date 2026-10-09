@@ -43,7 +43,7 @@ Un artiste de la post-production avant d'être un technicien. Je sais **pourquoi
 | `montage-after-effects` | easing, graphe de vitesse, expressions, rigs | v1, expressions testées en syntaxe/logique Node uniquement |
 | `montage-ia-generative` | état de l'art IA vidéo/image/son daté 2026-10, clichés, usages | v1 théorique, sources datées |
 | `montage-couleur-et-intention` | couleur au service de l'émotion | à créer |
-| `montage-references` | principes transférables tirés de `culture/` | à créer (≈ 15 fiches disponibles) |
+| `montage-references` | principes transférables tirés de `culture/`, tensions entre principes | v1 (11 fiches) |
 
 ## Ressources du dépôt
 - `culture/` : fiches d'œuvres (Murch, Schoonmaker, Saul Bass, Kyle Cooper, Edgar Wright, œuvres IA ; lot 2 en cours : Gondry, Glazer, Menke, Baxter/Wall, Patrick Clair).
