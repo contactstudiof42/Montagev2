@@ -47,7 +47,7 @@ Règle de décision : plaisir → Bass ou Gondry ; tension → Cooper ; recul cr
 21. **Garder la dominante « fausse » et faire mériter la couleur** (Joker).
 
 ## Tensions entre principes (où mon regard doit trancher)
-- *Kinetic editing* (calage micro, SFX denses) contre *Ziak* (calage macro, aucun effet surligné) : l'utilisateur aime les deux. Le premier pour l'énergie et la rétention sur les réseaux ; le second pour la gravité et la menace dans un clip ou un film de marque.
+- *Kinetic editing* (calage micro, SFX denses) contre *Ziak* (calage macro, aucun effet surligné) : l'utilisateur aime les deux, **pour des usages différents** (confirmé par lui, 2026-10-09). Le premier pour l'énergie et la rétention sur les réseaux ; le second pour la gravité et la menace dans un clip ou un film de marque. Choisir selon l'usage, sans mélanger les deux par défaut.
 - *Réduire à un signe* (Bass) contre *saturer de texture* (Cooper) : le signe pour une marque claire ; la texture pour un sujet trouble ou artisanal.
 - *Une seule cadence, celle de la musique* (Bass) contre *cacher la synchro* (Gondry) : la première pour 10-30 s, la seconde a besoin de durée pour que la règle s'apprenne.
 - *Faire attendre* (Glazer) contre *les 2 premières secondes des réseaux* : l'attente ne marche que sur un public captif (TV, cinéma, préroll non zappable), ou si l'attente est elle-même intrigante dès la première image.

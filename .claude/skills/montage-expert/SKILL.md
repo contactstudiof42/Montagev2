@@ -19,6 +19,7 @@ Un artiste de la post-production avant d'être un technicien. Je sais **pourquoi
   - **Joker**, pour la couleur et l'image → `culture/joker-couleur-image.md` ;
   - **Ziak, « Même pas un grincement »** (clip) → `culture/ziak-meme-pas-un-grincement.md` ;
   - **le kinetic editing** pour les réseaux (cuts rapides, beaucoup de SFX) → `montage-kinetic-editing`.
+- **Usages distincts (confirmé par l'utilisateur)** : kinetic editing (calé sur le beat, SFX denses) pour les réseaux ; montage calé sur l'arrangement, sans effet surligné (Ziak) pour le clip et le film de marque. Demander l'usage avant de choisir.
 - Fil commun de ces références (hypothèse à confirmer avec lui) : **l'intensité tenue par le son et le rythme**, une image sombre et texturée, des univers à forte identité plutôt que neutres.
 
 ## Mener une consultation

@@ -79,7 +79,7 @@ Techniques : `montage-grammaire` (théorique), `montage-loudness-livraison` (tes
 - **Kinetic editing** : nouveau skill `montage-kinetic-editing` et labo de synchronisation des SFX (impacts calés à 2 ms près ; -14,3 LUFS / -1,1 dBTP). La démo est un test technique, pas encore une pièce.
 
 ### Questions sur vos goûts (pour compléter `GOUTS.md`)
-0. Ziak contre le kinetic editing : le clip de Ziak fait l'inverse du kinetic (rien n'est calé sur le beat, aucun SFX surligné). Aimez-vous les deux pour des usages différents (réseaux contre clip ou film de marque), ou y a-t-il un point commun que je ne vois pas ? Mon analyse de Ziak correspond-elle à ce que vous ressentez ?
+0. ~~Ziak contre le kinetic editing~~ → réponse : **usages différents** (kinetic pour les réseaux, montage macro façon Ziak pour le clip et le film de marque). Reporté dans `GOUTS.md` et les skills.
 1. Un film, un clip ou une pub que vous trouvez surcoté ?
 2. Plutôt **retenue** (plans longs, silence, peu d'effets) ou **énergie** (montage serré, typo qui bouge, synchro musicale) ? Les deux selon les projets ?
 3. Des studios de motion design ou des génériques de référence (Elastic, Buck, ManvsMachine, Saul Bass, autre) ?

@@ -28,7 +28,7 @@ Analyse complète : `culture/ziak-meme-pas-un-grincement.md`, chronologie `cultu
 - 88 plans, médiane 1,67 s, à 143,6 BPM : **les coupes ne sont pas calées sur le beat** (niveau du hasard), mais il y a **26 coupes/min quand la basse est là, 13,4 quand elle disparaît**, et un plan long et immobile dans chaque creux de basse de plus de 5 s.
 - **Principe** : sur une musique déjà très rythmée (drill, trap, électro), le montage peut suivre **l'arrangement** (densité de coupes selon l'énergie) plutôt que **les temps**. L'image garde sa propre gravité ; la musique respire dans l'image sans calage mécanique.
 - **Seconde horloge** : une pulsation visuelle (éclairs toutes les 15 images) en désaccord avec le tempo crée une tension qui ne se résout pas.
-- Choisir consciemment : **micro** (couper sur les temps : plaisir, énergie, kinetic) ou **macro** (suivre l'arrangement : menace contenue, gravité). Les deux sont dans les goûts de l'utilisateur.
+- Choisir consciemment : **micro** (couper sur les temps : plaisir, énergie, kinetic) ou **macro** (suivre l'arrangement : menace contenue, gravité). Les deux sont dans les goûts de l'utilisateur, **pour des usages différents** (confirmé) : micro pour les réseaux, macro pour le clip et le film de marque.
 
 ## Couper sur le mouvement
 - Couper **pendant** un geste (pas avant, pas après) cache la coupe : l'œil suit le mouvement d'un plan à l'autre. [THÉORIQUE, principe classique]
