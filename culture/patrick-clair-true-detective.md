@@ -26,6 +26,11 @@ Le générique installe une **atmosphère de malaise lent** et une thèse sur le
 - **Couleur** : une palette chaude et désaturée (ocres, bruns, orange des flammes et des torchères) contre des noirs profonds, avec des passages de flammes qui finissent la progression vers l'obscur.
 - **Typographie** : crédits sobres, intégrés aux images sans animation spectaculaire (*la police exacte n'est pas vérifiée*).
 
+- **Repères pour l'observation** (à mesurer sur la vidéo Vimeo) :
+  - nombre de vraies coupes franches par rapport aux fondus et aux surimpressions ;
+  - moment où les flammes entrent dans l'image par rapport à la structure de la chanson ;
+  - part de temps où un visage ou un corps sert de cadre par rapport aux paysages seuls.
+
 ## Pourquoi ça marche, et ce qui serait raté si on changeait ces choix
 
 - **Un montage « bande-annonce »** (plans courts des acteurs, extraits de scènes) présenterait les personnages mais pas leur rapport au lieu. On perdrait la thèse de la série et le malaise.
@@ -54,3 +59,4 @@ Le générique installe une **atmosphère de malaise lent** et une thèse sur le
 - Les polices utilisées pour les crédits.
 - Le rôle précis de Breeder par rapport à Antibody (les deux sont crédités pour le compositing, avec un partage du travail inconnu).
 - L'année et l'album d'origine de « Far From Any Road » (*Singing Bones*, 2003, de mémoire, non vérifié).
+- Le nombre de plans ralentis par rapport aux photographies projetées en 3D.

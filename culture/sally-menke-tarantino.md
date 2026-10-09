@@ -28,6 +28,11 @@ Chez Tarantino et Menke, **la parole est l'action**. Le spectateur doit ressenti
 - **Contraste lent / rapide** : après dix minutes de dialogue tendu, la violence dure quelques secondes, en coupes très courtes. La brièveté de l'explosion est proportionnelle à la longueur de l'attente.
 - **Méthode** : Menke montait au plus près du scénario mais regardait les rushes « pour ce qu'ils sont » (entretien Below The Line sur *Kill Bill*, où elle compare cela au documentaire). Tarantino l'a qualifiée en 2007 de sa seule véritable collaboratrice.
 
+- **Repères pour l'observation** (à vérifier en regardant les films) :
+  - compter les coupes de la scène du lait : le rythme est lent au début, puis se resserre quand Landa demande sa pipe et passe à l'anglais ;
+  - noter l'écart entre la durée du dialogue de la taverne et celle de la fusillade qui le conclut, de l'ordre de quelques secondes ;
+  - repérer dans *Pulp Fiction* les cartons-titres (« Vincent Vega and Marsellus Wallace's Wife », etc.) qui servent de transitions entre blocs.
+
 ## Pourquoi ça marche, et ce qui serait raté si on changeait ces choix
 
 - **Raccourcir la scène du lait à 3 minutes** donnerait une exposition efficace mais vide : on comprendrait que Landa est dangereux sans le *sentir*. La longueur oblige le spectateur à partager l'attente du fermier.

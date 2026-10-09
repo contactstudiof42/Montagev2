@@ -25,6 +25,12 @@ Le film fait sentir **une intelligence qui va plus vite que les autres et qui s'
 - **Musique d'Henley** : une réorchestration électronique par Reznor et Ross de « Dans l'antre du roi de la montagne » (Grieg). L'idée vient de Fincher, qui pensait à la version de Wendy Carlos, et le travail a pris environ quatre semaines à Reznor. Le morceau démarre étouffé et « flou », puis se précise et accélère en même temps que la course, jusqu'au frénétique. Le crescendo de Grieg donne au montage une accélération déjà écrite.
 - **Fonction narrative d'Henley** : c'est le seul moment où les Winklevoss sont filmés dans leur élément, un monde d'élite et de tradition. Ils perdent de peu face aux Néerlandais. La scène suivante leur apprend que Facebook s'étend en Europe. La séquence condense leur défaite à venir.
 
+- **Ouverture du générique** : après la dispute, Mark traverse le campus de nuit sur « Hand Covers Bruise » (Reznor et Ross), une piste très retenue. Le passage du débit verbal maximal au silence et à la marche crée une décompression qui fait ressentir la solitude du personnage.
+- **Repères pour l'observation** (à mesurer) :
+  - durée moyenne des plans dans l'ouverture par rapport à celle d'Henley ;
+  - nombre de raccords de parole entre les dépositions et les flashbacks dans le premier tiers ;
+  - moments où le son d'une scène déborde sur la suivante (J-cut et L-cut).
+
 ## Pourquoi ça marche, et ce qui serait raté si on changeait ces choix
 
 - **Avec un débit « normal »**, le film durerait près de 2 h 40 et Zuckerberg paraîtrait simplement désagréable. La vitesse fait de son arrogance une forme de supériorité intellectuelle que le spectateur subit.
@@ -44,6 +50,8 @@ Le film fait sentir **une intelligence qui va plus vite que les autres et qui s'
 - L'entrelacement à trois temps exige des repères visuels forts (décors, lumière, costumes). Sans eux, le spectateur se perd.
 - L'effet miniature et la musique classique détournée sont devenus des signatures reconnaissables : leur reprise littérale passe pour une citation.
 - Pour un public qui découvre un sujet technique, la vitesse peut nuire à la compréhension. Il faut alors garder au moins un plan de respiration par séquence.
+
+- Le format de tournage (Red One, de mémoire) n'a pas été vérifié.
 
 ## Points non vérifiés
 
