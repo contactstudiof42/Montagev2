@@ -169,29 +169,29 @@
   "LRA": 4.0
  },
  "gain_db": 10.6,
- "gain2_db": 3.3,
- "passes": 4,
- "filtre": "volume=13.90dB,aresample=192000,alimiter=limit=0.8414:attack=1:release=50:level=false,aresample=48000",
+ "gain2_db": 4.9,
+ "passes": 5,
+ "filtre": "volume=15.50dB,aresample=192000,alimiter=limit=0.7079:attack=1:release=50:level=false,aresample=48000",
  "loudness_sfx_norm": {
   "I": -14.2,
-  "TP": -1.4,
-  "LRA": 4.1
+  "TP": -2.9,
+  "LRA": 3.3
  },
  "loudness_mp4": {
   "I": -14.3,
-  "TP": 0.5,
-  "LRA": 4.1
+  "TP": -1.1,
+  "LRA": 3.4
  },
  "onsets_impact": {
   "plan8": {
    "coupe_image": 94,
-   "onset_ms_vs_coupe": 2.0
+   "onset_ms_vs_coupe": 1.9
   },
   "plan12": {
    "coupe_image": 150,
-   "onset_ms_vs_coupe": 1.9
+   "onset_ms_vs_coupe": 2.0
   }
  },
  "planche_ko": 149.1,
- "onde_ko": 13.9
+ "onde_ko": 14.3
 }

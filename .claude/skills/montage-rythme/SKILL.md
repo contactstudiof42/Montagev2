@@ -14,6 +14,15 @@ Version 1 (session 1, 2026-10-09), tirée des fiches `culture/` (Murch, Schoonma
 4. **La respiration est une décision.** Après un pic, un plan plus long et plus calme permet au spectateur de digérer. Sans respiration, l'intensité s'aplatit (montage « paranoïaque » de Goodfellas : il épuise volontairement — à réserver aux sujets où l'épuisement est le sens).
 5. **Arbitrer par l'émotion** : un léger faux raccord sur le temps juste vaut mieux qu'un raccord parfait à contretemps.
 
+## Référence de l'utilisateur : Interstellar (`GOUTS.md` — son goût prime)
+Fiche : `culture/interstellar-rythme.md`. Ficelles à réutiliser en priorité :
+1. **Poser la règle du temps, puis la faire entendre** : une règle simple (« 1 h ici = 7 ans là-bas »), puis un son régulier qui devient un compteur. En pub : un tic, un battement ou un bruit répétitif qui matérialise l'enjeu temporel. (Le chiffre « 1,25 s » souvent cité pour le tic de la planète de Miller n'est pas confirmé.)
+2. **Le son qui arrache** : le son de la scène suivante démarre sous la fin d'une scène émotionnelle (décompte, moteur), puis on coupe net sur le temps fort. Ici, pas de plan de transition : l'adieu à la ferme enchaîne directement sur le décollage.
+3. **Compresser d'un côté, dilater de l'autre** : le temps raconté défile vite (écrans, messages), pendant que le visage de celui qui regarde reste longtemps à l'écran, sans coupe.
+4. **Raccourcir les segments du montage parallèle à l'approche du climax** (par exemple 8 s / 4 s / 2 s / 1 s) : l'accélération vient de la structure, pas d'un changement de style des plans.
+5. **Un motif musical qui monte par couches** autorise un montage de plus en plus serré. Pendant la tension, on retire les plans de respiration (extérieurs rassurants).
+Limite : le mixage où le dialogue passe sous les effets est à proscrire pour les réseaux et la pub (vision sans son, intelligibilité).
+
 ## Couper sur le mouvement
 - Couper **pendant** un geste (pas avant, pas après) cache la coupe : l'œil suit le mouvement d'un plan à l'autre. [THÉORIQUE, principe classique]
 - Raccord de forme, de geste ou de son : la transition devient du contenu (Wright). Préférer à un fondu, qui dit seulement « le temps passe ».

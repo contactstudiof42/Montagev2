@@ -141,3 +141,21 @@ Fiche : `culture/interstellar-rythme.md`.
 - https://filmmakermagazine.com/?p=88429 — son de Richard King : approche documentaire, basses fréquences, son direct dans le vaisseau (via résumé).
 - https://www.slashfilm.com/how-long-is-interstellar-running-time — durée 169 min.
 - https://www.gradesaver.com/interstellar/study-guide/summary-section-3-cooper-says-goodbye-to-tom-the-ranger-heads-to-millers-planet — départ de la ferme : décompte en prélap, voix de TARS.
+
+## Goûts de l'utilisateur — Joker
+
+### Joker (Todd Phillips, 2019) — couleur et image (Lawrence Sher, Jill Bogdanowicz)
+- https://www.slashfilm.com/569901/joker-cinematographer-interview/ — Sher : palette fondée sur les sodiums vert-orangé, bleu du crépuscule pour l'isolement et chaud pour l'espoir, métro sur plateau avec LED et console, salle de bain improvisée, escaliers à la Technocrane, angles du plateau de Murray.
+- https://nofilmschool.com/joker-lawrence-sher-interview — reprise de l'entretien Variety : sodiums orange avec une pointe de vert, fluos toujours filtrés vert, LED cachées, « pointe de vert » gardée volontairement, règle du métro (jamais à hauteur d'yeux, caméra portée, une seule caméra).
+- https://variety.com/2019/artisans/features/joker-stairs-subway-scene-cinematographer-lawrence-sher-1203396242 — article source (redirection, non lu directement).
+- https://cined.com/inside-the-look-of-joker — Alexa 65 / LF / Mini LF, LUT façon Kodak 5293, optiques anciennes « Frankenstein », références (Taxi Driver, King of Comedy, Serpico, Cuckoo's Nest), de la fixité à la caméra portée, vapeur de mercure (source unique).
+- https://theasc.com/news/clubhouse-conversation-lawrence-sher-asc-on-joker — ASC, Alexa 65 et optiques Prime DNA, LUT avec Jill et Mitch Bogdanowicz (lu via un résumé de recherche, page vide à la lecture).
+- https://theasc.com/podcasts/joker-lawrence-sher-asc — podcast ASC (non écouté).
+- https://britishcinematographer.co.uk/lawrence-sher-asc-joker-folie-a-deux/ — Sher compare la suite au premier film : « ancienne technologie », tungstène, HMI, Zip (lu via un résumé).
+- https://www.company3.com/?p=47557 — Bogdanowicz sur *Folie à Deux* : LUT du premier film reprise et élargie, évocation des pellicules de la fin des années 70 et du début des années 80 (lu via un résumé).
+- https://www.company3.com/?p=24138 — prix HPA 2020 de l'étalonnage pour *Joker*.
+- https://www.motionpictures.org/2019/10/joker-costume-designer-mark-bridges/ et https://highsnobiety.com/p/joaquin-phoenix-joker-suit-explained — costume final « vert, or, rouge » (désaccord sur le gilet et la chemise).
+- https://en.wikipedia.org/wiki/Joker_(2019_film) — 65 mm argentique refusé, décors (Friedberg), costumes, VFX Scanline et Shade.
+- https://digitalproduction.com/2020/08/21/joker-vfx-reel/ — démo Scanline : extensions de décors, compositing invisible.
+- https://colorculture.org/joker-cinematography-analysis/ — analyse de blog (projecteur sur le plateau de Murray), source secondaire.
+- Critiques : https://api.thecrimson.com/article/2019/10/8/joker-review ; https://nohoartsdistrict.com/joker-a-tad-derivative-and-fairly-predictable/ ; https://motionstatereview.com/2019/10/02/joker-2019/

@@ -10,6 +10,7 @@
   - Variety, escaliers et métro : https://variety.com/2019/artisans/features/joker-stairs-subway-scene-cinematographer-lawrence-sher-1203396242
   - CineD, « Inside the look of Joker » : https://cined.com/inside-the-look-of-joker
   - ASC, conversation de Sher avec Jim Hemphill et podcast : https://theasc.com/news/clubhouse-conversation-lawrence-sher-asc-on-joker et https://theasc.com/podcasts/joker-lawrence-sher-asc (lus via des résumés de recherche)
+  - British Cinematographer, Sher sur *Folie à Deux* comparé au premier film : https://britishcinematographer.co.uk/lawrence-sher-asc-joker-folie-a-deux/
   - Company 3, Bogdanowicz sur la LUT de *Folie à Deux*, qui reprend celle de 2019 : https://www.company3.com/?p=47557 ; prix HPA : https://www.company3.com/?p=24138
   - Costume : https://www.motionpictures.org/2019/10/joker-costume-designer-mark-bridges/ et https://highsnobiety.com/p/joaquin-phoenix-joker-suit-explained
   - Wikipédia (production, VFX, décors) : https://en.wikipedia.org/wiki/Joker_(2019_film) ; Scanline : https://digitalproduction.com/2020/08/21/joker-vfx-reel/
