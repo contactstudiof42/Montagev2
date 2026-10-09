@@ -44,3 +44,44 @@ Sources utilisées pour les 5 fiches de `culture/` (Murch, Schoonmaker, Bass, Co
 - https://nofilmschool.com/2018/03/edgar-wright-baby-driver-avid-timelines — timelines Avid du film.
 - https://www.rollingstone.com/movies/movie-features/baby-driver-how-edgar-wright-staged-the-crime-movies-musical-action-scenes-252893/ — mise en scène des séquences musicales.
 - https://www.slate.com/blogs/browbeat/2017/07/14/watch_the_first_scene_of_edgar_wright_s_baby_driver_video.html — ouverture sur « Bellbottoms », origine de l'idée en 1995.
+
+# Lot 2
+
+## Michel Gondry / Star Guitar
+- https://en.wikipedia.org/wiki/Star_Guitar — tournage DV, trajet Nîmes–Valence filmé 10 fois, papier millimétré, lieux, sortie du single le 14/01/2002.
+- https://www.campaignlive.co.uk/article/music-videos-36-chemical-brothers-star-guitar/173669 — compositing calé sur la basse, le charleston et le synthé ; plus de deux mois de post-production (lu via un résumé).
+- https://visualmusicarchive.org/works/w/the-chemical-brothers-star-guitar.html — fiche de l'œuvre ; maquettes faites d'objets du quotidien.
+- https://www.synoptique.ca/_files/ugd/811df8_7769209683d94a088aa65eb95e1e3fc2.pdf — article universitaire : répétition, paysage et champ sonore.
+- https://www.redbull.com/us-en/7-best-michel-gondry-directed-music-videos — clip replacé dans l'œuvre de Gondry.
+
+## Jonathan Glazer / Guinness « Surfer »
+- https://en.wikipedia.org/wiki/Surfer_(advertisement) — 60 s, Hawaï en 9 jours, Walter Crane, Leftfield, voix de Louis Mellis, monteur Sam Sneade, récompenses.
+- https://www.campaignlive.co.uk/article/british-television-advertising-awards-2000-gold-awards-itv-award-british-television-commercial-year/34492 — crédits BTAA 2000, dont le montage par Sam Sneade.
+- https://www.marketingweek.com/guinness-surfer/ — le film a été mal noté en pré-test et diffusé quand même.
+- https://creative.salon/articles/features/guinness-surfer-learnings-QOTW — regard critique sur la voix off (tic-tac, batteurs).
+- https://www.luerzersarchive.com/work/guinness/ — crédits Carty / Campbell / Glazer.
+- https://vinepair.com/articles/iconic-guinness-ads/ — contexte de la campagne « Good things come to those who wait ».
+- https://www.surfertoday.com/surfing/one-of-the-most-exciting-surfing-ads — présentation générale.
+
+## Sally Menke / Tarantino
+- https://en.wikipedia.org/wiki/Sally_Menke — filmographie, nominations aux Oscars, style « dialogues à coupe lente, action à coupe rapide », citation de Tarantino (2007).
+- https://www.videomaker.com/how-to/editing/editing-technique/5-things-we-can-learn-from-tarantinos-editor-sally-menke/ — plans longs pour la tension, scènes autonomes (lu via un résumé).
+- https://mande.net/btl/crafts/cutting-bill-in-two — entretien Below The Line de 2004 sur le montage de *Kill Bill*.
+- https://www.btlnews.com/?p=11188 — hommage Below The Line ; scènes de la ferme, du déjeuner et de la taverne.
+- https://www.rogerebert.com/?p=3580 — hommage d'Ebert ; citation de Menke à *The Observer* sur la tension ; structure déjà présente dans le scénario (lu via un résumé).
+- https://dailytrojan.com/2010/11/04/examining-the-life-and-works-of-editor-sally-menke/ — portrait.
+
+## Baxter et Wall / The Social Network
+- https://www.moviemaker.com/angus-wall-kirk-baxter-social-network-edit-20110209/ — entretien : Final Cut Pro, méthode Fincher, « essorer chaque syllabe ».
+- https://www.btlnews.com/?p=11680 — scénario de 160 et quelques pages, dialogues en cascade, rythme en rafale (lu via un résumé).
+- https://moviegoings.com/2011/02/13/enjoying-the-scene-ery-the-henley-sequence-emthe-social-networkem/ — analyse d'Henley : plans de 4-6 s, puis 1-2 s, puis plusieurs coupes par seconde ; musique ; effet miniature.
+- https://www.awn.com/print/vfxworld/helping-fincher-build-his-social-network — a52 : environ 1 min 30, 57 plans retouchés, arrière-plans adoucis.
+- https://www.theringer.com/2020/09/21/movies/social-network-opening-scene-david-fincher — scène d'ouverture : 6 pages, 99 prises.
+- https://en.wikipedia.org/wiki/The_Social_Network_(soundtrack) — origine du Grieg (idée de Fincher autour de Wendy Carlos, quatre semaines de travail pour Reznor).
+- https://en.wikipedia.org/wiki/Kirk_Baxter — Oscar du montage.
+
+## Patrick Clair / True Detective
+- https://www.artofthetitle.com/title/true-detective — entretien : doubles expositions, « révéler le personnage par le lieu », Misrach, ralenti à 10-20 %, de la lumière à l'obscurité, équipe.
+- https://motionographer.com/2014/01/24/patrick-clair-elastic-hbos-true-detective/ — « photographies vivantes », artefacts d'interpolation gardés volontairement, crédits complets.
+- https://vimeo.com/84017154 — générique officiel.
+- https://slashfilm.com/973514/a-lot-of-thought-went-into-true-detectives-opening-credits — retour sur la conception du générique.

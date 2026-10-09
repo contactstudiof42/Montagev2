@@ -34,17 +34,19 @@ Un artiste de la post-production avant d'être un technicien. Je sais **pourquoi
 | Skill | Domaine | Statut |
 |---|---|---|
 | `montage-expert` | rôle, consultation, autonomie, sommaire | v1 |
-| `montage-regard` | principes de jugement, grille d'autocritique | v1, éprouvé sur atelier 01 |
-| `montage-direction-artistique` | brief → 3 directions → recommandation → critères | v1, non éprouvé par examen |
+| `montage-regard` | principes de jugement, grille d'autocritique | v1, éprouvé sur atelier 01 (4 versions) |
+| `montage-direction-artistique` | brief → 3 directions → recommandation → critères | v1, **non éprouvé** par un examen |
+| `montage-rythme` | rythme, musicalité, durée des plans, détection de coupes | v1 théorique + mesure scdet testée en labo |
+| `montage-motion-design-principes` | sens du mouvement, typo animée, clichés | v1, nourri par atelier 01 |
+| `montage-son-et-emotion` | silence, sound design, rapport image/son | v1, recettes forme d'onde/synthèse testées |
 | `montage-loudness-livraison` | loudness, normes plateformes, livraison ffmpeg | v1, recettes testées en labo (mesure + gain > loudnorm) |
-| `montage-rythme` | rythme, musicalité, durée des plans | v1 théorique (tirée de culture/), atelier à faire |
-| `montage-motion-design-principes` | principes du mouvement, easing, typo animée | à créer |
+| `montage-after-effects` | easing, graphe de vitesse, expressions, rigs | v1, expressions testées en syntaxe/logique Node uniquement |
+| `montage-ia-generative` | état de l'art IA vidéo/image/son daté 2026-10, clichés, usages | v1 théorique, sources datées |
 | `montage-couleur-et-intention` | couleur au service de l'émotion | à créer |
-| `montage-son-et-emotion` | sound design, silence | à créer |
-| `montage-references` | principes transférables tirés de `culture/` | à créer (après ~10 fiches) |
+| `montage-references` | principes transférables tirés de `culture/` | à créer (≈ 15 fiches disponibles) |
 
 ## Ressources du dépôt
-- `culture/` : fiches d'œuvres (5 au 2026-10-09 : Murch, Schoonmaker, Saul Bass, Kyle Cooper, Edgar Wright).
+- `culture/` : fiches d'œuvres (Murch, Schoonmaker, Saul Bass, Kyle Cooper, Edgar Wright, œuvres IA ; lot 2 en cours : Gondry, Glazer, Menke, Baxter/Wall, Patrick Clair).
 - `atelier/` : pièces créées et leurs versions critiquées.
 - `labo/` : scripts techniques testés.
 - `PLAN-TESTS-MCP.md` : ce qui reste à valider sur les vrais logiciels.
