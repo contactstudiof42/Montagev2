@@ -72,8 +72,15 @@ Techniques : `montage-grammaire` (théorique), `montage-loudness-livraison` (tes
 3. Premiere / Resolve : loudness mesuré par le logiciel contre ffmpeg sur les mêmes WAV (écart attendu ≤ 0,5 LU) ; normalisation à l'export = gain ou compression ?
 4. Blender : refaire la pièce 01 via MCP et comparer aux planches.
 
-### Questions sur vos goûts (pour remplir `GOUTS.md`, actuellement absent)
-1. Trois films, clips ou pubs dont le **montage** vous a marqué ? Et un que vous trouvez surcoté ?
+### Vos goûts (`GOUTS.md`, créé le 2026-10-09 à votre demande)
+- **Interstellar**, pour le rythme (`culture/interstellar-rythme.md`) : poser une règle du temps et la faire entendre ; un son qui arrache d'une scène à la suivante ; des segments de montage parallèle qui raccourcissent jusqu'au climax. Intégré à `montage-rythme`.
+- **Joker**, pour la couleur et l'image (`culture/joker-couleur-image.md`) : la dominante verte gardée, la peau protégée, une couleur forte méritée. Intégré à `montage-couleur-et-intention`.
+- **Ziak, « Même pas un grincement »** (Bleu Désert ; montage Antonin Brones, étalonnage Arthur Paux) : je n'ai pas pu lire la vidéo (YouTube et Vimeo exigent une connexion), mais j'ai mesuré deux images officielles. Elles montrent une image très basse, froide, cyan-vert, avec la peau protégée : la même stratégie que Joker.
+- **Kinetic editing** : nouveau skill `montage-kinetic-editing` et labo de synchronisation des SFX (impacts calés à 2 ms près ; -14,3 LUFS / -1,1 dBTP). La démo est un test technique, pas encore une pièce.
+
+### Questions sur vos goûts (pour compléter `GOUTS.md`)
+0. Ziak : qu'est-ce qui vous frappe d'abord (l'homme-machine, l'usine, les découpes, le rythme) ? Le montage colle-t-il aux percussions ou avance-t-il en plans longs ? Un plan précis, avec son minutage ? Si vous pouvez déposer le fichier vidéo dans `atelier/rendus/` (ignoré par git), je mesure les coupes et le tempo.
+1. Un film, un clip ou une pub que vous trouvez surcoté ?
 2. Plutôt **retenue** (plans longs, silence, peu d'effets) ou **énergie** (montage serré, typo qui bouge, synchro musicale) ? Les deux selon les projets ?
 3. Des studios de motion design ou des génériques de référence (Elastic, Buck, ManvsMachine, Saul Bass, autre) ?
 4. Le grain, les défauts, l'argentique : vous aimez, ou vous préférez une image nette et propre ?

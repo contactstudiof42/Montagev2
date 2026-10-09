@@ -11,6 +11,11 @@ Version 1 (2026-10-09). Sources : `culture/storaro-apocalypse-now-couleur.md`, `
 
 La couleur n'est pas une finition : c'est **un sens**. Avant de toucher une roue chromatique, on doit pouvoir répondre en une phrase à « que doit ressentir le spectateur, et comment ça change du début à la fin ? ». Un look sans réponse à cette question est un filtre.
 
+## Goût de l'utilisateur (`GOUTS.md` — prime quand il s'applique)
+- **Joker** (`culture/joker-couleur-image.md`) : garder la dominante « fausse » (vert des fluos, sodium) parce qu'elle raconte un lieu et un état ; ne rendre juste que la peau. Faire **mériter** la couleur forte : saturation retenue, puis une seule couleur lâchée à la bascule (le rouge du costume). Lumières motivées, visibles ou plausibles.
+- **Ziak, « Même pas un grincement »** (`culture/ziak-meme-pas-un-grincement.md`, mesuré sur deux images officielles) : image très basse (80 % sous 30/255), hautes lumières plafonnées vers 160/255, peau neutre contre un environnement cyan-vert (R-B de -14 à -26), saturation 0,16.
+- **Hypothèse de goût (à confirmer)** : images **basses et denses, environnement froid cyan-vert, peau protégée, une seule couleur forte réservée à un moment**. C'est une proposition par défaut quand le brief laisse le choix, jamais une recette plaquée (voir les limites du « look Joker » dans la fiche).
+
 ## Principes
 
 1. **Couleur = sens.** Chaque couleur dominante est rattachée à un état ou à un lieu du récit (Storaro : chaud = origine, famille ; froid = pouvoir, distance — code personnel, pas universel). Écrire ce lien noir sur blanc dans la note d'intention.
