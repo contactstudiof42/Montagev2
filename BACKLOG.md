@@ -8,7 +8,7 @@ Règle : alterner ART et TECH. Réalimenter dès qu'il reste moins de 10 sujets 
 1. [ ] [ART] **Examen créatif n°1** (session 2) : brief pub 30 s (ex. marque d'eau minérale ou banque mutualiste), réponse uniquement depuis les skills, autocritique, corrections → éprouver `montage-direction-artistique` (jamais testé).
 2. [~] [TECH] Couleur technique : OCIO, ACES, LUT, colour-science → `montage-couleur-pipeline` (labo lancé session 1 : vérifier `labo/couleur/RESULTATS.md`, compléter)
 3. [~] [ART] Couleur et intention → `montage-couleur-et-intention` (fiches Storaro, Doyle, Deakins lancées session 1 : relire, mettre à l'épreuve dans une pièce d'atelier « même plan, trois étalonnages »)
-4. [ ] [ART] Atelier 01 : regarder la planche v5, trancher v5a/v5b (son), clore la pièce. Puis **pièce 02 spectaculaire et rapide** (contraste avec la 01) : montage « hip-hop » de 8 plans Blender de 6 à 12 images avec bruitages synthétiques, 6 s, vertical 9:16.
+4. [~] [ART] Atelier 01 : v5 faite ; corriger le bruit Cycles du fond clair (16 éch. + débruitage), trancher v5a/v5b (préférence v5b), clore. Puis **pièce 02 spectaculaire et rapide** (contraste avec la 01) : montage « hip-hop » de 8 plans Blender de 6 à 12 images avec bruitages synthétiques, 6 s, vertical 9:16.
 5. [ ] [TECH] Fondamentaux : grammaire, raccords, 180°, montage son, J-cut/L-cut → skill `montage-grammaire`
 6. [ ] [ART] Atelier rythme : un même matériau monté sur trois tempos (Bass / Gondry / Cooper — cf. `montage-references` B) ; mesure avec scdet
 7. [ ] [TECH] Blender pour la vidéo : skill `montage-blender` (rendu CLI, Cycles vs Eevee headless, compositing, geometry nodes) — base déjà pratiquée dans l'atelier 01 ; tester Eevee en headless

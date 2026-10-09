@@ -65,3 +65,18 @@ Mesure luminance : 51,0 → 65,7 (inspiration) → 40,8 (fin de rétention) → 
 | Justesse | 2 | Le grondement de rétention (cliché possible). Inspiration moins lumineuse qu'en v3 (amplitude 15 contre 16 en luminance, sur un fond plus sombre). |
 **Verdict : livrable sous réserve.** Corrections : interlettrage minimum 0,93 pour cette police, inspiration plus lumineuse (v5), et choisir à l'écoute entre grondement (v5a) et silence (v5b).
 **Leçon générale :** une valeur d'animation typographique (interlettrage, approche) **ne se transpose pas d'une police à l'autre** : la retester à chaque changement de police.
+
+## v5 — `v5-planche.png` (interlettrage mini 0,93, inspiration plus lumineuse ; son v5a grondement / v5b silence)
+Mesure luminance : 51,0 → 69,9 (inspiration : amplitude 19, la meilleure des 5 versions) → 41,1 (fin de rétention) → 50,6.
+- **Lisibilité 3** : aux images 7-8, « souffle » reste lisible ; la constriction se voit encore, plus discrète (le mot raccourcit sans que les lettres se percutent).
+- **Nouveau défaut repéré** : image 3 (inspiration au maximum), le haut du fond montre des **taches de bruit** (Cycles à 4 échantillons sur un dégradé clair). Invisible sur fond sombre, visible dès qu'on éclaircit. Correction : 16 échantillons + débruitage, ou rendre le fond en compositing (dégradé mathématique, sans bruit).
+- Le reste est inchangé par rapport à la v4 (couleur 3, cohérence 3, rythme 3, composition 2, originalité 2).
+**Verdict : livrable en basse définition, une fois le bruit corrigé.** Reste à décider entre v5a et v5b **à l'écoute** (phase 2, ou si l'utilisateur écoute les fichiers `atelier/rendus/01/v5a.mp4` et `v5b.mp4`, régénérables par les scripts). Mon choix sur le papier : **v5b (silence)**, fidèle à l'intention, et moins cliché.
+
+## Bilan de la progression v1 → v5
+1. Bug technique (apparition par le noir) → corrigé par un mélange avec la transparence.
+2. Mouvement mécanique et excessif → mouvement **déplacé** sur le paramètre signifiant (interlettrage).
+3. Aplat → profondeur (dégradé dont l'intensité porte la descente).
+4. Police subie → police choisie (EB Garamond, OFL).
+5. Intention sonore oubliée → son conçu avec l'image ; puis repérage de mon propre écart à l'intention (grondement).
+Ce que je retiens pour toutes les pièces : **relire INTENTION.md avant chaque version**, et mesurer (luminance, loudness) au lieu de me fier à une impression sur une planche.

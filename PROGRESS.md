@@ -5,7 +5,7 @@ _Lire en premier. Mis à jour à chaque fin de session._
 ## Où on en est (après la session 1, 2026-10-09)
 - **Skills (11)** : socle (`montage-expert`, `montage-regard`, `montage-direction-artistique`), artistiques (`montage-rythme`, `montage-motion-design-principes`, `montage-son-et-emotion`, `montage-references`, `montage-couleur-et-intention`*), techniques (`montage-loudness-livraison`, `montage-after-effects`, `montage-ia-generative`, `montage-couleur-pipeline`*). *= produits en fin de session 1, à relire en session 2.
 - **Culture** : 10 fiches de montage/title design + 1 fiche IA + fiches couleur (Storaro, Doyle, Deakins, si l'agent a fini : vérifier).
-- **Atelier** : pièce 01 « Respiration », v1 → v5 (`atelier/01-respiration/CRITIQUE.md`). Reste : regarder la planche v5, trancher le son (v5a grondement / v5b silence), clore.
+- **Atelier** : pièce 01 « Respiration », v1 → v5 (`atelier/01-respiration/CRITIQUE.md`). Reste : corriger le bruit de rendu (16 échantillons + débruitage), trancher le son (préférence v5b silence), clore. Puis pièce 02.
 - **Labo** : loudness (testé), livraison H.264 (testé), détection de coupes scdet (testé), expressions AE sous Node (syntaxe/logique), couleur (lancé en fin de session 1 : vérifier `labo/couleur/RESULTATS.md`).
 - **Examens** : aucun. Le premier est la priorité n°1 de la session 2.
 
