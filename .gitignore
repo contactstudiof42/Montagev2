@@ -1,0 +1,7 @@
+atelier/rendus/
+labo/rendus/
+*.mp4
+*.mov
+*.wav
+*.mkv
+__pycache__/
