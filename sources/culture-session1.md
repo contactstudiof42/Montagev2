@@ -110,3 +110,17 @@ Sources utilisées pour les 5 fiches de `culture/` (Murch, Schoonmaker, Bass, Co
 - https://theasc.com/articles/deakins-blade-runner-2049 — American Cinematographer (page vide à la lecture ; info via résumé de recherche).
 - https://filmmakermagazine.com/?p=103272 — « The Color of the Future » (accès refusé, non lu).
 - https://filmdaft.com/roger-deakins-breaks-down-his-work-on-1917-blade-runner-2049-and-more/ — Deakins sur *1917* et *2049* (non lu en entier).
+
+## Goûts de l'utilisateur — Ziak
+
+### Ziak / « Même pas un grincement » (Bleu Désert, 2023)
+- https://vimeo.com/791096074 — fiche du clip : crédits (Bleu Désert, Ocurens, DOP Antoine Cormier, VFX Square, post Monumental, concept Brochard et Léger), lue via un résumé de recherche (page bloquée par une vérification anti-robot).
+- https://www.dandad.org/work/d-ad-awards-archive/ziak-même-pas-un-grincement — synopsis (usine sombre, ouvriers masqués, reconstruction en mi-homme mi-machine) et crédits principaux.
+- https://dandad.org/awards/professional/2023/237668/ziak-meme-pas-un-grincement — shortlist D&AD 2023, Music Videos / Production Design (via résumé).
+- https://en.wikipedia.org/wiki/Ziak_(rapper) — anonymat, albums *Akimbo* (2021) et *Chrome* (2023), prix des meilleurs VFX aux BMVA 2023.
+- https://rapcor.phil.muni.cz/fr/node/4150 — fiche de l'album *Chrome* : 24/02/2023, le titre est la 4e piste (liste partielle).
+- https://shots.net/news/view/directing-trio-bleu-desert-join-friend — Bleu Désert, trio parisien, signé chez Friend en 2022 (Nekfeu, Kekra, pubs BMW, Salomon, Aigle).
+- https://www.booska-p.com/?p=262243 — clip de « Sheinen » (*Chrome*) par Bleu Désert, en Algérie, décor très gris.
+- https://www.booska-p.com/?p=214011 — clip « You Know » (2022), ambiance très sombre ; *Akimbo* disque d'or.
+- https://www.deezer.com/artist/7668530 — titre de 3:45, Sam Tiba crédité (via résumé, non lu directement).
+- https://www.synonyme-du-mot.com/les-articles/ou-est-nee-ziak — origine Évry et bandana (source secondaire peu fiable).
