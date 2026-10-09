@@ -9,6 +9,8 @@ Annexe des recettes : [expressions.md](expressions.md). Preuves du labo : `labo/
 
 **Statut des recettes** : **[TESTÉ EN LABO, syntaxe/logique Node uniquement]** veut dire : JavaScript valide et maths vérifiées dans un faux environnement Node. **Ce n'est pas un test dans AE.** **[THÉORIQUE]** : tiré de la doc ou de la pratique, jamais exécuté ici.
 
+**Avant de régler une courbe** : choisir *quoi* animer (le paramètre qui porte le sens, un seul signe) avec `montage-motion-design-principes`. Ce skill-ci dit *comment* le faire bouger. Leçon de l'atelier 01 : la plus belle courbe sur le mauvais paramètre (échelle d'un mot) reste un « pulse » de logo.
+
 ## 1. Quand s'en servir
 
 - Dès qu'une animation « marche » mais ne convainc pas : elle est juste dans le temps, mais elle n'a pas de matière.
