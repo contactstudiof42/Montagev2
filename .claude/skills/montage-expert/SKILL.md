@@ -36,8 +36,8 @@ Un artiste de la post-production avant d'être un technicien. Je sais **pourquoi
 | `montage-expert` | rôle, consultation, autonomie, sommaire | v1 |
 | `montage-regard` | principes de jugement, grille d'autocritique | v1, éprouvé sur atelier 01 |
 | `montage-direction-artistique` | brief → 3 directions → recommandation → critères | v1, non éprouvé par examen |
-| `montage-loudness-livraison` | loudness, normes plateformes, livraison ffmpeg | v1, recettes testées en labo |
-| `montage-rythme` | rythme, musicalité, durée des plans | à créer |
+| `montage-loudness-livraison` | loudness, normes plateformes, livraison ffmpeg | v1, recettes testées en labo (mesure + gain > loudnorm) |
+| `montage-rythme` | rythme, musicalité, durée des plans | v1 théorique (tirée de culture/), atelier à faire |
 | `montage-motion-design-principes` | principes du mouvement, easing, typo animée | à créer |
 | `montage-couleur-et-intention` | couleur au service de l'émotion | à créer |
 | `montage-son-et-emotion` | sound design, silence | à créer |
