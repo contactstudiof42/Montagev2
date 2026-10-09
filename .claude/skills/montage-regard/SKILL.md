@@ -48,3 +48,7 @@ Verdict : une pièce n'est « livrable » que si **intention, lisibilité et jus
 
 ## Journal des leçons (alimenté par l'atelier)
 - 2026-10-09, atelier 01 v1 : apparition par émission 0 → mot noir sur fond bleu (fausse ombre). Pulse symétrique ±10 % = mécanique. Italique FreeSerif : « ff » mal approché, illisible en titre.
+- 2026-10-09, atelier 01 v2 : corriger un excès en réduisant l'amplitude du même paramètre donne un mouvement invisible. Il faut **déplacer** le mouvement vers le paramètre qui porte le sens.
+- 2026-10-09, atelier 01 v3-v4 : une police système (« Times ») se voit comme une absence de choix ; une valeur d'interlettrage ne se transpose pas d'une police à l'autre ; un fond en dégradé dont l'intensité varie donne une profondeur qu'un aplat n'a pas.
+- 2026-10-09, atelier 01 v4 : je me suis écarté de ma propre intention sonore (silence → grondement) sans le décider. **Relire l'intention avant chaque version.**
+- Limite de l'atelier cloud : je ne vois pas la vidéo en mouvement ni n'entends le son. Les planches contact, les courbes de luminance (`signalstats`) et les formes d'onde sont des substituts ; noter ce qui reste à juger en temps réel.

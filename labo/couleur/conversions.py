@@ -11,7 +11,7 @@ import numpy as np
 import colour
 
 CS = colour.RGB_COLOURSPACES
-CAT = "Bradford"  # D65 -> D60 (ACES). Les configs OCIO ACES utilisent aussi Bradford pour 709->AP1? voir RESULTATS.
+CAT = "Bradford"  # D65 -> D60 (ACES) ; c'est aussi ce que fait la config OCIO studio (écart 4e-8 constaté)
 
 # Couleurs de référence, scene-linear Rec.709
 REF = {

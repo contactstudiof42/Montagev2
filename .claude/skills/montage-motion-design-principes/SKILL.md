@@ -27,4 +27,4 @@ Version 1 (session 1, 2026-10-09). Sources : fiches `culture/saul-bass-generique
 1. Quelle est la phrase d'intention ? 2. Quel est le signe unique ? 3. Quel paramètre porte le sens ? 4. Quelle matière (poids, élasticité) ? 5. Où sont les temps immobiles ? 6. Qu'est-ce que j'enlève ?
 
 ## Journal des leçons
-- 2026-10-09, atelier 01 v1→v3 : déplacer le mouvement vers le paramètre signifiant (interlettrage), fond en dégradé plutôt qu'aplat, rétention plus longue que confortable pour créer l'inquiétude.
+- 2026-10-09, atelier 01 v1→v4 : déplacer le mouvement vers le paramètre signifiant (interlettrage) ; fond en dégradé plutôt qu'aplat ; rétention plus longue que confortable pour créer l'inquiétude (vérifié sur la planche v3) ; l'amplitude d'interlettrage dépend de la police (0,90 écrase EB Garamond italique, 0,93 en v5).

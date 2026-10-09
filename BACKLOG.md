@@ -5,35 +5,31 @@ Statut : `[ ]` à faire · `[~]` entamé · `[x]` fait (garder 1 ligne de trace)
 Règle : alterner ART et TECH. Réalimenter dès qu'il reste moins de 10 sujets ouverts.
 
 ## Priorité haute (prochaines sessions)
-1. [~] [ART] Socle : `montage-expert`, `montage-regard`, `montage-direction-artistique` (v1 session 1, à éprouver par un examen)
-2. [~] [TECH] Loudness et livraison (EBU R128, plateformes, ffmpeg) — skill `montage-loudness-livraison` v1 session 1
-3. [~] [ART] Culture du montage : Murch, Schoonmaker, Edgar Wright (session 1) → ajouter Sally Menke, Eisenstein/Koulechov, Dede Allen, Hugo/Agnès Varda (doc), Joe Walker, Kirk Baxter
-4. [~] [ART] Culture title design : Saul Bass, Kyle Cooper (session 1) → ajouter Elastic, Prologue, Imaginary Forces, Antibody, Maurice Binder, Pablo Ferro, Danny Yount, Kinetic (« The Fox »)
-5. [~] [ART] Atelier : pièce 01 « Respiration » (typo cinétique sobre, Blender) → poursuivre v3, puis pièce 02 spectaculaire
-6. [ ] [TECH] Fondamentaux : grammaire, raccords, 180°, montage son → skill `montage-grammaire`
-7. [ ] [ART] Rythme et musicalité → skill `montage-rythme` (coupe sur le mouvement, sur le temps fort, respiration). Atelier : même séquence montée sur 3 tempos.
-8. [ ] [TECH] After Effects : easing, graphe de vitesse, expressions (vérif syntaxe Node), rigs → skill `montage-after-effects`
-9. [ ] [ART] Couleur et intention → skill `montage-couleur-et-intention` (Storaro, Deakins, Wong Kar-wai/Doyle, palettes de pub)
-10. [ ] [TECH] Couleur technique : OCIO, ACES, LUT, colour-science en labo → skill `montage-couleur-pipeline`
-11. [ ] [ART] Son et émotion → skill `montage-son-et-emotion` (Murch sound design, Ben Burtt, silence, Gary Rydstrom)
-12. [ ] [TECH] DaVinci Resolve : nodes, RCM, Fusion, Fairlight, API scripting Python (doc officielle)
-13. [ ] [ART] Motion design principes → skill `montage-motion-design-principes` (12 principes Disney transposés, Buck, Giant Ant, ManvsMachine)
-14. [ ] [TECH] Blender pour la vidéo : bpy, Eevee/Cycles, compositing, geometry nodes → skill `montage-blender` (tests en labo)
-15. [ ] [ART] Narration par format : pub 15/30 s, vertical, clip, corporate, doc, fiction → skill `montage-formats`
-16. [ ] [TECH] IA générative vidéo : état de l'art daté (recherches web récentes) → skill `montage-ia-generative`
-17. [ ] [ART] IA et création : clichés de l'IA, usages talentueux (fiches d'œuvres IA) → enrichir `montage-ia-generative` côté regard
-18. [ ] [TECH] Premiere Pro : projet, proxies, multicam, sous-titres, Lumetri, exports → skill `montage-premiere`
-19. [ ] [TECH] Préparer un tournage pour les effets → skill `montage-preparation-tournage-vfx`
-20. [ ] [TECH] Pilotage MCP : état public, méthode d'agent → compléter `PLAN-TESTS-MCP.md` + skill `montage-pilotage-mcp`
-21. [ ] [TECH] Workflows transversaux et pipelines par format → skill `montage-workflows`
-22. [ ] [ART] Examen créatif n°1 (session 2 ou 3) : brief pub 30 s
-23. [ ] [ART] `montage-references` : synthèse des principes transférables de `culture/` (après ~10 fiches)
-24. [ ] [TECH] Compositing / keying / tracking / roto (AE, Fusion, Blender) — théorie + test keying ffmpeg/Blender sur image libre
+1. [ ] [ART] **Examen créatif n°1** (session 2) : brief pub 30 s (ex. marque d'eau minérale ou banque mutualiste), réponse uniquement depuis les skills, autocritique, corrections → éprouver `montage-direction-artistique` (jamais testé).
+2. [~] [TECH] Couleur technique : OCIO, ACES, LUT, colour-science → `montage-couleur-pipeline` (labo lancé session 1 : vérifier `labo/couleur/RESULTATS.md`, compléter)
+3. [~] [ART] Couleur et intention → `montage-couleur-et-intention` (fiches Storaro, Doyle, Deakins lancées session 1 : relire, mettre à l'épreuve dans une pièce d'atelier « même plan, trois étalonnages »)
+4. [ ] [ART] Atelier 01 : regarder la planche v5, trancher v5a/v5b (son), clore la pièce. Puis **pièce 02 spectaculaire et rapide** (contraste avec la 01) : montage « hip-hop » de 8 plans Blender de 6 à 12 images avec bruitages synthétiques, 6 s, vertical 9:16.
+5. [ ] [TECH] Fondamentaux : grammaire, raccords, 180°, montage son, J-cut/L-cut → skill `montage-grammaire`
+6. [ ] [ART] Atelier rythme : un même matériau monté sur trois tempos (Bass / Gondry / Cooper — cf. `montage-references` B) ; mesure avec scdet
+7. [ ] [TECH] Blender pour la vidéo : skill `montage-blender` (rendu CLI, Cycles vs Eevee headless, compositing, geometry nodes) — base déjà pratiquée dans l'atelier 01 ; tester Eevee en headless
+8. [ ] [TECH] DaVinci Resolve : nodes, RCM, Fusion, Fairlight, API de scripting Python (doc officielle)
+9. [ ] [ART] Narration par format : pub 15/30 s, vertical, clip, corporate, doc, fiction → skill `montage-formats`
+10. [ ] [TECH] Premiere Pro (« Premiere 26 » depuis janv. 2026 selon sources) : projet, proxies, multicam, sous-titres, Lumetri, exports → skill `montage-premiere`
+11. [ ] [TECH] Préparer un tournage pour les effets → skill `montage-preparation-tournage-vfx`
+12. [ ] [TECH] Pilotage MCP : état public (Higgsfield et autres), méthode d'agent → `montage-pilotage-mcp` + compléter `PLAN-TESTS-MCP.md`
+13. [ ] [ART] Son : atelier « même image, trois bandes son » (avec, contre, silence) ; fiches Murch sound design, Ben Burtt, Gary Rydstrom
+14. [ ] [TECH] Compositing / keying / tracking / roto (AE, Fusion, Blender) — test keying sur image CC0 avec ffmpeg (`chromakey`) et Blender
+15. [ ] [TECH] Workflows transversaux et pipelines par format → skill `montage-workflows`
+16. [ ] [TECH] Labo rythme : tester scdet sur du vrai matériau CC0 (faux positifs ? seuil ?) ; détecter les fondus (différence image à image sur fenêtre)
+17. [ ] [ART] Culture : documentaire (Agnès Varda *Les Glaneurs*, Errol Morris, Chris Marker *Sans soleil*) ; clips (Spike Jonze, Hiro Murai, Jonas Åkerlund) ; motion design de studio (Buck, ManvsMachine, Elastic) ; pubs (Honda *Cog*, Apple *1984*)
+18. [ ] [ART] IA : vérifier les faits incertains de `montage-ia-generative` (Sora, AI Act art. 50), ajouter des fiches d'œuvres IA, définir une grille « est-ce que ça fait IA ? »
+19. [ ] [ART] Relire les skills artistiques après l'examen n°1 ; fusionner les doublons (regard / motion-design / references se recoupent sur « un signe »)
 
-## Idées en réserve
-- Atelier : remontage d'un même matériau en 3 émotions (tension, tendresse, humour)
-- Atelier : générique de 10 s « à la manière du principe » de Saul Bass (réduction à un symbole), puis création libre
-- Atelier : plan 3D Blender intégré à une photo CC0 (match de perspective et de lumière)
-- Culture : clips (Michel Gondry, Spike Jonze, Hiro Murai, Jonas Åkerlund), pubs (Guinness « Surfer », Honda « Cog », Apple « 1984 »)
-- Culture : documentaire (Errol Morris, Agnès Varda, Chris Marker « Sans soleil »)
-- Culture : fiction contemporaine (Parasite, Everything Everywhere All at Once — monteur Paul Rogers)
+## Fait (trace)
+- [x] [ART] Socle v1 : `montage-expert`, `montage-regard`, `montage-direction-artistique` (session 1)
+- [x] [TECH] Loudness et livraison, testé en labo (session 1) — leçon : mesure + gain > loudnorm 2 passes
+- [x] [ART] Culture : 10 fiches (Murch, Schoonmaker, Bass, Cooper, Wright, Gondry, Glazer, Menke, Baxter/Wall, Clair) + 1 fiche IA (session 1)
+- [x] [ART] `montage-rythme`, `montage-motion-design-principes`, `montage-son-et-emotion`, `montage-references` v1 (session 1)
+- [x] [TECH] `montage-after-effects` v1 (expressions testées sous Node), `montage-ia-generative` v1 daté (session 1)
+- [x] [TECH] Labo rythme : détection de coupes scdet (session 1)
+- [x] [ART] Atelier 01 « Respiration » v1 → v5 (session 1)

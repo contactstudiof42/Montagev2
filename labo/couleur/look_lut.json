@@ -1,0 +1,94 @@
+{
+ "cube": {
+  "fichier": "look_teal_orange_modere_33.cube",
+  "taille_octets": 1078327,
+  "relecture_ecart_max": 4.999901809243923e-08
+ },
+ "ffmpeg_lut3d_secondes": 0.12,
+ "ecart_ffmpeg_vs_python_LUT": {
+  "moyen_8bit": 0.0017,
+  "max_8bit": 0.0039,
+  "moyen_10bit": 0.0069,
+  "max_10bit": 0.0156
+ },
+ "ecart_python_LUT_vs_fonction_exacte": {
+  "moyen_8bit": 0.0224,
+  "max_8bit": 1.3994,
+  "moyen_10bit": 0.0898,
+  "max_10bit": 5.6143
+ },
+ "ecart_ffmpeg_vs_fonction_exacte": {
+  "moyen_8bit": 0.0229,
+  "max_8bit": 1.4008,
+  "moyen_10bit": 0.0917,
+  "max_10bit": 5.6196
+ },
+ "look_sur_reperes": {
+  "noir": [
+   0.0,
+   0.0,
+   0.0
+  ],
+  "gris 18% (0.4894 en 709/2.4)": [
+   0.4874,
+   0.4897,
+   0.4899
+  ],
+  "blanc": [
+   1.0,
+   1.0,
+   1.0
+  ],
+  "ombre 0.15": [
+   0.1026,
+   0.121,
+   0.1409
+  ],
+  "haute lumiere 0.85": [
+   0.9014,
+   0.8885,
+   0.867
+  ],
+  "peau ColorChecker #2": [
+   0.8321,
+   0.6105,
+   0.5239
+  ]
+ },
+ "entree_reperes": {
+  "noir": [
+   0.0,
+   0.0,
+   0.0
+  ],
+  "gris 18% (0.4894 en 709/2.4)": [
+   0.4894,
+   0.4894,
+   0.4894
+  ],
+  "blanc": [
+   1.0,
+   1.0,
+   1.0
+  ],
+  "ombre 0.15": [
+   0.15,
+   0.15,
+   0.15
+  ],
+  "haute lumiere 0.85": [
+   0.85,
+   0.85,
+   0.85
+  ],
+  "peau ColorChecker #2": [
+   0.7853,
+   0.5861,
+   0.5228
+  ]
+ },
+ "png": {
+  "fichier": "avant_apres.png",
+  "taille_ko": 11.0
+ }
+}
