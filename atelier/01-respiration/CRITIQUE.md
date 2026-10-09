@@ -30,4 +30,22 @@ Mesure (`signalstats`, luminance moyenne toutes les 20 images) : 52 → 55,8 (in
 | Justesse | 3 | Rien de trop. |
 **Verdict : meilleure, pas livrable.** Leçon : j'ai corrigé l'excès de v1 par un manque. Réduire l'amplitude ne suffit pas : il faut **déplacer** le mouvement vers un paramètre qui porte le sens (ici, l'interlettrage = le corps qui se retient), plutôt que garder le même paramètre en plus petit.
 
-## v3 — voir plus bas
+## v3 — `v3-planche.png` (10 s, 250 images, planche 1 image sur 25)
+Changements : fond = plan en dégradé vertical (lumière de surface en haut) dont l'intensité porte la profondeur ; rétention allongée à 4,5 s ; **le mot se resserre** (interlettrage 1,0 → 0,90) pendant la rétention puis se relâche (1,07) en s'affaissant.
+Mesure luminance : 55,6 → 71,5 (inspiration, enfin lisible) → 44,0 (fin de rétention) → 55,0.
+| Critère | Note | Preuve |
+|---|---|---|
+| Intention | 2 | Images 6-8 : le mot se comprime, les lettres se touchent presque — une constriction. Mais sans son, l'inquiétude reste discrète. |
+| Lisibilité | 2 | Au maximum de compression (image 8) « ffl » se tasse : limite, assumé, mais à surveiller. |
+| Rythme | 3 | 3 s / 4,5 s / 2,5 s : la rétention dure plus que l'inspiration — c'est l'inconfort voulu. |
+| Composition | 2 | Le dégradé donne une profondeur ; cadrage toujours frontal, centré horizontalement (acceptable : sobriété). |
+| Cohérence | 3 | Lumière, interlettrage et position racontent la même descente. |
+| Couleur | 2 | Gris-bleu ardoise : évoque un fond d'écran plus que l'eau. |
+| Mouvement | 3 | Le mouvement est sur le paramètre qui porte le sens. |
+| Originalité | 2 | L'idée du mot qui retient son souffle est propre à la pièce ; la typo (Liberation Serif = « Times ») fait défaut. |
+| Justesse | 3 | Rien à enlever. |
+**Verdict : presque.** Il manque le son (prévu dans l'intention) et une police choisie plutôt que subie.
+
+## v4 — police EB Garamond Italic (OFL, téléchargée via jsDelivr : `https://cdn.jsdelivr.net/gh/google/fonts@main/ofl/ebgaramond/EBGaramond-Italic%5Bwght%5D.ttf`), fond plus profond/plus « eau », design sonore synthétique (`souffle_son.py`, aucun média externe)
+Son : bruit coloré filtré, enveloppes calées sur l'image (inspiration crescendo coupée net à 3 s ; rétention : pression grave qui monte ; expiration à 7,52 s : attaque brève, longue décroissance). Forme d'onde : `v4-onde.png`. Mesure : -19,9 LUFS intégré, LRA 5,4 LU, crête -6 dBFS (laissé sous le niveau d'un dialogue web à -16/-14 : un souffle est intime, il ne doit pas « sonner fort »).
+**Autocritique du son :** l'intention disait « silence total pendant la rétention » ; j'ai ajouté un grondement qui monte. C'est efficace sur le papier mais c'est le cliché du *drone de tension*. Je ne peux pas écouter : je juge par la forme d'onde et les mesures. → Faire une variante v4b avec un vrai silence (simple souffle d'ambiance très bas) et trancher en phase 2 à l'écoute.
