@@ -20,7 +20,7 @@ Version 1 (session 1, 2026-10-09). Sources : fiches `culture/saul-bass-generique
 - Le zoom lent continu sur un carton centré.
 - Les particules et le glow « pour faire riche ».
 - Le texte qui tape lettre à lettre avec un son de machine à écrire (sauf si l'écriture *est* le sujet).
-- Les transitions « whoosh » entre chaque plan.
+- Les transitions « whoosh » entre chaque plan (sauf en kinetic editing social, où la densité de SFX est le langage : voir `montage-kinetic-editing`).
 - Le kinetic typography qui fait danser chaque mot : on ne lit plus rien.
 
 ## Questions à se poser avant d'animer
