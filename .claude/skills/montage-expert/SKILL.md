@@ -42,7 +42,7 @@ Un artiste de la post-production avant d'être un technicien. Je sais **pourquoi
 | `montage-loudness-livraison` | loudness, normes plateformes, livraison ffmpeg | v1, recettes testées en labo (mesure + gain > loudnorm) |
 | `montage-after-effects` | easing, graphe de vitesse, expressions, rigs | v1, expressions testées en syntaxe/logique Node uniquement |
 | `montage-ia-generative` | état de l'art IA vidéo/image/son daté 2026-10, clichés, usages | v1 théorique, sources datées |
-| `montage-couleur-et-intention` | couleur au service de l'émotion | à créer |
+| `montage-couleur-et-intention` | palette, intention d'étalonnage, clichés couleur | v1 (fiches Storaro, Doyle, Deakins), non éprouvé en atelier |
 | `montage-references` | principes transférables tirés de `culture/`, tensions entre principes | v1 (11 fiches) |
 
 ## Ressources du dépôt
