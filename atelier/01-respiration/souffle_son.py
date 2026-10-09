@@ -1,5 +1,5 @@
 # Pièce 01 v4 — design sonore synthétique (aucun média externe) : inspiration / rétention quasi silencieuse / expiration.
-# python3 souffle_son.py <sortie.wav>
+# python3 souffle_son.py <sortie.wav> [silence]   (« silence » : variante b, rétention sans grondement, simple air très bas)
 import sys, wave, numpy as np
 SR, D = 48000, 10.0
 I, H = 3.0, 7.52                      # fin inspiration, fin rétention (cale sur l'image : 75 et 188 à 25 i/s)
@@ -14,6 +14,8 @@ env_i = np.where(t < I, (np.clip(t/I, 0, 1)**1.6) * np.clip((I-t)/0.18, 0, 1), 0
 x = t - H
 env_e = np.where(x > 0, np.clip(x/0.12, 0, 1) * np.exp(-np.clip(x, 0, None)*1.3), 0)    # attaque brève, longue décroissance
 env_g = np.where((t > I) & (t < H+0.6), ((t-I)/(H-I)).clip(0, 1)**2 * np.clip((H+0.6-t)/0.6, 0, 1), 0)  # pression qui monte, coupée par l'expiration
+if len(sys.argv) > 2 and sys.argv[2] == "silence":
+    env_g = np.full(n, 0.12)                     # air de pièce constant, à peine audible : le silence n'est pas une panne
 y = 0.55*env_i*inspi + 0.75*env_e*expi + 0.10*env_g*grave
 y = y/np.max(np.abs(y))*0.5
 st = np.stack([y, np.roll(y, 12)], 1)                                                   # micro-décalage = un peu d'air

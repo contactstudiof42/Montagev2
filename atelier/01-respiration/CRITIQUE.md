@@ -49,3 +49,19 @@ Mesure luminance : 55,6 → 71,5 (inspiration, enfin lisible) → 44,0 (fin de r
 ## v4 — police EB Garamond Italic (OFL, téléchargée via jsDelivr : `https://cdn.jsdelivr.net/gh/google/fonts@main/ofl/ebgaramond/EBGaramond-Italic%5Bwght%5D.ttf`), fond plus profond/plus « eau », design sonore synthétique (`souffle_son.py`, aucun média externe)
 Son : bruit coloré filtré, enveloppes calées sur l'image (inspiration crescendo coupée net à 3 s ; rétention : pression grave qui monte ; expiration à 7,52 s : attaque brève, longue décroissance). Forme d'onde : `v4-onde.png`. Mesure : -19,9 LUFS intégré, LRA 5,4 LU, crête -6 dBFS (laissé sous le niveau d'un dialogue web à -16/-14 : un souffle est intime, il ne doit pas « sonner fort »).
 **Autocritique du son :** l'intention disait « silence total pendant la rétention » ; j'ai ajouté un grondement qui monte. C'est efficace sur le papier mais c'est le cliché du *drone de tension*. Je ne peux pas écouter : je juge par la forme d'onde et les mesures. → Faire une variante v4b avec un vrai silence (simple souffle d'ambiance très bas) et trancher en phase 2 à l'écoute.
+
+### Critique v4 — `v4-planche.png`
+Mesure luminance : 51,0 → 65,7 (inspiration) → 40,8 (fin de rétention) → 50,6.
+| Critère | Note | Preuve |
+|---|---|---|
+| Intention | 3 (sous réserve d'écoute) | Image et son racontent la même apnée : inspiration en crescendo coupée net, constriction, relâchement. |
+| Lisibilité | 2 | Images 7-8 : avec EB Garamond, plus étroite, l'interlettrage 0,90 écrase « ffl ». Le réglage dépend de la police. |
+| Rythme | 3 | Inchangé (3 / 4,5 / 2,5 s). |
+| Composition | 2 | Inchangée. |
+| Cohérence | 3 | Typo littéraire, eau, souffle : un seul monde. |
+| Couleur | 3 | Bleu-vert profond : on lit l'eau. |
+| Mouvement | 3 | |
+| Originalité | 2 | L'idée tient ; la mise en page reste classique. |
+| Justesse | 2 | Le grondement de rétention (cliché possible). Inspiration moins lumineuse qu'en v3 (amplitude 15 contre 16 en luminance, sur un fond plus sombre). |
+**Verdict : livrable sous réserve.** Corrections : interlettrage minimum 0,93 pour cette police, inspiration plus lumineuse (v5), et choisir à l'écoute entre grondement (v5a) et silence (v5b).
+**Leçon générale :** une valeur d'animation typographique (interlettrage, approche) **ne se transpose pas d'une police à l'autre** : la retester à chaque changement de police.

@@ -1,4 +1,5 @@
 # Pièce 01 v4 (police EB Garamond Italic, OFL ; fond plus profond et plus « eau ») — 10 s : inspiration 3 s / rétention 4,5 s (le mot se resserre) / relâchement 2,5 s.
+# Police : EB Garamond Italic (OFL), https://cdn.jsdelivr.net/gh/google/fonts@main/ofl/ebgaramond/EBGaramond-Italic%5Bwght%5D.ttf (chemin local à adapter)
 # blender -b -P v3.py -- <sortie>
 import bpy, sys
 out = sys.argv[sys.argv.index("--")+1] if "--" in sys.argv else "/tmp/r01/"

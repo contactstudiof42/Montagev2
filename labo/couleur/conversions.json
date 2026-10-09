@@ -1,0 +1,376 @@
+{
+ "valeurs": {
+  "sRGB (encodé IEC 61966-2-1)": {
+   "gris 18 %": [
+    0.461356,
+    0.461356,
+    0.461356
+   ],
+   "blanc diffus 1.0": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "noir 0.0": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "rouge 709 pur": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "vert 709 pur": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "bleu 709 pur": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "peau (ColorChecker light skin, lin)": [
+    0.760784,
+    0.588235,
+    0.509804
+   ],
+   "spéculaire 4.0 (au-dessus du blanc)": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  "Rec.709 OETF (caméra)": {
+   "gris 18 %": [
+    0.409008,
+    0.409008,
+    0.409008
+   ],
+   "blanc diffus 1.0": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "noir 0.0": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "rouge 709 pur": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "vert 709 pur": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "bleu 709 pur": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "peau (ColorChecker light skin, lin)": [
+    0.733504,
+    0.545057,
+    0.460673
+   ],
+   "spéculaire 4.0 (au-dessus du blanc)": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  "Rec.709 affichage BT.1886 (gamma 2.4 inverse)": {
+   "gris 18 %": [
+    0.489437,
+    0.489437,
+    0.489437
+   ],
+   "blanc diffus 1.0": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "noir 0.0": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "rouge 709 pur": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "vert 709 pur": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "bleu 709 pur": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "peau (ColorChecker light skin, lin)": [
+    0.773255,
+    0.609702,
+    0.535359
+   ],
+   "spéculaire 4.0 (au-dessus du blanc)": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  "Rec.2020 linéaire": {
+   "gris 18 %": [
+    0.18,
+    0.18,
+    0.18
+   ],
+   "blanc diffus 1.0": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "noir 0.0": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "rouge 709 pur": [
+    0.627404,
+    0.069097,
+    0.016391
+   ],
+   "vert 709 pur": [
+    0.329283,
+    0.91954,
+    0.088013
+   ],
+   "bleu 709 pur": [
+    0.043313,
+    0.011362,
+    0.895595
+   ],
+   "peau (ColorChecker light skin, lin)": [
+    0.448567,
+    0.320261,
+    0.235608
+   ],
+   "spéculaire 4.0 (au-dessus du blanc)": [
+    4.0,
+    4.0,
+    4.0
+   ]
+  },
+  "ACEScg (AP1 linéaire)": {
+   "gris 18 %": [
+    0.18,
+    0.18,
+    0.18
+   ],
+   "blanc diffus 1.0": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "noir 0.0": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "rouge 709 pur": [
+    0.613097,
+    0.070194,
+    0.020616
+   ],
+   "vert 709 pur": [
+    0.339523,
+    0.916354,
+    0.10957
+   ],
+   "bleu 709 pur": [
+    0.047379,
+    0.013452,
+    0.869815
+   ],
+   "peau (ColorChecker light skin, lin)": [
+    0.44488,
+    0.320347,
+    0.238706
+   ],
+   "spéculaire 4.0 (au-dessus du blanc)": [
+    4.0,
+    4.0,
+    4.0
+   ]
+  },
+  "ACEScct": {
+   "gris 18 %": [
+    0.413588,
+    0.413588,
+    0.413588
+   ],
+   "blanc diffus 1.0": [
+    0.554795,
+    0.554795,
+    0.554795
+   ],
+   "noir 0.0": [
+    0.072906,
+    0.072906,
+    0.072906
+   ],
+   "rouge 709 pur": [
+    0.514508,
+    0.336044,
+    0.235153
+   ],
+   "vert 709 pur": [
+    0.465844,
+    0.547601,
+    0.372712
+   ],
+   "bleu 709 pur": [
+    0.303676,
+    0.2,
+    0.543309
+   ],
+   "peau (ColorChecker light skin, lin)": [
+    0.488099,
+    0.461056,
+    0.436833
+   ],
+   "spéculaire 4.0 (au-dessus du blanc)": [
+    0.66895,
+    0.66895,
+    0.66895
+   ]
+  },
+  "ARRI LogC3 EI800 / AWG3": {
+   "gris 18 %": [
+    0.391007,
+    0.391007,
+    0.391007
+   ],
+   "blanc diffus 1.0": [
+    0.570632,
+    0.570631,
+    0.570631
+   ],
+   "noir 0.0": [
+    0.092809,
+    0.092809,
+    0.092809
+   ],
+   "rouge 709 pur": [
+    0.521838,
+    0.239606,
+    0.18099
+   ],
+   "vert 709 pur": [
+    0.43305,
+    0.545999,
+    0.371676
+   ],
+   "bleu 709 pur": [
+    0.329987,
+    0.385269,
+    0.551323
+   ],
+   "peau (ColorChecker light skin, lin)": [
+    0.484956,
+    0.44359,
+    0.420929
+   ],
+   "spéculaire 4.0 (au-dessus du blanc)": [
+    0.718702,
+    0.718702,
+    0.718701
+   ]
+  },
+  "Sony S-Log3 / S-Gamut3.Cine": {
+   "gris 18 %": [
+    0.410557,
+    0.410557,
+    0.410557
+   ],
+   "blanc diffus 1.0": [
+    0.596027,
+    0.596027,
+    0.596027
+   ],
+   "noir 0.0": [
+    0.092864,
+    0.092864,
+    0.092864
+   ],
+   "rouge 709 pur": [
+    0.548065,
+    0.336525,
+    0.255383
+   ],
+   "vert 709 pur": [
+    0.449203,
+    0.565864,
+    0.376084
+   ],
+   "bleu 709 pur": [
+    0.344936,
+    0.393385,
+    0.576063
+   ],
+   "peau (ColorChecker light skin, lin)": [
+    0.508381,
+    0.469472,
+    0.443433
+   ],
+   "spéculaire 4.0 (au-dessus du blanc)": [
+    0.749099,
+    0.749099,
+    0.749099
+   ]
+  }
+ },
+ "aller_retour_erreur_max": {
+  "sRGB (encodé IEC 61966-2-1)": 0.0,
+  "Rec.709 OETF (caméra)": 8.326672684688674e-17,
+  "Rec.709 affichage BT.1886 (gamma 2.4 inverse)": 0.0,
+  "Rec.2020 linéaire": 1.3322676295501878e-15,
+  "ACEScg (AP1 linéaire)": 6.217248937900877e-15,
+  "ACEScct": 5.329070518200751e-15,
+  "ARRI LogC3 EI800 / AWG3": 5.023750289989692e-06,
+  "Sony S-Log3 / S-Gamut3.Cine": 9.197123063131585e-10
+ },
+ "ocio": {
+  "config": "studio-config-v4.0.0_aces-v2.0_ocio-v2.5",
+  "source": "Linear Rec.709 (sRGB)",
+  "ecarts_max_vs_colour": {
+   "ACEScg (AP1 linéaire)": {
+    "espace_ocio": "ACEScg",
+    "ecart_max": 4.357205757310467e-08
+   },
+   "ACEScct": {
+    "espace_ocio": "ACEScct",
+    "ecart_max": 8.019046408014319e-07
+   },
+   "ARRI LogC3 EI800 / AWG3": {
+    "espace_ocio": "ARRI LogC3 (EI800)",
+    "ecart_max": 0.0017529894860202067
+   },
+   "Sony S-Log3 / S-Gamut3.Cine": {
+    "espace_ocio": "S-Log3 S-Gamut3.Cine",
+    "ecart_max": 0.0020510702641956535
+   },
+   "Rec.2020 linéaire": {
+    "espace_ocio": "Linear Rec.2020",
+    "ecart_max": 1.8993737360695206e-08
+   }
+  }
+ }
+}
