@@ -33,6 +33,8 @@
 - **Silhouette = anonymat**. Si l'équipe de *Sicario* était éclairée de face, on verrait des acteurs connus ; en silhouette, on voit des soldats qui partent vers quelque chose de sale. Couper plus tôt ferait perdre l'angoisse de la disparition.
 - **Motivation = croyance**. Un faux clair de lune bleu aurait trahi le point de vue documentaire ; la vision nocturne verte impose ce que voient les personnages.
 
+- **Blocs de couleur = carte du film** : sans ces dominantes par lieu, un film de 2 h 40 au rythme lent perdrait le spectateur ; avec, il sait où il est dès le premier plan.
+
 ## Principe transférable
 
 1. **Une couleur par lieu ou par chapitre**, pas une couleur par plan. En corporate, chaque partie (problème, méthode, résultat) peut avoir sa dominante : le public sait où il est.

@@ -13,12 +13,12 @@ Remplir ces sept lignes ; si une ligne est vide, la déduire et l'écrire comme 
 2. **Message** : la seule chose que le public doit retenir.
 3. **Public** : qui, dans quel état d'esprit (pressé, captif, sceptique).
 4. **Diffusion** : plateforme, format, durée, son activé ou non, premier écran (les 2 premières secondes sur les réseaux).
-5. **Contraintes** : budget, délais, charte, rushes existants, droits musicaux.
+5. **Contraintes** : budget, délais, charte, rushes existants, droits musicaux, **contraintes réglementaires du secteur** (santé, finance, alcool, enfants : mentions, promesses vérifiables).
 6. **Ce que le projet ne doit surtout pas être** (souvent plus révélateur que ce qu'il doit être).
 7. **Contradictions du brief** : les nommer tout de suite (ex. « premium » + « tout dire en 6 s »).
 
 ## Étape 2 — Trois directions contrastées
-Contrastées = elles diffèrent sur **l'axe principal** (pas trois variantes de la même idée). Axes utiles : retenue / spectaculaire ; réel / graphique ; lent / rapide ; chaud / froid ; sérieux / ironique.
+Contrastées = elles diffèrent sur **l'axe principal** (pas trois variantes de la même idée). **Au moins une direction doit changer de registre** (ironique, fictionnel, graphique), pas seulement de rythme : à l'examen n°1, deux pistes sur trois étaient réalistes, nocturnes et domestiques. Axes utiles : retenue / spectaculaire ; réel / graphique ; lent / rapide ; chaud / froid ; sérieux / ironique.
 Pour chaque direction, fiche fixe :
 - **Nom + parti pris en une phrase.**
 - **Références** (2-3, avec le principe emprunté, pas l'image copiée).
@@ -28,6 +28,9 @@ Pour chaque direction, fiche fixe :
 - **Son** : musique (genre, tempo), sound design, place du silence.
 - **Effets** : lesquels, et pourquoi chacun est nécessaire.
 - **Risque** : ce qui peut rater.
+- **Faisabilité** : jours de tournage, coût relatif, risques plateau (enfants, animaux, météo). *(ajout examen n°1)*
+- **Version muette et premier écran** : ce qu'on comprend sans son, et ce qu'on voit dans les 2 premières secondes. *(ajout examen n°1)*
+- **Test du cliché** : combien de films de la catégorie ont déjà fait ça ? Si beaucoup, qu'est-ce qui rend le nôtre différent ? *(ajout examen n°1)*
 
 ## Étape 3 — Recommander et défendre
 - Choisir une direction ; argumenter **contre l'intention** (étape 1), pas par goût.
@@ -51,5 +54,5 @@ Refuser (avec une alternative) :
 1. Reformulation de l'intention (7 lignes). 2. Trois directions (fiche fixe). 3. Recommandation argumentée. 4. Critères. 5. Points de vigilance (tournage, droits, livraison).
 
 ## Limites connues (à corriger par les examens)
-- Méthode non encore éprouvée par un examen créatif (prévu sessions 2-3).
+- Éprouvée une fois (examen n°1, 13/20) : audace insuffisante, clichés de la catégorie non vus. Les ajouts ci-dessus en viennent.
 - Pas encore de bibliothèque de références par format : voir `BACKLOG.md`.

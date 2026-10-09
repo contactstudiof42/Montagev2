@@ -28,6 +28,8 @@ Storaro veut que le spectateur **ressente un trajet** sans s'en rendre compte : 
 
 - **La couleur porte une progression**, donc elle aide à suivre un récit long et fragmenté. Si *Le Dernier Empereur* avait une seule palette dorée constante, les flash-backs et les époques se confondraient, et la chute de Puyi (de l'or au gris) perdrait son poids physique.
 - **Le noir comme matière** : si Kurtz était éclairé « proprement », plein visage, il redeviendrait un acteur gros et fatigué ; l'ombre en fait un mythe.
+- **La lumière qui bouge raconte le temps** : faire passer une journée par la seule évolution d'une fenêtre évite un carton ou une coupe, et garde le spectateur dans la scène.
+- **Le chaud de l'enfance rend la perte sensible** : sans ce point de départ doré, la prison grise ne serait qu'un décor triste, pas une chute.
 - **Cohérence plutôt que dictionnaire** : le spectateur ne connaît pas le code de Storaro, mais il sent qu'il y a un code. Un contre-exemple : mélanger les teintes au gré des scènes donne une impression de clip, sans trajet.
 
 ## Principe transférable

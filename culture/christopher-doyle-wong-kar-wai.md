@@ -33,6 +33,8 @@
 - **Le flou du step printing montre un état intérieur** : sans lui, la scène du snack serait une simple scène de rue ; avec lui, on sent un personnage immobile pendant que la vie passe. En vitesse normale, il faudrait une voix off pour le dire.
 - **Répétition des couleurs = souvenir** : changer de palette à chaque scène casserait l'effet de « retour ». La constance des rouges et ambres fait revenir le spectateur au même endroit, comme une obsession.
 
+- **Le cadre coloré met à distance** : sans les rideaux et vitres en premier plan, on serait dans la pièce avec eux ; avec, on regarde un souvenir, et la nostalgie s'installe.
+
 ## Principe transférable
 
 1. **La couleur peut dire ce que le texte n'a pas le droit de dire.** En pub ou en clip, mettre l'émotion dans le décor (une couleur dominante saturée) et garder le jeu sobre.

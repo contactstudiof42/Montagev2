@@ -85,3 +85,28 @@ Sources utilisées pour les 5 fiches de `culture/` (Murch, Schoonmaker, Bass, Co
 - https://motionographer.com/2014/01/24/patrick-clair-elastic-hbos-true-detective/ — « photographies vivantes », artefacts d'interpolation gardés volontairement, crédits complets.
 - https://vimeo.com/84017154 — générique officiel.
 - https://slashfilm.com/973514/a-lot-of-thought-went-into-true-detectives-opening-credits — retour sur la conception du générique.
+
+## Lot 3 — couleur
+
+### Storaro / Apocalypse Now, Le Dernier Empereur
+- https://nofilmschool.com/2013/05/vittorio-storaro-dps-write-with-light — résumé du documentaire *Writing with Light* (1992) : code couleur noir → blanc, nuance de Richard Sylbert.
+- https://www.filmcomment.com/interview-vittorio-storaro/ — pause d'un an après *Apocalypse Now* pour étudier la couleur (lu via un résumé de recherche).
+- https://cinephiliabeyond.org/writing-light-vittorio-storaro-1992/ — présentation du documentaire.
+- https://www.tcm.com/articles/21409/the-last-emperor — enfance chaude, Mandchourie indigo, prison presque sans couleur (lu via un résumé).
+- https://theasc.com/magazine/feb01/storaro/pg2.htm — American Cinematographer 2001 : passage du jour à la nuit par la lumière de fenêtre (lu via un résumé).
+- https://www.atlantis-press.com/article/125913693.pdf — article universitaire sur le vert dans *Le Dernier Empereur* (non lu en entier).
+
+### Doyle / Wong Kar-wai
+- https://cinematicarts.duke.edu/sites/cinematicarts.duke.edu/files/screensociety-archive/events/screensociety-ami-showcase-christopher-doyle-retrospective-chungking-express.html — ralenti et step printing au service du désir.
+- https://cinematography.net/edited-pages/StepPrinting-ExamplesInformation.htm — discussion technique du step printing et de l'obturation.
+- https://nofilmschool.com/2017/01/watch-how-wong-kar-wai-masters-color — essai vidéo sur la couleur chez Wong.
+- https://www.acmi.net.au/whats-on/love-neon-cinema-wong-kar-wai/in-the-mood-for-love — présentation ACMI.
+- https://www.tcm.com/articles/1281214/in-the-mood-for-love — contexte de production.
+- https://www.criterion.com/current/posts/197-in-the-mood-for-love — essai Criterion (accès refusé, non lu).
+
+### Deakins / Sicario, 1917, Blade Runner 2049
+- https://screencrush.com/roger-deakins-sicario-interview/ — descente au crépuscule tenue jusqu'à la disparition, caméra thermique réelle, vision nocturne par intensificateur, tunnel en studio.
+- https://theplaylist.net/?p=272584 — entretien *Sicario*, collaboration Villeneuve.
+- https://theasc.com/articles/deakins-blade-runner-2049 — American Cinematographer (page vide à la lecture ; info via résumé de recherche).
+- https://filmmakermagazine.com/?p=103272 — « The Color of the Future » (accès refusé, non lu).
+- https://filmdaft.com/roger-deakins-breaks-down-his-work-on-1917-blade-runner-2049-and-more/ — Deakins sur *1917* et *2049* (non lu en entier).
