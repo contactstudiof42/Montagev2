@@ -4,7 +4,7 @@
 
 ### Mon point de vue artistique actuel
 Je défends un travail **réduit à une idée** (un concept, un signe — Saul Bass), où **le mouvement a une cause** et porte sur le paramètre qui raconte, pas sur le premier venu (échelle, opacité). J'arbitre par l'émotion avant la continuité (Murch), et je règle le rythme sur l'état intérieur, pas sur l'action (Schoonmaker). J'évite la symétrie mécanique, le carton centré qui zoome, le *drone* de tension, le look « bande-annonce » de l'IA.
-Ce qui a changé cette session : en atelier, j'ai corrigé un excès (v1 : un « pulse » de 22 %) par un manque (v2 : 6 %, invisible). La vraie correction a été de **déplacer** le mouvement vers un autre paramètre (l'interlettrage qui se resserre : un corps qui retient son souffle). C'est ma leçon la plus nette.
+Ce qui a changé cette session : j'ai appris à me méfier de mes impressions sur une planche réduite (un faux diagnostic de bruit, démenti par la mesure). En atelier, j'ai corrigé un excès (v1 : un « pulse » de 22 %) par un manque (v2 : 6 %, invisible). La vraie correction a été de **déplacer** le mouvement vers un autre paramètre (l'interlettrage qui se resserre : un corps qui retient son souffle). C'est ma leçon la plus nette.
 
 ### Niveau par domaine (confiance : faible / moyenne / bonne)
 | Domaine | Niveau | Confiance | Commentaire |
@@ -45,8 +45,9 @@ Ce qui a changé cette session : en atelier, j'ai corrigé un excès (v1 : un «
   - v2 : asymétrie juste, mais mouvement devenu invisible ;
   - v3 : mouvement **déplacé** sur l'interlettrage (le mot se resserre pendant l'apnée), fond en profondeur ;
   - v4 : police choisie (EB Garamond) et design sonore synthétique ;
-  - v5 : interlettrage adapté à la police, inspiration plus lisible.
-  Il reste à corriger un bruit de rendu sur le fond clair et à choisir le son à l'écoute (je préfère la variante silence).
+  - v5 : interlettrage adapté à la police, inspiration plus lisible ;
+  - v6 : j'ai corrigé un « bruit de rendu »… qui n'existait pas. La mesure a montré que les taches venaient de l'encodage H.264 du dégradé (`v5-v6-detail-fond.png`).
+  Leçon : mesurer avant de corriger. Version de référence : v6 avec le son « silence ».
 
 ### Dernier examen créatif
 **N°1 — spot 30 s + vertical 15 s pour une mutuelle (offre jeunes parents)** : `examens/01-mutuelle-jeunes-parents.md`. Recommandation : montage de gestes de nuit en très gros plans, puis bascule vers un plan long de 9 s (le soulagement). **Autocritique : 13/20.**
@@ -58,7 +59,7 @@ Ce qui a changé cette session : en atelier, j'ai corrigé un excès (v1 : un «
 
 ### Skills (voir le sommaire dans `.claude/skills/montage-expert/SKILL.md`)
 Artistiques (v1) : `montage-expert`, `montage-regard`, `montage-direction-artistique` (corrigé après examen), `montage-rythme`, `montage-motion-design-principes`, `montage-son-et-emotion`, `montage-references`, `montage-couleur-et-intention`.
-Techniques : `montage-loudness-livraison` (testé en labo), `montage-couleur-pipeline` (testé en labo), `montage-after-effects` (testé en syntaxe et logique Node, pas dans AE), `montage-ia-generative` (théorique, daté).
+Techniques : `montage-grammaire` (théorique), `montage-loudness-livraison` (testé en labo), `montage-couleur-pipeline` (testé en labo), `montage-after-effects` (testé en syntaxe et logique Node, pas dans AE), `montage-ia-generative` (théorique, daté).
 
 ### État de l'art IA générative (au 2026-10-09, sources dans `sources/ia-generative-2026-10.md`, rien testé)
 - Vidéo : Veo 3.1 (MAJ janv. 2026 : 9:16 natif, upscale 4K), Kling 3.0 (févr. 2026, jusqu'à 15 s avec son), Seedance 2.0 (févr. 2026), Runway Gen-4.5 (déc. 2025). **Sora arrêté** selon la page officielle OpenAI (app fermée le 26/04/2026, API annoncée pour le 24/09/2026 ; retrait effectif connu par une seule source secondaire).
@@ -95,13 +96,13 @@ Techniques : `montage-loudness-livraison` (testé en labo), `montage-couleur-pip
 ## JOURNAL
 
 ### Session 1 — 2026-10-09
-- **Heure** : 22:48 → 23:15 UTC environ. Démarrage : la branche n'existait pas, je l'ai créée. `GOUTS.md` est absent.
+- **Heure** : 22:48 → 23:25 UTC environ. Démarrage : la branche n'existait pas, je l'ai créée. `GOUTS.md` est absent.
 - **Méthode** : j'ai fait moi-même le regard et la création (atelier, examen, synthèse `montage-references`, skills socles). J'ai confié en parallèle à des sous-agents la recherche documentaire et les labos, dont je relis les résultats.
 - **Œuvres analysées (14 fiches)** :
   - montage et title design : Murch, Schoonmaker, Saul Bass, Kyle Cooper, Edgar Wright, Gondry (*Star Guitar*), Glazer (Guinness *Surfer*), Sally Menke, Baxter et Wall (*The Social Network*), Patrick Clair (*True Detective*) ;
   - couleur : Storaro, Doyle et Wong Kar-wai, Deakins ;
   - IA : *Total Pixel Space*, *Ancestra*, *The Hardest Part*, pub Coca-Cola.
-- **Pièce créée** : 01 « Respiration », v1 → v5. Blender 4.2.3 en ligne de commande (Cycles CPU), ffmpeg, son synthétisé avec numpy, police EB Garamond (OFL).
+- **Pièce créée** : 01 « Respiration », v1 → v6. Blender 4.2.3 en ligne de commande (Cycles CPU), ffmpeg, son synthétisé avec numpy, police EB Garamond (OFL).
 - **Tests réussis** :
   - loudness : la mesure ebur128 puis un gain atterrit à 0,0-0,2 LU de la cible ; loudnorm en 2 passes rate 2 fois sur 4 (bascule silencieuse en mode dynamique) ;
   - livraison H.264, master et vertical : conformes ;
@@ -112,8 +113,8 @@ Techniques : `montage-loudness-livraison` (testé en labo), `montage-couleur-pip
   - scdet ne voit pas les fondus enchaînés ;
   - le passage mono → stéréo avec `-ac 2` perd 3 dB (il faut `pan`) ;
   - le fetch d'une police sur github.com est bloqué hors périmètre (jsDelivr fonctionne) ;
-  - Cycles à 4 échantillons laisse des taches sur un fond clair ;
+  - les taches sur le fond clair de la v5 ne venaient pas de Cycles, comme je le croyais, mais de l'encodage H.264 du dégradé : diagnostic faux, corrigé par la mesure ;
   - je ne peux ni voir le mouvement ni entendre le son : je juge par planches et par mesures.
-- **Skills créés** : les 12 listés plus haut, dont `montage-direction-artistique` corrigé après l'examen n°1.
+- **Skills créés** : les 13 listés plus haut, dont `montage-direction-artistique` corrigé après l'examen n°1.
 - **Observation** : un serveur `HIGGSFIELD_MCP` est visible dans l'environnement. Je ne l'ai pas appelé et j'ai noté les noms d'outils dans `PLAN-TESTS-MCP.md` comme hypothèses.
 - **Sources principales** : `sources/culture-session1.md`, `sources/loudness-livraison.md`, `sources/after-effects.md`, `sources/ia-generative-2026-10.md`, `sources/couleur-pipeline.md`. Les faits non vérifiés sont listés en fin de chaque fiche.

@@ -3,9 +3,9 @@
 _Lire en premier. Mis à jour à chaque fin de session._
 
 ## Où on en est (après la session 1, 2026-10-09)
-- **Skills (12)** : socle (`montage-expert`, `montage-regard`, `montage-direction-artistique`), artistiques (`montage-rythme`, `montage-motion-design-principes`, `montage-son-et-emotion`, `montage-references`, `montage-couleur-et-intention`*), techniques (`montage-loudness-livraison`, `montage-after-effects`, `montage-ia-generative`, `montage-couleur-pipeline`*). *= produits en fin de session 1, survolés seulement : à relire en session 2.
+- **Skills (13)** : socle (`montage-expert`, `montage-regard`, `montage-direction-artistique`), artistiques (`montage-grammaire`, `montage-rythme`, `montage-motion-design-principes`, `montage-son-et-emotion`, `montage-references`, `montage-couleur-et-intention`*), techniques (`montage-loudness-livraison`, `montage-after-effects`, `montage-ia-generative`, `montage-couleur-pipeline`*). *= produits en fin de session 1, survolés seulement : à relire en session 2.
 - **Culture** : 10 fiches de montage/title design + 3 fiches couleur (Storaro, Doyle/Wong Kar-wai, Deakins) + 1 fiche IA.
-- **Atelier** : pièce 01 « Respiration », v1 → v5 (`atelier/01-respiration/CRITIQUE.md`). Reste : corriger le bruit de rendu du fond clair (16 échantillons + débruitage), trancher le son (préférence v5b silence), clore. Puis pièce 02.
+- **Atelier** : pièce 01 « Respiration » (`atelier/01-respiration/CRITIQUE.md`). v1 → v6, v6 + son « silence » = référence. Le « bruit » de la v5 venait de l'encodage H.264 du dégradé, pas du rendu (mesuré). Reste : test d'encodage des dégradés. Puis pièce 02.
 - **Labo** : loudness (testé), livraison H.264 (testé), détection de coupes scdet (testé), expressions AE sous Node (syntaxe/logique), couleur (lancé en fin de session 1 : vérifier `labo/couleur/RESULTATS.md`).
 - **Examens** : n°1 fait (`examens/01-mutuelle-jeunes-parents.md`, 13/20 : audace insuffisante, clichés de catégorie non vus). Prochain examen : session 4 ou 5, autre format (clip ou documentaire).
 
@@ -21,4 +21,4 @@ _Lire en premier. Mis à jour à chaque fin de session._
 - Un serveur MCP nommé `HIGGSFIELD_MCP` est listé dans l'environnement : non appelé (consigne phase 1). Noms observés dans `PLAN-TESTS-MCP.md`.
 
 ## Historique
-- Session 1 — 2026-10-09 22:48 → ~23:15 UTC : démarrage, structure, 12 skills, 14 fiches, atelier 01 (5 versions), 5 labos, examen n°1.
+- Session 1 — 2026-10-09 22:48 → ~23:25 UTC : démarrage, structure, 13 skills, 14 fiches, atelier 01 (6 versions), 5 labos, examen n°1.

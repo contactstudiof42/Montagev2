@@ -80,3 +80,15 @@ Mesure luminance : 51,0 → 69,9 (inspiration : amplitude 19, la meilleure des 5
 4. Police subie → police choisie (EB Garamond, OFL).
 5. Intention sonore oubliée → son conçu avec l'image ; puis repérage de mon propre écart à l'intention (grondement).
 Ce que je retiens pour toutes les pièces : **relire INTENTION.md avant chaque version**, et mesurer (luminance, loudness) au lieu de me fier à une impression sur une planche.
+
+## v6 — `v6-planche.png`, `v5-v6-detail-fond.png` (16 échantillons + débruitage OIDN, son v5b « silence »)
+**Mon diagnostic de la v5 était faux.** Mesure de l'écart-type du fond (haut de l'image, image 75, après retrait de la tendance) :
+| | PNG source | après H.264 |
+|---|---|---|
+| v5 (4 éch.) | 0,380 niveau 8 bits | 0,181 |
+| v6 (16 éch. + OIDN) | 0,379 | 0,161 |
+Le « bruit » des sources est identique : c'est le tramage de la quantification 8 bits, pas du bruit de rendu (une scène en émission pure converge dès 4 échantillons). Les taches vues sur la planche v5 venaient de **l'encodage H.264 d'un dégradé lisse** (blocs, bandes), grossi par la réduction de la planche. La v6 a coûté environ 3 fois plus de rendu pour un gain nul.
+**Vraies corrections à tester (session 2)** : encodage du dégradé (CRF plus bas, `-tune grain`, ou un léger grain ajouté volontairement pour casser les bandes), livraison 10 bits quand c'est possible.
+**Leçon : mesurer avant de corriger.** Une impression sur une planche réduite n'est pas un diagnostic.
+
+**Statut de la pièce 01 :** v6 + son « silence » = version de référence. Je la clos sous réserve de l'écoute et du test d'encodage des dégradés.
