@@ -5,6 +5,8 @@ description: Montage kinetic / dynamique pour réseaux sociaux (Reels, TikTok, S
 
 # Kinetic editing (montage social « haute rétention »)
 
+> **Contrepoint (goût de l'utilisateur)** : le clip de Ziak qu'il adore fait exactement l'inverse : coupes non calées sur le beat, aucun SFX surligné (`montage-rythme`, section Ziak). Le kinetic est un choix pour l'énergie et la rétention, pas un réflexe.
+
 Goût de l'utilisateur : il AIME ce style. Ne pas le traiter comme un cliché à corriger. Ici, **la densité de SFX est le langage**. L'amateur et le pro ne se distinguent pas par la quantité de sons mais par **la précision (à l'image), la variété, la hiérarchie**, et par les respirations.
 
 > Nuance aux autres skills : « whoosh sur chaque transition = cliché » vaut pour la pub, le corporate et la fiction. En kinetic editing, un son par événement visuel est la norme (Ali Abdaal : « un son à chaque fois que quelque chose apparaît à l'écran »). Le cliché, c'est le **même** whoosh, au **même** niveau, **en retard**.

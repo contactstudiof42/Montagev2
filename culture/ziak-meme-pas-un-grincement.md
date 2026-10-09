@@ -110,3 +110,52 @@ Elles ne sont pas commitées (droits) ; seules mes mesures sont gardées ici.
 **Lien avec les autres goûts de l'utilisateur** : le fond cyan-vert froid avec une peau gardée à part est la **même stratégie que Joker** (le vert des fluos gardé, les peaux sorties du vert). Hypothèse : l'utilisateur aime les images **très basses, froides cyan-vert, à peau protégée**. À lui confirmer.
 
 **Ce qui reste invisible pour moi** : le montage (durées des plans, rapport au beat), les mouvements de caméra (il y a un steadicam au générique), le son. Il faudrait que l'utilisateur me donne les minutages des plans qu'il préfère, ou qu'il dépose le fichier vidéo dans un dossier ignoré par git ; je pourrais alors mesurer les coupes (scdet), les durées et le tempo.
+
+---
+
+# ANALYSE MESURÉE DU CLIP (2026-10-09, fichier fourni par l'utilisateur)
+Fichier : 1280×720, 25 i/s, 3 min 49,5. Ni la vidéo ni ses images ne sont dans le dépôt. Outil : `labo/analyse-clip/analyse_clip.py` (relançable sur toute référence). Données : `culture/ziak-mesures.json`. Chronologie : `culture/ziak-chronologie-mesures.png`.
+J'ai regardé : 4 planches de 30 vignettes (une au milieu de chaque plan, éclaircies pour être lisibles), et la rafale de 43-49 s image par image.
+
+## Ce qu'on voit (structure en cinq actes)
+| Temps | Acte | Contenu |
+|---|---|---|
+| 0:00-1:02 | Rue, pluie, nuit | plongées verticales sur un homme au sol sous la pluie, un **petit feu** au centre (seule couleur chaude) ; un pistolet chromé **coupé en deux** tenu en main ; une voiture sous la pluie ; un gang de motards masqués, armes tendues, éclairé par les **éclairs de leurs tirs** |
+| 1:02-2:10 | Usine | ouvriers masqués, câbles, meulage et gerbes d'étincelles ; un moteur suspendu ; **objets tranchés en coupe** sur du sable noir (douilles, moitié d'arme, chargeur coupé qui montre ses balles) ; une moto reconstruite ; une foule cagoulée sous des néons |
+| 2:10-2:40 | Naissance | une femme enceinte, nue, **seule en plan large** sur une passerelle d'usine sous une lumière froide ; son ventre fendu d'une bande de métal ciselé ; la foule masquée la regarde |
+| 2:40-3:10 | Moto, ville | la moto à moteur apparent roule de nuit ; voitures |
+| 3:10-3:44 | Toits, escalier, révélation | silhouettes qui sautent de toit en toit ; une cage d'escalier filmée en plongée verticale (vertige) ; un couloir vide ; puis la **révélation à 3:24** : une créature de métal noir brillant, mi-ombre mi-machine, au milieu des cagoulés ; noir ; logos |
+
+## Les mesures
+- **88 plans** (et 18 événements lumineux qui ne sont **pas** des coupes : éclairs de tirs, gerbes d'étincelles). Durée moyenne 2,61 s, **médiane 1,67 s**. Répartition : 26 plans de moins d'1 s, 28 de 1-2 s, 8 de 2-3 s, 14 de 3-5 s, 7 de 5-8 s, **5 de plus de 8 s** (jusqu'à 11,8 s).
+- **Tempo** 143,6 BPM (drill), un temps = 0,418 s.
+- **Les coupes ne sont pas calées sur le beat** : concentration de phase des coupes 0,11, exactement le niveau du hasard (0,11). Seulement 2 % des coupes tombent à moins d'une image d'une attaque sonore forte (hasard : 4 %). Pas de calage sur les mesures non plus.
+- **Mais le montage suit l'arrangement** : **26 coupes/min quand la basse (808) est là, 13,4 quand elle disparaît**. Chaque creux de basse de plus de 5 s porte un plan long : 16 s (7,2 s), 27-39 s (11,8 s), 131-158 s (6,8 + 6,8 s : la femme enceinte), 213-224 s (11,6 s, final). Les creux courts (2-3 s) ne changent rien.
+- **Les plans longs sont quasi immobiles** (mouvement médian 0,045 contre 0,072 pour les plans de moins d'1 s) : des tableaux.
+- **Seconde horloge** : dans le plan fixe des motards (44-54 s, 9,7 s), les éclairs des tirs pulsent **toutes les 15 images (0,60 s)**, alors que le beat est à 0,418 s (noire pointée : 0,627 s). Les éclairs ne coïncident avec aucune attaque sonore (écarts de -774 à +591 ms) : **la lumière bat sa propre mesure, contre la musique**, et les tirs semblent muets dans le mix (à confirmer à l'oreille).
+- **Lumière** : luminance médiane 8/255, **88 % des pixels sous 30/255**, presque rien au-dessus de 200 (0,09 %). Quasi monochrome froid (R-B entre -0 et -4 selon les actes ; saturation 0,13 à 0,25).
+- **Une seule couleur chaude** : feu et étincelles, **0,16 % de l'image en moyenne**, présents seulement 24 secondes sur 229 (ouverture, meulage à l'usine, deux rappels à la fin). Les images les plus claires du clip sont toutes des gerbes d'étincelles (67-81 s).
+- **Son** : intro étouffée (aigus à -28 dB les 10 premières secondes, puis -8 dB : le filtre s'ouvre). Plusieurs creux de basse (*drops*) structurent le morceau.
+
+## Pourquoi c'est si fort (mon analyse)
+1. **La forme incarne le titre.** « Même pas un grincement » : une machine parfaitement huilée, qui ne trahit aucun effort. Le montage fait exactement ça. **Aucune coupe ne « tape » le beat**, aucune transition voyante, aucun effet sonore surligné, pas de *stutter* (bégaiement d'images) ni de *speed ramp* : l'image avance avec une masse lente et silencieuse sous une drill agressive. C'est un contrepoint, comme la musique *contre* l'image chez Bass ou Menke. Le beat apporte la violence ; l'image, le sang-froid. Résultat : une **menace contenue**, plus inquiétante qu'une menace exhibée.
+2. **Un rythme macro au lieu d'un rythme micro.** Le monteur (Antonin Brones) ne suit pas les temps, il suit **l'énergie de l'arrangement** : deux fois plus de coupes quand la basse est là, et un tableau long et immobile à chaque fois qu'elle disparaît. Le spectateur sent la musique respirer dans l'image sans jamais voir de calage mécanique. C'est la version clip du principe d'Interstellar : la structure (et non le style des plans) fabrique l'intensité.
+3. **Une seconde horloge visuelle.** Les éclairs à 15 images contre un beat à 0,418 s créent un **polyrythme** : deux horloges qui ne s'accordent pas, donc une tension qui ne se résout pas. Et on ne voit jamais tirer : on voit **la lumière du tir**. L'action passe par ses conséquences, ce qui la rend plus grande que nature.
+4. **Un concept unique, décliné à toutes les échelles** (Saul Bass) : tout est **fendu en deux**, de l'arme au chargeur en coupe, du moteur au ventre de la femme. Et l'arc du clip démonte puis remonte, jusqu'à révéler le Ziak reconstruit. Les objets en coupe, comme des planches techniques, montrent **l'intérieur des choses**, alors que l'artiste masqué ne montre jamais le sien (aucun visage dans tout le clip, même le corps de la femme est cadré sans tête).
+5. **La révélation retenue jusqu'à la fin** (3:24 sur 3:49) : plus de trois minutes d'attente pour une seule image du personnage. La durée de la tension est proportionnelle à ce qu'on risque (Menke).
+6. **Le noir comme matière, la couleur comme événement.** 88 % de l'image presque noire, les hautes lumières plafonnées, et une seule couleur chaude (le feu), rare. Du coup, **chaque étincelle est un événement** : c'est le principe de Joker (la couleur forte doit être méritée), en plus radical.
+7. **De la matière réelle.** Le générique montre un plateau lourd : effets spéciaux de plateau, véhicules, cascadeur, steadicam, décor construit, scan 3D. Les VFX de Square (primés à Berlin) prolongent une matière tournée au lieu de la remplacer : le métal a du poids, la pluie mouille.
+
+## Principes transférables (pour les projets de l'utilisateur)
+- **Ne pas clipper le beat par défaut** : sur une musique déjà très rythmée, faire suivre au montage l'**arrangement** (densité de coupes selon la présence de la basse), et réserver les plans longs immobiles aux creux. [mesuré ici ; à éprouver dans l'atelier]
+- **Donner à l'image sa propre horloge** (éclairs, clignotements, gestes répétés) décalée de la musique : la tension vient du désaccord.
+- **Montrer l'effet plutôt que l'action** (la lumière du tir, l'étincelle du métal).
+- **Un concept, décliné à toutes les échelles**, de l'accessoire au personnage.
+- **Faire du noir la matière principale** et réserver la couleur chaude à quelques événements comptés.
+- **Retenir la révélation** le plus tard possible.
+
+## Ce que l'analyse ne dit pas (limites)
+- Je n'ai pas **écouté** : le mix, la place des bruitages et des voix restent à juger à l'oreille.
+- Les mouvements de caméra sont estimés grossièrement (différence d'images), pas mesurés.
+- Le détecteur de coupes peut confondre un mouvement très rapide avec une coupe ; la planche montre une erreur probable (44,16 s : fin d'un flash comptée comme coupe).
+- **Contraste avec le goût « kinetic editing »** : ce clip est l'opposé d'un montage kinetic (pas de coupes sur le beat, pas de SFX surlignés). L'utilisateur aime les deux : question à lui poser (voir RAPPORT).

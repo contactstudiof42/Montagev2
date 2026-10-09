@@ -23,6 +23,13 @@ Fiche : `culture/interstellar-rythme.md`. Ficelles à réutiliser en priorité :
 5. **Un motif musical qui monte par couches** autorise un montage de plus en plus serré. Pendant la tension, on retire les plans de respiration (extérieurs rassurants).
 Limite : le mixage où le dialogue passe sous les effets est à proscrire pour les réseaux et la pub (vision sans son, intelligibilité).
 
+## Référence de l'utilisateur : Ziak, « Même pas un grincement » — le rythme macro (MESURÉ)
+Analyse complète : `culture/ziak-meme-pas-un-grincement.md`, chronologie `culture/ziak-chronologie-mesures.png`.
+- 88 plans, médiane 1,67 s, à 143,6 BPM : **les coupes ne sont pas calées sur le beat** (niveau du hasard), mais il y a **26 coupes/min quand la basse est là, 13,4 quand elle disparaît**, et un plan long et immobile dans chaque creux de basse de plus de 5 s.
+- **Principe** : sur une musique déjà très rythmée (drill, trap, électro), le montage peut suivre **l'arrangement** (densité de coupes selon l'énergie) plutôt que **les temps**. L'image garde sa propre gravité ; la musique respire dans l'image sans calage mécanique.
+- **Seconde horloge** : une pulsation visuelle (éclairs toutes les 15 images) en désaccord avec le tempo crée une tension qui ne se résout pas.
+- Choisir consciemment : **micro** (couper sur les temps : plaisir, énergie, kinetic) ou **macro** (suivre l'arrangement : menace contenue, gravité). Les deux sont dans les goûts de l'utilisateur.
+
 ## Couper sur le mouvement
 - Couper **pendant** un geste (pas avant, pas après) cache la coupe : l'œil suit le mouvement d'un plan à l'autre. [THÉORIQUE, principe classique]
 - Raccord de forme, de geste ou de son : la transition devient du contenu (Wright). Préférer à un fondu, qui dit seulement « le temps passe ».
@@ -45,7 +52,8 @@ Limite : le mixage où le dialogue passe sous les effets est à proscrire pour l
 - La synchro totale enferme : si la musique change (droits, version courte), tout est à refaire.
 - Sur les réseaux sans son, le rythme doit aussi se lire visuellement.
 
-## Mesurer le rythme (labo, à développer)
+## Mesurer le rythme (labo)
+- **Outil complet** [TESTÉ EN LABO, 2026-10-09] : `python3 -I labo/analyse-clip/analyse_clip.py <video> <sortie>` donne les coupes et les flashs, les durées, le tempo, le calage des coupes sur le beat (avec la référence du hasard), les coupes selon la présence de la basse, et la lumière. Pensé pour les images sombres, où `scdet` sous-détecte : il trouvait 38 coupes au lieu de 87 sur Ziak. **Distinguer les flashs des coupes** : sur Ziak, 18 « coupes » étaient des éclairs.
 - Détection de coupes [TESTÉ EN LABO, session 1 — `labo/rythme/RESULTATS.md`] :
   `ffmpeg -i film.mp4 -vf "scdet=threshold=10,metadata=print:key=lavfi.scd.time:file=-" -f null - 2>/dev/null | grep -o "lavfi.scd.time=[0-9.]*" | cut -d= -f2`
   → temps des coupes → durées de plans → histogramme. Fiable sur coupes franches (8/8 au centième) ; **rate les fondus enchaînés** ; entre plans très proches, descendre le seuil à 3 (risque de faux positifs, à tester sur matériau réel).

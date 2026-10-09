@@ -13,8 +13,8 @@ La couleur n'est pas une finition : c'est **un sens**. Avant de toucher une roue
 
 ## Goût de l'utilisateur (`GOUTS.md` — prime quand il s'applique)
 - **Joker** (`culture/joker-couleur-image.md`) : garder la dominante « fausse » (vert des fluos, sodium) parce qu'elle raconte un lieu et un état ; ne rendre juste que la peau. Faire **mériter** la couleur forte : saturation retenue, puis une seule couleur lâchée à la bascule (le rouge du costume). Lumières motivées, visibles ou plausibles.
-- **Ziak, « Même pas un grincement »** (`culture/ziak-meme-pas-un-grincement.md`, mesuré sur deux images officielles) : image très basse (80 % sous 30/255), hautes lumières plafonnées vers 160/255, peau neutre contre un environnement cyan-vert (R-B de -14 à -26), saturation 0,16.
-- **Hypothèse de goût (à confirmer)** : images **basses et denses, environnement froid cyan-vert, peau protégée, une seule couleur forte réservée à un moment**. C'est une proposition par défaut quand le brief laisse le choix, jamais une recette plaquée (voir les limites du « look Joker » dans la fiche).
+- **Ziak, « Même pas un grincement »** (`culture/ziak-meme-pas-un-grincement.md`, **mesuré sur le clip entier**) : luminance médiane 8/255, 88 % des pixels sous 30/255, quasi monochrome froid, et **une seule couleur chaude (feu, étincelles) sur 0,16 % de l'image, dans 24 s sur 229**. Chaque étincelle devient un événement. Le noir est la matière, la couleur un événement compté.
+- **Hypothèse de goût (renforcée par la mesure du clip de Ziak, à confirmer)** : images **basses et denses, environnement froid, peau protégée, une seule couleur chaude réservée à des événements comptés**. C'est une proposition par défaut quand le brief laisse le choix, jamais une recette plaquée (voir les limites du « look Joker » dans la fiche).
 
 ## Principes
 

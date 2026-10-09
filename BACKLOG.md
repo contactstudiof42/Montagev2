@@ -6,7 +6,8 @@ Règle : alterner ART et TECH. Réalimenter dès qu'il reste moins de 10 sujets 
 
 ## Priorité haute (prochaines sessions)
 0. [ ] [ART] **Pièce 02 « kinetic »** dans le goût de l'utilisateur : 10 à 15 s en vertical, plans tournés en 3D dans Blender (pas de mires), SFX hiérarchisés, une règle du temps à la Interstellar, une palette basse cyan-vert à peau protégée (Joker/Ziak). Critique avec `montage-regard` et `montage-kinetic-editing`.
-0b. [ ] [ART] Ziak : si l'utilisateur fournit le fichier ou des minutages, mesurer coupes, durées et tempo ; compléter la fiche.
+0b. [x] [ART] Ziak analysé sur le fichier fourni (88 plans, montage calé sur l'arrangement et pas sur le beat, seconde horloge visuelle). Outil réutilisable : `labo/analyse-clip/analyse_clip.py`.
+0c. [ ] [ART] **Atelier « rythme macro »** : un même plan de 30 s sur une instru drill CC0, monté (a) calé sur les temps, (b) calé sur l'arrangement à la Ziak ; critique comparée. Puis passer `analyse_clip.py` sur les références que l'utilisateur ajoutera.
 1. [ ] [ART] **Atelier « même brief, direction A dans le noir »** (suite de l'examen n°1 : la piste la plus audacieuse, écartée trop vite) : 10 s, Blender, seule lumière = un écran de téléphone.
 1b. [ ] [ART] Fiche sur les pubs santé/assurance et petite enfance : repérer les clichés du secteur (boîte à musique, bébé au ralenti, famille radieuse) — révélé par l'examen n°1.
 2. [~] [TECH] Couleur technique → `montage-couleur-pipeline` v1 (labo session 1 : conversions exactes, LUT ffmpeg = Python). Reste : expliquer l'écart OCIO/colour de 2e-3 sur LogC3/S-Log3 ; tester un vrai rush log CC0.
