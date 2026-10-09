@@ -2,9 +2,9 @@
 
 - **Artiste** : Ziak, rappeur drill français toujours masqué, présenté comme originaire de l'Essonne (Évry selon des sources secondaires). Label Universal Music France.
 - **Réalisation** : **Bleu Désert**, collectif parisien (un « trio » selon shots, un duo « Jean et Lucien » selon une autre fiche : composition non tranchée). Concept : David Brochard et Lucas Léger. Production : Ocurens (producteurs exécutifs Germain Robin et Valentin Petit). Chef opérateur : Antoine Cormier. VFX : Square (superviseurs Mathieu Jussreandot et Colin Journée). Post-production : Monumental. Crédits tirés de la fiche Vimeo, lue via un résumé de recherche (page bloquée en lecture directe).
-- **Monteur, étalonneur, chef déco** : non trouvés nommément (la post est attribuée à Monumental, sans détail des postes).
+- **Monteur, étalonneur, chef déco, son** [SOURCÉ, générique complet de la fiche Vimeo lu directement via l'oEmbed public, 2026-10-09] : **montage Antonin Brones**, **étalonnage Arthur Paux** (Monumental), **sound design et mix Emilien Bernaux** (Lafayette Street Studio), **chef décorateur Till Duca**, superviseuse des **effets spéciaux de plateau** Carol Styczen, steadicam Grégoire Lobut, caméra B, superviseur véhicules, cascadeur, pilote moto, storyboard Mathieu Haas et Sylvain Martini, concept artist Krassimir Mercier, **scan 3D**, rigging, animation, FX et compositing chez Square, plan d'immeuble par Rack. Remerciements notamment aux **Fonderies de la Scarpe** (une fonderie : lieu de tournage probable, **non confirmé**). Tourné avec le soutien du CNC.
 - **Morceau** : 4e piste de l'album *Chrome* (sorti le 24 février 2023, 18 titres), durée 3:45 ; composition créditée à Sam Tiba sur Deezer (via résumé de recherche).
-- **Année** : 2023 (D&AD et Berlin Music Video Awards 2023). Date exacte de mise en ligne : non trouvée.
+- **Année** : mise en ligne sur Vimeo le **20 janvier 2023** (oEmbed), avant la sortie de l'album. Durée de la vidéo : **3 min 49** (229 s).
 - **Format** : clip musical d'environ 3 min 45, fiction conceptuelle lourde en décors et VFX.
 - **Prix** : Meilleurs VFX aux Berlin Music Video Awards 2023 (selon Wikipédia ; liste officielle non consultée) ; shortlist D&AD 2023, clips musicaux, catégorie Production Design.
 - **Vues, lieu de tournage, making-of, presse rap (Booska-P, Mouv', Rapelite…)** : non trouvés.
@@ -12,7 +12,7 @@
 
 ## Ce que l'œuvre cherche à faire ressentir ou comprendre
 
-[SOURCÉ, D&AD] Le clip raconte une **chute symbolique** de Ziak dans un monde où objets, corps et âmes sont **coupés en deux**. Dans une usine sombre, des ouvriers masqués découpent, dissèquent et démontent moteurs, armes et électronique. Le but se révèle peu à peu : **reconstruire Ziak en mi-homme mi-machine**.
+[SOURCÉ, D&AD ; texte original français sur onepointfour.co] Le clip raconte une **chute symbolique** de Ziak dans un monde où objets, corps et âmes sont **coupés en deux**. Dans une usine sombre, des ouvriers masqués découpent, dissèquent et démontent moteurs, armes et électronique. Le but se révèle peu à peu : **reconstruire Ziak, « mi-ombre mi-machine »** (texte français des réalisateurs ; la version anglaise du D&AD dit « half-man »). « Ombre » plutôt qu'« homme » : l'artiste masqué n'est même pas un homme, c'est une ombre.
 
 [DÉDUIT] Le clip ne cherche pas à montrer la rue, comme le fait le clip drill habituel. Il fabrique un **mythe** : l'artiste sans visage devient une pièce industrielle, qu'on démonte et qu'on remonte. Le titre (pas même un grincement) suggère une mécanique parfaitement huilée, insensible, qui ne trahit aucune faiblesse. L'album s'appelle *Chrome* : le clip installe visuellement cette promesse de métal froid. L'émotion visée serait la **fascination inquiète** (un body horror froid et sans gore gratuit), plutôt que l'intimidation.
 
@@ -78,3 +78,35 @@
 - Nombre de membres de Bleu Désert (trio ou duo) et identité de Brochard et Léger (membres du collectif ou concepteurs extérieurs ?).
 - Tout ce qui est marqué [DÉDUIT] dans la section « Les choix » : le clip n'a pas pu être visionné.
 - Aucun article de presse rap française consacré au clip n'a été trouvé (Booska-P, Mouv', Rapelite, Konbini, Inrocks : rien de spécifique).
+
+
+## Ce que j'ai pu voir moi-même (session du 2026-10-09)
+**Tentatives** : le téléchargement du clip a échoué, YouTube exigeant une connexion (contrôle anti-robot) et Vimeo un compte. Je n'ai pas contourné ces protections. J'ai donc examiné **deux images fixes officielles du même plan** :
+- la vignette Vimeo (1280×720) ;
+- l'image publiée par le festival 1.4, shortlist « On The Cusp », en 1920×1080 (`https://www.onepointfour.co/entries/bleu-desert-ziak-meme-pas-un-grincement/`).
+
+Elles ne sont pas commitées (droits) ; seules mes mesures sont gardées ici.
+
+**Le plan** : le torse d'une femme enceinte, nue, cadré **sans visage**, est fendu verticalement par une **bande de métal noir ciselé**, ornementale comme de la ferronnerie. Des gouttes d'eau perlent sur la peau. Le corps est décentré à gauche ; à droite, une rambarde d'usine et des fenêtres hautes surexposées, floues.
+- **C'est le concept en une image** : le corps « fendu en deux », la chair contre le métal. Et la naissance : on « fabrique » quelqu'un, ce qui rejoint la reconstruction de Ziak. C'est le principe « un concept, un signe » de Saul Bass, appliqué en prise de vue réelle.
+- **L'anonymat est étendu** : pas de visage, ici non plus. Le dispositif du masque devient la grammaire de tout le clip.
+- **La lumière** : une seule source dure, latérale et haute, qui sculpte la courbe du ventre et laisse tout le reste tomber dans le noir. Les gouttes captent des points de lumière : une texture tactile, presque de la sueur d'effort.
+
+**Mesures** (luminance Rec.709 sur 0-255, RGB moyen par zone) :
+| | Vignette Vimeo | Image 1.4 |
+|---|---|---|
+| Luminance moyenne / médiane | 28,9 / 15 | 17,8 / **0** |
+| Pixels sous 30/255 | 80 % | 83 % |
+| Centile 99 (hautes lumières) | 159 | 154 |
+| Peau du ventre (R-B) | +6 (quasi neutre, à peine chaude) | +4 |
+| Rambarde et fenêtres (R-B) | -15 / -14 | **-26 / -25** |
+
+**Lecture** :
+1. **Image extrêmement basse** (*low-key*) : 80 % de l'image sous 30/255, et un noir écrasé à 0 dans la version 1.4. Le noir est le matériau principal de l'image ; la lumière n'existe que pour sculpter.
+2. **Hautes lumières retenues** : rien au-dessus d'environ 160/255, aucun blanc pur, même les fenêtres restent grises. C'est un plafond délibéré, une image « sous-exposée avec contrôle ».
+3. **Séparation des températures** : la peau reste **neutre**, l'environnement part vers le **cyan-vert** (R-B de -14 à -26). Saturation globale très faible (0,16).
+4. **Deux étalonnages du même plan** : la version 1.4 est plus dure (noirs à 0, fond plus cyan, écart de température presque doublé). Il est possible que l'image du festival vienne de l'étalonnage final, et la vignette d'une version plus douce. Cela reste à vérifier.
+
+**Lien avec les autres goûts de l'utilisateur** : le fond cyan-vert froid avec une peau gardée à part est la **même stratégie que Joker** (le vert des fluos gardé, les peaux sorties du vert). Hypothèse : l'utilisateur aime les images **très basses, froides cyan-vert, à peau protégée**. À lui confirmer.
+
+**Ce qui reste invisible pour moi** : le montage (durées des plans, rapport au beat), les mouvements de caméra (il y a un steadicam au générique), le son. Il faudrait que l'utilisateur me donne les minutages des plans qu'il préfère, ou qu'il dépose le fichier vidéo dans un dossier ignoré par git ; je pourrais alors mesurer les coupes (scdet), les durées et le tempo.
