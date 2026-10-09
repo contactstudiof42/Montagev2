@@ -5,9 +5,10 @@ Statut : `[ ]` à faire · `[~]` entamé · `[x]` fait (garder 1 ligne de trace)
 Règle : alterner ART et TECH. Réalimenter dès qu'il reste moins de 10 sujets ouverts.
 
 ## Priorité haute (prochaines sessions)
-1. [ ] [ART] **Examen créatif n°1** (session 2) : brief pub 30 s (ex. marque d'eau minérale ou banque mutualiste), réponse uniquement depuis les skills, autocritique, corrections → éprouver `montage-direction-artistique` (jamais testé).
-2. [~] [TECH] Couleur technique : OCIO, ACES, LUT, colour-science → `montage-couleur-pipeline` (labo lancé session 1 : vérifier `labo/couleur/RESULTATS.md`, compléter)
-3. [~] [ART] Couleur et intention → `montage-couleur-et-intention` (fiches Storaro, Doyle, Deakins lancées session 1 : relire, mettre à l'épreuve dans une pièce d'atelier « même plan, trois étalonnages »)
+1. [ ] [ART] **Atelier « même brief, direction A dans le noir »** (suite de l'examen n°1 : la piste la plus audacieuse, écartée trop vite) : 10 s, Blender, seule lumière = un écran de téléphone.
+1b. [ ] [ART] Fiche sur les pubs santé/assurance et petite enfance : repérer les clichés du secteur (boîte à musique, bébé au ralenti, famille radieuse) — révélé par l'examen n°1.
+2. [~] [TECH] Couleur technique → `montage-couleur-pipeline` v1 (labo session 1 : conversions exactes, LUT ffmpeg = Python). Reste : expliquer l'écart OCIO/colour de 2e-3 sur LogC3/S-Log3 ; tester un vrai rush log CC0.
+3. [~] [ART] Couleur et intention → `montage-couleur-et-intention` v1 (fiches Storaro, Doyle, Deakins). Reste : atelier « même plan, trois étalonnages » avec la LUT du labo.
 4. [~] [ART] Atelier 01 : v5 faite ; corriger le bruit Cycles du fond clair (16 éch. + débruitage), trancher v5a/v5b (préférence v5b), clore. Puis **pièce 02 spectaculaire et rapide** (contraste avec la 01) : montage « hip-hop » de 8 plans Blender de 6 à 12 images avec bruitages synthétiques, 6 s, vertical 9:16.
 5. [ ] [TECH] Fondamentaux : grammaire, raccords, 180°, montage son, J-cut/L-cut → skill `montage-grammaire`
 6. [ ] [ART] Atelier rythme : un même matériau monté sur trois tempos (Bass / Gondry / Cooper — cf. `montage-references` B) ; mesure avec scdet
@@ -26,6 +27,7 @@ Règle : alterner ART et TECH. Réalimenter dès qu'il reste moins de 10 sujets 
 19. [ ] [ART] Relire les skills artistiques après l'examen n°1 ; fusionner les doublons (regard / motion-design / references se recoupent sur « un signe »)
 
 ## Fait (trace)
+- [x] [ART] Examen créatif n°1 « mutuelle jeunes parents » : 13/20, corrections dans `montage-direction-artistique` (session 1)
 - [x] [ART] Socle v1 : `montage-expert`, `montage-regard`, `montage-direction-artistique` (session 1)
 - [x] [TECH] Loudness et livraison, testé en labo (session 1) — leçon : mesure + gain > loudnorm 2 passes
 - [x] [ART] Culture : 10 fiches (Murch, Schoonmaker, Bass, Cooper, Wright, Gondry, Glazer, Menke, Baxter/Wall, Clair) + 1 fiche IA (session 1)

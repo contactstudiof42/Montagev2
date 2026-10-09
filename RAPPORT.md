@@ -10,8 +10,8 @@ Ce qui a changé cette session : en atelier, j'ai corrigé un excès (v1 : un «
 | Domaine | Niveau | Confiance | Commentaire |
 |---|---|---|---|
 | Regard / autocritique | méthode écrite, appliquée 4 fois | moyenne | grille éprouvée sur une seule pièce |
-| Direction artistique | méthode écrite | faible | pas encore d'examen |
-| Culture montage / title design | 10 fiches + 1 fiche IA | moyenne | sources secondaires surtout, faits incertains listés en fin de fiche |
+| Direction artistique | méthode écrite, éprouvée par l'examen n°1 (13/20) | faible à moyenne | audace insuffisante, clichés de catégorie non vus → méthode corrigée |
+| Culture montage / title design / couleur | 10 fiches + 3 fiches couleur + 1 fiche IA | moyenne | sources secondaires surtout, faits incertains listés en fin de fiche |
 | Rythme | principes + mesure des coupes | moyenne | pas encore d'exercice d'atelier |
 | Motion design | principes + 1 pièce en 4 versions | moyenne | |
 | Son | principes + 1 design sonore synthétique | faible | je ne peux pas écouter : jugement par forme d'onde |
@@ -19,7 +19,9 @@ Ce qui a changé cette session : en atelier, j'ai corrigé un excès (v1 : un «
 | After Effects | expressions testées (syntaxe/logique Node) | moyenne | comportement réel AE non vérifié |
 | IA générative | état de l'art daté 2026-10 | moyenne | rien testé, info volatile |
 | Blender | rendu en ligne de commande maîtrisé pour l'atelier | moyenne | pas encore de skill dédié |
-| Couleur, Resolve, Premiere, tournage VFX | — | — | à venir |
+| Couleur (intention) | principes + 3 fiches | moyenne | pas encore éprouvé en atelier |
+| Couleur (pipeline) | conversions et LUT testées (colour-science 0.4.7, OCIO 2.6) | moyenne à bonne | pas de vrai rush log testé |
+| Resolve, Premiere, tournage VFX | — | — | à venir |
 
 ### Œuvres et auteurs analysés (fiches dans `culture/`)
 - **Walter Murch** (*In the Blink of an Eye*) : l'émotion gagne les arbitrages ; couper à la fin d'une pensée ; le son porte le raccord.
@@ -32,16 +34,31 @@ Ce qui a changé cette session : en atelier, j'ai corrigé un excès (v1 : un «
 - **Sally Menke** (Tarantino) : faire durer la tension tant que le rapport de force n'a pas basculé ; la résolution est bien plus courte que l'attente.
 - **Kirk Baxter et Angus Wall** (*The Social Network*) : une situation-cadre (déposition) comme pivot de montage, avec des raccords question/réponse entre présent et passé.
 - **Patrick Clair** (générique de *True Detective*) : le décor devient le contenu du personnage ; les défauts d'un traitement poussé à l'extrême deviennent la matière.
+- **Vittorio Storaro** : une couleur = un état, qui évolue avec le récit ; le noir est un outil.
+- **Christopher Doyle / Wong Kar-wai** : la couleur dit ce que les personnages taisent ; un seul rouge saturé porté par le décor.
+- **Roger Deakins** : une couleur par lieu ou chapitre, une source crédible pour chaque teinte, la retenue.
 - **IA** (`culture/ia-oeuvres-remarquables.md`) : *Total Pixel Space*, *Ancestra*, *The Hardest Part* (Washed Out / Paul Trillo), contre-exemple Coca-Cola : l'IA convainc quand le procédé est le sujet.
 
 ### Atelier
-- **Pièce 01 « Respiration »** (`atelier/01-respiration/`) : carton-titre d'apnée, 4 versions. Planches : `v1-planche.png` → `v2-planche.png` → `v3-planche.png` → `v4-planche.png` (+ `v4-onde.png` pour le son). Critiques notées dans `CRITIQUE.md`. Progression : pulse mécanique et bug d'apparition (v1) → asymétrie mais mouvement invisible (v2) → mouvement déplacé sur l'interlettrage, fond en profondeur (v3) → police choisie et son (v4).
+- **Pièce 01 « Respiration »** (`atelier/01-respiration/`) : carton-titre d'apnée de 10 s, 5 versions. Planches : `v1-planche.png` → `v2-planche.png` → `v3-planche.png` → `v4-planche.png` (+ `v4-onde.png` pour le son) → `v5-planche.png`. Critiques notées dans `CRITIQUE.md`. Progression :
+  - v1 : pulse mécanique de 22 % et bug d'apparition (mot noir sur fond bleu) ;
+  - v2 : asymétrie juste, mais mouvement devenu invisible ;
+  - v3 : mouvement **déplacé** sur l'interlettrage (le mot se resserre pendant l'apnée), fond en profondeur ;
+  - v4 : police choisie (EB Garamond) et design sonore synthétique ;
+  - v5 : interlettrage adapté à la police, inspiration plus lisible.
+  Il reste à corriger un bruit de rendu sur le fond clair et à choisir le son à l'écoute (je préfère la variante silence).
 
 ### Dernier examen créatif
-Aucun pour l'instant (premier prévu en session 2 ou 3).
+**N°1 — spot 30 s + vertical 15 s pour une mutuelle (offre jeunes parents)** : `examens/01-mutuelle-jeunes-parents.md`. Recommandation : montage de gestes de nuit en très gros plans, puis bascule vers un plan long de 9 s (le soulagement). **Autocritique : 13/20.**
+- Deux directions sur trois étaient trop proches (réalistes, nocturnes).
+- Deux clichés de catégorie m'ont échappé (la boîte à musique, le montage de gestes du quotidien).
+- Je n'ai vérifié ni la faisabilité ni le réglementaire.
+
+`montage-direction-artistique` est corrigé en conséquence : une direction doit changer de registre, et j'ajoute un test du cliché, la version muette, la faisabilité et les contraintes du secteur.
 
 ### Skills (voir le sommaire dans `.claude/skills/montage-expert/SKILL.md`)
-`montage-expert`, `montage-regard`, `montage-direction-artistique`, `montage-rythme`, `montage-motion-design-principes`, `montage-son-et-emotion` (artistiques, v1) ; `montage-loudness-livraison` (testé en labo), `montage-after-effects` (testé en syntaxe et logique Node, pas dans AE), `montage-ia-generative` (théorique, daté).
+Artistiques (v1) : `montage-expert`, `montage-regard`, `montage-direction-artistique` (corrigé après examen), `montage-rythme`, `montage-motion-design-principes`, `montage-son-et-emotion`, `montage-references`, `montage-couleur-et-intention`.
+Techniques : `montage-loudness-livraison` (testé en labo), `montage-couleur-pipeline` (testé en labo), `montage-after-effects` (testé en syntaxe et logique Node, pas dans AE), `montage-ia-generative` (théorique, daté).
 
 ### État de l'art IA générative (au 2026-10-09, sources dans `sources/ia-generative-2026-10.md`, rien testé)
 - Vidéo : Veo 3.1 (MAJ janv. 2026 : 9:16 natif, upscale 4K), Kling 3.0 (févr. 2026, jusqu'à 15 s avec son), Seedance 2.0 (févr. 2026), Runway Gen-4.5 (déc. 2025). **Sora arrêté** selon la page officielle OpenAI (app fermée le 26/04/2026, API annoncée pour le 24/09/2026 ; retrait effectif connu par une seule source secondaire).
@@ -65,10 +82,38 @@ Aucun pour l'instant (premier prévu en session 2 ou 3).
 
 ### Autres questions et prochaines priorités
 - Questions : quelles normes de loudness pour vos livraisons TV (charte PAD de quelle chaîne) ? Avez-vous des rushes libres de droits à me donner pour l'atelier ?
-- Prochaines priorités : examen créatif n°1 ; `montage-couleur-et-intention` + labo couleur (OCIO/colour-science) ; pièce 02 « spectaculaire » (contraste avec la 01) ; skill `montage-references` à partir de ~10 fiches ; exercice de rythme (même matériau sur trois tempos).
+- Prochaines priorités :
+  - atelier « direction A dans le noir » (la piste audacieuse de l'examen) ;
+  - clôture de la pièce 01 ;
+  - pièce 02 spectaculaire et verticale ;
+  - skill `montage-grammaire` ;
+  - atelier couleur « même plan, trois étalonnages » ;
+  - exercice de rythme (même matériau sur trois tempos).
 
 ---
 
 ## JOURNAL
 
-### Session 1 — 2026-10-09, 22:48 → (fin indiquée plus bas) UTC
+### Session 1 — 2026-10-09
+- **Heure** : 22:48 → 23:15 UTC environ. Démarrage : la branche n'existait pas, je l'ai créée. `GOUTS.md` est absent.
+- **Méthode** : j'ai fait moi-même le regard et la création (atelier, examen, synthèse `montage-references`, skills socles). J'ai confié en parallèle à des sous-agents la recherche documentaire et les labos, dont je relis les résultats.
+- **Œuvres analysées (14 fiches)** :
+  - montage et title design : Murch, Schoonmaker, Saul Bass, Kyle Cooper, Edgar Wright, Gondry (*Star Guitar*), Glazer (Guinness *Surfer*), Sally Menke, Baxter et Wall (*The Social Network*), Patrick Clair (*True Detective*) ;
+  - couleur : Storaro, Doyle et Wong Kar-wai, Deakins ;
+  - IA : *Total Pixel Space*, *Ancestra*, *The Hardest Part*, pub Coca-Cola.
+- **Pièce créée** : 01 « Respiration », v1 → v5. Blender 4.2.3 en ligne de commande (Cycles CPU), ffmpeg, son synthétisé avec numpy, police EB Garamond (OFL).
+- **Tests réussis** :
+  - loudness : la mesure ebur128 puis un gain atterrit à 0,0-0,2 LU de la cible ; loudnorm en 2 passes rate 2 fois sur 4 (bascule silencieuse en mode dynamique) ;
+  - livraison H.264, master et vertical : conformes ;
+  - scdet : 8 coupes franches sur 8 détectées ;
+  - expressions AE sous Node : 32 tests sur 32 ;
+  - couleur : allers-retours exacts, LUT ffmpeg identique au calcul Python (0,0017 code d'écart).
+- **Tests ratés ou limites, avec leur cause** :
+  - scdet ne voit pas les fondus enchaînés ;
+  - le passage mono → stéréo avec `-ac 2` perd 3 dB (il faut `pan`) ;
+  - le fetch d'une police sur github.com est bloqué hors périmètre (jsDelivr fonctionne) ;
+  - Cycles à 4 échantillons laisse des taches sur un fond clair ;
+  - je ne peux ni voir le mouvement ni entendre le son : je juge par planches et par mesures.
+- **Skills créés** : les 12 listés plus haut, dont `montage-direction-artistique` corrigé après l'examen n°1.
+- **Observation** : un serveur `HIGGSFIELD_MCP` est visible dans l'environnement. Je ne l'ai pas appelé et j'ai noté les noms d'outils dans `PLAN-TESTS-MCP.md` comme hypothèses.
+- **Sources principales** : `sources/culture-session1.md`, `sources/loudness-livraison.md`, `sources/after-effects.md`, `sources/ia-generative-2026-10.md`, `sources/couleur-pipeline.md`. Les faits non vérifiés sont listés en fin de chaque fiche.
