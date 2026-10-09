@@ -124,3 +124,20 @@ Sources utilisées pour les 5 fiches de `culture/` (Murch, Schoonmaker, Bass, Co
 - https://www.booska-p.com/?p=214011 — clip « You Know » (2022), ambiance très sombre ; *Akimbo* disque d'or.
 - https://www.deezer.com/artist/7668530 — titre de 3:45, Sam Tiba crédité (via résumé, non lu directement).
 - https://www.synonyme-du-mot.com/les-articles/ou-est-nee-ziak — origine Évry et bandana (source secondaire peu fiable).
+
+## Goûts de l'utilisateur — Interstellar
+
+Fiche : `culture/interstellar-rythme.md`.
+- https://www.postmagazine.com/Publications/Post-Magazine/2014/December-1-2014/Interstellar-Editor-Lee-Smith-ACE.aspx — entretien Lee Smith : la difficulté du film est dans le rythme ; montage d'abord linéaire ; consigne de Nolan sur les plans extérieurs (lu via un résumé, formulation confuse).
+- https://cinemontage.org/interstellar-exploration-space-well-filmmaking/ — Smith et Nolan : montage parallèle travaillé en post-production, le point de vue comme priorité (page vide à la lecture ; via résumé de recherche).
+- https://www.slashfilm.com/534906/christopher-nolan-interstellar-sound-problems — Nolan défend un mixage « impressionniste », dialogues parfois sous les effets, voulu.
+- https://www.covnews.com/nationworld/movie-mumbles-the-story-behind-the-interstellar-dialogue/ — AP : dialogues couverts, y compris pendant l'amarrage (lu via résumé).
+- https://nofilmschool.com/interstellar-music-timed-to-physics — un tic = un jour terrestre dans *Mountains* ; orgue du Temple Church ; lettre de Nolan à Zimmer.
+- https://nofilmschool.com/2018/06/interstellars-ticking-clock-hiding-suspense-plain-sight — suspense caché dans la musique (essai vidéo Entertain the Elk).
+- https://customerservice.cineworld.co.uk/static/en/uk/blog/hans-zimmer-best-interstellar-soundtrack-moments — source du chiffre 1,25 s (non primaire).
+- https://en.wikipedia.org/wiki/Interstellar_(soundtrack) — lettre de Nolan, orgue Harrison & Harrison 1926, Roger Sayer.
+- https://www.classicfm.com/composers/zimmer/how-wrote-interstellar-music/ — pièce piano-orgue écrite en une nuit après la lettre.
+- https://www.denofgeek.com/movies/interview-interstellar-cinematographer-hoyte-van-hoytema/ — 60-70 min en IMAX, références aux images NASA.
+- https://filmmakermagazine.com/?p=88429 — son de Richard King : approche documentaire, basses fréquences, son direct dans le vaisseau (via résumé).
+- https://www.slashfilm.com/how-long-is-interstellar-running-time — durée 169 min.
+- https://www.gradesaver.com/interstellar/study-guide/summary-section-3-cooper-says-goodbye-to-tom-the-ranger-heads-to-millers-planet — départ de la ferme : décompte en prélap, voix de TARS.

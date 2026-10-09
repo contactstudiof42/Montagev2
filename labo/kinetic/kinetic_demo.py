@@ -134,7 +134,7 @@ for k, c in enumerate(COUPES):
         poser(whoosh(av, 3, f0=250 + 80 * k, f1=3000 + 300 * k), c, -10 - (k % 3) * 2, f"whoosh_{av}i")
     else:
         poser(click(), c, -20, "click_coupe")
-poser(riser(30), debuts[IMPACT], -6, "riser")
+poser(riser(30), debuts[IMPACT] - 1, -12, "riser")  # v2 : -12 dB et coupé 1 image AVANT l'impact (trou = "suck-out")
 poser(whoosh(5, 4, 200, 2500), debuts[PUNCH], -12, "whoosh_punch")  # le punch-in a sa propre ponctuation
 
 # Texte mot à mot (calé sur les plans 10-13) + click doux par mot
@@ -170,17 +170,18 @@ m1 = ebur(sfx_wav)
 gain = -14.0 - m1["I"]
 af = f"volume={gain:.2f}dB"
 if m1["TP"] + gain > -1.5:
-    af += ",aresample=192000,alimiter=limit=0.8414:attack=1:release=50:level=false,aresample=48000"
+    af += ",aresample=192000,alimiter=limit=0.7079:attack=1:release=50:level=false,aresample=48000"
 sfx_norm = os.path.join(REND, "sfx_norm.wav")
 run(["ffmpeg", "-y", "-v", "error", "-i", sfx_wav, "-af", af, "-ar", "48000", "-c:a", "pcm_s24le", sfx_norm])
 m2 = ebur(sfx_norm)
 gain2 = 0.0
-if abs(m2["I"] + 14) > 0.5:  # le limiteur a mangé du niveau : 2e passe de gain sous limiteur
-    gain2 = -14.0 - m2["I"]
-    af2 = f"volume={gain2:.2f}dB,aresample=192000,alimiter=limit=0.8414:attack=1:release=50:level=false,aresample=48000"
-    run(["ffmpeg", "-y", "-v", "error", "-i", sfx_wav, "-af", af.split(",")[0] + "," + af2, "-ar", "48000",
-         "-c:a", "pcm_s24le", sfx_norm])
-    m2 = ebur(sfx_norm)
+passes = 1
+while abs(m2["I"] + 14) > 0.3 and passes < 5:  # le limiteur mange du niveau : on itère gain + limiteur
+    gain2 += -14.0 - m2["I"]
+    af2 = (f"volume={gain + gain2:.2f}dB,aresample=192000,alimiter=limit=0.7079:attack=1:release=50:level=false,"
+           "aresample=48000")
+    run(["ffmpeg", "-y", "-v", "error", "-i", sfx_wav, "-af", af2, "-ar", "48000", "-c:a", "pcm_s24le", sfx_norm])
+    m2 = ebur(sfx_norm); passes += 1; af = af2
 
 # ---------- 4. Vidéo : plans -> concat -> texte mot à mot -> mux ----------
 fichiers = [plan(i) for i in range(len(DUREES))]
@@ -210,7 +211,7 @@ a = np.frombuffer(pcm, np.float32)
 onsets = {}
 for idx in (IMPACT, IMPACT2):
     c = int(debuts[idx]) * SPF
-    w = a[c - 3 * SPF:c + 3 * SPF]
+    w = np.convolve(a[c - 3 * SPF:c + 3 * SPF], np.ones(240) / 240, mode="same")  # passe-bas ~200 Hz : ignore riser/whoosh
     k = int(np.argmax(np.abs(w) > 0.5 * np.max(np.abs(w))))
     onsets[f"plan{idx}"] = {"coupe_image": int(debuts[idx]), "onset_ms_vs_coupe": round((k - 3 * SPF) / SR * 1000, 1)}
 
@@ -238,7 +239,7 @@ onde = os.path.join(ICI, "forme_onde_coupes.png")
 run(["ffmpeg", "-y", "-v", "error", "-i", ppm, onde])
 
 res = {"durees_images": DUREES, "coupes_images": COUPES, "coupes_detectees_mp4": coupes_det,
-       "sfx": evenements, "loudness_sfx_brut": m1, "gain_db": round(gain, 2), "gain2_db": round(gain2, 2),
+       "sfx": evenements, "loudness_sfx_brut": m1, "gain_db": round(gain, 2), "gain2_db": round(gain2, 2), "passes": passes,
        "filtre": af, "loudness_sfx_norm": m2, "loudness_mp4": m3, "onsets_impact": onsets,
        "planche_ko": round(os.path.getsize(planche) / 1024, 1), "onde_ko": round(os.path.getsize(onde) / 1024, 1)}
 json.dump(res, open(os.path.join(ICI, "mesures.json"), "w"), indent=1, ensure_ascii=False, default=int)
