@@ -42,14 +42,20 @@ for k, s in enumerate(temps):
 if len(pics) >= 8:
     kk, tt = np.array(pics).T; periode, p0 = np.polyfit(kk, tt, 1); BPM = 60 / periode
     temps = p0 + periode * np.arange(int((len(x) / SR - p0) / periode) + 1)
+# premier temps de mesure : le décalage (0..TPM-1) dont les temps portent le plus d'énergie (accent), pas forcément le 1er temps
+def energie(s):
+    i = int(round((s - T0) * fr)); return flux[max(0, i - 2):i + 3].max() if 0 <= i < len(flux) else 0.0
+acc = [sum(energie(s) for s in temps[o::TPM]) / max(1, len(temps[o::TPM])) for o in range(TPM)]
+DEC = int(np.argmax(acc)); srt = sorted(acc)
+AMBIGU = srt[-1] < 1.15 * srt[-2]   # pas d'accent net : M1 arbitraire, à vérifier à l'oreille
 def tc(s):
     f = int(round(s * FPS)); return f"{f // (3600 * FPS):02d}:{f // (60 * FPS) % 60:02d}:{f // FPS % 60:02d}:{f % FPS:02d}"
 with open(base + ".csv", "w", newline="") as fh:
     w = csv.writer(fh); w.writerow(["temps_s", "timecode", "image", "nom"])
     for k, s in enumerate(temps):
-        w.writerow([f"{s:.3f}", tc(s), int(round(s * FPS)), f"M{k // TPM + 1}" if k % TPM == 0 else f"t{k % TPM + 1}"])
+        w.writerow([f"{s:.3f}", tc(s), int(round(s * FPS)), f"M{(k - DEC) // TPM + 1}" if (k - DEC) % TPM == 0 else f"t{(k - DEC) % TPM + 1}"])
 dur = int(round(len(x) / SR * FPS))
-mk = "".join(f"<marker><name>{escape('M%d' % (k // TPM + 1) if k % TPM == 0 else '')}</name><comment>{BPM:.2f} BPM</comment>"
+mk = "".join(f"<marker><name>{escape('M%d' % ((k - DEC) // TPM + 1) if (k - DEC) % TPM == 0 else '')}</name><comment>{BPM:.2f} BPM</comment>"
              f"<in>{int(round(s * FPS))}</in><out>-1</out></marker>" for k, s in enumerate(temps))
 xml = (f'<?xml version="1.0" encoding="UTF-8"?>\n<!DOCTYPE xmeml>\n<xmeml version="4"><sequence id="beats">'
        f"<name>Temps {BPM:.1f} BPM</name><duration>{dur}</duration><rate><timebase>{FPS}</timebase><ntsc>FALSE</ntsc></rate>"
@@ -57,4 +63,4 @@ xml = (f'<?xml version="1.0" encoding="UTF-8"?>\n<!DOCTYPE xmeml>\n<xmeml versio
        f"<displayformat>NDF</displayformat></timecode>{mk}<media><video><track/></video><audio><track/></audio></media>"
        f"</sequence></xmeml>\n")
 open(base + ".xml", "w").write(xml)
-print(f"BPM={BPM:.2f} phase={p0:.3f}s temps={len(temps)}")
+print(f"BPM={BPM:.2f} phase={p0:.3f}s temps={len(temps)} 1er_temps_de_mesure=temps n°{DEC + 1}" + (" (ACCENT AMBIGU : vérifier M1 à l'oreille)" if AMBIGU else ""))
