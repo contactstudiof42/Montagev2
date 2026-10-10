@@ -5,7 +5,16 @@ _Lire en premier. Mis à jour à chaque fin de session._
 ## Consigne durable de l'utilisateur (2026-10-10)
 - Développer une **culture YouTube / internet** (divertissement, essai vidéo, vulgarisation, vlog, motion de chaîne, Shorts, cultures d'edit) au même niveau que cinéma et clip. Voir BACKLOG « Consigne » (Y1-Y6) : une part de chaque session jusqu'à parité.
 
-## Où on en est (après la session 21, 2026-10-10)
+## Où on en est (après la session 22, 2026-10-10)
+- **Session 22** (lancée par l'utilisateur, « feu vert », après un arrêt de l'anti-doublon : la session 21 avait commité 2 min avant) : veille IA (sous-agent : seul nouveau, Suno Speech bêta et Studio), fiche **gags de montage** (Y21, sous-agent), **pièce 26 « Densité décroissante »** (Y20, v1-v4, v4 = réf.). Examens : … n°11 15. Prochain examen n°12 vers la session 24-25 (Y24, pas YouTube).
+
+## Reprendre ici (session 23)
+0. Veille IA du jour (Y11, sous-agent dès le démarrage). `pip install numpy pillow` (9 s).
+1. **Y27** atelier « un gag de montage » (écarts en images, réaction tenue, silence-gag) ; **Y25** pièce 26 v5 (flamme 3-5 %, couper vers la lumière) ; Y22 (pièce 25 v4), Y16, Y9.
+2. Pièce 26 : `python3 atelier/26-densite-decroissante/piece.py v4 atelier/rendus/26` (~80 s) puis `mesure.py` (16 s par version).
+3. L'horloge de la VM est peu fiable (10 min affichées pour ~35 min de travail réel) : compter le temps en tâches, pas à l'horloge.
+
+## Ancien point (après la session 21, 2026-10-10)
 - **Session 21** : examen n°11 (Y10, divertissement YouTube de groupe, 15/20), labo `labo/youtube/densite.py` (courbe d'événements/min, vérité terrain 3/3 ; la relance doit être un pic), sous-agents : veille IA (rien de neuf), fiche slow TV / ASMR (Y18). Examens : … n°10 15, **n°11 15**. Prochain examen n°12 vers la session 24-25 (sujet non YouTube : fiction ou pub, pour équilibrer).
 
 ## Reprendre ici (session 22)
@@ -52,6 +61,7 @@ _Lire en premier. Mis à jour à chaque fin de session._
 - Un serveur MCP nommé `HIGGSFIELD_MCP` est listé dans l'environnement : non appelé (consigne phase 1). Noms observés dans `PLAN-TESTS-MCP.md`.
 
 ## Historique
+- Session 22 — 2026-10-10 17:38 UTC → ~18:20 réel (horloge VM ~17:50) : veille IA, fiche gags de montage (sous-agents), pièce 26 v1-v4 ; skills youtube, rythme, son-et-emotion, ia-generative ; PLAN-TESTS 69.
 - Session 21 — 2026-10-10 17:29 UTC → fin (horloge peu fiable) : examen n°11 (15/20), labo densite.py, sous-agents veille IA / fiche slow TV-ASMR ; skills direction-artistique, youtube, references, ia-generative.
 - Session 20 — 2026-10-10 16:29 UTC → fin (horloge peu fiable) : pièces 24 (face caméra) et 25 (au lit), labo écho, sous-agents veille IA / infrarouge / Resolve retime / affiches de festivals ; skills youtube, rythme, couleur-et-intention, motion-design-principes, preparation-tournage-vfx, ia-generative ; PLAN-TESTS 67.
 - Session 19 — 2026-10-10 15:29 → ~16:00 UTC (horloge peu fiable) : veille IA (sous-agent), pièce 22 v3, examen n°10 (15/20), pièce 23 v1-v3 ; skills blender, couleur-et-intention, direction-artistique, youtube, preparation-tournage-vfx, ia-generative.

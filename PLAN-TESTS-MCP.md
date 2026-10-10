@@ -160,3 +160,8 @@ Le serveur `HIGGSFIELD_MCP` est toujours listé, **non appelé** (consigne phase
 ## 68. (session 20) Resolve : saccade choisie (`sources/resolve-saccade-choisie-2026-10.md`, montage-resolve § 4 ter) [THÉORIQUE]
 - Vérifier si Retime Frame accepte des clés Step In / Step Out (tenues de 2-4 images sans adoucissement) ; comparer à Clip > Freeze Frame segment par segment.
 - Vérifier la perte annoncée des Freeze Frames en XML FCP 7 vers Premiere (manuel 21) ; sinon rendre la saccade en média avant l'échange.
+
+## 69. (session 22) Pièce 26 « Densité décroissante » sur de vrais rushes [THÉORIQUE pour les logiciels]
+- Premiere : sur un vrai divertissement de groupe, mesurer la loudness momentanée autour de chaque relance (export des stems) et vérifier que la musique qui part **sur** un drop ne se lit pas comme une coupure ; comparer à la coupure nette (v1).
+- Premiere / AE : construire la relance « caméra cachée » (changement de régime : monochrome, grain, timecode, son appauvri) en préréglage réutilisable ; vérifier à l'export que le grain ne ruine pas l'encodage (YDIF gonflé ×5 en labo).
+- Flamme de bougie réelle filmée : mesurer sa variation de luminance globale (objectif 3-5 %) et la passer à `flash_check.py`.
