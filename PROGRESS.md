@@ -2,6 +2,9 @@
 
 _Lire en premier. Mis à jour à chaque fin de session._
 
+## Consigne durable de l'utilisateur (2026-10-10)
+- Développer une **culture YouTube / internet** (divertissement, essai vidéo, vulgarisation, vlog, motion de chaîne, Shorts, cultures d'edit) au même niveau que cinéma et clip. Voir BACKLOG « Consigne » (Y1-Y6) : une part de chaque session jusqu'à parité.
+
 ## Où on en est (après la session 16, 2026-10-10)
 - **Skills (21)** : session 16 : `montage-premiere` (saccade choisie : Frame Hold Options, Frame Sampling, Posterize Time, Echo obsolète en 26.0), `montage-after-effects` (expression tableau sur Time Remap, Frame Blending off), `montage-motion-design-principes` (deux grammaires de la trace ; 6c hiérarchiser une liste = économiser des coups, sections calées sur la barre), `montage-references` (11b Marey).
 - **Culture** : 51 fiches (nouvelle : `culture/chronophotographie-marey-muybridge.md`).

@@ -4,6 +4,15 @@ Légende : `[ART]` regard, culture, atelier, examens · `[TECH]` maîtrise techn
 Statut : `[ ]` à faire · `[~]` entamé · `[x]` fait (garder 1 ligne de trace).
 Règle : alterner ART et TECH. Réalimenter dès qu'il reste moins de 10 sujets ouverts.
 
+## Consigne de l'utilisateur (2026-10-10, session 17) : culture YouTube et internet au même niveau que cinéma et clip
+L'utilisateur demande une vraie culture de l'audiovisuel internet, notamment **YouTube** (divertissement, essai vidéo, vulgarisation, vlog, motion design de chaîne, Shorts, cultures d'edit), aussi solide que la culture cinéma et clip : le montage, les coupes et le motion y obéissent à d'autres logiques (rétention, packaging, face caméra, voix qui guide, volume de production). Chaque session doit y consacrer une part, jusqu'à parité (compter les fiches : cinéma / clip / pub / YouTube-internet).
+Y1. [~] [ART] Fiches YouTube (session 17, sous-agents) : divertissement et rétention (MrBeast, YouTube FR), essai vidéo (Every Frame a Painting, Nerdwriter), doc explicatif (Vox, Johnny Harris), vulgarisation FR, Kurzgesagt, motion de chaîne, vlog (Neistat et héritiers), cultures d'edit (YTP, Vine, brainrot).
+Y2. [ ] [ART] Skill `montage-youtube` : grammaire du long format YouTube par genre, rétention, packaging, contraste avec cinéma et clip.
+Y3. [ ] [TECH] Spécifications YouTube officielles (encodage d'envoi, chapitres, écrans de fin, miniatures, Shorts) + labo : validateur de chapitres, test de lisibilité de miniature à taille réelle.
+Y4. [ ] [ART] Atelier « face caméra » : la même prise de parole montée en jump cuts secs / punch-in alternés / plans de coupe B-roll ; mesurer le nombre d'événements par minute et juger la fatigue.
+Y5. [ ] [ART] Fiches suivantes : gaming (montages de Twitch et YouTube gaming, Joueur du Grenier, Squeezie gaming), podcasts vidéo et clips verticaux de podcasts, YouTube musique (live sessions COLORS, Tiny Desk, La Blogothèque « Concerts à emporter »), courts métrages et animation diffusés sur YouTube (Cyriak, Felix Colgrave, Don Hertzfeldt en ligne), chaînes d'analyse de clips et de cinéma FR (Le Fossoyeur de films, Dr Movie, Calmos ?), créateurs IA de 2025-2026.
+Y6. [ ] [ART] Examen n°9 ou n°10 : un brief YouTube long format (vidéo de 12 min pour une chaîne de vulgarisation ou de divertissement), à traiter uniquement avec les skills.
+
 ## Priorité haute (prochaines sessions)
 0. [~] [ART] **Pièce 02 « Étincelle »** (`atelier/02-etincelle/`) : v1 → v5 en session 2. Reste : v6 = vraie flamme (simulation Blender ou particules) à la place du cône ; tester une durée de silence plus longue (9 → 15 images) ; un plan de « frôlement » raté à 170 pour planter l'attente (Chekhov) ; variante **macro façon Ziak** du même matériau (montage sur l'arrangement, aucun SFX surligné) pour comparer les deux usages.
 0b. [x] [ART] Ziak analysé sur le fichier fourni (88 plans, montage calé sur l'arrangement et pas sur le beat, seconde horloge visuelle). Outil réutilisable : `labo/analyse-clip/analyse_clip.py`.
