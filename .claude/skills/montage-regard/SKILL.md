@@ -5,7 +5,7 @@ description: Juger un plan, une coupe, un montage, une animation ou un étalonna
 
 # Le regard : principes de jugement et grille d'autocritique
 
-Version 1 (session 1, 2026-10-09). Ce skill dit **comment je juge**. Il évolue à chaque pièce d'atelier et chaque examen.
+Version 1 (session 1, 2026-10-09), journal déplacé dans `journal.md` et règles distillées en session 8. Ce skill dit **comment je juge**. Il évolue à chaque pièce d'atelier et chaque examen.
 
 ## Principes que je défends
 1. **L'intention d'abord, l'effet ensuite.** Avant de juger un choix, je reformule en une phrase ce que le plan doit faire ressentir ou comprendre. Un choix est bon s'il sert cette phrase, quelle que soit sa difficulté technique.
@@ -47,25 +47,16 @@ Verdict : une pièce n'est « livrable » que si **intention, lisibilité et jus
 4. Commande type [TESTÉ EN LABO, session 1] :
    `ffmpeg -i v.mp4 -vf "select='not(mod(n\,20))',scale=320:-1,drawtext=text='%{n}':x=4:y=4:fontsize=12:fontcolor=yellow,tile=5x2" -frames:v 1 planche.png`
 
-## Journal des leçons (alimenté par l'atelier)
-- 2026-10-09, atelier 01 v1 : apparition par émission 0 → mot noir sur fond bleu (fausse ombre). Pulse symétrique ±10 % = mécanique. Italique FreeSerif : « ff » mal approché, illisible en titre.
-- 2026-10-09, atelier 01 v2 : corriger un excès en réduisant l'amplitude du même paramètre donne un mouvement invisible. Il faut **déplacer** le mouvement vers le paramètre qui porte le sens.
-- 2026-10-09, atelier 01 v3-v4 : une police système (« Times ») se voit comme une absence de choix ; une valeur d'interlettrage ne se transpose pas d'une police à l'autre ; un fond en dégradé dont l'intensité varie donne une profondeur qu'un aplat n'a pas.
-- 2026-10-09, atelier 01 v4 : je me suis écarté de ma propre intention sonore (silence → grondement) sans le décider. **Relire l'intention avant chaque version.**
-- Limite de l'atelier cloud : je ne vois pas la vidéo en mouvement ni n'entends le son. Les planches contact, les courbes de luminance (`signalstats`) et les formes d'onde sont des substituts ; noter ce qui reste à juger en temps réel.
-- 2026-10-09, atelier 01 v6 : j'ai « corrigé » un bruit de rendu imaginaire (16 échantillons + débruitage, 3× plus long) ; la mesure a montré que les taches venaient de l'encodage H.264 du dégradé. **Mesurer avant de corriger** ; une planche réduite grossit les artefacts de compression.
-- 2026-10-10, atelier 02 v1 : 7 plans sur 19 illisibles à leur 1re image (sujet hors cadre, dans le noir, trop petit). En montage rapide, **la planche « 1re image de chaque plan » est le premier test** ; elle a révélé plus de défauts que n'importe quelle autre lecture.
-- 2026-10-10, atelier 02 v4 : une fois tout lisible, le défaut restant était de **conception** : une suite d'objets sans lien n'est pas une montée, même bien rythmée. Une coupe rapide ne crée de la tension que si les plans s'enchaînent par **cause et effet** (Honda « Cog »). Question à ajouter à la grille : *qu'est-ce qui relie ce plan au suivant, autre que le tempo ?*
-- 2026-10-10, atelier 02 : un parti pris de couleur se **mesure** (% de pixels chauds par image), comme la loudness. Le dire avec un chiffre rend la critique opposable.
-- 2026-10-10, atelier 04 v1 : le sujet a sa propre dramaturgie (la marée découvre lentement ce qui est haut, puis tout le sol d'un coup). **Chercher d'abord le rythme que le sujet impose** avant d'en plaquer un. Et mon système (« une seule chaleur ») est revenu par la matière (la rouille) alors que je l'avais chassé de la lumière : le constater, le décider, ne pas le subir.
-- 2026-10-10, atelier 04 v2 : caméra sous l'eau pendant 97 images, invisible sur mon test d'une image (prise au milieu). **Tester la 1re et la dernière image** d'un plan animé et vérifier les contraintes géométriques avant un rendu long. L'accident a ouvert une direction (ironie dramatique : montrer l'objet sous l'eau d'abord).
-- **Un effet a besoin de ce qu'il imite** (atelier 05, session 5) : une halation sans source ponctuelle ne fait que teinter le ciel ; un grain trop gros devient du bruit de surveillance. Avant d'ajouter un effet de support, vérifier que l'image contient ce que l'effet suppose (spéculaires, émulsion fine, lumière dure).
-- **Une image fixe donne un registre, pas un sens** (atelier 05) : « menace » ou « constat » se lisent sur une image ; « souvenir » exige un regard (contrechamp, voix, son). Ne pas demander à l'étalonnage ce qui revient au montage.
-- **Mesurer avant de corriger, encore** (atelier 05) : « neutre » se vérifie au biais R-B du ciel et du sol ; mon premier « constat » neutre était bleu à -19.
-- **Contrôler chaque caméra à l'image du contact, pas au milieu du plan** (atelier 07, session 6) : deux caméras placées sous le plan de la table cachaient le contact domino → tasse ; une image fixe à l'image 64 l'a montré avant un rendu de 80 images. Une chaîne causale se vérifie aussi maillon par maillon avant de tourner (la tasse partait seule : 1 cm de jeu).
-- **Le cadre doit contenir la conséquence** (atelier 07) : dans deux montages sur trois, l'impact final (le son le plus fort) avait lieu au bord du cadre ou hors champ. Je cadre d'abord la fin, puis je vérifie que la chaîne entre.
-- **Une correction locale peut casser ailleurs** (atelier 07 v2) : en arrêtant la tasse au sol, j'ai empêché sa bascule, et elle tombait debout. Après chaque correction, **relire toute la planche**, pas seulement l'endroit corrigé.
-- **Lisibilité = part du cadre × taille d'écran, pas résolution** (atelier 07, test 480 contre 960) : à 480 px, un domino de 3 px se lit une fois agrandi ; le problème était qu'il occupait 3 % de la largeur. Mesurer la taille du sujet en % du cadre et la rapporter à l'écran de diffusion (téléphone : 6 cm) avant de monter la résolution.
-- **Le sens en retard a besoin d'un retour** (atelier 08, session 7) : je croyais que le plan de l'absence (le bord vide) porterait le manque ; seul, il est abstrait. C'est la **reprise d'une image déjà vue** (le plan large du début, identique au pixel), relue après qu'on a vu ce qui manquait, qui pèse. Monter l'absence = répéter, pas montrer du vide. Et l'ordre « explicatif » (passé d'abord) est plus clair mais moins fort : l'absence y est expliquée au lieu d'être découverte.
-- **L'indice d'usage le plus fort est ce que le souvenir a laissé dans le présent** (atelier 08 v4) : une trace sèche de tasse, là où la tasse était, donne un sujet au plan vide et fait exister quelqu'un sans le montrer. Chercher la trace avant le flash-back.
-- **Une conclusion d'atelier peut être fausse parce que l'outil de mesure l'était** (session 7) : mon contrôle de flashs « plein écran » déclarait sûrs un petit carré clignotant et mon générique ; avec la fenêtre locale du WCAG, l'un échoue et l'autre est à la limite. Quand un outil me donne raison trop facilement, vérifier l'outil contre la norme.
+## Règles tirées de l'atelier (distillées en session 8 ; détail daté et preuves : `journal.md`)
+1. **Mesurer avant de corriger**, et vérifier l'outil de mesure contre la norme quand il me donne raison trop facilement (01 v6, 05, contrôle de flashs session 7).
+2. **Une explication ne va dans un skill qu'après un essai qui isole la variable** (10 v4 : « AgX » réfuté par un seul rendu en Standard).
+3. **Premier test d'un montage rapide : la planche « 1re image de chaque plan »** ; pour un plan animé, la 1re, la dernière et l'image de l'événement, pas le milieu (02 v1, 04 v2, 07).
+4. **Ce qui relie un plan au suivant doit être autre chose que le tempo** : cause, regard, mouvement, son, idée (02 v4, Honda « Cog »).
+5. **Chercher d'abord le rythme que le sujet impose** avant d'en plaquer un (04).
+6. **Déplacer le mouvement vers le paramètre qui porte le sens** plutôt que réduire l'amplitude du mauvais (01 v2).
+7. **Un effet a besoin de ce qu'il imite** ; une image fixe donne un registre, pas un sens : le sens vient du montage (05).
+8. **Le cadre contient la conséquence** ; la lisibilité dépend de la part du cadre, pas de la résolution (07).
+9. **Le sens en retard a besoin d'un retour** (reprise d'une image déjà vue) ; chercher la trace avant le flash-back (08).
+10. **Une correction locale peut casser ailleurs** : relire toute la planche après chaque correction (07 v2).
+11. **Casser une règle complètement, une fois, au bon endroit** : à moitié, c'est une erreur (11, 180°).
+12. Limite assumée : je juge sur planches, mesures et formes d'onde ; le jugement en temps réel (fluidité, son) reste à confirmer en phase 2.
