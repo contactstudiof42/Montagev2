@@ -31,6 +31,7 @@ Spectateur **choisi mais révocable** à chaque seconde : promesse (titre + mini
 - La musique est le scénario : couper sur l'arrangement (macro) ou sur les temps (micro), le décider consciemment (`montage-rythme`). Ziak : macro, menace contenue ; Gondry : chaque couche sonore = une famille visuelle ; Jonze : quand le corps produit le rythme, le montage se retire.
 - Une idée de forme forte vaut mieux qu'un récit (concept, dispositif, plan-séquence).
 - Déclinaisons verticales tirées des mêmes rushes (examen n°2 : un tournage, deux montages).
+- **Shorts narratifs** (session 24, `culture/shorts-narratifs-verticaux.md`, pièces 30 et 32) : la chute est la dernière image ; **cacher la coupe** pour la magie (cache sur l'union des silhouettes, rien de vivant hors du cache), **la montrer** pour la comparaison (même cadre = règle graduée) ; en 9:16, un écran partagé fait comprendre un écart, l'alternance plein cadre le fait sentir (pièce 29 v8).
 
 ## Corporate, institutionnel, film de marque
 - Le spectateur est **professionnel et sceptique** : il veut des preuves, pas des adjectifs. **La forme doit être l'argument** (examen n°3 : des paires de plans « deux vies » qui prouvent la continuité ; Honda « Cog » : quand la preuve est l'argument, ne pas couper).
