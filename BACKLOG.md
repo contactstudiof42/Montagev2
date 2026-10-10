@@ -82,7 +82,7 @@ Règle : alterner ART et TECH. Réalimenter dès qu'il reste moins de 10 sujets 
 56. [~] [ART] (session 10 : annexe `montage-direction-artistique/signature-et-cartons.md` v1, déduite ; reste : signatures réelles analysées et datées) Skill ou annexe « signature et cartons » (révélé par l'examen n°6 : « Devenez-la ») : écrire une phrase de fin, 3 variantes, critères (lisible en 2 s, sans ambiguïté, verbe d'action), exemples analysés.
 57. [ ] [ART] Atelier « la fable » (principe John Lewis *Man on the Moon*) : un sujet douloureux (solitude) grossi jusqu'à la fable en 10 s Blender, contre la version réaliste ; critique : la métaphore protège-t-elle du pathos ?
 58. [x] [TECH] (session 10 : `labo/workflows/verif_edl.py`, 4/4 défauts, 0 faux positif ; reste : convention « source sans vitesse », vraies EDL de Premiere/Resolve en phase 2) Écrire un vérificateur d'EDL (`labo/workflows/`) : cohérence source/record/vitesse M2, timecode de départ, plans entrants des fondus ; le passer sur les EDL de l'atelier.
-59. [ ] [ART] Culture : fiche sur Dougal Wilson (*The Long Wait*, *Monty*, *Buster*) ou Kim Gehrig (*Man on the Moon*, « This Girl Can ») : la chute qui relit le film.
+59. [x] [ART] (session 10 : `culture/dougal-wilson-kim-gehrig-pub.md` ; reste [ ] lire l'histoire orale Creative Review (403)) Culture : fiche sur Dougal Wilson (*The Long Wait*, *Monty*, *Buster*) ou Kim Gehrig (*Man on the Moon*, « This Girl Can ») : la chute qui relit le film.
 
 ## Fait (trace)
 - [x] [ART] Session 10 : examen n°6 (15/20), pièce 12 v8, fiche pub émotionnelle de Noël (John Lewis)
