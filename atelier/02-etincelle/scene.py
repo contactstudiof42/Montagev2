@@ -7,6 +7,7 @@ argv = sys.argv[sys.argv.index("--") + 1:]
 jobs = json.load(open(argv[0])); out = argv[1]; os.makedirs(out, exist_ok=True)
 RES = (270, 480) if len(argv) < 3 else tuple(map(int, argv[2].split("x")))
 IGN = 200  # image d'allumage
+MX, MY = 1.535, 0.0  # allumette sous l'arc du pendule (contact à 32°)
 
 bpy.ops.wm.read_factory_settings(use_empty=True)
 sc = bpy.context.scene
@@ -54,8 +55,11 @@ bpy.ops.object.empty_add(location=(0, 0, 3)); piv = bpy.context.object
 bpy.ops.mesh.primitive_cylinder_add(radius=0.015, depth=2.4, location=(0, 0, 1.8)); tige = obj(bpy.context.object, chrome)
 bpy.ops.mesh.primitive_uv_sphere_add(radius=0.22, location=(0, 0, 0.55)); bpy.ops.object.shade_smooth(); bob = obj(bpy.context.object, chrome)
 for o in (tige, bob): o.parent = piv; o.matrix_parent_inverse = piv.matrix_world.inverted()
+# v5 : la boule (le temps) frotte la tête de l'allumette à l'apogée, à IGN. Amplitude croissante 24° -> 32°
+# (frôlements de plus en plus proches), puis 27° après le choc (énergie perdue : plus de contact).
 for f in range(0, 320):
-    piv.rotation_euler = (0, math.radians(32) * math.sin(2 * math.pi * f / 30), 0)
+    A = 24 + 8 * min(f, IGN) / IGN if f <= IGN else 27 + 5 * math.exp(-(f - IGN) / 6)
+    piv.rotation_euler = (0, -math.radians(A) * math.sin(2 * math.pi * (f - IGN + 7.5) / 30), 0)
     piv.keyframe_insert("rotation_euler", frame=f)
 
 # Cube qui tombe (pose au sol à l'image 10, petit rebond)
@@ -78,22 +82,22 @@ for i in range(3):
         for k in fc.keyframe_points: k.interpolation = "LINEAR"
 
 # Allumette (en (-3, 0.0)) : tête sombre, puis feu à IGN
-bpy.ops.mesh.primitive_cylinder_add(radius=0.025, depth=0.9, location=(-3, 0.5, 0.45)); obj(bpy.context.object, bois)
-bpy.ops.mesh.primitive_uv_sphere_add(radius=0.05, location=(-3, 0.5, 0.92)); bpy.ops.object.shade_smooth()
+bpy.ops.mesh.primitive_cylinder_add(radius=0.025, depth=0.9, location=(MX, MY, 0.45)); obj(bpy.context.object, bois)
+bpy.ops.mesh.primitive_uv_sphere_add(radius=0.05, location=(MX, MY, 0.92)); bpy.ops.object.shade_smooth()
 th = obj(bpy.context.object, tete); th.scale = (0.75, 0.75, 1.35)  # tête d'allumette oblongue, pas une sucette
 b = th.data.materials[0].node_tree.nodes["Principled BSDF"]
 b.inputs["Emission Color"].default_value = (1.0, 0.35, 0.06, 1)
 s_em = b.inputs["Emission Strength"]
 for f, v in [(IGN - 1, 0), (IGN, 4), (IGN + 3, 1.2), (IGN + 6, 1.6), (IGN + 30, 1.4)]:
     s_em.default_value = v; s_em.keyframe_insert("default_value", frame=f)
-bpy.ops.object.light_add(type="POINT", location=(-3, 0.5, 1.02)); feu = bpy.context.object
+bpy.ops.object.light_add(type="POINT", location=(MX, MY, 1.02)); feu = bpy.context.object
 feu.data.color = (1.0, 0.45, 0.12); feu.data.shadow_soft_size = 0.04
 import random; random.seed(3)
 for f in range(IGN - 1, 320):
     v = 0 if f < IGN else (400 if f == IGN else 120 + random.uniform(-25, 25))
     feu.data.energy = v; feu.data.keyframe_insert("energy", frame=f)
 # Flamme : petit cône émissif
-bpy.ops.mesh.primitive_cone_add(radius1=0.03, depth=0.14, location=(-3, 0.5, 1.02)); fl = bpy.context.object
+bpy.ops.mesh.primitive_cone_add(radius1=0.03, depth=0.14, location=(MX, MY, 1.02)); fl = bpy.context.object
 fm = mat("flamme", (0, 0, 0)); fb = fm.node_tree.nodes["Principled BSDF"]
 fb.inputs["Emission Color"].default_value = (1.0, 0.55, 0.15, 1)
 fl.data.materials.append(fm)
@@ -109,8 +113,8 @@ CAMS = {
     "pendule": cam("pendule", (0.6, -2.4, 0.35), (0, 0, 0.8), 45),
     "cube": cam("cube", (3.7, -2.0, 0.2), (3, 0, 0.45), 35),
     "spheres": cam("spheres", (0.15, -4.3, 0.16), (0.0, -2.6, 0.2), 50),
-    "allumette": cam("allumette", (-3.25, -0.6, 0.95), (-3, 0.5, 0.85), 85),
-    "large": cam("large", (-2.45, -2.3, 0.75), (-2.85, 0.5, 0.6), 30),
+    "allumette": cam("allumette", (MX + 0.05, MY - 1.6, 0.95), (MX - 0.12, MY, 0.88), 85),
+    "large": cam("large", (MX - 0.2, MY - 3.4, 0.8), (MX - 0.55, MY, 0.95), 30),
 }
 for c, a, b_ in jobs:
     sc.camera = CAMS[c]; sc.frame_start, sc.frame_end = a, b_

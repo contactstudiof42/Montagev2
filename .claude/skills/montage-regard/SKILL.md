@@ -23,6 +23,7 @@ Version 1 (session 1, 2026-10-09). Ce skill dit **comment je juge**. Il évolue 
 - L'apparition par « fondu au noir » d'un élément sur fond coloré : il passe par une ombre sale (atelier 01 v1). Fondre vers la transparence, ou depuis la couleur du fond.
 
 ## Grille d'autocritique (à appliquer à chaque planche contact)
+- *Liaison* : qu'est-ce qui relie chaque plan au suivant, autre que le tempo (cause, regard, mouvement, son, idée) ? (ajout session 2)
 Noter chaque critère de 0 à 3 et écrire **une phrase de preuve visuelle** (ce que je vois sur telle image), jamais une impression vague.
 
 | Critère | Question | Piège à vérifier |
@@ -53,3 +54,6 @@ Verdict : une pièce n'est « livrable » que si **intention, lisibilité et jus
 - 2026-10-09, atelier 01 v4 : je me suis écarté de ma propre intention sonore (silence → grondement) sans le décider. **Relire l'intention avant chaque version.**
 - Limite de l'atelier cloud : je ne vois pas la vidéo en mouvement ni n'entends le son. Les planches contact, les courbes de luminance (`signalstats`) et les formes d'onde sont des substituts ; noter ce qui reste à juger en temps réel.
 - 2026-10-09, atelier 01 v6 : j'ai « corrigé » un bruit de rendu imaginaire (16 échantillons + débruitage, 3× plus long) ; la mesure a montré que les taches venaient de l'encodage H.264 du dégradé. **Mesurer avant de corriger** ; une planche réduite grossit les artefacts de compression.
+- 2026-10-10, atelier 02 v1 : 7 plans sur 19 illisibles à leur 1re image (sujet hors cadre, dans le noir, trop petit). En montage rapide, **la planche « 1re image de chaque plan » est le premier test** ; elle a révélé plus de défauts que n'importe quelle autre lecture.
+- 2026-10-10, atelier 02 v4 : une fois tout lisible, le défaut restant était de **conception** : une suite d'objets sans lien n'est pas une montée, même bien rythmée. Une coupe rapide ne crée de la tension que si les plans s'enchaînent par **cause et effet** (Honda « Cog »). Question à ajouter à la grille : *qu'est-ce qui relie ce plan au suivant, autre que le tempo ?*
+- 2026-10-10, atelier 02 : un parti pris de couleur se **mesure** (% de pixels chauds par image), comme la loudness. Le dire avec un chiffre rend la critique opposable.

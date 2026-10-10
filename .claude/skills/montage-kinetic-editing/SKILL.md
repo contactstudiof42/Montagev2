@@ -72,6 +72,11 @@ Sources du placement : crête du riser sur le moment clé (Epidemic Sound) ; son
 | Plan de 4-8 images où le sujet entre, sort ou est dans le noir | Sujet lisible **dès la 1re image** du plan (atelier 02 : 4 plans noirs sur 19 en v1) |
 | Whoosh sur un mouvement qu'on ne voit pas | Chaque SFX a une cause visible ; sinon il devient du bruit (atelier 02 v1) |
 
+## 3b. Leçon d'atelier (pièce 02 « Étincelle », 6 versions)
+- Un montage qui accélère sur des plans **sans lien** reste un défilé ; quand chaque plan montre une cause de l'événement final (le pendule = le temps qui frotte l'allumette), la même accélération devient une montée. Les SFX y gagnent une cause visible.
+- La couleur forte réservée à la fin se **mesure** : ≤ 0,14 % de pixels chauds avant l'allumage, 3,7 % après (v6).
+- Calculer les fenêtres de source depuis la cinématique dans le script : deux régressions (v2, v5) sont venues de fenêtres recopiées à la main.
+
 ## 4. Recettes
 **R1 — Hook 0-3 s** [THÉORIQUE] : image 1 = l'image la plus forte (résultat, chiffre, action) + impact ou drop musical à l'image 1 ; captions dès la 1re syllabe ; 2 à 4 coupes dans les 3 premières secondes ; la promesse est dite avant la 3e seconde.
 

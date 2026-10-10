@@ -45,3 +45,26 @@ Grille : intention servie ? lisibilité, rythme, composition, cohérence, couleu
 - *Couleur* : juste et mesurée. La flamme macro reste trop graphique (cône) : une simulation de flamme ou un vrai plan tourné ferait mieux.
 - *Originalité / cliché* : « allumette qui s'allume dans le noir » est un cliché de bande-annonce. Il est rendu acceptable par la règle du temps et la retenue de la couleur, pas par l'idée elle-même. À dépasser en v5 (la causalité).
 - *Justesse* : pas d'excès d'effets ; un seul flash, un seul shake, à l'allumage.
+
+## v5 (`v5-planche.png`, `v5-allumage.png`) — la causalité
+Changement de conception (tiré de la critique de la v4 et de la fiche Honda « Cog ») : **le pendule, c'est-à-dire le temps, allume l'allumette.** L'allumette est placée sous l'arc du pendule ; l'amplitude grandit de 24° à 32°, la boule frôle la tête à chaque balancement côté allumette (à 170, il manque 2 cm) et la frotte à l'apogée, image 200. Après le choc, l'amplitude retombe à 27° (énergie perdue) : plus de contact, le pendule continue de battre à côté de la flamme.
+- Ce que ça change à l'image (`v5-allumage.png`) : dans le plan de silence, la boule entre lentement dans la macro, parce que le pendule ralentit à son apogée. Le suspense vient de la physique, pas d'un effet de ralenti. À l'allumage, le reflet de la flamme apparaît, chaud, sur le chrome de la boule. Le plan large final montre le pendule qui passe et repasse devant la flamme : **le temps continue, la flamme reste**. C'est l'image qui manquait pour conclure.
+- Accident heureux : le plan de 4 images pris à l'image source 170 montre le frôlement raté. Il plante l'attente sans qu'on l'ait écrit (Tchekhov).
+- Régression : 5 plans du pendule redevenus noirs. J'avais déplacé la phase du pendule sans recalculer les passages au point bas (12,5 + 15k et non 17,5 + 15k). Même faute qu'en v2 : **toute modification de la cinématique invalide les fenêtres de source**. Il faudrait les calculer dans le script, pas à la main.
+
+## v6 (`v6-planche.png`, `v6-mesures.json`, `v6-couleur.json`) — version de référence
+- Fenêtres du pendule recalculées : les 19 plans sont lisibles dès leur 1re image.
+- Couleur mesurée : pixels chauds ≤ 0,14 % avant l'allumage (comme Ziak : 0,16 %), 3,7 % en moyenne après ; luminance 12,5 → 16,4/255. Image plus basse que la v4, parce que la flamme est vue de plus loin dans le large, et plus fidèle au goût de l'utilisateur.
+- Son : inchangé, -14,2 LUFS / -2,0 dBTP mesurés sur le MP4.
+
+**Bilan de la progression v1 → v6**
+| Critère (0-3) | v1 | v4 | v6 |
+|---|---|---|---|
+| Lisibilité (1re image de chaque plan) | 1 (12/19) | 3 | 3 |
+| Intention servie | 1 | 2 | 3 |
+| Liaison entre plans (cause) | 0 | 0 | 2 |
+| Couleur (règle mesurée) | 2 | 3 | 3 |
+| Originalité / cliché | 1 | 1 | 2 |
+| Justesse (pas d'excès) | 2 | 3 | 3 |
+Ce qui reste : la flamme macro est un cône (à simuler), les plans de cube et de sphères ne participent pas encore à la chaîne causale (v7 : les billes poussées par le cube, le cube lâché par le pendule ?), la durée du silence est à juger à l'oreille, et la variante macro façon Ziak reste à faire.
+**Leçon principale** : le kinetic editing donne l'énergie, mais c'est la cause entre les plans qui donne le sens. Inscrit dans `montage-regard` et `montage-kinetic-editing`.

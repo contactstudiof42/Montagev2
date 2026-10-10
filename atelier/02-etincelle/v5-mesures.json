@@ -1,0 +1,149 @@
+{
+ "version": "v5",
+ "images": 268,
+ "duree_s": 8.93,
+ "coupes": [
+  0,
+  15,
+  30,
+  45,
+  60,
+  75,
+  87,
+  97,
+  107,
+  115,
+  123,
+  129,
+  135,
+  141,
+  145,
+  149,
+  153,
+  163,
+  178
+ ],
+ "allumage": 163,
+ "silence": 153,
+ "loudness_mp4": {
+  "I": -14.2,
+  "TP": -2.0
+ },
+ "sfx": [
+  {
+   "sfx": "tic",
+   "image": 1,
+   "db": -8
+  },
+  {
+   "sfx": "tic",
+   "image": 16,
+   "db": -16
+  },
+  {
+   "sfx": "tic",
+   "image": 31,
+   "db": -16
+  },
+  {
+   "sfx": "tic",
+   "image": 46,
+   "db": -16
+  },
+  {
+   "sfx": "tic",
+   "image": 61,
+   "db": -16
+  },
+  {
+   "sfx": "tic",
+   "image": 76,
+   "db": -16
+  },
+  {
+   "sfx": "tic",
+   "image": 91,
+   "db": -16
+  },
+  {
+   "sfx": "tic",
+   "image": 106,
+   "db": -16
+  },
+  {
+   "sfx": "tic",
+   "image": 121,
+   "db": -16
+  },
+  {
+   "sfx": "tic",
+   "image": 136,
+   "db": -16
+  },
+  {
+   "sfx": "tic",
+   "image": 151,
+   "db": -16
+  },
+  {
+   "sfx": "impact_cube",
+   "image": 16,
+   "db": -2
+  },
+  {
+   "sfx": "whoosh",
+   "image": 30,
+   "db": -15
+  },
+  {
+   "sfx": "impact_cube",
+   "image": 88,
+   "db": -2
+  },
+  {
+   "sfx": "whoosh",
+   "image": 97,
+   "db": -13
+  },
+  {
+   "sfx": "whoosh",
+   "image": 129,
+   "db": -15
+  },
+  {
+   "sfx": "impact_cube",
+   "image": 141,
+   "db": -2
+  },
+  {
+   "sfx": "riser",
+   "image": 152,
+   "db": -12
+  },
+  {
+   "sfx": "craquement",
+   "image": 163,
+   "db": -3
+  },
+  {
+   "sfx": "impact_allumage",
+   "image": 163,
+   "db": 0
+  },
+  {
+   "sfx": "feu",
+   "image": 163,
+   "db": -14
+  },
+  {
+   "sfx": "click_ATTENDS",
+   "image": 0,
+   "db": -20
+  },
+  {
+   "sfx": "click_L'ÉTINCELLE",
+   "image": 15,
+   "db": -20
+  }
+ ]
+}

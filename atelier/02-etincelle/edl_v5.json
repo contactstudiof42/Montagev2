@@ -1,0 +1,5 @@
+[["pendule", 17, 15, "hook"], ["cube", 9, 15, ""], ["spheres", 50, 15, ""], ["allumette", 150, 15, ""],
+ ["large", 100, 15, ""], ["pendule", 32, 12, ""], ["cube", 9, 10, ""], ["spheres", 54, 10, ""],
+ ["large", 150, 8, "riser"], ["pendule", 47, 8, ""], ["allumette", 160, 6, ""], ["spheres", 58, 6, ""],
+ ["pendule", 62, 6, ""], ["cube", 10, 4, ""], ["allumette", 170, 4, ""], ["pendule", 77, 4, ""],
+ ["allumette", 190, 10, "silence"], ["allumette", 200, 15, "allumage"], ["large", 212, 90, ""]]
