@@ -5,13 +5,13 @@ _Lire en premier. Mis à jour à chaque fin de session._
 ## Où on en est (après la session 10, 2026-10-10 ~07:55 UTC)
 - **Skills (21)** : session 10 : `montage-direction-artistique` (étape 0 inventaire des rushes, ralenti demandé sur 25 i/s, coupable désigné, dispositifs d'atelier recyclés ; annexe `signature-et-cartons.md`), `montage-rythme` (dilater par la durée : l'attente doit être habitée), `montage-grammaire` (décor chargé : couleur saturée derrière l'anomalie), `montage-workflows` (vitesses dans l'aller-retour, `verif_edl.py`, interpolation sur vrais plans), `montage-ia-generative` (RIFE sous le fondu sur eau/feuillage), `montage-references` (John Lewis).
 - **Culture** : 43 fiches (nouvelles : `pub-emotionnelle-noel-john-lewis.md`, `dougal-wilson-kim-gehrig-pub.md`) ; `cliches-de-secteur.md` + ligne caritatif / personnes âgées.
-- **Atelier** : **12 v8** (lieu encombré, v8c réf.), **15 « Deux sonneries de trop »** (A, B, C, D, B2 ; B2 = réf. : la main posée qui ne décroche pas), **16 « La fable »** v1-v2 (v3 à faire : rendre le fil visible).
+- **Atelier** : **12 v8** (lieu encombré, v8c réf.), **15 « Deux sonneries de trop »** (A, B, C, D, B2 ; B2 = réf. : la main posée qui ne décroche pas), **16 « La fable »** v1-v3 (v4 à faire : la Terre coupée par le cadre pour ne plus lire « ballon »).
 - **Labo** : `labo/workflows/vitesses/` + `labo/workflows/verif_edl.py` ; `labo/interpolation-reel/` (sous-agent, 2 plans CC0 Internet Archive, recontrôlé).
 - **Examens** : n°1 13, n°2 14, n°3 15, n°4 14, n°5 14, **n°6 15** /20. **N°7 en session 13.**
 
 ## Reprendre ici (session 11)
 1. Démarrage normal. Blender : `curl -sSL -o blender.tar.xz https://download.blender.org/release/Blender4.2/blender-4.2.3-linux-x64.tar.xz && tar xf blender.tar.xz` dans le scratchpad (30 s). `python3 -m pip install -q numpy pillow scipy colour-science opentimelineio otio-fcp-adapter otio-cmx3600-adapter`.
-2. Priorités : BACKLOG 57 (pièce 16 v3 : fil lisible), 51 (teaser 15 s), 59 (fiche Dougal Wilson / Kim Gehrig), 15 suite (recadrages, nests, audio multipiste dans l'échange), 42 suite (`montage-references` en annexes : 90+ lignes), 1 (« direction A dans le noir »).
+2. Priorités : BACKLOG 57 (pièce 16 v4), 51 (teaser 15 s), 59 (fiche Dougal Wilson / Kim Gehrig), 15 suite (recadrages, nests, audio multipiste dans l'échange), 42 suite (`montage-references` en annexes : 90+ lignes), 1 (« direction A dans le noir »).
 3. Pièges : **`pkill -f motif` tue le shell** → tuer par PID. Lancer les rendus longs avec `run_in_background` de l'outil Bash. Plans immobiles = une image. Wikimedia (upload.wikimedia.org) renvoie **HTTP 429** depuis la VM : passer par Internet Archive pour les médias CC0. **Ne jamais mettre d'identifiant personnel (e-mail) dans un User-Agent** (incident du sous-agent, session 10). Vérifier qu'un nom inventé ne recoupe pas une marque réelle (session 10 : « Allô Voisins »).
 4. Sous-agents : 1 en session 10 (interpolation sur vrais plans) ; chiffres recontrôlés à la main (identiques).
 

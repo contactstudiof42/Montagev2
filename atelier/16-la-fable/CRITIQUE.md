@@ -15,3 +15,9 @@
 ## Leçons (versées dans `montage-references` et `montage-regard`)
 1. **Une fable empruntée importe le sens d'une autre œuvre** : grossir jusqu'à la fable, oui, mais avec un objet du sujet (le fil du téléphone), pas avec l'image du conte connu (petite planète + silhouette).
 2. Mon tic revient **même quand je le sais** : à vérifier sur chaque planche (compter les sources chaudes).
+
+## v3 — `v3-planche.png` (droite) : fil clair légèrement lumineux, téléphone crème
+- **Lisible à 160 px** (critère 1 tenu) : la ligne de la table à la Terre se lit au premier regard.
+- **Lecture imprévue** : la Terre bleue au bout d'un fil se lit aussi comme **un ballon tenu en laisse** — sens différent (« elle retient le monde » au lieu de « une ligne la relie au monde »), et clin d'œil involontaire aux ballons de *Man on the Moon*. Ce n'est pas faux pour une fable, mais ce n'est pas notre phrase.
+- Correction proposée (v4) : la Terre plus grande et coupée par le bord du cadre (elle ne peut plus être un ballon), le fil qui y entre sans tension (une courbe qui pend), un second fil qui part d'ailleurs sur la Terre (d'autres lignes : le réseau des bénévoles).
+- **Leçon** : un signe rendu lisible peut devenir un autre signe ; relire la planche **comme un inconnu**, en se demandant « qu'est-ce que c'est ? » avant « est-ce que ça se voit ? ».

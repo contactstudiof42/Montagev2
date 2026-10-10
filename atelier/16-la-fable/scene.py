@@ -43,7 +43,7 @@ else:
     bpy.ops.object.light_add(type="SUN"); s = bpy.context.object; s.data.energy = 1.2; s.data.color = (0.7, 0.8, 1); s.rotation_euler = (math.radians(60), 0, math.radians(30))
     cam_loc, cible, lens = (2.6, -5.5, 1.6), (0.6, 2, 0.9), 35
     if len(a) > 3 and a[3] == "fil":   # v2 : un téléphone sur la table, son fil descend jusqu'à la Terre
-        boite((-0.25, -0.1, 0.77), (0.14, 0.11, 0.06), mat("tel", (0.03, 0.03, 0.03), 0.3))
+        boite((-0.25, -0.1, 0.77), (0.14, 0.11, 0.06), mat("tel", (0.8, 0.74, 0.6) if len(a) > 4 else (0.03, 0.03, 0.03), 0.3))
         cd = bpy.data.curves.new("fil", "CURVE"); cd.dimensions = "3D"; cd.bevel_depth = 0.008
         sp = cd.splines.new("POLY"); pts = 40; sp.points.add(pts - 1)
         p0 = mathutils.Vector((-0.25, -0.1, 0.74)); p1 = mathutils.Vector((5.75, 13.6, 3.3))
@@ -51,7 +51,8 @@ else:
             u = k / (pts - 1); p = p0.lerp(p1, u); p.z -= 2.2 * 4 * u * (1 - u)
             if u < 0.06: p = p0 + (mathutils.Vector((-0.3, -0.3, -0.7)) * (u / 0.06))
             pt.co = (p.x, p.y, p.z, 1)
-        o = bpy.data.objects.new("fil", cd); sc.collection.objects.link(o); cd.materials.append(mat("film", (0.05, 0.05, 0.05), 0.4))
+        o = bpy.data.objects.new("fil", cd); sc.collection.objects.link(o); cd.materials.append(mat("film", (0.6, 0.75, 1.0), 0.4, 0.8) if len(a) > 4 else mat("film", (0.05, 0.05, 0.05), 0.4))
+        if len(a) > 4: cd.bevel_depth = 0.012
 bpy.ops.object.camera_add(location=cam_loc); c = bpy.context.object; c.data.lens = lens
 c.rotation_euler = (mathutils.Vector(cible) - mathutils.Vector(cam_loc)).to_track_quat("-Z", "Y").to_euler(); sc.camera = c
 bpy.ops.render.render(write_still=True)
