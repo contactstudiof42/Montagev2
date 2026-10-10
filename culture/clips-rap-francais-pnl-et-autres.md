@@ -1,6 +1,6 @@
 # Clips de rap français proches de l'esthétique Ziak : PNL, Kekra, Bleu Désert
 
-Cas étudiés : **PNL** (« Le monde ou rien », clip mis en ligne le 12 juin 2015 [vérifié 2026-10-10, Vikidia/résumé de recherche], « À l'ammoniaque », 2018, « Au DD » et « Deux frères », 2019 ; réalisation Kamerameha alias Sophiane Afroun, Mess, Kim Chapiron ; label QLF) ; **Kekra**, « Putain de salaire » (2020, réal. Romain Chassaing) ; **Ziak**, « Raspoutine » (2020) et « Akimbo » (2021, Bleu Désert).
+Cas étudiés : **PNL** (« Le monde ou rien », clip mis en ligne le 12 juin 2015 [Vikidia, via résultat de recherche du 2026-10-10 ; réalisateur non trouvé], « À l'ammoniaque », 2018, « Au DD » et « Deux frères », 2019 ; réalisation Kamerameha alias Sophiane Afroun, Mess, Kim Chapiron ; label QLF) ; **Kekra**, « Putain de salaire » (2020, réal. Romain Chassaing) ; **Ziak**, « Raspoutine » (2020) et « Akimbo » (2021, Bleu Désert).
 Recherches du 2026-10-10. Sources : Booska-P, Interlude, VL Média, Paris ZigZag, Purebreak (d'après *Le Parisien*), RapGhetto, Wikipédia, shots, Raplume, Directors' Library. Aucun visionnage : tout ce qui touche au découpage vient de ma mémoire ou de déductions, et c'est signalé.
 
 ## Cas 1 — PNL : le paysage comme état d'âme
@@ -76,7 +76,8 @@ Recherches du 2026-10-10. Sources : Booska-P, Interlude, VL Média, Paris ZigZag
 - https://shots.net/news/view/kekra-promo-fuses-comics-and-chaos (crédits complets de « Putain de salaire », concept, références)
 - https://raplume.eu/article/lincroyable-clip-de-ziak/ (« Akimbo » en noir et blanc, armes en suspens, lien avec « Raspoutine »)
 - https://directorslibrary.com/2021/latest/music-videos/akimbo-ziak/ (crédits de « Akimbo », Belgrade, chef opérateur commun)
-- https://shots.net/news/view/directing-trio-bleu-desert-join-friend (Bleu Désert, trio parisien ; Nekfeu, Kekra)
+- https://shots.net/news/view/directing-trio-bleu-desert-join-friend (Bleu Désert, trio parisien ; Nekfeu, Kekra ; 14 juillet 2022)
+- https://fr.vikidia.org/wiki/PNL_(groupe) (« Le monde ou rien », 12 juin 2015, Scampia ; résultat de recherche du 2026-10-10)
 
 ## Incertain / à vérifier
 - Réalisateur de « Au DD » : non trouvé. Pour « Deux frères », Purebreak écrit « réalisée par QLF » (crédit collectif, sans nom) ; ailleurs, les sources nomment Kamerameha, Mess et Chapiron, et QLF est aussi le nom du label. Réalisateur de « Le monde ou rien » : non trouvé [NON VÉRIFIÉ].
