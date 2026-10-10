@@ -36,4 +36,4 @@ Fichiers : `analyse-lisse.txt`, `analyse-bruit.txt`, `zones-*.txt`, `resultats-*
 - Toujours **filmer en haute cadence** si un ralenti est prévu (`montage-preparation-tournage-vfx`) : l'interpolation répare, elle ne remplace pas.
 
 ## Limites et suite
-- Images synthétiques ; PSNR ne mesure pas la gêne perçue (un fondu « fantôme » peut avoir un bon PSNR et se voir). RIFE / IA (FILM, Topaz, Speed Warp) non testés : torch + poids de modèle à télécharger, à tenter en session dédiée (BACKLOG 46b).
+- Images synthétiques ; PSNR ne mesure pas la gêne perçue (un fondu « fantôme » peut avoir un bon PSNR et se voir). RIFE 4.25 testé en CPU : voir `RIFE.md` (+5 dB sur mci en zones en mouvement sur l'image lisse, aucun gain sur la texture fine, image hybride sur la coupe). Recontrôlé par l'agent principal avec `analyse.py` : chiffres identiques. FILM, Topaz, Speed Warp non testés.

@@ -77,7 +77,7 @@ Détail, nuances et sources dans **`etat-de-l-art-2026-10.md`** (même dossier).
 | **DaVinci Resolve 21 / 21.1** | CineFocus (profondeur de champ synthétique), IntelliSearch local, Magic Mask (aussi sur la page Photo), Magic Mask 2.0 annoncé en 21.1 | La plupart des outils IA demandent Studio (payant) et un GPU d'au moins 4 Go | 02/06/2026 ; 21.1 le 09/09/2026 | Newsshooter, SVG |
 | **Meta SAM 3** | Segmentation et suivi par texte ou boîte, image et vidéo, téléchargeable | Pas d'intégration Resolve/AE confirmée | 2025-2026 | ai.meta.com/sam3 (officiel) |
 | **After Effects Roto Brush** | — | **Aucune source 2026 trouvée** | — | non vérifié |
-| **Interpolation** (Topaz, Resolve Speed Warp…) | — | **Aucune source 2025-2026 trouvée** dans cette recherche | — | non vérifié |
+| **Interpolation** (Topaz, Resolve Speed Warp, RIFE…) | RIFE 4.25 (Practical-RIFE, MIT) | **[TESTÉ EN LABO 2026-10-10]** en CPU : bat `minterpolate mci` de 5 dB en zones en mouvement sur image lisse, rien sur texture fine, image hybride sur une coupe (`labo/interpolation/RIFE.md`) | libre | Topaz / Speed Warp non testés |
 | **ElevenLabs Eleven v3** | Voix expressive, balises d'émotion, dialogue à plusieurs voix, plus de 70 langues | Pas en temps réel ; clonage soumis à consentement vérifié | GA 02/02/2026 | coval.ai (secondaire) |
 | **Suno** | Musique générée | Accord Warner (25/11/2025) : nouveaux modèles sous licence en 2026, pas d'usage commercial en gratuit ; impasse UMG/Sony (avril 2026, source unique) | 2025-2026 | Decrypt, MarketScreener, Opus (secondaire) |
 | **Udio** | Remix de catalogues sous licence | Plateforme fermée : **pas d'export ni d'usage externe** | 2025-2026 | Decrypt |
