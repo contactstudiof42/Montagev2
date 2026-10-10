@@ -96,7 +96,7 @@ def recul(u):
 
 
 if FINAL:
-    look((3.0, 2.4, 0.7), (-2.0, -4.0, 0.8)); cam.data.lens = 28
+    look((7.5, 6.0, 1.1), (-3.0, -6.0, 0.6)); cam.data.lens = 40
     sc.render.filepath = f"{OUT}/final.png"; bpy.ops.render.render(write_still=True)
 else:
     for i in range(N):
