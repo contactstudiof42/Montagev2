@@ -60,3 +60,7 @@ Contre moi-même : je recommande encore un plan « qui tient » à la fin, mon d
 ## Corrections apportées
 - BACKLOG Y47 : maquette de la direction B (plan fixe de 2 min, dialogue de synthèse filtré « à travers la carrosserie », mesurer à partir de quand ça décroche) ; Y48 : fiche culture « la réaction tenue dans le drame » (durées réelles de silences de réaction : Haneke, Kore-eda, *Aftersun*, *Manchester by the Sea*), pour sourcer le chiffre de 15 s.
 - `montage-direction-artistique` : ajout d'une étape « tranché ? » (relire le traitement et supprimer toute décision laissée en question).
+
+## Vérification (même session, fiche `culture/reaction-tenue-drame.md`, sous-agent)
+- Aucune source ne fixe une durée de réaction tenue au milieu d'un dialogue ; les seules durées trouvées sont des plans d'ouverture ou de fin (*Portrait de la jeune fille en feu* ~2 min 26 ; *Caché*). Mes 15 s restent défendables parce que l'enjeu est posé juste avant et que Karim agit (il plie le ticket).
+- Correction : ce qui fait décrocher n'est pas la longueur mais **un plan qui ne change plus** ; prévoir un micro-geste vers 8-10 s et couper **après le dernier geste** de Karim, pas à une durée fixe (même règle que le « bouton » de la pièce 27).

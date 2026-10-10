@@ -136,3 +136,6 @@ Démonstration produit, réaction en chaîne, gag mécanique, plan « Cog » : t
 
 ## Peu de coupes : chacune pèse (pièce 25 v4, session 23) [TESTÉ EN ATELIER, maquette mesurée]
 - Deux plans au lieu de six : la descente tient dans le plan (lumières qui s'éteignent une à une), mais l'unique coupe devient l'événement le plus fort du film (−40 % de luminance d'un coup). Dans une forme lente faite pour apaiser, la remplacer par un **fondu long** (12 s) : la courbe reste monotone, et la superposition peut porter du sens si les deux cadres sont composés pour se rencontrer (la lune qui apparaît dans le ciel de la fenêtre). Détails : `atelier/25-au-lit/CRITIQUE.md` v4.
+
+## La réaction tenue dans le drame (examen n°13 et `culture/reaction-tenue-drame.md`, session 24) [THÉORIQUE, sources écrites]
+- Aucune norme de durée sourcée au milieu d'un dialogue ; une réaction tenue tient si l'enjeu est posé juste avant et si le plan **change encore** (micro-geste, son qui vit). Couper après le dernier geste, pas à une durée fixe (même logique que le « bouton » de la pièce 27).
