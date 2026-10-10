@@ -1,0 +1,37 @@
+{
+ "images": 241,
+ "duree_s": 9.64,
+ "debuts_plans": [
+  [
+   0,
+   "insert",
+   1
+  ],
+  [
+   20,
+   "v3-seule",
+   14
+  ],
+  [
+   72,
+   "insert",
+   1
+  ],
+  [
+   92,
+   "v2-tremble",
+   14
+  ],
+  [
+   144,
+   "insert",
+   1
+  ],
+  [
+   164,
+   "v3-ombre",
+   14
+  ]
+ ],
+ "loudness": "I:         -21.9 LUFS"
+}

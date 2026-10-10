@@ -41,7 +41,7 @@ Règle : alterner ART et TECH. Réalimenter dès qu'il reste moins de 10 sujets 
 24. [ ] [ART] Atelier « voix écrite après » (principe Varda) : monter d'abord 20 s d'images glanées (plans des ateliers), écrire ensuite une voix off qui relie ; critique : la voix illustre-t-elle ou relie-t-elle ?
 
 25. [ ] [ART] Atelier « Spirale » (principe Marker) : 30 s qui font revenir 3 motifs des ateliers 01-04, chaque retour changeant de sens ; voix écrite après.
-26. [~] [ART] Atelier « Versions » (principe Morris) — v1-v2 en session 5 (`atelier/06-versions/`) ; reste v3 : ombre juste avant la bascule, indice minuscule dans la version 1, et voir si la relecture opère : la même action Blender (un objet qui tombe) rejouée 3 fois avec un détail changé ; la musique en boucle ; critique : est-ce qu'on doute ?
+26. [~] [ART] Atelier « Versions » (principe Morris) — v1-v3 en session 5 (`atelier/06-versions/`, v3 = référence). Reste : décor habité, insert qui varie imperceptiblement, test de l'indice avec un spectateur (phase 2) : la même action Blender (un objet qui tombe) rejouée 3 fois avec un détail changé ; la musique en boucle ; critique : est-ce qu'on doute ?
 27. [x] [TECH] AAF par familles avec `pyaaf2`, relu identique par OTIO (session 5). Reste [ ] : poignées, gain, fondus ; AAF depuis l'EDL JSON d'une vraie pièce (06).
 
 28. [x] [ART] Examen n°4 « La Veilleuse » (fiction, 14/20, session 5). **Examen n°5 en session 8** : documentaire long ou pub 6 s. Révélé : [ ] fiches *Aftersun* (Wells, montage Blair McClendon) et *Les Revenants* ; [ ] surround et présence hors champ (`montage-son-et-emotion`) ; [ ] spec PAD Arte sourcée.
