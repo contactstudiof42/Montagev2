@@ -103,3 +103,8 @@ Chaîne YouTube de vulgarisation francophone indépendante (≈ 300 k abonnés, 
 - `montage-direction-artistique` : **sponsor dans le sujet** — l'intégration reste dans le registre habituel du créateur, séparée par une coupe franche et une lumière d'un autre temps ; jamais écrite dans la matière du film ; aucune affirmation du film ne touche le produit.
 - `montage-youtube` : **le contexte de visionnage comme forme** (vidéo vue au lit, au casque, le soir) : une direction peut se concevoir pour cet état (luminosité, volume, rythme qui baissent).
 - BACKLOG : atelier « infrarouge de nuit » (maquette Blender du rendu IR : désaturation, grain, projecteur hors champ) ; vérifier le chiffre « dormeurs simultanés ».
+
+## Note de correction (2026-10-10, BACKLOG Y15)
+- « 2 milliards de personnes endormies au même instant » : **invérifiable**, aucune source ne donne ce chiffre (la seule trouvée est une simulation qui se dit « non réelle »). Estimation [CALCUL] : 8,2 milliards d'humains (ONU, WPP 2024) × 7 à 8 h sur 24 ≈ 2,4 à 2,7 milliards en moyenne, variable selon l'heure (Asie). En voix off, dire « environ un tiers de l'humanité » ou « plus de deux milliards », présenté comme une estimation, ou retirer.
+- « 8 milliards de dormeurs » (direction C) = la population totale, pas simultanée : faux sous un globe avec la ligne de nuit.
+- Infrarouge : « projecteur IR 850 nm hors champ » reste valable, mais le 850 nm a une faible lueur rouge visible par le dormeur s'il regarde la source ; prévoir un essai 850 contre 940 nm et vérifier le groupe de risque IEC 62471 du projecteur. Détails : `sources/infrarouge-tournage-2026-10.md`, `.claude/skills/montage-preparation-tournage-vfx/infrarouge.md`.

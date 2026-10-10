@@ -83,6 +83,17 @@ def regard_detourne(t, segs):
     return 0.0
 
 
+def pose(t, e, segs):
+    """Centre de la tête (px, rendu W x H) et regard détourné."""
+    sway = SWAY * (14 * math.sin(2 * math.pi * 0.23 * t) + 6 * math.sin(2 * math.pi * 0.61 * t + 1))
+    nod = 5 * e * math.sin(2 * math.pi * 3.1 * t)
+    look = regard_detourne(t, segs)
+    return W / 2 + sway + 40 * look, 250 + nod + 10 * look, look
+
+
+SWAY = 1.0
+
+
 def frame_brute(f, env, segs):
     """Personne en plan rapproché poitrine, caméra fixe. Bouge comme un corps qui parle."""
     t = f / FPS
@@ -98,10 +109,7 @@ def frame_brute(f, env, segs):
     d.ellipse([760, 120, 840, 200], fill=(230, 170, 90))
     # corps : balancement lent + petites relances sur l'énergie de la voix
     e = env[min(f, len(env) - 1)]
-    sway = 14 * math.sin(2 * math.pi * 0.23 * t) + 6 * math.sin(2 * math.pi * 0.61 * t + 1)
-    nod = 5 * e * math.sin(2 * math.pi * 3.1 * t)
-    look = regard_detourne(t, segs)
-    cx, cy = W / 2 + sway + 40 * look, 250 + nod + 10 * look
+    cx, cy, look = pose(t, e, segs)
     # épaules / buste
     d.polygon([(cx - 190, H), (cx - 150, cy + 150), (cx + 150, cy + 150), (cx + 190, H)], fill=(40, 70, 95))
     d.rectangle([cx - 30, cy + 95, cx + 30, cy + 155], fill=(205, 160, 130))
@@ -163,11 +171,17 @@ def recadre(img, z, cible=(0.5, 0.44)):
 
 
 def montage(version, segs, handle):
-    """Retourne la liste de plans : (t_in, t_out, zoom, broll|None, seg)."""
-    gardes = [s for s in segs if s["kind"] == "ok"]
-    plans, z_alt = [], 1.0
-    for k, s in enumerate(gardes):
-        t0, t1 = s["t0"] - handle, s["t1"] + handle
+    """Retourne la liste de plans : (t_in, t_out, zoom, broll|None, seg).
+    A, B : dérushage serré (chaque respiration coupée). A0, C, D : dérushage
+    minimal (on ne coupe que les ratés et les silences ; les phrases
+    consécutives restent d'un seul tenant, la coupe y est invisible en temps)."""
+    serre = version in ("A", "B")
+    plans, k = [], 0
+    prev_ok = False
+    for s in segs:
+        if s["kind"] != "ok":
+            prev_ok = False
+            continue
         z, br = 1.0, None
         if version == "B":
             z = 1.0 if k % 2 == 0 else 1.25
@@ -175,26 +189,49 @@ def montage(version, segs, handle):
             z = 1.3
         if version == "D" and s["flags"].get("broll"):
             br = s["flags"]["broll"]
-        plans.append((t0, t1, z, br, s))
-    return plans
+        if serre or not prev_ok:
+            t0 = s["t0"] - handle
+        else:  # continuité de source avec le plan précédent
+            t0 = plans[-1][1]
+        plans.append([t0, s["t1"] + handle, z, br, s])
+        prev_ok = True
+        k += 1
+    # fusionner les plans contigus sans changement de traitement
+    fus = [plans[0]]
+    for p in plans[1:]:
+        q = fus[-1]
+        if abs(p[0] - q[1]) < 1e-6 and p[2] == q[2] and p[3] == q[3] is None:
+            q[1] = p[1]
+        else:
+            fus.append(p)
+    return [tuple(p) for p in fus]
 
 
-def evenements(plans):
-    """Événements visuels : chaque coupe visible (changement de position du sujet,
-    d'échelle ou de source) ; on compte aussi le type."""
+def evenements(plans, env=None, segs=None):
+    """Événements visuels à chaque frontière de plan : jump (saut de temps,
+    même cadre), echelle (punch-in / out), broll (entrée ou sortie)."""
     ev, t = [], 0.0
     for k, (t0, t1, z, br, s) in enumerate(plans):
         if k > 0:
             p = plans[k - 1]
-            kinds = []
+            saut = abs(t0 - p[1]) > 1e-6
             if br or p[3]:
-                kinds.append("broll")
+                typ = "broll"
             elif z != p[2]:
-                kinds.append("echelle")
+                typ = "echelle" + ("+saut" if saut else "")
             else:
-                kinds.append("jump")
-            ev.append({"t": round(t, 2), "types": kinds})
-        t += t1 - t0
+                typ = "jump"
+            item = {"t": round(t, 2), "type": typ}
+            if env is not None and not (br or p[3]):
+                ea = env[min(int(p[1] * FPS) - 1, len(env) - 1)]
+                eb = env[min(int(t0 * FPS), len(env) - 1)]
+                xa, ya, _ = pose((int(p[1] * FPS) - 1) / FPS, ea, segs)
+                xb, yb, _ = pose(int(t0 * FPS) / FPS, eb, segs)
+                # déplacement à l'écran, en % de la largeur de sortie (tient compte du zoom)
+                item["depl_pct"] = round(100 * abs(xb * z - xa * p[2] + (W / 2) * (p[2] - z)) / W, 1)
+                item["zoom"] = [p[2], z]
+            ev.append(item)
+        t += round((t1 - t0) * FPS) / FPS
     return ev, t
 
 
@@ -224,10 +261,13 @@ def rendre(version, plans, audio, env, segs, out):
 def main():
     out = sys.argv[1]
     os.makedirs(out, exist_ok=True)
-    versions = "A,B,C,D"
+    versions = "A,B,A0,C,D"
     handle = 0.10
     if "--versions" in sys.argv:
         versions = sys.argv[sys.argv.index("--versions") + 1]
+    global SWAY
+    if "--sway" in sys.argv:
+        SWAY = float(sys.argv[sys.argv.index("--sway") + 1])
     if "--handle" in sys.argv:
         handle = float(sys.argv[sys.argv.index("--handle") + 1])
     audio, segs = prise_brute(out)
@@ -238,7 +278,7 @@ def main():
     json.dump(segs, open(os.path.join(out, "segments.json"), "w"), ensure_ascii=False, indent=1)
     for v in versions.split(","):
         plans = montage(v, segs, handle)
-        ev, dur = evenements(plans)
+        ev, dur = evenements(plans, env, segs)
         stats = {"version": v, "duree_s": round(dur, 2), "brut_s": round(len(audio) / SR, 2),
                  "evenements": len(ev), "par_minute": round(len(ev) / dur * 60, 1),
                  "ecart_moyen_s": round(dur / (len(ev) + 1), 2), "detail": ev}
