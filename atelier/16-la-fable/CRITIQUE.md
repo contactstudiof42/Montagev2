@@ -21,3 +21,18 @@
 - **Lecture imprévue** : la Terre bleue au bout d'un fil se lit aussi comme **un ballon tenu en laisse** — sens différent (« elle retient le monde » au lieu de « une ligne la relie au monde »), et clin d'œil involontaire aux ballons de *Man on the Moon*. Ce n'est pas faux pour une fable, mais ce n'est pas notre phrase.
 - Correction proposée (v4) : la Terre plus grande et coupée par le bord du cadre (elle ne peut plus être un ballon), le fil qui y entre sans tension (une courbe qui pend), un second fil qui part d'ailleurs sur la Terre (d'autres lignes : le réseau des bénévoles).
 - **Leçon** : un signe rendu lisible peut devenir un autre signe ; relire la planche **comme un inconnu**, en se demandant « qu'est-ce que c'est ? » avant « est-ce que ça se voit ? ».
+
+## v4 — `v4-planche.png` (session 11) : la Terre immense, coupée par le cadre
+Quatre essais (en haut à gauche → en bas à droite) :
+- **v4a** (Terre bleue unie, rayon 9, coupée en haut et à droite) : le « ballon » a disparu d'un coup : **un objet plus grand que le cadre ne peut pas être tenu en main**. Mais une sphère bleu pâle unie se lit « planète » ou « lune », pas « Terre » ; et le fil plonge sous le cadre puis remonte : on lit une **canne à pêche**.
+- **v4c** (continents par bruit) : la Terre se lit Terre (bord vert sur l'océan suffit à 160 px). Nouveau défaut : le fil entre au milieu du disque, il le **raye comme une fissure** sur 60 % de sa longueur.
+- **v4d (référence)** : le fil touche la Terre **sur son bord vu de la caméra** et pend sans tension ; trois autres petites planètes, chacune avec son fil et une minuscule lampe, au fond à gauche. Lecture d'un inconnu : « quelqu'un sur son petit monde, relié à la Terre ; il n'est pas le seul ». C'est enfin notre phrase (une ligne, un réseau), sans *Petit Prince* au premier regard (la silhouette assise sur un rocher y renvoie encore un peu, mais le fil de téléphone prend le dessus). Pas de pitié : les fils détendus disent « rien ne presse, c'est tenu ».
+- **v4e** (surplomb, Terre en bas) : rate. La Terre trop proche devient une voisine de même échelle, les autres fils partent hors cadre vers des points qu'on ne voit pas : lecture confuse. **Un signe dont l'extrémité est hors champ perd sa raison d'être** quand c'est l'extrémité qui porte le sens.
+
+Défauts restants de v4d : les lampes des autres planètes font 2 px, donc **invisibles à 160 px** : de fait la chaleur reste unique (tic toujours là, par défaut d'échelle et non par choix) ; les autres planètes se lisent « lunes » plutôt que « autres personnes ». v5 possible : une silhouette minuscule mais nette sur l'une d'elles, lampes à 6 px.
+
+## Leçons (session 11)
+1. **Pour tuer une lecture parasite liée à l'échelle (ballon, jouet, maquette), changer l'échelle relative au cadre** : un objet coupé par le bord est plus grand que l'image, donc ni tenu ni manipulable. C'est plus sûr que de changer la forme.
+2. **Un trait qui traverse une surface se lit fissure ; un trait qui la touche au bord se lit lien.** Les raccords de lignes se jugent dans le plan de l'image, pas dans la scène 3D (même leçon que la secousse de 0,6 px de la pièce 06 : dimensionner à l'écran).
+3. Une fable par accumulation (un réseau de petits mondes) est moins jolie qu'une fable par isolement (une planète seule) mais elle dit le contraire de la pitié. Choisir l'image qui contient la réponse, pas seulement le problème.
+4. Compter les sources chaudes **à la taille de lecture** : une chaleur de 2 px n'existe pas.
