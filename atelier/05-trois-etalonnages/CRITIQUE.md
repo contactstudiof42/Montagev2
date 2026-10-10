@@ -38,7 +38,12 @@ Test de l'hypothèse de v4 : un marqueur de support (grain, halation, vignette) 
 - B : vignette 0,25 et grain fin (σ 0,012 pondéré tons moyens, soit environ 3/255 ; même ordre que le σ≈2 qui protège des bandes dans `labo/encodage`), sans halation. Le grain fait réapparaître la ligne d'horizon et donne une **surface** à l'image, et la vignette resserre le regard sur la chaise. On lit « photo argentique », un peu plus « autrefois » qu'en v4, mais toujours pas « souvenir de quelqu'un ». Confirmation : **le support date l'image, il ne lui donne pas un sujet.** Pour « souvenir », il faut un regard (un contrechamp, une voix, un son hors champ).
 - Planche finale de comparaison : `v6-planche.png` (lignes B, B+support v5, B+support v6, A, C).
 
+## Test en mouvement (`scintillement.py`, `scintillement-mesures.json`)
+Rendu de 50 images (f200-249, 480×270, 16 échantillons + débruiteur, rouille claire), direction C de v4 appliquée image par image (`atelier/rendus/05anim-C.mp4`, non versionné).
+- Surface de la clé stable : 2,16 % → 1,97 %.
+- Variation de la clé d'une image à l'autre : 0,03-0,057 tant que l'eau descend (f201-211), puis < 0,002 dès que l'eau est immobile (f222 et après). Sur l'image immobile, la clé ne bouge pas plus que la luminance source (0,0015) : **ni le bruit du rendu ni le débruiteur ne font scintiller la clé** ; ce qui bouge, c'est le reflet de la rouille dans l'eau qui se retire, c'est-à-dire un vrai mouvement.
+- Limite : rendu de synthèse propre. Un vrai rush (bruit de capteur, compression) scintillera davantage : en phase 2, mesurer la même chose sur un rush réel, et prévoir clean black/white ou un léger flou temporel de la clé si besoin.
+
 ## À faire ensuite
 - v5 : B avec un marqueur de support (grain fin + halation douce) pour voir si « souvenir » se lit sans contexte.
-- Rendre 3 s en mouvement de la version C et mesurer le scintillement de la clé image par image.
 - Refaire l'exercice depuis un rendu EXR linéaire (scene-referred) pour comparer la latitude.
