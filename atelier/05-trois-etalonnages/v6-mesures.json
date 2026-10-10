@@ -1,0 +1,182 @@
+{
+ "SOURCE/70": {
+  "luma_mediane": 138.9,
+  "luma_p1": 80.5,
+  "luma_p99": 167.2,
+  "chaud_pct": 0.02,
+  "chaud_hors_chaise_pct": 0.0,
+  "biais_ciel": -9.4,
+  "biais_sable": -11.2,
+  "sat_moy": 0.083
+ },
+ "SOURCE/160": {
+  "luma_mediane": 138.1,
+  "luma_p1": 42.8,
+  "luma_p99": 167.2,
+  "chaud_pct": 0.37,
+  "chaud_hors_chaise_pct": 0.0,
+  "biais_ciel": -9.4,
+  "biais_sable": -11.2,
+  "sat_moy": 0.085
+ },
+ "SOURCE/230": {
+  "luma_mediane": 138.1,
+  "luma_p1": 42.9,
+  "luma_p99": 167.2,
+  "chaud_pct": 1.71,
+  "chaud_hors_chaise_pct": 0.0,
+  "biais_ciel": -9.4,
+  "biais_sable": -3.4,
+  "sat_moy": 0.068
+ },
+ "B-souvenir/70": {
+  "luma_mediane": 147.3,
+  "luma_p1": 95.4,
+  "luma_p99": 173.7,
+  "chaud_pct": 0.02,
+  "chaud_hors_chaise_pct": 0.0,
+  "biais_ciel": 5.7,
+  "biais_sable": -0.3,
+  "sat_moy": 0.023
+ },
+ "B-souvenir/160": {
+  "luma_mediane": 146.6,
+  "luma_p1": 62.1,
+  "luma_p99": 173.7,
+  "chaud_pct": 0.28,
+  "chaud_hors_chaise_pct": 0.0,
+  "biais_ciel": 5.7,
+  "biais_sable": -0.3,
+  "sat_moy": 0.025
+ },
+ "B-souvenir/230": {
+  "luma_mediane": 146.6,
+  "luma_p1": 62.1,
+  "luma_p99": 173.7,
+  "chaud_pct": 1.58,
+  "chaud_hors_chaise_pct": 0.0,
+  "biais_ciel": 5.7,
+  "biais_sable": 5.7,
+  "sat_moy": 0.038
+ },
+ "B+support-v5/70": {
+  "luma_mediane": 135.5,
+  "luma_p1": 70.8,
+  "luma_p99": 173.9,
+  "chaud_pct": 0.02,
+  "chaud_hors_chaise_pct": 0.0,
+  "biais_ciel": 14.2,
+  "biais_sable": -0.3,
+  "sat_moy": 0.046
+ },
+ "B+support-v5/160": {
+  "luma_mediane": 134.8,
+  "luma_p1": 61.5,
+  "luma_p99": 174.5,
+  "chaud_pct": 0.28,
+  "chaud_hors_chaise_pct": 0.0,
+  "biais_ciel": 14.2,
+  "biais_sable": -0.3,
+  "sat_moy": 0.048
+ },
+ "B+support-v5/230": {
+  "luma_mediane": 134.9,
+  "luma_p1": 56.7,
+  "luma_p99": 174.7,
+  "chaud_pct": 1.59,
+  "chaud_hors_chaise_pct": 0.0,
+  "biais_ciel": 14.2,
+  "biais_sable": 4.6,
+  "sat_moy": 0.062
+ },
+ "B+support-v6/70": {
+  "luma_mediane": 139.0,
+  "luma_p1": 78.1,
+  "luma_p99": 168.6,
+  "chaud_pct": 0.02,
+  "chaud_hors_chaise_pct": 0.0,
+  "biais_ciel": 5.0,
+  "biais_sable": -0.3,
+  "sat_moy": 0.023
+ },
+ "B+support-v6/160": {
+  "luma_mediane": 138.3,
+  "luma_p1": 61.6,
+  "luma_p99": 169.1,
+  "chaud_pct": 0.28,
+  "chaud_hors_chaise_pct": 0.0,
+  "biais_ciel": 5.0,
+  "biais_sable": -0.3,
+  "sat_moy": 0.025
+ },
+ "B+support-v6/230": {
+  "luma_mediane": 138.4,
+  "luma_p1": 58.3,
+  "luma_p99": 169.3,
+  "chaud_pct": 1.59,
+  "chaud_hors_chaise_pct": 0.0,
+  "biais_ciel": 5.0,
+  "biais_sable": 4.9,
+  "sat_moy": 0.038
+ },
+ "A-constat/70": {
+  "luma_mediane": 144.1,
+  "luma_p1": 66.0,
+  "luma_p99": 182.1,
+  "chaud_pct": 0.03,
+  "chaud_hors_chaise_pct": 0.0,
+  "biais_ciel": -3.7,
+  "biais_sable": -9.2,
+  "sat_moy": 0.06
+ },
+ "A-constat/160": {
+  "luma_mediane": 143.0,
+  "luma_p1": 16.0,
+  "luma_p99": 182.1,
+  "chaud_pct": 0.28,
+  "chaud_hors_chaise_pct": 0.0,
+  "biais_ciel": -3.7,
+  "biais_sable": -9.2,
+  "sat_moy": 0.065
+ },
+ "A-constat/230": {
+  "luma_mediane": 143.0,
+  "luma_p1": 16.5,
+  "luma_p99": 182.1,
+  "chaud_pct": 1.72,
+  "chaud_hors_chaise_pct": 0.0,
+  "biais_ciel": -3.7,
+  "biais_sable": 0.3,
+  "sat_moy": 0.051
+ },
+ "C-menace/70": {
+  "luma_mediane": 66.6,
+  "luma_p1": 24.9,
+  "luma_p99": 90.9,
+  "chaud_pct": 0.03,
+  "chaud_hors_chaise_pct": 0.0,
+  "biais_ciel": -6.9,
+  "biais_sable": -7.2,
+  "sat_moy": 0.129
+ },
+ "C-menace/160": {
+  "luma_mediane": 66.0,
+  "luma_p1": 20.4,
+  "luma_p99": 90.9,
+  "chaud_pct": 0.48,
+  "chaud_hors_chaise_pct": 0.0,
+  "biais_ciel": -6.9,
+  "biais_sable": -7.2,
+  "sat_moy": 0.134
+ },
+ "C-menace/230": {
+  "luma_mediane": 66.6,
+  "luma_p1": 25.7,
+  "luma_p99": 90.9,
+  "chaud_pct": 2.01,
+  "chaud_hors_chaise_pct": 0.0,
+  "biais_ciel": -6.9,
+  "biais_sable": -3.2,
+  "sat_moy": 0.108
+ }
+}

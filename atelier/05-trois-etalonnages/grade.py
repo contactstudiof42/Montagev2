@@ -68,7 +68,40 @@ def secondaire(x, h0=0, h1=40, s_min=0.2, v_min=0.04, doux=8, sat_in=1.0, gain_i
     return dedans * m + dehors * (1 - m)
 
 
-NODES = dict(primaires=primaires, contraste=contraste, saturation=saturation, split=split,
+def _flou(x, r):
+    """Flou boîte séparable (3 passes ≈ gaussien), rayon r en pixels."""
+    for _ in range(3):
+        for ax in (0, 1):
+            c = np.cumsum(np.pad(x, [(r + 1, r) if a == ax else (0, 0) for a in range(x.ndim)], mode="edge"), axis=ax)
+            n = x.shape[ax]
+            x = (np.take(c, np.arange(2 * r + 1, 2 * r + 1 + n), axis=ax) - np.take(c, np.arange(0, n), axis=ax)) / (2 * r + 1)
+    return x
+
+
+def grain(x, sigma=0.02, taille=1, graine=0, **_):
+    """Grain de luminance, plus fort dans les tons moyens (comme un négatif)."""
+    rng = np.random.default_rng(graine)
+    n = rng.normal(0, sigma, x.shape[:2])
+    if taille > 1:
+        n = _flou(n, taille // 2) * taille
+    y = luma(x)
+    return np.clip(x + (n * 4 * y * (1 - y))[..., None], 0, 1)
+
+
+def halation(x, seuil=0.6, rayon=6, force=0.25, teinte=(1.0, 0.35, 0.15), **_):
+    """Halo chaud autour des hautes lumières (diffusion dans la pellicule)."""
+    h = np.clip(luma(x) - seuil, 0, 1) / (1 - seuil)
+    return np.clip(x + _flou(h, rayon)[..., None] * force * np.array(teinte), 0, 1)
+
+
+def vignette(x, force=0.25, **_):
+    H, W = x.shape[:2]
+    yy, xx = np.mgrid[0:H, 0:W]
+    r = np.hypot((xx - W / 2) / (W / 2), (yy - H / 2) / (H / 2)) / np.sqrt(2)
+    return x * (1 - force * r ** 2)[..., None]
+
+
+NODES = dict(grain=grain, halation=halation, vignette=vignette, primaires=primaires, contraste=contraste, saturation=saturation, split=split,
              haute_compression=haute_compression, secondaire=secondaire)
 
 
@@ -114,7 +147,10 @@ def main():
     for r, tiles in enumerate(rows):
         for c, t in enumerate(tiles):
             planche.paste(t, (320 * c, 180 * r))
-    planche.save(os.path.join(os.path.dirname(__file__), f"{version}-planche.png"), optimize=True)
+    chemin = os.path.join(os.path.dirname(__file__), f"{version}-planche.png")
+    planche.save(chemin, optimize=True)
+    if os.path.getsize(chemin) > 500_000:  # règle du dépôt : planches < 500 Ko (le grain gonfle le PNG)
+        planche.quantize(256, dither=Image.Dither.FLOYDSTEINBERG).save(chemin, optimize=True)
     json.dump(R, open(os.path.join(os.path.dirname(__file__), f"{version}-mesures.json"), "w"), indent=1)
     for k, m in R.items():
         print(k, m)

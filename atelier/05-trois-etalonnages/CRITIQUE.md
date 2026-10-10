@@ -30,6 +30,14 @@ Hypothèse : « une seule chaleur » se décide au tournage (principe 8 du skill
 - Originalité : C reste proche de mon propre système (froid + une chaleur) : c'est votre goût (Joker, Ziak), mais je dois veiller à ne pas en faire un tic. A est la direction la plus « juste » pour ce plan pris isolément.
 - Limites : étalonnage sur une image 8 bits déjà tonemappée (AgX), pas sur du log ; images fixes (le qualifieur peut scintiller en mouvement : non testé) ; mes opérateurs imitent Resolve sans en reproduire les formules exactes (test MCP 31).
 
+## v5 (`v5-planche.png`, `v5-B-detail.png`) — « souvenir » par un marqueur de support ?
+Test de l'hypothèse de v4 : un marqueur de support (grain, halation, vignette) suffit-il à faire lire « il y a longtemps » sans contexte ?
+- **Raté, et instructif.** Grain σ 0,03 avec une taille de 2 px : des **taches** et non du grain, qui se lisent comme du bruit de capteur en basse lumière (vidéo de surveillance), soit l'inverse d'un souvenir. La halation sur un ciel couvert, sans source ponctuelle, n'a rien à entourer : elle se contente de **teinter tout le ciel** (biais passé de +5,7 à +14,2). C'est un effet sans objet. Un effet de support a besoin de ce qu'il imite : la halation suppose des spéculaires, le grain suppose une émulsion fine.
+
+## v6 (`v6-planche.png`, `v6-B-detail.png`) — le support, en retenue
+- B : vignette 0,25 et grain fin (σ 0,012 pondéré tons moyens, soit environ 3/255 ; même ordre que le σ≈2 qui protège des bandes dans `labo/encodage`), sans halation. Le grain fait réapparaître la ligne d'horizon et donne une **surface** à l'image, et la vignette resserre le regard sur la chaise. On lit « photo argentique », un peu plus « autrefois » qu'en v4, mais toujours pas « souvenir de quelqu'un ». Confirmation : **le support date l'image, il ne lui donne pas un sujet.** Pour « souvenir », il faut un regard (un contrechamp, une voix, un son hors champ).
+- Planche finale de comparaison : `v6-planche.png` (lignes B, B+support v5, B+support v6, A, C).
+
 ## À faire ensuite
 - v5 : B avec un marqueur de support (grain fin + halation douce) pour voir si « souvenir » se lit sans contexte.
 - Rendre 3 s en mouvement de la version C et mesurer le scintillement de la clé image par image.
