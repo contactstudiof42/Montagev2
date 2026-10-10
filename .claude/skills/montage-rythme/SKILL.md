@@ -139,3 +139,8 @@ Démonstration produit, réaction en chaîne, gag mécanique, plan « Cog » : t
 
 ## La réaction tenue dans le drame (examen n°13 et `culture/reaction-tenue-drame.md`, session 24) [THÉORIQUE, sources écrites]
 - Aucune norme de durée sourcée au milieu d'un dialogue ; une réaction tenue tient si l'enjeu est posé juste avant et si le plan **change encore** (micro-geste, son qui vit). Couper après le dernier geste, pas à une durée fixe (même logique que le « bouton » de la pièce 27).
+
+## Le silence vu de loin (pièce 34 « De dehors », session 25) [TESTÉ EN ATELIER, maquette Blender + voix de synthèse ; décrochage réel non mesuré]
+- De près, un silence est une **réaction tenue** (il a un visage). De loin, le même silence est un **trou** : 15 s puis 21 s sans rien à lire sur une voiture fixe (v1). Les répliques tiennent seules, les silences non.
+- Donner au silence un support visible **qui soit un acte des personnages** : la liseuse qu'il éteint juste après « je pars » (il ne veut pas être vu), la buée de leur souffle qui monte, le chauffage demandé qui la dégage. Test : retirer l'événement, le sens change-t-il ? Si non (les phares d'une voiture qui passe), c'est du remplissage : couper.
+- Un compteur lent (buée) n'existe qu'à la taille de lecture : sur une voiture à 15 % de la largeur, invisible ; une **poussée lente de 100 s** (zoom ×2,4, accélération douce en t^1,6) l'amène à la lecture sans se faire remarquer. `mesure.py` (trous sans événement) dit « réglé » dès v3 alors que l'œil ne voit rien : mesurer l'événement **et** sa taille.

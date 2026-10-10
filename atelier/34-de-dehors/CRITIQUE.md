@@ -1,0 +1,30 @@
+# Pièce 34 « De dehors » — critique (session 25, 2026-10-10)
+
+Maquette de la direction B de l'examen n°13 : 1 min 40 de plan extérieur fixe, dialogue (espeak-ng) filtré « à travers la carrosserie » (passe-haut 220 Hz, passe-bas 1 kHz, écho de boîte 12/19 ms), LED qui grésille (100/200 Hz), air de parking. Tout normalisé à -23 LUFS (EBU R128). Rendus : `atelier/rendus/34/v1…v5.mp4` (non versionnés). Commandes :
+`blender -b -P scene.py -- OUT.png ext|int [lampe] [phares] [buee] [hd]` (14 s l'image en 640×270, ~60 s en 1280×540) ; `python3 montage.py vN atelier/rendus/34` (20 s ; v4-v5 : 60 s, image par image en numpy) ; `python3 mesure.py atelier/rendus/34/vN-evenements.json` (trous sans événement).
+
+## Les versions et ce qu'elles montrent
+| v | Ce qui change | Mesure (trou le plus long sans aucun événement / sans événement d'image) | Jugement |
+|---|---|---|---|
+| v1 | plan fixe pur, une coupe dedans à 1:40 | 21 s (76-97) / **100 s** | Planche `v1-planche.png` : huit vignettes identiques. Pendant le silence de Karim (15 s après « je pars »), il n'y a **rien** : de dehors, on ne voit pas la réaction, donc le silence n'est plus une réaction tenue, c'est un trou. La direction A tenait parce que le silence avait un visage. |
+| v2 | + liseuse (allumée pour lire le ticket, **éteinte juste après « je pars »**, rallumée avant la dernière réplique) ; + phares d'une voiture qui part pendant le silence | 21 s / 71 s | La liseuse éteinte est la meilleure idée de la maquette : **un geste vu de loin raconte la pudeur** (il éteint pour ne pas être vu). Les phares, eux, sont une décoration : ils tombent dans le silence pour l'occuper, pas pour dire. Et 71 s sans rien à l'image au milieu. |
+| v3 | + **buée** : les vitres s'embuent (ils respirent, il fait froid), le chauffage demandé les dégage à 48 s, puis elles s'embuent jusqu'à l'opacité pendant le dernier silence | 7,6 s / 11,7 s (la mesure dit : réglé) | **La mesure ment** : sur la planche `v3-planche.png`, la buée est invisible (la voiture fait 15 % de la largeur). Un compteur trop petit ne compte pas (même leçon que la goutte de la pièce 29). |
+| v4 | + **poussée lente** de 100 s (zoom 1 → 2,4, accélération douce) vers la voiture | idem | `v4-planche.png` : la buée se lit à partir de ~60 s ; à 96 s, les vitres sont laiteuses, on ne voit plus personne ; à 99,8 s la liseuse se rallume dans la buée : **la voiture devient une lanterne**. On s'approche exactement à mesure qu'on voit moins : la caméra désire, la buée protège. C'est le sens de la scène fabriqué par l'image seule. |
+| v5 | v4 **sans la coupe dedans** : la dernière réplique entendue à travers la buée, sur la lanterne, 6 s de tenue | — | `v5-fin.png`. Plus pudique encore que v4 et plus fidèle à la consigne (« on ne voit jamais quelqu'un pleurer ») ; mais on perd l'aveu (l'unique entrée). |
+
+## Réponses aux questions de l'intention
+1. **Où l'attention décroche-t-elle ?** Je ne peux pas le mesurer sans spectateur (PLAN-TESTS). Ce que la maquette montre : le décrochage ne vient pas de la durée du plan, il vient de **l'absence de quelque chose à lire pendant les silences**. Les répliques tiennent seules ; les silences, non. De dehors, le silence perd son visage : il faut lui donner un autre support visible.
+2. **Les événements internes** : ils tiennent sans trahir la pudeur **s'ils sont des actes des personnages** (la liseuse qu'il éteint, la buée de leur souffle, le chauffage qu'il demande et qui dégage les vitres) ; ils deviennent décoratifs s'ils viennent du monde pour remplir (les phares). Test : supprimer l'événement, le sens change-t-il ? Liseuse : oui. Phares : non → à couper.
+3. **L'unique coupe dedans** : dans v4, elle pèse énormément (100 s de distance, puis un visage à 1 m), mais elle **contredit** ce que l'image venait de construire (la buée referme la voiture ; on la force). v5 garde la logique jusqu'au bout. Je recommande **v5 pour un festival** (risque assumé, cohérent), **v4 si la réalisatrice tient à voir Karim une fois** ; dans les deux cas, la coupe ou la non-coupe doit être décidée sur le **jeu réel** de la prise 2 (phase 2 : si son visage retient ses larmes de façon magnifique, l'entrée est méritée).
+
+## Ce qui est raté
+- Habitacle intérieur = placeholder (une tête-œuf) : le plan dedans ne se juge pas ici.
+- v4 : en fin de poussée, le lampadaire sort du cadre et les roues sont coupées ; recadrer plus bas (centre y ≈ 470 en HD) et garder le mât dans le champ : la LED est la seule lumière « de dehors », elle doit rester l'autre pôle.
+- Voix de synthèse : l'intelligibilité « à travers la carrosserie » (passe-bas 1 kHz) n'est pas jugeable sur espeak ; test d'écoute en phase 2 (une coupure trop basse tue les consonnes ; 1,5-2 kHz probablement plus juste pour un vrai mix).
+- Le phénomène physique : la buée se forme sur des vitres froides en quelques minutes avec deux personnes et moteur coupé ; en 1 min 40 c'est accéléré (licence d'un court, à assumer ou à préparer au tournage : vaporisateur, glycérine, ou buée en post sur une plaque propre).
+
+## Leçons (versées dans les skills)
+1. **De dehors, un silence n'a plus de visage : donnez-lui un support visible qui soit un acte des personnages** (lumière qu'on éteint, buée du souffle), jamais un événement du monde qui vient remplir. → `montage-rythme`, `montage-direction-artistique`.
+2. **L'image peut fabriquer la pudeur toute seule** : un écran naturel (buée, reflet, rideau) qui se ferme à mesure que la caméra s'approche dit « on n'a pas le droit » mieux qu'une coupe. → `montage-regard`, `montage-preparation-tournage-vfx` (buée sur le plateau ou en post).
+3. **Un compteur doit être à la taille de lecture** (confirmé une 2e fois après la pièce 29) ; une poussée lente de 100 s est le moyen le moins visible de l'y amener. Une mesure d'événements ne voit pas si l'événement est perceptible.
+4. Méthode : **une direction écartée sans maquette est une direction non jugée** (2e occurrence, examens n°1 et n°13) : la maquette de B a produit la meilleure image de toute la scène (la lanterne), absente des trois directions de l'examen.

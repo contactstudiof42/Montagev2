@@ -79,6 +79,9 @@ Pour chaque direction, fiche fixe :
 Avant de rendre un traitement, le relire en cherchant chaque décision laissée en question (« … ? non », « peut-être ») : la trancher ou l'écrire comme option explicite pour le client. Et vérifier que la direction la plus audacieuse n'a pas été écartée **sans maquette** (examens n°1 et n°13 : même faute).
 Fiction dialoguée (examen n°13) : la pudeur se monte en restant sur **celui qui écoute** (on voit l'effort de ne pas pleurer) ; l'objet anodin du dialogue (un ticket de parking) peut devenir l'horloge de la scène et sa dernière réplique.
 
+## Maquetter la direction qu'on écarte (examens n°1 et n°13, pièce 34)
+Avant d'écarter la direction la plus audacieuse, en faire une maquette de 20 min (plans fixes Blender, voix de synthèse, bruits) : la direction B de l'examen n°13 (« De dehors »), réduite sur le papier à un cadre, a donné en maquette la meilleure image de la scène (la voiture embuée qui devient lanterne) et une 4e direction (B sans coupe). Dans la consultation, dire quelle direction a été maquettée et laquelle ne l'a pas été.
+
 ## Étape 4 — Critères de réussite (avant de réaliser)
 3 à 5 critères **vérifiables** sur une planche contact ou une mesure, ex. :
 - « Le message est lisible à 2 s sans son. »
