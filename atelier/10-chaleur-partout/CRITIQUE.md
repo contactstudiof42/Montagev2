@@ -68,3 +68,8 @@ v5 proposée (si on y revient) : une main ou un visage simple au-dessus du tél�
 - Le son (vibration à 4,0 s puis ton de pièce −3 dB) fait mieux son travail que l'image : la baisse du ton de pièce dit « quelque chose s'est retiré ».
 - Correction pour v7 : cadrer le visage **contre l'ombre** (caméra plus basse, fond = coin sombre du plafond ou nuit de la fenêtre), pour que le plan serré soit plus sombre que le large ; vérifier par la mesure : luminance moyenne du plan serré < plan large, pixels chauds en baisse.
 - Leçon (pour `montage-regard`) : **dans un montage de couleur, c'est le fond qui raccorde, pas le sujet** ; un gros plan hérite de la couleur de ce qui est derrière lui.
+
+## v7 (session 8) — `planche-v7.png` (W0 / W1), `v7-montage-planche.png` (`python3 montage_v6.py W1`)
+- Caméra latérale basse (de +x vers −x) : le fond est pour moitié le vide sombre de la pièce. Luminance du gros plan **0,35** (contre 0,64 en v6 ; plan large 0,30) : le raccord lumière tient presque. Peau dans la zone : −0,33 → −0,21 (même +0,12 qu'en v6).
+- À la planche : le gros plan ne « saute » plus en clarté ; le refroidissement de la peau (rose pâle sous le menton) se lit mieux sur fond sombre que sur fond beige. Mais 56 % des pixels restent chauds (le mur entre encore à droite) : le froid reste discret. C'est peut-être juste pour une scène de tendresse qui se retire ; pour un vrai « choc froid », il faudrait que le gros plan soit **plus sombre que le large** et le mur hors cadre.
+- Je m'arrête là pour cette pièce : la leçon est acquise (source plus saturée que nature, surface tournée vers la source, peau = perte de chaleur, le fond raccorde). La suite utile est un atelier dédié au fond (BACKLOG 47), pas une v8 de ballon.
