@@ -9,6 +9,8 @@ import os, subprocess, sys
 import numpy as np
 
 out = sys.argv[1]; os.makedirs(out, exist_ok=True)
+# --freq F : strobe libre à F Hz (non calé sur l'obturateur 1/50 s) ; sans option : 1 image sur 3
+FREQ = float(sys.argv[sys.argv.index("--freq") + 1]) if "--freq" in sys.argv else None
 W, H, FPS, N = 360, 640, 25, 200
 rng = np.random.default_rng(42)
 xs = np.arange(W)[None, :]; ys = np.arange(H)[:, None]
@@ -21,7 +23,8 @@ for n in range(N):
         a = ang0 + 0.5 * np.sin(t * 0.7 + k)
         d = np.abs((xs - W / 2) * np.cos(a) + (ys - 60) * np.sin(a))
         img += (np.exp(-(d / 3.0) ** 2) * 0.6)[..., None] * [0.1, 1.0, 0.3]
-    if n % 3 == 0:                                                        # strobe : 1 image sur 3
+    lit = (n % 3 == 0) if FREQ is None else (np.floor(t * FREQ + 0.5 / FPS * FREQ) > np.floor(t * FREQ) or (t * FREQ) % 1 < 1e-9)
+    if lit:                                                               # flash dans la fenêtre d'obturation
         img += [0.85, 0.85, 0.9]
     crowd = np.zeros((H, W), bool)                                        # foule : têtes + épaules qui sautent
     for (x0, y0, r, ph) in heads:
