@@ -72,11 +72,23 @@ Et une cinquième, d'état : **la saturation** (Noé / Tom Kan, générique d'*E
 20d. **L'énigme dans un seul canal** (Freeze Corleone, `culture/freeze-corleone-clips.md`, session 9 ; montage non sourcé) : chez Ziak le mystère est dans l'image, chez Freeze dans le texte, et le clip reste sobre (noir et blanc, lieu unique chargé, ou personnage animé reconnaissable par un seul trait). Un texte dense appelle une image simple, et inversement ; deux canaux énigmatiques à la fois se brouillent.
 21. **Garder la dominante « fausse » et faire mériter la couleur** (Joker).
 
+## G. YouTube et internet (session 17 ; détail : `montage-youtube`)
+- **La promesse avant le film** (MrBeast, `culture/youtube-mrbeast-retention.md`) : titre + image clé écrits avant le tournage, tenus avant 30 s. → Toute pub, tout teaser.
+- **« Aucun temps mort », pas « couper vite »** (MrBeast 2024 : 38 → 23 coupes/min) : un plan long est juste s'il fait quelque chose.
+- **Le regard caméra est un contrat** (face caméra FR, `youtube-fr-divertissement.md`) : jump cut assumé ; punch-in et bruitage remplacent la seconde caméra. → Témoignage corporate en adresse directe.
+- **Montrer et dire au même instant ; comparer plutôt qu'expliquer** (Every Frame a Painting, `video-essay-every-frame-a-painting-nerdwriter.md`).
+- **Une matière unique, la donnée matérialisée, le zoom continu comme plan d'établissement** (Vox, Johnny Harris, `youtube-doc-explicatif-vox-johnny-harris.md`).
+- **Voix définitive avant l'animation ; l'image change quand l'idée change ; mouvement de repos sous le seuil de l'événement** (Kurzgesagt, `kurzgesagt-motion-design.md`).
+- **Un système plutôt qu'une séquence ; un template est déjà un cliché** (habillage de chaîne, `motion-design-youtube-explicatif-et-habillage.md`).
+- **L'authenticité est un effet de montage ; le plan vide où le sujet entre ; timelapse et drone comme ponctuation** (Neistat, Chamberlain, `vlog-casey-neistat-et-heritiers.md`).
+- **Une contrainte forte crée un langage ; un effet violent est une ponctuation ; deux images à l'écran doivent avoir un rapport** (YTP, Vine, brainrot, `cultures-edit-internet-ytp-vine-brainrot.md`). → Une version 6 s se pense installation / rupture / retour, pas « un 30 s raccourci ».
+
 ## Tensions entre principes (où mon regard doit trancher)
 - *Kinetic editing* (calage micro, SFX denses) contre *Ziak* (calage macro, aucun effet surligné) : l'utilisateur aime les deux, **pour des usages différents** (confirmé par lui, 2026-10-09). Le premier pour l'énergie et la rétention sur les réseaux ; le second pour la gravité et la menace dans un clip ou un film de marque. Choisir selon l'usage, sans mélanger les deux par défaut.
 - *Réduire à un signe* (Bass) contre *saturer de texture* (Cooper) : le signe pour une marque claire ; la texture pour un sujet trouble ou artisanal.
 - *Une seule cadence, celle de la musique* (Bass) contre *cacher la synchro* (Gondry) : la première pour 10-30 s, la seconde a besoin de durée pour que la règle s'apprenne.
 - *Monter le choc* (kinetic : impact, flash, shake) contre *le laisser arriver dans un plan continu* (Murai) : le premier fait plaisir et confirme ; le second dérange et accuse. Choisir selon que le spectateur doit jouir de l'événement ou en être responsable.
+- *Couper toutes les 1,5 s* (retention editing 2019-2023) contre *laisser respirer* (MrBeast 2024, vlog, essai) : l'écran tranche (téléphone = densité ; téléviseur, où se regarde ~45 % de YouTube = respiration) et le genre aussi (divertissement contre argument).
 - *Faire attendre* (Glazer) contre *les 2 premières secondes des réseaux* : l'attente ne marche que sur un public captif (TV, cinéma, préroll non zappable), ou si l'attente est elle-même intrigante dès la première image.
 
 ## Application vérifiée en atelier

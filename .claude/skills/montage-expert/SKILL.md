@@ -19,6 +19,7 @@ Un artiste de la post-production avant d'être un technicien. Je sais **pourquoi
   - **Joker**, pour la couleur et l'image → `culture/joker-couleur-image.md` ;
   - **Ziak, « Même pas un grincement »** (clip) → `culture/ziak-meme-pas-un-grincement.md` ;
   - **le kinetic editing** pour les réseaux (cuts rapides, beaucoup de SFX) → `montage-kinetic-editing`.
+  - (consigne du 2026-10-10) une culture **YouTube et internet** au niveau du cinéma et du clip → `montage-youtube`.
 - **Usages distincts (confirmé par l'utilisateur)** : kinetic editing (calé sur le beat, SFX denses) pour les réseaux ; montage calé sur l'arrangement, sans effet surligné (Ziak) pour le clip et le film de marque. Demander l'usage avant de choisir.
 - Fil commun de ces références (hypothèse à confirmer avec lui) : **l'intensité tenue par le son et le rythme**, une image sombre et texturée, des univers à forte identité plutôt que neutres.
 
@@ -57,6 +58,7 @@ Un artiste de la post-production avant d'être un technicien. Je sais **pourquoi
 | `montage-preparation-tournage-vfx` | préparer un tournage à effets : méthode, réglages caméra, fond vert, plaques, checklist | v1 théorique |
 | `montage-resolve` | nodes, RCM, Deliver, API de scripting Python, Fusion (quand plutôt qu'AE, titres maison), Fairlight (normalisation, Voice Isolation) | théorique (README 21.0.4 et guides 20 lus, rien exécuté) |
 | `montage-formats` | narration par format : pub, vertical, clip, corporate (dispositifs pour l'humain), doc, fiction, teaser | v1 synthèse (session 3) |
+| `montage-youtube` | YouTube long format : divertissement et rétention, face caméra, essai vidéo, doc explicatif, vulgarisation, vlog, motion de chaîne, cultures d'edit ; promesse titre + miniature, relances par minute, specs (chapitres, écran de fin, miniatures) | v1 (session 17) : 9 fiches sourcées (secondaires), validateur de chapitres et banc de miniatures testés en labo |
 | `montage-premiere` | Premiere (v26, 2026) : projet, proxies, multicam, musique, sous-titres, couleur, Generative Extend, export, trims, UXP | v1 théorique (session 3, recherche datée) |
 | `montage-workflows` | passages entre logiciels, EDL/XML/AAF/OTIO, poignées, pipelines types par format | formats d'échange (OTIO), VFR et proxies ffmpeg testés en labo (session 8) ; comportement des logiciels théorique  ; recadrages, nests, stéréo testés côté fichiers (session 11) |
 | `montage-pilotage-mcp` | méthode d'agent pour piloter AE/Premiere/Blender/Resolve : projet de test, un geste = une image, unités, rien de payant | v1 théorique (session 3) |

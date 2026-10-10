@@ -24,6 +24,9 @@ Chaque format suppose un spectateur dans un état différent : captif (salle, TV
 - Zones sûres : rien d'important en bas (légende) ni à droite (boutons).
 - **LinkedIn** (B2B) : même grammaire muette, énergie plus retenue, 4:5 ou 1:1 ; le hook peut être une question professionnelle en carton (examen n°3, direction C).
 
+## YouTube long format (5-60 min)
+Spectateur **choisi mais révocable** à chaque seconde : promesse (titre + miniature) tenue avant 30 s, relance toutes les ~3 min, voix d'abord, jump cut assumé en adresse directe, fin nette et écran de fin de 5-20 s prévu à l'image. Tout le détail par genre (divertissement, essai, explicatif, vlog, motion) : `montage-youtube`.
+
 ## Clip musical
 - La musique est le scénario : couper sur l'arrangement (macro) ou sur les temps (micro), le décider consciemment (`montage-rythme`). Ziak : macro, menace contenue ; Gondry : chaque couche sonore = une famille visuelle ; Jonze : quand le corps produit le rythme, le montage se retire.
 - Une idée de forme forte vaut mieux qu'un récit (concept, dispositif, plan-séquence).
