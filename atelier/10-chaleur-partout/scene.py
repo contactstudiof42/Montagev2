@@ -106,6 +106,11 @@ if P.get("ecran"):  # l'événement froid : un téléphone posé face en l'air q
     if P.get("main_ecran"):  # v5 : une main (forme simple couleur peau) au-dessus du téléphone, à P["main"] m, qui reçoit la lumière de l'écran
         bpy.ops.mesh.primitive_uv_sphere_add(radius=0.05, location=(0.05, 0.17, 0.767 + P["main_ecran"])); mn = bpy.context.object
         mn.scale = (0.9, 1.6, 0.35); mn.data.materials.append(mat("peau", (0.62, 0.45, 0.36), 0.55))
+    if P.get("visage"):  # v6 : une tête penchée sur le téléphone (sphère peau + nez), à P["visage"] m au-dessus
+        bpy.ops.mesh.primitive_uv_sphere_add(radius=0.09, location=(0.05, 0.12, 0.767 + P["visage"])); vi = bpy.context.object
+        vi.data.materials.append(mat("peau", (0.62, 0.45, 0.36), 0.55)); vi.name = "visage"
+        bpy.ops.mesh.primitive_cone_add(radius1=0.018, depth=0.04, location=(0.05, 0.1, 0.767 + P["visage"] - 0.085))
+        bpy.context.object.data.materials.append(mat("peau2", (0.62, 0.45, 0.36), 0.55)); bpy.context.object.rotation_euler = (math.radians(180), 0, 0)
     bpy.ops.mesh.primitive_cube_add(location=(0.05, 0.2, 0.767)); ph = bpy.context.object; ph.scale = (0.04, 0.075, 0.004)
     pm = bpy.data.materials.new("ecran"); pm.use_nodes = True; nb = pm.node_tree.nodes["Principled BSDF"]
     nb.inputs["Base Color"].default_value = (0.01, 0.01, 0.01, 1)
@@ -175,8 +180,8 @@ else:
         from mathutils import Vector
         cobj = bpy.context.object; d = Vector(P["insert_cible"]) - cobj.location
         cobj.rotation_euler = d.to_track_quat("-Z", "Y").to_euler()
-    bpy.context.object.data.lens = 85; bpy.context.object.data.dof.use_dof = True
-    bpy.context.object.data.dof.focus_object = tasse; bpy.context.object.data.dof.aperture_fstop = 2.8
+    bpy.context.object.data.lens = P.get("insert_lens", 85); bpy.context.object.data.dof.use_dof = True
+    bpy.context.object.data.dof.focus_object = bpy.data.objects.get("visage") or tasse; bpy.context.object.data.dof.aperture_fstop = 2.8
 sc.camera = bpy.context.object
 cam = sc.camera
 if P.get("main"):  # caméra portée : somme de sinus lents, pas de bruit blanc (un bras, pas un séisme)
