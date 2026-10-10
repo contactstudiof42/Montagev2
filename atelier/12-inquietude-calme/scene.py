@@ -63,16 +63,16 @@ for t in P.get("tasses_pos", [[0.35, 0.3, 0.0], [-0.05, 0.6, 2.6]])[:P.get("tass
 # soleil par la fenêtre (rasant, chaud) + ciel froid de débouchage
 bpy.ops.object.light_add(type="SUN", location=(-4, 0, 3)); s = bpy.context.object
 s.data.energy = P.get("soleil", 9.0); s.data.color = (1.0, 0.86, 0.68); s.data.angle = math.radians(1.5)
-s.rotation_euler = (0, math.radians(-62), math.radians(-12))
+s.rotation_euler = (0, math.radians(-62), math.radians(P.get("soleil_z", 8)))
 bpy.ops.object.light_add(type="AREA", location=(-2.3, -0.05, 1.5)); a = bpy.context.object
 a.data.shape = "RECTANGLE"; a.data.size, a.data.size_y = 1.4, 1.3; a.data.energy = P.get("ciel_area", 80)
 a.data.color = (0.75, 0.85, 1.0); a.rotation_euler = (0, math.radians(-90), 0)
 
 cam = P.get("camera", "large")
-loc = P.get("cam_loc", [1.5, -1.9, 1.45] if cam == "large" else [-0.3, -1.3, 1.25])
+loc = P.get("cam_loc", [1.5, -1.9, 1.45] if cam == "large" else [0.3, -1.6, 1.3])
 bpy.ops.object.camera_add(location=tuple(loc)); c = bpy.context.object
-c.data.lens = P.get("lens", 32 if cam == "large" else 28)
-cible = P.get("cible", [0.0, 0.45, 0.78] if cam == "large" else [-2.0, 0.1, 1.15])
+c.data.lens = P.get("lens", 32 if cam == "large" else 24)
+cible = P.get("cible", [0.0, 0.45, 0.78] if cam == "large" else [-1.0, 0.0, 0.5])
 d = [cible[i] - loc[i] for i in range(3)]
 import mathutils
 c.rotation_euler = mathutils.Vector(d).to_track_quat("-Z", "Y").to_euler()

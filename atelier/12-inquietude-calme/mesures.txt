@@ -1,0 +1,5 @@
+v1 {"aire_pct": 0.065, "boite": [217, 120, 226, 133], "centre": [222, 126], "diff_hors_zone_max": 0.0392, "zone_saillante": [120, 50], "dist_saillance_pct_diag": 23.0, "dist_centre_pct_diag": 3.8}
+v2 {"aire_pct": 0.195, "boite": [237, 118, 277, 134], "centre": [250, 128], "diff_hors_zone_max": 0.0392, "zone_saillante": [328, 176], "dist_saillance_pct_diag": 16.6, "dist_centre_pct_diag": 2.1}
+v3 {"aire_pct": 0.202, "boite": [239, 119, 270, 140], "centre": [248, 129], "diff_hors_zone_max": 0.0392, "zone_saillante": [168, 140], "dist_saillance_pct_diag": 14.6, "dist_centre_pct_diag": 1.8}
+v4 {"aire_pct": 0.238, "boite": [238, 118, 270, 141], "centre": [248, 130], "diff_hors_zone_max": 0.0392, "zone_saillante": [72, 58], "dist_saillance_pct_diag": 34.4, "dist_centre_pct_diag": 1.7}
+{"aire_pct": 0.454, "boite": [237, 112, 284, 146], "centre": [251, 128], "diff_hors_zone_max": 0.0392, "zone_saillante": [296, 148], "dist_saillance_pct_diag": 9.0, "dist_centre_pct_diag": 2.4}
