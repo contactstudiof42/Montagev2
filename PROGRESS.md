@@ -4,14 +4,14 @@ _Lire en premier. Mis à jour à chaque fin de session._
 
 ## Où on en est (après la session 13, 2026-10-10 ~10:55 UTC)
 - **Skills (21)** : session 13 : `montage-direction-artistique` (clip : texte et corps, éprouvé en atelier 19), `montage-regard` (règle 19 : sens en contrepoint, espace en continuité), `montage-kinetic-editing` (3g : direction du filé à la coupe, testé en labo).
-- **Culture** : 47 fiches (aucune nouvelle en session 13).
+- **Culture** : 48 fiches (nouvelle : `culture/clips-illustrer-ou-contredire-paroles.md`, sous-agent).
 - **Atelier** : **19 « Le texte et le corps »** v1-v3 (`atelier/19-texte-et-corps/`, B2 = réf.) ; 18 « Soustraction » (v3).
-- **Labo** : `labo/kinetic/whip-flot/` (DIS puis vecteurs du codec ; validé sur rendus Blender).
+- **Labo** : `labo/kinetic/whip-flot/` (DIS puis vecteurs du codec ; validé sur rendus Blender) ; `labo/paroles/` (lisibilité des paroles incrustées par OCR ; `apt-get install tesseract-ocr tesseract-ocr-fra` : 20 s).
 - **Examens** : n°1 13, n°2 14, n°3 15, n°4 14, n°5 14, n°6 15, n°7 15 /20. **N°8 en session 15 ou 16.**
 
 ## Reprendre ici (session 14)
 1. Démarrage normal. Blender : `curl -sSL -o blender.tar.xz https://download.blender.org/release/Blender4.2/blender-4.2.3-linux-x64.tar.xz && tar xf blender.tar.xz` dans le scratchpad (30 s). `python3 -m pip install -q numpy pillow scipy colour-science opentimelineio otio-fcp-adapter otio-cmx3600-adapter opencv-python-headless av`.
-2. Priorités : BACKLOG 73 (scansion vers / coupe, mains lisibles), 74 (fiche « illustrer ou contredire les paroles »), 69 (extinction animée), 72 (plan-séquence : renverser mon tic), 67 (pièce 17 v6), 51 (teaser 15 s), 75 (paroles incrustées : drawtext / ASS).
+2. Priorités : BACKLOG 73 (scansion vers / coupe, mains lisibles), 75 suite (contour net, lecture en mouvement), 69 (extinction animée), 72 (plan-séquence : renverser mon tic), 67 (pièce 17 v6), 51 (teaser 15 s), 75 (paroles incrustées : drawtext / ASS).
 3. Pièges : **`pkill -f motif` tue aussi le shell** → tuer par PID. **Plage limitée** : en `yuv*` / `gray16` lus par ffmpeg, le noir vaut 16 (×257). **PIL lit un PNG RGBA 16 bits en 8 bits**. **Remplacer du code par substitution Python : ne jamais placer un commentaire dans une ligne remplacée en milieu d'appel** (session 13 : SyntaxError, rendus vides, toujours lire le log Blender). Rendus longs : `nohup … &` + boucle d'attente. Cycles 480×270, 8 échantillons, rue simple : ~2,5 s/image. Wikimedia → HTTP 429 : passer par Internet Archive. Jamais d'e-mail dans un User-Agent.
 
 ## Environnement constaté
@@ -20,7 +20,7 @@ _Lire en premier. Mis à jour à chaque fin de session._
 - Un serveur MCP nommé `HIGGSFIELD_MCP` est listé dans l'environnement : non appelé (consigne phase 1). Noms observés dans `PLAN-TESTS-MCP.md`.
 
 ## Historique
-- Session 13 — 2026-10-10 10:30 → ~10:55 UTC : pièce 19 « Le texte et le corps » (v1-v3), labo flot optique à la coupe (sous-agent + validation Blender) ; PLAN-TESTS 54-55.
+- Session 13 — 2026-10-10 10:30 → ~10:55 UTC : pièce 19 « Le texte et le corps » (v1-v3), labo flot optique à la coupe (sous-agent + validation Blender), labo paroles incrustées (OCR), fiche « illustrer ou contredire les paroles » ; PLAN-TESTS 54-56.
 - Session 12 — 2026-10-10 09:29 → ~10:15 UTC : examen n°7 « Heure creuse » (15/20), labo noir protégé (pièce 17 en 16 bits, fixe / panoramique), pièce 18 « Soustraction » v1-v3, fiche Natasha Braier (sous-agent) ; PLAN-TESTS 52-53.
 - Session 11 — 2026-10-10 08:30 → 08:56 UTC : pièce 16 v4, pièce 17 « dans le noir » (v1-v4), fiches Willis et Young / van Hoytema, labos recadrages / nests / audio dans l'échange (sous-agent) et bercement AE (phase intégrée) ; écrans dans le champ ; PLAN-TESTS 48.
 - Session 10 — 2026-10-10 07:30 → ~07:55 UTC : examen n°6 (15/20), pièce 12 v8, pièce 15 « Deux sonneries de trop », fiche John Lewis, labos vitesses dans l'échange + vérificateur d'EDL, interpolation sur vrais plans CC0 (sous-agent) ; PLAN-TESTS 46-47.

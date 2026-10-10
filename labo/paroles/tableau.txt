@@ -1,0 +1,21 @@
+cas                                      1.2  1.6  2.0  2.6  3.5 (% de la hauteur 1920 ; px à 1920 : 23 31 38 50 67)
+fond-face medium nu                      0.00  0.80  1.00  1.00  1.00
+fond-face medium ombre                   0.00  0.70  1.00  1.00  1.00
+fond-face medium boite                   0.00  0.70  1.00  1.00  1.00
+fond-face medium boite85                 0.00  0.70  1.00  1.00  1.00
+fond-face thin nu                        0.00  0.00  0.00  1.00  1.00
+fond-porte medium nu                     0.20  1.00  0.90  1.00  1.00
+fond-porte medium ombre                  0.20  1.00  0.90  1.00  1.00
+fond-porte medium boite                  0.20  1.00  1.00  1.00  1.00
+fond-porte medium boite85                0.20  1.00  1.00  1.00  1.00
+fond-porte thin nu                       0.00  0.90  0.90  0.90  1.00
+fond-clair-texture medium nu             0.00  0.00  0.10  0.10  0.10
+fond-clair-texture medium ombre          0.10  0.10  0.00  0.10  0.10
+fond-clair-texture medium boite          0.00  0.10  0.70  0.40  0.50
+fond-clair-texture medium boite85        0.00  0.10  0.70  1.00  1.00
+fond-clair-texture thin nu               0.10  0.00  0.10  0.00  0.10
+fond-clair-uni medium nu                 0.20  1.00  1.00  1.00  1.00
+fond-clair-uni medium ombre              0.00  0.70  0.90  0.50  0.70
+fond-clair-uni medium boite              0.00  1.00  1.00  1.00  1.00
+fond-clair-uni medium boite85            0.00  1.00  1.00  1.00  1.00
+fond-clair-uni thin nu                   0.00  0.00  1.00  1.00  1.00

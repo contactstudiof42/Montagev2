@@ -101,8 +101,8 @@ Règle : alterner ART et TECH. Réalimenter dès qu'il reste moins de 10 sujets 
 72. [ ] [ART] Atelier « plan-séquence de marche » (direction C de l'examen n°7, jamais faite : mon tic des retours de cadre) : un personnage Blender traverse 30 s de zones de lumière et de noir en un seul plan ; la dramaturgie est dans le parcours.
 
 73. [ ] [ART] Pièce 19 v4 : **la scansion** : le même B2 avec le vers qui tombe avant, sur, après la coupe (décalage de 6 images), et une piste rythmique synthétique ; juger où le vers « appuie » et où il « commente ». Et des **mains lisibles** (rig simple de doigts ou silhouette en contre-jour) pour le vers 3.
-74. [ ] [ART] Culture : clips où le texte et l'image sont en contrepoint (chercher des analyses écrites : Hiro Murai, Romain Gavras, Bleu Désert, clips de Saint Levan / Lomepal / Orelsan) : fiche « illustrer ou contredire les paroles », sourcée.
-75. [ ] [TECH] Sous-titres et texte incrusté en clip : `drawtext` contre ASS (libass) pour des paroles animées, sûreté de cadre 9:16 / 16:9, police OFL ; mesurer la lisibilité (taille minimale au téléphone) — prolongement de la pièce 19.
+74. [x] [ART] (session 13 : `culture/clips-illustrer-ou-contredire-paroles.md`, sous-agent, 6 cas ; reste [ ] Karmacoma, Jonze, Romanek, Lomepal, Ziak sans source écrite trouvée) Culture : clips où le texte et l'image sont en contrepoint (chercher des analyses écrites : Hiro Murai, Romain Gavras, Bleu Désert, clips de Saint Levan / Lomepal / Orelsan) : fiche « illustrer ou contredire les paroles », sourcée.
+75. [~] [TECH] (session 13 : `labo/paroles/`, lisibilité par OCR : plancher 2 % Medium, Thin illisible, boîte 85 % sur fond chargé ; reste [ ] contour net, temps de lecture en mouvement, ASS/libass animé mot à mot, vrai débit plateforme) Sous-titres et texte incrusté en clip : `drawtext` contre ASS (libass) pour des paroles animées, sûreté de cadre 9:16 / 16:9, police OFL ; mesurer la lisibilité (taille minimale au téléphone) — prolongement de la pièce 19.
 
 ## Fait (trace)
 - [x] [ART] Session 13 : pièce 19 « Le texte et le corps » (v1-v3, illustré / contrepoint / contrepoint sur trajet)

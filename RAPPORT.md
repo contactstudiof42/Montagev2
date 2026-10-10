@@ -43,6 +43,7 @@ Je défends un travail **réduit à une idée**, où **le mouvement a une cause*
 | Pilotage MCP | `montage-pilotage-mcp` v1 (méthode) + état public des ponts (Blender, Resolve, AE, Premiere, Higgsfield) | moyenne (méthode) / nulle (outils) | aucun appel en phase 1 ; tests 21-32 ajoutés |
 
 ### Œuvres et auteurs analysés (fiches dans `culture/`)
+- **(session 13) Clips : illustrer ou contredire les paroles** (`culture/clips-illustrer-ou-contredire-paroles.md`, sous-agent, 6 cas : Dylan / Pennebaker, Stromae « Papaoutai » et « Formidable », Murai, Glazer « Rabbit in Your Headlights », Orelsan « Basique ») : l'image répond à **une seule chose** (sens, ton, musique ou concept) ; le contrepoint tient dans un espace continu ; le « reste » peut être **laissé** à la musique ou aux témoins plutôt que contredit. Confirme ma règle « contrepoint de sens, continuité d'espace » ; ne confirme pas (ni n'infirme) le regard caméra unique.
 - **(session 12) Natasha Braier** (*The Neon Demon*, *Honey Boy* : `culture/natasha-braier-lumiere-de-nuit.md`, sous-agent, sources lues et 403 listés) : une palette **par exclusion** ; une source dans le champ doit **éclairer pour de vrai** (toucher le visage, colorer l'ombre) sinon c'est l'effet « clip » ; réserver la lumière la plus saturée aux rares moments qui la justifient.
 - **(session 11) Bradford Young / Hoyte van Hoytema** (`culture/bradford-young-van-hoytema-lumiere-basse.md`) : dans le noir, éclairer **par rebond** ; la température d'une solitude est un jugement (*Her* : chaude).
 - **(session 11) Sam Kolder, « travel edit »** (`culture/sam-kolder-travel-edit.md`, de mémoire, sources faibles) : une transition kinetic **se tourne** ; signature → preset → cliché ; un SFX de transition doit correspondre à un mouvement réel.
@@ -416,7 +417,9 @@ Session 6 : enrichis `montage-son-et-emotion` (hors champ, Chion, présence dans
 - **Labo** : flot optique à la coupe (`labo/kinetic/whip-flot/`, **sous-agent**) : 15 cas synthétiques ; Farneback pleine résolution 3/15, au quart 12/15, DIS 13/15, vecteurs H.264 13/15, règle combinée 13/15 et 0 erreur. **Validation par moi sur rendus Blender** (`labo/kinetic/whip/scene.py`, VMAX 8 et 30) : juste à 11 %, abstention à 40 %, Farneback au quart faux dans les deux sens. RAFT non testé (pas de torch).
 - **Skills modifiés** : `montage-direction-artistique` (clip : texte et corps, éprouvé), `montage-regard` (règle 19), `montage-kinetic-editing` (3g, direction du filé), `montage-expert` (sommaire).
 - **PLAN-TESTS** : 54 (direction du filé perçue), 55 (texte et corps, test spectateur).
-- Sources : aucune source externe nouvelle (session d'atelier et de labo).
+- **Culture** (sous-agent) : fiche « illustrer ou contredire les paroles » (6 cas, sources Norient, SPIN, The Fader, Wikipédia, Songfacts ; aucun clip vu ; réalisateur de « Papaoutai » contradictoire selon les sources).
+- **Labo paroles** (`labo/paroles/`, moi) : lisibilité d'un vers incrusté en 9:16 après ré-encode, par OCR (80 cas, 1,5 min) : plancher 2 % de la hauteur en Medium, Thin illisible, boîte 85 % seule solution sur fond clair chargé, ombre portée inutile. **Raté instructif** : mon premier score (difflib) disait « illisible » pour un texte bien lu, noyé par les lettres que l'OCR voyait dans la texture ; et l'OCR lit du blanc sur blanc qu'aucun humain ne lirait : un proxy à manier en le sachant.
+- Sources : Norient, SPIN, The Fader, Songfacts (via la fiche) ; doc tesseract / ffmpeg drawtext.
 
 ### Session 12 — 2026-10-10 09:29 → ~10:00 UTC (horloge de la VM)
 - **Démarrage** : dernier commit à 34 min, pas d'autre session ; Blender 4.2.3 téléchargé (30 s).

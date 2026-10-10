@@ -36,7 +36,7 @@ Repères sourcés : jump cuts toutes les 1-3 s (style Hormozi), interruptions vi
 - **Camera shake** : sur l'impact seulement, amorti en 4 à 6 images ; jamais en continu. [TESTÉ EN LABO]
 - **Flash blanc** : 1 image (2 max) sur l'impact ; au-delà, c'est un fondu. [TESTÉ EN LABO]
 - **Masque de transition** : un objet qui passe devant l'objectif (ou un mouvement de caméra rapide) sert de rideau, et la coupe est cachée dedans.
-- **Captions mot à mot** : majuscules grasses, contour épais, 1 à 4 mots à l'écran, mot-clé en couleur (le jaune chez Hormozi) ou agrandi, apparition calée sur la syllabe. Les captions restent dans la zone sûre (hors 15 % du bas et interface de droite).
+- **Captions mot à mot** : majuscules grasses, contour épais, 1 à 4 mots à l'écran, mot-clé en couleur (le jaune chez Hormozi) ou agrandi, apparition calée sur la syllabe. Les captions restent dans la zone sûre (hors 15 % du bas et interface de droite). **[TESTÉ EN LABO, proxy OCR, `labo/paroles/RESULTATS.md`]** : après ré-encode 2,5 Mb/s et vue à 360 px de large, plancher **2 % de la hauteur en graisse Medium** (rien à 1,2 %) ; **graisse Thin illisible jusqu'à 2 %** ; sur fond clair et chargé, blanc nu et ombre portée échouent à toutes les tailles : **boîte ≈ 85 % dès 2,6 %**, ou changer de plan ; l'ombre portée n'aide jamais.
 - **B-roll / mèmes** : illustrer le mot au moment où il est dit, pas une seconde après.
 
 ### Les SFX et leur rôle (hiérarchie, du plus fort au plus discret)
