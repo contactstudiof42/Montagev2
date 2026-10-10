@@ -17,3 +17,19 @@ Planches : une image par seconde (0 → 9 s), `planche.py` (luminance moyenne pa
 - **Mouvement mesuré** (`mouvement.py`, centroïde de la zone éclairée) : crête à crête **9,4 px → 4,9 px → 1,3 px** par fenêtre de 2 s après l'allumage, une alternance par fenêtre : le bercement s'apaise sans hésiter (critère 3 tenu). Sur v2, la mesure ne voit rien (0,8-0,9 px) : la zone éclairée y était le fauteuil immobile, autre preuve que la lumière était au mauvais endroit.
 - Lecture à 192 px : « une lueur sur des bras qui portent quelque chose » ; le bébé lui-même ne se lit pas (primitives). Critère 1 à moitié. Critère 2 tenu (aucun visage éclairé par-dessous), critère 4 tenu (rien d'horrifique : l'îlot chaud est bas, la tête est une ombre douce au-dessus).
 - Ce qui manque pour une vraie pièce : un son (souffle du bébé, une voix calme au téléphone, très bas) ; un bébé modélisé lisible ; un plan de contrechamp (l'écran vu de près, la voix qui répond) pour que l'appel soit la cause du calme.
+
+## Son de la v3 — `son.py`, `v3-son-onde.png` (synthétique ; je ne peux pas écouter : jugement par mesure et forme d'onde)
+- Fond de pièce, souffle du bébé calé sur **la même phase** que le bercement, geignements rapprochés avant 3 s puis espacés, un toucher d'écran à 3,0 s (synchro avec l'allumage), un murmure passe-bande 300-3400 Hz pour la voix lointaine (pas de mots).
+- Mesure : −23,3 LUFS intégré, LRA 9,1 LU ; RMS par seconde −21 → −34 dBFS : **13 dB de descente**, l'apaisement est dans le son.
+- **Défaut de causalité** : sur l'onde, les geignements cessent **dès le toucher**, avant que la voix soit audible (le murmure est presque plat sur l'onde). Ce qui calme, ce serait le geste, pas la réponse : le contraire du message (« quelqu'un répond »). v5 : la voix doit arriver **une respiration avant** le calme, et être au moins aussi présente que le souffle.
+
+## v4 — `v4-planche.png`, `v3-v4-image73.png` : v3 à l'identique, seul l'écran passe au bleu froid (variable isolée)
+- Luminance et mouvement quasi identiques (0,054 ; 10,1 → 1,7 px) : seule la couleur change.
+- Lecture : ce n'est **pas** l'angoisse qui arrive (la composition basse et décentrée tient), c'est la **matière** qui change : les bras et la couverture deviennent du **plâtre**, une statue, une scène d'hôpital ; en chaud, c'est de la peau. **La température de la source change la matière de ce qu'elle touche** (chair contre plâtre) plus que l'humeur générale.
+- Donc l'échec de la v1 venait surtout de la **composition** (source centrée, cadre symétrique = icône) et de l'**énergie** (toute la pièce éclairée), pas du froid. Bonne nouvelle pour la méthode : j'avais deviné la mauvaise cause ; seul l'essai qui isole la variable l'a montré (règle 2 de `montage-regard`).
+
+## Leçons (versées dans `montage-regard`, `montage-couleur-et-intention`, `montage-direction-artistique`)
+1. **Une source centrée dans un cadre symétrique fait une icône** ; décentrer et descendre la source pour qu'elle éclaire ce qu'on tient.
+2. **L'énergie de la source décide si le noir reste un noir** : un écran qui éclaire les murs n'est plus un écran.
+3. **La température de la source change la matière qu'elle touche** (chaud = peau, froid = plâtre).
+4. **La cause du calme doit précéder le calme**, à l'image comme au son.
