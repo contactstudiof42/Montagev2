@@ -42,7 +42,7 @@ bpy.context.view_layer.objects.active = parts[0]; bpy.ops.object.transform_apply
 chaise = bpy.context.object; chaise.name = "chaise_1"
 # le champ : une copie décalée, multipliée par deux modificateurs Array (instances bon marché pour Cycles)
 champ = chaise.copy(); champ.data = chaise.data; bpy.context.collection.objects.link(champ)
-champ.location = (-(COLS // 2) * DX, -DY, 0)
+champ.location = (-(COLS // 2) * DX, -4.0 if "--v4" in argv else -DY, 0)   # v4 : un écart de 4 m entre la chaise 1 et le champ
 a = champ.modifiers.new("x", "ARRAY"); a.count = COLS; a.relative_offset_displace = (0, 0, 0); a.use_relative_offset = False
 a.use_constant_offset = True; a.constant_offset_displace = (DX, 0, 0)
 b = champ.modifiers.new("y", "ARRAY"); b.count = ROWS; b.use_relative_offset = False
@@ -96,9 +96,12 @@ def recul(u):
     tgt = Vector((0, -0.35 - 28 * u ** 2, 0.5 * (1 - u)))
     if "--v2" in argv:
         pitch = math.radians(38 - 12 * u); tgt = Vector((0, -0.6 - (2 + 0.25 * dist) * u, 0.45 * (1 - u)))
-    pos = tgt + Vector((0.25 * (1 - u), math.cos(pitch) * dist, math.sin(pitch) * dist))
+    x0 = float(argv[argv.index("--x0") + 1]) if "--x0" in argv else 0.25   # v4 : décalage latéral au départ (trois quarts)
+    pos = tgt + Vector((x0 * (1 - u), math.cos(pitch) * dist, math.sin(pitch) * dist))
     look(pos, tgt)
     cam.data.lens = 50 - 15 * u
+    if "--v4" in argv:  # v4 : la chaise 1 isolée par la profondeur de champ au départ ; le diaphragme se ferme avec le recul
+        cam.data.dof.use_dof = True; cam.data.dof.focus_object = chaise; cam.data.dof.aperture_fstop = 1.4 * (64 / 1.4) ** u
 
 
 if FINAL:

@@ -55,3 +55,11 @@ Corrections tentées : sol 0,8 → 0,9 ; plan final recadré (5 candidats rendus
 - **AgX plafonne le blanc** (~222/255 en sortie 8 bits avec Base Contrast) : le blanc pur se fait à l'étalonnage (point blanc), pas en ajoutant de la lumière. → `montage-blender`, `montage-couleur-et-intention`.
 - **Inverser le monde inverse le rôle du sujet** : dans le blanc, le sujet est la tache sombre ; dans le noir, il doit devenir la lumière. → `montage-couleur-et-intention`.
 - **Chercher le cadrage en image fixe avant de lancer l'animation** (5 essais × 7 s contre 3 min par recul). → `montage-blender`.
+
+## v4 (session 19 : `--v4 --x0 1.6`, montage B3 + courbe de point blanc, planche `v4-B3-planche.png`, YAVG 229)
+Problème visé : « Voici une chaise » tombait sur un panneau blanc.
+- Essai 1 : départ de trois quarts (décalage latéral 0,25 → 1,0 → 1,8 m, 3 images fixes) : à 1,8 la chaise se lit (dossier, assise, pieds), mais **elle n'est pas seule** : huit chaises voisines à la même échelle se disputent « voici UNE chaise ».
+- Essai 2 : profondeur de champ (f/1,4 qui se ferme jusqu'à f/64 avec le recul) : **presque invisible**, l'écart de 1,25 m entre la chaise et la rangée suivante est trop faible pour qu'un flou les sépare. Encore un défaut qu'on voulait régler à l'étage optique et qui naît dans la **mise en scène**.
+- Essai 3 (retenu) : **la chaise 1 à 4 m devant le champ**. Les 4 premières images de la planche : une chaise, seule, lisible, dans le blanc. Images 5 à 7 : la chaise isolée au bas du cadre, le champ entier devant elle au-delà d'un vide. C'est l'image la plus claire de la pièce.
+- **Mais le sens a bougé** : l'écart dit « à part », « séparé des autres », plus « au bout d'une lignée ». « Derrière elle, il y a celle de votre mère » ne se voit plus : la mère est à 4 m. Lisibilité gagnée, filiation perdue. v5 : garder **une seule colonne continue** qui part de la chaise 1 et rejoint le champ (la lignée), avec le vide de part et d'autre (la solitude). Les deux sens tiennent alors dans le même plan.
+- Leçon : **isoler un sujet se fait d'abord par l'espace, ensuite par l'optique** ; et chaque écart d'espace a un sens qu'il faut relire contre le texte. → `montage-regard`.
