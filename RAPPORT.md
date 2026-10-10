@@ -29,7 +29,7 @@ Je défends un travail **réduit à une idée**, où **le mouvement a une cause*
 | Blender | plateau multi-caméras + EDL JSON, rendu CLI, **corps rigides** (session 6) | bonne | Eevee sans écran mesuré (plus lent que Cycles en VM) ; flamme et geometry nodes non testés |
 | Couleur (intention) | principes + 3 fiches + atelier 05 (6 versions, mesures, test en mouvement) | moyenne à bonne | étalonnage simulé en numpy sur image 8 bits, pas dans Resolve |
 | Couleur (pipeline) | conversions et LUT testées (colour-science 0.4.7, OCIO 2.6) | moyenne à bonne | pas de vrai rush log testé |
-| Resolve | `montage-resolve` v1 : nodes, RCM, API de scripting (README 2022-2023) | faible à moyenne | rien exécuté ; versions 19-20 à lire |
+| Resolve | `montage-resolve` : nodes, RCM, API de scripting (README 21.0.4), **Fusion et Fairlight** (session 11) | faible à moyenne | rien exécuté ; signatures Fusion tirées d'un guide de 2016 |
 | Encodage / bandes | labo testé : 10 bits, grain σ≈2 | bonne | ré-encodage plateforme simulé, pas réel |
 | Kinetic editing | skill + labo + pièce 02 en 6 versions | moyenne à bonne | ressenti des SFX non jugé à l'oreille |
 | Préparation tournage VFX | skill v1 | faible à moyenne | théorique, rien testé |
@@ -230,6 +230,7 @@ Session 6 : enrichis `montage-son-et-emotion` (hors champ, Chion, présence dans
 14. (nouveau, session 5) Pièce 05 : sur le plan de la chaise, laquelle des trois directions vous parle (constat neutre, souvenir laiteux, menace froide avec une seule chaleur) ? Et le grain fin de la v6, vous l'aimez ?
 15. (nouveau) Åkerlund (monter le choc, caméra subjective) ou Murai / Gavras (ne pas monter le choc, caméra présente) : lequel est le plus proche de ce que vous aimez dans le kinetic ?
 
+23. (nouveau, session 11) Dans le kinetic editing : aimez-vous les transitions « tournées » façon travel edit (whip pans, rotations, souffles), ou les trouvez-vous datées (fin des années 2010) ? Préférez-vous la coupe sèche avec un SFX d'impact ?
 22. (nouveau, session 11) La nuit à l'image : aimez-vous les visages qu'on ne voit presque pas (Willis, *Le Parrain*), ou voulez-vous toujours lire les yeux, même dans le noir ?
 
 ### Autres questions et prochaines priorités
@@ -400,6 +401,7 @@ Session 6 : enrichis `montage-son-et-emotion` (hors champ, Chion, présence dans
 - **Atelier** : pièce 16 v4 (4 essais : Terre unie / continents / fil au bord + réseau = réf. / surplomb raté) puis v5 (lampes lisibles, pièce close) ; **pièce 17 « 3 h 12, dans le noir »** (BACKLOG 1, la direction écartée à l'examen n°1) : v1 froid centré de face (icône, pièce entière éclairée), v2 chaud sur l'accoudoir (le mobilier vole la lumière), v3 tenu bas (réf.), v4 = v3 en froid (matière plâtre) ; son synthétique v3 / v5 (cause avant calme). Rendus : 4 animations de 10 s à 6 i/s utiles (STEP=2), ~4 min chacune.
 - **Labos** : recadrages / nests / audio multipiste dans l'échange (sous-agent, rejoué : 7/7 réglages perdus hors XML d'origine, nests relus vides, canal droit perdu) ; bercement AE à phase intégrée (le `sin(2πt/P(t))` naïf tombe à 0,02 Hz : le geste se fige ; le défaut était dans mes v1-v2) ; whip pan Blender (clés prolongées : flou 1,07 contre 0,85 à la coupe ; **échec** : la corrélation de phase ne mesure pas le sens du mouvement).
 - **Culture** : Gordon Willis ; Bradford Young / Hoyte van Hoytema ; Sam Kolder (de mémoire).
+- **Recherche** (2e sous-agent) : Fusion et Fairlight dans Resolve 19-21 (`sources/resolve-fusion-fairlight-2026-10.md`) → `montage-resolve` 4 bis ; PLAN-TESTS 51.
 - **Skills modifiés** : `montage-regard` (15-17), `montage-references`, `montage-couleur-et-intention` (Willis, Young / van Hoytema, atelier 17), `montage-direction-artistique` (maquetter la direction qui fait peur), `montage-workflows`, `montage-after-effects`, `montage-kinetic-editing` (3f, flou aux bords), `montage-preparation-tournage-vfx` (écrans dans le champ). PLAN-TESTS 48-50.
 - **Incident** : `pgrep -f "17-dans-le-noir/scene.py"` + kill a tué le shell (motif présent dans sa propre ligne de commande) ; tuer par PID filtré sur `[b]lender -b`.
 - **Sources principales** : ASC / Definition Magazine / British Cinematographer / No Film School (Willis) ; PremiumBeat, CBC, Colorlines, Filmmaker (Young) ; No Film School (*Her*) ; PremiumBeat, ZeroVFX, forum Logik (écrans) ; Musicbed, 4K Shooters (Kolder).

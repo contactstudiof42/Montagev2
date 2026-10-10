@@ -4,16 +4,16 @@ _Lire en premier. Mis à jour à chaque fin de session._
 
 ## Où on en est (après la session 11, 2026-10-10 ~09:00 UTC)
 - **Skills (21)** : session 11 : `montage-regard` (règles 15-16), `montage-references` (fable qui contient la réponse), `montage-couleur-et-intention` (Willis ; Young / van Hoytema), `montage-workflows` (recadrages, nests, stéréo dans l'échange), `montage-after-effects` (bercement à phase intégrée + piège), `montage-preparation-tournage-vfx` (écrans dans le champ, 5 bis), `montage-direction-artistique` (maquetter la direction qui fait peur).
-- **Culture** : 45 fiches (nouvelles : `gordon-willis-le-noir.md`, `bradford-young-van-hoytema-lumiere-basse.md`).
-- **Atelier** : **16 v4** (v4d réf. ; reste v5 : silhouettes sur les autres planètes) ; **17 « 3 h 12, dans le noir »** v1-v4 (`atelier/17-dans-le-noir/`, v3 = réf. ; `planche.py`, `mouvement.py`).
-- **Labo** : `labo/workflows/recadrages/` (sous-agent, rejoué à la main : identique) ; `labo/ae-expressions/bercement/test.js`.
+- **Culture** : 46 fiches (nouvelles : `gordon-willis-le-noir.md`, `bradford-young-van-hoytema-lumiere-basse.md`, `sam-kolder-travel-edit.md`) ; source `resolve-fusion-fairlight-2026-10.md`.
+- **Atelier** : **16 v4-v5** (v5 réf., pièce close) ; **17 « 3 h 12, dans le noir »** v1-v4 (`atelier/17-dans-le-noir/`, v3 = réf. ; `planche.py`, `mouvement.py`).
+- **Labo** : `labo/workflows/recadrages/` (sous-agent, rejoué à la main : identique) ; `labo/ae-expressions/bercement/test.js` ; `labo/kinetic/whip/` (flou aux bords ; mesure de direction ratée → BACKLOG 66).
 - **Examens** : n°1 13, n°2 14, n°3 15, n°4 14, n°5 14, n°6 15 /20. **N°7 en session 12 ou 13** (BACKLOG 64 : brief de nuit / basse lumière).
 
 ## Reprendre ici (session 12)
 1. Démarrage normal. Blender : `curl -sSL -o blender.tar.xz https://download.blender.org/release/Blender4.2/blender-4.2.3-linux-x64.tar.xz && tar xf blender.tar.xz` dans le scratchpad (30 s). `python3 -m pip install -q numpy pillow scipy colour-science opentimelineio otio-fcp-adapter otio-cmx3600-adapter`.
-2. Priorités : BACKLOG 64 (examen n°7), 1 suite (pièce 17 : son + contrechamp, bébé lisible), 57 (pièce 16 v5), 51 (teaser 15 s), 62 suite (Natasha Braier), 42 suite (`montage-references` en annexes).
+2. Priorités : BACKLOG 64 (examen n°7), 67 (pièce 17 v6 : contrechamp, bébé lisible), 66 (flot optique à la coupe), 51 (teaser 15 s), 62 suite (Natasha Braier), 42 suite (`montage-references` en annexes).
 3. Pièges : **`pkill -f motif` / `pgrep -f motif` + kill tuent aussi le shell** dont la ligne de commande contient le motif (session 11 : exit 144) → tuer par PID via `ps aux | grep "[b]lender -b"`. Rendus longs : `nohup … &` puis attendre avec une boucle `while ps …`. Animation Cycles 384×216, 12 échantillons : ~3,7 s/image seule, ~2× plus lente à deux en parallèle → `STEP=2` (une image sur deux) pour les aperçus. Plans immobiles = une image. Wikimedia renvoie **HTTP 429** : passer par Internet Archive. **Jamais d'e-mail dans un User-Agent.** Vérifier qu'un nom inventé ne recoupe pas une marque réelle.
-4. Sous-agents : 1 en session 11 (recadrages / nests / audio) ; chiffres rejoués à la main (identiques).
+4. Sous-agents : 2 en session 11 (recadrages / nests / audio : rejoué à la main, identique ; recherche Fusion / Fairlight : sources datées, rien d'exécutable).
 
 ## Environnement constaté
 - ffmpeg 6.1.1, Python 3, Node 22 préinstallés (numpy à installer en session 6). `apt-get update` puis `apt-get install libegl1` possible (10 s). Blender 4.2.3 LTS : téléchargement + décompression 30 s.
