@@ -45,15 +45,15 @@ Un artiste de la post-production avant d'être un technicien. Je sais **pourquoi
 | `montage-rythme` | rythme, musicalité, durée des plans, détection de coupes | v1 théorique + mesure scdet testée en labo |
 | `montage-motion-design-principes` | sens du mouvement, typo animée, clichés | v1, nourri par atelier 01 |
 | `montage-son-et-emotion` | silence, sound design, rapport image/son | v1, recettes forme d'onde/synthèse testées |
-| `montage-loudness-livraison` | loudness, normes plateformes, livraison ffmpeg, bandes dans les noirs | v1, recettes testées en labo (mesure + gain > loudnorm ; 10 bits / grain σ≈2) |
+| `montage-loudness-livraison` | loudness, normes plateformes, livraison ffmpeg, bandes dans les noirs, 5.1 et downmix | recettes testées en labo (mesure + gain ; 10 bits / grain ; Lo/Ro, Lt/Rt Hilbert, mono) |
 | `montage-after-effects` | easing, graphe de vitesse, expressions, rigs | v1, expressions testées en syntaxe/logique Node uniquement |
 | `montage-ia-generative` | état de l'art IA vidéo/image/son daté 2026-10, clichés, usages | v1 théorique, sources datées |
-| `montage-grammaire` | raccords, 180°, dialogue, J/L-cut, ellipse, montage son de base | v1 théorique |
-| `montage-couleur-et-intention` | palette, intention d'étalonnage, clichés couleur | v1 (fiches Storaro, Doyle, Deakins), non éprouvé en atelier |
-| `montage-references` | principes transférables tirés de `culture/`, tensions entre principes | v1 (fiches jusqu'à Murai et Honda « Cog ») |
-| `montage-kinetic-editing` | montage social haute rétention, SFX hiérarchisés, hook | v1, calage testé en labo, éprouvé en atelier 02 (5 versions) |
+| `montage-grammaire` | raccords, 180°, dialogue, J/L-cut, ellipse, montage son de base | v1 ; 180° mesuré en labo et J-cut éprouvé en atelier 08 (session 7), le reste théorique |
+| `montage-couleur-et-intention` | palette, intention d'étalonnage, clichés couleur, souvenir par le support | éprouvé en ateliers 05 (trois étalonnages) et 08 (souvenir) |
+| `montage-references` | principes transférables tirés de `culture/`, tensions entre principes | 36 fiches (session 7 : Noé / Tom Kan, Kuntzel + Deygas) |
+| `montage-kinetic-editing` | montage social haute rétention, SFX hiérarchisés, hook, photosensibilité | calage et photosensibilité testés en labo, éprouvé en ateliers 02 et 09 |
 | `montage-couleur-pipeline` | espaces, log, LUT, ACES, OCIO | v1, conversions et LUT testées en labo |
-| `montage-blender` | Blender pour la vidéo : plateau multi-caméras, EDL JSON, rendu CLI, chrome, AgX | v1, testé en atelier (pièces 01 et 02) |
+| `montage-blender` | Blender pour la vidéo : plateau multi-caméras, EDL JSON, rendu CLI, corps rigides (déterministes), caméra portée | testé en ateliers 01-08 |
 | `montage-preparation-tournage-vfx` | préparer un tournage à effets : méthode, réglages caméra, fond vert, plaques, checklist | v1 théorique |
 | `montage-resolve` | nodes, RCM, Deliver, API de scripting Python | v1 théorique (README officiel 2022-2023 lu, rien exécuté) |
 | `montage-formats` | narration par format : pub, vertical, clip, corporate (dispositifs pour l'humain), doc, fiction, teaser | v1 synthèse (session 3) |
@@ -64,5 +64,10 @@ Un artiste de la post-production avant d'être un technicien. Je sais **pourquoi
 ## Ressources du dépôt
 - `culture/` : fiches d'œuvres (montage, title design, couleur, goûts de l'utilisateur : Interstellar, Joker, Ziak ; clips et pubs : Murai, Honda « Cog » ; IA).
 - `atelier/` : pièces créées et leurs versions critiquées.
-- `labo/` : scripts techniques testés.
+- `labo/` : scripts techniques testés. **Contrôles à lancer avant de livrer ou de juger** :
+  - photosensibilité : `python3 -I labo/photosensibilite/flash_check.py rendu.mp4` (WCAG 2.3.1, fenêtre locale) ;
+  - coupes, flashs, calage musical d'un clip : `python3 -I labo/analyse-clip/analyse_clip.py video sortie` ;
+  - loudness : mesure ebur128 **sur le fichier encodé**, puis gain (`montage-loudness-livraison`) ;
+  - 180° / regards à l'écran pour des plans Blender : `labo/grammaire/axe180.py` (projection tête / regard) ;
+  - downmix 5.1 → stéréo / mono : `labo/surround/labo_surround.py`.
 - `PLAN-TESTS-MCP.md` : ce qui reste à valider sur les vrais logiciels.
