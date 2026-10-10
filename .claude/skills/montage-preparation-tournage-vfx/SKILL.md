@@ -99,3 +99,6 @@ Quand : l'effet voulu est la **continuité** (magie, transformation). Si l'effet
 - Intention : une buée qui monte pendant une scène de voiture est un compteur (le temps passé, le souffle) et un rideau (pudeur). Elle doit **croître de façon lisible** et rester raccord d'un plan à l'autre : décider avant le tournage si elle est faite au plateau ou en post.
 - Au plateau : vitres refroidies, moteur coupé, vaporisateur entre les prises ; noter l'état de buée à chaque prise (photo du pare-brise) pour le raccord. En post : tourner aussi une **plaque propre** des vitres (sans buée) et une plaque embuée à fond ; le compositing fond de l'une à l'autre avec un cache par vitre (ce que fait la maquette avec deux rendus).
 - La buée diffuse la lumière intérieure : une liseuse allumée dans une voiture embuée en fait une lanterne (image forte, à prévoir : source chaude réglable dans l'habitacle).
+
+## Axe de lecture d'un corps et décor (pièce 31 v4, session 25) [TESTÉ EN ATELIER, Blender]
+- Un voûté se lit de profil, des bras ouverts de face (voir `montage-regard` 31). Si le découpage demande un profil dans un couloir ou un escalier étroit, prévoir au repérage la place de la caméra (escalier ouvert d'un côté, mur démontable en studio, focale longue depuis un palier) ; sinon la posture voulue sera illisible et aucun montage ne la rattrapera.

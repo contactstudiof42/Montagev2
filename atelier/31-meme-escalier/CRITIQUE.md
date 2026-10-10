@@ -31,3 +31,11 @@ Planches : `v1-planche.png`, `v2-planche.png`.
 ## Limites et suite (BACKLOG Y41)
 Silhouette trop schématique (le voûté ne se lit pas) ; mouvement de caméra (fixe → grue) non testé ; une seule focale (28 mm).
 Suite : rendu animé court des deux passages (aller 3 s fixe, retour 3 s en grue montante) et figure articulée ; tester une focale plus courte au retour (Sher : courte focale portée).
+
+## v4 — figure articulée et axe de lecture d'une posture (session 25, `v4-planche-azimuts.png`)
+`scene_v4.py` : figure en capsules par cinématique directe (dos, cou, bras, avant-bras, cuisses, tibias), poses `voute` (dos 38°, tête tombée, bras pendants) et `ouvert` (dos cambré, tête levée, bras ouverts en V) ; argument `az=DEG` = caméra tournée autour de la figure à 3 m ; `murfou` = mur droit invisible pour la caméra (« mur volant » de studio : il garde son ombre et sa lumière). Haut : aller (froid, plongée) à 0° / 30° / 60° / 90° ; bas : retour (chaud, contre-plongée) aux mêmes angles. 14 s par image.
+- **Le voûté ne se lit qu'en profil** (60-90°) : de dos (0°), la flexion du dos est dans l'axe de la caméra, raccourcie à rien ; la figure devient une capsule droite. C'était la vraie cause de l'échec de v1-v3 : ce n'était pas la silhouette trop schématique, c'était **l'axe**.
+- **L'ouverture des bras ne se lit que de face ou de dos** (0°) : en profil, les bras se superposent et la figure « attrape quelque chose en haut » ; la joie disparaît.
+- Donc **chaque posture a son plan de lecture** : une flexion (dos, nuque) se lit dans le plan sagittal → caméra de profil ; une ouverture (bras, épaules) dans le plan frontal → caméra de face ou de dos. Dans un diptyque aller / retour, le **changement d'axe** entre les deux passages n'est pas un choix de style : il est dicté par ce que le corps doit dire. Ici : aller en 3/4 profil (60°), retour de face.
+- Le décor décide si l'axe est possible : dans un escalier-couloir, le profil exige un mur volant (studio) ou un escalier ouvert d'un côté (repérage). À noter en préparation de tournage.
+- À 30°, le mât du réverbère coupe le cadre et la figure est minuscule : un repère du lieu peut devenir un obstacle quand l'axe tourne.
