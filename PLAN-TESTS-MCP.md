@@ -151,3 +151,8 @@ Le serveur `HIGGSFIELD_MCP` est toujours listé, **non appelé** (consigne phase
 - **Resolve** : sur un rendu EXR de la pièce 22, poser le point blanc après la transformée (ACES ou DaVinci Wide Gamut → Rec.709) et vérifier sur scope que le fond atteint ~95-100 % sans brûler les chaises.
 - **Premiere / AE** : reproduire le grade « infrarouge intime » de la pièce 23 (monochrome, noir à 3 %, grain fin mono) et le grade « surveillance » ; vérifier que le bruit ajouté survit à l'export H.264 YouTube (débit).
 - Méthode agent : chaque étape vérifiée par une image exportée et une mesure (pixel max, YAVG), sur un projet de test uniquement.
+
+## 67. (session 20) Face caméra : seuil du jump cut et punch-in hiérarchique (`atelier/24-face-camera/`)
+- **Premiere, sur un vrai rush face caméra (projet de test)** : monter la même prise en (A) respirations coupées, (A0) ratés et silences seulement, (C) punch-in 130 % sur les seules chutes ; exporter la paire d'images autour de chaque coupe et mesurer le déplacement du visage en % de largeur. Vérifier si le seuil « < 2 % = panne » de la marionnette tient sur un vrai corps.
+- Vérifier que le punch-in (Échelle de l'effet Trajectoire) en 4K → séquence 1080 reste net à 130 % ; noter la limite de recadrage par définition source.
+- Outils : la liste d'outils exposée par le serveur Higgsfield dans l'environnement cloud contient des noms comme `pr_detect_silence`, `pr_apply_cut_plan`, `pr_export_sequence_frame` (**observés dans la liste, jamais appelés ; paramètres inconnus**) : à tester en phase 2 comme dérusheur de silences, puis comparer leur coupe à la règle « ne pas couper les respirations ».

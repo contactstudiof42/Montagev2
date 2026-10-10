@@ -92,6 +92,7 @@ def pose(t, e, segs):
 
 
 SWAY = 1.0
+BLINKS = np.arange(1.7, 60, 3.3)
 
 
 def frame_brute(f, env, segs):
@@ -117,7 +118,7 @@ def frame_brute(f, env, segs):
     d.ellipse([cx - 95, cy - 125, cx + 95, cy + 120], fill=(215, 170, 140))
     d.chord([cx - 100, cy - 135, cx + 100, cy + 10], 180, 360, fill=(50, 35, 28))  # cheveux
     # yeux : regard caméra, ou détourné en bas à droite pendant les ratés ; clignements
-    blink = any(abs(t - b) < 0.06 for b in np.arange(1.7, 60, 3.3))
+    blink = any(abs(t - b) < 0.06 for b in BLINKS)
     gx, gy = 9 * look, 7 * look
     for ex in (-38, 38):
         if blink:
@@ -185,7 +186,7 @@ def montage(version, segs, handle):
         z, br = 1.0, None
         if version == "B":
             z = 1.0 if k % 2 == 0 else 1.25
-        elif version in ("C", "D") and s["flags"].get("chute"):
+        elif version in ("C", "D", "E") and s["flags"].get("chute"):
             z = 1.3
         if version == "D" and s["flags"].get("broll"):
             br = s["flags"]["broll"]
@@ -204,6 +205,14 @@ def montage(version, segs, handle):
             q[1] = p[1]
         else:
             fus.append(p)
+    if version == "E":
+        # v2 : la 1re image d'un punch-in ne tombe jamais sur un clignement ;
+        # si la coupe est dans la continuité de source, on la retarde au-delà.
+        for k in range(1, len(fus)):
+            p, q = fus[k], fus[k - 1]
+            if p[2] != q[2] and abs(p[0] - q[1]) < 1e-6:
+                while any(abs(t - b) < 0.10 for b in BLINKS for t in (p[0], p[0] + 0.04, p[0] + 0.08)):
+                    p[0] += 0.04; q[1] += 0.04
     return [tuple(p) for p in fus]
 
 
