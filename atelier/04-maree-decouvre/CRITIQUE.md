@@ -53,3 +53,9 @@ Défaut technique : la frontière eau/sable est **polygonale** (images 200-220 :
 - **Référence : v2b** pour le mystère ; **v4 à développer** pour le suspense. Le montage en 3 plans (v3) ne sert pas l'intention.
 - Son (v3, v4) : ressac qui s'éloigne et s'efface à l'image 222, puis **quatre gouttes** tombant de la chaise : le seul son de la fin. Mesuré à -18,4 LUFS / -1,0 dBTP (limité par le true peak du bruit rose : cible -18 non tout à fait atteinte, assumé). Non écouté (pas d'oreille dans la VM).
 - Prochaines versions : v5 = v4 avec eau sous-marine crédible et frontière eau/sable lissée ; variante 9:16.
+
+## v5 — v4 + volume sous-marin (densité 0,07) + sable plus fin (60 m, subdivision 9) — `v5-planche.png`
+- Sous l'eau (0-40) : la turbidité et les rides du fond donnent enfin une matière ; la bande claire (fenêtre de Snell : le ciel vu à travers la surface au-delà de l'angle critique) est physiquement plausible. Encore trop sombre et pas assez vert pour qu'on lise « sous l'eau » sans hésiter.
+- Surface (200-220) : la frontière eau/sable est **organique** (défaut de v2b corrigé), mais les rides sont devenues **trop fortes et trop régulières** (tôle ondulée) : la chaîne se perd dedans à l'image 220. Ce que j'ai gagné en crédibilité de la grève, je l'ai perdu en lisibilité du sujet. → v6 : déplacement 0,015 au lieu de 0,04, rides moins régulières (bruit à deux échelles).
+- Volume à 0,35 : image noire (absorption totale) ; à 0,07 : juste. Un volume sous l'eau se règle à l'échelle de la scène (ici quelques mètres de visée).
+- **Référence actuelle : v2b (mystère)** ; v5 est la meilleure version « suspense » mais pas encore livrable (lisibilité de la chaîne à la fin).

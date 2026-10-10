@@ -77,12 +77,13 @@ Je défends un travail **réduit à une idée**, où **le mouvement a une cause*
   - v3 : C hybride, meilleure pour la pub et les réseaux ; B garde la menace pour un clip grave.
   Limite : banque de plans abstraite (fractales), qui ne supporte pas l'intro tenue de 7 s.
 
-- **Pièce 04 « Ce que la marée découvre »** (`atelier/04-maree-decouvre/`, nouveau, session 4, critique dans `CRITIQUE.md`) : 16:9, 10 s, Blender ; une chaise de bistrot attachée par une chaîne, que la marée découvre. Planches : `v1-planche.png` → `v2-erreur-sous-eau.png` → `v2b-planche.png` → `v3-planche.png` → `v4-planche.png` (→ `v5-planche.png` si rendue à temps).
+- **Pièce 04 « Ce que la marée découvre »** (`atelier/04-maree-decouvre/`, nouveau, session 4, critique dans `CRITIQUE.md`) : 16:9, 10 s, Blender ; une chaise de bistrot attachée par une chaîne, que la marée découvre. Planches : `v1-planche.png` → `v2-erreur-sous-eau.png` → `v2b-planche.png` → `v3-planche.png` → `v4-planche.png` → `v5-planche.png`.
   - v1 : plan large, eau linéaire ; chaise centrée et minuscule, cinq vignettes mortes au milieu, l'estran surgit d'un coup à 80 % et la pièce finit sur un changement ;
   - v2 : **caméra sous l'eau** pendant 97 images (erreur de géométrie), mais l'accident ouvre une direction : montrer l'objet sous l'eau d'abord ;
   - v2b (**référence « mystère »**) : plan unique, chaise au tiers droit, un trait à la surface à 24 %, la chaise identifiée à 56 %, la chaîne qui affleure, puis l'estran d'un coup et une tenue d'une seconde ;
   - v3 : trois plans ; l'insert sur l'anneau est la plus belle image, mais couper explique au lieu d'inquiéter ;
   - v4 (**à développer, « suspense »**) : ouverture sous l'eau, puis le plan unique ; on attend ce qu'on sait ;
+  - v5 : v4 avec un volume sous-marin et une grève plus fine ; la frontière eau/sable devient organique, mais les rides trop fortes noient la chaîne à la fin (lisibilité perdue contre crédibilité gagnée) ;
   - son : le ressac s'éloigne, puis seulement quatre gouttes tombent de la chaise ; -18,4 LUFS / -1,0 dBTP.
 
 ### Dernier examen créatif
@@ -150,7 +151,7 @@ Techniques : `montage-grammaire` (théorique), `montage-loudness-livraison` (tes
   - examen n°4 (session 6 ou 7) : fiction courte ou documentaire long ;
   - ateliers « Spirale » (Marker) et « Versions » (Morris) ;
   - workflows : vitesses, recadrages, nests et AAF dans l'aller-retour ;
-  - fondus : seconde vérité terrain indépendante ;
+  - fondus : vrai film CC0 (la 2e vérité terrain synthétique est passée à 4/4) ;
   - tests de keying et de tracking sur médias CC0 ;
   - pièce 02 v7 : vraie flamme, chaîne causale complète, variante façon Ziak ;
   - atelier « direction A dans le noir » (la piste audacieuse de l'examen n°1) ;
@@ -222,8 +223,8 @@ Techniques : `montage-grammaire` (théorique), `montage-loudness-livraison` (tes
 ### Session 4 — 2026-10-10 01:30 → ~02:10 UTC
 - **Démarrage** : dernier commit 41 min plus tôt, pas d'arrêt anti-doublon. Blender 4.2.3 réinstallé (30 s), `opentimelineio` 0.18.1 + adaptateurs (5 s).
 - **Sujets** : [TECH] loudness hors plateformes ; [ART] atelier 04 « Ce que la marée découvre » ; [TECH] labo fondus (méthode 2) ; [TECH] marqueurs de temps importables ; [TECH] `montage-workflows` + labo OTIO ; [ART] culture Marker, Morris, Burtt, Rydstrom ; [TECH] vérification IA datée ; [ART] dédoublonnage regard / motion / références.
-- **Pièce créée** : 04, v1, v2 (ratée), v2b, v3, v4 (+ v5 lancée) ; médias tous générés (aucune licence tierce).
-- **Tests réussis** : fondus 3/4 sans faux positif (`labo/fondus/variance.py`) ; grille de temps à ~10 ms de la vérité, BPM 127,99 pour 128 (`labo/marqueurs/`) ; aller-retour XML FCP7 et OTIO sans perte sur 19 plans (`labo/workflows/`) ; son de la pièce 04 à -18,4 LUFS / -1,0 dBTP par mesure + gain.
+- **Pièce créée** : 04, v1, v2 (ratée), v2b, v3, v4, v5 ; médias tous générés (aucune licence tierce).
+- **Tests réussis** : fondus 3/4 puis **4/4 sur une 2e vérité terrain indépendante**, sans faux positif ni réglage (`labo/fondus/variance.py`) ; grille de temps sur piano sans grosse caisse (−8 ms) et avec levée (M1 trouvé par l'accent) ; grille de temps à ~10 ms de la vérité, BPM 127,99 pour 128 (`labo/marqueurs/`) ; aller-retour XML FCP7 et OTIO sans perte sur 19 plans (`labo/workflows/`) ; son de la pièce 04 à -18,4 LUFS / -1,0 dBTP par mesure + gain.
 - **Tests ratés, avec leur cause** : creux de variance (hypothèse fausse : un plan pauvre rend le milieu du fondu plus texturé) ; grille de temps v1 à contretemps (le charleston gagne la phase → phase lue dans les graves) ; relecture d'EDL à 24 i/s (la cadence n'est pas dans le fichier) ; pièce 04 v2, caméra sous l'eau (test d'une seule image prise au milieu) ; volume sous-marin d'abord noir (cube mal placé, puis densité 5× trop forte) ; `pkill -f` qui tue son propre shell.
 - **Œuvres analysées** : Marker *Sans soleil* (dossier pédagogique 3 Continents 2003, Wikipédia) ; Morris *The Thin Blue Line* (Nieman Lab 2024, IDA, Ebert) ; Ben Burtt ; Gary Rydstrom (Filmsound.org, NPR, presse) — deux fiches par sous-agent, relues et versées dans les skills.
 - **Skills** : créé `montage-workflows` ; modifiés `montage-loudness-livraison`, `montage-rythme`, `montage-son-et-emotion`, `montage-references`, `montage-blender`, `montage-regard`, `montage-motion-design-principes`, `montage-premiere`, `montage-ia-generative`, `montage-expert`.
