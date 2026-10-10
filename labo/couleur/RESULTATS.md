@@ -87,3 +87,18 @@ Même entrée quantifiée 16 bits, interpolation tétraédrique des deux côtés
 ## Temps
 
 Installation 8,1 s ; conversions 0,6 s ; LUT + ffmpeg + PNG 1,7 s. Rédaction et mise au point : environ 10 minutes.
+
+## 4. L'écart OCIO / colour de ~2e-3 sur LogC3 et S-Log3, expliqué (session 7, `ecart_logc3.py`) [TESTÉ EN LABO]
+`python3 -I labo/couleur/ecart_logc3.py` (colour-science 0.4.7, OCIO studio-config v4.0.0 ACES 2.0 / OCIO 2.5 ; 2 004 couleurs dont gris et primaires).
+
+| Étage | LogC3 EI800 / AWG3 | S-Log3 / S-Gamut3.Cine |
+|---|---|---|
+| Chaîne complète 709 lin. → log | 1,75e-3 | 2,05e-3 |
+| Matrice seule (linéaire) | **2,73e-3** | **2,72e-3** |
+| Courbe seule (même entrée linéaire) | 1,4e-6 | 1,1e-6 |
+| Hypothèse « 709 → AP0 en Bradford, puis AP0 → gamut caméra en **CAT02** » contre OCIO | **1,2e-6** | **8,7e-8** |
+| Même hypothèse tout en Bradford | 2,73e-3 | 2,72e-3 |
+| Gris 18 % (OCIO = colour) | 0,39101 | 0,41056 |
+
+**Conclusion** : les courbes log sont identiques ; tout l'écart est dans la **matrice**. La config OCIO ne va pas directement de Rec.709 au gamut caméra (blancs D65 tous les deux, aucune adaptation nécessaire) : elle passe par ACES2065-1 (D60) avec **Bradford** à l'aller (convention ACES), puis revient au gamut caméra par les matrices **IDT des constructeurs**, construites en **CAT02**. Bradford puis CAT02 inverse ne s'annulent pas exactement : ~2,7e-3 en linéaire sur les couleurs saturées, **zéro sur le neutre**. Ce n'est pas une erreur, c'est une convention de chaîne.
+Conséquence pratique : pour comparer deux logiciels au millième, comparer d'abord sur des **gris** (identiques), puis sur des primaires ; un écart de cet ordre limité aux couleurs saturées signale une différence d'adaptation chromatique (CAT), pas un bug de courbe. ~2 codes 10 bits : invisible, mais assez pour faire échouer un test d'égalité stricte dans un pipeline (phase 2 : Resolve RCM / ACES contre OCIO).

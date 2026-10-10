@@ -100,3 +100,6 @@ Même commande avec la LUT constructeur (ARRI LogC3 vers Rec.709, Sony S-Log3 ve
 - [ ] Effet OCIO (ou plug-in) sur un calque de réglage : conversion LogC3 (EI800) vers ACEScct, comparée à `conversions.py`.
 - [ ] Rendu : vérifier que l'export applique la transformation de sortie une seule fois et que les tags sont corrects.
 - [ ] Aller-retour Resolve vers AE vers Resolve en EXR ACEScg : l'image doit revenir identique.
+
+## Écart entre logiciels sur les logs caméra (session 7) [TESTÉ EN LABO]
+OCIO (config studio ACES 2.0) et colour-science diffèrent de ~2e-3 sur LogC3 / S-Log3 depuis Rec.709 : **les courbes sont identiques (1e-6)**, l'écart vient de la matrice : OCIO passe par ACES2065-1 (Bradford à l'aller, CAT02 dans les matrices IDT des constructeurs au retour). Gris identiques, couleurs saturées décalées d'~2 codes 10 bits. Pour diagnostiquer un écart entre deux outils : **comparer d'abord des gris** (courbe), **puis des primaires** (matrice / CAT). Détail : `labo/couleur/RESULTATS.md` §4, `labo/couleur/ecart_logc3.py`.

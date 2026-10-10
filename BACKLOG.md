@@ -13,7 +13,7 @@ Règle : alterner ART et TECH. Réalimenter dès qu'il reste moins de 10 sujets 
 0f. [x] [TECH] Loudness hors plateformes (session 4) : AES TD1008 (-18 parole / -16 musique), corporate web -16 / salle -18, cinéma Leq(m) → `montage-loudness-livraison`, `sources/loudness-hors-plateformes-2026-10.md`. Reste [ ] : relire le PDF TD1008 (403) pour le true peak.
 1. [ ] [ART] **Atelier « même brief, direction A dans le noir »** (suite de l'examen n°1 : la piste la plus audacieuse, écartée trop vite) : 10 s, Blender, seule lumière = un écran de téléphone.
 1b. [x] [ART] (session 4 : `culture/cliches-de-secteur.md`, 10 secteurs, non mesuré ; reste à l'étayer de références datées) Fiche sur les pubs santé/assurance et petite enfance : repérer les clichés du secteur (boîte à musique, bébé au ralenti, famille radieuse) — révélé par l'examen n°1.
-2. [~] [TECH] Couleur technique → `montage-couleur-pipeline` v1 (labo session 1 : conversions exactes, LUT ffmpeg = Python). Reste : expliquer l'écart OCIO/colour de 2e-3 sur LogC3/S-Log3 ; tester un vrai rush log CC0.
+2. [~] [TECH] Couleur technique → `montage-couleur-pipeline` v1 (labo session 1 : conversions exactes, LUT ffmpeg = Python ; session 7 : écart OCIO/colour expliqué). Reste : tester un vrai rush log CC0.
 3. [x] [ART] Couleur et intention : atelier 05 « Trois étalonnages » fait (session 5, 6 versions + test de scintillement, `atelier/05-trois-etalonnages/`). Reste [ ] : refaire depuis un EXR linéaire (latitude) ; « souvenir » avec un vrai contexte de montage (contrechamp, voix).
 4. [x] [TECH] Encodage des dégradés sombres testé (session 2, `labo/encodage/`) : tramage ±1 tué par x264, 10 bits = solution master, grain σ≈2 = seule protection après ré-encodage plateforme. Reste [ ] : réappliquer à la pièce 01 (v7 avec grain) et mesurer.
 5. [~] [TECH] `montage-grammaire` v1 existe (session 1, théorique). Session 7 : J-cut éprouvé dans l'atelier 08 (le son du souvenir qui précède l'image). Reste : 180° et règle des 30 % mis à l'épreuve dans Blender (champ/contrechamp de deux objets, axe franchi ou non) ; sourcer les durées de J-cut.
@@ -60,7 +60,7 @@ Règle : alterner ART et TECH. Réalimenter dès qu'il reste moins de 10 sujets 
 39. [ ] [ART] Examen n°5 (session 8) : pub 6 s (bumper) ou documentaire long — inclure une contrainte de livraison 5.1 + mono et une contrainte de photosensibilité.
 
 40. [ ] [ART] Atelier « dialogue » (suite du labo 180°) : deux personnages Blender, une scène de 15 s montée en respectant l'axe puis en le franchissant volontairement à l'instant où le rapport de force bascule ; critique : le franchissement se sent-il comme un sens ou comme une erreur ?
-41. [ ] [TECH] Couleur : écart OCIO / colour de 2e-3 sur LogC3 et S-Log3 (BACKLOG 2), à expliquer (constantes, LUT 1D interne d'OCIO ?) ; puis un vrai rush log CC0.
+41. [~] [TECH] (session 7 : **écart expliqué**, courbes identiques, matrice Bradford puis CAT02 dans OCIO ; reste [ ] un vrai rush log CC0) Couleur : écart OCIO / colour de 2e-3 sur LogC3 et S-Log3 (BACKLOG 2), à expliquer (constantes, LUT 1D interne d'OCIO ?) ; puis un vrai rush log CC0.
 42. [ ] [ART] Relecture et fusion des skills artistiques (BACKLOG 19, jamais faite) : `montage-regard` (journal long), `montage-references`, `montage-motion-design-principes` se recoupent ; déplacer les journaux d'atelier dans des annexes pour garder chaque SKILL.md < 300 lignes.
 
 ## Fait (trace)
