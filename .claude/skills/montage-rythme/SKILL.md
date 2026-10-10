@@ -28,6 +28,7 @@ Détail des mesures, des pièces et des références : [`details.md`](details.md
 - **Tempo et cadence** [TESTÉ EN LABO] : à 25 i/s, seuls 60, 75, 100, 125, 150 BPM tombent en images entières ; à 24 i/s : 60, 72, 80, 90, 96, 120, 144, 160, 180. Ne jamais couper « toutes les N images » : poser les marqueurs de temps et couper sur l'image la plus proche, en numéro d'image absolu (`round(t*fps)`), jamais en additionnant des durées arrondies (dérive mesurée : −460 ms sur 24 s).
 
 ## Interstellar, référence de l'utilisateur (`GOUTS.md` prime) [SOURCÉ]
+Ce qui le tient d'abord (réponse du 2026-10-10) : **l'accélération du montage alterné**. C'est le principe à servir en priorité quand il cite Interstellar.
 Poser une règle du temps puis la faire entendre (un tic devient un compteur) ; le son de la scène suivante arrache la fin d'une scène émotionnelle ; compresser le temps raconté pendant qu'un visage reste sans coupe ; raccourcir les segments du montage parallèle à l'approche du climax (8 / 4 / 2 / 1 s) ; retirer les plans de respiration pendant la tension. Mise à l'épreuve (pièce 29) [ÉPROUVÉ EN MAQUETTE] : l'ellipse est **dans la coupe** ; pulsation sur les retours = causalité ; enseigner la règle puis la rompre ; écran partagé pour expliquer, alternance pour émouvoir. Détail : `details.md`.
 
 ## Où couper : principes éprouvés en maquette

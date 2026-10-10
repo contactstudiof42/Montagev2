@@ -18,7 +18,7 @@ Marqueurs : [SOURCÉ] lu dans une source citée · [TESTÉ EN LABO] fait techniq
 Sept lignes ; une ligne vide se déduit et s'écrit comme hypothèse :
 1. **Émotion visée** (un mot + une nuance). 2. **Message** unique. 3. **Public** et son état (pressé, captif, sceptique). 4. **Diffusion** (plateforme, durée, son ou non, premier écran). 5. **Contraintes** (budget, délais, charte, rushes, droits, règles du secteur : santé, finance, alcool, enfants). 6. **Ce que le projet ne doit pas être**. 7. **Contradictions du brief**, nommées tout de suite.
 
-**1 bis — L'idée propre au sujet** : avant `montage-references` ou `GOUTS.md`, écrire une image qui n'appartient qu'à ce sujet ; les références la traitent, ne la remplacent pas. Cas particuliers (détail : `details.md`) :
+**1 bis — L'idée propre au sujet** (et d'abord l'histoire : pour l'utilisateur, une œuvre ratée pèche surtout par le **scénario** ; vérifier ce que le film raconte avant sa forme) : avant `montage-references` ou `GOUTS.md`, écrire une image qui n'appartient qu'à ce sujet ; les références la traitent, ne la remplacent pas. Cas particuliers (détail : `details.md`) :
 - Corporate : **l'humain par la compétence, pas par la biographie** ; aucune situation personnelle exposée sans accord (dispositifs : `montage-formats`).
 - **« Sans musique »** : désigner le son récurrent qui fera le refrain, et prévoir le lieu silencieux.
 - **Sponsor dans le sujet** : registre habituel du créateur, coupe franche, aucune affirmation du film ne touche le produit, placé après la première récompense.

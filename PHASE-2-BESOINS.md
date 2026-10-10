@@ -25,19 +25,13 @@ _Écrit le 2026-10-10, à la clôture de la phase 1. Pour vous : quoi m'envoyer,
 
 Ordre souhaité : A, puis C (le plus instructif), puis B, D, E.
 
-## Les 10 questions sur vos goûts (réponses courtes suffisent)
-1. Quels formats faites-vous le plus (pub, réseaux verticaux, corporate, clip, YouTube) ?
-2. En général : plutôt **retenue** (plans longs, silence) ou **énergie** (montage serré, typo qui bouge) ? Ou selon le projet ?
-3. Dans *Interstellar*, qu'est-ce qui vous tient : l'**accélération** du montage alterné, ou les **longs plans** où le temps s'arrête ?
-4. Dans *Joker*, l'escalier vous plaît pour **le corps** (la danse), **la lumière**, ou le **contraste** avec la montée du début ?
-5. Kinetic : **transitions tournées** (whip pans, rotations) ou **coupe sèche + bruitage d'impact** ?
-6. Sous-titres animés pour les réseaux : mot qui **apparaît sec**, mot qui **« pop »**, ou ligne qui se **colore** au fil de la voix ?
-7. L'image : **grain et défauts** (argentique) ou image **nette et propre** ?
-8. La nuit : des visages qu'on ne voit **presque pas**, ou toujours **lire les yeux** ?
-9. L'IA générative dans vos projets : **visible et assumée**, **invisible** (raccords, plans manquants), ou **à éviter** ?
-10. Un film, un clip ou une pub que vous trouvez **surcoté**, et une typo ou une palette que vous **détestez** ?
-
-Questions pratiques en plus (une ligne chacune) : cadence de vos projets (25 ou 30 i/s) ? rushes de téléphone en cadence variable ? normes de loudness pour vos livraisons TV ?
+## Les 10 questions sur vos goûts
+**Répondues le 2026-10-10** : réponses dans `GOUTS.md` et reportées dans les skills (`montage-expert`, `montage-references`, `montage-rythme`, `montage-couleur-et-intention`, `montage-kinetic-editing`, `montage-ia-generative`, `montage-direction-artistique`, `montage-regard`). Ce qu'elles changent pour la phase 2 :
+- **Joker « comme un ensemble »** : sur les extraits de Joker, analyser comment couleur, lumière, corps, caméra et musique s'équilibrent, plutôt qu'un levier à la fois.
+- **Interstellar** : priorité à l'accélération du montage alterné (mesurer la durée des segments jusqu'au climax).
+- **Projets souvent énergiques, formats équilibrés, « savoir tout faire »** : dans les projets du studio, couvrir tous les formats, sans privilégier le clip.
+- **IA jamais assumée, pas de slop** : dans les contre-exemples, inclure une vidéo où l'IA se voit.
+- Plus de questions pratiques : à la fin, il faut savoir tout faire.
 
 ## Ma méthode pour « voir » une vidéo
 Je ne regarde pas une vidéo en temps réel : je la découpe en images et en courbes, puis je lis les planches. Votre ressenti en salle reste la mesure finale ; mes mesures disent **où** regarder et **pourquoi**.

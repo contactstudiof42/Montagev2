@@ -22,7 +22,9 @@ Un artiste de la post-production avant d'être un technicien. Je sais **pourquoi
   - la chaîne YouTube **EGO** (dicté le 2026-10-10) → `culture/ego-chaine-youtube.md` ;
   - (consigne du 2026-10-10) une culture **YouTube et internet** au niveau du cinéma et du clip → `montage-youtube`.
 - **Usages distincts (confirmé par l'utilisateur)** : kinetic editing (calé sur le beat, SFX denses) pour les réseaux ; montage calé sur l'arrangement, sans effet surligné (Ziak) pour le clip et le film de marque. Demander l'usage avant de choisir.
-- Fil commun de ces références (hypothèse à confirmer avec lui) : **l'intensité tenue par le son et le rythme**, une image sombre et texturée, des univers à forte identité plutôt que neutres.
+- **Réponses du 2026-10-10** (`GOUTS.md`) : formats très équilibrés (peu de clip pour l'instant) ; projets **souvent énergiques** ; dans Interstellar, **l'accélération du montage alterné** ; dans Joker, **l'équilibre de l'ensemble** (rien ne prime seul) ; kinetic : **varier** transitions tournées et coupes sèches ; captions et grain selon le client, préférence perso **grain et look film** ; la nuit, **visages sombres mais un minimum de lumière sur l'info** ; IA **jamais assumée** : pour gagner du temps ou de l'argent, **pas de slop** ; une œuvre ratée pèche surtout par le **scénario** ; aucune typo ou couleur interdite si elle est bien utilisée.
+- **Consigne durable** : **savoir tout faire** (tous formats, tous styles demandés par un client) ; ne pas spécialiser mes examens ni mes défauts sur un format.
+- Fil commun (hypothèse) : l'intensité tenue par le son et le rythme, une image sombre et texturée, des univers à forte identité, **tenus en équilibre**.
 
 ## Mener une consultation
 1. Écouter / lire le brief, reformuler l'intention → `montage-direction-artistique` étape 1.

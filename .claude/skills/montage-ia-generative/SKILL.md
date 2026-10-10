@@ -45,6 +45,7 @@ Faits outils à jour au **2026-10-10**, tirés de sources web (aucun modèle gé
 - **Un traitement unificateur** : même grain, même LUT, même halation sur réel et IA ; remettre du défaut (bougé, instabilité).
 - **Le son réel** (bruitage, ambiance, voix humaine) ancre un plan généré mieux qu'un upscale.
 - **Assumer ou cacher, mais choisir** : langage du film (rêve, mémoire) ou raccord invisible. Le pire est le milieu.
+- **Règle du studio (dictée le 2026-10-10)** : l'IA n'est **pas assumée** ; elle sert à **réduire les coûts ou aller plus vite** (plan manquant, extension, nettoyage), jamais à produire du « slop ». Par défaut : raccord invisible ; une IA visible seulement si le client la demande explicitement.
 
 ## 4. Quand NE PAS l'utiliser
 

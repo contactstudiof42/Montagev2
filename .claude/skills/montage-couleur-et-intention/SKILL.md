@@ -15,6 +15,7 @@ Détail des maquettes et des fiches : [`details.md`](details.md). Sources : `cul
 La couleur n'est pas une finition, c'est **un sens**. Avant de toucher une roue : « que doit ressentir le spectateur, et comment ça change du début à la fin ? ». Un look sans réponse est un filtre.
 
 ## Goût de l'utilisateur (`GOUTS.md` prime quand il s'applique) [SOURCÉ]
+- **Préférences dictées le 2026-10-10** : grain et **look film** par goût personnel (le client décide) ; la nuit, **visages sombres mais un minimum de lumière sur l'info à voir** ; Joker se juge comme **un ensemble** (couleur, lumière, corps, caméra) : ne jamais pousser un seul levier.
 - **Joker** : garder la dominante « fausse » (fluos, sodium) qui raconte un lieu et un état, ne rendre juste que la peau ; faire **mériter** la couleur forte (une seule couleur lâchée à la bascule) ; lumières motivées.
 - **Ziak** (mesuré sur le clip réel) : luminance médiane 8/255, quasi monochrome froid, une seule couleur chaude sur 0,16 % de l'image dans 24 s sur 229. Le noir est la matière, la couleur un événement compté.
 - **Proposition par défaut** quand le brief laisse le choix (hypothèse de goût) : images basses et denses, environnement froid, peau protégée, une seule chaleur réservée à des événements comptés. Jamais une recette plaquée.
