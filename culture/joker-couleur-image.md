@@ -15,6 +15,13 @@
   - Costume : https://www.motionpictures.org/2019/10/joker-costume-designer-mark-bridges/ et https://highsnobiety.com/p/joaquin-phoenix-joker-suit-explained
   - Wikipédia (production, VFX, décors) : https://en.wikipedia.org/wiki/Joker_(2019_film) ; Scanline : https://digitalproduction.com/2020/08/21/joker-vfx-reel/
 
+## Confronté au film le 2026-10-11 (`analyses/films/joker.md`, passe globale) [VU SUR IMAGES]
+- **Ratio 1,85:1 confirmé** (1920×1040).
+- **Tient** : le vert gardé (maximum dans le métro), le rouge privé pendant 95 min puis lâché sur le plateau de Murray.
+- **Nouveau** : avant 1:35, le rouge n'apparaît que dans des lieux de spectacle (scène de Pogo's à 0:42:40, ouvreurs et rideaux du théâtre à 1:03:10).
+- **Faux** : « l'image s'assombrit à mesure qu'Arthur change ». La luminance moyenne reste stable, puis monte (émeute, couloirs blancs de la fin).
+- Montage : environ 9 coupes/min presque tout le film, un seul pic dans le métro (20 coupes/min).
+
 ## Ce que l'œuvre cherche à faire ressentir ou comprendre
 
 Il s'agit de rendre **physique** une ville malade et un homme qui y étouffe, puis de faire ressentir sa « libération » comme une **éclosion** séduisante et inquiétante à la fois. Sher veut retrouver le **souvenir** que l'on garde des films new-yorkais de la fin des années 70, pas leur rendu exact (« la mémoire du film », selon CineD). Il ne cherche pas l'exactitude technique. Le spectateur doit sentir la saleté, la fatigue et l'isolement d'Arthur, puis, quand il bascule, être **gêné d'être séduit** par la chaleur et l'énergie de l'image. Le film refuse le vernis du film de super-héros : on doit croire à un film d'auteur de 1981.
@@ -80,7 +87,7 @@ Il s'agit de rendre **physique** une ville malade et un homme qui y étouffe, pu
 
 ## Points non vérifiés
 
-- Ratio 1.85:1 : supposé, aucune source trouvée.
+- Ratio 1.85:1 : vérifié sur le fichier le 2026-10-11.
 - La pellicule émulée (Kodak EXR 200T 5293) repose sur un résumé ASC et sur CineD, sans lecture directe de l'article d'American Cinematographer. Je n'ai pas vérifié non plus que cette pellicule date bien de la fin des années 80, ce qui la rendrait techniquement postérieure à 1981.
 - La dominante cyan dans les ombres et le grain par canal R/V/B moins présent sur les peaux viennent de résumés (Company 3 sur *Folie à Deux*, podcast Cullen Kelly). Rien ne garantit qu'ils s'appliquent exactement au film de 2019.
 - Vapeur de mercure : une seule source (CineD). Le sodium est confirmé par trois sources.

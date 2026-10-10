@@ -17,8 +17,9 @@ F = ImageFont.truetype('/System/Library/Fonts/Supplemental/Arial.ttf', 11)
 J = json.load(open(os.path.join(D, 'coupes.json'))); c = [0.0] + J['coupes'] + [J['stats']['duree']]
 plans = [(s, e) for s, e in zip(c[:-1], c[1:]) if e > A and s < B]
 st = []
-if os.path.exists(os.path.join(D, 'st-en.srt')):
-    for bl in open(os.path.join(D, 'st-en.srt'), encoding='utf-8', errors='replace').read().replace('\r', '').strip().split('\n\n'):
+SRT = next((os.path.join(D, f) for f in ('st-en.srt', 'sous-titres.srt') if os.path.exists(os.path.join(D, f))), None)
+if SRT:
+    for bl in open(SRT, encoding='utf-8', errors='replace').read().replace('\r', '').strip().split('\n\n'):
         l = bl.split('\n')
         if len(l) >= 3 and '-->' in l[1]:
             t0, t1 = [sec(x.replace(',', '.')) for x in l[1].split(' --> ')]; st.append((t0, t1, ' '.join(l[2:])))
