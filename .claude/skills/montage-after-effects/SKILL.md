@@ -85,6 +85,8 @@ Code complet et commentaires : [expressions.md](expressions.md). Fichiers : `lab
 - **pingpong (03)** : au retour, l'easing est inversé. Une arrivée longue devient un départ long. Si l'asymétrie compte, faire un cycle complet et utiliser `cycle`.
 - **cycle (02)** : la dernière clé doit avoir la même valeur que la première, avec des tangentes compatibles, sinon un « hoquet » apparaît à chaque tour.
 
+- **Saccade (step-printing) régulière ou choisie** [THÉORIQUE, forums Adobe Community consultés le 2026-10-10] : régulière = effet Posterize Time, ou mieux l'expression `posterizeTime(8);` sur le **Time Remap** d'une pré-composition (Posterize Time n'agit que sur le calque où il est posé ; signalés : décalages dans des pré-compos imbriquées, cadences fractionnaires arrondies, l'interrupteur « Réduire les transformations » contourne Posterize Time et « Conserver la fréquence d'images »). **Choisie** (rushes à strobe, `labo/photosensibilite/strobe-rushes/`) : Time Remap avec des **clés maintenues** (Hold) posées sur les images sources voulues ; la saccade régulière laisse le hasard choisir les images (pièce 20 v1 : aucun coup retenu). Pour la traînée façon Wong Kar-wai : CC Force Motion Blur ou Pixel Motion Blur **avant** le maintien. Premiere : segments « Frame Hold » sur les images choisies (à documenter, BACKLOG 86).
+
 ## 5. Organisation de projet et rigs
 
 - **Arborescence** : `00_COMPS_FINALES`, `01_PRECOMPS`, `02_RIGS`, `03_ASSETS` (sous-dossiers IMG, VID, AUDIO, AI), `99_ARCHIVES`. Les noms des comps finales portent le format et la version : `TITRE_16x9_v03`.
