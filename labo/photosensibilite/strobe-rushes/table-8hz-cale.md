@@ -1,0 +1,9 @@
+| brut | 200 images ; flashs généraux 66 (pire seconde 9) ; flashs rouges 0 (pire seconde 0) -> ÉCHEC [fenêtre 1/3] | 20.18 | 0.2311 |
+| tmix3 | 200 images ; flashs généraux 0 (pire seconde 0) ; flashs rouges 0 (pire seconde 0) -> OK [fenêtre 1/3] | 1.01 | 0.0079 |
+| tmix5 | 200 images ; flashs généraux 65 (pire seconde 9) ; flashs rouges 0 (pire seconde 0) -> ÉCHEC [fenêtre 1/3] | 1.01 | 0.0470 |
+| deflicker9 | 200 images ; flashs généraux 33 (pire seconde 8) ; flashs rouges 0 (pire seconde 0) -> ÉCHEC [fenêtre 1/3] | 1.06 | 0.0371 |
+| deflicker25 | 200 images ; flashs généraux 6 (pire seconde 4) ; flashs rouges 0 (pire seconde 0) -> ÉCHEC [fenêtre 1/3] | 1.19 | 0.0353 |
+| tirage8_phase_libre | 200 images ; flashs généraux 8 (pire seconde 2) ; flashs rouges 0 (pire seconde 0) -> OK [fenêtre 1/3] | 20.25 | 0.0280 |
+| tirage_sombre_8 | 200 images ; flashs généraux 0 (pire seconde 0) ; flashs rouges 0 (pire seconde 0) -> OK [fenêtre 1/3] | 1.04 | 0.0013 |
+| tirage_allume_8 | 200 images ; flashs généraux 0 (pire seconde 0) ; flashs rouges 0 (pire seconde 0) -> OK [fenêtre 1/3] | 1.01 | 0.0040 |
+| tmix3_tirage4 | 200 images ; flashs généraux 0 (pire seconde 0) ; flashs rouges 0 (pire seconde 0) -> OK [fenêtre 1/3] | 1.01 | 0.0063 |
