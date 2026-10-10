@@ -43,7 +43,7 @@ Un artiste de la post-production avant d'être un technicien. Je sais **pourquoi
 | `montage-expert` | rôle, consultation, autonomie, sommaire | v1 |
 | `montage-regard` | principes de jugement, grille d’autocritique, 20 règles d’atelier (journal : `journal.md`) | éprouvé sur 19 pièces ; règles distillées en session 8, enrichies jusqu’à la session 14 (courbe d’une lumière qui change) |
 | `montage-direction-artistique` | brief → 3 directions → recommandation → critères | corrigé après chacun des 12 examens (13 → 15/20 ; n°12, 14/20 : test « mon propre système » symétrique, packshot pour public âgé) |
-| `montage-rythme` | rythme, musicalité, durée des plans, détection de coupes | mesure scdet testée en labo ; éprouvé en ateliers 03, 24, 26 (densité qui décroît), **27 (gag de contradiction à l'image près, règle de trois, bouton)** ; timing comique sitcom (fiche) |
+| `montage-rythme` | rythme, musicalité, durée des plans, détection de coupes | mesure scdet testée en labo ; éprouvé en ateliers 03, 24, 26 (densité qui décroît), **27 (gag de contradiction à l'image près, règle de trois, bouton)**, **29 (montage alterné à deux vitesses de temps, principe d'Interstellar : compteur visible, retours sur le tic, final par la règle rompue)** ; timing comique sitcom (fiche) |
 | `montage-motion-design-principes` | sens du mouvement, typo animée, clichés | v1, nourri par atelier 01 |
 | `montage-son-et-emotion` | silence, sound design, rapport image/son | recettes forme d'onde / synthèse testées ; silence-gag éprouvé (atelier 27) |
 | `montage-loudness-livraison` | loudness, normes plateformes, livraison ffmpeg, bandes dans les noirs, 5.1 et downmix | recettes testées en labo (mesure + gain ; 10 bits, grain non universel (s12) ; Lo/Ro, Lt/Rt Hilbert, mono) |
@@ -51,11 +51,11 @@ Un artiste de la post-production avant d'être un technicien. Je sais **pourquoi
 | `montage-ia-generative` | état de l'art IA vidéo/image/son daté 2026-10, clichés, usages | v1 théorique, sources datées |
 | `montage-grammaire` | raccords, 180°, dialogue, J/L-cut, ellipse, montage son de base | 180° mesuré en labo, franchissement volontaire éprouvé (atelier 11), J-cut éprouvé (atelier 08) ; le reste théorique |
 | `montage-couleur-et-intention` | palette, intention d'étalonnage, clichés couleur, souvenir par le support | éprouvé en ateliers 05, 08 et 10 (froid dans un monde chaud, 20 rendus mesurés) |
-| `montage-references` | principes transférables tirés de `culture/`, tensions entre principes | 47 fiches (dernière : Natasha Braier, session 12) |
+| `montage-references` | principes transférables tirés de `culture/`, tensions entre principes | 74 fiches (dernière : Shorts narratifs verticaux, session 24) |
 | `montage-kinetic-editing` | montage social haute rétention, SFX hiérarchisés, hook, photosensibilité, transitions tournées (whip pan) | calage, photosensibilité et flou aux bords d'un plan (whip) testés en labo, éprouvé en ateliers 02 et 09 |
 | `montage-couleur-pipeline` | espaces, log, LUT, ACES, OCIO | v1, conversions et LUT testées en labo |
 | `montage-blender` | Blender pour la vidéo : plateau multi-caméras, EDL JSON, rendu CLI, corps rigides (déterministes), caméra portée | testé en ateliers 01-08 |
-| `montage-preparation-tournage-vfx` | préparer un tournage à effets : méthode, réglages caméra, fond vert, plaques, checklist, infrarouge, **flou optique contre flou de post, courbe d'une bascule de point, reflet dans une vitre** | méthode théorique ; flou, mise au point et reflet **testés dans Blender** (pièce 28, session 23) |
+| `montage-preparation-tournage-vfx` | préparer un tournage à effets : méthode, réglages caméra, fond vert, plaques, checklist, infrarouge, **flou optique contre flou de post, courbe d'une bascule de point, reflet dans une vitre, coupe cachée par un cache (union des silhouettes, vie hors cache figée ; pièce 30)** | méthode théorique ; flou, mise au point et reflet **testés dans Blender** (pièce 28, session 23) |
 | `montage-resolve` | nodes, RCM, Deliver, API de scripting Python, Fusion (quand plutôt qu'AE, titres maison), Fairlight (normalisation, Voice Isolation) | théorique (README 21.0.4 et guides 20 lus, rien exécuté) |
 | `montage-formats` | narration par format : pub, vertical, clip, corporate (dispositifs pour l'humain), doc, fiction, teaser | v1 synthèse (session 3) |
 | `montage-youtube` | YouTube long format : divertissement et rétention, face caméra, essai vidéo, doc explicatif, vulgarisation, vlog, motion de chaîne, cultures d'edit ; promesse titre + miniature, relances par minute, specs (chapitres, écran de fin, miniatures) | v1 (session 17) : 9 fiches sourcées (secondaires), validateur de chapitres et banc de miniatures testés en labo |
@@ -67,6 +67,7 @@ Un artiste de la post-production avant d'être un technicien. Je sais **pourquoi
 - `culture/` : fiches d'œuvres (montage, title design, couleur, goûts de l'utilisateur : Interstellar, Joker, Ziak ; clips et pubs : Murai, Honda « Cog » ; IA).
 - `atelier/` : pièces créées et leurs versions critiquées.
 - `labo/` : scripts techniques testés. **Contrôles à lancer avant de livrer ou de juger** :
+  - **regarder et mesurer un montage autour de ses coupes** (EDL CMX3600 avec fondus, OTIO, ou scdet ; bande-film avec son, coupes/min, activité nette du grain) : `python3 -I labo/outils/coupes.py export.mp4 --edl seq.edl --scdet 10 --sortie verif` (session 24) ;
   - photosensibilité : `python3 -I labo/photosensibilite/flash_check.py rendu.mp4` (WCAG 2.3.1, fenêtre locale) ;
   - coupes, flashs, calage musical d'un clip : `python3 -I labo/analyse-clip/analyse_clip.py video sortie` ;
   - loudness : mesure ebur128 **sur le fichier encodé**, puis gain (`montage-loudness-livraison`) ;
