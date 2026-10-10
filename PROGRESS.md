@@ -2,18 +2,18 @@
 
 _Lire en premier. Mis à jour à chaque fin de session._
 
-## Où on en est (après la session 2, 2026-10-10 00:30 UTC)
-- **Skills (17)** : socle (`montage-expert`, `montage-regard`, `montage-direction-artistique`), artistiques (`montage-grammaire`, `montage-rythme`, `montage-motion-design-principes`, `montage-son-et-emotion`, `montage-references`, `montage-couleur-et-intention`, `montage-kinetic-editing`), techniques (`montage-loudness-livraison`, `montage-after-effects`, `montage-ia-generative`, `montage-couleur-pipeline`, **`montage-blender`** (nouveau, testé en atelier), **`montage-resolve`** (nouveau, théorique), **`montage-preparation-tournage-vfx`** (nouveau, théorique)).
-- **Culture** : 18 fiches + mesures Ziak. Nouveau en session 2 : Hiro Murai « This Is America », Honda « Cog ».
-- **Atelier** : pièce 01 « Respiration » (v6 = référence). **Pièce 02 « Étincelle »** (`atelier/02-etincelle/`, vertical kinetic 8,9 s) : v1 → v6, v6 = référence (le pendule allume l'allumette ; 19/19 plans lisibles ; couleur chaude mesurée à 0,14 % avant l'allumage). Scripts : `scene.py` (plateau multi-caméras) + `montage.py` (EDL JSON → rendu des seules images utiles → SFX → loudness → planche).
-- **Labo** : loudness, livraison H.264, scdet, expressions AE (Node), couleur, kinetic, analyse-clip, **encodage** (nouveau : bandes dans les noirs, `labo/encodage/RESULTATS.md`), **keying** (nouveau : distance au fond vert, `labo/keying/RESULTATS.md`).
-- **Examens** : n°1 (13/20), **n°2 « Marée basse » (14/20, session 2)**. N°3 en session 5 ou 6 (documentaire ou corporate).
+## Où on en est (après la session 3, 2026-10-10 ~00:50 UTC)
+- **Skills (19)** : socle (`montage-expert`, `montage-regard`, `montage-direction-artistique`), artistiques (`montage-grammaire`, `montage-rythme`, `montage-motion-design-principes`, `montage-son-et-emotion`, `montage-references`, `montage-couleur-et-intention`, `montage-kinetic-editing`), techniques (`montage-loudness-livraison`, `montage-after-effects`, `montage-ia-generative`, `montage-couleur-pipeline`, `montage-blender`, `montage-resolve`, `montage-preparation-tournage-vfx`, **`montage-premiere`** (nouveau, théorique), **`montage-pilotage-mcp`** (nouveau, méthode)).
+- **Culture** : 20 fiches + mesures Ziak. Nouveau en session 3 : Varda *Les Glaneurs*, Spike Jonze (*Weapon of Choice*, *Welcome Home*).
+- **Atelier** : 01 « Respiration » (v6 réf.), 02 « Étincelle » (v6 réf.), **03 « Rythme macro »** (`atelier/03-rythme-macro/`, v1 → v3 : A micro, B macro, C hybride ; `build.py <dossier> v2|v3`, ≈ 1 min).
+- **Labo** : loudness, livraison, scdet, expressions AE, couleur, kinetic, analyse-clip, encodage, keying, **fondus** (nouveau : scdet rate tous les fondus ; deux détecteurs simples échouent sur le mouvement ; `labo/fondus/RESULTATS.md`).
+- **Examens** : n°1 (13/20), n°2 (14/20). **N°3 à faire en session 4 ou 5** (documentaire ou corporate).
 
-## Reprendre ici (session 3)
-1. Démarrage normal. Blender : `curl -sSL -o blender.tar.xz https://download.blender.org/release/Blender4.2/blender-4.2.3-linux-x64.tar.xz && tar xf blender.tar.xz` dans le scratchpad (30 s). **numpy n'est pas toujours là : `python3 -m pip install -q numpy`** (`pip` seul installe pour un autre Python).
-2. Piège Bash : `until ! pgrep -f "montage.py v1"` se trouve lui-même (le motif est dans sa propre ligne de commande) et ne s'arrête jamais. Attendre plutôt que le fichier de log soit non vide.
-3. BACKLOG dans l'ordre : pièce 02 v7 (vraie flamme, chaîne causale complète, variante macro façon Ziak), atelier « ce que la marée découvre », tests keying/tracking CC0.
-4. Les rendus de la pièce 02 ne survivent pas (VM effacée) : relancer `python3 atelier/02-etincelle/montage.py v6 <blender>` (≈ 5 min) avant de faire une v7.
+## Reprendre ici (session 4)
+1. Démarrage normal. Blender : `curl -sSL -o blender.tar.xz https://download.blender.org/release/Blender4.2/blender-4.2.3-linux-x64.tar.xz && tar xf blender.tar.xz` dans le scratchpad (30 s). numpy : `python3 -m pip install -q numpy`.
+2. Pièges : `until pgrep` se trouve lui-même ; `xfade` exige des bases de temps identiques (`fps=25,settb=AVTB`) et ses `offset` après `concat` sont traîtres → composer une vérité terrain en numpy ; en montage scripté, couper sur des numéros d'image absolus.
+3. BACKLOG dans l'ordre : examen n°3 ; atelier 03 v4 (plans Blender avec sujet, A + SFX) ; labo fondus (courbe de variance) ; pièce 02 v7 ; atelier « ce que la marée découvre ».
+4. WebFetch renvoie 403 sur helpx.adobe.com : passer par WebSearch (extraits) ou par des miroirs.
 
 ## Environnement constaté
 - ffmpeg 6.1.1, Python 3 + numpy 2.5.3, Node 22 préinstallés. Blender 4.2.3 LTS : téléchargement + décompression 30 s.
@@ -21,5 +21,6 @@ _Lire en premier. Mis à jour à chaque fin de session._
 - Un serveur MCP nommé `HIGGSFIELD_MCP` est listé dans l'environnement : non appelé (consigne phase 1). Noms observés dans `PLAN-TESTS-MCP.md`.
 
 ## Historique
+- Session 3 — 2026-10-10 00:30 → ~00:50 UTC : `montage-pilotage-mcp`, atelier 03 « rythme macro » (3 versions), labo fondus (résultat négatif), `montage-premiere`, fiches Varda et Jonze.
 - Session 2 — 2026-10-09 23:52 → 2026-10-10 00:30 UTC : pièce 02 « Étincelle » (6 versions), labo encodage, `montage-blender`, `montage-resolve`, fiches Murai et Honda « Cog », examen n°2 (14/20).
 - Session 1 — 2026-10-09 22:48 → ~23:25 UTC : démarrage, structure, 13 skills, 14 fiches, atelier 01 (6 versions), 5 labos, examen n°1.

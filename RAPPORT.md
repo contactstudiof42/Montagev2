@@ -1,10 +1,10 @@
 # RAPPORT — Phase 1 (cloud)
 
-## SYNTHÈSE (réécrite à chaque session — dernière : session 2, 2026-10-10)
+## SYNTHÈSE (réécrite à chaque session — dernière : session 3, 2026-10-10)
 
 ### Mon point de vue artistique actuel
 Je défends un travail **réduit à une idée**, où **le mouvement a une cause** et où chaque plan est relié au suivant par autre chose que le tempo. J'arbitre par l'émotion avant la continuité (Murch). En couleur, je garde un environnement bas et froid et une seule chaleur méritée (vos goûts : Joker, Ziak).
-**Ce qui a changé cette session** : la pièce 02 m'a appris que **le kinetic editing donne l'énergie, mais que c'est la cause entre les plans qui donne le sens**. Jusqu'à la v4, mes plans (pendule, cube, billes, allumette) défilaient bien en rythme, mais ce n'était qu'une suite d'objets. En v5, le pendule, qui représente le temps, frotte l'allumette à l'apogée de son balancement. La même accélération est devenue une montée, et le suspense vient de la physique (le pendule ralentit en haut de sa course), pas d'un effet. J'ai aussi appris à **mesurer un parti pris de couleur** (% de pixels chauds par image), comme on mesure une loudness. Enfin, j'ai désormais une limite à l'esprit : ce que je ne peux pas juger sans voir le mouvement (durée du silence, ressenti des SFX).
+**Ce qui a changé cette session (3)** : l'atelier 03 m'a fait toucher du doigt ce que je n'avais que lu chez Ziak. **Le calage sur les temps est une texture ; la densité de coupes par section est la forme.** Un montage parfaitement calé au temps, de bout en bout, se lit comme un papier peint : l'intro clairsemée et le couplet chargé y deviennent identiques. Et **un accent ne vaut que par sa rareté** : le seul plan chaud, posé une fois sur la coupure musicale, fait l'événement ; répété quatre fois, il ne dit plus rien. Mon défaut pour la pub et les réseaux est désormais l'hybride (structure macro, calage micro là où la musique pousse) ; le macro pur reste pour le clip grave. Varda et Jonze m'ont rappelé l'autre pôle : quand le corps ou la voix tiennent le film, le montage se retire.
 
 ### Niveau par domaine (confiance : faible / moyenne / bonne)
 | Domaine | Niveau | Confiance | Commentaire |
@@ -12,7 +12,7 @@ Je défends un travail **réduit à une idée**, où **le mouvement a une cause*
 | Regard / autocritique | méthode écrite, appliquée sur 2 pièces (12 versions) | moyenne à bonne | ajout du critère « liaison » et de la planche « 1re image de chaque plan » |
 | Direction artistique | méthode écrite, éprouvée par l'examen n°1 (13/20) | faible à moyenne | audace insuffisante, clichés de catégorie non vus → méthode corrigée |
 | Culture montage / title design / couleur | 10 fiches + 3 fiches couleur + 1 fiche IA | moyenne | sources secondaires surtout, faits incertains listés en fin de fiche |
-| Rythme | principes + mesure des coupes | moyenne | pas encore d'exercice d'atelier |
+| Rythme | principes + mesure des coupes + atelier 03 (micro / macro / hybride) | moyenne à bonne | coupes à l'image près en montage scripté (17 ms max) ; scdet ne voit pas les fondus |
 | Motion design | principes + 1 pièce en 4 versions | moyenne | |
 | Son | principes + 1 design sonore synthétique | faible | je ne peux pas écouter : jugement par forme d'onde |
 | Loudness / livraison | recettes testées en labo | bonne | méthode mesure + gain validée à 0,0-0,2 LU |
@@ -25,7 +25,8 @@ Je défends un travail **réduit à une idée**, où **le mouvement a une cause*
 | Encodage / bandes | labo testé : 10 bits, grain σ≈2 | bonne | ré-encodage plateforme simulé, pas réel |
 | Kinetic editing | skill + labo + pièce 02 en 6 versions | moyenne à bonne | ressenti des SFX non jugé à l'oreille |
 | Préparation tournage VFX | skill v1 | faible à moyenne | théorique, rien testé |
-| Premiere | — | — | à venir |
+| Premiere | `montage-premiere` v1 (v26, recherche datée 2026-10) | faible à moyenne | théorique ; pages Adobe lues par extraits seulement |
+| Pilotage MCP | `montage-pilotage-mcp` v1 (méthode) | moyenne (méthode) / nulle (outils) | aucun appel en phase 1 |
 
 ### Œuvres et auteurs analysés (fiches dans `culture/`)
 - **Walter Murch** (*In the Blink of an Eye*) : l'émotion gagne les arbitrages ; couper à la fin d'une pensée ; le son porte le raccord.
@@ -43,6 +44,8 @@ Je défends un travail **réduit à une idée**, où **le mouvement a une cause*
 - **Roger Deakins** : une couleur par lieu ou chapitre, une source crédible pour chaque teinte, la retenue.
 - **Hiro Murai, « This Is America »** (nouveau) : ne pas monter le choc ; la coupe prévient et amortit, un plan continu expose le spectateur. Le pôle opposé du kinetic.
 - **Honda « Cog »** (nouveau) : quand la preuve est l'argument, ne pas couper (et cacher l'unique raccord dans une sortie de champ) ; les sons des objets font la bande-son. A directement corrigé la pièce 02.
+- **Agnès Varda, *Les Glaneurs et la Glaneuse*** (nouveau, session 3) : le fil d'un montage à digressions est une voix ; la voix off écrite après chaque passe de montage ; garder l'accident qui rime.
+- **Spike Jonze, *Weapon of Choice* et *Welcome Home*** (nouveau, session 3) : quand le corps produit le rythme, le montage se retire ; la source musicale dans l'image ; l'effet physique d'abord.
 - **IA** (`culture/ia-oeuvres-remarquables.md`) : *Total Pixel Space*, *Ancestra*, *The Hardest Part* (Washed Out / Paul Trillo), contre-exemple Coca-Cola : l'IA convainc quand le procédé est le sujet.
 
 ### Atelier
@@ -62,6 +65,12 @@ Je défends un travail **réduit à une idée**, où **le mouvement a une cause*
   - v6 : référence, 19/19 plans lisibles, 0,14 % de pixels chauds avant l'allumage contre 3,7 % après, -14,2 LUFS / -2,0 dBTP.
   Reste : vraie flamme, chaîne causale complète, variante en montage macro façon Ziak.
 
+- **Pièce 03 « Rythme macro »** (`atelier/03-rythme-macro/`, nouveau, critique dans `CRITIQUE.md`) : même musique drill synthétique (140 BPM, 24 s), même banque de 6 plans, trois montages. Planches « timeline » (1 vignette = 1 temps, 1 ligne = 1 mesure) : `v1-A-timeline.png`, `v1-B-timeline.png` → `v2-A-timeline.png`, `v2-B-timeline.png` → `v3-C-timeline.png`.
+  - v1 : **dérive mesurée** de −460 ms sur 24 s (durées arrondies plan par plan à 25 i/s), plan « chaud » sorti magenta ;
+  - v2 : coupes en images absolues (écart max 17 ms), A (micro) = motif périodique sans structure, B (macro) = structure lisible, plan chaud unique sur la coupure ;
+  - v3 : C hybride, meilleure pour la pub et les réseaux ; B garde la menace pour un clip grave.
+  Limite : banque de plans abstraite (fractales), qui ne supporte pas l'intro tenue de 7 s.
+
 ### Dernier examen créatif
 **N°2 — clip de rap « Marée basse » (clip 16:9 + 3 extraits verticaux)** : `examens/02-clip-rap-maree-basse.md`. Recommandation : montage macro avec une horloge-marée (un plan fixe du quai qui revient, l'eau plus basse à chaque retour) pour le clip, et des extraits en kinetic tirés des mêmes rushes. **Autocritique : 14/20.** Le double usage est bien résolu et la préparation du tournage est solide (4K pour le 9:16, log 10 bits, son seul, autorisations). Mais j'ai plaqué votre goût Ziak comme une recette et raté l'image propre au sujet (la marée basse découvre ce qui était caché), et la direction B était une direction de paille. `montage-direction-artistique` est corrigé (étape « idée propre au sujet », test de mon propre système).
 
@@ -74,12 +83,12 @@ Précédent : **N°1 — spot 30 s + vertical 15 s pour une mutuelle (offre jeun
 
 ### Skills (voir le sommaire dans `.claude/skills/montage-expert/SKILL.md`)
 Artistiques (v1) : `montage-expert`, `montage-regard`, `montage-direction-artistique` (corrigé après examen), `montage-rythme`, `montage-motion-design-principes`, `montage-son-et-emotion`, `montage-references`, `montage-couleur-et-intention`.
-Plus `montage-kinetic-editing` (calage testé en labo, éprouvé en atelier 02).
-Techniques : `montage-grammaire` (théorique), `montage-loudness-livraison` (testé en labo, + bandes dans les noirs), `montage-couleur-pipeline` (testé en labo), `montage-after-effects` (testé en syntaxe et logique Node, pas dans AE), `montage-ia-generative` (théorique, daté), **`montage-blender`** (nouveau, testé en atelier), **`montage-resolve`** (nouveau, théorique), **`montage-preparation-tournage-vfx`** (nouveau, théorique).
+Plus `montage-kinetic-editing` (calage testé en labo, éprouvé en atelier 02). `montage-rythme` enrichi par l'atelier 03 (testé).
+Techniques : `montage-grammaire` (théorique), `montage-loudness-livraison` (testé en labo, + bandes dans les noirs), `montage-couleur-pipeline` (testé en labo), `montage-after-effects` (testé en syntaxe et logique Node, pas dans AE), `montage-ia-generative` (théorique, daté), **`montage-blender`** (nouveau, testé en atelier), **`montage-resolve`** (nouveau, théorique), `montage-preparation-tournage-vfx` (théorique), **`montage-premiere`** (nouveau session 3, théorique), **`montage-pilotage-mcp`** (nouveau session 3, méthode théorique).
 
 ### État de l'art IA générative (au 2026-10-09, sources dans `sources/ia-generative-2026-10.md`, rien testé)
 - Vidéo : Veo 3.1 (MAJ janv. 2026 : 9:16 natif, upscale 4K), Kling 3.0 (févr. 2026, jusqu'à 15 s avec son), Seedance 2.0 (févr. 2026), Runway Gen-4.5 (déc. 2025). **Sora arrêté** selon la page officielle OpenAI (app fermée le 26/04/2026, API annoncée pour le 24/09/2026 ; retrait effectif connu par une seule source secondaire).
-- Logiciels : Premiere 26 (masque/suivi d'objet IA, Firefly Boards multi-modèles ; Generative Extend limité à 2 s, 8 bits SDR), Resolve 21 / 21.1 (CineFocus, Magic Mask 2.0).
+- Logiciels : Premiere 26 (renommé « Adobe Premiere » ; 26.5 de sept. 2026 : Generative Media Tool texte → vidéo et SFX dans la timeline, Paper Edit ; Generative Extend en sortie 8 bits SDR 30 i/s max ; Color mode en bêta depuis NAB 2026), Resolve 21 / 21.1 (CineFocus, Magic Mask 2.0).
 - Droit : AI Act art. 50 (transparence, deepfakes) applicable depuis le 02/08/2026 — à confirmer sur le texte officiel. Musique IA : Suno sous licence Warner (nov. 2025) ; Udio fermé à l'export.
 
 ### Phase 2 : priorités du `PLAN-TESTS-MCP.md`
@@ -88,7 +97,8 @@ Techniques : `montage-grammaire` (théorique), `montage-loudness-livraison` (tes
 3. Premiere / Resolve : loudness mesuré par le logiciel contre ffmpeg sur les mêmes WAV (écart attendu ≤ 0,5 LU) ; normalisation à l'export = gain ou compression ?
 4. Blender : refaire la pièce 01 et la pièce 02 via MCP et comparer aux planches (tests 5 et 13).
 5. Premiere : remonter la pièce 02 depuis sa liste de plans JSON (test 11) ; exports 10 bits et grain contre les bandes (test 12).
-6. **Garde-fou** : les outils de génération Higgsfield (`bl_generate_*`…) peuvent consommer des crédits payants ; ne rien générer sans votre accord explicite.
+6. Premiere : version et tags couleur à l'export, détection de beats (`pr_detect_beats` observé) contre la musique de l'atelier 03, refaire le montage C à l'image près (tests 14-17).
+7. **Garde-fou** : les outils de génération Higgsfield (`bl_generate_*`…) peuvent consommer des crédits payants ; ne rien générer sans votre accord explicite.
 
 ### Vos goûts (`GOUTS.md`, créé le 2026-10-09 à votre demande)
 - **Interstellar**, pour le rythme (`culture/interstellar-rythme.md`) : poser une règle du temps et la faire entendre ; un son qui arrache d'une scène à la suivante ; des segments de montage parallèle qui raccourcissent jusqu'au climax. Intégré à `montage-rythme`.
@@ -106,8 +116,11 @@ Techniques : `montage-grammaire` (théorique), `montage-loudness-livraison` (tes
 6. Quels formats faites-vous le plus (pub, réseaux verticaux, corporate, clip) ? C'est là que je concentrerai mes examens.
 7. Une typographie ou une palette que vous détestez ?
 
-8. (nouveau) Pour les pièces dans votre goût : préférez-vous que je pousse la **pièce 02** vers un vrai objet de marque (une allumette = un produit ?), ou que je fasse une **variante en montage macro façon Ziak** du même matériau pour comparer les deux usages ?
-9. (nouveau) Le grain : la mesure montre qu'il protège les noirs des bandes après la compression des plateformes. Est-ce que vous l'aimez visible (texture argentique) ou seulement technique (invisible) ?
+8. Pour les pièces dans votre goût : préférez-vous que je pousse la **pièce 02** vers un vrai objet de marque (une allumette = un produit ?), ou que je fasse une **variante en montage macro façon Ziak** du même matériau pour comparer les deux usages ?
+9. Le grain : la mesure montre qu'il protège les noirs des bandes après la compression des plateformes. Est-ce que vous l'aimez visible (texture argentique) ou seulement technique (invisible) ?
+
+10. (nouveau) Atelier 03 : pour vos montages réseaux, préférez-vous un calage au temps continu (énergie constante), ou l'hybride (intro tenue, puis accélération, puis un plan d'exception sur le break) ?
+11. (nouveau) Spike Jonze (*Weapon of Choice*) ou Varda : est-ce que ce cinéma où le montage se retire vous parle, ou est-ce trop loin de vos goûts ?
 
 ### Autres questions et prochaines priorités
 - Questions : quelles normes de loudness pour vos livraisons TV (charte PAD de quelle chaîne) ? Avez-vous des rushes libres de droits à me donner pour l'atelier ?
@@ -117,7 +130,9 @@ Techniques : `montage-grammaire` (théorique), `montage-loudness-livraison` (tes
   - pièce 02 v7 : vraie flamme, chaîne causale complète, variante façon Ziak ;
   - atelier « direction A dans le noir » (la piste audacieuse de l'examen n°1) ;
   - atelier couleur « même plan, trois étalonnages » traduit en arbre de nodes Resolve ;
-  - Premiere (`montage-premiere`) et préparation de tournage VFX.
+  - atelier 03 v4 : plans Blender avec un sujet, version A avec SFX (kinetic), seconde horloge plus forte ;
+  - labo fondus : méthode de la courbe de variance (scdet ne voit aucun fondu) ;
+  - examen n°3 (documentaire ou corporate) en session 5 ou 6.
 
 ---
 
@@ -164,3 +179,16 @@ Techniques : `montage-grammaire` (théorique), `montage-loudness-livraison` (tes
 - **Skills modifiés** : `montage-regard` (critère « liaison », 3 leçons), `montage-kinetic-editing` (sujet lisible à la 1re image, SFX dont la cause est visible, leçon de l'atelier 02), `montage-references` (principe 15b de Murai, tension « monter le choc » / « le laisser arriver »), `montage-loudness-livraison` (bandes dans les noirs), `montage-expert` (sommaire).
 - **Examen n°2** : « Marée basse » (clip de rap), 14/20 ; corrections dans `montage-direction-artistique`.
 - **PLAN-TESTS-MCP** : tests 11 à 13 et observations du serveur Higgsfield (hôte `bs_*`, procédures « passport » et « audit », risque de crédits payants pour la génération). Le serveur n'a pas été appelé.
+
+### Session 3 — 2026-10-10 00:30 → ~00:50 UTC (horloge de la VM)
+- **Démarrage** : l'anti-doublon a arrêté la session (dernier commit 2 min plus tôt, fin de session 2). Vous avez confirmé un faux positif ; reprise à 00:33.
+- **Sujets** : [TECH] pilotage MCP (méthode) ; [ART] atelier 03 « rythme macro » ; [TECH] labo fondus ; [TECH] Premiere ; [ART] culture Varda et Jonze.
+- **Pièce créée** : 03 « Rythme macro », v1 → v3 (`atelier/03-rythme-macro/build.py` : musique drill synthétisée en numpy, plans générés par ffmpeg, 3 montages, mesures scdet ; ≈ 1 min de rendu). Aucun média tiers.
+- **Tests réussis** : coupes en numéros d'image absolus = écart max 17 ms au tempo (contre −460 ms de dérive en additionnant des durées) ; structure musicale lisible sur planche timeline pour B et C, pas pour A.
+- **Tests ratés, avec leur cause** :
+  - v1 : dérive d'arrondi (10,71 images par temps à 25 i/s et 140 BPM) ; plan chaud magenta (rotation de teinte d'une source déjà colorée) ;
+  - labo fondus (`labo/fondus/RESULTATS.md`) : scdet rate 4 fondus sur 4 à tous les seuils ; la différence image à image et la linéarité stricte confondent fondu et mouvement ; vérité terrain d'abord fausse (`xfade` après `concat` : bases de temps, décalages) → refaite image par image en numpy.
+- **Œuvres analysées** : Varda *Les Glaneurs et la Glaneuse* (BFI, Combustible Celluloid, Wikipédia, Érudit) ; Spike Jonze *Weapon of Choice* et HomePod *Welcome Home* (Wikipédia, Deadline, 9to5mac, Clio, Cult of Mac).
+- **Skills créés** : `montage-pilotage-mcp`, `montage-premiere`. **Modifiés** : `montage-rythme` (forme/texture, hybride, recette coupes en images absolues), `montage-son-et-emotion` (image d'exception sur l'absence sonore), `montage-couleur-et-intention` (accent = ressource rare), `montage-references` (Varda, Jonze, atelier 03), `montage-expert` (sommaire).
+- **PLAN-TESTS-MCP** : tests 14 à 17 (Premiere), observation session 3. Serveur Higgsfield non appelé.
+- **Méthode** : deux sous-agents de recherche (Premiere ; Varda et Jonze) pendant que je faisais l'atelier et le labo. WebFetch bloqué (403) sur helpx.adobe.com : faits Premiere tirés d'extraits de recherche, marqués [INCERTAIN] quand non confirmés.
