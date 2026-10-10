@@ -142,3 +142,6 @@ Le serveur `HIGGSFIELD_MCP` est toujours listé, **non appelé** (consigne phase
 - Dans Blender (via MCP) : reconstruire la scène (une chaise, champ par modificateurs Array 241 × 260, brume en compositing) et mesurer le temps de rendu Eevee sur le Mac contre ~3 s/image en Cycles CPU dans la VM.
 - Dans After Effects : importer la séquence d'images du recul (u régulier) et refaire les versions A et B par **Remappage temporel** (time remap) au lieu de rendre deux fois : vérifier que les courbes du Graph Editor reproduisent la courbe temps → u de `montage.py` (paliers lissés) et qu'aucune image ne saute à la reprise rapide de B.
 - Dans Premiere : poser la voix (6 lignes) et la nappe ; vérifier que la coupe franche de la musique à 13,6 s et son retour en 2 s se font proprement avec des images clés de volume (pas de clic).
+
+## 65. Resolve 21.1 : pilotage par assistants via un serveur MCP (source : communiqué Blackmagic, relevé par la veille IA du 2026-10-10, `sources/ia-generative-2026-10-10.md`) [HYPOTHÈSE À VÉRIFIER]
+- Vérifier sur le Mac si ce serveur existe dans la version installée, ce qu'il expose réellement (aucun nom d'outil supposé ici), et s'il se limite à un projet de test. Comparer avec l'API Python documentée dans `montage-resolve`.
