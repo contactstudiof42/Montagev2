@@ -42,7 +42,7 @@ Un artiste de la post-production avant d'être un technicien. Je sais **pourquoi
 |---|---|---|
 | `montage-expert` | rôle, consultation, autonomie, sommaire | v1 |
 | `montage-regard` | principes de jugement, grille d’autocritique, 20 règles d’atelier (journal : `journal.md`) | éprouvé sur 19 pièces ; règles distillées en session 8, enrichies jusqu’à la session 14 (courbe d’une lumière qui change) |
-| `montage-direction-artistique` | brief → 3 directions → recommandation → critères | corrigé après chacun des 7 examens (13 → 15/20) |
+| `montage-direction-artistique` | brief → 3 directions → recommandation → critères | corrigé après chacun des 10 examens (13 → 15/20 ; n°10 : faisabilité bloquante, sponsor dans le sujet) |
 | `montage-rythme` | rythme, musicalité, durée des plans, détection de coupes | v1 théorique + mesure scdet testée en labo |
 | `montage-motion-design-principes` | sens du mouvement, typo animée, clichés | v1, nourri par atelier 01 |
 | `montage-son-et-emotion` | silence, sound design, rapport image/son | v1, recettes forme d'onde/synthèse testées |

@@ -145,3 +145,9 @@ Le serveur `HIGGSFIELD_MCP` est toujours listé, **non appelé** (consigne phase
 
 ## 65. Resolve 21.1 : pilotage par assistants via un serveur MCP (source : communiqué Blackmagic, relevé par la veille IA du 2026-10-10, `sources/ia-generative-2026-10-10.md`) [HYPOTHÈSE À VÉRIFIER]
 - Vérifier sur le Mac si ce serveur existe dans la version installée, ce qu'il expose réellement (aucun nom d'outil supposé ici), et s'il se limite à un projet de test. Comparer avec l'API Python documentée dans `montage-resolve`.
+
+## 66. (session 19) Blanc pur sous transformée filmique et infrarouge — à vérifier sur les vrais logiciels
+- **Blender (GUI, phase 2)** : confirmer que la vue AgX « Base Contrast » plafonne la sortie 8 bits vers 222/255 (mesuré en CLI, pièce 22 v3) ; comparer looks « Punchy » / « High Contrast » et courbes RGB du compositor placées après la vue. Vérifier l'image en sortie, pas l'aperçu du viewport.
+- **Resolve** : sur un rendu EXR de la pièce 22, poser le point blanc après la transformée (ACES ou DaVinci Wide Gamut → Rec.709) et vérifier sur scope que le fond atteint ~95-100 % sans brûler les chaises.
+- **Premiere / AE** : reproduire le grade « infrarouge intime » de la pièce 23 (monochrome, noir à 3 %, grain fin mono) et le grade « surveillance » ; vérifier que le bruit ajouté survit à l'export H.264 YouTube (débit).
+- Méthode agent : chaque étape vérifiée par une image exportée et une mesure (pixel max, YAVG), sur un projet de test uniquement.

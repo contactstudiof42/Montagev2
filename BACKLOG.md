@@ -15,7 +15,11 @@ Y5. [~] [ART] (session 18 : `culture/createurs-ia-video-2025-2026.md`, sous-agen
 Y6. [x] [ART] (session 17, examen n°9, 14/20) Examen n°9 ou n°10 : un brief YouTube long format (vidéo de 12 min pour une chaîne de vulgarisation ou de divertissement), à traiter uniquement avec les skills.
 
 Y11. [ ] [TECH] **Veille IA continue (consigne de l'utilisateur, 2026-10-10 : « être à jour au 10 octobre 2026 »)** : à chaque session, recherche des nouveautés IA vidéo/image/voix/musique des derniers jours, mise à jour datée de `montage-ia-generative/etat-de-l-art-2026-10.md` ; renommer le fichier chaque mois.
-Y12. [ ] [ART] Pièce 22 v3 : variante `--noir` (l'autre pôle d'EGO), nappe qui monte pendant le recul au lieu du silence, voix humaine (phase 2) ; puis examen n°10 « vulgarisation au rendu cinéma ».
+Y12. [x] (session 19 : v3 faite, voir CRITIQUE ; examen n°10 fait, 15/20) [ART] Pièce 22 v3 : variante `--noir` (l'autre pôle d'EGO), nappe qui monte pendant le recul au lieu du silence, voix humaine (phase 2) ; puis examen n°10 « vulgarisation au rendu cinéma ».
+
+Y13. [ ] [ART] Pièce 22 v4 : 1re image lisible (« Voici une chaise » tombe encore sur un panneau blanc : chaise de trois quarts face ou dossier ajouré) ; en noir, une douche de lumière motivée sur la silhouette ; moiré du champ lointain (échantillons ×4 en fin de recul ou défocus).
+Y14. [ ] [ART] Atelier « la vidéo qu'on regarde au lit » (examen n°10, direction C manquée) : une minute dont luminosité, volume et rythme baissent avec le sujet ; mesurer (YAVG, LUFS par 5 s) et juger si ça endort ou si ça ennuie.
+Y15. [ ] [TECH] Infrarouge réel : documenter caméras « full spectrum », 850 / 940 nm, sensibilité des capteurs, projecteurs IR de cinéma (sources officielles) ; vérifier le chiffre « dormeurs simultanés » (examen n°10) ou le retirer.
 
 ## Priorité haute (prochaines sessions)
 0. [~] [ART] **Pièce 02 « Étincelle »** (`atelier/02-etincelle/`) : v1 → v5 en session 2. Reste : v6 = vraie flamme (simulation Blender ou particules) à la place du cône ; tester une durée de silence plus longue (9 → 15 images) ; un plan de « frôlement » raté à 170 pour planter l'attente (Chekhov) ; variante **macro façon Ziak** du même matériau (montage sur l'arrangement, aucun SFX surligné) pour comparer les deux usages.
