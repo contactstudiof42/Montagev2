@@ -1,44 +1,43 @@
 ---
 name: montage-motion-design-principes
-description: Principes artistiques du motion design et de la typographie animée — donner du sens à un mouvement, carton-titre, générique, logo animé, typo cinétique, habillage, lower third, animation d'interface, « l'animation fait cheap », « ça bouge pour rien », choisir quoi animer et comment.
+description: Principes artistiques du motion design et de la typographie animée — quoi animer et pourquoi : carton-titre, générique, line-up, logo animé, typo cinétique, habillage, lower third, explicatif animé, animation d'interface, traces et échos de mouvement. Mots entendus : « l'animation fait cheap », « ça bouge pour rien », « on n'a pas le temps de lire », « le logo doit claquer mais rester premium », « trop de choses bougent », « ça fait template ». Réglages techniques After Effects (courbes, expressions) : montage-after-effects.
 ---
 
 # Motion design : faire bouger avec une raison
 
-Version 1 (session 1, 2026-10-09). Sources : fiches `culture/saul-bass-generiques.md`, `culture/kyle-cooper-se7en.md`, pièce d'atelier `atelier/01-respiration/`. Technique After Effects : `montage-after-effects`.
+**Marqueurs** : [SOURCÉ] fiche ou source écrite · [THÉORIQUE] convention du métier non vérifiée ici · [TESTÉ EN LABO] fait technique mesuré · [ÉPROUVÉ EN MAQUETTE] vu sur maquette Blender / Pillow / ffmpeg, hypothèse à confirmer sur de vraies images (phase 2).
+
+**Fait foi sur** : le sens d'un mouvement, la lisibilité du texte animé, cartons et génériques. **Ailleurs** : graphe de vitesse, easing, expressions → `montage-after-effects` ; principe « un concept, un signe » en général → `montage-references` §C6 ; durée des plans et calage musical → `montage-rythme`.
+
+Sources : `culture/saul-bass-generiques.md`, `culture/kyle-cooper-se7en.md`, `culture/mclaren-pas-de-deux-et-chronophotographie.md`, `culture/chronophotographie-marey-muybridge.md`.
 
 ## Principes
-1. **Un concept, un signe** (Saul Bass). Avant d'animer, réduire le message à une forme dessinable en quelques secondes ; toute l'animation sert à révéler ou transformer ce signe. Si on anime « des éléments », on n'a pas encore d'idée. (Principe source : `montage-references` §C6 ; ici, seulement son application au mouvement.)
-2. **Animer le paramètre qui porte le sens.** Échelle, position, opacité sont des réflexes ; le bon paramètre est celui qui *raconte*. Atelier 01 : pour une apnée, ce n'est pas l'échelle du mot (un pulse de logo, v1) mais son **interlettrage** qui se resserre (un corps qui se retient, v3). Corriger un excès en réduisant l'amplitude du même paramètre donne un mouvement invisible (v2) : il faut **déplacer** le mouvement, pas l'atténuer.
-3. **Le mouvement a une cause et une matière.** Choisir l'overshoot, c'est choisir un matériau (élastique, métal) ; pas d'overshoot : verre, pierre, luxe. L'easing par défaut (ease in/out symétrique) n'a pas de matière. Réglages concrets (graphe de vitesse, influence, durées types à 25 i/s) : `montage-after-effects`.
-4. **Asymétrie.** Entrée et sortie d'un mouvement ne se ressemblent pas : on entre vite et on se pose, ou on s'élance et on s'arrête net. La symétrie parfaite se lit comme une machine (atelier 01 v1 : 4 s / 4 s).
-5. **Montrer le processus plutôt que le résultat** (Kyle Cooper, Se7en) : le geste qui fabrique dit plus que l'objet fini.
-6. **Lisibilité d'abord.** Un texte doit être lisible au moins le double de son temps de lecture à voix haute, immobile ou presque pendant ce temps. Le mouvement se fait avant et après la lecture, pas pendant.
-6b. **Carton-liste (line-up, générique) : on balaie, on ne lit pas** [THÉORIQUE, `sources/strobe-son-et-lecture-reperage-2026-10.md`]. Trouver un mot connu coûte ~100 ms par élément dans un menu (Hornof & Kieras 1997) et jusqu'à ~250-300 ms par mot quand il faut fixer chaque mot (Boettcher & Wolfe 2015 : 3,5 s pour 16 mots). Pour **20-24 noms**, compter **au moins 4 s** de tenue immobile (le fan moyen a trouvé son nom) et **6-7 s** pour conclure « il n'y est pas » ou en repérer plusieurs. La lecture linéaire de tous les noms prend environ 18 s. Pour accélérer : un ordre connu, des groupes de 4-6 noms, les têtes d'affiche hors de la liste. Ces chiffres sont extrapolés de listes de 16 éléments au plus : les valider par un test chronométré.
-7. **Le silence visuel.** Un temps immobile, trop long, crée de la tension (rétention de l'atelier 01 v3) ; un temps immobile court se lit comme un arrêt. La durée fait la différence.
+1. **Un concept, un signe** (Saul Bass) : réduire le message à une forme dessinable, toute l'animation la révèle ou la transforme. Si on anime « des éléments », on n'a pas encore d'idée. [SOURCÉ]
+2. **Animer le paramètre qui porte le sens.** Pour une apnée, pas l'échelle du mot (pulse de logo) mais son **interlettrage** qui se resserre. Corriger un excès en réduisant l'amplitude donne un mouvement invisible : **déplacer** le mouvement, pas l'atténuer. L'amplitude dépend de la police (0,90 écrase un Garamond italique, 0,93 tient). [ÉPROUVÉ EN MAQUETTE] (pièce 01)
+3. **Le mouvement a une cause et une matière** : overshoot = élastique, métal ; sans overshoot = verre, pierre, luxe ; l'ease symétrique par défaut n'a pas de matière. [THÉORIQUE]
+4. **Asymétrie** : on entre vite et on se pose, ou on s'élance et on s'arrête net ; la symétrie (4 s / 4 s) se lit comme une machine. [ÉPROUVÉ EN MAQUETTE] (pièce 01)
+5. **Montrer le processus plutôt que le résultat** (Kyle Cooper, *Se7en*). [SOURCÉ]
+6. **Lisibilité d'abord** : un texte reste lisible au moins le double de son temps de lecture à voix haute, immobile ou presque ; le mouvement se fait avant et après la lecture. [THÉORIQUE]
+7. **Carton-liste (line-up, générique) : on balaie, on ne lit pas.** ~100 ms par élément pour trouver un mot connu, ~250-300 ms quand il faut fixer chaque mot. Pour 20-24 noms : ≥ 4 s de tenue immobile, 6-7 s pour conclure « il n'y est pas ». Accélérer : ordre connu, groupes de 4-6, têtes d'affiche hors liste. Extrapolé de listes ≤ 16 éléments : à valider par un test chronométré. [SOURCÉ] (Hornof & Kieras 1997, Boettcher & Wolfe 2015)
+8. **Hiérarchiser une liste, c'est économiser des événements** : 19 noms « un nom = un coup » = un compteur (l'œil décroche au 6e) ; en trois rangs (seul et grand / paquets de 3 / énorme) : 11 coups, et la tête d'affiche redevient attendue. Caler chaque section sur un nombre entier de mesures (un reste de 0,7 s fait un trou involontaire). [ÉPROUVÉ EN MAQUETTE] (pièce 20)
+9. **Le silence visuel** : un temps immobile trop long crée de la tension ; court, il se lit comme un arrêt. [ÉPROUVÉ EN MAQUETTE] (pièce 01)
+10. **Rupture de forme = échelle + position + teinte ; la police n'ajoute qu'en grand** : dix polices à 12 % de hauteur = un diaporama ; en sautant de 10 à 60 % avec débord du cadre, chaque coupe devient un choc. Le sommet d'une courbe change de règle (stabilité, grande taille), il n'ajoute pas du chaos au chaos. [ÉPROUVÉ EN MAQUETTE] (pièce 09, principe Noé / Tom Kan)
+11. **Explicatif : un objet qui change de rôle montre des rapports, des pictogrammes montrent des noms.** L'argument (proportion, cause) est dans la transformation ; garder la trace du départ (le trou). Caler chaque transformation sur le **début** de la phrase qui la nomme (mesuré sur la voix définitive). Mouvement de repos sous le seuil de l'événement. [ÉPROUVÉ EN MAQUETTE] (pièce 21)
+12. **Un changement d'échelle a besoin d'un témoin** : un repère de taille connue reste dans le cadre, sinon l'infini devient une texture. [ÉPROUVÉ EN MAQUETTE] (pièce 22)
+13. **Caméra qui monte : la visée monte avec** : un travelling avant montant sur cible fixe décapite la figure ; animer la cible avec la caméra (même easing). Vaut pour AE (point d'intérêt) et pour une grue réelle. [ÉPROUVÉ EN MAQUETTE] (pièce 31)
 
-- **La trace d'un mouvement** (McLaren, *Pas de deux* ; step-printing ; pièce 20 v7) [THÉORIQUE + atelier] : l'écart de temps entre les traces décide de la lecture : continu = vitesse (flou), quelques images = écho (durée, mémoire, corps multiplié), régulier et net = analyse (chronophotographie). Exige un fond qui disparaît (noir) et un sujet en contre-jour ; le nombre de traces est une courbe (`culture/mclaren-pas-de-deux-et-chronophotographie.md`).
-
-- **Deux grammaires de la trace** (Marey / Muybridge, `culture/chronophotographie-marey-muybridge.md`) [THÉORIQUE + atelier] : **superposée dans un même cadre** = on lit une **trajectoire** (exige un fond noir et un sujet réduit à des lignes ou à la lumière) ; **juxtaposée** (grille, split-screen) = on lit des **phases** (exige un repère fixe). Hypothèse de travail (non sourcée) sur l'écart entre poses, en largeurs du membre qui bouge : < 0,3 traînée, 0,5-1,5 trajectoire, > 2 écho (« foule de soi »), > 4 on croit voir plusieurs personnes. **[TESTÉ EN LABO, image fixe, session 20, `labo/echo/`]** : tenue à 0,2 / 1 / 4 ; **0,5 est une zone morte** (éventail emmêlé : ni vitesse ni positions) ; et **le dégradé de mémoire fait l'identité plus que l'écart** : à 2 têtes, des poses égales font une file de six personnes, des poses qui pâlissent avec l'âge font un seul corps. Écart en images = têtes visées × largeur de tête (px) ÷ vitesse (px/image), vitesse mesurée sur le rush.
-6c. **Hiérarchiser une liste, c'est économiser des événements** [TESTÉ EN ATELIER, pièce 20 v8, session 16] : 19 noms montés « un nom = un coup », même taille, même place = un **compteur** (13 s, 20 flashs, l'œil décroche au 6e) ; en trois rangs (seul et grand / paquets de 3 / énorme) : 11 coups, 5,6 s, 12 flashs, et la tête d'affiche redevient attendue. Les paquets se **repèrent** sans se lire : à réserver au cas où un carton-liste suit (6b). Caler chaque section sur un nombre entier de mesures en choisissant sa valeur rythmique d'après le nombre de noms (8 × noire pointée = 3 mesures ; 4 × blanche = 2) : un reste de 0,7 s fait un trou involontaire qui use le vrai silence (v8 → v9).
-
-- **Explicatif : un objet qui change de rôle montre des rapports, des pictogrammes montrent des noms** [TESTÉ EN ATELIER, pièce 21, session 17] : quand l'argument est une proportion, une comparaison ou une cause, il doit être **dans la transformation** (le cercle de 24 h dont la part de 3 h sort et devient un écran) ; prévoir **la trace du départ** (le trou), souvent plus forte que l'arrivée. Caler chaque transformation sur le **début de la phrase** qui la nomme (débuts mesurés sur la voix définitive, silencedetect) : sur une grille fixe, l'image arrivait 0,4-0,6 s avant le mot et le contredisait. **Mouvement de repos** : sous le seuil de l'événement (une aiguille qui fait un tour en 1,7 s raconte ; un tour en 25 s fait seulement vivre le plan).
-
-8. **Un changement d'échelle a besoin d'un témoin** (pièce 22) : un recul, un zoom cosmique ou une multiplication ne se ressentent que si un repère de taille connue (l'objet de départ, une silhouette) reste dans le cadre. Sans témoin, le spectateur perd la mesure et l'infini devient une texture. [TESTÉ EN ATELIER]
+## La trace d'un mouvement (écho, chronophotographie)
+- **L'écart de temps entre les traces décide de la lecture** : continu = vitesse (flou) ; quelques images = écho (durée, mémoire, corps multiplié) ; régulier et net = analyse. Exige un fond qui disparaît et un sujet en contre-jour. [SOURCÉ] (McLaren, *Pas de deux*)
+- **Superposée** dans un cadre = une trajectoire (fond noir) ; **juxtaposée** (grille) = des phases (repère fixe). [SOURCÉ] (Marey / Muybridge)
+- Écart entre poses, en largeurs du membre qui bouge : < 0,3 traînée ; 1 trajectoire ; ≥ 2 écho ; > 4 plusieurs personnes ; **0,5 est une zone morte** ; et **le dégradé de mémoire fait l'identité plus que l'écart** (poses qui pâlissent = un seul corps ; égales = une file de personnes). Écart en images = têtes visées × largeur de tête (px) ÷ vitesse (px/image). [ÉPROUVÉ EN MAQUETTE] (`labo/echo/`, image fixe, et pièce 20)
 
 ## Clichés à refuser (sauf parti pris assumé)
-- Le zoom lent continu sur un carton centré.
-- Les particules et le glow « pour faire riche ».
-- Le texte qui tape lettre à lettre avec un son de machine à écrire (sauf si l'écriture *est* le sujet).
-- Les transitions « whoosh » entre chaque plan (sauf en kinetic editing social, où la densité de SFX est le langage : voir `montage-kinetic-editing`).
-- Le kinetic typography qui fait danser chaque mot : on ne lit plus rien.
+- Le zoom lent continu sur un carton centré ; particules et glow « pour faire riche ».
+- Le texte qui tape lettre à lettre avec une machine à écrire (sauf si l'écriture est le sujet).
+- Le whoosh entre chaque plan (sauf kinetic social : `montage-kinetic-editing`).
+- La typo cinétique qui fait danser chaque mot : on ne lit plus rien.
 
-## Questions à se poser avant d'animer
+## Questions avant d'animer
 1. Quelle est la phrase d'intention ? 2. Quel est le signe unique ? 3. Quel paramètre porte le sens ? 4. Quelle matière (poids, élasticité) ? 5. Où sont les temps immobiles ? 6. Qu'est-ce que j'enlève ?
 
-## Journal des leçons
-- 2026-10-09, atelier 01 v1→v4 : déplacer le mouvement vers le paramètre signifiant (interlettrage) ; fond en dégradé plutôt qu'aplat ; rétention plus longue que confortable pour créer l'inquiétude (vérifié sur la planche v3) ; l'amplitude d'interlettrage dépend de la police (0,90 écrase EB Garamond italique, 0,93 en v5).
-- **Rupture de forme = échelle + position + teinte ; la police n'ajoute qu'en grand** (atelier 09, session 7, principe Noé / Tom Kan) [TESTÉ EN ATELIER] : dix polices à 12 % de la hauteur, nom centré, se lisent comme un diaporama, presque comme une seule police ; en sautant de 10 à 60 % de la hauteur, avec ancrage changeant et débord du cadre, chaque coupe devient un choc, et là seulement la police compte. **Le sommet d'une courbe change de règle** (stabilité, fond commun, grande taille), il n'ajoute pas du chaos au chaos. `atelier/09-generique-equipe/CRITIQUE.md`.
-
-## Mouvement de caméra qui monte : la visée monte avec (pièce 31 v4c-v4d, session 25) [TESTÉ EN ATELIER, Blender]
-Un travelling avant montant avec une cible fixe (contrainte « Track To » sur la taille) décapite la figure en fin de mouvement, au moment même de la bascule. Animer la cible avec la caméra (même courbe d'easing) : la figure grandit dans le cadre au lieu d'en sortir. Vaut pour After Effects (caméra à deux nœuds : animer le point d'intérêt) et pour une grue réelle (le cadreur tilte en montant).
+Détails des pièces : `atelier/01-respiration/`, `atelier/09-generique-equipe/CRITIQUE.md`, `atelier/20-la-lumiere-ecrit/`, `atelier/21-objet-qui-change-de-role/`, `atelier/22-a-la-maniere-d-ego/`, `atelier/31-meme-escalier/`.

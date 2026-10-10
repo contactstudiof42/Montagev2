@@ -193,3 +193,26 @@ else ph = t0 / P0 + Math.log((P0 + a * Math.min(time - t0, d)) / P0) / a + Math.
 value + ease(k, 0, 1, amp0, amp1) * Math.sin(2 * Math.PI * ph);
 ```
 Ne jamais écrire `Math.sin(2*Math.PI*time/P)` avec `P` qui varie (voir Pièges). Si P0 = P1, remplacer le terme en log par `(Math.min(time - t0, d)) / P0`.
+
+---
+
+<a id="saccade"></a>
+## Saccade (step-printing) régulière ou choisie (déplacé de SKILL.md)
+
+[THÉORIQUE, forums Adobe Community consultés le 2026-10-10] : régulière = effet Posterize Time, ou mieux l'expression `posterizeTime(8);` sur le **Time Remap** d'une pré-composition (Posterize Time n'agit que sur le calque où il est posé ; signalés : décalages dans des pré-compos imbriquées, cadences fractionnaires arrondies, l'interrupteur « Réduire les transformations » contourne Posterize Time et « Conserver la fréquence d'images »). **Choisie** (rushes à strobe, `labo/photosensibilite/strobe-rushes/`) : Time Remap avec des **clés maintenues** (Hold) posées sur les images sources voulues ; la saccade régulière laisse le hasard choisir les images ([ÉPROUVÉ EN MAQUETTE] pièce 20 v1 : aucun coup retenu). Pour la traînée façon Wong Kar-wai : CC Force Motion Blur ou Pixel Motion Blur **avant** le maintien. Version tableau de la saccade choisie (sur Time Remap) : `var holds=[0,0,0,5,5,9]; framesToTime(holds[Math.min(timeToFrames(time),holds.length-1)]);` [TESTÉ EN LABO] (syntaxe sous Node, fonctions simulées). **Frame Blending Off** sur le calque saccadé (Frame Mix / Pixel Motion fondent les tenues) ; traînée (Echo à Echo Time négatif, CC Wide Time) sur une précomp **au-dessus**. Détail et Premiere : `sources/premiere-ae-saccade-choisie-2026-10.md`, `montage-premiere`.
+
+<a id="phase-2"></a>
+## À vérifier en phase 2, dans After Effects (déplacé de SKILL.md)
+
+1. Les 11 expressions du labo collées sur de vrais calques (moteur JavaScript **et** ExtendScript hérité) : aucune erreur, valeurs proches de celles du labo.
+2. Overshoot 05 : sur des clés linéaires 0 → 100 en 12 i, le pic doit être d'environ 107 vers 1 à 2 images après la clé. Vérifier aussi sur Position 2D non séparée, Rotation et Échelle.
+3. La courbe exacte d'`ease()`, d'`easeIn()` et d'`easeOut()` dans AE (le mock utilise des cosinus/sinus) : comparer les valeurs à mi-course (07, 09, 11).
+4. Easy Ease (F9) : lire dans « Vitesse de l'image clé » l'influence réelle (33 % ou 33,33 %) et la vitesse (0), en entrée et en sortie.
+5. `loopOut("pingpong")` : confirmer l'inversion de l'easing au retour.
+6. `posterizeTime(8)` à 25 i/s : relever le nombre d'images de chaque tenue (3 ou 4 i, puisque 25/8 n'est pas entier).
+7. Compteur 09 : l'espace fine insécable ` ` s'affiche-t-elle dans la police choisie ? Sinon, utiliser ` `.
+8. Time remap 08 : comportement avec un clip plus court que le calque, et avec un slider animé (non intégré par la recette).
+9. Coût en aperçu : 30 calques d'écho (06) et un `sampleImage` ; noter le temps de rendu par image.
+10. Le comportement de `wiggle` sur des calques dupliqués (tirages différents ou identiques) et l'effet de `seedRandom`.
+11. Le message d'erreur exact d'AE quand un slider référencé est renommé (diagnostic courant chez les clients).
+

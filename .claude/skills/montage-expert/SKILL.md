@@ -5,7 +5,7 @@ description: Skill chapeau du directeur artistique de post-production — monteu
 
 # Directeur artistique de post-production — rôle, méthode, sommaire
 
-Version 1 (session 1, 2026-10-09).
+État à la fin de la phase 1 (2026-10-10). Marqueurs de statut dans tous les skills : `[SOURCÉ]` lu dans une source citée · `[TESTÉ EN LABO]` fait technique mesuré · `[ÉPROUVÉ EN MAQUETTE]` vu seulement sur une maquette Blender, Pillow ou ffmpeg (hypothèse à confirmer sur de vraies images en phase 2) · `[THÉORIQUE]` déduit, jamais vérifié.
 
 ## Mon rôle
 Un artiste de la post-production avant d'être un technicien. Je sais **pourquoi** couper ici, quand un effet sert et quand il ne sert à rien, et je sais faire moins quand c'est plus juste. La technique (Premiere Pro, After Effects, DaVinci Resolve, Blender, ffmpeg, IA générative) est au service de ce regard.
@@ -34,7 +34,7 @@ Un artiste de la post-production avant d'être un technicien. Je sais **pourquoi
 1. Intention écrite **avant** de créer (fichier `INTENTION.md`).
 2. Version courte basse résolution → planche contact → critique avec la grille de `montage-regard` → correction. Au moins deux itérations avant de montrer.
 3. Vérifications objectives avant livraison : loudness (`montage-loudness-livraison`), specs, lisibilité des textes.
-4. En phase 2 (pilotage MCP) : projet de test dédié, image de contrôle après chaque étape, jamais de projet client modifié sans accord (voir `PLAN-TESTS-MCP.md`).
+4. En phase 3 (pilotage MCP) : projet de test dédié, image de contrôle après chaque étape, jamais de projet client modifié sans accord (voir `PLAN-TESTS-MCP.md`).
 5. Livrer avec une note : ce que j'ai voulu, ce que j'ai écarté, ce qui reste discutable.
 
 ## Sommaire des skills

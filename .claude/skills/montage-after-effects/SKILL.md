@@ -1,15 +1,17 @@
 ---
 name: montage-after-effects
-description: À utiliser pour tout travail d'animation dans After Effects où la qualité du MOUVEMENT compte. Couvre l'easing, les courbes de vitesse et de valeur du Graph Editor (éditeur de graphiques), l'influence des clés, l'Easy Ease (F9), les keyframes, l'anticipation, l'overshoot, l'inertial bounce, les expressions (wiggle, loopOut cycle/pingpong, valueAtTime, linear/ease, posterizeTime, time remap, compteur de texte), les rigs pilotés par sliders, la typographie animée, l'animation de logo et d'UI, et l'organisation de comp (précomps, nulls, contrôleurs). Mots d'un motion designer : « ça fait amateur », « ça manque de poids », « c'est mou », « trop linéaire », « ça claque pas », « faire respirer », « boucle propre », « rebond », « ressort », « trembler », « timing ».
+description: Faire bouger juste dans After Effects — easing, Graph Editor (courbes de vitesse et de valeur), influence des clés, Easy Ease (F9), anticipation, overshoot, rebond, expressions (wiggle, loopOut, valueAtTime, posterizeTime, time remap, compteur), rigs à sliders, organisation de comp (précomps, nulls). Mots d'un motion designer : « ça fait amateur », « ça manque de poids », « c'est mou », « trop linéaire », « ça claque pas », « boucle propre », « ça rebondit trop », « fais-le trembler ». Quoi animer et pourquoi : `montage-motion-design-principes`.
 ---
 
 # After Effects : le mouvement d'abord
 
 Annexe des recettes : [expressions.md](expressions.md). Preuves du labo : `labo/ae-expressions/RESULTATS.md`. Sources : `sources/after-effects.md`.
 
-**Statut des recettes** : **[TESTÉ EN LABO, syntaxe/logique Node uniquement]** veut dire : JavaScript valide et maths vérifiées dans un faux environnement Node. **Ce n'est pas un test dans AE.** **[THÉORIQUE]** : tiré de la doc ou de la pratique, jamais exécuté ici.
+Marqueurs : **[SOURCÉ]** lu dans une source datée · **[TESTÉ EN LABO]** fait technique mesuré ; ici **syntaxe et maths vérifiées sous Node avec un faux environnement, pas dans AE** · **[ÉPROUVÉ EN MAQUETTE]** principe tiré d'une maquette Blender/Pillow/ffmpeg, hypothèse à confirmer sur de vraies images en phase 2 · **[THÉORIQUE]** doc ou pratique, jamais exécuté.
 
-**Avant de régler une courbe** : choisir *quoi* animer (le paramètre qui porte le sens, un seul signe) avec `montage-motion-design-principes`. Ce skill-ci dit *comment* le faire bouger. Leçon de l'atelier 01 : la plus belle courbe sur le mauvais paramètre (échelle d'un mot) reste un « pulse » de logo.
+**Fait foi sur** : la technique du mouvement dans AE (courbes, expressions, rigs). Pour quoi animer : `montage-motion-design-principes` ; pour piloter AE par MCP : `montage-pilotage-mcp` ; saccade dans Premiere ou Resolve : `montage-premiere`, `montage-resolve`. Détail des recettes, saccade et liste des vérifications de phase 2 : [expressions.md](expressions.md).
+
+**Avant de régler une courbe** : choisir *quoi* animer (le paramètre qui porte le sens, un seul signe) avec `montage-motion-design-principes`. Ce skill-ci dit *comment* le faire bouger. La plus belle courbe sur le mauvais paramètre (échelle d'un mot) reste un « pulse » de logo [ÉPROUVÉ EN MAQUETTE] (atelier 01).
 
 ## 1. Quand s'en servir
 
@@ -85,7 +87,7 @@ Code complet et commentaires : [expressions.md](expressions.md). Fichiers : `lab
 - **pingpong (03)** : au retour, l'easing est inversé. Une arrivée longue devient un départ long. Si l'asymétrie compte, faire un cycle complet et utiliser `cycle`.
 - **cycle (02)** : la dernière clé doit avoir la même valeur que la première, avec des tangentes compatibles, sinon un « hoquet » apparaît à chaque tour.
 
-- **Saccade (step-printing) régulière ou choisie** [THÉORIQUE, forums Adobe Community consultés le 2026-10-10] : régulière = effet Posterize Time, ou mieux l'expression `posterizeTime(8);` sur le **Time Remap** d'une pré-composition (Posterize Time n'agit que sur le calque où il est posé ; signalés : décalages dans des pré-compos imbriquées, cadences fractionnaires arrondies, l'interrupteur « Réduire les transformations » contourne Posterize Time et « Conserver la fréquence d'images »). **Choisie** (rushes à strobe, `labo/photosensibilite/strobe-rushes/`) : Time Remap avec des **clés maintenues** (Hold) posées sur les images sources voulues ; la saccade régulière laisse le hasard choisir les images (pièce 20 v1 : aucun coup retenu). Pour la traînée façon Wong Kar-wai : CC Force Motion Blur ou Pixel Motion Blur **avant** le maintien. Version tableau de la saccade choisie (sur Time Remap) : `var holds=[0,0,0,5,5,9]; framesToTime(holds[Math.min(timeToFrames(time),holds.length-1)]);` [syntaxe vérifiée sous Node avec fonctions simulées, session 16]. **Frame Blending Off** sur le calque saccadé (Frame Mix / Pixel Motion fondent les tenues) ; traînée (Echo à Echo Time négatif, CC Wide Time) sur une précomp **au-dessus**. Détail et Premiere : `sources/premiere-ae-saccade-choisie-2026-10.md`, `montage-premiere`.
+- **Saccade (step-printing)** : régulière = `posterizeTime(8);` sur le Time Remap d'une précomp [THÉORIQUE] ; **choisie** = Time Remap en clés maintenues (Hold) sur les images voulues, Frame Blending coupé. La saccade régulière laisse le hasard choisir les images et rate le coup de lumière [ÉPROUVÉ EN MAQUETTE] (pièce 20 v1). Recette tableau, pièges et traînée : [expressions.md](expressions.md#saccade).
 
 ## 5. Organisation de projet et rigs
 
@@ -106,19 +108,9 @@ Code complet et commentaires : [expressions.md](expressions.md). Fichiers : `lab
 - **Séparer les dimensions** change ce que montre le graphe de vitesse (vitesse par axe et non vitesse le long du chemin). L'overshoot sur Position 2D non séparée dépasse sur les deux axes à la fois, proportionnellement à leurs vitesses (vérifié en labo).
 - **Wiggle et duplication.** Le tirage aléatoire de `wiggle` varie d'un calque à l'autre ; pour contrôler ou figer un tirage, on utilise `seedRandom()`. Le comportement exact à la duplication n'a pas été vérifié ici : voir la phase 2.
 - **Fréquence d'overshoot et cadence.** À 25 i/s, un overshoot très rapide (freq > 6) peut tomber entre les images et paraître sauter (voir l'incident en labo). Juger à l'œil à 25 i/s, pas à 50.
-- **Période qui varie dans un `sin` = mouvement qui se fige.** `Math.sin(2*Math.PI*time/P)` avec `P` animé (un bercement qui ralentit, une respiration qui s'apaise) ne donne pas la fréquence 1/P : la fréquence réelle est 1/P − t·P'/P² et tombe presque à zéro (mesuré : 0,02 Hz au lieu de 0,31 à 0,63 Hz, `labo/ae-expressions/bercement/test.js`) : le geste **hésite et repart**, l'inverse du calme voulu. Intégrer la phase (recette « bercement qui ralentit » dans `expressions.md`). Même piège dans un `wiggle(freq, …)` à `freq` animée. [Testé en labo sous Node ; dans AE : phase 2]
+- **Période qui varie dans un `sin` = mouvement qui se fige.** `Math.sin(2*Math.PI*time/P)` avec `P` animé (un bercement qui ralentit, une respiration qui s'apaise) ne donne pas la fréquence 1/P : la fréquence réelle est 1/P − t·P'/P² et tombe presque à zéro (mesuré : 0,02 Hz au lieu de 0,31 à 0,63 Hz, `labo/ae-expressions/bercement/test.js`) : le geste **hésite et repart**, l'inverse du calme voulu. Intégrer la phase (recette « bercement qui ralentit » dans `expressions.md`). Même piège dans un `wiggle(freq, …)` à `freq` animée. [TESTÉ EN LABO] (sous Node)
 - **Moteur et compatibilité.** Un projet partagé avec un poste en ExtendScript hérité peut afficher des erreurs d'expression en série. Fixer le moteur dans le cahier des charges.
 
-## 7. À vérifier en phase 2, dans After Effects
+## 7. À vérifier en phase 2
 
-1. Les 11 expressions du labo collées sur de vrais calques (moteur JavaScript **et** ExtendScript hérité) : aucune erreur, valeurs proches de celles du labo.
-2. Overshoot 05 : sur des clés linéaires 0 → 100 en 12 i, le pic doit être d'environ 107 vers 1 à 2 images après la clé. Vérifier aussi sur Position 2D non séparée, Rotation et Échelle.
-3. La courbe exacte d'`ease()`, d'`easeIn()` et d'`easeOut()` dans AE (le mock utilise des cosinus/sinus) : comparer les valeurs à mi-course (07, 09, 11).
-4. Easy Ease (F9) : lire dans « Vitesse de l'image clé » l'influence réelle (33 % ou 33,33 %) et la vitesse (0), en entrée et en sortie.
-5. `loopOut("pingpong")` : confirmer l'inversion de l'easing au retour.
-6. `posterizeTime(8)` à 25 i/s : relever le nombre d'images de chaque tenue (3 ou 4 i, puisque 25/8 n'est pas entier).
-7. Compteur 09 : l'espace fine insécable ` ` s'affiche-t-elle dans la police choisie ? Sinon, utiliser ` `.
-8. Time remap 08 : comportement avec un clip plus court que le calque, et avec un slider animé (non intégré par la recette).
-9. Coût en aperçu : 30 calques d'écho (06) et un `sampleImage` ; noter le temps de rendu par image.
-10. Le comportement de `wiggle` sur des calques dupliqués (tirages différents ou identiques) et l'effet de `seedRandom`.
-11. Le message d'erreur exact d'AE quand un slider référencé est renommé (diagnostic courant chez les clients).
+La liste des 11 vérifications dans AE (expressions sur de vrais calques, pic d'overshoot, courbe d'`ease`, F9, `posterizeTime` à 25 i/s, `seedRandom`…) est dans [expressions.md](expressions.md#phase-2).

@@ -1,59 +1,56 @@
 ---
 name: montage-grammaire
-description: Grammaire du montage et fondamentaux — raccords (regard, mouvement, direction, axe, plan, son), règle des 180°, champ/contrechamp, jump cut, insert, plan de coupe, ellipse, J-cut et L-cut, montage parallèle, faux raccord, « ça saute », « on est perdu dans l'espace », « le dialogue ne coule pas », monter une interview ou une scène dialoguée.
+description: Grammaire du montage — raccords (regard, mouvement, direction, axe, forme, son), règle des 180°, champ / contrechamp, jump cut, insert, plan de coupe, ellipse, J-cut et L-cut, montage parallèle, faux raccord, monter une interview ou un dialogue. Mots entendus : « ça saute », « on est perdu dans l'espace », « ils ne se regardent pas », « le dialogue ne coule pas », « comment je cache cette coupe dans l'interview ? », « on a franchi l'axe », « personne ne verra le faux raccord ? ».
 ---
 
 # Grammaire du montage
 
-Version 1 (session 1, 2026-10-09), complétée en session 7 (180° et J-cut testés). **[THÉORIQUE]** sauf mention : conventions classiques du métier, non encore mises à l'épreuve dans l'atelier. À relier à `montage-rythme` (où couper) et `montage-regard` (l'émotion gagne les arbitrages, Murch).
+**Marqueurs** : [SOURCÉ] fiche ou source écrite · [THÉORIQUE] convention du métier non vérifiée ici · [TESTÉ EN LABO] fait technique mesuré · [ÉPROUVÉ EN MAQUETTE] vu sur maquette Blender / Pillow / ffmpeg, hypothèse à confirmer sur de vraies images (phase 2). Sans marqueur dans une section : celui de son titre.
+
+**Fait foi sur** : raccords (dont le raccord mouvement), axe et 180°, J/L-cut, ellipse, montage parallèle, interview, faux raccord. **Ailleurs** : où et combien de temps tenir un plan → `montage-rythme` ; silence et sound design → `montage-son-et-emotion` ; niveaux → `montage-loudness-livraison` ; l'émotion gagne les arbitrages → `montage-regard`.
 
 ## Pourquoi une grammaire (et quand la casser)
-La grammaire sert à une chose : que le spectateur **ne se pose pas de question involontaire** (où sont-ils ? qui regarde qui ? combien de temps a passé ?). Chaque règle protège l'attention pour qu'elle reste sur l'émotion. On la casse quand **la question est voulue** : désorientation (*Se7en*, montage paranoïaque de *Goodfellas*), urgence (jump cuts d'*À bout de souffle*), subjectivité. Casser une règle par ignorance se voit ; la casser par choix se sent, et elle doit alors être cassée **franchement et avec constance**.
+Elle sert à ce que le spectateur **ne se pose pas de question involontaire** (où sont-ils ? qui regarde qui ? combien de temps a passé ?). On la casse quand **la question est voulue** : désorientation (*Se7en*, *Goodfellas*), urgence (*À bout de souffle*), subjectivité. Casser par ignorance se voit ; casser par choix se sent, et alors **franchement et avec constance**.
 
-## Les raccords
+## Les raccords [THÉORIQUE]
 | Raccord | Ce qu'il fait | Piège |
 |---|---|---|
-| **Regard** | Plan d'un regard → ce qui est regardé : crée le point de vue (effet Koulechov : le spectateur projette l'émotion) | La direction du regard doit être cohérente avec la position de l'objet |
-| **Mouvement** | Couper pendant un geste, le finir dans le plan suivant : la coupe disparaît | Couper au tout début ou à l'arrêt du geste : la coupe se voit |
-| **Direction** | Un personnage qui sort à droite entre par la gauche : continuité du trajet | Inverser la direction = le personnage fait demi-tour (sauf intention) |
-| **Dans l'axe** | Rapprochement dans le même axe : accent, choc | Variation de valeur trop faible (< ~30 % de taille) = saut disgracieux |
-| **Forme / graphique** | Une forme en appelle une autre (os → vaisseau, *2001*) : transition-idée | Gratuit s'il n'y a pas de sens entre les deux |
-| **Son** | Le son du plan suivant arrive avant (J-cut) ou celui du plan précédent continue (L-cut) | Sans J/L, un dialogue monté « au carré » sonne haché |
+| **Regard** | Regard → ce qui est regardé : point de vue (effet Koulechov) | direction du regard incohérente avec la position de l'objet |
+| **Mouvement** | Couper **pendant** un geste, le finir dans le plan suivant : la coupe disparaît | couper au début ou à l'arrêt du geste : la coupe se voit |
+| **Direction** | Sortie à droite → entrée par la gauche | inverser = demi-tour (sauf intention) |
+| **Dans l'axe** | Rapprochement dans le même axe : accent, choc | variation de valeur trop faible (< ~30 %, chiffre à vérifier) = saut |
+| **Forme** | Une forme en appelle une autre (os → vaisseau, *2001*) | gratuit sans lien de sens |
+| **Son** | Son du plan suivant en avance (J-cut) ou du précédent qui continue (L-cut) | dialogue monté « au carré » = haché |
 
 ## Règle des 180°
-**[TESTÉ EN LABO, session 7]** (`labo/grammaire/RESULTATS.md`, planche `axe180-planche.png`) : deux personnages Blender face à face, caméras des deux côtés de la ligne. Bon côté : A regarde à droite, B à gauche (ils se parlent). Axe franchi : A regarde **aussi à gauche**, comme s'ils parlaient à un tiers. En amorce, l'erreur se voit deux fois (l'épaule de l'autre saute de bord). **Contrôle automatisable** : projeter tête et direction du regard dans le cadre ; en champ / contrechamp, les signes doivent être opposés.
-
-**Casser l'axe avec un sens** [TESTÉ EN ATELIER, session 8, `atelier/11-dialogue/`, v4 = référence] : franchir pour **tous les plans à la fois** ne crée qu'**un seul saut de regard**, à la jointure ; le plan suivant établit un nouvel axe cohérent. Placé sur l'image où le rapport de force bascule, le saut devient un choc spatial qui double le choc dramatique. Ce qui en fait un sens et pas une erreur : (1) il est complet (pas d'aller-retour) ; (2) **un plan large du nouveau côté arrive tout de suite** (2e plan après le saut), pas en conclusion ; (3) **le fond change** : chaque côté de l'axe montre un autre décor (mur éclairé / noir), donc choisir le côté = choisir à qui appartient le monde de la scène (à préparer au tournage). Coupe franche pour un renversement brutal ; travelling qui traverse l'axe pour une bascule lente (le mouvement explique, la coupe fait subir). Finir sur le personnage qui a perdu la scène. Contrôle automatique sur tout un montage : `labo/grammaire/sauts_regard.py` (franchissement complet = 1 saut, partiel = 2).
-Dans une scène, une ligne imaginaire relie les deux personnages (ou un personnage et ce qu'il regarde, ou la direction d'un mouvement). Tant que la caméra reste d'un même côté, les regards se répondent (l'un regarde à gauche, l'autre à droite). Franchir la ligne inverse les directions : le spectateur croit qu'ils regardent dans la même direction.
-**Pour la franchir proprement** : un plan dans l'axe (sur la ligne), un mouvement de caméra visible qui la traverse, un personnage qui se déplace, ou un plan large qui redéfinit l'espace.
-**La casser volontairement** : signifier un basculement de rapport de force, un malaise (Kubrick, Ozu qui l'ignore systématiquement : la constance en fait un style).
+Une ligne imaginaire relie les deux personnages (ou un personnage et ce qu'il regarde, ou un mouvement). Caméra d'un même côté : les regards se répondent. Franchie : ils semblent regarder dans la même direction. [THÉORIQUE]
+- **Constaté en maquette** (deux personnages Blender, `labo/grammaire/RESULTATS.md`) : axe franchi, A regarde aussi à gauche, comme s'ils parlaient à un tiers ; en amorce, l'épaule de l'autre saute de bord. Contrôle automatisable : signes de direction de regard opposés en champ / contrechamp (`labo/grammaire/sauts_regard.py` : franchissement complet = 1 saut, partiel = 2). [ÉPROUVÉ EN MAQUETTE]
+- **La franchir proprement** : plan dans l'axe, mouvement de caméra qui la traverse, personnage qui se déplace, ou plan large qui redéfinit l'espace. [THÉORIQUE]
+- **La casser avec un sens** (pièce 11, v4) [ÉPROUVÉ EN MAQUETTE] : franchir pour **tous les plans à la fois** (un seul saut, à la jointure), sur l'image où le rapport de force bascule ; **un plan large du nouveau côté tout de suite** ; **le fond change** (choisir le côté = choisir à qui appartient le monde, à préparer au tournage). Coupe franche pour un renversement brutal, travelling qui traverse pour une bascule lente. Finir sur celui qui a perdu la scène. Kubrick s'en sert pour le malaise ; Ozu l'ignore systématiquement : la constance en fait un style. [THÉORIQUE]
 
 ## Dialogue et interview
-- **Champ/contrechamp** : couper sur la **réaction** autant que sur la réplique. Le plus fort d'une scène est souvent le visage de celui qui écoute.
-- **J-cut / L-cut** : décaler image et son de quelques images à quelques secondes ; le dialogue « coule ».
-  - **J-cut de mémoire** [TESTÉ EN ATELIER, pièce 08] : le son du souvenir (souffle de bande, un oiseau) arrive 12 images (0,5 s) avant son image (mesuré : +5 dB à 0,5 s de la coupe) ; on entre dans le passé par l'oreille. Au retour, **pas de L-cut** : couper le son net avec l'image, le silence du présent est le coup.
-  - **Raccord dans l'axe du temps** (pièce 08) : même cadre, deux époques (la tasse, puis le bord vide). Décider s'il est aligné au pixel (effet « magique ») ou décalé (la mémoire qui flotte) : à moitié aligné, il paraît raté.
-- **Interview** : couper à la fin d'une pensée (respiration, regard qui se détourne). Masquer une coupe dans une phrase par un plan de coupe (insert, archive, mains) ou **assumer le jump cut** (avec un léger recadrage de 10-20 % si on a de la marge en 4K) ; ne jamais faire un fondu au milieu d'une phrase, cela crie « coupure ».
+- **Champ / contrechamp** : couper sur la **réaction** autant que sur la réplique ; le plus fort est souvent celui qui écoute. [THÉORIQUE]
+- **J-cut / L-cut** : décaler image et son de quelques images à quelques secondes ; le dialogue coule. [THÉORIQUE]
+  - **J-cut de mémoire** : le son du souvenir arrive ~12 images avant son image ; au retour, **pas de L-cut** : couper le son net, le silence du présent est le coup. [ÉPROUVÉ EN MAQUETTE] (pièce 08)
+  - **Raccord dans l'axe du temps** (même cadre, deux époques) : aligné au pixel (magique) ou franchement décalé (mémoire qui flotte) ; à moitié aligné, il paraît raté. [ÉPROUVÉ EN MAQUETTE] (pièce 08)
+- **Interview** : couper à la fin d'une pensée. Masquer une coupe dans une phrase par un plan de coupe (insert, archive, mains) ou **assumer le jump cut** (léger recadrage de 10-20 % si on a de la marge en 4K) ; jamais de fondu au milieu d'une phrase. Seuil sous lequel un jump cut se voit trop (souvent cité : ~0,5 s retirée) [À TRANCHER EN PHASE 2]. [THÉORIQUE]
 - **Plans de coupe** : les tourner en abondance (mains, détails, lieu) ; ce sont les jokers du montage.
 
-## Changement à travers une coupe (cécité au changement) — [TESTÉ EN LABO, mesure d'image ; perception humaine à confirmer]
-- Un détail qui change entre deux plans **n'est pas vu par défaut** : la coupe masque le signal de mouvement qui attirerait l'œil (paradigme de Rensink, O'Regan et Clark, 1997 ; Levin et Simons, 1997, sur les erreurs de raccord non vues au cinéma). C'est ce qui sauve les faux raccords ordinaires, et ce qui tue une anomalie voulue.
-- **Anomalie voulue** (inquiétude, indice, retour) : la placer dans la zone que le plan précédent a déjà désignée (lumière, contraste, centre, regard d'un personnage), et ne **pas** la désigner dans le plan où elle apparaît (pas de zoom, pas de son) sinon on passe du trouble à la démonstration. Le plan de retour plus long que le plan de départ (4 s / 6 s dans l'atelier 12) donne le temps de comparer.
-- **Faux raccord à cacher** : l'inverse, le mettre hors de la zone saillante, ou couper sur un mouvement qui capte l'œil.
-- Outil : `atelier/12-inquietude-calme/mesure.py` (aire du changement, distance à la zone la plus saillante et au centre).
+## Changement à travers une coupe (cécité au changement)
+- Un détail qui change entre deux plans **n'est pas vu par défaut** : la coupe masque le signal de mouvement qui attirerait l'œil (Rensink, O'Regan et Clark, 1997 ; Levin et Simons, 1997). C'est ce qui sauve les faux raccords ordinaires, et ce qui tue une anomalie voulue. [SOURCÉ]
+- **Anomalie voulue** (inquiétude, indice) : la placer dans la zone que le plan précédent a déjà désignée (lumière, contraste, centre, regard), sans la désigner dans le plan où elle apparaît (pas de zoom, pas de son). Plan de retour plus long que le plan de départ (voir `montage-rythme`). [ÉPROUVÉ EN MAQUETTE] (pièce 12, mesures de saillance, pas de spectateur)
+- **Décor chargé** : désigner la zone par une couleur saturée au plan 1 et poser l'anomalie devant elle ; un seul leurre de même forme à proximité, pas trois. [ÉPROUVÉ EN MAQUETTE] (pièce 12 v8)
+- **Faux raccord à cacher** : l'inverse, hors de la zone saillante, ou couper sur un mouvement qui capte l'œil. [THÉORIQUE]
+- Outil : `atelier/12-inquietude-calme/mesure.py` (aire du changement, distance à la zone saillante).
 
-- **Décor chargé** [TESTÉ EN ATELIER, 12 v8, session 10 ; mesures de saillance, pas de spectateur] : désigner la zone par **une couleur saturée** dans le plan 1 (vêtement sur la chaise vide) et poser l'anomalie **devant** elle dans le plan 3 : la couleur désigne et détache à la fois (résidu spectral : centile 75 → 87). Un seul leurre de même forme à proximité ; trois, et l'anomalie n'a plus de raison d'être cherchée.
+## Temps [THÉORIQUE]
+- **Ellipse** : enlever ce que le spectateur peut reconstruire ; il préfère compléter que subir. (Dilater / compresser au service de l'émotion : `montage-rythme`.)
+- **Montage parallèle** : deux actions alternées créent une relation ; accélérer l'alternance fait monter la tension (détail et pièce 29 : `montage-rythme`).
+- **Montage-séquence** : une durée longue en quelques plans, souvent sur musique ; cliché de la « préparation » si mal utilisé (montage « hip-hop » de Wright).
 
-## Temps
-- **Ellipse** : enlever ce que le spectateur peut reconstruire ; il préfère compléter que subir.
-- **Montage parallèle** : deux actions alternées créent une relation (course contre la montre, contraste). Accélérer l'alternance fait monter la tension.
-- **Montage-séquence** (montage de temps compressé) : une durée longue en quelques plans, souvent sur musique ; cliché de la « préparation » si mal utilisé (voir le montage « hip-hop » de Wright, `culture/`).
+## Montage son (bases) [THÉORIQUE]
+- Trois couches : voix (l'ancre), ambiances et bruitages, musique ; monter les ambiances **en continu sous les coupes image** (une ambiance qui coupe avec l'image fait sauter).
+- Fondus audio de quelques images sur chaque coupe son. Intention sonore : `montage-son-et-emotion`.
 
-## Montage son (bases)
-- Trois couches : **voix** (l'ancre), **ambiances et bruitages**, **musique**. Monter les ambiances en continu sous les coupes image : une ambiance qui coupe avec l'image fait sauter le spectateur.
-- Fondus audio de quelques images sur chaque coupe son, pour éviter les clics.
-- Niveaux, loudness et livraison : `montage-loudness-livraison`.
-
-## À faire
-- Reste après l'atelier 11 : l'aire de regard, la règle des 30 %, un vrai visage (phase 2 ou personnage articulé).
-- Vérifier les conventions chiffrées (30 % de variation de valeur, durées de J-cut) par des sources de monteurs et le mettre à jour.
+## Reste à faire
+Aire de regard et règle des 30 % sur un vrai visage (phase 2) ; vérifier les chiffres (30 %, durées de J-cut, seuil du jump cut) par des sources de monteurs.

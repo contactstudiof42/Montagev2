@@ -1,71 +1,58 @@
 ---
 name: montage-son-et-emotion
-description: Rapport image et son au service de l'émotion — sound design, silence, ambiance, bruitage, musique contre ou avec l'image, raccord sonore, montage son, « il manque quelque chose au son », « la musique écrase tout », préparer une intention sonore pour une pub, un clip, un documentaire ou un générique.
+description: Le son au service de l'émotion — intention sonore, sound design, silence, ambiance, bruitage, musique avec ou contre l'image, raccord sonore, hors champ, voix off écrite après le montage. Mots entendus : « il manque quelque chose au son », « la musique écrase tout », « c'est trop illustratif », « on met quel son là-dessus ? », « on coupe la musique avant le logo ? », « ça sonne banque de sons », « on entend quelque chose qu'on ne voit pas ». Niveaux et normes : voir montage-loudness-livraison.
 ---
 
 # Son et émotion
 
-Version 1 (session 1, 2026-10-09). Sources : `culture/walter-murch-blink-of-an-eye.md`, `culture/thelma-schoonmaker-raging-bull.md`, `culture/edgar-wright-montage-comique.md`, atelier `atelier/01-respiration/` (v4). Technique de niveau et de livraison : `montage-loudness-livraison`.
+**Marqueurs** : [SOURCÉ] fiche ou source écrite · [THÉORIQUE] convention du métier non vérifiée ici · [TESTÉ EN LABO] fait technique mesuré · [ÉPROUVÉ EN MAQUETTE] vu sur maquette Blender / Pillow / ffmpeg (son jugé sur enveloppe ou voix de synthèse, pas écouté), hypothèse à confirmer en phase 2.
+
+**Fait foi sur** : silence, sound design, musique avec ou contre l'image, hors champ, voix off. **Ailleurs** : où couper sur la musique, tempo et cadence → `montage-rythme` ; J/L-cut comme raccord de dialogue → `montage-grammaire` ; LUFS, true peak, downmix → `montage-loudness-livraison` ; SFX kinetic → `montage-kinetic-editing`.
+
+Sources : `culture/walter-murch-blink-of-an-eye.md`, `culture/thelma-schoonmaker-raging-bull.md`, `culture/edgar-wright-montage-comique.md`, fiches Burtt et Rydstrom (`culture/`).
 
 ## Principes
-1. **Le son fait la moitié de l'image, et souvent l'émotion entière.** Le spectateur pardonne une image imparfaite, jamais un son faux. Penser le son dès l'intention (`INTENTION.md`), pas à la fin.
-2. **Le silence est un événement.** Retirer le son juste avant l'impact (Schoonmaker) le rend plus fort. Mais un silence numérique absolu se lit comme une panne : garder un souffle d'ambiance très bas.
-3. **Le son porte le raccord** (Murch) : un son qui se transforme relie deux plans mieux qu'un fondu ; un son qui anticipe le plan suivant (pré-montage sonore, *J-cut*) tire le spectateur en avant.
-4. **Un son « autre » sous un geste réel** lui donne une charge que le public ne sait pas nommer (animaux sous les coups de Raging Bull). À doser : en pub, gare à la dissonance avec le ton de marque.
-5. **Musique : ne pas surligner.** Une musique qui dit la même chose que l'image est redondante ; la musique *contre* l'image (swing d'Ellington sur la dissection d'Anatomy of a Murder) crée un second sens.
-6. **Le bruitage amplifié et synchrone** fait la comédie et l'énergie (montage hip-hop d'Edgar Wright) ; il doit aussi se lire visuellement pour les vues sans son.
-7. **La dynamique est une émotion.** Ne pas écraser le mix pour « sonner fort » : les plateformes normalisent, l'écrasé paraît juste plat (voir `montage-loudness-livraison`).
-- **L'image la plus singulière sur l'absence sonore la plus forte** : une coupure musicale (break, silence, nappe seule) est l'emplacement idéal du plan d'exception ; l'oreille s'ouvre, l'œil reçoit. Vérifié dans l'atelier 03 (le seul plan chaud posé sur la coupure devient l'événement du montage). [TESTÉ EN ATELIER]
-8. **Partir d'une source réelle, puis la déformer** (Ben Burtt : le sabre laser = ronronnement de projecteurs + interférence TV) : un son enregistré et transformé paraît tangible ; un preset « whoosh » paraît générique. En kinetic, c'est ce qui sépare un montage SFX signé d'un montage de banque de sons.
-9. **Une matière sonore par monde ou par personnage** (WALL-E mécanique et usé contre EVE synthétique) ; **l'intonation sans mots** suffit à donner une âme à un objet (mascotte, logo, produit qui « réagit »).
-10. **Un son-signature se construit en couches à rôles distincts** (Rydstrom, T-rex : aigu = identité, grave = poids, texture = menace).
-11. **Choisir un point d'audition et l'assumer** (Rydstrom, Omaha Beach : son étouffé, subjectif, puis réouverture) : un passe-bas suffit à faire entrer dans une tête ; la réouverture du mix est le retour au monde.
-12. **Un son causé par l'image, seul, après le retrait du reste** (atelier 04 : le ressac s'efface, restent les gouttes qui tombent de la chaise) : le son le plus petit, s'il est le seul, porte la fin.
-13. **Le son d'un strobe est inventé, et il faut le savoir** [THÉORIQUE, `sources/strobe-son-et-lecture-reperage-2026-10.md`] : un xénon fait au mieux un petit « tic » (onde de choc dans le tube) que le système son couvre ; un strobe LED est muet, à part son ventilateur. Aucune fiche ne donne de dB. Un SFX « relais / décharge » sur un coup de lumière sonorise l'**idée** de décharge, pas un son de salle. On l'emprunte au flash photo (pop, puis sifflement de recharge), à l'arc électrique ou à l'interrupteur de projecteur. Sur de la techno : un transitoire court et aigu calé sur le coup, sans queue grave, pour ne pas doubler le kick.
+1. **Le son fait la moitié de l'image, et souvent l'émotion entière.** On pardonne une image imparfaite, jamais un son faux. Penser le son dès l'intention, pas à la fin. [THÉORIQUE]
+2. **Le silence est un événement.** Retirer le son juste avant l'impact (Schoonmaker) le rend plus fort ; mais un silence numérique absolu se lit comme une panne : garder un souffle d'ambiance très bas. [SOURCÉ]
+3. **Le silence n'a de sens que s'il remplace un son déjà appris** : installer le son (deux fois, à une place exacte), puis le retirer ; le son ponctue la chute, il ne l'annonce pas. [SOURCÉ] (`culture/gags-de-montage.md`) Éprouvé : un « ting » sur la 1re image du plan, deux fois, retiré la 3e ; le seul son qui revient est celui de la réaction. [ÉPROUVÉ EN MAQUETTE] (pièce 27)
+4. **Le son porte le raccord** (Murch) : un son qui se transforme relie deux plans mieux qu'un fondu ; un son qui anticipe le plan suivant tire en avant. [SOURCÉ]
+5. **L'image la plus singulière sur l'absence sonore la plus forte** : une coupure musicale (break, silence, nappe seule) est la place du plan d'exception. [ÉPROUVÉ EN MAQUETTE] (pièce 03)
+6. **Un son « autre » sous un geste réel** lui donne une charge qu'on ne sait pas nommer (animaux sous les coups de *Raging Bull*). En pub, gare à la dissonance avec le ton de marque. [SOURCÉ]
+7. **Musique : ne pas surligner.** Celle qui dit la même chose que l'image est redondante ; contre l'image (Ellington sur *Anatomy of a Murder*), elle crée un second sens. [SOURCÉ]
+8. **Bruitage amplifié et synchrone** = comédie et énergie (Wright) ; il doit aussi se lire visuellement pour les vues sans son. [SOURCÉ]
+9. **La dynamique est une émotion** : ne pas écraser le mix ; les plateformes normalisent, l'écrasé paraît plat. [TESTÉ EN LABO] (voir `montage-loudness-livraison`)
+10. **Partir d'une source réelle, puis la déformer** (Burtt : sabre laser = projecteurs + interférence TV) : tangible, alors qu'un preset paraît générique. [SOURCÉ]
+11. **Une matière sonore par monde ou par personnage** (WALL-E contre EVE) ; l'intonation sans mots suffit à donner une âme à un objet (mascotte, logo). [SOURCÉ]
+12. **Un son-signature en couches à rôles distincts** (Rydstrom, T-rex : aigu = identité, grave = poids, texture = menace). [SOURCÉ]
+13. **Choisir un point d'audition et l'assumer** (Rydstrom, Omaha Beach) : un passe-bas fait entrer dans une tête ; la réouverture est le retour au monde. [SOURCÉ]
+14. **Un son causé par l'image, seul, après le retrait du reste** (le ressac s'efface, restent les gouttes de la chaise) porte la fin. [ÉPROUVÉ EN MAQUETTE] (pièce 04)
+15. **Le son d'un strobe est inventé** : un xénon fait au mieux un petit « tic », une LED est muette. Un SFX de décharge sonorise l'**idée** ; sur de la techno, un transitoire court et aigu sans queue grave, pour ne pas doubler le kick. [SOURCÉ] (`sources/strobe-son-et-lecture-reperage-2026-10.md`)
 
-- **Le silence n'a de sens que s'il remplace un son déjà appris** *(fiche `culture/gags-de-montage.md`, session 22)* : pour le rire comme pour le manque, le spectateur ne « entend » l'absence que d'un son qu'il a entendu plusieurs fois (le frigo qui ronronne, le bruitage qui revenait). Installer le son avant de le retirer ; le son ponctue la chute, il ne l'annonce pas (quelques images d'avance suffisent à tuer un gag).
+## Hors champ et présence non montrée [SOURCÉ] (`sources/surround-hors-champ-2026-10.md`)
+- **Hors champ actif ou passif** (Chion) : l'actif pose une question et fait chercher ; le passif installe un territoire. Décider lequel **avant** de placer le son (*La Zone d'intérêt* : le camp n'est qu'entendu).
+- **Acousmêtre** : une voix qu'on ne voit pas a des pouvoirs, perdus quand on montre le visage. Retarder la désacousmatisation, c'est garder la menace.
+- **Présence dans les arrières** (ressenti [THÉORIQUE], chiffres [TESTÉ EN LABO]) : un son de territoire plutôt qu'une source ponctuelle ; petits indices intermittents ; **décorréler Ls et Rs** (la même ambiance mono s'annule en Lt/Rt écouté en mono : −70 LUFS) ; au downmix Lo/Ro un élément des arrières perd ~4,5 LU contre ~1,6 pour le mix (il recule de ~3 LU) ; rien d'essentiel dans le LFE ; pas de dialogue utile dans les arrières. Recettes ffmpeg : `montage-loudness-livraison` §5.1.
+
+## Voix off écrite après le montage (principe Varda) [ÉPROUVÉ EN MAQUETTE] (pièce 33, voix de synthèse non écoutée)
+- La voix dit **ce que l'image ne peut pas dire** (qui parle, le lien entre deux lieux, l'avant / après), jamais ce qu'elle montre.
+- Couper au milieu d'une phrase fait porter le raccord par la syntaxe.
+- Laisser 25-45 % de silence par plan ; retirer la phrase qui explique la dernière image.
 
 ## Clichés à refuser (sauf parti pris)
-- Le *drone* grave qui monte pour signifier la tension (je suis moi-même tombé dedans : atelier 01 v4).
-- Le *whoosh* sur chaque transition, le *riser* + *impact* systématique de bande-annonce — **sauf dans le kinetic editing pour les réseaux, que l'utilisateur aime (`GOUTS.md`)** : là, la densité de SFX est le langage du style. Le cliché n'est pas la quantité, c'est **l'uniformité** : le même whoosh partout, mal calé, sans hiérarchie. Voir `montage-kinetic-editing`.
-- La musique « inspirante » de banque de sons sous un corporate.
-- Le son de machine à écrire sous un texte qui s'écrit.
+- Le *drone* grave qui monte pour signifier la tension.
+- Le *whoosh* sur chaque transition, le *riser* + *impact* systématique — **sauf en kinetic editing réseaux, que l'utilisateur aime (`GOUTS.md`)** : le cliché n'est pas la quantité, c'est **l'uniformité** (même whoosh partout, mal calé, sans hiérarchie). Voir `montage-kinetic-editing`.
+- La musique « inspirante » de banque sous un corporate ; la machine à écrire sous un texte qui s'écrit.
 
 ## Méthode
-1. Écrire l'intention sonore en une phrase avec l'intention visuelle.
-2. Lister les **trois couches** : ambiance (le lieu), bruitages (les gestes), musique (l'émotion) ; décider laquelle mène à chaque moment, et où est le silence.
-3. Caler les événements sonores sur l'image à l'image près (à 25 i/s, 1 image = 40 ms : un décalage de 2 images se sent sur un impact).
-4. Mesurer : loudness intégré, LRA, true peak ; vérifier le dialogue d'abord.
-5. Sans écoute possible (session cloud) : juger par forme d'onde (`showwavespic`), enveloppes et mesures, et **noter que le jugement à l'oreille reste à faire**.
+1. Écrire l'intention sonore en une phrase, avec l'intention visuelle.
+2. Trois couches : ambiance (le lieu), bruitages (les gestes), musique (l'émotion) ; décider laquelle mène à chaque moment, et où est le silence.
+3. Caler les événements à l'image près (à 25 i/s, 2 images de décalage se sentent sur un impact). [THÉORIQUE]
+4. Mesurer loudness intégré, LRA, true peak ; vérifier le dialogue d'abord.
+5. Sans écoute possible : juger par forme d'onde, enveloppes et mesures, et **noter que l'écoute reste à faire**.
 
-## Recettes [TESTÉ EN LABO, session 1]
-- Forme d'onde lisible (fond opaque, repères temporels) :
-  `ffmpeg -i son.wav -filter_complex "[0]showwavespic=s=1000x160:colors=white:scale=sqrt[w];color=c=0x101820:s=1000x160[b];[b][w]overlay=format=auto" -frames:v 1 onde.png`
-  (sans fond opaque, l'onde blanche sur PNG transparent est illisible.)
-- Synthèse d'un souffle par bruit coloré filtré et enveloppes : `atelier/01-respiration/souffle_son.py` (numpy seul).
+## Recettes [TESTÉ EN LABO]
+- Forme d'onde lisible (fond opaque) : `ffmpeg -i son.wav -filter_complex "[0]showwavespic=s=1000x160:colors=white:scale=sqrt[w];color=c=0x101820:s=1000x160[b];[b][w]overlay=format=auto" -frames:v 1 onde.png`
+- Souffle synthétique par bruit coloré filtré : `atelier/01-respiration/souffle_son.py`.
 
-## À approfondir
-- Fiches : faites — Ben Burtt, Gary Rydstrom (session 4, `culture/`). Reste : Murch (sound design d'*Apocalypse Now*), le silence chez Kubrick / Bresson.
-- Atelier : même image, trois bandes son (avec, contre, silence) ; critique comparée.
-
-## Présence non montrée et hors champ (session 6, sourcé : `sources/surround-hors-champ-2026-10.md`)
-Quand un film doit suggérer sans trancher (un visiteur, une menace), le son hors champ est l'outil juste : il crée une présence que l'image ne confirme pas.
-- **Hors champ actif ou passif** (Chion, *L'Audio-vision*) : l'actif pose une question (« qu'est-ce que c'est ? ») et fait chercher ; le passif installe un territoire et stabilise (rumeur de ville). Décider lequel on veut **avant** de placer le son. Cas extrême : *La Zone d'intérêt* (le camp n'est qu'entendu).
-- **Acousmêtre** : une voix qu'on ne voit pas a des pouvoirs (tout voir, être partout) ; elle les perd quand on montre le visage. Retarder la désacousmatisation, c'est garder la menace.
-- **Règles pour une présence dans les arrières** [THÉORIQUE pour le ressenti, chiffres TESTÉS EN LABO] :
-  1. Préférer un son de territoire à une source ponctuelle unique (une source isolée dans une surround fait tourner la tête vers la sortie de secours).
-  2. Présence active = petits indices intermittents (pas, frottement, respiration), puis ramener vers l'avant au moment choisi.
-  3. **Décorréler Ls et Rs** : la même ambiance mono dans les deux arrières **s'annule entièrement** en Lt/Rt écouté en mono (-70 LUFS mesurés).
-  4. **Au downmix stéréo Lo/Ro, un élément des arrières perd 4,5 LU** (-30,0 → -34,5 LUFS, revérifié en session 6) contre ~1,6 LU pour un mix complet : il recule d'environ 3 LU par rapport au reste. Écouter (ou mesurer) le Lo/Ro avant de valider.
-  5. Rien d'essentiel dans le LFE : BS.1770 l'exclut de la mesure et `-ac 2` le jette.
-  6. Pas de dialogue utile dans les arrières.
-- Recettes ffmpeg (fabrication 5.1 de test, downmix ITU par `pan`, phase moyenne) et pièges (`-ac 2` est 7,6 dB trop bas : `aresample=rematrix_maxval=10` ou `pan`) : voir `montage-loudness-livraison` §5.1 et la source.
-
-
-## Silence-gag éprouvé (atelier 27 v3-v4, session 23) [TESTÉ EN ATELIER, maquette]
-Le son appris (un « ting » de fourchette sur la 1re image du plan B, deux fois) puis retiré la 3e fois : l'absence se lit parce qu'elle a une **place exacte** (la 1re image). Le seul son qui revient ensuite doit être celui de la réaction (l'assiette repoussée), pas une musique ou un bruitage de gêne. Voir `atelier/27-jamais/CRITIQUE.md`.
-
-## La voix écrite après le montage (pièce 33, principe Varda, session 24) [TESTÉ EN ATELIER, voix de synthèse, non écoutée]
-- La voix dit **ce que l'image ne peut pas dire** (qui parle, le lien entre deux lieux, l'avant / après), jamais ce qu'elle montre : une voix qui décrit ferme l'image et fait un inventaire.
-- **Couper au milieu d'une phrase** fait porter le raccord par la syntaxe (« Il suffit d'un geste / pour que tout ait changé » : la coupe devient le geste).
-- Laisser 25-45 % de silence par plan (mesurer chaque phrase : espeak-ng à 150 mots/min donne un ordre de grandeur) ; retirer la phrase qui explique la dernière image.
+## Reste à faire
+Fiches Murch (*Apocalypse Now*), silence chez Kubrick / Bresson ; atelier « même image, trois bandes son (avec, contre, silence) » ; tout réécouter en phase 2.
