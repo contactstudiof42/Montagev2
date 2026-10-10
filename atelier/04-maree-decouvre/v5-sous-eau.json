@@ -1,0 +1,1 @@
+{"res": [480, 270], "samples": 8, "frames": [1, 60], "cam": {"loc": [1.0, 0.6, 0.3], "rot_deg": [90, 0, 12], "lens": 35}, "water": [[1, 0.8], [70, 0.72], [190, -0.03], [222, -0.12], [250, -0.12]], "transmission": 0.85, "water_col": [0.1, 0.13, 0.14], "underwater_volume": 0.07, "sand_size": 60, "sand_levels": 9}

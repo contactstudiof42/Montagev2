@@ -35,8 +35,8 @@ def mat(name, col, rough=0.5, metal=0.0):
 def put(o, m): o.data.materials.append(m); return o
 
 # Sable mouillé : plan subdivisé + déplacement par texture d'ondes (rides de sable)
-bpy.ops.mesh.primitive_plane_add(size=200); sable = bpy.context.object
-mod = sable.modifiers.new("sub", "SUBSURF"); mod.subdivision_type = "SIMPLE"; mod.levels = mod.render_levels = 8
+bpy.ops.mesh.primitive_plane_add(size=P.get("sand_size", 200)); sable = bpy.context.object
+mod = sable.modifiers.new("sub", "SUBSURF"); mod.subdivision_type = "SIMPLE"; mod.levels = mod.render_levels = P.get("sand_levels", 8)
 tex = bpy.data.textures.new("rides", "WOOD"); tex.wood_type = "BANDNOISE"; tex.noise_scale = 0.35; tex.turbulence = 3
 d = sable.modifiers.new("disp", "DISPLACE"); d.texture = tex; d.strength = 0.04
 put(sable, mat("sable", (0.20, 0.18, 0.15), 0.35))
@@ -100,6 +100,17 @@ for f, z in P["water"]:
 for fc in (eau.animation_data.action.fcurves if eau.animation_data else []):
     for kp in fc.keyframe_points:
         kp.interpolation = P.get("interp", "BEZIER")
+
+# v5 : volume sous-marin (absorption + diffusion vert-gris) qui suit la surface : turbidité crédible vue de dessous
+if P.get("underwater_volume"):
+    bpy.ops.mesh.primitive_cube_add(size=1); vol = bpy.context.object
+    vol.scale = (40, 40, 1.5); vol.parent = eau; vol.location = (0, 0, -0.75 - 0.002)  # cube de 1 m mis à l échelle 1,5 : demi-hauteur 0,75
+    mv = bpy.data.materials.new("eau_volume"); mv.use_nodes = True; nv = mv.node_tree
+    nv.nodes.remove(nv.nodes["Principled BSDF"]); pv = nv.nodes.new("ShaderNodeVolumePrincipled")
+    pv.inputs["Color"].default_value = (0.35, 0.45, 0.40, 1); pv.inputs["Density"].default_value = P["underwater_volume"]
+    pv.inputs["Absorption Color"].default_value = (0.6, 0.75, 0.7, 1)
+    nv.links.new(pv.outputs["Volume"], nv.nodes["Material Output"].inputs["Volume"]); vol.data.materials.append(mv)
+    sc.cycles.volume_step_rate = 4
 
 # Caméra
 C = P["cam"]

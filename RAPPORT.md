@@ -1,21 +1,22 @@
 # RAPPORT — Phase 1 (cloud)
 
-## SYNTHÈSE (réécrite à chaque session — dernière : session 3, 2026-10-10)
+## SYNTHÈSE (réécrite à chaque session — dernière : session 4, 2026-10-10)
 
 ### Mon point de vue artistique actuel
 Je défends un travail **réduit à une idée**, où **le mouvement a une cause** et où chaque plan est relié au suivant par autre chose que le tempo. J'arbitre par l'émotion avant la continuité (Murch). En couleur, je garde un environnement bas et froid et une seule chaleur méritée (vos goûts : Joker, Ziak).
-**Ce qui a changé cette session (3)** : l'atelier 03 m'a fait toucher du doigt ce que je n'avais que lu chez Ziak. **Le calage sur les temps est une texture ; la densité de coupes par section est la forme.** Un montage parfaitement calé au temps, de bout en bout, se lit comme un papier peint : l'intro clairsemée et le couplet chargé y deviennent identiques. Et **un accent ne vaut que par sa rareté** : le seul plan chaud, posé une fois sur la coupure musicale, fait l'événement ; répété quatre fois, il ne dit plus rien. Mon défaut pour la pub et les réseaux est désormais l'hybride (structure macro, calage micro là où la musique pousse) ; le macro pur reste pour le clip grave. Varda et Jonze m'ont rappelé l'autre pôle : quand le corps ou la voix tiennent le film, le montage se retire.
+**Ce qui a changé cette session (4)** : l'atelier 04 (« Ce que la marée découvre ») m'a appris à **chercher le rythme que le sujet impose avant d'en plaquer un** : la marée découvre lentement ce qui est haut, puis tout le sol d'un coup ; « lent puis brusque » était déjà là, il fallait le cadrer et le laisser se poser. Il m'a aussi montré, versions à l'appui, que **couper libère la tension** quand l'attente est l'argument (la version en trois plans explique là où le plan unique inquiète), et qu'il existe deux manières opposées de faire monter la même gêne : le **mystère** (on ne sait pas ce qui sort de l'eau) et le **suspense** (on l'a vu sous l'eau, on attend qu'il sorte). Enfin, mon propre système (« une seule chaleur ») est revenu par la matière (la rouille) alors que je l'avais chassé de la lumière : je le décide désormais au lieu de le subir. Marker, Morris, Burtt et Rydstrom ont élargi ma culture vers le documentaire d'essai et le son.
+**Session 3** : l'atelier 03 m'a fait toucher du doigt ce que je n'avais que lu chez Ziak. **Le calage sur les temps est une texture ; la densité de coupes par section est la forme.** Un montage parfaitement calé au temps, de bout en bout, se lit comme un papier peint : l'intro clairsemée et le couplet chargé y deviennent identiques. Et **un accent ne vaut que par sa rareté** : le seul plan chaud, posé une fois sur la coupure musicale, fait l'événement ; répété quatre fois, il ne dit plus rien. Mon défaut pour la pub et les réseaux est désormais l'hybride (structure macro, calage micro là où la musique pousse) ; le macro pur reste pour le clip grave. Varda et Jonze m'ont rappelé l'autre pôle : quand le corps ou la voix tiennent le film, le montage se retire.
 
 ### Niveau par domaine (confiance : faible / moyenne / bonne)
 | Domaine | Niveau | Confiance | Commentaire |
 |---|---|---|---|
 | Regard / autocritique | méthode écrite, appliquée sur 2 pièces (12 versions) | moyenne à bonne | ajout du critère « liaison » et de la planche « 1re image de chaque plan » |
 | Direction artistique | méthode écrite, éprouvée par l'examen n°1 (13/20) | faible à moyenne | audace insuffisante, clichés de catégorie non vus → méthode corrigée |
-| Culture montage / title design / couleur | 10 fiches + 3 fiches couleur + 1 fiche IA | moyenne | sources secondaires surtout, faits incertains listés en fin de fiche |
+| Culture montage / title design / couleur / doc / son | 24 fiches (dont Marker, Morris, Burtt, Rydstrom en session 4) | moyenne | sources secondaires surtout, faits incertains listés en fin de fiche |
 | Rythme | principes + mesure des coupes + atelier 03 (micro / macro / hybride) | moyenne à bonne | coupes à l'image près en montage scripté (17 ms max) ; scdet ne voit pas les fondus |
 | Motion design | principes + 1 pièce en 4 versions | moyenne | |
-| Son | principes + 1 design sonore synthétique | faible | je ne peux pas écouter : jugement par forme d'onde |
-| Loudness / livraison | recettes testées en labo | bonne | méthode mesure + gain validée à 0,0-0,2 LU |
+| Son | principes (+ Burtt, Rydstrom) + 2 designs sonores synthétiques | faible à moyenne | je ne peux pas écouter : jugement par forme d'onde et mesure |
+| Loudness / livraison | recettes testées en labo + cibles hors plateformes sourcées (AES TD1008) | bonne | corporate : web -16, salle -18 ; true peak TD1008 à relire |
 | After Effects | expressions testées (syntaxe/logique Node) | moyenne | comportement réel AE non vérifié |
 | IA générative | état de l'art daté 2026-10 | moyenne | rien testé, info volatile |
 | Blender | plateau multi-caméras + EDL JSON, rendu CLI maîtrisé | moyenne à bonne | skill `montage-blender` v1 ; flamme, simulation et Eevee non testés |
@@ -26,6 +27,8 @@ Je défends un travail **réduit à une idée**, où **le mouvement a une cause*
 | Kinetic editing | skill + labo + pièce 02 en 6 versions | moyenne à bonne | ressenti des SFX non jugé à l'oreille |
 | Préparation tournage VFX | skill v1 | faible à moyenne | théorique, rien testé |
 | Premiere | `montage-premiere` v1 (v26, recherche datée 2026-10) | faible à moyenne | théorique ; pages Adobe lues par extraits seulement |
+| Workflows / échanges | `montage-workflows` v1 ; aller-retour OTIO testé (EDL, XML FCP7) | moyenne (fichiers) / faible (logiciels) | l'EDL ne porte pas la cadence : mesuré |
+| Fondus / marqueurs | fondus 3/4 détectés (écart au milieu) ; grille de temps → XML FCP7 à ~10 ms | moyenne | seuils réglés sur la même vérité terrain |
 | Pilotage MCP | `montage-pilotage-mcp` v1 (méthode) | moyenne (méthode) / nulle (outils) | aucun appel en phase 1 |
 
 ### Œuvres et auteurs analysés (fiches dans `culture/`)
@@ -46,6 +49,9 @@ Je défends un travail **réduit à une idée**, où **le mouvement a une cause*
 - **Honda « Cog »** (nouveau) : quand la preuve est l'argument, ne pas couper (et cacher l'unique raccord dans une sortie de champ) ; les sons des objets font la bande-son. A directement corrigé la pièce 02.
 - **Agnès Varda, *Les Glaneurs et la Glaneuse*** (nouveau, session 3) : le fil d'un montage à digressions est une voix ; la voix off écrite après chaque passe de montage ; garder l'accident qui rime.
 - **Spike Jonze, *Weapon of Choice* et *Welcome Home*** (nouveau, session 3) : quand le corps produit le rythme, le montage se retire ; la source musicale dans l'image ; l'effet physique d'abord.
+- **Chris Marker, *Sans soleil*** (nouveau, session 4) : une voix qui rapporte (« il m'écrivait ») libère les sauts ; énoncer à l'écran son problème de montage ; traiter visiblement l'archive ; montage en spirale.
+- **Errol Morris, *The Thin Blue Line*** (nouveau, session 4) : rejouer la même scène avec variations pour montrer des versions et non un fait ; l'insert d'objet comme question ; cadre identique pour tous les témoins ; musique en boucle pour un récit en boucle.
+- **Ben Burtt** (*Star Wars*, *WALL-E*) et **Gary Rydstrom** (*Jurassic Park*, *Il faut sauver le soldat Ryan*, *T2*) (nouveaux, session 4) : partir d'une source réelle et la déformer ; une matière sonore par monde ; un son-signature en couches à rôles distincts ; choisir un point d'audition et l'assumer.
 - **IA** (`culture/ia-oeuvres-remarquables.md`) : *Total Pixel Space*, *Ancestra*, *The Hardest Part* (Washed Out / Paul Trillo), contre-exemple Coca-Cola : l'IA convainc quand le procédé est le sujet.
 
 ### Atelier
@@ -71,6 +77,14 @@ Je défends un travail **réduit à une idée**, où **le mouvement a une cause*
   - v3 : C hybride, meilleure pour la pub et les réseaux ; B garde la menace pour un clip grave.
   Limite : banque de plans abstraite (fractales), qui ne supporte pas l'intro tenue de 7 s.
 
+- **Pièce 04 « Ce que la marée découvre »** (`atelier/04-maree-decouvre/`, nouveau, session 4, critique dans `CRITIQUE.md`) : 16:9, 10 s, Blender ; une chaise de bistrot attachée par une chaîne, que la marée découvre. Planches : `v1-planche.png` → `v2-erreur-sous-eau.png` → `v2b-planche.png` → `v3-planche.png` → `v4-planche.png` (→ `v5-planche.png` si rendue à temps).
+  - v1 : plan large, eau linéaire ; chaise centrée et minuscule, cinq vignettes mortes au milieu, l'estran surgit d'un coup à 80 % et la pièce finit sur un changement ;
+  - v2 : **caméra sous l'eau** pendant 97 images (erreur de géométrie), mais l'accident ouvre une direction : montrer l'objet sous l'eau d'abord ;
+  - v2b (**référence « mystère »**) : plan unique, chaise au tiers droit, un trait à la surface à 24 %, la chaise identifiée à 56 %, la chaîne qui affleure, puis l'estran d'un coup et une tenue d'une seconde ;
+  - v3 : trois plans ; l'insert sur l'anneau est la plus belle image, mais couper explique au lieu d'inquiéter ;
+  - v4 (**à développer, « suspense »**) : ouverture sous l'eau, puis le plan unique ; on attend ce qu'on sait ;
+  - son : le ressac s'éloigne, puis seulement quatre gouttes tombent de la chaise ; -18,4 LUFS / -1,0 dBTP.
+
 ### Dernier examen créatif
 **N°3 — film institutionnel « Seconde main » (coopérative de réemploi du BTP, 2 min 30 + 3 capsules LinkedIn)** : `examens/03-corporate-reemploi.md`. Recommandation : « Deux vies », un film fait de paires de plans (le même objet dans sa première vie, puis dans sa seconde, même cadre, même geste, même étalonnage), et la structure « objection → réponse montrée » pour les capsules sans son. **Autocritique : 15/20.** Cette fois, l'idée propre au sujet est arrivée avant les références. Mais l'humain est réduit à des interviews en intermède, la faisabilité (retrouver les secondes vies des objets) n'a pas été vérifiée d'abord, et la cible de -16 LUFS n'était pas sourcée. Corrections dans `montage-direction-artistique` ; skill `montage-formats` remonté dans le backlog.
 
@@ -86,9 +100,10 @@ Précédent : **N°1 — spot 30 s + vertical 15 s pour une mutuelle (offre jeun
 ### Skills (voir le sommaire dans `.claude/skills/montage-expert/SKILL.md`)
 Artistiques (v1) : `montage-expert`, `montage-regard`, `montage-direction-artistique` (corrigé après examen), `montage-rythme`, `montage-motion-design-principes`, `montage-son-et-emotion`, `montage-references`, `montage-couleur-et-intention`.
 Plus `montage-kinetic-editing` (calage testé en labo, éprouvé en atelier 02). `montage-rythme` enrichi par l'atelier 03 (testé).
-Techniques : `montage-grammaire` (théorique), `montage-loudness-livraison` (testé en labo, + bandes dans les noirs), `montage-couleur-pipeline` (testé en labo), `montage-after-effects` (testé en syntaxe et logique Node, pas dans AE), `montage-ia-generative` (théorique, daté), **`montage-blender`** (nouveau, testé en atelier), **`montage-resolve`** (nouveau, théorique), `montage-preparation-tournage-vfx` (théorique), **`montage-premiere`** (nouveau session 3, théorique), **`montage-pilotage-mcp`** (nouveau session 3, méthode théorique). Artistique nouveau : **`montage-formats`** (session 3, synthèse).
+Techniques : `montage-grammaire` (théorique), `montage-loudness-livraison` (testé en labo, + bandes dans les noirs), `montage-couleur-pipeline` (testé en labo), `montage-after-effects` (testé en syntaxe et logique Node, pas dans AE), `montage-ia-generative` (théorique, daté), **`montage-blender`** (nouveau, testé en atelier), **`montage-resolve`** (nouveau, théorique), `montage-preparation-tournage-vfx` (théorique), **`montage-premiere`** (nouveau session 3, théorique), **`montage-pilotage-mcp`** (nouveau session 3, méthode théorique). Artistique nouveau : **`montage-formats`** (session 3, synthèse). Session 4 : **`montage-workflows`** (nouveau ; échanges testés en labo, passages théoriques) ; enrichis : `montage-loudness-livraison` (hors plateformes), `montage-rythme` (fondus, marqueurs, « lent puis brusque »), `montage-son-et-emotion` (Burtt, Rydstrom, atelier 04), `montage-references` (Marker, Morris), `montage-blender` (eau, volume, géométrie), `montage-regard` (journal), `montage-premiere` (marqueurs), `montage-ia-generative` (vérification datée).
 
-### État de l'art IA générative (au 2026-10-09, sources dans `sources/ia-generative-2026-10.md`, rien testé)
+### État de l'art IA générative (vérifié le 2026-10-10 : `sources/ia-verif-2026-10-10.md` ; base : `sources/ia-generative-2026-10.md` ; rien testé)
+- **Mises à jour du 2026-10-10** : AI Act art. 50 **non reporté** par l'Omnibus numérique (Règlement 2026/1744) — seul le marquage machine des systèmes déjà sur le marché a jusqu'au 02/12/2026 ; Sora : arrêt de l'API au 24/09/2026 inscrit dans les dépréciations passées d'OpenAI ; **correction** : chez Wan, les poids ouverts s'arrêtent à 2.2 (3.0 = API fermée), l'open source vivant est LTX-2/2.3 ; Higgsfield : plugin AE + Premiere (21/07/2026), MCP « bridge », add-on Blender. **Contradiction à lever** : ma note du 09/10 parlait de Premiere 26.5 (sept. 2026), la vérification ne confirme que 26.2.
 - Vidéo : Veo 3.1 (MAJ janv. 2026 : 9:16 natif, upscale 4K), Kling 3.0 (févr. 2026, jusqu'à 15 s avec son), Seedance 2.0 (févr. 2026), Runway Gen-4.5 (déc. 2025). **Sora arrêté** selon la page officielle OpenAI (app fermée le 26/04/2026, API annoncée pour le 24/09/2026 ; retrait effectif connu par une seule source secondaire).
 - Logiciels : Premiere 26 (renommé « Adobe Premiere » ; 26.5 de sept. 2026 : Generative Media Tool texte → vidéo et SFX dans la timeline, Paper Edit ; Generative Extend en sortie 8 bits SDR 30 i/s max ; Color mode en bêta depuis NAB 2026), Resolve 21 / 21.1 (CineFocus, Magic Mask 2.0).
 - Droit : AI Act art. 50 (transparence, deepfakes) applicable depuis le 02/08/2026 — à confirmer sur le texte officiel. Musique IA : Suno sous licence Warner (nov. 2025) ; Udio fermé à l'export.
@@ -122,13 +137,20 @@ Techniques : `montage-grammaire` (théorique), `montage-loudness-livraison` (tes
 9. Le grain : la mesure montre qu'il protège les noirs des bandes après la compression des plateformes. Est-ce que vous l'aimez visible (texture argentique) ou seulement technique (invisible) ?
 
 10. (nouveau) Atelier 03 : pour vos montages réseaux, préférez-vous un calage au temps continu (énergie constante), ou l'hybride (intro tenue, puis accélération, puis un plan d'exception sur le break) ?
+12. (nouveau, session 4) Pièce 04 : face à une révélation, préférez-vous le **mystère** (on ne sait pas ce qui sort de l'eau, v2b) ou le **suspense** (on l'a vu sous l'eau, on attend qu'il sorte, v4) ?
+13. (nouveau) Le son très réduit (un ressac qui s'efface, quatre gouttes) vous parle-t-il, ou attendez-vous toujours une musique ?
 11. (nouveau) Spike Jonze (*Weapon of Choice*) ou Varda : est-ce que ce cinéma où le montage se retire vous parle, ou est-ce trop loin de vos goûts ?
 
 ### Autres questions et prochaines priorités
 - **Anti-doublon (constaté deux fois)** : les sessions 2 et 3 ont été arrêtées à tort parce que la session précédente avait commité moins de 15 minutes avant. Avec une routine horaire et des sessions de 50 minutes, l'écart entre le dernier commit d'une session et le démarrage de la suivante tombe souvent sous les 15 minutes. Deux solutions : (a) réduire le seuil de l'anti-doublon à 5 minutes dans PROMPT.md (je ne le modifie pas moi-même) ; (b) je termine désormais mes sessions vers 40 minutes. J'applique (b) dès cette session, qui s'est terminée à 00:49.
 - Questions : quelles normes de loudness pour vos livraisons TV (charte PAD de quelle chaîne) ? Avez-vous des rushes libres de droits à me donner pour l'atelier ?
-- Prochaines priorités :
-  - atelier « ce que la marée découvre » (révélé par l'examen n°2) ;
+- Session 4 : l'anti-doublon n'a pas bloqué (dernier commit 41 min avant). Je garde la fin vers 40 min.
+- Prochaines priorités (après la session 4) :
+  - pièce 04 v5-v6 : sous-marin crédible, variante verticale 9:16, comparaison mystère / suspense ;
+  - examen n°4 (session 6 ou 7) : fiction courte ou documentaire long ;
+  - ateliers « Spirale » (Marker) et « Versions » (Morris) ;
+  - workflows : vitesses, recadrages, nests et AAF dans l'aller-retour ;
+  - fondus : seconde vérité terrain indépendante ;
   - tests de keying et de tracking sur médias CC0 ;
   - pièce 02 v7 : vraie flamme, chaîne causale complète, variante façon Ziak ;
   - atelier « direction A dans le noir » (la piste audacieuse de l'examen n°1) ;
@@ -196,3 +218,14 @@ Techniques : `montage-grammaire` (théorique), `montage-loudness-livraison` (tes
 - **Examen n°3** : « Seconde main » (corporate), 15/20 ; corrections dans `montage-direction-artistique`.
 - **PLAN-TESTS-MCP** : tests 14 à 17 (Premiere), observation session 3. Serveur Higgsfield non appelé.
 - **Méthode** : deux sous-agents de recherche (Premiere ; Varda et Jonze) pendant que je faisais l'atelier et le labo. WebFetch bloqué (403) sur helpx.adobe.com : faits Premiere tirés d'extraits de recherche, marqués [INCERTAIN] quand non confirmés.
+
+### Session 4 — 2026-10-10 01:30 → ~02:10 UTC
+- **Démarrage** : dernier commit 41 min plus tôt, pas d'arrêt anti-doublon. Blender 4.2.3 réinstallé (30 s), `opentimelineio` 0.18.1 + adaptateurs (5 s).
+- **Sujets** : [TECH] loudness hors plateformes ; [ART] atelier 04 « Ce que la marée découvre » ; [TECH] labo fondus (méthode 2) ; [TECH] marqueurs de temps importables ; [TECH] `montage-workflows` + labo OTIO ; [ART] culture Marker, Morris, Burtt, Rydstrom ; [TECH] vérification IA datée ; [ART] dédoublonnage regard / motion / références.
+- **Pièce créée** : 04, v1, v2 (ratée), v2b, v3, v4 (+ v5 lancée) ; médias tous générés (aucune licence tierce).
+- **Tests réussis** : fondus 3/4 sans faux positif (`labo/fondus/variance.py`) ; grille de temps à ~10 ms de la vérité, BPM 127,99 pour 128 (`labo/marqueurs/`) ; aller-retour XML FCP7 et OTIO sans perte sur 19 plans (`labo/workflows/`) ; son de la pièce 04 à -18,4 LUFS / -1,0 dBTP par mesure + gain.
+- **Tests ratés, avec leur cause** : creux de variance (hypothèse fausse : un plan pauvre rend le milieu du fondu plus texturé) ; grille de temps v1 à contretemps (le charleston gagne la phase → phase lue dans les graves) ; relecture d'EDL à 24 i/s (la cadence n'est pas dans le fichier) ; pièce 04 v2, caméra sous l'eau (test d'une seule image prise au milieu) ; volume sous-marin d'abord noir (cube mal placé, puis densité 5× trop forte) ; `pkill -f` qui tue son propre shell.
+- **Œuvres analysées** : Marker *Sans soleil* (dossier pédagogique 3 Continents 2003, Wikipédia) ; Morris *The Thin Blue Line* (Nieman Lab 2024, IDA, Ebert) ; Ben Burtt ; Gary Rydstrom (Filmsound.org, NPR, presse) — deux fiches par sous-agent, relues et versées dans les skills.
+- **Skills** : créé `montage-workflows` ; modifiés `montage-loudness-livraison`, `montage-rythme`, `montage-son-et-emotion`, `montage-references`, `montage-blender`, `montage-regard`, `montage-motion-design-principes`, `montage-premiere`, `montage-ia-generative`, `montage-expert`.
+- **PLAN-TESTS-MCP** : tests 18 (import des marqueurs) et 19 (aller-retour Premiere ↔ Resolve), observation session 4, faits publics Higgsfield en hypothèses. Serveur non appelé.
+- **Sources principales** : `sources/loudness-hors-plateformes-2026-10.md`, `sources/ia-verif-2026-10-10.md`.
