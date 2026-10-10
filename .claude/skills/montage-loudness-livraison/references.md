@@ -92,3 +92,15 @@ Le script `labo/loudness/labo_loudness.py` contient des fonctions réutilisables
 - **Le LUFS du mix ne voit pas la perte** (-23,5 dans les quatre downmix) : mesurer le **stem** d'ambiance replié en mono (`pan=mono|c0=0.5*c0+0.5*c1,ebur128=peak=true`).
 - **Piège du Lt/Rt « simple »** (`pan=stereo|FL=FL+0.7071*FC-0.5*BL-0.5*BR|FR=FR+0.7071*FC+0.5*BL+0.5*BR`) : un même signal à l'avant et à l'arrière (réverbe, room tone sur 4 canaux) donne un **Lt muet**. Lt/Rt de référence : FIR de Hilbert 2047 points dans `afir=gtype=none` + `adelay=1023S` sur les fronts (21 ms de latence), graphe dans `RESULTATS.md` ; trop court sous 50 Hz.
 - **Intention** : une présence hors champ qui porte du sens (la pièce d'à côté, quelqu'un derrière) doit avoir un **pied discret et décorrélé dans L/R** : elle survit alors aux deux downmix et au mono du téléphone. Ce qui n'est qu'à l'arrière est un luxe de salle.
+
+<a id="hors-plateformes"></a>
+## Hors plateformes (déplacé de SKILL.md ; recherche du 2026-10-10, détail et sources : `sources/loudness-hors-plateformes-2026-10.md`)
+| Contexte | Cible | True peak | Statut |
+|---|---|---|---|
+| Lecture réseau sans normalisation (site, lecteur intégré) : **AES TD1008** (sept. 2021, remplace TD1004) | parole / contenu mixte **-18 LUFS** ; musique **-16 LUFS** | -1 dBTP avant codec avec perte | Valeurs LUFS confirmées ; true peak par citation secondaire (PDF AES en 403) |
+| Podcast (Apple Podcasts) | -16 LKFS ±1 | ≤ -1 dBFS | Officiel (Apple) |
+| Livre audio (ACX) | RMS -23 à -18 dB | crêtes ≤ -3 dB, bruit ≤ -60 dB RMS | Officiel (ACX) |
+| Salle de réunion, salon, événement | aucune norme ; usage pro -16 (web) à -18 (salle) | -1 dBTP | **Pratique de métier**, pas de source primaire |
+| Cinéma / DCP | pas de LUFS ; bandes-annonces ≤ 85 dB Leq(m), pubs ≈ 82 (TASA, ISDCF) | — | Plafonds, pas cibles ; aucune conversion Leq(m)→LUFS officielle |
+
+**Film d'entreprise** (corrige l'examen n°3, où -16 n'était pas sourcé) : master web **-16 LUFS / -1 dBTP / LRA 6-10 LU** (lecteur sans normalisation : on ne veut pas être plus faible que la vidéo voisine, ni écraser la voix) ; **version salle/événement à -18 LUFS, LRA ≤ 6-8** (sonorisation inconnue, souvent forte et réverbérante : marge et dynamique serrée pour que la voix passe), et **toujours un test sur place** ; version TV séparée à -23. Pourquoi deux versions : une salle pardonne moins les écarts de dynamique qu'un casque, et le régisseur règle son gain une fois, sur la première minute.
