@@ -7,12 +7,11 @@ _Lire en premier. Mis à jour à chaque fin de session._
 - **Culture** : 36 fiches. Nouveau : *Enter the Void* (générique Noé / Tom Kan), *Catch Me If You Can* (Kuntzel + Deygas).
 - **Atelier** : **08 « Souvenir »** (v1-v4, v4 = référence : présent figé / passé caméscope 4:3, J-cut, trace de tasse dans le présent) ; **09 « Générique de l'équipe »** (v1-v4, v4 = référence : rupture d'échelle, sommet qui change de règle, contrôle de flashs, -14,5 LUFS).
 - **Labo** : `labo/photosensibilite/` (flash_check v2, fenêtre WCAG), `labo/surround/` (downmix, Hilbert), `labo/grammaire/` (180°). Déterminisme Blender vérifié.
-- **Examens** : n°1 13, n°2 14, n°3 15, n°4 14 /20. **N°5 en session 8** (BACKLOG 39).
+- **Examens** : n°1 13, n°2 14, n°3 15, n°4 14, **n°5 14 /20** (session 7, « Garde de nuit »). **N°6 en session 10.**
 
 ## Reprendre ici (session 8)
 1. Démarrage normal. Blender : `curl -sSL -o blender.tar.xz https://download.blender.org/release/Blender4.2/blender-4.2.3-linux-x64.tar.xz && tar xf blender.tar.xz` dans le scratchpad (30 s). `python3 -m pip install -q numpy pillow scipy`.
-2. **Examen n°5 en premier** (BACKLOG 39) : pub 6 s ou documentaire long, avec contrainte 5.1 + mono et photosensibilité ; répondre uniquement avec les skills.
-3. Puis BACKLOG 40 (atelier « dialogue » sur le labo 180°), 33 (« inquiétude calme » : plans fixes = une image rendue chacun), 41 (écart OCIO), 42 (fusion des skills artistiques).
+2. BACKLOG 43 (atelier « chaleur partout », contre mon tic révélé par l'examen n°5), puis 40 (atelier « dialogue » sur le labo 180°), 33 (« inquiétude calme » : plans fixes = une image rendue chacun), 42 (fusion des skills artistiques).
 4. Pièges : **`pkill -f motif` tue le shell si le motif apparaît N'IMPORTE OÙ dans la commande** (refait en session 7 : le motif était dans un nom de fichier plus loin) → tuer par PID (`ps aux | grep "[b]lender"`). Rendus : plans immobiles = une image. Viser une caméra par un point (`to_track_quat`) plutôt que régler des angles.
 5. Sous-agents : 3 en session 7 (labo surround, 2 fiches), fiables ; chiffre clé revérifié à la main avant versement (-52,4 / -70 LUFS).
 

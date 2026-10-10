@@ -43,6 +43,9 @@ Pour chaque direction, fiche fixe :
 - **Une direction sans dispositif** : si deux pistes reposent sur un dispositif (répétition, point de vue, couleur comptée), la troisième s'en passe (temps réel, plan-séquence, montage invisible). *(ajout examen n°4)*
 - **Ne citer que ce qu'on a analysé** : une référence du client non étudiée se cite par son principe supposé, avec la mention « à vérifier », jamais par un plan précis. *(ajout examen n°4)*
 - **Pas de direction de paille** : chacune doit pouvoir gagner. Si je sais d'avance qu'elle sera écartée, la remplacer. *(ajout examen n°2)*
+- **Tic de système** *(ajout examen n°5)* : si la même signature revient dans deux examens ou projets de suite (chez moi : « une seule chaleur méritée », une règle du temps, le hors champ), une des trois directions doit la **renverser** (la chaleur partout, aucune règle, tout montré).
+- **Générique de série** *(ajout examen n°5)* : prévoir une version courte (≈ moitié) pour les épisodes suivants ; un générique se juge au 4e visionnage, pas au 1er.
+- **Lumières qui clignotent dans le sujet** (gyrophares, néons, écrans, flashs de photographes) *(ajout examen n°5)* : contrôle de photosensibilité dès le traitement (`labo/photosensibilite/flash_check.py`) ; plein cadre, un gyrophare réel (2-4 Hz) échoue.
 
 ## Étape 3 — Recommander et défendre
 - Choisir une direction ; argumenter **contre l'intention** (étape 1), pas par goût.

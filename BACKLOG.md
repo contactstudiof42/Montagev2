@@ -57,11 +57,14 @@ Règle : alterner ART et TECH. Réalimenter dès qu'il reste moins de 10 sujets 
 36. [x] [ART] (session 7 : pièce 09 v1-v4, v4 = référence ; reste [ ] v5 quarts de temps en mots petits pour une marge de photosensibilité, version 9:16) Atelier « générique de l'équipe en 10 s » (principe Noé / Tom Kan, `culture/enter-the-void-generique-noe-tom-kan.md`) : cartons Pillow en polices OFL, une rupture de forme par coupe, courbe vers un sommet, **validé par `labo/photosensibilite/flash_check.py`** ; version B une seule police pour comparer.
 37. [~] [TECH] (session 7 : fenêtre locale WCAG faite, v2 par défaut) Photosensibilité : durcir `flash_check.py` ( motifs réguliers, HDR Michelson 1/17), le passer sur le clip de Ziak et sur les pièces kinetic (02) ; lire le PDF Ofcom (403 en session 7).
 38. [~] [ART] (session 7 : *Catch Me If You Can* fait) Culture : générique et kinetic typography après Noé (Kyle Cooper déjà fait) :  *Zombieland*, *Scott Pilgrim* ; et un monteur de bande-annonce (le trailer comme forme kinetic longue).
-39. [ ] [ART] Examen n°5 (session 8) : pub 6 s (bumper) ou documentaire long — inclure une contrainte de livraison 5.1 + mono et une contrainte de photosensibilité.
+39. [x] [ART] (session 7 : « Garde de nuit », générique de série doc 40 s + teaser vertical, **14/20**, `examens/05-doc-urgences-nuit.md` ; **examen n°6 en session 10**) Examen n°5 : pub 6 s (bumper) ou documentaire long — inclure une contrainte de livraison 5.1 + mono et une contrainte de photosensibilité.
 
 40. [ ] [ART] Atelier « dialogue » (suite du labo 180°) : deux personnages Blender, une scène de 15 s montée en respectant l'axe puis en le franchissant volontairement à l'instant où le rapport de force bascule ; critique : le franchissement se sent-il comme un sens ou comme une erreur ?
 41. [~] [TECH] (session 7 : **écart expliqué**, courbes identiques, matrice Bradford puis CAT02 dans OCIO ; reste [ ] un vrai rush log CC0) Couleur : écart OCIO / colour de 2e-3 sur LogC3 et S-Log3 (BACKLOG 2), à expliquer (constantes, LUT 1D interne d'OCIO ?) ; puis un vrai rush log CC0.
 42. [ ] [ART] Relecture et fusion des skills artistiques (BACKLOG 19, jamais faite) : `montage-regard` (journal long), `montage-references`, `montage-motion-design-principes` se recoupent ; déplacer les journaux d'atelier dans des annexes pour garder chaque SKILL.md < 300 lignes.
+
+43. [ ] [ART] Atelier « chaleur partout » (révélé par l'examen n°5 : mon tic « une seule chaleur méritée ») : la même scène Blender (pièce 06/08) où la chaleur est l'ambiance générale (lampes, café, bois) et où le froid est l'événement ; critique : la tendresse passe-t-elle mieux ?
+44. [ ] [ART] Culture : génériques de séries documentaires et de magazines (rechercher des exemples sourcés ; ce qui fait tenir un générique sur 4 à 40 épisodes).
 
 ## Fait (trace)
 - [x] [TECH] Session 7 (suite) : 180° mesuré (Blender), déterminisme des corps rigides vérifié, `flash_check` v2 (fenêtre WCAG)
