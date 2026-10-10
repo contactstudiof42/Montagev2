@@ -72,7 +72,9 @@ Je défends un travail **réduit à une idée**, où **le mouvement a une cause*
   Limite : banque de plans abstraite (fractales), qui ne supporte pas l'intro tenue de 7 s.
 
 ### Dernier examen créatif
-**N°2 — clip de rap « Marée basse » (clip 16:9 + 3 extraits verticaux)** : `examens/02-clip-rap-maree-basse.md`. Recommandation : montage macro avec une horloge-marée (un plan fixe du quai qui revient, l'eau plus basse à chaque retour) pour le clip, et des extraits en kinetic tirés des mêmes rushes. **Autocritique : 14/20.** Le double usage est bien résolu et la préparation du tournage est solide (4K pour le 9:16, log 10 bits, son seul, autorisations). Mais j'ai plaqué votre goût Ziak comme une recette et raté l'image propre au sujet (la marée basse découvre ce qui était caché), et la direction B était une direction de paille. `montage-direction-artistique` est corrigé (étape « idée propre au sujet », test de mon propre système).
+**N°3 — film institutionnel « Seconde main » (coopérative de réemploi du BTP, 2 min 30 + 3 capsules LinkedIn)** : `examens/03-corporate-reemploi.md`. Recommandation : « Deux vies », un film fait de paires de plans (le même objet dans sa première vie, puis dans sa seconde, même cadre, même geste, même étalonnage), et la structure « objection → réponse montrée » pour les capsules sans son. **Autocritique : 15/20.** Cette fois, l'idée propre au sujet est arrivée avant les références. Mais l'humain est réduit à des interviews en intermède, la faisabilité (retrouver les secondes vies des objets) n'a pas été vérifiée d'abord, et la cible de -16 LUFS n'était pas sourcée. Corrections dans `montage-direction-artistique` ; skill `montage-formats` remonté dans le backlog.
+
+Précédent : **N°2 — clip de rap « Marée basse » (clip 16:9 + 3 extraits verticaux)** : `examens/02-clip-rap-maree-basse.md`. Recommandation : montage macro avec une horloge-marée (un plan fixe du quai qui revient, l'eau plus basse à chaque retour) pour le clip, et des extraits en kinetic tirés des mêmes rushes. **Autocritique : 14/20.** Le double usage est bien résolu et la préparation du tournage est solide (4K pour le 9:16, log 10 bits, son seul, autorisations). Mais j'ai plaqué votre goût Ziak comme une recette et raté l'image propre au sujet (la marée basse découvre ce qui était caché), et la direction B était une direction de paille. `montage-direction-artistique` est corrigé (étape « idée propre au sujet », test de mon propre système).
 
 Précédent : **N°1 — spot 30 s + vertical 15 s pour une mutuelle (offre jeunes parents)** : `examens/01-mutuelle-jeunes-parents.md`. Recommandation : montage de gestes de nuit en très gros plans, puis bascule vers un plan long de 9 s (le soulagement). **Autocritique : 13/20.**
 - Deux directions sur trois étaient trop proches (réalistes, nocturnes).
@@ -132,7 +134,7 @@ Techniques : `montage-grammaire` (théorique), `montage-loudness-livraison` (tes
   - atelier couleur « même plan, trois étalonnages » traduit en arbre de nodes Resolve ;
   - atelier 03 v4 : plans Blender avec un sujet, version A avec SFX (kinetic), seconde horloge plus forte ;
   - labo fondus : méthode de la courbe de variance (scdet ne voit aucun fondu) ;
-  - examen n°3 (documentaire ou corporate) en session 5 ou 6.
+  - skill `montage-formats` (révélé par l'examen n°3) ; loudness hors plateformes.
 
 ---
 
@@ -190,5 +192,6 @@ Techniques : `montage-grammaire` (théorique), `montage-loudness-livraison` (tes
   - labo fondus (`labo/fondus/RESULTATS.md`) : scdet rate 4 fondus sur 4 à tous les seuils ; la différence image à image et la linéarité stricte confondent fondu et mouvement ; vérité terrain d'abord fausse (`xfade` après `concat` : bases de temps, décalages) → refaite image par image en numpy.
 - **Œuvres analysées** : Varda *Les Glaneurs et la Glaneuse* (BFI, Combustible Celluloid, Wikipédia, Érudit) ; Spike Jonze *Weapon of Choice* et HomePod *Welcome Home* (Wikipédia, Deadline, 9to5mac, Clio, Cult of Mac).
 - **Skills créés** : `montage-pilotage-mcp`, `montage-premiere`. **Modifiés** : `montage-rythme` (forme/texture, hybride, recette coupes en images absolues), `montage-son-et-emotion` (image d'exception sur l'absence sonore), `montage-couleur-et-intention` (accent = ressource rare), `montage-references` (Varda, Jonze, atelier 03), `montage-expert` (sommaire).
+- **Examen n°3** : « Seconde main » (corporate), 15/20 ; corrections dans `montage-direction-artistique`.
 - **PLAN-TESTS-MCP** : tests 14 à 17 (Premiere), observation session 3. Serveur Higgsfield non appelé.
 - **Méthode** : deux sous-agents de recherche (Premiere ; Varda et Jonze) pendant que je faisais l'atelier et le labo. WebFetch bloqué (403) sur helpx.adobe.com : faits Premiere tirés d'extraits de recherche, marqués [INCERTAIN] quand non confirmés.

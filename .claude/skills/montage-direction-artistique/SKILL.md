@@ -19,6 +19,8 @@ Remplir ces sept lignes ; si une ligne est vide, la déduire et l'écrire comme 
 
 ## Étape 1 bis — L'idée propre au sujet (ajout examen n°2)
 Avant d'ouvrir `montage-references` ou `GOUTS.md`, écrire **une image qui n'appartient qu'à ce sujet** (examen n°2 : la marée basse découvre ce qui était caché, une image-concept que j'ai ratée en appliquant directement le modèle Ziak). Les références et les goûts viennent ensuite pour la traiter, jamais pour la remplacer.
+- **Faisabilité de l'idée d'abord** *(ajout examen n°3)* : si l'idée dépend d'une matière que je n'ai pas vérifiée (archives, traçabilité, accès à un lieu), la poser au client **en premier**, avant de développer les directions.
+- **L'humain par la compétence, pas par la biographie** *(ajout examen n°3)* : en corporate, montrer des gestes de métier précis plutôt que des parcours de vie ; ne jamais exposer une situation personnelle (insertion, santé) sans accord explicite. Chercher un dispositif qui fasse de l'humain le fil du film (un salarié = un objet qu'il raconte) plutôt qu'un intermède en interview.
 
 ## Étape 2 — Trois directions contrastées
 Contrastées = elles diffèrent sur **l'axe principal** (pas trois variantes de la même idée). **Au moins une direction doit changer de registre** (ironique, fictionnel, graphique), pas seulement de rythme : à l'examen n°1, deux pistes sur trois étaient réalistes, nocturnes et domestiques. Axes utiles : retenue / spectaculaire ; réel / graphique ; lent / rapide ; chaud / froid ; sérieux / ironique.
@@ -61,5 +63,5 @@ Refuser (avec une alternative) :
 1. Reformulation de l'intention (7 lignes). 2. Trois directions (fiche fixe). 3. Recommandation argumentée. 4. Critères. 5. Points de vigilance (tournage, droits, livraison).
 
 ## Limites connues (à corriger par les examens)
-- Éprouvée deux fois : examen n°1 (13/20 ; audace insuffisante, clichés de la catégorie non vus) et examen n°2 (14/20 ; goût du client plaqué comme une recette, direction de paille). Les ajouts ci-dessus en viennent.
+- Éprouvée trois fois : examen n°1 (13/20 ; audace insuffisante, clichés de la catégorie non vus), examen n°2 (14/20 ; goût du client plaqué comme une recette, direction de paille), examen n°3 (15/20, corporate ; idée propre au sujet trouvée avant les références, mais humain réduit à l'interview, faisabilité non vérifiée, loudness hors plateformes non sourcée). Les ajouts ci-dessus en viennent.
 - Pas encore de bibliothèque de références par format : voir `BACKLOG.md`.
