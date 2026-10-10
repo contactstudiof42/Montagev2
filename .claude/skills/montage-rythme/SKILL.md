@@ -91,3 +91,8 @@ Démonstration produit, réaction en chaîne, gag mécanique, plan « Cog » : t
 ## À faire
 - Atelier : un même matériau monté sur trois tempos ; critique comparée.
 - Fiches : Sally Menke (Tarantino), Kirk Baxter (Fincher), clips (Gondry, Jonze).
+
+## Dilater par la durée plutôt que par la vitesse (examen n°6, session 10) [DÉDUIT, appuyé sur `labo/interpolation/`]
+- Pour étirer l'instant décisif, **tenir le plan au-delà de l'attente** (laisser sonner deux fois de trop avant de décrocher) avant de penser ralenti. La durée dilate le temps intérieur sans changer la texture de l'image ; le ralenti dit « ceci est spécial » et surligne souvent ce que le son porte déjà.
+- Le ralenti d'image se réserve aux rushes tournés en haute cadence, ou aux mouvements que l'interpolation sait inventer (grands mouvements simples, fond lisse) ; jamais sur mains, fils, objets fins, occlusions à partir de 25 i/s.
+

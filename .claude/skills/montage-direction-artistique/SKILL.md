@@ -7,6 +7,9 @@ description: Passer d'un brief à une direction créative de post-production —
 
 Version 1 (session 1). S'appuie sur `montage-regard` pour juger, sur `montage-references` (à venir) pour les principes tirés de `culture/`, et sur `GOUTS.md` : **quand le goût du client s'applique, il prime sur le mien.**
 
+## Étape 0 — Inventaire des rushes (quand le film est déjà tourné) *(ajout examen n°6)*
+Avant toute direction, lister ce que la matière **contient vraiment** : cadres répétés (même axe, plusieurs états), prises continues longues, cadence (25/50/haute cadence ?), marge de recadrage (9:16 possible ?), son seul, plans de coupe. Une direction qui exige une matière absente est **écartée ou posée en tête** comme question au client, jamais reléguée dans « Risque ». (Trois examens d'affilée, n°3, 5, 6, ont buté sur la faisabilité traitée trop tard.)
+
 ## Étape 1 — Comprendre l'intention (ne rien proposer avant)
 Remplir ces sept lignes ; si une ligne est vide, la déduire et l'écrire comme hypothèse.
 1. **Émotion visée** : un mot principal + une nuance (ex. « confiance, avec une pointe d'humour »).
@@ -44,6 +47,9 @@ Pour chaque direction, fiche fixe :
 - **Ne citer que ce qu'on a analysé** : une référence du client non étudiée se cite par son principe supposé, avec la mention « à vérifier », jamais par un plan précis. *(ajout examen n°4)*
 - **Pas de direction de paille** : chacune doit pouvoir gagner. Si je sais d'avance qu'elle sera écartée, la remplacer. *(ajout examen n°2)*
 - **Tic de système** *(ajout examen n°5)* : si la même signature revient dans deux examens ou projets de suite (chez moi : « une seule chaleur méritée », une règle du temps, le hors champ), une des trois directions doit la **renverser** (la chaleur partout, aucune règle, tout montré).
+- **Mes dispositifs d'atelier récents** *(ajout examen n°6)* : le test « mon propre système » vaut aussi pour la dernière pièce d'atelier (examen n°6 : le cadre qui revient avec un détail changé recyclait l'atelier 12 de la veille). S'il sert le sujet, le garder **en le disant**.
+- **Ralenti demandé sur des rushes à cadence normale** *(ajout examen n°6)* : décider avec `labo/interpolation/` — mains, cheveux, fils, rayons, eau, occlusions = l'interpolation (même RIFE) fabrique des images monstres. Proposer d'abord le **ralenti du temps** (tenir le plan, laisser l'attente durer : deux sonneries de trop) ; si le ralenti d'image est maintenu, le tester plan isolé et le juger image par image sur la zone fragile.
+- **Le coupable désigné** *(ajout examen n°6)* : quand le brief dit « pas culpabilisant » et que le scénario montre un fautif, le retirer de l'image et le garder **au son** (une sonnerie qui se raréfie) : le manque reste, la faute disparaît.
 - **Générique de série** *(ajout examen n°5)* : prévoir une version courte (≈ moitié) pour les épisodes suivants ; un générique se juge au 4e visionnage, pas au 1er.
 - **Lumières qui clignotent dans le sujet** (gyrophares, néons, écrans, flashs de photographes) *(ajout examen n°5)* : contrôle de photosensibilité dès le traitement (`labo/photosensibilite/flash_check.py`) ; plein cadre, un gyrophare réel (2-4 Hz) échoue.
 
@@ -72,5 +78,5 @@ Refuser (avec une alternative) :
 1. Reformulation de l'intention (7 lignes). 2. Trois directions (fiche fixe). 3. Recommandation argumentée. 4. Critères. 5. Points de vigilance (tournage, droits, livraison).
 
 ## Limites connues (à corriger par les examens)
-- Éprouvée trois fois : examen n°1 (13/20 ; audace insuffisante, clichés de la catégorie non vus), examen n°2 (14/20 ; goût du client plaqué comme une recette, direction de paille), examen n°4 (14/20, fiction ; contradiction du brief bien résolue, mais mon propre système — Morris et « une seule chaleur » — revient après l'alerte, et le hors-champ sonore est manqué), examen n°3 (15/20, corporate ; idée propre au sujet trouvée avant les références, mais humain réduit à l'interview, faisabilité non vérifiée, loudness hors plateformes non sourcée). Les ajouts ci-dessus en viennent.
+- Éprouvée trois fois : examen n°1 (13/20 ; audace insuffisante, clichés de la catégorie non vus), examen n°2 (14/20 ; goût du client plaqué comme une recette, direction de paille), examen n°4 (14/20, fiction ; contradiction du brief bien résolue, mais mon propre système — Morris et « une seule chaleur » — revient après l'alerte, et le hors-champ sonore est manqué), examen n°6 (15/20, spot associatif sur rushes déjà tournés ; trois leçons de la session 9 appliquées, tic renversé dans la recommandation, mais faisabilité encore tardive et dispositif d'atelier recyclé), examen n°3 (15/20, corporate ; idée propre au sujet trouvée avant les références, mais humain réduit à l'interview, faisabilité non vérifiée, loudness hors plateformes non sourcée). Les ajouts ci-dessus en viennent.
 - Pas encore de bibliothèque de références par format : voir `BACKLOG.md`.
