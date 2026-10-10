@@ -37,6 +37,7 @@ Règle de décision : plaisir → Bass ou Gondry ; tension → Cooper ; recul cr
 13. **Une situation-cadre comme pivot** (déposition, interview) : raccords question/réponse entre présent et passé (*The Social Network*). → Documentaire corporate : l'interview pilote les allers-retours vers les images d'archives.
 14. **Des blocs autonomes** (début, milieu, fin) permettent de permuter et de chapitrer sans perdre le spectateur (Menke).
 15. **L'émotion gagne les arbitrages** contre la continuité (Murch).
+15b. **Ne pas monter le choc** (Hiro Murai, « This Is America ») : la coupe prévient et amortit ; un choc qui arrive dans un plan qui continue laisse le spectateur sans protection. Le premier plan donne le plaisir, l'arrière-plan donne le sens. → Clip ou film à message ; l'inverse exact du kinetic.
 
 ## F. Goûts de l'utilisateur (priment) — principes mesurés
 16. **Suivre l'arrangement, pas les temps** (Ziak, mesuré) : densité de coupes selon la présence de la basse, plans longs et immobiles dans les creux.
@@ -50,6 +51,7 @@ Règle de décision : plaisir → Bass ou Gondry ; tension → Cooper ; recul cr
 - *Kinetic editing* (calage micro, SFX denses) contre *Ziak* (calage macro, aucun effet surligné) : l'utilisateur aime les deux, **pour des usages différents** (confirmé par lui, 2026-10-09). Le premier pour l'énergie et la rétention sur les réseaux ; le second pour la gravité et la menace dans un clip ou un film de marque. Choisir selon l'usage, sans mélanger les deux par défaut.
 - *Réduire à un signe* (Bass) contre *saturer de texture* (Cooper) : le signe pour une marque claire ; la texture pour un sujet trouble ou artisanal.
 - *Une seule cadence, celle de la musique* (Bass) contre *cacher la synchro* (Gondry) : la première pour 10-30 s, la seconde a besoin de durée pour que la règle s'apprenne.
+- *Monter le choc* (kinetic : impact, flash, shake) contre *le laisser arriver dans un plan continu* (Murai) : le premier fait plaisir et confirme ; le second dérange et accuse. Choisir selon que le spectateur doit jouir de l'événement ou en être responsable.
 - *Faire attendre* (Glazer) contre *les 2 premières secondes des réseaux* : l'attente ne marche que sur un public captif (TV, cinéma, préroll non zappable), ou si l'attente est elle-même intrigante dès la première image.
 
 ## Application vérifiée en atelier
