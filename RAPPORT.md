@@ -326,7 +326,7 @@ Session 6 : enrichis `montage-son-et-emotion` (hors champ, Chion, présence dans
 - **Couleur** : l'écart OCIO / colour de ~2e-3 sur LogC3 / S-Log3 **expliqué** (courbes identiques ; OCIO passe par ACES avec Bradford puis CAT02) → `montage-couleur-pipeline`.
 - **Skills modifiés** : kinetic-editing, loudness-livraison, grammaire, couleur-et-intention, couleur-pipeline, direction-artistique, regard, motion-design-principes, blender, references, expert. `PLAN-TESTS-MCP.md` : tests 38-39 et observation des instructions du serveur Higgsfield.
 
-### Session 8 — 2026-10-10 05:29 → ~05:55 UTC
+### Session 8 — 2026-10-10 05:29 → 05:53 UTC
 - Démarrage : dernier commit de la branche 29 min avant → pas de doublon. Blender 4.2.3 téléchargé et décompressé en ~30 s.
 - **Atelier 10 « Chaleur partout » v4-v6** (≈ 20 rendus Cycles de ~6 s) : nouvelle mesure `mesure_zone.py` (zone de l'événement = différence allumé / éteint). Réfuté : « AgX blanchit » (Standard plus chaud, −0,18). Réussi : gélatine CTB (écran bleu lisible, +0,02), clé secondaire simulée (+0,10). v5 : une « main » au-dessus de l'écran n'apporte rien vue en plongée (la face éclairée est cachée). v6 : contre-plongée sur une tête : peau +0,12 vers le froid, jamais bleue ; montage de 8 s : le gros plan est le plus chaud du film (fond de mur) → v7 à cadrer contre l'ombre.
 - **Atelier 11 « Dialogue »** v1-v4 (BACKLOG 40) : franchissement de l'axe complet = 1 saut de regard, placé sur la bascule ; le fond change de propriétaire ; v4 référence. Raté en route : E2 entièrement noir (caméra derrière le mur), corrigé.
