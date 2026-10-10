@@ -1,0 +1,22 @@
+{
+ "0.2": {
+  "iou_voisins": 0.24,
+  "silhouettes_separees": 1
+ },
+ "0.5": {
+  "iou_voisins": 0.12,
+  "silhouettes_separees": 1
+ },
+ "1": {
+  "iou_voisins": 0.05,
+  "silhouettes_separees": 1
+ },
+ "2": {
+  "iou_voisins": 0.0,
+  "silhouettes_separees": 3
+ },
+ "4": {
+  "iou_voisins": 0.0,
+  "silhouettes_separees": 6
+ }
+}
