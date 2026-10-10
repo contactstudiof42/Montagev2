@@ -80,6 +80,10 @@ Démonstration produit, réaction en chaîne, gag mécanique, plan « Cog » : t
 4. **Ouvrir le plan avant la cause** : montrer l'effet en puissance (les dominos debout, la tasse au bord) quelques images avant que la cause n'entre. Le spectateur anticipe, et l'anticipation est le plaisir de ce genre de séquence.
 5. **Cadrer la conséquence** : l'impact final et l'objet au repos doivent être dans le cadre. Un plan large pensé pour la chaîne perd souvent sa fin au bord de l'image.
 
+## Le plan de retour (atelier 12, session 9) [TESTÉ EN ATELIER, perception à confirmer]
+- Quand un plan revient (même cadre, après un plan de coupe) et que **quelque chose a changé**, le faire durer **plus longtemps que le plan de départ** (4 s puis 6 s) : la première seconde sert à reconnaître le lieu, le reste à comparer. Trop court (3 s), on reconnaît sans relire ; trop long au départ (8 s), le plan devient décor avant l'anomalie. Voir `montage-grammaire` (cécité au changement).
+- Le plan de coupe entre les deux (la fenêtre) doit être assez long pour qu'on « oublie » le premier (3 s), et **ne rien montrer de la zone qui va changer** (sinon tricherie de raccord).
+
 ## À faire
 - Atelier : un même matériau monté sur trois tempos ; critique comparée.
 - Fiches : Sally Menke (Tarantino), Kirk Baxter (Fincher), clips (Gondry, Jonze).
