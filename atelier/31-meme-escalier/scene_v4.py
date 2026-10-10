@@ -85,8 +85,21 @@ if AZ:                                               # v4 : même distance, cam�
     LN = [float(x[5:]) for x in a if x.startswith('lens=')]; lens = LN[0] if LN else 28.0; cam.data.lens = lens
     r = 3.0 * lens / 28; th = math.radians(AZ[0]);   # distance proportionnelle à la focale : la figure garde la même taille
     cam.location = (0.1 + r * math.sin(th), y0 - r * math.cos(th), z0 + (2.2 if CAM == 'haute' else 0.5)); cible = (0.1, y0, z0 + 1.0)
+if 'anim' in a:                                      # v4c : 75 images 320×180 ; retour = travelling avant montant (16 mm), aller = plan fixe tenu
+    sc.render.resolution_x, sc.render.resolution_y = 320, 180; sc.cycles.samples = 12; sc.frame_start, sc.frame_end = 1, 75; sc.render.fps = 25
+    if CORPS == 'ouvert':
+        p0 = cam.location.copy(); p1 = p0 + mathutils.Vector((0, 0.6, 0.7))
+        vise = bpy.data.objects.new('vise', None); sc.collection.objects.link(vise); vise.location = cible
+        tr = cam.constraints.new('TRACK_TO'); tr.target = vise; tr.track_axis = 'TRACK_NEGATIVE_Z'; tr.up_axis = 'UP_Y'
+        for f, loc in ((1, p0), (75, p1)): cam.location = loc; cam.keyframe_insert('location', frame=f)
+        if 'visetete' in a:                          # v4d : la visée monte avec la caméra (taille → tête), sinon la figure est décapitée en fin de mouvement
+            vise.location = cible; vise.keyframe_insert('location', frame=1); vise.location = (cible[0], cible[1], cible[2] + 0.75); vise.keyframe_insert('location', frame=75)
+        for fc in list(cam.animation_data.action.fcurves) + (list(vise.animation_data.action.fcurves) if vise.animation_data else []):
+            for k in fc.keyframe_points: k.interpolation = 'SINE'; k.easing = 'EASE_IN_OUT'
 d = mathutils.Vector(cible) - cam.location; cam.rotation_euler = d.to_track_quat('-Z', 'Y').to_euler()
-if 'grue' in a:                                     # v3 : retour en grue montante (0,9 m → 2,8 m), 75 images, cadre qui suit la silhouette
+if 'grue' in a or 'anim' in a:
+    if 'anim' in a: sc.render.filepath = OUT; bpy.ops.render.render(animation=True); raise SystemExit
+if False:                                     # v3 : retour en grue montante (0,9 m → 2,8 m), 75 images, cadre qui suit la silhouette
     sc.render.resolution_x, sc.render.resolution_y = 320, 180; sc.cycles.samples = 12
     sc.frame_start, sc.frame_end = 1, 75; sc.render.fps = 25
     vise = bpy.data.objects.new('vise', None); sc.collection.objects.link(vise); vise.location = cible
