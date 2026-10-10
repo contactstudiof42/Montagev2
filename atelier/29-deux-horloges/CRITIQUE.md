@@ -46,6 +46,12 @@ Limite : je ne peux pas écouter ; le son est jugé sur l'enveloppe et la positi
 - **Confirmé** : compteur par ligne, tic indépendant = pression, accélération des segments, règle apprise puis rompue.
 - **Contredit** : (1) ma fin régulière (retours toutes les 31 images) : Griffith, *Le Parrain*, *Dunkirk* accélèrent jusqu'au bout ; (2) ma « fin tenue » n'a pas d'appui chez eux : leurs alternances finissent par **une rencontre des lignes** (le sauvetage, les meurtres qui convergent vers Michael). Ma pièce n'a pas de jonction : c'est un parti pris (les lignes ne se rejoignent jamais = la perte définitive), à défendre comme tel, pas à citer comme Interstellar ; (3) chez eux la causalité vient de la jonction ou d'un point d'ancrage, pas d'un tic sur la coupe ; (4) **l'ironie** (le son d'une ligne posé sur l'autre, le baptême sur les meurtres) manque : piste v9, faire entendre la goutte sur le mur aux bâtons.
 
+## v9 — jonction : la goutte d'ici tombe dans la pièce de là-bas, sur la plante morte (`v9-jonction.png`, une image sur 4 du dernier retour)
+- Réponse à la fiche des grandes références (une alternance finit par une jonction) et à l'ironie qui manquait : le seul son de la fin est le « plic » de la goutte d'ici, qui touche la tige sèche de là-bas. Une goutte arrive, des années trop tard. Les deux lignes ne se rejoignent qu'au moment où il n'y a plus rien à sauver.
+- 1er essai raté (encore la même faute) : la goutte de 10 px sur un mur beige était invisible. Corrigé par la poussée lente vers le haut de la plante (×2,6 : goutte d'environ 30×45 px à l'écran de 480) et un contour plus sombre ; le cadrage doit viser **là où la goutte touchera**, sinon elle tombe au bord (2e essai).
+- Jugement : v9 change le genre de la pièce. v7 (le bâton inachevé) dit l'absence d'une personne ; v9 dit l'inutilité du temps d'ici, avec une ironie presque cruelle. v9 est plus forte comme **fin** (un événement, une jonction, un son), v7 plus pudique. **Je recommande v9** pour un film court autonome, v7 si la pièce s'insère dans un récit où l'on connaît la personne qui comptait.
+- Photosensibilité OK.
+
 ## Ce que la pièce m'apprend (versé dans `montage-rythme` et `montage-references`)
 1. Montage alterné à deux vitesses : l'ellipse est dans la coupe ; dans le plan, le temps des deux lignes doit presque s'arrêter (sinon on lit un accéléré, pas un écart, et un jour/nuit accéléré clignote).
 2. Chaque ligne a besoin de son **compteur visible** (goutte, bâtons, plante) ; sans compteur, l'écart n'est qu'une affirmation.
