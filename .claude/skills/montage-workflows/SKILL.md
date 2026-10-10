@@ -66,3 +66,8 @@ Chaque ligne : ce qui est verrouillé tôt (●) et ce qui reste ouvert longtemp
 5. Ne jamais livrer depuis des proxies.
 
 Voir aussi : `montage-premiere`, `montage-resolve`, `montage-after-effects`, `montage-blender`, `montage-loudness-livraison`, `montage-couleur-pipeline`.
+
+## Vitesses dans l'aller-retour (session 10, `labo/workflows/vitesses/RESULTATS.md`) [TESTÉ EN LABO côté fichiers ; imports en phase 2]
+- XML FCP7 via OTIO : **vitesses, arrêts sur image et inversions perdus sans avertissement** ; EDL : lignes M2 justes mais **durée source inversée** (ralenti = trop de source déclarée, accéléré = pas assez) et vitesse du plan entrant d'un fondu perdue à la relecture ; timecode de départ 01:00:00:00 non écrit.
+- Règle : **aplatir les vitesses avant l'envoi** (rendre les ralentis, surtout interpolés) ou envoyer médias natifs + liste des vitesses + **vidéo de référence avec timecode incrusté**. Un aller-retour qui se relit sans erreur par le même outil ne prouve rien.
+

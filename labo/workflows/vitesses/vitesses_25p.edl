@@ -1,0 +1,37 @@
+TITLE: vitesses_25p
+
+001  Anormal  V     C        00:00:04:00 00:00:06:00 00:00:00:00 00:00:02:00
+* FROM CLIP NAME:  A_normal
+* FROM CLIP: file:///rushes/A_normal.mov
+* OTIO TRUNCATED REEL NAME FROM: A_normal.mov
+002  Bralenti V     C        00:00:08:00 00:00:12:00 00:00:02:00 00:00:04:00
+M2   B_ralenti50		12.5			00:00:08:00
+* FROM CLIP NAME:  B_ralenti50
+* FROM CLIP: file:///rushes/B_ralenti50.mov
+* OTIO TRUNCATED REEL NAME FROM: B_ralenti50.mov
+003  Caccel20 V     C        00:00:12:00 00:00:13:00 00:00:04:00 00:00:06:00
+M2   C_accel200		50.0			00:00:12:00
+* FROM CLIP NAME:  C_accel200
+* FROM CLIP: file:///rushes/C_accel200.mov
+* OTIO TRUNCATED REEL NAME FROM: C_accel200.mov
+004  Darret   V     C        00:00:16:00 00:00:16:01 00:00:06:00 00:00:07:00
+M2   D_arret		0.0			00:00:16:00
+* FROM CLIP NAME:  D_arret FF
+* * FREEZE FRAME
+* FROM CLIP: file:///rushes/D_arret.mov
+* OTIO TRUNCATED REEL NAME FROM: D_arret.mov
+005  Einverse V     C        00:00:20:00 00:00:18:06 00:00:07:00 00:00:08:19
+M2   E_inverse		-25.0			00:00:20:00
+* FROM CLIP NAME:  E_inverse
+* FROM CLIP: file:///rushes/E_inverse.mov
+* OTIO TRUNCATED REEL NAME FROM: E_inverse.mov
+006  Einverse V     C        00:00:18:06 00:00:18:06 00:00:08:19 00:00:08:19
+006  Fralenti V     D 012    00:00:23:19 00:00:26:00 00:00:08:19 00:00:11:00
+M2   E_inverse		-25.0			00:00:20:00
+* FROM CLIP NAME:  E_inverse
+* FROM CLIP: file:///rushes/E_inverse.mov
+* OTIO TRUNCATED REEL NAME FROM: E_inverse.mov
+M2   F_ralenti40		10.0			00:00:23:19
+* TO CLIP NAME:  F_ralenti40
+* TO CLIP: file:///rushes/F_ralenti40.mov
+* OTIO TRUNCATED REEL NAME FROM: F_ralenti40.mov

@@ -1,0 +1,320 @@
+{
+ "reference": [
+  {
+   "piste": "V1",
+   "nom": "A_normal",
+   "src_in": 100,
+   "duree": 50,
+   "pos": 0,
+   "fx": []
+  },
+  {
+   "piste": "V1",
+   "nom": "B_ralenti50",
+   "src_in": 200,
+   "duree": 50,
+   "pos": 50,
+   "fx": [
+    [
+     "LinearTimeWarp",
+     0.5
+    ]
+   ]
+  },
+  {
+   "piste": "V1",
+   "nom": "C_accel200",
+   "src_in": 300,
+   "duree": 50,
+   "pos": 100,
+   "fx": [
+    [
+     "LinearTimeWarp",
+     2.0
+    ]
+   ]
+  },
+  {
+   "piste": "V1",
+   "nom": "D_arret",
+   "src_in": 400,
+   "duree": 25,
+   "pos": 150,
+   "fx": [
+    [
+     "FreezeFrame",
+     0.0
+    ]
+   ]
+  },
+  {
+   "piste": "V1",
+   "nom": "E_inverse",
+   "src_in": 500,
+   "duree": 50,
+   "pos": 175,
+   "fx": [
+    [
+     "LinearTimeWarp",
+     -1.0
+    ]
+   ]
+  },
+  {
+   "piste": "V1",
+   "transition": "SMPTE_Dissolve",
+   "in": 6,
+   "out": 6
+  },
+  {
+   "piste": "V1",
+   "nom": "F_ralenti40",
+   "src_in": 600,
+   "duree": 50,
+   "pos": 225,
+   "fx": [
+    [
+     "LinearTimeWarp",
+     0.4
+    ]
+   ]
+  },
+  {
+   "piste": "V2",
+   "nom": "TITRE_incruste",
+   "src_in": 0,
+   "duree": 40,
+   "pos": 60,
+   "fx": []
+  }
+ ],
+ ".otio": [
+  {
+   "piste": "V1",
+   "nom": "A_normal",
+   "src_in": 100,
+   "duree": 50,
+   "pos": 0,
+   "fx": []
+  },
+  {
+   "piste": "V1",
+   "nom": "B_ralenti50",
+   "src_in": 200,
+   "duree": 50,
+   "pos": 50,
+   "fx": [
+    [
+     "LinearTimeWarp",
+     0.5
+    ]
+   ]
+  },
+  {
+   "piste": "V1",
+   "nom": "C_accel200",
+   "src_in": 300,
+   "duree": 50,
+   "pos": 100,
+   "fx": [
+    [
+     "LinearTimeWarp",
+     2.0
+    ]
+   ]
+  },
+  {
+   "piste": "V1",
+   "nom": "D_arret",
+   "src_in": 400,
+   "duree": 25,
+   "pos": 150,
+   "fx": [
+    [
+     "FreezeFrame",
+     0.0
+    ]
+   ]
+  },
+  {
+   "piste": "V1",
+   "nom": "E_inverse",
+   "src_in": 500,
+   "duree": 50,
+   "pos": 175,
+   "fx": [
+    [
+     "LinearTimeWarp",
+     -1.0
+    ]
+   ]
+  },
+  {
+   "piste": "V1",
+   "transition": "SMPTE_Dissolve",
+   "in": 6,
+   "out": 6
+  },
+  {
+   "piste": "V1",
+   "nom": "F_ralenti40",
+   "src_in": 600,
+   "duree": 50,
+   "pos": 225,
+   "fx": [
+    [
+     "LinearTimeWarp",
+     0.4
+    ]
+   ]
+  },
+  {
+   "piste": "V2",
+   "nom": "TITRE_incruste",
+   "src_in": 0,
+   "duree": 40,
+   "pos": 60,
+   "fx": []
+  }
+ ],
+ ".xml": [
+  {
+   "piste": "",
+   "nom": "A_normal",
+   "src_in": 100,
+   "duree": 50,
+   "pos": 0,
+   "fx": []
+  },
+  {
+   "piste": "",
+   "nom": "B_ralenti50",
+   "src_in": 200,
+   "duree": 50,
+   "pos": 50,
+   "fx": []
+  },
+  {
+   "piste": "",
+   "nom": "C_accel200",
+   "src_in": 300,
+   "duree": 50,
+   "pos": 100,
+   "fx": []
+  },
+  {
+   "piste": "",
+   "nom": "D_arret",
+   "src_in": 400,
+   "duree": 25,
+   "pos": 150,
+   "fx": []
+  },
+  {
+   "piste": "",
+   "nom": "E_inverse",
+   "src_in": 500,
+   "duree": 50,
+   "pos": 175,
+   "fx": []
+  },
+  {
+   "piste": "",
+   "transition": "SMPTE_Dissolve",
+   "in": 6,
+   "out": 6
+  },
+  {
+   "piste": "",
+   "nom": "F_ralenti40",
+   "src_in": 600,
+   "duree": 50,
+   "pos": 225,
+   "fx": []
+  },
+  {
+   "piste": "",
+   "nom": "TITRE_incruste",
+   "src_in": 0,
+   "duree": 40,
+   "pos": 60,
+   "fx": []
+  }
+ ],
+ ".edl": [
+  {
+   "piste": "V",
+   "nom": "A_normal",
+   "src_in": 100,
+   "duree": 50,
+   "pos": 0,
+   "fx": []
+  },
+  {
+   "piste": "V",
+   "nom": "B_ralenti50",
+   "src_in": 200,
+   "duree": 50,
+   "pos": 50,
+   "fx": [
+    [
+     "LinearTimeWarp",
+     0.5
+    ]
+   ]
+  },
+  {
+   "piste": "V",
+   "nom": "C_accel200",
+   "src_in": 300,
+   "duree": 50,
+   "pos": 100,
+   "fx": [
+    [
+     "LinearTimeWarp",
+     2.0
+    ]
+   ]
+  },
+  {
+   "piste": "V",
+   "nom": "D_arret",
+   "src_in": 400,
+   "duree": 25,
+   "pos": 150,
+   "fx": [
+    [
+     "FreezeFrame",
+     0.0
+    ]
+   ]
+  },
+  {
+   "piste": "V",
+   "nom": "E_inverse",
+   "src_in": 500,
+   "duree": 44,
+   "pos": 175,
+   "fx": [
+    [
+     "LinearTimeWarp",
+     -1.0
+    ]
+   ]
+  },
+  {
+   "piste": "V",
+   "transition": "SMPTE_Dissolve",
+   "in": 0,
+   "out": 12
+  },
+  {
+   "piste": "V",
+   "nom": "F_ralenti40",
+   "src_in": 594,
+   "duree": 56,
+   "pos": 219,
+   "fx": []
+  }
+ ]
+}
