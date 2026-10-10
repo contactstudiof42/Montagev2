@@ -40,3 +40,18 @@ Le texte incrusté est une **image**, et il se décide avec le plan : sur une nu
 | uni clair | 0 | 0,3 | 0,6 | 0,9 | 0,9 |
 
 **Non concluant, et je le dis** : le contour de 3 px ne sauve pas la texture claire selon l'OCR, mais tesseract est connu pour mal lire les lettres détourées (il est entraîné sur du texte imprimé plein). Les captions détourées des réseaux (style Hormozi) sont faites pour l'œil, pas pour l'OCR. **Le proxy n'est valable que pour comparer des traitements « pleins » (nu, boîte)** ; contour et ombre se jugent à l'œil, en phase 2 (PLAN-TESTS 56).
+
+## Session 14 — paroles animées mot à mot en ASS (libass dans ffmpeg 6.1.1) [TESTÉ EN LABO]
+**1. Le mot tombe-t-il à l'image voulue ?** (`ass_mot_a_mot.py`) Un vers de 8 mots, karaoké `\k` avec `SecondaryColour` transparente (le mot est invisible avant son temps, plein après), temps volontairement hors grille (0,63 s = 15,75 images à 25 i/s). Mots comptés image par image (projection des colonnes, mots séparés par leurs blancs).
+- **24/24 à l'image attendue** à 25, 29,97 et 23,976 i/s : le mot apparaît sur la **première image dont l'instant est ≥ à son temps** (`ceil(t × cadence)`), jamais avant. La résolution de l'ASS est le **centième de seconde**, plus fine que l'image : la limite est la cadence, pas le format.
+- Conséquence : un mot calé « sur la syllabe » apparaît **0 à 1 image après** elle (jusqu'à 40 ms à 25 i/s). Pour un mot qui doit frapper avec la voix (kinetic, accent), **anticiper d'une demi-image à une image** dans le fichier ; le seuil de perception d'un retard de l'image sur le son est de l'ordre de quelques dizaines de ms (valeur de mémoire, ITU-R BT.1359 : à vérifier avant de la citer).
+- La mise en page du `\k` est **fixe** : les mots invisibles occupent déjà leur place, rien ne bouge quand ils apparaissent.
+
+**2. Le « pop » (échelle 70 → 100 % en 120 ms à chaque mot) fait-il glisser la ligne ?** (`ass_pop.py`)
+| mode | bord gauche du 1er mot pendant le vers |
+|---|---|
+| `ligne` : un seul événement, `\t` d'échelle par mot | **110 px d'amplitude, 28 positions** : chaque mot qui grandit élargit la ligne, libass la recentre, **toute la ligne glisse à chaque mot** |
+| `calques` : un événement par mot, `\an2\pos` calculé une fois sur la ligne finale (largeurs par Pillow, même police) | **8 px** : le seul grossissement du mot autour de son centre ; les autres mots ne bougent pas |
+- Leçon : **dans un vers animé, l'échelle d'un mot ne doit jamais changer la mise en page des autres.** En ASS : un événement par mot, positions figées sur la ligne finale. La ligne qui « respire » se lit comme un défaut (le regard perd sa place à chaque mot), sauf si on la veut ivre.
+- En After Effects, les animateurs de texte transforment les glyphes **sans recalculer la mise en page** (de mémoire, [THÉORIQUE] : PLAN-TESTS 57) ; un MOGRT ou un sous-titre Premiere animé par mot est à vérifier.
+- Reste : temps de lecture minimal d'un vers apparu mot à mot (dernier mot → coupe) ; contour à l'œil ; rendu sur un vrai débit plateforme.
