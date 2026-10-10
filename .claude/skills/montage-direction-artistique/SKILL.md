@@ -74,6 +74,9 @@ Refuser (avec une alternative) :
 - **le brief contradictoire** : faire choisir le client entre les deux exigences, avec une version de chaque si nécessaire ;
 - **le « plus »** : plus de texte, plus de plans, plus de musique ; proposer d'enlever.
 
+## Carton de fin et signature
+Voir `signature-et-cartons.md` (critères vérifiables, 3 variantes, exemple de l'examen n°6). *(ajout session 10)*
+
 ## Format de rendu d'une consultation
 1. Reformulation de l'intention (7 lignes). 2. Trois directions (fiche fixe). 3. Recommandation argumentée. 4. Critères. 5. Points de vigilance (tournage, droits, livraison).
 
