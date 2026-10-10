@@ -3,7 +3,7 @@
 Réponse écrite **uniquement à partir des skills** (`montage-direction-artistique`, `montage-regard`, `montage-rythme`, `montage-grammaire` §cécité au changement, `montage-couleur-et-intention` §fond/lumière, `montage-kinetic-editing` §quand le sujet a son tempo, `montage-workflows` §ralentis, `montage-son-et-emotion`, `montage-formats`, `montage-loudness-livraison`, `culture/cliches-de-secteur.md`), puis critiquée. Objectif fixé par le BACKLOG 53 : mettre à l'épreuve les trois leçons de la session 9 — **une anomalie à travers une coupe**, **un froid de relation**, **un ralenti**.
 
 ## Le brief (inventé)
-Une association nationale (inventée : « Les Voix d’à côté » ; nom vérifié pour ne pas recouper une marque réelle connue) lance une campagne de bénévolat d'appel téléphonique : des bénévoles appellent chaque semaine une personne âgée isolée. Livrables :
+Une association nationale (inventée : « Les Voix d’à côté » ; le premier nom choisi recoupait une marque réelle de services entre voisins ; renommé) lance une campagne de bénévolat d'appel téléphonique : des bénévoles appellent chaque semaine une personne âgée isolée. Livrables :
 1. un **spot de 30 s** pour la TV et le cinéma (avant-séance), stéréo ;
 2. une **coupe verticale de 10 s** pour les réseaux, son coupé par défaut.
 

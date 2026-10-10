@@ -2,18 +2,18 @@
 
 _Lire en premier. Mis à jour à chaque fin de session._
 
-## Où on en est (après la session 9, 2026-10-10 07:05 UTC)
-- **Skills (21)** : session 9 : `montage-grammaire` (cécité au changement à travers la coupe), `montage-regard` (règles 12-13), `montage-rythme` (le plan de retour), `montage-couleur-et-intention` (fond = monde, lumière = corps ; contraste simultané), `montage-workflows` + `montage-ia-generative` (interpolation, RIFE testé), `montage-references` (bande-annonce, Freeze, atelier 12).
-- **Culture** : 41 fiches (nouvelles : `bande-annonce-montage.md`, `freeze-corleone-clips.md`).
-- **Atelier** : **12 « Inquiétude calme »** v1-v7 (v7 réf.), **13 « Le fond raccorde »** v1-v4 (v4 réf.), **14 « Balancier »** A/B (A = réf. : le montage se retire ; le kinetic masque l'amortissement).
-- **Labo** : `labo/interpolation/` (minterpolate + RIFE 4.25 en CPU, vérité terrain 60 i/s, deux scènes) ; `labo/saillance/` (résidu spectral : confirme la v4 de la pièce 12 comme la pire, nuance la v7).
-- **Examens** : n°1 13, n°2 14, n°3 15, n°4 14, n°5 14 /20. **N°6 en session 10 (BACKLOG 53).**
+## Où on en est (après la session 10, 2026-10-10 ~07:55 UTC)
+- **Skills (21)** : session 10 : `montage-direction-artistique` (étape 0 inventaire des rushes, ralenti demandé sur 25 i/s, coupable désigné, dispositifs d'atelier recyclés ; annexe `signature-et-cartons.md`), `montage-rythme` (dilater par la durée : l'attente doit être habitée), `montage-grammaire` (décor chargé : couleur saturée derrière l'anomalie), `montage-workflows` (vitesses dans l'aller-retour, `verif_edl.py`, interpolation sur vrais plans), `montage-ia-generative` (RIFE sous le fondu sur eau/feuillage), `montage-references` (John Lewis).
+- **Culture** : 42 fiches (nouvelle : `pub-emotionnelle-noel-john-lewis.md`) ; `cliches-de-secteur.md` + ligne caritatif / personnes âgées.
+- **Atelier** : **12 v8** (lieu encombré, v8c réf.), **15 « Deux sonneries de trop »** (A, B, C, D, B2 ; B2 = réf. : la main posée qui ne décroche pas).
+- **Labo** : `labo/workflows/vitesses/` + `labo/workflows/verif_edl.py` ; `labo/interpolation-reel/` (sous-agent, 2 plans CC0 Internet Archive, recontrôlé).
+- **Examens** : n°1 13, n°2 14, n°3 15, n°4 14, n°5 14, **n°6 15** /20. **N°7 en session 13.**
 
-## Reprendre ici (session 10)
-1. Démarrage normal. Blender : `curl -sSL -o blender.tar.xz https://download.blender.org/release/Blender4.2/blender-4.2.3-linux-x64.tar.xz && tar xf blender.tar.xz` dans le scratchpad (30 s). `python3 -m pip install -q numpy pillow scipy colour-science`.
-2. Priorités : **examen n°6** (BACKLOG 53) ; BACKLOG 50 (pièce 12 v8, lieu encombré) ; 51 (teaser 15 s) ; 49 (interpolation sur vrai plan CC0) ; 42 suite (`montage-references` en annexes, le fichier grossit : 90 lignes).
-3. Pièges : **`pkill -f motif` tue le shell** → tuer par PID. **Un `sh -c "…"` lancé avec `nohup … &` est bloqué par le contrôle de sécurité** → utiliser `run_in_background` de l'outil Bash. Plans immobiles = une image. Viser une caméra par un point (`to_track_quat`). `zones.py` (labo interpolation) écrit sa planche dans le dossier courant. Le `pip install torch` d'un sous-agent casse un `.pth` de distutils (message d'erreur bénin à chaque `python3`, ignorer). Rendu Cycles 320×180, 8 éch., scène nocturne de la pièce 14 : ~1 image/s.
-4. Sous-agents : 3 en session 9 (2 fiches, essai RIFE) ; tout recontrôlé à la main (vignette Freeze : confirmée, écart dû aux bandes ; chiffres RIFE : identiques).
+## Reprendre ici (session 11)
+1. Démarrage normal. Blender : `curl -sSL -o blender.tar.xz https://download.blender.org/release/Blender4.2/blender-4.2.3-linux-x64.tar.xz && tar xf blender.tar.xz` dans le scratchpad (30 s). `python3 -m pip install -q numpy pillow scipy colour-science opentimelineio otio-fcp-adapter otio-cmx3600-adapter`.
+2. Priorités : BACKLOG 57 (atelier « la fable »), 51 (teaser 15 s), 59 (fiche Dougal Wilson / Kim Gehrig), 15 suite (recadrages, nests, audio multipiste dans l'échange), 42 suite (`montage-references` en annexes : 90+ lignes), 1 (« direction A dans le noir »).
+3. Pièges : **`pkill -f motif` tue le shell** → tuer par PID. Lancer les rendus longs avec `run_in_background` de l'outil Bash. Plans immobiles = une image. Wikimedia (upload.wikimedia.org) renvoie **HTTP 429** depuis la VM : passer par Internet Archive pour les médias CC0. **Ne jamais mettre d'identifiant personnel (e-mail) dans un User-Agent** (incident du sous-agent, session 10). Vérifier qu'un nom inventé ne recoupe pas une marque réelle (session 10 : « Allô Voisins »).
+4. Sous-agents : 1 en session 10 (interpolation sur vrais plans) ; chiffres recontrôlés à la main (identiques).
 
 ## Environnement constaté
 - ffmpeg 6.1.1, Python 3, Node 22 préinstallés (numpy à installer en session 6). `apt-get update` puis `apt-get install libegl1` possible (10 s). Blender 4.2.3 LTS : téléchargement + décompression 30 s.
@@ -21,6 +21,7 @@ _Lire en premier. Mis à jour à chaque fin de session._
 - Un serveur MCP nommé `HIGGSFIELD_MCP` est listé dans l'environnement : non appelé (consigne phase 1). Noms observés dans `PLAN-TESTS-MCP.md`.
 
 ## Historique
+- Session 10 — 2026-10-10 07:30 → ~07:55 UTC : examen n°6 (15/20), pièce 12 v8, pièce 15 « Deux sonneries de trop », fiche John Lewis, labos vitesses dans l'échange + vérificateur d'EDL, interpolation sur vrais plans CC0 (sous-agent) ; PLAN-TESTS 46-47.
 - Session 9 — 2026-10-10 06:29 → 07:05 UTC : pièces 12 (v1-v7), 13 (v1-v4), 14 (A/B) ; labos interpolation (minterpolate, RIFE) et saillance (résidu spectral) ; fiches bande-annonce, Freeze Corleone ; PLAN-TESTS 43-45.
 - Session 8 — 2026-10-10 05:29 → 05:53 UTC : pièce 10 v4-v6 (+ montage), pièce 11 « Dialogue » v1-v4, labos VFR et proxies, fiches Scott Pilgrim, génériques de séries doc, drill FR ; `montage-regard` distillé ; PLAN-TESTS 40-42.
 - Session 7 — 2026-10-10 04:29 → ~05:10 UTC : examen n°5 (14/20), ateliers 08 « Souvenir » (v1-v4), 09 « Générique » (v1-v4) et 10 « Chaleur partout » (v1-v2), écart OCIO expliqué, labos photosensibilité, surround Lt/Rt, 180°, déterminisme Blender ; fiches Noé / Kan et Kuntzel + Deygas ; PLAN-TESTS 38-39.
