@@ -44,7 +44,9 @@ for src, deb, n in E["plans"]:
         frames.append((src, f))
 tex = E.get("texture", "camescope")
 for j, (src, f) in enumerate(frames):
-    im = Image.open(f"{R}/{src}/{f:04d}.png").convert("RGB")
+    # plans du présent : caméra et décor immobiles -> une image rendue suffit (on prend la dernière disponible)
+    dispo = sorted(os.listdir(f"{R}/{src}")); fn = f"{f:04d}.png"
+    im = Image.open(f"{R}/{src}/{fn if fn in dispo else dispo[-1]}").convert("RGB")
     if src.startswith("S_") and tex != "propre":
         im = camescope(im, j, date=(tex == "camescope_date"))
     im.save(f"{out}/{j:04d}.png")
@@ -54,10 +56,14 @@ SR = 48000; N = len(frames) * SR // FPS; a = np.zeros(N, np.float32)
 brown = np.cumsum(rng.normal(0, 1, N)); brown -= np.convolve(brown, np.ones(4801) / 4801, "same")
 brown /= np.abs(brown).max()
 hiss = rng.normal(0, 1, N); hiss = hiss - np.convolve(hiss, np.ones(8) / 8, "same"); hiss /= np.abs(hiss).max()
+J, L = E.get("j", 0), E.get("l", 0)  # J-cut : le son du passé arrive J images avant l'image ; L-cut : traîne L images après
 for src, i0, n in segs:
     s0, s1 = i0 * SR // FPS, (i0 + n) * SR // FPS
+    if src.startswith("S_"):
+        s0, s1 = max(0, s0 - J * SR // FPS), min(N, s1 + L * SR // FPS)
     if src.startswith("P_"):
         a[s0:s1] += 0.02 * brown[s0:s1]
+        continue
     else:
         a[s0:s1] += 0.035 * hiss[s0:s1] + 0.01 * brown[s0:s1]
         t = np.arange(s1 - s0) / SR
