@@ -6,7 +6,7 @@ _Lire en premier. Mis à jour à chaque fin de session._
 - Développer une **culture YouTube / internet** (divertissement, essai vidéo, vulgarisation, vlog, motion de chaîne, Shorts, cultures d'edit) au même niveau que cinéma et clip. Voir BACKLOG « Consigne » (Y1-Y6) : une part de chaque session jusqu'à parité.
 
 ## Où on en est (après la session 25, 2026-10-10)
-- **Session 25** (20:29 → 21:04 UTC) : veille IA (rien de neuf) ; **pièce 34 « De dehors »** v1-v6 (maquette de la direction B de l'examen n°13 ; v6 = recommandée : buée + poussée lente + lanterne, sans coupe dedans) ; **labo micro-sauts** (`labo/micro-sauts/`, vérité terrain 8/8) ; **pièce 31 v4-v4d** (figure articulée : axe de lecture d'une posture ; focale = 4e levier ; diptyque animé, la visée monte avec la caméra) ; micro-sauts par zones et jusqu'à ×3 ; pièce 34 v7 (îlot de lumière) ; fiches live YouTube (enrichie) et Haneke (sous-agents). Examens : … n°13 14. Prochain examen n°14 vers la session 27 (documentaire ou clip).
+- **Session 25** (20:29 → 21:05 UTC) : veille IA (rien de neuf) ; **pièce 34 « De dehors »** v1-v6 (maquette de la direction B de l'examen n°13 ; v6 = recommandée : buée + poussée lente + lanterne, sans coupe dedans) ; **labo micro-sauts** (`labo/micro-sauts/`, vérité terrain 8/8) ; **pièce 31 v4-v4d** (figure articulée : axe de lecture d'une posture ; focale = 4e levier ; diptyque animé, la visée monte avec la caméra) ; micro-sauts par zones et jusqu'à ×3 ; pièce 34 v7 (îlot de lumière) ; fiches live YouTube (enrichie) et Haneke (sous-agents). Examens : … n°13 14. Prochain examen n°14 vers la session 27 (documentaire ou clip).
 
 ## Reprendre ici (session 26)
 0. Relever `date -u`, clôturer à début + 45 min. Veille IA (sous-agent). `python3 -m pip install -q numpy pillow` ; `apt-get install -y espeak-ng` ; Blender 4.2.3 : `curl -sSL -o /tmp/blender.tar.xz https://download.blender.org/release/Blender4.2/blender-4.2.3-linux-x64.tar.xz && tar xf /tmp/blender.tar.xz -C /tmp` (27 s).
@@ -88,7 +88,7 @@ _Lire en premier. Mis à jour à chaque fin de session._
 - Un serveur MCP nommé `HIGGSFIELD_MCP` est listé dans l'environnement : non appelé (consigne phase 1). Noms observés dans `PLAN-TESTS-MCP.md`.
 
 ## Historique
-- Session 25 — 2026-10-10 20:29 → 21:04 UTC : veille IA ; pièce 34 (v1-v6) ; labo micro-sauts ; pièce 31 v4-v4b ; fiches live YouTube et Haneke (sous-agents) ; skills regard, rythme, direction-artistique, preparation-tournage-vfx, youtube, references, expert ; PLAN-TESTS 75.
+- Session 25 — 2026-10-10 20:29 → 21:05 UTC : veille IA ; pièce 34 (v1-v6) ; labo micro-sauts ; pièce 31 v4-v4b ; fiches live YouTube et Haneke (sous-agents) ; skills regard, rythme, direction-artistique, preparation-tournage-vfx, youtube, references, expert ; PLAN-TESTS 75.
 - Session 24 — 2026-10-10 19:29 → 20:02 UTC : coupes.py, tempos.py ; pièces 29 (v1-v9), 30 (A-I), 31 (v1-v3), 32, 33 ; fiches Shorts narratifs et montage alterné (sous-agents) ; veille IA ; skills rythme, references, youtube, preparation-tournage-vfx, couleur-et-intention, regard, expert ; PLAN-TESTS 73-74.
 - Session 23 — 2026-10-10 18:29 UTC → 18:34 (clôture prématurée, corrigée sur remarque de l'utilisateur), reprise 18:44 → 19:07 UTC : veille IA (sous-agent), pièce 27 « Jamais » v1-v2, bande.py ; montage-rythme ; PLAN-TESTS 71.
 - Session 22 — 2026-10-10 17:38 UTC → ~18:20 réel (horloge VM ~17:50) : veille IA, fiche gags de montage (sous-agents), pièce 26 v1-v4 ; skills youtube, rythme, son-et-emotion, ia-generative ; PLAN-TESTS 69.

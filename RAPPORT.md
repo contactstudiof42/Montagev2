@@ -352,7 +352,7 @@ Session 6 : enrichis `montage-son-et-emotion` (hors champ, Chion, présence dans
 
 ## JOURNAL
 
-### Session 25 — 2026-10-10 20:29 UTC → 21:04 UTC (35 min)
+### Session 25 — 2026-10-10 20:29 UTC → 21:05 UTC (36 min)
 - Démarrage : dernier commit à 20:00 (28 min, pas de doublon). Blender 4.2.3 (27 s), espeak-ng installé.
 - Veille IA (sous-agent) : rien de neuf ; HY Image 3.5 en rattrapage.
 - **Pièce 34 « De dehors »** (Y47) v1-v6 : Blender (14 s l'image ; HD 60 s), dialogue espeak-ng filtré « à travers la carrosserie », -23 LUFS ; `montage.py` (images composées en numpy pour la buée et la poussée), `mesure.py` (trous sans événement). Raté : la buée invisible en v3 alors que la mesure disait « réglé » ; l'intérieur reste un placeholder.
@@ -360,7 +360,7 @@ Session 6 : enrichis `montage-son-et-emotion` (hors champ, Chion, présence dans
 - **Pièce 31 v4 / v4b** (Y41) : figure articulée, azimuts 0-90°, « mur volant », focales 16 / 28 / 60 mm.
 - **Pièce 31 v4c-v4d** : diptyque animé (60 mm fixe → 16 mm travelling montant) ; raté v4c : visée fixe → tête coupée en fin de mouvement ; v4d corrigé (la visée monte avec la caméra) : première version où la transformation se lit sans le rouge.
 - **Labo micro-sauts par zones (Y50)** : la mesure globale suit la région la plus texturée (fond de bibliothèque : « 0 % » quand la tête saute de 4 %) ; par zone : exact à 0,06 % ; échelle étendue à ×3 (×2,4 → 2,42).
-- **Pièce 34 v7** : plan d'ensemble (l'îlot de lumière) + coupe dans l'axe : répète l'idée de la poussée ; v8 = un seul mouvement continu (Y52).
+- **Pièce 34 v7** : plan d'ensemble (l'îlot de lumière) + coupe dans l'axe : répète l'idée de la poussée ; v8 = un seul mouvement continu (Y52). Test téléphone : la lanterne reste trouvable à 180 px (seul point chaud) alors que la buée grise ne l'était pas à 640 : un détail se trouve par sa singularité, pas par sa taille.
 - Sous-agents : fiche sessions live YouTube enrichie (KEXP, Audiotree, Mouv') ; **fiche Haneke** (`culture/michael-haneke-plan-tenu.md` : le large garde la question ouverte ; le hors-champ sonore remplace le visage ; laisser chercher dans le cadre ; durées de plans non vérifiées), confrontée à la pièce 34 dans `montage-references`.
 - Skills modifiés : montage-regard (27, 29-31), montage-rythme, montage-direction-artistique, montage-preparation-tournage-vfx, montage-youtube, montage-references, montage-expert ; PLAN-TESTS 75.
 
