@@ -1,9 +1,9 @@
 """Pièce 34. blender -b -P scene.py -- SORTIE.png vue(ext|int) [lampe] [phares]"""
 import bpy, sys, math
-a = sys.argv[sys.argv.index('--') + 1:]; OUT, VUE = a[:2]; LAMPE = 'lampe' in a; PHARES = 'phares' in a
+a = sys.argv[sys.argv.index('--') + 1:]; OUT, VUE = a[:2]; LAMPE = 'lampe' in a; PHARES = 'phares' in a; BUEE = 'buee' in a
 bpy.ops.wm.read_factory_settings(use_empty=True)
 sc = bpy.context.scene; sc.render.engine = 'CYCLES'; sc.cycles.samples = 48; sc.cycles.use_denoising = True
-sc.render.resolution_x, sc.render.resolution_y = 640, 270; sc.view_settings.view_transform = 'AgX'
+sc.render.resolution_x, sc.render.resolution_y = (1280, 540) if 'hd' in a else (640, 270); sc.view_settings.view_transform = 'AgX'
 w = bpy.data.worlds.new('w'); sc.world = w; w.use_nodes = True; w.node_tree.nodes['Background'].inputs[0].default_value = (0.004, 0.005, 0.008, 1)
 def mat(nom, col, rough=0.8, em=None, ems=0):
     m = bpy.data.materials.new(nom); m.use_nodes = True; b = m.node_tree.nodes['Principled BSDF']
@@ -24,6 +24,8 @@ for r in range(5):
             boite(f'f{r}_{c}', (c * 2.6, 58.95, 2 + r * 2.8), (1.1, 0.05, 1.2), fen)
 # voiture (berline simplifiée) garée face au fond, vue de 3/4 arrière depuis la caméra extérieure
 carro = mat('carro', (0.05, 0.06, 0.07), 0.25); vitre = mat('vitre', (0.6, 0.65, 0.7), 0.05); vitre.node_tree.nodes['Principled BSDF'].inputs['Transmission Weight'].default_value = 0.85
+if BUEE:                                                        # vitres embuées : diffusion, on ne voit plus que des taches
+    bv = vitre.node_tree.nodes['Principled BSDF']; bv.inputs['Roughness'].default_value = 0.55; bv.inputs['Base Color'].default_value = (0.75, 0.78, 0.8, 1)
 boite('caisse', (0, 0, 0.65), (1.8, 4.5, 0.75), carro)
 boite('habitacle', (0, -0.2, 1.3), (1.62, 2.4, 0.56), vitre)
 boite('toit', (0, -0.2, 1.62), (1.5, 2.0, 0.06), carro)

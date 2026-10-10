@@ -4,6 +4,7 @@ import sys, os, json, subprocess, wave, numpy as np
 V, R = sys.argv[1], sys.argv[2]; SR = 48000
 EVT = V != 'v1'                         # v2 et suivantes : événements internes (liseuse, phares)
 DUREE, CUT = 112.0, 100.0
+if V == 'v5': DUREE, CUT = 110.0, 999.0          # v5 = v4 sans la coupe dedans : la dernière réplique entendue à travers la buée
 K = dict(v='fr+m3', p='25', s='135'); N = dict(v='fr+f2', p='55', s='150')
 DIAL = [(2.5, K, "Quatre euros vingt. Pour deux heures. Tu te rends compte ?"), (8.5, N, "Papa."),
         (10.0, K, "Non mais je dis ça. La prochaine fois, je me gare dans la rue."),
@@ -67,7 +68,38 @@ if EVT:                                  # fondus alpha courts (0,12 s : une lam
 else:
     fc = "[0]fps=25,format=yuv420p[e];"
 fc += "[3]fps=25,format=yuv420p[i];[e][i]concat=n=2:v=1:a=0[v]"
-subprocess.run(['ffmpeg', '-loglevel', 'error', '-y', *inp, '-filter_complex', fc, '-map', '[v]', '-map', '4:a', '-r', '25',
-                '-c:v', 'libx264', '-crf', '24', '-preset', 'veryfast', '-c:a', 'aac', '-b:a', '128k', '-t', str(DUREE), P(f'{V}.mp4')], check=True)
+if V in ('v3', 'v4', 'v5'):                  # v4 = v3 + poussée lente de 100 s vers la voiture (images HD recadrées)                            # buée : image composée image par image (numpy), canal d'opacité de la buée b(t)
+    from PIL import Image
+    HD = V in ('v4', 'v5'); Q = (lambda n: P(('hd/' if HD and n != 'int' else '') + n + '.png'))
+    im = {n: np.asarray(Image.open(Q(n)).convert('RGB'), np.float32) for n in ('ext', 'ext_lampe', 'ext_phares', 'ext_buee', 'ext_buee_lampe', 'int')}
+    def cadre(f, tt):                    # zoom 1 → 2,4 avec accélération douce (t/100)^1,6 ; centre glisse vers la voiture (760, 450 en HD)
+        if not HD: return f
+        u = min(1, tt / min(CUT, 100.0)) ** 1.6; z = 1 + 1.4 * u; w, h = 1280 / z, 540 / z
+        cx, cy = 640 + (760 - 640) * u, 270 + (450 - 270) * u
+        x0 = min(max(cx - w / 2, 0), 1280 - w); y0 = min(max(cy - h / 2, 0), 540 - h)
+        return np.asarray(Image.fromarray(np.clip(f, 0, 255).astype(np.uint8)).resize((640, 270), Image.BILINEAR, box=(x0, y0, x0 + w, y0 + h)), np.float32)
+    def b(tt):                           # 0 → 0,6 à 48 s (ils respirent, il fait froid) ; le chauffage dégage à 0,15 en 8 s ; remonte à 1 à 97 s
+        if tt < 48: return 0.6 * tt / 48
+        if tt < 56: return 0.6 - 0.45 * (tt - 48) / 8
+        return min(1.0, 0.15 + 0.85 * (tt - 56) / 41)
+    def lam(tt): return 1.0 if (LAMPE[0][0] <= tt < LAMPE[0][1]) or tt >= LAMPE[1][0] else 0.0
+    pa, pb = PHARES; H, W = im['int'].shape[:2]
+    pr = subprocess.Popen(['ffmpeg', '-loglevel', 'error', '-y', '-f', 'rawvideo', '-pix_fmt', 'rgb24', '-s', f'{W}x{H}', '-r', '25', '-i', '-', '-i', wav,
+                           '-c:v', 'libx264', '-crf', '24', '-preset', 'veryfast', '-pix_fmt', 'yuv420p', '-af', 'loudnorm=I=-23:TP=-2', '-c:a', 'aac', '-b:a', '128k', '-shortest', P(f'{V}.mp4')], stdin=subprocess.PIPE)
+    for k in range(int(DUREE * 25)):
+        tt = k / 25
+        if tt >= CUT: f = im['int']
+        else:
+            bb, ll = b(tt), lam(tt)
+            clair = im['ext'] * (1 - ll) + im['ext_lampe'] * ll; embue = im['ext_buee'] * (1 - ll) + im['ext_buee_lampe'] * ll
+            f = clair * (1 - bb) + embue * bb
+            if pa <= tt <= pb: f = f + (im['ext_phares'] - im['ext']) * np.sin(np.pi * (tt - pa) / (pb - pa)) ** 2
+            f = cadre(f, tt)
+        pr.stdin.write(np.clip(f, 0, 255).astype(np.uint8).tobytes())
+    pr.stdin.close(); pr.wait()
+    evts += [dict(t=0.0, fin=48.0, type='image', quoi='buée monte'), dict(t=48.0, fin=56.0, type='image', quoi='buée se dégage'), dict(t=56.0, fin=97.0, type='image', quoi='buée monte')]
+else:
+  subprocess.run(['ffmpeg', '-loglevel', 'error', '-y', *inp, '-filter_complex', fc, '-map', '[v]', '-map', '4:a', '-r', '25',
+                '-c:v', 'libx264', '-crf', '24', '-preset', 'veryfast', '-af', 'loudnorm=I=-23:TP=-2', '-c:a', 'aac', '-b:a', '128k', '-t', str(DUREE), P(f'{V}.mp4')], check=True)
 json.dump(sorted(evts, key=lambda e: e['t']), open(P(f'{V}-evenements.json'), 'w'), indent=1, ensure_ascii=False)
 print('ok', P(f'{V}.mp4'))
