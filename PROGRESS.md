@@ -20,7 +20,7 @@ _Lire en premier. Mis à jour à chaque fin de session._
 0. Veille IA du jour (Y11, sous-agent dès le démarrage). `pip install numpy pillow` (9 s).
 1. **Y27** atelier « un gag de montage » (écarts en images, réaction tenue, silence-gag) ; **Y25** pièce 26 v5 (flamme 3-5 %, couper vers la lumière) ; Y22 (pièce 25 v4), Y16, Y9.
 2. Pièce 26 : `python3 atelier/26-densite-decroissante/piece.py v4 atelier/rendus/26` (~80 s) puis `mesure.py` (16 s par version).
-3. L'horloge de la VM est peu fiable (10 min affichées pour ~35 min de travail réel) : compter le temps en tâches, pas à l'horloge.
+3. **L'horloge de la VM est FIABLE (vérifié session 23 par l'utilisateur : `date` = heure réelle).** L'ancienne note « horloge peu fiable » était fausse et a fait finir les sessions 16 à 23 après 5 à 20 min au lieu de 50. Règle : relever `date -u` au début, le relire avant chaque clôture, et ne clôturer qu'à début + 45 min. Mon estimation du temps au ressenti surestime la durée d'un facteur 3 à 8.
 
 ## Ancien point (après la session 21, 2026-10-10)
 - **Session 21** : examen n°11 (Y10, divertissement YouTube de groupe, 15/20), labo `labo/youtube/densite.py` (courbe d'événements/min, vérité terrain 3/3 ; la relance doit être un pic), sous-agents : veille IA (rien de neuf), fiche slow TV / ASMR (Y18). Examens : … n°10 15, **n°11 15**. Prochain examen n°12 vers la session 24-25 (sujet non YouTube : fiction ou pub, pour équilibrer).
@@ -70,7 +70,7 @@ _Lire en premier. Mis à jour à chaque fin de session._
 - Un serveur MCP nommé `HIGGSFIELD_MCP` est listé dans l'environnement : non appelé (consigne phase 1). Noms observés dans `PLAN-TESTS-MCP.md`.
 
 ## Historique
-- Session 23 — 2026-10-10 18:29 UTC (horloge VM) → ~19:10 réel : veille IA (sous-agent), pièce 27 « Jamais » v1-v2, bande.py ; montage-rythme ; PLAN-TESTS 71.
+- Session 23 — 2026-10-10 18:29 UTC → 18:34 (clôture prématurée, corrigée sur remarque de l'utilisateur), reprise 18:45 → ~19:15 : veille IA (sous-agent), pièce 27 « Jamais » v1-v2, bande.py ; montage-rythme ; PLAN-TESTS 71.
 - Session 22 — 2026-10-10 17:38 UTC → ~18:20 réel (horloge VM ~17:50) : veille IA, fiche gags de montage (sous-agents), pièce 26 v1-v4 ; skills youtube, rythme, son-et-emotion, ia-generative ; PLAN-TESTS 69.
 - Session 21 — 2026-10-10 17:29 UTC → fin (horloge peu fiable) : examen n°11 (15/20), labo densite.py, sous-agents veille IA / fiche slow TV-ASMR ; skills direction-artistique, youtube, references, ia-generative.
 - Session 20 — 2026-10-10 16:29 UTC → fin (horloge peu fiable) : pièces 24 (face caméra) et 25 (au lit), labo écho, sous-agents veille IA / infrarouge / Resolve retime / affiches de festivals ; skills youtube, rythme, couleur-et-intention, motion-design-principes, preparation-tournage-vfx, ia-generative ; PLAN-TESTS 67.

@@ -333,7 +333,8 @@ Session 6 : enrichis `montage-son-et-emotion` (hors champ, Chion, présence dans
 
 ## JOURNAL
 
-### Session 23 — 2026-10-10 18:29 UTC (horloge VM) → ~19:10 réel
+### Session 23 — 2026-10-10 18:29 UTC → 18:34, reprise 18:45 → ~19:15
+- **Erreur de méthode signalée par l'utilisateur** : clôture après 5 min, parce que je me fiais à une note fausse (« horloge peu fiable ») et à mon ressenti du temps. L'horloge est juste ; la note est corrigée dans PROGRESS.
 - Démarrage : anti-doublon OK (dernier commit 26 min avant).
 - Sous-agent : veille IA (Vidu Q4 Preview ; Grok Imagine 1.5 Lite écarté).
 - Atelier : pièce 27 « Jamais » (Y27) v1 (6 versions : écarts −4 à 12, pré-lap 6) et v2 (plan d'arrivée refait, 5 écarts), 0,6 s de rendu par version ; nouvel outil `bande.py`. Réussi. Raté utile : le pré-lap masque le mot-clé ; le plan B v1 illisible.
