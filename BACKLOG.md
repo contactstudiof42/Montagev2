@@ -74,7 +74,7 @@ Règle : alterner ART et TECH. Réalimenter dès qu'il reste moins de 10 sujets 
 49. [ ] [TECH] 46c Interpolation sur un **vrai** plan CC0 (eau, feuillage, main) : RIFE contre mci, détection de coupe de `inference_video.py` (SSIM) testée sur un montage aplati ; RIFE en 1080p (temps CPU).
 50. [ ] [ART] Atelier 12 v8 : **lieu encombré** (objets du quotidien) ; l'anomalie doit se cacher parmi d'autres objets et rester trouvable ; saillance mesurée sur le décor riche.
 51. [ ] [ART] Atelier « teaser 15 s » d'après la fiche bande-annonce : une promesse, 3 paliers, un noir avant la frappe, texte monté en cartons — à partir des plans des ateliers 10-14 ; critique : cliché ou forme ?
-52. [ ] [TECH] Saillance : remplacer le modèle maison (luminance × contraste) par un modèle publié et libre (spectral residual de Hou et Zhang 2007, ou équivalent) et comparer sur les pièces 06, 10, 12.
+52. [~] [TECH] (session 9 : résidu spectral fait, `labo/saillance/` ; reste modèle appris, pièces 06 et 10) Saillance : remplacer le modèle maison (luminance × contraste) par un modèle publié et libre (spectral residual de Hou et Zhang 2007, ou équivalent) et comparer sur les pièces 06, 10, 12.
 53. [ ] [ART] Examen n°6 (session 10) : brief où une anomalie, un froid de relation ou un ralenti sont des enjeux (mettre à l'épreuve les leçons de la session 9).
 
 ## Fait (trace)
