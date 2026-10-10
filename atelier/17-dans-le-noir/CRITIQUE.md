@@ -33,3 +33,8 @@ Planches : une image par seconde (0 → 9 s), `planche.py` (luminance moyenne pa
 2. **L'énergie de la source décide si le noir reste un noir** : un écran qui éclaire les murs n'est plus un écran.
 3. **La température de la source change la matière qu'elle touche** (chaud = peau, froid = plâtre).
 4. **La cause du calme doit précéder le calme**, à l'image comme au son.
+
+## Son v5 — `V5=1 python3 son.py`, `v5-son-onde.png` (même image que la v3)
+- La voix (murmure 300-3400 Hz) démarre à **3,2 s**, deux fois plus présente ; deux geignements forts **se superposent** à son début (3,2 et 3,6 s), puis un dernier faible à 4,6 s.
+- Mesure par demi-seconde : −18 à −20 dBFS jusqu'à 4 s (pleurs + voix), **chute à −28 à 4,0 s**, palier −23/−26 pendant que la voix parle seule, −34 à la fin. LUFS −21,6, LRA 6,1.
+- Sur l'onde, l'ordre se lit enfin : **la voix entre pendant les pleurs, puis les pleurs cessent**. La cause précède l'effet. Reste à juger à l'oreille en phase 2 (le murmure sans mots peut se lire « bruit de ligne » plutôt que « quelqu'un »).
