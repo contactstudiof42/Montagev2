@@ -21,6 +21,7 @@ Version 1 (session 1, 2026-10-09). Sources : `culture/walter-murch-blink-of-an-e
 10. **Un son-signature se construit en couches à rôles distincts** (Rydstrom, T-rex : aigu = identité, grave = poids, texture = menace).
 11. **Choisir un point d'audition et l'assumer** (Rydstrom, Omaha Beach : son étouffé, subjectif, puis réouverture) : un passe-bas suffit à faire entrer dans une tête ; la réouverture du mix est le retour au monde.
 12. **Un son causé par l'image, seul, après le retrait du reste** (atelier 04 : le ressac s'efface, restent les gouttes qui tombent de la chaise) : le son le plus petit, s'il est le seul, porte la fin.
+13. **Le son d'un strobe est inventé, et il faut le savoir** [THÉORIQUE, `sources/strobe-son-et-lecture-reperage-2026-10.md`] : un xénon fait au mieux un petit « tic » (onde de choc dans le tube) que le système son couvre ; un strobe LED est muet, à part son ventilateur. Aucune fiche ne donne de dB. Un SFX « relais / décharge » sur un coup de lumière sonorise l'**idée** de décharge, pas un son de salle. On l'emprunte au flash photo (pop, puis sifflement de recharge), à l'arc électrique ou à l'interrupteur de projecteur. Sur de la techno : un transitoire court et aigu calé sur le coup, sans queue grave, pour ne pas doubler le kick.
 
 ## Clichés à refuser (sauf parti pris)
 - Le *drone* grave qui monte pour signifier la tension (je suis moi-même tombé dedans : atelier 01 v4).
