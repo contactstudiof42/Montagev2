@@ -35,7 +35,12 @@ mais un logiciel peut l'accepter en silence). **Toujours mettre la cadence dans 
 ## 4. Codecs intermédiaires et proxies (choix) [THÉORIQUE, specs à vérifier sur les pages Apple/Avid]
 - **ProRes 422 HQ** : master de montage 10 bits ; **ProRes 4444 (XQ)** : alpha, VFX, titres ; **DNxHR HQX / 444** : équivalents Avid, plus faciles sous Windows.
 - **Proxies** : ProRes Proxy ou H.264 basse résolution **au même nom et même durée** que l'original (sinon la reconnexion échoue). Le proxy sert au rythme, jamais au jugement de la couleur ni de la netteté.
-- Ne jamais monter des fichiers à GOP long à cadence variable (téléphone) sans les transcoder en cadence fixe : désynchro du son garantie. [THÉORIQUE ; à tester avec ffmpeg]
+- **Rushes de téléphone en cadence variable (VFR)** [TESTÉ EN LABO, session 8, `labo/vfr/`] : un faux rush à vérité terrain (30 i/s, puis 3-8 s « basse lumière » à ~24 i/s avec gigue, flash et clic à 5,000 s) :
+  - **Repérer** : `ffprobe` donne `r_frame_rate` ≠ `avg_frame_rate` (30/1 contre ~27) et des intervalles d'images inégaux (`mesure_vfr.py`).
+  - **Lire les images à la cadence nominale** (ce que fait un logiciel qui ignore les horodatages) : **−400 ms de désynchro à 5 s**, et l'écart grandit (≈ 1 s à 10 s, calculé : 271 images lues à 30 i/s = 9,03 s pour 10 s de son).
+  - **Convertir en cadence fixe à l'ingest** (`-fps_mode cfr -r 25`/`30`, ou `-vf fps=25` ; en intermédiaire ProRes/DNxHR + PCM) : **synchro exacte** (0 ms), au prix d'images doublées là où le téléphone n'a rien capturé (25 doublons sur 10 s à 30 i/s) : saccade visible dans les passages sombres. `minterpolate=mi_mode=blend` réduit les doublons (2) mais fond les images entre elles (traînées).
+  - **Le choix artistique** : on ne peut pas inventer les images que le téléphone n'a pas prises. Saccade franche pour un rush documentaire (vérité du document), interpolation par mélange seulement pour un plan d'ambiance sans visage ni geste net, interpolation par IA (à tester) pour un plan qui doit être fluide. Toujours conformer **une fois, à l'ingest, à la cadence du projet** (25 en Europe), jamais dans la timeline.
+  - Comportement de Premiere / Resolve face au VFR : [THÉORIQUE], à vérifier en phase 2 (`PLAN-TESTS-MCP.md`).
 
 ## 5. Pipelines types par format
 Chaque ligne : ce qui est verrouillé tôt (●) et ce qui reste ouvert longtemps (○).
