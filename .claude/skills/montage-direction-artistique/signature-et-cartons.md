@@ -17,7 +17,7 @@ Origine : examen n°6, carton « Une voix par semaine. Devenez-la. » — ambigu
 ## Exemple (examen n°6)
 | variante | texte | verdict |
 |---|---|---|
-| factuelle | « Une heure par semaine. Un appel. » + « allovoisins.fr » | lisible, dit le coût exact ; froide mais juste après un rire |
+| factuelle | « Une heure par semaine. Un appel. » + « voix-a-cote.example » | lisible, dit le coût exact ; froide mais juste après un rire |
 | adressée | « Lucienne attend votre appel. » | relie au film, mais **culpabilise** (contraire au brief) |
 | minimale | « Appelez. » + logo | forte, mais ne dit ni quoi ni combien |
 → **factuelle**, sur le rire qui continue.
