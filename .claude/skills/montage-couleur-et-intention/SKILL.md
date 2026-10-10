@@ -28,6 +28,11 @@ La couleur n'est pas une finition : c'est **un sens**. Avant de toucher une roue
 8. **Décider avant de tourner.** Décor, costume, gélatines, heure de tournage portent la palette. L'étalonnage confirme et unifie ; il ne sauve pas une image sans intention.
 - **Couleur d'accent = ressource rare** : dans une palette froide, une seule apparition de la couleur chaude, au moment clé, vaut plus que plusieurs. Répétée régulièrement, elle devient un motif décoratif et perd son sens (atelier 03 : 1 apparition sur la coupure contre 4 en rotation). Même logique que la règle « 0,14 % de pixels chauds avant l'allumage » de l'atelier 02. [TESTÉ EN ATELIER]
 
+- **La chaleur se tourne, l'étalonnage la protège** (atelier 05, `atelier/05-trois-etalonnages/CRITIQUE.md`) [TESTÉ EN ATELIER] : une rouille presque noire ne peut pas devenir « la seule chaleur » à l'étalonnage (0,1 % de pixels chauds, liseré rouge sur les bords) ; une rouille plus claire au décor + une secondaire douce donne 2 % de chaud, lisible comme matière. Mais la matière seule ne survit pas à un étalonnage dense (0,4 %) : il faut les deux. Et ce que le décor porte, **toutes** les directions en héritent : décider la matière au tournage ferme des portes.
+- **L'étalonnage choisit le registre, le montage donne le sens** (atelier 05) : « constat » et « menace » se lisent sur une image fixe ; « souvenir » se lit comme « brume » tant que rien (montage, voix, son, marqueur de support) ne dit « il y a longtemps ».
+- **Une accentuation qui grandit avec le récit** : une clé prise sur la matière fait croître la chaleur à mesure que l'objet est découvert (0,05 % → 0,45 % → 1,7 %) : l'étalonnage raconte sans effet ajouté.
+- **Neutre ≠ froid** : un « constat » se fait en *annulant* la dominante de la source (mesurer le biais R-B du ciel et du sol), pas en ajoutant du bleu.
+
 ## Méthode : de brief à intention couleur
 
 1. **Extraire l'émotion cible** du brief en 2-3 mots (ex. « confiance tranquille », « urgence », « nostalgie douce »). Si le brief ne dit rien, poser la question : « à la fin, le spectateur doit se sentir comment ? ».

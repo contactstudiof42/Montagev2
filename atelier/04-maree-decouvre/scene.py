@@ -44,7 +44,7 @@ put(sable, mat("sable", (0.20, 0.18, 0.15), 0.35))
 # pente douce vers le large (y positif = large) : l'eau découvre d'abord le premier plan
 sable.rotation_euler = (math.radians(-1.2), 0, 0)
 
-rouille = mat("rouille", (0.11, 0.05, 0.03), 0.8, 0.3)
+rouille = mat("rouille", tuple(P.get("rust_col", [0.11, 0.05, 0.03])), 0.8, 0.3)
 bois = mat("bois", (0.05, 0.03, 0.02), 0.7)
 
 # Chaise de bistrot (en mètres) posée en (0, 6, 0)
