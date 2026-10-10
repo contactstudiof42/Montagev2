@@ -24,3 +24,8 @@ Rush : `strobe.py` fabrique 8 s à 25 i/s, 360×640 : foule en silhouettes qui s
 5. Hors traitement : **couper avant le 4e flash** d'une seconde quelconque ne suffit pas si le plan dure plus d'une seconde ; un plan brut de strobe à 8 Hz n'est livrable qu'en dessous de ~0,4 s (3 flashs) — et encore, à mesurer avec le plan précédent et suivant dans la fenêtre glissante.
 
 Limites : rush synthétique (strobe plein cadre, binaire) ; un vrai strobe a un déclin, un rolling shutter coupe le flash en bandes (flash partiel sur une partie du cadre : la fenêtre locale 1/3 peut alors échouer même si la moyenne passe). `flash_check.py` n'est pas un test Harding.
+
+## Planche regardée (`planche-7_7hz.png`, images 25-40 : brut / `tmix=3` / saccade)
+- **Brut** : deux flashs blancs à 2 images d'écart ; la foule devient grise pendant le flash : c'est là que le strobe « révèle » les corps.
+- **Moyenne** : les deux flashs fondent en **un voile laiteux de 6 images** : ni noir ni coup, le contraste est tué. Visuellement le pire : ça ressemble à une erreur d'exposition, pas à un choix.
+- **Saccade** : sur cette fenêtre, les images tenues sont toutes sombres : **aucun flash ne survit**. Le coup de strobe ne reste que là où une image tenue tombe sur un flash : en tirage automatique, c'est le hasard qui décide où tapent les flashs. D'où le point 4 : **choisir à la main** les images tenues (allumées sur les temps voulus).
