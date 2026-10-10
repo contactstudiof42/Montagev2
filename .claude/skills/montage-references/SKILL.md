@@ -38,6 +38,8 @@ Règle de décision : plaisir → Bass ou Gondry ; tension → Cooper ; recul cr
 14. **Des blocs autonomes** (début, milieu, fin) permettent de permuter et de chapitrer sans perdre le spectateur (Menke).
 15. **L'émotion gagne les arbitrages** contre la continuité (Murch).
 15b. **Ne pas monter le choc** (Hiro Murai, « This Is America ») : la coupe prévient et amortit ; un choc qui arrive dans un plan qui continue laisse le spectateur sans protection. Le premier plan donne le plaisir, l'arrière-plan donne le sens. → Clip ou film à message ; l'inverse exact du kinetic.
+- **Varda, *Les Glaneurs*** (`culture/agnes-varda-les-glaneurs.md`) : le fil d'un montage à digressions est **une voix**, pas un sujet ; texte écrit **après** chaque passe de montage pour relier, jamais pour illustrer ; garder l'accident qui rime (le cache qui danse sur le jazz) ; rimes d'objets.
+- **Spike Jonze, *Weapon of Choice* / *Welcome Home*** (`culture/spike-jonze-weapon-of-choice-welcome-home.md`) : **quand le corps produit le rythme, le montage se retire** (opposé complémentaire du kinetic) ; la source musicale dans l'image fait de la musique un événement ; effet physique d'abord, numérique en complément ; lieu banal + transformation = merveilleux.
 
 ## F. Goûts de l'utilisateur (priment) — principes mesurés
 16. **Suivre l'arrangement, pas les temps** (Ziak, mesuré) : densité de coupes selon la présence de la basse, plans longs et immobiles dans les creux.
@@ -55,7 +57,8 @@ Règle de décision : plaisir → Bass ou Gondry ; tension → Cooper ; recul cr
 - *Faire attendre* (Glazer) contre *les 2 premières secondes des réseaux* : l'attente ne marche que sur un public captif (TV, cinéma, préroll non zappable), ou si l'attente est elle-même intrigante dès la première image.
 
 ## Application vérifiée en atelier
+- Atelier 03 « Rythme macro » : principe Ziak (densité par section) vérifié contre un montage calé au temps ; l'hybride l'emporte pour la pub et les réseaux.
 - Atelier 01 « Respiration » : le principe 1 (la forme du temps est l'argument : une rétention plus longue que confortable) et le principe 6 (un signe : le mot qui retient son souffle) ont produit la v3, nettement meilleure que les v1-v2.
 
 ## Lacunes (voir BACKLOG)
-Pas encore de références en couleur (Storaro, Doyle, Deakins), en documentaire (Varda, Morris, Marker), en clips récents ni en motion design de studio (Buck, ManvsMachine, Elastic hors *True Detective*).
+Pas encore de références en couleur (Storaro, Doyle, Deakins), en documentaire (Morris, Marker ; Varda fait en session 3), en clips récents ni en motion design de studio (Buck, ManvsMachine, Elastic hors *True Detective*).
