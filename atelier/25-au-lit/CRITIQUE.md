@@ -26,3 +26,9 @@ D = A, mais 6 plans ordonnés par leur luminance propre (lampe, tasse, fenêtre,
 
 ## Limites et v3
 Jugement sur bande-film et courbes, sans regarder en mouvement ni écouter ; « endort » n'est pas mesuré (phase 2 : un spectateur au lit). v3 : la mer avant le retour de la fenêtre ; une dernière fenêtre allumée qui ne s'éteint pas ; voix qui s'arrête vers 45 s et nappe seule ensuite ; version téléphone luminosité basse (YAVG perçu en mode nuit).
+
+## v3 — `v3-mesures.png` (E)
+- 1er essai (non gardé) : fenêtre en dernier, une seule lumière allumée → YAVG 20 → **32** à 40 s : un cadre fixe clair qui revient tard **réveille**, même porteur d'une jolie idée (« quelqu'un d'autre ne dort pas »).
+- **E** : lampe, fenêtre, tasse, **retour de la fenêtre à moitié éteinte** (19-28 s), mer, étoiles avec **la lune non graduée** (40-60 s). YAVG : 49 43 40 39 38 33 27 26 21 21 20 20 : **monotone** pour la première fois. Sur la bande-film, les 20 dernières secondes ne se lisent plus « écran éteint » : un point blanc tient le cadre, et comme tout le reste baisse, **la lune paraît s'allumer** (elle était grise dans le plan de mer) : c'est l'œil qui s'habitue au noir. La dernière lumière n'est pas un reste : elle devient l'image.
+- Verdict : E est la référence. Le retour de la fenêtre doit tomber **au milieu** (quand la luminance générale est encore au-dessus de lui), jamais à la fin.
+- Reste : voix qui s'arrête vers 45 s (nappe seule ensuite) ; vérifier en mouvement que la lune « qui s'allume » ne se lit pas comme une erreur de raccord ; version téléphone en mode nuit.

@@ -111,7 +111,7 @@ Quand on demande « quelle couleur pour ce film ? », rendre :
 ## Une descente de lumière (atelier 25 « Au lit », session 20) [TESTÉ EN ATELIER, YAVG mesuré]
 - **L'ordre des plans est une courbe de lumière** : un gradateur de −60 % sur tout le montage ne fait pas descendre l'image si les plans ne sont pas ordonnés par leur luminance propre (une lampe de chevet à 25 s faisait le pic de la seconde moitié). Ordonner d'abord, graduer ensuite.
 - La descente se lit mieux comme **un événement du monde** (les fenêtres de la ville qui s'éteignent une à une) que comme un réglage.
-- **Le plancher reste au-dessus du noir** : 20 s à YAVG 19 se lisent « écran éteint » ; garder un dernier point de lumière vivant.
+- **Le plancher reste au-dessus du noir** : 20 s à YAVG 19 se lisent « écran éteint » ; garder un dernier point de lumière vivant. En v3, la lune **non graduée** sur un ciel qui s'éteint paraît s'allumer : la dernière lumière devient l'image. Un cadre clair qui revient **à la fin** réveille (20 → 32) : les retours se placent au milieu de la descente.
 
 ## Limites
 

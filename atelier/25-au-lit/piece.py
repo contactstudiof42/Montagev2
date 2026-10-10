@@ -26,7 +26,7 @@ def courbe(version, x, chan):
     descente = {"lum": 1 - 0.6 * x, "vol": 10 ** (-10 * x / 20), "debit": 150 - 35 * x,
                 "pause": 0.4 + 2.1 * x, "plan": 3 + 7 * x}
     moyen = {"lum": 0.7, "vol": 10 ** (-5 / 20), "debit": 132, "pause": 1.45, "plan": 6.0}
-    if version in ("A", "D"):
+    if version in ("A", "D", "E"):
         return descente[chan]
     if version == "B":
         return moyen[chan]
@@ -65,6 +65,9 @@ def nappe(n, version):
     return 0.03 * pad * lfo * g
 
 
+VEILLEUSE = False
+
+
 def plan(kind, t, lum):
     img = Image.new("RGB", (W, H))
     d = ImageDraw.Draw(img)
@@ -76,6 +79,8 @@ def plan(kind, t, lum):
         for k in range(40):
             x, y = rng.integers(180, 460), rng.integers(180, 300)
             on = (k * 7919 % 100) / 100 > t / 60
+            if VEILLEUSE and k == 5:  # v3 : une fenêtre qui reste allumée, non graduée
+                d.rectangle([x, y, x + 6, y + 8], fill=(240, 200, 120)); continue
             d.rectangle([x, y, x + 6, y + 8], fill=L((240, 200, 120)) if on else L((40, 45, 70)))
         d.line([320, 40, 320, 320], fill=L((15, 15, 20)), width=8)
     elif kind == 1:  # lampe de chevet
@@ -103,6 +108,8 @@ def plan(kind, t, lum):
             x, y = rng.integers(0, W), rng.integers(0, H)
             b = 0.6 + 0.4 * math.sin(t * 0.7 + k)
             d.point([(x + t * 2) % W, y], fill=L(tuple(int(220 * b) for _ in range(3))))
+        if VEILLEUSE:
+            d.ellipse([440, 60, 480, 100], fill=(210, 210, 200))
     return img
 
 
@@ -128,6 +135,15 @@ def main():
             # retour de la fenêtre presque éteinte, étoiles), durées croissantes
             cuts = [0, 5, 11, 19, 28, 40]
             ordre = [1, 2, 0, 3, 0, 4]
+        if version == "E":
+            # v3 : lampe, fenêtre, tasse, retour de la fenêtre (à moitié éteinte,
+            # une lumière qui tient), mer, étoiles avec la lune non graduée
+            # (plancher au-dessus du noir). Un 1er essai avec la fenêtre en
+            # dernier remontait la luminance (20 -> 32) : réveil.
+            global VEILLEUSE
+            VEILLEUSE = True
+            cuts = [0, 5, 11, 19, 28, 40]
+            ordre = [1, 0, 2, 0, 3, 4]
         p = subprocess.Popen(["ffmpeg", "-y", "-loglevel", "error", "-f", "rawvideo", "-pix_fmt", "rgb24",
                               "-s", f"{W}x{H}", "-r", str(FPS), "-i", "-", "-i", f"{out}/{version}.wav",
                               "-c:v", "libx264", "-crf", "20", "-pix_fmt", "yuv420p", "-c:a", "aac",
