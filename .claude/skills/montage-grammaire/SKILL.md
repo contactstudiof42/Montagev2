@@ -42,6 +42,8 @@ Dans une scène, une ligne imaginaire relie les deux personnages (ou un personna
 - **Faux raccord à cacher** : l'inverse, le mettre hors de la zone saillante, ou couper sur un mouvement qui capte l'œil.
 - Outil : `atelier/12-inquietude-calme/mesure.py` (aire du changement, distance à la zone la plus saillante et au centre).
 
+- **Décor chargé** [TESTÉ EN ATELIER, 12 v8, session 10 ; mesures de saillance, pas de spectateur] : désigner la zone par **une couleur saturée** dans le plan 1 (vêtement sur la chaise vide) et poser l'anomalie **devant** elle dans le plan 3 : la couleur désigne et détache à la fois (résidu spectral : centile 75 → 87). Un seul leurre de même forme à proximité ; trois, et l'anomalie n'a plus de raison d'être cherchée.
+
 ## Temps
 - **Ellipse** : enlever ce que le spectateur peut reconstruire ; il préfère compléter que subir.
 - **Montage parallèle** : deux actions alternées créent une relation (course contre la montre, contraste). Accélérer l'alternance fait monter la tension.

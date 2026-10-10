@@ -42,3 +42,24 @@ Mesures : `mesures.txt` (script `mesure.py` : aire du changement entre plan 1 et
 
 ## Contre-expertise (session 9, `labo/saillance/`)
 Un modèle publié (résidu spectral, Hou et Zhang 2007) confirme que la v4 est la pire (zone de l'anomalie au 63e centile), mais préfère la v3 (89e) à la v7 (75e) : la tasse blanche se détache mieux sur une table sombre que sur une table au soleil. **Éclairer la zone attire l'œil mais peut éteindre le contraste du détail.** v8 (BACKLOG 50) : flaque de lumière voisine, tasse à la lisière, sur fond plus sombre.
+
+## v8 — lieu encombré (session 10, BACKLOG 50) — `v8-planche.png` (haut : v8a, v8b ; bas : v8c plan 1, plan 3), `v8-montage-planche.png` (4 / 3 / 6 s)
+**Intention (écrite avant)** : un lieu ordinaire est encombré ; l'anomalie (la seconde tasse devant la chaise vide) doit **se cacher parmi des objets semblables** (un pot à sucre blanc, un verre) et **rester trouvable**. Hypothèse de la session 9 : flaque de lumière **à côté** de la tasse, tasse sur fond sombre.
+Script : `scene_v8.py` (copie de `scene.py` + `"encombre": true` : journal, coupe de fruits, livres, pot à sucre leurre, verre, clés, étagère et bocaux, calendrier, cabas, gilet sur la chaise vide, radio). Rendu Cycles 480×270, 24 éch. : ~5 s par image.
+
+| version | changement | maison : zone saillante → anomalie (% diag.) | résidu spectral : centile de la zone | pic du résidu → anomalie |
+|---|---|---|---|---|
+| v7 (réf. session 9) | pièce nue, 45 mm | 9,0 | 74,7 | — |
+| v8a | encombré ; gilet caché derrière le dossier ; verre clair | 10,4 | 85,0 | 20,1 |
+| v8b soleil 0° / 8° / 16° | gilet rouge **devant** le dossier, verre sombre, étagère et calendrier dans le cadre, radio | 10,2-10,4 | 88,0 / 87,9 / 84,2 | 14-16 |
+| v8c (réf.) | v8b 8° + radio sombre | 10,3 | 86,6 | 15,7 |
+
+- **v8a** : le verre clair se lisait comme une troisième tasse : trois cylindres blancs avant même l'anomalie. Un leurre, c'est bien ; trois, l'anomalie devient un objet parmi d'autres sans raison d'être cherchée. Le gilet caché derrière le dossier ne servait à rien.
+- **v8b** : le gilet **rouge** sur la chaise vide est devenu la couleur la plus saturée du cadre : il désigne la place vide dès le plan 1, et dans le plan 3 la tasse blanche se détache **sur lui**. Le résidu spectral passe de 74,7 (v7) à 88 : au niveau de la v3, sans perdre la désignation de la v7. **Ce n'est pas la lumière qui a fait le travail, c'est un fond coloré derrière l'anomalie.**
+- **Hypothèse de la session 9 non vérifiée** : faire tourner le soleil de 0 à 16° ne déplace presque pas la flaque (elle reste au sol, devant la table) ; écart de saillance faible (84-88). Dans cette géométrie, la lumière n'est pas le bon levier : je ne l'ai pas isolée, je n'en tire rien.
+- **v8c** : assombrir la radio ne déplace pas le pic du résidu : il est sur la pile de livres (couverture blanche) — un pic secondaire, à 15 % de la diagonale, acceptable (il est dans la même moitié de table).
+- **Encombrement** : il n'a pas noyé l'anomalie dans les mesures ; il a baissé la saillance de tout le reste (beaucoup de petits objets moyens). Ce qui la **cache** pour un humain, c'est le leurre de même forme (le pot à sucre à 6 cm) — et cela, aucune de mes deux mesures ne le voit : elles mesurent où va l'œil, pas si l'œil **distingue** la nouveauté. Test spectateur (PLAN-TESTS 44) indispensable.
+- **Ce qui reste raté** : la pièce est encore une maquette (cubes, pas de matière, pas d'usure) ; sans soleil sur la table l'après-midi est gris, l'inquiétude devient tristesse ; le gilet est un bloc.
+
+### Leçon (versée dans `montage-grammaire`)
+Pour qu'une anomalie à travers une coupe reste trouvable dans un décor chargé : **désigner la zone par une couleur saturée dans le plan 1** (un vêtement, un objet) et **poser l'anomalie devant elle** dans le plan 3 ; un seul leurre de même forme à proximité, pas plusieurs. La couleur désigne et détache à la fois, là où la lumière désigne mais peut éteindre le contraste du détail (session 9).
