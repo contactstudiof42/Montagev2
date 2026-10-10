@@ -40,3 +40,7 @@ Planches : `v1-planche.png` (A-D), `v2-planche-DE.png` (D, E). Coupe à l'image 
 - Le flou ne casse pas la coupe **parce que la marge du cache dépasse la longueur du flou** ; avec un torchon plus juste, la plante aurait transparu dans le bord flou. Règle : **marge du cache ≥ vitesse du cache × durée d'obturation** (ici 18 px/image × ½ = 9 px).
 - À l'œil, I est plus naturel (un vrai geste flou) et le bord flou empêche de fixer la limite du cache. Je garde I comme référence de mouvement, E comme référence de géométrie.
 - Une tentative de mesure de « fuite » dans la zone de l'objet (différence 61 → 62) est inutilisable : le mouvement du torchon lui-même domine (témoin 60 → 61 à 17-20). Jugé à l'œil sur le zoom.
+
+## v5 — la boucle (J ; `v5-boucle-J.png`, images 160 à 195)
+- J = E + un 2e passage du torchon en sens inverse, qui rend la tasse : la dernière image rejoint la première (jointure 1,34, témoin image à image 1,08 ; E sans boucle : 5,34, la plante saute en tasse au redémarrage).
+- Mais la boucle **tue la chute** : le film finit sur la tasse, l'image banale. Conflit entre deux principes de la fiche (la chute en dernière image / penser la boucle). Décision : pour un trucage à chute, garder E / I (on finit sur la plante, le redémarrage sec se lit « on rembobine », accepté dans la culture du Short) ; la boucle parfaite seulement quand l'objet du film **est** le cycle (un aller-retour sans chute, ou une chute qui ramène à l'état de départ par un autre chemin).

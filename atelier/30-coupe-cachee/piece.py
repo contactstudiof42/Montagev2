@@ -5,7 +5,7 @@ from PIL import Image, ImageDraw
 V, D = sys.argv[1], sys.argv[2]; os.makedirs(D, exist_ok=True)
 W, H, FPS, N = 270, 480, 25, 200
 COUPE = 62                                   # image de coupe (milieu du passage du torchon)
-large = V in ('A', 'G', 'H'); raccord = V in ('D', 'E', 'I'); torchon = V != 'B'
+large = V in ('A', 'G', 'H'); raccord = V in ('D', 'E', 'I', 'J'); torchon = V != 'B'
 
 
 def scene(f, prise):
@@ -46,7 +46,7 @@ def pose_torchon(im, f):
     if not large:                                             # centré sur la tasse (x=140) à la coupe
         xc = 140 + (k - 0.5) * (W + 160)
     d = ImageDraw.Draw(im)
-    y0, y1 = (0, H) if large else ((150, 360) if V in ('E', 'I') else (200, 360))   # E : couvre l'union tasse + plante
+    y0, y1 = (0, H) if large else ((150, 360) if V in ('E', 'I', 'J') else (200, 360))   # E : couvre l'union tasse + plante
     d.rectangle([xc - lw / 2, y0, xc + lw / 2, y1], fill=(60, 70, 110))
     for j in range(int(xc - lw / 2), int(xc + lw / 2), 14):
         d.line([j, y0, j, y1], fill=(75, 85, 128), width=3)
@@ -60,6 +60,9 @@ for f in range(N):
     if V == 'I':   # I = E + flou de bougé du torchon (obturateur 180° : 5 sous-images sur une demi-image)
         base = scene(f, 1 if f < COUPE else 2)
         im = Image.fromarray(np.mean([np.asarray(pose_torchon(base.copy(), f - 0.25 + j * 0.125)) for j in range(5)], axis=0).astype(np.uint8))
+    elif V == 'J':   # J = E + boucle : un 2e passage (en sens inverse) rend la tasse, la dernière image rejoint la première
+        C2 = 180; prise = 1 if (f < COUPE or f >= C2) else 2
+        im = pose_torchon(scene(f % 120 if prise == 1 and f >= C2 else f, prise), f if f < C2 - 12 else COUPE + (C2 - f))
     else:
         im = pose_torchon(scene(f, 1 if f < COUPE else 2), f)
     a = np.asarray(im).astype(np.int16) + rng.normal(0, 3, (H, W, 1)).astype(np.int16)   # léger grain de capteur
