@@ -1,0 +1,30 @@
+{
+ "bille_part": 4,
+ "domino0_bouge": 41,
+ "domino0_couche": 46,
+ "domino1_bouge": 44,
+ "domino1_couche": 51,
+ "domino2_bouge": 48,
+ "domino2_couche": 54,
+ "domino3_bouge": 50,
+ "domino3_couche": 56,
+ "domino4_bouge": 53,
+ "domino4_couche": 57,
+ "domino5_bouge": 55,
+ "domino5_couche": 59,
+ "domino6_bouge": 56,
+ "domino6_couche": 61,
+ "domino7_bouge": 58,
+ "domino7_couche": 62,
+ "domino8_bouge": 60,
+ "domino8_couche": 63,
+ "tasse_bouge": 63,
+ "tasse_quitte": 67,
+ "tasse_sol": 76,
+ "fin_tasse_z": 0.045,
+ "fin_bille_xyz": [
+  0.318,
+  0.947,
+  0.022
+ ]
+}

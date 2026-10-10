@@ -84,6 +84,7 @@ bpy.ops.mesh.primitive_cylinder_add(radius=0.04, depth=0.09, location=(xt, 0.2, 
 tasse.name = "tasse"; tasse.data.materials.append(mat("faience", (0.85, 0.83, 0.78), 0.15))
 bpy.ops.object.shade_smooth()
 rigide(tasse, shape="CYLINDER", masse=P.get("masse_tasse", 0.05), frot=0.4, rebond=0.15)
+tasse.rigid_body.angular_damping = P.get("amort_tasse", 0.1)  # v2 : la tasse s'arrête dans le cadre au lieu de rouler hors champ
 
 # Lumières (comme la pièce 06)
 bpy.ops.object.light_add(type="AREA", location=(-2.4, 0.3, 1.3)); fen = bpy.context.object
@@ -98,7 +99,8 @@ CAMS = {  # loc, rot (deg), focale
     "livre":   ((-0.45, -0.45, 0.88), (80, 0, 0), 35),
     "dominos": ((0.41, -0.35, 0.86), (84, 0, 0), 32),
     "tasse":   ((0.95, -0.9, 0.95), (72, 0, 0), 26),   # s6 : caméra au-dessus du plateau, sinon le contact domino-tasse est caché
-    "chaine":  ((0.75, -0.9, 0.95), (72, 0, 0), 26),   # dominos + tasse + sol dans le même plan
+    "chaine":  ((0.75, -0.9, 0.95), (72, 0, 0), 26),
+    "chaine2": ((0.62, -0.85, 0.95), (70, 0, 0), 32),  # v2 : plus serré, dominos plus gros   # dominos + tasse + sol dans le même plan
     "sol":     ((1.2, -0.5, 0.08), (88, 0, 14), 35),   # ras du sol, l'arrivée de la tasse
 }
 c = P.get("camera", "large"); loc, rot, lens = CAMS[c]

@@ -72,6 +72,14 @@ Même musique drill synthétique (140 BPM, intro / couplet / coupure / reprise),
 ## Le rythme que le sujet impose (atelier 04, session 4)
 Avant de choisir un tempo, regarder si le sujet a déjà une dramaturgie physique : la marée découvre lentement ce qui est haut, puis le sol d'un coup ; une bougie fond lentement puis s'éteint d'un coup ; une foule se remplit goutte à goutte puis déborde. **Lent puis brusque** est la forme naturelle de la révélation : la cadrer, la laisser se poser (tenue finale ≥ 1 s), ne pas la remplacer par une accélération de montage.
 
+## Où couper dans une chaîne causale (atelier 07, session 6) [TESTÉ EN ATELIER]
+Démonstration produit, réaction en chaîne, gag mécanique, plan « Cog » : trois montages du même événement simulé (`atelier/07-causalite/CRITIQUE.md`).
+1. **La mécanique décide où l'on peut couper.** Lister les contacts à l'image près (en tournage : visionner image par image ; en 3D : les lire dans la simulation). Une cascade (un contact toutes les 2-3 images) ne se coupe pas : la tenir dans un seul plan.
+2. **Couper dans les respirations** : pendant que l'objet voyage entre deux contacts (roulement, vol, chute), à 4 images ou plus de tout contact, et dans le sens du mouvement (sortie par la droite, entrée par la gauche).
+3. **Couper sur le contact escamote la preuve** : le plan suivant commence quand l'effet a déjà démarré, la cause est hors cadre. C'est le langage du kinetic (coupe sur l'impact pour l'énergie), légitime quand la preuve n'est pas l'argument ; c'est une faute dans une démonstration.
+4. **Ouvrir le plan avant la cause** : montrer l'effet en puissance (les dominos debout, la tasse au bord) quelques images avant que la cause n'entre. Le spectateur anticipe, et l'anticipation est le plaisir de ce genre de séquence.
+5. **Cadrer la conséquence** : l'impact final et l'objet au repos doivent être dans le cadre. Un plan large pensé pour la chaîne perd souvent sa fin au bord de l'image.
+
 ## À faire
 - Atelier : un même matériau monté sur trois tempos ; critique comparée.
 - Fiches : Sally Menke (Tarantino), Kirk Baxter (Fincher), clips (Gondry, Jonze).
