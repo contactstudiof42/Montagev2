@@ -105,3 +105,4 @@ _Session 23, 2026-10-10. Réponse écrite uniquement à partir des skills (direc
 
 ## Vérification en atelier (pièce 28, même session)
 Le flou optique contre le flou de post est confirmé et expliqué (bokeh lumineux contre gaussien terne ; la vitre qui échange sa netteté avec le paysage). Mais **mon garde-fou était faux** : avec la mise au point sur la vitre, les chevaux disparaissent complètement, on ne les devine pas. Corriger le traitement : départ de la mise au point vers 1,5 m, bascule lente entre 1,5 et 15 m. Voir `atelier/28-flou-net/CRITIQUE.md`.
+Et le comptage commence vers 10 s (chevaux lisibles), pas à 6 s : courbe de mise au point sur mesure (1,5 → 5 m en 12 s, 5 → 45 m en 3 s), voir pièce 28 v2.

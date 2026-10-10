@@ -1,0 +1,26 @@
+{
+ "linéaire (log distance)": {
+  "devine_s": 1.6,
+  "lisible_s": 4.4,
+  "fige_s": 6.8,
+  "temps_mort_final_s": 8.2
+ },
+ "lente puis rapide (t^2.5)": {
+  "devine_s": 6.1,
+  "lisible_s": 9.2,
+  "fige_s": 11.0,
+  "temps_mort_final_s": 4.0
+ },
+ "rapide puis pose (1-(1-t)^2.5)": {
+  "devine_s": 0.7,
+  "lisible_s": 2.0,
+  "fige_s": 3.2,
+  "temps_mort_final_s": 11.8
+ },
+ "sur mesure : 1,5→5 m en 12 s puis 5→45 m en 3 s": {
+  "devine_s": 3.6,
+  "lisible_s": 10.0,
+  "fige_s": 12.5,
+  "temps_mort_final_s": 2.5
+ }
+}

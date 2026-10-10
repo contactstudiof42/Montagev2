@@ -15,3 +15,15 @@ Commandes : `blender -b -P atelier/28-flou-net/scene.py -- atelier/rendus/28 1 -
 ## Ce qui change dans l'examen n°12
 - Départ de la mise au point vers 1,5 m (pas sur la vitre), et la vitre reste dans le cadre en voile : elle dit « train » sans un plan de plus.
 - Le flou ne se fait pas en post : si l'optique ne suffit pas au montage, partir de la prise nette et **défocaliser avec un flou de lentille à profondeur** (carte de profondeur, bokeh en disque), jamais un gaussien.
+
+## v2 — la bascule dans le temps (40 mises au point de 1,5 à 45 m, espacées en log ; Cycles 12 échantillons, 97 s pour les 40)
+Fichiers : `v2-bascule.png` (10 des 40 images recadrées sur les chevaux, avec la distance et r), `v2-lisibilite.json`, `v2-courbes.json`.
+- **Mesure à l'échelle de l'objet** (corrige la faute de v1) : corrélation entre l'image et la plaque nette, sur la zone des chevaux réduite au quart (on compare des formes, plus des pixels). Seuils **calibrés à l'œil sur la bande** : r ≈ 0,85 = « des animaux » (silhouette devinée), r ≈ 0,95 = « des chevaux » (lisible), r ≥ 0,99 = plus aucun changement visible.
+- **Constat** : tout le changement perceptible se joue entre **1,5 et ~5-8 m** (35 % de la course en log distance). Au-delà, la mise au point bouge encore mais l'image ne change plus.
+- **Trois courbes classiques sur 15 s** (moment où l'on devine / où c'est lisible / temps mort final où rien ne change) :
+  - linéaire : 1,6 s / 4,4 s / **8,2 s de temps mort** ;
+  - rapide puis pose (le geste naturel d'un pointeur, ease-out) : 0,7 s / 2,0 s / **11,8 s de temps mort** : la révélation est finie avant que le spectateur ait compris qu'il regardait quelque chose ;
+  - lente puis rapide (ease-in) : 6,1 s / 9,2 s / 4 s.
+  - **sur mesure** (1,5 → 5 m en 12 s, puis 5 → 45 m en 3 s) : **3,6 s / 10,0 s / 2,5 s** : on devine tôt, on voit tard, et les 2,5 s restantes servent à compter.
+- **Leçon** : une bascule de point se dessine sur la **plage perceptive** (là où l'objet passe de silhouette à lisible), pas sur la distance. Sur un moteur de mise au point, programmer la courbe en conséquence (la majeure partie de la durée sur 1,5-5 m), et vérifier sur une bande de netteté avant le tournage. Le geste « naturel » d'un pointeur (rapide puis pose) est exactement l'inverse de ce que veut une révélation lente.
+- **Correction de l'examen n°12** : le comptage commence quand les chevaux sont lisibles, soit vers 10 s, pas à 6 s ; la seule coupe (17 s) peut rester.
