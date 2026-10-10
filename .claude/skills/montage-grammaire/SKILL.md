@@ -22,6 +22,8 @@ La grammaire sert à une chose : que le spectateur **ne se pose pas de question 
 
 ## Règle des 180°
 **[TESTÉ EN LABO, session 7]** (`labo/grammaire/RESULTATS.md`, planche `axe180-planche.png`) : deux personnages Blender face à face, caméras des deux côtés de la ligne. Bon côté : A regarde à droite, B à gauche (ils se parlent). Axe franchi : A regarde **aussi à gauche**, comme s'ils parlaient à un tiers. En amorce, l'erreur se voit deux fois (l'épaule de l'autre saute de bord). **Contrôle automatisable** : projeter tête et direction du regard dans le cadre ; en champ / contrechamp, les signes doivent être opposés.
+
+**Casser l'axe avec un sens** [TESTÉ EN ATELIER, session 8, `atelier/11-dialogue/`, v4 = référence] : franchir pour **tous les plans à la fois** ne crée qu'**un seul saut de regard**, à la jointure ; le plan suivant établit un nouvel axe cohérent. Placé sur l'image où le rapport de force bascule, le saut devient un choc spatial qui double le choc dramatique. Ce qui en fait un sens et pas une erreur : (1) il est complet (pas d'aller-retour) ; (2) **un plan large du nouveau côté arrive tout de suite** (2e plan après le saut), pas en conclusion ; (3) **le fond change** : chaque côté de l'axe montre un autre décor (mur éclairé / noir), donc choisir le côté = choisir à qui appartient le monde de la scène (à préparer au tournage). Coupe franche pour un renversement brutal ; travelling qui traverse l'axe pour une bascule lente (le mouvement explique, la coupe fait subir). Finir sur le personnage qui a perdu la scène.
 Dans une scène, une ligne imaginaire relie les deux personnages (ou un personnage et ce qu'il regarde, ou la direction d'un mouvement). Tant que la caméra reste d'un même côté, les regards se répondent (l'un regarde à gauche, l'autre à droite). Franchir la ligne inverse les directions : le spectateur croit qu'ils regardent dans la même direction.
 **Pour la franchir proprement** : un plan dans l'axe (sur la ligne), un mouvement de caméra visible qui la traverse, un personnage qui se déplace, ou un plan large qui redéfinit l'espace.
 **La casser volontairement** : signifier un basculement de rapport de force, un malaise (Kubrick, Ozu qui l'ignore systématiquement : la constance en fait un style).
@@ -45,5 +47,5 @@ Dans une scène, une ligne imaginaire relie les deux personnages (ou un personna
 - Niveaux, loudness et livraison : `montage-loudness-livraison`.
 
 ## À faire
-- Atelier : une même scène de dialogue (Blender, deux silhouettes) montée en respectant puis en cassant les 180° ; critique. (Labo de mesure fait en session 7 ; reste la scène montée, l'aire de regard, la règle des 30 % et le franchissement propre par travelling.)
+- Reste après l'atelier 11 : l'aire de regard, la règle des 30 %, un vrai visage (phase 2 ou personnage articulé).
 - Vérifier les conventions chiffrées (30 % de variation de valeur, durées de J-cut) par des sources de monteurs et le mettre à jour.
