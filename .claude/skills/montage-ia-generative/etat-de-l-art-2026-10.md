@@ -351,3 +351,35 @@ Veo / Flow, Omni, Runway (dernière entrée 02/10), Luma, Hailuo, Wan, LTX, Huny
 - **Festival Higgsfield** : bon baromètre de l'esthétique « tout IA » de 2026. Le regarder comme on regarde une banque d'images, pour repérer les **clichés** à fuir (travellings flottants, visages lisses, lumière de pub). L'exclusivité d'un outil dit aussi qu'un film primé là n'est pas une preuve de fiabilité en production.
 - **Seedance 1.5 Pro retiré le 11/11** : un projet qui doit être regénéré à l'identique (retouche client) ne pourra plus l'être. Archiver les rushes IA bruts et noter modèle, version et prompt dans le dossier projet.
 - **Suno, accusation de « stream ripping »** : renforce la règle maison : pas de Suno sur une pub ou une diffusion TV sans clause écrite.
+
+---
+
+## Veille du 2026-10-10 soir (session 21)
+
+Fenêtre : 08/10 → 10/10/2026 (~17h30 UTC), troisième passage du jour. WebSearch standard et étendu, WebFetch des changelogs Higgsfield, Runway, Gemini API, ElevenLabs. Rien testé. Sources : `sources/ia-generative-2026-10-10.md`, section « Veille session 21 ».
+
+**Bilan : rien de neuf depuis la session 20.** Aucun nouveau modèle vidéo, image, voix, musique, upscale, interpolation ou détourage trouvé. Deux rattrapages audio (antérieurs) seulement.
+
+### Constats datés
+| Date | Fait | Statut |
+|---|---|---|
+| 10/10/2026 | **Kling 4.0 complet : toujours pas sorti** ; toujours « octobre », sans jour, une seule source tierce. | [SOURCÉ] off. changelogs Higgsfield et Runway (consultés 10/10 soir) ; sec. atlascloud. |
+| 08/10/2026 | Higgsfield : dernière entrée = Katana + vote du festival. **Aucune entrée les 09 et 10/10.** | [SOURCÉ] off. changelog Higgsfield. |
+| 02/10/2026 | Runway : dernière entrée toujours le 02/10. | [SOURCÉ] off. runway.com/changelog. |
+| 08/10/2026 | Gemini API : page mise à jour le 09/10 **sans nouvelle entrée** ; Veo reste en 3.1 ; NB2 toujours sans date d'arrêt. | [SOURCÉ] off. ai.google.dev changelog. |
+| 05/10/2026 | ElevenLabs : rien après le 05/10. | [SOURCÉ] off. elevenlabs.io/docs/changelog. |
+
+### Rattrapages (antérieurs, absents du fichier)
+- **ElevenLabs Music v2** (27/05/2026) : changement de genre en cours de morceau, composition section par section, **régénération d'un passage** (inpainting) ; accords Believe, Kobalt, Merlin. **Music v2.5** dans l'API le 14/09/2026. [SOURCÉ] sec. decrypt.co (27/05/2026) ; off. elevenlabs.io/docs/changelog (14/09).
+- **Stable Audio 3.0** (Stability AI, 05/2026) : 4 modèles, jusqu'à ~6 min 20 s (Medium) ; **poids ouverts** pour Small et Medium (Hugging Face) ; Large en API réservé aux structures > 1 M$ de CA ; présenté comme entraîné sous licence (UMG, Warner). [SOURCÉ] sec. decrypt.co (27/05/2026). CGU non lues : [À VÉRIFIER].
+
+### Rapporté, non retenu
+- « MiniMax a publié des poids ouverts solides » : un seul récapitulatif de blog, sans modèle nommé. Pollo AI (09/10) : cas client OpenAI, pas un modèle.
+
+### Rien de neuf (08 → 10/10)
+Veo / Flow, Omni, Sora (fermé), Runway, Luma, Hailuo, Wan, LTX, Seedance, Pika, Midjourney (pas de vidéo V2), Firefly / Topaz (rien avant MAX), Meta Muse Video (toujours non disponible), ElevenLabs, Suno, Udio, Higgsfield (modèles).
+
+### Ce que ça change pour le monteur / motion designer
+- **Rien à changer dans les devis** : mêmes recommandations que la session 20 ; Kling 4.0 reste une promesse.
+- **Music v2 / v2.5, régénérer un passage** : utile pour **caler une musique sur le montage** (refaire seulement les 8 mesures qui tombent mal sur une coupe) au lieu de régénérer tout le morceau. Cliché à éviter : la musique « générique bande-annonce » qui monte à chaque plan ; garder des respirations.
+- **Stable Audio 3.0, poids ouverts** : seule piste musique **en local** (pas de crédits, pas d'envoi de rushes). Mais relire la licence avant toute diffusion commerciale ; le label « entraîné sous licence » ne vaut pas licence d'usage.

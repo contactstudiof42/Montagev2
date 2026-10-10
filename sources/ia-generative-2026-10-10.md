@@ -189,3 +189,19 @@ Recherches du **2026-10-10** (WebSearch standard et étendu, WebFetch). Fenêtre
 | Voxbooster, récap Q4 2026 | https://voxbooster.com/blog/voice-changer-industry-q4-2026-recap/ | 2026-10 | via recherche | Non retenu (versions périmées) |
 
 Recherches sans résultat neuf dans la fenêtre : Veo / Flow, Luma, LTX, HunyuanVideo, Wan, Midjourney, Firefly, Topaz, SAM, Suno, Udio, xAI.
+
+## Veille session 21
+Recherches du **2026-10-10 au soir** (WebSearch standard et étendu, WebFetch). Fenêtre visée : 08/10 → 10/10/2026.
+
+| Source | URL | Date | Accès | Ce qu'elle confirme |
+|---|---|---|---|---|
+| Higgsfield, changelog (off.) | https://higgsfield.ai/creator-hub/changelog | consulté 2026-10-10 soir | ouverte | Dernière entrée 08/10 (Katana, vote festival) ; pas de Kling 4.0 |
+| Runway, changelog (off.) | https://runway.com/changelog | consulté 2026-10-10 soir | ouverte | Dernière entrée 02/10/2026 |
+| Gemini API, changelog (off.) | https://ai.google.dev/gemini-api/docs/changelog | consulté 2026-10-10 soir | ouverte | Dernière entrée 08/10 ; page mise à jour 09/10 sans entrée ; Veo 3.1 |
+| ElevenLabs, changelog (off.) | https://elevenlabs.io/docs/changelog | consulté 2026-10-10 soir | ouverte | Rien après 05/10 ; Music v2.5 API 14/09 |
+| Atlas Cloud, Kling 4.0 | https://www.atlascloud.ai/nl/blog/tips/kling-4-flash-vs-full | 2026-09/10 | via recherche | Complet « en octobre », sans jour (source unique) |
+| Decrypt, ElevenLabs Music v2 et Stable Audio 3.0 | https://decrypt.co/369237/elevenlabs-stability-ai-new-music-models | 2026-05-27 | ouverte | Music v2 (inpainting, licences) ; Stable Audio 3.0 (poids ouverts, 6 min 20) |
+| Rio Rundown, AI news 09/10 | https://riorundown.substack.com/p/trending-ai-news-oct-09-2026 | 2026-10-09 | ouverte | Aucun modèle média neuf (Pollo AI seulement) |
+| Mean CEO, tendances vidéo octobre | https://blog.mean.ceo/ai-video-generation-trends-october-2026/ | 2026-10 | via recherche | Contexte seulement ; « MiniMax poids ouverts » non retenu |
+
+Recherches sans résultat neuf dans la fenêtre : Veo 4, Luma, Hailuo, LTX, Wan, Midjourney vidéo, Firefly, Suno, Udio, Meta Muse Video.
