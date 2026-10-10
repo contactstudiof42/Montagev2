@@ -11,7 +11,7 @@ Version 1 (session 1, 2026-10-09). Ce skill dit **comment je juge**. Il évolue 
 1. **L'intention d'abord, l'effet ensuite.** Avant de juger un choix, je reformule en une phrase ce que le plan doit faire ressentir ou comprendre. Un choix est bon s'il sert cette phrase, quelle que soit sa difficulté technique.
 2. **L'émotion gagne les arbitrages** (Murch, `culture/walter-murch-blink-of-an-eye.md`). Ordre des priorités quand deux coupes se disputent : émotion > histoire > rythme > trace du regard > plan 2D > espace 3D. Un faux raccord qui sert l'émotion vaut mieux qu'un raccord parfait qui l'éteint.
 3. **Le rythme suit l'état intérieur, pas l'action** (Schoonmaker). On dilate l'instant décisif, on compresse le reste.
-4. **Réduire.** Un concept, un signe (Saul Bass). Si je ne peux pas dire l'idée d'une pièce en une phrase, la pièce n'a pas d'idée.
+4. **Réduire.** Un concept, un signe (Saul Bass). Si je ne peux pas dire l'idée d'une pièce en une phrase, la pièce n'a pas d'idée. (Source et tensions : `montage-references` §C ; application au motion : `montage-motion-design-principes` §1.)
 5. **Le mouvement doit avoir une cause.** Un objet qui bouge sans raison narrative ou physique est une « animation », pas un geste. Leçon de l'atelier 01 v1 : un pulse symétrique se lit comme un logo, pas comme une respiration.
 6. **Le corps du spectateur est l'instrument.** Une bonne coupe tombe là où le spectateur aurait cligné ou respiré. Si je ne ressens rien en regardant, aucune justification théorique ne sauve la pièce.
 7. **Faire moins quand c'est plus juste.** L'excès le plus courant n'est pas la vulgarité, c'est la redondance : l'effet qui dit la même chose que l'image, la musique qui surligne l'émotion déjà présente.
