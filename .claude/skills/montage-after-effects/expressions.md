@@ -180,3 +180,16 @@ var dur = 8 * thisComp.frameDuration;         // durée de la montée d'une lett
 var t0 = inPoint + (textIndex - 1) * d;
 easeOut(time, t0, t0 + dur, 100, 0);          // 100 % = propriété de l'animateur appliquée, 0 % = au repos
 ```
+
+
+## Bercement qui ralentit après un événement (session 11) — [TESTÉ EN LABO : logique et syntaxe sous Node ; AE en phase 2]
+**Quand** : un geste répété qui doit s'apaiser à cause de quelque chose (un appel, une voix, une note) : bercement, respiration, balancier. **Pourquoi** : le calme se lit dans **l'allongement de la période** plus que dans la baisse d'amplitude ; les deux ensemble, sans à-coup de phase. Marqueur n°1 du calque = l'événement.
+```js
+var amp0 = 5, amp1 = 1.2, P0 = 1.6, P1 = 3.2, d = 4;   // degrés, secondes ; d = durée de l'apaisement
+var t0 = (marker.numKeys > 0) ? marker.key(1).time : 1e9;
+var k = clamp((time - t0) / d, 0, 1), a = (P1 - P0) / d, ph;
+if (time <= t0) ph = time / P0;                       // phase intégrée : ∫ dt / P(t)
+else ph = t0 / P0 + Math.log((P0 + a * Math.min(time - t0, d)) / P0) / a + Math.max(0, time - t0 - d) / P1;
+value + ease(k, 0, 1, amp0, amp1) * Math.sin(2 * Math.PI * ph);
+```
+Ne jamais écrire `Math.sin(2*Math.PI*time/P)` avec `P` qui varie (voir Pièges). Si P0 = P1, remplacer le terme en log par `(Math.min(time - t0, d)) / P0`.
