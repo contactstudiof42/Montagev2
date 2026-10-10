@@ -131,3 +131,9 @@ Le serveur `HIGGSFIELD_MCP` est toujours listé, **non appelé** (consigne phase
 
 ## 62. Pièce 20 v8 en mouvement (session 16, `atelier/20-la-lumiere-ecrit/CRITIQUE.md`)
 - Regarder `atelier/rendus/20/v8.mp4` contre `v8-uniforme.mp4` (régénérables par `v8.py`, 40 s chacun) sur un téléphone : le témoin uniforme se lit-il comme un compteur ? les paquets de 3 noms (0,7 s) sont-ils repérés ? le brun du trou lit-il « noir » en luminosité basse ? Carton-liste : chronométrer « trouvez X » à 4 s puis 6 s.
+
+## 63. YouTube : promesse, chapitres, écran de fin, miniatures (session 17, `montage-youtube`, `labo/youtube/`)
+- Sur une vidéo de test non répertoriée **de l'utilisateur** (jamais une chaîne client sans accord) : coller la description produite et validée par `chapitres.py` : les chapitres apparaissent-ils ? Un chapitre de 9 s est-il refusé comme l'aide l'annonce ?
+- Écran de fin : réserver la zone libre dans le montage Premiere (gabarit 16:9, 4 éléments) et vérifier qu'aucun texte n'est caché.
+- Miniatures : comparer à l'œil les cas du banc (`labo/youtube/RESULTATS.md`) aux tailles réelles de l'interface (suggestions, accueil, recherche, téléviseur) ; relever ces tailles en pixels CSS (mes valeurs 168 / 246 / 360 px viennent de la mémoire).
+- Pièce 21 : regarder `atelier/rendus/21/A.mp4`, `B2.mp4`, `C.mp4` avec le son : l'avance de 0,4-0,6 s de C se sent-elle comme une contradiction ? Reconstruire B v2 dans After Effects (calques de forme, secteurs animés, trim paths) pour vérifier que la transformation tient avec les outils natifs (noms d'outils observés : `ae_add_shape_layer`, `ae_set_keyframes`, `ae_export_contact_sheet` ; à décrire d'abord avec `ae_describe_tool`).
