@@ -35,11 +35,17 @@ for k, (x, y, z) in enumerate(fen[:nfen]):
     boite((x, y, z), (0.05, 1.2, 1.4), mat(f"fen{k}", (0, 0, 0), 0.5, (1.0, 0.75, 0.45), 3))
 # le personnage : silhouette sur le trottoir gauche, source ambre basse tenue à sa droite (vers la rue)
 peau = mat("veste", (0.12, 0.12, 0.13), 0.9)
-bpy.ops.mesh.primitive_cylinder_add(radius=0.22, depth=1.2, location=(-3.2, 16, 0.9)); bpy.context.object.data.materials.append(peau)
-bpy.ops.mesh.primitive_uv_sphere_add(radius=0.14, location=(-3.2, 16, 1.66)); bpy.context.object.data.materials.append(mat("tete", (0.4, 0.3, 0.25), 0.6))
+# silhouette (v3) : jambes, torse étroit, épaules, tête, un bras qui tient la source vers la rue
+def cyl(r, d, loc, rot=(0, 0, 0), m=None):
+    bpy.ops.mesh.primitive_cylinder_add(radius=r, depth=d, location=loc, rotation=rot); bpy.context.object.data.materials.append(m or peau)
+for dx in (-0.09, 0.09): cyl(0.075, 0.85, (-3.2 + dx, 16, 0.43))
+cyl(0.19, 0.62, (-3.2, 16, 1.17)); cyl(0.06, 0.5, (-3.2, 16, 1.45), (0, math.radians(90), 0))   # torse, épaules
+cyl(0.05, 0.55, (-3.05, 15.9, 1.08), (0, math.radians(-25), 0))                                   # bras vers la rue
+bpy.ops.mesh.primitive_uv_sphere_add(radius=0.12, location=(-3.2, 16, 1.66)); bpy.context.object.data.materials.append(mat("tete", (0.4, 0.3, 0.25), 0.6))
 bpy.ops.object.light_add(type="POINT", location=(-2.85, 15.8, 0.85)); A = bpy.context.object
 A.data.energy = float(os.environ.get("AMBRE", "25")); A.data.color = (1.0, 0.6, 0.3); A.data.shadow_soft_size = 0.1
 # caméra : depuis une passerelle, en hauteur, regard dans l'axe de la rue
-bpy.ops.object.camera_add(location=(0.5, -6, 7.5)); c = bpy.context.object; c.data.lens = 32
-c.rotation_euler = (mathutils.Vector((0, 30, 0.5)) - c.location).to_track_quat("-Z", "Y").to_euler(); sc.camera = c
+cam = (0.5, -6, 7.5) if not os.environ.get("SERRE") else (-0.5, 4, 4.0)   # v3 : plus bas et plus près, le personnage au tiers
+bpy.ops.object.camera_add(location=cam); c = bpy.context.object; c.data.lens = float(os.environ.get("LENS", "32"))
+c.rotation_euler = (mathutils.Vector((0, 30, 0.5) if not os.environ.get("SERRE") else (-0.8, 24, 1.2)) - c.location).to_track_quat("-Z", "Y").to_euler(); sc.camera = c
 bpy.ops.render.render(write_still=True)

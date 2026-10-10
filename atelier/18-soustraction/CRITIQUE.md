@@ -31,3 +31,9 @@ Chaque étape retire **un lampadaire proche du personnage** (source contrôlée,
 2. **Éteindre autour du sujet d'abord** : le sujet gagne la saillance que la ville perd (`mx5`, `pr5`).
 3. **Le plus lisible est le plus cher en post** (lumière portée) → partager : sources proches **contrôlées et éteintes réellement**, sources lointaines effacées en post.
 4. **Une soustraction a besoin d'une courbe** (marches puis chute), pas d'un escalier régulier.
+
+## v3 — `v3-planche.png` : cadrage serré (caméra plus basse et plus proche, 35 mm), silhouette articulée
+- Le personnage se lit enfin comme **quelqu'un** (jambes, épaules, un bras qui tient la source) dans les quatre états ; son ambre éclaire son propre corps : critère 2 tenu.
+- Mais avec le **même ordre mixte**, la courbe change : 45 → 31 → 15 → 7 (−32 %, −52 %, −53 %) : la chute du pont a disparu, remplacée par un escalier.
+- Mesure de la **part de chaque source** depuis cette caméra (`part.py` : chaque lampadaire rendu seul, moins le fond) : lampadaire 0 = **2 %** (il est au bord du cadre, derrière la caméra), lampadaires 1 et 2 = **41 % et 34 %**, les quatre lointains 2-13 %. Le lampadaire que j'avais gardé « pour la chute » n'éclaire plus rien dans ce cadre ; c'est le voisin du personnage qui porte la lumière.
+- **Leçon** : la part d'une source dépend du cadre, pas de la rue. **Mesurer la part de chaque source depuis la caméra** (au plateau : les allumer une par une devant le moniteur) avant de décider l'ordre d'extinction ; garder pour le moment montré celle qui porte le plus (ici le lampadaire 1, 41 %), et retirer d'abord les petites parts **par paires** pour que chaque étape dépasse le seuil de lecture.

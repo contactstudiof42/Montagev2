@@ -2,18 +2,17 @@
 
 _Lire en premier. Mis à jour à chaque fin de session._
 
-## Où on en est (après la session 11, 2026-10-10 08:56 UTC)
-- **Skills (21)** : session 11 : `montage-regard` (règles 15-17), `montage-references` (fable qui contient la réponse), `montage-couleur-et-intention` (Willis ; Young / van Hoytema), `montage-workflows` (recadrages, nests, stéréo dans l'échange), `montage-after-effects` (bercement à phase intégrée + piège), `montage-preparation-tournage-vfx` (écrans dans le champ, 5 bis), `montage-direction-artistique` (maquetter la direction qui fait peur), `montage-kinetic-editing` (3f Kolder, flou aux bords d'un plan), `montage-resolve` (4 bis Fusion et Fairlight), `montage-expert` (sommaire).
-- **Culture** : 46 fiches (nouvelles : `gordon-willis-le-noir.md`, `bradford-young-van-hoytema-lumiere-basse.md`, `sam-kolder-travel-edit.md`) ; source `resolve-fusion-fairlight-2026-10.md`.
-- **Atelier** : **16 v4-v5** (v5 réf., pièce close) ; **17 « 3 h 12, dans le noir »** v1-v4 (`atelier/17-dans-le-noir/`, v3 = réf. ; `planche.py`, `mouvement.py`).
-- **Labo** : `labo/workflows/recadrages/` (sous-agent, rejoué à la main : identique) ; `labo/ae-expressions/bercement/test.js` ; `labo/kinetic/whip/` (flou aux bords ; mesure de direction ratée → BACKLOG 66).
-- **Examens** : n°1 13, n°2 14, n°3 15, n°4 14, n°5 14, n°6 15 /20. **N°7 en session 12 ou 13** (BACKLOG 64 : brief de nuit / basse lumière).
+## Où on en est (après la session 12, 2026-10-10 ~10:10 UTC)
+- **Skills (21)** : session 12 : `montage-direction-artistique` (repérage avant tournage, « recommander ce que je sais faire », clip : corps et texte, référence qui doit agir), `montage-preparation-tournage-vfx` (effacer une source = effacer sa lumière portée ; partage sources contrôlées / effacement lointain, testé en atelier 18), `montage-loudness-livraison` (noir protégé : 10 bits, pas de grain par défaut, jamais juger sur image fixe), `montage-regard` (règle 18 : l'œil lit l'énergie, pas le nombre de sources), `montage-couleur-et-intention` (atelier 18).
+- **Culture** : 46 fiches (+ Natasha Braier si le sous-agent de la session 12 a livré : voir `culture/natasha-braier-lumiere-de-nuit.md`).
+- **Atelier** : **18 « Soustraction »** v1-v3 (`atelier/18-soustraction/`, v2 = ordre mixte réf., v3 = cadrage serré, personnage lisible) ; 17 « dans le noir » (v3 réf.).
+- **Labo** : `labo/encodage/noir-protege/` (rendu 16 bits de la pièce 17 ; `mesure.py`, `PANO=1`).
+- **Examens** : n°1 13, n°2 14, n°3 15, n°4 14, n°5 14, n°6 15, **n°7 15** /20. **N°8 en session 15 ou 16.**
 
-## Reprendre ici (session 12)
+## Reprendre ici (session 13)
 1. Démarrage normal. Blender : `curl -sSL -o blender.tar.xz https://download.blender.org/release/Blender4.2/blender-4.2.3-linux-x64.tar.xz && tar xf blender.tar.xz` dans le scratchpad (30 s). `python3 -m pip install -q numpy pillow scipy colour-science opentimelineio otio-fcp-adapter otio-cmx3600-adapter`.
-2. Priorités : BACKLOG 64 (examen n°7), 67 (pièce 17 v6 : contrechamp, bébé lisible), 66 (flot optique à la coupe), 51 (teaser 15 s), 62 suite (Natasha Braier), 42 suite (`montage-references` en annexes).
-3. Pièges : **`pkill -f motif` / `pgrep -f motif` + kill tuent aussi le shell** dont la ligne de commande contient le motif (session 11 : exit 144) → tuer par PID via `ps aux | grep "[b]lender -b"`. Rendus longs : `nohup … &` puis attendre avec une boucle `while ps …`. Animation Cycles 384×216, 12 échantillons : ~3,7 s/image seule, ~2× plus lente à deux en parallèle → `STEP=2` (une image sur deux) pour les aperçus. Plans immobiles = une image. Wikimedia renvoie **HTTP 429** : passer par Internet Archive. **Jamais d'e-mail dans un User-Agent.** Vérifier qu'un nom inventé ne recoupe pas une marque réelle.
-4. Sous-agents : 2 en session 11 (recadrages / nests / audio : rejoué à la main, identique ; recherche Fusion / Fairlight : sources datées, rien d'exécutable).
+2. Priorités : BACKLOG 70 (diriger l'artiste et monter le texte : faiblesse de l'examen n°7), 69 (extinction animée), 72 (plan-séquence : renverser mon tic), 66 (flot optique à la coupe), 67 (pièce 17 v6), 51 (teaser 15 s), 71 (flash_check à 138 BPM).
+3. Pièges : **`pkill -f motif` tue aussi le shell** → tuer par PID via `ps aux | grep "[b]lender -b"`. **Plage limitée** : en `yuv*` / `gray16` lus par ffmpeg, le noir vaut 16 (×257), pas 0 (session 12 : masque faux pendant 2 essais). **PIL lit un PNG RGBA 16 bits en 8 bits** : lire par ffmpeg (`-pix_fmt gray16le`). Rendus longs : `nohup … &` + boucle d'attente. Cycles 640×360, 48 échantillons, rue simple : ~25 s/image. Wikimedia → HTTP 429 : passer par Internet Archive. Jamais d'e-mail dans un User-Agent. Vérifier qu'un nom inventé ne recoupe pas une marque réelle.
 
 ## Environnement constaté
 - ffmpeg 6.1.1, Python 3, Node 22 préinstallés (numpy à installer en session 6). `apt-get update` puis `apt-get install libegl1` possible (10 s). Blender 4.2.3 LTS : téléchargement + décompression 30 s.
@@ -21,6 +20,7 @@ _Lire en premier. Mis à jour à chaque fin de session._
 - Un serveur MCP nommé `HIGGSFIELD_MCP` est listé dans l'environnement : non appelé (consigne phase 1). Noms observés dans `PLAN-TESTS-MCP.md`.
 
 ## Historique
+- Session 12 — 2026-10-10 09:29 → ~10:15 UTC : examen n°7 « Heure creuse » (15/20), labo noir protégé (pièce 17 en 16 bits, fixe / panoramique), pièce 18 « Soustraction » v1-v3, fiche Natasha Braier (sous-agent) ; PLAN-TESTS 52-53.
 - Session 11 — 2026-10-10 08:30 → 08:56 UTC : pièce 16 v4, pièce 17 « dans le noir » (v1-v4), fiches Willis et Young / van Hoytema, labos recadrages / nests / audio dans l'échange (sous-agent) et bercement AE (phase intégrée) ; écrans dans le champ ; PLAN-TESTS 48.
 - Session 10 — 2026-10-10 07:30 → ~07:55 UTC : examen n°6 (15/20), pièce 12 v8, pièce 15 « Deux sonneries de trop », fiche John Lewis, labos vitesses dans l'échange + vérificateur d'EDL, interpolation sur vrais plans CC0 (sous-agent) ; PLAN-TESTS 46-47.
 - Session 9 — 2026-10-10 06:29 → 07:05 UTC : pièces 12 (v1-v7), 13 (v1-v4), 14 (A/B) ; labos interpolation (minterpolate, RIFE) et saillance (résidu spectral) ; fiches bande-annonce, Freeze Corleone ; PLAN-TESTS 43-45.

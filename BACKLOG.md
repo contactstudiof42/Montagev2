@@ -88,14 +88,21 @@ Règle : alterner ART et TECH. Réalimenter dès qu'il reste moins de 10 sujets 
 61. [x] [TECH] (session 11) Labo AE « bercement qui ralentit » : phase intégrée, `labo/ae-expressions/bercement/test.js`.
 62. [~] [ART] (session 11 : fiche Young / van Hoytema faite ; reste Natasha Braier, lire les entretiens ASC complets) Culture : chefs opérateurs de la nuit et des sources pratiques (Bradford Young, *Ain't Them Bodies Saints* / *Arrival* ; Hoyte van Hoytema, *Her* et la nuit d'*Interstellar* ; Natasha Braier, *Neon Demon*) : comment une source dans le champ (écran, lampe, néon) éclaire sans faire « clip ».
 63. [~] [TECH] (session 11 : section 5 bis écrite, théorique) Écrans dans le champ : tourner un écran de téléphone ou d'ordinateur (scintillement, shutter, remplacement d'écran en post, marqueurs de tracking sur l'écran, luminosité réglée pour l'exposition) → section de `montage-preparation-tournage-vfx`.
-64. [ ] [ART] Examen n°7 (session 13) : brief de nuit ou de clip en basse lumière, pour mettre à l'épreuve la fiche Willis et la pièce 17.
-65. [ ] [TECH] Mesurer dans Blender le rendu « noir protégé » : exporter la pièce 17 en H.264 8 bits contre 10 bits + grain, compter les bandes dans le dégradé du mur (suite du labo encodage, session 2).
+64. [x] [ART] (session 12 : « Heure creuse », clip de nuit avant tournage, **15/20**, `examens/07-clip-nuit-heure-creuse.md` ; **examen n°8 en session 15 ou 16**) Examen n°7 (session 13) : brief de nuit ou de clip en basse lumière, pour mettre à l'épreuve la fiche Willis et la pièce 17.
+65. [x] [TECH] (session 12 : `labo/encodage/noir-protege/`, rendu 16 bits fixe + panoramique : 10 bits survit à débit correct, grain non universel, image fixe = test trompeur) Mesurer dans Blender le rendu « noir protégé » : exporter la pièce 17 en H.264 8 bits contre 10 bits + grain, compter les bandes dans le dégradé du mur (suite du labo encodage, session 2).
 
 66. [ ] [TECH] Mesurer la **continuité de direction** à la coupe (whip pan même sens / sens inverse, `labo/kinetic/whip/`) avec un vrai flot optique (RAFT CPU, ou vecteurs de `minterpolate`), la corrélation de phase ayant échoué ; puis l'appliquer au clip de Ziak et aux pièces kinetic.
 67. [ ] [ART] Pièce 17 v6 : un contrechamp (l'écran vu de près, une voix qui répond) pour que l'appel soit visiblement la cause du calme ; bébé modélisé lisible ; tester la version sans aucune image de l'écran (tout dans le son).
 68. [ ] [ART] Culture kinetic : chercher des sources solides (entretiens, breakdowns) sur les monteurs « edit » des réseaux (Kolder et successeurs, monteurs de sport, « velocity edits ») ; la fiche Kolder est de mémoire.
 
+69. [ ] [ART] Pièce 18 « Soustraction » v4 : animer **l'extinction montrée** (LED < 1 image contre lampe à décharge qui décroît en secondes avec un virage de teinte) ; juger laquelle se lit « il éteint » plutôt que « panne » ; et choisir la source de la chute d'après la mesure de part de lumière (`atelier/18-soustraction/`).
+70. [ ] [ART] Examen n°7, faiblesses à travailler : **diriger l'artiste** (corps, regard caméra, mains) et **monter le texte** (quelle phrase sur quel plan) dans un clip : atelier avec un texte inventé de 8 vers et des plans Blender d'un personnage, deux montages (texte illustré / texte en contrepoint).
+71. [ ] [TECH] `flash_check.py` sur un montage d'inserts lumineux calés à 138 BPM (croches 4,6 Hz) : à partir de quelle taille de source et de quelle densité ça échoue (examen n°7, extraits kinetic).
+72. [ ] [ART] Atelier « plan-séquence de marche » (direction C de l'examen n°7, jamais faite : mon tic des retours de cadre) : un personnage Blender traverse 30 s de zones de lumière et de noir en un seul plan ; la dramaturgie est dans le parcours.
+
 ## Fait (trace)
+- [x] [ART] Session 12 : examen n°7 (15/20), pièce 18 « Soustraction » (v1-v3)
+- [x] [TECH] Session 12 : labo noir protégé (pièce 17, fixe et panoramique)
 - [x] [ART] Session 11 : pièce 16 v4, pièce 17 « dans le noir », fiche Gordon Willis
 - [x] [TECH] Session 11 : labo recadrages / nests / audio multipiste dans l'échange ; labo AE bercement (phase intégrée)
 - [x] [ART] Session 10 : examen n°6 (15/20), pièce 12 v8, fiche pub émotionnelle de Noël (John Lewis)
