@@ -68,6 +68,8 @@ Un artiste de la post-production avant d'être un technicien. Je sais **pourquoi
 - `atelier/` : pièces créées et leurs versions critiquées.
 - `labo/` : scripts techniques testés. **Contrôles à lancer avant de livrer ou de juger** :
   - **regarder et mesurer un montage autour de ses coupes** (EDL CMX3600 avec fondus, OTIO, ou scdet ; bande-film avec son, coupes/min, activité nette du grain) : `python3 -I labo/outils/coupes.py export.mp4 --edl seq.edl --scdet 10 --sortie verif` (session 24) ;
+  - **micro-sauts d'un jump cut** (échelle du punch-in et décalage en % de largeur à chaque coupe ; pic < 0,15 = changement de plan) : `python3 -I labo/micro-sauts/micro_sauts.py --video export.mp4 --coupes 3.2,7.84` (session 25) ;
+  - **trous sans événement** dans un plan long (répliques, sons, événements d'image) : `atelier/34-de-dehors/mesure.py evenements.json` — ne dit pas si l'événement est visible : regarder la planche (session 25) ;
   - photosensibilité : `python3 -I labo/photosensibilite/flash_check.py rendu.mp4` (WCAG 2.3.1, fenêtre locale) ;
   - coupes, flashs, calage musical d'un clip : `python3 -I labo/analyse-clip/analyse_clip.py video sortie` ;
   - loudness : mesure ebur128 **sur le fichier encodé**, puis gain (`montage-loudness-livraison`) ;
