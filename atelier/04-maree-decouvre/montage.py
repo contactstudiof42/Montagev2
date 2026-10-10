@@ -36,7 +36,7 @@ FONT = "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf"
 pas = max(1, n // 12)
 sel = "+".join(f"eq(n\\,{i * pas})" for i in range(12))
 subprocess.run(["ffmpeg", "-y", "-v", "error", "-i", out, "-vf",
-                f"select='{sel}',scale=240:135,drawtext=fontfile={FONT}:text='%{{n}}':fontsize=12:fontcolor=white:x=4:y=4,tile=4x3:padding=2",
+                f"drawtext=fontfile={FONT}:text='%{{n}}':fontsize=24:fontcolor=white:x=8:y=8,select='{sel}',scale=240:135,tile=4x3:padding=2",
                 "-frames:v", "1", "-update", "1", os.path.join(ICI, f"{V}-planche.png")], check=True)
 json.dump({"images": n, "duree_s": dur, "coupes": coupes, "pas_planche": pas}, open(os.path.join(ICI, f"{V}-mesures.json"), "w"))
 print(V, n, "images", coupes)
