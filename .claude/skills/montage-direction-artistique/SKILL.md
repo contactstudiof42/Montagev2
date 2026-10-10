@@ -32,6 +32,9 @@ Avant d'ouvrir `montage-references` ou `GOUTS.md`, écrire **une image qui n'app
 - **Faisabilité bloquante** *(ajout examen n°10, 4e récidive après n°3, 5, 6)* : avant les trois directions, écrire une case « **Ce qui doit exister pour que l'idée tienne** » (un tiers qui accepte, une archive, un lieu, une personne qui dort devant une caméra). Si l'idée en dépend, la direction est **conditionnelle** (le dire dans son nom) et **une direction sans cette dépendance est obligatoire**.
 - **Sponsor dans le sujet** *(ajout examen n°10 : matelas dans une vidéo sur le sommeil)* : l'intégration reste dans le registre habituel du créateur, séparée par une coupe franche et une lumière d'un autre temps ; jamais écrite dans la matière du film (pas de transition « et justement ») ; aucune affirmation du film ne touche le produit ; la placer après la première récompense, pas à une minute fixe.
 
+- **Test « mon propre système » symétrique** *(ajout examen n°12)* : l'appliquer aussi à la direction **recommandée**, pas seulement à celles qu'on écarte (examen n°12 : A écartée parce qu'elle recyclait l'atelier du jour, B recommandée alors qu'elle recyclait mes pièces de la semaine, « un seul plan où la lumière change »). Écrire la ressemblance dans la recommandation et la justifier par le sujet.
+- **Packshot pour un public âgé** *(ajout examen n°12)* : texte fixe (pas d'animation), corps ≥ 5 % de la hauteur, numéro de téléphone **seul** 3-4 s, un carton = une information.
+
 ## Étape 2 — Trois directions contrastées
 Contrastées = elles diffèrent sur **l'axe principal** (pas trois variantes de la même idée). **Au moins une direction doit changer de registre** (ironique, fictionnel, graphique), pas seulement de rythme : à l'examen n°1, deux pistes sur trois étaient réalistes, nocturnes et domestiques. Axes utiles : retenue / spectaculaire ; réel / graphique ; lent / rapide ; chaud / froid ; sérieux / ironique.
 Pour chaque direction, fiche fixe :
