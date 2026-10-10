@@ -5,7 +5,7 @@ description: Génération vidéo ou image par IA, choisir un modèle (Veo, Sora,
 
 # IA générative en post-production : le regard d'abord
 
-Version 1 (2026-10-09). Rédigé par un DA de post-prod, pas par un fan de technologie. **Rien ici n'a été testé** : tout ce qui touche aux outils vient de sources web 2025-2026 citées dans `etat-de-l-art-2026-10.md` et `/sources/ia-generative-2026-10.md`. Ce marché change tous les trois mois : **toute info outil de plus de 6 mois est à revérifier**.
+Version 1 (2026-10-09), faits outils mis à jour le **2026-10-10**. Rédigé par un DA de post-prod, pas par un fan de technologie. **Rien ici n'a été testé** : tout ce qui touche aux outils vient de sources web 2025-2026 citées dans `etat-de-l-art-2026-10.md` et `/sources/ia-generative-2026-10-10.md`. Ce marché change chaque mois : **toute info outil de plus de 3 mois est à revérifier**.
 
 ## 1. Ce que l'IA permet vraiment, artistiquement
 
@@ -36,7 +36,8 @@ Version 1 (2026-10-09). Rédigé par un DA de post-prod, pas par un fan de techn
 - **Une contrainte d'abord** : une palette, une focale, un seul type de mouvement caméra (ou caméra fixe), un format. Moins on laisse de choix au modèle, moins ça fait IA.
 - **Une intention par plan** : savoir ce que le plan doit faire ressentir avant de rédiger le prompt. « Beau » n'est pas une intention.
 - **L'IA pour UN plan précis, pas pour tout** : le plan impossible, le raccord manquant. Le reste est tourné. Un film entièrement généré accumule les clichés.
-- **La cohérence de personnage** : partir d'images de référence (personnage, décor) et garder les mêmes d'un plan à l'autre. Les outils 2026 en font un argument (Veo 3.1 « Ingredients », Kling 3.0 multi-plans, Aleph 2.0 multi-shot selon les sources). C'est à vérifier plan par plan.
+- **La cohérence de personnage** : partir d'images de référence (personnage, décor) et garder les mêmes d'un plan à l'autre. Les outils 2026 en font un argument (Veo 3.1 « Ingredients », Kling 4.0 et ses références multiples, LTX-2.5 multi-plans en une passe, Aleph 2.0 qui propage une retouche). C'est à vérifier plan par plan.
+- **Plans de 30 s possibles** (Seedance 2.5, Kling 4.0) : ce n'est pas une raison de les garder longs. La dérive grandit avec la durée.
 - **Un montage qui cache les faiblesses** : couper AVANT que le morphing commence (les 2-3 premières secondes sont souvent les meilleures), garder des plans courts, couper sur le mouvement, placer le plan IA entre deux plans réels forts, éviter de le faire durer.
 - **Un traitement unificateur** : même grain argentique sur tout, même LUT, même halation, même légère aberration. Remettre du défaut (flou de bougé, instabilité caméra réelle ajoutée en post) pour casser la perfection.
 - **Le son réel** : du bruitage, une vraie ambiance et une voix humaine ancrent un plan généré mieux que n'importe quel upscale.
@@ -51,43 +52,37 @@ Version 1 (2026-10-09). Rédigé par un DA de post-prod, pas par un fan de techn
 - **Une marque dont l'image repose sur l'authenticité ou le « fait main »** : le contrecoup est réel (Coca-Cola 2024 puis 2025, 32 % de conversations négatives selon CARMA, via TechRadar).
 - **Quand le temps de génération et de tri dépasse le tournage d'un insert.** Trillo a gardé 55 clips sur 700 générés (2024).
 
-## 5. État de l'art (au 2026-10-09)
+## 5. État de l'art (au 2026-10-10)
 
-Détail, nuances et sources dans **`etat-de-l-art-2026-10.md`** (même dossier). « Secondaire » = blog ou agrégateur, sans confirmation officielle.
+Détail, sources datées et liste de ce qui était faux dans la version précédente : **`etat-de-l-art-2026-10.md`** (même dossier), en tête le tableau « Quel outil pour quel besoin ». « Sec. » = presse ou revendeur ; « off. » = éditeur.
 
-| Outil | Usage fort | Limite | Date de l'info | Source |
+| Outil | Usage fort | Limite | Date | Source |
 |---|---|---|---|---|
-| **Google Veo 3.1** (Flow, Gemini API, Vertex) | Généraliste, audio natif, « Ingredients to Video », extension de scène, 9:16 natif, upscale 1080p/4K | Outil « retirer un objet » annoncé, livraison non confirmée | janv. 2026 | 9to5google / yourstory (secondaire) |
-| **OpenAI Sora 2** | — | **Arrêté** : appli et web le 26/04/2026, API annoncée pour le 24/09/2026 | 2026 | help.openai.com (officiel) |
-| **Runway Gen-4.5** | Texte vers vidéo, physique améliorée | Runway liste lui-même des limites de causalité et de permanence des objets | annoncé 01/12/2025 ; revue juil. 2026 | CometAPI, Similar Labs (secondaire) |
-| **Runway Aleph / Aleph 2.0** | Vidéo vers vidéo : ajouter/retirer un objet, ré-éclairer, nouvel angle, « plan suivant » | Aleph 2.0 (juin 2026) n'est connu que par un catalogue tiers | mars et juin 2026 | CometAPI, Runware (secondaire, **incertain**) |
-| **Kling 3.0** (Kuaishou) | Multi-plans, contrôle « storyboard », audio multilingue, jusqu'à 15 s, 4K | Lent, coût difficile à prévoir | lancé 4-6/02/2026 | Bernama (communiqué) |
-| **Seedance 2.0** (ByteDance) | Image vers vidéo, réalisme à partir de références | Comparatifs souvent écrits par le vendeur (Dreamina) | févr. 2026 | notegpt, Dreamina (biaisé) |
-| **Hailuo 2.3** (MiniMax) | Volume rapide pour les réseaux sociaux | Pas de source 2026 sur une version suivante | 2026 | muapi.ai (secondaire) |
-| **Wan 2.6** (Alibaba) | Disponible dans Higgsfield | Statut open source **non confirmé** pour 2.6 | 2026 | toolquestor (secondaire) |
-| **Luma Ray3 Modify / Ray3.2** | Modifier une séquence réelle (costume, visage) en gardant le jeu et le timing ; Ray3.2 : 16 images clés, 20 s en 1080p | Ray3.2 n'est connu que par des sources secondaires | Ray3.2 : juin 2026 | jang.com.pk, veed (secondaire) |
-| **Higgsfield** | Plateforme qui agrège plusieurs modèles (Kling, Seedance, Veo, Wan, Hailuo, Nano Banana) | Ce n'est pas un modèle en soi : la qualité dépend du modèle choisi | 2026 | toolquestor (secondaire) |
-| **GPT Image 2** (OpenAI) | Image, tête de l'arène Artificial Analysis (1339 Elo) | Annoncé jusqu'à 2K | avril 2026 | tech-insider (secondaire) |
-| **Nano Banana Pro** (Gemini 3 Pro Image) | Image jusqu'à 4K, texte dans l'image | Confusion entre « Nano Banana 2 » et « Pro » selon les sources | 2026 | tech-insider, laozhang (secondaire) |
-| **Midjourney V8.1** | Esthétique, direction artistique | Pas d'API officielle, V7 encore par défaut | fin avril 2026 | tech-insider (secondaire) |
-| **FLUX.2** (Black Forest Labs) | Poids téléchargeables, exécution locale (32 Md de paramètres) | Demande une machine solide | 2026 | tech-insider (secondaire) |
-| **Topaz Astra 2 / Starlight** | Upscaling par diffusion, « dé-plastifier » les rushes IA | Versions contradictoires (2.5 ou 2.6) ; abonnement depuis oct. 2025 | Astra 2 : avril 2026 | invideo, fal.ai, unifab (secondaire) |
-| **Premiere 26** (ex-Pro) | Object Mask en un clic (masque + suivi) ; Firefly Boards (Adobe, Google, OpenAI, Runway) | Object Mask peine sur une image bruitée ou peu contrastée | 20/01/2026 | PetaPixel, Digital Production |
-| **Premiere Generative Extend** (Firefly Video) | +2 s de vidéo, +10 s d'audio, frames étiquetées | 12-30 i/s, 8 bits SDR seulement | janv. 2026 | community.adobe.com (officiel) |
-| **DaVinci Resolve 21 / 21.1** | CineFocus (profondeur de champ synthétique), IntelliSearch local, Magic Mask (aussi sur la page Photo), Magic Mask 2.0 annoncé en 21.1 | La plupart des outils IA demandent Studio (payant) et un GPU d'au moins 4 Go | 02/06/2026 ; 21.1 le 09/09/2026 | Newsshooter, SVG |
-| **Meta SAM 3** | Segmentation et suivi par texte ou boîte, image et vidéo, téléchargeable | Pas d'intégration Resolve/AE confirmée | 2025-2026 | ai.meta.com/sam3 (officiel) |
-| **After Effects Roto Brush** | — | **Aucune source 2026 trouvée** | — | non vérifié |
-| **Interpolation** (Topaz, Resolve Speed Warp, RIFE…) | RIFE 4.25 (Practical-RIFE, MIT) | **[TESTÉ EN LABO 2026-10-10]** en CPU : bat `minterpolate mci` de 5 dB en zones en mouvement sur image lisse, rien sur texture fine, image hybride sur une coupe (`labo/interpolation/RIFE.md`) | libre | Topaz / Speed Warp non testés |
-| **ElevenLabs Eleven v3** | Voix expressive, balises d'émotion, dialogue à plusieurs voix, plus de 70 langues | Pas en temps réel ; clonage soumis à consentement vérifié | GA 02/02/2026 | coval.ai (secondaire) |
-| **Suno** | Musique générée | Accord Warner (25/11/2025) : nouveaux modèles sous licence en 2026, pas d'usage commercial en gratuit ; impasse UMG/Sony (avril 2026, source unique) | 2025-2026 | Decrypt, MarketScreener, Opus (secondaire) |
-| **Udio** | Remix de catalogues sous licence | Plateforme fermée : **pas d'export ni d'usage externe** | 2025-2026 | Decrypt |
-
-### Vérification du 2026-10-10 (détail et sources : `sources/ia-verif-2026-10-10.md`)
-- **Sora** : arrêt de l'API le 24/09/2026 inscrit dans les dépréciations *passées* d'OpenAI (page officielle), sans remplaçant ; désactivation effective très probable (presse), non vue directement.
-- **AI Act art. 50** : confirmé applicable depuis le 02/08/2026, **non reporté** par l'Omnibus numérique (Règlement (UE) 2026/1744, JO du 24/07/2026) ; seul le marquage machine (50(2)) des systèmes déjà sur le marché a jusqu'au 02/12/2026 ; signalement des deepfakes (50(4)) sans délai. Code de pratique sur le marquage publié le 10/06/2026. Sources : cabinets d'avocats (secondaires), texte EUR-Lex non relu.
-- **Modèles** : Veo reste en 3.1 ; Kling 3.0 (05/02/2026) ; Seedance 2.0 ; Runway Gen-4.5 sans successeur ; Luma Ray 3.2 (06/2026, à confirmer) ; MiniMax Hailuo 3.0 (31/07/2026, à confirmer). **Correction** : chez Wan, les poids ouverts s'arrêtent à 2.2 (Wan 3.0 = API fermée) ; open source vivant : **LTX-2 / 2.3** (Lightricks, 2026). Midjourney vidéo toujours V1.
-- **Logiciels** : Premiere 26.2 confirmée ; panneau « Generative Media » en bêta (IBC 2026 : Firefly, Veo, Runway, Kling, Luma dans la timeline). Resolve 21.0 final le 02/06/2026 ; 21.1 (IntelliTrack, Magic Mask 2.0) annoncée en 09/2026 par une seule source.
-- **Higgsfield** : agrégateur de modèles tiers + modèles maison (Soul, image) ; plugin Adobe AE + Premiere présenté le 21/07/2026 ; serveur MCP officiel (« bridge ») ; add-on Blender piloté par MCP. Les générations y sont **payantes (crédits)** : jamais sans accord explicite.
+| **Veo 3.1** (Flow, Gemini API) | Généraliste, audio natif, références, extension, insertion/retrait d'objet, 4K | 8 s par clip ; 0,40 $/s en 1080p. **Pas de Veo 4** | page consultée 10/2026 | deepmind.google, ai.google.dev (off.) |
+| **Gemini Omni Flash** | Montage conversationnel, entrées texte/image/vidéo/audio | 3-10 s, 720p (sec.) | I/O 19/05/2026 | ai.google.dev (off.), invideo (sec.) |
+| **Sora** | — | **Fermé** : appli 26/04/2026, API 24/09/2026, sans successeur | 2026 | help.openai.com (off.) |
+| **Kling 4.0** | 30 s, 10 images clés, nombreuses références ; 4K HDR 10 bits annoncés | 4.0 Flash en accès anticipé, version complète « en octobre », prix non publié | 28/09/2026 | briefs.co, Bloomberg, X Kling |
+| **Seedance 2.5** | 30 s en une passe, audio | Mises en demeure Disney/MPA sur la 2.0 (droits) | dispo 11/08/2026 | runway.com/changelog (off.) |
+| **Runway Gen-4.5 / Aleph 2.0** | Aleph 2.0 : retoucher une image, propager sur le plan ; export ProRes 4444 ; plugins Premiere, AE, Resolve | Pas de Gen-5. Gen-4.5 : limites de causalité reconnues | Aleph 2.0 : 21/05/2026 | runway.com/changelog (off.) |
+| **Hailuo 3.0 / H3** (MiniMax) | 15 s, 2K, son stéréo, multi-entrées | Poids ouverts contradictoires | 31/07/2026 | runway.com/changelog (off.), sec. |
+| **Luma Ray3.2** | 20 s 1080p, 16 images clés, **HDR natif, EXR 16 bits**, suivi du jeu | Audio non mentionné | 09/06/2026 | lumalabs.ai (off.) |
+| **Wan 3.0** (Alibaba) | Vidéo + audio jusqu'en 1080p | **Fermé** ; poids ouverts seulement jusqu'à Wan 2.2 | 24/08/2026 | runway.com/changelog (off.) |
+| **LTX-2.5** (Lightricks) | Poids ouverts, 4K, audio, multi-plans en une passe, local | Licence communautaire (< 10 M$ de CA), pas OSI | 11/08/2026 | venturebeat, ltx.io |
+| **Higgsfield** | Agrégateur (Seedance 2.5, Wan 3.0, H3, Nano Banana 2.1…), API (16/09), plugins AE/Premiere/Blender, MCP | Pas un modèle ; crédits payants | changelog 10/2026 | higgsfield.ai (off.) |
+| **Firefly / Premiere 26.5** | Generative Media Tool (vidéo et SFX dans la timeline), Object Mask Sharp/Smooth, Paper Edit | Pas de nouveau modèle Firefly Video trouvé ; MAX le 10-12/11/2026 | 10/09/2026 | community.adobe.com (off.) |
+| **Generative Extend** | +2 s vidéo, +10 s audio ; sources 360p-4K, 12-60 i/s, 8-16 bits, SDR/HDR | Frames générées en 8 bits SDR, 30 i/s max (à vérifier) | 26.5, 09/2026 | Adobe (off.), atlascloud (sec.) |
+| **Midjourney V8.2** | Esthétique, direction artistique | Pas d'API ; vidéo = image vers vidéo seulement | défaut 24/07/2026 | sec. citant docs.midjourney |
+| **Nano Banana 2 / 2.1 / Pro** | Image jusqu'en 4K, texte, 14 références ; 2.1 ≈ 0,11 $ l'image 4K | — | 2.1 : 10/2026 | ai.google.dev (off.) |
+| **GPT Image 2.5** | Édition précise (Sunburst), rapide (Flare) | Texte dense encore fragile (sec.) | 08/09/2026 | axios (sec.) |
+| **FLUX 3** (BFL) | Image + vidéo 20 s avec son | Poids ouverts promis, pas sortis | 23/07/2026 | marktechpost (sec.) |
+| **Topaz Starlight Precise 2.5 / Astra 2 / Hyperion 2** | « Dé-plastifier » les rushes IA en 4K ; SDR vers HDR ; panneau Premiere | Invente du détail ; abonnement | 03 à 05/2026 | topazlabs.com (off.) |
+| **AE Object Matte** | Roto IA en un clic ; Roto Brush devient Quick Selection | Rendu lent, propagation fragile (bêta) | 02-04/2026 | community.adobe.com (off.) |
+| **Resolve 21 / 21.1** | 21 : CineFocus, IntelliSearch, Magic Mask ; 21.1 : pilotage par Claude / ChatGPT (MCP, Studio) | IntelliTrack / Magic Mask 2.0 en 21.1 **non confirmés** | 02/06 et 08/09/2026 | blackmagicdesign.com (off.) |
+| **SAM 3.1** (Meta) | Segmentation par texte ou boîte, vidéo, local | Pas de plugin AE/Nuke confirmé | 27/03/2026 | learnopencv (sec.) |
+| **Interpolation** | RIFE 4.25 (libre), Topaz Apollo/Chronos/Aion, Runway Enhance Frame Rate (25-120 i/s) | **[TESTÉ EN LABO]** RIFE sous un simple fondu sur eau et feuillage (`labo/interpolation-reel/`) | 2026 | Topaz (off.), runway (off.) |
+| **ElevenLabs v4 / v4 Turbo** | Voix expressive, 90+ langues, temps réel (≈ 100 ms) | Clonage soumis à consentement vérifié | 28/09/2026 | elevenlabs.io (off.) |
+| **Suno v6** | Musique jusqu'à 8 min, modèles faits avec Warner, BMG, Believe | v6 payant ; UMG et Sony attaquent encore (2e plainte 18/09/2026) | 09/09/2026 | routenote, MBW (sec.) |
+| **Udio** | — | **Téléchargements coupés** depuis 10/2025, toujours fin 09/2026 ; Sony attaque | 2026 | sec. |
 
 ## 6. Workflows hybrides types [THÉORIQUE]
 
@@ -101,30 +96,30 @@ Aucun de ces workflows n'a été testé ici. Ce sont des schémas à valider sur
 5. Ajouter un son réel (ambiance du tournage).
 
 **B. Rallonger un plan de 2 s** [THÉORIQUE]
-Premiere Generative Extend (2 s max, 8 bits SDR, 12-30 i/s). Pour du 10 bits, du HDR ou du 50p, chercher une autre voie (par exemple un vidéo vers vidéo Aleph, ou l'image vers vidéo du workflow A). Vérifier le raccord de lumière à l'image près.
+Premiere Generative Extend (2 s max). Depuis 26.5, il accepte des sources 360p-4K, 12-60 i/s, 8-16 bits, SDR ou HDR ; mais les frames générées sortiraient en 8 bits SDR, à 30 i/s au plus (à vérifier). Pour un master 10 bits, HDR ou 50p, comparer avec une autre voie (par exemple un vidéo vers vidéo Aleph, ou l'image vers vidéo du workflow A). Vérifier le raccord de lumière à l'image près.
 
 **C. Le plan impossible porteur de sens** [THÉORIQUE]
-1. Planche de références : 5 à 10 images (Midjourney, Nano Banana, FLUX.2) validées avec le réalisateur, dans le même univers de couleur que le tournage.
+1. Planche de références : 5 à 10 images (Midjourney V8.2, Nano Banana 2.1, FLUX.2 ou FLUX 3) validées avec le réalisateur, dans le même univers de couleur que le tournage.
 2. Génération de 3 à 5 variantes par plan avec les mêmes références (personnage, décor).
 3. Montage serré, plans IA courts et entourés de réel.
 4. Passe Topaz Starlight ou Astra pour la texture (à tester contre le grain seul : le grain suffit parfois).
 5. Étalonnage commun et grain commun.
 
 **D. Modifier une prise réelle** (costume, décor, époque) [THÉORIQUE]
-Luma Ray3 Modify ou Runway Aleph : le jeu de l'acteur et le timing sont conservés, seul l'habillage change. Vérifier les yeux, les mains et les bords à chaque image. Le consentement de l'acteur est requis.
+Luma Ray3 Modify / Ray3.2 ou Runway Aleph 2.0 (on retouche une image, il propage) : le jeu de l'acteur et le timing sont conservés, seul l'habillage change. Vérifier les yeux, les mains et les bords à chaque image. Le consentement de l'acteur est requis.
 
 **E. Détourage** [THÉORIQUE]
-D'abord l'outil intégré (Premiere Object Mask, Resolve Magic Mask), puis SAM 3 si le cas est difficile et qu'un pipeline local existe. Repasser à la main les cheveux et le flou de bougé : c'est là que les masques IA cèdent.
+D'abord l'outil intégré (Premiere Object Mask en mode Sharp ou Smooth, AE Object Matte, Resolve Magic Mask), puis SAM 3.1 si le cas est difficile et qu'un pipeline local existe. Repasser à la main les cheveux et le flou de bougé : c'est là que les masques IA cèdent.
 
 **F. Voix et musique** [THÉORIQUE]
-Voix témoin IA pour caler le montage, puis **comédien réel** pour la livraison, sauf accord explicite. Musique : vérifier la licence commerciale du plan d'abonnement (Suno gratuit = pas d'usage commercial ; Udio = pas d'export). Une musique composée ou une banque sous licence reste plus sûre pour la diffusion.
+Voix témoin IA pour caler le montage, puis **comédien réel** pour la livraison, sauf accord explicite. Musique : vérifier la licence commerciale du plan d'abonnement (Suno v6 : réservé aux abonnés payants, gratuit = pas d'usage commercial ; Udio = pas de téléchargement). Une musique composée ou une banque sous licence reste plus sûre pour la diffusion. Pour une voix témoin rapide en français : ElevenLabs v4 (28/09/2026).
 
-## 7. Juridique et éthique (au 2026-10-09)
+## 7. Juridique et éthique (au 2026-10-10)
 
-- **AI Act européen, article 50** (transparence) : applicable depuis le **2 août 2026**. Un deepfake (image, son ou vidéo qui ressemble à des personnes, lieux ou événements réels) doit être signalé comme généré ou manipulé par IA. Une exception allégée existe pour une œuvre manifestement artistique ou fictionnelle : la mention reste due, mais sans gêner l'œuvre (à vérifier dans le texte officiel). Le **marquage lisible par machine** (filigrane, métadonnées) imposé aux fournisseurs bénéficie d'un délai jusqu'au **2 décembre 2026** pour les systèmes déjà sur le marché (Digital Omnibus). Lignes directrices de la Commission publiées le 20 juillet 2026 (CSA, 29/07/2026, secondaire). **Ce n'est pas un avis juridique** : faire valider par un juriste pour toute diffusion.
+- **AI Act européen, article 50** (transparence) : applicable depuis le **2 août 2026**. Un deepfake (image, son ou vidéo qui ressemble à des personnes, lieux ou événements réels) doit être signalé comme généré ou manipulé par IA. Une exception allégée existe pour une œuvre manifestement artistique ou fictionnelle : la mention reste due, mais sans gêner l'œuvre (à vérifier dans le texte officiel). Le **marquage lisible par machine** (filigrane, métadonnées) imposé aux fournisseurs bénéficie d'un délai jusqu'au **2 décembre 2026** pour les systèmes déjà sur le marché (Digital Omnibus). Lignes directrices finales de la Commission C(2026) 5054, adoptées le 20/07/2026 : une ressemblance avec une personne réelle se signale **même sans intention de tromper** ; **pas de rétroactivité** (compte la date de génération). Plateformes : YouTube étiquette d'office le photoréaliste IA non déclaré depuis le 27/05/2026 (blog YouTube). **Ce n'est pas un avis juridique** : faire valider par un juriste pour toute diffusion.
 - **Mention au client** : écrire dans le devis et le bon de livraison quels plans sont générés et par quel outil. Garder les prompts et les sources.
 - **Consentement** : visage et voix d'une personne réelle = accord écrit et spécifique. ElevenLabs exige une vérification du titulaire de la voix pour le clonage professionnel (secondaire).
-- **Droits sur la musique** : le terrain est en recomposition (accords Warner/Suno, UMG/Udio ; procès Suno contre UMG/Sony non réglé en avril 2026). Lire les CGU au moment de la livraison.
+- **Droits sur la musique** : le terrain est en recomposition (accords Warner/Suno, UMG et Warner/Udio ; UMG et Sony ont relancé une plainte contre Suno le 18/09/2026 ; Sony poursuit Udio). Lire les CGU au moment de la livraison.
 - **Entraînement « sûr »** : Adobe présente Firefly Video comme entraîné sur du contenu sous licence et du domaine public. C'est un argument pour un client prudent, à vérifier dans les CGU en vigueur.
 - **Pérennité** : Sora a fermé avec suppression des données. Archiver localement tout rush généré, ses prompts et la version du modèle.
 - **Éthique de métier** : ne pas présenter un plan généré comme tourné, ne pas l'utiliser pour éviter de payer un comédien ou un musicien sans le dire au client.
