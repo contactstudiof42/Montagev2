@@ -56,6 +56,7 @@ Pour chaque direction, fiche fixe :
 ## Étape 3 — Recommander et défendre
 - Choisir une direction ; argumenter **contre l'intention** (étape 1), pas par goût.
 - Dire ce qu'on perd en ne prenant pas les deux autres.
+- **Ne pas écarter une direction pour un risque supposé** : si la plus audacieuse fait peur (« trop anxiogène », « trop sombre »), la maquetter en 10 s avant de la rejeter. Atelier 17 (session 11) : la direction « nuit, seule lumière = l'écran », écartée à l'examen n°1 par peur de l'angoisse, ne l'est pas ; son vrai risque était ailleurs (source centrée = icône, source trop forte = plus de noir) et se corrige. Dans une recommandation, nommer le risque **et** la parade éprouvée.
 - Si `GOUTS.md` contredit ma recommandation : le signaler, proposer la version conforme au goût, et garder mon argument en une ligne.
 
 ## Étape 4 — Critères de réussite (avant de réaliser)
