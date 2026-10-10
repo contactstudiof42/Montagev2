@@ -14,7 +14,7 @@ echo "proxy: $(( $(date +%s)-t0 )) s"
 # 2. Sous-titres
 [ "$S" -ge 0 ] && ffmpeg -v error -y -i "$FILM" -map 0:s:$S "$OUT/sous-titres.srt" || true
 # 3. Loudness : courbe court terme (S, 3 s) toutes les 100 ms + intégré
-ffmpeg -nostats -hide_banner -i "$OUT/proxy.mp4" -map 0:a -af ebur128=framelog=verbose -f null - 2> "$OUT/ebur128.log"
+ffmpeg -nostats -hide_banner -i "$OUT/proxy.mp4" -map 0:a -af ebur128 -f null - 2> "$OUT/ebur128.log"
 echo "loudness: $(( $(date +%s)-t0 )) s"
 # 4. Vignettes toutes les 10 s
 ffmpeg -v error -y -i "$OUT/proxy.mp4" -vf "fps=1/10,scale=192:-2" -q:v 4 "$OUT/vignettes/v%05d.jpg"

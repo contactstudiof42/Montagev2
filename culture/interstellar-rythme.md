@@ -21,6 +21,14 @@
   - Hollywood Reporter, van Hoytema (« about 60-70 minutes » en IMAX, via résumé de recherche), consulté le 2026-10-10 : https://www.hollywoodreporter.com/movies/movie-news/interstellar-cinematographer-dishes-joining-christopher-751398/
   - Transcription des dialogues (décompte, « Twenty-three years, four months, eight days », « Endurance rotation is 67, 68 RPM »), consultée le 2026-10-10 : https://www.springfieldspringfield.co.uk/movie_script.php?movie=interstellar
 
+## Confronté au film le 2026-10-11 (`analyses/films/interstellar.md`) [VU SUR IMAGES]
+- **Tient** : le prélap du décompte et la coupe franche sur l'allumage (41:50-42:14) ; le visage tenu pendant les messages (un plan de 48 s à 1:18:41) ; l'absence presque totale de plans extérieurs larges pendant l'amarrage (caméras sur la coque).
+- **Le tic de 1,25 s est juste** : mesuré à 1,251 s sur le Blu-ray (1,250 s à 24 i/s), de 1:08 à 1:10. Mais un jour sur Miller dure 1,41 s : le tic n'est pas « un jour ».
+- **Faux** : la contraction régulière 8 / 4 / 2 / 1 s du troisième acte. L'alternance se resserre (de la scène à l'insert), **s'arrête** pendant l'amarrage, puis reprend à trois lignes par segments de 2-6 s (tesseract).
+- **Faux** : les extérieurs silencieux pendant l'amarrage (musique continue) ; le silence vient après, à la perte de connaissance (2:11:40).
+- **Format** (Blu-ray IMAX) : 2,39 ↔ 1,78, environ 59 min en plein cadre ; le cadre s'ouvre à 41:39, avant le départ.
+- **Minutages** : départ 40:00-42:30, Miller 1:05-1:18, Mann / ferme 1:50-2:03, amarrage 2:08-2:12, tesseract 2:21-2:27. ASL d'environ 4,4 s (minimum mesuré, 2 317 plans).
+
 ## Ce que l'œuvre cherche à faire ressentir ou comprendre
 
 - **Le temps comme coût.** Chaque minute passée par Cooper dans l'espace se paie en années perdues avec ses enfants. Le film veut qu'on *sente* la relativité dans le ventre, pas qu'on la comprenne au tableau.

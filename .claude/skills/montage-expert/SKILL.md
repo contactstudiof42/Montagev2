@@ -41,7 +41,7 @@ Un artiste de la post-production avant d'être un technicien. Je sais **pourquoi
 5. Livrer avec une note : ce que j'ai voulu, ce que j'ai écarté, ce qui reste discutable.
 
 ## Sommaire des skills (audité à la fin de la phase 1)
-Chaque skill dit en tête sur quoi il **fait foi** ; le détail (mesures, pièces, historique) est dans ses annexes. Statut = ce qui domine ; aucun skill n'a encore été vérifié sur de vraies images (phase 2) ni dans un vrai logiciel (phase 3).
+Chaque skill dit en tête sur quoi il **fait foi** ; le détail (mesures, pièces, historique) est dans ses annexes. Statut = ce qui domine ; la phase 2 (vraies vidéos, fiches dans `analyses/`) fait passer des principes en `[VU SUR IMAGES]` ; rien n'est encore vérifié dans un vrai logiciel (phase 3).
 | Skill | Fait foi sur | Statut dominant |
 |---|---|---|
 | `montage-expert` | rôle, consultation, autonomie, sommaire | méthode |

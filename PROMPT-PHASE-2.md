@@ -37,6 +37,8 @@ Relis le sommaire de `montage-expert`, la grille de `montage-regard`, les skills
 
 ## Leçons de méthode (à appliquer à chaque vidéo, à enrichir)
 - Coupes cachées (appris en session 0, SDM « #Malentouré », 0:47) : les détecteurs de coupes ratent les raccords par occlusion d'un corps ou par filé. Dans tout plan de plus de 15 s, regarde une image toutes les 2 à 3 s pour chercher une coupe cachée.
+- Coupes ratées dans le sombre (appris en session 1, *Interstellar*, 37:45) : PySceneDetect adaptatif fusionne les champs-contrechamps sombres à faible contraste (un « plan » de 53 s en contenait au moins trois). Le nombre de plans d'un film est un minimum ; vérifier à l'œil tout plan long d'une scène de dialogue sombre avant de citer sa durée.
+- Lignes d'un montage alterné : un classement automatique par couleur moyenne échoue (la glace chaude passe pour la Terre). Classer à l'œil sur une image toutes les 2 s (tuile ffmpeg `fps=1/2,tile=15x14`), environ 7 min par tuile.
 - Règle d'auto-correction : quand tu découvres une erreur ou une limite de ta méthode, inscris la correction ICI (ou dans le skill concerné), pas seulement dans la fiche de la vidéo. Sinon les sessions suivantes ne la connaîtront pas.
 
 Clips, pubs et YouTube : la même méthode, en une passe, sur la vidéo entière. Pour une pub, regarde aussi comment le message et la marque arrivent en 15, 30 ou 60 secondes.

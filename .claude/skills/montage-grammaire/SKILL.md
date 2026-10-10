@@ -45,7 +45,7 @@ Une ligne imaginaire relie les deux personnages (ou un personnage et ce qu'il re
 
 ## Temps [THÉORIQUE]
 - **Ellipse** : enlever ce que le spectateur peut reconstruire ; il préfère compléter que subir. (Dilater / compresser au service de l'émotion : `montage-rythme`.)
-- **Montage parallèle** : deux actions alternées créent une relation ; accélérer l'alternance fait monter la tension (détail et pièce 29 : `montage-rythme`).
+- **Montage parallèle** : deux actions alternées créent une relation ; accélérer l'alternance fait monter la tension (détail et pièce 29 : `montage-rythme`). Donner à chaque ligne sa matière (couleur, lumière) pour qu'un insert de 2 s se lise sans contexte ; suspendre l'alternance sur l'action la plus tendue. [VU SUR IMAGES] (*Interstellar*, 1:50-2:27)
 - **Montage-séquence** : une durée longue en quelques plans, souvent sur musique ; cliché de la « préparation » si mal utilisé (montage « hip-hop » de Wright).
 
 ## Montage son (bases) [THÉORIQUE]
