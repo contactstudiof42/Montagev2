@@ -62,3 +62,9 @@ v5 proposée (si on y revient) : une main ou un visage simple au-dessus du tél�
 - Défauts : la « tête » est un ballon (sphère + cône) ; plan trop centré, sans cadre ni contexte ; le fond reste chaud et uniforme. L'exercice prouve la mesure, pas encore l'image.
 - **Montage proposé (non réalisé)** : B4 tenu 4 s → C15 (le téléphone s'allume, plongée) 1,5 s → V1 (contre-plongée, le visage refroidi) 2,5 s. Le froid se dit en deux plans : la source, puis ce qu'elle retire au personnage.
 - **Bilan de la pièce 10 (v1-v6)** : le froid dans un monde chaud demande (1) une source plus saturée que nature, (2) une surface tournée vers elle et vue par la caméra, (3) d'accepter que sur la peau il se lise comme une perte de chaleur, (4) au besoin une clé secondaire. Mon intuition de départ (« une surface neutre suffit ») était fausse deux fois.
+
+### v6 montée (`montage_v6.py`, `v6-montage-planche.png`, 1 image par seconde ; rendu `atelier/rendus/10/v6.mp4`, -28,3 LUFS intégrés, non normalisé)
+- La planche montre le défaut tout de suite : **le plan serré (6-8 s) est le plus clair et le plus chaud du film** (fond de mur beige éclairé par la lampe, plein cadre). Au moment où le froid doit entrer, l'image se réchauffe et s'éclaircit : le raccord lumière contredit l'intention. La peau refroidie (+0,12) est noyée par le fond.
+- Le son (vibration à 4,0 s puis ton de pièce −3 dB) fait mieux son travail que l'image : la baisse du ton de pièce dit « quelque chose s'est retiré ».
+- Correction pour v7 : cadrer le visage **contre l'ombre** (caméra plus basse, fond = coin sombre du plafond ou nuit de la fenêtre), pour que le plan serré soit plus sombre que le large ; vérifier par la mesure : luminance moyenne du plan serré < plan large, pixels chauds en baisse.
+- Leçon (pour `montage-regard`) : **dans un montage de couleur, c'est le fond qui raccorde, pas le sujet** ; un gros plan hérite de la couleur de ce qui est derrière lui.
