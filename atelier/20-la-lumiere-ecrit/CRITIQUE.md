@@ -43,3 +43,6 @@ Leçons :
 1. **Le sommet doit être plus long, pas plus fort** : un seul flash tenu 8 images reste un seul flash pour WCAG (montée + descente) et pèse plus qu'un coup de 3 images, sans ajouter de risque. La durée de l'état clair est un levier libre ; le nombre de transitions ne l'est pas.
 2. **Vérifier la liste des textes contre les doublons** avant tout rendu (la v5 a montré deux fois le sommet).
 3. `loudnorm` en une passe sur un montage de 10 s à kicks impulsifs reste à -18 LUFS : confirmer la boucle R6 (`montage-kinetic-editing`), qui converge en ~5 passes.
+
+## Après la fiche step-printing (`culture/step-printing-wong-kar-wai-et-autres.md`)
+Chez Wong Kar-wai et Doyle, la saccade se combine à un **obturateur lent** : les images tenues portent des traînées. Mes images tenues sont nettes : c'est probablement ce qui ferait lire la v2 comme un bug. v7 à faire : flou de bougé accumulé dans chaque image tenue (moyenne des images de la noire précédente sur la foule seulement), contre v3 (lasers continus), à juger en phase 2.
