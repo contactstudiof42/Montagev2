@@ -1,6 +1,8 @@
-# PLAN DE TESTS MCP — Phase 2 (sur le Mac)
+# PLAN DE TESTS MCP — Phase 3 (pilotage des logiciels, sur le Mac)
 
 Tout ce qui suit est **hypothèse à vérifier**. Rien ici n'est une recette validée.
+
+_Note de clôture (2026-10-10) : ce plan avait été écrit pour une « phase 2 » ; le découpage a changé. Phase 2 = analyse de vraies vidéos (`PHASE-2-BESOINS.md`), phase 3 = ce plan. Les mentions « phase 2 » ci-dessous désignent donc la phase 3, sauf les tests qui ne demandent que de regarder une vidéo ou un spectateur (44, 45, 47, 52, 62), qui peuvent se faire dès la phase 2._
 
 ## Règles de pilotage (méthode, à appliquer dès le premier test)
 1. Ne jamais ouvrir ni modifier un projet client : créer un projet de test dédié (`TEST_MCP_<date>`), dans un dossier dédié.
