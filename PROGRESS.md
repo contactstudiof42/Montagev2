@@ -2,18 +2,18 @@
 
 _Lire en premier. Mis à jour à chaque fin de session._
 
-## Où on en est (après la session 10, 2026-10-10 ~07:55 UTC)
-- **Skills (21)** : session 10 : `montage-direction-artistique` (étape 0 inventaire des rushes, ralenti demandé sur 25 i/s, coupable désigné, dispositifs d'atelier recyclés ; annexe `signature-et-cartons.md`), `montage-rythme` (dilater par la durée : l'attente doit être habitée), `montage-grammaire` (décor chargé : couleur saturée derrière l'anomalie), `montage-workflows` (vitesses dans l'aller-retour, `verif_edl.py`, interpolation sur vrais plans), `montage-ia-generative` (RIFE sous le fondu sur eau/feuillage), `montage-references` (John Lewis).
-- **Culture** : 43 fiches (nouvelles : `pub-emotionnelle-noel-john-lewis.md`, `dougal-wilson-kim-gehrig-pub.md`) ; `cliches-de-secteur.md` + ligne caritatif / personnes âgées.
-- **Atelier** : **12 v8** (lieu encombré, v8c réf.), **15 « Deux sonneries de trop »** (A, B, C, D, B2 ; B2 = réf. : la main posée qui ne décroche pas), **16 « La fable »** v1-v3 (v4 à faire : la Terre coupée par le cadre pour ne plus lire « ballon »).
-- **Labo** : `labo/workflows/vitesses/` + `labo/workflows/verif_edl.py` ; `labo/interpolation-reel/` (sous-agent, 2 plans CC0 Internet Archive, recontrôlé).
-- **Examens** : n°1 13, n°2 14, n°3 15, n°4 14, n°5 14, **n°6 15** /20. **N°7 en session 13.**
+## Où on en est (après la session 11, 2026-10-10 ~09:00 UTC)
+- **Skills (21)** : session 11 : `montage-regard` (règles 15-16), `montage-references` (fable qui contient la réponse), `montage-couleur-et-intention` (Willis ; Young / van Hoytema), `montage-workflows` (recadrages, nests, stéréo dans l'échange), `montage-after-effects` (bercement à phase intégrée + piège), `montage-preparation-tournage-vfx` (écrans dans le champ, 5 bis), `montage-direction-artistique` (maquetter la direction qui fait peur).
+- **Culture** : 45 fiches (nouvelles : `gordon-willis-le-noir.md`, `bradford-young-van-hoytema-lumiere-basse.md`).
+- **Atelier** : **16 v4** (v4d réf. ; reste v5 : silhouettes sur les autres planètes) ; **17 « 3 h 12, dans le noir »** v1-v4 (`atelier/17-dans-le-noir/`, v3 = réf. ; `planche.py`, `mouvement.py`).
+- **Labo** : `labo/workflows/recadrages/` (sous-agent, rejoué à la main : identique) ; `labo/ae-expressions/bercement/test.js`.
+- **Examens** : n°1 13, n°2 14, n°3 15, n°4 14, n°5 14, n°6 15 /20. **N°7 en session 12 ou 13** (BACKLOG 64 : brief de nuit / basse lumière).
 
-## Reprendre ici (session 11)
+## Reprendre ici (session 12)
 1. Démarrage normal. Blender : `curl -sSL -o blender.tar.xz https://download.blender.org/release/Blender4.2/blender-4.2.3-linux-x64.tar.xz && tar xf blender.tar.xz` dans le scratchpad (30 s). `python3 -m pip install -q numpy pillow scipy colour-science opentimelineio otio-fcp-adapter otio-cmx3600-adapter`.
-2. Priorités : BACKLOG 57 (pièce 16 v4), 51 (teaser 15 s), 59 (fiche Dougal Wilson / Kim Gehrig), 15 suite (recadrages, nests, audio multipiste dans l'échange), 42 suite (`montage-references` en annexes : 90+ lignes), 1 (« direction A dans le noir »).
-3. Pièges : **`pkill -f motif` tue le shell** → tuer par PID. Lancer les rendus longs avec `run_in_background` de l'outil Bash. Plans immobiles = une image. Wikimedia (upload.wikimedia.org) renvoie **HTTP 429** depuis la VM : passer par Internet Archive pour les médias CC0. **Ne jamais mettre d'identifiant personnel (e-mail) dans un User-Agent** (incident du sous-agent, session 10). Vérifier qu'un nom inventé ne recoupe pas une marque réelle (session 10 : « Allô Voisins »).
-4. Sous-agents : 1 en session 10 (interpolation sur vrais plans) ; chiffres recontrôlés à la main (identiques).
+2. Priorités : BACKLOG 64 (examen n°7), 1 suite (pièce 17 : son + contrechamp, bébé lisible), 57 (pièce 16 v5), 51 (teaser 15 s), 62 suite (Natasha Braier), 42 suite (`montage-references` en annexes).
+3. Pièges : **`pkill -f motif` / `pgrep -f motif` + kill tuent aussi le shell** dont la ligne de commande contient le motif (session 11 : exit 144) → tuer par PID via `ps aux | grep "[b]lender -b"`. Rendus longs : `nohup … &` puis attendre avec une boucle `while ps …`. Animation Cycles 384×216, 12 échantillons : ~3,7 s/image seule, ~2× plus lente à deux en parallèle → `STEP=2` (une image sur deux) pour les aperçus. Plans immobiles = une image. Wikimedia renvoie **HTTP 429** : passer par Internet Archive. **Jamais d'e-mail dans un User-Agent.** Vérifier qu'un nom inventé ne recoupe pas une marque réelle.
+4. Sous-agents : 1 en session 11 (recadrages / nests / audio) ; chiffres rejoués à la main (identiques).
 
 ## Environnement constaté
 - ffmpeg 6.1.1, Python 3, Node 22 préinstallés (numpy à installer en session 6). `apt-get update` puis `apt-get install libegl1` possible (10 s). Blender 4.2.3 LTS : téléchargement + décompression 30 s.
@@ -21,6 +21,7 @@ _Lire en premier. Mis à jour à chaque fin de session._
 - Un serveur MCP nommé `HIGGSFIELD_MCP` est listé dans l'environnement : non appelé (consigne phase 1). Noms observés dans `PLAN-TESTS-MCP.md`.
 
 ## Historique
+- Session 11 — 2026-10-10 08:30 → ~09:00 UTC : pièce 16 v4, pièce 17 « dans le noir » (v1-v4), fiches Willis et Young / van Hoytema, labos recadrages / nests / audio dans l'échange (sous-agent) et bercement AE (phase intégrée) ; écrans dans le champ ; PLAN-TESTS 48.
 - Session 10 — 2026-10-10 07:30 → ~07:55 UTC : examen n°6 (15/20), pièce 12 v8, pièce 15 « Deux sonneries de trop », fiche John Lewis, labos vitesses dans l'échange + vérificateur d'EDL, interpolation sur vrais plans CC0 (sous-agent) ; PLAN-TESTS 46-47.
 - Session 9 — 2026-10-10 06:29 → 07:05 UTC : pièces 12 (v1-v7), 13 (v1-v4), 14 (A/B) ; labos interpolation (minterpolate, RIFE) et saillance (résidu spectral) ; fiches bande-annonce, Freeze Corleone ; PLAN-TESTS 43-45.
 - Session 8 — 2026-10-10 05:29 → 05:53 UTC : pièce 10 v4-v6 (+ montage), pièce 11 « Dialogue » v1-v4, labos VFR et proxies, fiches Scott Pilgrim, génériques de séries doc, drill FR ; `montage-regard` distillé ; PLAN-TESTS 40-42.
