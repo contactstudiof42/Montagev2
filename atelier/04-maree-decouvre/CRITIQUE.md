@@ -25,3 +25,31 @@ Image de contrôle : `v2-erreur-sous-eau.png` (images 1, 60, 110 / 140, 170, 188
 - **Accident à garder** : la vue sous-marine montre l'objet au spectateur *avant* que la surface ne le découvre. C'est l'autre façon de faire monter la gêne : l'ironie dramatique (Hitchcock : le spectateur sait qu'il y a une bombe sous la table). Direction alternative notée : ouvrir sous l'eau sur la chaise, couper au-dessus de la surface lisse, et laisser le spectateur attendre ce qu'il sait déjà.
 - À partir de l'image 110 (caméra hors de l'eau) : la chaise décalée à droite est 2× plus grande qu'en v1, l'eau occupe la moitié basse ; à l'image 170, **la chaîne affleure en pointillés** avant que le sable n'apparaisse : un détail d'attente juste, que la v1 n'avait pas.
 → v2b : même cadrage, caméra à 0,95 m (au-dessus de l'eau à toute image), inclinaison 84,5°.
+
+## v2b — plan unique corrigé (caméra 0,95 m, 45 mm, chaise au tiers droit) — `v2b-planche.png`
+| Critère | Note | Preuve visuelle |
+|---|---|---|
+| Intention | 3 | 0-40 : eau vide ; **60 : un trait fin** à la surface (le haut du dossier), impossible à nommer ; 120 : un cadre ; **140 : l'assise sort, c'est une chaise (56 %)** ; 200 : la chaîne affleure puis l'estran se découvre d'un coup ; 222-250 : tenue. Les trois critères de l'intention sont tenus. |
+| Lisibilité | 2 | Chaise ≈ 12 % de la hauteur (v1 : 6 %). Encore petite sur téléphone : en 9:16, il faudrait la placer bien plus près. |
+| Rythme | 3 | Lent (60 images sans rien, puis émergence), brusque (estran découvert en ~20 images), tenue de 28 images. |
+| Composition | 2 | Tiers droit, la chaîne entre par la gauche et guide vers la chaise : juste. Horizon un peu haut. |
+| Couleur | 2 | Toujours la rouille comme seule chaleur (assumé, cf. v1). |
+| Mouvement | 2 | Rien ne bouge que l'eau : juste pour le sujet. |
+| Originalité | 2 | — |
+| Justesse | 3 | — |
+Défaut technique : la frontière eau/sable est **polygonale** (images 200-220 : bords à facettes) : résolution du déplacement trop faible ; trahit l'image de synthèse. → subdiviser la zone proche ou utiliser un déplacement au shader.
+
+## v3 — trois plans (plan unique 1-175, insert anneau 176-215, plan large 216-250) — `v3-planche.png`
+- L'insert (image 200 : l'anneau et la chaîne qui mène au pied de la chaise) est **la plus belle image de la pièce** : une ligne de cause (quelqu'un l'a attachée).
+- Mais **couper libère la tension** : l'insert commence sur de l'eau vide avec un pied de chaise au bord (image 180 : « où suis-je ? »), et le plan large final *explique* (tout le dispositif est montré, la question est close). On passe de la gêne à la démonstration. Confirme Honda « Cog » et Murai : **quand l'attente est l'argument, ne pas couper**.
+- Usage : v3 serait juste pour une pub (il faut une image-signe, l'insert) ; pour l'intention écrite, non.
+
+## v4 — ironie dramatique : ouverture sous l'eau (1-60), puis le plan unique (61-250) — `v4-planche.png`
+- Images 0-40 : chaise et chaîne vues sous la surface, la surface en miroir au-dessus. **À l'image 60, le trait à la surface n'est plus un mystère : on sait ce qui va sortir.** Les 6 s suivantes deviennent une attente de ce qu'on sait (suspense) au lieu d'une énigme (mystère).
+- Cela sert peut-être **mieux** l'intention (« depuis combien de temps c'était là ? ») : on a vu l'objet installé au fond, immobile.
+- Défaut : le sous-marin n'est pas crédible (aucune turbidité, bande claire de l'horizon). À refaire avec un volume (absorption vert-gris, particules, rayons).
+
+## Bilan provisoire (session 4)
+- **Référence : v2b** pour le mystère ; **v4 à développer** pour le suspense. Le montage en 3 plans (v3) ne sert pas l'intention.
+- Son (v3, v4) : ressac qui s'éloigne et s'efface à l'image 222, puis **quatre gouttes** tombant de la chaise : le seul son de la fin. Mesuré à -18,4 LUFS / -1,0 dBTP (limité par le true peak du bruit rose : cible -18 non tout à fait atteinte, assumé). Non écouté (pas d'oreille dans la VM).
+- Prochaines versions : v5 = v4 avec eau sous-marine crédible et frontière eau/sable lissée ; variante 9:16.
