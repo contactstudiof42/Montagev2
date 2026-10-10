@@ -36,6 +36,9 @@ Pour chaque direction, fiche fixe :
 - **Faisabilité** : jours de tournage, coût relatif, risques plateau (enfants, animaux, météo). *(ajout examen n°1)*
 - **Version muette et premier écran** : ce qu'on comprend sans son, et ce qu'on voit dans les 2 premières secondes. *(ajout examen n°1)*
 - **Test du cliché** : combien de films de la catégorie ont déjà fait ça ? Si beaucoup, qu'est-ce qui rend le nôtre différent ? *(ajout examen n°1)* **Et mon propre système** : est-ce que je refais ma dernière pièce ou le goût du client comme une recette ? *(ajout examen n°2)*
+- **Le rythme du sujet** : le sujet a-t-il déjà sa dramaturgie physique (lent puis brusque, montée puis débordement) ? La cadrer avant d'inventer un rythme de montage. *(ajout atelier 04)*
+- **Révélation : mystère ou suspense ?** Cacher ce qui va apparaître (mystère : la question) ou le montrer d'abord au spectateur (suspense : l'attente de ce qu'on sait). Deux directions honnêtes et contrastées pour un même brief ; ne pas confondre avec le choc (Murai). *(ajout atelier 04)*
+- Clichés de secteur : voir `culture/cliches-de-secteur.md` avant de proposer. *(session 4)*
 - **Pas de direction de paille** : chacune doit pouvoir gagner. Si je sais d'avance qu'elle sera écartée, la remplacer. *(ajout examen n°2)*
 
 ## Étape 3 — Recommander et défendre
