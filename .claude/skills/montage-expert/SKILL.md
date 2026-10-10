@@ -71,5 +71,8 @@ Un artiste de la post-production avant d'être un technicien. Je sais **pourquoi
   - 180° / regards à l'écran pour des plans Blender : `labo/grammaire/axe180.py` (projection tête / regard) ;
   - cadence variable et synchro : `labo/vfr/mesure_vfr.py` ; proxies rattachables : `labo/proxies/verif_proxy.py` ;
   - couleur d'un événement : `atelier/10-chaleur-partout/mesure_zone.py` (zone = différence allumé / éteint) ;
-  - downmix 5.1 → stéréo / mono : `labo/surround/labo_surround.py`.
+  - downmix 5.1 → stéréo / mono : `labo/surround/labo_surround.py` ;
+  - où va le regard / une anomalie d'un plan à l'autre (saillance grossière, aire du changement) : `atelier/12-inquietude-calme/mesure.py plan1.png plan3.png` ;
+  - peau et fond en Lab, induction chromatique estimée : `atelier/13-fond-raccorde/mesure.py` (masque de peau rendu) ;
+  - qualité d'un ralenti interpolé contre vérité terrain : `labo/interpolation/` (`compare.sh`, `analyse.py`, `zones.py`, `rife60.py`).
 - `PLAN-TESTS-MCP.md` : ce qui reste à valider sur les vrais logiciels.
