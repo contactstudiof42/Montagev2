@@ -14,7 +14,7 @@ Règle : alterner ART et TECH. Réalimenter dès qu'il reste moins de 10 sujets 
 1. [ ] [ART] **Atelier « même brief, direction A dans le noir »** (suite de l'examen n°1 : la piste la plus audacieuse, écartée trop vite) : 10 s, Blender, seule lumière = un écran de téléphone.
 1b. [x] [ART] (session 4 : `culture/cliches-de-secteur.md`, 10 secteurs, non mesuré ; reste à l'étayer de références datées) Fiche sur les pubs santé/assurance et petite enfance : repérer les clichés du secteur (boîte à musique, bébé au ralenti, famille radieuse) — révélé par l'examen n°1.
 2. [~] [TECH] Couleur technique → `montage-couleur-pipeline` v1 (labo session 1 : conversions exactes, LUT ffmpeg = Python). Reste : expliquer l'écart OCIO/colour de 2e-3 sur LogC3/S-Log3 ; tester un vrai rush log CC0.
-3. [~] [ART] Couleur et intention → `montage-couleur-et-intention` v1 (fiches Storaro, Doyle, Deakins). Reste : atelier « même plan, trois étalonnages » avec la LUT du labo.
+3. [x] [ART] Couleur et intention : atelier 05 « Trois étalonnages » fait (session 5, 6 versions + test de scintillement, `atelier/05-trois-etalonnages/`). Reste [ ] : refaire depuis un EXR linéaire (latitude) ; « souvenir » avec un vrai contexte de montage (contrechamp, voix).
 4. [x] [TECH] Encodage des dégradés sombres testé (session 2, `labo/encodage/`) : tramage ±1 tué par x264, 10 bits = solution master, grain σ≈2 = seule protection après ré-encodage plateforme. Reste [ ] : réappliquer à la pièce 01 (v7 avec grain) et mesurer.
 5. [ ] [TECH] Fondamentaux : grammaire, raccords, 180°, montage son, J-cut/L-cut → skill `montage-grammaire`
 6. [ ] [ART] Atelier rythme : un même matériau monté sur trois tempos (Bass / Gondry / Cooper — cf. `montage-references` B) ; mesure avec scdet
@@ -23,12 +23,12 @@ Règle : alterner ART et TECH. Réalimenter dès qu'il reste moins de 10 sujets 
 9. [~] [ART] Narration par format → `montage-formats` v1 (session 3), cf. 0e.
 10. [~] [TECH] `montage-premiere` v1 écrit (session 3, théorique). Fait en session 4 : marqueurs de temps importables (`labo/marqueurs/beats_xml.py`, XML FCP7, ~10 ms). Reste : lire les pages Adobe en entier (WebFetch 403), Color mode, ExtendScript, raccourcis Q/W ; `beats_xml.py` testé sans grosse caisse et avec levée (M1 par l'accent, avertissement si ambigu) ; reste : tempo variable, vraie musique.
 11. [~] [TECH] `montage-preparation-tournage-vfx` v1 écrit (session 2, théorique). Reste : tests de keying et de tracking sur des médias CC0 (avec BACKLOG 14).
-12. [~] [TECH] `montage-pilotage-mcp` v1 (méthode, session 3). Reste : état public des autres MCP (Blender MCP, Resolve, AE) par recherche web, à verser dans `PLAN-TESTS-MCP.md` comme hypothèses.
+12. [x] [TECH] `montage-pilotage-mcp` v1 + état public des MCP (session 5, `sources/mcp-etat-public-2026-10.md`, tests 21-31). Reste [ ] : revérifier tous les 2 mois (info volatile).
 13. [ ] [ART] Son : atelier « même image, trois bandes son » (avec, contre, silence) ; fiches Murch sound design, Ben Burtt, Gary Rydstrom
 14. [~] [TECH] Keying : labo à vérité terrain fait (session 2, `labo/keying/`). Reste : tracking, roto, keyers à alpha doux, compositing Blender/Fusion
 15. [~] [TECH] `montage-workflows` v1 (session 4) + labo aller-retour OTIO (`labo/workflows/`). Reste : tester vitesses, recadrages, nests, audio multipiste dans l'aller-retour XML ; AAF (pyaaf2 ?) ; proxies et cadence variable des téléphones avec ffmpeg.
 16. [~] [TECH] Labo fondus : session 4, `variance.py` (écart au milieu + détecteur noir) = 3/4, 0 faux positif ; hypothèse du creux de variance réfutée. 2e vérité terrain indépendante : 4/4, 0 faux positif (mêmes seuils). Reste : fusionner les segments du fondu au noir, chroma, puis matériau CC0 réel.
-17. [~] [ART] Culture : faits : Murai, Honda « Cog » (s2), Varda *Les Glaneurs*, Spike Jonze (s3), Marker *Sans soleil*, Morris *The Thin Blue Line* (s4). Reste : clips ( Jonas Åkerlund, et clips de rap français proches de Ziak) ; motion design de studio (Buck, ManvsMachine, Elastic) ; pub (Apple *1984*)
+17. [~] [ART] Culture : faits : Elastic (*Game of Thrones*), ManvsMachine, Buck, Åkerlund, Gavras (s5) ; Murai, Honda « Cog » (s2), Varda *Les Glaneurs*, Spike Jonze (s3), Marker *Sans soleil*, Morris *The Thin Blue Line* (s4). Reste : clips ( Jonas Åkerlund, et clips de rap français proches de Ziak) ; motion design de studio (Buck, ManvsMachine, Elastic) ; pub (Apple *1984*)
 18. [~] [ART] IA : faits vérifiés en session 4 (Sora, AI Act art. 50 non reporté, Wan 2.2 dernier ouvert, LTX-2). Reste : fiches d'œuvres IA, grille « est-ce que ça fait IA ? », relire le texte de l'Omnibus sur EUR-Lex.
 19. [ ] [ART] Relire les skills artistiques après l'examen n°1 ; fusionner les doublons (regard / motion-design / references se recoupent sur « un signe »)
 
@@ -41,10 +41,17 @@ Règle : alterner ART et TECH. Réalimenter dès qu'il reste moins de 10 sujets 
 24. [ ] [ART] Atelier « voix écrite après » (principe Varda) : monter d'abord 20 s d'images glanées (plans des ateliers), écrire ensuite une voix off qui relie ; critique : la voix illustre-t-elle ou relie-t-elle ?
 
 25. [ ] [ART] Atelier « Spirale » (principe Marker) : 30 s qui font revenir 3 motifs des ateliers 01-04, chaque retour changeant de sens ; voix écrite après.
-26. [ ] [ART] Atelier « Versions » (principe Morris) : la même action Blender (un objet qui tombe) rejouée 3 fois avec un détail changé ; la musique en boucle ; critique : est-ce qu'on doute ?
-27. [ ] [TECH] Audio : AAF et pistes par famille pour le mixeur ; tester `pyaaf2` (écriture d'un AAF depuis l'EDL JSON).
+26. [~] [ART] Atelier « Versions » (principe Morris) — entamé en session 5 (`atelier/06-versions/`) : la même action Blender (un objet qui tombe) rejouée 3 fois avec un détail changé ; la musique en boucle ; critique : est-ce qu'on doute ?
+27. [x] [TECH] AAF par familles avec `pyaaf2`, relu identique par OTIO (session 5). Reste [ ] : poignées, gain, fondus ; AAF depuis l'EDL JSON d'une vraie pièce (06).
+
+28. [ ] [ART] **Examen n°4** (session 6) : fiction courte ou documentaire long ; inclure une question d'étalonnage (appliquer les leçons de l'atelier 05).
+29. [ ] [ART] Culture : rap français proche de Ziak (réalisateurs de clips : Kourtrajmé au-delà de Gavras, clips de PNL, Freeze Corleone) ; clips Åkerlund et Gavras à confronter à Murai dans `montage-regard` (quand monter le choc).
+30. [ ] [TECH] Resolve : verser `sources/resolve-scripting-api-19-20.md` dans `montage-resolve` (session 5 : recherche lancée).
+31. [ ] [ART] Atelier « causalité » et atelier « le montage se retire » : réutiliser la scène de la pièce 06 (table, tasse) comme plateau.
 
 ## Fait (trace)
+- [x] [ART] Session 5 : atelier 05 « Trois étalonnages » (6 versions), fiches Elastic, ManvsMachine, Buck, Åkerlund, Gavras
+- [x] [TECH] Session 5 : état public des MCP, AAF par familles (pyaaf2 + OTIO), scintillement d'une clé
 - [x] [TECH] Session 4 : loudness hors plateformes, marqueurs de temps, `montage-workflows` + OTIO, fondus 3/4, vérif IA
 - [x] [ART] Session 4 : fiches Marker et Morris, atelier 04 v1-v3
 - [x] [ART] Atelier 03 v1-v3, culture Varda et Jonze (session 3)
