@@ -34,3 +34,14 @@ Planche : `v3-reflet.png` (de gauche à droite : extérieur ×1, ×0,3, ×0,1, �
 - **Seuils** : en plein jour (×1), le reflet est invisible ; à ×0,3 (−1,7 diaph), un fantôme ; à **×0,1 (−3,3 diaph), visage et chevaux sont lisibles ensemble** ; à ×0,03 (−5 diaph), le visage domine et le paysage s'éteint ; à ×0,01 (tunnel), il ne reste que le visage.
 - **L'image juste est à ~−3 diaph** : une double exposition naturelle, elle et ce qu'elle regarde dans le même cadre, sans composite. Un tunnel est trop (le paysage disparaît), un nuage trop peu (~1-2 diaph) : il faut une **lisière de forêt ou un talus** côté soleil, ou tourner en fin de jour en gardant la lampe intérieure.
 - **Leçon pour l'examen n°12** : la révélation par la lumière est plus propre au sujet que la bascule de point (c'est ce qui se passe vraiment dans un train) et elle laisse la mise au point libre. Mais elle ne dit pas « mieux voir », elle dit « se voir » : c'est un autre message (le regard sur soi). À proposer comme quatrième direction, pas comme correction de B.
+
+## v4 — l'ombre qui passe et la photosensibilité (Y35, version mesurable) : `labo/photosensibilite/flash_check.py`
+Séquences de 4 s à 25 i/s fabriquées en mélangeant **en lumière linéaire** les rendus v3 (plein jour ×1 et ombre ×0,1 ou ×0,3) : A talus (une entrée dans l'ombre en 0,25 s, tenue 2 s) ; B lisière de forêt à 100 km/h (troncs tous les 5 m ≈ 5,6 Hz, ombres dures) ; C même forêt à 40 km/h (≈ 2,2 Hz) ; D comme B mais ombre douce (×0,3, sinusoïde).
+| cas | flashs (pire seconde) | verdict |
+|---|---|---|
+| A talus | 0 | OK |
+| B forêt 100 km/h | 6 | **ÉCHEC** |
+| C forêt 40 km/h | 3 | OK, à la limite |
+| D forêt 100 km/h, ombre douce | 8 | **ÉCHEC** |
+- **Leçon de production** : la « lisière de forêt » que je proposais en v3 pour faire apparaître le visage est, en train rapide, un **stroboscope plein cadre** : refusé en diffusion TV (critère WCAG / Harding, voir `montage-kinetic-editing`). Même une ombre douce (−1,7 diaph) échoue, parce que la fenêtre couvre presque tout le cadre. Seuls passent : **le talus, le pont, le bâtiment** (une seule entrée dans l'ombre), ou une forêt à moins de ~40 km/h.
+- À ajouter au repérage (examen n°12) : choisir la portion de ligne pour son **ombre longue unique**, et faire passer chaque prise au contrôle de photosensibilité avant le montage.

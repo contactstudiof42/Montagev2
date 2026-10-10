@@ -173,3 +173,8 @@ Le serveur `HIGGSFIELD_MCP` est toujours listé, **non appelé** (consigne phase
 - Sur une vraie voix dans Premiere : mesurer la queue de voyelle du mot-clé et refaire les écarts −4 / 0 / 2 / 4 / 8 images ; vérifier que « 2 images après la fin audible » reste le point sec avec une respiration réelle.
 - Faire juger les versions par l'utilisateur (à l'écoute, en temps réel) : c'est la seule validation du ressenti comique.
 - Vérifier qu'un export de bande-film (images autour d'une coupe) est possible depuis l'outil d'export d'image du MCP, sinon via ffmpeg sur l'export.
+
+## 72. (session 23) Flou, mise au point et reflet (`atelier/28-flou-net/`) [TESTÉ dans Blender, THÉORIQUE en tournage]
+- Sur un vrai objectif (phase 2 ou tournage) : la respiration de focale pendant la bascule (non simulée) ; vérifier que la plage perceptive 1,5 → 5-8 m tient avec un vrai 50 mm.
+- Flou de lentille à carte de profondeur dans After Effects (Camera Lens Blur) ou Resolve (Lens Blur de Fusion) contre gaussien : reproduire la planche v1 sur une vraie plaque nette.
+- Contrôle de photosensibilité d'un vrai rush de train en lisière de forêt (et comparer à un Harding si disponible).
