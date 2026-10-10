@@ -115,3 +115,9 @@ Démonstration produit, réaction en chaîne, gag mécanique, plan « Cog » : t
 - **Écart après le mot-clé** : 0 image rogne la voyelle finale ; **2 images = le point sec** ; 8 images = un temps mort que le spectateur lit comme « attendez la suite » (la chute devient prévisible) ; un écart **négatif** (couper dans le mot) change de gag : le montage coupe la parole, ton narrateur moqueur.
 - **Règle de trois** (v3-v4) : la 3e occurrence garde la forme des deux premières (cadre, écart de coupe, place du son) et change une seule chose lisible ; elle ne doit pas commencer comme les autres finissent. Une réaction muette ne se règle pas en secondes : 1 s n'a pas laissé exister le silence, 4 s fixes = temps mort ; il faut un **bouton** (un dernier petit geste), puis couper ~0,6 s après.
 - **Pas de pré-lap** sur une contradiction : le son du plan B masque le mot-clé ou annonce la chute ; son et image changent à la même image. Détails : `atelier/27-jamais/CRITIQUE.md`.
+
+## Le rire comme piste de montage (fiche `culture/timing-comique-sitcom.md`, session 23) [THÉORIQUE, sources de monteurs]
+- Le rire du public dure plus longtemps que l'écran ne le supporte : on le raccourcit, et la réplique suivante tombe **sur la fin du rire**, jamais dans le pic.
+- Monter un peu long, resserrer la mise en place sans toucher à l'ordre des mots, puis une passe finale « 5 images ici, 12 là » ; laisser respirer la chute.
+- Sur la chute, couper sur **celui qui écoute** (sa réaction autorise le rire), mais garder les yeux de celui qui parle au moment du mot.
+- Faux documentaire : chaque coupe doit pouvoir venir d'une caméra présente ; le talking head est une chute ou un démenti que la scène suivante contredit sans respiration.
