@@ -32,6 +32,10 @@ Et surtout : apprendre le goût de Diego et comprendre ce que fait Studio F42, p
 3. Analyse fine de ces séquences : une image par plan, son aligné sur la même ligne de temps. Pas plus d'environ 150 images regardées par film.
 4. Si une fiche de phase 1 existe sur ce film ou son auteur (culture/), confronte-la au film : ce qui tient, ce qui est faux.
 
+## Leçons de méthode (à appliquer à chaque vidéo, à enrichir)
+- Coupes cachées (appris en session 0, SDM « #Malentouré », 0:47) : les détecteurs de coupes ratent les raccords par occlusion d'un corps ou par filé. Dans tout plan de plus de 15 s, regarde une image toutes les 2 à 3 s pour chercher une coupe cachée.
+- Règle d'auto-correction : quand tu découvres une erreur ou une limite de ta méthode, inscris la correction ICI (ou dans le skill concerné), pas seulement dans la fiche de la vidéo. Sinon les sessions suivantes ne la connaîtront pas.
+
 Clips, pubs et YouTube : la même méthode, en une passe, sur la vidéo entière. Pour une pub, regarde aussi comment le message et la marque arrivent en 15, 30 ou 60 secondes.
 Projets Studio F42 : suis A-LIRE.md. Quand des rushes sont fournis, compare rushes et montage final : ce qui a été gardé, coupé, raccourci, et pourquoi.
 

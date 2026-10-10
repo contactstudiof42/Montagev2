@@ -48,6 +48,7 @@ Chaque skill dit en tête sur quoi il **fait foi** ; le détail (mesures, pièce
 | `montage-direction-artistique` | brief → 3 directions → recommandation ; test « mon propre système », maquetter la direction écartée | éprouvé par 13 examens |
 | `montage-regard` | juger une version : grille, méthode de visionnage, 28 règles | `[ÉPROUVÉ EN MAQUETTE]` |
 | `montage-references` | principes tirés des œuvres et des goûts de l'utilisateur (Ziak, Interstellar, Joker, EGO) | `[SOURCÉ]` |
+| `montage-nouvelle-reference` | accueillir une référence ajoutée (vidéo ou nom) : ranger, analyser, inscrire dans REFERENCES.md, mettre à jour les skills | méthode |
 | `montage-rythme` | où et quand couper, durées, respiration, calage musical, timing comique | `[SOURCÉ]` + maquettes |
 | `montage-grammaire` | raccords (dont mouvement), 180°, J/L-cut, ellipse, jump cut (définition) | `[THÉORIQUE]` + maquettes |
 | `montage-son-et-emotion` | intention sonore, silence, hors champ, musique avec / contre | `[SOURCÉ]`, jamais écouté |
