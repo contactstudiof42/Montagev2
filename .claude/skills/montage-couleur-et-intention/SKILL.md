@@ -26,6 +26,7 @@ La couleur n'est pas une finition : c'est **un sens**. Avant de toucher une roue
 6. **Lumière motivée.** Chaque couleur de lumière doit avoir une source plausible (fenêtre, néon, écran, flamme). Une teinte sans source fait « effet ajouté ».
 7. **La couleur dit ce que les personnages taisent.** Décor brûlant + jeu retenu = tension (*In the Mood for Love*). Ne pas doubler par la couleur ce que le texte dit déjà.
 8. **Décider avant de tourner.** Décor, costume, gélatines, heure de tournage portent la palette. L'étalonnage confirme et unifie ; il ne sauve pas une image sans intention.
+- **Couleur d'accent = ressource rare** : dans une palette froide, une seule apparition de la couleur chaude, au moment clé, vaut plus que plusieurs. Répétée régulièrement, elle devient un motif décoratif et perd son sens (atelier 03 : 1 apparition sur la coupure contre 4 en rotation). Même logique que la règle « 0,14 % de pixels chauds avant l'allumage » de l'atelier 02. [TESTÉ EN ATELIER]
 
 ## Méthode : de brief à intention couleur
 

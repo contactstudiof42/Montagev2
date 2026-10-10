@@ -30,6 +30,13 @@ Analyse complète : `culture/ziak-meme-pas-un-grincement.md`, chronologie `cultu
 - **Seconde horloge** : une pulsation visuelle (éclairs toutes les 15 images) en désaccord avec le tempo crée une tension qui ne se résout pas.
 - Choisir consciemment : **micro** (couper sur les temps : plaisir, énergie, kinetic) ou **macro** (suivre l'arrangement : menace contenue, gravité). Les deux sont dans les goûts de l'utilisateur, **pour des usages différents** (confirmé) : micro pour les réseaux, macro pour le clip et le film de marque.
 
+### Mis à l'épreuve dans l'atelier 03 (session 3, `atelier/03-rythme-macro/`)
+Même musique drill synthétique (140 BPM, intro / couplet / coupure / reprise), même banque de plans, trois montages : A micro (coupe tous les 2 temps), B macro (densité par section), C hybride.
+- **Le calage sur les temps est une texture ; la densité par section est la forme.** A, parfaitement calé, se lit sur la planche comme un motif périodique : l'intro clairsemée et le couplet chargé y sont identiques, l'image n'entend que le métronome. B et C laissent lire la structure du morceau. [TESTÉ EN ATELIER]
+- **Hybride (C) = défaut pour la pub et les réseaux** : intro tenue, micro-calage seulement là où la musique pousse, accélération au temps sur les 2 mesures avant la coupure (effet roulement), image d'exception sur la coupure. **Macro pur (B) = clip grave**, menace contenue.
+- **Un accent ne vaut que par sa rareté** : le plan chaud utilisé 1 fois sur la coupure fait l'événement du montage ; 4 fois à intervalle régulier (A), il devient du papier peint.
+- Une matière sans sujet (abstraite) ne tient pas un plan long de 7 s : la durée tenable dépend de ce qu'il y a à lire dans le plan.
+
 ## Couper sur le mouvement
 - Couper **pendant** un geste (pas avant, pas après) cache la coupe : l'œil suit le mouvement d'un plan à l'autre. [THÉORIQUE, principe classique]
 - Raccord de forme, de geste ou de son : la transition devient du contenu (Wright). Préférer à un fondu, qui dit seulement « le temps passe ».
@@ -53,6 +60,7 @@ Analyse complète : `culture/ziak-meme-pas-un-grincement.md`, chronologie `cultu
 - Sur les réseaux sans son, le rythme doit aussi se lire visuellement.
 
 ## Mesurer le rythme (labo)
+- **Montage scripté calé sur un tempo** [TESTÉ EN LABO, atelier 03] : calculer chaque coupe en **numéro d'image absolu** (`round(t*fps)`), jamais en additionnant des durées arrondies plan par plan. Mesuré : à 25 i/s et 140 BPM (10,71 images par temps), l'addition de durées arrondies fait dériver de **−460 ms sur 24 s** (plus d'un temps) ; en images absolues, écart max **17 ms** (≤ ½ image, incompressible, imperceptible). Vérifier au `scdet=threshold=8`. Dans un logiciel de montage, même logique : poser les marqueurs de temps sur la timeline et couper sur l'image la plus proche, ne pas taper des durées.
 - **Outil complet** [TESTÉ EN LABO, 2026-10-09] : `python3 -I labo/analyse-clip/analyse_clip.py <video> <sortie>` donne les coupes et les flashs, les durées, le tempo, le calage des coupes sur le beat (avec la référence du hasard), les coupes selon la présence de la basse, et la lumière. Pensé pour les images sombres, où `scdet` sous-détecte : il trouvait 38 coupes au lieu de 87 sur Ziak. **Distinguer les flashs des coupes** : sur Ziak, 18 « coupes » étaient des éclairs.
 - Détection de coupes [TESTÉ EN LABO, session 1 — `labo/rythme/RESULTATS.md`] :
   `ffmpeg -i film.mp4 -vf "scdet=threshold=10,metadata=print:key=lavfi.scd.time:file=-" -f null - 2>/dev/null | grep -o "lavfi.scd.time=[0-9.]*" | cut -d= -f2`

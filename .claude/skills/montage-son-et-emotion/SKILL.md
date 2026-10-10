@@ -15,6 +15,7 @@ Version 1 (session 1, 2026-10-09). Sources : `culture/walter-murch-blink-of-an-e
 5. **Musique : ne pas surligner.** Une musique qui dit la même chose que l'image est redondante ; la musique *contre* l'image (swing d'Ellington sur la dissection d'Anatomy of a Murder) crée un second sens.
 6. **Le bruitage amplifié et synchrone** fait la comédie et l'énergie (montage hip-hop d'Edgar Wright) ; il doit aussi se lire visuellement pour les vues sans son.
 7. **La dynamique est une émotion.** Ne pas écraser le mix pour « sonner fort » : les plateformes normalisent, l'écrasé paraît juste plat (voir `montage-loudness-livraison`).
+- **L'image la plus singulière sur l'absence sonore la plus forte** : une coupure musicale (break, silence, nappe seule) est l'emplacement idéal du plan d'exception ; l'oreille s'ouvre, l'œil reçoit. Vérifié dans l'atelier 03 (le seul plan chaud posé sur la coupure devient l'événement du montage). [TESTÉ EN ATELIER]
 
 ## Clichés à refuser (sauf parti pris)
 - Le *drone* grave qui monte pour signifier la tension (je suis moi-même tombé dedans : atelier 01 v4).
