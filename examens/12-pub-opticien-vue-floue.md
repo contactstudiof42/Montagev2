@@ -112,3 +112,5 @@ Le reflet du visage dans la vitre est une image virtuelle à ~0,9 m (vitre à 0,
 **Meilleure idée, propre au sujet** : dans une vitre, le reflet n'apparaît pas par la netteté mais par **le rapport de lumière** entre l'intérieur et l'extérieur. Quand le train passe sous un pont ou en forêt, le paysage s'assombrit et le visage apparaît dans la vitre. La révélation devient un changement de lumière, synchronisé avec le décor, sans effet. C'est à tester dans Blender (verre + visage éclairé + passage d'ombre) : BACKLOG Y34.
 
 Pièce 28 v4 : la lisière de forêt à vitesse de train échoue au contrôle de photosensibilité (5,6 Hz) ; pour la variante reflet, repérer un talus ou un pont (une seule ombre longue).
+
+Fiche `culture/pubs-tv-30s-opticiens-et-primees.md` (sous-agent) : aucune des 17 campagnes d'opticiens trouvées n'est bâtie sur la bascule flou → net (le secteur joue le gag de mauvaise vue, la célébrité, le prix) : la direction B ne recopie pas une campagne identifiée ; le point 2 de l'autocritique est levé en partie (vérifié par la presse, pas par les films).

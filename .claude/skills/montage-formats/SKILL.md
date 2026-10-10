@@ -72,3 +72,10 @@ Spectateur **choisi mais révocable** à chaque seconde : promesse (titre + mini
 
 ## Lacunes
 Pas encore de mesures sur des références réelles par format (durées de plans médianes) ; pas d'exercice d'atelier en documentaire ou en fiction. Voir BACKLOG.
+
+## Pub 30 s : principes tirés de 17 campagnes d'opticiens et 3 films primés (fiche `culture/pubs-tv-30s-opticiens-et-primees.md`, session 23) [THÉORIQUE, presse pub, aucune vidéo vue]
+- Un dispositif répétable + une même phrase de fin font de chaque 30 s l'épisode d'une série (Specsavers).
+- Le gag porte le bénéfice : si on peut retirer le produit sans casser la blague, la blague est à côté.
+- Installer un genre pour le casser (10 s de codes crédibles, puis la bascule en une image) ; une révélation qui réécrit le début vaut un 2e visionnage.
+- Séparer le film d'émotion et les films d'offre : ne pas charger un 30 s de quatre mentions.
+- **Vérifier le secteur avant de défendre une évidence** : le flou → net n'est la base d'aucune des 17 campagnes d'opticiens trouvées (c'est la première idée de tout le monde, pas un cliché de campagne vérifié).

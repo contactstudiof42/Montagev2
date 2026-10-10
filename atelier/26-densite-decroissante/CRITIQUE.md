@@ -24,3 +24,9 @@ Rendus (non commités) : `atelier/rendus/26/v1..v4.mp4`, `python3 piece.py vN at
 - En fait-on trop ? La flamme, oui.
 
 **Référence actuelle : v4** (avec l'amplitude de flamme à réduire). Suites : BACKLOG Y25.
+
+## v5 (session 23, BACKLOG Y25) — flamme à ~4 % d'amplitude
+`python3 piece.py v5 ../rendus/26` (70 s) puis `mesure.py` ; planche `v5-planche.png`, mesures `v5-mesures.json`.
+- YDIF moyen du temps long : v1 0,03 (image arrêtée) → v4 0,34 (agité) → **v5 0,09** ; ouverture 0,96 : **10,7× plus calme, mais pas zéro**. L'objectif écrit en session 22 est atteint par le seul dosage de la flamme (souffles et dérive gardés).
+- Non fait : le découpage du dernier tiers qui ne coupe que vers ce que la lumière montre (larges) ; reste dans Y25.
+**Référence : v5.**

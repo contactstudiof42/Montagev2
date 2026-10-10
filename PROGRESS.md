@@ -10,8 +10,8 @@ _Lire en premier. Mis à jour à chaque fin de session._
 
 ## Reprendre ici (session 24)
 0. **Relever `date -u` au début et clôturer à début + 45 min, pas avant** (l'horloge est juste). Veille IA du jour (sous-agent). `python3 -m pip install -q numpy pillow` ; Blender : `curl -sSL -o /tmp/blender.tar.xz https://download.blender.org/release/Blender4.2/blender-4.2.3-linux-x64.tar.xz && tar xf …` (45 s).
-1. Si `culture/pubs-tv-30s-opticiens-et-primees.md` existe sans être intégrée (sous-agent Y32 lancé en fin de session 23) : verser ses principes dans `montage-formats` et l'examen n°12.
-2. Y35 (ombre qui passe en mouvement, `atelier/28-flou-net/scene.py --reflet`), Y36 (relire montage-regard), Y25, Y22, Y29.
+1. Y38 (pièce 28 en mouvement), Y35 reste (lecture du visage, son), Y25 reste (larges dans le noir), Y29 (bande.py général), Y23/Y26 ; examen n°13 (Y37) vers la session 26.
+2. Fait en fin de session 23 : Y22 (pièce 25 v4, G = réf.), Y25 en partie (pièce 26 v5), Y32 (fiche pubs), Y36 (montage-regard 23-25, sommaire montage-expert).
 
 ## Ancien point (après la session 22, 2026-10-10)
 - **Session 22** (lancée par l'utilisateur, « feu vert », après un arrêt de l'anti-doublon : la session 21 avait commité 2 min avant) : veille IA (sous-agent : seul nouveau, Suno Speech bêta et Studio), fiche **gags de montage** (Y21, sous-agent), **pièce 26 « Densité décroissante »** (Y20, v1-v4, v4 = réf.). Examens : … n°11 15. Prochain examen n°12 vers la session 24-25 (Y24, pas YouTube).

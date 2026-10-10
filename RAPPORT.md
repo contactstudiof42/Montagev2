@@ -286,7 +286,7 @@ Session 6 : enrichis `montage-son-et-emotion` (hors champ, Chion, présence dans
 22. (nouveau, session 11) La nuit à l'image : aimez-vous les visages qu'on ne voit presque pas (Willis, *Le Parrain*), ou voulez-vous toujours lire les yeux, même dans le noir ?
 
 ### Autres questions et prochaines priorités
-- **Prochaines priorités (après la session 23)** : Y35 (l'ombre qui passe, en mouvement), Y32 (fiches pubs, en cours en fin de session 23), Y36 (relire `montage-regard`), Y25, Y22, Y29 ; examen n°13 vers la session 26 (fiction courte).
+- **Prochaines priorités (après la session 23)** : Y38 (bascule de point rendue en mouvement), Y35 et Y25 (restes), Y29 ; examen n°13 (fiction courte) vers la session 26.
 - **Question (session 23)** : quand une contradiction comique tombe, préférez-vous la coupe sèche juste après le mot (le personnage a fini sa phrase) ou la coupe qui lui coupe la parole (le montage se moque de lui) ? C'est la différence entre mes versions 2 images et −4 images.
 - **Prochaines priorités (après la session 22)** : Y27 atelier « un gag de montage » (la même contradiction à 0, 4, 8, 12 images d'écart ; une réaction tenue 1 à 4 s ; le silence-gag) ; Y25 pièce 26 v5 ; Y22 pièce 25 v4 ; examen n°12 (pas YouTube) vers la session 24-25.
 - **Question (session 22)** : la routine s'est lancée 2 min après la fin de la session 21 et l'anti-doublon m'a arrêté avant votre « feu vert ». Deux déclenchements sont-ils programmés ? Si vous préférez, je peux ramener le seuil à 5 min quand le dernier commit est une clôture de session (« Session N : PROGRESS… »), mais seulement si vous l'écrivez, car c'est une règle de PROMPT.md.
@@ -336,7 +336,7 @@ Session 6 : enrichis `montage-son-et-emotion` (hors champ, Chion, présence dans
 ## JOURNAL
 
 ### Session 23 — 2026-10-10 18:29 UTC → 18:34, reprise 18:45 → ~19:15
-- Reprise (18:45-19:10) : pièce 27 v3-v4 (`trois.py`), fiche `culture/timing-comique-sitcom.md` (sous-agent), **examen n°12** (14/20), pièce 28 v1-v3 (Blender 4.2.3 : 30 s d'installation ; 40 rendus Cycles en 97 s), calcul de profondeur de champ (variante reflet), sommaire `montage-expert` ; skills rythme, son-et-emotion, direction-artistique, preparation-tournage-vfx.
+- Reprise (18:45-19:10) : pièce 25 v4 (2 plans : la coupe unique = chute de −40 %, fondu de 12 s = référence), pièce 26 v5 (temps long 10,7× plus calme), fiche pubs opticiens et primées (sous-agent : le flou → net n'est la base d'aucune des 17 campagnes trouvées), pièce 28 v4 (forêt vue d'un train = échec photosensibilité), pièce 27 v3-v4 (`trois.py`), fiche `culture/timing-comique-sitcom.md` (sous-agent), **examen n°12** (14/20), pièce 28 v1-v3 (Blender 4.2.3 : 30 s d'installation ; 40 rendus Cycles en 97 s), calcul de profondeur de champ (variante reflet), sommaire `montage-expert` ; skills rythme, son-et-emotion, direction-artistique, preparation-tournage-vfx.
 - **Erreur de méthode signalée par l'utilisateur** : clôture après 5 min, parce que je me fiais à une note fausse (« horloge peu fiable ») et à mon ressenti du temps. L'horloge est juste ; la note est corrigée dans PROGRESS.
 - Démarrage : anti-doublon OK (dernier commit 26 min avant).
 - Sous-agent : veille IA (Vidu Q4 Preview ; Grok Imagine 1.5 Lite écarté).
