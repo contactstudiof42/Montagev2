@@ -98,7 +98,11 @@ if P.get("lampe"):  # lampe de bureau chaude sur la table (source motivée de la
     ab.data.materials.append(em); ab.visible_shadow = False
     ab.visible_camera = not P.get("lampe_hors_champ", False)  # v2 : la source hors champ, seule sa lumière est dans l'image
 if P.get("ecran"):  # l'événement froid : un téléphone posé face en l'air qui s'allume
-    bpy.ops.mesh.primitive_cube_add(location=(0.05, 0.2, 0.765)); ph = bpy.context.object; ph.scale = (0.04, 0.075, 0.004)
+    if P.get("feuille"):  # v3 : une surface neutre pour recevoir le froid
+        bpy.ops.mesh.primitive_plane_add(size=1, location=(0.05, 0.2, 0.7615)); fe = bpy.context.object
+        fe.scale = (0.21, 0.297, 1); fe.rotation_euler = (0, 0, math.radians(12))
+        fe.data.materials.append(mat("papier", (0.8, 0.8, 0.78), 0.8))
+    bpy.ops.mesh.primitive_cube_add(location=(0.05, 0.2, 0.767)); ph = bpy.context.object; ph.scale = (0.04, 0.075, 0.004)
     pm = bpy.data.materials.new("ecran"); pm.use_nodes = True; nb = pm.node_tree.nodes["Principled BSDF"]
     nb.inputs["Base Color"].default_value = (0.01, 0.01, 0.01, 1)
     nb.inputs["Emission Color"].default_value = (0.55, 0.75, 1, 1); nb.inputs["Emission Strength"].default_value = P["ecran"]

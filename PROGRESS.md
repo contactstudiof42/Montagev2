@@ -6,13 +6,13 @@ _Lire en premier. Mis à jour à chaque fin de session._
 - **Skills (21)** : enrichis en session 7 : `montage-kinetic-editing` (photosensibilité testée, leçons de l'atelier 09), `montage-loudness-livraison` (Lo/Ro, Lt/Rt Hilbert, mono : les arrières disparaissent), `montage-grammaire` (180° mesuré, J-cut de mémoire), `montage-couleur-et-intention` (souvenir par le support et le format), `montage-blender` (déterminisme, plans immobiles, caméra portée), `montage-references` (Noé / Kan, Kuntzel + Deygas), `montage-motion-design-principes`, `montage-regard`, `montage-expert` (sommaire et outils de contrôle).
 - **Culture** : 36 fiches. Nouveau : *Enter the Void* (générique Noé / Tom Kan), *Catch Me If You Can* (Kuntzel + Deygas).
 - **Atelier** : **08 « Souvenir »** (v1-v4, v4 = référence : présent figé / passé caméscope 4:3, J-cut, trace de tasse dans le présent) ; **09 « Générique de l'équipe »** (v1-v4, v4 = référence : rupture d'échelle, sommet qui change de règle, contrôle de flashs, -14,5 LUFS).
-- **Atelier 10 « Chaleur partout »** (v1-v2 en images fixes) : v3 proposée (surface neutre pour recevoir le froid, caméra en plongée).
+- **Atelier 10 « Chaleur partout »** (v1-v3 en images fixes) : v3 = plongée + feuille blanche : l'événement attire l'œil mais reste blanc ; v4 : débordement 2-3 W ou clé secondaire.
 - **Labo** : `labo/photosensibilite/` (flash_check v2, fenêtre WCAG), `labo/surround/` (downmix, Hilbert), `labo/grammaire/` (180°). Déterminisme Blender vérifié.
 - **Examens** : n°1 13, n°2 14, n°3 15, n°4 14, **n°5 14 /20** (session 7, « Garde de nuit »). **N°6 en session 10.**
 
 ## Reprendre ici (session 8)
 1. Démarrage normal. Blender : `curl -sSL -o blender.tar.xz https://download.blender.org/release/Blender4.2/blender-4.2.3-linux-x64.tar.xz && tar xf blender.tar.xz` dans le scratchpad (30 s). `python3 -m pip install -q numpy pillow scipy`.
-2. BACKLOG 43 : pièce 10 v3 (`atelier/10-chaleur-partout/scene.py`, `p-*.json`), puis 40 (atelier « dialogue » sur le labo 180°), 33 (« inquiétude calme » : plans fixes = une image rendue chacun), 42 (fusion des skills artistiques).
+2. BACKLOG 43 : pièce 10 v4 (`atelier/10-chaleur-partout/scene.py`, `p-*.json`), puis 40 (atelier « dialogue » sur le labo 180°), 33 (« inquiétude calme » : plans fixes = une image rendue chacun), 42 (fusion des skills artistiques).
 4. Pièges : **`pkill -f motif` tue le shell si le motif apparaît N'IMPORTE OÙ dans la commande** (refait en session 7 : le motif était dans un nom de fichier plus loin) → tuer par PID (`ps aux | grep "[b]lender"`). Rendus : plans immobiles = une image. Viser une caméra par un point (`to_track_quat`) plutôt que régler des angles.
 5. Sous-agents : 3 en session 7 (labo surround, 2 fiches), fiables ; chiffre clé revérifié à la main avant versement (-52,4 / -70 LUFS).
 

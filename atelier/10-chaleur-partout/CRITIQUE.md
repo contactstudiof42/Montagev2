@@ -19,3 +19,9 @@ Planches : `planche-ABC.png` (v1), `planche-B2C2C3.png` (v2) ; mesures `mesures-
 
 ## v3 proposée
 Caméra plus haute (plongée sur la table), téléphone légèrement relevé sur la tasse ou posé sur une feuille blanche, écran en émission modérée (≈ 2) ; lampe baissée de 30 % autour ; puis un montage de 8 s : B tenu, le téléphone s'allume, rien d'autre ne bouge.
+
+## v3 (`planche-B4C4C5.png`) — plongée, feuille blanche sous le téléphone
+- Caméra en plongée (la table devient le décor, on voit le téléphone de face), feuille A4 neutre sous le téléphone, écran en émission modérée (2), débordement 10 W ; C5 avec la lampe baissée d'un tiers.
+- **Saillance : réussie.** La feuille éclairée devient le point le plus lumineux du cadre : l'œil y va en premier (critère 2 tenu sur la planche), dans un monde resté chaud (50 % de pixels chauds en C4).
+- **Couleur : toujours ratée.** La feuille sort **blanche** (0 % de pixels froids ; zone de la feuille à peine bleutée) : le débordement est trop fort, et AgX compresse les hautes lumières vers le blanc. L'événement se lit « une lumière s'allume », pas « le froid entre ».
+- Pour v4 : débordement à 2-3 W au lieu de 10 (rester sous la compression des hautes lumières), ou standard « Filmic / Standard » pour ce plan, ou étalonnage secondaire qui pousse le bleu **dans** la zone (une clé sur la feuille). Leçon générale : **la saillance vient de la luminance, la couleur ne se lit que sous le blanc** ; un événement coloré doit être exposé plus bas qu'on ne le croit.
