@@ -113,6 +113,11 @@ Quand on demande « quelle couleur pour ce film ? », rendre :
 - La descente se lit mieux comme **un événement du monde** (les fenêtres de la ville qui s'éteignent une à une) que comme un réglage.
 - **Le plancher reste au-dessus du noir** : 20 s à YAVG 19 se lisent « écran éteint » ; garder un dernier point de lumière vivant. En v3, la lune **non graduée** sur un ciel qui s'éteint paraît s'allumer : la dernière lumière devient l'image. Un cadre clair qui revient **à la fin** réveille (20 → 32) : les retours se placent au milieu de la descente.
 
+## Le même décor inversé (pièce 31 « Le même escalier », principe Joker n°3, session 24) [TESTÉ EN ATELIER, images fixes Blender ; perception à valider]
+- Chaque levier dit une chose : **lumière = l'heure et la valeur** (chaud = désir, froid = isolement), **hauteur de caméra = rapport de force**, **corps = qui a changé**. Un levier seul ne change que ce qu'il dit : lumière seule = « le soir est tombé » ; contre-plongée seule en froid = menace, pas éclosion. La transformation se lit quand les trois vont dans le même sens (R4b).
+- Le contre-jour pur **efface le repère du lieu** (les marches à l'ombre : on ne reconnaît plus l'escalier). Contre-jour **rasant et de biais** : il redessine les arêtes ; garder un repère fixe dans le cadre (mât, rampe, fenêtre).
+- La couleur forte (rouge) réservée au plan de bascule signe la transformation. Détail : `atelier/31-meme-escalier/CRITIQUE.md`.
+
 ## Limites
 
 - Les significations des couleurs varient selon cultures, marques et publics ; aucune table n'est universelle (même Storaro le reconnaît comme système personnel).
