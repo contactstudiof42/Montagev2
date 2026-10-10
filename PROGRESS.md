@@ -5,7 +5,15 @@ _Lire en premier. Mis à jour à chaque fin de session._
 ## Consigne durable de l'utilisateur (2026-10-10)
 - Développer une **culture YouTube / internet** (divertissement, essai vidéo, vulgarisation, vlog, motion de chaîne, Shorts, cultures d'edit) au même niveau que cinéma et clip. Voir BACKLOG « Consigne » (Y1-Y6) : une part de chaque session jusqu'à parité.
 
-## Où on en est (après la session 22, 2026-10-10)
+## Où on en est (après la session 23, 2026-10-10)
+- **Session 23** : veille IA (sous-agent : Vidu Q4 Preview seul nouveau), **pièce 27 « Jamais »** (Y27, Gilligan cut, v1 6 versions + v2 5 versions ; outil `bande.py`) ; skill montage-rythme ; PLAN-TESTS 71. Examens : … n°11 15. **Prochain examen n°12 en session 24 ou 25** (Y24, pas YouTube).
+
+## Reprendre ici (session 24)
+0. Veille IA du jour (Y11, sous-agent dès le démarrage). `python3 -m pip install -q numpy pillow` (~10 s), `apt-get install -y espeak-ng` si besoin.
+1. **Examen n°12 (Y24)** si la session 24 le permet ; sinon Y28 (pièce 27 v3 : tenue, silence-gag, règle de trois), Y25, Y22, Y30.
+2. Pièce 27 : `espeak-ng -v fr -s 150 -p 45 -w atelier/rendus/27/voix.wav "Moi, manger du chou-fleur ? Jamais."` puis `python3 atelier/27-jamais/piece.py atelier/rendus/27 2 2 --v2 --nom v2_e2` (0,6 s) et `bande.py`.
+
+## Ancien point (après la session 22, 2026-10-10)
 - **Session 22** (lancée par l'utilisateur, « feu vert », après un arrêt de l'anti-doublon : la session 21 avait commité 2 min avant) : veille IA (sous-agent : seul nouveau, Suno Speech bêta et Studio), fiche **gags de montage** (Y21, sous-agent), **pièce 26 « Densité décroissante »** (Y20, v1-v4, v4 = réf.). Examens : … n°11 15. Prochain examen n°12 vers la session 24-25 (Y24, pas YouTube).
 
 ## Reprendre ici (session 23)
@@ -62,6 +70,7 @@ _Lire en premier. Mis à jour à chaque fin de session._
 - Un serveur MCP nommé `HIGGSFIELD_MCP` est listé dans l'environnement : non appelé (consigne phase 1). Noms observés dans `PLAN-TESTS-MCP.md`.
 
 ## Historique
+- Session 23 — 2026-10-10 18:29 UTC (horloge VM) → ~19:10 réel : veille IA (sous-agent), pièce 27 « Jamais » v1-v2, bande.py ; montage-rythme ; PLAN-TESTS 71.
 - Session 22 — 2026-10-10 17:38 UTC → ~18:20 réel (horloge VM ~17:50) : veille IA, fiche gags de montage (sous-agents), pièce 26 v1-v4 ; skills youtube, rythme, son-et-emotion, ia-generative ; PLAN-TESTS 69.
 - Session 21 — 2026-10-10 17:29 UTC → fin (horloge peu fiable) : examen n°11 (15/20), labo densite.py, sous-agents veille IA / fiche slow TV-ASMR ; skills direction-artistique, youtube, references, ia-generative.
 - Session 20 — 2026-10-10 16:29 UTC → fin (horloge peu fiable) : pièces 24 (face caméra) et 25 (au lit), labo écho, sous-agents veille IA / infrarouge / Resolve retime / affiches de festivals ; skills youtube, rythme, couleur-et-intention, motion-design-principes, preparation-tournage-vfx, ia-generative ; PLAN-TESTS 67.

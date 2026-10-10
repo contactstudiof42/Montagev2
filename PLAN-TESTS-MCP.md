@@ -168,3 +168,8 @@ Le serveur `HIGGSFIELD_MCP` est toujours listé, **non appelé** (consigne phase
 
 ## 70. (session 22) Regarder de vraies vidéos en phase 2
 - Sur le Mac, ouvrir une vidéo de référence (McFly et Carlito, Ziak, EGO) dans le navigateur ou en fichier local : images toutes les 0,1-0,5 s, coupes à l'image près (scdet), loudness ; première **vérité terrain réelle** pour `labo/youtube/densite.py` et les fiches de `culture/` (faits incertains à lever).
+
+## 71. (session 23) Gag de contradiction sur une vraie prise (`atelier/27-jamais/`) [THÉORIQUE pour les logiciels]
+- Sur une vraie voix dans Premiere : mesurer la queue de voyelle du mot-clé et refaire les écarts −4 / 0 / 2 / 4 / 8 images ; vérifier que « 2 images après la fin audible » reste le point sec avec une respiration réelle.
+- Faire juger les versions par l'utilisateur (à l'écoute, en temps réel) : c'est la seule validation du ressenti comique.
+- Vérifier qu'un export de bande-film (images autour d'une coupe) est possible depuis l'outil d'export d'image du MCP, sinon via ffmpeg sur l'export.

@@ -190,5 +190,10 @@ Y23. [ ] [TECH] `densite.py` v2 : lire un EDL / XML FCP7 / OTIO réel (coupes) +
 Y24. [ ] [ART] Examen n°12 (vers la session 24-25) : **pas YouTube** (fiction courte ou pub 30 s) pour vérifier que la consigne YouTube n'a pas mangé le reste ; ne pas recommander d'hybride.
 Y25. [ ] [ART] Pièce 26 v5 : flamme à 3-5 % d'amplitude (ou souffle seul), découpage du dernier tiers qui ne coupe que vers ce que la lumière montre (large ou suivre la bougie), plans allongés avec la baisse de densité ; mesurer l'objectif « temps long ≥ 10× plus calme que l'ouverture, mais pas zéro ».
 Y26. [ ] [TECH] `mesure.py` de la pièce 26 → outil général : YDIF corrigé du grain (débruitage léger avant mesure ou différence sur image réduite), activité visuelle hors coupes (exclure les images de coupe détectées par scdet) ; fusionner avec `densite.py` (Y23).
-Y27. [ ] [ART] Atelier « un gag de montage » d'après `culture/gags-de-montage.md` : la même contradiction (« je ne ferai jamais X » → X) montée à 0, 4, 8, 12 images d'écart après le mot-clé et une réaction tenue 1, 2, 3, 4 s ; planche + jugement ; puis le silence-gag (un son appris 3 fois puis retiré).
+Y27. [x] [ART] (session 23 : pièce 27 « Jamais » v1-v2, `atelier/27-jamais/CRITIQUE.md` : plan d'arrivée lisible d'abord, 2 images = point sec, pas de pré-lap ; tenue et silence-gag → Y28) Atelier « un gag de montage » d'après `culture/gags-de-montage.md` : la même contradiction (« je ne ferai jamais X » → X) montée à 0, 4, 8, 12 images d'écart après le mot-clé et une réaction tenue 1, 2, 3, 4 s ; planche + jugement ; puis le silence-gag (un son appris 3 fois puis retiré).
 
+
+## Réalimentation (session 23)
+Y28. [ ] [ART] Pièce 27 v3 : tenue du plan d'arrivée 1 / 2 / 3 / 4 s (bande-film complète à 5 i/s) ; silence-gag (la fourchette qui « tinte » 3 fois, la 4e fois rien, visage tenu) ; règle de trois « Jamais » sur trois aliments, la 3e trahie (même cadre, même durée).
+Y29. [ ] [TECH] `bande.py` → outil général de labo : bande-film image par image autour de N coupes d'un EDL / OTIO, avec enveloppe audio et repères ; lier à Y23 / Y26.
+Y30. [ ] [ART] Fiche culture : le timing comique dans la sitcom multi-caméras vs single-camera (Seinfeld, The Office UK / US, Kaamelott) : où l'on coupe sur le rire, la réaction tenue, le regard caméra (sous-agent, sources de monteurs).
