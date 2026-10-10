@@ -23,3 +23,23 @@ Planches : 20 vignettes, une image sur 3, 0-2,4 s. `flash_check.py` sur chaque f
 4. **Non jugé** : « choix ou bug » (l'hypothèse « si quelque chose continue de bouger, la saccade se lit comme un choix ») ne se voit pas sur une planche d'images fixes. À juger en mouvement en phase 2 sur les fichiers `atelier/rendus/20/v2.mp4` contre `v3.mp4` (régénérables par `piece.py`), ou par un regard humain.
 
 Médias : tout est synthétique (numpy, police DejaVu Sans Bold, licence libre DejaVu / Bitstream Vera). Noms d'artistes inventés.
+
+## v5-v6 : la structure de l'examen n°8 corrigée, avec le son (`v5.py`, `v5-planche.png`, `v6-planche.png`, `v5-onde.png`)
+Structure (10 s, 128 BPM) : coup-titre (image 0) → 6 noms sur **noires pointées** (17,6 images) → **trou** d'une mesure (noir total, lasers coupés, le relais seul sur le 4e temps) → tête d'affiche. Son synthétique : kick 128 BPM (coupé dans le trou), un « relais » de 12-25 ms par coup (durées variées), impact sub 40 Hz sur la tête d'affiche.
+
+| | v5 | v6 |
+|---|---|---|
+| Photosensibilité | 7 flashs, **pire seconde 2** (marge gagnée sur v2-v4 : 3) | idem, 2 |
+| Loudness (MP4 AAC) | `loudnorm` seul : **-17,9 LUFS** (il n'atteint pas -14 sous contrainte de true peak avec des kicks impulsifs) ; boucle gain + limiteur 192 kHz (R6) : -21,5 → -16,0 → -15,1 → -14,7 → **-14,5 LUFS / -2,5 dBTP** en 5 passes | -14,5 / -2,5 en 1 passe (gain repris de v5) |
+| Planche | **bug** : « OKAPI SOUND » apparaît comme nom secondaire **et** comme tête d'affiche (indice 0 de la liste réutilisé) : le sommet est déjà vu ; le coup de la tête d'affiche (3 images) **plus faible** que les secondaires, le sommet n'en est pas un | doublon retiré ; coup de la tête d'affiche **tenu 8 images** (un seul flash, mesuré) : 0,32 s de blanc, nom en noir énorme, puis inversion : c'est enfin le sommet |
+
+Grille (v6) :
+- **Intention** : servie : chaque nom a son coup, et le trou rend le dernier coup attendu.
+- **Rythme** : les 6 noms sur noires pointées tombent à cheval sur les temps : **contre** le kick une fois sur deux (syncope). Sur la planche, rien ne le montre ; à l'oreille, c'est soit un groove, soit un décalage : à juger en phase 2. Hypothèse : la syncope sert les secondaires (ça avance) et le retour sur le temps (tête d'affiche sur le 1er temps de la mesure 5) fait arriver.
+- **Justesse** : le trou de 1,9 s de noir total risque de faire croire à une fin ou à un bug sur un fil ; la v6 garde le relais seul sur le 4e temps pour dire « ça continue ». Non vérifiable sans regard humain.
+- **Faiblesse qui reste** : les noms secondaires sont tous traités pareil (même taille, même cycle) : monotone sur 6, ce serait insupportable sur 20 ; varier taille et position selon la mesure (rupture de forme de la pièce 09), et la foule toujours la même (un seul rush synthétique).
+
+Leçons :
+1. **Le sommet doit être plus long, pas plus fort** : un seul flash tenu 8 images reste un seul flash pour WCAG (montée + descente) et pèse plus qu'un coup de 3 images, sans ajouter de risque. La durée de l'état clair est un levier libre ; le nombre de transitions ne l'est pas.
+2. **Vérifier la liste des textes contre les doublons** avant tout rendu (la v5 a montré deux fois le sommet).
+3. `loudnorm` en une passe sur un montage de 10 s à kicks impulsifs reste à -18 LUFS : confirmer la boucle R6 (`montage-kinetic-editing`), qui converge en ~5 passes.
