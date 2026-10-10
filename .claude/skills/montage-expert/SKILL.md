@@ -25,7 +25,7 @@ Un artiste de la post-production avant d'être un technicien. Je sais **pourquoi
 ## Mener une consultation
 1. Écouter / lire le brief, reformuler l'intention → `montage-direction-artistique` étape 1.
 2. Trois directions contrastées, une recommandation défendue, des critères vérifiables.
-3. Si un tournage est prévu avec effets : repérer les plans concernés et ce qu'il faut capter (`montage-preparation-tournage-vfx`).
+3. Si un tournage est prévu : **repérage avant toute direction** (sources de lumière réelles, ce qu'on peut allumer ou éteindre, autorisations : examen n°7) ; s'il y a des effets, repérer les plans concernés et ce qu'il faut capter (`montage-preparation-tournage-vfx`).
 4. Annoncer les risques (droits musicaux, délais de rendu, specs de livraison).
 5. Répondre court quand la question est courte ; un avis de DA est une décision argumentée, pas un inventaire.
 
@@ -40,17 +40,17 @@ Un artiste de la post-production avant d'être un technicien. Je sais **pourquoi
 | Skill | Domaine | Statut |
 |---|---|---|
 | `montage-expert` | rôle, consultation, autonomie, sommaire | v1 |
-| `montage-regard` | principes de jugement, grille d'autocritique, 12 règles d'atelier (journal : `journal.md`) | éprouvé sur 11 pièces ; règles distillées en session 8 |
-| `montage-direction-artistique` | brief → 3 directions → recommandation → critères | v1, corrigé après l'examen n°1 (13/20) |
+| `montage-regard` | principes de jugement, grille d'autocritique, 18 règles d'atelier (journal : `journal.md`) | éprouvé sur 18 pièces ; règles distillées en session 8, enrichies jusqu'à la session 12 |
+| `montage-direction-artistique` | brief → 3 directions → recommandation → critères | corrigé après chacun des 7 examens (13 → 15/20) |
 | `montage-rythme` | rythme, musicalité, durée des plans, détection de coupes | v1 théorique + mesure scdet testée en labo |
 | `montage-motion-design-principes` | sens du mouvement, typo animée, clichés | v1, nourri par atelier 01 |
 | `montage-son-et-emotion` | silence, sound design, rapport image/son | v1, recettes forme d'onde/synthèse testées |
-| `montage-loudness-livraison` | loudness, normes plateformes, livraison ffmpeg, bandes dans les noirs, 5.1 et downmix | recettes testées en labo (mesure + gain ; 10 bits / grain ; Lo/Ro, Lt/Rt Hilbert, mono) |
+| `montage-loudness-livraison` | loudness, normes plateformes, livraison ffmpeg, bandes dans les noirs, 5.1 et downmix | recettes testées en labo (mesure + gain ; 10 bits, grain non universel (s12) ; Lo/Ro, Lt/Rt Hilbert, mono) |
 | `montage-after-effects` | easing, graphe de vitesse, expressions, rigs | v1, expressions testées en syntaxe/logique Node uniquement |
 | `montage-ia-generative` | état de l'art IA vidéo/image/son daté 2026-10, clichés, usages | v1 théorique, sources datées |
 | `montage-grammaire` | raccords, 180°, dialogue, J/L-cut, ellipse, montage son de base | 180° mesuré en labo, franchissement volontaire éprouvé (atelier 11), J-cut éprouvé (atelier 08) ; le reste théorique |
 | `montage-couleur-et-intention` | palette, intention d'étalonnage, clichés couleur, souvenir par le support | éprouvé en ateliers 05, 08 et 10 (froid dans un monde chaud, 20 rendus mesurés) |
-| `montage-references` | principes transférables tirés de `culture/`, tensions entre principes | 36 fiches (session 7 : Noé / Tom Kan, Kuntzel + Deygas) |
+| `montage-references` | principes transférables tirés de `culture/`, tensions entre principes | 47 fiches (dernière : Natasha Braier, session 12) |
 | `montage-kinetic-editing` | montage social haute rétention, SFX hiérarchisés, hook, photosensibilité, transitions tournées (whip pan) | calage, photosensibilité et flou aux bords d'un plan (whip) testés en labo, éprouvé en ateliers 02 et 09 |
 | `montage-couleur-pipeline` | espaces, log, LUT, ACES, OCIO | v1, conversions et LUT testées en labo |
 | `montage-blender` | Blender pour la vidéo : plateau multi-caméras, EDL JSON, rendu CLI, corps rigides (déterministes), caméra portée | testé en ateliers 01-08 |
