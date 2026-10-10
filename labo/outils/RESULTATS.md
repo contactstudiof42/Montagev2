@@ -45,3 +45,7 @@ Activité visuelle hors coupes (vérité = la vidéo propre) :
 - BPM entiers dont la noire tombe sur des images entières : **25 i/s → 60, 75, 100, 125, 150** ; **24 i/s → 60, 72, 80, 90, 96, 120, 144, 160, 180** ; 30 i/s → 60, 72, 75, 90, 100, 120, 150, 180 ; 50 i/s → 60, 75, 100, 120, 125, 150 ; **23,976 et 29,97 : aucun**.
 - **Piège** : à 25 i/s, 120 BPM = 12,5 images par temps. Couper « toutes les 12 images » dérive de **16 images (0,64 s) en 8 mesures** ; 128 BPM en coupant toutes les 12 : −9 images. Il faut couper sur la grille arrondie de chaque temps (12, 13, 12, 13…), jamais répéter une durée fixe. L'erreur d'arrondi par temps reste ≤ ½ image (invisible).
 - Le tic de 1,25 s (48 BPM) tombe pile à 24 i/s (30 images), pas à 25 (31,25) : c'est ce que la pièce 29 a rencontré.
+
+## XML FCP7 (`--xml`, Y42) [TESTÉ EN LABO, sur un XML écrit par OTIO, pas encore par Premiere / Resolve]
+- `pip install otio-fcp-adapter` (3 s) ; l'OTIO de test réécrit en XML FCP7 (`xmeml` v4, 9 clipitems) puis relu : **8/8 coupes**, identique à l'EDL et à l'OTIO.
+- **Le marqueur de piste « relance » est perdu** dans l'aller-retour OTIO → XML → OTIO (l'EDL garde ses `* LOC:`). Pour des marqueurs de relance, préférer l'EDL ou des marqueurs de séquence ; à vérifier sur un vrai export Premiere (PLAN-TESTS 73).

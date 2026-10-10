@@ -4,6 +4,7 @@
 Sources de coupes (une au choix, ou plusieurs pour les comparer) :
   --edl FICHIER.edl    CMX3600 (record in de chaque événement V ; lignes « * LOC: TC COULEUR texte » = marqueurs)
   --otio FICHIER.otio  OpenTimelineIO (1re piste vidéo ; marqueurs de la piste et des clips)
+  --xml FICHIER.xml    XML FCP7 (Premiere, Resolve) lu par OTIO (`pip install otio-fcp-adapter`, 3 s)
   --scdet [SEUIL]      détection ffmpeg (scdet, seuil 10 par défaut)
 Sorties (préfixe --sortie P) :
   P-bande.png   une ligne par coupe : images de part et d'autre (--avant/--apres), enveloppe du son
@@ -54,7 +55,9 @@ def lire_edl(chemin, fps):
 
 def lire_otio(chemin, fps):
     import opentimelineio as otio
-    tl = otio.adapters.read_from_file(chemin)
+    tl = otio.adapters.read_from_file(chemin)      # .xml → adaptateur fcp_xml (pip install otio-fcp-adapter)
+    if isinstance(tl, otio.schema.SerializableCollection):
+        tl = next(t for t in tl.find_children(descended_from_type=otio.schema.Timeline)) if hasattr(tl, 'find_children') else tl[0]
     piste = next(t for t in tl.tracks if t.kind == otio.schema.TrackKind.Video)
     coupes, marqueurs, t = [], [], 0
     for m in piste.markers:
@@ -200,6 +203,8 @@ def main():
         sources['edl'], m = lire_edl(opt('--edl', None), fps); marqueurs += m
     if '--otio' in a:
         sources['otio'], m = lire_otio(opt('--otio', None), fps); marqueurs += m
+    if '--xml' in a:                                  # XML FCP7 (export Premiere / Resolve) via OTIO
+        sources['xml'], m = lire_otio(opt('--xml', None), fps); marqueurs += m
     if '--scdet' in a:
         i = a.index('--scdet'); s = a[i+1] if i+1 < len(a) and not a[i+1].startswith('--') else '10'
         sources['scdet'] = scdet(video, s)
