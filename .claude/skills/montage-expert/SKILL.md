@@ -58,6 +58,7 @@ Un artiste de la post-production avant d'être un technicien. Je sais **pourquoi
 | `montage-resolve` | nodes, RCM, Deliver, API de scripting Python | v1 théorique (README officiel 2022-2023 lu, rien exécuté) |
 | `montage-formats` | narration par format : pub, vertical, clip, corporate (dispositifs pour l'humain), doc, fiction, teaser | v1 synthèse (session 3) |
 | `montage-premiere` | Premiere (v26, 2026) : projet, proxies, multicam, musique, sous-titres, couleur, Generative Extend, export, trims, UXP | v1 théorique (session 3, recherche datée) |
+| `montage-workflows` | passages entre logiciels, EDL/XML/AAF/OTIO, poignées, pipelines types par format | v1 (session 4) : formats d'échange testés en labo (OTIO), passages théoriques |
 | `montage-pilotage-mcp` | méthode d'agent pour piloter AE/Premiere/Blender/Resolve : projet de test, un geste = une image, unités, rien de payant | v1 théorique (session 3) |
 
 ## Ressources du dépôt

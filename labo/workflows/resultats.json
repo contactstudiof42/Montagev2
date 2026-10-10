@@ -1,0 +1,66 @@
+{
+ "plans": 19,
+ "cmx_3600": {
+  "cadence_fournie": true,
+  "plans_relus": 19,
+  "differences": {
+   "in": 0,
+   "dur": 0,
+   "pos": 0,
+   "nom": 0,
+   "marqueurs": 4
+  },
+  "exemple_relu": {
+   "nom": "01_pendule",
+   "in": 12,
+   "dur": 15,
+   "pos": 0,
+   "marqueurs": [
+    "HOOK"
+   ]
+  },
+  "octets": 3847
+ },
+ "fcp_xml": {
+  "cadence_fournie": false,
+  "plans_relus": 19,
+  "differences": {
+   "in": 0,
+   "dur": 0,
+   "pos": 0,
+   "nom": 0,
+   "marqueurs": 0
+  },
+  "exemple_relu": {
+   "nom": "01_pendule",
+   "in": 12,
+   "dur": 15,
+   "pos": 0,
+   "marqueurs": [
+    "hook"
+   ]
+  },
+  "octets": 23658
+ },
+ "otio_json": {
+  "cadence_fournie": false,
+  "plans_relus": 19,
+  "differences": {
+   "in": 0,
+   "dur": 0,
+   "pos": 0,
+   "nom": 0,
+   "marqueurs": 0
+  },
+  "exemple_relu": {
+   "nom": "01_pendule",
+   "in": 12,
+   "dur": 15,
+   "pos": 0,
+   "marqueurs": [
+    "hook"
+   ]
+  },
+  "octets": 45607
+ }
+}
