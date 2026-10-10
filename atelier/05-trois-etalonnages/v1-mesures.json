@@ -1,0 +1,122 @@
+{
+ "SOURCE/70": {
+  "luma_mediane": 138.9,
+  "luma_p1": 80.5,
+  "luma_p99": 167.2,
+  "chaud_pct": 0.01,
+  "chaud_hors_chaise_pct": 0.0,
+  "biais_ciel": -9.4,
+  "biais_sable": -11.2,
+  "sat_moy": 0.083
+ },
+ "SOURCE/160": {
+  "luma_mediane": 138.1,
+  "luma_p1": 38.7,
+  "luma_p99": 167.2,
+  "chaud_pct": 0.19,
+  "chaud_hors_chaise_pct": 0.0,
+  "biais_ciel": -9.4,
+  "biais_sable": -11.2,
+  "sat_moy": 0.084
+ },
+ "SOURCE/230": {
+  "luma_mediane": 138.1,
+  "luma_p1": 29.9,
+  "luma_p99": 167.2,
+  "chaud_pct": 1.37,
+  "chaud_hors_chaise_pct": 0.0,
+  "biais_ciel": -9.4,
+  "biais_sable": -4.0,
+  "sat_moy": 0.064
+ },
+ "A-constat/70": {
+  "luma_mediane": 144.4,
+  "luma_p1": 66.4,
+  "luma_p99": 182.3,
+  "chaud_pct": 0.0,
+  "chaud_hors_chaise_pct": 0.0,
+  "biais_ciel": -18.9,
+  "biais_sable": -18.9,
+  "sat_moy": 0.143
+ },
+ "A-constat/160": {
+  "luma_mediane": 143.4,
+  "luma_p1": 10.3,
+  "luma_p99": 182.3,
+  "chaud_pct": 0.0,
+  "chaud_hors_chaise_pct": 0.0,
+  "biais_ciel": -18.9,
+  "biais_sable": -18.8,
+  "sat_moy": 0.146
+ },
+ "A-constat/230": {
+  "luma_mediane": 143.4,
+  "luma_p1": 1.8,
+  "luma_p99": 182.3,
+  "chaud_pct": 0.14,
+  "chaud_hors_chaise_pct": 0.0,
+  "biais_ciel": -18.9,
+  "biais_sable": -11.7,
+  "sat_moy": 0.122
+ },
+ "B-souvenir/70": {
+  "luma_mediane": 150.8,
+  "luma_p1": 105.1,
+  "luma_p99": 173.4,
+  "chaud_pct": 0.0,
+  "chaud_hors_chaise_pct": 0.0,
+  "biais_ciel": 4.0,
+  "biais_sable": 1.3,
+  "sat_moy": 0.019
+ },
+ "B-souvenir/160": {
+  "luma_mediane": 150.2,
+  "luma_p1": 72.2,
+  "luma_p99": 173.4,
+  "chaud_pct": 0.0,
+  "chaud_hors_chaise_pct": 0.0,
+  "biais_ciel": 4.0,
+  "biais_sable": 1.3,
+  "sat_moy": 0.02
+ },
+ "B-souvenir/230": {
+  "luma_mediane": 150.2,
+  "luma_p1": 65.3,
+  "luma_p99": 173.4,
+  "chaud_pct": 0.0,
+  "chaud_hors_chaise_pct": 0.0,
+  "biais_ciel": 4.0,
+  "biais_sable": 5.0,
+  "sat_moy": 0.029
+ },
+ "C-menace/70": {
+  "luma_mediane": 102.1,
+  "luma_p1": 34.4,
+  "luma_p99": 138.9,
+  "chaud_pct": 0.0,
+  "chaud_hors_chaise_pct": 0.0,
+  "biais_ciel": -36.9,
+  "biais_sable": -23.8,
+  "sat_moy": 0.403
+ },
+ "C-menace/160": {
+  "luma_mediane": 101.1,
+  "luma_p1": 3.8,
+  "luma_p99": 138.9,
+  "chaud_pct": 0.0,
+  "chaud_hors_chaise_pct": 0.0,
+  "biais_ciel": -36.9,
+  "biais_sable": -23.8,
+  "sat_moy": 0.411
+ },
+ "C-menace/230": {
+  "luma_mediane": 101.1,
+  "luma_p1": 3.8,
+  "luma_p99": 138.9,
+  "chaud_pct": 0.1,
+  "chaud_hors_chaise_pct": 0.0,
+  "biais_ciel": -36.9,
+  "biais_sable": -23.4,
+  "sat_moy": 0.38
+ }
+}

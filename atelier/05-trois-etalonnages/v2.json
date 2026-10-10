@@ -1,0 +1,19 @@
+{"frames": [70, 160, 230],
+ "chaise_box": {"70": [0.5, 0.3, 0.68, 0.42], "160": [0.5, 0.3, 0.68, 0.78], "230": [0.0, 0.3, 0.68, 0.95]},
+ "directions": {
+  "A-constat": [
+   {"op": "primaires", "lift": [-0.04, -0.04, -0.04], "gain": [1.04, 1.03, 1.0]},
+   {"op": "contraste", "c": 1.25, "pivot": 0.45},
+   {"op": "saturation", "s": 0.85}],
+  "B-souvenir": [
+   {"op": "contraste", "c": 0.9, "pivot": 0.45},
+   {"op": "primaires", "lift": [0.05, 0.045, 0.04], "gamma": [1.04, 1.02, 1.0]},
+   {"op": "haute_compression", "seuil": 0.62, "plafond": 0.84},
+   {"op": "split", "ombres": [0, 0, 0.005], "hautes": [0.08, 0.04, -0.03]},
+   {"op": "saturation", "s": 0.75}],
+  "C-menace": [
+   {"op": "primaires", "lift": [-0.10, -0.10, -0.10], "gamma": [0.7, 0.7, 0.7], "gain": [0.78, 0.78, 0.78]},
+   {"op": "split", "ombres": [-0.012, 0.006, 0.012], "hautes": [-0.01, 0.004, 0.006]},
+   {"op": "saturation", "s": 0.6},
+   {"op": "secondaire", "h0": 0, "h1": 35, "s_min": 0.18, "v_min": 0.01, "sat_in": 2.5, "gain_in": [3.2, 1.7, 1.0], "sat_out": 1.0}]
+ }}
