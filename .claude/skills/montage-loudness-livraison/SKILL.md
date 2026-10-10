@@ -91,8 +91,9 @@ Pour un débit cible, utiliser les 2 passes `-b:v 8M -maxrate 10M -bufsize 16M` 
 Pourquoi c'est artistique : un film bas et dense (goût de l'utilisateur : Joker, Ziak) vit dans les 5 % du bas de l'échelle, là où le 8 bits n'a qu'une vingtaine de niveaux. Des bandes dans un ciel nocturne ou un fond de studio détruisent la matière du noir.
 - Master et échanges en **10 bits** (ProRes 422 HQ, DNxHR HQX, ou `-pix_fmt yuv420p10le`) : indice de marches 1,6 contre 5,3 en 8 bits.
 - Le tramage ±1 niveau et `-tune grain` ne survivent pas à x264 dans les noirs (mesuré : aucun gain, même à CRF 16).
-- Livraison réseaux (la plateforme ré-encode en 8 bits) : grain monochrome fin σ ≈ 2/255 posé **avant** l'encodage (`noise=c0s=4:allf=t`), CRF 18-20 `-tune grain` : seule variante qui tient après ré-encodage simulé (3,2 au lieu de 5,2). Coût : débit nettement plus élevé.
-Détail et mesures : `labo/encodage/RESULTATS.md`.
+- Livraison réseaux (la plateforme ré-encode en 8 bits) : **le 10 bits survit à un ré-encodage à débit correct** (session 12, rendu Blender en panoramique : 0,007 de marches visibles contre 0,037 pour un master 8 bits) ; **pas de grain par défaut** : sur une image majoritairement noire, un grain σ 2 consomme le débit et fait **pire** à débit plafonné (0,16). Grain fin (`noise=c0s=4:allf=t`) seulement pour un **dégradé long et doux** (ciel de nuit, brume, mur en rebond) et après un essai **en mouvement** ré-encodé (session 2 : 3,2 au lieu de 5,2 sur un dégradé plein cadre). **Ne jamais juger l'encodage d'un plan sombre sur une image fixe** : immobile, 8 et 10 bits sont identiques.
+- Artistiquement : un noir dur (Willis : on décide quoi garder, le reste est noir) encaisse mieux la plateforme qu'un clair-obscur laiteux.
+Détail et mesures : `labo/encodage/RESULTATS.md`, `labo/encodage/noir-protege/RESULTATS.md`.
 
 ### Vérifier le livrable [TESTÉ EN LABO]
 ```bash

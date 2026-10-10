@@ -1,5 +1,7 @@
 # Labo encodage — bandes dans les dégradés sombres (session 2, 2026-10-09)
 
+> **Mise à jour session 12** : sur un vrai rendu (pièce 17), en panoramique, le grain σ 2 **n'est pas** une protection universelle (pire à débit plafonné sur une image surtout noire) ; le 10 bits survit à un ré-encodage à débit correct. Voir `noir-protege/RESULTATS.md`. Le point 3 ci-dessous ne vaut que pour un dégradé long et doux ré-encodé serré.
+
 Script : `banding.py` (relançable, ~1 min). Mesures : `banding_resultats.json`.
 Source : dégradé vertical cyan-vert, luma 4 → 34/255 (fond nocturne type Ziak / pièce 02), 540×960, 48 images.
 Critère : profil vertical central après flou σ = 3 px (l'œil intègre le grain), **indice de marches** = max|dérivée| / moyenne|dérivée|

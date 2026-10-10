@@ -1,0 +1,72 @@
+{
+ "zone_px": 2510,
+ "fenetre": [
+  188,
+  97
+ ],
+ "A 8 bits CRF 18 (master 8 bits)": {
+  "ecart_lisse_rms": 0.231,
+  "part_marche_visible": 0.0267,
+  "ko": 40
+ },
+ "B 10 bits CRF 18 (master 10 bits)": {
+  "ecart_lisse_rms": 0.143,
+  "part_marche_visible": 0.004,
+  "ko": 27
+ },
+ "A ré-encodé plateforme (8 bits CRF 23)": {
+  "ecart_lisse_rms": 0.344,
+  "part_marche_visible": 0.1171,
+  "ko": 24
+ },
+ "B ré-encodé plateforme": {
+  "ecart_lisse_rms": 0.355,
+  "part_marche_visible": 0.1462,
+  "ko": 22
+ },
+ "G grain σ2 + 10 bits": {
+  "ecart_lisse_rms": 0.269,
+  "part_marche_visible": 0.0629,
+  "ko": 550
+ },
+ "G ré-encodé plateforme": {
+  "ecart_lisse_rms": 0.309,
+  "part_marche_visible": 0.0833,
+  "ko": 32
+ },
+ "G source sans perte (grain seul)": {
+  "ecart_lisse_rms": 0.252,
+  "part_marche_visible": 0.0586,
+  "ko": 24675
+ },
+ "M grain dosé + 10 bits": {
+  "ecart_lisse_rms": 0.28,
+  "part_marche_visible": 0.0709,
+  "ko": 115
+ },
+ "M ré-encodé plateforme": {
+  "ecart_lisse_rms": 0.357,
+  "part_marche_visible": 0.1641,
+  "ko": 27
+ },
+ "A plateforme 2000 kb/s": {
+  "ecart_lisse_rms": 0.25,
+  "part_marche_visible": 0.0367,
+  "ko": 141
+ },
+ "B plateforme 2000 kb/s": {
+  "ecart_lisse_rms": 0.188,
+  "part_marche_visible": 0.0068,
+  "ko": 166
+ },
+ "G plateforme 2000 kb/s": {
+  "ecart_lisse_rms": 0.361,
+  "part_marche_visible": 0.1578,
+  "ko": 255
+ },
+ "M plateforme 2000 kb/s": {
+  "ecart_lisse_rms": 0.311,
+  "part_marche_visible": 0.0956,
+  "ko": 202
+ }
+}
