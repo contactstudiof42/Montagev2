@@ -108,6 +108,11 @@ Quand on demande « quelle couleur pour ce film ? », rendre :
 ## L'infrarouge : intime ou surveillance (atelier 23, session 19) [TESTÉ EN ATELIER]
 - **Le grade fait la surveillance** autant que la lumière : teinte verte + bruit vidéo coloré à gros grain = caméra de sécurité, même avec une lumière sculptée. Pour l'intime : monochrome neutre ou à peine froid, grain fin mono, noir posé bas (~3 % ; 6 % fait un voile laiteux), vignette douce. Le vert est juste pour le malaise ou le found footage, comme choix.
 
+## Une descente de lumière (atelier 25 « Au lit », session 20) [TESTÉ EN ATELIER, YAVG mesuré]
+- **L'ordre des plans est une courbe de lumière** : un gradateur de −60 % sur tout le montage ne fait pas descendre l'image si les plans ne sont pas ordonnés par leur luminance propre (une lampe de chevet à 25 s faisait le pic de la seconde moitié). Ordonner d'abord, graduer ensuite.
+- La descente se lit mieux comme **un événement du monde** (les fenêtres de la ville qui s'éteignent une à une) que comme un réglage.
+- **Le plancher reste au-dessus du noir** : 20 s à YAVG 19 se lisent « écran éteint » ; garder un dernier point de lumière vivant.
+
 ## Limites
 
 - Les significations des couleurs varient selon cultures, marques et publics ; aucune table n'est universelle (même Storaro le reconnaît comme système personnel).

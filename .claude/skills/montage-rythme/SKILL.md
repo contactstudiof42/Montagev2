@@ -98,3 +98,9 @@ Démonstration produit, réaction en chaîne, gag mécanique, plan « Cog » : t
 - **L'attente doit être habitée** (atelier 15) : deux sonneries de trop sur un téléphone seul = temps vide. Il faut un signe de quelqu'un qui pourrait agir et n'agit pas (la main posée sur le combiné pendant deux sonneries), puis le geste à vitesse réelle : il garde son poids parce qu'il libère l'attente.
 - Ralenti interpolé ×3 depuis 25 i/s (atelier 15) : 43 dB de moyenne mais le combiné et la main en blocs sur 2 images sur 3, cordon dédoublé → pulsation nette/cassé/cassé à 8 Hz sur le sujet. **Juger la pire image dans la zone du sujet, jamais la moyenne.**
 
+
+## Une descente qui endort (atelier 25 « Au lit », session 20) [TESTÉ EN ATELIER, courbes mesurées ; « endort » non vérifié]
+- Endormir n'est pas aplatir : la version plate (tout constant) devient une **boucle reconnaissable** (même séquence, même YAVG au dixième) ; ce qui berce, c'est une **direction lente commune à tous les canaux** (débit, silences, durée des plans, volume, lumière).
+- Un seul canal qui ne suit pas (image et son forts sous une voix qui ralentit) contredit la descente là où l'on devrait lâcher.
+- Durées de plan croissantes (5 → 20 s) et **retour d'un même cadre changé** (la fenêtre, moins de lumières) : le retour mesure le temps qui passe mieux qu'un ralentissement.
+- Détail : `atelier/25-au-lit/CRITIQUE.md`.
