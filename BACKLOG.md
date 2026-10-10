@@ -10,7 +10,7 @@ Règle : alterner ART et TECH. Réalimenter dès qu'il reste moins de 10 sujets 
 0c. [~] [ART] **Atelier 03 « rythme macro »** : v1-v3 faites (session 3 : micro / macro / hybride, leçons dans `montage-rythme`). Reste v4 : plans Blender avec un sujet (objet industriel démonté, cf. Ziak) pour tester l'intro tenue ; version A **avec SFX** (vrai concurrent kinetic) ; seconde horloge à +15 %. Puis `analyse_clip.py` sur les références que l'utilisateur ajoutera.
 0d. [x] [ART] Examen n°3 « Seconde main » (corporate réemploi) : 15/20 (session 3). **Examen n°4 en session 6 ou 7** : fiction courte ou documentaire long.
 0e. [~] [ART] Skill `montage-formats` v1 écrit (session 3). Reste : mesurer des durées de plans médianes sur des références réelles par format ; (remonté par l'examen n°3) : conventions et pièges par format ; section « dispositifs pour filmer l'humain en corporate » (objets-témoins, gestes, portraits muets, un salarié = un objet).
-0f. [ ] [TECH] Loudness hors plateformes : film d'entreprise lu en salle de réunion ou sur un site (-16 LUFS ? AES TD1008 ?), à sourcer et verser dans `montage-loudness-livraison`.
+0f. [x] [TECH] Loudness hors plateformes (session 4) : AES TD1008 (-18 parole / -16 musique), corporate web -16 / salle -18, cinéma Leq(m) → `montage-loudness-livraison`, `sources/loudness-hors-plateformes-2026-10.md`. Reste [ ] : relire le PDF TD1008 (403) pour le true peak.
 1. [ ] [ART] **Atelier « même brief, direction A dans le noir »** (suite de l'examen n°1 : la piste la plus audacieuse, écartée trop vite) : 10 s, Blender, seule lumière = un écran de téléphone.
 1b. [ ] [ART] Fiche sur les pubs santé/assurance et petite enfance : repérer les clichés du secteur (boîte à musique, bébé au ralenti, famille radieuse) — révélé par l'examen n°1.
 2. [~] [TECH] Couleur technique → `montage-couleur-pipeline` v1 (labo session 1 : conversions exactes, LUT ffmpeg = Python). Reste : expliquer l'écart OCIO/colour de 2e-3 sur LogC3/S-Log3 ; tester un vrai rush log CC0.
@@ -21,26 +21,32 @@ Règle : alterner ART et TECH. Réalimenter dès qu'il reste moins de 10 sujets 
 7. [ ] [TECH] Blender pour la vidéo : skill `montage-blender` (rendu CLI, Cycles vs Eevee headless, compositing, geometry nodes) — base déjà pratiquée dans l'atelier 01 ; tester Eevee en headless
 8. [~] [TECH] DaVinci Resolve → `montage-resolve` v1 (session 2 : nodes, RCM, API d'après le README 2022-2023). Reste : Fusion, Fairlight, README 19-20 (objets Graph ? ColorGroup ?), atelier couleur « même plan, trois étalonnages » traduit en arbre de nodes.
 9. [~] [ART] Narration par format → `montage-formats` v1 (session 3), cf. 0e.
-10. [~] [TECH] `montage-premiere` v1 écrit (session 3, théorique). Reste : lire les pages Adobe en entier (WebFetch 403 : trouver un autre accès), Color mode, état d'ExtendScript, raccourcis Q/W ; script de marqueurs de beats importables (Python → XML/CSV de marqueurs).
+10. [~] [TECH] `montage-premiere` v1 écrit (session 3, théorique). Fait en session 4 : marqueurs de temps importables (`labo/marqueurs/beats_xml.py`, XML FCP7, ~10 ms). Reste : lire les pages Adobe en entier (WebFetch 403), Color mode, ExtendScript, raccourcis Q/W ; tester `beats_xml.py` sur une musique sans grosse caisse et à tempo variable.
 11. [~] [TECH] `montage-preparation-tournage-vfx` v1 écrit (session 2, théorique). Reste : tests de keying et de tracking sur des médias CC0 (avec BACKLOG 14).
 12. [~] [TECH] `montage-pilotage-mcp` v1 (méthode, session 3). Reste : état public des autres MCP (Blender MCP, Resolve, AE) par recherche web, à verser dans `PLAN-TESTS-MCP.md` comme hypothèses.
 13. [ ] [ART] Son : atelier « même image, trois bandes son » (avec, contre, silence) ; fiches Murch sound design, Ben Burtt, Gary Rydstrom
 14. [~] [TECH] Keying : labo à vérité terrain fait (session 2, `labo/keying/`). Reste : tracking, roto, keyers à alpha doux, compositing Blender/Fusion
-15. [ ] [TECH] Workflows transversaux et pipelines par format → skill `montage-workflows`
-16. [~] [TECH] Labo fondus (session 3) : scdet 0/4 fondus ; différence et linéarité trompées par le mouvement. Reste : courbe de variance + différence décalée de L/2 ; puis vrai matériau CC0.
-17. [~] [ART] Culture : faits : Murai, Honda « Cog » (s2), Varda *Les Glaneurs*, Spike Jonze (s3). Reste : documentaire (Errol Morris, Marker *Sans soleil*) ; clips ( Jonas Åkerlund, et clips de rap français proches de Ziak) ; motion design de studio (Buck, ManvsMachine, Elastic) ; pub (Apple *1984*)
-18. [ ] [ART] IA : vérifier les faits incertains de `montage-ia-generative` (Sora, AI Act art. 50), ajouter des fiches d'œuvres IA, définir une grille « est-ce que ça fait IA ? »
+15. [~] [TECH] `montage-workflows` v1 (session 4) + labo aller-retour OTIO (`labo/workflows/`). Reste : tester vitesses, recadrages, nests, audio multipiste dans l'aller-retour XML ; AAF (pyaaf2 ?) ; proxies et cadence variable des téléphones avec ffmpeg.
+16. [~] [TECH] Labo fondus : session 4, `variance.py` (écart au milieu + détecteur noir) = 3/4, 0 faux positif ; hypothèse du creux de variance réfutée. Reste : 2e vérité terrain indépendante (surapprentissage), chroma, puis matériau CC0 réel.
+17. [~] [ART] Culture : faits : Murai, Honda « Cog » (s2), Varda *Les Glaneurs*, Spike Jonze (s3), Marker *Sans soleil*, Morris *The Thin Blue Line* (s4). Reste : clips ( Jonas Åkerlund, et clips de rap français proches de Ziak) ; motion design de studio (Buck, ManvsMachine, Elastic) ; pub (Apple *1984*)
+18. [~] [ART] IA : faits vérifiés en session 4 (Sora, AI Act art. 50 non reporté, Wan 2.2 dernier ouvert, LTX-2). Reste : fiches d'œuvres IA, grille « est-ce que ça fait IA ? », relire le texte de l'Omnibus sur EUR-Lex.
 19. [ ] [ART] Relire les skills artistiques après l'examen n°1 ; fusionner les doublons (regard / motion-design / references se recoupent sur « un signe »)
 
 20. [x] [ART] Examen créatif n°2 « Marée basse » (clip de rap) : 14/20 (session 2). **Examen n°3 en session 5 ou 6** : documentaire ou corporate.
-20b. [ ] [ART] Atelier « ce que la marée découvre » : une image-concept propre au sujet (révélé par l'examen n°2), 10 s Blender, l'eau qui se retire et découvre un objet.
+20b. [~] [ART] Atelier 04 « ce que la marée découvre » (session 4 : v1-v3, `atelier/04-maree-decouvre/`). Reste : son (ressac + cliquetis de chaîne, mesuré), v4 selon critique. : une image-concept propre au sujet (révélé par l'examen n°2), 10 s Blender, l'eau qui se retire et découvre un objet.
 21. [ ] [ART] Atelier « causalité » : reprendre le principe de Honda « Cog » (chaque coupe montre une cause et son effet) sur 10 s de Blender, sans musique, seulement les sons des objets.
 22. [x] [TECH] `montage-blender` v1 écrit (session 2) ; reste Eevee headless, geometry nodes, compositing, camera tracking — : consigner ce que l'atelier 02 a appris (cadre et fenêtres de source calculées depuis la cinématique, cache d'images par caméra, ~1 image/s en Cycles 270×480 12 échantillons + débruitage).
 
 23. [ ] [ART] Atelier « le montage se retire » (principe Jonze) : un corps ou un objet qui produit lui-même le rythme (pendule, danse d'un objet Blender), 3 plans max sur 15 s, comparé à une version kinetic.
 24. [ ] [ART] Atelier « voix écrite après » (principe Varda) : monter d'abord 20 s d'images glanées (plans des ateliers), écrire ensuite une voix off qui relie ; critique : la voix illustre-t-elle ou relie-t-elle ?
 
+25. [ ] [ART] Atelier « Spirale » (principe Marker) : 30 s qui font revenir 3 motifs des ateliers 01-04, chaque retour changeant de sens ; voix écrite après.
+26. [ ] [ART] Atelier « Versions » (principe Morris) : la même action Blender (un objet qui tombe) rejouée 3 fois avec un détail changé ; la musique en boucle ; critique : est-ce qu'on doute ?
+27. [ ] [TECH] Audio : AAF et pistes par famille pour le mixeur ; tester `pyaaf2` (écriture d'un AAF depuis l'EDL JSON).
+
 ## Fait (trace)
+- [x] [TECH] Session 4 : loudness hors plateformes, marqueurs de temps, `montage-workflows` + OTIO, fondus 3/4, vérif IA
+- [x] [ART] Session 4 : fiches Marker et Morris, atelier 04 v1-v3
 - [x] [ART] Atelier 03 v1-v3, culture Varda et Jonze (session 3)
 - [x] [TECH] `montage-pilotage-mcp`, `montage-premiere` v1, labo fondus (session 3)
 - [x] [TECH] Labo encodage : bandes dans les noirs (session 2)

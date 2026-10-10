@@ -51,3 +51,4 @@ Le serveur `HIGGSFIELD_MCP` est toujours listé (non appelé). La méthode gén�
 
 ## Observation de la session 4 (2026-10-10, ~01:35 UTC)
 Serveur `HIGGSFIELD_MCP` toujours listé, **non appelé** (consigne phase 1). Noms supplémentaires observés : `pr_render_audio_edl`, `pr_compare_angles`, `pr_recompact_audio`, `ae_build_liquid_glass`, `ae_reveal_floor`, `ae_rig_rebase`, `ae_finalize_build`. Le catalogue est maintenant identique d'une session à l'autre : je ne le recopierai plus, sauf changement.
+Sources publiques (vérification du 2026-10-10, `sources/ia-verif-2026-10-10.md`, **hypothèses**) : un plugin Higgsfield unique pour After Effects et Premiere présenté le 21/07/2026 ; un serveur MCP officiel dit « bridge » ; un add-on Blender piloté par MCP (lancement le 25/08/2026 selon une source tierce). À vérifier en phase 2 : version du plugin installée, hôtes réellement connectés (`get_host_status`), et quels outils consomment des crédits.
