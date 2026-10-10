@@ -75,6 +75,10 @@ Pour chaque direction, fiche fixe :
 - **Tic de la recommandation hybride** *(ajout examen n°11)* : examens n°10 (B + A) et n°11 (B + un morceau de C) recommandent « une direction plus un emprunt ». Avant de greffer, écrire la version **pure** et dire ce que l'emprunt ajoute qu'elle ne peut pas produire elle-même (ex. n°11 : la relance à 13 min pouvait venir de la maison, pas de la caméra cachée de C) ; si rien, retirer l'emprunt. Un hybride par prudence brouille le parti pris.
 - **Sécurité des personnes filmées = condition de montage** *(ajout examen n°11)* : un concept qui prive (froid, sommeil, nourriture, hauteur) n'entre dans une direction qu'avec un protocole écrit (seuils, référent, sortie sans humiliation au montage). Sans lui, refuser l'élément du concept, pas seulement le noter en risque.
 
+### Relecture « tranché ? » *(ajout examen n°13)*
+Avant de rendre un traitement, le relire en cherchant chaque décision laissée en question (« … ? non », « peut-être ») : la trancher ou l'écrire comme option explicite pour le client. Et vérifier que la direction la plus audacieuse n'a pas été écartée **sans maquette** (examens n°1 et n°13 : même faute).
+Fiction dialoguée (examen n°13) : la pudeur se monte en restant sur **celui qui écoute** (on voit l'effort de ne pas pleurer) ; l'objet anodin du dialogue (un ticket de parking) peut devenir l'horloge de la scène et sa dernière réplique.
+
 ## Étape 4 — Critères de réussite (avant de réaliser)
 3 à 5 critères **vérifiables** sur une planche contact ou une mesure, ex. :
 - « Le message est lisible à 2 s sans son. »
