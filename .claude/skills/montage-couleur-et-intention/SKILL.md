@@ -79,6 +79,7 @@ La couleur n'est pas une finition : c'est **un sens**. Avant de toucher une roue
 - **Storaro** : une couleur = un état, et l'état évolue ; le noir est un outil.
 - **Doyle / Wong** : la couleur dit ce que le texte tait ; un seul rouge saturé, le reste retenu ; le flou de mouvement montre le temps intérieur.
 - **Deakins** : une couleur par lieu ou chapitre ; une source crédible pour chaque lumière ; tenir le plan quand la silhouette parle.
+- **Willis** (`culture/gordon-willis-le-noir.md`) : décider **quoi** garder dans le noir (les yeux = le secret) avant **combien** de noir ; le noir n'existe que par opposition (le mariage au soleil) ; direction de la lumière = lecture morale (dessus : masque, dessous : menace, côté bas : confidence). En post, on ne crée pas ce noir, on le **protège** (10 bits, grain, pas de relevage des noirs).
 
 ## Format de sortie conseillé
 
