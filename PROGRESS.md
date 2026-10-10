@@ -5,14 +5,20 @@ _Lire en premier. Mis à jour à chaque fin de session._
 ## Consigne durable de l'utilisateur (2026-10-10)
 - Développer une **culture YouTube / internet** (divertissement, essai vidéo, vulgarisation, vlog, motion de chaîne, Shorts, cultures d'edit) au même niveau que cinéma et clip. Voir BACKLOG « Consigne » (Y1-Y6) : une part de chaque session jusqu'à parité.
 
-## Où on en est (après la session 17, 2026-10-10)
+## Où on en est (après la session 18, 2026-10-10)
+- **Session 18** : pièce 22 « Cent dix-sept milliards » (à la manière d'EGO, Blender + voix espeak, versions A explicatif / B EGO / v2), fiche `culture/createurs-ia-video-2025-2026.md`, **mise à jour de l'IA générative au 2026-10-10 demandée par l'utilisateur** (sous-agent : `montage-ia-generative/etat-de-l-art-2026-10.md`, `sources/ia-generative-2026-10-10.md`) ; PLAN-TESTS 64.
+
+## État après la session 17
 - **Skills (22)** : nouveau `montage-youtube` (grammaire du long format par genre, contraste cinéma / clip, specs officielles, miniatures testées à l'œil) ; session 17 aussi : `montage-motion-design-principes` (l'objet qui change de rôle, seuil du mouvement de repos), `montage-references` (§ G YouTube et internet), `montage-formats` (YouTube long), `montage-direction-artistique` (sans musique : le son-refrain), `montage-expert` (sommaire, consigne).
 - **Culture** : ~63 fiches, dont **12-15 YouTube / internet** (session 17 : MrBeast et rétention, divertissement FR, essai vidéo, doc explicatif Vox / Johnny Harris, vulgarisation FR, Kurzgesagt, motion de chaîne, vlog, cultures d'edit ; 2e vague : gaming / Twitch, podcasts vidéo, YouTube musique, animation en ligne, critique de cinéma FR).
 - **Atelier** : pièce 21 « L'objet qui change de rôle » (A / B / C / B v2).
 - **Labo** : `labo/youtube/` (validateur de chapitres testé ; banc de miniatures : OCR inutilisable, jugement à l'œil sur planche 168 px).
 - **Examens** : n°1 13, n°2 14, n°3 15, n°4 14, n°5 14, n°6 15, n°7 15, n°8 15, **n°9 14** /20. N°10 vers la session 20 (Y10 : divertissement YouTube).
 
-## Reprendre ici (session 18)
+## Reprendre ici (session 19)
+0. **Consigne durable (2026-10-10)** : l'état de l'art IA doit rester à jour à la date du jour ; à chaque session, une recherche web « nouveautés IA vidéo des 7 derniers jours » et mise à jour datée de `etat-de-l-art-2026-10.md`. Pièce 22 : v3 (variante `--noir`, nappe qui monte au lieu du silence), puis examen n°10 (brief de vulgarisation au rendu cinéma, Y0).
+
+## Ancien « reprendre ici » (session 18)
 1. Démarrage normal. `python3 -m pip install -q numpy pillow scipy` (25 s) ; `apt-get install -y tesseract-ocr tesseract-ocr-fra espeak-ng` (15 s) si besoin ; Blender : `curl -sSL -o blender.tar.xz https://download.blender.org/release/Blender4.2/blender-4.2.3-linux-x64.tar.xz` (30 s).
 2. Priorités : **consigne YouTube** (Y4 atelier face caméra, Y7 pièce 21 autre matière, Y8 densité de coupes, Y9 nuit sans musique, Y5 restant : créateurs IA 2025-2026) ; 87 (pièce 20 v10) ; 88 ; 76 ; 84.
 3. Pièges : **`pkill -f motif` tue le shell appelant, et `pgrep -f motif` dans une boucle `until` se trouve lui-même** → tuer et attendre par PID. **Une commande lancée avec `&` survit à la fin de l'appel Bash** : utiliser `run_in_background`. **tesseract multi-fils** : `OMP_THREAD_LIMIT=1` (0,17 s par image au lieu de blocages). L'OCR ne mesure pas la lisibilité d'une miniature (non monotone avec la taille) : juger à l'œil sur planche. Plage limitée en `yuv*` (noir = 16). PIL lit un PNG 16 bits en 8 bits. helpx.adobe.com et support.google.com : WebFetch passe pour Google, pas pour Adobe (403). `piece.py` (pièce 20) lit `argv[3]` = sous-poses.
@@ -23,6 +29,7 @@ _Lire en premier. Mis à jour à chaque fin de session._
 - Un serveur MCP nommé `HIGGSFIELD_MCP` est listé dans l'environnement : non appelé (consigne phase 1). Noms observés dans `PLAN-TESTS-MCP.md`.
 
 ## Historique
+- Session 18 — 2026-10-10 14:54 → ~15:40 UTC (horloge VM peu fiable ; relancée par l'utilisateur après un faux positif de l'anti-doublon) : pièce 22 v1-v2, fiche créateurs IA, MAJ IA générative au 2026-10-10 (sous-agent) ; skills references / youtube / motion-design-principes / blender ; PLAN-TESTS 64.
 - Session 17 — 2026-10-10 13:41 → ~14:15 UTC : consigne YouTube de l'utilisateur ; 9 + 5 fiches YouTube / internet (sous-agents), skill `montage-youtube`, specs officielles YouTube, labo `labo/youtube/` (chapitres, miniatures), pièce 21 « L'objet qui change de rôle », examen n°9 (14/20) ; PLAN-TESTS 63.
 - Session 16 — 2026-10-10 13:30 UTC → (horloge VM peu fiable) : pièce 20 v8 / v8-uniforme / v9 (hiérarchie d'une liste, sections calées sur la barre), fiche chronophotographie Marey / Muybridge (sous-agent), recherche saccade choisie Premiere / AE (sous-agent) ; PLAN-TESTS 61-62.
 - Session 15 — 2026-10-10 12:30 → ~13:15 UTC : examen n°8 « Nuit Basse » (15/20), labo rushes à strobe, pièce 20 « La lumière écrit » v1-v7, fiche step-printing, sous-agents (vitesse de lecture FR vérifiée ; son d'un strobe et lecture de repérage ; pièce 18 v6) ; PLAN-TESTS 58-60.
