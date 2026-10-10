@@ -404,3 +404,14 @@ Fenêtre : 03/10 → 10/10/2026, quatrième passage du jour. WebSearch standard,
 ### Ce que ça change pour le monteur / motion designer
 - **Suno Speech** : la voix et la musique sortent mélangées sur une seule piste, donc **impossible de baisser la musique sous la voix**, de couper une respiration ou de recaler une phrase au montage. Bon pour une maquette, pas pour un master. Pour un livrable, garder voix (TTS) et musique sur des pistes séparées.
 - **Suno Studio, fondus et temps forts** : utile pour caler une musique Suno sur les coupes, mais le mixage final reste dans Premiere ou Resolve. Même règle de droits qu'avant : pas de Suno en pub ou en TV sans clause écrite.
+
+---
+
+### Veille 2026-10-10 (session 23)
+
+Fenêtre : 03/10 → 10/10/2026, cinquième passage du jour (WebSearch standard et étendu, WebFetch). Rien testé. Sources : `sources/ia-generative-2026-10-10.md`, « Session 23 ».
+
+- **07/10/2026 : Vidu Q4 Preview** (ShengShu), absent des sessions précédentes. Image vers vidéo et **référence vers vidéo** seulement (pas de texte seul) ; 3 à 16 s ; de 540p à **4K**, 10 bits annoncés ; son généré par défaut ; jusqu'à **15 images et 3 sons de référence** (MP3 de 3 à 12 s). Web et API (`viduq4-preview`). Prix d'appel : 0,014 $/s ; 4K ≈ 0,39 $/s ; −30 % jusqu'au 30/11. [SOURCÉ] off. docs platform.vidu.com (consultées le 10/10) ; sec. unite.ai (07/10), alphasignal (08/10), chinatechnews (08/10). Classement Artificial Analysis image vers vidéo : 3e (Elo 1 179), selon alphasignal seulement ; à reconfirmer.
+- **Non retenu** : « Grok Imagine Video 1.5 Lite » (1 à 15 s, jusqu'à 1080p) ; il n'apparaît que dans des annuaires, sans annonce xAI, et ceux-ci le datent tantôt du 01/10, tantôt du 08/10.
+- **Rien de neuf vérifié** : Veo, Sora, Kling (4.0 complet toujours pas sorti ; Higgsfield sans entrée les 09 et 10/10), Runway, Luma (Ray3.2), Pika, Seedance, Hailuo (H3), Wan (poids : 2.2 max), LTX (2.5, 11/08), Midjourney, upscale et interpolation (Topaz, FLUX Video Upscale du 19/08), Resolve (21.1, 08/09), Premiere / AE, Blender, voix et musique (au-delà de Suno Speech / Studio).
+- **Pour le monteur** : la référence audio de Vidu Q4 sert à imposer **une voix ou une ambiance** sur un plan généré ; mais le son sort « cuit » dans la vidéo, donc il faut un export séparé ou le refaire au mixage. Le 4K à 16 s maximum convient à des plans d'insert, pas à des plans-séquences. Pas de texte seul : il faut une image de départ, ce qui oblige à préparer une vraie DA image avant de générer (c'est plutôt une bonne contrainte).

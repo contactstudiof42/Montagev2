@@ -220,3 +220,22 @@ Recherches du **2026-10-10 au soir** (WebSearch standard, WebFetch). Fenêtre vi
 | You.com, Seedance 2.5 « cette semaine » | https://for.you.com/topics/ai-video-generation | non daté | via recherche | Non retenu |
 
 Recherches sans résultat neuf dans la fenêtre : Veo, Luma, Midjourney, Hailuo, Wan, Moonvalley, ElevenLabs, Topaz.
+
+## Session 23
+Recherches du **2026-10-10 au soir** (WebSearch standard et étendu, WebFetch). Fenêtre visée : 03/10 → 10/10/2026.
+
+| Source | URL | Date | Accès | Ce qu'elle confirme |
+|---|---|---|---|---|
+| Vidu, doc API Q4 Preview, référence vers vidéo (off.) | https://platform.vidu.com/docs/api-reference/video-models/vidu-q4-preview/reference-to-video | consulté 2026-10-10 | ouverte | `viduq4-preview` ; 3-16 s ; 540p → 4K ; 1-15 images, 0-3 MP3 ; son par défaut |
+| Vidu, doc API Q4 Preview, image vers vidéo (off.) | https://platform.vidu.com/docs/api-reference/video-models/vidu-q4-preview/image-to-video | 2026-10 | citée par unite.ai | Mode image vers vidéo |
+| Vidu, page produit Q4 (off.) | https://www.vidu.com/vidu-q4 | 2026-10 | citée par unite.ai | Présentation du modèle |
+| Unite.AI, Vidu Q4 Preview | https://www.unite.ai/vidu-releases-q4-preview-of-next-generation-flagship-ai-video-model/ | 2026-10-07 | ouverte | Date de sortie, 10 bits, prix d'appel 0,014 $/s, web + API |
+| AlphaSignal, Vidu Q4 classement | https://alphasignal.ai/news/shengshu-s-vidu-q4-preview-debuts-at-no-3-for-ai-video | 2026-10-08 | ouverte | 3e Artificial Analysis I2V (Elo 1 179) ; pas de texte seul ; grille de prix ; −30 % jusqu'au 30/11 |
+| China Tech News, Vidu Q4 | https://www.chinatechnews.com/2026/10/08/130490-shengshu-technology-launches-vidu-q4-preview-a-next-generation-ai-video-model-built-for-lifelike-performances | 2026-10-08 | via recherche | Lancement confirmé |
+| Higgsfield, changelog (off.) | https://higgsfield.ai/creator-hub/changelog | consulté 2026-10-10 soir | ouverte | Dernière entrée 08/10 ; ni Vidu Q4 ni Kling 4.0 |
+| LLM Reference, Grok Imagine Video 1.5 Lite | https://www.llmreference.com/model/grok-imagine-video-1-5-lite | 2026-10 | via recherche | Non retenu (annuaire, sans annonce xAI) |
+| NYU Shanghai RITS, LTX-2.5 | https://rits.shanghai.nyu.edu/ai/ltx-2-5-adds-native-multi-shot-video-and-a-diffusion-decoder/ | 2026-08 | via recherche | LTX-2.5 (11/08), rien après |
+| Phoronix, Resolve 21.1 | https://phoronix.com/news/DaVinci-Resolve-21.1 | 2026-09-08 | via recherche | Dernière version Resolve, rien en octobre |
+| OpenRouter, FLUX Video Upscale | https://openrouter.ai/black-forest-labs/flux-video-upscale | 2026-08-19 | via recherche | Dernier upscale vidéo trouvé, hors fenêtre |
+
+Recherches sans résultat neuf dans la fenêtre : Veo, Sora, Kling 4.0, Runway, Luma, Pika, Seedance, Hailuo, Wan, LTX, Midjourney, Topaz, Resolve, Premiere / AE, Blender, ElevenLabs, Suno (au-delà de la session 22).
