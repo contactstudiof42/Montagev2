@@ -53,21 +53,21 @@ def lumiere(loc, energie, couleur, taille=0.3):
     bpy.ops.object.light_add(type="POINT", location=loc); L = bpy.context.object; L.data.energy = energie; L.data.color = couleur; L.data.shadow_soft_size = taille
 if plan in ("large", "rue-vide"):
     if plan == "large":   # il marche au milieu de la chaussée, vers nous
-        p = personnage(0, 18); p.keyframe_insert("location", frame=1); p.location.y = 16.6; p.keyframe_insert("location", frame=21)
-    camera((0.3, -2, 2.2), (0, 20, 1.3), 35, fin=(0.3, -1.6, 2.2))
-elif plan == "mains":    # la main droite entre dans la poche puis se ferme (gros plan, fond flou)
+        p = personnage(0, 9); p.keyframe_insert("location", frame=1); p.location.y = 7.6   # v2 : plus près (v1 : 2 % du cadre); p.keyframe_insert("location", frame=21)
+    camera((0.3, -2, 2.0), (0, 20, 1.3), 40, fin=(0.3, -1.6, 2.0))
+elif plan == "mains":    # v2 : de profil, la main descend dans la poche de la cuisse et s'y ferme ; contre-jour sodium
     p = personnage(0, 10)
-    main = sphere(0.055, (0.26, 9.98, 0.95), peau, (1.0, 0.45, 1.3)); main.keyframe_insert("location", frame=1); main.keyframe_insert("scale", frame=1)
-    main.location = (0.24, 9.94, 0.80); main.keyframe_insert("location", frame=12)
-    main.scale = (0.8, 0.8, 0.8); main.keyframe_insert("scale", frame=12); main.keyframe_insert("scale", frame=21)
-    poche = boite((0.24, 9.9, 0.78), (0.16, 0.02, 0.12), mat("poche", (0.05, 0.05, 0.06), 0.9))
-    lumiere((1.2, 9.2, 1.4), 30, SODIUM)
-    camera((0.55, 9.2, 1.0), (0.24, 9.95, 0.88), 85, ouverture=1.8, mise_au_point=0.82)
+    main = sphere(0.05, (0.25, 9.98, 0.86), peau, (0.6, 1.0, 1.4)); main.keyframe_insert("location", frame=1); main.keyframe_insert("scale", frame=1)
+    main.location = (0.2, 9.93, 0.66); main.keyframe_insert("location", frame=12)
+    main.scale = (0.9, 0.9, 0.9); main.keyframe_insert("scale", frame=12); main.keyframe_insert("scale", frame=21)
+    boite((0.17, 9.92, 0.62), (0.12, 0.03, 0.14), mat("poche", (0.03, 0.03, 0.04), 0.9))
+    lumiere((0.6, 11.2, 1.2), 60, SODIUM, 0.2); lumiere((1.0, 9.0, 0.9), 4, LED)
+    camera((1.1, 9.55, 0.78), (0.2, 9.95, 0.72), 70, ouverture=2.0, mise_au_point=0.98)
 elif plan == "face":     # plan poitrine, regard caméra, léger travelling avant
     personnage(0, 10, 0, yeux=True); lumiere((0.9, 9.0, 2.2), 40, SODIUM); lumiere((-1.2, 9.6, 1.6), 6, LED)
     camera((0, 7.6, 1.62), (0, 10, 1.55), 50, fin=(0, 7.9, 1.62), ouverture=2.0, mise_au_point=2.3)
 elif plan == "vitrine":  # son reflet dans une vitrine noire ; lui au bord du cadre, flou
-    boite((-6.95, 12, 1.6), (0.05, 3.0, 2.2), mat("vitre", (0.02, 0.02, 0.02), 0.04, metal=0.0))
+    boite((-6.95, 12, 1.6), (0.05, 3.0, 2.2), mat("vitre", (0.35, 0.35, 0.38), 0.03, metal=1.0))   # v2 : miroir (v1 : reflet invisible)
     boite((-6.9, 12, 2.9), (0.08, 3.2, 0.25), mat("enseigne", (0.05, 0.05, 0.05), 0.5, (0.9, 0.2, 0.15), 6))
     personnage(-5.2, 12, math.radians(-90)); lumiere((-3.5, 11, 3), 120, SODIUM, 0.5)
     camera((-4.4, 9.6, 1.6), (-6.95, 12.6, 1.4), 40)
