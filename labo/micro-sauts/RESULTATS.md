@@ -23,3 +23,15 @@
 **Limites** : translation globale seulement. Sur un vrai face caméra, la tête bouge et pas le fond : la corrélation de phase prend le mouvement dominant (souvent le fond, s'il est texturé). En phase 2 : mesurer sur une zone (le visage) et sur le fond séparément ; confronter le seuil « micro-saut » à mon jugement sur de vrais rushes (PLAN-TESTS 75). Rotation non gérée.
 
 **Règle à tester (hypothèse de travail)** : dans une même prise, échelle 1,00 et décalage < ~2 % → micro-saut (paraît une erreur) : soit le cacher (plan de coupe, punch-in ≥ 1,10-1,15 qui se lit comme un choix), soit l'assumer franchement (enchaîner plusieurs jump cuts au même rythme).
+
+## Par zones (BACKLOG Y50, session 25) [TESTÉ EN LABO, synthétique]
+`mesurer(avant, après, zone=(x, y, l, h))` (fractions de l'image) ; `verite_zones.py` : une « tête » texturée (disque de 220 px) déplacée de dx % sur un fond fixe.
+| dx tête (%) | fond lisse : global | fond lisse : zone | fond texturé : global | fond texturé : zone |
+|---|---|---|---|---|
+| 0,5 | 0,31 | 0,44 | **0,00** | 0,44 |
+| 1,0 | 0,94 | 0,98 | **0,00** | 0,98 |
+| 2,0 | 1,88 | 1,97 | **0,00** | 1,97 |
+| 4,0 | 4,06 | 3,94 | **0,00** | 3,94 |
+- **La mesure globale suit la région la plus texturée**, pas le sujet : sur un fond lisse (mur), elle voit la tête ; sur un fond texturé (bibliothèque, feuillage), elle dit « aucun saut » même quand la tête saute de 4 %. Mesurer **toujours par zone** sur le sujet (boîte autour du visage, avec une marge ≥ au saut attendu), et à part sur le fond.
+- Zone : erreur ≤ 0,06 % de la largeur totale. Lecture combinée : tête qui saute + fond immobile = la personne a bougé entre les deux morceaux (micro-saut de jeu) ; les deux sautent ensemble = recadrage ou caméra qui a bougé.
+- Reste : boîte du visage automatique (détecteur de visage, phase 2 sur vrais rushes), rotation.

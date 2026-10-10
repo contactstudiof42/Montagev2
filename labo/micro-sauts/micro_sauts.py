@@ -16,7 +16,10 @@ def phase(a, b):
     R = A * np.conj(B); R /= np.abs(R) + 1e-9; r = np.real(np.fft.ifft2(R)); k = np.unravel_index(np.argmax(r), r.shape)
     dy, dx = [(k[i] if k[i] <= r.shape[i] // 2 else k[i] - r.shape[i]) for i in (0, 1)]
     return r.max(), dx, dy
-def mesurer(av, ap):
+def mesurer(av, ap, zone=None):
+    """zone = (x, y, l, h) en fractions de l'image : mesure restreinte (visage, ou fond), sinon image entière."""
+    if zone:
+        W, H = av.size; box = (int(zone[0] * W), int(zone[1] * H), int((zone[0] + zone[2]) * W), int((zone[1] + zone[3]) * H)); av, ap = av.crop(box), ap.crop(box)
     a, b = gris(av), gris(ap); best = None
     for s in np.arange(1.0, 1.501, 0.01):                 # punch-in (après plus serré) puis punch-out (avant plus serré)
         pk, dx, dy = phase(zoom(a, s), b)
