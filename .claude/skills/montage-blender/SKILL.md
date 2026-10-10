@@ -33,3 +33,10 @@ description: Blender pour la vidéo et le motion design — rendu en ligne de co
 ## 5. À vérifier en phase 2 (Mac)
 - Temps de rendu GPU Metal contre CPU cloud ; Eevee Next en rendu final pour des maquettes (non testé en headless ici).
 - Le pilotage par MCP (`PLAN-TESTS-MCP.md`, test 13) : refaire `atelier/02-etincelle/scene.py` et comparer les planches.
+
+## Leçons de l'atelier 04 « marée » (session 4) [TESTÉ EN ATELIER]
+- Eau = simple plan animé en Z + Principled (IOR 1,33, transmission, bump d'ondes) : crédible en 8 échantillons + débruitage, ~1,2 s/image en 480×270 CPU. Sous incidence rasante, l'eau est un **miroir** (Fresnel) : rien ne se devine sous la surface, quelle que soit la transmission.
+- **Vérifier que la caméra reste hors de l'eau** (ou de tout objet animé) à chaque image : tester images 1 et N, pas seulement le milieu.
+- Plan de sol de 200 m + SUBSURF simple niveau 8 + DISPLACE (texture Wood band noise) = rides de sable ; un estran presque plat se découvre d'un coup quand l'eau passe sous sa hauteur moyenne (effet utile).
+- Paramétrer la scène par un JSON (caméra, courbe d'eau, plage d'images) permet de rendre seulement les images utiles de chaque caméra pour un montage multi-plans (`atelier/04-maree-decouvre/v3-*.json`).
+- Lancer plusieurs rendus en parallèle n'accélère rien sur CPU partagé ; et `pkill -f motif` peut tuer le shell qui le lance (le motif figure dans sa propre ligne de commande).

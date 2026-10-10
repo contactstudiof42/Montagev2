@@ -66,6 +66,12 @@ Même musique drill synthétique (140 BPM, intro / couplet / coupure / reprise),
   `ffmpeg -i film.mp4 -vf "scdet=threshold=10,metadata=print:key=lavfi.scd.time:file=-" -f null - 2>/dev/null | grep -o "lavfi.scd.time=[0-9.]*" | cut -d= -f2`
   → temps des coupes → durées de plans → histogramme. Fiable sur coupes franches (8/8 au centième) ; **rate les fondus enchaînés** ; entre plans très proches, descendre le seuil à 3 (risque de faux positifs, à tester sur matériau réel).
 
+- **Fondus** [TESTÉ EN LABO, session 4, `labo/fondus/variance.py`] : scdet n'en voit aucun ; la méthode « écart au milieu » (l'image du milieu ≈ moyenne de ses voisines à ±L/2) + détection du noir en trouve 3/4 sans faux positif ; elle rate les fondus entre deux plans pauvres et proches en luminance et peut confondre un mouvement lent et régulier. Toujours contrôler visuellement.
+- **Grille de temps importable** [détection TESTÉE EN LABO, session 4] : `labo/marqueurs/beats_xml.py` → marqueurs XML FCP7 ; vérifier la **phase** (1er marqueur), pas seulement le BPM.
+
+## Le rythme que le sujet impose (atelier 04, session 4)
+Avant de choisir un tempo, regarder si le sujet a déjà une dramaturgie physique : la marée découvre lentement ce qui est haut, puis le sol d'un coup ; une bougie fond lentement puis s'éteint d'un coup ; une foule se remplit goutte à goutte puis déborde. **Lent puis brusque** est la forme naturelle de la révélation : la cadrer, la laisser se poser (tenue finale ≥ 1 s), ne pas la remplacer par une accélération de montage.
+
 ## À faire
 - Atelier : un même matériau monté sur trois tempos ; critique comparée.
 - Fiches : Sally Menke (Tarantino), Kirk Baxter (Fincher), clips (Gondry, Jonze).
