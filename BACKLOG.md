@@ -34,7 +34,7 @@ Règle : alterner ART et TECH. Réalimenter dès qu'il reste moins de 10 sujets 
 
 20. [x] [ART] Examen créatif n°2 « Marée basse » (clip de rap) : 14/20 (session 2). **Examen n°3 en session 5 ou 6** : documentaire ou corporate.
 20b. [~] [ART] Atelier 04 « ce que la marée découvre » (session 4 : v1-v3, `atelier/04-maree-decouvre/`). v2b = réf. mystère, v6 = meilleur suspense (son : ressac puis gouttes, -18,4 LUFS). Reste : animer le plan sous-marin (particules, reflet ondulant), variante 9:16, et un plan d'ouverture sous-marin qui se lise sans hésiter. : une image-concept propre au sujet (révélé par l'examen n°2), 10 s Blender, l'eau qui se retire et découvre un objet.
-21. [ ] [ART] Atelier « causalité » : reprendre le principe de Honda « Cog » (chaque coupe montre une cause et son effet) sur 10 s de Blender, sans musique, seulement les sons des objets.
+21. [~] [ART] Atelier « causalité » : reprendre le principe de Honda « Cog » (chaque coupe montre une cause et son effet) sur 10 s de Blender, sans musique, seulement les sons des objets.
 22. [x] [TECH] `montage-blender` v1 écrit (session 2) ; reste Eevee headless, geometry nodes, compositing, camera tracking — : consigner ce que l'atelier 02 a appris (cadre et fenêtres de source calculées depuis la cinématique, cache d'images par caméra, ~1 image/s en Cycles 270×480 12 échantillons + débruitage).
 
 23. [ ] [ART] Atelier « le montage se retire » (principe Jonze) : un corps ou un objet qui produit lui-même le rythme (pendule, danse d'un objet Blender), 3 plans max sur 15 s, comparé à une version kinetic.
@@ -44,12 +44,19 @@ Règle : alterner ART et TECH. Réalimenter dès qu'il reste moins de 10 sujets 
 26. [~] [ART] Atelier « Versions » (principe Morris) — v1-v3 en session 5 (`atelier/06-versions/`, v3 = référence). Reste : décor habité, insert qui varie imperceptiblement, test de l'indice avec un spectateur (phase 2) : la même action Blender (un objet qui tombe) rejouée 3 fois avec un détail changé ; la musique en boucle ; critique : est-ce qu'on doute ?
 27. [x] [TECH] AAF par familles avec `pyaaf2`, relu identique par OTIO (session 5). Reste [ ] : poignées, gain, fondus ; AAF depuis l'EDL JSON d'une vraie pièce (06).
 
-28. [x] [ART] Examen n°4 « La Veilleuse » (fiction, 14/20, session 5). **Examen n°5 en session 8** : documentaire long ou pub 6 s. Révélé : [ ] fiches *Aftersun* (Wells, montage Blair McClendon) et *Les Revenants* ; [ ] surround et présence hors champ (`montage-son-et-emotion`) ; [ ] spec PAD Arte sourcée.
+28. [x] [ART] Examen n°4 « La Veilleuse » (fiction, 14/20, session 5). **Examen n°5 en session 8** : documentaire long ou pub 6 s. Révélé : [x] fiches *Aftersun* et *Les Revenants* (session 6) ; [x] surround et présence hors champ (session 6, `sources/surround-hors-champ-2026-10.md`, versé dans `montage-son-et-emotion` et `montage-loudness-livraison`) ; [ ] spec PAD Arte : **aucune spec publique**, la RT 040 (CST) sert de référence ; à redemander en phase 2.
 29. [ ] [ART] Culture : rap français proche de Ziak (réalisateurs de clips : Kourtrajmé au-delà de Gavras, clips de PNL, Freeze Corleone) ; clips Åkerlund et Gavras à confronter à Murai dans `montage-regard` (quand monter le choc).
 30. [x] [TECH] Resolve API 19-21.1 versée dans `montage-resolve` (session 5 ; Graph, ColorGroup, dépréciations, Studio requis en 21.1). Reste [ ] : Fusion, Fairlight par script.
 31. [ ] [ART] Atelier « causalité » et atelier « le montage se retire » : réutiliser la scène de la pièce 06 (table, tasse) comme plateau.
 
+32. [ ] [ART] Atelier « souvenir » (suite d'*Aftersun* et de l'atelier 05) : le même matériau Blender en deux textures (rendu propre contre « caméscope » : 4:3, bruit, balance de blancs fausse, zoom numérique) ; montage où le sens arrive en retard. Critique : la texture suffit-elle à dire « il y a longtemps » là où l'étalonnage seul échouait ?
+33. [ ] [ART] Atelier « inquiétude calme » (principe des *Revenants*) : 3 plans fixes longs d'un lieu ordinaire (pièce 06 : la table, la fenêtre), un seul détail anormal, aucune musique de genre ; tester la durée minimale avant que la lenteur se vide.
+34. [ ] [TECH] Surround en labo sur un vrai mix : passer la pièce 04 ou 06 en 5.1 (présence dans les arrières), mesurer le Lo/Ro et le Lt/Rt mono ; encodeur Lt/Rt avec déphasage de 90° (`aeval`/`afir` Hilbert) au lieu du `pan`.
+35. [ ] [TECH] Blender : fixer une graine et vérifier que la simulation de la pièce 07 se rejoue à l'identique (déterminisme) ; geometry nodes pour la flamme de la pièce 02.
+
 ## Fait (trace)
+- [x] [ART] Session 6 : fiches *Aftersun*, *Les Revenants* ; pièce 07 « Causalité »
+- [x] [TECH] Session 6 : surround et hors champ (sourcé, -4,5 LU revérifié), corps rigides Blender, Eevee sans écran mesuré
 - [x] [ART] Session 5 : atelier 05 « Trois étalonnages » (6 versions), fiches Elastic, ManvsMachine, Buck, Åkerlund, Gavras
 - [x] [TECH] Session 5 : état public des MCP, AAF par familles (pyaaf2 + OTIO), scintillement d'une clé
 - [x] [TECH] Session 4 : loudness hors plateformes, marqueurs de temps, `montage-workflows` + OTIO, fondus 3/4, vérif IA
