@@ -147,7 +147,7 @@ Techniques : `montage-grammaire` (théorique), `montage-loudness-livraison` (tes
 - **Observation** : un serveur `HIGGSFIELD_MCP` est visible dans l'environnement. Je ne l'ai pas appelé et j'ai noté les noms d'outils dans `PLAN-TESTS-MCP.md` comme hypothèses.
 - **Sources principales** : `sources/culture-session1.md`, `sources/loudness-livraison.md`, `sources/after-effects.md`, `sources/ia-generative-2026-10.md`, `sources/couleur-pipeline.md`. Les faits non vérifiés sont listés en fin de chaque fiche.
 
-### Session 2 — 2026-10-09 23:52 → 2026-10-10 ~00:40 UTC
+### Session 2 — 2026-10-09 23:52 → 2026-10-10 00:30 UTC
 - **Démarrage** : le contrôle anti-doublon a d'abord arrêté la session (dernier commit 80 s plus tôt). Vous m'avez confirmé un faux positif et j'ai repris.
 - **Pièce créée** : 02 « Étincelle », de v1 à v6 (Blender 4.2.3 Cycles CPU, sons synthétisés avec numpy, police Inter OFL ; aucun média tiers). Les scripts sont réutilisables : plateau multi-caméras, liste de plans en JSON, rendu des seules images utiles avec cache.
 - **Tests réussis** :
