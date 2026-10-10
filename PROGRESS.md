@@ -2,13 +2,20 @@
 
 _Lire en premier. Seul l'état présent compte ici. L'état de clôture de la phase 1 est archivé dans `archives/phase-1/PROGRESS-cloture-phase-1.md`, et l'historique des sessions 1 à 25 dans `archives/phase-1/PROGRESS-historique.md`._
 
-## État (2026-10-11, session 0 de la phase 2)
-- **Phase 2 en cours** : analyse de vraies vidéos, en local sur le Mac de Diego (M1 Max). Mission : `PROMPT-PHASE-2.md`. Démarrage de chaque session : `CLAUDE.md`.
-- Session 0 faite : `videos/` ignoré par Git, fichiers de la phase 2 en place, ancien `PROMPT.md` archivé, 10 réponses de goût présentes dans `GOUTS.md`, outils installés, méthode testée sur un clip (`analyses/clips/sdm-malentoure.md`).
-- **Reprendre ici** : étape 0 de `PROMPT-PHASE-2.md`, c'est-à-dire créer le skill `montage-nouvelle-reference` (il n'existe pas encore). Ensuite, films vague 1 en commençant par **Interstellar** (passe globale).
+## État (2026-10-11, session 1 de la phase 2, 01:27-01:52)
+- **Phase 2 en cours** : mission `PROMPT-PHASE-2.md` (lire aussi ses sections « Avant chaque vidéo : repartir de la phase 1 » et « Leçons de méthode »). Démarrage de chaque session : `CLAUDE.md`.
+- Session 1 : skill `montage-nouvelle-reference` et `REFERENCES.md` créés (étape 0) ; **Interstellar analysé** (`analyses/films/interstellar.md`) ; **Joker** : passe globale, puis métro, escaliers et plateau de Murray en passe fine (`analyses/films/joker.md`).
+- **Reprendre ici** : finir Joker (toilettes vers 0:33:30-0:35, Pogo's 0:42:40-0:44, montée des escaliers à situer, émeute et capot 1:46-1:53, plan du bus en miroir). Les fichiers de passe globale sont déjà dans `videos/_travail/joker/` (proxy, coupes.json, ebur128.log, vignettes, couleur.json) : pas besoin de les refaire. Ensuite : Whiplash, Le Dîner de cons, Mad Max: Fury Road, puis le bilan de la vague 1 dans RAPPORT.md.
+- `.claude/settings.json` (ajouté par Diego) n'est pas commité : le garde-fou de l'agent refuse ce commit. À laisser à Diego.
+
+## Chaîne d'analyse d'un film (session 1)
+1. `labo/outils/passe_globale.sh FILM videos/_travail/<nom> <piste audio VO> <sous-titre>` en arrière-plan (6 à 8 min) ; repérer les pistes avec `ffprobe`.
+2. `courbes_film.py` (rythme et volume) et `couleur_film.py` (couleur) avec `--marques`.
+3. Repérer les scènes dans les sous-titres (`sous-titres.srt`), puis `LUFS=M sequence.py DOSSIER DEBUT FIN sortie.png [colonnes] [largeur]` pour chaque séquence (planche < 500 Ko).
+4. Vérifier à l'œil plans longs, pics et lignes d'alterné (tuile ffmpeg `fps=1/2,tile=15x14`).
 
 ## Leçons de méthode (test sur SDM)
-- Les détecteurs de coupes (`analyse_clip.py` et PySceneDetect) **ratent les coupes cachées** par l'occlusion d'un corps ou par un filé. Dans tout plan de plus de 15 s, il faut regarder une image toutes les 2 à 3 s, puis image par image autour des passages suspects.
+- Les détecteurs de coupes (`analyse_clip.py` et PySceneDetect) **ratent les coupes cachées** par l'occlusion d'un corps ou par un filé, ainsi que les coupes des scènes sombres. Ils inventent aussi des coupes quand la lumière clignote (voir `PROMPT-PHASE-2.md`).
 - `labo/outils/planche.py` donne une planche (une image par plan, avec la courbe LUFS, les coupes et les temps en dessous). Il réduit le PNG en palette (128 couleurs ou moins) jusqu'à passer sous 500 000 octets : les aplats saturés (rouge) se postérisent, donc **ne pas juger la couleur fine sur la planche**, mais sur une image extraite.
 
 ## Outils (installés le 2026-10-11, temps mesurés)
@@ -26,8 +33,8 @@ _Lire en premier. Seul l'état présent compte ici. L'état de clôture de la ph
 | films | Aftersun (2022) | 1 h 41 min | |
 | films | Avengers: Infinity War (2018) | 2 h 29 min | |
 | films | Forrest Gump (1994), 2160p HDR10 | 2 h 22 min | |
-| films | Interstellar (2014), IMAX | 2 h 49 min | |
-| films | Joker (2019) | 2 h 01 min | |
+| films | Interstellar (2014), IMAX | 2 h 49 min | ✔ 2026-10-11 |
+| films | Joker (2019) | 2 h 01 min | en cours (passe globale + 3 séquences) |
 | films | La Haine (1995) | 1 h 33 min | |
 | films | Le Dîner de cons (1998) | 1 h 20 min | |
 | films | Mad Max: Fury Road (2015) | 2 h 00 min | |
@@ -76,5 +83,6 @@ Total : 13 films (environ 26 h), 8 clips, 7 pubs, 10 vidéos YouTube (environ 10
 - Jamais d'identifiant personnel (adresse e-mail…) dans un en-tête de requête.
 - Le serveur `HIGGSFIELD_MCP` peut consommer des crédits payants : ne rien générer sans accord explicite.
 - `pkill -f motif` tue le shell appelant : tuer par PID. Les calculs longs se lancent avec `run_in_background`, pas avec `&`.
+- ffmpeg Homebrew sans `drawtext` (pas de texte sur les tuiles) : annoter avec Pillow. L'option `framelog=verbose` d'ebur128 ne sort rien sans `-v verbose` : utiliser `ebur128` simple.
 - ffmpeg en `yuv*` = plage limitée (noir = 16). PIL lit un PNG 16 bits en 8 bits.
 - zsh : `====` en début de mot déclenche une erreur (« = not found ») ; écrire des séparateurs entre guillemets.

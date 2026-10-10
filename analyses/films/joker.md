@@ -1,6 +1,6 @@
 # Joker (Todd Phillips, 2019) — image Lawrence Sher, étalonnage Jill Bogdanowicz
 
-_Fiche ouverte le 2026-10-11 (phase 2, session 1). **État : passe globale faite ; métro et plateau de Murray analysés finement ; quatre séquences restent à faire** (session suivante). Source : 1080p HDLight, 1920×1040, VO anglaise AC3 5.1 (mesures sur un mixage stéréo réduit), sous-titres français. Planches commitées : `joker-couleur.png` (couleur sur tout le film), `joker-metro.png` (0:30-0:34) et `joker-murray.png` (1:37:30-1:45:50), une image par plan avec le volume momentané en dessous. Fichiers de travail : `videos/_travail/joker/`._
+_Fiche ouverte le 2026-10-11 (phase 2, session 1). **État : passe globale faite ; métro et plateau de Murray analysés finement ; quatre séquences restent à faire** (session suivante). Source : 1080p HDLight, 1920×1040, VO anglaise AC3 5.1 (mesures sur un mixage stéréo réduit), sous-titres français. Planches commitées : `joker-escaliers.png` (1:30:15-1:32), `joker-couleur.png` (couleur sur tout le film), `joker-metro.png` (0:30-0:34) et `joker-murray.png` (1:37:30-1:45:50), une image par plan avec le volume momentané en dessous. Fichiers de travail : `videos/_travail/joker/`._
 
 **Lu avant l'analyse** : `culture/joker-couleur-image.md`, `montage-couleur-et-intention`, grille de `montage-regard` (critère « Cohérence » : l'ensemble de *Joker*), `GOUTS.md` (couleur et image ; réponse 4 : « l'équilibre de l'ensemble »).
 
@@ -41,10 +41,17 @@ Faire sentir physiquement une ville malade et un homme qui y étouffe, puis rend
 - **Le seul passage rapide est le coup de feu** : quatre plans de 1,5 à 2,8 s (1:45:06-1:45:14). Ensuite, un plan tenu de 13,3 s (1:45:22).
 - **Une règle commune au métro et au plateau** : le dialogue en plans longs, une rafale de plans courts **seulement sur la violence**, puis le plan le plus long juste après. C'est l'inverse de la règle « la résolution est plus courte que l'attente » (Menke, `montage-references` A.2) : ici, **l'après dure plus longtemps que l'acte**. C'est là que le film installe son malaise.
 
+### La descente des escaliers (1:30:36-1:31:35) [VU SUR IMAGES, `joker-escaliers.png`]
+- Environ 60 s, 16 plans courts (1,3 à 4,6 s), juste après le meurtre dans l'appartement (1:28-1:30) et un plan de 12 s d'Arthur maquillé dans le couloir (1:30:24).
+- La musique entre vers 1:30:56 (saut de volume visible sur la courbe ; calage sur le temps [NON VÉRIFIÉ]).
+- **Au milieu de la danse, un seul plan large et tenu** (plan 17, 10,7 s, en contre-plongée depuis le bas des marches) : on voit enfin tout le corps et tout l'escalier. Ensuite, gros plan de 8,9 s, puis les policiers et la fuite.
+- Jour gris et froid ; **le rouge du costume est la seule couleur saturée**. Le même décor qu'à l'aller (fiche de phase 1), inversé par la lumière et par la hauteur de caméra.
+- **Nuance de la règle du métro et de Murray** : la rafale de plans courts sert aussi **l'euphorie** (la danse), pas seulement la violence. Les deux sont, pour Arthur, des libérations.
+
 ## Séquences restant à analyser (session suivante)
 2. Toilettes, danse lente (vers 0:33:30-0:35).
 3. Pogo's et la première apparition du rouge (0:42:40-0:44).
-4. Escaliers, montée puis descente (montée à situer ; descente avant 1:35).
+4. Escaliers, la montée (à situer) pour la comparer à la descente.
 6. Émeute et capot de voiture (1:46-1:53), plan du bus « en miroir ».
 
 ## Confirme, contredit, complète (provisoire)
@@ -58,7 +65,7 @@ Faire sentir physiquement une ville malade et un homme qui y étouffe, puis rend
 ## Principes transférables (provisoires)
 1. **Une matière de couleur pour tout le film** (ici le vert des tubes), qu'on retire d'un coup à la bascule.
 2. **Annoncer la couleur méritée par de petites touches attachées à un lieu symbolique** (le rouge de la scène), puis la donner au personnage.
-3. **La rafale de coupes seulement sur l'acte**, et l'après tenu plus longtemps que l'acte.
+3. **La rafale de coupes seulement sur l'acte** (violence ou euphorie), et l'après tenu plus longtemps que l'acte ; dans la rafale, un seul plan large tenu qui montre enfin tout le corps.
 4. **Faire monter un dialogue par l'allongement des gros plans**, sans couper plus vite.
 5. **La lumière qui clignote comme montage sans coupe** : elle donne le rythme de la panique sans fragmenter l'espace.
 
