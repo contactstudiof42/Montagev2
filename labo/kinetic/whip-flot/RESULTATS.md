@@ -84,3 +84,17 @@ Chaque cellule donne vA → vB (px/image), puis la cohérence minimale, le cosin
 - `gen.py` : génère les cas de vérité terrain.
 - `mesure_flot.py` : mesures Farneback, Farneback au quart, DIS et vecteurs du codec, avec le score et la règle de décision.
 - Images et `resultats.json` : dans le dossier de sortie, hors git.
+
+## Validation sur de vrais rendus Blender (session 13, après le sous-agent) [TESTÉ EN LABO, Blender 4.2.3 Cycles]
+`../whip/scene.py` (colonnes autour d'une caméra qui pivote, flou de bougé 0,5, 192×108, objectif 24 mm ≈ 74° de champ). A = lieu 0 en sortie, Bm = lieu 1 en entrée même sens, Bi = sens inverse. Rendus dans `labo/rendus/whipreel/` (non versionnés), 2 s par plan.
+
+| VMAX (°/image ≈ % de largeur) | cas | DIS : vA → vB · cohérence · décision | Vecteurs codec | fb4 (quart) |
+|---|---|---|---|---|
+| 8° ≈ 11 % | Bm (raccord) | 17 → 15 · 0,99/1,00 · **raccord** | raccord | **inverse ✗** |
+| 8° ≈ 11 % | Bi (inverse) | 17 → −15 · 0,99/1,00 · **inverse** | inverse | **raccord ✗** |
+| 30° ≈ 40 % | Bm | −10 → −24 · 0,57/0,88 · raccord (cohérence A trop basse) | 42 → 47 · 0,37 · incertain | raccord |
+| 30° ≈ 40 % | Bi | −10 → −11 · 0,57/0,83 · **raccord ✗** (cohérence basse) | 42 → −48 · 0,37 · incertain (signe juste) | inverse |
+
+- **À 11 % de largeur par image, DIS et codec sont justes et sûrs (cohérence ≈ 1)** ; **Farneback au quart se trompe de sens avec assurance dans les deux cas** : à ne jamais utiliser seul.
+- **À 40 % (le vrai filé du labo whip), aucune méthode n'est fiable** : DIS se trompe (mais sa cohérence 0,57 < 0,85 le fait écarter) ; le codec trouve le bon signe mais avec une cohérence de 0,37. **La règle combinée s'abstient : 0 erreur.** Les vecteurs bruts du codec gardent pourtant le bon signe dans les deux cas : piste pour une règle sur le signe seul quand |v| > 30 % de la largeur.
+- Lecture artistique (hypothèse à vérifier à l'œil en phase 2) : au-delà d'environ un quart de cadre par image, le filé n'a plus de direction lisible **image par image** ; la direction se lit alors dans **l'accélération de A et le ralentissement de B** (les images lentes autour du filé). C'est là qu'il faut soigner le sens, pas au cœur du flou.
