@@ -168,3 +168,24 @@ Recherches du **2026-10-10** (WebSearch standard et étendu, WebFetch). Fenêtre
 | Orcarouter, Wan 3.0 | https://www.orcarouter.ai/blog/wan-3-0-release-date | 2026 | via recherche | Wan 3.0 toujours fermé |
 
 Recherches sans résultat neuf dans la fenêtre : Veo / Flow, Luma, MiniMax Hailuo, LTX, Pika, Midjourney, Seedance 3.0, Suno, Udio, Resolve, Topaz (modèles), Blender.
+
+## Veille session 20
+Recherches du **2026-10-10** (WebSearch standard et étendu, WebFetch). Fenêtre visée : 03/10 → 10/10/2026.
+
+| Source | URL | Date | Accès | Ce qu'elle confirme |
+|---|---|---|---|---|
+| Higgsfield, changelog (off.) | https://higgsfield.ai/creator-hub/changelog | consulté 2026-10-10 | ouverte | Entrées 01 → 08/10 ; rien les 09-10/10 ; pas de Kling 4.0 ; festival (05 et 08/10) ; panne Seedance (03/10) |
+| Higgsfield, Global Film Festival (off.) | https://higgsfield.ai/blog/higgsfield-global-film-festival | 2026-08 | via recherche | Dotation 1 M$, jury, films faits dans Cinema Studio |
+| AI Film Contests, guide festival | https://aifilmcontests.com/guide/how-to-win-higgsfield-global-film-festival-2026 | 2026 | via recherche | Exclusion des plans d'autres outils [À VÉRIFIER] |
+| Runway, changelog (off.) | https://runway.com/changelog | consulté 2026-10-10 | ouverte | Dernière entrée 02/10/2026 |
+| Gemini API, changelog (off.) | https://ai.google.dev/gemini-api/docs/changelog | 2026-10-08 | ouverte | Dépréciations texte seulement ; NB2 sans date d'arrêt |
+| ElevenLabs, changelog (off.) | https://elevenlabs.io/docs/changelog | consulté 2026-10-10 | ouverte | Rien après 05/10 ; Seedance 1.5 Pro retiré le 11/11 (entrée du 23/09) |
+| Atlas Cloud, Kling 4.0 | https://www.atlascloud.ai/fr/blog/tips/kling-4-flash-vs-full | 2026-09/10 | via recherche | Complet « en octobre », sans jour |
+| Meta AI, Muse Image et Muse Video (off.) | https://ai.meta.com/blog/introducing-muse-image-muse-video-msl/ | 2026-07-07 | cité par Gigazine | Muse Video « coming soon » |
+| Gigazine, Muse | https://gigazine.net/gsc_news/en/20260708-muse-image-video-generation-ai | 2026-07-08 | ouverte | Muse Image sorti, Muse Video en aperçu avec son |
+| Aireiter, Muse Video | https://aireiter.com/blog/meta-muse-video | 2026-08 | via recherche | Pas de disponibilité ni d'API |
+| MBW, Suno stream ripping | https://www.musicbusinessworldwide.com/umg-and-sony-accuse-suno-of-pirating-youtube-via-stream-ripping-to-train-its-ai/ | 2026-08 | via recherche | Plainte modifiée 25/08 ; ajout de 61 026 titres refusé |
+| Comparateur-IA, « Grok Imagine 2 » | https://comparateur-ia.com/?p=7340 | 2026 | via recherche | Non retenu (source unique) |
+| Voxbooster, récap Q4 2026 | https://voxbooster.com/blog/voice-changer-industry-q4-2026-recap/ | 2026-10 | via recherche | Non retenu (versions périmées) |
+
+Recherches sans résultat neuf dans la fenêtre : Veo / Flow, Luma, LTX, HunyuanVideo, Wan, Midjourney, Firefly, Topaz, SAM, Suno, Udio, xAI.

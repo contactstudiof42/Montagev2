@@ -317,3 +317,37 @@ Veo (toujours 3.1), Sora (fermé), Luma (Ray3.2), MiniMax Hailuo (H3), Wan (3.0 
 3. §2 Image : **FLUX 3 Image** daté au **01/10/2026** par les notes de version BFL (n'est plus « Higgsfield seulement »).
 4. §3 Topaz : « aucune sortie entre juillet et octobre » remplacé par le **rachat par Adobe** (23/09/2026).
 5. §7 reste valable : Kling 4.0 complet et Adobe MAX (10-12/11) toujours à constater.
+
+---
+
+## Veille du 2026-10-10 (session 20)
+
+Fenêtre : 03/10 → 10/10/2026, refaite le même jour que la session 19 (WebSearch standard et étendu, WebFetch des changelogs Higgsfield, Runway, Gemini API, ElevenLabs). Rien testé. Sources : `sources/ia-generative-2026-10-10.md`, section « Veille session 20 ».
+
+**Bilan : presque rien de neuf depuis la session 19.** Aucun nouveau modèle vidéo, image, voix, musique, upscale, interpolation ou détourage n'a été publié entre la session 19 et le 10/10 au soir.
+
+### Constats datés (confirmés par source officielle)
+| Date | Fait | Statut |
+|---|---|---|
+| 10/10/2026 | **Kling 4.0 complet : toujours pas sorti.** Seule la Flash est ouverte ; absent des changelogs Higgsfield et Runway. | [SOURCÉ] off. changelogs Higgsfield et Runway (consultés 2026-10-10) ; sec. atlascloud (seule source sur le « octobre », sans jour). |
+| 08/10/2026 | Gemini API : seules des dépréciations de modèles texte (3.5 / 3.7 Flash, Deep Research). **Rien sur Veo, Omni, Lyria, TTS.** Arrêt de Nano Banana 2 : **toujours sans date officielle** (le « 29/10 » des blogs reste [À VÉRIFIER]). | [SOURCÉ] off. ai.google.dev changelog (08/10/2026). |
+| 05 → 08/10/2026 | **Higgsfield Global Film Festival** : vote du public ouvert le 08/10 (jusqu'au 15/10), jury du 09 au 14/10, palmarès « dernière semaine d'octobre ». Dotation totale 1 M$ ; films faits **uniquement** dans Cinema Studio. | [SOURCÉ] off. changelog Higgsfield (05 et 08/10) ; off. higgsfield.ai/blog. Règle d'exclusion des plans Veo / Kling : [À VÉRIFIER] (guide tiers). |
+| 03/10/2026 | Higgsfield : pannes Seedance réglées, générations remboursées. | [SOURCÉ] off. changelog Higgsfield. |
+
+### Rattrapages (antérieurs à la fenêtre, absents du fichier)
+- **Meta Muse Image** (sorti) et **Muse Video** (aperçu, avec son) : 07/07/2026. Muse Video est annoncé « bientôt » dans Meta AI, **toujours non disponible** au 10/10, pas d'API. Durée, résolution, prix : inconnus. [SOURCÉ] off. ai.meta.com/blog/introducing-muse-image-muse-video-msl ; sec. gigazine (08/07/2026), aireiter (08/2026).
+- **ElevenLabs** : Seedance 1.5 Pro retiré de ses Flows le **11/11/2026** (annonce du 23/09). [SOURCÉ] off. elevenlabs.io/docs/changelog.
+- **Suno** : un juge a autorisé UMG et Sony à ajouter l'accusation de **« stream ripping »** (entraînement sur des téléchargements YouTube), plainte modifiée le 25/08/2026 ; l'ajout de 61 026 titres a été refusé (18/08). [SOURCÉ] sec. musicbusinessworldwide (08/2026).
+
+### Rapporté par la presse, non retenu
+- « Grok Imagine 2 » vidéo (4K, 30 s) : un seul annuaire tiers ; xAI en reste à Video 1.5. « Suno v5 » ou « ElevenLabs v3 » présentés comme nouveautés d'octobre (voxbooster) : **faux**, dépassés par v6 et v4. Seedance 2.5 « 50 références » : toujours [À VÉRIFIER].
+
+### Rien de neuf (03 → 10/10)
+Veo / Flow, Omni, Runway (dernière entrée 02/10), Luma, Hailuo, Wan, LTX, HunyuanVideo, Pika, Midjourney (V8.2, pas de vidéo V2), Firefly (rien avant MAX, 10-12/11), Topaz, SAM, ElevenLabs (rien après le 05/10, agents seulement), Suno, Udio.
+
+### Ce que ça change pour le monteur / motion designer
+- **Kling 4.0 en attente** : rien ne bouge ; garder Veo 3.1, Kling 3.0 ou Seedance 2.5 pour tout devis d'octobre, et ne pas bâtir un découpage sur des plans de 30 s promis mais non livrés.
+- **Muse Video (Meta)** : à surveiller pour le social (génération directement dans Instagram / Meta AI). Artistiquement, attendre : Meta reconnaît des décalages son-image et des mouvements rapides peu crédibles, soit précisément ce qui casse un raccord dans le rythme.
+- **Festival Higgsfield** : bon baromètre de l'esthétique « tout IA » de 2026. Le regarder comme on regarde une banque d'images, pour repérer les **clichés** à fuir (travellings flottants, visages lisses, lumière de pub). L'exclusivité d'un outil dit aussi qu'un film primé là n'est pas une preuve de fiabilité en production.
+- **Seedance 1.5 Pro retiré le 11/11** : un projet qui doit être regénéré à l'identique (retouche client) ne pourra plus l'être. Archiver les rushes IA bruts et noter modèle, version et prompt dans le dossier projet.
+- **Suno, accusation de « stream ripping »** : renforce la règle maison : pas de Suno sur une pub ou une diffusion TV sans clause écrite.
