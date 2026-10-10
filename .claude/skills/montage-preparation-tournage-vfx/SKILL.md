@@ -76,3 +76,9 @@ Pour chaque plan concerné, une ligne : n° de plan · ce qui change en post · 
 - Caméra : filtre coupe-IR retiré (caméra « full spectrum » ou mode nuit), balance fixe, trépied verrouillé, plaque propre du lit vide au matin si des effets seront composés dessus.
 - Au grade : voir `montage-couleur-et-intention` (le vert et le bruit coloré codent la surveillance).
 - **Détails sourcés** (filtres 720/850, point, 850 contre 940 nm, peau, yeux, sécurité IEC 62471, œuvres de référence, et ce que l'IR fait ressentir) : `infrarouge.md` dans ce dossier [THÉORIQUE].
+
+## Flou optique ou flou de post (pièce 28, session 23) [TESTÉ EN LABO, Blender Cycles]
+- Le flou optique **agrandit les hautes lumières en disques clairs** (bokeh) : le monde flou reste lumineux. Le gaussien les éteint en tache grise : le monde flou devient terne. Choisir selon l'émotion (rêverie contre malaise), pas selon la facilité.
+- Le flou optique dépend de la distance (ce qui est près et loin échangent leur netteté) : il garde la profondeur et le point de vue. Le gaussien aplatit.
+- Une bascule de mise au point utile se joue sur la plage où l'objet passe de « silhouette » à « lisible » (en 50 mm f/1.4 sur un sujet à 30-60 m : environ 1,5 → 15 m). Faire le point sur le premier plan l'efface complètement.
+- En post, si on doit flouter : flou de lentille à carte de profondeur (bokeh en disque), jamais un gaussien. Mesure : la variance du laplacien ne dit rien de la lisibilité d'une forme (elle sature à 2 px). Détails : `atelier/28-flou-net/CRITIQUE.md`.

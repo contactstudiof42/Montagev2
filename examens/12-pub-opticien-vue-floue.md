@@ -102,3 +102,6 @@ _Session 23, 2026-10-10. Réponse écrite uniquement à partir des skills (direc
 ## Corrections apportées
 - `montage-direction-artistique` : test « mon propre système » **symétrique** (l'appliquer à la direction recommandée, pas seulement à celles qu'on écarte) ; packshot pour public âgé (numéro seul 3-4 s, texte fixe).
 - BACKLOG : Y31 (maquette « flou → net » : courbe et durée de la bascule, 3 vitesses), Y32 (fiches pubs TV 30 s récentes, dont opticiens et le cliché flou → net), Y33 (version « reflet dans la vitre » sans coupe).
+
+## Vérification en atelier (pièce 28, même session)
+Le flou optique contre le flou de post est confirmé et expliqué (bokeh lumineux contre gaussien terne ; la vitre qui échange sa netteté avec le paysage). Mais **mon garde-fou était faux** : avec la mise au point sur la vitre, les chevaux disparaissent complètement, on ne les devine pas. Corriger le traitement : départ de la mise au point vers 1,5 m, bascule lente entre 1,5 et 15 m. Voir `atelier/28-flou-net/CRITIQUE.md`.

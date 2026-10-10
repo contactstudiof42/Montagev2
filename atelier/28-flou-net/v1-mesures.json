@@ -1,0 +1,37 @@
+{
+ "net": {
+  "cheval": 177.1,
+  "fenetre": 94.8,
+  "reflets": 180.9
+ },
+ "optique 0.4 m": {
+  "cheval": 4.1,
+  "fenetre": 51.4,
+  "reflets": 20.7
+ },
+ "optique 1.5 m": {
+  "cheval": 5.1,
+  "fenetre": 4.5,
+  "reflets": 11.1
+ },
+ "optique 5 m": {
+  "cheval": 19.4,
+  "fenetre": 7.3,
+  "reflets": 49.5
+ },
+ "optique 15 m": {
+  "cheval": 126.3,
+  "fenetre": 13.9,
+  "reflets": 106.7
+ },
+ "optique 45 m": {
+  "cheval": 171.5,
+  "fenetre": 17.8,
+  "reflets": 137.5
+ },
+ "post gauss r=2": {
+  "cheval": 3.7,
+  "fenetre": 2.4,
+  "reflets": 3.0
+ }
+}
