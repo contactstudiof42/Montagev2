@@ -18,6 +18,7 @@ import sys, json, re, wave, subprocess, tempfile, os
 import numpy as np
 from PIL import Image, ImageDraw, ImageFont
 
+FONDUS = []   # [début, durée] des fondus lus dans l'EDL
 FONT = ImageFont.truetype('/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf', 11)
 
 
@@ -27,18 +28,27 @@ def tc_vers_image(tc, fps):
 
 
 def lire_edl(chemin, fps):
-    coupes, marqueurs, debut = [], [], None
+    coupes, marqueurs, fondus, debut = [], [], [], None
     for ligne in open(chemin, encoding='utf-8', errors='replace'):
         p = ligne.split()
         if len(p) >= 8 and p[0].isdigit() and p[2].startswith('V'):
-            rin = tc_vers_image(p[6], fps)
+            # « C » : 4 TC aux champs 4-7 ; « D 012 » / « W001 012 » : la durée décale les TC d'un champ
+            dec = 1 if p[3][0] in 'DW' and len(p) >= 9 else 0
+            rin = tc_vers_image(p[6 + dec], fps)
             debut = rin if debut is None else min(debut, rin)
-            coupes.append(rin)
+            if not dec and p[6] == p[7]:
+                continue                                  # ligne « de départ » d'un fondu, durée nulle
+            if dec:
+                fondus.append([rin, int(p[4])])
+                coupes.append(rin + int(p[4]) // 2)      # un fondu compte comme une coupe en son milieu
+            elif not (coupes and coupes[-1] == rin):
+                coupes.append(rin)
         m = re.match(r'\*\s*LOC:\s*(\S+)\s+(\S+)\s*(.*)', ligne.strip())
         if m:
             marqueurs.append([tc_vers_image(m.group(1), fps), m.group(3) or m.group(2)])
     coupes = sorted(set(c - debut for c in coupes))[1:]   # le début du 1er plan n'est pas une coupe
     marqueurs = [[f - debut, t] for f, t in marqueurs]
+    FONDUS.extend([f - debut, n] for f, n in fondus)
     return coupes, marqueurs
 
 
@@ -217,10 +227,11 @@ def main():
            'activite_nette_moy': float(np.mean(vals) - np.percentile(vals, 5)) if vals else None,
            # soustraction quadratique image par image (signal et grain indépendants)
            'activite_nette_quad': float(np.mean(np.sqrt(np.maximum(0, np.array(vals)**2 - np.percentile(vals, 5)**2)))) if vals else None,
+           'fondus': FONDUS,
            'comparaisons': {k: compare(coupes, v) for k, v in sources.items() if k != ref}}
     json.dump(res, open(sortie + '.json', 'w'), ensure_ascii=False, indent=1)
     print(json.dumps({k: res[k] for k in ('reference', 'coupes', 'duree_plan_mediane_s', 'coupes_par_min',
-                                          'activite_hors_coupes_moy', 'plancher_grain', 'activite_nette_moy', 'activite_nette_quad', 'comparaisons')}, ensure_ascii=False))
+                                          'activite_hors_coupes_moy', 'plancher_grain', 'activite_nette_moy', 'activite_nette_quad', 'fondus', 'comparaisons')}, ensure_ascii=False))
 
 
 if __name__ == '__main__':

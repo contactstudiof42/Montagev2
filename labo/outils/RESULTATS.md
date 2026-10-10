@@ -32,6 +32,11 @@ Activité visuelle hors coupes (vérité = la vidéo propre) :
 - **scdet double les coupes sur image granuleuse** (c et c+1) : toujours fusionner les détections voisines d'une image. Une EDL ou un OTIO valent mieux qu'une détection : la détection sert à vérifier un export, pas à le remplacer.
 - La bande-film (6 images de part et d'autre, enveloppe du son sous chaque image, marqueurs en rouge) suffit pour juger un raccord à l'image près sans lecteur : c'est l'outil à lancer en phase 2 sur chaque export Premiere / Resolve (EDL ou OTIO) avant de le montrer.
 
+## Fondus enchaînés dans l'EDL (2e passe, même session) [TESTÉ EN LABO]
+- Banc : 3 plans, fondu `xfade` de 12 images (44 → 56) puis coupe sèche à 94 ; EDL CMX3600 écrite à la main avec la ligne de départ à durée nulle et la ligne `D    012`.
+- Piège corrigé : sur une ligne `D 012` (ou `W001 012`), la durée **décale les timecodes d'un champ** ; l'ancien parseur lisait le TC source à la place du record in. Et la ligne de départ (record in = record out) ne doit pas compter comme une coupe.
+- Résultat : coupes [50, 94] (le fondu compté en son milieu), fondus [[44, 12]] ; **scdet manque le fondu** (1/2) et voit la coupe sèche : un détecteur de coupe ne voit pas un fondu, il faut l'EDL (ou `labo/fondus/variance.py`).
+
 ## Limites
-- EDL : seuls les événements vidéo `V` en cut sont lus ; dissolves (`D 012`) comptés comme coupes au début du fondu. Pas de pondération des événements (un rire ≠ un bruitage : reste dans `labo/youtube/densite.py`).
+- EDL : événements vidéo `V` seulement ; un fondu compte comme une coupe en son milieu (décision arbitraire, notée dans le JSON sous `fondus`). Pas de pondération des événements (un rire ≠ un bruitage : reste dans `labo/youtube/densite.py`).
 - Pas encore testé sur un vrai export Premiere / Resolve (phase 2, PLAN-TESTS 73).
