@@ -396,7 +396,7 @@ Session 6 : enrichis `montage-son-et-emotion` (hors champ, Chion, présence dans
 - Raté : le premier nom inventé pour l'association recoupait une marque réelle ; renommé. Le jugement « attente habitée » reste sur planches : à confirmer en mouvement et au son (phase 2).
 - Sources : Wikipédia (John Lewis Christmas advert), Campaign, Fundraising UK, AdNews, Eurobest, Retail Gazette ; archive.org (« Beach Waves », « Swimming Geese », CC0).
 
-### Session 11 — 2026-10-10 08:30 → ~09:05 UTC (horloge de la VM)
+### Session 11 — 2026-10-10 08:30 → 08:56 UTC (horloge de la VM)
 - **Démarrage** : dernier commit à 39 min, pas d'autre session ; Blender 4.2.3 téléchargé (30 s).
 - **Atelier** : pièce 16 v4 (4 essais : Terre unie / continents / fil au bord + réseau = réf. / surplomb raté) puis v5 (lampes lisibles, pièce close) ; **pièce 17 « 3 h 12, dans le noir »** (BACKLOG 1, la direction écartée à l'examen n°1) : v1 froid centré de face (icône, pièce entière éclairée), v2 chaud sur l'accoudoir (le mobilier vole la lumière), v3 tenu bas (réf.), v4 = v3 en froid (matière plâtre) ; son synthétique v3 / v5 (cause avant calme). Rendus : 4 animations de 10 s à 6 i/s utiles (STEP=2), ~4 min chacune.
 - **Labos** : recadrages / nests / audio multipiste dans l'échange (sous-agent, rejoué : 7/7 réglages perdus hors XML d'origine, nests relus vides, canal droit perdu) ; bercement AE à phase intégrée (le `sin(2πt/P(t))` naïf tombe à 0,02 Hz : le geste se fige ; le défaut était dans mes v1-v2) ; whip pan Blender (clés prolongées : flou 1,07 contre 0,85 à la coupe ; **échec** : la corrélation de phase ne mesure pas le sens du mouvement).

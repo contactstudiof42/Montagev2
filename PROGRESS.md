@@ -2,8 +2,8 @@
 
 _Lire en premier. Mis à jour à chaque fin de session._
 
-## Où on en est (après la session 11, 2026-10-10 ~09:00 UTC)
-- **Skills (21)** : session 11 : `montage-regard` (règles 15-16), `montage-references` (fable qui contient la réponse), `montage-couleur-et-intention` (Willis ; Young / van Hoytema), `montage-workflows` (recadrages, nests, stéréo dans l'échange), `montage-after-effects` (bercement à phase intégrée + piège), `montage-preparation-tournage-vfx` (écrans dans le champ, 5 bis), `montage-direction-artistique` (maquetter la direction qui fait peur).
+## Où on en est (après la session 11, 2026-10-10 08:56 UTC)
+- **Skills (21)** : session 11 : `montage-regard` (règles 15-17), `montage-references` (fable qui contient la réponse), `montage-couleur-et-intention` (Willis ; Young / van Hoytema), `montage-workflows` (recadrages, nests, stéréo dans l'échange), `montage-after-effects` (bercement à phase intégrée + piège), `montage-preparation-tournage-vfx` (écrans dans le champ, 5 bis), `montage-direction-artistique` (maquetter la direction qui fait peur), `montage-kinetic-editing` (3f Kolder, flou aux bords d'un plan), `montage-resolve` (4 bis Fusion et Fairlight), `montage-expert` (sommaire).
 - **Culture** : 46 fiches (nouvelles : `gordon-willis-le-noir.md`, `bradford-young-van-hoytema-lumiere-basse.md`, `sam-kolder-travel-edit.md`) ; source `resolve-fusion-fairlight-2026-10.md`.
 - **Atelier** : **16 v4-v5** (v5 réf., pièce close) ; **17 « 3 h 12, dans le noir »** v1-v4 (`atelier/17-dans-le-noir/`, v3 = réf. ; `planche.py`, `mouvement.py`).
 - **Labo** : `labo/workflows/recadrages/` (sous-agent, rejoué à la main : identique) ; `labo/ae-expressions/bercement/test.js` ; `labo/kinetic/whip/` (flou aux bords ; mesure de direction ratée → BACKLOG 66).
@@ -21,7 +21,7 @@ _Lire en premier. Mis à jour à chaque fin de session._
 - Un serveur MCP nommé `HIGGSFIELD_MCP` est listé dans l'environnement : non appelé (consigne phase 1). Noms observés dans `PLAN-TESTS-MCP.md`.
 
 ## Historique
-- Session 11 — 2026-10-10 08:30 → ~09:00 UTC : pièce 16 v4, pièce 17 « dans le noir » (v1-v4), fiches Willis et Young / van Hoytema, labos recadrages / nests / audio dans l'échange (sous-agent) et bercement AE (phase intégrée) ; écrans dans le champ ; PLAN-TESTS 48.
+- Session 11 — 2026-10-10 08:30 → 08:56 UTC : pièce 16 v4, pièce 17 « dans le noir » (v1-v4), fiches Willis et Young / van Hoytema, labos recadrages / nests / audio dans l'échange (sous-agent) et bercement AE (phase intégrée) ; écrans dans le champ ; PLAN-TESTS 48.
 - Session 10 — 2026-10-10 07:30 → ~07:55 UTC : examen n°6 (15/20), pièce 12 v8, pièce 15 « Deux sonneries de trop », fiche John Lewis, labos vitesses dans l'échange + vérificateur d'EDL, interpolation sur vrais plans CC0 (sous-agent) ; PLAN-TESTS 46-47.
 - Session 9 — 2026-10-10 06:29 → 07:05 UTC : pièces 12 (v1-v7), 13 (v1-v4), 14 (A/B) ; labos interpolation (minterpolate, RIFE) et saillance (résidu spectral) ; fiches bande-annonce, Freeze Corleone ; PLAN-TESTS 43-45.
 - Session 8 — 2026-10-10 05:29 → 05:53 UTC : pièce 10 v4-v6 (+ montage), pièce 11 « Dialogue » v1-v4, labos VFR et proxies, fiches Scott Pilgrim, génériques de séries doc, drill FR ; `montage-regard` distillé ; PLAN-TESTS 40-42.
