@@ -26,10 +26,14 @@ Règle de décision : plaisir → Bass ou Gondry ; tension → Cooper ; recul cr
 6. **Un concept, un signe** : une forme dessinable en 5 secondes, que toute l'animation révèle ou transforme (Bass).
 7. **Montrer le processus plutôt que le personnage** : gestes et outils en très gros plan (Cooper) ; une routine en 5 à 8 plans de 6 à 12 images avec des bruitages nets (Wright).
 8. **Le décor devient le contenu du personnage** : le corps sert de cadre au lieu (Clair, *True Detective*). → Portrait de marque : le visage d'un artisan comme fenêtre sur son atelier.
+9a. **Un habillage récurrent qui résout un problème du récit** (Elastic / Angus Wall, générique de *Game of Thrones*, `culture/elastic-game-of-thrones-generique.md`) : la carte est née parce que le public se perdait ; un générique qui informe (et varie d'un épisode à l'autre) donne une raison de le regarder. → Habillage de série corporate ou de chaîne : que le générique dise quelque chose de neuf à chaque fois.
+9b. **Une campagne est un système, pas un film** (ManvsMachine, `culture/manvsmachine-studio.md`) : une matière ou un geste par bénéfice produit, un élément qui revient, et des règles qui se déclinent (palette, kit de pièces). → Toute pub déclinée en 16:9 / 9:16 / 6 s.
 9. **Retirer ce qui rend l'image banale** pour qu'une métaphore littérale tienne (Glazer : le noir et blanc, rien de touristique).
 
 ## D. Matière et texture
 10. **Fabriquer plutôt qu'imiter** : typo gravée, papier scanné, pellicule ; les irrégularités réelles portent l'émotion (Cooper).
+10b. **Limiter matières et mouvements à ce que le monde raconté pourrait fabriquer ou filmer** (Elastic : bois, métal, engrenages ; caméra « motion control » seulement) : la contrainte rend l'univers crédible. **Tordre la physique sans l'abandonner** (ManvsMachine) : garder poids et inertie, ne casser qu'une règle à la fois.
+10c. **Le regard graphique avant la technique** (Buck, `culture/buck-studio.md`) : planche de style d'abord, puis mélanger dessin, 3D et stop-motion selon ce que chaque plan demande. **Quand une voix porte le film, l'image enchaîne par transformations plutôt que par coupes**, au rythme de la parole.
 11. **Les défauts d'un traitement poussé à l'extrême sont une matière**, s'ils correspondent au thème (Clair : ralenti extrême ; *The Hardest Part* : la dérive de l'IA comme sujet).
 
 ## E. Raccords et structure

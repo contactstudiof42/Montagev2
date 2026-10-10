@@ -53,3 +53,21 @@ Le serveur `HIGGSFIELD_MCP` est toujours listé (non appelé). La méthode gén�
 ## Observation de la session 4 (2026-10-10, ~01:35 UTC)
 Serveur `HIGGSFIELD_MCP` toujours listé, **non appelé** (consigne phase 1). Noms supplémentaires observés : `pr_render_audio_edl`, `pr_compare_angles`, `pr_recompact_audio`, `ae_build_liquid_glass`, `ae_reveal_floor`, `ae_rig_rebase`, `ae_finalize_build`. Le catalogue est maintenant identique d'une session à l'autre : je ne le recopierai plus, sauf changement.
 Sources publiques (vérification du 2026-10-10, `sources/ia-verif-2026-10-10.md`, **hypothèses**) : un plugin Higgsfield unique pour After Effects et Premiere présenté le 21/07/2026 ; un serveur MCP officiel dit « bridge » ; un add-on Blender piloté par MCP (lancement le 25/08/2026 selon une source tierce). À vérifier en phase 2 : version du plugin installée, hôtes réellement connectés (`get_host_status`), et quels outils consomment des crédits.
+
+## Observation de la session 5 (2026-10-10, ~02:35 UTC) — état public des MCP
+Source : `sources/mcp-etat-public-2026-10.md` (recherche web datée, [V] vérifié sur la page / [A] annoncé). Rien n'a été appelé ni installé. Tout ce qui suit est **hypothèse à vérifier**.
+
+**Conflit de règle à trancher avec l'utilisateur** : les instructions publiques du serveur Higgsfield disent qu'une demande explicite de génération autorise l'envoi immédiat (crédits payants) sans seconde confirmation. Ma règle 9 (`montage-pilotage-mcp`) exige une estimation puis un oui. **Je garde ma règle** tant que l'utilisateur ne l'a pas assouplie par écrit.
+
+Tests 21-30 (à faire après les tests 1-5, toujours dans un projet `TEST_MCP_<date>`) :
+21. `get_host_status` liste les hôtes réellement connectés (ae, pr, bl, bs) avec leur version ; un outil `bl_*` est refusé proprement si Blender n'est pas connecté.
+22. Le panneau Higgsfield AE/Premiere est une extension CEP : chercher `com.higgsfield*` dans `~/Library/Application Support/Adobe/CEP/extensions` ; noter la version minimale d'AE/Premiere qui l'ouvre.
+23. Estimation de coût d'une génération (`bl_generate_*` et équivalents) : appeler seulement l'estimation, vérifier que le solde de crédits ne bouge pas. Aucune génération réelle sans accord.
+24. Le Bridge Blender exige Blender 5.1 [A] : noter la version installée et le comportement si elle est plus ancienne ; `bl_execute` en lecture seule (`result = bpy.app.version`).
+25. Cohabitation avec ahujasid/blender-mcp (socket TCP 9876 sans authentification, `execute_blender_code` arbitraire, télémétrie par défaut) : à n'installer que si utile, port et pare-feu vérifiés.
+26. DaVinci Resolve (samuelgursky/davinci-resolve-mcp, MIT) : noter l'édition (gratuite / Studio) et la version ; Studio requis pour le scripting externe « Local », pont fragile en gratuit. Lire un projet de test sans le modifier.
+27. Coupes à l'image près dans Premiere : `pr_apply_cut_plan` sur la séquence du test 11, comparer aux numéros d'image de `atelier/03-rythme-macro/v2-mesures.json` (écart attendu 0).
+28. Ponts ExtendScript AE (kumoproductions) : préférence « Allow Scripts to Write Files and Access Network » décochée puis cochée, noter les erreurs.
+29. Télémétrie des ponts communautaires : `DISABLE_TELEMETRY=true` (blender-mcp), `PREMIERE_MCP_TELEMETRY=0` (hetpatel-11) ; observer les connexions sortantes (`lsof -i`) pendant un appel.
+30. MCP Adobe officiel distant (`adobe-creativity.adobe.io/mcp`) : agit-il sur le Premiere desktop ouvert ? Demander la liste des séquences du projet de test.
+31. (Pièce 05) Étalonnage : appliquer les arbres de `atelier/05-trois-etalonnages/v4.json` dans Resolve (nodes série + node parallèle à clé sur l'entrée) et comparer les mesures (`v4-mesures.json`) à celles de numpy ; écart attendu faible mais non nul (modèles Lift/Gamma/Gain différents).
