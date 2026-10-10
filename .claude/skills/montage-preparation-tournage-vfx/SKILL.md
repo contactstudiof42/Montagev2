@@ -69,3 +69,9 @@ Pour chaque plan concerné, une ligne : n° de plan · ce qui change en post · 
 - Keying des cheveux fins : `chromakey` ffmpeg les perd (≈ 42 % d'erreur sur les bords, labo) ; comparer Keylight / Resolve 3D Keyer / Delta Keyer avec le même protocole à vérité terrain.
 - Keying sur un vrai plan fond vert CC0 (ffmpeg `chromakey`, AE Keylight, Resolve 3D Keyer) : effet de la distance au fond et du shutter sur le bord.
 - Camera tracking d'un plan à marqueurs (Blender, AE 3D Camera Tracker) ; erreur de reprojection obtenue.
+
+## Filmer la nuit à l'infrarouge (atelier 23, session 19) [TESTÉ EN ATELIER, maquette Blender ; à valider sur une vraie caméra IR]
+- **Jamais l'illuminateur intégré** : dans l'axe, il dessine un cercle et une lumière plate ; c'est la signature « surveillance », même étalonné neutre.
+- **Un projecteur IR 850 nm décalé, motivé** (là où serait la fenêtre), étroit et faible, visé sur le visage ; la nuit doit rester majoritaire dans le cadre. 940 nm est invisible à l'œil (pas de lueur rouge qui réveille le dormeur) mais moins sensible pour la plupart des capteurs [THÉORIQUE].
+- Caméra : filtre coupe-IR retiré (caméra « full spectrum » ou mode nuit), balance fixe, trépied verrouillé, plaque propre du lit vide au matin si des effets seront composés dessus.
+- Au grade : voir `montage-couleur-et-intention` (le vert et le bruit coloré codent la surveillance).

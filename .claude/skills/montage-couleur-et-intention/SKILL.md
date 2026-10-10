@@ -105,6 +105,9 @@ Quand on demande « quelle couleur pour ce film ? », rendre :
 - **Blanc ou noir n'est pas une question de style** : le blanc clinique dit « tout le monde, calme, hors du temps » (salle d'attente, laboratoire) ; le noir à lumière froide dit « les morts, l'abîme ». Choisir selon le ton du texte (tendre → blanc ; funèbre → noir), pas selon la chaîne qu'on imite.
 - **Le blanc pur est un geste d'étalonnage** : une transformée filmique (AgX, ARRI, ACES) plafonne les hautes lumières sous le blanc ; le « blanc EGO » (luminance médiane 225+ en plage limitée) se pose avec un point blanc en grade, pas avec plus de lumière sur le plateau. Mesurer le maximum avant de corriger. Voir `montage-blender`.
 
+## L'infrarouge : intime ou surveillance (atelier 23, session 19) [TESTÉ EN ATELIER]
+- **Le grade fait la surveillance** autant que la lumière : teinte verte + bruit vidéo coloré à gros grain = caméra de sécurité, même avec une lumière sculptée. Pour l'intime : monochrome neutre ou à peine froid, grain fin mono, noir posé bas (~3 % ; 6 % fait un voile laiteux), vignette douce. Le vert est juste pour le malaise ou le found footage, comme choix.
+
 ## Limites
 
 - Les significations des couleurs varient selon cultures, marques et publics ; aucune table n'est universelle (même Storaro le reconnaît comme système personnel).
