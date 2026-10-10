@@ -33,3 +33,19 @@ Même simulation, même son (tiré de la simulation, attaques à ≤ 1 image des
 4. **Cadrer la conséquence, pas seulement la chaîne** : en A et en B, l'impact final est au bord du cadre ou hors champ.
 
 **v2 (proposée et lancée)** : C seulement. Tasse amortie (`angular_damping` = 1 : une vraie tasse a une anse qui l'empêche de rouler loin ; elle s'arrête en 9 images à 2 cm du point d'impact, dans le cadre du plan « sol »). Plan « chaîne » plus serré (`chaine2`, 32 mm, centré sur la cascade). La pièce passe à 135 images, avec 2 s de silence sur la tasse immobile.
+
+## v2 : C resserré, tasse amortie (`v2-C-planche.png`)
+- Plan « chaine2 » (32 mm) : les dominos passent de 1-2 px à 3-4 px de large, la cascade se lit comme une suite d'objets. Mieux.
+- **Raté majeur** : avec `angular_damping = 1` dès le début, la tasse ne tourne plus du tout. Elle glisse du bord **debout**, tombe debout et atterrit debout. C'est physiquement faux, et ça se lit comme une tasse posée par une main invisible : un trucage, l'inverse exact du propos. **En corrigeant la fin, j'ai abîmé le milieu.** Un réglage physique global agit sur toute la trajectoire.
+- Accident heureux : la bille, qui a roulé jusqu'au bout de la table et en est tombée, **revient entrer dans le dernier plan à l'image 125**, et roule vers la tasse. La cause vient voir son effet. Je le garde (Varda : garder l'accident qui rime).
+
+## v3 : amortissement seulement après l'impact (`v3-C-planche.png`, référence)
+- `amort_apres = [77, 0.9]` : amortissement angulaire et linéaire mis en clé à l'image de l'impact (les propriétés de corps rigide s'animent). Vérifié dans la simulation : la tasse bascule (rotation 2,2 rad à l'image 69), atterrit inclinée à 76, oscille, se couche sur le flanc vers 105, reste dans le cadre (x = 1,13 m).
+- Planche : la bascule est lisible (65-69), l'impact est dans le cadre (77), l'oscillation 81-97 donne du poids, puis l'immobilité 105-135 avec le seul souffle de pièce. Le son du choc tombe à 1 image de l'impact.
+- Critères : 1 (chaque contact visible dans un plan) **tenu** pour la bille, la cascade, la poussée et le sol ; 2 (distance coupe-contact ≥ 4) **tenu** (11 et 5) ; 3 (son à 1 image) **tenu** ; 4 (lisibilité à 480 px) **partiel** : les dominos restent petits, il faudrait du 960×540 ou un 3e plan serré de la cascade, impossible à couper sans tomber sur un contact.
+- *Reste à juger en mouvement* (phase 2) : l'oscillation de la tasse est-elle crédible à 25 i/s ? Le silence de 1,2 s avant le retour de la bille est-il juste ou trop long ?
+
+## Prochaine version (v4, pour une session suivante)
+1. Allonger la fin (≈ 160 images) pour que la bille **atteigne** la tasse et s'y arrête : dernière image = la cause et l'effet côte à côte, immobiles. Vérifier que ce n'est pas trop « écrit » (le hasard qui fait trop bien les choses se voit).
+2. Écrire des respirations dans la mécanique elle-même (un domino plus espacé, une petite rampe) pour permettre un plan serré de la cascade sans couper sur un contact : en tournage réel, c'est au plateau que se décide le découpage d'une chaîne causale.
+3. Rendre A en 960×540 pour mesurer à partir de quelle taille la version plan unique devient lisible.

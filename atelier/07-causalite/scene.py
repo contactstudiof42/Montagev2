@@ -85,6 +85,12 @@ tasse.name = "tasse"; tasse.data.materials.append(mat("faience", (0.85, 0.83, 0.
 bpy.ops.object.shade_smooth()
 rigide(tasse, shape="CYLINDER", masse=P.get("masse_tasse", 0.05), frot=0.4, rebond=0.15)
 tasse.rigid_body.angular_damping = P.get("amort_tasse", 0.1)  # v2 : la tasse s'arrête dans le cadre au lieu de rouler hors champ
+if P.get("amort_apres"):  # v3 : amortir seulement après l'impact (v2 : amortie dès le début, la tasse tombait debout sans tourner)
+    f_imp, val = P["amort_apres"]; rb = tasse.rigid_body
+    for prop in ("angular_damping", "linear_damping"):
+        base = getattr(rb, prop)
+        rb.keyframe_insert(prop, frame=f_imp - 1)
+        setattr(rb, prop, val); rb.keyframe_insert(prop, frame=f_imp + 2); setattr(rb, prop, base)
 
 # Lumières (comme la pièce 06)
 bpy.ops.object.light_add(type="AREA", location=(-2.4, 0.3, 1.3)); fen = bpy.context.object
