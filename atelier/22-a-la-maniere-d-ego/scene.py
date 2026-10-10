@@ -9,6 +9,8 @@ from mathutils import Vector
 argv = sys.argv[sys.argv.index("--") + 1:]
 OUT, N = argv[0], int(argv[1])
 FINAL, FIG, NOIR = "--final" in argv, "--figure" in argv or "--final" in argv, "--noir" in argv
+V3 = "--v3" in argv
+if V3: argv.append("--v2")   # v3 hérite de la trajectoire v2
 bpy.ops.wm.read_factory_settings(use_empty=True)
 sc = bpy.context.scene
 sc.render.engine = "CYCLES"; sc.cycles.samples = 8; sc.cycles.use_denoising = True
@@ -54,7 +56,7 @@ for side in ((-1, 1) if "--rangee" in argv else ()):
 
 # sol, monde blanc clinique (ou noir + une lumière froide en --noir)
 bpy.ops.mesh.primitive_plane_add(size=2000); sol = bpy.context.object
-sol.data.materials.append(mat("sol", (0.8, 0.8, 0.82) if not NOIR else (0.02, 0.02, 0.025), 0.35))
+sol.data.materials.append(mat("sol", ((0.9, 0.9, 0.91) if V3 else (0.8, 0.8, 0.82)) if not NOIR else (0.02, 0.02, 0.025), 0.35))
 w = bpy.data.worlds.new("w"); sc.world = w; w.use_nodes = True
 w.node_tree.nodes["Background"].inputs[0].default_value = (1, 1, 1, 1) if not NOIR else (0, 0, 0, 1)
 w.node_tree.nodes["Background"].inputs[1].default_value = 0.55 if not NOIR else 0.0
@@ -102,6 +104,9 @@ def recul(u):
 if FINAL:
     look((7.5, 6.0, 1.1), (-3.0, -6.0, 0.6)); cam.data.lens = 40
     if "--v2" in argv: look((5.5, 9.0, 1.0), (-4.5, -4.0, 0.9)); cam.data.lens = 40   # silhouette au tiers droit, vide devant elle
+    if V3:  # v3 : caméra plus haute, horizon au tiers supérieur ; la silhouette au tiers inférieur gauche, le blanc devant elle
+        cx = [float(v) for v in argv[argv.index("--cam") + 1].split(",")] if "--cam" in argv else (14.0, 2.5, 2.4, 0.0, -1.2, 1.3)
+        look(cx[:3], cx[3:]); cam.data.lens = 40
     sc.render.filepath = f"{OUT}/final.png"; bpy.ops.render.render(write_still=True)
 else:
     for i in range(N):

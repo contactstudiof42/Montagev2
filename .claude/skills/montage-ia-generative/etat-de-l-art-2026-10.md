@@ -41,7 +41,7 @@ Liens consultés : `/home/user/Montagev2/sources/ia-generative-2026-10-10.md`. V
 | Clip de base : 8 s, extensible. 9:16 natif depuis janvier 2026. | [SOURCÉ] off. deepmind.google ; sec. 9to5google (janv. 2026). |
 | Prix API Gemini (avec audio) : Veo 3.1 = 0,40 $/s en 1080p, 0,60 $/s en 4K ; Fast = 0,12 $/s en 1080p ; Lite = 0,08 $/s en 1080p (pas de 4K). | [SOURCÉ] off. ai.google.dev/gemini-api/docs/pricing (consulté 2026-10-10). |
 | **Gemini Omni Flash** : annoncé à l'I/O le 19/05/2026. Texte, image, vidéo et audio en entrée. Montage conversationnel. Clips de 3 à 10 s en 720p, audio natif. API en preview le 30/06/2026. Environ 0,10 $/s. | [SOURCÉ] off. ai.google.dev/gemini-api/docs/pricing (prix) ; sec. invideo.io, buildfastwithai (2026). Durée et résolution : [À VÉRIFIER] (sources secondaires). |
-| Gemini Omni **1.1 Flash** | [À VÉRIFIER] listé par Higgsfield le 28/08/2026 (changelog) ; aucune page Google trouvée. |
+| Gemini Omni **1.1 Flash** (`gemini-omni-1.1-flash`) : version **GA** du 27/08/2026 ; l'ancien point d'accès `gemini-omni-flash-preview` est déprécié depuis le 30/09/2026. *(Corrigé le 2026-10-10, session 19 : n'est plus [À VÉRIFIER].)* | [SOURCÉ] off. ai.google.dev/gemini-api/docs/changelog (27/08/2026) ; off. changelog Higgsfield (28/08/2026). |
 
 ### OpenAI Sora : fermé
 | Fait | Statut |
@@ -141,10 +141,10 @@ Liens consultés : `/home/user/Montagev2/sources/ia-generative-2026-10-10.md`. V
 |---|---|
 | **Midjourney V8.2** : modèle par défaut depuis le 24/07/2026. V8 alpha en mars, V8.1 le 14/04/2026. Pas d'API officielle. | [SOURCÉ] sec. tech-insider, pixmind, javisreview (2026) qui citent la page Version de Midjourney (docs.midjourney.com, 403 à la lecture). |
 | **Nano Banana 2** (Gemini 3.1 Flash Image) : 26/02/2026, défaut dans l'appli Gemini. **Nano Banana Pro** (Gemini 3 Pro Image, nov. 2025) toujours proposé. Disponibilité générale entreprise le 28/05/2026. | [SOURCÉ] sec. techcrunch.com (26/02/2026) ; off. cloud.google.com blog (05/2026). |
-| **Nano Banana 2.1** : début octobre 2026. Jusqu'en 4K, 14 images de référence, meilleur rendu du texte. Prix API : 0,034 $ (1K) à 0,113 $ (4K) par image. | [SOURCÉ] off. ai.google.dev (modèle et prix, consulté 2026-10-10) ; sec. seroundtable (10/2026). |
+| **Nano Banana 2.1** (`gemini-nano-banana-2.1`) : **GA le 06/10/2026** *(date précisée, session 19)*. Nano Banana 2 (`gemini-3.1-flash-image`) déprécié, sans date d'arrêt officielle. Jusqu'en 4K, 14 images de référence, meilleur rendu du texte. Prix API : 0,034 $ (1K) à 0,113 $ (4K) par image. | [SOURCÉ] off. ai.google.dev (modèle et prix, consulté 2026-10-10) ; sec. seroundtable (10/2026). |
 | **GPT Image 2** (ChatGPT Images 2.0) : 21/04/2026, raisonnement avant génération, 2K. | [SOURCÉ] sec. thenewstack, neurohive (04/2026). |
 | **GPT Image 2.5** (ChatGPT Images 2.5) : 08/09/2026. Deux variantes API : Flare (défaut) et Sunburst (précis). Jusqu'à 50 % plus rapide. | [SOURCÉ] sec. axios.com (08/09/2026). Résolution 3840×2160 et 16 références : [À VÉRIFIER]. |
-| **FLUX 3** (Black Forest Labs) : 23/07/2026. Modèle multimodal (image, vidéo jusqu'à 20 s avec son). Vidéo par API en août ; image en octobre (Higgsfield, 01/10). Poids ouverts « Dev » promis, pas encore sortis. FLUX.2 reste le modèle image conseillé par la doc BFL. | [SOURCÉ] sec. marktechpost (26/07/2026), winbuzzer (28/07/2026). Dates de déploiement : [À VÉRIFIER]. |
+| **FLUX 3** (Black Forest Labs) : 23/07/2026. Modèle multimodal (image, vidéo jusqu'à 20 s avec son). Vidéo par API en août ; **FLUX 3 Image le 01/10/2026** (notes de version BFL, voir session 19). Poids ouverts « Dev » promis, pas encore sortis. FLUX.2 reste le modèle image conseillé par la doc BFL. | [SOURCÉ] sec. marktechpost (26/07/2026), winbuzzer (28/07/2026). Dates de déploiement : [À VÉRIFIER]. |
 | **Seedream 5.0** (ByteDance) : 10/02/2026 ; Pro en juin-juillet 2026. Jusqu'à 14 références. | [SOURCÉ] sec. newsquawk (13/02/2026) ; off. runway.com/changelog (15/07/2026). |
 | **Ideogram 4.0** : 03/06/2026, 2K natif, mise en page par boîtes. Poids non commerciaux. **Ideogram 4.5** : listé chez Higgsfield (30/09) et Runway (02/10/2026). Détails 4.5 : inconnus. | [SOURCÉ] sec. en.wikipedia.org/wiki/Ideogram (4.0) ; off. runway.com/changelog (4.5). |
 
@@ -181,7 +181,7 @@ Liens consultés : `/home/user/Montagev2/sources/ia-generative-2026-10-10.md`. V
 |---|---|
 | **Starlight Precise 2.5** : 31/03/2026, pour amener des rushes IA en 4K. Disponible en local le 28/04/2026. | [SOURCÉ] off. topazlabs.com/news (03/2026 et 04/2026). |
 | **Astra 2** (upscale cloud) : 28/04/2026. **Hyperion 2** (conversion SDR vers HDR) et **panneau Topaz pour Premiere** : 07/05/2026. NeuroStream (jusqu'à −95 % de VRAM). | [SOURCÉ] off. topazlabs.com/news, prnewswire (28/04 et 07/05/2026). |
-| Aucune sortie Topaz trouvée entre juillet et octobre 2026. | Inconnu. |
+| **Topaz appartient à Adobe** : accord le 25/06/2026, rachat finalisé le **23/09/2026**. Topaz reste une marque et des applis autonomes ; intégration prévue dans Firefly et Photoshop d'abord, puis vidéo (upscale, restauration d'archives, basse lumière). Aucune nouvelle version de modèle Topaz trouvée de juillet à octobre 2026. *(Corrigé session 19 : la ligne disait « aucune sortie ».)* | [SOURCÉ] off. blog.adobe.com (23/09/2026) ; sec. petapixel (23/09/2026), newsshooter (25/06/2026). |
 | Interpolation : Apollo (ralenti), Chronos (changement de cadence, ex. 24 vers 60), Aion (jusqu'à 16×). Accessible depuis Resolve. | [SOURCÉ] off. developer.topazlabs.com/video-models/frame-interpolation (consulté via recherche). |
 
 ### Détourage IA hors suites
@@ -276,3 +276,44 @@ Liens consultés : `/home/user/Montagev2/sources/ia-generative-2026-10-10.md`. V
 - Les annonces d'Adobe MAX (10-12 novembre 2026), à reprendre après l'événement.
 - La sortie complète de Kling 4.0 (« octobre »), à constater.
 - Les règlements officiels de Cannes, des César et des Oscars (non relus en source primaire).
+
+---
+
+## Veille du 2026-10-10 (session 19)
+
+Fenêtre visée : 30/09 → 10/10/2026. WebSearch (standard puis étendu) + WebFetch des changelogs officiels. Rien testé. Sources : `sources/ia-generative-2026-10-10.md`, section « Veille session 19 ».
+
+### Nouveautés datées
+| Date | Nouveauté | Statut |
+|---|---|---|
+| 01/10/2026 | **FLUX 3 Image** (Black Forest Labs) : un seul point d'API pour générer, retoucher et composer ; **boîtes de placement** en JSON dans le prompt ; retouches locales multiples (recolorer, déplacer, retirer) sans toucher au reste ; 10 références ; de 768 px à 4K (~16 Mpx), 15 formats. Prix : 0,048 $ (1K) à 0,607 $ (4K) par image. Poids : non publiés. | [SOURCÉ] off. docs.bfl.ai/release-notes (01/10/2026) ; off. changelog Higgsfield (01/10/2026). |
+| 06/10/2026 | **Nano Banana 2.1** GA : meilleure cohérence de personnage sur plusieurs tours, texte, et **formats extrêmes** 1:4, 4:1, 1:8, 8:1 en 1K/2K/4K. Déployé dans Gemini, Flow, AI Studio. Nano Banana 2 déprécié. Arrêt de NB2 au 29/10 : [À VÉRIFIER] (blogs seulement). | [SOURCÉ] off. ai.google.dev changelog (06/10/2026) ; sec. jetstream.blog, cellcog (10/2026). |
+| 28/09 → 10/10/2026 | **Kling 4.0** : seule la version **Flash** est ouverte (accès anticipé limité, abonnés Ultra annuels). Version complète toujours annoncée « en octobre », **sans jour**, et **non sortie au 10/10**. Specs rapportées (3-30 s, 4K, 10 images clés, stéréo, prompt 8 000 tokens, 21:9 à 9:16) ; HDR 10 bits et extension 2 min « à venir ». | [À VÉRIFIER] sec. atlascloud, blog.mean.ceo (05/10/2026), qui citent la note de version Kling (page vide à la lecture). |
+| 06/10/2026 | **Kling AI** prépare une IPO à Hong Kong (≥ 1 Md$, banques CICC, Goldman, UBS ; cotation visée 2027). Contexte : levée de 2,8 Md$ en juillet. | [SOURCÉ] sec. Bloomberg via technode.com (08/10/2026) ; aiweekly. Non commenté par Kling. |
+| 29/09/2026 | **OpenAI Dots** (DevDay) : agents ChatGPT permanents. **Runway** (01/10) et **Higgsfield** (29/09) s'y branchent : on peut commander des plans vidéo depuis ChatGPT. **Aucun nouveau modèle image, vidéo ou audio OpenAI** trouvé à DevDay 2026. | [SOURCÉ] off. runway.com/changelog (01/10) ; off. changelog Higgsfield (29/09) ; sec. siliconangle (29/09/2026). |
+| 30/09 → 08/10/2026 | **Higgsfield** : Genjutsu **Restyle** (re-dessine une vidéo en gardant le mouvement, 30/09), Ideogram 4.5 (30/09), Grok Imagine Video 1.5 (01/10), extension ChatGPT (30/09). Autres entrées déjà listées au §1. | [SOURCÉ] off. changelog Higgsfield (consulté 2026-10-10). |
+| 02/10/2026 | **Runway** : Seedance 2.5 brouillon 480p dans Agent, Ideogram 4.5 dans le MCP Runway. **Aucune entrée du 03 au 10/10.** | [SOURCÉ] off. runway.com/changelog. |
+| 05/10/2026 | **ElevenLabs** : rien de neuf côté voix ou musique depuis Eleven v4 (28/09) ; le 05/10 ne touche que les agents et SDK. Speech to Text : correction de transcription en langage naturel (28/09). | [SOURCÉ] off. elevenlabs.io/docs/changelog. |
+
+### Rattrapages (antérieurs à la fenêtre, absents du fichier)
+- **Adobe rachète Topaz Labs** : finalisé le 23/09/2026 (voir §3, ligne corrigée). Topaz reste vendu à part. [SOURCÉ] off. blog.adobe.com ; sec. petapixel.
+- **Premiere 26.5, Generative Media Tool** : le choix de modèle inclut nommément **Firefly, Veo, Kling, Runway, Luma** ; **Generate Music** et **Generate Soundscape** (analyse jusqu'à 15 s d'image) restent en bêta. **AI Assistant d'After Effects** en bêta publique (écrit le JavaScript et monte un rig à curseurs). [SOURCÉ] off. blog.adobe.com (08/09/2026) ; sec. postmagazine, provideocoalition (09/2026).
+- **Lyria 3.5** (musique Google) GA le 03/09/2026 ; **TTS Gemini 3.8 Flash** GA le 22/09/2026. CGU commerciales non lues. [SOURCÉ] off. ai.google.dev changelog.
+
+### Rien de neuf trouvé (30/09 → 10/10)
+Veo (toujours 3.1), Sora (fermé), Luma (Ray3.2), MiniMax Hailuo (H3), Wan (3.0 fermé, poids : 2.2 max), LTX (2.5), Pika, Midjourney (V8.2), Seedance (2.5 ; pas de 3.0), Suno, Udio, Resolve (21.1), Topaz (aucun modèle), Blender. Procès : Sony a relancé une 2e plainte contre Udio le 20/07/2026 (30 117 enregistrements) ; pas de jugement sur le fond trouvé. [SOURCÉ] sec. musicbusinessworldwide, variety (07/2026).
+
+### Ce que ça change pour le monteur / motion designer
+- **FLUX 3 Image, boîtes de placement** : enfin une image fixe **composée** (où va le produit, où va le titre) plutôt que tirée au sort. À utiliser pour les cartons, key visuals, plaques de fond pour AE, où la place réservée au texte compte. Cliché à éviter : l'image « parfaite » centrée, lumière de pub, sans grain ; réintroduire grain, défauts, et laisser la typo faite dans AE (plus nette et modifiable). Retouches locales = utile pour décliner un fond sans régénérer.
+- **Nano Banana 2.1, formats 8:1 / 1:8** : plaques panoramiques pour un **travelling latéral** ou un parallaxe 2,5D dans AE, bannières, fonds de générique défilant. Piège : à 4K sur 8:1, chaque tranche reste basse définition une fois recadrée en 16:9 ; vérifier au zoom 100 %. Cliché : le panorama « fantasy » sans perspective cohérente, qui casse dès que la caméra bouge.
+- **Kling 4.0** : **ne pas le promettre au client** tant que la version complète n'est pas sortie et testée ; Flash (720p, 20 s selon blogs) suffit pour une prévisu, pas pour une livraison. Les 30 s d'un tenant tentent de faire des plans-séquences IA : un plan long expose plus longtemps les dérives (mains, textes, physique). Couper plus tôt reste souvent le meilleur choix de montage.
+- **Genjutsu Restyle / restyle vidéo** (comme Aleph 2) : utile pour un **passage onirique** ou une transition de style motivée par le récit. Cliché : le filtre « anime » ou « peinture » plaqué sur tout un clip sans raison dramaturgique ; limiter à un moment, et garder le plan réel avant et après comme point d'ancrage.
+- **Agents (Dots, Claude, MCP)** qui commandent des plans : gain pour les déclinaisons pub, risque de générations payantes non validées. Règle maison inchangée : pas de génération en crédits sans accord écrit, et le DA choisit les plans, pas l'agent.
+- **Topaz chez Adobe** : à terme l'upscale Topaz dans Premiere. Rien ne change pour l'éthique : sur archive ou visage réel, un upscale par diffusion **invente** du détail, à signaler (AI Act art. 50 si la personne est reconnaissable).
+
+### Corrections faites en place (session 19)
+1. §1 Google : **Gemini Omni 1.1 Flash** n'est plus [À VÉRIFIER] : GA officielle le 27/08/2026 ; point d'accès preview déprécié le 30/09/2026.
+2. §2 Image : **Nano Banana 2.1** daté au **06/10/2026** (au lieu de « début octobre ») ; NB2 déprécié.
+3. §2 Image : **FLUX 3 Image** daté au **01/10/2026** par les notes de version BFL (n'est plus « Higgsfield seulement »).
+4. §3 Topaz : « aucune sortie entre juillet et octobre » remplacé par le **rachat par Adobe** (23/09/2026).
+5. §7 reste valable : Kling 4.0 complet et Adobe MAX (10-12/11) toujours à constater.

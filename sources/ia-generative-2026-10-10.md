@@ -136,3 +136,35 @@ Utilisé par : `.claude/skills/montage-ia-generative/etat-de-l-art-2026-10.md` e
 | NPR / VPM, Oscars | https://www.vpm.org/npr-news/2026-05-02/academy-announces-major-overhaul-to-rules | 2026-05-02 | via recherche | Règles IA de la 99e cérémonie |
 | Franceinfo, Cannes 2026 | https://www.franceinfo.fr/culture/cinema/festival-de-cannes/festival-de-cannes-2026-films-sur-l-histoire-de-france-palme-d-or-d-honneur-intelligence-artificielle-les-temps-forts-attendus_7999436.html | 2026-05-12 | ouverte | Position de Frémaux ; pas de règlement cité |
 | NR Magazine, Cannes | https://www.nrmagazine.com/cannes-2026-bannit-les-films-100-ia-de-la-competition-officielle-aveu-de-peur-autant-quacte-de-resistance | 2026-05 | via recherche | « Interdiction » (non vérifiée) |
+
+## Veille session 19
+Recherches du **2026-10-10** (WebSearch standard et étendu, WebFetch). Fenêtre visée : 30/09 → 10/10/2026.
+
+| Source | URL | Date | Accès | Ce qu'elle confirme |
+|---|---|---|---|---|
+| Gemini API, changelog (off.) | https://ai.google.dev/gemini-api/docs/changelog | consulté 2026-10-10 | ouverte | Nano Banana 2.1 GA 06/10 ; NB2 déprécié ; Omni 1.1 Flash GA 27/08 ; preview déprécié 30/09 ; Lyria 3.5 GA 03/09 ; TTS 3.8 Flash 22/09 |
+| Gemini API, modèle Nano Banana 2.1 (off.) | https://ai.google.dev/gemini-api/docs/models/gemini-nano-banana-2.1 | 2026-10 | via recherche | Fiche du modèle |
+| Jetstream, Nano Banana 2.1 | https://jetstream.blog/?p=225957 | 2026-10-06 | via recherche | Annonce du 06/10 ; Flow, AI Mode, AI Studio, Stitch |
+| CellCog, Nano Banana 2.1 | https://cellcog.ai/blog/nano-banana-2-1/ | 2026-10 | via recherche | Prix ~0,034 $ (1K) ; arrêt NB2 29/10 [À VÉRIFIER] |
+| Black Forest Labs, notes de version (off.) | https://docs.bfl.ai/release-notes | 2026-10-01 | ouverte | FLUX 3 Image : boîtes, retouches locales, 10 réf., 4K, prix |
+| Skill Sprinters, FLUX 3 Image | https://skill-sprinters.de/blog/news/flux-3-image-black-forest-labs-preise-2026/ | 2026-10 | via recherche | Date 01/10 ; prix |
+| Runway, changelog (off.) | https://runway.com/changelog | consulté 2026-10-10 | ouverte | 29/09 ElevenLabs v4 ; 01/10 OpenAI Dots ; 02/10 Seedance 2.5 Draft, Ideogram 4.5 MCP ; rien du 03 au 10/10 |
+| Higgsfield, changelog (off.) | https://higgsfield.ai/creator-hub/changelog | consulté 2026-10-10 | ouverte | Entrées 27/09 → 08/10 (Genjutsu Restyle, FLUX 3 Image, Grok Imagine 1.5, Dots, NB 2.1, Katana) |
+| ElevenLabs, changelog (off.) | https://elevenlabs.io/docs/changelog | consulté 2026-10-10 | ouverte | 28/09 Eleven v4 / v4 Turbo, STT éditable ; 05/10 agents et SDK seulement |
+| Atlas Cloud, Kling 4.0 | https://www.atlascloud.ai/fr/blog/tips/kling-4-flash-vs-full | 2026-09/10 | via recherche | Flash 28/09 ; complet « en octobre » sans jour ; specs |
+| Mean CEO, Kling news octobre | https://blog.mean.ceo/kling-news-october-2026/ | 2026-10-05 | ouverte | Specs rapportées (3-30 s, 4K, 10 clés, 8 000 tokens) ; pas de prix ni d'API |
+| Kling, note de version 4.0 (off.) | https://kling.ai/release-note/release-notes/Kling_4 | consulté 2026-10-10 | ouverte, page vide (rendu JS) | Non lisible |
+| TechNode, IPO Kling | https://technode.com/2026/10/08/kuaishous-kling-ai-reportedly-picks-banks-for-hong-kong-ipo-targeting-at-least-1-billion | 2026-10-08 | ouverte | IPO HK ≥ 1 Md$ (Bloomberg, 06/10) |
+| AI Weekly, IPO Kling | https://aiweekly.co/alerts/kuaishous-kling-ai-taps-cicc-goldman-ubs-for-1b-hk-ipo | 2026-10 | via recherche | Idem |
+| SiliconANGLE, OpenAI Dots | https://siliconangle.com/2026/09/29/openai-launches-dots-always-on-ai-agents-in-chatgpt-with-their-own-cloud-computers/ | 2026-09-29 | via recherche | Dots lancés à DevDay |
+| Betanews, OpenAI Dots | https://betanews.com/article/openai-dots-agents-chatgpt/ | 2026-09 | via recherche | Disponibilité (Pro hors EEE) |
+| Adobe, rachat Topaz finalisé (off.) | https://blog.adobe.com/de/publish/2026/09/23/adobe-completes-acquisition-of-topaz-labs | 2026-09-23 | via recherche | Rachat finalisé ; intégration Firefly / Photoshop |
+| PetaPixel, Topaz | https://petapixel.com/2026/09/23/adobe-completes-acquisition-of-topaz-labs/ | 2026-09-23 | via recherche | Idem ; Topaz reste une marque |
+| Newsshooter, accord Adobe-Topaz | https://newsshooter.com/2026/adobe-acquires-topaz-labs/ | 2026-06-25 | ouverte | Accord du 25/06/2026 |
+| Adobe, Premiere / AE IBC (off.) | https://blog.adobe.com/en/publish/2026/09/08/generate-create-directly-in-your-timeline-with-new-ai-powered-innovations-in-premiere-after-effects | 2026-09-08 | via recherche | Modèles Firefly, Veo, Kling, Runway, Luma ; Generate Music / Soundscape bêta ; AI Assistant AE |
+| Post Magazine, Adobe IBC | https://postmagazine.com/blog/guest-blog/2026/09/adobe-debuts-new-ai-features-for-premiere-after-effects/ | 2026-09 | via recherche | Idem |
+| Music Business Worldwide, Sony c. Udio | https://musicbusinessworldwide.com/sony-music-files-new-lawsuit-against-ai-platform-udio-asserting-over-30000-sound-recordings-a-judge-barred-the-major-from-adding-to-its-original-case | 2026-07 | via recherche | 2e plainte Sony (30 117 enregistrements) |
+| Variety, Sony c. Udio | https://au.variety.com/2026/music/news/sony-music-new-lawsuit-udio-ai-music-generator-38777/ | 2026-07 | via recherche | Idem |
+| Orcarouter, Wan 3.0 | https://www.orcarouter.ai/blog/wan-3-0-release-date | 2026 | via recherche | Wan 3.0 toujours fermé |
+
+Recherches sans résultat neuf dans la fenêtre : Veo / Flow, Luma, MiniMax Hailuo, LTX, Pika, Midjourney, Seedance 3.0, Suno, Udio, Resolve, Topaz (modèles), Blender.
