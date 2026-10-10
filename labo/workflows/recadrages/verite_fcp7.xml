@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xmeml>
+<!-- Vérité terrain écrite à la main (session 11) : recadrages Basic Motion / Crop, nest, audio multipiste. 25 i/s. -->
+<xmeml version="5">
+<sequence id="seq_main">
+ <name>recadrages_25p</name><duration>150</duration>
+ <rate><timebase>25</timebase><ntsc>FALSE</ntsc></rate>
+ <timecode><rate><timebase>25</timebase><ntsc>FALSE</ntsc></rate><string>01:00:00:00</string><frame>90000</frame><displayformat>NDF</displayformat></timecode>
+ <media>
+  <video>
+   <format><samplecharacteristics><width>1920</width><height>1080</height></samplecharacteristics></format>
+   <track>
+    <clipitem id="ci_A"><name>A_zoom150</name><duration>2000</duration><rate><timebase>25</timebase></rate>
+     <start>0</start><end>50</end><in>100</in><out>150</out>
+     <file id="f_A"><name>A.mov</name><pathurl>file:///rushes/A.mov</pathurl><rate><timebase>25</timebase></rate><duration>2000</duration>
+      <media><video><samplecharacteristics><width>3840</width><height>2160</height></samplecharacteristics></video><audio><channelcount>2</channelcount></audio></media></file>
+     <filter><effect><name>Basic Motion</name><effectid>basic</effectid><effectcategory>motion</effectcategory><effecttype>motion</effecttype><mediatype>video</mediatype>
+      <parameter><parameterid>scale</parameterid><name>Scale</name><valuemin>0</valuemin><valuemax>1000</valuemax><value>150</value></parameter>
+      <parameter><parameterid>rotation</parameterid><name>Rotation</name><valuemin>-8640</valuemin><valuemax>8640</valuemax><value>10</value></parameter>
+      <parameter><parameterid>center</parameterid><name>Center</name><value><horiz>0.1</horiz><vert>-0.05</vert></value></parameter>
+     </effect></filter>
+     <filter><effect><name>Crop</name><effectid>crop</effectid><effectcategory>motion</effectcategory><effecttype>motion</effecttype><mediatype>video</mediatype>
+      <parameter><parameterid>left</parameterid><name>left</name><value>5</value></parameter>
+      <parameter><parameterid>right</parameterid><name>right</name><value>5</value></parameter>
+      <parameter><parameterid>top</parameterid><name>top</name><value>12</value></parameter>
+      <parameter><parameterid>bottom</parameterid><name>bottom</name><value>12</value></parameter>
+     </effect></filter>
+    </clipitem>
+    <clipitem id="ci_B"><name>B_kenburns</name><duration>2000</duration><rate><timebase>25</timebase></rate>
+     <start>50</start><end>100</end><in>200</in><out>250</out>
+     <file id="f_B"><name>B.mov</name><pathurl>file:///rushes/B.mov</pathurl><rate><timebase>25</timebase></rate><duration>2000</duration><media><video/></media></file>
+     <filter><effect><name>Basic Motion</name><effectid>basic</effectid><effectcategory>motion</effectcategory><effecttype>motion</effecttype><mediatype>video</mediatype>
+      <parameter><parameterid>scale</parameterid><name>Scale</name><valuemin>0</valuemin><valuemax>1000</valuemax>
+       <keyframe><when>0</when><value>100</value></keyframe><keyframe><when>49</when><value>130</value></keyframe></parameter>
+     </effect></filter>
+    </clipitem>
+    <clipitem id="ci_N"><name>NEST_interview</name><duration>50</duration><rate><timebase>25</timebase></rate>
+     <start>100</start><end>150</end><in>0</in><out>50</out>
+     <sequence id="seq_nest"><name>NEST_interview</name><duration>50</duration><rate><timebase>25</timebase></rate>
+      <media><video>
+       <track><clipitem id="ci_N1"><name>N1_large</name><duration>2000</duration><rate><timebase>25</timebase></rate><start>0</start><end>25</end><in>300</in><out>325</out><file id="f_C"><name>C.mov</name><pathurl>file:///rushes/C.mov</pathurl><rate><timebase>25</timebase></rate><duration>2000</duration><media><video/></media></file></clipitem>
+        <clipitem id="ci_N2"><name>N2_serre</name><duration>2000</duration><rate><timebase>25</timebase></rate><start>25</start><end>50</end><in>400</in><out>425</out><file id="f_C"/></clipitem></track>
+       <track><clipitem id="ci_N3"><name>N3_nom_incruste</name><duration>2000</duration><rate><timebase>25</timebase></rate><start>0</start><end>50</end><in>0</in><out>50</out><file id="f_T"><name>T.mov</name><pathurl>file:///rushes/T.mov</pathurl><rate><timebase>25</timebase></rate><duration>2000</duration><media><video/></media></file></clipitem></track>
+      </video></media>
+     </sequence>
+     <filter><effect><name>Basic Motion</name><effectid>basic</effectid><effectcategory>motion</effectcategory><effecttype>motion</effecttype><mediatype>video</mediatype>
+      <parameter><parameterid>scale</parameterid><name>Scale</name><value>120</value></parameter></effect></filter>
+    </clipitem>
+   </track>
+  </video>
+  <audio>
+   <track currentExplodedTrackIndex="0" totalExplodedTrackCount="2" premiereTrackType="Stereo">
+    <clipitem id="ci_A1"><name>A_son_G</name><duration>2000</duration><rate><timebase>25</timebase></rate><start>0</start><end>100</end><in>100</in><out>200</out><file id="f_A"/>
+     <sourcetrack><mediatype>audio</mediatype><trackindex>1</trackindex></sourcetrack>
+     <filter><effect><name>Audio Levels</name><effectid>audiolevels</effectid><effectcategory>audiolevels</effectcategory><effecttype>audiolevels</effecttype><mediatype>audio</mediatype>
+      <parameter><parameterid>level</parameterid><name>Level</name><valuemin>0</valuemin><valuemax>3.98109</valuemax><value>0.501187</value></parameter></effect></filter>
+    </clipitem>
+   </track>
+   <track currentExplodedTrackIndex="1" totalExplodedTrackCount="2" premiereTrackType="Stereo">
+    <clipitem id="ci_A2"><name>A_son_D</name><duration>2000</duration><rate><timebase>25</timebase></rate><start>0</start><end>100</end><in>100</in><out>200</out><file id="f_A"/>
+     <sourcetrack><mediatype>audio</mediatype><trackindex>2</trackindex></sourcetrack>
+     <filter><effect><name>Audio Levels</name><effectid>audiolevels</effectid><effectcategory>audiolevels</effectcategory><effecttype>audiolevels</effecttype><mediatype>audio</mediatype>
+      <parameter><parameterid>level</parameterid><name>Level</name><valuemin>0</valuemin><valuemax>3.98109</valuemax><value>0.501187</value></parameter></effect></filter>
+    </clipitem>
+   </track>
+   <track>
+    <clipitem id="ci_M1"><name>MUSIQUE_mono</name><duration>2000</duration><rate><timebase>25</timebase></rate><start>0</start><end>75</end><in>0</in><out>75</out>
+     <file id="f_M"><name>M.wav</name><pathurl>file:///rushes/M.wav</pathurl><rate><timebase>25</timebase></rate><duration>2000</duration><media><audio><channelcount>1</channelcount></audio></media></file>
+     <sourcetrack><mediatype>audio</mediatype><trackindex>1</trackindex></sourcetrack>
+     <filter><effect><name>Audio Levels</name><effectid>audiolevels</effectid><effectcategory>audiolevels</effectcategory><effecttype>audiolevels</effecttype><mediatype>audio</mediatype>
+      <parameter><parameterid>level</parameterid><name>Level</name><keyframe><when>0</when><value>1</value></keyframe><keyframe><when>60</when><value>0.251189</value></keyframe></parameter></effect></filter>
+    </clipitem>
+    <transitionitem><start>63</start><end>87</end><alignment>center</alignment><rate><timebase>25</timebase></rate>
+     <effect><name>Cross Fade (+3dB)</name><effectid>KGAudioTransCrossFade3dB</effectid><effecttype>transition</effecttype><mediatype>audio</mediatype></effect></transitionitem>
+    <clipitem id="ci_M2"><name>AMBIANCE_mono</name><duration>2000</duration><rate><timebase>25</timebase></rate><start>75</start><end>150</end><in>500</in><out>575</out>
+     <file id="f_M"/><sourcetrack><mediatype>audio</mediatype><trackindex>1</trackindex></sourcetrack></clipitem>
+   </track>
+  </audio>
+ </media>
+</sequence>
+</xmeml>

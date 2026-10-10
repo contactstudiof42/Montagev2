@@ -1,0 +1,430 @@
+{
+ "verite_xml": {
+  "plans": {
+   "A_zoom150": {
+    "pos": [
+     "0",
+     "50"
+    ],
+    "filtres": {
+     "basic": {
+      "scale": "150",
+      "rotation": "10",
+      "center": [
+       "0.1",
+       "-0.05"
+      ]
+     },
+     "crop": {
+      "left": "5",
+      "right": "5",
+      "top": "12",
+      "bottom": "12"
+     }
+    },
+    "nest": false,
+    "canal_source": null
+   },
+   "B_kenburns": {
+    "pos": [
+     "50",
+     "100"
+    ],
+    "filtres": {
+     "basic": {
+      "scale": [
+       [
+        "0",
+        "100"
+       ],
+       [
+        "49",
+        "130"
+       ]
+      ]
+     }
+    },
+    "nest": false,
+    "canal_source": null
+   },
+   "NEST_interview": {
+    "pos": [
+     "100",
+     "150"
+    ],
+    "filtres": {
+     "basic": {
+      "scale": "120"
+     }
+    },
+    "nest": true,
+    "canal_source": null,
+    "plans_dans_nest": 3
+   },
+   "A_son_G": {
+    "pos": [
+     "0",
+     "100"
+    ],
+    "filtres": {
+     "audiolevels": {
+      "level": "0.501187"
+     }
+    },
+    "nest": false,
+    "canal_source": "1"
+   },
+   "A_son_D": {
+    "pos": [
+     "0",
+     "100"
+    ],
+    "filtres": {
+     "audiolevels": {
+      "level": "0.501187"
+     }
+    },
+    "nest": false,
+    "canal_source": "2"
+   },
+   "MUSIQUE_mono": {
+    "pos": [
+     "0",
+     "75"
+    ],
+    "filtres": {
+     "audiolevels": {
+      "level": [
+       [
+        "0",
+        "1"
+       ],
+       [
+        "60",
+        "0.251189"
+       ]
+      ]
+     }
+    },
+    "nest": false,
+    "canal_source": "1"
+   },
+   "AMBIANCE_mono": {
+    "pos": [
+     "75",
+     "150"
+    ],
+    "filtres": {},
+    "nest": false,
+    "canal_source": "1"
+   }
+  },
+  "pistes_video": 1,
+  "pistes_audio": 3,
+  "stereo_eclatees": 2,
+  "fondus_audio": 1
+ },
+ "lu_par_otio": {
+  "pistes": [
+   "Video::3 él.",
+   "Audio::1 él.",
+   "Audio::3 él."
+  ],
+  "plans": {
+   "A_zoom150": {
+    "type": "Clip",
+    "effets": [
+     "Basic Motion",
+     "Crop"
+    ],
+    "effets_avec_valeurs": 2,
+    "meta_filtre": true,
+    "dur": 50
+   },
+   "B_kenburns": {
+    "type": "Clip",
+    "effets": [
+     "Basic Motion"
+    ],
+    "effets_avec_valeurs": 1,
+    "meta_filtre": true,
+    "dur": 50
+   },
+   "NEST_interview": {
+    "type": "Stack",
+    "effets": [
+     "Basic Motion"
+    ],
+    "effets_avec_valeurs": 1,
+    "meta_filtre": true,
+    "dur": 50,
+    "plans_dans_nest": 0
+   },
+   "A_son_G": {
+    "type": "Clip",
+    "effets": [
+     "Audio Levels"
+    ],
+    "effets_avec_valeurs": 1,
+    "meta_filtre": true,
+    "dur": 100
+   },
+   "MUSIQUE_mono": {
+    "type": "Clip",
+    "effets": [
+     "Audio Levels"
+    ],
+    "effets_avec_valeurs": 1,
+    "meta_filtre": true,
+    "dur": 75
+   },
+   "fondu:": "Cross Fade (+3dB)",
+   "AMBIANCE_mono": {
+    "type": "Clip",
+    "effets": [],
+    "effets_avec_valeurs": 0,
+    "meta_filtre": false,
+    "dur": 75
+   }
+  }
+ },
+ "xml_aller_retour": {
+  "A_zoom150": "survit",
+  "B_kenburns": "survit",
+  "NEST_interview": "plans du nest 3 -> 0",
+  "A_son_G": "survit",
+  "A_son_D": "PLAN PERDU",
+  "MUSIQUE_mono": "position ('0', '75') -> ('0', '-1')",
+  "AMBIANCE_mono": "position ('75', '150') -> ('-1', '150')",
+  "pistes_video": "1 -> 1",
+  "pistes_audio": "3 -> 2",
+  "stereo_eclatees": "2 -> 1",
+  "fondus_audio": "1 -> 1"
+ },
+ "xml_depuis_otio_sans_meta": {
+  "A_zoom150": "basic perdu; crop perdu",
+  "B_kenburns": "basic perdu",
+  "NEST_interview": "basic perdu; plans du nest 3 -> 0",
+  "A_son_G": "audiolevels perdu; canal source 1 -> None",
+  "A_son_D": "PLAN PERDU",
+  "MUSIQUE_mono": "audiolevels perdu; canal source 1 -> None; position ('0', '75') -> ('0', '-1')",
+  "AMBIANCE_mono": "canal source 1 -> None; position ('75', '150') -> ('-1', '150')",
+  "pistes_video": "1 -> 1",
+  "pistes_audio": "3 -> 2",
+  "stereo_eclatees": "2 -> 0",
+  "fondus_audio": "1 -> 1"
+ },
+ "edl_tout": {
+  "relu": {
+   "pistes": [
+    "Video:V:2 él."
+   ],
+   "plans": {
+    "A_zoom150": {
+     "type": "Clip",
+     "effets": [],
+     "effets_avec_valeurs": 0,
+     "meta_filtre": false,
+     "dur": 50
+    },
+    "B_kenburns": {
+     "type": "Clip",
+     "effets": [],
+     "effets_avec_valeurs": 0,
+     "meta_filtre": false,
+     "dur": 50
+    }
+   }
+  },
+  "mots_cles_effets": [
+   "* FROM CLIP NAME:  A_zoom150",
+   "* FROM CLIP: file:///rushes/A.mov",
+   "* OTIO TRUNCATED REEL NAME FROM: A.mov",
+   "* FROM CLIP NAME:  B_kenburns",
+   "* FROM CLIP: file:///rushes/B.mov",
+   "* OTIO TRUNCATED REEL NAME FROM: B.mov"
+  ]
+ },
+ "edl_v1": {
+  "relu": {
+   "pistes": [
+    "Video:V:2 él."
+   ],
+   "plans": {
+    "A_zoom150": {
+     "type": "Clip",
+     "effets": [],
+     "effets_avec_valeurs": 0,
+     "meta_filtre": false,
+     "dur": 50
+    },
+    "B_kenburns": {
+     "type": "Clip",
+     "effets": [],
+     "effets_avec_valeurs": 0,
+     "meta_filtre": false,
+     "dur": 50
+    }
+   }
+  },
+  "mots_cles_effets": [
+   "* FROM CLIP NAME:  A_zoom150",
+   "* FROM CLIP: file:///rushes/A.mov",
+   "* OTIO TRUNCATED REEL NAME FROM: A.mov",
+   "* FROM CLIP NAME:  B_kenburns",
+   "* FROM CLIP: file:///rushes/B.mov",
+   "* OTIO TRUNCATED REEL NAME FROM: B.mov"
+  ]
+ },
+ "natif_reference": {
+  "pistes": [
+   "Video:V1",
+   "Audio:A1",
+   "Audio:A2",
+   "Audio:A3_musique"
+  ],
+  "plans": {
+   "A_zoom150": {
+    "type": "Clip",
+    "effets": [
+     [
+      "Transform",
+      {
+       "crop_ltrb": [
+        5,
+        12,
+        5,
+        12
+       ],
+       "pos": [
+        0.1,
+        -0.05
+       ],
+       "rotation": 10,
+       "scale": 1.5
+      }
+     ]
+    ],
+    "plans_internes": null
+   },
+   "NEST_interview": {
+    "type": "Stack",
+    "effets": [],
+    "plans_internes": 3
+   },
+   "A_son_G": {
+    "type": "Clip",
+    "effets": [
+     [
+      "AudioLevels",
+      {
+       "gain_db": -6
+      }
+     ]
+    ],
+    "plans_internes": null
+   },
+   "A_son_D": {
+    "type": "Clip",
+    "effets": [
+     [
+      "AudioLevels",
+      {
+       "gain_db": -6
+      }
+     ]
+    ],
+    "plans_internes": null
+   },
+   "MUSIQUE_mono": {
+    "type": "Clip",
+    "effets": [],
+    "plans_internes": null
+   },
+   "fondu:A3_musique": [
+    12,
+    12
+   ],
+   "AMBIANCE_mono": {
+    "type": "Clip",
+    "effets": [],
+    "plans_internes": null
+   }
+  }
+ },
+ "natif_25p.xml": "ÉCHEC : AttributeError: 'NoneType' object has no attribute 'start_time'",
+ "natif_25p.edl": "ÉCHEC : NotSupportedError: No more than 2 audio tracks are supported.",
+ "natif_25p.aaf": "ÉCHEC : AAFValidationError: fondu_audio<class 'opentimelineio._otio.Transition'> Transition.metadata['AAF']['PointList'] does not exist, 'AAF'",
+ "natif_nest_borne.xml": {
+  "pistes": [
+   "Video:",
+   "Audio:",
+   "Audio:",
+   "Audio:"
+  ],
+  "plans": {
+   "A_zoom150": {
+    "type": "Clip",
+    "effets": [],
+    "plans_internes": null
+   },
+   "NEST_interview": {
+    "type": "Stack",
+    "effets": [],
+    "plans_internes": 0
+   },
+   "A_son_G": {
+    "type": "Clip",
+    "effets": [],
+    "plans_internes": null
+   },
+   "A_son_D": {
+    "type": "Clip",
+    "effets": [],
+    "plans_internes": null
+   },
+   "MUSIQUE_mono": {
+    "type": "Clip",
+    "effets": [],
+    "plans_internes": null
+   },
+   "fondu:": [
+    12,
+    12
+   ],
+   "AMBIANCE_mono": {
+    "type": "Clip",
+    "effets": [],
+    "plans_internes": null
+   }
+  }
+ },
+ "natif_nest_borne.xml_brut": {
+  "pistes_video": 1,
+  "pistes_audio": 3,
+  "stereo_eclatees": 0,
+  "fondus_audio": 1,
+  "plans_dans_nest_ecrits": 3,
+  "filtres_ecrits": {
+   "A_zoom150": [],
+   "NEST_interview": [],
+   "A_son_G": [],
+   "A_son_D": [],
+   "MUSIQUE_mono": [],
+   "AMBIANCE_mono": []
+  }
+ },
+ "natif_2audio.edl": {
+  "pistes": [
+   "Video:V"
+  ],
+  "plans": {
+   "A_zoom150": {
+    "type": "Clip",
+    "effets": [],
+    "plans_internes": null
+   }
+  }
+ },
+ "natif_sans_fondu.aaf": "ÉCHEC : AAFAdapterError: Cannot find mob ID for clip Clip(\"A_zoom150\", ExternalReference(\"file:///rushes/A_zoom150.mov\"), TimeRange(RationalTime(100, 25), RationalTime(50, 25)), {}, [otio.schema.Effect(name='Transform', effec"
+}

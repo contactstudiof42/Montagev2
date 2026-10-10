@@ -1,0 +1,14 @@
+piste,tc_entree,tc_sortie,plan,fichier,canal_source,nest,effet,parametre,valeur
+V1,01:00:00:00,01:00:02:00,A_zoom150,A.mov,,,Basic Motion,scale,150
+V1,01:00:00:00,01:00:02:00,A_zoom150,A.mov,,,Basic Motion,rotation,10
+V1,01:00:00:00,01:00:02:00,A_zoom150,A.mov,,,Basic Motion,center,"0.1,-0.05"
+V1,01:00:00:00,01:00:02:00,A_zoom150,A.mov,,,Crop,left,5
+V1,01:00:00:00,01:00:02:00,A_zoom150,A.mov,,,Crop,right,5
+V1,01:00:00:00,01:00:02:00,A_zoom150,A.mov,,,Crop,top,12
+V1,01:00:00:00,01:00:02:00,A_zoom150,A.mov,,,Crop,bottom,12
+V1,01:00:02:00,01:00:04:00,B_kenburns,B.mov,,,Basic Motion,scale,i0=100 i49=130
+V1,01:00:04:00,01:00:06:00,NEST_interview,,,oui,Basic Motion,scale,120
+A1,01:00:00:00,01:00:04:00,A_son_G,A.mov,1,,Audio Levels,level,0.501187
+A2,01:00:00:00,01:00:04:00,A_son_D,A.mov,2,,Audio Levels,level,0.501187
+A3,01:00:00:00,01:00:03:00,MUSIQUE_mono,M.wav,1,,Audio Levels,level,i0=1 i60=0.251189
+A3,01:00:03:00,01:00:06:00,AMBIANCE_mono,M.wav,1,,,,
