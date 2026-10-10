@@ -49,3 +49,9 @@ Même simulation, même son (tiré de la simulation, attaques à ≤ 1 image des
 1. Allonger la fin (≈ 160 images) pour que la bille **atteigne** la tasse et s'y arrête : dernière image = la cause et l'effet côte à côte, immobiles. Vérifier que ce n'est pas trop « écrit » (le hasard qui fait trop bien les choses se voit).
 2. Écrire des respirations dans la mécanique elle-même (un domino plus espacé, une petite rampe) pour permettre un plan serré de la cascade sans couper sur un contact : en tournage réel, c'est au plateau que se décide le découpage d'une chaîne causale.
 3. Rendre A en 960×540 pour mesurer à partir de quelle taille la version plan unique devient lisible.
+
+## Test de lisibilité de A : 480 contre 960 px (`lisibilite-480-vs-960.png`)
+Même image (50, la cascade en cours) ; en haut, recadrage du rendu 480×270 agrandi ×2 au plus proche voisin ; en bas, le même recadrage dans un rendu 960×540 (9 s en 4 processus).
+- **Surprise** : à 480 px, l'information est déjà là. Chaque domino fait ~3 px et se distingue nettement une fois agrandi ; le 960 n'apporte que de la netteté.
+- Donc la lisibilité de A ne vient pas d'un manque de **résolution**, mais de la **part du cadre** : la chaîne n'occupe qu'un tiers de la largeur, et sur un téléphone, ça fait moins de 2 cm. Le remède est un cadre plus serré ou un recadrage dans l'image (zoom numérique dans un master 4K), pas un rendu plus fin.
+- Principe : avant de monter la résolution, mesurer **la taille de l'objet en pourcentage de la largeur du cadre** et la rapporter à l'écran de diffusion (un objet de 3 % de large sur un écran de 6 cm fait moins de 2 mm).
