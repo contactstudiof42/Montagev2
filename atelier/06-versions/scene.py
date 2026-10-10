@@ -86,7 +86,11 @@ t, f, z, y = 0.0, F0 + 6, z0, y0 - 0.12
 while z > 0.045:
     f += 1; t += 1 / 25; z = max(0.04, z0 - 0.5 * 9.81 * t * t); y -= 0.02
     cle(f, (x0, y, z), (math.radians(-90 - 400 * t), 0, 0))
-cle(f + 1, (x0, y - 0.01, 0.04), (math.radians(-180), 0, 0))
+# v1 : la tasse finissait à moitié dans le sol (rotation -180°, z 0,04). "repos_sol" la couche sur le flanc.
+if P.get("repos_sol"):
+    cle(f + 1, (x0, y - 0.01, 0.085), (math.radians(-90), 0, 0))
+else:
+    cle(f + 1, (x0, y - 0.01, 0.04), (math.radians(-180), 0, 0))
 sc["impact"] = f
 for fc in pivot.animation_data.action.fcurves:
     for kp in fc.keyframe_points:
@@ -109,8 +113,10 @@ if V == "ombre":  # silhouette invisible à la caméra qui passe devant la fenê
 
 # Caméras : large (même cadre pour les trois versions) et insert (la tasse au bord)
 if P.get("camera", "large") == "large":
-    bpy.ops.object.camera_add(location=(1.25, -2.1, 1.0), rotation=(math.radians(82), 0, math.radians(32)))
-    bpy.context.object.data.lens = 38
+    rx, ry, rz = P.get("cam_rot", [82, 0, 32])
+    bpy.ops.object.camera_add(location=tuple(P.get("cam_loc", [1.25, -2.1, 1.0])),
+                              rotation=(math.radians(rx), math.radians(ry), math.radians(rz)))
+    bpy.context.object.data.lens = P.get("cam_lens", 38)
 else:
     bpy.ops.object.camera_add(location=(0.62, -0.42, 0.86), rotation=(math.radians(80), 0, math.radians(35)))
     bpy.context.object.data.lens = 85; bpy.context.object.data.dof.use_dof = True
