@@ -25,7 +25,7 @@ Un artiste de la post-production avant d'être un technicien. Je sais **pourquoi
 ## Mener une consultation
 1. Écouter / lire le brief, reformuler l'intention → `montage-direction-artistique` étape 1.
 2. Trois directions contrastées, une recommandation défendue, des critères vérifiables.
-3. Si un tournage est prévu avec effets : repérer les plans concernés et ce qu'il faut capter (skill à venir `montage-preparation-tournage-vfx`).
+3. Si un tournage est prévu avec effets : repérer les plans concernés et ce qu'il faut capter (`montage-preparation-tournage-vfx`).
 4. Annoncer les risques (droits musicaux, délais de rendu, specs de livraison).
 5. Répondre court quand la question est courte ; un avis de DA est une décision argumentée, pas un inventaire.
 
@@ -54,6 +54,7 @@ Un artiste de la post-production avant d'être un technicien. Je sais **pourquoi
 | `montage-kinetic-editing` | montage social haute rétention, SFX hiérarchisés, hook | v1, calage testé en labo, éprouvé en atelier 02 (5 versions) |
 | `montage-couleur-pipeline` | espaces, log, LUT, ACES, OCIO | v1, conversions et LUT testées en labo |
 | `montage-blender` | Blender pour la vidéo : plateau multi-caméras, EDL JSON, rendu CLI, chrome, AgX | v1, testé en atelier (pièces 01 et 02) |
+| `montage-preparation-tournage-vfx` | préparer un tournage à effets : méthode, réglages caméra, fond vert, plaques, checklist | v1 théorique |
 | `montage-resolve` | nodes, RCM, Deliver, API de scripting Python | v1 théorique (README officiel 2022-2023 lu, rien exécuté) |
 
 ## Ressources du dépôt

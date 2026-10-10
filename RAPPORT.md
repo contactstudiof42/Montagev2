@@ -24,7 +24,8 @@ Je défends un travail **réduit à une idée**, où **le mouvement a une cause*
 | Resolve | `montage-resolve` v1 : nodes, RCM, API de scripting (README 2022-2023) | faible à moyenne | rien exécuté ; versions 19-20 à lire |
 | Encodage / bandes | labo testé : 10 bits, grain σ≈2 | bonne | ré-encodage plateforme simulé, pas réel |
 | Kinetic editing | skill + labo + pièce 02 en 6 versions | moyenne à bonne | ressenti des SFX non jugé à l'oreille |
-| Premiere, tournage VFX | — | — | à venir |
+| Préparation tournage VFX | skill v1 | faible à moyenne | théorique, rien testé |
+| Premiere | — | — | à venir |
 
 ### Œuvres et auteurs analysés (fiches dans `culture/`)
 - **Walter Murch** (*In the Blink of an Eye*) : l'émotion gagne les arbitrages ; couper à la fin d'une pensée ; le son porte le raccord.
@@ -74,7 +75,7 @@ Précédent : **N°1 — spot 30 s + vertical 15 s pour une mutuelle (offre jeun
 ### Skills (voir le sommaire dans `.claude/skills/montage-expert/SKILL.md`)
 Artistiques (v1) : `montage-expert`, `montage-regard`, `montage-direction-artistique` (corrigé après examen), `montage-rythme`, `montage-motion-design-principes`, `montage-son-et-emotion`, `montage-references`, `montage-couleur-et-intention`.
 Plus `montage-kinetic-editing` (calage testé en labo, éprouvé en atelier 02).
-Techniques : `montage-grammaire` (théorique), `montage-loudness-livraison` (testé en labo, + bandes dans les noirs), `montage-couleur-pipeline` (testé en labo), `montage-after-effects` (testé en syntaxe et logique Node, pas dans AE), `montage-ia-generative` (théorique, daté), **`montage-blender`** (nouveau, testé en atelier), **`montage-resolve`** (nouveau, théorique).
+Techniques : `montage-grammaire` (théorique), `montage-loudness-livraison` (testé en labo, + bandes dans les noirs), `montage-couleur-pipeline` (testé en labo), `montage-after-effects` (testé en syntaxe et logique Node, pas dans AE), `montage-ia-generative` (théorique, daté), **`montage-blender`** (nouveau, testé en atelier), **`montage-resolve`** (nouveau, théorique), **`montage-preparation-tournage-vfx`** (nouveau, théorique).
 
 ### État de l'art IA générative (au 2026-10-09, sources dans `sources/ia-generative-2026-10.md`, rien testé)
 - Vidéo : Veo 3.1 (MAJ janv. 2026 : 9:16 natif, upscale 4K), Kling 3.0 (févr. 2026, jusqu'à 15 s avec son), Seedance 2.0 (févr. 2026), Runway Gen-4.5 (déc. 2025). **Sora arrêté** selon la page officielle OpenAI (app fermée le 26/04/2026, API annoncée pour le 24/09/2026 ; retrait effectif connu par une seule source secondaire).
@@ -112,7 +113,7 @@ Techniques : `montage-grammaire` (théorique), `montage-loudness-livraison` (tes
 - Questions : quelles normes de loudness pour vos livraisons TV (charte PAD de quelle chaîne) ? Avez-vous des rushes libres de droits à me donner pour l'atelier ?
 - Prochaines priorités :
   - atelier « ce que la marée découvre » (révélé par l'examen n°2) ;
-  - skill `montage-preparation-tournage-vfx` ;
+  - tests de keying et de tracking sur médias CC0 ;
   - pièce 02 v7 : vraie flamme, chaîne causale complète, variante façon Ziak ;
   - atelier « direction A dans le noir » (la piste audacieuse de l'examen n°1) ;
   - atelier couleur « même plan, trois étalonnages » traduit en arbre de nodes Resolve ;
@@ -158,7 +159,7 @@ Techniques : `montage-grammaire` (théorique), `montage-loudness-livraison` (tes
   - `pip install` installait numpy pour un autre Python ;
   - une boucle `until pgrep` se détectait elle-même.
 - **Œuvres analysées** : Hiro Murai « This Is America » (sources : PremiumBeat, entretien du monteur Ernie Gilbert ; The Fader), Honda « Cog » (Campaign, Autotrader, Wikipedia).
-- **Skills créés** : `montage-blender`, `montage-resolve` (README de l'API de scripting, copies 2022 et 2023).
+- **Skills créés** : `montage-blender`, `montage-resolve`, `montage-preparation-tournage-vfx` (théorique) (README de l'API de scripting, copies 2022 et 2023).
 - **Skills modifiés** : `montage-regard` (critère « liaison », 3 leçons), `montage-kinetic-editing` (sujet lisible à la 1re image, SFX dont la cause est visible, leçon de l'atelier 02), `montage-references` (principe 15b de Murai, tension « monter le choc » / « le laisser arriver »), `montage-loudness-livraison` (bandes dans les noirs), `montage-expert` (sommaire).
 - **Examen n°2** : « Marée basse » (clip de rap), 14/20 ; corrections dans `montage-direction-artistique`.
 - **PLAN-TESTS-MCP** : tests 11 à 13 et observations du serveur Higgsfield (hôte `bs_*`, procédures « passport » et « audit », risque de crédits payants pour la génération). Le serveur n'a pas été appelé.

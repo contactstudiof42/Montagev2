@@ -19,7 +19,7 @@ Règle : alterner ART et TECH. Réalimenter dès qu'il reste moins de 10 sujets 
 8. [~] [TECH] DaVinci Resolve → `montage-resolve` v1 (session 2 : nodes, RCM, API d'après le README 2022-2023). Reste : Fusion, Fairlight, README 19-20 (objets Graph ? ColorGroup ?), atelier couleur « même plan, trois étalonnages » traduit en arbre de nodes.
 9. [ ] [ART] Narration par format : pub 15/30 s, vertical, clip, corporate, doc, fiction → skill `montage-formats`
 10. [ ] [TECH] Premiere Pro (« Premiere 26 » depuis janv. 2026 selon sources) : projet, proxies, multicam, sous-titres, Lumetri, exports → skill `montage-premiere`
-11. [ ] [TECH] **(remonté en priorité par l'examen n°2)** Préparer un tournage pour les effets → skill `montage-preparation-tournage-vfx`
+11. [~] [TECH] `montage-preparation-tournage-vfx` v1 écrit (session 2, théorique). Reste : tests de keying et de tracking sur des médias CC0 (avec BACKLOG 14).
 12. [ ] [TECH] Pilotage MCP : état public (Higgsfield et autres), méthode d'agent → `montage-pilotage-mcp` + compléter `PLAN-TESTS-MCP.md`
 13. [ ] [ART] Son : atelier « même image, trois bandes son » (avec, contre, silence) ; fiches Murch sound design, Ben Burtt, Gary Rydstrom
 14. [ ] [TECH] Compositing / keying / tracking / roto (AE, Fusion, Blender) — test keying sur image CC0 avec ffmpeg (`chromakey`) et Blender
