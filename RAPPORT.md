@@ -100,6 +100,9 @@ Je défends un travail **réduit à une idée**, où **le mouvement a une cause*
   - v4 (**référence**) : rouille plus claire au décor + secondaire douce : la chaîne se lit rouille ; la matière seule ne survit pas à un étalonnage dense (0,4 %) ;
   - v5 : grain lourd et halation sans source : raté (bruit de surveillance, ciel teinté) ; v6 : grain fin et vignette, « argentique » mais pas encore « souvenir » ;
   - en mouvement (50 images) : la clé ne scintille pas sur l'image immobile, elle ne bouge qu'avec le vrai mouvement de l'eau.
+- **Pièce 06 « Versions »** (`atelier/06-versions/`, nouveau, session 5, principe Morris, critique dans `CRITIQUE.md`) : une tasse tombe d'une table, trois fois, même cadre et même chute à l'image près ; un seul détail change (rien / la table tremble / une ombre passe) ; arpège en boucle de la durée exacte d'une version, coupé net à la dernière chute. Planches : `v1-coupes.png`, `v1-comparaison.png` → `v2-…` (si rendue à temps).
+  - v1 : la structure tient (cadre et chute identiques, mesuré sur la planche de comparaison), mais **la secousse fait 0,6 px à l'écran** : la version 2 n'est qu'une répétition ; l'ombre se lit « porte », pas « quelqu'un » ; tasse trop petite. Leçon : un détail se dimensionne à l'écran, pas dans la scène ;
+  - v2 : 55 mm, secousse de 25 mm avec un choc sourd au son, silhouette avec épaules et tête.
 
 ### Dernier examen créatif
 **N°4 — court métrage de fiction « La Veilleuse » (14 min, nuit dans un EHPAD, festivals puis Arte)** : `examens/04-fiction-la-veilleuse.md`. Recommandation : « La ronde », un film construit sur le retour de la même ronde de nuit (même cadre de la porte, de plus en plus long), une veilleuse ambre motivée comme seule chaleur de la chambre, aucune musique ; l'« apparition » demandée (un creux qui se forme dans un coussin) refusée parce qu'elle tranche, remplacée par un coussin à mémoire de forme qui se relève au plateau. **Autocritique : 14/20.** La contradiction du brief est bien vue et résolue, la couleur est motivée. Mais mon propre système revient (Morris et « une seule chaleur », que je venais de pratiquer), une référence de la réalisatrice est citée sans être analysée, et j'ai manqué l'outil le plus juste : **la présence hors champ par le son surround**. Corrections dans `montage-direction-artistique` et `montage-son-et-emotion`.
@@ -252,3 +255,14 @@ Techniques : `montage-grammaire` (théorique), `montage-loudness-livraison` (tes
 - **Skills** : créé `montage-workflows` ; modifiés `montage-loudness-livraison`, `montage-rythme`, `montage-son-et-emotion`, `montage-references`, `montage-blender`, `montage-regard`, `montage-motion-design-principes`, `montage-premiere`, `montage-ia-generative`, `montage-expert`.
 - **PLAN-TESTS-MCP** : tests 18 (import des marqueurs) et 19 (aller-retour Premiere ↔ Resolve), observation session 4, faits publics Higgsfield en hypothèses. Serveur non appelé.
 - **Sources principales** : `sources/loudness-hors-plateformes-2026-10.md`, `sources/ia-verif-2026-10-10.md`.
+
+### Session 5 — 2026-10-10 02:29 → ~03:15 UTC
+- Démarrage : dernier commit 21 min avant, pas de doublon. Branche `claude/expert-montage`.
+- **Atelier 05 « Trois étalonnages »** : arbre de nodes en numpy (`grade.py`), 6 versions, mesures ; ratés et causes : secondaire écrasée par les primaires (ordre des nodes), gammas par canal = dominante, qualifieur sur objet sombre = liseré, halation sans spéculaires = teinte globale, grain trop gros = bruit. Réussites : clé prise sur la source, rouille éclaircie au décor, test de scintillement (stable).
+- **Atelier 06 « Versions »** : scène Blender paramétrée (3 variantes + insert), montage avec musique en boucle ; v1 critiquée (secousse invisible), v2 lancée.
+- **Examen n°4** « La Veilleuse » (fiction) : 14/20.
+- **Culture** (3 sous-agents en parallèle, fiches relues) : Elastic / *Game of Thrones*, ManvsMachine, Buck, Åkerlund, Gavras.
+- **Tech** : état public des MCP (`sources/mcp-etat-public-2026-10.md`, tests 21-32) ; API Resolve 19-21.1 (`sources/resolve-scripting-api-19-20.md`, tests 33-35) ; AAF par familles écrit avec pyaaf2 et relu identique par OTIO.
+- **Incident** : une de mes éditions scriptées avait tronqué `montage-resolve` (sections 3 à 5 perdues) ; détecté grâce au rapport d'un sous-agent, restauré depuis git dans la même session. Leçon : relire la longueur d'un fichier après une édition par script.
+- Skills modifiés : `montage-couleur-et-intention`, `montage-resolve`, `montage-references`, `montage-workflows`, `montage-pilotage-mcp`, `montage-regard`, `montage-direction-artistique`, `montage-son-et-emotion`, `montage-blender`.
+- Sources principales : Art of the Title, fxguide (Elastic) ; entretiens VICE / Dazed (Åkerlund) ; Interview Magazine (Gavras) ; README et CHANGELOG du scripting Resolve (copies datées 2023, 2025, 2026) ; pages GitHub des ponts MCP.
