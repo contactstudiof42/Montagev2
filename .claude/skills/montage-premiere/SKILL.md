@@ -1,11 +1,15 @@
 ---
 name: montage-premiere
-description: Adobe Premiere (ex-Premiere Pro, renommé « Premiere » en version 26, janvier 2026) — organiser un projet (Productions, bins, auto-save), proxies et ingest, multicam, monter sur la musique (marqueurs, Remix), sous-titres (Speech to Text, SRT, incrustés, légendes animées), Lumetri et gestion des couleurs (Direct Rec.709, Wide Gamut, tone mapping, log), Generative Extend, Media Intelligence, export (Media Encoder, H.264 adaptatif, normalisation loudness), raccourcis de trim (ripple, roll, slip, slide), scripting ExtendScript / UXP. Mots d'un monteur : « ça rame, fais des proxies », « synchro multicam », « recaler sur la musique », « sous-titres pour les réseaux », « l'image est délavée dans Premiere », « exporte pour Insta », « il me manque deux secondes de plan ».
+description: Adobe Premiere (ex-Premiere Pro, « Premiere » depuis la version 26) au quotidien — organiser le projet (Productions, bins, auto-save), proxies, multicam, monter sur la musique (marqueurs, Remix), sous-titres (Speech to Text, SRT, légendes animées), Lumetri et gestion des couleurs, Generative Extend, export depuis Premiere, trim (ripple, roll, slip, slide), scripting UXP. Mots d'un monteur : « ça rame, fais des proxies », « synchro multicam », « recaler sur la musique », « sous-titres pour les réseaux », « l'image est délavée dans Premiere », « il me manque deux secondes de plan ».
 ---
 
 # Premiere — le logiciel de montage au quotidien
 
-Statut : **[THÉORIQUE]**, recherche du 2026-10-10 (pages d'aide Adobe lues par extraits, sources dans `sources/premiere-2026.md`). Rien n'est exécuté : Premiere n'est pas installable dans la VM. Les points marqués `[INCERTAIN]` sont à vérifier en phase 2 (`PLAN-TESTS-MCP.md`, test 14 et suivants).
+Marqueurs : **[SOURCÉ]** lu dans une source datée · **[TESTÉ EN LABO]** fait technique mesuré (ffmpeg, scripts) · **[ÉPROUVÉ EN MAQUETTE]** principe tiré d'une maquette Blender/Pillow/ffmpeg, hypothèse à confirmer en phase 2 · **[THÉORIQUE]** doc ou pratique, jamais exécuté · ici aussi **[INCERTAIN]** : sources contradictoires, à vérifier en phase 2.
+
+Ensemble **[THÉORIQUE]** : recherche du 2026-10-10 (pages d'aide Adobe lues par extraits, `sources/premiere-2026.md`) ; Premiere n'est pas installable dans la VM. Vérifications : `PLAN-TESTS-MCP.md`, test 14 et suivants.
+
+**Fait foi sur** : les procédures dans Premiere (menus, réglages, raccourcis), y compris Generative Extend et Object Mask. Pour les formats d'échange, la fabrication et les règles générales des proxies : `montage-workflows` ; pour les cibles de loudness, les specs et la vérification d'un livrable : `montage-loudness-livraison` ; pour le choix d'un outil génératif et l'éthique : `montage-ia-generative` ; pour l'étalonnage poussé : `montage-resolve`.
 
 ## Quand Premiere, et pourquoi (le regard d'abord)
 - **Premiere pour monter** : c'est l'outil du récit (structure, rythme, dialogue, musique). On y décide l'ordre et la durée des plans, pas le look final.
@@ -15,7 +19,7 @@ Statut : **[THÉORIQUE]**, recherche du 2026-10-10 (pages d'aide Adobe lues par 
 
 ## Version et nouveautés (datées)
 - **Version 26.0 (janvier 2026)** : le logiciel s'appelle « Adobe Premiere » (le « Pro » disparaît) ; numérotation alignée sur l'année. 25.x = dernière branche « Premiere Pro ». [SOURCÉ]
-- 26.0 : masquage d'objets par IA avec suivi en un clic, masques repensés. 26.2 (avril 2026) : effets et transitions Film Impact intégrés, Content Credentials à l'export. 26.3 (juin 2026) : **légendes animées mot à mot** (style réseaux). **26.5 (sept. 2026)** : Generative Media Tool (vidéo et SFX générés depuis un texte, dans la timeline), **Paper Edit** (monter depuis le texte de la transcription). [SOURCÉ, dates à confirmer]
+- 26.0 : masquage d'objets par IA avec suivi en un clic, masques repensés. 26.2 (avril 2026) : effets et transitions Film Impact intégrés, Content Credentials à l'export. 26.3 (juin 2026) : **légendes animées mot à mot** (style réseaux). 26.5 (annoncée le 10/09/2026) : Generative Media Tool (vidéo et SFX générés dans la timeline), **Paper Edit** (monter depuis le texte de la transcription), Object Mask Sharp/Smooth. [SOURCÉ pour 26.0 à 26.3] **[26.5 NON CONFIRMÉ — À TRANCHER EN PHASE 2]** : une seule annonce lue (communauté Adobe), notes de version en 403 ; relever le numéro dans la version installée.
 - Depuis 25.2 (avril 2025) : Generative Extend, Media Intelligence (recherche en langage naturel, en anglais), traduction des sous-titres, nouvelle gestion des couleurs. [SOURCÉ]
 - **Color mode** (espace d'étalonnage 32 bits flottants, distinct de Lumetri) : bêta publique NAB 2026, sortie stable non confirmée ; ne pas mélanger avec Lumetri sur un même clip. [INCERTAIN]
 
@@ -27,8 +31,7 @@ Statut : **[THÉORIQUE]**, recherche du 2026-10-10 (pages d'aide Adobe lues par 
 
 ## Proxies (quand ça rame)
 - Ingest à l'import (Media Browser, case Ingest : Copy / Transcode / Create Proxies / Copy and Create Proxies) ou après coup : clic droit > Proxy > Create Proxies ; encodage par Media Encoder. Bascule par le bouton **Toggle Proxies** (à ajouter au moniteur). **L'export utilise toujours la pleine résolution.** [SOURCÉ]
-- Format : ProRes Proxy (ou un intra-image léger) ; **jamais de H.264 Long GOP en proxy** (lourd à décoder en lecture arrière et au scrub). [SOURCÉ, guide Frame.io]
-- Le proxy doit garder **le même ratio, la même cadence et les mêmes canaux audio** que l'original, sinon la bascule casse.
+- Format et fabrication (ProRes Proxy ou H.264 tout-intra, jamais de long-GOP ; même ratio, cadence et canaux audio que l'original) : règles et recette ffmpeg dans `montage-workflows`.
 
 ## Multicam
 - Sélection des clips > Clip > Create Multi-Camera Source Sequence ; synchro par timecode, audio ou points d'entrée. Puis New Sequence from Clip, vue Multi-Camera dans le moniteur Programme, coupe en direct aux touches numériques, retouche à l'outil Roll (N). [SOURCÉ]
@@ -37,9 +40,9 @@ Statut : **[THÉORIQUE]**, recherche du 2026-10-10 (pages d'aide Adobe lues par 
 
 ## Monter sur la musique
 - Marqueurs (M) posés pendant la lecture sur les temps forts et **sur l'arrangement** (entrée de basse, break, refrain) : cf. `montage-rythme`, le calage au temps est la texture, la densité par section est la forme.
-- **Pas de détection de beats native sur desktop** selon les sources (elle existe sur Premiere mobile) [INCERTAIN] : alternative fiable, mesurer les temps hors Premiere et importer les marqueurs : `labo/marqueurs/beats_xml.py` produit un XML FCP7 (séquence portant un marqueur par temps, M1, M2… sur les premiers temps) [détection TESTÉE EN LABO à ~10 ms ; import THÉORIQUE, test n°18 du plan MCP]. Vérifier toujours le 1er marqueur : la phase, pas le tempo, est le piège (grille à contretemps mesurée au labo).
+- **Pas de détection de beats native sur desktop** selon les sources (elle existe sur Premiere mobile) [INCERTAIN] : alternative fiable, mesurer les temps hors Premiere et importer les marqueurs : `labo/marqueurs/beats_xml.py` produit un XML FCP7 (séquence portant un marqueur par temps, M1, M2… sur les premiers temps) [détection TESTÉ EN LABO à ~10 ms ; import THÉORIQUE, test n°18 du plan MCP]. Vérifier toujours le 1er marqueur : la phase, pas le tempo, est le piège (grille à contretemps mesurée au labo).
 - **Remix** (Essential Sound ou outil du groupe Ripple) : rallonge ou raccourcit une musique à une durée cible en recousant ses segments ; précision ~1 s (jusqu'à 5). [SOURCÉ] Écouter chaque raccord : le Remix ignore le sens des paroles.
-- Poser les coupes sur l'image la plus proche du marqueur, jamais en tapant des durées (dérive mesurée dans l'atelier 03).
+- Poser les coupes sur l'image la plus proche du marqueur, jamais en tapant des durées [TESTÉ EN LABO] (dérive mesurée, atelier 03).
 
 ## Sous-titres
 - Transcription (Speech to Text) > Create Captions (preset « Subtitle Default »). Export : fichier séparé (SRT) ou **incrusté** (Burn Captions Into Video, non désactivable). [SOURCÉ]
@@ -53,7 +56,7 @@ Statut : **[THÉORIQUE]**, recherche du 2026-10-10 (pages d'aide Adobe lues par 
 - Tags couleur écrits dans le fichier exporté : [INCERTAIN] → toujours vérifier avec `ffprobe` (color_primaries, transfer, matrix).
 
 ## Generative Extend et IA (2026-10)
-- Rallonger un plan de quelques secondes (respiration avant une coupe, fin de plan trop courte) : sources 360p à 4K, 12 à 60 i/s ; **sortie 8 bits SDR, 30 i/s max**, passage par le cloud, consomme des crédits. [SOURCÉ] → acceptable pour du social ; **à éviter sur un master 10 bits / HDR / 24p cinéma** (rupture de qualité visible à l'étalonnage). Toujours dire au client quel plan est généré (cf. `montage-ia-generative`).
+- Rallonger un plan (respiration avant une coupe, fin trop courte) : **+2 s de vidéo, +10 s d'audio** ; passage par le cloud, consomme des crédits [SOURCÉ]. Sources acceptées 360p à 4K, 12 à 60 i/s, 8 à 16 bits, SDR ou HDR (notes 26.5 : non confirmé). **Sortie générée en 8 bits SDR, 30 i/s au plus** selon une FAQ et un blog vendeur [À TRANCHER EN PHASE 2]. En attendant : acceptable pour du social ; **à éviter sur un master 10 bits / HDR / 50p** (rupture visible à l'étalonnage). Toujours dire au client quel plan est généré (`montage-ia-generative`).
 - Media Intelligence : chercher un plan par description (en anglais), « Search Similar Frames ». Utile pour dérusher un documentaire.
 
 ## Saccade (step-printing) et images tenues [THÉORIQUE, 2026-10-10, `sources/premiere-ae-saccade-choisie-2026-10.md`]
@@ -64,8 +67,8 @@ Statut : **[THÉORIQUE]**, recherche du 2026-10-10 (pages d'aide Adobe lues par 
 - **Traînée** : Echo est classé « Obsolete » en 26.0 : la faire dans After Effects (`montage-after-effects`), au-dessus de la saccade.
 
 ## Export
-- Réseaux : H.264 « Match Source – Adaptive High Bitrate » recommandé par Adobe. [SOURCÉ] Les specs précises et la vérification : `montage-loudness-livraison` (yuv420p, faststart, AAC 48 kHz, BT.709, -14 LUFS pour le web).
-- **Loudness Normalization** à l'export (onglet Effects) : ATSC A/85, EBU R128, ITU BS.1770 (cible réglable), limiteur true peak. [SOURCÉ, page ancienne] Mon labo a montré qu'une normalisation peut comprimer : mesurer l'export avec `ebur128` (test 8 du plan MCP).
+- Réseaux : H.264 « Match Source – Adaptive High Bitrate » recommandé par Adobe. [SOURCÉ] Specs, cibles et vérification : `montage-loudness-livraison` (fait foi).
+- **Loudness Normalization** à l'export (onglet Effects) : ATSC A/85, EBU R128, ITU BS.1770 (cible réglable), limiteur true peak. [SOURCÉ, page ancienne] Une normalisation peut comprimer (constaté avec loudnorm [TESTÉ EN LABO]) : mesurer l'export avec `ebur128` (test 8 du plan MCP).
 - Master : ProRes 422 HQ (ou DNxHR HQX 10 bits) en pleine qualité, puis dérivés.
 
 ## Raccourcis de trim (défauts)
@@ -77,6 +80,6 @@ Le trim est l'endroit où le montage se joue à l'image près : roll pour dépla
 
 ## Pièges
 - Séquence créée « à la main » aux mauvais réglages : toujours créer la séquence depuis un clip représentatif, puis vérifier cadence et ratio.
-- Proxy à cadence différente → désynchronisation. Média déplacé → hors ligne.
+- Média déplacé → hors ligne.
 - Effets empilés sur 200 clips : passer par un calque d'effets (adjustment layer).
 - Export « Match Source » d'une séquence 25p vers une plateforme 30p : laisser à 25 (jamais de conversion de cadence à l'export sans raison).

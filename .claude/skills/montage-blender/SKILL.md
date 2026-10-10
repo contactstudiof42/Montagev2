@@ -5,10 +5,14 @@ description: Blender pour la vidéo et le motion design — rendu en ligne de co
 
 # Blender pour la vidéo
 
+Marqueurs : **[SOURCÉ]** lu dans une source datée · **[TESTÉ EN LABO]** fait technique mesuré (temps de rendu, scripts, pixels) · **[ÉPROUVÉ EN MAQUETTE]** principe tiré d'une maquette Blender/Pillow/ffmpeg, hypothèse à confirmer sur de vraies images en phase 2 · **[THÉORIQUE]** doc ou pratique, jamais exécuté.
+
+**Fait foi sur** : la fabrication de plans 3D dans Blender (scripts bpy, rendu, réglages). Pour la méthode générale de pilotage par MCP : `montage-pilotage-mcp` ; pour l'intention couleur : `montage-couleur-et-intention`. Détail des recettes et mesures : [details.md](details.md).
+
 ## 1. Quand et pourquoi
 - **Plans impossibles ou trop chers à tourner** (macro d'objets, réaction en chaîne, packshot dans le noir), **plans d'insert** pour un montage rapide, **décors de typographie**.
-- **Contrôle total du temps** : on calcule la position d'un objet à l'image près, donc on peut caler un événement visuel sur un son, ou une réaction en chaîne sur une règle du temps (atelier 02 : le pendule frotte l'allumette à l'apogée, image 200).
-- **Quand l'éviter** : visage humain, matière organique (feu, eau, tissu) sans temps de simulation, ou quand le « look CG » trahirait le sujet. Un vrai plan tourné, même modeste, bat souvent un rendu propre et vide.
+- **Contrôle total du temps** : on calcule la position d'un objet à l'image près, donc on peut caler un événement visuel sur un son, ou une réaction en chaîne sur une règle du temps (atelier 02 : le pendule frotte l'allumette à l'apogée, image 200) [ÉPROUVÉ EN MAQUETTE].
+- **Quand l'éviter** [THÉORIQUE] : visage humain, matière organique (feu, eau, tissu) sans temps de simulation, ou quand le « look CG » trahirait le sujet. Un vrai plan tourné, même modeste, bat souvent un rendu propre et vide.
 
 ## 2. Méthode d'atelier [TESTÉ EN LABO]
 1. **Une scène, plusieurs caméras** : un seul script construit le plateau, une caméra par « plan » (pendule, cube, sphères, allumette, large). Le montage choisit des fenêtres `(caméra, image source, durée)` : c'est une **liste de plans (EDL) en JSON**.
@@ -20,51 +24,25 @@ description: Blender pour la vidéo et le motion design — rendu en ligne de co
 ## 3. Réglages qui ont marché (Blender 4.2.3 LTS, CPU, VM 4 cœurs) [TESTÉ EN LABO]
 - Installation : `curl` de `blender-4.2.3-linux-x64.tar.xz` + `tar xf` ≈ 30 s.
 - Cycles CPU, 270×480, **12 échantillons + débruitage** (OIDN) : ~0,7-1,5 s par image ; 260 images ≈ 4-5 min. Agrandir ×2 en lanczos avec ffmpeg pour une maquette 540×960.
-- `view_transform = "AgX"`, look « AgX - Punchy » : les hautes lumières (flamme, reflets) restent lisibles sans brûler en blanc, mieux que Standard.
-- Motion blur `shutter = 0.5` : les objets rapides deviennent des traînées ; si un objet traverse en 1 à 2 images, on ne le voit plus du tout (sphères de l'atelier 02 v1-v3) → **ralentir l'objet ou rapprocher la caméra**, pas augmenter l'échantillonnage.
+- `view_transform = "AgX"`, look « AgX - Punchy » : les hautes lumières (flamme, reflets) restent lisibles sans brûler, mieux que Standard [ÉPROUVÉ EN MAQUETTE] ; revers : AgX plafonne le blanc (≈ 222/255), d'où un « blanc clinique » impossible sans courbe de point blanc à l'étalonnage [TESTÉ EN LABO] (pièce 22 v3, détail dans [details.md](details.md)).
+- Motion blur `shutter = 0.5` : un objet qui traverse en 1 à 2 images ne se voit plus du tout [ÉPROUVÉ EN MAQUETTE] (atelier 02 v1-v3) → **ralentir l'objet ou rapprocher la caméra**, pas augmenter l'échantillonnage.
 - **Le chrome reflète son environnement** : dans un monde noir, il est noir. Ajouter des bandes émissives **invisibles à la caméra** (`visible_camera = False`) qui ne servent qu'aux reflets. C'est la technique des softbox de packshot.
 - Feu/flamme : un cône émissif + une lampe ponctuelle à énergie animée (scintillement aléatoire 120 ± 25 W) suffit pour la *lumière* du feu sur le décor ; la flamme elle-même reste graphique (limite connue : simulation Mantaflow ou plan tourné à prévoir).
 - Valeurs d'émission animées : `inputs["Emission Strength"].keyframe_insert("default_value", frame=f)`.
 
 ## 4. Couleur et lumière (intention)
-- Lumière **motivée** : une grande source froide rasante + un liseré ; la chaleur n'existe que si une source chaude est dans le plan (règle Deakins, goût Joker/Ziak : `montage-couleur-et-intention`).
-- **Vérifier la règle couleur par la mesure** sur le MP4 : % de pixels chauds par image (atelier 02 v4 : ≤ 0,25 % avant l'événement, 6,3 % après).
+- Lumière **motivée** [THÉORIQUE] : une grande source froide rasante + un liseré ; la chaleur n'existe que si une source chaude est dans le plan (règle Deakins, goût Joker/Ziak : `montage-couleur-et-intention`).
+- **Vérifier la règle couleur par la mesure** [TESTÉ EN LABO] sur le MP4 : % de pixels chauds par image (atelier 02 v4 : ≤ 0,25 % avant l'événement, 6,3 % après).
 
 ## 5. À vérifier en phase 2 (Mac)
 - Temps de rendu GPU Metal contre CPU cloud ; Eevee Next en rendu final pour des maquettes (non testé en headless ici).
 - Le pilotage par MCP (`PLAN-TESTS-MCP.md`, test 13) : refaire `atelier/02-etincelle/scene.py` et comparer les planches.
 
-## Leçons de l'atelier 04 « marée » (session 4) [TESTÉ EN ATELIER]
-- Eau = simple plan animé en Z + Principled (IOR 1,33, transmission, bump d'ondes) : crédible en 8 échantillons + débruitage, ~1,2 s/image en 480×270 CPU. Sous incidence rasante, l'eau est un **miroir** (Fresnel) : rien ne se devine sous la surface, quelle que soit la transmission.
-- **Vérifier que la caméra reste hors de l'eau** (ou de tout objet animé) à chaque image : tester images 1 et N, pas seulement le milieu.
-- Plan de sol de 200 m + SUBSURF simple niveau 8 + DISPLACE (texture Wood band noise) = rides de sable ; un estran presque plat se découvre d'un coup quand l'eau passe sous sa hauteur moyenne (effet utile).
-- Paramétrer la scène par un JSON (caméra, courbe d'eau, plage d'images) permet de rendre seulement les images utiles de chaque caméra pour un montage multi-plans (`atelier/04-maree-decouvre/v3-*.json`).
-- Lancer plusieurs rendus en parallèle n'accélère rien sur CPU partagé ; et `pkill -f motif` peut tuer le shell qui le lance (le motif figure dans sa propre ligne de commande).
-- **Objet qui tombe (atelier 06, session 5)** [TESTÉ EN ATELIER] : chute keyframée image par image (bascule de 6 images autour du bord, puis z = z0 - ½·g·t² à 25 i/s, impact calculé par le script et imprimé) ; **vérifier la pose de repos** : une rotation finale de -180° avec l'origine décalée a enfoncé la tasse dans le sol (invisible dans le montage, coupé avant l'impact, mais faux). Pour des variantes comparables, `cycles.seed` fixe et **aucune modification du script entre deux rendus** d'une même série (les nouveaux paramètres doivent garder par défaut le comportement exact).
-- **Ombre portée d'un personnage invisible** : un volume noir avec `visible_camera = False` et `visible_glossy = False` entre la source et le décor projette une ombre sans apparaître. Temps : 2 sources surfaciques, 480×270, 16 échantillons + débruiteur ≈ 2,5 s/image sur 4 cœurs.
-
-## Simulation de corps rigides et Eevee sans écran (session 6, atelier 07) [TESTÉ EN LABO]
-- **Quand simuler plutôt qu'animer à la main** : quand la causalité est l'argument (chaîne à la « Cog », chute, collision). Une simulation est vraie dans le fichier, donc le spectateur ne peut douter que du montage ; elle donne en plus les **images de contact exactes**, qui servent à placer les sons et à choisir où couper.
-- Recette : `bpy.ops.rigidbody.world_add()` ; `substeps_per_frame = 40`, `solver_iterations = 30` pour des petits objets (dominos de 9 cm, bille de 2,2 cm) ; formes `BOX` / `SPHERE` / `CYLINDER` ; `collision_margin = 0.001` ; frottement 0,7-0,8 pour que les dominos basculent au lieu de glisser. Lire les positions avec `sc.frame_set(f)` image par image depuis la 1re (écrit dans un JSON), puis `bpy.ops.ptcache.bake_all(bake=True)` avant le rendu. Une plage de rendu partielle se règle **après** le bake (la simulation doit partir de l'image 1). Coût : simulation de 200 images ≈ 1 s.
-- **Piège n°1** : `transform_apply(scale=True)` applique aussi la position et la rotation par défaut. L'origine part à (0, 0, 0) et la forme de collision `BOX` se centre sur l'origine : le plateau collisionne au niveau du sol, les dominos se superposent et explosent. Toujours écrire `transform_apply(location=False, rotation=False, scale=True)`.
-- **Piège n°2** : un objet actif posé trop près d'un autre au départ (moins de ~1 cm) part tout seul à l'image 2. Laisser du jeu et vérifier sur les premières images que rien ne bouge avant la cause.
-- **Réglage par lots** : la simulation seule (`mode: sim`) est quasi gratuite. Balayer 3 configurations à la fois et lire les images d'événements (`contacts.py`) avant de rendre quoi que ce soit.
-- **Eevee en ligne de commande dans la VM** : il plante sans `libEGL.so.1`. Après `apt-get update && apt-get install -y libegl1` (10 s), il rend en OpenGL logiciel à **~7 s/image** en 480×270, donc **plus lentement que Cycles** (8 échantillons + débruitage : ~2 s/image seul, ~6-8 s quand 6 rendus se partagent 4 cœurs). Dans la VM, Cycles reste le bon choix ; Eevee est à réévaluer sur le Mac (GPU, phase 2).
-- **Amortir sans tricher** : `angular_damping = 1` dès le début empêche aussi l'objet de basculer (pièce 07 v2 : la tasse tombait debout, lu comme un trucage). Les propriétés de corps rigide s'animent : mettre l'amortissement en clé **à partir de l'impact** (`rb.keyframe_insert("angular_damping", frame=f)`), testé en v3.
-- Rendre plusieurs caméras **en parallèle** (un processus par caméra) : 4 images fixes de contrôle en 9 s au total.
-
-## Déterminisme, plans immobiles, caméra portée (session 7) [TESTÉ EN LABO]
-- **La simulation de corps rigides est déterministe** (Blender 4.2.3, Bullet, CPU) : `atelier/07-causalite/scene.py` en mode `sim` lancé 3 fois en parallèle donne trois `sim.json` **identiques à l'octet** (8 912 valeurs, ~2 s par simulation) ; et les événements recalculés (`contacts.py`) sont identiques à ceux de la session 6, sur une autre VM. Conséquence : on peut **monter sur les images de contact calculées une fois**, puis rendre caméra par caméra dans des processus séparés sans risque de désynchronisation. À revérifier sur le Mac (autre processeur : test 36 du `PLAN-TESTS-MCP.md`).
-- **Plan immobile = une image** : si ni la caméra ni le décor ne bougent (pièce 08, présent), rendre une seule image et la répéter au montage ; on libère le processeur pour les plans qui bougent (rendu 4 fois plus rapide sur la pièce 08). Le présent figé au pixel peut même devenir un choix (temps arrêté) ; sinon, ajouter un grain fin au montage.
-- **Caméra portée crédible** : somme de 2-3 sinus lents par axe (0,9 à 3 Hz, amplitude 0,6 à 0,9°), clé toutes les 2 images ; pas de bruit blanc (« séisme »). Zoom lent par clés sur `data.lens` (38 → 56 mm sur 70 images). Recette dans `atelier/08-souvenir/scene.py` (paramètres `main`, `zoom`).
-
-## Un mouvement rendu une fois, placé plusieurs fois (session 18, pièce 22) [TESTÉ EN LABO]
-- Rendre le mouvement de caméra à **paramètre u régulier** (64-96 images, `recul(u)`), puis construire chaque version au montage par une **courbe temps → u** (paliers lissés, accélérations) : `atelier/22-a-la-maniere-d-ego/montage.py`. On compare trois placements contre la voix pour le coût d'un seul rendu (~3 s/image, Cycles 8 échantillons, 480×270, 63 000 chaises par 2 modificateurs Array).
-- Limite : un palier lent étire peu d'images (saccades si u avance de moins d'une image rendue toutes les 2-3 images de sortie) ; densifier le rendu là où la courbe est lente. Équivalent AE : remappage temporel sur la séquence d'images (PLAN-TESTS 64).
-- Brume par la passe Mist mélangée à la couleur du monde en compositing : le champ « se perd » au lieu de s'arrêter, sans volumétrie coûteuse.
-
-## AgX plafonne le blanc ; chercher le cadrage en image fixe (session 19, pièce 22 v3) [TESTÉ EN LABO]
-- **Symptôme** : on veut un monde « blanc clinique » (EGO, pub tech, salle d'attente infinie) et l'image reste grise malgré plus de lumière, un sol plus clair, une brume blanche. **Diagnostic en une ligne** : mesurer le pixel MAX (numpy) ; s'il est identique partout, ciel compris (ici 222-225 / 255 avec AgX + « Base Contrast », exposition +1), le plafond vient de la **transformée de vue**, pas de la scène. AgX compresse les hautes lumières et n'atteint le blanc qu'à des valeurs de scène très hautes : c'est voulu (il protège les hautes lumières), mais ça interdit le blanc pur.
-- **Correction au bon endroit** : l'étalonnage. Courbe de point blanc en sortie (`curves=all='0/0 0.5/0.52 0.87/0.985 1/1'`) : YAVG médiane 199 → 226, ombres des objets gardées. Dans Resolve : gain / point blanc après la transformée ; en Blender seul : look « Punchy » / « High Contrast » ou courbes RGB du compositor après la vue. Ne pas pousser l'exposition à +3 : on brûle les objets avant d'atteindre le blanc du fond. Alternative quand le fond doit être un vrai blanc 100 % sans grader : view transform « Standard » (au prix des hautes lumières qui clippent durement sur les objets).
-- **Cadrage d'un plan final** : rendre 3 à 5 candidats en image fixe (7 s chacun ici) avec la caméra en paramètre (`--cam x,y,z,tx,ty,tz`), les assembler en planche, choisir, PUIS lancer l'animation (3 min). Le choix entre les candidats est un choix d'intention (où est le vide ? vers où regarde le sujet ?), pas de joliesse.
-- **Moiré** : un champ d'objets réguliers plus fins que le pixel moire en fin de recul (8 échantillons). La brume blanche l'efface ; un fond noir avec lumière rasante le révèle. Remèdes : échantillons ×4 sur ces images seulement, brume plus proche, ou défocus léger.
+## 6. Autres leçons (résumé ; détail dans [details.md](details.md))
+- **Simuler plutôt qu'animer quand la causalité est l'argument** (chute, collision, réaction en chaîne) : la simulation donne les images de contact exactes, utiles pour placer les sons et choisir où couper [ÉPROUVÉ EN MAQUETTE]. Corps rigides **déterministes** (Blender 4.2.3, CPU) : monter sur les contacts calculés une fois, rendre caméra par caméra [TESTÉ EN LABO]. Piège : `transform_apply(location=False, rotation=False, scale=True)`, sinon la collision explose.
+- **Plan immobile = une seule image rendue**, répétée au montage (rendu 4× plus rapide) [TESTÉ EN LABO].
+- **Caméra portée crédible** : 2-3 sinus lents par axe (0,9 à 3 Hz, < 1°), pas de bruit blanc [ÉPROUVÉ EN MAQUETTE].
+- **Rendre un mouvement une fois, le placer plusieurs fois** par une courbe temps → paramètre au montage ; densifier le rendu là où la courbe ralentit [ÉPROUVÉ EN MAQUETTE] (pièce 22).
+- **Chercher le cadrage en image fixe** (3 à 5 candidats en planche) avant de lancer l'animation [ÉPROUVÉ EN MAQUETTE].
+- **Vérifier la caméra et les poses à la 1re et à la dernière image** (caméra sous l'eau, tasse enfoncée dans le sol) [TESTÉ EN LABO].
+- **Eevee sans écran dans la VM** : plus lent que Cycles (OpenGL logiciel) ; à réévaluer sur GPU [TESTÉ EN LABO].

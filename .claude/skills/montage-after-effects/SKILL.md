@@ -98,18 +98,15 @@ Code complet et commentaires : [expressions.md](expressions.md). Fichiers : `lab
 - **Couleurs de calques** par fonction (contrôleurs, textes, formes, adjustment) et **marqueurs de comp** nommés sur les temps forts de la musique.
 - **Le timing global** se règle par des précomps qu'on peut caler sur la musique : déplacer une précomp, c'est déplacer tout un geste sans casser l'easing interne.
 
-## 6. Pièges
+## 6. Pièges (détail : [expressions.md](expressions.md#pieges))
 
-- **Moteur JavaScript vs ExtendScript hérité.** Depuis AE 16.0 (CC 2019), le moteur par défaut est **JavaScript** (ECMAScript 2018), plus rapide. L'ancien moteur **ExtendScript hérité** suit ECMAScript 3. Le choix se fait par projet : Fichier > Paramètres du projet > onglet Expressions. Les projets enregistrés dans d'anciennes versions s'ouvrent en ExtendScript hérité. Erreurs classiques en passant à JavaScript : `if/else` sur une ligne sans accolades, raccourci `this()` (utiliser `thisLayer`), syntaxe en snake_case (`this_comp`, à remplacer par `thisComp`), `sourceText` qui doit parfois être lu en `.value`. Écrire pour le moteur JavaScript, avec accolades et points-virgules, et ne pas dépendre de la « dernière valeur » d'un `if` sans `else`.
-- **Expressions lentes.** Toute expression est réévaluée à chaque image, et `valueAtTime` ou `sampleImage` en boucle multiplient le coût. `sampleImage()` (lire la couleur d'un calque) est la plus coûteuse : à réserver à un pixel ou une petite zone, et sur peu de calques. Les échos en cascade (06) sur 50 calques et des boucles `for` sur `numKeys` ralentissent l'aperçu. Remèdes : **Convertir l'expression en images clés** (Animation > Assistant d'images clés) une fois le réglage figé, `posterizeTime` pour les valeurs qui n'ont pas besoin de 25 i/s, la vue « Expressions désactivées » (raccourci d'aperçu) pour travailler l'animation.
-- **`exp()` qui explose.** Dans un overshoot, `Math.exp(decay * t)` devient `Infinity` après quelques minutes ; d'où la coupure (`t < 3`) dans la recette 05 (point signalé par Dan Ebberts).
-- **Vitesse d'arrivée nulle = pas d'overshoot.** Voir 05 : c'est la cause n° 1 de « mon expression ne fait rien ».
-- **Bézier spatial non voulu.** Par défaut, les trajectoires de position sont courbes : le calque peut faire une boucle ou dépasser **dans l'espace**. Clic droit > Interpolation spatiale > Linéaire si le chemin doit être droit.
-- **Séparer les dimensions** change ce que montre le graphe de vitesse (vitesse par axe et non vitesse le long du chemin). L'overshoot sur Position 2D non séparée dépasse sur les deux axes à la fois, proportionnellement à leurs vitesses (vérifié en labo).
-- **Wiggle et duplication.** Le tirage aléatoire de `wiggle` varie d'un calque à l'autre ; pour contrôler ou figer un tirage, on utilise `seedRandom()`. Le comportement exact à la duplication n'a pas été vérifié ici : voir la phase 2.
-- **Fréquence d'overshoot et cadence.** À 25 i/s, un overshoot très rapide (freq > 6) peut tomber entre les images et paraître sauter (voir l'incident en labo). Juger à l'œil à 25 i/s, pas à 50.
-- **Période qui varie dans un `sin` = mouvement qui se fige.** `Math.sin(2*Math.PI*time/P)` avec `P` animé (un bercement qui ralentit, une respiration qui s'apaise) ne donne pas la fréquence 1/P : la fréquence réelle est 1/P − t·P'/P² et tombe presque à zéro (mesuré : 0,02 Hz au lieu de 0,31 à 0,63 Hz, `labo/ae-expressions/bercement/test.js`) : le geste **hésite et repart**, l'inverse du calme voulu. Intégrer la phase (recette « bercement qui ralentit » dans `expressions.md`). Même piège dans un `wiggle(freq, …)` à `freq` animée. [TESTÉ EN LABO] (sous Node)
-- **Moteur et compatibilité.** Un projet partagé avec un poste en ExtendScript hérité peut afficher des erreurs d'expression en série. Fixer le moteur dans le cahier des charges.
+- **Moteur** : écrire pour le moteur JavaScript (accolades, points-virgules, `thisLayer`, `thisComp`) et fixer le moteur dans le cahier des charges ; un poste en ExtendScript hérité affiche des erreurs en série.
+- **Expressions lentes** (`sampleImage`, `valueAtTime` en boucle, échos sur 50 calques) : convertir en images clés une fois figé, `posterizeTime` pour ce qui n'a pas besoin de 25 i/s.
+- **Vitesse d'arrivée nulle = pas d'overshoot** : cause n° 1 de « mon expression ne fait rien ». `exp()` explose sans coupure (`t < 3`).
+- **Bézier spatial non voulu** : le calque boucle ou dépasse dans l'espace ; Interpolation spatiale > Linéaire.
+- **Overshoot trop rapide** (freq > 6) : tombe entre les images à 25 i/s ; juger à 25, pas à 50.
+- **Période qui varie dans un `sin`** (ou `wiggle` à `freq` animée) : le geste hésite et repart au lieu de s'apaiser ; intégrer la phase [TESTÉ EN LABO] (sous Node, `labo/ae-expressions/bercement/test.js`).
+- **Wiggle et duplication** : tirages différents d'un calque à l'autre ; `seedRandom()` pour figer (à vérifier en phase 2).
 
 ## 7. À vérifier en phase 2
 

@@ -1,6 +1,6 @@
 # montage-regard — journal détaillé des leçons d'atelier
 
-_Déplacé hors du SKILL.md en session 8 (BACKLOG 42) ; les règles distillées sont dans `SKILL.md`, § « Règles tirées de l'atelier ». Ajouter ici chaque nouvelle leçon datée, puis la distiller._
+_Déplacé hors du SKILL.md en session 8 (BACKLOG 42) ; les règles distillées sont dans `SKILL.md` (§ « Règles de jugement ») et leur texte complet dans `regles-atelier.md`. Ajouter ici chaque nouvelle leçon datée, puis la distiller._
 
 - 2026-10-09, atelier 01 v1 : apparition par émission 0 → mot noir sur fond bleu (fausse ombre). Pulse symétrique ±10 % = mécanique. Italique FreeSerif : « ff » mal approché, illisible en titre.
 - 2026-10-09, atelier 01 v2 : corriger un excès en réduisant l'amplitude du même paramètre donne un mouvement invisible. Il faut **déplacer** le mouvement vers le paramètre qui porte le sens.

@@ -1,11 +1,15 @@
 ---
 name: montage-couleur-pipeline
-description: À utiliser pour la gestion des couleurs et la préparation de l'étalonnage, dès qu'il est question d'espaces colorimétriques (Rec.709, Rec.2020, sRGB, P3, ACES, ACEScg, ACEScct), de log caméra (LogC3, LogC4, S-Log3, V-Log, C-Log), de LUT (.cube, LUT créative ou technique, LUT 3D 33/65 points), d'OCIO/OpenColorIO, de conversion d'espace, de transformation d'entrée ou de sortie (IDT/ODT, CST, DRT), de scene-referred et display-referred, de RCM DaVinci, ou quand on entend « l'image est délavée », « c'est grisâtre / trop contrasté », « mes couleurs changent à l'export », « QuickTime n'affiche pas comme Premiere », « la LUT ne rend pas pareil », « on étalonne dans quel espace ? », normaliser les rushes, teal & orange, look, split-toning, gamma 2.4 ou 2.2, tags couleur.
+description: Gestion des couleurs et préparation de l'étalonnage — espaces (Rec.709, Rec.2020, sRGB, P3, ACES, ACEScg, ACEScct), log caméra (LogC3/C4, S-Log3, V-Log), LUT .cube techniques ou de look, OCIO, CST, IDT/ODT, RCM DaVinci, scene- ou display-referred, gamma 2.4 ou 2.2, tags couleur. Mots entendus : « l'image est délavée », « c'est grisâtre », « mes couleurs changent à l'export », « QuickTime n'affiche pas comme Premiere », « la LUT ne rend pas pareil », « on étalonne dans quel espace ? ». Quel look et pourquoi : montage-couleur-et-intention.
 ---
 
 # Pipeline couleur : du rush log au master
 
-Preuves : `labo/couleur/RESULTATS.md` (scripts `conversions.py`, `look_lut.py`). Sources : `sources/couleur-pipeline.md`. Pour les tags couleur à l'export et le QC, voir aussi le skill `montage-loudness-livraison`.
+**Marqueurs** : [SOURCÉ] fiche ou source écrite · [THÉORIQUE] convention du métier non vérifiée ici · [TESTÉ EN LABO] fait technique mesuré · [ÉPROUVÉ EN MAQUETTE] vu sur maquette, hypothèse à confirmer sur de vraies images (phase 2).
+
+**Fait foi sur** : espaces, log, LUT (technique et créative : fabrication, application, garde-fous), ordre des transformations, tags. **Ailleurs** : quel look, quelle palette, faut-il un teal & orange → `montage-couleur-et-intention` ; tags et QC à l'export → `montage-loudness-livraison` ; RCM et nodes dans Resolve → `montage-resolve`.
+
+Preuves : `labo/couleur/RESULTATS.md` (scripts `conversions.py`, `look_lut.py`). Sources : `sources/couleur-pipeline.md`.
 
 ## 1. Quand s'en servir
 
@@ -15,13 +19,13 @@ Preuves : `labo/couleur/RESULTATS.md` (scripts `conversions.py`, `look_lut.py`).
 
 ## 2. Pourquoi : ce qui compte
 
-- **Une LUT créative n'est pas une conversion technique.** Une LUT technique change d'espace (LogC3 vers Rec.709) : elle est « juste » ou « fausse ». Une LUT créative (un look) est un choix artistique : elle attend une entrée précise et ne veut rien dire sur une autre. Mélanger les deux rôles dans une seule LUT « LogC vers look » enferme le projet : on ne peut plus changer la sortie (HDR, cinéma) sans refaire le look.
-- **Travailler en log ou en scene-referred garde la latitude.** Au labo, un spéculaire à 4.0 (2 diaphs au-dessus du blanc) survit à ACEScg, ACEScct, LogC3 et S-Log3, mais il est **écrêté** dès qu'on encode en sRGB ou Rec.709. Étalonner après l'écrêtage, c'est étalonner une image déjà amputée : hautes lumières plates, ciels cramés, pas de récupération possible.
-- **Normaliser d'abord, regarder ensuite.** Le même gris 18 % vaut 0.391 en LogC3, 0.411 en S-Log3, 0.414 en ACEScct et 0.489 en Rec.709/2.4. Un look posé sur l'image avant la normalisation travaille sur de mauvaises valeurs : le contraste tombe au mauvais endroit et les teintes dérivent différemment d'une caméra à l'autre. Ordre : **entrée (log caméra vers espace de travail) → corrections primaires → look → sortie**. Le look vient après la normalisation, pour être le même sur toutes les caméras.
-- **Le teal & orange par défaut est un tic, pas un style.** Il marche parce que la peau est orange et que son complémentaire est le cyan. Poussé fort, il rend les peaux orange, les ombres bleu nuit, les blancs sales et tous les films identiques. S'il est choisi, il doit être **motivé** (chaleur d'un souvenir, froid d'une solitude) et **modéré** : au labo, ±0,03 sur 1.0 suffit à se voir. On garde des noirs et des blancs neutres et on surveille la peau sur le vectorscope (ligne chair).
-- **Un écran, un espace de sortie, une référence.** Si on étalonne sur un écran sRGB de portable pour une diffusion TV Rec.709/2.4, on étalonne à l'aveugle. Dire sur quoi on regarde fait partie du pipeline.
+- [THÉORIQUE] **Une LUT créative n'est pas une conversion technique.** Une LUT technique change d'espace (LogC3 vers Rec.709) : elle est « juste » ou « fausse ». Une LUT créative (un look) est un choix artistique : elle attend une entrée précise et ne veut rien dire sur une autre. Mélanger les deux rôles dans une seule LUT « LogC vers look » enferme le projet : on ne peut plus changer la sortie (HDR, cinéma) sans refaire le look.
+- [TESTÉ EN LABO] **Travailler en log ou en scene-referred garde la latitude.** Au labo, un spéculaire à 4.0 (2 diaphs au-dessus du blanc) survit à ACEScg, ACEScct, LogC3 et S-Log3, mais il est **écrêté** dès qu'on encode en sRGB ou Rec.709. Étalonner après l'écrêtage, c'est étalonner une image déjà amputée : hautes lumières plates, ciels cramés, pas de récupération possible.
+- [TESTÉ EN LABO] **Normaliser d'abord, regarder ensuite.** Le même gris 18 % vaut 0.391 en LogC3, 0.411 en S-Log3, 0.414 en ACEScct et 0.489 en Rec.709/2.4. Un look posé sur l'image avant la normalisation travaille sur de mauvaises valeurs : le contraste tombe au mauvais endroit et les teintes dérivent différemment d'une caméra à l'autre. Ordre : **entrée (log caméra vers espace de travail) → corrections primaires → look → sortie**. Le look vient après la normalisation, pour être le même sur toutes les caméras.
+- **Teal & orange : le dosage technique** (le choix de sens est dans `montage-couleur-et-intention`). S'il est choisi : modéré (±0,03 sur 1.0 suffit à se voir [ÉPROUVÉ EN MAQUETTE], sur mire), noirs et blancs gardés neutres, peau surveillée sur le vectorscope (ligne chair), appliqué **après** la normalisation.
+- [THÉORIQUE] **Un écran, un espace de sortie, une référence.** Si on étalonne sur un écran sRGB de portable pour une diffusion TV Rec.709/2.4, on étalonne à l'aveugle. Dire sur quoi on regarde fait partie du pipeline.
 
-## 3. Choisir son pipeline (décision rapide)
+## 3. Choisir son pipeline (décision rapide) [THÉORIQUE]
 
 | Situation | Pipeline conseillé |
 |---|---|
@@ -72,11 +76,11 @@ ffmpeg et colour-science (tétraédrique) donnent le même résultat : écart mo
 
 Même commande avec la LUT constructeur (ARRI LogC3 vers Rec.709, Sony S-Log3 vers 709) **avant** le look : `-vf "lut3d=arri_logc3_709.cube,lut3d=look.cube"`. À valider sur un vrai rush log (aucun disponible au labo).
 
-### 4.6 Taguer la sortie [THÉORIQUE ici, testé dans `labo/livraison`]
+### 4.6 Taguer la sortie [TESTÉ EN LABO] (dans `labo/livraison`)
 
 `-color_primaries bt709 -color_trc bt709 -colorspace bt709` (et `-color_range tv`). Voir `montage-loudness-livraison`.
 
-## 5. Pièges
+## 5. Pièges [THÉORIQUE] (chiffres mesurés au labo)
 
 - **Gamma 2.4 vs 2.2 vs sRGB.** Rec.709 diffusion = écran BT.1886 (≈ gamma 2.4, salle sombre). sRGB = fonction par morceaux proche de 2.2 (bureau éclairé). Le gris 18 % vaut 0.489 en 2.4 et 0.461 en sRGB. Étalonné en 2.4 et vu en 2.2, l'image paraît **délavée** dans les ombres. Étalonné en 2.2 et vu en 2.4, elle paraît **bouchée**. Le célèbre décalage « QuickTime vs Premiere/Resolve » vient de là (et du tag 1-1-1). Choisir sa cible (TV : 2.4 ; web : beaucoup choisissent 2.4 tagué 709, d'autres 2.2) et l'écrire dans le cahier des charges.
 - **Tags couleur à l'export.** Un fichier sans `color_primaries/transfer/matrix` est interprété au hasard par chaque lecteur (BT.601 vs 709 en particulier, d'où des verts et des rouges qui bougent). Toujours taguer et vérifier avec `ffprobe -show_streams`.
@@ -84,7 +88,7 @@ Même commande avec la LUT constructeur (ARRI LogC3 vers Rec.709, Sony S-Log3 ve
 - **LUT = boîte fermée de 0 à 1.** Tout ce qui dépasse 1.0 est écrêté par une LUT 3D classique. Ne jamais mettre une LUT créative sur du linéaire scene-referred.
 - **Plage vidéo vs plage pleine.** 16-235 lu comme 0-255 : image délavée. 0-255 lu comme 16-235 : noirs bouchés. Vérifier `color_range`.
 - **Double transformation.** Resolve en RCM convertit déjà l'entrée : ajouter en plus une LUT LogC vers 709 donne une image surcontrastée. Une seule transformation d'entrée.
-- **Teal & orange qui contamine la peau.** Surveiller la ligne chair au vectorscope ; une peau qui sort franchement vers le rouge ou le jaune trahit un look trop poussé.
+- **Look qui contamine la peau.** Une peau qui sort de la ligne chair au vectorscope (vers le rouge ou le jaune) trahit un look trop poussé.
 
 ## 6. À vérifier en phase 2 (Resolve, After Effects)
 
@@ -101,5 +105,5 @@ Même commande avec la LUT constructeur (ARRI LogC3 vers Rec.709, Sony S-Log3 ve
 - [ ] Rendu : vérifier que l'export applique la transformation de sortie une seule fois et que les tags sont corrects.
 - [ ] Aller-retour Resolve vers AE vers Resolve en EXR ACEScg : l'image doit revenir identique.
 
-## Écart entre logiciels sur les logs caméra (session 7) [TESTÉ EN LABO]
+## Écart entre logiciels sur les logs caméra [TESTÉ EN LABO]
 OCIO (config studio ACES 2.0) et colour-science diffèrent de ~2e-3 sur LogC3 / S-Log3 depuis Rec.709 : **les courbes sont identiques (1e-6)**, l'écart vient de la matrice : OCIO passe par ACES2065-1 (Bradford à l'aller, CAT02 dans les matrices IDT des constructeurs au retour). Gris identiques, couleurs saturées décalées d'~2 codes 10 bits. Pour diagnostiquer un écart entre deux outils : **comparer d'abord des gris** (courbe), **puis des primaires** (matrice / CAT). Détail : `labo/couleur/RESULTATS.md` §4, `labo/couleur/ecart_logc3.py`.

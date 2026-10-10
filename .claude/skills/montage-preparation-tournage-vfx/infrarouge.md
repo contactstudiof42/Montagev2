@@ -25,3 +25,10 @@ Si aucune de ces trois émotions n'est voulue, une caméra très sensible en bas
 **Sécurité oculaire (IEC 62471)** : le proche IR comporte un risque thermique pour la rétine, la cornée et le cristallin ; l'œil ne s'en protège pas par éblouissement, car il ne le voit pas. Une LED seule est en général « exempt », mais **un projecteur à matrice de LED se classe comme produit**. Demander au loueur ou au fabricant son **groupe de risque IEC 62471** ; garder une distance au visage, ne pas viser les yeux de près, surtout pour un sujet qui dort plusieurs heures face à la source. Ne pas inventer de seuil.
 
 **À valider en phase 2** : essai d'une nuit (850 contre 940 nm, axe contre décalé, peau, draps) avant toute nuit gardée.
+
+## Résumé repris de SKILL.md : filmer la nuit à l'infrarouge [ÉPROUVÉ EN MAQUETTE] (pièce 23, Blender ; à valider sur une vraie caméra IR)
+- **Jamais l'illuminateur intégré** : dans l'axe, il dessine un cercle et une lumière plate ; c'est la signature « surveillance », même étalonné neutre.
+- **Un projecteur IR 850 nm décalé, motivé** (là où serait la fenêtre), étroit et faible, visé sur le visage ; la nuit doit rester majoritaire dans le cadre. 940 nm est invisible à l'œil (pas de lueur rouge qui réveille le dormeur) mais moins sensible pour la plupart des capteurs [THÉORIQUE].
+- Caméra : filtre coupe-IR retiré (caméra « full spectrum » ou mode nuit), balance fixe, trépied verrouillé, plaque propre du lit vide au matin si des effets seront composés dessus.
+- Au grade : voir `montage-couleur-et-intention` (le vert et le bruit coloré codent la surveillance).
+- **Détails sourcés** (filtres 720/850, point, 850 contre 940 nm, peau, yeux, sécurité IEC 62471, œuvres de référence, et ce que l'IR fait ressentir) : `infrarouge.md` dans ce dossier [THÉORIQUE].

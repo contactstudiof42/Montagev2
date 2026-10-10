@@ -182,7 +182,7 @@ easeOut(time, t0, t0 + dur, 100, 0);          // 100 % = propriété de l'animat
 ```
 
 
-## Bercement qui ralentit après un événement (session 11) — [TESTÉ EN LABO : logique et syntaxe sous Node ; AE en phase 2]
+## Bercement qui ralentit après un événement — [TESTÉ EN LABO] (logique et syntaxe sous Node ; AE en phase 2)
 **Quand** : un geste répété qui doit s'apaiser à cause de quelque chose (un appel, une voix, une note) : bercement, respiration, balancier. **Pourquoi** : le calme se lit dans **l'allongement de la période** plus que dans la baisse d'amplitude ; les deux ensemble, sans à-coup de phase. Marqueur n°1 du calque = l'événement.
 ```js
 var amp0 = 5, amp1 = 1.2, P0 = 1.6, P1 = 3.2, d = 4;   // degrés, secondes ; d = durée de l'apaisement
@@ -216,3 +216,16 @@ Ne jamais écrire `Math.sin(2*Math.PI*time/P)` avec `P` qui varie (voir Pièges)
 10. Le comportement de `wiggle` sur des calques dupliqués (tirages différents ou identiques) et l'effet de `seedRandom`.
 11. Le message d'erreur exact d'AE quand un slider référencé est renommé (diagnostic courant chez les clients).
 
+<a id="pieges"></a>
+## Pièges en détail (déplacé de SKILL.md)
+
+- **Moteur JavaScript vs ExtendScript hérité.** Depuis AE 16.0 (CC 2019), le moteur par défaut est **JavaScript** (ECMAScript 2018), plus rapide. L'ancien moteur **ExtendScript hérité** suit ECMAScript 3. Le choix se fait par projet : Fichier > Paramètres du projet > onglet Expressions. Les projets enregistrés dans d'anciennes versions s'ouvrent en ExtendScript hérité. Erreurs classiques en passant à JavaScript : `if/else` sur une ligne sans accolades, raccourci `this()` (utiliser `thisLayer`), syntaxe en snake_case (`this_comp`, à remplacer par `thisComp`), `sourceText` qui doit parfois être lu en `.value`. Écrire pour le moteur JavaScript, avec accolades et points-virgules, et ne pas dépendre de la « dernière valeur » d'un `if` sans `else`.
+- **Expressions lentes.** Toute expression est réévaluée à chaque image, et `valueAtTime` ou `sampleImage` en boucle multiplient le coût. `sampleImage()` (lire la couleur d'un calque) est la plus coûteuse : à réserver à un pixel ou une petite zone, et sur peu de calques. Les échos en cascade (06) sur 50 calques et des boucles `for` sur `numKeys` ralentissent l'aperçu. Remèdes : **Convertir l'expression en images clés** (Animation > Assistant d'images clés) une fois le réglage figé, `posterizeTime` pour les valeurs qui n'ont pas besoin de 25 i/s, la vue « Expressions désactivées » (raccourci d'aperçu) pour travailler l'animation.
+- **`exp()` qui explose.** Dans un overshoot, `Math.exp(decay * t)` devient `Infinity` après quelques minutes ; d'où la coupure (`t < 3`) dans la recette 05 (point signalé par Dan Ebberts).
+- **Vitesse d'arrivée nulle = pas d'overshoot.** Voir 05 : c'est la cause n° 1 de « mon expression ne fait rien ».
+- **Bézier spatial non voulu.** Par défaut, les trajectoires de position sont courbes : le calque peut faire une boucle ou dépasser **dans l'espace**. Clic droit > Interpolation spatiale > Linéaire si le chemin doit être droit.
+- **Séparer les dimensions** change ce que montre le graphe de vitesse (vitesse par axe et non vitesse le long du chemin). L'overshoot sur Position 2D non séparée dépasse sur les deux axes à la fois, proportionnellement à leurs vitesses (vérifié en labo).
+- **Wiggle et duplication.** Le tirage aléatoire de `wiggle` varie d'un calque à l'autre ; pour contrôler ou figer un tirage, on utilise `seedRandom()`. Le comportement exact à la duplication n'a pas été vérifié ici : voir la phase 2.
+- **Fréquence d'overshoot et cadence.** À 25 i/s, un overshoot très rapide (freq > 6) peut tomber entre les images et paraître sauter (voir l'incident en labo). Juger à l'œil à 25 i/s, pas à 50.
+- **Période qui varie dans un `sin` = mouvement qui se fige.** `Math.sin(2*Math.PI*time/P)` avec `P` animé (un bercement qui ralentit, une respiration qui s'apaise) ne donne pas la fréquence 1/P : la fréquence réelle est 1/P − t·P'/P² et tombe presque à zéro (mesuré : 0,02 Hz au lieu de 0,31 à 0,63 Hz, `labo/ae-expressions/bercement/test.js`) : le geste **hésite et repart**, l'inverse du calme voulu. Intégrer la phase (recette « bercement qui ralentit » dans `expressions.md`). Même piège dans un `wiggle(freq, …)` à `freq` animée. [TESTÉ EN LABO] (sous Node ; AE en phase 2)
+- **Moteur et compatibilité.** Un projet partagé avec un poste en ExtendScript hérité peut afficher des erreurs d'expression en série. Fixer le moteur dans le cahier des charges.

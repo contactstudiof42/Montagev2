@@ -29,14 +29,14 @@ Repères sourcés : jump cuts toutes les 1-3 s (style Hormozi), interruptions vi
 
 ### Types de coupe et d'effet
 - **Jump cut** : retirer silences et hésitations de la parole ; changer d'échelle (100 % → 115 %) pour masquer la saute.
-- **Punch-in** : zoom brusque (1 à 3 images) sur le mot-clé. Avec l'ease-out, ça claque ; en linéaire, c'est mou. [TESTÉ EN LABO]
+- **Punch-in** : zoom brusque (1 à 3 images) sur le mot-clé. Avec l'ease-out, ça claque ; en linéaire, c'est mou. [ÉPROUVÉ EN MAQUETTE]
 - **Smash cut** : coupe sèche d'un calme à un fort (ou l'inverse), souvent avec un silence juste avant.
 - **Whip / swish** : flou directionnel ou speed ramp en cloche (accélération en fin de plan A, décélération en début de plan B), avec flou de bougé (Shutter Angle).
 - **Speed ramp** : Time Remapping > Speed dans Premiere, keyframes séparés en Bézier. [THÉORIQUE]
-- **Camera shake** : sur l'impact seulement, amorti en 4 à 6 images ; jamais en continu. [TESTÉ EN LABO]
-- **Flash blanc** : 1 image (2 max) sur l'impact ; au-delà, c'est un fondu. [TESTÉ EN LABO]
+- **Camera shake** : sur l'impact seulement, amorti en 4 à 6 images ; jamais en continu. [ÉPROUVÉ EN MAQUETTE]
+- **Flash blanc** : 1 image (2 max) sur l'impact ; au-delà, c'est un fondu. [ÉPROUVÉ EN MAQUETTE]
 - **Masque de transition** : un objet qui passe devant l'objectif (ou un mouvement de caméra rapide) sert de rideau, et la coupe est cachée dedans.
-- **Captions mot à mot** : majuscules grasses, contour épais, 1 à 4 mots à l'écran, mot-clé en couleur (le jaune chez Hormozi) ou agrandi, apparition calée sur la syllabe. Les captions restent dans la zone sûre (hors 15 % du bas et interface de droite). **[TESTÉ EN LABO, proxy OCR, `labo/paroles/RESULTATS.md`]** : après ré-encode 2,5 Mb/s et vue à 360 px de large, plancher **2 % de la hauteur en graisse Medium** (rien à 1,2 %) ; **graisse Thin illisible jusqu'à 2 %** ; sur fond clair et chargé, blanc nu et ombre portée échouent à toutes les tailles : **boîte ≈ 85 % dès 2,6 %**, ou changer de plan ; l'ombre portée n'aide jamais.
+- **Captions mot à mot** : majuscules grasses, contour épais, 1 à 4 mots à l'écran, mot-clé en couleur (le jaune chez Hormozi) ou agrandi, apparition calée sur la syllabe. Les captions restent dans la zone sûre (hors 15 % du bas et interface de droite). **[ÉPROUVÉ EN MAQUETTE] (proxy OCR sur fonds synthétiques, `labo/paroles/RESULTATS.md`)** : après ré-encode 2,5 Mb/s et vue à 360 px de large, plancher **2 % de la hauteur en graisse Medium** (rien à 1,2 %) ; **graisse Thin illisible jusqu'à 2 %** ; sur fond clair et chargé, blanc nu et ombre portée échouent à toutes les tailles : **boîte ≈ 85 % dès 2,6 %**, ou changer de plan ; l'ombre portée n'aide jamais.
 - **B-roll / mèmes** : illustrer le mot au moment où il est dit, pas une seconde après.
 
 ### Les SFX et leur rôle (hiérarchie, du plus fort au plus discret)
@@ -92,7 +92,7 @@ Sources du placement : crête du riser sur le moment clé (Epidemic Sound) ; son
 - Test : « le sens est-il dans la variation de vitesse du sujet ? » Si oui, peu de plans, cadre tenu, coupes sur les points morts. Le kinetic ne revient que s'il **suit l'énergie du sujet** : version B2 de la pièce 14, coupes sur les points morts de plus en plus espacées (1 s, puis 2, puis 4) et whooshs proportionnels à l'amplitude : accroche immédiate puis retrait, la bonne version pour un réseau social ; la pulsation constante (B) est la seule fausse.
 
 ## 3f. Leçon de culture (Kolder et monteurs d'edits, sessions 11 et 14, `culture/sam-kolder-travel-edit.md` de mémoire, corrigée par `culture/kinetic-edit-monteurs-reseaux-sources.md`, sources moyennes)
-- **Une transition invisible demande un point commun aux deux plans** (direction et vitesse du mouvement, texture, couleur) : idéalement tournée (Schiffer tourne dans l'ordre et note comment finit chaque plan), sinon trouvée au banc par essais et erreurs (Brandon Li) ou fabriquée en post ; sans point commun, aucun effet ne la sauve. (Session 14 : nuance la règle de mémoire « une transition kinetic se tourne », trop absolue ; `culture/kinetic-edit-monteurs-reseaux-sources.md`.)
+- **Une transition invisible demande un point commun aux deux plans** (direction et vitesse du mouvement, texture, couleur) : idéalement tournée (Schiffer tourne dans l'ordre et note comment finit chaque plan), sinon trouvée au banc par essais et erreurs (Brandon Li) ou fabriquée en post ; sans point commun, aucun effet ne la sauve. (La règle de mémoire « une transition kinetic se tourne » était trop absolue.)
 - **Ordre de jugement de Kolder** (entretien Musicbed) : l'attention retenue, puis l'émotion, puis la technique. Une transition brillante qui ne fait ni l'un ni l'autre est un tic. Le style a aussi ses respirations (time-lapses entre les lieux).
 - **Velocity edit** : marqueurs sur les temps forts d'abord, vitesse ensuite, easing systématique ; la rampe ponctue le rythme, ne le contredit jamais.
 - **SFX** : un whoosh dure le temps du mouvement, pic sur la coupe ; **varier les durées avant les timbres** (la répétition s'entend d'abord dans les durées identiques). L'edit de fan, au fond, est une **relecture** : rapprocher deux moments séparés pour créer un sens.
@@ -100,7 +100,7 @@ Sources du placement : crête du riser sur le moment clé (Epidemic Sound) ; son
 
 - **[TESTÉ EN LABO, Blender]** Un plan 3D qui doit couper en mouvement (whip pan, rotation) s'**anime au-delà de ses bords** : sinon la dernière image de A et la première de B n'ont que la moitié du flou de bougé (indice de flou 0,85 contre 1,07) et la coupe accroche sur deux images nettes (`labo/kinetic/whip/`). AE : même logique, à vérifier en phase 2.
 
-## 3g. Direction du filé à la coupe (labo session 13, `labo/kinetic/whip-flot/RESULTATS.md`) [TESTÉ EN LABO pour la mesure, perception à valider en phase 2]
+## 3g. Direction du filé à la coupe (labo session 13, `labo/kinetic/whip-flot/RESULTATS.md`) [TESTÉ EN LABO] pour la mesure, [ÉPROUVÉ EN MAQUETTE] pour la perception
 - **Raccord** si la direction se prolonge à **30° près** (cos ≥ 0,87 ; 45° = limite) avec vitesse et flou continus ; **sens inverse = choc** (rebond : à réserver à l'impact voulu, sur le temps fort) ; **perpendiculaire = changement d'espace** (fin de chapitre, jamais au milieu d'une phrase de mouvement).
 - **Pas de rayures, grilles, stores dans un filé** : sens ambigu à une période près (roue de charrette), pour la machine comme pour l'œil.
 - Vérifier une coupe : `python3 labo/kinetic/whip-flot/mesure_flot.py --paire A/ B/ --mvs` (DIS d'OpenCV, puis vecteurs du codec H.264 au-delà de ~15 % de largeur par image ; Farneback pleine résolution **aveugle** au filé). Validé sur rendus Blender (11 % de largeur/image : juste ; 40 % : s'abstient, 0 erreur ; au-delà d'un quart de cadre par image, **le sens se lit dans l'accélération de A et le ralentissement de B**, pas au cœur du flou : y soigner la direction). La direction ne voit pas l'**accroche de netteté** : la vérifier avec l'indice de flou de `labo/kinetic/whip/mesure.py`.
@@ -108,7 +108,7 @@ Sources du placement : crête du riser sur le moment clé (Epidemic Sound) ; son
 ## 4. Recettes
 **R1 — Hook 0-3 s** [THÉORIQUE] : image 1 = l'image la plus forte (résultat, chiffre, action) + impact ou drop musical à l'image 1 ; captions dès la 1re syllabe ; 2 à 4 coupes dans les 3 premières secondes ; la promesse est dite avant la 3e seconde.
 
-**R2 — Montée vers une révélation** [TESTÉ EN LABO] : plans 15 → 13 → 12 → 10 → 8 → 6 images ; riser de 1 s à -12 dB sous l'impact, coupé 1 image avant ; coupe sèche ; impact + flash 1 image + shake amorti 5 images ; puis un plan tenu de 15 images ou plus.
+**R2 — Montée vers une révélation** [ÉPROUVÉ EN MAQUETTE] : plans 15 → 13 → 12 → 10 → 8 → 6 images ; riser de 1 s à -12 dB sous l'impact, coupé 1 image avant ; coupe sèche ; impact + flash 1 image + shake amorti 5 images ; puis un plan tenu de 15 images ou plus.
 
 **R3 — Punch-in sur mot-clé** [TESTÉ EN LABO] : 2 images larges puis ×1,35 en 3 images ease-out ; whoosh court à crête sur le début du zoom.
 ffmpeg : `zoompan=z='if(lt(on,2),1,1+0.35*(1-pow(1-min((on-1)/3,1),3)))':d=1:s=540x960:fps=30:x='iw/2-iw/zoom/2':y='ih/2-ih/zoom/2'`

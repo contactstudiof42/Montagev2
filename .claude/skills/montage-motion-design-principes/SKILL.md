@@ -13,7 +13,7 @@ Sources : `culture/saul-bass-generiques.md`, `culture/kyle-cooper-se7en.md`, `cu
 
 ## Principes
 1. **Un concept, un signe** (Saul Bass) : réduire le message à une forme dessinable, toute l'animation la révèle ou la transforme. Si on anime « des éléments », on n'a pas encore d'idée. [SOURCÉ]
-2. **Animer le paramètre qui porte le sens.** Pour une apnée, pas l'échelle du mot (pulse de logo) mais son **interlettrage** qui se resserre. Corriger un excès en réduisant l'amplitude donne un mouvement invisible : **déplacer** le mouvement, pas l'atténuer. L'amplitude dépend de la police (0,90 écrase un Garamond italique, 0,93 tient). [ÉPROUVÉ EN MAQUETTE] (pièce 01)
+2. **Animer le paramètre qui porte le sens.** Pour une apnée, pas l'échelle du mot (pulse de logo) mais son **interlettrage** qui se resserre. Corriger un excès en réduisant l'amplitude donne un mouvement invisible : **déplacer** le mouvement, pas l'atténuer. L'amplitude dépend de la police (0,90 écrase un Garamond italique, 0,93 tient) ; fond en dégradé plutôt qu'aplat. [ÉPROUVÉ EN MAQUETTE] (pièce 01)
 3. **Le mouvement a une cause et une matière** : overshoot = élastique, métal ; sans overshoot = verre, pierre, luxe ; l'ease symétrique par défaut n'a pas de matière. [THÉORIQUE]
 4. **Asymétrie** : on entre vite et on se pose, ou on s'élance et on s'arrête net ; la symétrie (4 s / 4 s) se lit comme une machine. [ÉPROUVÉ EN MAQUETTE] (pièce 01)
 5. **Montrer le processus plutôt que le résultat** (Kyle Cooper, *Se7en*). [SOURCÉ]

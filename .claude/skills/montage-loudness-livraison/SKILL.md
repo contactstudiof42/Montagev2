@@ -5,7 +5,9 @@ description: À utiliser au mixage final et à l'export, dès qu'il faut « cale
 
 # Loudness et livraison
 
-Annexe détaillée : [references.md](references.md). Preuves du labo : `labo/loudness/RESULTATS.md` et `labo/livraison/RESULTATS.md`. Sources datées : `sources/loudness-livraison.md`.
+Marqueurs : **[SOURCÉ]** lu dans une source datée · **[TESTÉ EN LABO]** fait technique mesuré (ffmpeg/ffprobe, compteur étalonné) · **[ÉPROUVÉ EN MAQUETTE]** principe tiré d'une maquette Blender/Pillow/ffmpeg, hypothèse à confirmer sur de vraies images en phase 2 · **[THÉORIQUE]** doc ou pratique, jamais exécuté.
+
+**Fait foi sur** : les cibles de loudness, les specs de livraison, la normalisation et la vérification d'un fichier exporté (pour toutes les applications). Où se trouvent les réglages d'export dans Premiere ou Resolve : `montage-premiere`, `montage-resolve` ; intention sonore du mix : `montage-son-et-emotion`. Annexe détaillée (dont la livraison 5.1) : [references.md](references.md). Preuves du labo : `labo/loudness/RESULTATS.md` et `labo/livraison/RESULTATS.md`. Sources datées : `sources/loudness-livraison.md`.
 
 ## 1. Quand s'en servir
 
@@ -87,12 +89,12 @@ ffmpeg -i MASTER.mov -vf "scale=1920:1080:flags=lanczos,format=yuv420p" \
 ```
 Pour un débit cible, utiliser les 2 passes `-b:v 8M -maxrate 10M -bufsize 16M` : 7.90 Mb/s obtenus. Pour le vertical 1080x1920 (recadrage centré ou fond flou), voir references.md §3.
 
-### Images sombres : éviter les bandes dans les dégradés [TESTÉ EN LABO]
+### Images sombres : éviter les bandes dans les dégradés [TESTÉ EN LABO, sur images synthétiques et rendus Blender]
 Pourquoi c'est artistique : un film bas et dense (goût de l'utilisateur : Joker, Ziak) vit dans les 5 % du bas de l'échelle, là où le 8 bits n'a qu'une vingtaine de niveaux. Des bandes dans un ciel nocturne ou un fond de studio détruisent la matière du noir.
 - Master et échanges en **10 bits** (ProRes 422 HQ, DNxHR HQX, ou `-pix_fmt yuv420p10le`) : indice de marches 1,6 contre 5,3 en 8 bits.
 - Le tramage ±1 niveau et `-tune grain` ne survivent pas à x264 dans les noirs (mesuré : aucun gain, même à CRF 16).
-- Livraison réseaux (la plateforme ré-encode en 8 bits) : **le 10 bits survit à un ré-encodage à débit correct** (session 12, rendu Blender en panoramique : 0,007 de marches visibles contre 0,037 pour un master 8 bits) ; **pas de grain par défaut** : sur une image majoritairement noire, un grain σ 2 consomme le débit et fait **pire** à débit plafonné (0,16). Grain fin (`noise=c0s=4:allf=t`) seulement pour un **dégradé long et doux** (ciel de nuit, brume, mur en rebond) et après un essai **en mouvement** ré-encodé (session 2 : 3,2 au lieu de 5,2 sur un dégradé plein cadre). **Ne jamais juger l'encodage d'un plan sombre sur une image fixe** : immobile, 8 et 10 bits sont identiques.
-- Artistiquement : un noir dur (Willis : on décide quoi garder, le reste est noir) encaisse mieux la plateforme qu'un clair-obscur laiteux.
+- Livraison réseaux (la plateforme ré-encode en 8 bits) : **le 10 bits survit à un ré-encodage à débit correct** (rendu Blender en panoramique : 0,007 de marches visibles contre 0,037 pour un master 8 bits) ; **pas de grain par défaut** : sur une image majoritairement noire, un grain σ 2 consomme le débit et fait **pire** à débit plafonné (0,16). Grain fin (`noise=c0s=4:allf=t`) seulement pour un **dégradé long et doux** (ciel de nuit, brume, mur en rebond) et après un essai **en mouvement** ré-encodé (3,2 au lieu de 5,2 sur un dégradé plein cadre). **Ne jamais juger l'encodage d'un plan sombre sur une image fixe** : immobile, 8 et 10 bits sont identiques.
+- Artistiquement : un noir dur (Willis : on décide quoi garder, le reste est noir) encaisse mieux la plateforme qu'un clair-obscur laiteux [ÉPROUVÉ EN MAQUETTE].
 Détail et mesures : `labo/encodage/RESULTATS.md`, `labo/encodage/noir-protege/RESULTATS.md`.
 
 ### Vérifier le livrable [TESTÉ EN LABO]
@@ -116,16 +118,10 @@ ffmpeg n'a pas de gating sur le dialogue. Il faut un compteur dédié (Dolby Med
 8. Le débit AAC affiché est inférieur au débit demandé sur un signal simple. Ce n'est pas un défaut.
 9. [THÉORIQUE] Normaliser **après** le dernier changement de montage : un plan ajouté décale l'intégré.
 
-## 5 bis. Livraison 5.1 (session 6, détail : `sources/surround-hors-champ-2026-10.md`)
-- **France, PAD (CST RT 040 v1.2, 2016, lue)** : -23 LUFS ±1 LU, **-3 dBTP** (plus strict que R128), pistes 1-6 = L R C LFE Ls Rs, mesure en 5.1 **et** en Lt/Rt, Lo/Ro, dual mono. France Télévisions (annexe 2023) ne prévoit **pas** de 5.1 (stéréo, pistes 3-6 en silence). **Arte : aucune spec publique trouvée**, demander au chargé de production.
-- **LFE** : alignement +10 dB à la lecture, limité à 120 Hz, jamais d'info essentielle (ITU-R BS.775) ; exclu de la mesure BS.1770 ; surrounds pondérés ×1,41.
-- **Downmix ITU Lo/Ro sans LFE** [TESTÉ EN LABO, s6] : `-af "pan=stereo|FL=FL+0.7071*FC+0.7071*BL|FR=FR+0.7071*FC+0.7071*BR"`. **Ne pas utiliser `-ac 2` pour juger un downmix** : swresample normalise les coefficients, résultat 7,6 dB plus bas (mesuré -42,1 contre -34,5 LUFS) ; sinon `-af aresample=rematrix_maxval=10 -ac 2`.
-- **Piège d'étiquettes** : la disposition `5.1` de ffmpeg nomme les arrières `BL/BR`, `5.1(side)` les nomme `SL/SR` ; en `7.1`, ffmpeg met les arrières en 5-6 et les côtés en 7-8. Vérifier avec `ffprobe` avant tout `pan`.
-- **Compatibilité mono** : mesurer la phase moyenne (`aphasemeter`) ; une ambiance identique dans Ls/Rs disparaît en Lt/Rt mono.
-- **Ce que deviennent les arrières** [TESTÉ EN LABO, s7, matériau synthétique, revérifié à la main] (`labo/surround/RESULTATS.md`, `sources/surround-ltrt-labo-2026-10.md`) : une ambiance seulement dans Ls/Rs perd 4,5 LU en Lo/Ro stéréo, **10,5 LU en Lo/Ro mono** (7,5 de plus que le dialogue, stable) et **disparaît en Lt/Rt mono** (-70 LUFS), **même avec un vrai déphasage de 90°** : le Hilbert stabilise l'image stéréo, il ne sauve pas le mono.
-- **Le LUFS du mix ne voit pas la perte** (-23,5 dans les quatre downmix) : mesurer le **stem** d'ambiance replié en mono (`pan=mono|c0=0.5*c0+0.5*c1,ebur128=peak=true`).
-- **Piège du Lt/Rt « simple »** (`pan=stereo|FL=FL+0.7071*FC-0.5*BL-0.5*BR|FR=FR+0.7071*FC+0.5*BL+0.5*BR`) : un même signal à l'avant et à l'arrière (réverbe, room tone sur 4 canaux) donne un **Lt muet**. Lt/Rt de référence : FIR de Hilbert 2047 points dans `afir=gtype=none` + `adelay=1023S` sur les fronts (21 ms de latence), graphe dans `RESULTATS.md` ; trop court sous 50 Hz.
-- **Intention** : une présence hors champ qui porte du sens (la pièce d'à côté, quelqu'un derrière) doit avoir un **pied discret et décorrélé dans L/R** : elle survit alors aux deux downmix et au mono du téléphone. Ce qui n'est qu'à l'arrière est un luxe de salle.
+## 5 bis. Livraison 5.1 (résumé ; détail et mesures : [references.md](references.md#livraison-51))
+- **PAD France (CST RT 040)** : -23 LUFS ±1, **-3 dBTP**, pistes L R C LFE Ls Rs, mesure en 5.1 et en downmix [SOURCÉ]. France Télévisions : stéréo seulement. Arte : demander la spec.
+- **Downmix** : `pan=stereo|FL=FL+0.7071*FC+0.7071*BL|FR=FR+0.7071*FC+0.7071*BR` ; **jamais `-ac 2` pour juger un downmix** (7,6 dB trop bas) [TESTÉ EN LABO]. Vérifier les étiquettes de canaux (`BL/BR` contre `SL/SR`) avant tout `pan`.
+- **Ce qui n'est qu'à l'arrière disparaît en Lt/Rt mono** et le LUFS du mix ne le voit pas : mesurer le stem d'ambiance replié en mono [TESTÉ EN LABO, matériau synthétique]. Intention : une présence hors champ qui porte du sens garde un pied discret et décorrélé dans L/R [THÉORIQUE].
 
 ## 6. Checklist de livraison
 
