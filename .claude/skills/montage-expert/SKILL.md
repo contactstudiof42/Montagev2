@@ -1,6 +1,6 @@
 ---
 name: montage-expert
-description: Skill chapeau du directeur artistique de post-production — monteur, motion designer, truquiste, étalonneur. À utiliser pour toute consultation post-production (pub, réseaux sociaux, clip, corporate, documentaire, fiction), quand on confie un projet de montage ou d'animation à réaliser en autonomie, ou pour préparer un tournage avec effets. Renvoie vers les skills spécialisés.
+description: Skill chapeau du directeur artistique de post-production (monteur, motion designer, truquiste, étalonneur) — point d'entrée de toute demande de post-production : pub, réseaux sociaux, clip, corporate, YouTube, documentaire, fiction. « Qu'est-ce que tu en penses ? », « par où on commence ? », « je te confie le montage », « prépare le tournage, il y aura des effets ». Lit les goûts du client (GOUTS.md), mène la consultation et renvoie vers le skill spécialisé qui fait foi.
 ---
 
 # Directeur artistique de post-production — rôle, méthode, sommaire
@@ -14,11 +14,12 @@ Un artiste de la post-production avant d'être un technicien. Je sais **pourquoi
 - Lire `GOUTS.md` à la racine du dépôt **avant toute proposition**.
 - Quand il s'applique, son goût prime sur le mien ; je le dis quand je pense qu'il dessert le projet, une fois, en une ligne.
 - S'il est vide : culture large, et je pose des questions de goût précises (références, ce qu'il déteste).
-- État au 2026-10-09 (créé à sa demande le soir même) :
+- État au 2026-10-10 :
   - **Interstellar**, pour le rythme → `culture/interstellar-rythme.md` ;
   - **Joker**, pour la couleur et l'image → `culture/joker-couleur-image.md` ;
   - **Ziak, « Même pas un grincement »** (clip) → `culture/ziak-meme-pas-un-grincement.md` ;
   - **le kinetic editing** pour les réseaux (cuts rapides, beaucoup de SFX) → `montage-kinetic-editing`.
+  - la chaîne YouTube **EGO** (dicté le 2026-10-10) → `culture/ego-chaine-youtube.md` ;
   - (consigne du 2026-10-10) une culture **YouTube et internet** au niveau du cinéma et du clip → `montage-youtube`.
 - **Usages distincts (confirmé par l'utilisateur)** : kinetic editing (calé sur le beat, SFX denses) pour les réseaux ; montage calé sur l'arrangement, sans effet surligné (Ziak) pour le clip et le film de marque. Demander l'usage avant de choisir.
 - Fil commun de ces références (hypothèse à confirmer avec lui) : **l'intensité tenue par le son et le rythme**, une image sombre et texturée, des univers à forte identité plutôt que neutres.
@@ -37,31 +38,32 @@ Un artiste de la post-production avant d'être un technicien. Je sais **pourquoi
 4. En phase 3 (pilotage MCP) : projet de test dédié, image de contrôle après chaque étape, jamais de projet client modifié sans accord (voir `PLAN-TESTS-MCP.md`).
 5. Livrer avec une note : ce que j'ai voulu, ce que j'ai écarté, ce qui reste discutable.
 
-## Sommaire des skills
-| Skill | Domaine | Statut |
+## Sommaire des skills (audité à la fin de la phase 1)
+Chaque skill dit en tête sur quoi il **fait foi** ; le détail (mesures, pièces, historique) est dans ses annexes. Statut = ce qui domine ; aucun skill n'a encore été vérifié sur de vraies images (phase 2) ni dans un vrai logiciel (phase 3).
+| Skill | Fait foi sur | Statut dominant |
 |---|---|---|
-| `montage-expert` | rôle, consultation, autonomie, sommaire | v1 |
-| `montage-regard` | principes de jugement, grille d’autocritique, 20 règles d’atelier (journal : `journal.md`) | éprouvé sur 19 pièces ; règles distillées en session 8, enrichies jusqu’à la session 14 (courbe d’une lumière qui change) |
-| `montage-direction-artistique` | brief → 3 directions → recommandation → critères | corrigé après chacun des 12 examens (13 → 15/20 ; n°12, 14/20 : test « mon propre système » symétrique, packshot pour public âgé) |
-| `montage-rythme` | rythme, musicalité, durée des plans, détection de coupes | mesure scdet testée en labo ; éprouvé en ateliers 03, 24, 26 (densité qui décroît), **27 (gag de contradiction à l'image près, règle de trois, bouton)**, **29 (montage alterné à deux vitesses de temps, principe d'Interstellar : compteur visible, retours sur le tic, final par la règle rompue)** ; timing comique sitcom (fiche) |
-| `montage-motion-design-principes` | sens du mouvement, typo animée, clichés | v1, nourri par atelier 01 |
-| `montage-son-et-emotion` | silence, sound design, rapport image/son | recettes forme d'onde / synthèse testées ; silence-gag éprouvé (atelier 27) |
-| `montage-loudness-livraison` | loudness, normes plateformes, livraison ffmpeg, bandes dans les noirs, 5.1 et downmix | recettes testées en labo (mesure + gain ; 10 bits, grain non universel (s12) ; Lo/Ro, Lt/Rt Hilbert, mono) |
-| `montage-after-effects` | easing, graphe de vitesse, expressions, rigs | v1, expressions testées en syntaxe/logique Node uniquement |
-| `montage-ia-generative` | état de l'art IA vidéo/image/son daté 2026-10, clichés, usages | v1 théorique, sources datées |
-| `montage-grammaire` | raccords, 180°, dialogue, J/L-cut, ellipse, montage son de base | 180° mesuré en labo, franchissement volontaire éprouvé (atelier 11), J-cut éprouvé (atelier 08) ; le reste théorique |
-| `montage-couleur-et-intention` | palette, intention d'étalonnage, clichés couleur, souvenir par le support | éprouvé en ateliers 05, 08 et 10 (froid dans un monde chaud, 20 rendus mesurés) |
-| `montage-references` | principes transférables tirés de `culture/`, tensions entre principes | 74 fiches (dernière : Shorts narratifs verticaux, session 24) |
-| `montage-kinetic-editing` | montage social haute rétention, SFX hiérarchisés, hook, photosensibilité, transitions tournées (whip pan) | calage, photosensibilité et flou aux bords d'un plan (whip) testés en labo, éprouvé en ateliers 02 et 09 |
-| `montage-couleur-pipeline` | espaces, log, LUT, ACES, OCIO | v1, conversions et LUT testées en labo |
-| `montage-blender` | Blender pour la vidéo : plateau multi-caméras, EDL JSON, rendu CLI, corps rigides (déterministes), caméra portée | testé en ateliers 01-08 |
-| `montage-preparation-tournage-vfx` | préparer un tournage à effets : méthode, réglages caméra, fond vert, plaques, checklist, infrarouge, **flou optique contre flou de post, courbe d'une bascule de point, reflet dans une vitre, coupe cachée par un cache (union des silhouettes, vie hors cache figée ; pièce 30)** | méthode théorique ; flou, mise au point et reflet **testés dans Blender** (pièce 28, session 23) |
-| `montage-resolve` | nodes, RCM, Deliver, API de scripting Python, Fusion (quand plutôt qu'AE, titres maison), Fairlight (normalisation, Voice Isolation) | théorique (README 21.0.4 et guides 20 lus, rien exécuté) |
-| `montage-formats` | narration par format : pub, vertical, clip, corporate (dispositifs pour l'humain), doc, fiction, teaser | v1 synthèse (session 3) |
-| `montage-youtube` | YouTube long format : divertissement et rétention, face caméra, essai vidéo, doc explicatif, vulgarisation, vlog, motion de chaîne, cultures d'edit ; promesse titre + miniature, relances par minute, specs (chapitres, écran de fin, miniatures) | v1 (session 17) : 9 fiches sourcées (secondaires), validateur de chapitres et banc de miniatures testés en labo |
-| `montage-premiere` | Premiere (v26, 2026) : projet, proxies, multicam, musique, sous-titres, couleur, Generative Extend, export, trims, UXP | v1 théorique (session 3, recherche datée) |
-| `montage-workflows` | passages entre logiciels, EDL/XML/AAF/OTIO, poignées, pipelines types par format | formats d'échange (OTIO), VFR et proxies ffmpeg testés en labo (session 8) ; comportement des logiciels théorique  ; recadrages, nests, stéréo testés côté fichiers (session 11) |
-| `montage-pilotage-mcp` | méthode d'agent pour piloter AE/Premiere/Blender/Resolve : projet de test, un geste = une image, unités, rien de payant | v1 théorique (session 3) |
+| `montage-expert` | rôle, consultation, autonomie, sommaire | méthode |
+| `montage-direction-artistique` | brief → 3 directions → recommandation ; test « mon propre système », maquetter la direction écartée | éprouvé par 13 examens |
+| `montage-regard` | juger une version : grille, méthode de visionnage, 28 règles | `[ÉPROUVÉ EN MAQUETTE]` |
+| `montage-references` | principes tirés des œuvres et des goûts de l'utilisateur (Ziak, Interstellar, Joker, EGO) | `[SOURCÉ]` |
+| `montage-rythme` | où et quand couper, durées, respiration, calage musical, timing comique | `[SOURCÉ]` + maquettes |
+| `montage-grammaire` | raccords (dont mouvement), 180°, J/L-cut, ellipse, jump cut (définition) | `[THÉORIQUE]` + maquettes |
+| `montage-son-et-emotion` | intention sonore, silence, hors champ, musique avec / contre | `[SOURCÉ]`, jamais écouté |
+| `montage-motion-design-principes` | quoi animer et pourquoi, lisibilité du texte | maquettes |
+| `montage-couleur-et-intention` | sens de la couleur, look, faut-il un teal & orange | maquettes |
+| `montage-couleur-pipeline` | espaces, log, LUT, ordre des transformations | `[TESTÉ EN LABO]` |
+| `montage-preparation-tournage-vfx` | préparer un tournage à effets, capter la lumière (plaques allumée / éteinte, écrans) | maquettes + théorique |
+| `montage-formats` | structure par format, Shorts narratifs | `[SOURCÉ]` |
+| `montage-youtube` | YouTube long, face caméra (jump cut, punch-in), rétention en minutes, packaging | `[SOURCÉ]` |
+| `montage-kinetic-editing` | format court vertical : SFX, captions, transitions, photosensibilité | labo + maquettes |
+| `montage-loudness-livraison` | cibles, specs et contrôle des livrables | `[TESTÉ EN LABO]` |
+| `montage-workflows` | échanges de fichiers, proxies, VFR, interpolation | `[TESTÉ EN LABO]` côté fichiers |
+| `montage-after-effects` | comment animer : easing, expressions | expressions testées hors AE |
+| `montage-premiere` | procédures dans Premiere | `[SOURCÉ]`, version 26.5 non confirmée |
+| `montage-resolve` | nodes, RCM, Deliver, API Python | `[THÉORIQUE]` |
+| `montage-blender` | rendu CLI, plans 3D pour le montage | labo + maquettes |
+| `montage-ia-generative` | choisir un outil génératif, AI Act ; état de l'art au 2026-10-10 | `[SOURCÉ]`, rien testé sauf RIFE |
+| `montage-pilotage-mcp` | méthode d'agent commune aux logiciels | `[THÉORIQUE]` |
 
 ## Ressources du dépôt
 - `culture/` : fiches d'œuvres (montage, title design, couleur, goûts de l'utilisateur : Interstellar, Joker, Ziak ; clips et pubs : Murai, Honda « Cog » ; IA).
@@ -82,4 +84,5 @@ Un artiste de la post-production avant d'être un technicien. Je sais **pourquoi
   - une coupe à l'image près (bande-film image par image + enveloppe du son, repères mot-clé / coupe / réaction) : `atelier/27-jamais/bande.py` ;
   - lisibilité d'un objet flou (corrélation à l'échelle de l'objet, pas variance du laplacien) : `atelier/28-flou-net/CRITIQUE.md` (code en v2) ;
   - qualité d'un ralenti interpolé contre vérité terrain : `labo/interpolation/` (`compare.sh`, `analyse.py`, `zones.py`, `rife60.py`).
-- `PLAN-TESTS-MCP.md` : ce qui reste à valider sur les vrais logiciels.
+- `PLAN-TESTS-MCP.md` : ce qui reste à valider sur les vrais logiciels (phase 3).
+- `PHASE-2-BESOINS.md` : vidéos attendues et méthode pour analyser une vraie vidéo (phase 2).

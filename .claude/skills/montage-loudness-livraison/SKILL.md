@@ -1,6 +1,6 @@
 ---
 name: montage-loudness-livraison
-description: À utiliser au mixage final et à l'export, dès qu'il faut « caler le son », « mettre aux normes », viser des LUFS/LKFS, respecter l'EBU R128 (-23), l'ATSC A/85 (-24), un true peak (dBTP), un LRA, ou livrer un master pour YouTube, Instagram, Reels, TikTok, Spotify, la TV, Netflix ou le cinéma. Couvre les specs de livraison (H.264, yuv420p, faststart, AAC 48 kHz, vertical 9:16, tags couleur BT.709), la normalisation loudnorm en deux passes et la vérification avec ffmpeg/ffprobe. Mots-clés : son trop fort ou trop faible, la plateforme baisse mon son, PAD, prêt-à-diffuser, QC, export final, livrable.
+description: À utiliser au mixage final et à l'export, dès qu'il faut « caler le son », « mettre aux normes », viser des LUFS/LKFS, respecter l'EBU R128 (-23), l'ATSC A/85 (-24), un true peak (dBTP), un LRA, ou livrer un master pour YouTube, Instagram, Reels, TikTok, Spotify, la TV, Netflix ou le cinéma. Couvre les specs de livraison (H.264, yuv420p, faststart, AAC 48 kHz, vertical 9:16, tags couleur BT.709), la normalisation loudnorm en deux passes et la vérification avec ffmpeg/ffprobe. Mots entendus : « c'est moins fort que les autres vidéos », « la plateforme baisse mon son », « c'est aux normes PAD ? », « fais-moi le master Insta », QC, livrable.
 ---
 
 # Loudness et livraison
