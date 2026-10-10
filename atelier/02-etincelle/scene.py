@@ -30,8 +30,8 @@ def obj(o, m): o.data.materials.append(m); return o
 sol = mat("sol", (0.015, 0.018, 0.018), 0.3, 0.35)
 chrome = mat("chrome", (0.7, 0.75, 0.75), 1.0, 0.12)
 noir = mat("noir_mat", (0.02, 0.02, 0.02), 0.0, 0.5)
-bois = mat("bois", (0.12, 0.09, 0.06), 0.0, 0.7)
-tete = mat("tete", (0.10, 0.025, 0.02), 0.0, 0.6)
+bois = mat("bois", (0.045, 0.032, 0.022), 0.0, 0.75)
+tete = mat("tete", (0.06, 0.012, 0.01), 0.0, 0.85)
 
 bpy.ops.mesh.primitive_plane_add(size=60); obj(bpy.context.object, sol)
 
@@ -80,11 +80,11 @@ for i in range(3):
 # Allumette (en (-3, 0.0)) : tête sombre, puis feu à IGN
 bpy.ops.mesh.primitive_cylinder_add(radius=0.025, depth=0.9, location=(-3, 0.5, 0.45)); obj(bpy.context.object, bois)
 bpy.ops.mesh.primitive_uv_sphere_add(radius=0.05, location=(-3, 0.5, 0.92)); bpy.ops.object.shade_smooth()
-th = obj(bpy.context.object, tete)
+th = obj(bpy.context.object, tete); th.scale = (0.75, 0.75, 1.35)  # tête d'allumette oblongue, pas une sucette
 b = th.data.materials[0].node_tree.nodes["Principled BSDF"]
 b.inputs["Emission Color"].default_value = (1.0, 0.35, 0.06, 1)
 s_em = b.inputs["Emission Strength"]
-for f, v in [(IGN - 1, 0), (IGN, 8), (IGN + 3, 2.5), (IGN + 6, 3.5), (IGN + 30, 3)]:
+for f, v in [(IGN - 1, 0), (IGN, 4), (IGN + 3, 1.2), (IGN + 6, 1.6), (IGN + 30, 1.4)]:
     s_em.default_value = v; s_em.keyframe_insert("default_value", frame=f)
 bpy.ops.object.light_add(type="POINT", location=(-3, 0.5, 1.02)); feu = bpy.context.object
 feu.data.color = (1.0, 0.45, 0.12); feu.data.shadow_soft_size = 0.04
@@ -99,7 +99,7 @@ fb.inputs["Emission Color"].default_value = (1.0, 0.55, 0.15, 1)
 fl.data.materials.append(fm)
 for f, sc_ in [(IGN - 1, 0.0), (IGN, 1.6), (IGN + 4, 1.0)]:
     fl.scale = (sc_, sc_, sc_); fl.keyframe_insert("scale", frame=f)
-fb.inputs["Emission Strength"].default_value = 12
+fb.inputs["Emission Strength"].default_value = 3.5
 
 def cam(name, loc, target, lens):
     bpy.ops.object.camera_add(location=loc); c = bpy.context.object; c.name = name; c.data.lens = lens
@@ -108,9 +108,9 @@ def cam(name, loc, target, lens):
 CAMS = {
     "pendule": cam("pendule", (0.6, -2.4, 0.35), (0, 0, 0.8), 45),
     "cube": cam("cube", (3.7, -2.0, 0.2), (3, 0, 0.45), 35),
-    "spheres": cam("spheres", (0.4, -4.0, 0.12), (-0.5, -2.5, 0.2), 24),
+    "spheres": cam("spheres", (0.6, -5.6, 0.35), (0.0, -2.5, 0.18), 35),
     "allumette": cam("allumette", (-3.25, -0.6, 0.95), (-3, 0.5, 0.85), 85),
-    "large": cam("large", (-2.2, -3.6, 1.1), (-2.6, 0.4, 0.55), 30),
+    "large": cam("large", (-2.45, -2.3, 0.75), (-2.85, 0.5, 0.6), 30),
 }
 for c, a, b_ in jobs:
     sc.camera = CAMS[c]; sc.frame_start, sc.frame_end = a, b_

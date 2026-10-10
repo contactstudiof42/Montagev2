@@ -123,8 +123,9 @@ for _ in range(5):  # gain + limiteur sur-échantillonné, itéré (recette R6 d
 vf = [f"scale=540:960:flags=lanczos",
       f"scale=600:1066,crop=540:960:x='30+22*sin((n-{IGN})*2.9)*exp(-(n-{IGN})/3)*gte(n,{IGN})':y='53+22*cos((n-{IGN})*3.7)*exp(-(n-{IGN})/3)*gte(n,{IGN})'",
       f"drawbox=c=0xFFE8C0:t=fill:enable='eq(n,{IGN})'"]
+if V >= "v2": vf.append("noise=c0s=4:allf=t")  # grain σ≈2/255 : leçon de labo/encodage (bandes dans les noirs)
 for a, b, mot in [(0, 14, "ATTENDS"), (15, 29, "L’ÉTINCELLE")]:
-    vf.append(f"drawtext=fontfile={FONT}:text='{mot}':fontsize='if(eq(n,{a}),92,76)':fontcolor=0xE8F4F0:borderw=5:bordercolor=black@0.8:x=(w-tw)/2:y=h*0.66:enable='between(n,{a},{b})'")
+    vf.append(f"drawtext=fontfile={FONT}:text='{mot}':fontsize='if(eq(n,{a}),70,58)':fontcolor=0xE8F4F0:borderw=5:bordercolor=black@0.8:x=(w-tw)/2:y=h*0.80:enable='between(n,{a},{b})'")
 out = os.path.join(REND, f"etincelle_{V}.mp4")
 run(["ffmpeg", "-y", "-v", "error", "-framerate", str(FPS), "-i", os.path.join(SEQ, "%04d.png"), "-i", wn, "-vf", ",".join(vf),
      "-c:v", "libx264", "-crf", "18", "-pix_fmt", "yuv420p", "-c:a", "aac", "-b:a", "192k", "-movflags", "+faststart",
