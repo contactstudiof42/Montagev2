@@ -34,3 +34,9 @@ Planches : `v1-planche.png` (A-D), `v2-planche-DE.png` (D, E). Coupe à l'image 
 | E raccordé au tournage | 1,5 |
 - La post rattrape **la lumière globale** (un gain) et **le déplacement de caméra** (un recadrage) : l'écart tombe de 62 %. Elle ne rattrape pas ce qui **vit** dans le décor : le résidu de H se concentre dans le quart haut-gauche (l'horloge : trotteuse décalée de 37 s ; le reste du résidu, plus étendu qu'une aiguille, n'est pas entièrement expliqué : probablement le cadran écrêté par le gain et la compression). Il faudrait une plaque propre et une roto de l'horloge, ou l'avoir retirée au tournage.
 - Règle de devis : sur une coupe cachée, **une lumière qui bouge coûte un gain, une caméra qui bouge coûte une stabilisation, un élément vivant dans le champ coûte une roto** ; le retirer au tournage ne coûte rien.
+
+## v4 — E + flou de bougé du torchon (I ; `v4-zoom-coupe-EI.png`, images 59 à 65, E en haut, I en bas)
+- Obturateur 180° simulé (5 sous-images sur une demi-image) : le torchon, à ~18 px par image, prend des bords semi-transparents d'environ 9 px. À l'image de coupe (62), il couvre toujours tout : scdet 0,1, écart hors objet 1,5, comme E.
+- Le flou ne casse pas la coupe **parce que la marge du cache dépasse la longueur du flou** ; avec un torchon plus juste, la plante aurait transparu dans le bord flou. Règle : **marge du cache ≥ vitesse du cache × durée d'obturation** (ici 18 px/image × ½ = 9 px).
+- À l'œil, I est plus naturel (un vrai geste flou) et le bord flou empêche de fixer la limite du cache. Je garde I comme référence de mouvement, E comme référence de géométrie.
+- Une tentative de mesure de « fuite » dans la zone de l'objet (différence 61 → 62) est inutilisable : le mouvement du torchon lui-même domine (témoin 60 → 61 à 17-20). Jugé à l'œil sur le zoom.
