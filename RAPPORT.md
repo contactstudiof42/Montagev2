@@ -1,15 +1,15 @@
 # RAPPORT — Phase 1 (cloud)
 
-## SYNTHÈSE (réécrite à chaque session — dernière : session 1, 2026-10-09)
+## SYNTHÈSE (réécrite à chaque session — dernière : session 2, 2026-10-10)
 
 ### Mon point de vue artistique actuel
-Je défends un travail **réduit à une idée** (un concept, un signe — Saul Bass), où **le mouvement a une cause** et porte sur le paramètre qui raconte, pas sur le premier venu (échelle, opacité). J'arbitre par l'émotion avant la continuité (Murch), et je règle le rythme sur l'état intérieur, pas sur l'action (Schoonmaker). J'évite la symétrie mécanique, le carton centré qui zoome, le *drone* de tension, le look « bande-annonce » de l'IA.
-Ce qui a changé cette session : j'ai appris à me méfier de mes impressions sur une planche réduite (un faux diagnostic de bruit, démenti par la mesure). En atelier, j'ai corrigé un excès (v1 : un « pulse » de 22 %) par un manque (v2 : 6 %, invisible). La vraie correction a été de **déplacer** le mouvement vers un autre paramètre (l'interlettrage qui se resserre : un corps qui retient son souffle). C'est ma leçon la plus nette.
+Je défends un travail **réduit à une idée**, où **le mouvement a une cause** et où chaque plan est relié au suivant par autre chose que le tempo. J'arbitre par l'émotion avant la continuité (Murch). En couleur, je garde un environnement bas et froid et une seule chaleur méritée (vos goûts : Joker, Ziak).
+**Ce qui a changé cette session** : la pièce 02 m'a appris que **le kinetic editing donne l'énergie, mais que c'est la cause entre les plans qui donne le sens**. Jusqu'à la v4, mes plans (pendule, cube, billes, allumette) défilaient bien en rythme, mais ce n'était qu'une suite d'objets. En v5, le pendule, qui représente le temps, frotte l'allumette à l'apogée de son balancement. La même accélération est devenue une montée, et le suspense vient de la physique (le pendule ralentit en haut de sa course), pas d'un effet. J'ai aussi appris à **mesurer un parti pris de couleur** (% de pixels chauds par image), comme on mesure une loudness. Enfin, j'ai désormais une limite à l'esprit : ce que je ne peux pas juger sans voir le mouvement (durée du silence, ressenti des SFX).
 
 ### Niveau par domaine (confiance : faible / moyenne / bonne)
 | Domaine | Niveau | Confiance | Commentaire |
 |---|---|---|---|
-| Regard / autocritique | méthode écrite, appliquée 4 fois | moyenne | grille éprouvée sur une seule pièce |
+| Regard / autocritique | méthode écrite, appliquée sur 2 pièces (12 versions) | moyenne à bonne | ajout du critère « liaison » et de la planche « 1re image de chaque plan » |
 | Direction artistique | méthode écrite, éprouvée par l'examen n°1 (13/20) | faible à moyenne | audace insuffisante, clichés de catégorie non vus → méthode corrigée |
 | Culture montage / title design / couleur | 10 fiches + 3 fiches couleur + 1 fiche IA | moyenne | sources secondaires surtout, faits incertains listés en fin de fiche |
 | Rythme | principes + mesure des coupes | moyenne | pas encore d'exercice d'atelier |
@@ -18,10 +18,13 @@ Ce qui a changé cette session : j'ai appris à me méfier de mes impressions su
 | Loudness / livraison | recettes testées en labo | bonne | méthode mesure + gain validée à 0,0-0,2 LU |
 | After Effects | expressions testées (syntaxe/logique Node) | moyenne | comportement réel AE non vérifié |
 | IA générative | état de l'art daté 2026-10 | moyenne | rien testé, info volatile |
-| Blender | rendu en ligne de commande maîtrisé pour l'atelier | moyenne | pas encore de skill dédié |
+| Blender | plateau multi-caméras + EDL JSON, rendu CLI maîtrisé | moyenne à bonne | skill `montage-blender` v1 ; flamme, simulation et Eevee non testés |
 | Couleur (intention) | principes + 3 fiches | moyenne | pas encore éprouvé en atelier |
 | Couleur (pipeline) | conversions et LUT testées (colour-science 0.4.7, OCIO 2.6) | moyenne à bonne | pas de vrai rush log testé |
-| Resolve, Premiere, tournage VFX | — | — | à venir |
+| Resolve | `montage-resolve` v1 : nodes, RCM, API de scripting (README 2022-2023) | faible à moyenne | rien exécuté ; versions 19-20 à lire |
+| Encodage / bandes | labo testé : 10 bits, grain σ≈2 | bonne | ré-encodage plateforme simulé, pas réel |
+| Kinetic editing | skill + labo + pièce 02 en 6 versions | moyenne à bonne | ressenti des SFX non jugé à l'oreille |
+| Premiere, tournage VFX | — | — | à venir |
 
 ### Œuvres et auteurs analysés (fiches dans `culture/`)
 - **Walter Murch** (*In the Blink of an Eye*) : l'émotion gagne les arbitrages ; couper à la fin d'une pensée ; le son porte le raccord.
@@ -37,6 +40,8 @@ Ce qui a changé cette session : j'ai appris à me méfier de mes impressions su
 - **Vittorio Storaro** : une couleur = un état, qui évolue avec le récit ; le noir est un outil.
 - **Christopher Doyle / Wong Kar-wai** : la couleur dit ce que les personnages taisent ; un seul rouge saturé porté par le décor.
 - **Roger Deakins** : une couleur par lieu ou chapitre, une source crédible pour chaque teinte, la retenue.
+- **Hiro Murai, « This Is America »** (nouveau) : ne pas monter le choc ; la coupe prévient et amortit, un plan continu expose le spectateur. Le pôle opposé du kinetic.
+- **Honda « Cog »** (nouveau) : quand la preuve est l'argument, ne pas couper (et cacher l'unique raccord dans une sortie de champ) ; les sons des objets font la bande-son. A directement corrigé la pièce 02.
 - **IA** (`culture/ia-oeuvres-remarquables.md`) : *Total Pixel Space*, *Ancestra*, *The Hardest Part* (Washed Out / Paul Trillo), contre-exemple Coca-Cola : l'IA convainc quand le procédé est le sujet.
 
 ### Atelier
@@ -49,6 +54,13 @@ Ce qui a changé cette session : j'ai appris à me méfier de mes impressions su
   - v6 : j'ai corrigé un « bruit de rendu »… qui n'existait pas. La mesure a montré que les taches venaient de l'encodage H.264 du dégradé (`v5-v6-detail-fond.png`).
   Leçon : mesurer avant de corriger. Version de référence : v6 avec le son « silence ».
 
+- **Pièce 02 « Étincelle »** (`atelier/02-etincelle/`, critique dans `CRITIQUE.md`) : vertical 9:16 de 8,9 s, kinetic, dans vos goûts (tic d'horloge à la Interstellar, froid cyan-vert, une seule chaleur à la Ziak). Planches : `v1-planche.png` → … → `v6-planche.png`, plus `v5-allumage.png`.
+  - v1 : 7 plans sur 19 illisibles à leur 1re image (sujet hors cadre, noir, minuscule), whoosh sur des billes invisibles, allumette qui ressemble à une sucette ;
+  - v2-v4 : lisibilité réparée plan par plan (fenêtres recalées sur la cinématique, caméra des billes au ras du sol), règle couleur **mesurée** ;
+  - v5 : changement de conception, **le pendule allume l'allumette** ; le reflet de la flamme sur la boule chromée, le pendule qui continue de battre à côté du feu dans le plan final ;
+  - v6 : référence, 19/19 plans lisibles, 0,14 % de pixels chauds avant l'allumage contre 3,7 % après, -14,2 LUFS / -2,0 dBTP.
+  Reste : vraie flamme, chaîne causale complète, variante en montage macro façon Ziak.
+
 ### Dernier examen créatif
 **N°1 — spot 30 s + vertical 15 s pour une mutuelle (offre jeunes parents)** : `examens/01-mutuelle-jeunes-parents.md`. Recommandation : montage de gestes de nuit en très gros plans, puis bascule vers un plan long de 9 s (le soulagement). **Autocritique : 13/20.**
 - Deux directions sur trois étaient trop proches (réalistes, nocturnes).
@@ -59,7 +71,8 @@ Ce qui a changé cette session : j'ai appris à me méfier de mes impressions su
 
 ### Skills (voir le sommaire dans `.claude/skills/montage-expert/SKILL.md`)
 Artistiques (v1) : `montage-expert`, `montage-regard`, `montage-direction-artistique` (corrigé après examen), `montage-rythme`, `montage-motion-design-principes`, `montage-son-et-emotion`, `montage-references`, `montage-couleur-et-intention`.
-Techniques : `montage-grammaire` (théorique), `montage-loudness-livraison` (testé en labo), `montage-couleur-pipeline` (testé en labo), `montage-after-effects` (testé en syntaxe et logique Node, pas dans AE), `montage-ia-generative` (théorique, daté).
+Plus `montage-kinetic-editing` (calage testé en labo, éprouvé en atelier 02).
+Techniques : `montage-grammaire` (théorique), `montage-loudness-livraison` (testé en labo, + bandes dans les noirs), `montage-couleur-pipeline` (testé en labo), `montage-after-effects` (testé en syntaxe et logique Node, pas dans AE), `montage-ia-generative` (théorique, daté), **`montage-blender`** (nouveau, testé en atelier), **`montage-resolve`** (nouveau, théorique).
 
 ### État de l'art IA générative (au 2026-10-09, sources dans `sources/ia-generative-2026-10.md`, rien testé)
 - Vidéo : Veo 3.1 (MAJ janv. 2026 : 9:16 natif, upscale 4K), Kling 3.0 (févr. 2026, jusqu'à 15 s avec son), Seedance 2.0 (févr. 2026), Runway Gen-4.5 (déc. 2025). **Sora arrêté** selon la page officielle OpenAI (app fermée le 26/04/2026, API annoncée pour le 24/09/2026 ; retrait effectif connu par une seule source secondaire).
@@ -70,7 +83,9 @@ Techniques : `montage-grammaire` (théorique), `montage-loudness-livraison` (tes
 1. Lire l'état des hôtes et les skills fournis par le serveur Higgsfield avant toute action (une liste de noms d'outils `ae_`, `pr_`, `bl_` a été **observée** dans l'environnement le 2026-10-09, non appelée).
 2. AE : comp de test, texte, clés avec easing, export d'images ; puis coller les 11 expressions du labo et comparer aux valeurs Node.
 3. Premiere / Resolve : loudness mesuré par le logiciel contre ffmpeg sur les mêmes WAV (écart attendu ≤ 0,5 LU) ; normalisation à l'export = gain ou compression ?
-4. Blender : refaire la pièce 01 via MCP et comparer aux planches.
+4. Blender : refaire la pièce 01 et la pièce 02 via MCP et comparer aux planches (tests 5 et 13).
+5. Premiere : remonter la pièce 02 depuis sa liste de plans JSON (test 11) ; exports 10 bits et grain contre les bandes (test 12).
+6. **Garde-fou** : les outils de génération Higgsfield (`bl_generate_*`…) peuvent consommer des crédits payants ; ne rien générer sans votre accord explicite.
 
 ### Vos goûts (`GOUTS.md`, créé le 2026-10-09 à votre demande)
 - **Interstellar**, pour le rythme (`culture/interstellar-rythme.md`) : poser une règle du temps et la faire entendre ; un son qui arrache d'une scène à la suivante ; des segments de montage parallèle qui raccourcissent jusqu'au climax. Intégré à `montage-rythme`.
@@ -88,15 +103,17 @@ Techniques : `montage-grammaire` (théorique), `montage-loudness-livraison` (tes
 6. Quels formats faites-vous le plus (pub, réseaux verticaux, corporate, clip) ? C'est là que je concentrerai mes examens.
 7. Une typographie ou une palette que vous détestez ?
 
+8. (nouveau) Pour les pièces dans votre goût : préférez-vous que je pousse la **pièce 02** vers un vrai objet de marque (une allumette = un produit ?), ou que je fasse une **variante en montage macro façon Ziak** du même matériau pour comparer les deux usages ?
+9. (nouveau) Le grain : la mesure montre qu'il protège les noirs des bandes après la compression des plateformes. Est-ce que vous l'aimez visible (texture argentique) ou seulement technique (invisible) ?
+
 ### Autres questions et prochaines priorités
 - Questions : quelles normes de loudness pour vos livraisons TV (charte PAD de quelle chaîne) ? Avez-vous des rushes libres de droits à me donner pour l'atelier ?
 - Prochaines priorités :
-  - atelier « direction A dans le noir » (la piste audacieuse de l'examen) ;
-  - clôture de la pièce 01 ;
-  - pièce 02 spectaculaire et verticale ;
-  - skill `montage-grammaire` ;
-  - atelier couleur « même plan, trois étalonnages » ;
-  - exercice de rythme (même matériau sur trois tempos).
+  - examen créatif n°2 (clip de rap français, montage macro) ;
+  - pièce 02 v7 : vraie flamme, chaîne causale complète, variante façon Ziak ;
+  - atelier « direction A dans le noir » (la piste audacieuse de l'examen n°1) ;
+  - atelier couleur « même plan, trois étalonnages » traduit en arbre de nodes Resolve ;
+  - Premiere (`montage-premiere`) et préparation de tournage VFX.
 
 ---
 
@@ -125,3 +142,19 @@ Techniques : `montage-grammaire` (théorique), `montage-loudness-livraison` (tes
 - **Skills créés** : les 13 listés plus haut, dont `montage-direction-artistique` corrigé après l'examen n°1.
 - **Observation** : un serveur `HIGGSFIELD_MCP` est visible dans l'environnement. Je ne l'ai pas appelé et j'ai noté les noms d'outils dans `PLAN-TESTS-MCP.md` comme hypothèses.
 - **Sources principales** : `sources/culture-session1.md`, `sources/loudness-livraison.md`, `sources/after-effects.md`, `sources/ia-generative-2026-10.md`, `sources/couleur-pipeline.md`. Les faits non vérifiés sont listés en fin de chaque fiche.
+
+### Session 2 — 2026-10-09 23:52 → 2026-10-10 ~00:40 UTC
+- **Démarrage** : le contrôle anti-doublon a d'abord arrêté la session (dernier commit 80 s plus tôt). Vous m'avez confirmé un faux positif et j'ai repris.
+- **Pièce créée** : 02 « Étincelle », de v1 à v6 (Blender 4.2.3 Cycles CPU, sons synthétisés avec numpy, police Inter OFL ; aucun média tiers). Les scripts sont réutilisables : plateau multi-caméras, liste de plans en JSON, rendu des seules images utiles avec cache.
+- **Tests réussis** :
+  - labo encodage (`labo/encodage/`) : le critère de bandes est validé sur une source sans perte (tramage 1,9 contre 5,3 sans tramage) ; le 10 bits x264 donne 1,56 ; un grain σ≈2/255 tient après ré-encodage 8 bits (3,2 contre 5,2) ; le filtre ffmpeg `noise=c0s=4:allf=t` est calibré à σ = 2,3 ;
+  - pièce 02 : loudness -14,2 LUFS / -2,0 dBTP mesurée sur le MP4 ; calage des SFX vérifié dans les mesures ; règle de couleur mesurée.
+- **Tests ratés, avec leur cause** :
+  - le tramage ±1 niveau et `-tune grain` ne protègent pas les noirs des bandes (x264 lisse ce bruit) : ma piste de la session 1 était fausse ;
+  - pièce 02 : deux régressions dues à des fenêtres de source recopiées à la main après un changement de cinématique ;
+  - `pip install` installait numpy pour un autre Python ;
+  - une boucle `until pgrep` se détectait elle-même.
+- **Œuvres analysées** : Hiro Murai « This Is America » (sources : PremiumBeat, entretien du monteur Ernie Gilbert ; The Fader), Honda « Cog » (Campaign, Autotrader, Wikipedia).
+- **Skills créés** : `montage-blender`, `montage-resolve` (README de l'API de scripting, copies 2022 et 2023).
+- **Skills modifiés** : `montage-regard` (critère « liaison », 3 leçons), `montage-kinetic-editing` (sujet lisible à la 1re image, SFX dont la cause est visible, leçon de l'atelier 02), `montage-references` (principe 15b de Murai, tension « monter le choc » / « le laisser arriver »), `montage-loudness-livraison` (bandes dans les noirs), `montage-expert` (sommaire).
+- **PLAN-TESTS-MCP** : tests 11 à 13 et observations du serveur Higgsfield (hôte `bs_*`, procédures « passport » et « audit », risque de crédits payants pour la génération). Le serveur n'a pas été appelé.
