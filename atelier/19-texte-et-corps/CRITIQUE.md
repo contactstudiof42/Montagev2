@@ -40,3 +40,9 @@ rue-vide, large, vitrine, mains, face, porte, rue-vide, escalier.
 4. **Le texte relit une image reprise** : le même plan vide sur deux vers fait le récit à lui seul.
 5. Illustrer oblige à tourner pour le texte et fait répéter les plans : à budget égal, le contrepoint demande **moins** de plans.
 Limite : jugé sur planches, sans musique ni voix ; la scansion (où tombe le vers dans le plan) n'est pas testée : un vers par plan est une simplification.
+
+## v4 — un plan « gestes » pour le vers 3 (échec, `v4-gestes-echec-planche.png`)
+But : remplacer la vitrine (presque arbitraire) au vers 3 par les mains **qui parlent**, pour que le vers 4 (« je les garde fermées ») arrive contre un geste déjà vu.
+- v4a (de côté, source latérale) : le personnage est éclairé comme un mannequin, pas de silhouette ; les bras bougent à peine.
+- v4b (dans l'axe de la source, contre-jour) : la silhouette se lit enfin, mais **le geste reste invisible** : les bras pivotent autour de leur milieu et, de profil, restent **à l'intérieur de la silhouette du torse**.
+- **Leçon** (connue des animateurs, vérifiée ici) : **un geste ne se lit que s'il sort de la silhouette**. Pour filmer des mains qui parlent : contre-jour, et des gestes **qui décollent du corps** (bras écartés, mains au-dessus des épaules), cadrés de trois quarts, pas de profil. Dans Blender : pivot à l'épaule (rig minimal), pas au centre du cylindre. Reporté (BACKLOG 73).

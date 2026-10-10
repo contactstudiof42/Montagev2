@@ -2,10 +2,10 @@
 
 _Lire en premier. Mis à jour à chaque fin de session._
 
-## Où on en est (après la session 13, 2026-10-10 ~10:55 UTC)
+## Où on en est (après la session 13, 2026-10-10 ~11:03 UTC)
 - **Skills (21)** : session 13 : `montage-direction-artistique` (clip : texte et corps, éprouvé en atelier 19), `montage-regard` (règle 19 : sens en contrepoint, espace en continuité), `montage-kinetic-editing` (3g : direction du filé à la coupe, testé en labo).
 - **Culture** : 48 fiches (nouvelle : `culture/clips-illustrer-ou-contredire-paroles.md`, sous-agent).
-- **Atelier** : **19 « Le texte et le corps »** v1-v3 (`atelier/19-texte-et-corps/`, B2 = réf.) ; 18 « Soustraction » (v3).
+- **Atelier** : **19 « Le texte et le corps »** v1-v4 (`atelier/19-texte-et-corps/`, B2 = réf. ; v4 « gestes » = échec documenté) ; 18 « Soustraction » (v3).
 - **Labo** : `labo/kinetic/whip-flot/` (DIS puis vecteurs du codec ; validé sur rendus Blender) ; `labo/paroles/` (lisibilité des paroles incrustées par OCR ; `apt-get install tesseract-ocr tesseract-ocr-fra` : 20 s).
 - **Examens** : n°1 13, n°2 14, n°3 15, n°4 14, n°5 14, n°6 15, n°7 15 /20. **N°8 en session 15 ou 16.**
 
@@ -20,7 +20,7 @@ _Lire en premier. Mis à jour à chaque fin de session._
 - Un serveur MCP nommé `HIGGSFIELD_MCP` est listé dans l'environnement : non appelé (consigne phase 1). Noms observés dans `PLAN-TESTS-MCP.md`.
 
 ## Historique
-- Session 13 — 2026-10-10 10:30 → ~10:55 UTC : pièce 19 « Le texte et le corps » (v1-v3), labo flot optique à la coupe (sous-agent + validation Blender), labo paroles incrustées (OCR), fiche « illustrer ou contredire les paroles » ; PLAN-TESTS 54-56.
+- Session 13 — 2026-10-10 10:30 → ~11:03 UTC : pièce 19 « Le texte et le corps » (v1-v3), labo flot optique à la coupe (sous-agent + validation Blender), labo paroles incrustées (OCR), fiche « illustrer ou contredire les paroles » ; PLAN-TESTS 54-56.
 - Session 12 — 2026-10-10 09:29 → ~10:15 UTC : examen n°7 « Heure creuse » (15/20), labo noir protégé (pièce 17 en 16 bits, fixe / panoramique), pièce 18 « Soustraction » v1-v3, fiche Natasha Braier (sous-agent) ; PLAN-TESTS 52-53.
 - Session 11 — 2026-10-10 08:30 → 08:56 UTC : pièce 16 v4, pièce 17 « dans le noir » (v1-v4), fiches Willis et Young / van Hoytema, labos recadrages / nests / audio dans l'échange (sous-agent) et bercement AE (phase intégrée) ; écrans dans le champ ; PLAN-TESTS 48.
 - Session 10 — 2026-10-10 07:30 → ~07:55 UTC : examen n°6 (15/20), pièce 12 v8, pièce 15 « Deux sonneries de trop », fiche John Lewis, labos vitesses dans l'échange + vérificateur d'EDL, interpolation sur vrais plans CC0 (sous-agent) ; PLAN-TESTS 46-47.

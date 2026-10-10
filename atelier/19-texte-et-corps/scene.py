@@ -1,5 +1,5 @@
 """Pièce 19 : blender -b -P scene.py -- PLAN DOSSIER
-PLAN ∈ large, mains, face, vitrine, porte, escalier, rue-vide. 21 images à 12 i/s (1,75 s = un vers), 480×270, Cycles."""
+PLAN ∈ large, mains, gestes (v4), face, vitrine, porte, escalier, rue-vide. 21 images à 12 i/s (1,75 s = un vers), 480×270, Cycles."""
 import bpy, sys, math, os
 from mathutils import Vector
 a = sys.argv[sys.argv.index("--") + 1:]; plan, out = a[0], a[1]
@@ -63,6 +63,15 @@ elif plan == "mains":    # v2 : de profil, la main descend dans la poche de la c
     boite((0.17, 9.92, 0.62), (0.12, 0.03, 0.14), mat("poche", (0.03, 0.03, 0.04), 0.9))
     lumiere((0.6, 11.2, 1.2), 60, SODIUM, 0.2); lumiere((1.0, 9.0, 0.9), 4, LED)
     camera((1.1, 9.55, 0.78), (0.2, 9.95, 0.72), 70, ouverture=2.0, mise_au_point=0.98)
+elif plan == "gestes":   # v4 : silhouette en contre-jour, de profil, les bras qui parlent (le vers 3 avant que le vers 4 les ferme)
+    p = personnage(0, 12, math.radians(90))
+    bras = [o for o in p.children if abs(o.location.x) > 0.2 and o.location.z > 1.0]
+    for f, (ag, ad) in zip((1, 6, 11, 16, 21), ((-20, 10), (-70, 30), (-35, 75), (-80, 20), (-25, 60))):
+        for o, ang in zip(bras, (ag, ad)):
+            o.rotation_euler = (math.radians(ang), 0, 0); o.keyframe_insert("rotation_euler", frame=f)
+    bpy.ops.object.light_add(type="AREA", location=(0, 16, 2.0)); L = bpy.context.object; L.data.energy = 600; L.data.size = 1.5; L.data.color = SODIUM
+    L.rotation_euler = (math.radians(90), 0, math.radians(180))
+    camera((0.4, 8.0, 1.3), (0, 12, 1.25), 45)   # v4b : dans l axe de la source, contre-jour (v4a de côté : éclairé, pas de silhouette)
 elif plan == "face":     # plan poitrine, regard caméra, léger travelling avant
     personnage(0, 10, 0, yeux=True); lumiere((0.9, 9.0, 2.2), 40, SODIUM); lumiere((-1.2, 9.6, 1.6), 6, LED)
     camera((0, 7.6, 1.62), (0, 10, 1.55), 50, fin=(0, 7.9, 1.62), ouverture=2.0, mise_au_point=2.3)
