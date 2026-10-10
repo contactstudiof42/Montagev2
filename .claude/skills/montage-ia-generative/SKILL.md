@@ -82,6 +82,13 @@ Détail, nuances et sources dans **`etat-de-l-art-2026-10.md`** (même dossier).
 | **Suno** | Musique générée | Accord Warner (25/11/2025) : nouveaux modèles sous licence en 2026, pas d'usage commercial en gratuit ; impasse UMG/Sony (avril 2026, source unique) | 2025-2026 | Decrypt, MarketScreener, Opus (secondaire) |
 | **Udio** | Remix de catalogues sous licence | Plateforme fermée : **pas d'export ni d'usage externe** | 2025-2026 | Decrypt |
 
+### Vérification du 2026-10-10 (détail et sources : `sources/ia-verif-2026-10-10.md`)
+- **Sora** : arrêt de l'API le 24/09/2026 inscrit dans les dépréciations *passées* d'OpenAI (page officielle), sans remplaçant ; désactivation effective très probable (presse), non vue directement.
+- **AI Act art. 50** : confirmé applicable depuis le 02/08/2026, **non reporté** par l'Omnibus numérique (Règlement (UE) 2026/1744, JO du 24/07/2026) ; seul le marquage machine (50(2)) des systèmes déjà sur le marché a jusqu'au 02/12/2026 ; signalement des deepfakes (50(4)) sans délai. Code de pratique sur le marquage publié le 10/06/2026. Sources : cabinets d'avocats (secondaires), texte EUR-Lex non relu.
+- **Modèles** : Veo reste en 3.1 ; Kling 3.0 (05/02/2026) ; Seedance 2.0 ; Runway Gen-4.5 sans successeur ; Luma Ray 3.2 (06/2026, à confirmer) ; MiniMax Hailuo 3.0 (31/07/2026, à confirmer). **Correction** : chez Wan, les poids ouverts s'arrêtent à 2.2 (Wan 3.0 = API fermée) ; open source vivant : **LTX-2 / 2.3** (Lightricks, 2026). Midjourney vidéo toujours V1.
+- **Logiciels** : Premiere 26.2 confirmée ; panneau « Generative Media » en bêta (IBC 2026 : Firefly, Veo, Runway, Kling, Luma dans la timeline). Resolve 21.0 final le 02/06/2026 ; 21.1 (IntelliTrack, Magic Mask 2.0) annoncée en 09/2026 par une seule source.
+- **Higgsfield** : agrégateur de modèles tiers + modèles maison (Soul, image) ; plugin Adobe AE + Premiere présenté le 21/07/2026 ; serveur MCP officiel (« bridge ») ; add-on Blender piloté par MCP. Les générations y sont **payantes (crédits)** : jamais sans accord explicite.
+
 ## 6. Workflows hybrides types [THÉORIQUE]
 
 Aucun de ces workflows n'a été testé ici. Ce sont des schémas à valider sur un vrai projet.
