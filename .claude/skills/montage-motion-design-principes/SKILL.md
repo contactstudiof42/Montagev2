@@ -24,6 +24,8 @@ Version 1 (session 1, 2026-10-09). Sources : fiches `culture/saul-bass-generique
 
 - **Explicatif : un objet qui change de rôle montre des rapports, des pictogrammes montrent des noms** [TESTÉ EN ATELIER, pièce 21, session 17] : quand l'argument est une proportion, une comparaison ou une cause, il doit être **dans la transformation** (le cercle de 24 h dont la part de 3 h sort et devient un écran) ; prévoir **la trace du départ** (le trou), souvent plus forte que l'arrivée. Caler chaque transformation sur le **début de la phrase** qui la nomme (débuts mesurés sur la voix définitive, silencedetect) : sur une grille fixe, l'image arrivait 0,4-0,6 s avant le mot et le contredisait. **Mouvement de repos** : sous le seuil de l'événement (une aiguille qui fait un tour en 1,7 s raconte ; un tour en 25 s fait seulement vivre le plan).
 
+8. **Un changement d'échelle a besoin d'un témoin** (pièce 22) : un recul, un zoom cosmique ou une multiplication ne se ressentent que si un repère de taille connue (l'objet de départ, une silhouette) reste dans le cadre. Sans témoin, le spectateur perd la mesure et l'infini devient une texture. [TESTÉ EN ATELIER]
+
 ## Clichés à refuser (sauf parti pris assumé)
 - Le zoom lent continu sur un carton centré.
 - Les particules et le glow « pour faire riche ».

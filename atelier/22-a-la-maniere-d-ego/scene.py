@@ -13,7 +13,7 @@ bpy.ops.wm.read_factory_settings(use_empty=True)
 sc = bpy.context.scene
 sc.render.engine = "CYCLES"; sc.cycles.samples = 8; sc.cycles.use_denoising = True
 sc.render.resolution_x, sc.render.resolution_y = 480, 270
-sc.view_settings.view_transform = "AgX"; sc.view_settings.exposure = 0.0 if NOIR else 0.6; sc.view_settings.look = "AgX - Base Contrast" if not NOIR else "AgX - High Contrast"
+sc.view_settings.view_transform = "AgX"; sc.view_settings.exposure = 0.0 if NOIR else (1.0 if "--v2" in argv else 0.6); sc.view_settings.look = "AgX - Base Contrast" if not NOIR else "AgX - High Contrast"
 COLS, ROWS, DX, DY = 241, 260, 1.0, 1.25
 
 
@@ -88,8 +88,12 @@ def look(pos, tgt):
 def recul(u):
     """u 0→1 : distance exponentielle 2,4 m → 90 m ; la visée glisse de la chaise vers le fond du champ."""
     dist = 2.0 * (90 / 2.0) ** u
+    if "--v2" in argv:  # v2 : la chaise 1 reste dans le bas du cadre tout le recul ; départ moins plongeant (assise lisible)
+        dist = 2.6 * (90 / 2.6) ** u
     pitch = math.radians(62 - 34 * u)                       # plongée qui se relève vers l'horizon
     tgt = Vector((0, -0.35 - 28 * u ** 2, 0.5 * (1 - u)))
+    if "--v2" in argv:
+        pitch = math.radians(38 - 12 * u); tgt = Vector((0, -0.6 - (2 + 0.25 * dist) * u, 0.45 * (1 - u)))
     pos = tgt + Vector((0.25 * (1 - u), math.cos(pitch) * dist, math.sin(pitch) * dist))
     look(pos, tgt)
     cam.data.lens = 50 - 15 * u
@@ -97,6 +101,7 @@ def recul(u):
 
 if FINAL:
     look((7.5, 6.0, 1.1), (-3.0, -6.0, 0.6)); cam.data.lens = 40
+    if "--v2" in argv: look((5.5, 9.0, 1.0), (-4.5, -4.0, 0.9)); cam.data.lens = 40   # silhouette au tiers droit, vide devant elle
     sc.render.filepath = f"{OUT}/final.png"; bpy.ops.render.render(write_still=True)
 else:
     for i in range(N):
