@@ -16,7 +16,7 @@ Règle : alterner ART et TECH. Réalimenter dès qu'il reste moins de 10 sujets 
 2. [~] [TECH] Couleur technique → `montage-couleur-pipeline` v1 (labo session 1 : conversions exactes, LUT ffmpeg = Python). Reste : expliquer l'écart OCIO/colour de 2e-3 sur LogC3/S-Log3 ; tester un vrai rush log CC0.
 3. [x] [ART] Couleur et intention : atelier 05 « Trois étalonnages » fait (session 5, 6 versions + test de scintillement, `atelier/05-trois-etalonnages/`). Reste [ ] : refaire depuis un EXR linéaire (latitude) ; « souvenir » avec un vrai contexte de montage (contrechamp, voix).
 4. [x] [TECH] Encodage des dégradés sombres testé (session 2, `labo/encodage/`) : tramage ±1 tué par x264, 10 bits = solution master, grain σ≈2 = seule protection après ré-encodage plateforme. Reste [ ] : réappliquer à la pièce 01 (v7 avec grain) et mesurer.
-5. [ ] [TECH] Fondamentaux : grammaire, raccords, 180°, montage son, J-cut/L-cut → skill `montage-grammaire`
+5. [~] [TECH] `montage-grammaire` v1 existe (session 1, théorique). Session 7 : J-cut éprouvé dans l'atelier 08 (le son du souvenir qui précède l'image). Reste : 180° et règle des 30 % mis à l'épreuve dans Blender (champ/contrechamp de deux objets, axe franchi ou non) ; sourcer les durées de J-cut.
 6. [ ] [ART] Atelier rythme : un même matériau monté sur trois tempos (Bass / Gondry / Cooper — cf. `montage-references` B) ; mesure avec scdet
 7. [ ] [TECH] Blender pour la vidéo : skill `montage-blender` (rendu CLI, Cycles vs Eevee headless, compositing, geometry nodes) — base déjà pratiquée dans l'atelier 01 ; tester Eevee en headless
 8. [~] [TECH] DaVinci Resolve → `montage-resolve` v1 (session 2 : nodes, RCM, API d'après le README 2022-2023). Reste : Fusion, Fairlight, README 19-20 (objets Graph ? ColorGroup ?), atelier couleur « même plan, trois étalonnages » traduit en arbre de nodes.
@@ -49,12 +49,19 @@ Règle : alterner ART et TECH. Réalimenter dès qu'il reste moins de 10 sujets 
 30. [x] [TECH] Resolve API 19-21.1 versée dans `montage-resolve` (session 5 ; Graph, ColorGroup, dépréciations, Studio requis en 21.1). Reste [ ] : Fusion, Fairlight par script.
 31. [ ] [ART] Atelier « causalité » et atelier « le montage se retire » : réutiliser la scène de la pièce 06 (table, tasse) comme plateau.
 
-32. [ ] [ART] Atelier « souvenir » (suite d'*Aftersun* et de l'atelier 05) : le même matériau Blender en deux textures (rendu propre contre « caméscope » : 4:3, bruit, balance de blancs fausse, zoom numérique) ; montage où le sens arrive en retard. Critique : la texture suffit-elle à dire « il y a longtemps » là où l'étalonnage seul échouait ?
+32. [~] [ART] (session 7 : pièce 08 « Souvenir », v1-v2, voir `atelier/08-souvenir/CRITIQUE.md`) Atelier « souvenir » (suite d'*Aftersun* et de l'atelier 05) : le même matériau Blender en deux textures (rendu propre contre « caméscope » : 4:3, bruit, balance de blancs fausse, zoom numérique) ; montage où le sens arrive en retard. Critique : la texture suffit-elle à dire « il y a longtemps » là où l'étalonnage seul échouait ?
 33. [ ] [ART] Atelier « inquiétude calme » (principe des *Revenants*) : 3 plans fixes longs d'un lieu ordinaire (pièce 06 : la table, la fenêtre), un seul détail anormal, aucune musique de genre ; tester la durée minimale avant que la lenteur se vide.
-34. [ ] [TECH] Surround en labo sur un vrai mix : passer la pièce 04 ou 06 en 5.1 (présence dans les arrières), mesurer le Lo/Ro et le Lt/Rt mono ; encodeur Lt/Rt avec déphasage de 90° (`aeval`/`afir` Hilbert) au lieu du `pan`.
+34. [x] [TECH] (session 7, synthétique : `labo/surround/`, arrières -10,5 LU en Lo/Ro mono, disparus en Lt/Rt mono même avec Hilbert ; reste [ ] appliquer à un vrai mix de pièce, filtrage 100 Hz-7 kHz de S, décodage Pro Logic) Surround en labo sur un vrai mix : passer la pièce 04 ou 06 en 5.1 (présence dans les arrières), mesurer le Lo/Ro et le Lt/Rt mono ; encodeur Lt/Rt avec déphasage de 90° (`aeval`/`afir` Hilbert) au lieu du `pan`.
 35. [ ] [TECH] Blender : fixer une graine et vérifier que la simulation de la pièce 07 se rejoue à l'identique (déterminisme) ; geometry nodes pour la flamme de la pièce 02.
 
+36. [ ] [ART] Atelier « générique de l'équipe en 10 s » (principe Noé / Tom Kan, `culture/enter-the-void-generique-noe-tom-kan.md`) : cartons Pillow en polices OFL, une rupture de forme par coupe, courbe vers un sommet, **validé par `labo/photosensibilite/flash_check.py`** ; version B une seule police pour comparer.
+37. [ ] [TECH] Photosensibilité : durcir `flash_check.py` (surface locale par blocs, motifs réguliers, HDR Michelson 1/17), le passer sur le clip de Ziak et sur les pièces kinetic (02) ; lire le PDF Ofcom (403 en session 7).
+38. [ ] [ART] Culture : générique et kinetic typography après Noé (Kyle Cooper déjà fait) : *Catch Me If You Can* (Kuntzel + Deygas), *Zombieland*, *Scott Pilgrim* ; et un monteur de bande-annonce (le trailer comme forme kinetic longue).
+39. [ ] [ART] Examen n°5 (session 8) : pub 6 s (bumper) ou documentaire long — inclure une contrainte de livraison 5.1 + mono et une contrainte de photosensibilité.
+
 ## Fait (trace)
+- [x] [TECH] Session 7 : labo photosensibilité (7/7), surround Lo/Ro et Lt/Rt (Hilbert), observation des instructions du serveur Higgsfield
+- [x] [ART] Session 7 : fiche *Enter the Void* (Noé / Kan), pièce 08 « Souvenir »
 - [x] [ART] Session 6 : fiches *Aftersun*, *Les Revenants* ; pièce 07 « Causalité »
 - [x] [TECH] Session 6 : surround et hors champ (sourcé, -4,5 LU revérifié), corps rigides Blender, Eevee sans écran mesuré
 - [x] [ART] Session 5 : atelier 05 « Trois étalonnages » (6 versions), fiches Elastic, ManvsMachine, Buck, Åkerlund, Gavras

@@ -28,6 +28,8 @@ Dans une scène, une ligne imaginaire relie les deux personnages (ou un personna
 ## Dialogue et interview
 - **Champ/contrechamp** : couper sur la **réaction** autant que sur la réplique. Le plus fort d'une scène est souvent le visage de celui qui écoute.
 - **J-cut / L-cut** : décaler image et son de quelques images à quelques secondes ; le dialogue « coule ».
+  - **J-cut de mémoire** [TESTÉ EN ATELIER, pièce 08] : le son du souvenir (souffle de bande, un oiseau) arrive 12 images (0,5 s) avant son image (mesuré : +5 dB à 0,5 s de la coupe) ; on entre dans le passé par l'oreille. Au retour, **pas de L-cut** : couper le son net avec l'image, le silence du présent est le coup.
+  - **Raccord dans l'axe du temps** (pièce 08) : même cadre, deux époques (la tasse, puis le bord vide). Décider s'il est aligné au pixel (effet « magique ») ou décalé (la mémoire qui flotte) : à moitié aligné, il paraît raté.
 - **Interview** : couper à la fin d'une pensée (respiration, regard qui se détourne). Masquer une coupe dans une phrase par un plan de coupe (insert, archive, mains) ou **assumer le jump cut** (avec un léger recadrage de 10-20 % si on a de la marge en 4K) ; ne jamais faire un fondu au milieu d'une phrase, cela crie « coupure ».
 - **Plans de coupe** : les tourner en abondance (mains, détails, lieu) ; ce sont les jokers du montage.
 

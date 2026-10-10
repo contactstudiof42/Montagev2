@@ -23,11 +23,12 @@ def camescope(im, k, date=False):
     a = a.filter(ImageFilter.UnsharpMask(radius=2, percent=90, threshold=0))
     v = np.asarray(a).astype(np.float32) / 255
     v = 0.07 + 0.88 * v                                   # noirs relevés, blancs écrêtés tôt
-    v = v * np.array([1.08, 1.03, 0.86])                  # balance chaude, un peu verte
+    v = v * np.array(E.get("balance", [1.08, 1.03, 0.86]))  # balance chaude, un peu verte (v1)
     # bruit de chrominance : basse fréquence (bruit 45×34 agrandi), opposé sur R et B
-    n = rng.normal(0, 1, (34, 45)).astype(np.float32)
+    gy, gx = E.get("chroma_grille", [34, 45]); ca = E.get("chroma", 0.025)
+    n = rng.normal(0, 1, (gy, gx)).astype(np.float32)
     n = np.asarray(Image.fromarray(n).resize((360, 270), Image.BILINEAR))
-    v[..., 0] += 0.025 * n; v[..., 2] -= 0.025 * n
+    v[..., 0] += ca * n; v[..., 2] -= ca * n
     v += rng.normal(0, 0.012, v.shape[:2])[..., None]     # bruit de luminance fin
     v = np.clip(v, 0, 1)
     img = Image.fromarray((v * 255).astype(np.uint8))

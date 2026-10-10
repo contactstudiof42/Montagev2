@@ -32,6 +32,7 @@ La couleur n'est pas une finition : c'est **un sens**. Avant de toucher une roue
 - **L'étalonnage choisit le registre, le montage donne le sens** (atelier 05) : « constat » et « menace » se lisent sur une image fixe ; « souvenir » se lit comme « brume » tant que rien (montage, voix, son, marqueur de support) ne dit « il y a longtemps ».
 - **Une accentuation qui grandit avec le récit** : une clé prise sur la matière fait croître la chaleur à mesure que l'objet est découvert (0,05 % → 0,45 % → 1,7 %) : l'étalonnage raconte sans effet ajouté.
 - **Neutre ≠ froid** : un « constat » se fait en *annulant* la dominante de la source (mesurer le biais R-B du ciel et du sol), pas en ajoutant du bleu.
+- **Le souvenir passe par le support et le format, puis par le montage** (atelier 08, `atelier/08-souvenir/CRITIQUE.md`) [TESTÉ EN ATELIER] : le même passé, propre en 16:9, se lit « autre moment de la journée » ; en 4:3 entre barres avec une texture caméscope (définition ÷ 2 réaccentuée, noirs relevés, bruit de chroma basse fréquence, balance chaude **modérée** : ×1,04/1,02/0,93 ; à ×0,86 sur le bleu, on tombe dans le filtre jaune), il se lit « vidéo d'avant » dès la première image. **Le changement de format fait plus que la couleur.** Refuser la date incrustée : elle répond à la question que le souvenir doit laisser ouverte.
 
 ## Méthode : de brief à intention couleur
 
