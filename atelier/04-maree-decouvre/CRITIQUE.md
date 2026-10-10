@@ -59,3 +59,7 @@ Défaut technique : la frontière eau/sable est **polygonale** (images 200-220 :
 - Surface (200-220) : la frontière eau/sable est **organique** (défaut de v2b corrigé), mais les rides sont devenues **trop fortes et trop régulières** (tôle ondulée) : la chaîne se perd dedans à l'image 220. Ce que j'ai gagné en crédibilité de la grève, je l'ai perdu en lisibilité du sujet. → v6 : déplacement 0,015 au lieu de 0,04, rides moins régulières (bruit à deux échelles).
 - Volume à 0,35 : image noire (absorption totale) ; à 0,07 : juste. Un volume sous l'eau se règle à l'échelle de la scène (ici quelques mètres de visée).
 - **Référence actuelle : v2b (mystère)** ; v5 est la meilleure version « suspense » mais pas encore livrable (lisibilité de la chaîne à la fin).
+
+## v6 — rides 0,015 à échelle 0,6, volume 0,05, eau plus verte — `v6-planche.png`
+- Image 220 : la chaîne se lit de nouveau sur le sable (rides basses et fines), la frontière eau/sable reste organique. Image 0-40 : fond ridé lisible, teinte un peu plus verte.
+- **Meilleure version « suspense »** ; la référence « mystère » reste v2b. Reste : le plan sous-marin dure 60 images fixes (aucun mouvement : une particule, un reflet qui ondule lui donneraient vie), variante 9:16.

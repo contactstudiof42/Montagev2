@@ -55,7 +55,7 @@ Je défends un travail **réduit à une idée**, où **le mouvement a une cause*
 - **IA** (`culture/ia-oeuvres-remarquables.md`) : *Total Pixel Space*, *Ancestra*, *The Hardest Part* (Washed Out / Paul Trillo), contre-exemple Coca-Cola : l'IA convainc quand le procédé est le sujet.
 
 ### Atelier
-- **Pièce 01 « Respiration »** (`atelier/01-respiration/`) : carton-titre d'apnée de 10 s, 5 versions. Planches : `v1-planche.png` → `v2-planche.png` → `v3-planche.png` → `v4-planche.png` (+ `v4-onde.png` pour le son) → `v5-planche.png`. Critiques notées dans `CRITIQUE.md`. Progression :
+- **Pièce 01 « Respiration »** (`atelier/01-respiration/`) : carton-titre d'apnée de 10 s, 5 versions. Planches : `v1-planche.png` → `v2-planche.png` → `v3-planche.png` → `v4-planche.png` (+ `v4-onde.png` pour le son) → `v5-planche.png` → `v6-planche.png`. Critiques notées dans `CRITIQUE.md`. Progression :
   - v1 : pulse mécanique de 22 % et bug d'apparition (mot noir sur fond bleu) ;
   - v2 : asymétrie juste, mais mouvement devenu invisible ;
   - v3 : mouvement **déplacé** sur l'interlettrage (le mot se resserre pendant l'apnée), fond en profondeur ;
@@ -84,6 +84,7 @@ Je défends un travail **réduit à une idée**, où **le mouvement a une cause*
   - v3 : trois plans ; l'insert sur l'anneau est la plus belle image, mais couper explique au lieu d'inquiéter ;
   - v4 (**à développer, « suspense »**) : ouverture sous l'eau, puis le plan unique ; on attend ce qu'on sait ;
   - v5 : v4 avec un volume sous-marin et une grève plus fine ; la frontière eau/sable devient organique, mais les rides trop fortes noient la chaîne à la fin (lisibilité perdue contre crédibilité gagnée) ;
+  - v6 (**meilleure version « suspense »**, `v6-planche.png`) : rides adoucies, la chaîne se lit de nouveau ; reste à animer le plan sous-marin ;
   - son : le ressac s'éloigne, puis seulement quatre gouttes tombent de la chaise ; -18,4 LUFS / -1,0 dBTP.
 
 ### Dernier examen créatif
@@ -220,7 +221,7 @@ Techniques : `montage-grammaire` (théorique), `montage-loudness-livraison` (tes
 - **PLAN-TESTS-MCP** : tests 14 à 17 (Premiere), observation session 3. Serveur Higgsfield non appelé.
 - **Méthode** : deux sous-agents de recherche (Premiere ; Varda et Jonze) pendant que je faisais l'atelier et le labo. WebFetch bloqué (403) sur helpx.adobe.com : faits Premiere tirés d'extraits de recherche, marqués [INCERTAIN] quand non confirmés.
 
-### Session 4 — 2026-10-10 01:30 → ~02:10 UTC
+### Session 4 — 2026-10-10 01:30 → 02:10 UTC
 - **Démarrage** : dernier commit 41 min plus tôt, pas d'arrêt anti-doublon. Blender 4.2.3 réinstallé (30 s), `opentimelineio` 0.18.1 + adaptateurs (5 s).
 - **Sujets** : [TECH] loudness hors plateformes ; [ART] atelier 04 « Ce que la marée découvre » ; [TECH] labo fondus (méthode 2) ; [TECH] marqueurs de temps importables ; [TECH] `montage-workflows` + labo OTIO ; [ART] culture Marker, Morris, Burtt, Rydstrom ; [TECH] vérification IA datée ; [ART] dédoublonnage regard / motion / références.
 - **Pièce créée** : 04, v1, v2 (ratée), v2b, v3, v4, v5 ; médias tous générés (aucune licence tierce).
