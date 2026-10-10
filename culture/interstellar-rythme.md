@@ -2,7 +2,7 @@
 
 - **Film** : *Interstellar*, 2014, 169 min (Slashfilm).
 - **Réalisation** : Christopher Nolan. **Montage** : Lee Smith (6e film avec Nolan, selon Cinemontage). **Musique** : Hans Zimmer (orgue Harrison & Harrison de 1926 du Temple Church de Londres, joué par Roger Sayer). **Son** : Richard King (supervision du montage son). **Image** : Hoyte van Hoytema.
-- **Format** : environ 60 à 70 min tournées en IMAX 65/70 mm, le reste en 35 mm anamorphique (van Hoytema, Den of Geek). Ratio qui change entre 2,39 et 1,43/1,90 en IMAX.
+- **Format** : environ 60 à 70 min tournées en IMAX 65/70 mm, le reste en 35 mm anamorphique (van Hoytema, Den of Geek et Hollywood Reporter). Ratio qui change entre 2,39 et 1,43/1,90 en IMAX `[NON VÉRIFIÉ]` (valeurs non retrouvées dans les sources lues).
 - **Pourquoi cette fiche** : l'utilisateur aime le film « pour son RYTHME ». On démonte les mécanismes, sans copier le film.
 - **Sources** :
   - Post Magazine, entretien Lee Smith (déc. 2014) : https://www.postmagazine.com/Publications/Post-Magazine/2014/December-1-2014/Interstellar-Editor-Lee-Smith-ACE.aspx
@@ -17,6 +17,9 @@
   - Den of Geek, van Hoytema (IMAX, références NASA) : https://www.denofgeek.com/movies/interview-interstellar-cinematographer-hoyte-van-hoytema/
   - Filmmaker Magazine, son (Richard King) : https://filmmakermagazine.com/?p=88429
   - Slashfilm, durée : https://www.slashfilm.com/how-long-is-interstellar-running-time
+  - Wikipedia, film (169 min, Lee Smith, orgue Harrison & Harrison 1926 du Temple Church, Richard King), consulté le 2026-10-10 : https://en.wikipedia.org/wiki/Interstellar_(film)
+  - Hollywood Reporter, van Hoytema (« about 60-70 minutes » en IMAX, via résumé de recherche), consulté le 2026-10-10 : https://www.hollywoodreporter.com/movies/movie-news/interstellar-cinematographer-dishes-joining-christopher-751398/
+  - Transcription des dialogues (décompte, « Twenty-three years, four months, eight days », « Endurance rotation is 67, 68 RPM »), consultée le 2026-10-10 : https://www.springfieldspringfield.co.uk/movie_script.php?movie=interstellar
 
 ## Ce que l'œuvre cherche à faire ressentir ou comprendre
 
@@ -29,16 +32,16 @@
 
 **Principe général : deux horloges qui ne tournent pas à la même vitesse, et le montage les fait se frotter.** L'espace est « lent » (minutes), la Terre est « rapide » (années). Chaque retour d'une ligne à l'autre rend visible l'écart.
 
-**Séquence 1 — Le départ de la ferme (fin du premier acte, autour de 50 min, à vérifier).**
+**Séquence 1 — Le départ de la ferme (fin du premier acte, autour de 50 min `[NON VÉRIFIÉ]`).**
 - Cooper quitte Murph fâchée. Il monte dans le pick-up, Murph sort en courant et l'appelle. Sur ces images, on entend **un compte à rebours** qui appartient à la scène suivante : c'est un *prélap* sonore (le son de la scène B commence sous la fin de la scène A).
-- Correction du brief : la voix du décompte n'est **pas** celle de Murph. Selon les résumés (GradeSaver, SparkNotes), c'est TARS, qu'on découvre dans le cockpit. Les cris de Murph et le décompte se chevauchent : la fille appelle, la machine compte.
+- Correction du brief : la voix du décompte n'est **pas** celle de Murph. Selon les résumés (GradeSaver, SparkNotes), c'est TARS, qu'on découvre dans le cockpit `[NON VÉRIFIÉ]` (la transcription ne nomme pas le locuteur). La transcription confirme en revanche le chevauchement : « Go for main engine start. T-minus 10… » alterne avec les « Dad! » de Murph jusqu'à « Booster ignition ». La fille appelle, la machine compte.
 - Sur « zéro », coupe franche sur la poussée des boosters. **Aucun plan de transition** (route, ciel, trajet vers la base) : on saute de la ferme au décollage. Le décompte fait office d'ellipse et de pont émotionnel à la fois.
 - Effet : la séparation et le départ deviennent **un seul geste**. Le spectateur n'a pas le temps de « faire son deuil » de la scène d'adieu ; il est éjecté avec Cooper.
 
 **Séquence 2 — La planète de Miller (« Mountains »).**
 - Règle posée par le dialogue juste avant : une heure là-bas = sept ans sur Terre. Une fois la règle dite, **chaque seconde à l'écran devient chère**.
 - La musique de Zimmer, *Mountains*, porte un **tic régulier**. Plusieurs articles disent que chaque tic représente un jour terrestre (No Film School) et qu'il tombe toutes les 1,25 s (Cineworld). Je n'ai trouvé **aucune déclaration de Zimmer ou Nolan** confirmant le 1,25 s : c'est une analyse de fans reprise par la presse.
-- Vérification arithmétique : 7 ans par heure donne un jour terrestre toutes les 3600 / (7 × 365,25) ≈ 1,41 s. Avec le bilan final (23 ans, 4 mois et 8 jours perdus pour un séjour d'un peu plus de 3 h), on tombe vers 1,3-1,4 s. Le 1,25 s est donc **une approximation** : l'idée est juste (un tic ≈ un jour), le chiffre ne l'est pas au centième.
+- Vérification arithmétique : 7 ans par heure donne un jour terrestre toutes les 3600 / (7 × 365,25) ≈ 1,41 s. Avec le bilan final (23 ans, 4 mois et 8 jours perdus, réplique confirmée par la transcription, pour un séjour d'un peu plus de 3 h `[NON VÉRIFIÉ]`), on tombe vers 1,3-1,4 s. Le 1,25 s est donc **une approximation** : l'idée est juste (un tic ≈ un jour), le chiffre ne l'est pas au centième.
 - La vague géante est montrée **d'abord comme une montagne** (on la prend pour un relief), puis révélée : surprise par l'échelle, pas par le montage rapide. Les plans restent assez longs, le stress vient du tic et de l'attente de la vague.
 
 **Séquence 3 — Les messages de 23 ans (retour sur l'*Endurance*).**
@@ -47,11 +50,11 @@
 - Le dernier message, celui de Murph adulte qui a l'âge qu'avait son père au départ, clôt la séquence : la règle physique devient un chiffre émotionnel.
 
 **Séquence 4 — L'amarrage (« No Time for Caution »).**
-- Après l'explosion provoquée par Mann, l'*Endurance* tourne sur elle-même, à environ 67-68 tours/minute selon la réplique de CASE (souvenir du film, à revérifier). Cooper décide d'arrimer quand même.
+- Après l'explosion provoquée par Mann, l'*Endurance* tourne sur elle-même, à « 67, 68 RPM » selon la réplique (« Endurance rotation is 67, 68 RPM », transcription des dialogues). Cooper décide d'arrimer quand même.
 - La musique est un **ostinato d'orgue qui monte par couches** : chaque nouvelle couche fait office de « coupe » sonore. La pulsion musicale régulière donne le tempo aux plans (rotation, cockpit, mains, visages).
-- La règle de point de vue de Nolan : sa préoccupation principale en montage, c'est le point de vue (Cinemontage, lu via résumé). D'après Post Magazine (lu via résumé), Nolan aurait poussé Smith à **se passer des plans extérieurs « de confort »** qu'un monteur utilise d'habitude pour respirer (vaisseau qui s'amarre, Saturne). Les plans extérieurs ressemblent à des caméras fixées sur la coque.
+- La règle de point de vue de Nolan : sa préoccupation principale en montage, c'est le point de vue (Cinemontage, lu via résumé). D'après Post Magazine (relu le 2026-10-10), Nolan a demandé à Smith de monter tout le film « as if you had no exterior shots [of space] » ; Smith note que ces films abusent de ces plans (vaisseaux qui s'amarrent, Saturne) « because you just can't help it ». Le mot « confort » est une glose de la fiche, pas une citation. Les plans extérieurs ressemblent à des caméras fixées sur la coque (observation, `[NON VÉRIFIÉ]`).
 - Le mixage est très fort et des répliques sont **sous** la musique et les effets (l'AP cite précisément l'amarrage). C'est voulu : Nolan dit mettre parfois le dialogue sous les effets pour faire sentir le vacarme (Slashfilm).
-- Observation (à revérifier au visionnage) : les plans extérieurs pris dans le vide sont **silencieux ou réduits à la musique**, alors que l'intérieur hurle. Le contraste intérieur/extérieur est une « coupe » sonore à lui seul.
+- Observation `[NON VÉRIFIÉ]` : les plans extérieurs pris dans le vide sont **silencieux ou réduits à la musique**, alors que l'intérieur hurle. Le contraste intérieur/extérieur est une « coupe » sonore à lui seul.
 
 **Séquence 5 — Le troisième acte en montage parallèle (Mann / Murph / tesseract).**
 - Le film alterne de plus en plus vite : combat avec Mann sur la planète glacée, Murph qui revient à la ferme et met le feu au maïs, puis Cooper dans le tesseract et Murph dans sa chambre d'enfant.
@@ -95,10 +98,10 @@
 ## Points non vérifiés
 
 - **Le tic de 1,25 s** : présent dans des articles de presse grand public et des discussions de fans, jamais confirmé par Zimmer ou Nolan dans ce que j'ai lu. Le calcul donne plutôt ≈ 1,3-1,4 s pour « un jour ». À mesurer sur la piste *Mountains* (tempo en BPM) avant de le citer comme fait.
-- **La voix du décompte** : TARS selon deux résumés d'intrigue (GradeSaver, SparkNotes) ; à confirmer au visionnage. Ce n'est pas la voix de Murph, contrairement au brief.
+- **La voix du décompte** : TARS selon deux résumés d'intrigue (GradeSaver, SparkNotes) ; la transcription ne nomme pas le locuteur. `[NON VÉRIFIÉ]` Ce n'est pas la voix de Murph, contrairement au brief.
 - **Le minutage des séquences** (départ vers 50 min, durée de l'amarrage, etc.) : de mémoire, non mesuré.
 - **ASL** : non trouvé (le film est dans Cinemetrics, chiffre non lu).
 - **Silence des plans extérieurs** : observation à revérifier ; aucune source lue ne le décrit précisément.
-- **Les 67-68 tours/minute** de l'*Endurance* : souvenir de la réplique, non sourcé.
-- **Consigne de Nolan à Smith sur les plans extérieurs** : vient d'un résumé de Post Magazine un peu confus ; Cinemontage (point de vue) n'a pu être lu qu'en résumé. Aucun entretien de Smith lu n'analyse en détail le montage parallèle d'*Interstellar*.
+- **Les 67-68 tours/minute** : vérifié dans la transcription des dialogues (2026-10-10).
+- **Consigne de Nolan à Smith sur les plans extérieurs** : vérifiée dans Post Magazine (2026-10-10) : monter « as if you had no exterior shots » ; Cinemontage (point de vue) n'a pu être lu qu'en résumé. Aucun entretien de Smith lu n'analyse en détail le montage parallèle d'*Interstellar*.
 - **Contraction des segments du troisième acte** : observation d'analyse, pas mesurée plan par plan.

@@ -1,15 +1,23 @@
 # Edgar Wright — le montage comique (Shaun of the Dead, Hot Fuzz, Baby Driver)
 
-- **Auteurs** : Edgar Wright (réalisation, coscénario) ; montage Chris Dickens (*Shaun of the Dead*, *Hot Fuzz*), Paul Machliss et Jonathan Amos (*Baby Driver*, nommés à l'Oscar du montage) ; Simon Pegg / Nick Frost (acteurs, coscénario).
+- **Auteurs** : Edgar Wright (réalisation, coscénario) ; montage Chris Dickens (*Shaun of the Dead*, *Hot Fuzz*), Paul Machliss et Jonathan Amos (*Baby Driver* : nommés à l'Oscar du montage 2018, lauréats du BAFTA du montage) ; Simon Pegg / Nick Frost (acteurs, coscénario).
 - **Années** : *Shaun of the Dead* 2004 ; *Hot Fuzz* 2007 ; *Baby Driver* 2017. Racines : série *Spaced* (1999-2001).
 - **Format** : longs métrages ; on analyse les mini-montages d'actions banales, les raccords sonores et graphiques, et la synchronisation action/musique.
 - **Sources consultées** :
-  - Tony Zhou, *Every Frame a Painting*, « Edgar Wright – How to Do Visual Comedy » (2014), transcription : https://amara.org/subtitles/lJK2dFGSdkTE/en-gb/6/download/Edgar%20Wright%20-%20How%20to%20Do%20Visual%20Comedy.en-gb.vtt ; résumé Open Culture : https://openculture.com/2015/05/the-art-of-making-intelligent-comedy-movies.html
+  - Tony Zhou, *Every Frame a Painting*, « Edgar Wright – How to Do Visual Comedy » (26 mai 2014, d'après Wikipédia), transcription : https://amara.org/subtitles/lJK2dFGSdkTE/en-gb/6/download/Edgar%20Wright%20-%20How%20to%20Do%20Visual%20Comedy.en-gb.vtt ; résumé Open Culture : https://openculture.com/2015/05/the-art-of-making-intelligent-comedy-movies.html
   - Televisual, « Slave to the rhythm: how Baby Driver was edited » : https://www.televisual.com/news/slave-to-the-rhythm-how-baby-driver-was-edited_bid-985/
   - Avid, témoignage Paul Machliss : https://www.avid.com/customer-stories/paul-machliss
   - No Film School, timelines Avid de Baby Driver : https://nofilmschool.com/2018/03/edgar-wright-baby-driver-avid-timelines
   - Rolling Stone, mise en scène musicale de Baby Driver : https://www.rollingstone.com/movies/movie-features/baby-driver-how-edgar-wright-staged-the-crime-movies-musical-action-scenes-252893/
   - Slate, ouverture de Baby Driver : https://www.slate.com/blogs/browbeat/2017/07/14/watch_the_first_scene_of_edgar_wright_s_baby_driver_video.html
+  - Vérification du 2026-10-10 (consultées ce jour) :
+    - Wikipédia (EN), Chris Dickens (monteur de *Spaced*, *Shaun of the Dead*, *Hot Fuzz*) : https://en.wikipedia.org/wiki/Chris_Dickens
+    - Wikipédia (EN), Paul Machliss (nomination à l'Oscar, BAFTA du montage pour *Baby Driver*) : https://en.wikipedia.org/wiki/Paul_Machliss
+    - Wikipédia (EN), Every Frame a Painting (date de l'épisode) : https://en.wikipedia.org/wiki/Every_Frame_a_Painting
+    - JoBlo, origine du film (« Bellbottoms », 22 ans de maturation) : https://joblo.com/?p=195492 ; shots, clip « Blue Song » : https://shots.net/news/view/93603-the-music-video-that-inspired-baby-driver
+    - Ain't It Cool News, entretien Wright (plan du café, 28 prises, graffitis numériques) : https://legacy.aintitcool.com/node/78093
+    - Fandango, « first 6 minutes » : https://www.fandango.com/movie-news/watch-thrilling-first-6-minutes-of-baby-driver-752468
+    - KTNV (critique Scripps), fusillade sur « Tequila » (Button Down Brass) : https://www.ktnv.com/news/national/baby-driver-movie-review-slick-heartfelt-and-a-blast-to-watch
 
 ## Ce que l'œuvre cherche à faire ressentir ou comprendre
 
@@ -30,10 +38,10 @@ Dans *Baby Driver*, l'objectif change : la synchronisation musique/action fait r
 - Entrées et sorties de cadre comiques : un personnage surgit dans le champ à l'endroit inattendu, ou sort de cadre et la caméra le laisse filer.
 
 **Synchronisation sur la musique (Baby Driver)**
-- Wright choisit les chansons pendant l'écriture, des années avant le tournage ; l'idée du film naît de « Bellbottoms » (Jon Spencer Blues Explosion), entendue en 1995, imaginée comme poursuite.
-- Le film est préparé comme une « pièce radiophonique » d'environ 100 minutes (audio du film entier) ; les scènes sont **chorégraphiées et tournées sur les playbacks** : portes, coups de feu, essuie-glaces, pas, tombent sur les temps ou les accents.
+- Wright choisit les chansons pendant l'écriture, des années avant le tournage ; l'idée du film naît de « Bellbottoms » (Jon Spencer Blues Explosion), écoutée dans sa chambre vers 20-21 ans et imaginée comme poursuite (« 22 ans » avant la sortie de 2017, donc vers 1995 : déduction, l'année n'est pas donnée telle quelle). Étape intermédiaire : le clip « Blue Song » de Mint Royale (2002), que Wright appelle une répétition générale du film (JoBlo, shots).
+- Le film est préparé comme une « pièce radiophonique » d'environ 100 minutes (audio du film entier : dialogues, musique, bruitages), montée en 2012 après une lecture à Los Angeles (Televisual) ; les scènes sont **chorégraphiées et tournées sur les playbacks** : portes, coups de feu, essuie-glaces, pas, tombent sur les temps ou les accents.
 - Paul Machliss monte **sur le plateau** pendant le tournage (Avid) pour vérifier qu'une prise tient dans la mesure ; une scène trop longue ne « rentre » plus dans la chanson.
-- Ouverture (≈ 6 min, braquage puis poursuite sur « Bellbottoms ») ; scène du café sur « Harlem Shuffle » en un long plan où des éléments du décor (graffitis, affiches) reprennent les paroles ; fusillade où les rafales suivent la musique (« Tequila »). Machliss et Wright disent avoir cherché un équilibre pour éviter que tout paraisse chorégraphié comme une comédie musicale.
+- Ouverture (≈ 6 min, braquage puis poursuite sur « Bellbottoms » ; Sony l'a diffusée en ligne comme « les 6 premières minutes », Fandango, Paste) ; scène du café sur « Harlem Shuffle » (Bob & Earl) en un seul plan-séquence Steadicam, tourné le premier jour, 28 prises, la 21e gardée ; les graffitis qui reprennent les paroles sont des **graffitis numériques** ajoutés en post (Wright, Ain't It Cool News) ; fusillade où les tirs et rechargements tombent sur les temps de « Tequila » (version des Button Down Brass, critique reprise par Scripps/KTNV). Machliss et Wright ont cherché un équilibre pour éviter que tout paraisse trop chorégraphié ; Machliss : « It isn't a musical, it's a film full of music » (No Film School).
 
 ## Pourquoi ça marche, et ce qui serait raté si on changeait ces choix
 
@@ -58,6 +66,4 @@ Dans *Baby Driver*, l'objectif change : la synchronisation musique/action fait r
 ## Points non vérifiés / à contrôler sur le film
 - Durées de plans des mini-montages (≤ 0,5 s) : estimation de mémoire, à mesurer image par image.
 - Nombre exact de plans dans la séquence d'arrivée de Hot Fuzz : non compté.
-- Que Chris Dickens soit monteur de Shaun et Hot Fuzz : connu de mémoire, aucune source web consultée ne le confirme dans cette session.
-- Le détail « graffitis reprenant les paroles » dans la scène « Harlem Shuffle » et le calage des tirs sur « Tequila » : largement commentés, mais non confirmés par les sources lues ici.
-- Durée de l'ouverture (≈ 6 min) : déduite du titre d'un article (« first 6 minutes »), elle inclut le braquage et la poursuite.
+- (Vérifié le 2026-10-10 : Chris Dickens a bien monté *Shaun of the Dead* et *Hot Fuzz* ; graffitis numériques de « Harlem Shuffle » et tirs calés sur « Tequila » confirmés ; ouverture ≈ 6 min confirmée par la diffusion Sony « first 6 minutes ». Voir Sources.)

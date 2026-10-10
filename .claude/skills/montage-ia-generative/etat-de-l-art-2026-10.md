@@ -1,4 +1,6 @@
-# État de l'art IA générative pour la post-production (annexe datée)
+# État de l'art IA générative pour la post-production (2026-10)
+
+Annexe de `SKILL.md` : faits outils datés et sources derrière le tableau du § 5 (le SKILL.md fait foi ; sur les faits outils, cette annexe prime sur le journal des veilles).
 
 **État unique au 2026-10-10** : il regroupe la recherche du 2026-10-10 et les sept passages de veille du même jour (sessions 19 à 25). Le journal de ces veilles, et la liste de ce qui était faux dans la version du 2026-10-09, sont dans [`veilles-2026-10.md`](veilles-2026-10.md) (archive, ne fait pas foi). Recherche web (WebSearch + WebFetch). **Rien n'a été testé ici**, sauf mention [LABO]. Ce marché bouge chaque mois : toute ligne de plus de 3 mois est à revérifier avant un devis.
 
@@ -17,7 +19,7 @@ Liens consultés : `/home/user/Montagev2/sources/ia-generative-2026-10-10.md`. V
 |---|---|---|---|
 | **Plan impossible** (échelle, rêve, intérieur du corps) | Veo 3.1 (Flow) ou Kling 3.0 pour le réalisme (Kling 4.0 complet non sorti au 10/10) ; Seedance 2.5 si plan long (30 s) | Luma Ray3.2 si l'étalonneur veut du HDR / EXR 16 bits | Quand le plan doit porter le jeu d'un acteur. Quand un insert tourné coûte moins que le tri (Trillo : 55 clips gardés sur 700). Quand le film promet du réel (doc, témoignage, produit). |
 | **Raccord manquant** (plan de coupe, contrechamp absent) | Image vers vidéo depuis la dernière image réelle (Veo « Frames to Video », Kling, Seedance) | Runway Aleph 2.0 (vidéo vers vidéo, nouvel angle) | Si le raccord porte un regard ou une émotion : l'IA ne joue pas. Si le plan voisin est en 10 bits log et qu'on ne peut pas réunir les textures. |
-| **Extension de plan** (+2 s) | Premiere Generative Extend (2 s vidéo, 10 s audio) | Veo « Scene extension » ; image vers vidéo + fondu | Sur un plan HDR ou 10 bits livré tel quel : les frames générées restent en 8 bits SDR selon la FAQ Adobe [À VÉRIFIER]. Sur un visage en gros plan qui parle. |
+| **Extension de plan** (+2 s) | Premiere Generative Extend (2 s vidéo, 10 s audio) | Veo « Scene extension » ; image vers vidéo + fondu | Sur un plan HDR, 10 bits ou 50p livré tel quel : les frames générées sortiraient en 8 bits SDR, 30 i/s au plus (FAQ Adobe et blog vendeur) [À TRANCHER EN PHASE 2]. Sur un visage en gros plan qui parle. |
 | **Upscale** | Topaz Starlight Precise 2.5 (rushes IA) ; Astra 2 (cloud) | Runway / Higgsfield upscale 4K | Sur une archive, un document ou un visage réel : la diffusion **invente** du détail. C'est une altération, à signaler. Souvent le grain seul suffit. |
 | **Roto / détourage** | Outil intégré : Premiere Object Mask (Sharp/Smooth), AE Object Matte, Resolve Magic Mask | SAM 3.1 (Meta, local ou API) ; Runway SAM3 (export WebM transparent) | Cheveux en contre-jour, flou de bougé, fumée : repasser à la main. Ne jamais livrer un masque IA non vérifié image par image sur un plan héros. |
 | **Interpolation / ralenti** | Tester d'abord le plan réel (labo : RIFE parfois **sous** un simple fondu) | Topaz Apollo / Chronos / Aion ; Resolve Speed Warp (Studio) ; Runway Enhance Frame Rate | Sur l'eau, le feuillage, une coupe dans le plan : artefacts. Un ralenti qui n'a pas été tourné se voit. Préférer un vrai haute cadence. |
@@ -118,7 +120,6 @@ Liens consultés : `/home/user/Montagev2/sources/ia-generative-2026-10-10.md`. V
 | Modèles tiers ajoutés : Seedance 2.5 (03/08), Wan 3.0 (24/08), Gemini Omni 1.1 Flash (28/08), MiniMax H3 Max (31/08), GPT Image 2.5 (22/09), Eleven v4 (28/09), FLUX 3 Image (01/10), Nano Banana 2.1 (06/10/2026). **Kling 4.0 absent** du changelog au 10/10. | [SOURCÉ] off. changelog Higgsfield. |
 | **Higgsfield Global Film Festival** : films faits uniquement dans Cinema Studio ; vote du public 08-15/10, palmarès fin octobre 2026, 1 M$ de dotation. À regarder comme un catalogue des clichés « tout IA » de 2026, pas comme une preuve de fiabilité. | [SOURCÉ] off. changelog et blog Higgsfield (05 et 08/10/2026). |
 | Outil de « similarity scoring » (ressemblance avec des œuvres protégées) pour les équipes, mars 2026. | [SOURCÉ] off. prnewswire (03/2026). |
-| Générations **payantes en crédits** : jamais sans accord explicite du client. | Règle maison. |
 
 ### Pika, Moonvalley, Midjourney vidéo, autres
 | Fait | Statut |
@@ -147,7 +148,7 @@ Liens consultés : `/home/user/Montagev2/sources/ia-generative-2026-10-10.md`. V
 |---|---|
 | **Midjourney V8.2** : modèle par défaut depuis le 24/07/2026. V8 alpha en mars, V8.1 le 14/04/2026. Pas d'API officielle. | [SOURCÉ] sec. tech-insider, pixmind, javisreview (2026) qui citent la page Version de Midjourney (docs.midjourney.com, 403 à la lecture). |
 | **Nano Banana 2** (Gemini 3.1 Flash Image) : 26/02/2026, défaut dans l'appli Gemini. **Nano Banana Pro** (Gemini 3 Pro Image, nov. 2025) toujours proposé. Disponibilité générale entreprise le 28/05/2026. | [SOURCÉ] sec. techcrunch.com (26/02/2026) ; off. cloud.google.com blog (05/2026). |
-| **Nano Banana 2.1** (`gemini-nano-banana-2.1`) : **GA le 06/10/2026**. Nano Banana 2 (`gemini-3.1-flash-image`) déprécié, sans date d'arrêt officielle (le « 29/10 » des blogs : [À VÉRIFIER]). Jusqu'en 4K, 14 images de référence, meilleur rendu du texte, meilleure cohérence de personnage, **formats extrêmes 1:4 à 8:1** (plaques panoramiques pour un travelling ou un parallaxe dans AE ; vérifier la définition au zoom 100 %). Prix API : 0,034 $ (1K) à 0,113 $ (4K) par image. | [SOURCÉ] off. ai.google.dev (modèle et prix, consulté 2026-10-10) ; sec. seroundtable (10/2026). |
+| **Nano Banana 2.1** (`gemini-nano-banana-2.1`) : **GA le 06/10/2026**. Nano Banana 2 (`gemini-3.1-flash-image`) déprécié, sans date d'arrêt officielle (le « 29/10 » des blogs : [À VÉRIFIER]). Jusqu'en 4K, 14 images de référence, meilleur rendu du texte, meilleure cohérence de personnage, **formats extrêmes 1:4, 4:1, 1:8, 8:1** (plaques panoramiques pour un travelling ou un parallaxe dans AE ; vérifier la définition au zoom 100 %). Prix API : 0,034 $ (1K) à 0,113 $ (4K) par image. | [SOURCÉ] off. ai.google.dev (modèle et prix, consulté 2026-10-10) ; sec. seroundtable (10/2026). |
 | **GPT Image 2** (ChatGPT Images 2.0) : 21/04/2026, raisonnement avant génération, 2K. | [SOURCÉ] sec. thenewstack, neurohive (04/2026). |
 | **GPT Image 2.5** (ChatGPT Images 2.5) : 08/09/2026. Deux variantes API : Flare (défaut) et Sunburst (précis). Jusqu'à 50 % plus rapide. | [SOURCÉ] sec. axios.com (08/09/2026). Résolution 3840×2160 et 16 références : [À VÉRIFIER]. |
 | **FLUX 3** (Black Forest Labs) : 23/07/2026. Modèle multimodal (image, vidéo jusqu'à 20 s avec son). Vidéo par API en août ; **FLUX 3 Image le 01/10/2026** : un seul point d'API pour générer, retoucher et composer, **boîtes de placement** en JSON (où va le produit, où va le titre), retouches locales, 10 références, 768 px à 4K, 0,048 $ à 0,607 $ l'image. Poids ouverts « Dev » promis, pas encore sortis. | [SOURCÉ] off. docs.bfl.ai/release-notes (01/10/2026) ; sec. marktechpost (26/07/2026). |
@@ -163,8 +164,8 @@ Liens consultés : `/home/user/Montagev2/sources/ia-generative-2026-10-10.md`. V
 | Fait | Statut |
 |---|---|
 | **Premiere 26.5 [NON CONFIRMÉ — À TRANCHER EN PHASE 2]** : une seule annonce lue (page communauté Adobe) et des notes de version en 403 ; d'autres pages du dépôt s'arrêtent à 26.2 / 26.3. Vérifier le numéro dans la version installée. Annonce du 10/09/2026 : **Generative Media Tool** (vidéo et effets sonores générés dans la timeline, « Firefly et modèles partenaires », images existantes comme référence) ; **Paper Edit** (premier montage depuis la transcription) ; Object Mask avec modes **Sharp** et **Smooth** (cheveux, tissu). | [SOURCÉ] off. community.adobe.com, « What's new in Adobe Premiere 26.5 » (10/09/2026). |
-| **Generative Extend** : sources acceptées de 360p à 4K UHD, tous formats, entrelacé et pixels non carrés (26.5). Notes de version : sources de 12 à 60 i/s, 8 à 16 bits, SDR ou HDR. | [SOURCÉ] off. community.adobe.com (10/09/2026) ; off. helpx.adobe.com release notes (extrait de recherche, page en 403). |
-| Generative Extend : extension toujours de **2 s vidéo / 10 s audio**. Les frames générées sortent en 8 bits SDR si la séquence l'est ; au-delà de 30 i/s, extension à 30 i/s. | [À VÉRIFIER] FAQ Adobe (extrait de recherche) et atlascloud (blog vendeur). |
+| **Generative Extend** : sources acceptées de 360p à 4K UHD, tous formats, entrelacé et pixels non carrés (annonce « 26.5 », numéro non confirmé). Notes de version : sources de 12 à 60 i/s, 8 à 16 bits, SDR ou HDR. | [SOURCÉ] off. community.adobe.com (10/09/2026) ; off. helpx.adobe.com release notes (extrait de recherche, page en 403). |
+| Generative Extend : extension toujours de **2 s vidéo / 10 s audio**. Sortie générée en 8 bits SDR (la FAQ dit « si la séquence l'est », sans préciser le cas d'une séquence 10 bits ou HDR) ; au-delà de 30 i/s, extension à 30 i/s. | **[À TRANCHER EN PHASE 2]** FAQ Adobe (extrait de recherche) et atlascloud (blog vendeur). |
 | Generative Media Tool : choix de modèle nommé (Firefly, Veo, Kling, Runway, Luma) ; **Generate Music** et **Generate Soundscape** (analyse jusqu'à 15 s d'image) en bêta. | [SOURCÉ] off. blog.adobe.com (08/09/2026) ; sec. postmagazine. |
 | Color Mode (bêta) annoncé à la NAB, 15/04/2026. | [SOURCÉ] off. blog.adobe.com (15/04/2026). |
 
@@ -201,7 +202,7 @@ Liens consultés : `/home/user/Montagev2/sources/ia-generative-2026-10-10.md`. V
 | Plugins SAM pour AE ou Nuke | [À VÉRIFIER] seul un site peu fiable l'affirme. |
 
 ### Interpolation
-- Labo maison [LABO] : RIFE 4.25 bat `minterpolate` sur image lisse, mais reste **sous un simple fondu** sur de l'eau et du feuillage (`labo/interpolation/`, `labo/interpolation-reel/`).
+- Labo maison [LABO] : résultat dans `SKILL.md` § 6, mesures dans `montage-workflows` (`details.md`).
 - Nouvelles offres : Runway Enhance Frame Rate (17/09/2026), Topaz Aion (16×). Non testées.
 
 ---

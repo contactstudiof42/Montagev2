@@ -1,8 +1,8 @@
 # *Scott Pilgrim vs. the World* (2010) : générique, texte à l'image, montage
 
-Réalisation : Edgar Wright (Universal, 2010, 112 min), d'après les BD de Bryan Lee O'Malley. Montage : Jonathan Amos et Paul Machliss (nomination aux ACE Eddie, catégorie comédie/musical). Image : Bill Pope. Musique : Nigel Godrich ; chansons de Sex Bob-omb écrites par Beck. Mixage : Julian Slater.
+Réalisation : Edgar Wright (Universal, 2010, 112 min), d'après les BD de Bryan Lee O'Malley. Montage : Jonathan Amos et Paul Machliss (nomination aux ACE Eddie, catégorie comédie/musical). Image : Bill Pope. Musique : Nigel Godrich ; chansons de Sex Bob-omb écrites par Beck. Montage son : Julian Slater (superviseur du montage son ; les mixeurs de réenregistrement sont Doug Cooper et Chris Burdon, d'après le catalogue de l'AFI).
 
-Générique d'ouverture : **Shynola** (direction créative : **Richard Kenworthy**), produit via Nexus Studios. Graphismes du générique et animation des flash-backs : VooDooDog. Title director et co-designer : Andrew White (avec Roger Philips). Storyboards, concept et logo Universal 8-bit : Oscar Wright.
+Générique d'ouverture : **Shynola** (direction créative : **Richard Kenworthy**), produit via Nexus Studios. VooDooDog : animation des flash-backs de Ramona (style manga) et graphismes façon BD dans le film, plus le globe 3D du logo Universal (communiqué VooDooDog sur AWN ; Art of the Title). Title director et co-designer : Andrew White (avec Roger Philips). Storyboards, concept et logo Universal 8-bit : Oscar Wright (c'est lui qui a animé le logo à partir du globe de VooDooDog, Art of the Title).
 
 Format : long métrage de fiction ; générique d'environ 2 min.
 
@@ -10,7 +10,7 @@ Recherches du 2026-10-10 : Art of the Title (entretien long), Nexus Studios, Wik
 
 ## Ce que l'œuvre cherche à faire ressentir ou comprendre
 
-- La vie d'un garçon de 22 ans (âge non sourcé, de mémoire) qui vit tout comme un jeu vidéo, une BD ou un concert. Selon Wright et O'Malley, les textes à l'image montrent **comment Scott se voit, lui et le monde** (Wikipédia). Le style ne décore pas : c'est un point de vue subjectif.
+- La vie d'un garçon de 22 ans (âge donné par le résumé de Wikipédia : « a 22-year-old bassist ») qui vit tout comme un jeu vidéo, une BD ou un concert. Selon Wright et O'Malley, les textes à l'image montrent **comment Scott se voit, lui et le monde** (Wikipédia). Le style ne décore pas : c'est un point de vue subjectif.
 - Le générique doit faire entrer le public dans le film. Il n'était pas prévu : à l'origine, tous les crédits étaient à la fin. Tarantino a conseillé une ouverture après une projection test (Art of the Title).
 - La consigne de Wright à Shynola : « make love to the eyeballs for two minutes ». Kenworthy dit avoir proposé une « 8-bit epileptic eye-fight » (Nexus). Le générique traduit aussi ce que ressent Knives en regardant répéter le groupe (Nexus).
 
@@ -19,16 +19,16 @@ Recherches du 2026-10-10 : Art of the Title (entretien long), Nexus Studios, Wik
 ### Générique (Shynola)
 
 - **Durée et musique.** Environ 2 min, sur un titre de Beck. Le morceau durait 60 s ; il a été rallongé avec une démo plus longue (Art of the Title).
-- **Maquette d'abord.** Wright a monté une première version sur Avid : titres blancs sur noir et formes d'onde (Art of the Title).
+- **Maquette d'abord.** Wright a monté une maquette très sommaire sur Avid : titres blancs sur noir et formes d'onde (Art of the Title : « very rough mock up »).
 - **Le synchro avant la matière.** Shynola a d'abord animé tout le générique à l'ordinateur, calé précisément sur la musique. Ensuite seulement, l'équipe a gravé sur des feuilles d'acétate (Art of the Title).
-- **Le hasard physique ajouté exprès.** Chaque feuille d'acétate correspond à **environ 1 seconde** de film (Art of the Title et Wikipédia). Les feuilles ont été poussées du pied sur le sol pour ramasser poussière et cheveux, puis scannées en haute définition et découpées image par image. Certaines couleurs ont dû être corrigées : elles n'étaient pas reproductibles en 35 mm (Art of the Title).
+- **Le hasard physique ajouté exprès.** Chaque feuille d'acétate correspond à **environ 1 seconde** de film (Art of the Title et Wikipédia). Les feuilles ont été poussées du pied sur le sol pour ramasser poussière et cheveux, puis scannées en haute définition et découpées image par image. Certaines couleurs ont dû être corrigées : elles étaient « illegal », c'est-à-dire non reproductibles en tirage 35 mm (Art of the Title).
 - **Références.** Wright voulait un mélange de *2001* et de *Sesame Street*, avec la piste optique de *Faster, Pussycat! Kill! Kill!*. Shynola cite les cinéastes du film gratté ou peint : Len Lye, Oskar Fischinger, Stan Brakhage, Norman McLaren (Art of the Title, Nexus).
-- **Logo Universal en 8-bit.** Un globe 3D de VooDooDog, ramené à **4 i/s** pour obtenir un mouvement saccadé de jeu vidéo (Art of the Title). Le son est celui d'un jeu vidéo : une musique de *The Legend of Zelda* ouvre le film, utilisée comme effet sonore (Wikipédia).
+- **Logo Universal en 8-bit.** Un globe 3D de VooDooDog, animé par Oscar Wright avec une cadence réduite « down to 4s » pour obtenir un mouvement saccadé de jeu vidéo (Art of the Title). Correction : la source ne dit pas « 4 i/s » ; « 4s » se lit en animation comme « animé en 4 » (chaque image tenue 4 images, soit 6 poses par seconde à 24 i/s) — interprétation, la valeur exacte reste [NON VÉRIFIÉ]. Oscar Wright parle d'une « crappy low-res, low frame-rate FMV » de jeu vidéo. Le son est celui d'un jeu vidéo : une musique de *The Legend of Zelda* ouvre le film, utilisée comme effet sonore (Wikipédia).
 - **Plan en prise réelle.** Le plan où la caméra recule depuis le groupe jusqu'au canapé a demandé environ **20 prises**, à la Technocrane de 50 pieds, le deuxième jour de tournage (Art of the Title).
 
 ### Texte et graphismes dans le film
 
-- **Du texte plat posé dans l'espace.** Les textes (beaucoup viennent des BD) sont conçus pour exister dans l'espace 3D tout en restant plats. Leur couleur change d'une scène à l'autre (Art of the Title).
+- **Du texte plat posé dans l'espace.** Les textes (beaucoup viennent des BD) sont conçus « to exist in 3D space, but not in 3D ». Leur couleur est le plus souvent dictée par la scène (Art of the Title).
 - **Des impacts ancrés au tournage.** Les graphismes d'action partent d'un vrai flash sur le plateau. L'image commence surexposée puis s'estompe, comme une image restée sur la rétine. Références : l'anime et les jeux *Naruto* (Art of the Title).
 - **Des effets réels pour les acteurs.** Wright exigeait des effets physiques : flashs d'appareil photo pour les impacts, Mylar argenté versé pour les ennemis qui explosent en pièces, ballons-sondes pour les « démons sonores » (Wikipédia).
 - **Le but visuel.** Le superviseur VFX Frazer Churchill résume : des images très high-tech avec un rendu très low-fi (Wikipédia). Des fonds ont été simplifiés en postproduction, des arbres effacés par exemple, pour ressembler au dessin de la BD.
@@ -37,7 +37,7 @@ Recherches du 2026-10-10 : Art of the Title (entretien long), Nexus Studios, Wik
 
 ### Montage et son
 
-- **Combats montés comme des numéros musicaux.** Wright les découpe façon Gene Kelly (Wikipédia), avec une règle : « no two fights should be the same » (Rotten Tomatoes). Le deuxième combat joue comme un jeu vidéo contre des sbires, le troisième est un face-à-face, dans le quatrième Scott n'entre qu'à la fin.
+- **Combats conçus comme des numéros musicaux.** Wright compare les combats aux numéros d'un film de Gene Kelly : le numéro a lieu, puis tout revient à la normale avec une petite réaction (Wikipédia ; la citation porte sur la structure des scènes, pas sur la technique de découpage), avec une règle : « no two fights should be the same » (Rotten Tomatoes, 28 avril 2021 ; la citation complète dit « no two fights [or musical numbers] should be the same »). Le deuxième combat joue comme un jeu vidéo contre des sbires, le troisième est un face-à-face, dans le quatrième, Roxie et Ramona s'affrontent et Scott n'est entraîné qu'ensuite (Rotten Tomatoes).
 - **Transitions accrochées à un son.** Une voiture qui passe, une sonnerie d'école ou le bip d'une porte font passer d'une scène à l'autre. Les transitions servent l'état mental de Scott (essai Nerdwriter, 2016, d'après des résumés secondaires ; je n'ai pas revu la vidéo).
 - **Caméra, montage et SFX conçus ensemble.** Chaque plan est pensé pour fonctionner avec les autres, et le rythme musical naît de cette combinaison (The Digital Bits, critique : avis, pas témoignage).
 - **Durée des plans, nombre de plans, cadence de coupe : non sourcés.** Seul chiffre trouvé : la pyramide de Gideon, séquence la plus lente à tourner, avançait à « ten shots in a day » sur une semaine (Wikipédia).
@@ -48,7 +48,7 @@ Recherches du 2026-10-10 : Art of the Title (entretien long), Nexus Studios, Wik
 - **L'ancrage physique rend le graphisme crédible.** Le flash réel sur le plateau éclaire les visages et donne le timing de l'impact ; le graphisme vient ensuite s'y ajouter. Sans lui, l'effet flotterait au-dessus de l'image comme un sticker, et le montage n'aurait pas de point net sur lequel couper.
 - **Le synchro précède la texture.** Shynola a fixé le timing sur ordinateur avant de gratter l'acétate. Le côté « sale » est donc libre sans que le rythme bouge. En inversant l'ordre (gratter puis caler), on aurait soit un synchro approximatif, soit une texture refaite à chaque retouche.
 - **La variété protège du kinetic editing qui tourne à vide.** Comme chaque combat a sa propre grammaire, l'énergie ne s'use pas. Avec sept combats montés pareil (mêmes cuts rapides, mêmes whooshes), on se lasserait dès le troisième.
-- **La contrainte low-fi sert de charte.** Le logo à 4 i/s, le 8-bit, le halo pixelisé ont tous la même source, le jeu vidéo des années 80-90, ce qui rend cohérents des effets très différents. Mélanger des esthétiques de jeu sans lien entre elles donnerait un patchwork.
+- **La contrainte low-fi sert de charte.** Le logo à cadence très basse, le 8-bit, le halo pixelisé ont tous la même source, le jeu vidéo des années 80-90, ce qui rend cohérents des effets très différents. Mélanger des esthétiques de jeu sans lien entre elles donnerait un patchwork.
 - **Le hors-norme demande l'accord du public.** Le générique sert aussi à montrer les règles du film dès les deux premières minutes. Sans lui, la première irruption graphique risquait de paraître arbitraire, d'où sans doute la remarque de Tarantino (interprétation).
 
 ## Principes transférables
@@ -58,7 +58,8 @@ Recherches du 2026-10-10 : Art of the Title (entretien long), Nexus Studios, Wik
 3. **Caler le timing avant de salir.** Verrouiller le rythme sur une maquette propre (animatique, formes d'onde), puis ajouter grain, accidents et textures faites main, sans retoucher le calage.
 4. **Faire passer une transition par le son quand c'est possible.** Un bruit de la scène A qui devient l'impulsion de la scène B : le cut rapide paraît alors motivé, pas tape-à-l'œil.
 5. **Varier la grammaire de chaque séquence d'action.** Donner une règle propre à chaque morceau de bravoure (point de vue, échelle, cadence) pour que le kinetic editing ne devienne pas un tic.
-6. **Choisir une seule source esthétique pour tous les effets.** Un registre unique (ici le jeu vidéo low-fi : basse cadence, pixel, palette limitée) rend cohérents des effets disparates. La cadence elle-même (4 i/s) fait partie du langage.
+6. **Choisir une seule source esthétique pour tous les effets.** Un registre unique (ici le jeu vidéo low-fi : basse cadence, pixel, palette limitée) rend cohérents des effets disparates. La cadence elle-même (très basse, « 4s ») fait partie du langage.
+   ⚠ Principe à revoir (détail chiffré seulement) : la valeur « 4 i/s » n'est pas dans la source ; le principe tient, mais ne pas citer de chiffre de cadence sans vérification.
 
 ## Ce qui reste à vérifier
 
@@ -79,3 +80,8 @@ Recherches du 2026-10-10 : Art of the Title (entretien long), Nexus Studios, Wik
 - The Digital Bits, critique de l'UHD 4K : https://thedigitalbits.com/reviews/item/scott-pilgrim-universal-2021-uhd
 - Nerdwriter, « Scott Pilgrim: Make Your Transitions Count » (2016), lu uniquement à travers des résumés : https://www.youtube.com/watch?v=pij5lihbC6k ; résumé d'Idea Rocket : https://idearocketanimation.com/17950-video-transitions/
 - Watch The Titles : aucune page trouvée sur ce générique (URL testée en 404).
+- Vérification du 2026-10-10 (consultées ce jour) :
+  - AFI, crédits du film (Julian Slater superviseur du montage son ; Doug Cooper et Chris Burdon mixeurs) : https://watch.afi.com/movie/scott-pilgrim-vs-the-world
+  - AWN, communiqué « VooDooDog's Paw Print On McPhee, Scott Pilgrim, A-Team » : https://www.awn.com/print/news/voodoodogs-paw-print-mcphee-scott-pilgrim-team
+  - Wikipédia (EN), *Scott Pilgrim vs. the World*, wikitext relu (âge de Scott, citation Gene Kelly, logo Universal) : https://en.wikipedia.org/wiki/Scott_Pilgrim_vs._the_World
+  - Wikipédia (EN), Paul Machliss (nomination aux ACE Eddie, catégorie comédie ou musical, avec Jonathan Amos) : https://en.wikipedia.org/wiki/Paul_Machliss

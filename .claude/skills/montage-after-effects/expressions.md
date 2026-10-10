@@ -1,4 +1,6 @@
-# Annexe : expressions After Effects
+# Expressions After Effects
+
+Annexe de `SKILL.md` : code complet des recettes, saccade, pièges en détail et vérifications de phase 2 (le SKILL.md fait foi ; les principes et réglages qui y sont déjà ne sont pas répétés ici).
 
 Chaque bloc est copié depuis `labo/ae-expressions/`. Écrit pour le **moteur JavaScript** (par défaut depuis AE 16.0). Statut : **[TESTÉ EN LABO, syntaxe/logique Node uniquement]** veut dire que le code a passé `node --check` et des évaluations dans `mock.js`, **pas** qu'il a tourné dans AE. Résultats : `labo/ae-expressions/RESULTATS.md`.
 
@@ -197,9 +199,15 @@ Ne jamais écrire `Math.sin(2*Math.PI*time/P)` avec `P` qui varie (voir Pièges)
 ---
 
 <a id="saccade"></a>
-## Saccade (step-printing) régulière ou choisie (déplacé de SKILL.md)
+## Saccade (step-printing) : précisions
 
-[THÉORIQUE, forums Adobe Community consultés le 2026-10-10] : régulière = effet Posterize Time, ou mieux l'expression `posterizeTime(8);` sur le **Time Remap** d'une pré-composition (Posterize Time n'agit que sur le calque où il est posé ; signalés : décalages dans des pré-compos imbriquées, cadences fractionnaires arrondies, l'interrupteur « Réduire les transformations » contourne Posterize Time et « Conserver la fréquence d'images »). **Choisie** (rushes à strobe, `labo/photosensibilite/strobe-rushes/`) : Time Remap avec des **clés maintenues** (Hold) posées sur les images sources voulues ; la saccade régulière laisse le hasard choisir les images ([ÉPROUVÉ EN MAQUETTE] pièce 20 v1 : aucun coup retenu). Pour la traînée façon Wong Kar-wai : CC Force Motion Blur ou Pixel Motion Blur **avant** le maintien. Version tableau de la saccade choisie (sur Time Remap) : `var holds=[0,0,0,5,5,9]; framesToTime(holds[Math.min(timeToFrames(time),holds.length-1)]);` [TESTÉ EN LABO] (syntaxe sous Node, fonctions simulées). **Frame Blending Off** sur le calque saccadé (Frame Mix / Pixel Motion fondent les tenues) ; traînée (Echo à Echo Time négatif, CC Wide Time) sur une précomp **au-dessus**. Détail et Premiere : `sources/premiere-ae-saccade-choisie-2026-10.md`, `montage-premiere`.
+[THÉORIQUE, forums Adobe Community consultés le 2026-10-10 ; détail et Premiere : `sources/premiere-ae-saccade-choisie-2026-10.md`, `montage-premiere`]
+- **Régulière** : préférer l'expression sur le Time Remap d'une précomp à l'effet Posterize Time, qui n'agit que sur le calque où il est posé. Signalés : décalages dans des pré-compos imbriquées, cadences fractionnaires arrondies ; l'interrupteur « Réduire les transformations » contourne Posterize Time et « Conserver la fréquence d'images ».
+- **Choisie, version tableau** (sur Time Remap ; `holds` = image source à montrer à chaque image de la comp) [TESTÉ EN LABO] (syntaxe sous Node, fonctions simulées) :
+  `var holds=[0,0,0,5,5,9]; framesToTime(holds[Math.min(timeToFrames(time),holds.length-1)]);`
+  Matériau de test : rushes à strobe, `labo/photosensibilite/strobe-rushes/`.
+- **Ce qui fond les tenues** : Frame Mix et Pixel Motion (Frame Blending à couper sur le calque saccadé).
+- **Traînée façon Wong Kar-wai** : CC Force Motion Blur ou Pixel Motion Blur **avant** le maintien ; ou Echo (Echo Time négatif), CC Wide Time sur une précomp **au-dessus** du calque saccadé.
 
 <a id="phase-2"></a>
 ## À vérifier en phase 2, dans After Effects (déplacé de SKILL.md)
@@ -217,15 +225,10 @@ Ne jamais écrire `Math.sin(2*Math.PI*time/P)` avec `P` qui varie (voir Pièges)
 11. Le message d'erreur exact d'AE quand un slider référencé est renommé (diagnostic courant chez les clients).
 
 <a id="pieges"></a>
-## Pièges en détail (déplacé de SKILL.md)
+## Pièges : précisions (les règles sont dans `SKILL.md` § 6)
 
-- **Moteur JavaScript vs ExtendScript hérité.** Depuis AE 16.0 (CC 2019), le moteur par défaut est **JavaScript** (ECMAScript 2018), plus rapide. L'ancien moteur **ExtendScript hérité** suit ECMAScript 3. Le choix se fait par projet : Fichier > Paramètres du projet > onglet Expressions. Les projets enregistrés dans d'anciennes versions s'ouvrent en ExtendScript hérité. Erreurs classiques en passant à JavaScript : `if/else` sur une ligne sans accolades, raccourci `this()` (utiliser `thisLayer`), syntaxe en snake_case (`this_comp`, à remplacer par `thisComp`), `sourceText` qui doit parfois être lu en `.value`. Écrire pour le moteur JavaScript, avec accolades et points-virgules, et ne pas dépendre de la « dernière valeur » d'un `if` sans `else`.
-- **Expressions lentes.** Toute expression est réévaluée à chaque image, et `valueAtTime` ou `sampleImage` en boucle multiplient le coût. `sampleImage()` (lire la couleur d'un calque) est la plus coûteuse : à réserver à un pixel ou une petite zone, et sur peu de calques. Les échos en cascade (06) sur 50 calques et des boucles `for` sur `numKeys` ralentissent l'aperçu. Remèdes : **Convertir l'expression en images clés** (Animation > Assistant d'images clés) une fois le réglage figé, `posterizeTime` pour les valeurs qui n'ont pas besoin de 25 i/s, la vue « Expressions désactivées » (raccourci d'aperçu) pour travailler l'animation.
-- **`exp()` qui explose.** Dans un overshoot, `Math.exp(decay * t)` devient `Infinity` après quelques minutes ; d'où la coupure (`t < 3`) dans la recette 05 (point signalé par Dan Ebberts).
-- **Vitesse d'arrivée nulle = pas d'overshoot.** Voir 05 : c'est la cause n° 1 de « mon expression ne fait rien ».
-- **Bézier spatial non voulu.** Par défaut, les trajectoires de position sont courbes : le calque peut faire une boucle ou dépasser **dans l'espace**. Clic droit > Interpolation spatiale > Linéaire si le chemin doit être droit.
-- **Séparer les dimensions** change ce que montre le graphe de vitesse (vitesse par axe et non vitesse le long du chemin). L'overshoot sur Position 2D non séparée dépasse sur les deux axes à la fois, proportionnellement à leurs vitesses (vérifié en labo).
-- **Wiggle et duplication.** Le tirage aléatoire de `wiggle` varie d'un calque à l'autre ; pour contrôler ou figer un tirage, on utilise `seedRandom()`. Le comportement exact à la duplication n'a pas été vérifié ici : voir la phase 2.
-- **Fréquence d'overshoot et cadence.** À 25 i/s, un overshoot très rapide (freq > 6) peut tomber entre les images et paraître sauter (voir l'incident en labo). Juger à l'œil à 25 i/s, pas à 50.
-- **Période qui varie dans un `sin` = mouvement qui se fige.** `Math.sin(2*Math.PI*time/P)` avec `P` animé (un bercement qui ralentit, une respiration qui s'apaise) ne donne pas la fréquence 1/P : la fréquence réelle est 1/P − t·P'/P² et tombe presque à zéro (mesuré : 0,02 Hz au lieu de 0,31 à 0,63 Hz, `labo/ae-expressions/bercement/test.js`) : le geste **hésite et repart**, l'inverse du calme voulu. Intégrer la phase (recette « bercement qui ralentit » dans `expressions.md`). Même piège dans un `wiggle(freq, …)` à `freq` animée. [TESTÉ EN LABO] (sous Node ; AE en phase 2)
-- **Moteur et compatibilité.** Un projet partagé avec un poste en ExtendScript hérité peut afficher des erreurs d'expression en série. Fixer le moteur dans le cahier des charges.
+- **Moteur JavaScript vs ExtendScript hérité.** Depuis AE 16.0 (CC 2019), le moteur par défaut est **JavaScript** (ECMAScript 2018), plus rapide ; l'ancien **ExtendScript hérité** suit ECMAScript 3. Choix par projet : Fichier > Paramètres du projet > onglet Expressions. Les projets enregistrés dans d'anciennes versions s'ouvrent en ExtendScript hérité. Erreurs classiques en passant à JavaScript : `if/else` sur une ligne sans accolades, raccourci `this()` (utiliser `thisLayer`), syntaxe en snake_case (`this_comp`, à remplacer par `thisComp`), `sourceText` qui doit parfois être lu en `.value`, « dernière valeur » d'un `if` sans `else`.
+- **Expressions lentes.** Toute expression est réévaluée à chaque image. `sampleImage()` (lire la couleur d'un calque) est la plus coûteuse : un pixel ou une petite zone, sur peu de calques. Les boucles `for` sur `numKeys` coûtent aussi. Conversion : Animation > Assistant d'images clés > Convertir l'expression en images clés. Pour travailler l'animation, la vue « Expressions désactivées » (raccourci d'aperçu).
+- **`exp()` qui explose.** `Math.exp(decay * t)` devient `Infinity` après quelques minutes, d'où la coupure `t < 3` de la recette 05 (point signalé par Dan Ebberts).
+- **Séparer les dimensions** change ce que montre le graphe de vitesse (vitesse par axe et non le long du chemin). L'overshoot sur Position 2D non séparée dépasse sur les deux axes à la fois, proportionnellement à leurs vitesses (vérifié en labo).
+- **Période qui varie dans un `sin`** : avec `P` animé, la fréquence réelle de `Math.sin(2*Math.PI*time/P)` est 1/P − t·P'/P² et tombe presque à zéro (mesuré : 0,02 Hz au lieu de 0,31 à 0,63 Hz, `labo/ae-expressions/bercement/test.js`). Remède : la recette « Bercement qui ralentit » ci-dessus. [TESTÉ EN LABO] (sous Node ; AE en phase 2)

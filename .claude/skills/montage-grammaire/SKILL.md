@@ -33,7 +33,7 @@ Une ligne imaginaire relie les deux personnages (ou un personnage et ce qu'il re
 - **J-cut / L-cut** : décaler image et son de quelques images à quelques secondes ; le dialogue coule. [THÉORIQUE]
   - **J-cut de mémoire** : le son du souvenir arrive ~12 images avant son image ; au retour, **pas de L-cut** : couper le son net, le silence du présent est le coup. [ÉPROUVÉ EN MAQUETTE] (pièce 08)
   - **Raccord dans l'axe du temps** (même cadre, deux époques) : aligné au pixel (magique) ou franchement décalé (mémoire qui flotte) ; à moitié aligné, il paraît raté. [ÉPROUVÉ EN MAQUETTE] (pièce 08)
-- **Interview** : couper à la fin d'une pensée. Masquer une coupe dans une phrase par un plan de coupe (insert, archive, mains) ou **assumer le jump cut** (léger recadrage de 10-20 % si on a de la marge en 4K) ; jamais de fondu au milieu d'une phrase. Seuil sous lequel un jump cut se voit trop (souvent cité : ~0,5 s retirée) [À TRANCHER EN PHASE 2]. [THÉORIQUE]
+- **Interview** : couper à la fin d'une pensée. Masquer une coupe dans une phrase par un plan de coupe (insert, archive, mains) ou **assumer le jump cut** ; un changement d'échelle (recadrage de 10-20 % si on a de la marge en 4K) seulement là où l'on veut l'emphase, jamais alterné mécaniquement : un punch-in n'est pas un cache-coupe (face caméra : `montage-youtube` §5) ; jamais de fondu au milieu d'une phrase. Seuil sous lequel un jump cut se voit trop (souvent cité : ~0,5 s retirée) [À TRANCHER EN PHASE 2]. [THÉORIQUE]
 - **Plans de coupe** : les tourner en abondance (mains, détails, lieu) ; ce sont les jokers du montage.
 
 ## Changement à travers une coupe (cécité au changement)

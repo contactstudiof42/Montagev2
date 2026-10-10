@@ -1,6 +1,6 @@
-# Annexe : loudness et livraison (détails)
+# Loudness et livraison : détails
 
-Complète `SKILL.md`. Tout ce qui est marqué [TESTÉ EN LABO] a été exécuté le 2026-10-09 avec ffmpeg 6.1.1 ; voir `labo/loudness/RESULTATS.md` et `labo/livraison/RESULTATS.md`.
+Annexe de `SKILL.md` : vocabulaire, nuances des cibles, recettes complémentaires, livraison 5.1 et cibles hors plateformes en détail (le SKILL.md fait foi). Tout ce qui est marqué [TESTÉ EN LABO] a été exécuté le 2026-10-09 avec ffmpeg 6.1.1 ; voir `labo/loudness/RESULTATS.md` et `labo/livraison/RESULTATS.md`.
 
 ## 1. Vocabulaire
 
@@ -26,7 +26,7 @@ Complète `SKILL.md`. Tout ce qui est marqué [TESTÉ EN LABO] a été exécuté
 - **Spotify** (officiel) : normalise à -14 LUFS (ITU 1770), avec les modes Loud -11 et Quiet -19 pour Premium. Il **remonte** aussi les titres faibles, mais sans dépasser leur marge de TP. Exemple Spotify : un titre à -20 LUFS avec un TP à -5 n'est remonté qu'à -16. Un limiteur intervient seulement en mode Loud. Les albums sont normalisés d'un bloc. TP conseillé < -1 dBTP, < -2 dBTP si le master est plus fort que -14.
 - **YouTube** (non officiel) : environ -14 LUFS, **uniquement à la baisse**. Clic droit sur la vidéo, « Statistiques pour les geeks », ligne « content loudness » : une valeur positive indique de combien de dB la vidéo est baissée ; une valeur négative indique qu'elle n'est pas remontée. YouTube Music peut se comporter autrement.
 - **Apple Music** (non officiel) : Sound Check autour de -16 LUFS.
-- **Instagram, TikTok** (non confirmé) : aucune documentation officielle trouvée. Les guides tiers donnent -14, voire -10 à -12. Approche prudente : -14 LUFS / -1.5 dBTP et un mix lisible sur un haut-parleur de téléphone (voix devant, peu de graves).
+- **Instagram, TikTok** (non confirmé) : aucune documentation officielle trouvée. En plus de la cible conseillée dans `SKILL.md`, un mix lisible sur un haut-parleur de téléphone (voix devant, peu de graves).
 - **Podcasts** : -16 LUFS est l'usage courant (Apple Podcasts le recommandait). Non revérifié aujourd'hui.
 
 ### Cinéma
@@ -85,13 +85,13 @@ Le script `labo/loudness/labo_loudness.py` contient des fonctions réutilisables
 ## Livraison 5.1 en détail (déplacé de SKILL.md ; sources : `sources/surround-hors-champ-2026-10.md`)
 - **France, PAD (CST RT 040 v1.2, 2016, lue)** : -23 LUFS ±1 LU, **-3 dBTP** (plus strict que R128), pistes 1-6 = L R C LFE Ls Rs, mesure en 5.1 **et** en Lt/Rt, Lo/Ro, dual mono. France Télévisions (annexe 2023) ne prévoit **pas** de 5.1 (stéréo, pistes 3-6 en silence). **Arte : aucune spec publique trouvée**, demander au chargé de production.
 - **LFE** : alignement +10 dB à la lecture, limité à 120 Hz, jamais d'info essentielle (ITU-R BS.775) ; exclu de la mesure BS.1770 ; surrounds pondérés ×1,41.
-- **Downmix ITU Lo/Ro sans LFE** [TESTÉ EN LABO] : `-af "pan=stereo|FL=FL+0.7071*FC+0.7071*BL|FR=FR+0.7071*FC+0.7071*BR"`. **Ne pas utiliser `-ac 2` pour juger un downmix** : swresample normalise les coefficients, résultat 7,6 dB plus bas (mesuré -42,1 contre -34,5 LUFS) ; sinon `-af aresample=rematrix_maxval=10 -ac 2`.
-- **Piège d'étiquettes** : la disposition `5.1` de ffmpeg nomme les arrières `BL/BR`, `5.1(side)` les nomme `SL/SR` ; en `7.1`, ffmpeg met les arrières en 5-6 et les côtés en 7-8. Vérifier avec `ffprobe` avant tout `pan`.
+- **Downmix ITU Lo/Ro sans LFE** [TESTÉ EN LABO] (formule `pan` dans `SKILL.md` § 5 bis) : `-ac 2` est faux parce que swresample normalise les coefficients (mesuré -42,1 contre -34,5 LUFS) ; si l'on tient à `-ac 2` : `-af aresample=rematrix_maxval=10 -ac 2`.
+- **Piège d'étiquettes**, détail : la disposition `5.1` de ffmpeg nomme les arrières `BL/BR`, `5.1(side)` les nomme `SL/SR` ; en `7.1`, ffmpeg met les arrières en 5-6 et les côtés en 7-8.
 - **Compatibilité mono** : mesurer la phase moyenne (`aphasemeter`) ; une ambiance identique dans Ls/Rs disparaît en Lt/Rt mono.
 - **Ce que deviennent les arrières** [TESTÉ EN LABO, matériau synthétique, revérifié à la main] (`labo/surround/RESULTATS.md`, `sources/surround-ltrt-labo-2026-10.md`) : une ambiance seulement dans Ls/Rs perd 4,5 LU en Lo/Ro stéréo, **10,5 LU en Lo/Ro mono** (7,5 de plus que le dialogue, stable) et **disparaît en Lt/Rt mono** (-70 LUFS), **même avec un vrai déphasage de 90°** : le Hilbert stabilise l'image stéréo, il ne sauve pas le mono.
-- **Le LUFS du mix ne voit pas la perte** (-23,5 dans les quatre downmix) : mesurer le **stem** d'ambiance replié en mono (`pan=mono|c0=0.5*c0+0.5*c1,ebur128=peak=true`).
+- Le LUFS du mix reste à -23,5 dans les quatre downmix. Repli du stem d'ambiance en mono pour le mesurer : `pan=mono|c0=0.5*c0+0.5*c1,ebur128=peak=true`.
 - **Piège du Lt/Rt « simple »** (`pan=stereo|FL=FL+0.7071*FC-0.5*BL-0.5*BR|FR=FR+0.7071*FC+0.5*BL+0.5*BR`) : un même signal à l'avant et à l'arrière (réverbe, room tone sur 4 canaux) donne un **Lt muet**. Lt/Rt de référence : FIR de Hilbert 2047 points dans `afir=gtype=none` + `adelay=1023S` sur les fronts (21 ms de latence), graphe dans `RESULTATS.md` ; trop court sous 50 Hz.
-- **Intention** : une présence hors champ qui porte du sens (la pièce d'à côté, quelqu'un derrière) doit avoir un **pied discret et décorrélé dans L/R** : elle survit alors aux deux downmix et au mono du téléphone. Ce qui n'est qu'à l'arrière est un luxe de salle.
+- **Intention**, précision : avec un pied discret et décorrélé dans L/R, la présence hors champ (la pièce d'à côté, quelqu'un derrière) survit aux deux downmix et au mono du téléphone ; ce qui n'est qu'à l'arrière est un luxe de salle.
 
 <a id="hors-plateformes"></a>
 ## Hors plateformes (déplacé de SKILL.md ; recherche du 2026-10-10, détail et sources : `sources/loudness-hors-plateformes-2026-10.md`)
@@ -103,4 +103,4 @@ Le script `labo/loudness/labo_loudness.py` contient des fonctions réutilisables
 | Salle de réunion, salon, événement | aucune norme ; usage pro -16 (web) à -18 (salle) | -1 dBTP | **Pratique de métier**, pas de source primaire |
 | Cinéma / DCP | pas de LUFS ; bandes-annonces ≤ 85 dB Leq(m), pubs ≈ 82 (TASA, ISDCF) | — | Plafonds, pas cibles ; aucune conversion Leq(m)→LUFS officielle |
 
-**Film d'entreprise** (corrige l'examen n°3, où -16 n'était pas sourcé) : master web **-16 LUFS / -1 dBTP / LRA 6-10 LU** (lecteur sans normalisation : on ne veut pas être plus faible que la vidéo voisine, ni écraser la voix) ; **version salle/événement à -18 LUFS, LRA ≤ 6-8** (sonorisation inconnue, souvent forte et réverbérante : marge et dynamique serrée pour que la voix passe), et **toujours un test sur place** ; version TV séparée à -23. Pourquoi deux versions : une salle pardonne moins les écarts de dynamique qu'un casque, et le régisseur règle son gain une fois, sur la première minute.
+**Film d'entreprise**, pourquoi les valeurs de `SKILL.md` § 3 (-16 n'était pas sourcé avant cette recherche) : en web, le lecteur ne normalise pas, on ne veut ni être plus faible que la vidéo voisine ni écraser la voix ; en salle, la sonorisation est inconnue, souvent forte et réverbérante : marge et dynamique serrée pour que la voix passe. Pourquoi deux versions : une salle pardonne moins les écarts de dynamique qu'un casque, et le régisseur règle son gain une fois, sur la première minute.

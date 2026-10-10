@@ -1,3 +1,5 @@
+Annexe de `SKILL.md` : recettes sourcées pour filmer la nuit en infrarouge proche, détail de la section « Filmer la nuit à l'infrarouge » (le SKILL.md fait foi).
+
 # Tournage de nuit en infrarouge proche (session 19, Y15)
 
 Toutes les recettes sont **[THÉORIQUE]** : sourcées (`sources/infrarouge-tournage-2026-10.md`), aucune n'a été testée sur une vraie caméra. Le look a été maquetté en 3D (atelier 23).
@@ -11,7 +13,8 @@ Si aucune de ces trois émotions n'est voulue, une caméra très sensible en bas
 **Caméra**
 - Caméra convertie **full spectrum** (filtre IR-cut retiré) + **filtre passe-IR** devant l'objectif : 720 nm (un peu de rouge visible passe) ou 850 nm (IR seul, image franchement monochrome). Sans filtre, visible et IR se mélangent et la couleur se délave (RED 101).
 - **Point en IR, à l'image** : le point se décale par rapport au visible (verre de l'objectif, pas le filtre) ; faire le point sur le moniteur, pas aux repères ; fermer un peu (mais la diffraction arrive plus tôt en IR) ; l'autofocus peut peiner. Vérifier le point chaud (hotspot) de chaque objectif avant le tournage.
-- **Balance des blancs fixe**, mesurée sous l'illuminateur ; le monochrome se décide au grade (atelier 23 : le vert et le bruit coloré codent la surveillance).
+- **Balance des blancs fixe**, mesurée sous l'illuminateur ; le monochrome se décide au grade (atelier 23 : le vert et le bruit coloré codent la surveillance). À défaut de conversion, le mode nuit d'une caméra retire aussi le coupe-IR.
+- Trépied verrouillé ; plaque propre du lit vide au matin si des effets seront composés dessus.
 
 **Longueur d'onde**
 - **850 nm** : meilleur signal, mais une **faible lueur rouge** est visible en regardant la source (et peut gêner un dormeur ou alerter un animal).
@@ -25,10 +28,3 @@ Si aucune de ces trois émotions n'est voulue, une caméra très sensible en bas
 **Sécurité oculaire (IEC 62471)** : le proche IR comporte un risque thermique pour la rétine, la cornée et le cristallin ; l'œil ne s'en protège pas par éblouissement, car il ne le voit pas. Une LED seule est en général « exempt », mais **un projecteur à matrice de LED se classe comme produit**. Demander au loueur ou au fabricant son **groupe de risque IEC 62471** ; garder une distance au visage, ne pas viser les yeux de près, surtout pour un sujet qui dort plusieurs heures face à la source. Ne pas inventer de seuil.
 
 **À valider en phase 2** : essai d'une nuit (850 contre 940 nm, axe contre décalé, peau, draps) avant toute nuit gardée.
-
-## Résumé repris de SKILL.md : filmer la nuit à l'infrarouge [ÉPROUVÉ EN MAQUETTE] (pièce 23, Blender ; à valider sur une vraie caméra IR)
-- **Jamais l'illuminateur intégré** : dans l'axe, il dessine un cercle et une lumière plate ; c'est la signature « surveillance », même étalonné neutre.
-- **Un projecteur IR 850 nm décalé, motivé** (là où serait la fenêtre), étroit et faible, visé sur le visage ; la nuit doit rester majoritaire dans le cadre. 940 nm est invisible à l'œil (pas de lueur rouge qui réveille le dormeur) mais moins sensible pour la plupart des capteurs [THÉORIQUE].
-- Caméra : filtre coupe-IR retiré (caméra « full spectrum » ou mode nuit), balance fixe, trépied verrouillé, plaque propre du lit vide au matin si des effets seront composés dessus.
-- Au grade : voir `montage-couleur-et-intention` (le vert et le bruit coloré codent la surveillance).
-- **Détails sourcés** (filtres 720/850, point, 850 contre 940 nm, peau, yeux, sécurité IEC 62471, œuvres de référence, et ce que l'IR fait ressentir) : `infrarouge.md` dans ce dossier [THÉORIQUE].

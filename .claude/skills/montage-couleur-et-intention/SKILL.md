@@ -24,7 +24,7 @@ La couleur n'est pas une finition, c'est **un sens**. Avant de toucher une roue 
 2. **Palette réduite** : 1 dominante + 1 contrepoint + des neutres ; une palette se décide aussi **par exclusion** (nommer les couleurs interdites).
 3. **Séparer par la teinte** autant que par la luminance (sujet / fond, réel / fantasme).
 4. **La couleur évolue avec le récit** (or de l'enfance → gris de la prison).
-5. **Retenue** : la couleur la plus forte est celle qu'on garde pour un moment ; laisser des noirs. Décider **quoi** garder dans le noir avant **combien** ; en post on ne crée pas ce noir, on le protège.
+5. **Retenue** : la couleur la plus forte est celle qu'on garde pour un moment ; laisser des noirs. Décider **quoi** garder dans le noir avant **combien** ; en post on ne crée pas ce noir, on le protège (10 bits au master ; le grain n'est pas une protection à l'encodage : `details.md`).
 6. **Lumière motivée** : chaque couleur a une source plausible ; une source dans le champ n'est crédible que si elle **touche le visage et colore l'ombre**.
 7. **La couleur dit ce que les personnages taisent** ; ne pas doubler ce que le texte dit.
 8. **Décider avant de tourner** : décor, costume, gélatines, heure portent la palette ; l'étalonnage confirme, il ne sauve pas.

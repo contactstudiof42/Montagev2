@@ -1,22 +1,24 @@
-# Journal des veilles IA générative (octobre 2026)
+# Journal des veilles IA générative (octobre 2026) — HISTORIQUE
 
-Journal brut des passages de veille successifs du 2026-10-10 (sessions 19 à 25), déplacé depuis `etat-de-l-art-2026-10.md` le 2026-10-10. **Leur contenu est intégré dans l'état unique** en tête de `etat-de-l-art-2026-10.md` : c'est ce fichier-là qui fait foi. Ce journal sert à retrouver quand et d'où vient une info.
+Annexe de `SKILL.md` : **journal historique**, conservé tel quel pour retrouver quand et d'où vient une info ; **il ne fait pas foi** (le SKILL.md fait foi, puis `etat-de-l-art-2026-10.md` pour les faits outils).
+
+Contenu : la liste de ce qui était faux dans la version du 2026-10-09, puis les sept passages de veille du 2026-10-10 (sessions 19 à 25), déplacés depuis `etat-de-l-art-2026-10.md` le même jour. Tout ce qui y est utile a été repris dans l'état de l'art. Chaque statut ci-dessous est celui **du moment du passage** ; quand un statut a changé depuis, une note *[État au 10/10 au soir : …]* le signale.
 
 ---
 
-## 6. Ce qui était faux ou périmé dans la version du 2026-10-09
+## Ce qui était faux ou périmé dans la version du 2026-10-09
 
-1. **Generative Extend « 12-30 i/s, 8 bits SDR seulement »** : périmé. Les sources acceptées vont désormais de 12 à 60 i/s, 8 à 16 bits, SDR ou HDR, 360p à 4K. La **sortie** resterait en 8 bits SDR (à vérifier).
+1. **Generative Extend « 12-30 i/s, 8 bits SDR seulement »** : périmé. Les sources acceptées vont désormais de 12 à 60 i/s, 8 à 16 bits, SDR ou HDR, 360p à 4K. La **sortie** resterait en 8 bits SDR, 30 i/s au plus : **[À TRANCHER EN PHASE 2]**.
 2. **« Midjourney V7 reste par défaut »** : faux. V8.2 est le défaut depuis le 24/07/2026.
 3. **« Aleph 2.0 connu seulement par un catalogue tiers »** : faux. Officiel chez Runway le 21/05/2026.
 4. **« Hailuo 2.3, pas de version suivante »** : périmé. Hailuo 3.0 / H3 le 31/07/2026.
 5. **« Wan 2.6, open source non confirmé »** : périmé. Wan 3.0 le 24/08/2026, fermé. Poids ouverts jusqu'à 2.2 seulement.
-6. **Kling 3.0 en tête** : périmé. Kling 4.0 annoncé le 28/09/2026 (30 s), en déploiement.
+6. **Kling 3.0 en tête** : périmé. Kling 4.0 annoncé le 28/09/2026 (30 s), en déploiement. *[État au 10/10 au soir : seule la Flash est ouverte, version complète non sortie ; ne pas la promettre.]*
 7. **Seedance 2.0** : périmé. Seedance 2.5 (30 s, audio) disponible depuis août 2026.
 8. **FLUX.2, GPT Image 2, Nano Banana Pro comme références** : périmés. FLUX 3 (23/07), GPT Image 2.5 (08/09), Nano Banana 2 et 2.1 (février et octobre 2026).
 9. **Eleven v3 comme dernier modèle** : périmé. Eleven v4 le 28/09/2026.
 10. **Suno « nouveaux modèles sous licence en 2026 »** : réalisé. Suno v6 le 09/09/2026, anciens modèles retirés. UMG et Sony ont **relancé** une plainte le 18/09/2026.
-11. **Resolve 21.1 = IntelliTrack + Magic Mask 2.0** : non confirmé. Le communiqué officiel ne parle que des assistants IA (Claude, ChatGPT Codex).
+11. **Resolve 21.1 = IntelliTrack + Magic Mask 2.0** : non confirmé, à écarter (source unique). Le communiqué officiel ne parle que des assistants IA (Claude, ChatGPT Codex).
 12. **« After Effects Roto Brush : non trouvé »** : corrigé. Object Matte ; Roto Brush devient Quick Selection.
 13. **« Interpolation : non trouvé »** : corrigé (Topaz Apollo / Chronos / Aion, Runway Enhance Frame Rate) ; labo maison ajouté.
 14. **Starlight « version 2.5 ou 2.6 »** : c'est **Precise 2.5** (officiel, 31/03/2026).
@@ -45,7 +47,7 @@ Fenêtre visée : 30/09 → 10/10/2026. WebSearch (standard puis étendu) + WebF
 
 ### Rattrapages (antérieurs à la fenêtre, absents du fichier)
 - **Adobe rachète Topaz Labs** : finalisé le 23/09/2026 (voir §3, ligne corrigée). Topaz reste vendu à part. [SOURCÉ] off. blog.adobe.com ; sec. petapixel.
-- **Premiere 26.5, Generative Media Tool** : le choix de modèle inclut nommément **Firefly, Veo, Kling, Runway, Luma** ; **Generate Music** et **Generate Soundscape** (analyse jusqu'à 15 s d'image) restent en bêta. **AI Assistant d'After Effects** en bêta publique (écrit le JavaScript et monte un rig à curseurs). [SOURCÉ] off. blog.adobe.com (08/09/2026) ; sec. postmagazine, provideocoalition (09/2026).
+- **Premiere 26.5** *[numéro non confirmé, À TRANCHER EN PHASE 2]*, **Generative Media Tool** : le choix de modèle inclut nommément **Firefly, Veo, Kling, Runway, Luma** ; **Generate Music** et **Generate Soundscape** (analyse jusqu'à 15 s d'image) restent en bêta. **AI Assistant d'After Effects** en bêta publique (écrit le JavaScript et monte un rig à curseurs). [SOURCÉ] off. blog.adobe.com (08/09/2026) ; sec. postmagazine, provideocoalition (09/2026).
 - **Lyria 3.5** (musique Google) GA le 03/09/2026 ; **TTS Gemini 3.8 Flash** GA le 22/09/2026. CGU commerciales non lues. [SOURCÉ] off. ai.google.dev changelog.
 
 ### Rien de neuf trouvé (30/09 → 10/10)
@@ -134,7 +136,7 @@ Veo / Flow, Omni, Sora (fermé), Runway, Luma, Hailuo, Wan, LTX, Seedance, Pika,
 
 ---
 
-## Mise à jour du 2026-10-10 (session 22)
+## Veille du 2026-10-10 (session 22)
 
 Fenêtre : 03/10 → 10/10/2026, quatrième passage du jour. WebSearch standard, WebFetch des changelogs Higgsfield, Runway et des notes de version Suno. Rien testé. Sources : `sources/ia-generative-2026-10-10.md`, section « Veille session 22 ».
 
@@ -155,7 +157,7 @@ Fenêtre : 03/10 → 10/10/2026, quatrième passage du jour. WebSearch standard,
 
 ---
 
-### Veille 2026-10-10 (session 23)
+## Veille du 2026-10-10 (session 23)
 
 Fenêtre : 03/10 → 10/10/2026, cinquième passage du jour (WebSearch standard et étendu, WebFetch). Rien testé. Sources : `sources/ia-generative-2026-10-10.md`, « Session 23 ».
 
@@ -164,22 +166,22 @@ Fenêtre : 03/10 → 10/10/2026, cinquième passage du jour (WebSearch standard 
 - **Rien de neuf vérifié** : Veo, Sora, Kling (4.0 complet toujours pas sorti ; Higgsfield sans entrée les 09 et 10/10), Runway, Luma (Ray3.2), Pika, Seedance, Hailuo (H3), Wan (poids : 2.2 max), LTX (2.5, 11/08), Midjourney, upscale et interpolation (Topaz, FLUX Video Upscale du 19/08), Resolve (21.1, 08/09), Premiere / AE, Blender, voix et musique (au-delà de Suno Speech / Studio).
 - **Pour le monteur** : la référence audio de Vidu Q4 sert à imposer **une voix ou une ambiance** sur un plan généré ; mais le son sort « cuit » dans la vidéo, donc il faut un export séparé ou le refaire au mixage. Le 4K à 16 s maximum convient à des plans d'insert, pas à des plans-séquences. Pas de texte seul : il faut une image de départ, ce qui oblige à préparer une vraie DA image avant de générer (c'est plutôt une bonne contrainte).
 
-### Veille 2026-10-10 (session 24)
+## Veille du 2026-10-10 (session 24)
 
 Fenêtre : 03/10 → 10/10/2026, sixième passage du jour (~19h35 UTC ; 7 WebSearch standard, 3 WebFetch). Rien testé. Sources : `sources/ia-generative-2026-10-10.md`, « Session 24 ».
 
 - **Rien de neuf depuis la session 23.** Higgsfield : dernière entrée toujours le 08/10, ni Kling 4.0 complet ni Vidu Q4. Runway : dernière entrée le 02/10. ElevenLabs : dernière entrée le 05/10 (agents seulement). [SOURCÉ] off. changelogs Higgsfield, Runway, ElevenLabs (consultés le 10/10 vers 19h40 UTC).
 - **Non retenu** : « Kling 4.0 arrive en octobre » (Atlas Cloud, fal.ai, gradually.ai : toujours sans jour ni annonce Kuaishou) ; « Seedance 2.5 pourrait sortir cette semaine » (you.com, non daté, modèle déjà sorti) ; récaps d'agrégateurs (af.net, frameo, segmind) qui recyclent des infos de mars à juillet.
-- **Rien de neuf vérifié** : Veo / Flow (pas de Veo 4), Sora (fermé), Luma, Seedance, Hailuo, Wan, LTX, Vidu (au-delà de Q4 Preview), Midjourney (pas de vidéo V2), Topaz, Firefly / Premiere / AE (rien depuis Premiere 26.5 et IBC, MAX le 10-12/11), Resolve (21.1), ElevenLabs, Suno (au-delà de Speech et Studio).
+- **Rien de neuf vérifié** : Veo / Flow (pas de Veo 4), Sora (fermé), Luma, Seedance, Hailuo, Wan, LTX, Vidu (au-delà de Q4 Preview), Midjourney (pas de vidéo V2), Topaz, Firefly / Premiere / AE (rien depuis l'annonce « Premiere 26.5 », numéro non confirmé, et IBC ; MAX le 10-12/11), Resolve (21.1), ElevenLabs, Suno (au-delà de Speech et Studio).
 - **Pour le monteur** : rien à changer dans les devis ni dans le choix d'outils de la session 23. Ne pas planifier de plans de 30 s Kling 4.0 tant que le modèle n'est pas listé chez Kling ou Higgsfield.
 
-### Mise à jour 2026-10-10 (session 25, soir)
+## Veille du 2026-10-10 soir (session 25)
 
 Fenêtre : 03/10 → 10/10/2026, septième passage du jour (6 WebSearch, 2 WebFetch). Rien testé.
 
 - **Aucun nouveau modèle vidéo, voix, musique, upscale, interpolation ou détourage depuis la session 24.** Higgsfield : dernière entrée le 08/10 (Katana, vote du festival). Runway : dernière entrée le 02/10. Kling 4.0 complet : toujours « octobre », sans jour. [SOURCÉ] off. higgsfield.ai changelog et runway.com/changelog (consultés le 10/10 au soir) ; sec. atlascloud.ai/blog/tips/kling-4-flash-vs-full.
 - **Rattrapage image : Tencent HY Image 3.5 Preview** (22/09/2026 ; listé sur OpenRouter le 05/10). Génération et retouche d'image, retouche conversationnelle sur plusieurs tours, jusqu'à 20 références ; 2K annoncé par Tencent (4K selon OpenRouter : (non confirmé)) ; environ 0,024 $ l'image ; **pas de poids publiés**, deux nœuds partenaires dans ComfyUI. Le « +30 % face à HY Image 3.0 » vient des tests internes de Tencent (non confirmé). [SOURCÉ] sec. comfyui-wiki.com/en/news/2026-09-22-tencent-hy-image-3-5-preview (22/09/2026) ; openrouter.ai/tencent/hy-image-v3.5-preview (05/10/2026) ; runtimewire.com (09/2026).
   - **Pour le monteur / motion designer** : une option de plus pour décliner des plaques ou des key visuals dans ComfyUI par retouches successives. Elle n'apporte rien que FLUX 3 ou Nano Banana 2.1 ne fassent déjà, et il n'y a pas de poids pour un usage en local. À tester seulement si le coût par image compte.
-- **AI Act art. 50** : rien de neuf depuis l'avis de la Commission du 08/07/2026 sur le code de bonnes pratiques (obligations applicables depuis le 02/08/2026). [SOURCÉ] off. digital-strategy.ec.europa.eu/en/policies/code-practice-ai-generated-content.
+- **AI Act art. 50** : rien de neuf depuis l'avis de la Commission du 08/07/2026 sur le code de bonnes pratiques (obligations applicables depuis le 02/08/2026). *[Les lignes directrices finales C(2026) 5054 du 20/07/2026 sont postérieures à cet avis : voir l'état de l'art § 5.]* [SOURCÉ] off. digital-strategy.ec.europa.eu/en/policies/code-practice-ai-generated-content.
 - **Non retenu** : « Grok Imagine Video 1.5 Lite le 08/10 » (llmgateway.io seulement, déjà écarté en session 23) ; « ElevenLabs v3 » (voxbooster, récap Q4 daté en partie dans le futur).
 - **Rien de neuf vérifié** : Veo, Sora, Luma, Pika, Hailuo, Seedance, Wan, LTX, Vidu (au-delà de Q4 Preview), Midjourney, Firefly / Premiere / AE / Resolve / Blender, ElevenLabs, Suno, Udio.

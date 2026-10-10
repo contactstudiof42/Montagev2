@@ -1,4 +1,6 @@
-# Signature et cartons de fin — annexe de `montage-direction-artistique` (session 10, 2026-10-10) [DÉDUIT, éprouvé sur l'examen n°6 seulement]
+Annexe de `SKILL.md` : critères et méthode du carton de fin et de la signature (le SKILL.md fait foi).
+
+# Signature et cartons de fin (session 10, 2026-10-10) [THÉORIQUE, mis à l'épreuve sur l'examen n°6 seulement]
 
 Origine : examen n°6, carton « Une voix par semaine. Devenez-la. » — ambigu (devenir la voix ? la personne ?), formule de rédacteur. Je ne suis pas concepteur-rédacteur : quand le client a une agence, la phrase vient d'elle ; ce que je juge, c'est **comment elle tient à l'image et au montage**.
 

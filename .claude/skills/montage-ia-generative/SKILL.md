@@ -9,7 +9,7 @@ Marqueurs : **[SOURCÉ]** lu dans une source datée · **[TESTÉ EN LABO]** fait
 
 **Fait foi sur** : le choix d'un outil génératif, son usage artistique, les clichés « look IA », le juridique (AI Act, droits, consentement). **Pour** les réglages de Generative Extend et de l'Object Mask dans Premiere, voir `montage-premiere` ; Magic Mask et l'API Resolve, `montage-resolve` ; l'interpolation (RIFE, fondu, `minterpolate`), `montage-workflows` ; piloter Higgsfield par MCP, `montage-pilotage-mcp`.
 
-Faits outils à jour au **2026-10-10**, tirés de sources web (aucun modèle génératif n'a été testé ici). État détaillé et sources : [`etat-de-l-art-2026-10.md`](etat-de-l-art-2026-10.md) (fait foi) ; journal des veilles : [`veilles-2026-10.md`](veilles-2026-10.md). Ce marché change chaque mois : **toute info outil de plus de 3 mois est à revérifier avant un devis**.
+Faits outils à jour au **2026-10-10**, tirés de sources web (aucun modèle génératif n'a été testé ici). État détaillé et sources : [`etat-de-l-art-2026-10.md`](etat-de-l-art-2026-10.md) (prime sur le journal) ; journal historique des veilles, qui ne fait pas foi : [`veilles-2026-10.md`](veilles-2026-10.md). Ce marché change chaque mois : **toute info outil de plus de 3 mois est à revérifier avant un devis**.
 
 ## 1. Ce que l'IA permet vraiment, artistiquement [THÉORIQUE]
 
