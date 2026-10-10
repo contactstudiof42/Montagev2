@@ -461,3 +461,14 @@ Session 6 : enrichis `montage-son-et-emotion` (hors champ, Chion, présence dans
 - **[TECH] Labo paroles ASS** (`labo/paroles/ass_mot_a_mot.py`, `ass_pop.py`) : réussi, 24/24 mots à l'image `ceil(t × cadence)` (25, 29,97, 23,976) ; pop par échelle dans une ligne = 110 px de glissement, un événement par mot = 8 px. PLAN-TESTS 57.
 - **[ART] Pièce 19 v5-v8** : gestes à l'épaule ; ratés v5 (signe inversé, geste dans l'axe), v6 (bug : commentaire en milieu de ligne, rendu figé, invalidé), v7 lisible (sémaphore), v8 non concluante (rig sans coude, cadre raté). Leçons → `montage-direction-artistique`.
 
+
+### Session 15 — 2026-10-10 12:30 → ~13:15 UTC (horloge de la VM)
+- Démarrage : dernier commit 33 min avant, pas de doublon. Branche `claude/expert-montage`.
+- **[ART] Examen n°8 « Nuit Basse »** (`examens/08-festival-strobe-lineup.md`) : Reel de festival, 24 noms, rushes à strobe, écrans urbains. 15/20. Corrigé le jour même par l'atelier 20 (texte blanc dans le flash, noires à 128 BPM = limite) et par la recherche (« son de la salle » inventé ; lecture de repérage 3-4 s).
+- **[TECH] Labo rushes à strobe** (`labo/photosensibilite/strobe-rushes/`) : réussi. Strobe calé 8,3 Hz → 9 flashs/s ; libre 7,7 Hz → 4/s ; `tmix` n'efface que par coïncidence de période (voile laiteux) ; `deflicker` échoue sur le calé ; la saccade passe toujours, garde le coup si les images sont choisies.
+- **[ART] Pièce 20 « La lumière écrit »** v1-v7 (`atelier/20-la-lumiere-ecrit/`) : ratés v1 (saccade automatique : aucun coup retenu), v2-v3 (nom blanc noyé), v5 (doublon de nom, sommet trop faible) ; réussis v4 (nom noir puis inversé), v6 (noires pointées, pire seconde 2 ; sommet tenu 8 images ; -14,5 LUFS) ; v7 traînée : d'abord des **poses fantômes discrètes** (moyenne de 8 poses à 1/25 s), refaite avec 4 sous-poses par image.
+- **[TECH] Son** : `loudnorm` une passe → -17,9 LUFS sur 10 s à kicks ; boucle gain + limiteur 192 kHz → -14,5 / -2,5 dBTP en 5 passes (confirme R6).
+- **[ART] Culture** : `culture/step-printing-wong-kar-wai-et-autres.md` (fil CML, BFI, Duke) : une saccade doit traîner ; elle se justifie par un décalage de temps entre un personnage et son monde.
+- **[TECH] Sous-agents** : (1) vitesse de lecture FR vérifiée (Netflix FR 17 car./s, ATAA 14-15, charte CSA 12 car. = 1 s), `labo/paroles/temps_lecture.py`, règle R7b ; (2) son d'un strobe et lecture de repérage (`sources/strobe-son-et-lecture-reperage-2026-10.md`) ; (3) pièce 18 v6 « la cause montée » (Blender) : voir la ligne suivante.
+- Skills modifiés : direction-artistique, kinetic-editing, regard (21), son-et-emotion (13), motion-design-principes (6b), after-effects (saccade). PLAN-TESTS 58-60.
+- Sources principales : partnerhelp.netflixstudios.com (guide FR), fiche ATAA 2022, charte CSA 2011 (copie tierce), Hornof & Kieras CHI 97, Boettcher & Wolfe 2015, cinematography.net (fil CML step printing), bfi.org.uk, forums Adobe Community.
