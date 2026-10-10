@@ -76,3 +76,10 @@ Leçons :
 3. Coût : calculer l'écho une fois par coup (cache) et non par image : 40 s pour 20 s de film.
 
 À faire (v9) : fin de section calée, carton 6 s, son (kick + relais + impact, boucle R6), un « moment Muybridge » (la tête d'affiche en 4 phases côte à côte, fiche `culture/chronophotographie-marey-muybridge.md`) contre la trace superposée.
+
+## v9 (session 16) : sections calées sur la barre, carton 6 s (`v8.py --v9`, `v9-planche.png`)
+- **8 noms de niveau 2** sur noires pointées = 12 temps = 3 mesures pile : le 8e nom (ARGILE) occupe l'espace mort de la v8, le premier paquet tombe sur le 1er temps de la mesure 5. **Paquets sur blanches** (2 temps) : 4 paquets = 2 mesures pile. Carton-liste 6 s (22 s au total). `flash_check.py` : 13 flashs, pire seconde 2.
+- Planche : le trou involontaire a disparu ; les trois sections ont maintenant **trois pas** (noires pointées → blanches → silence) : la liste **ralentit** avant le trou, un ritardando qui prépare le silence au lieu de le surprendre. Entre deux paquets restent ~5 images vides (23 − 18) : une respiration régulière, à garder ou à combler en allongeant l'affichage à 17 images (à juger en mouvement).
+- Le dernier paquet n'a que 2 noms (11 au niveau 3) : asymétrie à garder (il annonce la fin), ou à corriger en déplaçant un nom ; je la garde.
+- **Leçon** : choisir la valeur rythmique d'une section d'après le **nombre de noms à placer dans un nombre entier de mesures** (8 × 1,5 = 12 temps, 4 × 2 = 8), pas l'inverse ; changer de valeur entre sections donne la forme sans ajouter d'effet.
+- Reste (v10) : le son (kick, relais, impact, boucle R6) et le « moment Muybridge » (tête d'affiche en 4 phases côte à côte) contre la trace superposée.

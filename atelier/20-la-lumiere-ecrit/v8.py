@@ -10,13 +10,15 @@ sys.argv = [sys.argv[0], "v4", "/dev/null", "1"] + sys.argv[1:]   # piece.py lit
 exec(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "piece.py")).read().split("POS = [")[0])  # scène et compo
 OUT = sys.argv[4]; os.makedirs(OUT, exist_ok=True)
 UNI = "--uniforme" in sys.argv
-NOM = "v8-uniforme" if UNI else "v8"
-N8 = 500
+V9 = "--v9" in sys.argv          # v9 : sections calées sur la barre (8 noms sur noires pointées, paquets sur blanches), carton 6 s
+NOM = "v8-uniforme" if UNI else ("v9" if V9 else "v8")
 F = lambda s: ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf", s)
 TETE = "OKAPI\nSOUND"
 N2 = ["LUNE VIVE", "DJ TARMAC", "FERRAILLE", "SOFIA K", "NOVA ROUGE", "VELOURS", "HALOGÈNE"]
 N3 = ["BRUME", "LES QUAIS", "ATELIER 9", "MARIN B", "KHÔL", "PORT-SEC", "ZONE 3", "CRISTAL", "ARGILE", "MÉTRO 12",
       "SAULE", "JADE O."]
+if V9:
+    N2, N3 = N2 + ["ARGILE"], [x for x in N3 if x != "ARGILE"]   # 8 noms × 1,5 temps = 12 temps = 3 mesures pile
 tous = [TETE.replace("\n", " ")] + N2 + N3
 assert len(tous) == 20 and len(set(tous)) == 20, "doublon dans les noms"        # leçon v5
 
@@ -29,17 +31,18 @@ if UNI:
     TROU = (int(round(f)), int(round(f + BAR)))
     coups.append((TROU[1], TETE, (40, 110), F(54), 9999))
 else:
-    places2 = [((30, 110), 44), ((140, 230), 30), ((24, 270), 38), ((110, 80), 30), ((20, 170), 46), ((170, 130), 30), ((40, 220), 40)]
+    places2 = [((30, 110), 44), ((140, 230), 30), ((24, 270), 38), ((110, 80), 30), ((20, 170), 46), ((170, 130), 30), ((40, 220), 40), ((120, 260), 34)]
     f = BAR
     for t, (p, s) in zip(N2, places2):                             # m2-4 : niveau 2, rupture de forme (taille et place)
         coups.append((int(round(f)), t, p, F(s), 12)); f += 1.5 * BEAT
     f = 4 * BAR
     for j in range(4):                                             # m5-6 : niveau 3, paquets de 3 en colonne
         coups.append((int(round(f)), "\n".join(N3[3 * j:3 * j + 3]), [(24, 90), (200, 120), (24, 160), (200, 80)][j], F(20), 12))
-        f += 1.5 * BEAT
+        f += (2 if V9 else 1.5) * BEAT                              # v9 : blanches, 4 × 2 temps = 2 mesures pile
     TROU = (int(round(6 * BAR)), int(round(7 * BAR)))
     coups.append((TROU[1], TETE, (40, 110), F(54), 9999))
 FIN_TETE = TROU[1] + 72                                             # tête d'affiche ~2,9 s puis carton-liste
+N8 = FIN_TETE + (150 if V9 else 100) if not UNI else 500           # carton 6 s en v9 (recherche d'un nom : 3-4 s, absence : 6-7 s)
 cache = {}
 
 
