@@ -19,9 +19,12 @@ Découpage identique pour toutes les versions (son fixé d'abord, 128 BPM = 11,7
 - Loudness : -22,9 LUFS intégré, crête -2,1 dBFS (non normalisé). Pour les réseaux, mesurer puis gain vers -14 LUFS / -1 dBTP (`montage-loudness-livraison`).
 - Titre « SAS » noir tenu 2,5 s : la respiration après le sommet fonctionne sur la planche (cinq vignettes identiques = repos).
 
+## Correction (même session, outil durci)
+Avec le critère de surface juste (pire fenêtre de 1/3 × 1/3 de l'écran, WCAG), la v3 donne **6 flashs, pire seconde 3 : elle passe à la limite** (la v1 naïve : 14 flashs, pire seconde 5). Ce ne sont pas les fonds (luminance égale) mais **les grands mots clairs** qui flashent localement en apparaissant et disparaissant toutes les 3 images. Ma leçon 2 était trop optimiste. v4 : quarts de temps à 4 images ou texte à valeur 0,75 pendant la montée, et recontrôle.
+
 ## Leçons (versées dans `montage-kinetic-editing` et `montage-motion-design-principes`)
 1. **Rupture de forme = échelle + position + teinte d'abord ; la police n'ajoute qu'en grand.** Une police par carton à 12 % de hauteur, c'est du décor.
-2. **L'effet stroboscopique se fait à luminance constante** : fonds de teintes différentes à luminance relative égale (~0,03), texte clair : 0 flash au contrôle, même à 3 images par carton. Le noir / blanc alterné échoue dès 4 cartons par seconde.
+2. **L'effet stroboscopique se fait à luminance constante** : fonds de teintes différentes à luminance relative égale (~0,03) ; mais le texte clair et grand flashe localement (pire seconde 3 à 3 images par carton : limite). Le noir / blanc alterné échoue dès 4 cartons par seconde.
 3. **Le sommet doit changer de règle, pas seulement de taille** : après un chaos varié, l'arrivée se signale par la stabilité (même fond, même police, grande taille), pas par un chaos de plus.
 
 ## v4 proposée

@@ -78,7 +78,7 @@ Sources du placement : crête du riser sur le moment clé (Epidemic Sound) ; son
 - Calculer les fenêtres de source depuis la cinématique dans le script : deux régressions (v2, v5) sont venues de fenêtres recopiées à la main.
 
 ## 3c. Leçon d'atelier (pièce 09 « Générique de l'équipe », session 7)
-- **Strobe sans risque** [TESTÉ EN ATELIER] : cartons de 3 images sur des fonds de teintes différentes à **luminance relative égale** (~0,03 ; recherche de la valeur HSV qui donne la luminance cible), texte clair : 0 flash au contrôle. Les mêmes cartons sur fonds noir / blanc alternés : 16 flashs, pire seconde 5, inlivrable.
+- **Strobe sans risque** [TESTÉ EN ATELIER] : cartons de 3 images sur des fonds de teintes différentes à **luminance relative égale** (~0,03 ; recherche de la valeur HSV qui donne la luminance cible), texte clair : le fond ne flashe plus, mais **les grands mots clairs flashent localement** (critère WCAG de la fenêtre 1/3 × 1/3) : 6 flashs, pire seconde 3, à la limite ; marge : cartons de 4 images ou texte moins lumineux dans les passages les plus rapides. Les mêmes cartons sur fonds noir / blanc alternés : 16 flashs, pire seconde 5, inlivrable.
 - **Rupture de forme** : varier échelle (10 → 60 % de la hauteur), position et débord à chaque coupe ; la police ne compte qu'en grand. Le sommet (les noms qui comptent) doit changer de règle, pas seulement grossir.
 
 ## 4. Recettes
@@ -111,7 +111,7 @@ ffmpeg : `zoompan=z='if(lt(on,2),1,1+0.35*(1-pow(1-min((on-1)/3,1),3)))':d=1:s=5
 - [ ] Chaque whoosh démarre avant sa coupe et culmine dessus ; chaque impact tombe sur l'image (vérifié image par image).
 - [ ] Au plus un rang 1 (impact) par séquence de 5 à 10 s ; les whoosh varient.
 - [ ] Au moins une respiration (plan tenu, silence ou baisse de densité) toutes les 5 à 10 s.
-- [ ] Shake et flash amortis en ≤ 6 images, flash ≤ 2 images. **Photosensibilité** [TESTÉ EN LABO, session 7] : `python3 -I labo/photosensibilite/flash_check.py rendu.mp4` ; > 3 flashs dans une seconde = refus diffuseur (WCAG 2.3.1, BT.1702). Un flash d'1 image = 1 flash entier : 4 impacts flashés par seconde échouent. Pour un effet « strobe » sûr, changer **teinte et forme à luminance égale** (principe Noé / Kan, `culture/enter-the-void-generique-noe-tom-kan.md`). Pub UK : test Harding obligatoire.
+- [ ] Shake et flash amortis en ≤ 6 images, flash ≤ 2 images. **Photosensibilité** [TESTÉ EN LABO, session 7] : `python3 -I labo/photosensibilite/flash_check.py rendu.mp4` ; > 3 flashs dans une seconde = refus diffuseur (WCAG 2.3.1, BT.1702). Un flash d'1 image = 1 flash entier : 4 impacts flashés par seconde échouent. **La surface se juge localement** (pire fenêtre de 1/3 × 1/3 de l'écran) : un mot ou un logo de 6 % de l'écran qui clignote vite échoue. Pour un effet « strobe » sûr, changer **teinte et forme à luminance égale** (principe Noé / Kan, `culture/enter-the-void-generique-noe-tom-kan.md`). Pub UK : test Harding obligatoire.
 - [ ] Captions : zone sûre, 1-4 mots, orthographe, mot-clé marqué.
 - [ ] La voix est intelligible au téléphone, haut-parleur intégré.
 - [ ] -14 LUFS ±0,5 / ≤ -1 dBTP **mesurés sur le MP4 encodé**.

@@ -2,9 +2,9 @@
 python3 -I flash_check.py video.mp4 [--fps 25]
 Par image (réduite à 64×36) : luminance relative linéaire (sRGB → linéaire, Rec.709), part de l'écran
 qui varie, et « rouge saturé » (R/(R+G+B) ≥ 0,8, variation de (R-G-B)×320 > 20, définition WCAG).
-Transition = variation ≥ 10 % de luminance relative avec l'état sombre < 0,80, sur ≥ 25 % de l'écran
-(approximation plein écran du critère de surface 10° du WCAG : sur une TV à distance normale, 25 % du
-champ 10° ≈ un quart de l'écran ; c'est PLUS PERMISSIF que le vrai critère, à durcir pour les zones locales).
+Transition = variation ≥ 10 % de luminance relative avec l'état sombre < 0,80, sur ≥ 25 % de la PIRE
+fenêtre de 1/3 × 1/3 de l'écran (le champ de 10° du WCAG : 341×256 px sur 1024×768). Option --plein-ecran :
+ancien critère (25 % de tout l'écran), trop permissif (session 7 : il laissait passer un carré de 6 % de l'écran).
 Flash = paire de transitions opposées. Échec si > 3 flashs dans une fenêtre glissante d'une seconde.
 Ce n'est PAS un Harding FPA : un outil de montage pour repérer les séquences à risque avant le test officiel.
 """
@@ -23,16 +23,29 @@ s = v.sum(-1) + 1e-9
 red = np.where(v[..., 0] / s >= 0.8, np.clip((v[..., 0] - v[..., 1] - v[..., 2]) * 320, 0, None), 0)
 
 
+LOCAL = "--plein-ecran" not in sys.argv
+WY, WX = h // 3, w // 3   # fenêtre « 10° » du WCAG : 341×256 sur un écran 1024×768, soit 1/3 × 1/3
+
+
+def part(mask):
+    """part maximale du masque : sur tout l'écran (ancien critère) ou dans la pire fenêtre 1/3 × 1/3 (WCAG)."""
+    if not LOCAL:
+        return mask.mean()
+    I = np.pad(mask.astype(np.float64).cumsum(0).cumsum(1), ((1, 0), (1, 0)))
+    S = I[WY:, WX:] - I[:-WY, WX:] - I[WY:, :-WX] + I[:-WY, :-WX]
+    return S.max() / (WY * WX)
+
+
 def transitions(prev, cur):
     """+1 / -1 / 0 pour la transition prev → cur (montée / descente / rien), critère luminance + surface."""
     d = cur - prev; dark = np.minimum(prev, cur)
-    up = ((d >= 0.1) & (dark < 0.8)).mean(); dn = ((d <= -0.1) & (dark < 0.8)).mean()
+    up = part((d >= 0.1) & (dark < 0.8)); dn = part((d <= -0.1) & (dark < 0.8))
     return 1 if up >= 0.25 else -1 if dn >= 0.25 else 0
 
 
 def trans_rouge(prev, cur):
     d = cur - prev
-    return 1 if ((d > 20).mean() >= 0.25) else -1 if ((d < -20).mean() >= 0.25) else 0
+    return 1 if part(d > 20) >= 0.25 else -1 if part(d < -20) >= 0.25 else 0
 
 
 def flashes(T):
@@ -55,4 +68,4 @@ for nom, X, f in (("general", L, transitions), ("rouge", red, trans_rouge)):
     res[nom] = (len(F), pire)
 ok = all(p <= 3 for _, p in res.values())
 print(f"{src}: {len(L)} images ; flashs généraux {res['general'][0]} (pire seconde {res['general'][1]}) ; "
-      f"flashs rouges {res['rouge'][0]} (pire seconde {res['rouge'][1]}) -> {'OK' if ok else 'ÉCHEC'}")
+      f"flashs rouges {res['rouge'][0]} (pire seconde {res['rouge'][1]}) -> {'OK' if ok else 'ÉCHEC'} [{'fenêtre 1/3' if LOCAL else 'plein écran'}]")
