@@ -1,6 +1,6 @@
 # Charlotte Wells — *Aftersun* (2022), montage de Blair McClendon
 
-Écrit et réalisé par Charlotte Wells (premier long métrage). Montage : Blair McClendon. Image : Gregory Oke (35 mm, ARRICAM LT, Cooke S4, 1.85:1, plus caméscopes MiniDV). Musique originale : Oliver Coates. Avec Paul Mescal (Calum) et Frankie Corio (Sophie). 101 min, tourné à Ölüdeniz (Turquie), présenté à la Semaine de la critique, Cannes, le 21 mai 2022.
+Écrit et réalisé par Charlotte Wells (premier long métrage). Montage : Blair McClendon. Image : Gregory Oke (35 mm, ARRICAM LT, Cooke S4, 1.85:1, plus caméscopes MiniDV). Musique originale : Oliver Coates. Avec Paul Mescal (Calum) et Frankie Corio (Sophie). 101 min, tourné à Ölüdeniz (Turquie), présenté à la Semaine de la critique, Cannes, le 21 mai 2022, où il reçoit un prix du jury (Wikipedia, revérifié le 2026-10-10). Image confirmée par Kodak : ARRICAM LT, Cooke S4, 1.85:1, Kodak Vision3 200T 5213 et 500T 5219.
 Recherches du 2026-10-10. Sources : Wikipédia ; Sight and Sound (BFI) ; MUBI Notebook (entretien Wells) ; Nothing Bogus (entretien McClendon) ; Kodak (entretien Oke) ; No Film School ; Slate ; Reverse Shot ; Screen Slate (résumé de podcast). Pas de visionnage possible : analyse fondée sur ces textes. Les passages marqués **[mémoire]** viennent de mon souvenir du film et ne sont pas vérifiés.
 
 ## Ce que l'œuvre cherche à faire ressentir / comprendre
@@ -22,7 +22,7 @@ Recherches du 2026-10-10. Sources : Wikipédia ; Sight and Sound (BFI) ; MUBI No
 - **Fabrication de la rave.** Tournée à 48 i/s ; l'obturateur et le stroboscope étant désynchronisés, la scène a été tournée deux fois, avec un vrai strobo puis avec des SkyPanels en mode stroboscope (Kodak).
 - **Montage de la rave.** Selon un extrait d'entretien de Wells repris en recherche, le binôme a repoussé ce montage jusqu'au dernier moment parce que la matière était quasi intravaillable (surtout des images noires).
 - **« Under Pressure ».** Choix tardif, venu remplacer une musique temporaire ; Wells parle d'un pari énorme (Sight and Sound). La séquence alterne la danse du dernier soir en Turquie et la rave.
-- **Défamiliariser le tube.** Reverse Shot décrit une chanson entendue mille fois qui devient soudain étrangère, réduite par moments à des bourdonnements. **[mémoire / sources faibles]** La version du film isolerait les voix de Mercury et Bowie, retravaillées par Oliver Coates.
+- **Défamiliariser le tube.** Reverse Shot décrit une chanson entendue mille fois qui devient soudain étrangère, réduite par moments à des bourdonnements. `[NON VÉRIFIÉ]` La version du film isolerait les voix de Mercury et Bowie, retravaillées par Oliver Coates (seule source trouvée le 2026-10-10 : une page de remplissage sans auteur ; Wikipedia ne mentionne que le titre original de Queen et David Bowie).
 - **La fin.** Retour à l'aéroport déjà vu au caméscope : on comprend que c'est Calum qui filmait. Un panoramique circulaire passe par l'appartement de Sophie adulte, puis Calum range le caméscope, s'éloigne dans un couloir vide et ouvre des portes derrière lesquelles clignote la rave (Slate).
 - **La fin au montage.** Selon Wells, la fin a très peu changé depuis le premier assemblage (MUBI). McClendon a défendu l'idée de finir sur elle plutôt que sur lui ; il tient la dernière image pour la seule qu'on ne peut pas rattraper (Nothing Bogus).
 
@@ -53,11 +53,13 @@ Corollaire 4 : quand le montage ne touche plus, revenir aux deux ou trois moment
 - https://slate.com/culture/2022/11/aftersun-paul-mescal-movie-ending-meaning-final-shot.html (analyse du dernier plan : aéroport, panoramique, portes de la rave)
 - https://reverseshot.org/reviews/entry/3000/aftersun (critique : fondus, ellipses, miroir nuit/jour, chanson rendue étrangère)
 - https://www.screenslate.com/articles/episode-18-aftersun-director-charlotte-wells-editor-blair-mcclendon (résumé du podcast Wells et McClendon : MiniDV et mémoire générationnelle, morceaux gardés ou écartés)
+- Revérifications du 2026-10-10 : https://en.wikipedia.org/wiki/Aftersun (101 min, 21 mai 2022, Ölüdeniz, équipe, âges de Calum et Sophie) ; https://www.kodak.com/en/motion/blog-post/aftersun/ (caméra, optiques, ratio, stocks, rave à 48 i/s tournée deux fois, cadrage de Calum)
 
 ## Incertain / à vérifier
 - L'entretien IndieWire sur la fabrication de la séquence « Under Pressure » (indiewire.com, « aftersun-under-pressure-ending-making-of ») était payant : je n'ai vu que des extraits repris en recherche, dont la phrase de McClendon sur la nécessité d'« aliéner » le son pop des années 90. À lire en entier.
 - La version de « Under Pressure » avec voix isolées et arrangement d'Oliver Coates : relevée seulement sur des sites peu fiables et dans ma mémoire.
 - Le passage où Wells dit que la rave a été montée en dernier à cause des images surtout noires vient d'un extrait de recherche dont je n'ai pas confirmé la source exacte (probablement MUBI Notebook ou The Playlist).
-- Qui tient le caméscope : Wikipédia et Kodak disent Sophie, Reverse Shot dit le père ; le film semble alterner (la fin révèle que Calum filme l'aéroport).
-- **[mémoire]** Le film s'ouvrirait sur une cassette MiniDV où Sophie interroge son père, et Calum fêterait ses 31 ans pendant le séjour. Non vérifié.
+- Qui tient le caméscope : Wikipédia et Kodak disent que Sophie enregistre les vacances en MiniDV, Reverse Shot dit le père ; le film semble alterner (la fin révèle que Calum filme l'aéroport, d'après Slate). `[NON VÉRIFIÉ]` pour l'alternance.
+- Calum a 30 ans au début du séjour et fête ses 31 ans pendant les vacances ; Sophie a 11 ans (Wikipedia, vérifié le 2026-10-10).
+- `[NON VÉRIFIÉ]` Le film s'ouvrirait sur une cassette MiniDV où Sophie interroge son père (souvenir ; Wikipedia ne décrit pas l'ouverture).
 - Aucune source sur le monteur son ni sur le nombre de plans ou leur durée moyenne ; les sites The Playlist, Slant, Filmmaker et RogerEbert m'ont renvoyé une erreur 403.

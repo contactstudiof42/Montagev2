@@ -83,7 +83,7 @@ Règles : un seul rang 1 par 5-10 s ; whoosh variés (3-5 variantes, **varier le
 - [ ] Planche « 1re image de chaque plan » : chaque vignette se lit seule.
 - [ ] Image 1 et son 1 accrochent ; promesse avant 3 s.
 - [ ] Whoosh avant la coupe, crête dessus ; impacts sur l'image (vérifié image par image).
-- [ ] Au plus un rang 1 par 5-10 s ; une respiration toutes les 5-10 s.
+- [ ] Au plus un rang 1 par 5-10 s ; au moins un plan tenu par séquence de 5 à 8 s (§ 1).
 - [ ] Shake ≤ 6 images, flash ≤ 2 images, `flash_check.py` passé.
 - [ ] Captions : zone sûre, 1-4 mots, orthographe, mot-clé marqué.
 - [ ] Voix intelligible sur haut-parleur de téléphone ; -14 LUFS ±0,5 / ≤ -1 dBTP mesurés sur le MP4.

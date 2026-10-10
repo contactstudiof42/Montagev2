@@ -7,7 +7,7 @@ description: Principes artistiques du motion design et de la typographie animée
 
 **Marqueurs** : [SOURCÉ] fiche ou source écrite · [THÉORIQUE] convention du métier non vérifiée ici · [TESTÉ EN LABO] fait technique mesuré · [ÉPROUVÉ EN MAQUETTE] vu sur maquette Blender / Pillow / ffmpeg, hypothèse à confirmer sur de vraies images (phase 2).
 
-**Fait foi sur** : le sens d'un mouvement, la lisibilité du texte animé, cartons et génériques. **Ailleurs** : graphe de vitesse, easing, expressions → `montage-after-effects` ; principe « un concept, un signe » en général → `montage-references` §C6 ; durée des plans et calage musical → `montage-rythme`.
+**Fait foi sur** : le sens d'un mouvement, la lisibilité du texte animé, cartons et génériques. **Ailleurs** : graphe de vitesse, easing, expressions → `montage-after-effects` ; principe « un concept, un signe » en général → `montage-references` § C, n° 9 ; durée des plans et calage musical → `montage-rythme`.
 
 Sources : `culture/saul-bass-generiques.md`, `culture/kyle-cooper-se7en.md`, `culture/mclaren-pas-de-deux-et-chronophotographie.md`, `culture/chronophotographie-marey-muybridge.md`.
 
