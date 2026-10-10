@@ -39,6 +39,9 @@ Pour chaque direction, fiche fixe :
 - **Le rythme du sujet** : le sujet a-t-il déjà sa dramaturgie physique (lent puis brusque, montée puis débordement) ? La cadrer avant d'inventer un rythme de montage. *(ajout atelier 04)*
 - **Révélation : mystère ou suspense ?** Cacher ce qui va apparaître (mystère : la question) ou le montrer d'abord au spectateur (suspense : l'attente de ce qu'on sait). Deux directions honnêtes et contrastées pour un même brief ; ne pas confondre avec le choc (Murai). *(ajout atelier 04)*
 - Clichés de secteur : voir `culture/cliches-de-secteur.md` avant de proposer. *(session 4)*
+- **Quand le brief demande de ne pas montrer** (une présence, une menace, un doute), envisager **le hors-champ sonore** comme direction à part entière (surround, son sans source visible) avant tout effet d'image. *(ajout examen n°4)*
+- **Une direction sans dispositif** : si deux pistes reposent sur un dispositif (répétition, point de vue, couleur comptée), la troisième s'en passe (temps réel, plan-séquence, montage invisible). *(ajout examen n°4)*
+- **Ne citer que ce qu'on a analysé** : une référence du client non étudiée se cite par son principe supposé, avec la mention « à vérifier », jamais par un plan précis. *(ajout examen n°4)*
 - **Pas de direction de paille** : chacune doit pouvoir gagner. Si je sais d'avance qu'elle sera écartée, la remplacer. *(ajout examen n°2)*
 
 ## Étape 3 — Recommander et défendre
@@ -66,5 +69,5 @@ Refuser (avec une alternative) :
 1. Reformulation de l'intention (7 lignes). 2. Trois directions (fiche fixe). 3. Recommandation argumentée. 4. Critères. 5. Points de vigilance (tournage, droits, livraison).
 
 ## Limites connues (à corriger par les examens)
-- Éprouvée trois fois : examen n°1 (13/20 ; audace insuffisante, clichés de la catégorie non vus), examen n°2 (14/20 ; goût du client plaqué comme une recette, direction de paille), examen n°3 (15/20, corporate ; idée propre au sujet trouvée avant les références, mais humain réduit à l'interview, faisabilité non vérifiée, loudness hors plateformes non sourcée). Les ajouts ci-dessus en viennent.
+- Éprouvée trois fois : examen n°1 (13/20 ; audace insuffisante, clichés de la catégorie non vus), examen n°2 (14/20 ; goût du client plaqué comme une recette, direction de paille), examen n°4 (14/20, fiction ; contradiction du brief bien résolue, mais mon propre système — Morris et « une seule chaleur » — revient après l'alerte, et le hors-champ sonore est manqué), examen n°3 (15/20, corporate ; idée propre au sujet trouvée avant les références, mais humain réduit à l'interview, faisabilité non vérifiée, loudness hors plateformes non sourcée). Les ajouts ci-dessus en viennent.
 - Pas encore de bibliothèque de références par format : voir `BACKLOG.md`.

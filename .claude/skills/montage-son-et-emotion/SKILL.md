@@ -44,3 +44,7 @@ Version 1 (session 1, 2026-10-09). Sources : `culture/walter-murch-blink-of-an-e
 ## À approfondir
 - Fiches : faites — Ben Burtt, Gary Rydstrom (session 4, `culture/`). Reste : Murch (sound design d'*Apocalypse Now*), le silence chez Kubrick / Bresson.
 - Atelier : même image, trois bandes son (avec, contre, silence) ; critique comparée.
+
+## Présence non montrée (ajout examen n°4, [THÉORIQUE])
+Quand un film doit suggérer sans trancher (un visiteur, une menace), le son hors champ est l'outil le plus juste : il crée une présence que l'image ne confirme pas. En salle 5.1, un son discret dans les canaux arrière (respiration, craquement d'une chaise) est entendu dans le dos du spectateur, comme par le personnage. Pièges : le repli stéréo (downmix) le ramène devant ou l'efface ; le vérifier en stéréo et au casque. À documenter : niveaux, placement, convention des festivals.
+
