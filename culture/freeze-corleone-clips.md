@@ -14,6 +14,8 @@
 - **Letterbox** : bandes noires de 16 px en haut et en bas, soit un rapport actif d'environ **1,86**, un format « film » et pas clip plein cadre.
 - **Mesures** (luma Rec.709) : moyenne 79/255, médiane 72 ; 12 % des pixels sous 30 et 1,5 % au-dessus de 200 ; saturation médiane 32/255 ; R-B = -8, donc une légère dominante froide. C'est **une image moyenne et grise**, ni noire comme « Grincement » (88 % sous 30), ni sans couleur comme « Vrai/Faux ».
 
+> **Recontrôle à la main (session 9, agent principal)** : bandes 16 px confirmées, rapport actif 1,86 confirmé, médiane 72 confirmée, R-B −9 (−8 ci-dessus). Sur la seule zone active (sans les bandes) : moyenne 82, 7,9 % des pixels sous 30 ; les 79 et 12 % ci-dessus incluent les bandes noires. Conclusion inchangée.
+
 **Ce qu'il cherche à faire ressentir** [DÉDUIT de la vignette] : une **mélancolie de personnage**. Le rappeur devient un héros de série animée, seul, pensif, dans une ville anonyme. On n'est pas dans l'intimidation de bande.
 
 **Pourquoi ça marche** [DÉDUIT]
