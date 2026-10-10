@@ -1,0 +1,255 @@
+{
+ "A": {
+  "montage": "A",
+  "plans": 28,
+  "coupes": 27,
+  "duree_moy_s": 0.857,
+  "duree_min_s": 0.857,
+  "duree_max_s": 0.857,
+  "ecart_type_s": 0.0,
+  "coupes_sur_demi_mesure_pct": 100.0,
+  "coupes_sur_temps_pct": 100.0,
+  "apparitions_plan_chaud": 4,
+  "coupes_par_section": {
+   "intro(0-4)": 8,
+   "couplet(4-12)": 15,
+   "fin(12-14)": 4
+  },
+  "edl": [
+   [
+    "p1_mandel_lent",
+    0.0,
+    0.857
+   ],
+   [
+    "p2_mandel_bord",
+    0.857,
+    0.857
+   ],
+   [
+    "p3_life",
+    1.714,
+    0.857
+   ],
+   [
+    "p4_cellauto",
+    2.571,
+    0.857
+   ],
+   [
+    "p5_gradients",
+    3.429,
+    0.857
+   ],
+   [
+    "p6_braise",
+    4.286,
+    0.857
+   ],
+   [
+    "p1_mandel_lent",
+    5.143,
+    0.857
+   ],
+   [
+    "p2_mandel_bord",
+    6.0,
+    0.857
+   ],
+   [
+    "p3_life",
+    6.857,
+    0.857
+   ],
+   [
+    "p4_cellauto",
+    7.714,
+    0.857
+   ],
+   [
+    "p5_gradients",
+    8.571,
+    0.857
+   ],
+   [
+    "p6_braise",
+    9.429,
+    0.857
+   ],
+   [
+    "p1_mandel_lent",
+    10.286,
+    0.857
+   ],
+   [
+    "p2_mandel_bord",
+    11.143,
+    0.857
+   ],
+   [
+    "p3_life",
+    12.0,
+    0.857
+   ],
+   [
+    "p4_cellauto",
+    12.857,
+    0.857
+   ],
+   [
+    "p5_gradients",
+    13.714,
+    0.857
+   ],
+   [
+    "p6_braise",
+    14.571,
+    0.857
+   ],
+   [
+    "p1_mandel_lent",
+    15.429,
+    0.857
+   ],
+   [
+    "p2_mandel_bord",
+    16.286,
+    0.857
+   ],
+   [
+    "p3_life",
+    17.143,
+    0.857
+   ],
+   [
+    "p4_cellauto",
+    18.0,
+    0.857
+   ],
+   [
+    "p5_gradients",
+    18.857,
+    0.857
+   ],
+   [
+    "p6_braise",
+    19.714,
+    0.857
+   ],
+   [
+    "p1_mandel_lent",
+    20.571,
+    0.857
+   ],
+   [
+    "p2_mandel_bord",
+    21.429,
+    0.857
+   ],
+   [
+    "p3_life",
+    22.286,
+    0.857
+   ],
+   [
+    "p4_cellauto",
+    23.143,
+    0.857
+   ]
+  ]
+ },
+ "B": {
+  "montage": "B",
+  "plans": 15,
+  "coupes": 14,
+  "duree_moy_s": 1.6,
+  "duree_min_s": 0.857,
+  "duree_max_s": 6.857,
+  "ecart_type_s": 1.464,
+  "coupes_sur_demi_mesure_pct": 100.0,
+  "coupes_sur_temps_pct": 100.0,
+  "apparitions_plan_chaud": 1,
+  "coupes_par_section": {
+   "intro(0-4)": 0,
+   "couplet(4-12)": 12,
+   "fin(12-14)": 2
+  },
+  "edl": [
+   [
+    "p1_mandel_lent",
+    0.0,
+    6.857
+   ],
+   [
+    "p2_mandel_bord",
+    6.857,
+    1.714
+   ],
+   [
+    "p3_life",
+    8.571,
+    1.714
+   ],
+   [
+    "p4_cellauto",
+    10.286,
+    1.714
+   ],
+   [
+    "p5_gradients",
+    12.0,
+    1.714
+   ],
+   [
+    "p1_mandel_lent",
+    13.714,
+    0.857
+   ],
+   [
+    "p2_mandel_bord",
+    14.571,
+    0.857
+   ],
+   [
+    "p3_life",
+    15.429,
+    0.857
+   ],
+   [
+    "p4_cellauto",
+    16.286,
+    0.857
+   ],
+   [
+    "p5_gradients",
+    17.143,
+    0.857
+   ],
+   [
+    "p1_mandel_lent",
+    18.0,
+    0.857
+   ],
+   [
+    "p2_mandel_bord",
+    18.857,
+    0.857
+   ],
+   [
+    "p3_life",
+    19.714,
+    0.857
+   ],
+   [
+    "p6_braise",
+    0.0,
+    1.714
+   ],
+   [
+    "p1_mandel_lent",
+    6.857,
+    1.714
+   ]
+  ]
+ }
+}
