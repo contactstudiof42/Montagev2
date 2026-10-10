@@ -22,7 +22,8 @@ sc.cycles.samples = P.get("samples", 16); sc.cycles.use_denoising = True
 sc.cycles.seed = 7  # bruit identique d'une variante à l'autre
 sc.render.resolution_x, sc.render.resolution_y = P.get("res", [480, 270])
 sc.render.fps = 25; sc.frame_start, sc.frame_end = P.get("frames", [1, 75])
-sc.view_settings.view_transform = "AgX"; sc.view_settings.look = "AgX - Medium High Contrast"
+sc.view_settings.view_transform = P.get("vue", "AgX")  # v4 : "Standard" pour tester la compression AgX
+if sc.view_settings.view_transform == "AgX": sc.view_settings.look = "AgX - Medium High Contrast"
 sc.render.image_settings.file_format = "PNG"
 sc.render.filepath = os.path.join(out, "####")
 
@@ -105,10 +106,10 @@ if P.get("ecran"):  # l'événement froid : un téléphone posé face en l'air q
     bpy.ops.mesh.primitive_cube_add(location=(0.05, 0.2, 0.767)); ph = bpy.context.object; ph.scale = (0.04, 0.075, 0.004)
     pm = bpy.data.materials.new("ecran"); pm.use_nodes = True; nb = pm.node_tree.nodes["Principled BSDF"]
     nb.inputs["Base Color"].default_value = (0.01, 0.01, 0.01, 1)
-    nb.inputs["Emission Color"].default_value = (0.55, 0.75, 1, 1); nb.inputs["Emission Strength"].default_value = P["ecran"]
+    nb.inputs["Emission Color"].default_value = (*P.get("ecran_col", [0.55, 0.75, 1]), 1); nb.inputs["Emission Strength"].default_value = P["ecran"]
     ph.data.materials.append(pm)
     bpy.ops.object.light_add(type="AREA", location=(0.05, 0.2, 0.80)); el = bpy.context.object
-    el.data.energy = P.get("ecran_eclaire", P["ecran"] * 0.6); el.data.color = (0.55, 0.75, 1.0); el.data.size = 0.12
+    el.data.energy = P.get("ecran_eclaire", P["ecran"] * 0.6); el.data.color = tuple(P.get("ecran_col", [0.55, 0.75, 1.0])); el.data.size = 0.12  # v4 : couleur saturée = gélatine CTB
 bpy.ops.object.light_add(type="AREA", location=(1.5, -2.5, 1.5)); deb = bpy.context.object
 deb.data.energy = 40; deb.data.color = (0.8, 0.88, 1.0); deb.data.size = 2
 deb.rotation_euler = (math.radians(60), 0, math.radians(30))

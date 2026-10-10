@@ -1,0 +1,154 @@
+{
+ "C6": {
+  "zone_px": 0.0187,
+  "zone_RGB": [
+   0.849,
+   0.793,
+   0.756
+  ],
+  "zone_B_moins_R": -0.093,
+  "zone_Y": 0.803,
+  "saillance": 2.64,
+  "froids": 0.0,
+  "chauds": 0.505
+ },
+ "C7": {
+  "zone_px": 0.0125,
+  "zone_RGB": [
+   0.872,
+   0.856,
+   0.851
+  ],
+  "zone_B_moins_R": -0.021,
+  "zone_Y": 0.859,
+  "saillance": 3.11,
+  "froids": 0.0,
+  "chauds": 0.376
+ },
+ "C9": {
+  "zone_px": 0.0131,
+  "zone_RGB": [
+   0.843,
+   0.793,
+   0.758
+  ],
+  "zone_B_moins_R": -0.085,
+  "zone_Y": 0.801,
+  "saillance": 2.65,
+  "froids": 0.0001,
+  "chauds": 0.507
+ },
+ "C8": {
+  "zone_px": 0.0124,
+  "zone_RGB": [
+   0.876,
+   0.779,
+   0.698
+  ],
+  "zone_B_moins_R": -0.178,
+  "zone_Y": 0.794,
+  "saillance": 2.27,
+  "froids": 0.0,
+  "chauds": 0.468
+ },
+ "C10": {
+  "zone_px": 0.0234,
+  "zone_RGB": [
+   0.733,
+   0.68,
+   0.649
+  ],
+  "zone_B_moins_R": -0.084,
+  "zone_Y": 0.689,
+  "saillance": 2.88,
+  "froids": 0.0,
+  "chauds": 0.252
+ },
+ "C11": {
+  "zone_px": 0.0265,
+  "zone_RGB": [
+   0.647,
+   0.606,
+   0.583
+  ],
+  "zone_B_moins_R": -0.064,
+  "zone_Y": 0.613,
+  "saillance": 2.92,
+  "froids": 0.0,
+  "chauds": 0.184
+ },
+ "C12": {
+  "zone_px": 0.004,
+  "zone_RGB": [
+   0.787,
+   0.776,
+   0.773
+  ],
+  "zone_B_moins_R": -0.013,
+  "zone_Y": 0.778,
+  "saillance": 2.58,
+  "froids": 0.0003,
+  "chauds": 0.515
+ },
+ "C13": {
+  "zone_px": 0.0099,
+  "zone_RGB": [
+   0.801,
+   0.756,
+   0.727
+  ],
+  "zone_B_moins_R": -0.074,
+  "zone_Y": 0.764,
+  "saillance": 2.79,
+  "froids": 0.0002,
+  "chauds": 0.38
+ },
+ "C14": {
+  "zone_px": 0.0029,
+  "zone_RGB": [
+   0.694,
+   0.676,
+   0.669
+  ],
+  "zone_B_moins_R": -0.025,
+  "zone_Y": 0.679,
+  "saillance": 2.25,
+  "froids": 0.0002,
+  "chauds": 0.517
+ },
+ "C15": {
+  "zone_px": 0.007,
+  "zone_RGB": [
+   0.8,
+   0.791,
+   0.819
+  ],
+  "zone_B_moins_R": 0.019,
+  "zone_Y": 0.795,
+  "saillance": 2.64,
+  "froids": 0.0025,
+  "chauds": 0.508
+ },
+ "C16": {
+  "zone_px": 0.0108,
+  "zone_RGB": [
+   0.82,
+   0.794,
+   0.806
+  ],
+  "zone_B_moins_R": -0.014,
+  "zone_Y": 0.8,
+  "saillance": 2.65,
+  "froids": 0.0026,
+  "chauds": 0.506
+ },
+ "C6+cle": {
+  "zone_RGB": [
+   0.717,
+   0.772,
+   0.812
+  ],
+  "zone_B_moins_R": 0.095,
+  "froids": 0.0125
+ }
+}
