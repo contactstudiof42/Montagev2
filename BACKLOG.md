@@ -26,7 +26,7 @@ Règle : alterner ART et TECH. Réalimenter dès qu'il reste moins de 10 sujets 
 12. [x] [TECH] `montage-pilotage-mcp` v1 + état public des MCP (session 5, `sources/mcp-etat-public-2026-10.md`, tests 21-31). Reste [ ] : revérifier tous les 2 mois (info volatile).
 13. [ ] [ART] Son : atelier « même image, trois bandes son » (avec, contre, silence) ; fiches Murch sound design, Ben Burtt, Gary Rydstrom
 14. [~] [TECH] Keying : labo à vérité terrain fait (session 2, `labo/keying/`). Reste : tracking, roto, keyers à alpha doux, compositing Blender/Fusion
-15. [~] [TECH] `montage-workflows` v1 (session 4) + labo aller-retour OTIO (`labo/workflows/`). **Session 8 : VFR (`labo/vfr/`) et proxies (`labo/proxies/`) faits.** Reste : tester vitesses, recadrages, nests, audio multipiste dans l'aller-retour XML ; AAF (pyaaf2 ?) ; proxies et cadence variable des téléphones avec ffmpeg.
+15. [~] [TECH] (session 10 : vitesses / arrêts / inversions / fondus testés, `labo/workflows/vitesses/` : XML FCP7 par OTIO perd les vitesses, EDL inverse la durée source ; reste recadrages, nests, audio multipiste) `montage-workflows` v1 (session 4) + labo aller-retour OTIO (`labo/workflows/`). **Session 8 : VFR (`labo/vfr/`) et proxies (`labo/proxies/`) faits.** Reste : tester vitesses, recadrages, nests, audio multipiste dans l'aller-retour XML ; AAF (pyaaf2 ?) ; proxies et cadence variable des téléphones avec ffmpeg.
 16. [~] [TECH] Labo fondus : session 4, `variance.py` (écart au milieu + détecteur noir) = 3/4, 0 faux positif ; hypothèse du creux de variance réfutée. 2e vérité terrain indépendante : 4/4, 0 faux positif (mêmes seuils). Reste : fusionner les segments du fondu au noir, chroma, puis matériau CC0 réel.
 17. [~] [ART] Culture : faits : Elastic (*Game of Thrones*), ManvsMachine, Buck, Åkerlund, Gavras (s5) ; Murai, Honda « Cog » (s2), Varda *Les Glaneurs*, Spike Jonze (s3), Marker *Sans soleil*, Morris *The Thin Blue Line* (s4). Reste : clips ( Jonas Åkerlund, et clips de rap français proches de Ziak) ; motion design de studio (Buck, ManvsMachine, Elastic) ; pub (Apple *1984*)
 18. [~] [ART] IA : faits vérifiés en session 4 (Sora, AI Act art. 50 non reporté, Wan 2.2 dernier ouvert, LTX-2). Reste : fiches d'œuvres IA, grille « est-ce que ça fait IA ? », relire le texte de l'Omnibus sur EUR-Lex.
@@ -71,14 +71,22 @@ Règle : alterner ART et TECH. Réalimenter dès qu'il reste moins de 10 sujets 
 47. [x] [ART] (session 9 : pièce 13 v1-v4, v4 référence ; fond = monde, lumière = corps ; reste test spectateur PLAN-TESTS 45) Atelier « le fond raccorde » (leçon de la pièce 10 v6) : un champ / contrechamp où seul le fond change de couleur ; mesurer ce que le spectateur attribue au personnage.
 48. [x] [TECH] (session 8 : `labo/grammaire/sauts_regard.py`, validé sur l atelier 11 et un franchissement partiel = 2 sauts) Contrôle automatique des sauts de regard sur une EDL entière (outil de l'atelier 11 généralisé : JSON de plans + positions → liste des coupes fautives).
 
-49. [ ] [TECH] 46c Interpolation sur un **vrai** plan CC0 (eau, feuillage, main) : RIFE contre mci, détection de coupe de `inference_video.py` (SSIM) testée sur un montage aplati ; RIFE en 1080p (temps CPU).
-50. [ ] [ART] Atelier 12 v8 : **lieu encombré** (objets du quotidien) ; l'anomalie doit se cacher parmi d'autres objets et rester trouvable ; saillance mesurée sur le décor riche.
+49. [~] [TECH] (session 10 : confié à un sous-agent, `labo/interpolation-reel/`, voir PROGRESS) 46c Interpolation sur un **vrai** plan CC0 (eau, feuillage, main) : RIFE contre mci, détection de coupe de `inference_video.py` (SSIM) testée sur un montage aplati ; RIFE en 1080p (temps CPU).
+50. [x] [ART] (session 10 : v8a-c, v8c réf. ; la couleur saturée derrière l'anomalie désigne et détache, centile 75 → 87 ; la lumière non isolée ; test spectateur PLAN-TESTS 47) Atelier 12 v8 : **lieu encombré** (objets du quotidien) ; l'anomalie doit se cacher parmi d'autres objets et rester trouvable ; saillance mesurée sur le décor riche.
 51. [ ] [ART] Atelier « teaser 15 s » d'après la fiche bande-annonce : une promesse, 3 paliers, un noir avant la frappe, texte monté en cartons — à partir des plans des ateliers 10-14 ; critique : cliché ou forme ?
 52. [~] [TECH] (session 9 : résidu spectral fait, `labo/saillance/` ; reste modèle appris, pièces 06 et 10) Saillance : remplacer le modèle maison (luminance × contraste) par un modèle publié et libre (spectral residual de Hou et Zhang 2007, ou équivalent) et comparer sur les pièces 06, 10, 12.
 54. [~] [ART] (session 9 : v2 faite, serré −1 diaph., B2 coupes espacées avec l amplitude ; reste : corriger le dernier plan de B2, juger en mouvement en phase 2) Pièce 14 v2.
-53. [ ] [ART] Examen n°6 (session 10) : brief où une anomalie, un froid de relation ou un ralenti sont des enjeux (mettre à l'épreuve les leçons de la session 9).
+53. [x] [ART] (session 10 : « Le téléphone de Lucienne », **15/20**, `examens/06-isolement-ralenti-25p.md` ; **examen n°7 en session 13**) Examen n°6 (session 10) : brief où une anomalie, un froid de relation ou un ralenti sont des enjeux (mettre à l'épreuve les leçons de la session 9).
+
+55. [~] [ART] (session 10 : pièce 15 « Deux sonneries de trop » lancée) Atelier issu de l'examen n°6 : le même décroché en attente tenue (B), ralenti interpolé depuis 25 i/s (C) et ralenti vrai (D) ; mesurer C contre D, juger B contre D.
+56. [ ] [ART] Skill ou annexe « signature et cartons » (révélé par l'examen n°6 : « Devenez-la ») : écrire une phrase de fin, 3 variantes, critères (lisible en 2 s, sans ambiguïté, verbe d'action), exemples analysés.
+57. [ ] [ART] Atelier « la fable » (principe John Lewis *Man on the Moon*) : un sujet douloureux (solitude) grossi jusqu'à la fable en 10 s Blender, contre la version réaliste ; critique : la métaphore protège-t-elle du pathos ?
+58. [ ] [TECH] Écrire un vérificateur d'EDL (`labo/workflows/`) : cohérence source/record/vitesse M2, timecode de départ, plans entrants des fondus ; le passer sur les EDL de l'atelier.
+59. [ ] [ART] Culture : fiche sur Dougal Wilson (*The Long Wait*, *Monty*, *Buster*) ou Kim Gehrig (*Man on the Moon*, « This Girl Can ») : la chute qui relit le film.
 
 ## Fait (trace)
+- [x] [ART] Session 10 : examen n°6 (15/20), pièce 12 v8, fiche pub émotionnelle de Noël (John Lewis)
+- [x] [TECH] Session 10 : labo vitesses dans l'aller-retour (OTIO / XML / EDL)
 - [x] [ART] Session 9 : pièces 12 « Inquiétude calme » (v1-v7), 13 « Le fond raccorde » (v1-v4), 14 « Balancier » ; fiches bande-annonce, Freeze Corleone
 - [x] [TECH] Session 9 : labo interpolation (minterpolate, RIFE 4.25)
 - [x] [ART] Session 8 : pièce 10 v4-v6, pièce 11 « Dialogue », fiches Scott Pilgrim, génériques doc, drill FR ; `montage-regard` distillé

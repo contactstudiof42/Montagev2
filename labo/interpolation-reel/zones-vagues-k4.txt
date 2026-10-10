@@ -1,0 +1,4 @@
+dup PSNR Y zones en mouvement 24.39 dB ; part en mouvement 16.3 %
+blend PSNR Y zones en mouvement 31.56 dB ; part en mouvement 16.3 %
+mci PSNR Y zones en mouvement 31.53 dB ; part en mouvement 16.3 %
+rife PSNR Y zones en mouvement 30.28 dB ; part en mouvement 16.3 %

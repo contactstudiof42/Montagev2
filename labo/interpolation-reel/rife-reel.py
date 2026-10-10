@@ -1,10 +1,11 @@
-# Usage : rife-reel.py <code_practical_rife> <dossier_parent_train_log> <dossier>
+# Usage : rife-reel.py <code_practical_rife> <dossier_parent_train_log> <dossier> [k=2]
+# k = facteur (k-1 images inventées par paire, aux instants j/k) ; sortie 30 i/s.
 # source.mkv (yuv444p 320x180, 15 i/s) -> rife.mkv (yuv444p, 30 i/s). Adapté de labo/interpolation/rife60.py.
 # Différence : on reste en YUV. Les images d'origine sont recopiées telles quelles (pas d'aller-retour RGB 8 bits,
 # qui coûtait ~45 dB sur un plan filmé) ; seules les images inventées passent par RGB, en flottant (BT.601 limité,
 # convention par défaut de ffmpeg), avec un seul arrondi final, comme minterpolate.
 import sys, subprocess, time, numpy as np, torch, torch.nn.functional as F
-code, poids, R = sys.argv[1:4]
+code, poids, R = sys.argv[1:4]; k = int(sys.argv[4]) if len(sys.argv) > 4 else 2
 sys.path.insert(0, poids); sys.path.insert(0, code)
 from train_log.IFNet_HDv3 import IFNet
 torch.set_grad_enabled(False)
@@ -37,12 +38,13 @@ for i in range(n):
     if i + 1 < n:
         x = torch.cat([vers_rgb(src[i]), vers_rgb(src[i + 1])], 1)
         x = F.pad(x, (0, pw, 0, ph))
-        _, _, merged = net(x, 0.5, [16, 8, 4, 2, 1])
-        out.append(vers_yuv(merged[4][0, :, :H, :W]))
+        for j in range(1, k):
+            _, _, merged = net(x, j / k, [16, 8, 4, 2, 1])
+            out.append(vers_yuv(merged[4][0, :, :H, :W]))
     else:
-        out.append(src[i])  # derniere image dupliquee pour atteindre 2n
+        out += [src[i]] * (k - 1)  # derniere image dupliquee pour atteindre k*n
 dt = time.time() - t0
-print(f"inference {n-1} paires {dt:.1f} s ; sortie {len(out)} images")
+print(f"inference {n-1} paires x {k-1} {dt:.1f} s ; sortie {len(out)} images")
 p = subprocess.Popen(["ffmpeg", "-y", "-v", "error", "-f", "rawvideo", "-pix_fmt", "yuv444p", "-s", f"{W}x{H}", "-r", "30", "-i", "-",
                       "-c:v", "ffv1", "-pix_fmt", "yuv444p", f"{R}/rife.mkv"], stdin=subprocess.PIPE)
 p.communicate(np.stack(out).tobytes())
