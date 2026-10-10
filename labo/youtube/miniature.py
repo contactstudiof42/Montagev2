@@ -7,7 +7,9 @@ blanc à contour noir, bandeau jaune texte noir) ; trois textes (2, 4, 8 mots). 
 d'affichage courantes (168×94 « vidéos suggérées » sur ordinateur, 246×138, 360×202 « recherche » ; tailles relevées
 de mémoire sur l'interface, à vérifier en phase 2), puis réagrandie ×4 et lue par tesseract (fra).
 Score = part des mots de plus d'une lettre retrouvés, OCR sur la seule bande du texte (v2 : sans recadrage, la texture
-du fond chargé était lue comme des lettres et tous les scores tombaient à ~0,3 quelle que soit la taille). L'OCR est un proxy (il lit mal le texte détouré, session 13) : il classe les cas,
+du fond chargé était lue comme des lettres et tous les scores tombaient à ~0,3 quelle que soit la taille). v3 : après
+réduction à la taille d'affichage, agrandissement pour que la capitale fasse ~30 px (v2 agrandissait ×4 partout : les
+grandes tailles donnaient des lettres de 300 px que tesseract ne lit plus, d'où des scores qui baissaient quand le texte grossit). L'OCR est un proxy (il lit mal le texte détouré, session 13) : il classe les cas,
 il ne fixe pas un seuil d'œil."""
 import os, subprocess, sys, tempfile, unicodedata
 import numpy as np
@@ -67,7 +69,7 @@ def compose(fond, texte, cap_pct, style):
 
 def ocr(im):
     p = os.path.join(tmp, "o.png"); im.save(p)
-    r = subprocess.run(["tesseract", p, "-", "-l", "fra", "--psm", "6"], capture_output=True, text=True)
+    r = subprocess.run(["tesseract", p, "-", "-l", "fra", "--psm", "6"], capture_output=True, text=True, env={**os.environ, "OMP_THREAD_LIMIT": "1"})
     return norm(" ".join(r.stdout.split()))
 
 
@@ -85,7 +87,8 @@ for fond in FONDS:
                     petit = im.resize((aw, ah), Image.LANCZOS)
                     b = [int(round(v * aw / W)) for v in BOITE]; b[3] = max(b[1] + 2, b[3])
                     bande = petit.crop(b)
-                    lu = ocr(bande.resize((bande.width * 4, bande.height * 4), Image.LANCZOS))
+                    fx = max(1.0, 30 / (ah * cap / 100))   # v3 : capitale ramenée à ~30 px (tesseract lit mal les lettres géantes)
+                    lu = ocr(bande.resize((int(bande.width * fx), int(bande.height * fx)), Image.LANCZOS))
                     attendus = norm(texte).split()
                     attendus = [m for m in attendus if len(m) > 1]          # « A » isolé : l'OCR le colle ou le perd, bruit
                     score = sum(1 for m in attendus if m in lu.split()) / len(attendus)
