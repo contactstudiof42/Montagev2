@@ -94,7 +94,11 @@ if mode == "F4":   # v4 : la Terre immense coupée par le cadre (plus de « ball
         fil(e2, loin, 0.8 + 0.3 * i, 0.012)
         bpy.ops.mesh.primitive_uv_sphere_add(radius=0.45, location=loin); bpy.context.object.data.materials.append(mat("p%d" % i, (0.35, 0.33, 0.3), 0.95))
         # chacune a sa petite lampe : la chaleur n'est pas unique, elle est multipliée
-        bpy.ops.mesh.primitive_uv_sphere_add(radius=0.08, location=loin + mathutils.Vector((0, -0.2, 0.5))); bpy.context.object.data.materials.append(mat("l%d" % i, (1, 0.75, 0.45), 0.5, 6))
+        v5 = len(a) > 5 and a[5] == "v5"   # v5 : une silhouette assise et une lampe lisible (≥ 6 px) sur chaque petit monde
+        bpy.ops.mesh.primitive_uv_sphere_add(radius=0.18 if v5 else 0.08, location=loin + mathutils.Vector((0.25 if v5 else 0, -0.2, 0.55 if v5 else 0.5))); bpy.context.object.data.materials.append(mat("l%d" % i, (1, 0.75, 0.45), 0.5, 6))
+        if v5:
+            bpy.ops.mesh.primitive_cylinder_add(radius=0.12, depth=0.4, location=loin + mathutils.Vector((-0.15, -0.2, 0.62))); bpy.context.object.data.materials.append(mat("s%d" % i, (0.55, 0.5, 0.6), 0.8))
+            bpy.ops.mesh.primitive_uv_sphere_add(radius=0.09, location=loin + mathutils.Vector((-0.15, -0.2, 0.92))); bpy.context.object.data.materials.append(mat("t%d" % i, (0.7, 0.55, 0.45), 0.6))
     cam_loc, cible, lens = (2.4, -5.2, 1.4 if not bas else 3.2), (1.4, 2, 1.2 if not bas else 0.2), 32
 bpy.ops.object.camera_add(location=cam_loc); c = bpy.context.object; c.data.lens = lens
 c.rotation_euler = (mathutils.Vector(cible) - mathutils.Vector(cam_loc)).to_track_quat("-Z", "Y").to_euler(); sc.camera = c

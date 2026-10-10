@@ -36,3 +36,8 @@ Défauts restants de v4d : les lampes des autres planètes font 2 px, donc **inv
 2. **Un trait qui traverse une surface se lit fissure ; un trait qui la touche au bord se lit lien.** Les raccords de lignes se jugent dans le plan de l'image, pas dans la scène 3D (même leçon que la secousse de 0,6 px de la pièce 06 : dimensionner à l'écran).
 3. Une fable par accumulation (un réseau de petits mondes) est moins jolie qu'une fable par isolement (une planète seule) mais elle dit le contraire de la pitié. Choisir l'image qui contient la réponse, pas seulement le problème.
 4. Compter les sources chaudes **à la taille de lecture** : une chaleur de 2 px n'existe pas.
+
+## v5 — `v5-planche.png` (gauche v4d, droite v5) : une silhouette et une lampe de 0,18 sur chaque petit monde
+- À 160 px (vignette contrôlée) : **les trois points chauds se voient** désormais ; on compte quatre lampes au lieu d'une. La chaleur n'est plus « méritée par un seul » : elle est **partagée** (le tic est renversé pour de bon, et à la bonne échelle).
+- Les silhouettes, elles, restent à la limite (un trait clair à côté de la lampe) : on lit « quelqu'un » plutôt que « une personne ». Suffisant pour une fable ; dans un vrai film, ces mondes seraient des inserts à part.
+- La pièce est close à ce stade (v5 réf.) : la phrase est lisible (« une ligne, d'autres lignes, d'autres lampes ») sans emprunt au *Petit Prince*.
