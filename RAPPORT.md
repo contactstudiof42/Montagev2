@@ -86,7 +86,7 @@ Précédent : **N°1 — spot 30 s + vertical 15 s pour une mutuelle (offre jeun
 ### Skills (voir le sommaire dans `.claude/skills/montage-expert/SKILL.md`)
 Artistiques (v1) : `montage-expert`, `montage-regard`, `montage-direction-artistique` (corrigé après examen), `montage-rythme`, `montage-motion-design-principes`, `montage-son-et-emotion`, `montage-references`, `montage-couleur-et-intention`.
 Plus `montage-kinetic-editing` (calage testé en labo, éprouvé en atelier 02). `montage-rythme` enrichi par l'atelier 03 (testé).
-Techniques : `montage-grammaire` (théorique), `montage-loudness-livraison` (testé en labo, + bandes dans les noirs), `montage-couleur-pipeline` (testé en labo), `montage-after-effects` (testé en syntaxe et logique Node, pas dans AE), `montage-ia-generative` (théorique, daté), **`montage-blender`** (nouveau, testé en atelier), **`montage-resolve`** (nouveau, théorique), `montage-preparation-tournage-vfx` (théorique), **`montage-premiere`** (nouveau session 3, théorique), **`montage-pilotage-mcp`** (nouveau session 3, méthode théorique).
+Techniques : `montage-grammaire` (théorique), `montage-loudness-livraison` (testé en labo, + bandes dans les noirs), `montage-couleur-pipeline` (testé en labo), `montage-after-effects` (testé en syntaxe et logique Node, pas dans AE), `montage-ia-generative` (théorique, daté), **`montage-blender`** (nouveau, testé en atelier), **`montage-resolve`** (nouveau, théorique), `montage-preparation-tournage-vfx` (théorique), **`montage-premiere`** (nouveau session 3, théorique), **`montage-pilotage-mcp`** (nouveau session 3, méthode théorique). Artistique nouveau : **`montage-formats`** (session 3, synthèse).
 
 ### État de l'art IA générative (au 2026-10-09, sources dans `sources/ia-generative-2026-10.md`, rien testé)
 - Vidéo : Veo 3.1 (MAJ janv. 2026 : 9:16 natif, upscale 4K), Kling 3.0 (févr. 2026, jusqu'à 15 s avec son), Seedance 2.0 (févr. 2026), Runway Gen-4.5 (déc. 2025). **Sora arrêté** selon la page officielle OpenAI (app fermée le 26/04/2026, API annoncée pour le 24/09/2026 ; retrait effectif connu par une seule source secondaire).
@@ -134,7 +134,7 @@ Techniques : `montage-grammaire` (théorique), `montage-loudness-livraison` (tes
   - atelier couleur « même plan, trois étalonnages » traduit en arbre de nodes Resolve ;
   - atelier 03 v4 : plans Blender avec un sujet, version A avec SFX (kinetic), seconde horloge plus forte ;
   - labo fondus : méthode de la courbe de variance (scdet ne voit aucun fondu) ;
-  - skill `montage-formats` (révélé par l'examen n°3) ; loudness hors plateformes.
+  - loudness hors plateformes ; mesures de références par format pour `montage-formats`.
 
 ---
 
@@ -182,7 +182,7 @@ Techniques : `montage-grammaire` (théorique), `montage-loudness-livraison` (tes
 - **Examen n°2** : « Marée basse » (clip de rap), 14/20 ; corrections dans `montage-direction-artistique`.
 - **PLAN-TESTS-MCP** : tests 11 à 13 et observations du serveur Higgsfield (hôte `bs_*`, procédures « passport » et « audit », risque de crédits payants pour la génération). Le serveur n'a pas été appelé.
 
-### Session 3 — 2026-10-10 00:30 → ~00:50 UTC (horloge de la VM)
+### Session 3 — 2026-10-10 00:30 → 00:50 UTC (horloge de la VM)
 - **Démarrage** : l'anti-doublon a arrêté la session (dernier commit 2 min plus tôt, fin de session 2). Vous avez confirmé un faux positif ; reprise à 00:33.
 - **Sujets** : [TECH] pilotage MCP (méthode) ; [ART] atelier 03 « rythme macro » ; [TECH] labo fondus ; [TECH] Premiere ; [ART] culture Varda et Jonze.
 - **Pièce créée** : 03 « Rythme macro », v1 → v3 (`atelier/03-rythme-macro/build.py` : musique drill synthétisée en numpy, plans générés par ffmpeg, 3 montages, mesures scdet ; ≈ 1 min de rendu). Aucun média tiers.
@@ -191,7 +191,7 @@ Techniques : `montage-grammaire` (théorique), `montage-loudness-livraison` (tes
   - v1 : dérive d'arrondi (10,71 images par temps à 25 i/s et 140 BPM) ; plan chaud magenta (rotation de teinte d'une source déjà colorée) ;
   - labo fondus (`labo/fondus/RESULTATS.md`) : scdet rate 4 fondus sur 4 à tous les seuils ; la différence image à image et la linéarité stricte confondent fondu et mouvement ; vérité terrain d'abord fausse (`xfade` après `concat` : bases de temps, décalages) → refaite image par image en numpy.
 - **Œuvres analysées** : Varda *Les Glaneurs et la Glaneuse* (BFI, Combustible Celluloid, Wikipédia, Érudit) ; Spike Jonze *Weapon of Choice* et HomePod *Welcome Home* (Wikipédia, Deadline, 9to5mac, Clio, Cult of Mac).
-- **Skills créés** : `montage-pilotage-mcp`, `montage-premiere`. **Modifiés** : `montage-rythme` (forme/texture, hybride, recette coupes en images absolues), `montage-son-et-emotion` (image d'exception sur l'absence sonore), `montage-couleur-et-intention` (accent = ressource rare), `montage-references` (Varda, Jonze, atelier 03), `montage-expert` (sommaire).
+- **Skills créés** : `montage-pilotage-mcp`, `montage-premiere`, `montage-formats`. **Modifiés** : `montage-rythme` (forme/texture, hybride, recette coupes en images absolues), `montage-son-et-emotion` (image d'exception sur l'absence sonore), `montage-couleur-et-intention` (accent = ressource rare), `montage-references` (Varda, Jonze, atelier 03), `montage-expert` (sommaire).
 - **Examen n°3** : « Seconde main » (corporate), 15/20 ; corrections dans `montage-direction-artistique`.
 - **PLAN-TESTS-MCP** : tests 14 à 17 (Premiere), observation session 3. Serveur Higgsfield non appelé.
 - **Méthode** : deux sous-agents de recherche (Premiere ; Varda et Jonze) pendant que je faisais l'atelier et le labo. WebFetch bloqué (403) sur helpx.adobe.com : faits Premiere tirés d'extraits de recherche, marqués [INCERTAIN] quand non confirmés.

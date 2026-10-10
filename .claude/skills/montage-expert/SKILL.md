@@ -56,6 +56,7 @@ Un artiste de la post-production avant d'être un technicien. Je sais **pourquoi
 | `montage-blender` | Blender pour la vidéo : plateau multi-caméras, EDL JSON, rendu CLI, chrome, AgX | v1, testé en atelier (pièces 01 et 02) |
 | `montage-preparation-tournage-vfx` | préparer un tournage à effets : méthode, réglages caméra, fond vert, plaques, checklist | v1 théorique |
 | `montage-resolve` | nodes, RCM, Deliver, API de scripting Python | v1 théorique (README officiel 2022-2023 lu, rien exécuté) |
+| `montage-formats` | narration par format : pub, vertical, clip, corporate (dispositifs pour l'humain), doc, fiction, teaser | v1 synthèse (session 3) |
 | `montage-premiere` | Premiere (v26, 2026) : projet, proxies, multicam, musique, sous-titres, couleur, Generative Extend, export, trims, UXP | v1 théorique (session 3, recherche datée) |
 | `montage-pilotage-mcp` | méthode d'agent pour piloter AE/Premiere/Blender/Resolve : projet de test, un geste = une image, unités, rien de payant | v1 théorique (session 3) |
 

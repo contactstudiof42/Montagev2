@@ -9,7 +9,7 @@ Règle : alterner ART et TECH. Réalimenter dès qu'il reste moins de 10 sujets 
 0b. [x] [ART] Ziak analysé sur le fichier fourni (88 plans, montage calé sur l'arrangement et pas sur le beat, seconde horloge visuelle). Outil réutilisable : `labo/analyse-clip/analyse_clip.py`.
 0c. [~] [ART] **Atelier 03 « rythme macro »** : v1-v3 faites (session 3 : micro / macro / hybride, leçons dans `montage-rythme`). Reste v4 : plans Blender avec un sujet (objet industriel démonté, cf. Ziak) pour tester l'intro tenue ; version A **avec SFX** (vrai concurrent kinetic) ; seconde horloge à +15 %. Puis `analyse_clip.py` sur les références que l'utilisateur ajoutera.
 0d. [x] [ART] Examen n°3 « Seconde main » (corporate réemploi) : 15/20 (session 3). **Examen n°4 en session 6 ou 7** : fiction courte ou documentaire long.
-0e. [ ] [ART] **Skill `montage-formats`** (remonté par l'examen n°3) : conventions et pièges par format ; section « dispositifs pour filmer l'humain en corporate » (objets-témoins, gestes, portraits muets, un salarié = un objet).
+0e. [~] [ART] Skill `montage-formats` v1 écrit (session 3). Reste : mesurer des durées de plans médianes sur des références réelles par format ; (remonté par l'examen n°3) : conventions et pièges par format ; section « dispositifs pour filmer l'humain en corporate » (objets-témoins, gestes, portraits muets, un salarié = un objet).
 0f. [ ] [TECH] Loudness hors plateformes : film d'entreprise lu en salle de réunion ou sur un site (-16 LUFS ? AES TD1008 ?), à sourcer et verser dans `montage-loudness-livraison`.
 1. [ ] [ART] **Atelier « même brief, direction A dans le noir »** (suite de l'examen n°1 : la piste la plus audacieuse, écartée trop vite) : 10 s, Blender, seule lumière = un écran de téléphone.
 1b. [ ] [ART] Fiche sur les pubs santé/assurance et petite enfance : repérer les clichés du secteur (boîte à musique, bébé au ralenti, famille radieuse) — révélé par l'examen n°1.
@@ -20,7 +20,7 @@ Règle : alterner ART et TECH. Réalimenter dès qu'il reste moins de 10 sujets 
 6. [ ] [ART] Atelier rythme : un même matériau monté sur trois tempos (Bass / Gondry / Cooper — cf. `montage-references` B) ; mesure avec scdet
 7. [ ] [TECH] Blender pour la vidéo : skill `montage-blender` (rendu CLI, Cycles vs Eevee headless, compositing, geometry nodes) — base déjà pratiquée dans l'atelier 01 ; tester Eevee en headless
 8. [~] [TECH] DaVinci Resolve → `montage-resolve` v1 (session 2 : nodes, RCM, API d'après le README 2022-2023). Reste : Fusion, Fairlight, README 19-20 (objets Graph ? ColorGroup ?), atelier couleur « même plan, trois étalonnages » traduit en arbre de nodes.
-9. [ ] [ART] Narration par format : pub 15/30 s, vertical, clip, corporate, doc, fiction → skill `montage-formats`
+9. [~] [ART] Narration par format → `montage-formats` v1 (session 3), cf. 0e.
 10. [~] [TECH] `montage-premiere` v1 écrit (session 3, théorique). Reste : lire les pages Adobe en entier (WebFetch 403 : trouver un autre accès), Color mode, état d'ExtendScript, raccourcis Q/W ; script de marqueurs de beats importables (Python → XML/CSV de marqueurs).
 11. [~] [TECH] `montage-preparation-tournage-vfx` v1 écrit (session 2, théorique). Reste : tests de keying et de tracking sur des médias CC0 (avec BACKLOG 14).
 12. [~] [TECH] `montage-pilotage-mcp` v1 (méthode, session 3). Reste : état public des autres MCP (Blender MCP, Resolve, AE) par recherche web, à verser dans `PLAN-TESTS-MCP.md` comme hypothèses.
