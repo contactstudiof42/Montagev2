@@ -121,6 +121,11 @@ ffmpeg : `zoompan=z='if(lt(on,2),1,1+0.35*(1-pow(1-min((on-1)/3,1),3)))':d=1:s=5
 
 **R7 — Captions mot à mot** [THÉORIQUE pour Premiere/CapCut ; TESTÉ EN LABO avec drawtext] : 1 mot ou groupe par segment, « pop » d'échelle sur la 1re image (125 % → 100 %), click à -20 dB sous l'impact pour les mots-clés seulement.
 
+**R7b — Tenir le vers après le dernier mot** (session 15, `labo/paroles/temps_lecture-resultats.md`, sources : `sources/sous-titres-vitesse-lecture-2026-10.md`)
+- [THÉORIQUE] Vitesses de lecture en français : Netflix 17 car./s adultes (13 enfants, 20 en SME), plancher 5/6 s, plafond 7 s ; ATAA 14-15 car./s (16-17 = trop rapide), plancher 16 images, plafond 5 s ; charte CSA 2011 : 20 car. = 2 s, 36 = 3 s, 60 = 4 s. Espaces et ponctuation comptent.
+- [TESTÉ EN LABO, calcul] Mot à mot à ~0,3 s par mot, la voix couvre déjà l'essentiel de la lecture : **tenir le vers complet 1/2 s à 1 s après le dernier mot (12 à 25 images)**. Calcul : tenue (s) = max(0, caractères / 15 − (mots − 1) × 0,3) (`python3 -I labo/paroles/temps_lecture.py`). Mots longs, vers court ou public enfant : 1 s et plus.
+- **Quand et pourquoi** : la tenue laisse finir la lecture et donne au vers son poids avant la coupe. Un clip peut choisir d'être moins lisible (texte-texture, écho d'une voix que l'oreille comprend déjà, flash volontaire), mais il doit le **décider** ; un vers coupé par accident se lit comme une erreur.
+
 **R8 — Speed ramp en transition** [THÉORIQUE] : fin du plan A en rampe 100 → 400 % sur 6-8 images, début du plan B 400 → 100 %, keyframes en Bézier, flou de bougé activé, whoosh dont la crête tombe sur la coupe au sommet de la vitesse.
 
 ## 5. Outils
