@@ -36,6 +36,12 @@ Dans une scène, une ligne imaginaire relie les deux personnages (ou un personna
 - **Interview** : couper à la fin d'une pensée (respiration, regard qui se détourne). Masquer une coupe dans une phrase par un plan de coupe (insert, archive, mains) ou **assumer le jump cut** (avec un léger recadrage de 10-20 % si on a de la marge en 4K) ; ne jamais faire un fondu au milieu d'une phrase, cela crie « coupure ».
 - **Plans de coupe** : les tourner en abondance (mains, détails, lieu) ; ce sont les jokers du montage.
 
+## Changement à travers une coupe (cécité au changement) — [TESTÉ EN LABO, mesure d'image ; perception humaine à confirmer]
+- Un détail qui change entre deux plans **n'est pas vu par défaut** : la coupe masque le signal de mouvement qui attirerait l'œil (paradigme de Rensink, O'Regan et Clark, 1997 ; Levin et Simons, 1997, sur les erreurs de raccord non vues au cinéma). C'est ce qui sauve les faux raccords ordinaires, et ce qui tue une anomalie voulue.
+- **Anomalie voulue** (inquiétude, indice, retour) : la placer dans la zone que le plan précédent a déjà désignée (lumière, contraste, centre, regard d'un personnage), et ne **pas** la désigner dans le plan où elle apparaît (pas de zoom, pas de son) sinon on passe du trouble à la démonstration. Le plan de retour plus long que le plan de départ (4 s / 6 s dans l'atelier 12) donne le temps de comparer.
+- **Faux raccord à cacher** : l'inverse, le mettre hors de la zone saillante, ou couper sur un mouvement qui capte l'œil.
+- Outil : `atelier/12-inquietude-calme/mesure.py` (aire du changement, distance à la zone la plus saillante et au centre).
+
 ## Temps
 - **Ellipse** : enlever ce que le spectateur peut reconstruire ; il préfère compléter que subir.
 - **Montage parallèle** : deux actions alternées créent une relation (course contre la montre, contraste). Accélérer l'alternance fait monter la tension.
