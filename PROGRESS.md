@@ -2,11 +2,11 @@
 
 _Lire en premier. Mis à jour à chaque fin de session._
 
-## Où on en est (après la session 9, 2026-10-10 ~07:15 UTC)
+## Où on en est (après la session 9, 2026-10-10 07:05 UTC)
 - **Skills (21)** : session 9 : `montage-grammaire` (cécité au changement à travers la coupe), `montage-regard` (règles 12-13), `montage-rythme` (le plan de retour), `montage-couleur-et-intention` (fond = monde, lumière = corps ; contraste simultané), `montage-workflows` + `montage-ia-generative` (interpolation, RIFE testé), `montage-references` (bande-annonce, Freeze, atelier 12).
 - **Culture** : 41 fiches (nouvelles : `bande-annonce-montage.md`, `freeze-corleone-clips.md`).
-- **Atelier** : **12 « Inquiétude calme »** v1-v7 (v7 réf.), **13 « Le fond raccorde »** v1-v4 (v4 réf.), **14 « Balancier »** A/B (voir `atelier/14-balancier/CRITIQUE.md`).
-- **Labo** : `labo/interpolation/` (minterpolate + RIFE 4.25 en CPU, vérité terrain 60 i/s, deux scènes).
+- **Atelier** : **12 « Inquiétude calme »** v1-v7 (v7 réf.), **13 « Le fond raccorde »** v1-v4 (v4 réf.), **14 « Balancier »** A/B (A = réf. : le montage se retire ; le kinetic masque l'amortissement).
+- **Labo** : `labo/interpolation/` (minterpolate + RIFE 4.25 en CPU, vérité terrain 60 i/s, deux scènes) ; `labo/saillance/` (résidu spectral : confirme la v4 de la pièce 12 comme la pire, nuance la v7).
 - **Examens** : n°1 13, n°2 14, n°3 15, n°4 14, n°5 14 /20. **N°6 en session 10 (BACKLOG 53).**
 
 ## Reprendre ici (session 10)
@@ -21,7 +21,7 @@ _Lire en premier. Mis à jour à chaque fin de session._
 - Un serveur MCP nommé `HIGGSFIELD_MCP` est listé dans l'environnement : non appelé (consigne phase 1). Noms observés dans `PLAN-TESTS-MCP.md`.
 
 ## Historique
-- Session 9 — 2026-10-10 06:29 → ~07:15 UTC : pièces 12 (v1-v7), 13 (v1-v4), 14 (A/B) ; labo interpolation (minterpolate, RIFE) ; fiches bande-annonce, Freeze Corleone ; PLAN-TESTS 43-45.
+- Session 9 — 2026-10-10 06:29 → 07:05 UTC : pièces 12 (v1-v7), 13 (v1-v4), 14 (A/B) ; labos interpolation (minterpolate, RIFE) et saillance (résidu spectral) ; fiches bande-annonce, Freeze Corleone ; PLAN-TESTS 43-45.
 - Session 8 — 2026-10-10 05:29 → 05:53 UTC : pièce 10 v4-v6 (+ montage), pièce 11 « Dialogue » v1-v4, labos VFR et proxies, fiches Scott Pilgrim, génériques de séries doc, drill FR ; `montage-regard` distillé ; PLAN-TESTS 40-42.
 - Session 7 — 2026-10-10 04:29 → ~05:10 UTC : examen n°5 (14/20), ateliers 08 « Souvenir » (v1-v4), 09 « Générique » (v1-v4) et 10 « Chaleur partout » (v1-v2), écart OCIO expliqué, labos photosensibilité, surround Lt/Rt, 180°, déterminisme Blender ; fiches Noé / Kan et Kuntzel + Deygas ; PLAN-TESTS 38-39.
 - Session 6 — 2026-10-10 03:29 → ~04:05 UTC : fiches Aftersun et Les Revenants, recherche surround et hors champ (vérifiée en labo), atelier 07 « Causalité » (corps rigides, A/B/C), Eevee sans écran mesuré, PLAN-TESTS 36-37.

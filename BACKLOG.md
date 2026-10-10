@@ -37,7 +37,7 @@ Règle : alterner ART et TECH. Réalimenter dès qu'il reste moins de 10 sujets 
 21. [~] [ART] Atelier « causalité » : reprendre le principe de Honda « Cog » (chaque coupe montre une cause et son effet) sur 10 s de Blender, sans musique, seulement les sons des objets.
 22. [x] [TECH] `montage-blender` v1 écrit (session 2) ; reste Eevee headless, geometry nodes, compositing, camera tracking — : consigner ce que l'atelier 02 a appris (cadre et fenêtres de source calculées depuis la cinématique, cache d'images par caméra, ~1 image/s en Cycles 270×480 12 échantillons + débruitage).
 
-23. [~] [ART] (session 9 : pièce 14 « Balancier » A/B, `atelier/14-balancier/`) Atelier « le montage se retire » (principe Jonze) : un corps ou un objet qui produit lui-même le rythme (pendule, danse d'un objet Blender), 3 plans max sur 15 s, comparé à une version kinetic.
+23. [x] [ART] (session 9 : pièce 14 « Balancier » A/B, A = réf. ; reste 54) Atelier « le montage se retire » (principe Jonze) : un corps ou un objet qui produit lui-même le rythme (pendule, danse d'un objet Blender), 3 plans max sur 15 s, comparé à une version kinetic.
 24. [ ] [ART] Atelier « voix écrite après » (principe Varda) : monter d'abord 20 s d'images glanées (plans des ateliers), écrire ensuite une voix off qui relie ; critique : la voix illustre-t-elle ou relie-t-elle ?
 
 25. [ ] [ART] Atelier « Spirale » (principe Marker) : 30 s qui font revenir 3 motifs des ateliers 01-04, chaque retour changeant de sens ; voix écrite après.
@@ -75,6 +75,7 @@ Règle : alterner ART et TECH. Réalimenter dès qu'il reste moins de 10 sujets 
 50. [ ] [ART] Atelier 12 v8 : **lieu encombré** (objets du quotidien) ; l'anomalie doit se cacher parmi d'autres objets et rester trouvable ; saillance mesurée sur le décor riche.
 51. [ ] [ART] Atelier « teaser 15 s » d'après la fiche bande-annonce : une promesse, 3 paliers, un noir avant la frappe, texte monté en cartons — à partir des plans des ateliers 10-14 ; critique : cliché ou forme ?
 52. [~] [TECH] (session 9 : résidu spectral fait, `labo/saillance/` ; reste modèle appris, pièces 06 et 10) Saillance : remplacer le modèle maison (luminance × contraste) par un modèle publié et libre (spectral residual de Hou et Zhang 2007, ou équivalent) et comparer sur les pièces 06, 10, 12.
+54. [ ] [ART] Pièce 14 v2 : exposition du serré −1 diaphragme (saut de lumière au raccord), version B « honnête » où les coupes ralentissent avec la lampe (durées proportionnelles à la période apparente) ; comparer à A.
 53. [ ] [ART] Examen n°6 (session 10) : brief où une anomalie, un froid de relation ou un ralenti sont des enjeux (mettre à l'épreuve les leçons de la session 9).
 
 ## Fait (trace)
