@@ -109,3 +109,8 @@ Démonstration produit, réaction en chaîne, gag mécanique, plan « Cog » : t
 - Une relance dans une forme qui ralentit est **un coup**, pas une rafale ; le jour où il n'y a plus d'outil à retirer, c'est un **changement de régime** (autre caméra, autre texture, autre son) qui relance.
 - Retirer les ponctuations sans **allonger les plans** ne calme rien : les coupes qui restent deviennent les plus gros chocs du film.
 - Le temps long a besoin d'un mouvement interne, mais dosé à quelques % : une lumière qui palpite sur tout le cadre compte comme un événement. Détails et mesures : `atelier/26-densite-decroissante/CRITIQUE.md`.
+
+## Le gag de contradiction à l'image près (atelier 27, session 23) [TESTÉ EN ATELIER, maquette 2D + voix de synthèse]
+- **Le plan d'arrivée d'abord** : une coupe juste ne sauve pas un plan qui ne se lit pas en < 0,5 s (même costume, objet reconnaissable à sa silhouette, action sans ambiguïté). Le second rire est un **changement de forme** (yeux fermés de plaisir → grands ouverts sur la caméra), pas un déplacement de quelques pixels.
+- **Écart après le mot-clé** : 0 image rogne la voyelle finale ; **2 images = le point sec** ; 8 images = un temps mort que le spectateur lit comme « attendez la suite » (la chute devient prévisible) ; un écart **négatif** (couper dans le mot) change de gag : le montage coupe la parole, ton narrateur moqueur.
+- **Pas de pré-lap** sur une contradiction : le son du plan B masque le mot-clé ou annonce la chute ; son et image changent à la même image. Détails : `atelier/27-jamais/CRITIQUE.md`.
