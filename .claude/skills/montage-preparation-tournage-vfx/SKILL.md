@@ -53,7 +53,7 @@ Pour chaque plan concerné, une ligne : n° de plan · ce qui change en post · 
 ## 5 ter. Une lumière qui s'éteint ou se rallume à l'écran — session 14 [TESTÉ EN ATELIER sur rendu 3D ; au tournage : THÉORIQUE]
 - **Tourner deux plaques verrouillées, source allumée et éteinte**, même exposition, même diaphragme. En post, après linéarisation (rush log → linéaire), la différence des deux est la contribution de la source ; la lumière s'additionne, donc **n'importe quelle courbe** (sèche, panne, rallumage lent avec virage de teinte) se compose ensuite au montage, sans refaire la prise (atelier 18 v4-v5, `atelier/18-soustraction/anime.py`). Limites : rien ne doit bouger dans le cadre entre les deux plaques (ou seulement le comédien, détouré), et la source ne doit pas brûler (une partie saturée ne s'additionne plus).
 - Décider avant le tournage **qui éteint** : une extinction sèche sans cause se lit « coupure » ; prévoir le plan ou le son qui donne la cause (geste, contacteur), à tourner ou à enregistrer.
-- **Les gestes à lire** (mains, signes) : les placer dans le plan de l'image, mains écartées du torse, fond plus sombre que le corps, et serrer le cadre plutôt que demander un geste plus grand (atelier 19 v7).
+- **Les gestes à lire** (mains, signes) : les placer dans le plan de l'image, mains écartées du torse, fond plus sombre que le corps, et, en plan moyen, savoir qu'il faut un geste très ample pour qu'il se voie (atelier 19 v7) ; serrer en gardant les mains dans le cadre est l'alternative probable (non démontrée, v8).
 
 ## 6. Checklist plateau (à remplir pour chaque plan à effets)
 - [ ] Focale, diaph, distance, hauteur, inclinaison, cadence, shutter notés.

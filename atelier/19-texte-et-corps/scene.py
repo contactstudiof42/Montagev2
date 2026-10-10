@@ -82,6 +82,7 @@ elif plan == "gestes2":  # v5 (session 14) : bras pivotés à l'épaule, mains a
         m_ = sphere(0.055, (0, 0, -0.58), peau, (0.8, 0.5, 1.2)); m_.parent = e; epaules.append((e, s_))
     # (abduction latérale en degrés, élévation avant en degrés) par image clé : mains au-dessus des épaules, bras écartés
     POSES = ((10, 15), (70, 40), (35, 100), (95, 20), (40, 70)) if not os.environ.get("PLAN_IMAGE") else ((15, 10), (80, 20), (145, 10), (55, 30), (125, 0))   # v7 : gestes dans le plan de l'image (abduction), mains au-dessus des épaules
+    if os.environ.get("PETIT"): POSES = ((12, 5), (30, 10), (45, 5), (22, 15), (38, 0))   # v8 : gestes naturels, petits
     AV = float(os.environ.get("AV", "1"))   # AV = 1 : élévation vers l'arrière (dans l'axe objectif, elle aussi) ; -1 : vers l'objectif (v5)
     for f, (ab, av) in zip((1, 6, 11, 16, 21), POSES):
         for e, s_ in epaules:
@@ -90,7 +91,7 @@ elif plan == "gestes2":  # v5 (session 14) : bras pivotés à l'épaule, mains a
             e.rotation_euler = (math.radians(av * k * AV), math.radians(-s_ * ab * k), 0); e.keyframe_insert("rotation_euler", frame=f)
     bpy.ops.object.light_add(type="AREA", location=(0.6, 15, 2.2)); L = bpy.context.object; L.data.energy = 700; L.data.size = 1.5; L.data.color = SODIUM
     L.rotation_euler = (math.radians(90), 0, math.radians(180)); lumiere((-1.5, 9.5, 1.5), float(os.environ.get("FILL", "5")), LED)
-    camera((0.3, 8.6, 1.35), (0, 12, 1.3), 45)
+    camera((0.3, 8.6, 1.35), (0, 12, 1.3), 45) if not os.environ.get("TAILLE") else camera((0.2, 10.3, 1.35), (0, 12, 1.25), 45)   # v8 : plan taille
 elif plan == "face":     # plan poitrine, regard caméra, léger travelling avant
     personnage(0, 10, 0, yeux=True); lumiere((0.9, 9.0, 2.2), 40, SODIUM); lumiere((-1.2, 9.6, 1.6), 6, LED)
     camera((0, 7.6, 1.62), (0, 10, 1.55), 50, fin=(0, 7.9, 1.62), ouverture=2.0, mise_au_point=2.3)
