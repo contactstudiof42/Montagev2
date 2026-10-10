@@ -31,6 +31,7 @@ Et une cinquième, d'état : **la saturation** (Noé / Tom Kan, générique d'*E
 8. **Le décor devient le contenu du personnage** : le corps sert de cadre au lieu (Clair, *True Detective*). → Portrait de marque : le visage d'un artisan comme fenêtre sur son atelier.
 9a. **Un habillage récurrent qui résout un problème du récit** (Elastic / Angus Wall, générique de *Game of Thrones*, `culture/elastic-game-of-thrones-generique.md`) : la carte est née parce que le public se perdait ; un générique qui informe (et varie d'un épisode à l'autre) donne une raison de le regarder. → Habillage de série corporate ou de chaîne : que le générique dise quelque chose de neuf à chaque fois.
 9b. **Une campagne est un système, pas un film** (ManvsMachine, `culture/manvsmachine-studio.md`) : une matière ou un geste par bénéfice produit, un élément qui revient, et des règles qui se déclinent (palette, kit de pièces). → Toute pub déclinée en 16:9 / 9:16 / 6 s.
+9c. **Un habillage qui dure des dizaines d'épisodes** (`culture/generiques-series-documentaires.md`, session 8 : *Chef's Table*, *Making a Murderer*, *Faites entrer l'accusé*) : **le son identifie avant l'image** (attaque musicale singulière dès la 1re seconde) ; une musique à motif court supporte la répétition, une musique à effet (montée, drop) s'use (test : 10 écoutes d'affilée) ; **garder la forme, changer la matière** ; répartir l'identité en **rituels brefs** qui survivent aux changements d'équipe ; la technique doit illustrer le sujet (test : échangeable avec un autre programme = mode, pas identité).
 9. **Retirer ce qui rend l'image banale** pour qu'une métaphore littérale tienne (Glazer : le noir et blanc, rien de touristique).
 
 ## D. Matière et texture
@@ -40,6 +41,8 @@ Et une cinquième, d'état : **la saturation** (Noé / Tom Kan, générique d'*E
 11. **Les défauts d'un traitement poussé à l'extrême sont une matière**, s'ils correspondent au thème (Clair : ralenti extrême ; *The Hardest Part* : la dérive de l'IA comme sujet).
 
 - **La technique comme métaphore du sujet** (Kuntzel + Deygas, générique de *Catch Me If You Can*, `culture/kuntzel-deygas-catch-me-if-you-can.md`) : des tampons encreurs pour un faussaire, défauts gardés ; une silhouette sans visage pour un homme aux identités changeantes ; chaque aplat de couleur dit « ailleurs, plus tard » sans carton. **Hommage par la méthode, jamais par les motifs** : reprendre la logique de Bass (un signe, peu de couleurs, typo dans le décor) et trouver le signe dans son propre sujet. Test : si le générique marche aussi bien sur un autre film, c'est un pastiche. Pôle opposé de Noé / Kan : lisible, narratif, continu.
+
+- **Le texte animé comme point de vue** (Shynola / Edgar Wright, *Scott Pilgrim*, `culture/scott-pilgrim-generique-et-montage.md`, session 8) : un graphisme intégré doit dire **qui voit** (typo, couleur et mouvement changent avec la scène) et partir d'un **événement réel** du plan ou du son (un flash, un geste, un transitoire) ; **caler le timing sur une maquette propre avant de salir** ; une seule source esthétique pour tous les effets (ici le jeu vidéo low-fi, cadence comprise).
 
 ## E. Raccords et structure
 12. **Le son porte le raccord** (Murch) ; **la transition est une idée ou un gag** (Wright), jamais un fondu par défaut.

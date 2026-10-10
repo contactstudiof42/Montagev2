@@ -82,6 +82,11 @@ Sources du placement : crête du riser sur le moment clé (Epidemic Sound) ; son
 - **Rupture de forme** : varier échelle (10 → 60 % de la hauteur), position et débord à chaque coupe ; la police ne compte qu'en grand. Le sommet (les noms qui comptent) doit changer de règle, pas seulement grossir : v4 = fond commun, deux lignes géantes, même police pour les 4 acteurs, après 28 cartons où tout change.
 - **Photosensibilité : baisser la luminosité du texte ne sert à rien** (v4 : texte à 0,72, toujours pire seconde 3) ; les leviers sont la **surface** du mot dans sa fenêtre locale et la **fréquence**.
 
+## 3d. Leçon de culture (*Scott Pilgrim*, session 8, `culture/scott-pilgrim-generique-et-montage.md`)
+- **Chaque séquence d'action a sa propre règle** (point de vue, échelle, cadence) : sinon le kinetic devient un tic. Avant de monter, écrire la règle du morceau en une ligne.
+- **Un SFX ou une onomatopée amplifie un événement qui existe** (geste, impact, transitoire) ; il ne le remplace pas. Une transition passe par le son quand c'est possible (le bruit de A devient l'impulsion de B) : le cut rapide paraît motivé.
+- **Caler d'abord, salir ensuite** : verrouiller le timing sur une maquette propre, puis texture (grain, accidents) sans retoucher le calage.
+
 ## 4. Recettes
 **R1 — Hook 0-3 s** [THÉORIQUE] : image 1 = l'image la plus forte (résultat, chiffre, action) + impact ou drop musical à l'image 1 ; captions dès la 1re syllabe ; 2 à 4 coupes dans les 3 premières secondes ; la promesse est dite avant la 3e seconde.
 
