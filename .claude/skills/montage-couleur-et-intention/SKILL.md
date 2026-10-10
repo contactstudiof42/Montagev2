@@ -95,6 +95,11 @@ Quand on demande « quelle couleur pour ce film ? », rendre :
 5. ce qu'on refuse (au moins un cliché nommé) ;
 6. un risque et comment le vérifier (test sur 3 plans).
 
+## Lumière qui change dans le plan (atelier 18 v4-v5, session 14) [TESTÉ EN ATELIER, rendu Blender ; perception à valider]
+- **Virage de teinte** (sodium qui chauffe, néon qui s'amorce) : il n'existe que dans la **plage visible** ; partir d'au moins ~25 % de l'intensité finale, sinon le virage passe pour du noir. La teinte se lit sur la **lumière portée** (sol, murs), pas sur la source, que la vue AgX blanchit.
+- **Fondu de lumière** : une rampe linéaire en lumière de scène ne descend pas linéairement à l'écran (la vue la courbe : presque rien la première moitié, tout ensuite). Faire le fondu dans l'espace où il sera jugé, ou le dessiner à l'œil.
+- **Recette** : 2 rendus EXR linéaires (avant / après), la différence = la contribution de la source ; toute courbe d'extinction ou de rallumage se compose ensuite par addition, puis vue appliquée par OCIO (`atelier/18-soustraction/anime.py`). Même logique en compositing (AE en 32 bits linéaire, Fusion, Nuke) : une **passe par source** au rendu 3D permet de régler la dramaturgie de la lumière au montage.
+
 ## Limites
 
 - Les significations des couleurs varient selon cultures, marques et publics ; aucune table n'est universelle (même Storaro le reconnaît comme système personnel).
