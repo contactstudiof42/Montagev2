@@ -37,7 +37,7 @@ Statut : **[THÉORIQUE]**, recherche du 2026-10-10 (pages d'aide Adobe lues par 
 
 ## Monter sur la musique
 - Marqueurs (M) posés pendant la lecture sur les temps forts et **sur l'arrangement** (entrée de basse, break, refrain) : cf. `montage-rythme`, le calage au temps est la texture, la densité par section est la forme.
-- **Pas de détection de beats native sur desktop** selon les sources (elle existe sur Premiere mobile) [INCERTAIN] : alternative fiable, mesurer les temps hors Premiere (onset/BPM en Python) et importer les marqueurs.
+- **Pas de détection de beats native sur desktop** selon les sources (elle existe sur Premiere mobile) [INCERTAIN] : alternative fiable, mesurer les temps hors Premiere et importer les marqueurs : `labo/marqueurs/beats_xml.py` produit un XML FCP7 (séquence portant un marqueur par temps, M1, M2… sur les premiers temps) [détection TESTÉE EN LABO à ~10 ms ; import THÉORIQUE, test n°18 du plan MCP]. Vérifier toujours le 1er marqueur : la phase, pas le tempo, est le piège (grille à contretemps mesurée au labo).
 - **Remix** (Essential Sound ou outil du groupe Ripple) : rallonge ou raccourcit une musique à une durée cible en recousant ses segments ; précision ~1 s (jusqu'à 5). [SOURCÉ] Écouter chaque raccord : le Remix ignore le sens des paroles.
 - Poser les coupes sur l'image la plus proche du marqueur, jamais en tapant des durées (dérive mesurée dans l'atelier 03).
 

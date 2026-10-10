@@ -39,6 +39,7 @@ Exemples de noms observés, à confirmer en phase 2 :
 | 14 | Premiere | version exacte (« Premiere 26.x » ?) ; créer une séquence depuis un clip 25p ; vérifier les presets de gestion des couleurs (Direct Rec.709, Wide Gamut) ; exporter en H.264 « Adaptive High Bitrate » et lire les tags avec ffprobe | version notée ; tags color_primaries/transfer/matrix lus et consignés | montage-premiere |
 | 15 | Premiere | détection de beats : existe-t-il un outil natif sur desktop ? (`pr_detect_beats` a été observé dans le MCP : le comparer aux temps de `atelier/03-rythme-macro/` musique 140 BPM) | écart ≤ 1 image sur 20 temps | montage-premiere, montage-rythme |
 | 16 | Premiere | refaire le montage C de l'atelier 03 (`v3-mesures.json`) : coupes posées à l'image près sur la musique, scdet sur l'export | écart max ≤ 20 ms comme dans la VM | montage-rythme |
+| 18 | Premiere / Resolve | importer `labo/marqueurs/kick128.xml` (généré par `beats_xml.py` sur la musique de test) : Premiere Fichier > Importer ; Resolve Import Timeline > XML | 42 marqueurs présents, aux images du CSV (±0), noms M1… lisibles ; comparer à `pr_detect_beats` (±1 image) | montage-premiere, montage-kinetic-editing |
 | 17 | Premiere | raccourcis Q/W, Y (slip), U (slide) : confirmer les défauts | liste confirmée dans `montage-premiere` | montage-premiere |
 
 ## Observation de la session 2 (2026-10-09, ~23:55 UTC)
@@ -46,3 +47,6 @@ Le serveur `HIGGSFIELD_MCP` est de nouveau listé (non appelé). Ses instruction
 
 ## Observation de la session 3 (2026-10-10, ~00:35 UTC)
 Le serveur `HIGGSFIELD_MCP` est toujours listé (non appelé). La méthode générale d'un agent qui pilote un logiciel est désormais dans le skill `montage-pilotage-mcp` (projet de test, un geste = une image, lire avant d'écrire, unités, rien de payant). Noms supplémentaires observés, utiles aux tests 15-16 : `pr_detect_beats`, `pr_apply_cut_plan`, `pr_assemble_edit`, `pr_set_sequence_format`, `pr_extract_frames`, `ae_audit_motion`, `ae_export_contact_sheet`. Paramètres inconnus : lire `pr_get_skill` / `ae_describe_tool` avant tout appel.
+
+## Observation de la session 4 (2026-10-10, ~01:35 UTC)
+Serveur `HIGGSFIELD_MCP` toujours listé, **non appelé** (consigne phase 1). Noms supplémentaires observés : `pr_render_audio_edl`, `pr_compare_angles`, `pr_recompact_audio`, `ae_build_liquid_glass`, `ae_reveal_floor`, `ae_rig_rebase`, `ae_finalize_build`. Le catalogue est maintenant identique d'une session à l'autre : je ne le recopierai plus, sauf changement.
