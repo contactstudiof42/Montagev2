@@ -10,7 +10,7 @@ Toutes les recettes sont **[THÉORIQUE]** (pratique de plateau courante, non tes
 ## 1. Quand et pourquoi
 - **Tout plan où quelque chose sera ajouté, retiré, remplacé ou recadré.** Un effet raté vient presque toujours d'une information manquante au tournage, pas d'un manque de talent en post.
 - **Choisir la méthode par l'intention**, pas par la mode :
-  - *Plateau* (pratique) quand l'acteur doit réagir à la chose, quand la lumière de l'effet doit toucher le décor (feu, écran, flash), ou quand c'est moins cher qu'on croit (une lampe orange vaut mieux qu'un feu compositeé : atelier 02, la lumière du feu sur le décor fait plus que la flamme) ;
+  - *Plateau* (pratique) quand l'acteur doit réagir à la chose, quand la lumière de l'effet doit toucher le décor (feu, écran, flash), ou quand c'est moins cher qu'on croit (une lampe orange vaut mieux qu'un feu compositée : atelier 02, la lumière du feu sur le décor fait plus que la flamme) ;
   - *Numérique* quand c'est dangereux, impossible ou répétitif (multiplication de foule, effacement, ciel) ;
   - *IA générative* (voir `montage-ia-generative`, daté) pour un plan d'ambiance sans personnage identifiable ou pour rallonger un plan de 1 à 2 s, jamais pour un visage ou un produit qui doit être exact.
 - **Dire non** à l'effet qui ne raconte rien (`montage-direction-artistique`, étape 5) avant de le préparer.
@@ -28,7 +28,8 @@ Pour chaque plan concerné, une ligne : n° de plan · ce qui change en post · 
 ## 4. Fond vert / bleu
 - **Vert** pour la plupart des cas (le capteur y est plus sensible, moins de bruit) ; **bleu** si le sujet porte du vert, pour les cheveux blonds, ou de nuit (moins de débordement chaud).
 - **Fond éclairé à part et uniformément** (écart ≤ 1/3 de diaphragme sur toute la surface), sans le surexposer : viser le niveau du gris moyen ou légèrement en dessous.
-- **Distance sujet-fond : 2 à 3 m au moins** pour réduire le débordement (spill) et pouvoir flouter le fond ; éclairer le sujet avec la lumière de la *future* scène (direction, couleur, dureté).
+- **Distance sujet-fond : 2 à 3 m au moins** pour réduire le débordement (spill) et pouvoir flouter le fond ; éclairer le sujet avec la lumière de la *future* scène (direction, couleur, dureté). [TESTÉ EN LABO, synthèse 3D : de 0,3 à 3 m, débordement ÷ 2,6 et trous dans le sujet ÷ 6 — `labo/keying/RESULTATS.md`]
+- **Fond saturé, pas brillant** : un vert écrêté se délave et le keyer mange le sujet (labo : tolérance 0,20 → 86-92 % d'un sujet gris effacé). `despill` supprime ensuite le vert résiduel du sujet [TESTÉ EN LABO].
 - Pas de reflets (lunettes, montres, chrome), pas de fumée devant un fond vert, cheveux : prévoir un contre-jour.
 - Matières qui posent problème : voilages, cheveux fins, verre, mouvement rapide (→ shutter plus fermé).
 
@@ -49,5 +50,6 @@ Pour chaque plan concerné, une ligne : n° de plan · ce qui change en post · 
 - [ ] Autorisations pour les effets pratiques (fumigènes, flammes, drone) : capitainerie, mairie, pompiers.
 
 ## 7. À vérifier en phase 2
+- Keying des cheveux fins : `chromakey` ffmpeg les perd (≈ 42 % d'erreur sur les bords, labo) ; comparer Keylight / Resolve 3D Keyer / Delta Keyer avec le même protocole à vérité terrain.
 - Keying sur un vrai plan fond vert CC0 (ffmpeg `chromakey`, AE Keylight, Resolve 3D Keyer) : effet de la distance au fond et du shutter sur le bord.
 - Camera tracking d'un plan à marqueurs (Blender, AE 3D Camera Tracker) ; erreur de reprojection obtenue.

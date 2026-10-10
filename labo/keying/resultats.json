@@ -1,0 +1,65 @@
+{
+ "D0.3_chromakey_0.12": {
+  "erreur_alpha_moy_%": 1.77,
+  "erreur_alpha_bords_%": 42.6,
+  "trous_dans_sujet_%": 4.68,
+  "vert_residuel_sujet": 9.62,
+  "debordement_avant_key": 9.62
+ },
+ "D0.3_chromakey_0.20": {
+  "erreur_alpha_moy_%": 12.73,
+  "erreur_alpha_bords_%": 48.4,
+  "trous_dans_sujet_%": 92.13,
+  "vert_residuel_sujet": 9.62,
+  "debordement_avant_key": 9.62
+ },
+ "D0.3_chromakey_0.12+despill": {
+  "erreur_alpha_moy_%": 1.77,
+  "erreur_alpha_bords_%": 42.6,
+  "trous_dans_sujet_%": 4.68,
+  "vert_residuel_sujet": 0.0,
+  "debordement_avant_key": 9.62
+ },
+ "D1_chromakey_0.12": {
+  "erreur_alpha_moy_%": 1.47,
+  "erreur_alpha_bords_%": 42.2,
+  "trous_dans_sujet_%": 2.61,
+  "vert_residuel_sujet": 7.48,
+  "debordement_avant_key": 7.48
+ },
+ "D1_chromakey_0.20": {
+  "erreur_alpha_moy_%": 12.3,
+  "erreur_alpha_bords_%": 48.4,
+  "trous_dans_sujet_%": 90.18,
+  "vert_residuel_sujet": 7.48,
+  "debordement_avant_key": 7.48
+ },
+ "D1_chromakey_0.12+despill": {
+  "erreur_alpha_moy_%": 1.47,
+  "erreur_alpha_bords_%": 42.2,
+  "trous_dans_sujet_%": 2.61,
+  "vert_residuel_sujet": 0.0,
+  "debordement_avant_key": 7.48
+ },
+ "D3_chromakey_0.12": {
+  "erreur_alpha_moy_%": 1.04,
+  "erreur_alpha_bords_%": 41.0,
+  "trous_dans_sujet_%": 0.78,
+  "vert_residuel_sujet": 3.67,
+  "debordement_avant_key": 3.66
+ },
+ "D3_chromakey_0.20": {
+  "erreur_alpha_moy_%": 11.42,
+  "erreur_alpha_bords_%": 48.4,
+  "trous_dans_sujet_%": 86.44,
+  "vert_residuel_sujet": 3.67,
+  "debordement_avant_key": 3.66
+ },
+ "D3_chromakey_0.12+despill": {
+  "erreur_alpha_moy_%": 1.04,
+  "erreur_alpha_bords_%": 41.0,
+  "trous_dans_sujet_%": 0.78,
+  "vert_residuel_sujet": 0.0,
+  "debordement_avant_key": 3.66
+ }
+}

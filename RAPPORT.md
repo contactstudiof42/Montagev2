@@ -152,6 +152,7 @@ Techniques : `montage-grammaire` (théorique), `montage-loudness-livraison` (tes
 - **Pièce créée** : 02 « Étincelle », de v1 à v6 (Blender 4.2.3 Cycles CPU, sons synthétisés avec numpy, police Inter OFL ; aucun média tiers). Les scripts sont réutilisables : plateau multi-caméras, liste de plans en JSON, rendu des seules images utiles avec cache.
 - **Tests réussis** :
   - labo encodage (`labo/encodage/`) : le critère de bandes est validé sur une source sans perte (tramage 1,9 contre 5,3 sans tramage) ; le 10 bits x264 donne 1,56 ; un grain σ≈2/255 tient après ré-encodage 8 bits (3,2 contre 5,2) ; le filtre ffmpeg `noise=c0s=4:allf=t` est calibré à σ = 2,3 ;
+  - labo keying (`labo/keying/`, alpha de vérité terrain rendu dans Blender) : de 0,3 à 3 m du fond vert, le débordement est divisé par 2,6 et les trous dans le sujet par 6 ; un fond surexposé fait manger le sujet par le keyer ; `despill` supprime le vert résiduel ; les cheveux fins sont perdus avec `chromakey` ;
   - pièce 02 : loudness -14,2 LUFS / -2,0 dBTP mesurée sur le MP4 ; calage des SFX vérifié dans les mesures ; règle de couleur mesurée.
 - **Tests ratés, avec leur cause** :
   - le tramage ±1 niveau et `-tune grain` ne protègent pas les noirs des bandes (x264 lisse ce bruit) : ma piste de la session 1 était fausse ;

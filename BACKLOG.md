@@ -22,7 +22,7 @@ Règle : alterner ART et TECH. Réalimenter dès qu'il reste moins de 10 sujets 
 11. [~] [TECH] `montage-preparation-tournage-vfx` v1 écrit (session 2, théorique). Reste : tests de keying et de tracking sur des médias CC0 (avec BACKLOG 14).
 12. [ ] [TECH] Pilotage MCP : état public (Higgsfield et autres), méthode d'agent → `montage-pilotage-mcp` + compléter `PLAN-TESTS-MCP.md`
 13. [ ] [ART] Son : atelier « même image, trois bandes son » (avec, contre, silence) ; fiches Murch sound design, Ben Burtt, Gary Rydstrom
-14. [ ] [TECH] Compositing / keying / tracking / roto (AE, Fusion, Blender) — test keying sur image CC0 avec ffmpeg (`chromakey`) et Blender
+14. [~] [TECH] Keying : labo à vérité terrain fait (session 2, `labo/keying/`). Reste : tracking, roto, keyers à alpha doux, compositing Blender/Fusion
 15. [ ] [TECH] Workflows transversaux et pipelines par format → skill `montage-workflows`
 16. [ ] [TECH] Labo rythme : tester scdet sur du vrai matériau CC0 (faux positifs ? seuil ?) ; détecter les fondus (différence image à image sur fenêtre)
 17. [~] [ART] Culture : fait en session 2 : Hiro Murai « This Is America », Honda « Cog ». Reste : documentaire (Varda *Les Glaneurs*, Errol Morris, Marker *Sans soleil*) ; clips (Spike Jonze, Jonas Åkerlund, et clips de rap français proches de Ziak) ; motion design de studio (Buck, ManvsMachine, Elastic) ; pub (Apple *1984*)

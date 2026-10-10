@@ -6,7 +6,7 @@ _Lire en premier. Mis à jour à chaque fin de session._
 - **Skills (17)** : socle (`montage-expert`, `montage-regard`, `montage-direction-artistique`), artistiques (`montage-grammaire`, `montage-rythme`, `montage-motion-design-principes`, `montage-son-et-emotion`, `montage-references`, `montage-couleur-et-intention`, `montage-kinetic-editing`), techniques (`montage-loudness-livraison`, `montage-after-effects`, `montage-ia-generative`, `montage-couleur-pipeline`, **`montage-blender`** (nouveau, testé en atelier), **`montage-resolve`** (nouveau, théorique), **`montage-preparation-tournage-vfx`** (nouveau, théorique)).
 - **Culture** : 18 fiches + mesures Ziak. Nouveau en session 2 : Hiro Murai « This Is America », Honda « Cog ».
 - **Atelier** : pièce 01 « Respiration » (v6 = référence). **Pièce 02 « Étincelle »** (`atelier/02-etincelle/`, vertical kinetic 8,9 s) : v1 → v6, v6 = référence (le pendule allume l'allumette ; 19/19 plans lisibles ; couleur chaude mesurée à 0,14 % avant l'allumage). Scripts : `scene.py` (plateau multi-caméras) + `montage.py` (EDL JSON → rendu des seules images utiles → SFX → loudness → planche).
-- **Labo** : loudness, livraison H.264, scdet, expressions AE (Node), couleur, kinetic, analyse-clip, **encodage** (nouveau : bandes dans les noirs, `labo/encodage/RESULTATS.md`).
+- **Labo** : loudness, livraison H.264, scdet, expressions AE (Node), couleur, kinetic, analyse-clip, **encodage** (nouveau : bandes dans les noirs, `labo/encodage/RESULTATS.md`), **keying** (nouveau : distance au fond vert, `labo/keying/RESULTATS.md`).
 - **Examens** : n°1 (13/20), **n°2 « Marée basse » (14/20, session 2)**. N°3 en session 5 ou 6 (documentaire ou corporate).
 
 ## Reprendre ici (session 3)
