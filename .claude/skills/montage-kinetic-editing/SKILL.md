@@ -77,6 +77,10 @@ Sources du placement : crête du riser sur le moment clé (Epidemic Sound) ; son
 - La couleur forte réservée à la fin se **mesure** : ≤ 0,14 % de pixels chauds avant l'allumage, 3,7 % après (v6).
 - Calculer les fenêtres de source depuis la cinématique dans le script : deux régressions (v2, v5) sont venues de fenêtres recopiées à la main.
 
+## 3c. Leçon d'atelier (pièce 09 « Générique de l'équipe », session 7)
+- **Strobe sans risque** [TESTÉ EN ATELIER] : cartons de 3 images sur des fonds de teintes différentes à **luminance relative égale** (~0,03 ; recherche de la valeur HSV qui donne la luminance cible), texte clair : 0 flash au contrôle. Les mêmes cartons sur fonds noir / blanc alternés : 16 flashs, pire seconde 5, inlivrable.
+- **Rupture de forme** : varier échelle (10 → 60 % de la hauteur), position et débord à chaque coupe ; la police ne compte qu'en grand. Le sommet (les noms qui comptent) doit changer de règle, pas seulement grossir.
+
 ## 4. Recettes
 **R1 — Hook 0-3 s** [THÉORIQUE] : image 1 = l'image la plus forte (résultat, chiffre, action) + impact ou drop musical à l'image 1 ; captions dès la 1re syllabe ; 2 à 4 coupes dans les 3 premières secondes ; la promesse est dite avant la 3e seconde.
 
