@@ -34,6 +34,17 @@ Annexe détaillée : [references.md](references.md). Preuves du labo : `labo/lou
 | Apple Music (Sound Check) | ~ -16 LUFS | ~ -1 dBTP | **Non confirmé officiellement** |
 | Instagram / Reels / TikTok | -14 LUFS souvent cité (d'autres disent -10 à -12) | -1 à -2 dBTP | **Non confirmé**, sources tierces contradictoires |
 
+### Hors plateformes (recherche du 2026-10-10, détail et sources : `sources/loudness-hors-plateformes-2026-10.md`)
+| Contexte | Cible | True peak | Statut |
+|---|---|---|---|
+| Lecture réseau sans normalisation (site, lecteur intégré) : **AES TD1008** (sept. 2021, remplace TD1004) | parole / contenu mixte **-18 LUFS** ; musique **-16 LUFS** | -1 dBTP avant codec avec perte | Valeurs LUFS confirmées ; true peak par citation secondaire (PDF AES en 403) |
+| Podcast (Apple Podcasts) | -16 LKFS ±1 | ≤ -1 dBFS | Officiel (Apple) |
+| Livre audio (ACX) | RMS -23 à -18 dB | crêtes ≤ -3 dB, bruit ≤ -60 dB RMS | Officiel (ACX) |
+| Salle de réunion, salon, événement | aucune norme ; usage pro -16 (web) à -18 (salle) | -1 dBTP | **Pratique de métier**, pas de source primaire |
+| Cinéma / DCP | pas de LUFS ; bandes-annonces ≤ 85 dB Leq(m), pubs ≈ 82 (TASA, ISDCF) | — | Plafonds, pas cibles ; aucune conversion Leq(m)→LUFS officielle |
+
+**Film d'entreprise** (corrige l'examen n°3, où -16 n'était pas sourcé) : master web **-16 LUFS / -1 dBTP / LRA 6-10 LU** (lecteur sans normalisation : on ne veut pas être plus faible que la vidéo voisine, ni écraser la voix) ; **version salle/événement à -18 LUFS, LRA ≤ 6-8** (sonorisation inconnue, souvent forte et réverbérante : marge et dynamique serrée pour que la voix passe), et **toujours un test sur place** ; version TV séparée à -23. Pourquoi deux versions : une salle pardonne moins les écarts de dynamique qu'un casque, et le régisseur règle son gain une fois, sur la première minute.
+
 Ce que je conseille en pratique (choix, et non une norme) : **web/réseaux -14 LUFS / -1.5 dBTP** ; **TV FR/UE -23 / -1** (respecter la charte PAD de la chaîne, qui prime) ; **cinéma** : pas de cible LUFS, on mixe à l'étalonnage de la salle (85 dB SPL, Dolby). Voir references.md.
 
 ## 4. Recettes ffmpeg
