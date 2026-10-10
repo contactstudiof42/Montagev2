@@ -50,3 +50,8 @@ Méthode de mesure nouvelle (`mesure_zone.py`) : la **zone de l'événement** = 
 3. **Vérifier une explication avant de l'écrire dans un skill** : ma cause « AgX » de v3 était fausse ; un seul essai contrôlé (C8) l'a montré. Les règles de couleur doivent venir d'essais à une variable.
 
 v5 proposée (si on y revient) : une main ou un visage simple au-dessus du téléphone (à 25 cm), écran en C15 ; mesurer le bleu sur la main ; puis 8 s de montage (B tenu 5 s, allumage en 3 images).
+
+## v5 (session 8) — `planche-v5.png` (B17 éteint, C17, C18) : une « main » à 22 cm au-dessus du téléphone
+- Mesure : zone de l'événement B − R +0,016 (C17) et −0,03 (C18, plus fort) : **la main n'apporte rien**. Sur la planche, elle flotte en haut du cadre, éclairée par la lampe sur sa face supérieure ; sa face inférieure, la seule qui reçoit l'écran, **est invisible depuis une caméra en plongée**.
+- Leçon de géométrie, simple et décisive : **la lumière d'un écran n'existe à l'image que sur les surfaces tournées vers l'écran, donc la caméra doit voir ces surfaces** : contre-plongée ou face, à peu près du point de vue de l'écran. C'est pourquoi le plan classique du « visage éclairé par le téléphone » est frontal et serré. Ma plongée de v3, bonne pour la saillance de l'objet, interdisait la lumière sur le personnage : **un même plan ne peut pas montrer à la fois la source et ce qu'elle touche** quand ils se font face ; il faut deux plans (le téléphone s'allume / le visage bleuit), et c'est le montage qui fait entrer le froid.
+- Défaut de la pièce : l'ellipsoïde « main » ne se lit pas comme une main (forme flottante). Pour v6 : deux plans (plongée sur le téléphone, puis contre-plongée serrée sur une forme de visage), monter les deux.

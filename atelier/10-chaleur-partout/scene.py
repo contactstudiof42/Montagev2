@@ -103,6 +103,9 @@ if P.get("ecran"):  # l'événement froid : un téléphone posé face en l'air q
         bpy.ops.mesh.primitive_plane_add(size=1, location=(0.05, 0.2, 0.7615)); fe = bpy.context.object
         fe.scale = (0.21, 0.297, 1); fe.rotation_euler = (0, 0, math.radians(12))
         fe.data.materials.append(mat("papier", (0.8, 0.8, 0.78), 0.8))
+    if P.get("main_ecran"):  # v5 : une main (forme simple couleur peau) au-dessus du téléphone, à P["main"] m, qui reçoit la lumière de l'écran
+        bpy.ops.mesh.primitive_uv_sphere_add(radius=0.05, location=(0.05, 0.17, 0.767 + P["main_ecran"])); mn = bpy.context.object
+        mn.scale = (0.9, 1.6, 0.35); mn.data.materials.append(mat("peau", (0.62, 0.45, 0.36), 0.55))
     bpy.ops.mesh.primitive_cube_add(location=(0.05, 0.2, 0.767)); ph = bpy.context.object; ph.scale = (0.04, 0.075, 0.004)
     pm = bpy.data.materials.new("ecran"); pm.use_nodes = True; nb = pm.node_tree.nodes["Principled BSDF"]
     nb.inputs["Base Color"].default_value = (0.01, 0.01, 0.01, 1)
