@@ -23,7 +23,7 @@ Exemples de noms observés, à confirmer en phase 2 :
 ## Tests prioritaires (à détailler au fil des sessions)
 | # | Logiciel | Test | Critère de réussite | Lien skill |
 |---|----------|------|---------------------|------------|
-| 1 | tous | `get_host_status` puis lecture des skills serveur | liste des hôtes + doc lue et résumée dans `labo/mcp/` | montage-pilotage-mcp (à créer) |
+| 1 | tous | `get_host_status` puis lecture des skills serveur | liste des hôtes + doc lue et résumée dans `labo/mcp/` | montage-pilotage-mcp |
 | 2 | AE | créer une comp 1920×1080 25 i/s 5 s, un texte, 2 clés d'opacité avec easing, exporter une frame à 0, 1, 2 s | frames conformes, easing visible sur la courbe (`ae_get_keyframes`) | montage-after-effects (à créer) |
 | 3 | Premiere | séquence test, import d'un média CC0, coupe sur beats détectés, export frame | coupes alignées sur les beats à ±1 image | montage-rythme (à créer) |
 | 4 | Premiere | loudness : export d'un mix et mesure ffmpeg ebur128 | écart ≤ 0,5 LU avec la cible demandée | montage-loudness-livraison |
