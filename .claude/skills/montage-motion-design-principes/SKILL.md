@@ -19,6 +19,9 @@ Version 1 (session 1, 2026-10-09). Sources : fiches `culture/saul-bass-generique
 
 - **La trace d'un mouvement** (McLaren, *Pas de deux* ; step-printing ; pièce 20 v7) [THÉORIQUE + atelier] : l'écart de temps entre les traces décide de la lecture : continu = vitesse (flou), quelques images = écho (durée, mémoire, corps multiplié), régulier et net = analyse (chronophotographie). Exige un fond qui disparaît (noir) et un sujet en contre-jour ; le nombre de traces est une courbe (`culture/mclaren-pas-de-deux-et-chronophotographie.md`).
 
+- **Deux grammaires de la trace** (Marey / Muybridge, `culture/chronophotographie-marey-muybridge.md`) [THÉORIQUE + atelier] : **superposée dans un même cadre** = on lit une **trajectoire** (exige un fond noir et un sujet réduit à des lignes ou à la lumière) ; **juxtaposée** (grille, split-screen) = on lit des **phases** (exige un repère fixe). Hypothèse de travail (non sourcée) sur l'écart entre poses, en largeurs du membre qui bouge : < 0,3 traînée, 0,5-1,5 trajectoire, > 2 écho (« foule de soi »), > 4 on croit voir plusieurs personnes.
+6c. **Hiérarchiser une liste, c'est économiser des événements** [TESTÉ EN ATELIER, pièce 20 v8, session 16] : 19 noms montés « un nom = un coup », même taille, même place = un **compteur** (13 s, 20 flashs, l'œil décroche au 6e) ; en trois rangs (seul et grand / paquets de 3 / énorme) : 11 coups, 5,6 s, 12 flashs, et la tête d'affiche redevient attendue. Les paquets se **repèrent** sans se lire : à réserver au cas où un carton-liste suit (6b).
+
 ## Clichés à refuser (sauf parti pris assumé)
 - Le zoom lent continu sur un carton centré.
 - Les particules et le glow « pour faire riche ».

@@ -56,6 +56,13 @@ Statut : **[THÉORIQUE]**, recherche du 2026-10-10 (pages d'aide Adobe lues par 
 - Rallonger un plan de quelques secondes (respiration avant une coupe, fin de plan trop courte) : sources 360p à 4K, 12 à 60 i/s ; **sortie 8 bits SDR, 30 i/s max**, passage par le cloud, consomme des crédits. [SOURCÉ] → acceptable pour du social ; **à éviter sur un master 10 bits / HDR / 24p cinéma** (rupture de qualité visible à l'étalonnage). Toujours dire au client quel plan est généré (cf. `montage-ia-generative`).
 - Media Intelligence : chercher un plan par description (en anglais), « Search Similar Frames ». Utile pour dérusher un documentaire.
 
+## Saccade (step-printing) et images tenues [THÉORIQUE, 2026-10-10, `sources/premiere-ae-saccade-choisie-2026-10.md`]
+- **Quand** : la saccade *régulière* est une texture (un plan, une séquence) ; la saccade *choisie* est un montage image par image (rushes à strobe, look Wong Kar-wai) : c'est elle qui garde le coup de lumière (`labo/photosensibilite/strobe-rushes/`, pièce 20).
+- **Choisie** : couper (Cmd/Ctrl+K) à chaque image voulue, puis Clip > Video Options > **Frame Hold Options** > *Hold On : In Point* sur chaque segment, trimé à 2-4 images ; imbriquer une fois validé. Bugs signalés en 2026 (Add Frame Hold inopérant après une mise à jour ; image tenue décalée) : contrôler l'image tenue à l'export.
+- **Régulière** : Video Effects > Time > **Posterize Time** (Frame Rate ; clés en Hold seulement). À 25 i/s, 12 i/s donne un motif irrégulier (2-2-…-3) : viser 12,5 / 8,33 / 6,25.
+- **À couper** : *Time Interpolation* = **Frame Sampling** sur le clip **et** à l'export ; Frame Blending ou Optical Flow fondent les tenues et annulent la saccade.
+- **Traînée** : Echo est classé « Obsolete » en 26.0 : la faire dans After Effects (`montage-after-effects`), au-dessus de la saccade.
+
 ## Export
 - Réseaux : H.264 « Match Source – Adaptive High Bitrate » recommandé par Adobe. [SOURCÉ] Les specs précises et la vérification : `montage-loudness-livraison` (yuv420p, faststart, AAC 48 kHz, BT.709, -14 LUFS pour le web).
 - **Loudness Normalization** à l'export (onglet Effects) : ATSC A/85, EBU R128, ITU BS.1770 (cible réglable), limiteur true peak. [SOURCÉ, page ancienne] Mon labo a montré qu'une normalisation peut comprimer : mesurer l'export avec `ebur128` (test 8 du plan MCP).
