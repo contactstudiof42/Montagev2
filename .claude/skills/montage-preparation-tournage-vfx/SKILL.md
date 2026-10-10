@@ -55,6 +55,13 @@ Pour chaque plan concerné, une ligne : n° de plan · ce qui change en post · 
 - Décider avant le tournage **qui éteint** : une extinction sèche sans cause se lit « coupure » ; prévoir le plan ou le son qui donne la cause (geste, contacteur), à tourner ou à enregistrer.
 - **Les gestes à lire** (mains, signes) : les placer dans le plan de l'image, mains écartées du torse, fond plus sombre que le corps, et, en plan moyen, savoir qu'il faut un geste très ample pour qu'il se voie (atelier 19 v7) ; serrer en gardant les mains dans le cadre est l'alternative probable (non démontrée, v8).
 
+## 5 quater. Coupe cachée par un cache (trucage « à la Zach King », pub, Short) — pièce 30, session 24 [TESTÉ EN ATELIER, maquette 2D ; THÉORIQUE au tournage]
+Quand : l'effet voulu est la **continuité** (magie, transformation). Si l'effet voulu est la comparaison (avant / après, humour), une coupe sèche dans le même cadre vaut mieux : décider avant le tournage.
+1. Le cache (main, torchon, passant, flou de bougé) doit couvrir **l'union des deux silhouettes** à l'image de coupe (l'objet d'arrivée est souvent plus grand : il dépasse par le haut).
+2. Tout ce qui vit hors du cache doit être figé ou retiré entre les deux prises : horloge, écran allumé, figurant, lumière du jour (préférer le studio ou des prises rapprochées). Une lumière qui varie de 6 % suffit à trahir la coupe (mesuré).
+3. Caméra verrouillée sur pied, aucune reprise de cadre entre les prises ; noter l'image exacte de couverture maximale.
+4. Contrôle au montage : score de coupe ≈ bruit (scdet ≤ 1) **et** écart hors objet entre avant et après le passage ≈ écart entre deux images d'une même prise (`atelier/30-coupe-cachee/mesure.py`). Un cache plein cadre trompe le détecteur mais pas l'œil si la lumière a bougé.
+
 ## 6. Checklist plateau (à remplir pour chaque plan à effets)
 - [ ] Focale, diaph, distance, hauteur, inclinaison, cadence, shutter notés.
 - [ ] Charte couleur + boule grise/chromée ou HDRI filmées.
