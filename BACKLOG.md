@@ -37,7 +37,7 @@ Règle : alterner ART et TECH. Réalimenter dès qu'il reste moins de 10 sujets 
 21. [~] [ART] Atelier « causalité » : reprendre le principe de Honda « Cog » (chaque coupe montre une cause et son effet) sur 10 s de Blender, sans musique, seulement les sons des objets.
 22. [x] [TECH] `montage-blender` v1 écrit (session 2) ; reste Eevee headless, geometry nodes, compositing, camera tracking — : consigner ce que l'atelier 02 a appris (cadre et fenêtres de source calculées depuis la cinématique, cache d'images par caméra, ~1 image/s en Cycles 270×480 12 échantillons + débruitage).
 
-23. [ ] [ART] Atelier « le montage se retire » (principe Jonze) : un corps ou un objet qui produit lui-même le rythme (pendule, danse d'un objet Blender), 3 plans max sur 15 s, comparé à une version kinetic.
+23. [~] [ART] (session 9 : pièce 14 « Balancier » A/B, `atelier/14-balancier/`) Atelier « le montage se retire » (principe Jonze) : un corps ou un objet qui produit lui-même le rythme (pendule, danse d'un objet Blender), 3 plans max sur 15 s, comparé à une version kinetic.
 24. [ ] [ART] Atelier « voix écrite après » (principe Varda) : monter d'abord 20 s d'images glanées (plans des ateliers), écrire ensuite une voix off qui relie ; critique : la voix illustre-t-elle ou relie-t-elle ?
 
 25. [ ] [ART] Atelier « Spirale » (principe Marker) : 30 s qui font revenir 3 motifs des ateliers 01-04, chaque retour changeant de sens ; voix écrite après.
@@ -45,18 +45,18 @@ Règle : alterner ART et TECH. Réalimenter dès qu'il reste moins de 10 sujets 
 27. [x] [TECH] AAF par familles avec `pyaaf2`, relu identique par OTIO (session 5). Reste [ ] : poignées, gain, fondus ; AAF depuis l'EDL JSON d'une vraie pièce (06).
 
 28. [x] [ART] Examen n°4 « La Veilleuse » (fiction, 14/20, session 5). **Examen n°5 en session 8** : documentaire long ou pub 6 s. Révélé : [x] fiches *Aftersun* et *Les Revenants* (session 6) ; [x] surround et présence hors champ (session 6, `sources/surround-hors-champ-2026-10.md`, versé dans `montage-son-et-emotion` et `montage-loudness-livraison`) ; [ ] spec PAD Arte : **aucune spec publique**, la RT 040 (CST) sert de référence ; à redemander en phase 2.
-29. [~] [ART] (session 8 : `culture/clips-drill-rap-fr-proches-ziak.md` ; reste [ ] Freeze Corleone, confronter à Murai) Culture : rap français proche de Ziak (réalisateurs de clips : Kourtrajmé au-delà de Gavras, clips de PNL, Freeze Corleone) ; clips Åkerlund et Gavras à confronter à Murai dans `montage-regard` (quand monter le choc).
+29. [~] [ART] (session 8 : drill FR ; session 9 : Freeze Corleone fait ; reste [ ] confronter à Murai) Culture : rap français proche de Ziak (réalisateurs de clips : Kourtrajmé au-delà de Gavras, clips de PNL, Freeze Corleone) ; clips Åkerlund et Gavras à confronter à Murai dans `montage-regard` (quand monter le choc).
 30. [x] [TECH] Resolve API 19-21.1 versée dans `montage-resolve` (session 5 ; Graph, ColorGroup, dépréciations, Studio requis en 21.1). Reste [ ] : Fusion, Fairlight par script.
 31. [ ] [ART] Atelier « causalité » et atelier « le montage se retire » : réutiliser la scène de la pièce 06 (table, tasse) comme plateau.
 
 32. [x] [ART] (session 7 : pièce 08 « Souvenir », v1-v4, v4 = référence ; reste [ ] cuillère et trace plus crédibles, version 9:16, voix ou contrechamp ; voir `atelier/08-souvenir/CRITIQUE.md`) Atelier « souvenir » (suite d'*Aftersun* et de l'atelier 05) : le même matériau Blender en deux textures (rendu propre contre « caméscope » : 4:3, bruit, balance de blancs fausse, zoom numérique) ; montage où le sens arrive en retard. Critique : la texture suffit-elle à dire « il y a longtemps » là où l'étalonnage seul échouait ?
-33. [ ] [ART] Atelier « inquiétude calme » (principe des *Revenants*) : 3 plans fixes longs d'un lieu ordinaire (pièce 06 : la table, la fenêtre), un seul détail anormal, aucune musique de genre ; tester la durée minimale avant que la lenteur se vide.
+33. [x] [ART] (session 9 : pièce 12, v1-v7, v7 référence ; cécité au changement mesurée par saillance ; reste : test spectateur en phase 2, PLAN-TESTS 44, et un lieu encombré) Atelier « inquiétude calme » (principe des *Revenants*) : 3 plans fixes longs d'un lieu ordinaire (pièce 06 : la table, la fenêtre), un seul détail anormal, aucune musique de genre ; tester la durée minimale avant que la lenteur se vide.
 34. [x] [TECH] (session 7, synthétique : `labo/surround/`, arrières -10,5 LU en Lo/Ro mono, disparus en Lt/Rt mono même avec Hilbert ; reste [ ] appliquer à un vrai mix de pièce, filtrage 100 Hz-7 kHz de S, décodage Pro Logic) Surround en labo sur un vrai mix : passer la pièce 04 ou 06 en 5.1 (présence dans les arrières), mesurer le Lo/Ro et le Lt/Rt mono ; encodeur Lt/Rt avec déphasage de 90° (`aeval`/`afir` Hilbert) au lieu du `pan`.
 35. [~] [TECH] (session 7 : déterminisme **vérifié**, 3 rejouées identiques à l'octet et égales à la session 6 ; reste [ ] geometry nodes pour la flamme) Blender : fixer une graine et vérifier que la simulation de la pièce 07 se rejoue à l'identique (déterminisme) ; geometry nodes pour la flamme de la pièce 02.
 
 36. [x] [ART] (session 7 : pièce 09 v1-v4, v4 = référence ; reste [ ] v5 quarts de temps en mots petits pour une marge de photosensibilité, version 9:16) Atelier « générique de l'équipe en 10 s » (principe Noé / Tom Kan, `culture/enter-the-void-generique-noe-tom-kan.md`) : cartons Pillow en polices OFL, une rupture de forme par coupe, courbe vers un sommet, **validé par `labo/photosensibilite/flash_check.py`** ; version B une seule police pour comparer.
 37. [~] [TECH] (session 7 : fenêtre locale WCAG faite, v2 par défaut) Photosensibilité : durcir `flash_check.py` ( motifs réguliers, HDR Michelson 1/17), le passer sur le clip de Ziak et sur les pièces kinetic (02) ; lire le PDF Ofcom (403 en session 7).
-38. [~] [ART] (session 7 : *Catch Me If You Can* fait ; session 8 : *Scott Pilgrim* fait) Culture : générique et kinetic typography après Noé (Kyle Cooper déjà fait) :  *Zombieland*, *Scott Pilgrim* ; et un monteur de bande-annonce (le trailer comme forme kinetic longue).
+38. [~] [ART] (session 7 : *Catch Me If You Can* ; session 8 : *Scott Pilgrim* ; session 9 : bande-annonce (Alien, Woollen, braaam) faite) Culture : générique et kinetic typography après Noé (Kyle Cooper déjà fait) :  *Zombieland*, *Scott Pilgrim* ; et un monteur de bande-annonce (le trailer comme forme kinetic longue).
 39. [x] [ART] (session 7 : « Garde de nuit », générique de série doc 40 s + teaser vertical, **14/20**, `examens/05-doc-urgences-nuit.md` ; **examen n°6 en session 10**) Examen n°5 : pub 6 s (bumper) ou documentaire long — inclure une contrainte de livraison 5.1 + mono et une contrainte de photosensibilité.
 
 40. [x] [ART] (session 8 : `atelier/11-dialogue/` v1-v4, v4 = référence ; reste [ ] un vrai visage, la règle des 30 %, l'aire de regard) Atelier « dialogue » (suite du labo 180°) : deux personnages Blender, une scène de 15 s montée en respectant l'axe puis en le franchissant volontairement à l'instant où le rapport de force bascule ; critique : le franchissement se sent-il comme un sens ou comme une erreur ?
@@ -67,11 +67,19 @@ Règle : alterner ART et TECH. Réalimenter dès qu'il reste moins de 10 sujets 
 44. [x] [ART] (session 8 : `culture/generiques-series-documentaires.md` ; reste [ ] un cas avec designer interviewé) Culture : génériques de séries documentaires et de magazines (rechercher des exemples sourcés ; ce qui fait tenir un générique sur 4 à 40 épisodes).
 
 45. [x] [ART] (session 8 : 2 confirmés, 2 corrigés : chaînes de FELA, médiane de « Vrai/Faux ») Revérifier à la main un chiffre clé par fiche de la session 8 (Scott Pilgrim : 1 feuille d'acétate ≈ 1 s ; FELA : 301 épisodes ; « Vrai/Faux » : médiane 39/255).
-46. [ ] [TECH] VFR suite : interpolation par IA (RIFE ou équivalent libre) contre `minterpolate` sur le faux rush ; mesurer les traînées ; rush réel de téléphone CC0.
-47. [ ] [ART] Atelier « le fond raccorde » (leçon de la pièce 10 v6) : un champ / contrechamp où seul le fond change de couleur ; mesurer ce que le spectateur attribue au personnage.
+46. [x] [TECH] (session 9 : `labo/interpolation/` : minterpolate dup/blend/mci/aobmc + RIFE 4.25 CPU contre vérité 60 i/s, deux scènes ; reste 46c) VFR suite : interpolation par IA (RIFE ou équivalent libre) contre `minterpolate` sur le faux rush ; mesurer les traînées ; rush réel de téléphone CC0.
+47. [x] [ART] (session 9 : pièce 13 v1-v4, v4 référence ; fond = monde, lumière = corps ; reste test spectateur PLAN-TESTS 45) Atelier « le fond raccorde » (leçon de la pièce 10 v6) : un champ / contrechamp où seul le fond change de couleur ; mesurer ce que le spectateur attribue au personnage.
 48. [x] [TECH] (session 8 : `labo/grammaire/sauts_regard.py`, validé sur l atelier 11 et un franchissement partiel = 2 sauts) Contrôle automatique des sauts de regard sur une EDL entière (outil de l'atelier 11 généralisé : JSON de plans + positions → liste des coupes fautives).
 
+49. [ ] [TECH] 46c Interpolation sur un **vrai** plan CC0 (eau, feuillage, main) : RIFE contre mci, détection de coupe de `inference_video.py` (SSIM) testée sur un montage aplati ; RIFE en 1080p (temps CPU).
+50. [ ] [ART] Atelier 12 v8 : **lieu encombré** (objets du quotidien) ; l'anomalie doit se cacher parmi d'autres objets et rester trouvable ; saillance mesurée sur le décor riche.
+51. [ ] [ART] Atelier « teaser 15 s » d'après la fiche bande-annonce : une promesse, 3 paliers, un noir avant la frappe, texte monté en cartons — à partir des plans des ateliers 10-14 ; critique : cliché ou forme ?
+52. [ ] [TECH] Saillance : remplacer le modèle maison (luminance × contraste) par un modèle publié et libre (spectral residual de Hou et Zhang 2007, ou équivalent) et comparer sur les pièces 06, 10, 12.
+53. [ ] [ART] Examen n°6 (session 10) : brief où une anomalie, un froid de relation ou un ralenti sont des enjeux (mettre à l'épreuve les leçons de la session 9).
+
 ## Fait (trace)
+- [x] [ART] Session 9 : pièces 12 « Inquiétude calme » (v1-v7), 13 « Le fond raccorde » (v1-v4), 14 « Balancier » ; fiches bande-annonce, Freeze Corleone
+- [x] [TECH] Session 9 : labo interpolation (minterpolate, RIFE 4.25)
 - [x] [ART] Session 8 : pièce 10 v4-v6, pièce 11 « Dialogue », fiches Scott Pilgrim, génériques doc, drill FR ; `montage-regard` distillé
 - [x] [TECH] Session 8 : labos VFR et proxies
 - [x] [TECH] Session 7 (suite) : 180° mesuré (Blender), déterminisme des corps rigides vérifié, `flash_check` v2 (fenêtre WCAG)

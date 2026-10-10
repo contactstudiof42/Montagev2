@@ -2,18 +2,18 @@
 
 _Lire en premier. Mis à jour à chaque fin de session._
 
-## Où on en est (après la session 8, 2026-10-10 05:53 UTC)
-- **Skills (21)** : session 8 : `montage-couleur-et-intention` (pièce 10 v4-v6 : cause « AgX » réfutée ; gélatine CTB, clé secondaire, peau = perte de chaleur, deux plans), `montage-grammaire` (casser l'axe avec un sens), `montage-workflows` (VFR et proxies testés), `montage-regard` (journal → `journal.md`, 12 règles distillées), `montage-references` (Scott Pilgrim, génériques de séries, drill FR), `montage-kinetic-editing`, `montage-expert`.
-- **Culture** : 39 fiches (nouvelles : *Scott Pilgrim*, génériques de séries doc, clips drill / rap FR proches de Ziak).
-- **Atelier** : **10 « Chaleur partout »** v1-v6 (+ montage 8 s ; v7 à faire : gros plan contre l'ombre) ; **11 « Dialogue »** v1-v4 (v4 = référence).
-- **Labo** : `labo/vfr/` (cadence variable : −400 ms en lecture naïve, 0 ms après CFR), `labo/proxies/` (`-map 0:a` obligatoire).
-- **Examens** : n°1 13, n°2 14, n°3 15, n°4 14, n°5 14 /20. **N°6 en session 10.**
+## Où on en est (après la session 9, 2026-10-10 ~07:15 UTC)
+- **Skills (21)** : session 9 : `montage-grammaire` (cécité au changement à travers la coupe), `montage-regard` (règles 12-13), `montage-rythme` (le plan de retour), `montage-couleur-et-intention` (fond = monde, lumière = corps ; contraste simultané), `montage-workflows` + `montage-ia-generative` (interpolation, RIFE testé), `montage-references` (bande-annonce, Freeze, atelier 12).
+- **Culture** : 41 fiches (nouvelles : `bande-annonce-montage.md`, `freeze-corleone-clips.md`).
+- **Atelier** : **12 « Inquiétude calme »** v1-v7 (v7 réf.), **13 « Le fond raccorde »** v1-v4 (v4 réf.), **14 « Balancier »** A/B (voir `atelier/14-balancier/CRITIQUE.md`).
+- **Labo** : `labo/interpolation/` (minterpolate + RIFE 4.25 en CPU, vérité terrain 60 i/s, deux scènes).
+- **Examens** : n°1 13, n°2 14, n°3 15, n°4 14, n°5 14 /20. **N°6 en session 10 (BACKLOG 53).**
 
-## Reprendre ici (session 9)
-1. Démarrage normal. Blender : `curl -sSL -o blender.tar.xz https://download.blender.org/release/Blender4.2/blender-4.2.3-linux-x64.tar.xz && tar xf blender.tar.xz` dans le scratchpad (30 s). `python3 -m pip install -q numpy pillow scipy`.
-2. Priorités : (pièce 10 close en v7) BACKLOG 47 « le fond raccorde » ; BACKLOG 33 (« inquiétude calme ») ; BACKLOG 42 suite (`montage-references` : annexes).
-3. Pièges : **`pkill -f motif` tue le shell** → tuer par PID. Plans immobiles = une image. Viser une caméra par un point (`to_track_quat`). Ne pas couper un `for` de rendus avec `| head` (SIGPIPE arrête la boucle). Le paramètre `main` de `scene.py` (pièce 10) est la caméra portée ; la main/tête est `main_ecran` / `visage`. Concat ffmpeg d'images à durées libres : `option framerate 90000` + `-safe 0`.
-4. Sous-agents : 3 en session 8 (fiches) ; revérification à la main : 2 chiffres confirmés, 2 corrigés (un sous-agent a mal mesuré une vignette) → **toujours recontrôler une mesure d'image faite par un sous-agent**.
+## Reprendre ici (session 10)
+1. Démarrage normal. Blender : `curl -sSL -o blender.tar.xz https://download.blender.org/release/Blender4.2/blender-4.2.3-linux-x64.tar.xz && tar xf blender.tar.xz` dans le scratchpad (30 s). `python3 -m pip install -q numpy pillow scipy colour-science`.
+2. Priorités : **examen n°6** (BACKLOG 53) ; BACKLOG 50 (pièce 12 v8, lieu encombré) ; 51 (teaser 15 s) ; 49 (interpolation sur vrai plan CC0) ; 42 suite (`montage-references` en annexes, le fichier grossit : 90 lignes).
+3. Pièges : **`pkill -f motif` tue le shell** → tuer par PID. **Un `sh -c "…"` lancé avec `nohup … &` est bloqué par le contrôle de sécurité** → utiliser `run_in_background` de l'outil Bash. Plans immobiles = une image. Viser une caméra par un point (`to_track_quat`). `zones.py` (labo interpolation) écrit sa planche dans le dossier courant. Le `pip install torch` d'un sous-agent casse un `.pth` de distutils (message d'erreur bénin à chaque `python3`, ignorer). Rendu Cycles 320×180, 8 éch., scène nocturne de la pièce 14 : ~1 image/s.
+4. Sous-agents : 3 en session 9 (2 fiches, essai RIFE) ; tout recontrôlé à la main (vignette Freeze : confirmée, écart dû aux bandes ; chiffres RIFE : identiques).
 
 ## Environnement constaté
 - ffmpeg 6.1.1, Python 3, Node 22 préinstallés (numpy à installer en session 6). `apt-get update` puis `apt-get install libegl1` possible (10 s). Blender 4.2.3 LTS : téléchargement + décompression 30 s.
@@ -21,6 +21,7 @@ _Lire en premier. Mis à jour à chaque fin de session._
 - Un serveur MCP nommé `HIGGSFIELD_MCP` est listé dans l'environnement : non appelé (consigne phase 1). Noms observés dans `PLAN-TESTS-MCP.md`.
 
 ## Historique
+- Session 9 — 2026-10-10 06:29 → ~07:15 UTC : pièces 12 (v1-v7), 13 (v1-v4), 14 (A/B) ; labo interpolation (minterpolate, RIFE) ; fiches bande-annonce, Freeze Corleone ; PLAN-TESTS 43-45.
 - Session 8 — 2026-10-10 05:29 → 05:53 UTC : pièce 10 v4-v6 (+ montage), pièce 11 « Dialogue » v1-v4, labos VFR et proxies, fiches Scott Pilgrim, génériques de séries doc, drill FR ; `montage-regard` distillé ; PLAN-TESTS 40-42.
 - Session 7 — 2026-10-10 04:29 → ~05:10 UTC : examen n°5 (14/20), ateliers 08 « Souvenir » (v1-v4), 09 « Générique » (v1-v4) et 10 « Chaleur partout » (v1-v2), écart OCIO expliqué, labos photosensibilité, surround Lt/Rt, 180°, déterminisme Blender ; fiches Noé / Kan et Kuntzel + Deygas ; PLAN-TESTS 38-39.
 - Session 6 — 2026-10-10 03:29 → ~04:05 UTC : fiches Aftersun et Les Revenants, recherche surround et hors champ (vérifiée en labo), atelier 07 « Causalité » (corps rigides, A/B/C), Eevee sans écran mesuré, PLAN-TESTS 36-37.
