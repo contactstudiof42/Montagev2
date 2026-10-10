@@ -17,7 +17,7 @@ Déplacé de `SKILL.md` le 2026-10-10 (audit de fin de phase 1). Marqueurs : voi
 - **Piège n°1, pourquoi** : `transform_apply(scale=True)` applique aussi position et rotation par défaut ; l'origine part à (0, 0, 0), la forme `BOX` se centre dessus, les dominos se superposent et explosent.
 - **Piège n°2** : un objet actif posé à moins de ~1 cm d'un autre part tout seul à l'image 2. Laisser du jeu, vérifier les premières images.
 - **Réglage par lots** : la simulation seule (`mode: sim`) est quasi gratuite ; balayer 3 configurations et lire les images d'événements (`contacts.py`) avant de rendre.
-- **Eevee en ligne de commande dans la VM** : plante sans `libEGL.so.1` ; après `apt-get install -y libegl1`, rend en OpenGL logiciel à **~7 s/image** en 480×270, contre ~2 s/image seul pour Cycles (8 échantillons + débruitage ; ~6-8 s à 6 rendus sur 4 cœurs). À réévaluer sur GPU (phase 2).
+- **Eevee en ligne de commande dans la VM** : plante sans `libEGL.so.1` ; après `apt-get install -y libegl1`, rend en OpenGL logiciel à **~7 s/image** en 480×270, contre ~2 s/image seul pour Cycles (8 échantillons + débruitage ; ~6-8 s à 6 rendus sur 4 cœurs). À réévaluer sur GPU (phase 3).
 - **Amortir sans tricher** : `angular_damping = 1` dès le début empêche aussi la bascule (pièce 07 v2 : la tasse tombait debout, lu comme un trucage [ÉPROUVÉ EN MAQUETTE]). Mettre l'amortissement en clé **à partir de l'impact** (`rb.keyframe_insert("angular_damping", frame=f)`), testé en v3.
 - Rendre plusieurs caméras en parallèle (un processus par caméra) : 4 images fixes de contrôle en 9 s.
 

@@ -9,7 +9,7 @@ Annexe des recettes : [expressions.md](expressions.md). Preuves du labo : `labo/
 
 Marqueurs : **[SOURCÉ]** lu dans une source datée · **[TESTÉ EN LABO]** fait technique mesuré ; ici **syntaxe et maths vérifiées sous Node avec un faux environnement, pas dans AE** · **[ÉPROUVÉ EN MAQUETTE]** principe tiré d'une maquette Blender/Pillow/ffmpeg, hypothèse à confirmer sur de vraies images en phase 2 · **[THÉORIQUE]** doc ou pratique, jamais exécuté.
 
-**Fait foi sur** : la technique du mouvement dans AE (courbes, expressions, rigs). Pour quoi animer : `montage-motion-design-principes` ; pour piloter AE par MCP : `montage-pilotage-mcp` ; saccade dans Premiere ou Resolve : `montage-premiere`, `montage-resolve`. Détail des recettes, saccade et liste des vérifications de phase 2 : [expressions.md](expressions.md).
+**Fait foi sur** : la technique du mouvement dans AE (courbes, expressions, rigs). Pour quoi animer : `montage-motion-design-principes` ; pour piloter AE par MCP : `montage-pilotage-mcp` ; saccade dans Premiere ou Resolve : `montage-premiere`, `montage-resolve`. Détail des recettes, saccade et liste des vérifications de phase 3 : [expressions.md](expressions.md).
 
 **Avant de régler une courbe** : choisir *quoi* animer (le paramètre qui porte le sens, un seul signe) avec `montage-motion-design-principes`. Ce skill-ci dit *comment* le faire bouger. La plus belle courbe sur le mauvais paramètre (échelle d'un mot) reste un « pulse » de logo [ÉPROUVÉ EN MAQUETTE] (atelier 01).
 
@@ -106,8 +106,8 @@ Code complet et commentaires : [expressions.md](expressions.md). Fichiers : `lab
 - **Bézier spatial non voulu** : le calque boucle ou dépasse dans l'espace ; Interpolation spatiale > Linéaire.
 - **Overshoot trop rapide** (freq > 6) : tombe entre les images à 25 i/s ; juger à 25, pas à 50.
 - **Période qui varie dans un `sin`** (ou `wiggle` à `freq` animée) : le geste hésite et repart au lieu de s'apaiser ; intégrer la phase [TESTÉ EN LABO] (sous Node, `labo/ae-expressions/bercement/test.js`).
-- **Wiggle et duplication** : tirages différents d'un calque à l'autre ; `seedRandom()` pour figer (à vérifier en phase 2).
+- **Wiggle et duplication** : tirages différents d'un calque à l'autre ; `seedRandom()` pour figer (à vérifier en phase 3).
 
-## 7. À vérifier en phase 2
+## 7. À vérifier en phase 3
 
 La liste des 11 vérifications dans AE (expressions sur de vrais calques, pic d'overshoot, courbe d'`ease`, F9, `posterizeTime` à 25 i/s, `seedRandom`…) est dans [expressions.md](expressions.md#phase-2).

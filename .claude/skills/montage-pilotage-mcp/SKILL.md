@@ -5,11 +5,11 @@ description: Méthode pour piloter soi-même un logiciel de post-production (Aft
 
 # Piloter un logiciel par MCP — méthode d'agent
 
-Marqueurs : **[SOURCÉ]** lu dans une source datée · **[TESTÉ EN LABO]** fait technique mesuré · **[ÉPROUVÉ EN MAQUETTE]** principe tiré d'une maquette Blender/Pillow/ffmpeg, hypothèse à confirmer en phase 2 · **[THÉORIQUE]** doc ou pratique, jamais exécuté · plus tard **[TESTÉ EN CONDITIONS RÉELLES]** (avec la date) pour une recette validée en phase 2.
+Marqueurs : **[SOURCÉ]** lu dans une source datée · **[TESTÉ EN LABO]** fait technique mesuré · **[ÉPROUVÉ EN MAQUETTE]** principe tiré d'une maquette Blender/Pillow/ffmpeg, hypothèse à confirmer en phase 2 · **[THÉORIQUE]** doc ou pratique, jamais exécuté · plus tard **[TESTÉ EN CONDITIONS RÉELLES]** (avec la date) pour une recette validée en phase 3.
 
 **Fait foi sur** : la méthode d'agent commune à tous les logiciels (sécurité du projet, un geste une image, journal, accord avant dépense). Les recettes propres à un logiciel restent dans son skill : `montage-after-effects`, `montage-premiere`, `montage-resolve` (API Python), `montage-blender` (rendu en ligne de commande, test d'une image par caméra).
 
-Statut : **[THÉORIQUE]** (phase 1, aucun appel MCP fait). Les noms d'outils observés et les tests à mener sont dans `PLAN-TESTS-MCP.md` à la racine du dépôt, **jamais ici** tant qu'ils ne sont pas validés en phase 2.
+Statut : **[THÉORIQUE]** (phase 1, aucun appel MCP fait). Les noms d'outils observés et les tests à mener sont dans `PLAN-TESTS-MCP.md` à la racine du dépôt, **jamais ici** tant qu'ils ne sont pas validés en phase 3.
 
 ## Pourquoi c'est un sujet artistique autant que technique
 Un agent qui pilote un logiciel perd ce qu'un monteur a en permanence : **l'œil sur le moniteur**. Chaque appel d'outil est une coupe faite les yeux fermés. Toute la méthode ci-dessous sert à rendre l'œil : une image de contrôle après chaque geste, comparée à une intention écrite avant.
@@ -44,5 +44,5 @@ L'erreur typique d'un agent n'est pas le bug, c'est la dérive : vingt appels co
 - Quand le geste à la main prend 10 s et que l'automatiser prend 10 appels : le dire, laisser l'humain faire.
 - Quand l'outil n'expose pas de moyen de vérifier le résultat (pas d'export d'image) : travailler à l'aveugle est interdit, signaler la limite.
 
-## Ce que la phase 2 doit valider
+## Ce que la phase 3 doit valider
 Voir `PLAN-TESTS-MCP.md` (tests 1 à 13 et suivants). Après validation, chaque recette passe ici ou dans le skill du logiciel avec la mention `[TESTÉ EN CONDITIONS RÉELLES]` et la date.

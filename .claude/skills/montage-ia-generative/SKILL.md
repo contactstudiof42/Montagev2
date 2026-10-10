@@ -73,7 +73,7 @@ Dates, prix et sources : `etat-de-l-art-2026-10.md` (tableau « Quel outil pour 
 | **LTX-2.5** | Poids ouverts, 4K, audio, multi-plans, local | Licence communautaire (< 10 M$), pas OSI |
 | **Vidu Q4 Preview** (07/10) | Références vers vidéo, 4K, 3-16 s | Pas de texte seul ; son mélangé à l'image |
 | **Higgsfield** | Agrégateur, API, plugins AE/Premiere/Blender, MCP | Pas un modèle ; crédits payants |
-| **Premiere : Generative Media Tool, Paper Edit, Generative Extend** | Vidéo et SFX dans la timeline ; +2 s vidéo / +10 s audio | Annoncés pour **26.5 [NON CONFIRMÉ — À TRANCHER EN PHASE 2]** ; détail : `montage-premiere` |
+| **Premiere : Generative Media Tool, Paper Edit, Generative Extend** | Vidéo et SFX dans la timeline ; +2 s vidéo / +10 s audio | Annoncés pour **26.5 [NON CONFIRMÉ — À TRANCHER EN PHASE 3]** ; détail : `montage-premiere` |
 | **Midjourney V8.2** | Esthétique, DA (défaut depuis le 24/07/2026) | Pas d'API ; vidéo = image vers vidéo |
 | **Nano Banana 2.1** (06/10) | Image 4K, texte, 14 références, formats 8:1 à 1:8 | NB2 déprécié |
 | **FLUX 3 Image** (01/10) | Composition par boîtes de placement, retouches locales | Poids ouverts promis, pas sortis |
@@ -91,7 +91,7 @@ Dates, prix et sources : `etat-de-l-art-2026-10.md` (tableau « Quel outil pour 
 
 **A. Le plan manquant (raccord)** : exporter la dernière image du plan réel, étalonnée neutre → image vers vidéo (Veo « Frames to Video », Kling, Seedance), prompt court sur le mouvement, « caméra fixe » ou le mouvement du plan précédent → garder 1-3 s, couper avant la dérive → même grain, même LUT que le réel, upscale seulement si nécessaire → son réel (ambiance du tournage).
 
-**B. Rallonger un plan de 2 s** : Generative Extend de Premiere (réglages et limites : `montage-premiere`). Les frames générées sortiraient en 8 bits SDR, 30 i/s au plus [À TRANCHER EN PHASE 2] : pour un master 10 bits, HDR ou 50p, comparer avec une autre voie (vidéo vers vidéo Aleph, ou le workflow A). Vérifier le raccord de lumière à l'image près.
+**B. Rallonger un plan de 2 s** : Generative Extend de Premiere (réglages et limites : `montage-premiere`). Les frames générées sortiraient en 8 bits SDR, 30 i/s au plus [À TRANCHER EN PHASE 3] : pour un master 10 bits, HDR ou 50p, comparer avec une autre voie (vidéo vers vidéo Aleph, ou le workflow A). Vérifier le raccord de lumière à l'image près.
 
 **C. Le plan impossible porteur de sens** : planche de 5 à 10 références (Midjourney V8.2, Nano Banana 2.1, FLUX 3) validée avec le réalisateur dans l'univers couleur du tournage → 3 à 5 variantes par plan avec les mêmes références → montage serré, plans IA courts entourés de réel → Topaz Starlight ou Astra pour la texture (à comparer au grain seul, qui suffit parfois) → étalonnage et grain communs.
 

@@ -72,7 +72,7 @@ Seulement si l'effet voulu est la **continuité** (sinon une coupe sèche dans l
 - [ ] Marge de recadrage vérifiée sur le moniteur avec la grille 9:16 si un vertical est prévu.
 - [ ] Autorisations pour les effets pratiques (fumigènes, flammes, drone) : capitainerie, mairie, pompiers.
 
-## 7. À vérifier en phase 2
+## 7. À vérifier en phase 3
 - Keying des cheveux fins : `chromakey` ffmpeg les perd (≈ 42 % d'erreur sur les bords, labo) ; comparer Keylight / Resolve 3D Keyer / Delta Keyer avec le même protocole à vérité terrain.
 - Keying sur un vrai plan fond vert CC0 (ffmpeg `chromakey`, AE Keylight, Resolve 3D Keyer) : effet de la distance au fond et du shutter sur le bord.
 - Camera tracking d'un plan à marqueurs (Blender, AE 3D Camera Tracker) ; erreur de reprojection obtenue.

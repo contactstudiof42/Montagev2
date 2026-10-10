@@ -89,5 +89,5 @@ Règles : un seul rang 1 par 5-10 s ; whoosh variés (3-5 variantes, **varier le
 - [ ] Voix intelligible sur haut-parleur de téléphone ; -14 LUFS ±0,5 / ≤ -1 dBTP mesurés sur le MP4.
 - [ ] Le style sert le sujet (sinon densité ÷ 3).
 
-## 7. Outils et phase 2
-Premiere (Time Remapping, captions sur transcription, Essential Sound), After Effects (`wiggle` amorti, motion blur : `montage-after-effects`), CapCut, Resolve ; SFX : Sonniss GDC, Mixkit (lire les licences). À vérifier en phase 2 : calage 3-6 images à l'oreille et à 24/25/30/60 i/s, décalage AAC réel, captions auto de Premiere, speed ramp Premiere contre AE, rétention réelle de deux densités. Labo : `labo/kinetic/` ; sources : `sources/kinetic-editing.md`.
+## 7. Outils, phases 2 et 3
+Premiere (Time Remapping, captions sur transcription, Essential Sound), After Effects (`wiggle` amorti, motion blur : `montage-after-effects`), CapCut, Resolve ; SFX : Sonniss GDC, Mixkit (lire les licences). À vérifier en phase 2 (vraies vidéos) : calage 3-6 images à l'oreille et à 24/25/30/60 i/s, rétention réelle de deux densités ; en phase 3 (logiciels) : décalage AAC réel, captions auto de Premiere, speed ramp Premiere contre AE. Labo : `labo/kinetic/` ; sources : `sources/kinetic-editing.md`.

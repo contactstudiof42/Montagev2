@@ -90,7 +90,7 @@ Même commande avec la LUT constructeur (ARRI LogC3 vers Rec.709, Sony S-Log3 ve
 - **Double transformation.** Resolve en RCM convertit déjà l'entrée : ajouter en plus une LUT LogC vers 709 donne une image surcontrastée. Une seule transformation d'entrée.
 - **Look qui contamine la peau.** Une peau qui sort de la ligne chair au vectorscope (vers le rouge ou le jaune) trahit un look trop poussé.
 
-## 6. À vérifier en phase 2 (Resolve, After Effects)
+## 6. À vérifier en phase 3 (Resolve, After Effects)
 
 **DaVinci Resolve**
 - [ ] RCM : DaVinci YRGB Color Managed, espace de travail DaVinci Wide Gamut / Intermediate, sortie Rec.709 Gamma 2.4 ; vérifier que la transformation d'entrée est bien lue depuis les métadonnées caméra (et la forcer sinon).

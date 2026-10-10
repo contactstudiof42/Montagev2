@@ -22,12 +22,12 @@ Faux rush à vérité terrain : 30 i/s, puis 3-8 s « basse lumière » à ~24 i
 
 **Vrais plans** (`labo/interpolation-reel/`, 2 plans CC0 d'Internet Archive, eau et feuillage, petit mouvement, 320×180) : sur le plan « vagues » en ×2, fondu (`blend`) 43,8 dB = `mci` 43,8 dB > RIFE 41,6 dB ; RIFE perd de 1 à 3,6 dB contre le fondu sur tous les cas, et le +5 dB synthétique ne se généralise pas (à retester en 1080p, où les mouvements en pixels sont 4-6× plus grands) ; à petit mouvement, `mci` retombe sur le fondu pour 3,5× le temps de calcul. Sur une coupe, `mci` par défaut montre le plan suivant **une image trop tôt** (33 ms). Sur eau, feuillage, foule : le fondu.
 
-## Vitesses dans l'aller-retour (`labo/workflows/vitesses/RESULTATS.md`) [TESTÉ EN LABO côté fichiers ; imports en phase 2]
+## Vitesses dans l'aller-retour (`labo/workflows/vitesses/RESULTATS.md`) [TESTÉ EN LABO côté fichiers ; imports en phase 3]
 - XML FCP7 via OTIO : vitesses, arrêts sur image et inversions perdus sans avertissement.
 - EDL : lignes M2 justes mais durée source inversée (ralenti = trop de source déclarée, accéléré = pas assez) ; vitesse du plan entrant d'un fondu perdue à la relecture ; timecode de départ 01:00:00:00 non écrit.
 - Un aller-retour qui se relit sans erreur par le même outil ne prouve rien. `verif_edl.py` contrôle la cohérence source / enregistrement / M2, le départ 01:00:00:00 et les trous : 4 défauts sur 4 trouvés, 0 faux positif.
 
-## Recadrages, nests, audio multipiste (`labo/workflows/recadrages/README.md`) [TESTÉ EN LABO côté fichiers ; imports en phase 2]
+## Recadrages, nests, audio multipiste (`labo/workflows/recadrages/README.md`) [TESTÉ EN LABO côté fichiers ; imports en phase 3]
 - XML FCP7 → OTIO → XML : échelle, position, rotation, Crop et images clés « survivent » seulement parce que l'adaptateur **recopie le XML d'origine** ; timeline modifiée ou reconstruite : 7 réglages sur 7 perdus, sans message.
 - Nests : relus vides par l'adaptateur FCP7 (3 plans → 0), supprimés par l'EDL sans avertissement.
 - Stéréo éclatée G/D : fusionnée à la lecture, canal droit perdu (3 → 2 pistes) ; niveaux de clip perdus hors XML d'origine ; EDL : aucun audio, refus au-delà de 2 pistes. Pour le mixeur, autre voie que l'AAF : WAV polyphoniques.

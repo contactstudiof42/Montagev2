@@ -34,7 +34,7 @@ Marqueurs : **[SOURCÉ]** lu dans une source datée · **[TESTÉ EN LABO]** fait
 - Lumière **motivée** [THÉORIQUE] : une grande source froide rasante + un liseré ; la chaleur n'existe que si une source chaude est dans le plan (règle Deakins, goût Joker/Ziak : `montage-couleur-et-intention`).
 - **Vérifier la règle couleur par la mesure** [TESTÉ EN LABO] sur le MP4 : % de pixels chauds par image (atelier 02 v4 : ≤ 0,25 % avant l'événement, 6,3 % après).
 
-## 5. À vérifier en phase 2 (Mac)
+## 5. À vérifier en phase 3 (Mac)
 - Temps de rendu GPU Metal contre CPU cloud ; Eevee Next en rendu final pour des maquettes (non testé en headless ici).
 - Le pilotage par MCP (`PLAN-TESTS-MCP.md`, test 13) : refaire `atelier/02-etincelle/scene.py` et comparer les planches.
 

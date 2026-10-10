@@ -8,7 +8,7 @@ Contenu : la liste de ce qui était faux dans la version du 2026-10-09, puis les
 
 ## Ce qui était faux ou périmé dans la version du 2026-10-09
 
-1. **Generative Extend « 12-30 i/s, 8 bits SDR seulement »** : périmé. Les sources acceptées vont désormais de 12 à 60 i/s, 8 à 16 bits, SDR ou HDR, 360p à 4K. La **sortie** resterait en 8 bits SDR, 30 i/s au plus : **[À TRANCHER EN PHASE 2]**.
+1. **Generative Extend « 12-30 i/s, 8 bits SDR seulement »** : périmé. Les sources acceptées vont désormais de 12 à 60 i/s, 8 à 16 bits, SDR ou HDR, 360p à 4K. La **sortie** resterait en 8 bits SDR, 30 i/s au plus : **[À TRANCHER EN PHASE 3]**.
 2. **« Midjourney V7 reste par défaut »** : faux. V8.2 est le défaut depuis le 24/07/2026.
 3. **« Aleph 2.0 connu seulement par un catalogue tiers »** : faux. Officiel chez Runway le 21/05/2026.
 4. **« Hailuo 2.3, pas de version suivante »** : périmé. Hailuo 3.0 / H3 le 31/07/2026.
@@ -47,7 +47,7 @@ Fenêtre visée : 30/09 → 10/10/2026. WebSearch (standard puis étendu) + WebF
 
 ### Rattrapages (antérieurs à la fenêtre, absents du fichier)
 - **Adobe rachète Topaz Labs** : finalisé le 23/09/2026 (voir §3, ligne corrigée). Topaz reste vendu à part. [SOURCÉ] off. blog.adobe.com ; sec. petapixel.
-- **Premiere 26.5** *[numéro non confirmé, À TRANCHER EN PHASE 2]*, **Generative Media Tool** : le choix de modèle inclut nommément **Firefly, Veo, Kling, Runway, Luma** ; **Generate Music** et **Generate Soundscape** (analyse jusqu'à 15 s d'image) restent en bêta. **AI Assistant d'After Effects** en bêta publique (écrit le JavaScript et monte un rig à curseurs). [SOURCÉ] off. blog.adobe.com (08/09/2026) ; sec. postmagazine, provideocoalition (09/2026).
+- **Premiere 26.5** *[numéro non confirmé, À TRANCHER EN PHASE 3]*, **Generative Media Tool** : le choix de modèle inclut nommément **Firefly, Veo, Kling, Runway, Luma** ; **Generate Music** et **Generate Soundscape** (analyse jusqu'à 15 s d'image) restent en bêta. **AI Assistant d'After Effects** en bêta publique (écrit le JavaScript et monte un rig à curseurs). [SOURCÉ] off. blog.adobe.com (08/09/2026) ; sec. postmagazine, provideocoalition (09/2026).
 - **Lyria 3.5** (musique Google) GA le 03/09/2026 ; **TTS Gemini 3.8 Flash** GA le 22/09/2026. CGU commerciales non lues. [SOURCÉ] off. ai.google.dev changelog.
 
 ### Rien de neuf trouvé (30/09 → 10/10)

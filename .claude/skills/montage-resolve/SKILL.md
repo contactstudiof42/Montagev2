@@ -12,9 +12,9 @@ Rôle : l'étape où l'image prend son **intention de couleur** (`montage-couleu
 ## 1. Quand et pourquoi Resolve
 - **Étalonnage** : c'est l'outil de référence (nodes, qualifications, tracking de fenêtres, gestion des couleurs de bout en bout). Premiere Lumetri suffit pour un corporate homogène ; dès qu'il y a un **look** à construire, une peau à protéger dans une dominante « fausse » (goût de l'utilisateur : Joker), des fenêtres à suivre, c'est Resolve.
 - **Conformation / round-trip** : monter dans Premiere, exporter XML/AAF, étalonner dans Resolve, rendre en master 10 bits (cf. `labo/encodage/` : le 10 bits évite les bandes dans les noirs).
-- **Automatisation** : rendus en lot, import et assemblage d'une liste de plans, application d'une LUT ou d'un grade à toute une timeline. C'est la porte d'entrée d'un agent en phase 2 si aucun MCP Resolve n'est branché.
+- **Automatisation** : rendus en lot, import et assemblage d'une liste de plans, application d'une LUT ou d'un grade à toute une timeline. C'est la porte d'entrée d'un agent en phase 3 si aucun MCP Resolve n'est branché.
 
-## 2. Arbre de nodes de référence [THÉORIQUE — à éprouver en phase 2]
+## 2. Arbre de nodes de référence [THÉORIQUE — à éprouver en phase 3]
 Ordre défendu (une idée par node, lisible par un autre étalonneur) :
 1. **Entrée / normalisation** (si pas de RCM) : CST log caméra → espace de travail.
 2. **Balance / exposition primaire** (Offset d'abord en log, puis Lift/Gamma/Gain).
@@ -36,7 +36,7 @@ Pourquoi cet ordre : corriger avant de styliser ; un look appliqué sur une imag
 - Vérifier le tag d'export (Gamma 2.4 contre Rec.709-A) avec ffprobe : test n° 9 de `PLAN-TESTS-MCP.md`.
 
 ## 4. API de scripting Python [THÉORIQUE — doc officielle lue, rien exécuté : Resolve n'est pas installable dans la VM]
-Source : README de scripting livré avec Resolve (Aide > Documentation > Developer) ; copies lues de 2022-2023 (Resolve 18), puis README et CHANGELOG 19 à 21.1 (`sources/resolve-scripting-api-19-20.md`). Lire le README de la version installée en phase 2.
+Source : README de scripting livré avec Resolve (Aide > Documentation > Developer) ; copies lues de 2022-2023 (Resolve 18), puis README et CHANGELOG 19 à 21.1 (`sources/resolve-scripting-api-19-20.md`). Lire le README de la version installée en phase 3.
 
 Prérequis : Resolve lancé (ou `-nogui`) ; Python 3 64 bits (Python 2 abandonné en 21). **« Advanced scripting now requires DaVinci Resolve Studio »** (page officielle 21.1 [V]) ; ce qui reste possible depuis la Console (Workspace > Console) en version gratuite est contradictoire selon les sources [A]. **Avant tout projet scripté : `resolve.IsStudio()` et `GetVersionString()`.** Depuis 21.1, Resolve Studio se pilote aussi par des assistants externes via un serveur MCP natif qui passe par cette API [SOURCÉ, 08/09/2026].
 
@@ -80,7 +80,7 @@ Autres méthodes (export `Timeline.Export` en EDL / XML FCP7 / FCPXML / AAF, `Im
 - **Fairlight** : normalisation au rendu dans Deliver > Audio (EBU R128, ATSC A/85, préréglages) ; compteur, bus et stems non scriptables. Mesurer soi-même la sortie (`montage-loudness-livraison`).
 - **Saccade choisie** (garder quelques images d'un rush à strobe et les tenir 2-4 images) : **tenir, jamais fondre**. D'abord **Retime Process = Nearest** sur chaque clip (le réglage du clip l'emporte sur le projet), puis couper et **Freeze Frame (Shift-R)** image par image ; version la plus fidèle : Fusion **Time Stretcher** en Nearest, clés en Step. Les Freeze Frames ne passent **pas** en XML FCP7 vers Premiere : construire la saccade dans l'application qui finalise, ou la rendre en média avant l'échange.
 
-## 5. À vérifier en phase 2
+## 5. À vérifier en phase 3
 - README livré avec la version installée sur le Mac : ce qui reste scriptable en version gratuite.
 - Les codes exacts de `SetCurrentRenderFormatAndCodec` (lister avec `GetRenderFormats()`, `GetRenderCodecs()`).
 - `GetNodeGraph().ApplyGradeFromDRX` et `GetNodeGraph().SetLUT` sur une timeline de test (index de node à partir de 1).

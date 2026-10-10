@@ -1,6 +1,6 @@
 # Expressions After Effects
 
-Annexe de `SKILL.md` : code complet des recettes, saccade, pièges en détail et vérifications de phase 2 (le SKILL.md fait foi ; les principes et réglages qui y sont déjà ne sont pas répétés ici).
+Annexe de `SKILL.md` : code complet des recettes, saccade, pièges en détail et vérifications de phase 3 (le SKILL.md fait foi ; les principes et réglages qui y sont déjà ne sont pas répétés ici).
 
 Chaque bloc est copié depuis `labo/ae-expressions/`. Écrit pour le **moteur JavaScript** (par défaut depuis AE 16.0). Statut : **[TESTÉ EN LABO, syntaxe/logique Node uniquement]** veut dire que le code a passé `node --check` et des évaluations dans `mock.js`, **pas** qu'il a tourné dans AE. Résultats : `labo/ae-expressions/RESULTATS.md`.
 
@@ -184,7 +184,7 @@ easeOut(time, t0, t0 + dur, 100, 0);          // 100 % = propriété de l'animat
 ```
 
 
-## Bercement qui ralentit après un événement — [TESTÉ EN LABO] (logique et syntaxe sous Node ; AE en phase 2)
+## Bercement qui ralentit après un événement — [TESTÉ EN LABO] (logique et syntaxe sous Node ; AE en phase 3)
 **Quand** : un geste répété qui doit s'apaiser à cause de quelque chose (un appel, une voix, une note) : bercement, respiration, balancier. **Pourquoi** : le calme se lit dans **l'allongement de la période** plus que dans la baisse d'amplitude ; les deux ensemble, sans à-coup de phase. Marqueur n°1 du calque = l'événement.
 ```js
 var amp0 = 5, amp1 = 1.2, P0 = 1.6, P1 = 3.2, d = 4;   // degrés, secondes ; d = durée de l'apaisement
@@ -210,7 +210,7 @@ Ne jamais écrire `Math.sin(2*Math.PI*time/P)` avec `P` qui varie (voir Pièges)
 - **Traînée façon Wong Kar-wai** : CC Force Motion Blur ou Pixel Motion Blur **avant** le maintien ; ou Echo (Echo Time négatif), CC Wide Time sur une précomp **au-dessus** du calque saccadé.
 
 <a id="phase-2"></a>
-## À vérifier en phase 2, dans After Effects (déplacé de SKILL.md)
+## À vérifier en phase 3, dans After Effects (déplacé de SKILL.md)
 
 1. Les 11 expressions du labo collées sur de vrais calques (moteur JavaScript **et** ExtendScript hérité) : aucune erreur, valeurs proches de celles du labo.
 2. Overshoot 05 : sur des clés linéaires 0 → 100 en 12 i, le pic doit être d'environ 107 vers 1 à 2 images après la clé. Vérifier aussi sur Position 2D non séparée, Rotation et Échelle.
@@ -231,4 +231,4 @@ Ne jamais écrire `Math.sin(2*Math.PI*time/P)` avec `P` qui varie (voir Pièges)
 - **Expressions lentes.** Toute expression est réévaluée à chaque image. `sampleImage()` (lire la couleur d'un calque) est la plus coûteuse : un pixel ou une petite zone, sur peu de calques. Les boucles `for` sur `numKeys` coûtent aussi. Conversion : Animation > Assistant d'images clés > Convertir l'expression en images clés. Pour travailler l'animation, la vue « Expressions désactivées » (raccourci d'aperçu).
 - **`exp()` qui explose.** `Math.exp(decay * t)` devient `Infinity` après quelques minutes, d'où la coupure `t < 3` de la recette 05 (point signalé par Dan Ebberts).
 - **Séparer les dimensions** change ce que montre le graphe de vitesse (vitesse par axe et non le long du chemin). L'overshoot sur Position 2D non séparée dépasse sur les deux axes à la fois, proportionnellement à leurs vitesses (vérifié en labo).
-- **Période qui varie dans un `sin`** : avec `P` animé, la fréquence réelle de `Math.sin(2*Math.PI*time/P)` est 1/P − t·P'/P² et tombe presque à zéro (mesuré : 0,02 Hz au lieu de 0,31 à 0,63 Hz, `labo/ae-expressions/bercement/test.js`). Remède : la recette « Bercement qui ralentit » ci-dessus. [TESTÉ EN LABO] (sous Node ; AE en phase 2)
+- **Période qui varie dans un `sin`** : avec `P` animé, la fréquence réelle de `Math.sin(2*Math.PI*time/P)` est 1/P − t·P'/P² et tombe presque à zéro (mesuré : 0,02 Hz au lieu de 0,31 à 0,63 Hz, `labo/ae-expressions/bercement/test.js`). Remède : la recette « Bercement qui ralentit » ci-dessus. [TESTÉ EN LABO] (sous Node ; AE en phase 3)
