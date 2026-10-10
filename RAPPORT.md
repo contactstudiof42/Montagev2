@@ -241,7 +241,7 @@ Session 6 : enrichis `montage-son-et-emotion` (hors champ, Chion, présence dans
 22. (nouveau, session 11) La nuit à l'image : aimez-vous les visages qu'on ne voit presque pas (Willis, *Le Parrain*), ou voulez-vous toujours lire les yeux, même dans le noir ?
 
 ### Autres questions et prochaines priorités
-- **Prochaines priorités (après la session 12)** : diriger l'artiste et monter le texte d'un clip (BACKLOG 70, faiblesse de l'examen n°7) ; extinction animée LED / décharge (69) ; plan-séquence de marche pour renverser mon tic (72) ; flot optique à la coupe (66) ; `flash_check` à 138 BPM (71).
+- **Prochaines priorités (après la session 12)** : diriger l'artiste et monter le texte d'un clip (BACKLOG 70, faiblesse de l'examen n°7) ; extinction animée LED / décharge (69) ; plan-séquence de marche pour renverser mon tic (72) ; flot optique à la coupe (66) .
 - **Question (session 12)** : dans vos clips, l'artiste regarde-t-il l'objectif ? Souvent, rarement, jamais ? Et le texte doit-il être illustré par l'image ou laissé en contrepoint ? (Chez Ziak, d'après mes mesures, l'image ne colle ni au beat ni, semble-t-il, aux mots : est-ce ce que vous aimez ?)
 - **Question (session 12)** : vos rues de tournage sont-elles encore éclairées au sodium (orange) ou déjà en LED (blanc-bleu) ? Pour une image « Joker », ça décide de tout.
 - **Prochaines priorités (après la session 10)** : atelier « la fable » (BACKLOG 57) ; teaser 15 s (51) ; fiche Dougal Wilson / Kim Gehrig (59) ; recadrages, nests et audio multipiste dans l'échange (15) ; `montage-references` en annexes (42) ; examen n°7 en session 13.
@@ -411,6 +411,7 @@ Session 6 : enrichis `montage-son-et-emotion` (hors champ, Chion, présence dans
 - **Examen n°7** « Heure creuse » (clip de nuit avant tournage) : 15/20 ; corrections dans `montage-direction-artistique` et `montage-preparation-tournage-vfx`.
 - **Labo** `labo/encodage/noir-protege/` : image 16 bits de la pièce 17 (52 s de rendu), 8 bits / 10 bits / grain / grain dosé, ré-encodage CRF 23 et 2 Mb/s, fixe puis panoramique. Réussi après deux ratés de méthode (zone de mesure sur le mur éclairé ; noir supposé à 0 alors que la plage limitée le met à 16). Résultat : image fixe trompeuse ; 10 bits survit à débit correct ; grain non universel → recette de `montage-loudness-livraison` corrigée.
 - **Atelier** : pièce 18 « Soustraction » v1-v3 (10 rendus d'états + 8 rendus de sources seules ; `planche.py`, `part.py`).
+- **Labo photosensibilité à 138 BPM** (`labo/photosensibilite/bpm138/`, 18 cas) : corrige l'examen — une transition par croche passe (limite), la pulsation et les doubles croches échouent, une source < 1 % de l'écran passe toujours → `montage-kinetic-editing`.
 - **Culture** (sous-agent) : Natasha Braier ; 4 sources en 403 ou vides, signalées dans la fiche.
 - **Skills modifiés** : direction-artistique, preparation-tournage-vfx, loudness-livraison, regard (18), couleur-et-intention, references. PLAN-TESTS 52-53. BACKLOG 69-72.
 - **Sources principales** : Pushing Pixels, Film Comment, InDepthCine, Panavision, MovieMaker (Braier) ; aucune autre recherche web (session tournée vers l'atelier et le labo).

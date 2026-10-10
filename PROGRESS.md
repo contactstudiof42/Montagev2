@@ -4,14 +4,14 @@ _Lire en premier. Mis à jour à chaque fin de session._
 
 ## Où on en est (après la session 12, 2026-10-10 ~10:10 UTC)
 - **Skills (21)** : session 12 : `montage-direction-artistique` (repérage avant tournage, « recommander ce que je sais faire », clip : corps et texte, référence qui doit agir), `montage-preparation-tournage-vfx` (effacer une source = effacer sa lumière portée ; partage sources contrôlées / effacement lointain, testé en atelier 18), `montage-loudness-livraison` (noir protégé : 10 bits, pas de grain par défaut, jamais juger sur image fixe), `montage-regard` (règle 18 : l'œil lit l'énergie, pas le nombre de sources), `montage-couleur-et-intention` (atelier 18).
-- **Culture** : 46 fiches (+ Natasha Braier si le sous-agent de la session 12 a livré : voir `culture/natasha-braier-lumiere-de-nuit.md`).
+- **Culture** : 47 fiches (nouvelle : `culture/natasha-braier-lumiere-de-nuit.md`, sous-agent, sources vérifiées par lecture de la fiche).
 - **Atelier** : **18 « Soustraction »** v1-v3 (`atelier/18-soustraction/`, v2 = ordre mixte réf., v3 = cadrage serré, personnage lisible) ; 17 « dans le noir » (v3 réf.).
-- **Labo** : `labo/encodage/noir-protege/` (rendu 16 bits de la pièce 17 ; `mesure.py`, `PANO=1`).
+- **Labo** : `labo/encodage/noir-protege/` (rendu 16 bits de la pièce 17 ; `mesure.py`, `PANO=1`) ; `labo/photosensibilite/bpm138/` (inserts lumineux à 138 BPM).
 - **Examens** : n°1 13, n°2 14, n°3 15, n°4 14, n°5 14, n°6 15, **n°7 15** /20. **N°8 en session 15 ou 16.**
 
 ## Reprendre ici (session 13)
 1. Démarrage normal. Blender : `curl -sSL -o blender.tar.xz https://download.blender.org/release/Blender4.2/blender-4.2.3-linux-x64.tar.xz && tar xf blender.tar.xz` dans le scratchpad (30 s). `python3 -m pip install -q numpy pillow scipy colour-science opentimelineio otio-fcp-adapter otio-cmx3600-adapter`.
-2. Priorités : BACKLOG 70 (diriger l'artiste et monter le texte : faiblesse de l'examen n°7), 69 (extinction animée), 72 (plan-séquence : renverser mon tic), 66 (flot optique à la coupe), 67 (pièce 17 v6), 51 (teaser 15 s), 71 (flash_check à 138 BPM).
+2. Priorités : BACKLOG 70 (diriger l'artiste et monter le texte : faiblesse de l'examen n°7), 69 (extinction animée), 72 (plan-séquence : renverser mon tic), 66 (flot optique à la coupe), 67 (pièce 17 v6), 51 (teaser 15 s).
 3. Pièges : **`pkill -f motif` tue aussi le shell** → tuer par PID via `ps aux | grep "[b]lender -b"`. **Plage limitée** : en `yuv*` / `gray16` lus par ffmpeg, le noir vaut 16 (×257), pas 0 (session 12 : masque faux pendant 2 essais). **PIL lit un PNG RGBA 16 bits en 8 bits** : lire par ffmpeg (`-pix_fmt gray16le`). Rendus longs : `nohup … &` + boucle d'attente. Cycles 640×360, 48 échantillons, rue simple : ~25 s/image. Wikimedia → HTTP 429 : passer par Internet Archive. Jamais d'e-mail dans un User-Agent. Vérifier qu'un nom inventé ne recoupe pas une marque réelle.
 
 ## Environnement constaté

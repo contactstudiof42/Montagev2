@@ -128,6 +128,7 @@ ffmpeg : `zoompan=z='if(lt(on,2),1,1+0.35*(1-pow(1-min((on-1)/3,1),3)))':d=1:s=5
 - [ ] Au plus un rang 1 (impact) par séquence de 5 à 10 s ; les whoosh varient.
 - [ ] Au moins une respiration (plan tenu, silence ou baisse de densité) toutes les 5 à 10 s.
 - [ ] Shake et flash amortis en ≤ 6 images, flash ≤ 2 images. **Photosensibilité** [TESTÉ EN LABO, session 7] : `python3 -I labo/photosensibilite/flash_check.py rendu.mp4` ; > 3 flashs dans une seconde = refus diffuseur (WCAG 2.3.1, BT.1702). Un flash d'1 image = 1 flash entier : 4 impacts flashés par seconde échouent. **La surface se juge localement** (pire fenêtre de 1/3 × 1/3 de l'écran) : un mot ou un logo de 6 % de l'écran qui clignote vite échoue. Pour un effet « strobe » sûr, changer **teinte et forme à luminance égale** (principe Noé / Kan, `culture/enter-the-void-generique-noe-tom-kan.md`). Pub UK : test Harding obligatoire.
+- [ ] **Inserts de sources lumineuses calés sur le tempo** [TESTÉ EN LABO, session 12, `labo/photosensibilite/bpm138/`] : à ~140 BPM, **une transition de luminance par croche au plus** (une coupe = un allumage *ou* une extinction : 2,3 flashs/s, limite conforme) ; allumer puis éteindre dans la même croche, ou alterner aux doubles croches = échec. La taille ne sauve qu'en dessous de ~1 % de l'écran. Accents plus serrés : par la forme ou la teinte à luminance égale.
 - [ ] Captions : zone sûre, 1-4 mots, orthographe, mot-clé marqué.
 - [ ] La voix est intelligible au téléphone, haut-parleur intégré.
 - [ ] -14 LUFS ±0,5 / ≤ -1 dBTP **mesurés sur le MP4 encodé**.
