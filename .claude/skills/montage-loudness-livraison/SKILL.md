@@ -76,6 +76,13 @@ ffmpeg -i MASTER.mov -vf "scale=1920:1080:flags=lanczos,format=yuv420p" \
 ```
 Pour un débit cible, utiliser les 2 passes `-b:v 8M -maxrate 10M -bufsize 16M` : 7.90 Mb/s obtenus. Pour le vertical 1080x1920 (recadrage centré ou fond flou), voir references.md §3.
 
+### Images sombres : éviter les bandes dans les dégradés [TESTÉ EN LABO]
+Pourquoi c'est artistique : un film bas et dense (goût de l'utilisateur : Joker, Ziak) vit dans les 5 % du bas de l'échelle, là où le 8 bits n'a qu'une vingtaine de niveaux. Des bandes dans un ciel nocturne ou un fond de studio détruisent la matière du noir.
+- Master et échanges en **10 bits** (ProRes 422 HQ, DNxHR HQX, ou `-pix_fmt yuv420p10le`) : indice de marches 1,6 contre 5,3 en 8 bits.
+- Le tramage ±1 niveau et `-tune grain` ne survivent pas à x264 dans les noirs (mesuré : aucun gain, même à CRF 16).
+- Livraison réseaux (la plateforme ré-encode en 8 bits) : grain monochrome fin σ ≈ 2/255 posé **avant** l'encodage (`noise=c0s=4:allf=t`), CRF 18-20 `-tune grain` : seule variante qui tient après ré-encodage simulé (3,2 au lieu de 5,2). Coût : débit nettement plus élevé.
+Détail et mesures : `labo/encodage/RESULTATS.md`.
+
 ### Vérifier le livrable [TESTÉ EN LABO]
 ```bash
 ffprobe -v error -select_streams v:0 -show_entries stream=profile,level,width,height,pix_fmt,sample_aspect_ratio,r_frame_rate,color_range,color_space,color_transfer,color_primaries,bit_rate -of default=nw=1 OUT.mp4
