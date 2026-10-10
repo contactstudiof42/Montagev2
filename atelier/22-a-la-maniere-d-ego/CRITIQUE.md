@@ -27,3 +27,9 @@ _Planches : `v1-A-planche.png`, `v1-B-planche.png`, `v2-A-planche.png`, `v2-B2-p
 - Écouter (phase 2) : la coupe franche de la nappe à 13,6 s est-elle un choc ou un trou ? Faut-il un souffle qui monte pendant le recul au lieu du silence ?
 - Une vraie voix humaine posée (pas espeak) change tout le rythme : refaire le placement sur une voix enregistrée.
 - Tester la variante `--noir` (noir + lumière froide, l'autre pôle d'EGO).
+
+## Verdict v2 (planches `v2-B2-planche.png`, `v2-A-planche.png`)
+- **Gagné** : de l'image 4 à l'image 7 de la planche, la chaise 1 reste seule au bas du cadre, devant le front du champ. Le « vous » existe jusqu'au moment où le champ devient texture : le vertige a maintenant une mesure. C'est la correction qui compte.
+- **Pas encore** : YAVG médiane 197 (contre 188 en v1) : plus clair, mais toujours sous le blanc clinique visé (> 200, EGO 235-254). Il faut aussi éclaircir le sol (albédo 0,8 → 0,9) plutôt que de pousser encore l'exposition, qui brûlerait les chaises.
+- **Dernière image** : la silhouette est enfin petite, avec du vide devant elle, mais l'horizon coupe le cadre en deux et laisse une moitié basse de sol vide sans fonction. Le v3 la placera au tiers inférieur (caméra plus haute), pour que le blanc au-dessus devienne le « devant » vers lequel elle regarde.
+- Les images 8-9 (fin du recul) restent une texture grise uniforme : c'est voulu (l'échelle échappe), mais 2 images de planche sur 12, c'est long sans voix. Dans B2, ce passage tombe dans le silence de 4,8 s : il faudra l'écouter en phase 2 pour savoir s'il tient ou s'il traîne.
