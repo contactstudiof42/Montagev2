@@ -37,6 +37,15 @@ Limite : je ne peux pas écouter ; le son est jugé sur l'enveloppe et la positi
 - 1er essai raté : la poussée dérivait et coupait le bâton au bord du cadre. Un mouvement de caméra qui désigne un détail se cadre sur la position **finale** du détail, pas sur sa trajectoire.
 - Photosensibilité OK. Prix : la poussée est un geste d'auteur qui « appuie ». Une coupe vers un insert serait plus sèche ; la poussée garde la tenue. J'assume la poussée, lente, une seule fois dans la pièce.
 
+## v8 — vertical 9:16, les deux horloges empilées (écran partagé, sans alternance ; `v8-planche-vertical.png`, une image par seconde)
+- 1er essai raté : recadrages déformés (goutte étirée) et bâtons hors cadre ; refait en recadrant sans redimensionner.
+- On voit tout en permanence : la goutte grossit en continu en haut, la pièce saute en bas. L'écart se **comprend** mieux (c'est un schéma, presque une vulgarisation), mais il ne se **sent** plus : on ne quitte jamais une ligne, donc on ne revient jamais découvrir ce qu'on a perdu. Les sauts du bas se lisent comme des jump cuts d'un accéléré.
+- Règle : **l'alternance fait sentir la perte (on s'absente), l'écran partagé fait comprendre l'écart (on compare)**. En vertical, choisir selon l'intention : écran partagé pour un Short explicatif, alternance plein cadre pour l'émotion (le 9:16 coupé en deux donne deux bandes de 270×238 : chaque compteur doit y rester lisible).
+
+## Confrontation avec les grandes références (`culture/montage-alterne-grandes-references.md`, sous-agent, session 24)
+- **Confirmé** : compteur par ligne, tic indépendant = pression, accélération des segments, règle apprise puis rompue.
+- **Contredit** : (1) ma fin régulière (retours toutes les 31 images) : Griffith, *Le Parrain*, *Dunkirk* accélèrent jusqu'au bout ; (2) ma « fin tenue » n'a pas d'appui chez eux : leurs alternances finissent par **une rencontre des lignes** (le sauvetage, les meurtres qui convergent vers Michael). Ma pièce n'a pas de jonction : c'est un parti pris (les lignes ne se rejoignent jamais = la perte définitive), à défendre comme tel, pas à citer comme Interstellar ; (3) chez eux la causalité vient de la jonction ou d'un point d'ancrage, pas d'un tic sur la coupe ; (4) **l'ironie** (le son d'une ligne posé sur l'autre, le baptême sur les meurtres) manque : piste v9, faire entendre la goutte sur le mur aux bâtons.
+
 ## Ce que la pièce m'apprend (versé dans `montage-rythme` et `montage-references`)
 1. Montage alterné à deux vitesses : l'ellipse est dans la coupe ; dans le plan, le temps des deux lignes doit presque s'arrêter (sinon on lit un accéléré, pas un écart, et un jour/nuit accéléré clignote).
 2. Chaque ligne a besoin de son **compteur visible** (goutte, bâtons, plante) ; sans compteur, l'écart n'est qu'une affirmation.

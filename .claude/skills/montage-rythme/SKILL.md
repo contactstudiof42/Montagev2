@@ -26,6 +26,8 @@ Fiche : `culture/interstellar-rythme.md`. Ficelles à réutiliser en priorité :
    - chaque ligne a son **compteur visible** (goutte en macro ici, bâtons au mur et plante là-bas) ; v1-v3 ratées en partie parce que la goutte faisait 5 px ;
    - pulsation **indépendante** des coupes = pression diffuse ; pulsation **sur** les retours = causalité (« à chaque tic, on voit ce qui est perdu »). v5 (retours sur le tic) = référence ;
    - final par l'absence : enseigner la règle (tic = perte) cinq fois, puis la rompre (dernier retour sans tic, tenu 2,6 s ; les bâtons n'ont plus bougé : personne ne compte) ;
+   - écran partagé (v8, 9:16 empilé) : l'écart se **comprend** (on compare) mais ne se **sent** plus (on ne s'absente jamais d'une ligne) : partagé pour expliquer, alternance pour émouvoir ;
+   - les grandes références (`culture/montage-alterne-grandes-references.md` : Griffith, *Le Parrain*, *Le Silence des agneaux*, *Dunkirk*) accélèrent jusqu'au bout et finissent par **une jonction** des lignes ; une fin sans jonction est un parti pris à défendre, et le son d'une ligne posé sur l'autre donne l'ironie (le baptême sur les meurtres) ;
    - piège : couper sur une pulsation qui ne tombe pas sur des images entières (1,25 s = 31,25 images à 25 i/s, mais 30 pile à 24 i/s) ; choisir le tempo selon la cadence du projet.
 Limite : le mixage où le dialogue passe sous les effets est à proscrire pour les réseaux et la pub (vision sans son, intelligibilité).
 

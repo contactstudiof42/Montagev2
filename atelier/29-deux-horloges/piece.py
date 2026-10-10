@@ -28,7 +28,7 @@ def decoupage(v):
 def ici(t, f_chute):
     """t = image globale. Goutte qui grossit jusqu'à f_chute puis tombe. v4 : macro (recadrage ×3 sur le bec)."""
     im = ici_large(t, f_chute)
-    return im.crop((160, 40, 320, 130)).resize((W, H), Image.BICUBIC) if V in ('v4', 'v5', 'v6', 'v7') else im
+    return im.crop((160, 40, 320, 130)).resize((W, H), Image.BICUBIC) if V in ('v4', 'v5', 'v6', 'v7', 'v8') else im
 
 
 def ici_large(t, f_chute):
@@ -74,12 +74,27 @@ def labas(saut, k, gel=None):
             d.line([x0 + r * 5, y0, x0 + r * 5, y0 + 16], fill=(60, 40, 30), width=2)
         else:
             d.line([x0 - 2, y0 + 12, x0 + 19, y0 + 3], fill=(60, 40, 30), width=2)
-    if gel is not None and V in ('v6', 'v7'):                                 # v6 : un bâton commencé, jamais fini
+    if gel is not None and V in ('v6', 'v7', 'v8'):                                 # v6 : un bâton commencé, jamais fini
         g, r = divmod(n, 5); x0, y0 = 30 + (g % 9) * 28, 30 + (g // 9) * 26
         d.line([x0 + r * 5, y0, x0 + r * 5, y0 + 7], fill=(60, 40, 30), width=2)
     return im
 
 
+if V == 'v8':   # vertical 270×480 : les deux horloges empilées (écran partagé), sans alternance ; là-bas saute aux instants des retours de v5
+    sauts = [62, 125, 188, 219, 250, 281]; f_chute = 277; HW = 240
+    p8 = subprocess.Popen(['ffmpeg', '-v', 'error', '-y', '-f', 'rawvideo', '-pix_fmt', 'rgb24', '-s', '270x480', '-r', str(FPS), '-i', '-',
+                           '-c:v', 'libx264', '-crf', '20', '-pix_fmt', 'yuv420p', f'{D}/v8.mp4'], stdin=subprocess.PIPE)
+    for t in range(350):
+        ib = sum(1 for x in sauts if x <= t); k = t - (sauts[ib - 1] if ib else 0)
+        sb = (ib / 6) ** 2.2 if ib < 6 else 1.0
+        b = labas(sb, k, (5 / 6) ** 2.2 if ib == 6 else None)
+        if ib == 6:
+            b = Image.eval(b, lambda c: int(c * max(0.55, 1 - k / 120)))
+        cadre = Image.new('RGB', (270, 480), (0, 0, 0))
+        cadre.paste(ici(t, f_chute).crop((106, 16, 376, 254)), (0, 0))                # macro, sans déformation
+        cadre.paste(b.crop((20, 24, 290, 262)), (0, HW + 2))                       # bâtons + plante (la fenêtre sort du cadre)
+        p8.stdin.write(cadre.tobytes())
+    p8.stdin.close(); p8.wait(); print('v8 ok'); sys.exit()
 seq = decoupage(V)
 f_chute = sum(n for _, n in seq[:-1]) - 4 if V != 'v1' else 270      # la goutte tombe juste avant le dernier retour
 nb_b = sum(1 for l, _ in seq if l == 'B')
