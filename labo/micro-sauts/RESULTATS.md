@@ -35,3 +35,6 @@
 - **La mesure globale suit la région la plus texturée**, pas le sujet : sur un fond lisse (mur), elle voit la tête ; sur un fond texturé (bibliothèque, feuillage), elle dit « aucun saut » même quand la tête saute de 4 %. Mesurer **toujours par zone** sur le sujet (boîte autour du visage, avec une marge ≥ au saut attendu), et à part sur le fond.
 - Zone : erreur ≤ 0,06 % de la largeur totale. Lecture combinée : tête qui saute + fond immobile = la personne a bougé entre les deux morceaux (micro-saut de jeu) ; les deux sautent ensemble = recadrage ou caméra qui a bougé.
 - Reste : boîte du visage automatique (détecteur de visage, phase 2 sur vrais rushes), rotation.
+
+## Échelle jusqu'à ×3 (session 25)
+Recherche étendue (pas de 0,01 jusqu'à 1,5, puis 0,02 jusqu'à 3). Vérité terrain : ×2,4 → 2,42 (pic 0,20) ; ×2,9 / +1 % → 2,86 / 0,62 (pic 0,16) ; plan différent pic 0,066. **Le pic baisse avec l'échelle** (moins de détail commun) : pour une coupe dans l'axe forte, le seuil de 0,15 devient limite ; abaisser à ~0,12 au-delà de ×2. Sur une vraie coupe dans l'axe avec déplacement de caméra (pièce 34 v7, large → plan de v6), la mesure globale donne ×1,6 : elle suit les fenêtres de l'hôpital, lointaines, qui grossissent moins que la voiture (parallaxe). Même leçon qu'en zones : **mesurer sur le sujet**.

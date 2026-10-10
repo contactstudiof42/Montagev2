@@ -1,6 +1,6 @@
 """Détecteur de micro-sauts aux coupes (BACKLOG Y17).
 Usage : python3 micro_sauts.py AVANT.png APRES.png   ou   python3 micro_sauts.py --video V.mp4 --coupes 3.2,7.84,...
-Pour chaque coupe : image juste avant / juste après, recherche de l'échelle (1/1,5 à 1,5) puis translation par corrélation de phase.
+Pour chaque coupe : image juste avant / juste après, recherche de l'échelle (1/3 à 3) puis translation par corrélation de phase.
 Sortie : échelle (punch-in), décalage en % de largeur, pic de corrélation (confiance ; < 0,08 = plans différents, pas un jump cut)."""
 import sys, subprocess, numpy as np
 from PIL import Image
@@ -21,7 +21,7 @@ def mesurer(av, ap, zone=None):
     if zone:
         W, H = av.size; box = (int(zone[0] * W), int(zone[1] * H), int((zone[0] + zone[2]) * W), int((zone[1] + zone[3]) * H)); av, ap = av.crop(box), ap.crop(box)
     a, b = gris(av), gris(ap); best = None
-    for s in np.arange(1.0, 1.501, 0.01):                 # punch-in (après plus serré) puis punch-out (avant plus serré)
+    for s in np.concatenate([np.arange(1.0, 1.5, 0.01), np.arange(1.5, 3.001, 0.02)]):   # jusqu'à ×3 (coupe dans l'axe) ; pas de 0,02 au-delà de 1,5                 # punch-in (après plus serré) puis punch-out (avant plus serré)
         pk, dx, dy = phase(zoom(a, s), b)
         if best is None or pk > best[0]: best = (pk, s, dx, dy)
         pk, dx, dy = phase(a, zoom(b, s))

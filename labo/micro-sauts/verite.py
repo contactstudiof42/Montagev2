@@ -9,6 +9,6 @@ def fabrique(s, dx):
     im = src.resize((W, H), Image.BILINEAR, box=(x0, y0, x0 + cw, y0 + ch)); a = np.asarray(im, np.float64) + rng.normal(0, 4, (H, W, 3))
     return Image.fromarray(np.clip(a, 0, 255).astype(np.uint8))
 avant = fabrique(1.0, 0.0); print('vrai(s, dx%) -> mesuré')
-for s, dx in [(1.0, 0.0), (1.0, 0.5), (1.0, 1.5), (1.0, 3.0), (1.1, 0.0), (1.2, 1.0), (1.35, -2.0), (1.0, -0.3)]:
+for s, dx in [(1.0, 0.0), (1.0, 0.5), (1.0, 1.5), (1.0, 3.0), (1.1, 0.0), (1.2, 1.0), (1.35, -2.0), (1.0, -0.3), (2.4, 0.0), (2.9, 1.0)]:
     print((s, dx), mesurer(avant, fabrique(s, dx)))
 print('plan différent ->', mesurer(avant, autre))
