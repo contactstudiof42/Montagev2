@@ -69,6 +69,8 @@ Sources du placement : crête du riser sur le moment clé (Epidemic Sound) ; son
 | Hook « Salut, aujourd'hui… » | Hook visuel + sonore à l'image 1 : résultat, question, contraste |
 | SFX qui écrasent la voix ou font le niveau | Voix d'abord ; SFX dans le mix, -14 LUFS mesuré sur le fichier encodé |
 | Punch-in linéaire, sans flou de bougé | Ease-out 2-3 images, motion blur |
+| Plan de 4-8 images où le sujet entre, sort ou est dans le noir | Sujet lisible **dès la 1re image** du plan (atelier 02 : 4 plans noirs sur 19 en v1) |
+| Whoosh sur un mouvement qu'on ne voit pas | Chaque SFX a une cause visible ; sinon il devient du bruit (atelier 02 v1) |
 
 ## 4. Recettes
 **R1 — Hook 0-3 s** [THÉORIQUE] : image 1 = l'image la plus forte (résultat, chiffre, action) + impact ou drop musical à l'image 1 ; captions dès la 1re syllabe ; 2 à 4 coupes dans les 3 premières secondes ; la promesse est dite avant la 3e seconde.
@@ -95,6 +97,7 @@ ffmpeg : `zoompan=z='if(lt(on,2),1,1+0.35*(1-pow(1-min((on-1)/3,1),3)))':d=1:s=5
 - **SFX gratuits** : Sonniss GDC Bundle (licence sans attribution), Mixkit (Mixkit License) ; packs Gumroad : lire la licence avant usage commercial.
 
 ## 6. Checklist avant livraison
+- [ ] Planche contact de la 1re image de chaque plan : chaque vignette se lit seule (sujet, pas du noir).
 - [ ] L'image 1 et le son 1 accrochent ; la promesse est dite avant 3 s.
 - [ ] Chaque whoosh démarre avant sa coupe et culmine dessus ; chaque impact tombe sur l'image (vérifié image par image).
 - [ ] Au plus un rang 1 (impact) par séquence de 5 à 10 s ; les whoosh varient.
