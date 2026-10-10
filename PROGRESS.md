@@ -5,6 +5,15 @@ _Lire en premier. Mis à jour à chaque fin de session._
 ## Consigne durable de l'utilisateur (2026-10-10)
 - Développer une **culture YouTube / internet** (divertissement, essai vidéo, vulgarisation, vlog, motion de chaîne, Shorts, cultures d'edit) au même niveau que cinéma et clip. Voir BACKLOG « Consigne » (Y1-Y6) : une part de chaque session jusqu'à parité.
 
+## Où on en est (après la session 24, 2026-10-10)
+- **Session 24** (19:29 → ~20:15 UTC, horloge relevée à chaque commit) : labo `labo/outils/coupes.py` (EDL avec fondus / OTIO / XML FCP7 / scdet ; bande-film avec son ; activité nette du grain) et `tempos.py` ; pièce 29 « Deux horloges » v1-v9 (Interstellar ; v9 jonction = recommandée, v7 pudique) ; pièce 30 « Coupe cachée » A-H (Short 9:16, Zach King) ; pièce 31 « Le même escalier » v1-v3 (Joker, Blender) ; sous-agents : veille IA (rien de neuf), fiches Shorts narratifs et montage alterné ; montage-regard 26-28. Examens : … n°12 14. **Prochain examen n°13 (fiction courte) en session 25 ou 26.**
+
+## Reprendre ici (session 25)
+0. Relever `date -u` au début, clôturer à début + 45 min. Veille IA (sous-agent). `python3 -m pip install -q numpy pillow opentimelineio otio-fcp-adapter` (17 s) ; Blender 4.2.3 : `curl … && tar xf` (27 s), 9 s par image fixe Cycles 480×270 32 éch.
+1. **Examen n°13 (Y37, fiction courte : scène dialoguée de 2 min)** — le faire d'abord, sur une session entière si besoin.
+2. Puis Y43 (atelier Shorts : cadre fixe contre coupes), Y41 (escalier : figure articulée), Y40 (coupe cachée : flou de bougé, boucle), Y39 (pièce 29 en 9:16 alterné, tempo 1,24 s).
+3. Outils : `python3 labo/outils/coupes.py VIDEO --edl X.edl [--xml X.xml] [--otio X.otio] --scdet 10 --sortie P` (bande-film + courbe + JSON) ; `labo/outils/tempos.py` ; mesure de raccord `atelier/30-coupe-cachee/mesure.py`.
+
 ## Où on en est (après la session 23, 2026-10-10)
 - **Session 23** (18:29 → 18:34, clôture prématurée relevée par l'utilisateur, reprise 18:44 → 19:07 UTC) : veille IA (Vidu Q4 Preview), pièce 27 « Jamais » v1-v4 (gag de contradiction, règle de trois, silence-gag), fiche timing comique sitcom, **examen n°12** (pub opticien, 14/20), pièce 28 « Flou → net » v1-v3 (Blender : flou optique / gaussien, courbe de bascule, reflet par la lumière). Examens : … n°11 15, **n°12 14**. Prochain examen n°13 vers la session 26 (fiction courte).
 
@@ -70,6 +79,7 @@ _Lire en premier. Mis à jour à chaque fin de session._
 - Un serveur MCP nommé `HIGGSFIELD_MCP` est listé dans l'environnement : non appelé (consigne phase 1). Noms observés dans `PLAN-TESTS-MCP.md`.
 
 ## Historique
+- Session 24 — 2026-10-10 19:29 → ~20:15 UTC : coupes.py, tempos.py ; pièces 29 (v1-v9), 30 (A-H), 31 (v1-v3) ; fiches Shorts narratifs et montage alterné (sous-agents) ; veille IA ; skills rythme, references, youtube, preparation-tournage-vfx, couleur-et-intention, regard, expert ; PLAN-TESTS 73-74.
 - Session 23 — 2026-10-10 18:29 UTC → 18:34 (clôture prématurée, corrigée sur remarque de l'utilisateur), reprise 18:44 → 19:07 UTC : veille IA (sous-agent), pièce 27 « Jamais » v1-v2, bande.py ; montage-rythme ; PLAN-TESTS 71.
 - Session 22 — 2026-10-10 17:38 UTC → ~18:20 réel (horloge VM ~17:50) : veille IA, fiche gags de montage (sous-agents), pièce 26 v1-v4 ; skills youtube, rythme, son-et-emotion, ia-generative ; PLAN-TESTS 69.
 - Session 21 — 2026-10-10 17:29 UTC → fin (horloge peu fiable) : examen n°11 (15/20), labo densite.py, sous-agents veille IA / fiche slow TV-ASMR ; skills direction-artistique, youtube, references, ia-generative.

@@ -184,3 +184,8 @@ Le serveur `HIGGSFIELD_MCP` est toujours listé, **non appelé** (consigne phase
 - Vérifier le décalage de départ de timeline (01:00:00:00 ou 00:00:00:00) et les marqueurs exportés (`* LOC:` Premiere, marqueurs Resolve) : sont-ils relus à l'image près ?
 - Dissolves en EDL (`D nnn`) : à quelle image l'outil place la coupe (début du fondu) ; corriger si besoin.
 - Sur un vrai rush à grain (capteur poussé ou grain ajouté au grade) : comparer l'activité nette quadratique au jugement à l'œil.
+
+## 74. (session 24) Pièces 29-31 en conditions réelles [TESTÉ en maquette, THÉORIQUE en vrai]
+- Pièce 29 « Deux horloges » : **écouter** v4 (tic libre) contre v7 / v9 (retours sur le tic, fin sans tic) avec l'utilisateur : le tic posé sur les retours se sent-il comme une cause ou comme une mécanique ? (jugé sur enveloppe seulement en phase 1). Refaire le montage alterné dans Premiere avec marqueurs de tic et vérifier par `coupes.py --xml`.
+- Pièce 30 « Coupe cachée » : tourner la vraie coupe cachée au téléphone sur pied (tasse → plante, torchon), en lumière du jour puis en lumière de studio ; mesurer avec `atelier/30-coupe-cachee/mesure.py` adapté (écart hors objet) ; tester le flou de bougé réel du torchon et le recalage en post (gain + stabilisation) dans Premiere.
+- Pièce 31 « Le même escalier » : reproduire aller / retour dans Blender via le MCP (si les outils `bl_*` le permettent, à vérifier) avec une figure articulée ; dans After Effects, tester si une caméra 3D en grue sur une plaque fixe peut simuler la découverte des marches (probablement non : la lumière rasante ne se fabrique pas en 2,5D).
