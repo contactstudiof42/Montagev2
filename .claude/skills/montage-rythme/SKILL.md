@@ -21,6 +21,12 @@ Fiche : `culture/interstellar-rythme.md`. Ficelles à réutiliser en priorité :
 3. **Compresser d'un côté, dilater de l'autre** : le temps raconté défile vite (écrans, messages), pendant que le visage de celui qui regarde reste longtemps à l'écran, sans coupe.
 4. **Raccourcir les segments du montage parallèle à l'approche du climax** (par exemple 8 s / 4 s / 2 s / 1 s) : l'accélération vient de la structure, pas d'un changement de style des plans.
 5. **Un motif musical qui monte par couches** autorise un montage de plus en plus serré. Pendant la tension, on retire les plans de respiration (extérieurs rassurants).
+6. **Mis à l'épreuve : pièce 29 « Deux horloges »** (session 24, `atelier/29-deux-horloges/`, v1-v5) [TESTÉ EN ATELIER, maquette 2D ; son jugé sur enveloppe, pas écouté] :
+   - l'ellipse est **dans la coupe** : dans chaque plan, le temps des deux lignes presque arrêté (un accéléré dans le plan se lit comme un effet, et un jour/nuit accéléré clignote) ;
+   - chaque ligne a son **compteur visible** (goutte en macro ici, bâtons au mur et plante là-bas) ; v1-v3 ratées en partie parce que la goutte faisait 5 px ;
+   - pulsation **indépendante** des coupes = pression diffuse ; pulsation **sur** les retours = causalité (« à chaque tic, on voit ce qui est perdu »). v5 (retours sur le tic) = référence ;
+   - final par l'absence : enseigner la règle (tic = perte) cinq fois, puis la rompre (dernier retour sans tic, tenu 2,6 s ; les bâtons n'ont plus bougé : personne ne compte) ;
+   - piège : couper sur une pulsation qui ne tombe pas sur des images entières (1,25 s = 31,25 images à 25 i/s, mais 30 pile à 24 i/s) ; choisir le tempo selon la cadence du projet.
 Limite : le mixage où le dialogue passe sous les effets est à proscrire pour les réseaux et la pub (vision sans son, intelligibilité).
 
 ## Référence de l'utilisateur : Ziak, « Même pas un grincement » — le rythme macro (MESURÉ)
