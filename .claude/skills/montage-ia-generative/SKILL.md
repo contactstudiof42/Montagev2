@@ -140,3 +140,5 @@ Voix témoin IA pour caler le montage, puis **comédien réel** pour la livraiso
 - [ ] Prompts, modèle et date archivés ?
 
 Voir aussi : `montage-regard` (grille de jugement), `/culture/ia-oeuvres-remarquables.md`.
+- (2026-10-10, session 10) RIFE 4.25 sur vrais plans d'eau et de feuillage à petit mouvement : **1 à 3,6 dB sous un simple fondu** (`labo/interpolation-reel/`). L'interpolation par IA n'est pas un gain par défaut : la tester sur le plan réel.
+

@@ -1,0 +1,35 @@
+== vagues
+dup .525390937 s
+blend .540546273 s
+mci 1.859141698 s
+mci_noscd 1.810857283 s
+inference 59 paires 5.2 s ; sortie 120 images
+temps total 5.7 s
+== oies
+dup .523280679 s
+blend .526042658 s
+mci 1.975641857 s
+mci_noscd 1.824013900 s
+inference 59 paires 5.7 s ; sortie 120 images
+temps total 6.2 s
+== coupe
+dup .512552280 s
+blend .499431905 s
+mci 1.820969910 s
+mci_noscd 1.712008860 s
+inference 59 paires 5.8 s ; sortie 120 images
+temps total 6.3 s
+== vagues4
+dup .602451491 s
+blend .651237476 s
+mci 1.840424151 s
+mci_noscd 1.905584890 s
+inference 29 paires x 3 29.6 s ; sortie 120 images
+temps total 30.2 s
+== oies4
+dup .483382106 s
+blend .505703259 s
+mci 1.594507184 s
+mci_noscd 1.800624925 s
+inference 29 paires x 3 21.4 s ; sortie 120 images
+temps total 21.8 s

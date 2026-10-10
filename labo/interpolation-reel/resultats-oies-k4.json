@@ -1,0 +1,26 @@
+{
+ "dup": {
+  "images": 120,
+  "psnr_y_inventees": 33.06,
+  "min_inventees": 28.21,
+  "psnr_y_origine": 99.0
+ },
+ "blend": {
+  "images": 120,
+  "psnr_y_inventees": 37.6,
+  "min_inventees": 34.07,
+  "psnr_y_origine": 98.15
+ },
+ "mci": {
+  "images": 120,
+  "psnr_y_inventees": 37.66,
+  "min_inventees": 34.57,
+  "psnr_y_origine": 98.15
+ },
+ "rife": {
+  "images": 120,
+  "psnr_y_inventees": 36.64,
+  "min_inventees": 33.24,
+  "psnr_y_origine": 99.0
+ }
+}
