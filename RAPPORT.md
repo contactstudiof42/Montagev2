@@ -78,6 +78,7 @@ Je défends un travail **réduit à une idée**, où **le mouvement a une cause*
 - **IA** (`culture/ia-oeuvres-remarquables.md`) : *Total Pixel Space*, *Ancestra*, *The Hardest Part* (Washed Out / Paul Trillo), contre-exemple Coca-Cola : l'IA convainc quand le procédé est le sujet.
 
 ### Atelier
+- **(session 10) Pièce 16 « La fable »** (`atelier/16-la-fable/`) : solitude réaliste (pitié) contre fable (petite planète : on sourit, mais c'est *Le Petit Prince*, et la lampe chaude refait mon tic) ; v2 : le fil du téléphone descend jusqu'à la Terre (l'idée propre au sujet), mais **invisible** (noir sur noir) → v3 à faire (`v1-planche.png`, `v2-planche.png`).
 - **(session 10) Pièce 15 « Deux sonneries de trop »** (`atelier/15-deux-sonneries/`, `CRITIQUE.md`) : un téléphone, une main qui décroche ; A (3 sonneries), B (5), C (ralenti ×3 interpolé depuis 25 i/s), D (ralenti vrai, rendu à 75 i/s), B2 (la main posée deux sonneries). C : 43 dB en moyenne mais 29 dB au pire, combiné en blocs, cordon dédoublé (`v1-erreur-C-contre-D.png`, `v1-planche-C-D.png`) ; B = temps vide (`v1-planche-A-B.png`) ; **B2 retenue** (`v2-planche-B2.png`). Verdict B2 > D > A > B > C.
 - **(session 10) Pièce 12 v8 « lieu encombré »** : v8a (trois cylindres blancs, l'anomalie noyée), v8b-c (gilet rouge sur la chaise vide : la tasse se détache devant lui ; résidu spectral centile 75 → 87) ; la lumière, non isolée, n'apprend rien (`atelier/12-inquietude-calme/v8-planche.png`, `v8-montage-planche.png`).
 - **(session 9) Pièce 12 « Inquiétude calme »** (`atelier/12-inquietude-calme/`, `CRITIQUE.md`) : 3 plans fixes (large, fenêtre, retour au large avec une seconde tasse). v1 (pièce noire, tasse de 9 px) → v2 (seconde tasse cachée dans l'axe de la première) → v3-v4 (soleil sur la table ; la mesure montre que la fenêtre vole l'attention) → **v7** (45 mm, saillance à 9 % de l'anomalie, 4 / 3 / 6 s, grain vivant, air de pièce à −42 LUFS). Planches `v1-planche.png` … `v7-planche.png`, `v7-montage-planche.png`.
@@ -372,13 +373,14 @@ Session 6 : enrichis `montage-son-et-emotion` (hors champ, Chion, présence dans
 - **Incident** : un `nohup sh -c "…" &` a été bloqué par le contrôle de sécurité (rien n'a tourné) ; relancé par la tâche de fond de l'outil.
 - Environnement : `HIGGSFIELD_MCP` toujours listé, non appelé.
 
-### Session 10 — 2026-10-10 07:30 → ~07:55 UTC
+### Session 10 — 2026-10-10 07:30 → ~07:55 UTC (horloge de la VM)
 - Démarrage : dernier commit 29 min avant, pas de doublon. Blender 4.2.3 (30 s), OTIO + adaptateurs (6 s).
 - **Examen n°6** « Le téléphone de Lucienne » (15/20) : anomalie, froid sur le fond, ralenti refusé depuis 25 i/s ; corrections dans `montage-direction-artistique` (étape 0 inventaire des rushes, ralenti demandé, coupable désigné, dispositifs recyclés), `montage-rythme`.
 - **Pièce 12 v8** (lieu encombré, 3 versions + 3 angles de soleil mesurés) : couleur saturée derrière l'anomalie ; la lumière ne déplace pas la flaque (hypothèse de la session 9 non vérifiée, pas d'explication inventée).
 - **Pièce 15** « Deux sonneries de trop » (120 images à 75 i/s, A/B/C/D/B2) : le ralenti interpolé casse le sujet ; l'attente vide ne sert à rien ; B2 retenue.
 - **Labo vitesses dans l'échange** (`labo/workflows/vitesses/`) : XML FCP7 via OTIO perd vitesses, arrêts, inversions et noms de pistes ; EDL : durée source inversée, vitesse perdue sur le plan entrant d'un fondu, départ 00:00:00:00. **Vérificateur d'EDL** : 4/4 défauts, 0 faux positif.
 - **Labo interpolation sur vrais plans** (sous-agent, `labo/interpolation-reel/`) : Internet Archive (CC0, Wikimedia en 429) ; fondu = mci > RIFE de 1 à 3,6 dB sur eau et feuillage ; mci avance la coupe d'une image ; recontrôlé (43,80 / 41,63 dB identiques). Incident User-Agent signalé ci-dessus.
-- **Culture** : fiche John Lewis (2007-2025, *The Long Wait*, *Man on the Moon*) ; ligne caritatif dans `cliches-de-secteur.md`. Annexe `signature-et-cartons.md`.
+- **Pièce 16** « La fable » v1-v2 (idée juste, signe invisible).
+- **Culture** : fiches John Lewis (2007-2025, *The Long Wait*, *Man on the Moon*) et Dougal Wilson / Kim Gehrig (Creative Review en 403) ; ligne caritatif dans `cliches-de-secteur.md`. Annexe `signature-et-cartons.md`.
 - Raté : le premier nom inventé pour l'association recoupait une marque réelle ; renommé. Le jugement « attente habitée » reste sur planches : à confirmer en mouvement et au son (phase 2).
 - Sources : Wikipédia (John Lewis Christmas advert), Campaign, Fundraising UK, AdNews, Eurobest, Retail Gazette ; archive.org (« Beach Waves », « Swimming Geese », CC0).
