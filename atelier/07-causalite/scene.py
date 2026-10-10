@@ -97,8 +97,8 @@ CAMS = {  # loc, rot (deg), focale
     "large":   ((0.05, -1.45, 0.95), (76, 0, 0), 30),
     "livre":   ((-0.45, -0.45, 0.88), (80, 0, 0), 35),
     "dominos": ((0.41, -0.35, 0.86), (84, 0, 0), 32),
-    "tasse":   ((0.95, -1.0, 0.42), (90, 0, 0), 26),
-    "chaine":  ((0.75, -1.0, 0.45), (88, 0, 0), 26),   # dominos + tasse + sol dans le même plan
+    "tasse":   ((0.95, -0.9, 0.95), (72, 0, 0), 26),   # s6 : caméra au-dessus du plateau, sinon le contact domino-tasse est caché
+    "chaine":  ((0.75, -0.9, 0.95), (72, 0, 0), 26),   # dominos + tasse + sol dans le même plan
     "sol":     ((1.2, -0.5, 0.08), (88, 0, 14), 35),   # ras du sol, l'arrivée de la tasse
 }
 c = P.get("camera", "large"); loc, rot, lens = CAMS[c]
