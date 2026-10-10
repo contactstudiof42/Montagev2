@@ -32,3 +32,17 @@ Ni écouté ni vu en temps réel ; jugement sur bandes à l'image près. Voix de
 
 ## Suite (Y28)
 Tenue du plan d'arrivée 1 / 2 / 3 / 4 s (bande-film complète à 5 i/s) ; silence-gag (un son appris 3 fois puis retiré) ; règle de trois avec la même phrase « Jamais » sur trois aliments, la 3e trahie.
+
+## v3 — « Trois fois jamais » (Y28 : règle de trois + silence-gag + tenue), `trois.py`
+Commande : voix `l1.wav` / `l2.wav` / `l3.wav` (espeak-ng, « Le brocoli ? Jamais. », « Les épinards ? Jamais. », « Le chou-fleur ? Jamais. »), puis `python3 atelier/27-jamais/trois.py atelier/rendus/27 TENUE [--ting3] [--v4]` (~1 s par version). Planches : `v3-planche.png` (A, 1re image de B, B à 0,9 s, pour chaque occurrence), `v3-timeline.png` (film entier à 5 i/s, enveloppe, coupes en blanc ; tenues 1, 2, 4 s et contre-épreuve où le ting reste).
+- **Forme constante, vérifiée sur l'enveloppe** : les occurrences 1 et 2 ont la même forme sonore après la coupe (pic du « ting » de fourchette, puis la mastication, puis le silence au regard caméra). Le motif est appris en deux fois, comme le dit la fiche.
+- **Le silence-gag se voit sur la bande** : après la 3e coupe, l'enveloppe reste plate (ambiance seule) là où la contre-épreuve `ting3` montre encore le pic. L'absence est un événement parce qu'il y a une place exacte où on l'attend : la première image du plan B.
+- **Faute de v3 : l'assiette vide est ambiguë.** Assiette vide + fourchette posée + chou-fleur sur la table : ça peut se lire « il a déjà tout mangé » (la chute est encore la même) au lieu de « il a tenu parole ». Et ses yeux grands ouverts dès la 1re image reprennent l'état final des plans 1 et 2 : la 3e occurrence commence comme les deux autres finissent.
+- **Tenue** : à 1 s, la coupe tombe ~0,5 s après la fin du ting qu'on attendait (il dure ~0,4 s) : le silence a à peine existé. À 4 s, le plan est fixe et muet : un temps mort. Entre les deux, il faut un **bouton** (un dernier petit geste qui relance) plutôt qu'une durée.
+
+## v4 — la trahison rimée avec le plan A (`--v4`, tenue 2,2 s)
+Planche : `v4-planche.png` (plan A, puis B3 à 0,04 / 1,0 / 1,4 / 1,6 / 2,1 s).
+- B3 reprend **les sourcils froncés et les bras croisés du plan A** : la coupe montre un homme inchangé, « toujours non ». Le chou-fleur est servi **intact dans l'assiette** : lisible comme « on le lui a servi, il n'y a pas touché ».
+- **Bouton** : à 1,3 s, il repousse l'assiette d'un doigt (raclement, 0,3 s), puis on tient jusqu'à 2,2 s. Le seul son de la réaction est celui de son refus. C'est le second rire, et c'est lui qui dit quand couper (≈ 0,6 s après le bouton).
+- Défaut restant : le bras qui sort du croisé est presque invisible (l'assiette est collée au corps) ; on voit un doigt au bord du pull. À refaire avec l'assiette plus loin, ou avec un vrai acteur.
+- **Leçon** : dans une règle de trois, la 3e occurrence garde **la forme** des deux premières (même cadre, même écart de coupe, même place pour le son) et change **une seule chose lisible** ; et la réaction finale ne se règle pas en secondes mais par un bouton, après lequel on coupe vite.

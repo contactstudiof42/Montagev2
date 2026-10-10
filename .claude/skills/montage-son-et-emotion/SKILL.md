@@ -60,3 +60,7 @@ Quand un film doit suggérer sans trancher (un visiteur, une menace), le son hor
   5. Rien d'essentiel dans le LFE : BS.1770 l'exclut de la mesure et `-ac 2` le jette.
   6. Pas de dialogue utile dans les arrières.
 - Recettes ffmpeg (fabrication 5.1 de test, downmix ITU par `pan`, phase moyenne) et pièges (`-ac 2` est 7,6 dB trop bas : `aresample=rematrix_maxval=10` ou `pan`) : voir `montage-loudness-livraison` §5.1 et la source.
+
+
+## Silence-gag éprouvé (atelier 27 v3-v4, session 23) [TESTÉ EN ATELIER, maquette]
+Le son appris (un « ting » de fourchette sur la 1re image du plan B, deux fois) puis retiré la 3e fois : l'absence se lit parce qu'elle a une **place exacte** (la 1re image). Le seul son qui revient ensuite doit être celui de la réaction (l'assiette repoussée), pas une musique ou un bruitage de gêne. Voir `atelier/27-jamais/CRITIQUE.md`.
