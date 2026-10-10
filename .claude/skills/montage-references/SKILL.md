@@ -82,6 +82,8 @@ Et une cinquième, d'état : **la saturation** (Noé / Tom Kan, générique d'*E
 - **Un système plutôt qu'une séquence ; un template est déjà un cliché** (habillage de chaîne, `motion-design-youtube-explicatif-et-habillage.md`).
 - **L'authenticité est un effet de montage ; le plan vide où le sujet entre ; timelapse et drone comme ponctuation** (Neistat, Chamberlain, `vlog-casey-neistat-et-heritiers.md`).
 - **Une contrainte forte crée un langage ; un effet violent est une ponctuation ; deux images à l'écran doivent avoir un rapport** (YTP, Vine, brainrot, `cultures-edit-internet-ytp-vine-brainrot.md`). → Une version 6 s se pense installation / rupture / retour, pas « un 30 s raccourci ».
+- **Une contrainte visible qu'on ne trahit jamais fait l'identité d'une série ; l'absence de montage prouve la performance** (COLORS, Tiny Desk, Blogothèque, `youtube-musique-live-sessions.md`). → Série de portraits corporate : un fond, un plan, une règle.
+- **Couper sur la réaction, pas sur l'action ; chaque extrait doit tenir seul** (gaming, Twitch, podcasts, `youtube-gaming-et-twitch.md`, `podcasts-video-et-clips-verticaux.md`).
 
 ## Tensions entre principes (où mon regard doit trancher)
 - *Kinetic editing* (calage micro, SFX denses) contre *Ziak* (calage macro, aucun effet surligné) : l'utilisateur aime les deux, **pour des usages différents** (confirmé par lui, 2026-10-09). Le premier pour l'énergie et la rétention sur les réseaux ; le second pour la gravité et la menace dans un clip ou un film de marque. Choisir selon l'usage, sans mélanger les deux par défaut.
