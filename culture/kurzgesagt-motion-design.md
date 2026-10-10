@@ -1,13 +1,13 @@
 # Kurzgesagt – In a Nutshell : le motion design de vulgarisation (Munich, depuis 2013)
 
-- **Qui** : studio d'animation et de design fondé par **Philipp Dettmer** (diplômé en design d'information à la Hochschule München ; son mémoire de licence sur l'infographie était déjà une vidéo). Chaîne créée le 10 juillet 2013. Environ 35 personnes en 2020 (OMR), environ 70 en 2023 (Wikipedia). Chaîne allemande : *Dinge Erklärt – Kurzgesagt*.
-- **Modèle économique** : publicité YouTube jugée trop instable ; dons des spectateurs (Patreon, le « bird army »), boutique, sponsors, subventions (Fondation Gates en 2015, Open Philanthropy en 2022). Environ 65 % des revenus viennent du public sur 2020-2022 (Wikipedia).
-- **Devise publique** : « Quality > Quantity », soit environ **1 200 heures par vidéo** de 8 à 12 min.
+- **Qui** : studio d'animation et de design fondé par **Philipp Dettmer** (diplômé de la Hochschule München, Wikipedia ; études de design orientées infographie et mémoire de licence réalisé en vidéo avec un ami, OMR). Chaîne créée le 10 juillet 2013, première vidéo (sur l'évolution) le 12 juillet. Environ 35 personnes en juin 2020 (OMR), environ 70 « après une dizaine d'années » (Wikipedia, sans année précise). Chaîne allemande : *Dinge Erklärt – Kurzgesagt*.
+- **Modèle économique** : publicité YouTube jugée trop instable ; dons des spectateurs (Patreon, le « bird army »), boutique, sponsors, subventions (570 000 $ de la Fondation Gates en 2015, 2,97 M€ d'Open Philanthropy en mars 2022). 65 % des revenus de 2020-2022 viennent du public (merchandising, Patreon, AdSense), 24 % des sponsors et subventions (déclaration du studio de janvier 2023, via Wikipedia ; vérifié 2026-10-10).
+- **Devise publique** : « Quality > Quantity » [NON VÉRIFIÉ : formule non retrouvée sur la page du studio ni dans la transcription], soit « at least 1,200 hours » par vidéo (transcription) ; Gigazine parle d'une vidéo d'environ 9 min.
 - **Qualité des sources (consultées le 2026-10-10)** : bonne pour le processus, publié par le studio lui-même (page « Our video process », vidéo « How to Make a Kurzgesagt Video in 1200 Hours » lue par transcription). **Faible pour le style** : aucun entretien de directeur artistique trouvé, et je n'ai pu regarder aucune vidéo. Toute description faite à l'œil est marquée **[à vérifier à l'image]**.
 
 ## Ce que ça cherche à faire ressentir / comprendre
 
-- Rendre une science complexe « fascinante et belle » sans la trahir, puis **dire ce qu'on en ressent** : la page du studio parle d'un ton qui mêle « rationalité et optimisme » et vise à laisser au spectateur une perspective nouvelle.
+- Rendre une science complexe fascinante et belle [citation non retrouvée sur la page « Our video process » le 2026-10-10 : NON VÉRIFIÉ] sans la trahir, puis **dire ce qu'on en ressent** : la page du studio parle d'un ton qui mêle « rationalité et optimisme » et vise à laisser au spectateur une perspective nouvelle.
 - L'émotion recherchée relève de l'**émerveillement tranquille** plus que de l'excitation. Dettmer dit qu'en optimisant pour les vues, ils ne feraient que « bombes atomiques, aliens et trous noirs », et qu'ils font plutôt ce qu'ils aimeraient regarder eux-mêmes (OMR, 2020).
 - Une échelle vertigineuse (cellule, galaxie, mort du Soleil) tenue par une **mascotte rassurante** : l'oiseau rond et ses variantes, qui rend l'infini supportable.
 
@@ -15,10 +15,10 @@
 
 **Processus publié (5 phases)**
 1. **Recherche** : quelques semaines de livres et d'articles, des experts consultés, une feuille de sources publiée pour chaque vidéo.
-2. **Script** : environ une douzaine de versions. Le studio dit que l'écriture est **le goulot d'étranglement**, de quelques semaines à plusieurs années.
-3. **Illustration** : on esquisse d'abord des **métaphores visuelles** par scène, puis environ **200 tableaux** dans Illustrator (vectoriel), dessinés en majorité de zéro même si une bibliothèque existe. **2 à 3 illustrateurs pendant 8 à 12 semaines**, avec des easter eggs cachés.
-4. **Voix puis animation** : le narrateur (Steve Taylor) enregistre paragraphe par paragraphe (Neumann TLM 103, Pro Tools) et refait les phrases « jusqu'à ce que le flux soit juste ». **La voix fixe le timing de l'animation.** Celle-ci se fait dans After Effects (avec des essais en Cinema 4D) : chaque illustration est découpée en centaines ou milliers de calques, les personnages sont riggés, et tout est animé à la main « sauf quelques plugins ». **2 à 3 animateurs pendant 8 à 12 semaines.**
-5. **Musique et sound design en dernier** : une bande originale composée pour chaque vidéo par **Epic Mountain**, une société munichoise de musique et de sound design. Les albums sortent sur Bandcamp et Spotify. Le studio conseille le casque et dit que la différence est « frappante » quand on regarde une vidéo sans musique ni effets.
+2. **Script** : « about a dozen drafts » (page du studio). « Writing is the bottleneck for our videos » (transcription) ; de quelques semaines à « literally years » (Gigazine).
+3. **Illustration** : on esquisse d'abord des **métaphores visuelles** par scène, puis en moyenne **200 tableaux** (« 200 panels ») dans Illustrator (vectoriel), dessinés en majorité de zéro même si une bibliothèque existe [bibliothèque : NON VÉRIFIÉ]. **2 à 3 illustrateurs pendant 8 à 12 semaines**, avec des easter eggs cachés.
+4. **Voix puis animation** : le narrateur (Steve Taylor, voix de la chaîne depuis la première vidéo) enregistre une version complète puis reprend paragraphes et phrases (Neumann TLM 103, Pro Tools), avec le souci de garder le flux (« It's important to keep the flow » ; la version précédente citait une formule non retrouvée). **La voix fixe le timing de l'animation.** Celle-ci se fait dans After Effects (avec des essais en Cinema 4D) : les « hundreds or thousands of parts » des illustrations y sont importés, les personnages sont riggés, et tout est animé à la main « aside from a few plugins ». **2 à 3 animateurs pendant 8 à 10 semaines** selon la transcription (8 à 12 selon Gigazine ; la version précédente disait 8 à 12).
+5. **Musique et sound design en dernier** : une bande originale composée pour chaque vidéo par **Epic Mountain**, une société munichoise de musique et de sound design. Les albums sortent sur Bandcamp, Spotify, iTunes et SoundCloud (Kottke, 2018). Le studio conseille le casque « to get the full depth of it » (transcription) ; le mot « frappante » n'a pas été retrouvé [NON VÉRIFIÉ].
 - 2 à 4 vidéos sont produites en parallèle, avec des revues tous les quelques jours ; certaines sont abandonnées en cours de route.
 
 **Style graphique**
@@ -48,18 +48,18 @@
 ## Clichés qui en découlent (chez les suiveurs)
 
 - **Les « Kurzgesagt-likes »** : aplats saturés sur fond bleu nuit, personnages ronds sans bouche, planètes avec halo, voix off calme et musique synthé planante, sans le travail de script. Le résultat est joli et creux.
-- **Les chaînes « faceless » et l'« AI slop »** : en octobre 2025, le studio a publié « AI Slop Is Killing Our Channel ». Il y dénonce des chaînes qui copient « sans relâche » son travail, et raconte que le filtre anti-IA de YouTube a pris ses propres vidéos pour du slop, ce qui a donné sa pire mise en ligne depuis 2013 (Dexerto). Le style flat et narré est **facile à imiter en surface**, et c'est sa faiblesse.
+- **Les chaînes « faceless » et l'« AI slop »** : en octobre 2025, le studio a publié « AI Slop Is Killing Our Channel » (Gigazine, 8 oct. 2025) ; l'idée qu'il y dénonce des chaînes qui le copient « sans relâche » n'est pas retrouvée dans le résumé de Gigazine [NON VÉRIFIÉ]. **Épisode distinct** (corrigé : la version précédente fusionnait les deux) : le 31 juillet 2026, le studio annonce que les outils de détection d'IA de YouTube ont pris sa vidéo sur les « superpredators » pour du slop ; elle est devenue sa pire mise en ligne depuis 2013 malgré un bon engagement, YouTube a reconnu une erreur et la vidéo a été retirée pour être republiée (Dexerto, 7 août 2026). Le style flat et narré est **facile à imiter en surface**, et c'est sa faiblesse.
 - **Le wiggle permanent de tous les éléments** pris pour du « tout bouge un peu » : l'idle doit être lent, de faible amplitude et désynchronisé, sinon il devient du bruit.
 - **Une métaphore par phrase, mécaniquement** : l'image-gag qui illustre chaque mot fatigue. Il faut aussi des plans qui durent.
-- **TED-Ed** n'est pas un suiveur mais un modèle parallèle : un enseignant écrit le script, puis un animateur différent est commandé pour chaque leçon (1 à 2 mois de développement et 6 à 8 semaines d'animation selon Ofcom). Son style varie donc d'une leçon à l'autre ; c'est l'inverse de la constance de Kurzgesagt.
+- **TED-Ed** n'est pas un suiveur mais un modèle parallèle : un enseignant écrit le script, puis un animateur différent est commandé pour chaque leçon (1 à 2 mois de développement et 6 à 8 semaines d'animation selon Ofcom [NON VÉRIFIÉ : document Ofcom inaccessible (403) le 2026-10-10]). Son style varie donc d'une leçon à l'autre ; c'est l'inverse de la constance de Kurzgesagt.
 
 ## Faits incertains
 
 - Palette, fonds sombres, absence de contour, idle animation : **observations de mémoire, non vérifiées image par image**.
 - « 1 200 heures » est une moyenne promotionnelle ; un autre entretien cité parle d'environ 200 heures (sans doute une vidéo ancienne). Les durées par poste sont des fourchettes du studio.
-- Les noms des compositeurs d'Epic Mountain ne sont donnés par aucune source lue ; leur méthode de travail avec le studio (avant ou après l'animatique) non plus.
+- Les noms des compositeurs d'Epic Mountain ne sont donnés par aucune source lue ; leur méthode de travail avec le studio (avant ou après l'animatique) non plus. Epic Mountain est bien « a music and sound design company based in Munich » (Kottke, vérifié 2026-10-10).
 - La part du logiciel 3D (C4D) et des plugins n'est pas détaillée.
-- Les controverses : vidéos *Addiction* et *Refugee Crisis* retirées en 2019 pour des affirmations insuffisamment vérifiées ; vidéo sur l'exercice refaite en 2024 (Wikipedia).
+- Les controverses : vidéos *Addiction* et *The European Refugee Crisis and Syria* (2015) retirées en 2019 car elles ne répondaient plus aux standards du studio ; vidéo sur l'exercice (juillet 2024) critiquée puis refaite en septembre 2024 après consultation d'experts (Wikipedia, vérifié 2026-10-10).
 
 ## Sources (consultées le 2026-10-10)
 
@@ -71,6 +71,6 @@
 - Kottke, « The soundtrack to Kurzgesagt » (2018) : https://kottke.org/18/01/the-soundtrack-to-kurzgesagt
 - Epic Mountain, Bandcamp : https://epicmountainmusic.bandcamp.com/
 - Arts at Michigan, « Simple, Bright, Beautiful » (2019) : https://artsatmichigan.umich.edu/ink/2019/09/27/simple-bright-beautiful-the-work-of-kurzgesagt
-- Dexerto, le détecteur d'AI slop de YouTube : https://www.dexerto.com/youtube/youtubes-ai-slop-detector-incorrectly-targets-kurzgesagt-as-other-creators-fear-same-fate-3395930/
+- Dexerto (7 août 2026), le détecteur d'AI slop de YouTube et la vidéo « superpredators » : https://www.dexerto.com/youtube/youtubes-ai-slop-detector-incorrectly-targets-kurzgesagt-as-other-creators-fear-same-fate-3395930/
 - Gigazine, « AI Slop Is Killing Our Channel » (2025) : https://www.gigazine.net/gsc_news/en/20251008-destructiv-ai
 - Ofcom, document TED-Ed (production des leçons) : https://www.ofcom.org.uk/siteassets/resources/documents/tv-radio-and-on-demand/broadcast-guidance/psb/psb3/10._ted-ed.pdf

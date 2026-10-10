@@ -1,6 +1,6 @@
 # Fabrice Gobert — *Les Revenants*, saison 1 (Canal+, 2012)
 
-Création et scénario : Fabrice Gobert (avec Emmanuel Carrère, Fabien Adda, Céline Sciamma, Nicolas Peufaillit…). Réalisation : Gobert (ép. 1-4) et Frédéric Mermoud (ép. 5-8). Image : Patrick Blossier. Musique : Mogwai. Générique : Emmanuel Ducruet (Batmanu). Production : Haut et Court. 8 × 52 min, environ 100 jours de tournage, 11 M€, Haute-Savoie (Seynod, bassin annécien, Semnoz) et barrage de Tignes.
+Création et scénario : Fabrice Gobert (avec Emmanuel Carrère, Fabien Adda, Céline Sciamma, Nicolas Peufaillit, Catherine Hoffmann). Réalisation : Gobert (ép. 1-4 et 8) et Frédéric Mermoud (ép. 5-8), l'épisode 8 étant crédité aux deux (Wikipédia FR). Image : Patrick Blossier. Musique : Mogwai. Générique : Emmanuel Ducruet (Batmanu). Production : Haut et Court. 8 × 52 min, diffusée sur Canal+ du 26 novembre au 17 décembre 2012, « un peu plus de 100 jours de tournage » et « 11 millions d'euros de budget » (Avcesar, 4 janvier 2013), tournage en avril et août 2012 (Wikipédia FR), Haute-Savoie (Seynod, bassin annécien, Semnoz) et barrage de Tignes.
 Recherches du 2026-10-10. Sources : Channel 4 et Cultbox (entretien Gobert) ; Avcesar (entretien Gobert, 2013) ; AlloCiné (secrets de tournage) ; The Quietus (entretien Mogwai) ; Art of the Title (générique) ; Wikipédia FR (série) et EN (album). Pas de visionnage possible : analyse fondée sur ces textes, plus quelques souvenirs signalés comme tels.
 
 ## Ce que l'œuvre cherche à faire ressentir / comprendre
@@ -12,8 +12,8 @@ Recherches du 2026-10-10. Sources : Channel 4 et Cultbox (entretien Gobert) ; Av
 - Influences revendiquées : *Twin Peaks* (petite ville, bar central, secrets), *Six Feet Under* pour le deuil, *Lost* pour le récit choral.
 
 ## Les choix qui produisent l'effet
-- **Lenteur assumée, construite dès l'écriture** : Gobert revendique un rythme très lent, qu'il juge indispensable ; Carrère soutenait que plus on ralentirait, plus ce serait captivant. Le tempo est donc une décision de scénario (environ un an et demi d'écriture), pas seulement de montage.
-- **Une caméra qui scrute** : Gobert décrit une mise en scène fluide qui reste sur les personnages et les observe. L'enjeu se lit sur les visages des vivants face au revenant, plus que dans l'action. Référence revendiquée : *Morse* (Tomas Alfredson), preuve qu'un film fantastique peut être sombre et lent.
+- **Lenteur assumée, construite dès l'écriture** : Gobert revendique un rythme très lent, qu'il juge indispensable ; Carrère soutenait que plus on ralentirait, plus ce serait captivant. Le tempo est donc une décision de scénario, pas seulement de montage. Durée d'écriture : « un an et demi » `[NON VÉRIFIÉ]` ; Avcesar dit seulement que le projet avait démarré plus de deux ans avant l'arrivée de Gobert et que celui-ci a passé cinq mois avec Carrère sur le squelette de la série.
+- **Une caméra qui scrute** : Gobert décrit une mise en scène fluide qui reste sur les personnages et les observe. L'enjeu se lit sur les visages des vivants face au revenant, plus que dans l'action. Référence revendiquée : *Morse* (Tomas Alfredson), cité par Gobert comme la preuve que des non-Américains peuvent faire du fantastique sans copier le modèle original (Channel 4 ; la fiche disait à tort « sombre et lent », ce qui était une interprétation).
 - **Pas d'effets pour le surnaturel** : les revenants ont l'apparence exacte des vivants. Gobert joue avec le mythe du zombie (le public s'attend à des morts abîmés) précisément en le refusant. L'étrangeté passe par le jeu, le décalage temporel (Camille a toujours 15 ans, sa jumelle en a 19) et les réactions des proches.
 - **La ville comme personnage** : vallée isolée cernée de montagnes, dominée par un barrage. Le décor dit l'enfermement et la menace sans un mot ; le barrage (celui de Tignes) rappelle une catastrophe passée et pèse sur chaque plan large.
 - **Lumière de photographe** : Gobert juge la manière de filmer et d'éclairer la ville « excessivement importante » pour qu'on sente que tout peut arriver. Il a donné à Blossier les photographies de **Gregory Crewdson** comme référence : banlieues ordinaires, éclairées comme des plateaux, à l'heure bleue, où le quotidien semble suspendu. AlloCiné note un jeu d'ombre et de lumière sur les gros plans et des tons froids.
@@ -22,7 +22,7 @@ Recherches du 2026-10-10. Sources : Channel 4 et Cultbox (entretien Gobert) ; Av
 - **Générique en vignettes** : Batmanu compose une vignette par revenant, dans un lieu lié à sa vie passée, à partir d'images de la série retouchées, de plans tournés en seconde équipe sur fond vert, de compositings, d'accélérés et de montagnes ajoutées. Intention : le contraste vie/mort, des images lisibles de plusieurs façons, et des détails cachés pour qui revoit (fissure du barrage, ombre en croix sur la place). Musique : « Hungry Face ».
 - **Enregistrement en deux temps** : Mogwai a enregistré une session pour les épisodes 1-4 et une autre pour 5-8, après une longue phase de démos ; l'EP sort en 2012, l'album de 14 titres en 2013, avec des morceaux développés à partir des courts motifs de la série.
 - **Couleur** : dominante froide, contrastes forts sur les visages (AlloCiné). La référence Crewdson suggère aussi des sources lumineuses motivées dans le décor (lampadaires, fenêtres éclairées) qui isolent les personnages dans la nuit ; ce dernier point est mon interprétation.
-- *De mémoire, non vérifié* : beaucoup de scènes de nuit et de pénombre dans des intérieurs domestiques, des plans larges et posés sur la ville et le lac, de longs silences entre les répliques, et des révélations souvent laissées hors champ ou différées d'un épisode à l'autre.
+- `[NON VÉRIFIÉ]` (de mémoire) : beaucoup de scènes de nuit et de pénombre dans des intérieurs domestiques, des plans larges et posés sur la ville et le lac, de longs silences entre les répliques, et des révélations souvent laissées hors champ ou différées d'un épisode à l'autre.
 
 ## Pourquoi ça marche, et ce qui serait raté autrement
 - Avec des maquillages, des effets numériques ou des coupes de *jump scare*, la série deviendrait un film de zombies parmi d'autres : la peur serait ponctuelle et le spectateur, rassuré par le genre, cesserait de se poser la vraie question (le retour d'un mort aimé). Le refus des effets oblige à regarder **les vivants**.
@@ -32,7 +32,7 @@ Recherches du 2026-10-10. Sources : Channel 4 et Cultbox (entretien Gobert) ; Av
 - Le risque est réel : plusieurs critiques et spectateurs ont trouvé la série trop lente, surtout la saison 2. La lenteur ne tient que si chaque plan contient une tension (un regard, un décor menaçant, une question non résolue).
 - Le décor réel (vraie ville, vrai barrage) ancre le fantastique : ce qui est filmé existe, donc ce qui y arrive paraît possible.
 - Le générique prépare cette lecture : des images banales légèrement truquées (accélérés, compositings) apprennent au spectateur à se méfier de l'ordinaire avant même le premier plan.
-- Accueil : International Emmy de la meilleure série dramatique (2013), Peabody, Globe de cristal ; environ 1,4 million de téléspectateurs Canal+ en moyenne pour la saison 1. Le pari de la lenteur a été validé par la critique et le public.
+- Accueil : International Emmy de la meilleure série dramatique (2013), Peabody Award (2013), Globe de cristal de la meilleure série (2013) ; 1 445 000 téléspectateurs en moyenne sur les huit épisodes, 23,3 % de part d'audience chez les abonnés Canal+, création originale la plus suivie de la chaîne fin 2012 (Wikipédia FR, consulté le 2026-10-10). Le pari de la lenteur a été validé par la critique et le public.
 - Lien avec Gavras (fiche voisine) : même refus des signes de genre pour rendre l'inimaginable crédible, mais là où Gavras emprunte la grammaire du reportage, Gobert emprunte celle du drame familial et de la photographie posée.
 
 ## Principe transférable
@@ -50,13 +50,14 @@ Garde-fou : la lenteur doit être chargée ; un plan long sans question ouverte 
 - https://artofthetitle.com/title/les-revenants (générique de Batmanu : vignettes, techniques, intention vie/mort, détails cachés)
 - https://fr.wikipedia.org/wiki/Les_Revenants_(série_télévisée) (fiche technique, répartition des réalisateurs, diffusion, audiences, prix dont l'International Emmy 2013)
 - https://en.wikipedia.org/wiki/Les_Revenants_(album) (démos jouées sur le plateau, EP 2012 puis album 2013)
+- Revérifications du 2026-10-10 : Wikipédia FR (réalisateurs, dates de diffusion, tournage avril et août 2012, audiences, prix) ; Avcesar (11 M€, plus de 100 jours, lenteur, Carrère, Mogwai) ; Channel 4 (Blossier et Crewdson, « excessively important », influences, *Morse*, deux premiers scripts, Campillo, barrage, Romero)
 
 ## Incertain / à vérifier
 - **Monteurs introuvables** : aucune source consultée ne nomme les chefs monteurs ni ne décrit le découpage (durée moyenne des plans, plans-séquences). Tout ce qui touche au montage est déduit des propos sur le rythme et la mise en scène. À chercher sur IMDb ou au générique de fin.
 - **« Lumière d'hiver »** : selon AlloCiné, la saison 1 a été tournée entre le printemps et l'été 2012. L'impression de froid viendrait donc surtout de l'étalonnage (tons froids) et des choix d'heure et d'éclairage, pas de la saison réelle. À vérifier en voyant la série.
 - Aucune source écrite trouvée sur le travail sonore hors musique (ambiances, silences, mixage) : la section son repose sur Mogwai et sur ma mémoire.
 - Aucun entretien direct de Patrick Blossier trouvé ; sa démarche est connue seulement par Gobert et AlloCiné.
-- Répartition de l'épisode 8 incertaine : Wikipédia l'attribue à Gobert et à Mermoud.
+- Épisode 8 : Wikipédia FR le crédite à Gobert et à Mermoud (répartition exacte du travail inconnue).
 - Le rôle de Frédéric Mermoud dans l'identité visuelle (épisodes 5-8) n'est documenté nulle part dans les sources lues ; on ne sait pas si le style a été fixé par Gobert pour toute la saison.
-- La part de *Six Feet Under* et *Lost* parmi les influences vient de l'entretien Channel 4 résumé par l'outil de lecture : à recouper dans le texte intégral.
+- Influences : relues le 2026-10-10 dans l'entretien Channel 4 (*Twin Peaks* et *Lost* comme inspirations parmi d'autres, *Six Feet Under* comme forte influence). Le rattachement « *Six Feet Under* pour le deuil, *Lost* pour le récit choral » est une interprétation de la fiche.
 - Les observations « de mémoire » (scènes de nuit, silences, hors champ, piano) sont à confirmer au visionnage.
