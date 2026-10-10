@@ -20,3 +20,9 @@ Planches : `A-planche.png`, `B-planche.png` (2 images/s, 15 s). EDL : `edl-A.jso
 
 ## Versé dans les skills
 `montage-rythme` (le tempo propre du sujet, couper sur les points morts) et `montage-kinetic-editing` (quand ne pas l'utiliser : le kinetic écrase un tempo qui évolue).
+
+## v2 (`v2.py`, `A2-planche.png`, `B2-planche.png`)
+- Correction de mon idée de départ : un pendule est **isochrone** (sa période ne dépend pas de l'amplitude), donc « des coupes qui ralentissent avec la lampe » n'a pas de sens physique. Ce qui décroît, c'est l'amplitude, donc l'énergie.
+- **Serré à −1 diaphragme** (en linéaire, ×0,5) : luminance moyenne 136 → 99 (large : 60, mais le large est surtout mur et sol sombres ; le serré ne cadre que la table éclairée, il doit rester plus clair). Le saut au raccord est réduit et devient un rapprochement de la source plutôt qu'un changement d'exposition. À juger en mouvement (phase 2).
+- **B2 « kinetic honnête »** : coupes sur les points morts, de plus en plus espacées (1 s ×5, puis 2 s, 2 s, 4 s ; le dernier plan de 2 s casse la progression, défaut à corriger), whooshs proportionnels à l'amplitude. Le montage **suit l'énergie** du sujet au lieu de l'écraser : énergique au départ (le choc du départ, l'accroche des 2 premières secondes), puis il se retire.
+- Jugement : A reste la plus juste pour un film (le spectateur est captif, l'épuisement se voit en continu) ; **B2 est la bonne version pour un réseau social** (accroche immédiate, puis retrait). Les deux obéissent au même principe : le montage suit le tempo et l'énergie du sujet. B (pulsation constante) est la seule fausse.

@@ -75,7 +75,7 @@ Règle : alterner ART et TECH. Réalimenter dès qu'il reste moins de 10 sujets 
 50. [ ] [ART] Atelier 12 v8 : **lieu encombré** (objets du quotidien) ; l'anomalie doit se cacher parmi d'autres objets et rester trouvable ; saillance mesurée sur le décor riche.
 51. [ ] [ART] Atelier « teaser 15 s » d'après la fiche bande-annonce : une promesse, 3 paliers, un noir avant la frappe, texte monté en cartons — à partir des plans des ateliers 10-14 ; critique : cliché ou forme ?
 52. [~] [TECH] (session 9 : résidu spectral fait, `labo/saillance/` ; reste modèle appris, pièces 06 et 10) Saillance : remplacer le modèle maison (luminance × contraste) par un modèle publié et libre (spectral residual de Hou et Zhang 2007, ou équivalent) et comparer sur les pièces 06, 10, 12.
-54. [ ] [ART] Pièce 14 v2 : exposition du serré −1 diaphragme (saut de lumière au raccord), version B « honnête » où les coupes ralentissent avec la lampe (durées proportionnelles à la période apparente) ; comparer à A.
+54. [~] [ART] (session 9 : v2 faite, serré −1 diaph., B2 coupes espacées avec l amplitude ; reste : corriger le dernier plan de B2, juger en mouvement en phase 2) Pièce 14 v2.
 53. [ ] [ART] Examen n°6 (session 10) : brief où une anomalie, un froid de relation ou un ralenti sont des enjeux (mettre à l'épreuve les leçons de la session 9).
 
 ## Fait (trace)
