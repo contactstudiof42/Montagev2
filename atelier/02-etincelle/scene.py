@@ -72,8 +72,8 @@ for fc in cube.animation_data.action.fcurves:
 for i in range(3):
     bpy.ops.mesh.primitive_uv_sphere_add(radius=0.18, location=(-8, 0, 0.18)); bpy.ops.object.shade_smooth()
     s = obj(bpy.context.object, chrome); s.location.y = -3 + i * 0.5
-    s.location.x = -6; s.keyframe_insert("location", frame=40 + i * 4)
-    s.location.x = 4; s.keyframe_insert("location", frame=60 + i * 4)
+    s.location.x = -2.2; s.keyframe_insert("location", frame=40 + i * 4)
+    s.location.x = 2.2; s.keyframe_insert("location", frame=64 + i * 4)
     for fc in s.animation_data.action.fcurves:
         for k in fc.keyframe_points: k.interpolation = "LINEAR"
 
@@ -108,7 +108,7 @@ def cam(name, loc, target, lens):
 CAMS = {
     "pendule": cam("pendule", (0.6, -2.4, 0.35), (0, 0, 0.8), 45),
     "cube": cam("cube", (3.7, -2.0, 0.2), (3, 0, 0.45), 35),
-    "spheres": cam("spheres", (0.6, -5.6, 0.35), (0.0, -2.5, 0.18), 35),
+    "spheres": cam("spheres", (0.15, -4.3, 0.16), (0.0, -2.6, 0.2), 50),
     "allumette": cam("allumette", (-3.25, -0.6, 0.95), (-3, 0.5, 0.85), 85),
     "large": cam("large", (-2.45, -2.3, 0.75), (-2.85, 0.5, 0.6), 30),
 }

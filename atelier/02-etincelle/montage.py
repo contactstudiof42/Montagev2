@@ -88,7 +88,9 @@ def poser(sig_off, image, db, nom):
 
 ARRET = role["silence"]; IGN = role["allumage"]
 # Seconde horloge : tic toutes les 15 images, indépendant des coupes, jusqu'au silence
-for img in range(0, ARRET, 15): poser(tic(2400 if (img//15) % 2 else 2150), img, -16, "tic")
+# v3 : le tic est calé sur les passages du pendule à l'écran quand il y a un hook pendule (image 1 = passage)
+T0 = 1 if "hook" in role else 0
+for img in range(T0, ARRET, 15): poser(tic(2400 if (img//15) % 2 else 2150), img, -8 if img == T0 and T0 else -16, "tic")
 # Coupes : whoosh sur les plans de sphères (crête sur la coupe), impacts sur les poses du cube
 for i, (cam, a, d, r) in enumerate(EDL):
     c = debuts[i]
