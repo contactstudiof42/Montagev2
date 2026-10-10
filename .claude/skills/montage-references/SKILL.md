@@ -57,6 +57,7 @@ Règle de décision : plaisir → Bass ou Gondry ; tension → Cooper ; recul cr
 18. **Montrer l'effet plutôt que l'action** : la lumière du tir, pas le tir.
 19. **La forme incarne le titre** : « Même pas un grincement », c'est un montage sans effort visible, sans transitions, sans calage voyant.
 20. **Poser une règle du temps et la faire entendre** ; **le son qui arrache** (Interstellar).
+20b. **Le clip remplace la parole de l'artiste** (PNL, Kekra, Ziak : `culture/clips-rap-francais-pnl-et-autres.md`, session 6) : un seul lieu ou concept qui dit qui il est (la tour Eiffel prise par PNL, l'usine sans visage de Ziak) ; un personnage seul dans un cadre immense ou aucun visage. **Épouser le tempo** (PNL, mélancolie) **ou le contredire** (Ziak, menace) : choisir selon l'émotion, jamais par défaut. Durées de plans de ces clips non mesurées (mémoire) : à mesurer avec `labo/analyse-clip/` si l'utilisateur fournit les fichiers.
 21. **Garder la dominante « fausse » et faire mériter la couleur** (Joker).
 
 ## Tensions entre principes (où mon regard doit trancher)
