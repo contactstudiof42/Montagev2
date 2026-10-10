@@ -84,3 +84,4 @@ Et une cinquième, d'état : **la saturation** (Noé / Tom Kan, générique d'*E
 
 ## Lacunes (voir BACKLOG)
 Documentaire : Varda, Marker, Morris faits (sessions 3-4). Pas encore de références en clips récents ni en motion design de studio (Buck, ManvsMachine, Elastic hors *True Detective*).
+- **Pub émotionnelle de Noël (John Lewis)** (session 10, `culture/pub-emotionnelle-noel-john-lewis.md`) : grossir une vérité douloureuse jusqu'à la fable pour éviter la pitié ; la chute qui **relit** tout le film plutôt que de surprendre ; le geste doit atteindre l'autre (reproche fait à *Man on the Moon*) ; la reprise lente d'un tube est devenue un cliché de catégorie.

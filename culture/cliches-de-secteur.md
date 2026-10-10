@@ -13,6 +13,7 @@ _Fiche de synthèse (session 4, 2026-10-10). Origine : examen n°1, où deux cli
 | **Alimentation** | ralenti de sauce qui coule, vapeur, grand-mère en cuisine, champ de blé au soleil couchant | craquement amplifié en gros plan | le geste du producteur, le temps, la saison |
 | **Corporate** | vue de drone sur le siège, open space avec gens qui rient devant un écran, interviews en intermède, timelapse de ville | musique stock « corporate » (ukulélé, piano + clap) | dispositifs de `montage-formats` (compétence, objet-témoin), une idée propre au sujet (cf. examen n°3 « Deux vies ») |
 | **Clip rap (mon propre risque)** | voiture et nuit, fumée, plans de groupe en contre-plongée, drone sur la cité | — | l'image-concept propre au morceau (examen n°2 : la marée qui découvre) ; ne pas plaquer Ziak comme recette |
+| **Caritatif, solidarité, personnes âgées** *(session 10)* | vieille dame seule à la fenêtre sous la pluie, horloge, téléphone qui ne sonne pas, main ridée au ralenti, désaturé bleu puis tout doré quand le bénévole arrive | piano lent, **reprise ralentie d'un tube connu** (gabarit John Lewis 2009-2022, que la marque elle-même quitte), tic-tac | grossir la vérité jusqu'à la fable (la Lune, `culture/pub-emotionnelle-noel-john-lewis.md`), l'humour, une vie pleine où ne manque qu'une chose, montrer que le geste atteint l'autre |
 | **IA générative** | caméra qui avance sans fin, morphing, symétrie parfaite, peau lisse, lumière dorée | musique générée générique | voir `montage-ia-generative` §2 |
 
 ## Principe transférable
