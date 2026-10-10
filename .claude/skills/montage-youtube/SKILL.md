@@ -41,6 +41,8 @@ Version 1 (session 17, 2026-10-10), demandée par l'utilisateur : une culture Yo
    - Atelier « à la manière d'EGO » (pièce 22, `atelier/22-a-la-maniere-d-ego/`) : **le chiffre se dit, il ne s'écrit pas, quand l'image le montre déjà** ; l'écrire en grand (version « explicatif ») double l'image et fait lire au lieu de ressentir. L'écrire reste juste quand l'image ne peut pas le montrer. Le blanc clinique se mesure : YAVG médiane > 200 (plage limitée), sinon c'est un gris de rendu par défaut. [TESTÉ EN ATELIER]
 13. **Concevoir un système, pas une séquence** (habillage de chaîne) : palette, rigs, cartons de chapitre, lower third maison ; le sur-mesure pour 2-3 moments par vidéo. **Partir d'un template, c'est déjà choisir le cliché.**
 
+19. **Le contexte de visionnage est une forme** *(examen n°10)* : une vidéo regardée le soir, au lit, au casque (vérifier les heures de visionnage dans les statistiques) peut être conçue pour cet état : luminosité, volume et rythme qui baissent avec le sujet, voix intelligible à faible volume. Ce n'est pas une contrainte technique, c'est une direction possible.
+
 ## Méthode pour une vidéo longue confiée
 1. Genre et contrat : divertissement (enjeu, progression), face caméra (personnalité), essai (argument), explicatif (question), vlog (journée racontée), motion (concept). Le genre fixe l'unité de rythme.
 2. Promesse : titre + miniature (au moins 2 variantes à tester : YouTube « Test & Compare » jusqu'à 3 variantes, choisit par **durée de visionnage par impression**, pas par clic ; titres testables depuis décembre 2025, source secondaire).
