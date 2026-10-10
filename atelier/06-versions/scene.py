@@ -97,6 +97,11 @@ for fc in pivot.animation_data.action.fcurves:
         kp.interpolation = "LINEAR"
 
 V = P.get("variante", "seule")
+if P.get("indice_lumiere"):  # v3 : baisse brève de la fenêtre (un indice qu'on peut relire, ou pas)
+    f0, f1, k = P["indice_lumiere"]; e = fen.data.energy
+    for f, val in ((f0 - 1, e), (f0, e * k), (f1, e * k), (f1 + 1, e)):
+        fen.data.energy = val; fen.data.keyframe_insert("energy", frame=f)
+    fen.data.energy = e
 if V == "tremble":  # secousse : quelques millimètres, amortie
     a, b = P.get("tremble", [36, 44])
     for k, f in enumerate(range(a, b + 1)):
