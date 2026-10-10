@@ -8,12 +8,12 @@ _Lire en premier. Mis à jour à chaque fin de session._
 - **Atelier** : 01 (v6 réf.), 02 (v6 réf.), 03 (v3), 04 (v2b mystère / v6 suspense ; `scene.py` accepte maintenant `rust_col`), **05 « Trois étalonnages »** (v1-v6 + test de scintillement ; `grade.py` = arbre de nodes numpy, `scintillement.py`), **06 « Versions »** (Morris ; `scene.py` 3 variantes seule/tremble/ombre + insert, `montage.py <v> <edl.json>`).
 - **Labo** : + `workflows/aaf_pistes.py` (AAF par familles, relu identique par pyaaf2 et OTIO).
 - **Sources** : + `mcp-etat-public-2026-10.md`, `resolve-scripting-api-19-20.md` (versé dans `montage-resolve`).
-- **Examens** : n°1 (13/20), n°2 (14/20), n°3 (15/20). **N°4 en session 6.**
+- **Examens** : n°1 (13/20), n°2 (14/20), n°3 (15/20), n°4 (14/20, session 5). **N°5 en session 8.**
 
 ## Reprendre ici (session 6)
 1. Démarrage normal. Blender : `curl -sSL -o blender.tar.xz https://download.blender.org/release/Blender4.2/blender-4.2.3-linux-x64.tar.xz && tar xf blender.tar.xz` dans le scratchpad (30 s). `python3 -m pip install -q numpy pillow opentimelineio otio-fcp-adapter otio-cmx3600-adapter pyaaf2 otio-aaf-adapter` (utiliser `python3 -m pip`, `pip` seul vise un autre Python).
 2. Pièges : tester la **1re et la dernière image** d'un plan Blender animé ; vérifier la **pose de repos** d'un objet qui tombe (pièce 06 v1 : la tasse finit dans le sol) ; ne jamais `cd` dans un paquet Python (son `types.py` masque la bibliothèque standard) ; `bash -c` multi-commandes bloqué → script `.sh` dans le scratchpad ; Cycles 480×270 16 échantillons ≈ 2,5 s/image avec 2 sources surfaciques.
-3. **Examen n°4** en premier (fiction courte ou documentaire long, avec une question d'étalonnage).
+3. Fiches *Aftersun* et *Les Revenants* (révélées par l'examen n°4), surround et présence hors champ.
 4. Puis BACKLOG : pièce 06 v2 (voir `atelier/06-versions/CRITIQUE.md`), verser la recherche Resolve 19-20 dans `montage-resolve`, pièce 04 (sous-marin animé, 9:16), « Spirale ».
 5. Sous-agents de recherche en parallèle (3 en session 5, fiables) ; relire leurs fiches avant de les verser.
 
