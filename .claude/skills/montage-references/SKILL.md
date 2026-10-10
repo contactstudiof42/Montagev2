@@ -13,6 +13,8 @@ Version 1 (session 1, 2026-10-09), synthèse de 11 fiches de `culture/`. Chaque 
 3. **Le rythme suit l'état intérieur** : dilater l'instant décisif, compresser le reste (Schoonmaker). Un seul ralenti bien placé vaut mieux que du ralenti partout.
 4. **Deux blocs de cadence, une bascule** (Glazer) ; ou **une seule courbe d'accélération** adossée à une musique qui accélère déjà (Baxter et Wall, l'aviron de *The Social Network*). Ne pas faire les deux dans 30 s.
 5. **Couper à la fin d'une pensée**, là où le spectateur clignerait (Murch).
+5b. **Monter le souvenir comme la mémoire** (*Aftersun*, Wells / McClendon, `culture/aftersun-wells-mcclendon.md`) : fragments anodins, archive incomplète, sens qui arrive en retard. Une texture par régime de temps (35 mm, MiniDV, espace mental) remplace le carton « il y a longtemps ». Un plan tenu un peu trop longtemps se charge après coup de ce qui suit. Quand un montage ne touche plus, revenir aux deux ou trois moments qui émeuvent encore et tout reconstruire autour. → Corrige ma leçon de l'atelier 05 : le « souvenir » ne se lit pas par l'étalonnage seul, il lui faut **un changement de texture et une structure**.
+5c. **L'extraordinaire avec la grammaire de l'ordinaire** (*Les Revenants*, Gobert, `culture/les-revenants-gobert.md`) : pas d'effets, cadres posés, durées longues, musique retenue (Mogwai composée sur les scripts, avant le tournage). Privé des signaux du genre, le spectateur ne sait plus quand avoir peur, donc il reste inquiet. Garde-fou : un plan lent doit porter une question ouverte, sinon ce n'est qu'un plan long.
 
 ## B. Image et musique
 Trois stratégies, **à choisir consciemment** car elles se contredisent :

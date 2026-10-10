@@ -34,7 +34,7 @@ def mat(name, col, rough=0.5):
 
 def boite(nom, loc, dim, m, rot=(0, 0, 0)):
     bpy.ops.mesh.primitive_cube_add(location=loc, rotation=rot); o = bpy.context.object; o.name = nom
-    o.scale = (dim[0] / 2, dim[1] / 2, dim[2] / 2); bpy.ops.object.transform_apply(scale=True)
+    o.scale = (dim[0] / 2, dim[1] / 2, dim[2] / 2); bpy.ops.object.transform_apply(location=False, rotation=False, scale=True)  # appliquer aussi la position décentre la forme de collision (piège vu en s6)
     o.data.materials.append(m); return o
 
 def rigide(o, kind="ACTIVE", shape="CONVEX_HULL", masse=0.1, frot=0.5, rebond=0.1):
@@ -51,7 +51,7 @@ TOP = 0.76
 sol = boite("sol", (0, 0, -0.01), (8, 8, 0.02), mat("sol", (0.12, 0.09, 0.07), 0.6)); rigide(sol, "PASSIVE", "BOX", frot=0.8)
 boite("mur", (0, 1.2, 1.5), (8, 0.02, 3), mat("mur", (0.42, 0.40, 0.36), 0.9))
 bois = mat("bois", (0.16, 0.09, 0.05), 0.45)
-plateau = boite("plateau", (0, 0.3, TOP - 0.02), (1.7, 0.7, 0.04), bois); rigide(plateau, "PASSIVE", "BOX", frot=0.6)
+plateau = boite("plateau", (0, 0.3, TOP - 0.02), (1.7, 0.7, 0.04), bois); rigide(plateau, "PASSIVE", "BOX", frot=0.8)
 for dx in (-0.8, 0.8):
     for dy in (0.0, 0.6):
         boite("pied", (dx, dy, 0.36), (0.04, 0.04, 0.72), bois)
@@ -76,7 +76,7 @@ dominos = []
 ivoire = mat("ivoire", (0.8, 0.76, 0.66), 0.35)
 for i in range(n):
     d = boite(f"domino{i}", (x_d0 + i * pas, 0.2, TOP + 0.045), (0.012, 0.045, 0.09), ivoire)
-    rigide(d, shape="BOX", masse=0.02, frot=0.5, rebond=0.05); dominos.append(d)
+    rigide(d, shape="BOX", masse=P.get("masse_domino", 0.05), frot=0.7, rebond=0.02); dominos.append(d)
 
 # Tasse au bord droit (bord du plateau à x = 0.85)
 xt = P.get("x_tasse", 0.80)
@@ -94,10 +94,10 @@ deb.data.energy = 40; deb.data.color = (0.8, 0.88, 1.0); deb.data.size = 2
 deb.rotation_euler = (math.radians(60), 0, math.radians(30))
 
 CAMS = {  # loc, rot (deg), focale
-    "large":   ((0.1, -1.75, 1.05), (78, 0, 0), 30),
-    "livre":   ((-0.45, -0.32, 0.86), (80, 0, 25), 50),
-    "dominos": ((-0.02, -0.45, 0.84), (82, 0, 8), 50),
-    "tasse":   ((0.55, -0.62, 0.70), (88, 0, 22), 45),
+    "large":   ((0.05, -1.45, 0.95), (76, 0, 0), 30),
+    "livre":   ((-0.45, -0.45, 0.88), (80, 0, 0), 35),
+    "dominos": ((0.41, -0.35, 0.86), (84, 0, 0), 32),
+    "tasse":   ((0.95, -1.0, 0.42), (90, 0, 0), 26),
 }
 c = P.get("camera", "large"); loc, rot, lens = CAMS[c]
 bpy.ops.object.camera_add(location=loc, rotation=tuple(math.radians(a) for a in rot))
@@ -114,4 +114,8 @@ if P.get("mode") == "sim":
     print("SIM OK")
 else:
     bpy.ops.ptcache.bake_all(bake=True)
-    bpy.ops.render.render(animation=True)
+    if P.get("still"):  # une image de contrôle seulement
+        sc.frame_set(P["still"]); sc.render.filepath = os.path.join(out, "%s_%04d.png" % (c, P["still"]))
+        bpy.ops.render.render(write_still=True)
+    else:
+        bpy.ops.render.render(animation=True)

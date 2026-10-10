@@ -45,6 +45,15 @@ Version 1 (session 1, 2026-10-09). Sources : `culture/walter-murch-blink-of-an-e
 - Fiches : faites — Ben Burtt, Gary Rydstrom (session 4, `culture/`). Reste : Murch (sound design d'*Apocalypse Now*), le silence chez Kubrick / Bresson.
 - Atelier : même image, trois bandes son (avec, contre, silence) ; critique comparée.
 
-## Présence non montrée (ajout examen n°4, [THÉORIQUE])
-Quand un film doit suggérer sans trancher (un visiteur, une menace), le son hors champ est l'outil le plus juste : il crée une présence que l'image ne confirme pas. En salle 5.1, un son discret dans les canaux arrière (respiration, craquement d'une chaise) est entendu dans le dos du spectateur, comme par le personnage. Pièges : le repli stéréo (downmix) le ramène devant ou l'efface ; le vérifier en stéréo et au casque. À documenter : niveaux, placement, convention des festivals.
-
+## Présence non montrée et hors champ (session 6, sourcé : `sources/surround-hors-champ-2026-10.md`)
+Quand un film doit suggérer sans trancher (un visiteur, une menace), le son hors champ est l'outil juste : il crée une présence que l'image ne confirme pas.
+- **Hors champ actif ou passif** (Chion, *L'Audio-vision*) : l'actif pose une question (« qu'est-ce que c'est ? ») et fait chercher ; le passif installe un territoire et stabilise (rumeur de ville). Décider lequel on veut **avant** de placer le son. Cas extrême : *La Zone d'intérêt* (le camp n'est qu'entendu).
+- **Acousmêtre** : une voix qu'on ne voit pas a des pouvoirs (tout voir, être partout) ; elle les perd quand on montre le visage. Retarder la désacousmatisation, c'est garder la menace.
+- **Règles pour une présence dans les arrières** [THÉORIQUE pour le ressenti, chiffres TESTÉS EN LABO] :
+  1. Préférer un son de territoire à une source ponctuelle unique (une source isolée dans une surround fait tourner la tête vers la sortie de secours).
+  2. Présence active = petits indices intermittents (pas, frottement, respiration), puis ramener vers l'avant au moment choisi.
+  3. **Décorréler Ls et Rs** : la même ambiance mono dans les deux arrières **s'annule entièrement** en Lt/Rt écouté en mono (-70 LUFS mesurés).
+  4. **Au downmix stéréo Lo/Ro, un élément des arrières perd 4,5 LU** (-30,0 → -34,5 LUFS, revérifié en session 6) contre ~1,6 LU pour un mix complet : il recule d'environ 3 LU par rapport au reste. Écouter (ou mesurer) le Lo/Ro avant de valider.
+  5. Rien d'essentiel dans le LFE : BS.1770 l'exclut de la mesure et `-ac 2` le jette.
+  6. Pas de dialogue utile dans les arrières.
+- Recettes ffmpeg (fabrication 5.1 de test, downmix ITU par `pan`, phase moyenne) et pièges (`-ac 2` est 7,6 dB trop bas : `aresample=rematrix_maxval=10` ou `pan`) : voir `montage-loudness-livraison` §5.1 et la source.

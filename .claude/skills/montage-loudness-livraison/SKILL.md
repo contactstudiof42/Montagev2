@@ -115,6 +115,13 @@ ffmpeg n'a pas de gating sur le dialogue. Il faut un compteur dédié (Dolby Med
 8. Le débit AAC affiché est inférieur au débit demandé sur un signal simple. Ce n'est pas un défaut.
 9. [THÉORIQUE] Normaliser **après** le dernier changement de montage : un plan ajouté décale l'intégré.
 
+## 5 bis. Livraison 5.1 (session 6, détail : `sources/surround-hors-champ-2026-10.md`)
+- **France, PAD (CST RT 040 v1.2, 2016, lue)** : -23 LUFS ±1 LU, **-3 dBTP** (plus strict que R128), pistes 1-6 = L R C LFE Ls Rs, mesure en 5.1 **et** en Lt/Rt, Lo/Ro, dual mono. France Télévisions (annexe 2023) ne prévoit **pas** de 5.1 (stéréo, pistes 3-6 en silence). **Arte : aucune spec publique trouvée**, demander au chargé de production.
+- **LFE** : alignement +10 dB à la lecture, limité à 120 Hz, jamais d'info essentielle (ITU-R BS.775) ; exclu de la mesure BS.1770 ; surrounds pondérés ×1,41.
+- **Downmix ITU Lo/Ro sans LFE** [TESTÉ EN LABO, s6] : `-af "pan=stereo|FL=FL+0.7071*FC+0.7071*BL|FR=FR+0.7071*FC+0.7071*BR"`. **Ne pas utiliser `-ac 2` pour juger un downmix** : swresample normalise les coefficients, résultat 7,6 dB plus bas (mesuré -42,1 contre -34,5 LUFS) ; sinon `-af aresample=rematrix_maxval=10 -ac 2`.
+- **Piège d'étiquettes** : la disposition `5.1` de ffmpeg nomme les arrières `BL/BR`, `5.1(side)` les nomme `SL/SR` ; en `7.1`, ffmpeg met les arrières en 5-6 et les côtés en 7-8. Vérifier avec `ffprobe` avant tout `pan`.
+- **Compatibilité mono** : mesurer la phase moyenne (`aphasemeter`) ; une ambiance identique dans Ls/Rs disparaît en Lt/Rt mono.
+
 ## 6. Checklist de livraison
 
 - [ ] Mix validé à l'oreille, dialogue stable et intelligible
