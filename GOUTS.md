@@ -13,6 +13,9 @@ _Fichier dicté par l'utilisateur (2026-10-09). Claude le crée à sa demande, m
 - J'aime les montages en **« kinetic editing »**, avec des **cuts rapides** et **beaucoup de SFX**.
 - (D'autres références à venir.)
 
+## Chaînes YouTube (dicté le 2026-10-10)
+- « En chaîne YouTube vraiment bien, c'est **Ego** surtout. » (chaîne française EGO : vulgarisation philosophique et scientifique au rendu cinématographique.)
+
 ## Précision (2026-10-09)
 - Le kinetic editing et le clip de Ziak (montage qui ne colle pas au beat) : j'aime les deux, pour des **usages différents**.
 
