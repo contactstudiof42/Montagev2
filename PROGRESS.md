@@ -6,10 +6,10 @@ _Lire en premier. Mis à jour à chaque fin de session._
 - Développer une **culture YouTube / internet** (divertissement, essai vidéo, vulgarisation, vlog, motion de chaîne, Shorts, cultures d'edit) au même niveau que cinéma et clip. Voir BACKLOG « Consigne » (Y1-Y6) : une part de chaque session jusqu'à parité.
 
 ## Où on en est (après la session 19, 2026-10-10)
-- **Session 19** : veille IA (sous-agent, Y11 fait pour ce jour), pièce 22 v3 (plafond AgX → blanc au grade ; plan final ; variante noire ; B3), **examen n°10** (15/20, vulgarisation sommeil), pièce 23 « Infrarouge de nuit » v1-v3. Examens : … n°9 14, **n°10 15**. Prochain examen vers la session 22-23 (Y10 : divertissement YouTube).
+- **Session 19** : veille IA (sous-agent, Y11 fait pour ce jour), pièce 22 v3-v5 (plafond AgX → blanc au grade ; plan final ; variante noire ; B3 ; v4 chaise isolée par l'espace ; v5 colonne de la lignée), **examen n°10** (15/20, vulgarisation sommeil), pièce 23 « Infrarouge de nuit » v1-v3. Examens : … n°9 14, **n°10 15**. Prochain examen vers la session 22-23 (Y10 : divertissement YouTube).
 
 ## Reprendre ici (session 20)
-0. Veille IA du jour (Y11, sous-agent en arrière-plan dès le démarrage). Puis : Y4 (atelier face caméra), Y7, Y8 ; pièce 22 v4 (1re image lisible : chaise de trois quarts face ou dossier ajouré ; douche de lumière sur la silhouette en noir ; moiré) ; pièce 23 v4 si utile (dormeur moins schématique, une voiture qui passe = mouvement interne d'un plan long) ; vérifier le chiffre « dormeurs simultanés » de l'examen n°10.
+0. Veille IA du jour (Y11, sous-agent en arrière-plan dès le démarrage). Puis : Y4 (atelier face caméra), Y7, Y8 ; pièce 22 v6 (variante noire sur la base v5 avec douche de lumière sur la silhouette ; moiré ; commande exacte : `blender -b -P scene.py -- OUT 48 --v3 --v3b --v4 --v5 --x0 1.6 [--noir]`, puis `montage.py B3` et courbe de point blanc ffmpeg, voir CRITIQUE) ; pièce 23 v4 si utile (dormeur moins schématique, une voiture qui passe = mouvement interne d'un plan long) ; vérifier le chiffre « dormeurs simultanés » de l'examen n°10.
 
 ## Après la session 18
 - **Session 18** : pièce 22 « Cent dix-sept milliards » (à la manière d'EGO, Blender + voix espeak, versions A explicatif / B EGO / v2), fiche `culture/createurs-ia-video-2025-2026.md`, **mise à jour de l'IA générative au 2026-10-10 demandée par l'utilisateur** (sous-agent : `montage-ia-generative/etat-de-l-art-2026-10.md`, `sources/ia-generative-2026-10-10.md`) ; PLAN-TESTS 64.

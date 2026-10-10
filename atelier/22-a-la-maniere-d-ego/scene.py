@@ -42,11 +42,16 @@ bpy.context.view_layer.objects.active = parts[0]; bpy.ops.object.transform_apply
 chaise = bpy.context.object; chaise.name = "chaise_1"
 # le champ : une copie décalée, multipliée par deux modificateurs Array (instances bon marché pour Cycles)
 champ = chaise.copy(); champ.data = chaise.data; bpy.context.collection.objects.link(champ)
-champ.location = (-(COLS // 2) * DX, -4.0 if "--v4" in argv else -DY, 0)   # v4 : un écart de 4 m entre la chaise 1 et le champ
+champ.location = (-(COLS // 2) * DX, (-4 * DY if "--v5" in argv else -4.0) if "--v4" in argv else -DY, 0)   # v4 : un écart de 4 m (v5 : 4 pas exacts, sinon la colonne traverse la 1re rangée : trait noir) entre la chaise 1 et le champ
 a = champ.modifiers.new("x", "ARRAY"); a.count = COLS; a.relative_offset_displace = (0, 0, 0); a.use_relative_offset = False
 a.use_constant_offset = True; a.constant_offset_displace = (DX, 0, 0)
 b = champ.modifiers.new("y", "ARRAY"); b.count = ROWS; b.use_relative_offset = False
 b.use_constant_offset = True; b.constant_offset_displace = (0, -DY, 0)
+# v5 : dans l'écart de 4 m, une seule colonne continue (la lignée : la mère, la grand-mère…) relie la chaise 1 au champ
+if "--v5" in argv:
+    col = chaise.copy(); col.data = chaise.data; bpy.context.collection.objects.link(col); col.location = (0, -DY, 0)
+    m = col.modifiers.new("y", "ARRAY"); m.count = 3; m.use_relative_offset = False
+    m.use_constant_offset = True; m.constant_offset_displace = (0, -DY, 0)
 # v2 : la chaise 1 est SEULE devant le champ (la première rangée est vide) : « tout au bout »
 for side in ((-1, 1) if "--rangee" in argv else ()):
     r = chaise.copy(); r.data = chaise.data; bpy.context.collection.objects.link(r)
