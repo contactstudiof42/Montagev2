@@ -64,3 +64,8 @@ Quand un film doit suggérer sans trancher (un visiteur, une menace), le son hor
 
 ## Silence-gag éprouvé (atelier 27 v3-v4, session 23) [TESTÉ EN ATELIER, maquette]
 Le son appris (un « ting » de fourchette sur la 1re image du plan B, deux fois) puis retiré la 3e fois : l'absence se lit parce qu'elle a une **place exacte** (la 1re image). Le seul son qui revient ensuite doit être celui de la réaction (l'assiette repoussée), pas une musique ou un bruitage de gêne. Voir `atelier/27-jamais/CRITIQUE.md`.
+
+## La voix écrite après le montage (pièce 33, principe Varda, session 24) [TESTÉ EN ATELIER, voix de synthèse, non écoutée]
+- La voix dit **ce que l'image ne peut pas dire** (qui parle, le lien entre deux lieux, l'avant / après), jamais ce qu'elle montre : une voix qui décrit ferme l'image et fait un inventaire.
+- **Couper au milieu d'une phrase** fait porter le raccord par la syntaxe (« Il suffit d'un geste / pour que tout ait changé » : la coupe devient le geste).
+- Laisser 25-45 % de silence par plan (mesurer chaque phrase : espeak-ng à 150 mots/min donne un ordre de grandeur) ; retirer la phrase qui explique la dernière image.

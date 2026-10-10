@@ -55,7 +55,7 @@ Y15. [x] [TECH] (session 20, sous-agent : `sources/infrarouge-tournage-2026-10.m
 22. [x] [TECH] `montage-blender` v1 écrit (session 2) ; reste Eevee headless, geometry nodes, compositing, camera tracking — : consigner ce que l'atelier 02 a appris (cadre et fenêtres de source calculées depuis la cinématique, cache d'images par caméra, ~1 image/s en Cycles 270×480 12 échantillons + débruitage).
 
 23. [x] [ART] (session 9 : pièce 14 « Balancier » A/B, A = réf. ; reste 54) Atelier « le montage se retire » (principe Jonze) : un corps ou un objet qui produit lui-même le rythme (pendule, danse d'un objet Blender), 3 plans max sur 15 s, comparé à une version kinetic.
-24. [ ] [ART] Atelier « voix écrite après » (principe Varda) : monter d'abord 20 s d'images glanées (plans des ateliers), écrire ensuite une voix off qui relie ; critique : la voix illustre-t-elle ou relie-t-elle ?
+24. [x] (session 24 : pièce 33, voix A décrit / B relie ; la phrase coupée par la coupe) [ART] Atelier « voix écrite après » (principe Varda) : monter d'abord 20 s d'images glanées (plans des ateliers), écrire ensuite une voix off qui relie ; critique : la voix illustre-t-elle ou relie-t-elle ?
 
 25. [ ] [ART] Atelier « Spirale » (principe Marker) : 30 s qui font revenir 3 motifs des ateliers 01-04, chaque retour changeant de sens ; voix écrite après.
 26. [~] [ART] Atelier « Versions » (principe Morris) — v1-v3 en session 5 (`atelier/06-versions/`, v3 = référence). Reste : décor habité, insert qui varie imperceptiblement, test de l'indice avec un spectateur (phase 2) : la même action Blender (un objet qui tombe) rejouée 3 fois avec un détail changé ; la musique en boucle ; critique : est-ce qu'on doute ?
