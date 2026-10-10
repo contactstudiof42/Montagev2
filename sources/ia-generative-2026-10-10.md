@@ -205,3 +205,18 @@ Recherches du **2026-10-10 au soir** (WebSearch standard et étendu, WebFetch). 
 | Mean CEO, tendances vidéo octobre | https://blog.mean.ceo/ai-video-generation-trends-october-2026/ | 2026-10 | via recherche | Contexte seulement ; « MiniMax poids ouverts » non retenu |
 
 Recherches sans résultat neuf dans la fenêtre : Veo 4, Luma, Hailuo, LTX, Wan, Midjourney vidéo, Firefly, Suno, Udio, Meta Muse Video.
+
+## Veille session 22
+Recherches du **2026-10-10 au soir** (WebSearch standard, WebFetch). Fenêtre visée : 03/10 → 10/10/2026.
+
+| Source | URL | Date | Accès | Ce qu'elle confirme |
+|---|---|---|---|---|
+| Suno, notes de version (off.) | https://suno.com/release-notes | consulté 2026-10-10 soir | ouverte | Studio (08/10), Albums (05/10), Speech bêta (01/10), v6 (09/09) |
+| Suno, Speech bêta (off.) | https://suno.com/blog/introducing-speech-beta | 2026-10-01 | via recherche | Voix et musique sur une seule piste ; limites reconnues |
+| Let's Data Science, Suno Speech | https://letsdatascience.com/news/suno-opens-speech-beta-for-voice-and-music-tracks-5860695b | 2026-10-02 | ouverte | Ouvert à tous ; formules et droits non précisés |
+| Higgsfield, changelog (off.) | https://higgsfield.ai/creator-hub/changelog | consulté 2026-10-10 soir | ouverte | Dernière entrée 08/10 ; pas de Kling 4.0 |
+| Runway, changelog (off.) | https://runway.com/changelog | consulté 2026-10-10 soir | ouverte | Dernière entrée 02/10 |
+| Atlas Cloud, Kling 4.0 | https://www.atlascloud.ai/nl/blog/tips/kling-4-flash-vs-full | 2026-09/10 | via recherche | Toujours « octobre », sans jour |
+| You.com, Seedance 2.5 « cette semaine » | https://for.you.com/topics/ai-video-generation | non daté | via recherche | Non retenu |
+
+Recherches sans résultat neuf dans la fenêtre : Veo, Luma, Midjourney, Hailuo, Wan, Moonvalley, ElevenLabs, Topaz.

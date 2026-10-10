@@ -383,3 +383,24 @@ Veo / Flow, Omni, Sora (fermé), Runway, Luma, Hailuo, Wan, LTX, Seedance, Pika,
 - **Rien à changer dans les devis** : mêmes recommandations que la session 20 ; Kling 4.0 reste une promesse.
 - **Music v2 / v2.5, régénérer un passage** : utile pour **caler une musique sur le montage** (refaire seulement les 8 mesures qui tombent mal sur une coupe) au lieu de régénérer tout le morceau. Cliché à éviter : la musique « générique bande-annonce » qui monte à chaque plan ; garder des respirations.
 - **Stable Audio 3.0, poids ouverts** : seule piste musique **en local** (pas de crédits, pas d'envoi de rushes). Mais relire la licence avant toute diffusion commerciale ; le label « entraîné sous licence » ne vaut pas licence d'usage.
+
+---
+
+## Mise à jour du 2026-10-10 (session 22)
+
+Fenêtre : 03/10 → 10/10/2026, quatrième passage du jour. WebSearch standard, WebFetch des changelogs Higgsfield, Runway et des notes de version Suno. Rien testé. Sources : `sources/ia-generative-2026-10-10.md`, section « Veille session 22 ».
+
+**Bilan : aucun nouveau modèle vidéo, image, upscale ou voix.** Seule nouveauté vérifiée : côté **Suno**, deux entrées absentes des sessions précédentes.
+
+| Date | Fait | Statut |
+|---|---|---|
+| 08/10/2026 | **Suno Studio** : détection des temps forts plus précise, étirement de clip (shift-clic), fondus à courbe, fenêtres détachables. | [SOURCÉ] off. suno.com/release-notes. |
+| 01/10/2026 | **Suno Speech (bêta)** : voix parlée et musique générées ensemble, sur une seule piste (texte, puis choix de la voix et du style). Ouvert à tous, web et mobile. Suno reconnaît des accents qui dérivent et des pauses trop dramatiques. Formules concernées, droits commerciaux, durée : non précisés. | [SOURCÉ] off. suno.com/blog/introducing-speech-beta ; sec. letsdatascience (02/10). |
+| 10/10/2026 | Kling 4.0 complet : toujours pas sorti. Higgsfield : dernière entrée le 08/10. Runway : dernière entrée le 02/10. | [SOURCÉ] off. changelogs Higgsfield et Runway (consultés le 10/10 au soir). |
+
+**Non retenu** : « Seedance 2.5 pourrait sortir cette semaine » (agrégateur sans date, et le modèle est déjà sorti) ; « ElevenLabs v3 le 14/10 » (date future, source peu fiable).
+**Rien de neuf** : Veo / Flow, Omni, Luma, Hailuo, Wan, Moonvalley, Midjourney, Firefly, Topaz, ElevenLabs.
+
+### Ce que ça change pour le monteur / motion designer
+- **Suno Speech** : la voix et la musique sortent mélangées sur une seule piste, donc **impossible de baisser la musique sous la voix**, de couper une respiration ou de recaler une phrase au montage. Bon pour une maquette, pas pour un master. Pour un livrable, garder voix (TTS) et musique sur des pistes séparées.
+- **Suno Studio, fondus et temps forts** : utile pour caler une musique Suno sur les coupes, mais le mixage final reste dans Premiere ou Resolve. Même règle de droits qu'avant : pas de Suno en pub ou en TV sans clause écrite.
