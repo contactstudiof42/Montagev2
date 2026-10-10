@@ -14,7 +14,7 @@ _Lire en premier. Mis à jour à chaque fin de session._
 1. Démarrage normal. Blender : `curl -sSL -o blender.tar.xz https://download.blender.org/release/Blender4.2/blender-4.2.3-linux-x64.tar.xz && tar xf blender.tar.xz` dans le scratchpad (30 s). `python3 -m pip install -q numpy pillow opentimelineio otio-fcp-adapter otio-cmx3600-adapter pyaaf2 otio-aaf-adapter` (utiliser `python3 -m pip`, `pip` seul vise un autre Python).
 2. Pièges : tester la **1re et la dernière image** d'un plan Blender animé ; vérifier la **pose de repos** d'un objet qui tombe (pièce 06 v1 : la tasse finit dans le sol) ; ne jamais `cd` dans un paquet Python (son `types.py` masque la bibliothèque standard) ; `bash -c` multi-commandes bloqué → script `.sh` dans le scratchpad ; Cycles 480×270 16 échantillons ≈ 2,5 s/image avec 2 sources surfaciques.
 3. Fiches *Aftersun* et *Les Revenants* (révélées par l'examen n°4), surround et présence hors champ.
-4. Puis BACKLOG : pièce 06 v2 (voir `atelier/06-versions/CRITIQUE.md`), verser la recherche Resolve 19-20 dans `montage-resolve`, pièce 04 (sous-marin animé, 9:16), « Spirale ».
+4. Puis BACKLOG : pièce 06 v3 (voir `atelier/06-versions/CRITIQUE.md` ; rendu v2 = paramètres `v2-params.json`, ~2,5 s/image), verser la recherche Resolve 19-20 dans `montage-resolve`, pièce 04 (sous-marin animé, 9:16), « Spirale ».
 5. Sous-agents de recherche en parallèle (3 en session 5, fiables) ; relire leurs fiches avant de les verser.
 
 ## Environnement constaté
