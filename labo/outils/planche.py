@@ -60,7 +60,10 @@ def main(video, mesures, sortie, cols=6):
         d.text((X(s) - 8, y1 + 9), f"{s//60}:{s%60:02d}", fill=(160, 160, 160), font=f)
     d.text((x0, H_grille + 3), "bleu : volume court terme (LUFS)   orange : coupes   gris : temps musicaux",
            fill=(200, 200, 200), font=f)
-    img.quantize(colors=128, method=Image.Quantize.MEDIANCUT).save(sortie, optimize=True)
+    for n in (128, 96, 64, 48):  # moins de couleurs jusqu'à passer sous 500 000 octets
+        buf = io.BytesIO(); img.quantize(colors=n, method=Image.Quantize.MEDIANCUT).save(buf, "PNG", optimize=True)
+        if buf.tell() < 500_000: break
+    open(sortie, "wb").write(buf.getvalue())
 
 if __name__ == "__main__":
     main(sys.argv[1], sys.argv[2], sys.argv[3], int(sys.argv[4]) if len(sys.argv) > 4 else 6)

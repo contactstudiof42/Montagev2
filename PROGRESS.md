@@ -9,7 +9,7 @@ _Lire en premier. Seul l'état présent compte ici. L'état de clôture de la ph
 
 ## Leçons de méthode (test sur SDM)
 - Les détecteurs de coupes (`analyse_clip.py` et PySceneDetect) **ratent les coupes cachées** par l'occlusion d'un corps ou par un filé. Dans tout plan de plus de 15 s, il faut regarder une image toutes les 2 à 3 s, puis image par image autour des passages suspects.
-- `labo/outils/planche.py` donne une planche (une image par plan, avec la courbe LUFS, les coupes et les temps en dessous). Il réduit le PNG en palette de 128 couleurs pour rester sous 500 Ko : les aplats saturés (rouge) se postérisent, donc **ne pas juger la couleur fine sur la planche**, mais sur une image extraite.
+- `labo/outils/planche.py` donne une planche (une image par plan, avec la courbe LUFS, les coupes et les temps en dessous). Il réduit le PNG en palette (128 couleurs ou moins) jusqu'à passer sous 500 000 octets : les aplats saturés (rouge) se postérisent, donc **ne pas juger la couleur fine sur la planche**, mais sur une image extraite.
 
 ## Outils (installés le 2026-10-11, temps mesurés)
 - Déjà présents : ffmpeg 8.1.1 (Homebrew), Homebrew. Le Python système (3.15 rc) est trop récent pour librosa : ne pas l'utiliser pour l'analyse.
