@@ -5,13 +5,14 @@ from PIL import Image, ImageDraw
 V, D = sys.argv[1], sys.argv[2]; os.makedirs(D, exist_ok=True)
 W, H, FPS, N = 270, 480, 25, 200
 COUPE = 62                                   # image de coupe (milieu du passage du torchon)
-large = V == 'A'; raccord = V in ('D', 'E'); torchon = V != 'B'
+large = V in ('A', 'G', 'H'); raccord = V in ('D', 'E'); torchon = V != 'B'
 
 
 def scene(f, prise):
     """prise 1 = avant la coupe, prise 2 = après. f = image globale."""
     dl = 1.0 if (prise == 1 or raccord) else 1.06            # lumière qui a bougé entre les prises
     dx = 0 if (prise == 1 or raccord) else 2                  # pied de caméra effleuré
+    # G : post = gain d'étalonnage qui rattrape la lumière de la prise 2 ; H : G + recadrage de 2 px (stabilisation)
     mur = tuple(int(c * dl) for c in (205, 196, 180))
     im = Image.new('RGB', (W + 8, H + 8), mur); d = ImageDraw.Draw(im)
     d.rectangle([150, 60, 250, 190], fill=tuple(min(255, int(c * dl)) for c in (215, 230, 245)), outline=(120, 100, 80), width=4)
@@ -29,7 +30,10 @@ def scene(f, prise):
         for ang, h in ((-0.5, 70), (0, 95), (0.45, 75), (-0.2, 55), (0.25, 60)):
             d.line([135, 290, 135 + h * np.sin(ang), 290 - h * np.cos(ang)], fill=(50, 130, 60), width=5)
             d.ellipse([135 + h * np.sin(ang) - 9, 290 - h * np.cos(ang) - 6, 135 + h * np.sin(ang) + 9, 290 - h * np.cos(ang) + 6], fill=(60, 150, 70))
-    return im.crop((4 + dx, 4, 4 + dx + W, 4 + H))
+    im = im.crop((4 + dx - (dx if V == 'H' else 0), 4, 4 + dx - (dx if V == 'H' else 0) + W, 4 + H))
+    if prise == 2 and V in ('G', 'H'):
+        im = Image.eval(im, lambda c: int(round(c / 1.06)))
+    return im
 
 
 def pose_torchon(im, f):

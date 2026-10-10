@@ -24,3 +24,13 @@ Planches : `v1-planche.png` (A-D), `v2-planche-DE.png` (D, E). Coupe à l'image 
 1. Coupe cachée = **trois conditions** : cache sur l'union des silhouettes à l'image de coupe ; tout ce qui vit hors du cache figé ou retiré (horloge, écran, figurant, nuages : lumière de studio ou plan court) ; caméra verrouillée (pied, pas de reprise entre les prises).
 2. Vérifier en montage avec deux mesures : score de coupe ≈ bruit (scdet ≤ 1) **et** écart hors objet avant / après ≈ témoin de la même prise.
 3. Le choix « cacher ou montrer » se décide sur l'effet voulu (continuité = magie, comparaison = humour) avant le tournage, pas au montage.
+
+## v3 — ce que la post rattrape (G, H ; `v3-planche-GH.png`, même session)
+| Version | écart hors objet avant / après (témoin 1,2) |
+|---|---|
+| A torchon plein cadre, rien rattrapé | 9,5 |
+| G = A + gain d'étalonnage sur la prise 2 (÷ 1,06) | 5,4 |
+| H = G + recadrage de 2 px (stabilisation) | 3,6 |
+| E raccordé au tournage | 1,5 |
+- La post rattrape **la lumière globale** (un gain) et **le déplacement de caméra** (un recadrage) : l'écart tombe de 62 %. Elle ne rattrape pas ce qui **vit** dans le décor : le résidu de H se concentre dans le quart haut-gauche (l'horloge : trotteuse décalée de 37 s ; le reste du résidu, plus étendu qu'une aiguille, n'est pas entièrement expliqué : probablement le cadran écrêté par le gain et la compression). Il faudrait une plaque propre et une roto de l'horloge, ou l'avoir retirée au tournage.
+- Règle de devis : sur une coupe cachée, **une lumière qui bouge coûte un gain, une caméra qui bouge coûte une stabilisation, un élément vivant dans le champ coûte une roto** ; le retirer au tournage ne coûte rien.
