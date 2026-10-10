@@ -1,0 +1,7 @@
+{"plans": [["insert", 1, 20], ["v2-seule", 14, 65],
+           ["insert", 1, 20], ["v2-tremble", 14, 65],
+           ["insert", 1, 20], ["v2-ombre", 14, 65]],
+ "dossiers": {"seule": "v2-seule", "tremble": "v2-tremble", "ombre": "v2-ombre"},
+ "comparer": [20, 30, 38, 42, 56, 64],
+ "sfx": [[114, "choc"]],
+ "noir_fin": 25, "boucle_images": 72, "musique_stop": 216}

@@ -100,7 +100,7 @@ V = P.get("variante", "seule")
 if V == "tremble":  # secousse : quelques millimètres, amortie
     a, b = P.get("tremble", [36, 44])
     for k, f in enumerate(range(a, b + 1)):
-        amp = 0.006 * (1 - k / (b - a + 1))
+        amp = P.get("tremble_amp", 0.006) * (1 - k / (b - a + 1))
         table.location = ((-1) ** k * amp, 0, 0); table.keyframe_insert("location", frame=f)
     table.location = (0, 0, 0); table.keyframe_insert("location", frame=b + 1)
     table.keyframe_insert("location", frame=1)
@@ -108,8 +108,9 @@ if V == "ombre":  # silhouette invisible à la caméra qui passe devant la fenê
     a, b = P.get("ombre", [18, 44])
     sil = boite("silhouette", (-1.6, -1.5, 0.9), (0.45, 0.3, 1.75), mat("noir", (0, 0, 0)))
     sil.visible_camera = False; sil.visible_glossy = False
-    sil.location = (-1.6, -1.3, 0.9); sil.keyframe_insert("location", frame=a)
-    sil.location = (-1.6, 1.5, 0.9); sil.keyframe_insert("location", frame=b)
+    zs = sil.location.z
+    sil.location = (-1.6, -1.3, zs); sil.keyframe_insert("location", frame=a)
+    sil.location = (-1.6, 1.5, zs); sil.keyframe_insert("location", frame=b)
 
 # Caméras : large (même cadre pour les trois versions) et insert (la tasse au bord)
 if P.get("camera", "large") == "large":

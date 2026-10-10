@@ -42,6 +42,11 @@ def main():
     for _ in range(noir):
         shutil.copy(os.path.join(seq, "noir.png"), os.path.join(seq, f"{i:04d}.png")); i += 1
     y = musique(i, E.get("boucle_images", 72), E.get("musique_stop", i))
+    for f, _ in E.get("sfx", []):  # choc sourd (la table cognée) : 55 Hz amorti + bruit filtré grossièrement
+        t = np.arange(int(0.35 * SR)) / SR; a = int(f / FPS * SR)
+        choc = (0.5 * np.sin(2 * np.pi * 55 * t) + 0.15 * np.convolve(np.random.default_rng(3).normal(0, 1, t.size),
+                np.ones(40) / 40, "same")) * np.exp(-t * 14)
+        y[a:a + t.size] = np.clip(y[a:a + t.size] + choc[: max(0, min(t.size, y.size - a))], -1, 1)
     wav = os.path.join(REND, f"{v}.wav")
     with wave.open(wav, "wb") as w:
         w.setnchannels(1); w.setsampwidth(2); w.setframerate(SR); w.writeframes((y * 32767).astype(np.int16).tobytes())
@@ -57,7 +62,9 @@ def main():
     # Planche 2 : mêmes images dans les trois versions (lignes) — preuve du cadre identique et du détail changé
     imgs = E.get("comparer", [20, 30, 38, 46, 58, 64])
     ent = []; filt = []
+    dossiers = E.get("dossiers", {})
     for r, src in enumerate(["seule", "tremble", "ombre"]):
+        src = dossiers.get(src, src)
         for c, f in enumerate(imgs):
             ent += ["-i", os.path.join(REND, src, f"{f:04d}.png")]
     n = len(imgs)
