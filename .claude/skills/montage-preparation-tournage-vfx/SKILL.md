@@ -61,6 +61,7 @@ Quand : l'effet voulu est la **continuité** (magie, transformation). Si l'effet
 2. Tout ce qui vit hors du cache doit être figé ou retiré entre les deux prises : horloge, écran allumé, figurant, lumière du jour (préférer le studio ou des prises rapprochées). Une lumière qui varie de 6 % suffit à trahir la coupe (mesuré).
 3. Caméra verrouillée sur pied, aucune reprise de cadre entre les prises ; noter l'image exacte de couverture maximale.
 4. Contrôle au montage : score de coupe ≈ bruit (scdet ≤ 1) **et** écart hors objet entre avant et après le passage ≈ écart entre deux images d'une même prise (`atelier/30-coupe-cachee/mesure.py`). Un cache plein cadre trompe le détecteur mais pas l'œil si la lumière a bougé.
+5. Devis de rattrapage en post (mesuré, pièce 30 G-H) : une lumière qui bouge = un gain d'étalonnage, une caméra qui bouge = une stabilisation (à elles deux −62 % de l'écart) ; un élément vivant dans le champ (horloge, écran, figurant) = une roto et une plaque propre. Le retirer au tournage ne coûte rien.
 
 ## 6. Checklist plateau (à remplir pour chaque plan à effets)
 - [ ] Focale, diaph, distance, hauteur, inclinaison, cadence, shutter notés.
