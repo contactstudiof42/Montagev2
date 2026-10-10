@@ -22,6 +22,12 @@ Planches : `v1-planche.png`, `v2-planche.png`.
 3. La couleur forte (le rouge) n'est réservée qu'au plan de bascule : elle signe la transformation.
 4. La contre-plongée seule, en lumière froide, produit la menace : utile pour un antagoniste, à éviter si l'on veut l'éclosion.
 
+## v3 — aller fixe 3 s, coupe, retour en grue montante 3 s (`v3-planche-grue.png` ; rendu animé 320×180, 12 éch., 75 images en ~1 min 30)
+- La grue **découvre le lieu** : à 0,9 m, les marches sont des lignes sombres ; en montant, leurs nez accrochent le soleil un à un et l'escalier se reconstruit sous le personnage. Le mouvement fait le travail de reconnaissance que le cadre fixe bas ne faisait pas : la caméra qui monte élève le personnage **et** rend le décor. Je ne l'avais pas prévu.
+- Le mât du réverbère sort du cadre en fin de grue : ce n'est plus grave, les marches ont pris le relais comme repère. Un repère peut passer de l'un à l'autre pendant un mouvement, pas à travers une coupe.
+- Juxtaposés sans rien entre eux, aller et retour se lisent « avant / après » (une pub, pas un film) : dans *Joker*, une heure de film sépare les deux passages. En pub courte, il faudrait un plan intermédiaire (le personnage ailleurs, la bascule) ou assumer le diptyque.
+- La silhouette reste un pantin : le voûté de l'aller ne se lit toujours pas.
+
 ## Limites et suite (BACKLOG Y41)
 Silhouette trop schématique (le voûté ne se lit pas) ; mouvement de caméra (fixe → grue) non testé ; une seule focale (28 mm).
 Suite : rendu animé court des deux passages (aller 3 s fixe, retour 3 s en grue montante) et figure articulée ; tester une focale plus courte au retour (Sher : courte focale portée).
