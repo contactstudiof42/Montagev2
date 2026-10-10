@@ -5,3 +5,6 @@ labo/rendus/
 *.wav
 *.mkv
 __pycache__/
+videos/
+.DS_Store
+.venv/
