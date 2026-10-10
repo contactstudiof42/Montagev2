@@ -41,19 +41,23 @@ Un artiste de la post-production avant d'être un technicien. Je sais **pourquoi
 |---|---|---|
 | `montage-expert` | rôle, consultation, autonomie, sommaire | v1 |
 | `montage-regard` | principes de jugement, grille d'autocritique | v1, éprouvé sur atelier 01 (4 versions) |
-| `montage-direction-artistique` | brief → 3 directions → recommandation → critères | v1, **non éprouvé** par un examen |
+| `montage-direction-artistique` | brief → 3 directions → recommandation → critères | v1, corrigé après l'examen n°1 (13/20) |
 | `montage-rythme` | rythme, musicalité, durée des plans, détection de coupes | v1 théorique + mesure scdet testée en labo |
 | `montage-motion-design-principes` | sens du mouvement, typo animée, clichés | v1, nourri par atelier 01 |
 | `montage-son-et-emotion` | silence, sound design, rapport image/son | v1, recettes forme d'onde/synthèse testées |
-| `montage-loudness-livraison` | loudness, normes plateformes, livraison ffmpeg | v1, recettes testées en labo (mesure + gain > loudnorm) |
+| `montage-loudness-livraison` | loudness, normes plateformes, livraison ffmpeg, bandes dans les noirs | v1, recettes testées en labo (mesure + gain > loudnorm ; 10 bits / grain σ≈2) |
 | `montage-after-effects` | easing, graphe de vitesse, expressions, rigs | v1, expressions testées en syntaxe/logique Node uniquement |
 | `montage-ia-generative` | état de l'art IA vidéo/image/son daté 2026-10, clichés, usages | v1 théorique, sources datées |
 | `montage-grammaire` | raccords, 180°, dialogue, J/L-cut, ellipse, montage son de base | v1 théorique |
 | `montage-couleur-et-intention` | palette, intention d'étalonnage, clichés couleur | v1 (fiches Storaro, Doyle, Deakins), non éprouvé en atelier |
-| `montage-references` | principes transférables tirés de `culture/`, tensions entre principes | v1 (11 fiches) |
+| `montage-references` | principes transférables tirés de `culture/`, tensions entre principes | v1 (fiches jusqu'à Murai et Honda « Cog ») |
+| `montage-kinetic-editing` | montage social haute rétention, SFX hiérarchisés, hook | v1, calage testé en labo, éprouvé en atelier 02 (5 versions) |
+| `montage-couleur-pipeline` | espaces, log, LUT, ACES, OCIO | v1, conversions et LUT testées en labo |
+| `montage-blender` | Blender pour la vidéo : plateau multi-caméras, EDL JSON, rendu CLI, chrome, AgX | v1, testé en atelier (pièces 01 et 02) |
+| `montage-resolve` | nodes, RCM, Deliver, API de scripting Python | v1 théorique (README officiel 2022-2023 lu, rien exécuté) |
 
 ## Ressources du dépôt
-- `culture/` : fiches d'œuvres (Murch, Schoonmaker, Saul Bass, Kyle Cooper, Edgar Wright, œuvres IA ; lot 2 en cours : Gondry, Glazer, Menke, Baxter/Wall, Patrick Clair).
+- `culture/` : fiches d'œuvres (montage, title design, couleur, goûts de l'utilisateur : Interstellar, Joker, Ziak ; clips et pubs : Murai, Honda « Cog » ; IA).
 - `atelier/` : pièces créées et leurs versions critiquées.
 - `labo/` : scripts techniques testés.
 - `PLAN-TESTS-MCP.md` : ce qui reste à valider sur les vrais logiciels.

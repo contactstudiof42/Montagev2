@@ -1,0 +1,35 @@
+---
+name: montage-blender
+description: Blender pour la vidéo et le motion design — rendu en ligne de commande (blender -b -P script.py), scripts Python bpy, plans 3D pour un montage, caméras multiples, Cycles contre Eevee, motion blur, AgX, lumières motivées, éléments émissifs, animation par keyframes calculées, plans « produit » ou objets dans le noir, packshot 3D, rendus de test rapides. Mots d'un réalisateur ou d'un motion designer : « on fait ce plan en 3D », « il me faut des plans d'insert », « on n'a pas tourné ce plan », « rendu trop long », « ça fait CG », « le chrome est tout noir », « la boule sort du cadre ».
+---
+
+# Blender pour la vidéo
+
+## 1. Quand et pourquoi
+- **Plans impossibles ou trop chers à tourner** (macro d'objets, réaction en chaîne, packshot dans le noir), **plans d'insert** pour un montage rapide, **décors de typographie**.
+- **Contrôle total du temps** : on calcule la position d'un objet à l'image près, donc on peut caler un événement visuel sur un son, ou une réaction en chaîne sur une règle du temps (atelier 02 : le pendule frotte l'allumette à l'apogée, image 200).
+- **Quand l'éviter** : visage humain, matière organique (feu, eau, tissu) sans temps de simulation, ou quand le « look CG » trahirait le sujet. Un vrai plan tourné, même modeste, bat souvent un rendu propre et vide.
+
+## 2. Méthode d'atelier [TESTÉ EN LABO]
+1. **Une scène, plusieurs caméras** : un seul script construit le plateau, une caméra par « plan » (pendule, cube, sphères, allumette, large). Le montage choisit des fenêtres `(caméra, image source, durée)` : c'est une **liste de plans (EDL) en JSON**.
+2. **Ne rendre que les images utilisées** : regrouper les images demandées par caméra en plages contiguës, rendre avec `bpy.ops.render.render(animation=True)` par plage, garder un **cache** `caméra_image.png`. Ne supprimer du cache que les caméras dont le plateau a changé. (`atelier/02-etincelle/montage.py`.)
+3. **Tester 1 image par caméra avant tout rendu long** (stills côte à côte avec `hstack`) : c'est là que se voient le chrome noir, le sujet hors cadre, l'allumette « sucette ».
+4. **Choisir les fenêtres de source depuis la cinématique**, pas au compteur. Un pendule de 2,45 m qui balaie ±32° devant un 45 mm sort du cadre 4 images après le passage au point bas : une fenêtre doit commencer **une image avant** le passage (atelier 02, v3). Planche de toutes les images d'une caméra pour diagnostiquer (`-pattern_type glob`, `tile`).
+5. **Planche contact de la 1re image de chaque plan** du montage : chaque vignette doit se lire seule.
+
+## 3. Réglages qui ont marché (Blender 4.2.3 LTS, CPU, VM 4 cœurs) [TESTÉ EN LABO]
+- Installation : `curl` de `blender-4.2.3-linux-x64.tar.xz` + `tar xf` ≈ 30 s.
+- Cycles CPU, 270×480, **12 échantillons + débruitage** (OIDN) : ~0,7-1,5 s par image ; 260 images ≈ 4-5 min. Agrandir ×2 en lanczos avec ffmpeg pour une maquette 540×960.
+- `view_transform = "AgX"`, look « AgX - Punchy » : les hautes lumières (flamme, reflets) restent lisibles sans brûler en blanc, mieux que Standard.
+- Motion blur `shutter = 0.5` : les objets rapides deviennent des traînées ; si un objet traverse en 1 à 2 images, on ne le voit plus du tout (sphères de l'atelier 02 v1-v3) → **ralentir l'objet ou rapprocher la caméra**, pas augmenter l'échantillonnage.
+- **Le chrome reflète son environnement** : dans un monde noir, il est noir. Ajouter des bandes émissives **invisibles à la caméra** (`visible_camera = False`) qui ne servent qu'aux reflets. C'est la technique des softbox de packshot.
+- Feu/flamme : un cône émissif + une lampe ponctuelle à énergie animée (scintillement aléatoire 120 ± 25 W) suffit pour la *lumière* du feu sur le décor ; la flamme elle-même reste graphique (limite connue : simulation Mantaflow ou plan tourné à prévoir).
+- Valeurs d'émission animées : `inputs["Emission Strength"].keyframe_insert("default_value", frame=f)`.
+
+## 4. Couleur et lumière (intention)
+- Lumière **motivée** : une grande source froide rasante + un liseré ; la chaleur n'existe que si une source chaude est dans le plan (règle Deakins, goût Joker/Ziak : `montage-couleur-et-intention`).
+- **Vérifier la règle couleur par la mesure** sur le MP4 : % de pixels chauds par image (atelier 02 v4 : ≤ 0,25 % avant l'événement, 6,3 % après).
+
+## 5. À vérifier en phase 2 (Mac)
+- Temps de rendu GPU Metal contre CPU cloud ; Eevee Next en rendu final pour des maquettes (non testé en headless ici).
+- Le pilotage par MCP (`PLAN-TESTS-MCP.md`, test 13) : refaire `atelier/02-etincelle/scene.py` et comparer les planches.
