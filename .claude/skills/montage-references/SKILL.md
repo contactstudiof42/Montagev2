@@ -23,6 +23,7 @@ Trois stratégies, **à choisir consciemment** car elles se contredisent :
 - **Synchro sur les aspérités** : caler l'image sur les accidents du son, pas ses temps forts ; rythme irrégulier = tension (Cooper, *Se7en*) — malaise.
 Et une quatrième, de sens : **la musique contre l'image** (Menke ; Ellington chez Bass) crée un recul ou un malaise.
 Règle de décision : plaisir → Bass ou Gondry ; tension → Cooper ; recul critique → contrepoint.
+Et une cinquième, d'état : **la saturation** (Noé / Tom Kan, générique d'*Enter the Void*) : cartons de quelques images, **chaque coupe change au moins un paramètre fort** (police, teinte, échelle), montage verrouillé sur la musique avant le design (Kan a jeté ~40 % de ses cartons), et une **courbe** vers un sommet (les noms des acteurs) pour que le chaos ait une forme. On ne lit plus, on ressent : c'est un sas vers l'état du film. Ancêtre direct du kinetic editing. Garde-fou : photosensibilité (`montage-kinetic-editing` §6).
 
 ## C. Réduire à une idée
 6. **Un concept, un signe** : une forme dessinable en 5 secondes, que toute l'animation révèle ou transforme (Bass).
