@@ -1,0 +1,138 @@
+{
+ "v4-0A": {
+  "peau_Lab": [
+   53.1,
+   5.0,
+   7.6
+  ],
+  "mur_Lab": [
+   58.7,
+   -0.0,
+   0.0
+  ],
+  "dE_peau_vs_plan0": 0.0,
+  "peau_percue_ab_estimee": [
+   5.0,
+   7.6
+  ]
+ },
+ "v4-0B": {
+  "peau_Lab": [
+   51.9,
+   5.0,
+   7.2
+  ],
+  "mur_Lab": [
+   58.7,
+   -0.0,
+   0.0
+  ],
+  "dE_peau_vs_plan0": 0.0,
+  "peau_percue_ab_estimee": [
+   5.0,
+   7.2
+  ]
+ },
+ "v4-1A": {
+  "peau_Lab": [
+   53.1,
+   5.0,
+   7.6
+  ],
+  "mur_Lab": [
+   58.7,
+   -0.0,
+   0.0
+  ],
+  "dE_peau_vs_plan0": 0.0,
+  "peau_percue_ab_estimee": [
+   5.0,
+   7.6
+  ]
+ },
+ "v4-1B": {
+  "peau_Lab": [
+   51.8,
+   4.9,
+   6.8
+  ],
+  "mur_Lab": [
+   57.2,
+   -1.5,
+   -4.9
+  ],
+  "dE_peau_vs_plan0": 0.43,
+  "peau_percue_ab_estimee": [
+   5.1,
+   7.8
+  ]
+ },
+ "v4-2A": {
+  "peau_Lab": [
+   53.1,
+   5.0,
+   7.6
+  ],
+  "mur_Lab": [
+   58.7,
+   -0.0,
+   0.0
+  ],
+  "dE_peau_vs_plan0": 0.0,
+  "peau_percue_ab_estimee": [
+   5.0,
+   7.6
+  ]
+ },
+ "v4-2B": {
+  "peau_Lab": [
+   51.6,
+   4.8,
+   6.3
+  ],
+  "mur_Lab": [
+   54.3,
+   -1.9,
+   -12.0
+  ],
+  "dE_peau_vs_plan0": 0.99,
+  "peau_percue_ab_estimee": [
+   5.2,
+   8.7
+  ]
+ },
+ "v4-3A": {
+  "peau_Lab": [
+   53.1,
+   5.0,
+   7.6
+  ],
+  "mur_Lab": [
+   58.7,
+   -0.0,
+   0.0
+  ],
+  "dE_peau_vs_plan0": 0.0,
+  "peau_percue_ab_estimee": [
+   5.0,
+   7.6
+  ]
+ },
+ "v4-3B": {
+  "peau_Lab": [
+   49.5,
+   3.6,
+   3.5
+  ],
+  "mur_Lab": [
+   53.4,
+   -1.9,
+   -13.6
+  ],
+  "dE_peau_vs_plan0": 4.68,
+  "peau_percue_ab_estimee": [
+   4.0,
+   6.2
+  ]
+ }
+}

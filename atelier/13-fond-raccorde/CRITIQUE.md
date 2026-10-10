@@ -16,7 +16,12 @@ Essai préalable (`test`) : visages surexposés (peau presque blanche), tête fl
 1. **v1 : le fond froid ne refroidit pas le personnage, il l'isole.** Contre le bleu, la peau ressort *plus chaude* (contraste simultané, cohérent avec la planche : le visage de B au plan 3 paraît plus rose que dans v2). Le spectateur attribue le froid **au monde autour de B**, pas à B. C'est juste pour « il se retrouve seul », faux pour « il devient froid ». La progression en 4 marches se lit (marche 1 timide, 2 et 3 nettes) sans jamais faire effet.
 2. **v2 : la lumière froide change le corps.** La peau devient grise et lilas (ΔE 6,5) : on lit « il pâlit, il s'éteint » — plus fort, plus physique. Mais A et B sont dans la même pièce, face à face : la lumière de B change et pas celle de A, **sans source visible** : c'est un faux raccord lumière, sauf à le motiver (un écran, une fenêtre, un nuage) ou à l'assumer comme sortie du réalisme.
 3. **v3 : deux mondes, c'est le plus graphique et le plus démonstratif.** Paradoxe utile : le mur orange de A **pâlit** son visage (b* perçu 7,6 → 5,0). Réchauffer le fond refroidit la peau, et inversement. C'est la logique du *teal and orange* : un fond froid fait ressortir une peau chaude. À réserver aux récits où la séparation est le sujet (rupture, deux camps) ; sinon c'est un schéma de manuel.
-4. Recommandation pour « B se ferme » : **v1 jusqu'à la marche 2, puis une seule marche de lumière (v2) au moment de la bascule** — le monde se ferme d'abord, puis le corps. Non réalisé ici : v4 à faire.
+4. Recommandation pour « B se ferme » : **v1 jusqu'à la marche 2, puis une seule marche de lumière (v2) au moment de la bascule** — le monde se ferme d'abord, puis le corps.
+
+## v4 « le monde, puis le corps » — `planche-v4.png` (paires 2B → 3B de v1, v2, v4)
+- Dernier plan de B : mur inchangé (marche 2), clé refroidie d'une marche. Peau ΔE 4,7 ; teinte perçue estimée b* 8,7 → 6,2 : **le visage pâlit alors que le monde ne bouge plus**. C'est la marche la plus discrète des trois paires et la plus juste : le changement se lit comme venant de B, pas du décor, et il arrive une seule fois, à la bascule.
+- Le faux raccord lumière de v2 existe toujours, mais réduit à une marche, sur un seul plan : il passe pour un état, pas pour une erreur. À motiver en tournage (B s'écarte d'une lampe, un nuage) si le film est réaliste.
+- **v4 = référence.**
 
 ## Limites
 - Modèle d'induction très simplifié (k fixe, pas de dépendance à la surface ni à la luminance) : les sens des décalages sont conformes à la littérature sur le contraste simultané, les amplitudes non. Test avec des spectateurs en phase 2.
