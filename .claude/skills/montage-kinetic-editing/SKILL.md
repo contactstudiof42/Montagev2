@@ -95,6 +95,8 @@ Sources du placement : crête du riser sur le moment clé (Epidemic Sound) ; son
 - **Une transition kinetic se tourne** : sortie et entrée filmées dans la même direction et à la même vitesse ; la post ne fait que la finir. Sans ça, le whip pan en post « saute ».
 - **Signature → preset → cliché** : les transitions façon Kolder sont devenues des packs à télécharger (2018) ; appliquées à tout, elles rendent les lieux interchangeables. Un SFX de transition doit correspondre à un mouvement réel de l'image.
 
+- **[TESTÉ EN LABO, Blender]** Un plan 3D qui doit couper en mouvement (whip pan, rotation) s'**anime au-delà de ses bords** : sinon la dernière image de A et la première de B n'ont que la moitié du flou de bougé (indice de flou 0,85 contre 1,07) et la coupe accroche sur deux images nettes (`labo/kinetic/whip/`). AE : même logique, à vérifier en phase 2.
+
 ## 4. Recettes
 **R1 — Hook 0-3 s** [THÉORIQUE] : image 1 = l'image la plus forte (résultat, chiffre, action) + impact ou drop musical à l'image 1 ; captions dès la 1re syllabe ; 2 à 4 coupes dans les 3 premières secondes ; la promesse est dite avant la 3e seconde.
 
