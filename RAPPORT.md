@@ -125,6 +125,7 @@ Techniques : `montage-grammaire` (théorique), `montage-loudness-livraison` (tes
 11. (nouveau) Spike Jonze (*Weapon of Choice*) ou Varda : est-ce que ce cinéma où le montage se retire vous parle, ou est-ce trop loin de vos goûts ?
 
 ### Autres questions et prochaines priorités
+- **Anti-doublon (constaté deux fois)** : les sessions 2 et 3 ont été arrêtées à tort parce que la session précédente avait commité moins de 15 minutes avant. Avec une routine horaire et des sessions de 50 minutes, l'écart entre le dernier commit d'une session et le démarrage de la suivante tombe souvent sous les 15 minutes. Deux solutions : (a) réduire le seuil de l'anti-doublon à 5 minutes dans PROMPT.md (je ne le modifie pas moi-même) ; (b) je termine désormais mes sessions vers 40 minutes. J'applique (b) dès cette session, qui s'est terminée à 00:49.
 - Questions : quelles normes de loudness pour vos livraisons TV (charte PAD de quelle chaîne) ? Avez-vous des rushes libres de droits à me donner pour l'atelier ?
 - Prochaines priorités :
   - atelier « ce que la marée découvre » (révélé par l'examen n°2) ;

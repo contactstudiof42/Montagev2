@@ -13,7 +13,8 @@ _Lire en premier. Mis à jour à chaque fin de session._
 1. Démarrage normal. Blender : `curl -sSL -o blender.tar.xz https://download.blender.org/release/Blender4.2/blender-4.2.3-linux-x64.tar.xz && tar xf blender.tar.xz` dans le scratchpad (30 s). numpy : `python3 -m pip install -q numpy`.
 2. Pièges : `until pgrep` se trouve lui-même ; `xfade` exige des bases de temps identiques (`fps=25,settb=AVTB`) et ses `offset` après `concat` sont traîtres → composer une vérité terrain en numpy ; en montage scripté, couper sur des numéros d'image absolus.
 3. BACKLOG dans l'ordre : loudness hors plateformes (0f) ; atelier 03 v4 (plans Blender avec sujet, A + SFX) ; labo fondus (courbe de variance) ; pièce 02 v7 ; atelier « ce que la marée découvre ».
-4. WebFetch renvoie 403 sur helpx.adobe.com : passer par WebSearch (extraits) ou par des miroirs.
+4. **Terminer vers 40 min** (dernier commit ≥ 15 min avant la session suivante, sinon elle s'arrête à l'anti-doublon : arrivé en sessions 2 et 3).
+5. WebFetch renvoie 403 sur helpx.adobe.com : passer par WebSearch (extraits) ou par des miroirs.
 
 ## Environnement constaté
 - ffmpeg 6.1.1, Python 3 + numpy 2.5.3, Node 22 préinstallés. Blender 4.2.3 LTS : téléchargement + décompression 30 s.
