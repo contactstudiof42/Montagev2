@@ -104,3 +104,8 @@ Démonstration produit, réaction en chaîne, gag mécanique, plan « Cog » : t
 - Un seul canal qui ne suit pas (image et son forts sous une voix qui ralentit) contredit la descente là où l'on devrait lâcher.
 - Durées de plan croissantes (5 → 20 s) et **retour d'un même cadre changé** (la fenêtre, moins de lumières) : le retour mesure le temps qui passe mieux qu'un ralentissement.
 - Détail : `atelier/25-au-lit/CRITIQUE.md`.
+
+## Une densité qui décroît (atelier 26, session 22) [TESTÉ EN ATELIER, maquette 2D mesurée]
+- Une relance dans une forme qui ralentit est **un coup**, pas une rafale ; le jour où il n'y a plus d'outil à retirer, c'est un **changement de régime** (autre caméra, autre texture, autre son) qui relance.
+- Retirer les ponctuations sans **allonger les plans** ne calme rien : les coupes qui restent deviennent les plus gros chocs du film.
+- Le temps long a besoin d'un mouvement interne, mais dosé à quelques % : une lumière qui palpite sur tout le cadre compte comme un événement. Détails et mesures : `atelier/26-densite-decroissante/CRITIQUE.md`.
