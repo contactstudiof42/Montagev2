@@ -98,6 +98,8 @@ CAMS = {  # loc, rot (deg), focale
     "livre":   ((-0.45, -0.45, 0.88), (80, 0, 0), 35),
     "dominos": ((0.41, -0.35, 0.86), (84, 0, 0), 32),
     "tasse":   ((0.95, -1.0, 0.42), (90, 0, 0), 26),
+    "chaine":  ((0.75, -1.0, 0.45), (88, 0, 0), 26),   # dominos + tasse + sol dans le même plan
+    "sol":     ((1.2, -0.5, 0.08), (88, 0, 14), 35),   # ras du sol, l'arrivée de la tasse
 }
 c = P.get("camera", "large"); loc, rot, lens = CAMS[c]
 bpy.ops.object.camera_add(location=loc, rotation=tuple(math.radians(a) for a in rot))
@@ -114,6 +116,8 @@ if P.get("mode") == "sim":
     print("SIM OK")
 else:
     bpy.ops.ptcache.bake_all(bake=True)
+    if P.get("rendu"):  # ne rendre qu'une plage, après la simulation complète
+        sc.frame_start, sc.frame_end = P["rendu"]
     if P.get("still"):  # une image de contrôle seulement
         sc.frame_set(P["still"]); sc.render.filepath = os.path.join(out, "%s_%04d.png" % (c, P["still"]))
         bpy.ops.render.render(write_still=True)
