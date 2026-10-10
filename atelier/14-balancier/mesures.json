@@ -1,0 +1,29 @@
+{
+ "periode_s": 2.006,
+ "points_morts": [
+  26,
+  51,
+  76,
+  101,
+  126,
+  151,
+  177,
+  202,
+  227,
+  252,
+  277,
+  302,
+  327,
+  352
+ ],
+ "A_coupes": [
+  177,
+  302
+ ],
+ "A_ecart_point_mort_images": [
+  0,
+  0
+ ],
+ "B_nb_plans": 19,
+ "B_duree_mediane_s": 1.0
+}

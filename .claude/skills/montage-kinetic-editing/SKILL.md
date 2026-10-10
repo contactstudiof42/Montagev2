@@ -87,6 +87,10 @@ Sources du placement : crête du riser sur le moment clé (Epidemic Sound) ; son
 - **Un SFX ou une onomatopée amplifie un événement qui existe** (geste, impact, transitoire) ; il ne le remplace pas. Une transition passe par le son quand c'est possible (le bruit de A devient l'impulsion de B) : le cut rapide paraît motivé.
 - **Caler d'abord, salir ensuite** : verrouiller le timing sur une maquette propre, puis texture (grain, accidents) sans retoucher le calage.
 
+## 3e. Quand ne pas l'utiliser (pièce 14 « Balancier », session 9, `atelier/14-balancier/CRITIQUE.md`) [TESTÉ EN ATELIER]
+- Le kinetic impose une pulsation **constante** (une coupe par temps). Si le sujet porte **son propre tempo qui évolue** (un balancier qui s'amortit, une respiration qui ralentit, une foule qui s'emballe), la pulsation du montage **écrase ce changement** : on voit une alternance de plans, plus l'évolution. Version kinetic de la pièce 14 : 19 plans d'une seconde et des whooshs pendant que la lampe s'arrête ; le montage fabrique l'énergie que le sujet perd.
+- Test : « le sens est-il dans la variation de vitesse du sujet ? » Si oui, peu de plans, cadre tenu, coupes sur les points morts. Le kinetic ne revient que si le sujet *gagne* de l'énergie, et alors il peut suivre son accélération.
+
 ## 4. Recettes
 **R1 — Hook 0-3 s** [THÉORIQUE] : image 1 = l'image la plus forte (résultat, chiffre, action) + impact ou drop musical à l'image 1 ; captions dès la 1re syllabe ; 2 à 4 coupes dans les 3 premières secondes ; la promesse est dite avant la 3e seconde.
 

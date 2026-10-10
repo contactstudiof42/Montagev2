@@ -84,6 +84,10 @@ Démonstration produit, réaction en chaîne, gag mécanique, plan « Cog » : t
 - Quand un plan revient (même cadre, après un plan de coupe) et que **quelque chose a changé**, le faire durer **plus longtemps que le plan de départ** (4 s puis 6 s) : la première seconde sert à reconnaître le lieu, le reste à comparer. Trop court (3 s), on reconnaît sans relire ; trop long au départ (8 s), le plan devient décor avant l'anomalie. Voir `montage-grammaire` (cécité au changement).
 - Le plan de coupe entre les deux (la fenêtre) doit être assez long pour qu'on « oublie » le premier (3 s), et **ne rien montrer de la zone qui va changer** (sinon tricherie de raccord).
 
+## Le tempo propre du sujet (atelier 14 « Balancier », session 9) [TESTÉ EN ATELIER]
+- Quand un objet ou un corps produit un rythme (pendule, respiration, danse), **couper sur ses points morts** (vitesse nulle aux extrémités) : la coupe ne prend rien au geste et passe inaperçue (A : 2 coupes à 0 image d'un point mort). Couper au milieu d'un passage casse le mouvement et se voit.
+- Si ce tempo **change** (amorti, accéléré), tenir le cadre assez longtemps pour qu'on compare le mouvement à lui-même : 3 plans sur 15 s ont montré l'épuisement, 19 plans l'ont masqué. Voir `montage-kinetic-editing` 3e.
+
 ## À faire
 - Atelier : un même matériau monté sur trois tempos ; critique comparée.
 - Fiches : Sally Menke (Tarantino), Kirk Baxter (Fincher), clips (Gondry, Jonze).
