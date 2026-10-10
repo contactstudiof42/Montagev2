@@ -31,9 +31,9 @@ Je défends un travail **réduit à une idée**, où **le mouvement a une cause*
 | Domaine | Niveau | Confiance | Commentaire |
 |---|---|---|---|
 | Regard / autocritique | méthode écrite, appliquée sur 2 pièces (12 versions) | moyenne à bonne | ajout du critère « liaison » et de la planche « 1re image de chaque plan » |
-| Direction artistique | méthode écrite, éprouvée par 8 examens (13, 14, 15, 14, 14, 15, 15, 15 /20) | moyenne | tic « une seule chaleur » enfin renversé (examen n°6) ; faiblesse persistante : faisabilité sur rushes vérifiée trop tard → étape 0 |
-| Culture montage / title design / couleur / doc / son | 36 fiches (session 7 : Noé / Tom Kan, Kuntzel + Deygas) ; 24 fiches (dont Marker, Morris, Burtt, Rydstrom en session 4) | moyenne | sources secondaires surtout, faits incertains listés en fin de fiche |
-| Rythme | principes + mesure des coupes + atelier 03 (micro / macro / hybride) | moyenne à bonne | coupes à l'image près en montage scripté (17 ms max) ; scdet ne voit pas les fondus |
+| Direction artistique | méthode écrite, éprouvée par 12 examens (13 → 15 /20 ; n°12 : 14) | moyenne | défaut récurrent : recommander mon propre système ; prochain examen n°13 (fiction courte) |
+| Culture (cinéma, clip, pub, title design, YouTube / internet) | 74 fiches (session 24 : Shorts narratifs, montage alterné de Griffith à *Dunkirk*) | moyenne | sources écrites surtout (aucune vidéo regardée) ; découpages de Shorts non vérifiés |
+| Rythme | principes + mesures + ateliers 03, 24-27, **29 (montage alterné à deux vitesses, 9 versions)** ; `coupes.py` (bande-film, densité) et `tempos.py` | moyenne à bonne | son des pièces jugé sur enveloppe ; scdet ne voit pas les fondus (l'EDL oui) |
 | Motion design | principes + pièces 01 (4 versions) et 09 « Générique » (4 versions) | moyenne à bonne | rupture de forme et courbe éprouvées ; typo en Pillow, pas encore dans AE |
 | Son | principes (+ Burtt, Rydstrom, Chion) + 3 designs sonores synthétiques (dont un tiré d'une simulation, calé à ≤ 1 image) ; surround et downmix mesurés | moyenne | je ne peux pas écouter : jugement par forme d'onde et mesure |
 | Loudness / livraison | recettes testées en labo + cibles hors plateformes sourcées (AES TD1008) | bonne | corporate : web -16, salle -18 ; true peak TD1008 à relire |
@@ -45,7 +45,7 @@ Je défends un travail **réduit à une idée**, où **le mouvement a une cause*
 | Resolve | `montage-resolve` : nodes, RCM, API de scripting (README 21.0.4), **Fusion et Fairlight** (session 11) | faible à moyenne | rien exécuté ; signatures Fusion tirées d'un guide de 2016 |
 | Encodage / bandes | labo testé : 10 bits, grain σ≈2 | bonne | ré-encodage plateforme simulé, pas réel |
 | Kinetic editing | skill + labo + pièce 02 en 6 versions | moyenne à bonne | ressenti des SFX non jugé à l'oreille |
-| Préparation tournage VFX | skill v1 | faible à moyenne | théorique, rien testé |
+| Préparation tournage VFX | skill + ateliers : flou optique / bascule (28), **coupe cachée mesurée (30 : union des silhouettes, vie hors cache, marge de flou, devis de rattrapage)** | moyenne | tout en maquette ; rien sur un vrai plateau |
 | Grammaire | 180° mesuré dans Blender ; franchissement volontaire éprouvé (atelier 11, 4 versions, sauts de regard comptés par coupe) ; J-cut éprouvé (atelier 08) | moyenne à bonne | 30 %, aire de regard, vrai visage : à faire |
 | Photosensibilité | `flash_check.py` v2 (WCAG 2.3.1, fenêtre locale), 7 vérités terrain, ateliers 09 et 20, **rushes à strobe** (session 15 : saccade choisie = seul traitement qui garde le coup) | moyenne | pas un Harding FPA ; motifs réguliers et HDR non couverts |
 | Premiere | `montage-premiere` v1 (v26, recherche datée 2026-10) | faible à moyenne | théorique ; pages Adobe lues par extraits seulement |
