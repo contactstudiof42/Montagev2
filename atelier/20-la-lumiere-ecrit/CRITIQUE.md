@@ -46,3 +46,9 @@ Leçons :
 
 ## Après la fiche step-printing (`culture/step-printing-wong-kar-wai-et-autres.md`)
 Chez Wong Kar-wai et Doyle, la saccade se combine à un **obturateur lent** : les images tenues portent des traînées. Mes images tenues sont nettes : c'est probablement ce qui ferait lire la v2 comme un bug. v7 à faire : flou de bougé accumulé dans chaque image tenue (moyenne des images de la noire précédente sur la foule seulement), contre v3 (lasers continus), à juger en phase 2.
+
+## v7 / v7b : la traînée (`v4-v7-detail.png` : v4 nette / v7 8 poses à 1/25 s / v7b 32 sous-poses)
+- **v7** (moyenne de 8 poses entières) : des **poses fantômes discrètes**, un écho façon chronophotographie, pas un flou. Ce n'est pas un raté : c'est une autre esthétique (fiche McLaren : quelques images d'écart = écho, corps multiplié).
+- **v7b** (4 sous-poses par image) : la traînée devient presque continue, le flou d'un obturateur lent : la tête qui sautait laisse un sillage vers le bas. Photosensibilité inchangée (pire seconde 3, comme v2-v4 : coups sur les noires).
+- Choix pour « la lumière écrit » : **l'écho (v7)** sert mieux un festival (la foule de soi, chaque corps multiplié par le coup) ; la traînée (v7b) dit seulement « vitesse ». À juger en mouvement (PLAN-TESTS 59) ; v8 : écho + noires pointées + 20 noms variés (BACKLOG 80).
+- Coût : rendu numpy à 32 sous-poses par image ≈ 5-6 min pour 10 s (ne recalculer qu'une fois par noire la prochaine fois).
