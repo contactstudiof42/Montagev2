@@ -69,6 +69,9 @@ Pour chaque direction, fiche fixe :
 - **Ne pas écarter une direction pour un risque supposé** : si la plus audacieuse fait peur (« trop anxiogène », « trop sombre »), la maquetter en 10 s avant de la rejeter. Atelier 17 (session 11) : la direction « nuit, seule lumière = l'écran », écartée à l'examen n°1 par peur de l'angoisse, ne l'est pas ; son vrai risque était ailleurs (source centrée = icône, source trop forte = plus de noir) et se corrige. Dans une recommandation, nommer le risque **et** la parade éprouvée.
 - Si `GOUTS.md` contredit ma recommandation : le signaler, proposer la version conforme au goût, et garder mon argument en une ligne.
 
+- **Tic de la recommandation hybride** *(ajout examen n°11)* : examens n°10 (B + A) et n°11 (B + un morceau de C) recommandent « une direction plus un emprunt ». Avant de greffer, écrire la version **pure** et dire ce que l'emprunt ajoute qu'elle ne peut pas produire elle-même (ex. n°11 : la relance à 13 min pouvait venir de la maison, pas de la caméra cachée de C) ; si rien, retirer l'emprunt. Un hybride par prudence brouille le parti pris.
+- **Sécurité des personnes filmées = condition de montage** *(ajout examen n°11)* : un concept qui prive (froid, sommeil, nourriture, hauteur) n'entre dans une direction qu'avec un protocole écrit (seuils, référent, sortie sans humiliation au montage). Sans lui, refuser l'élément du concept, pas seulement le noter en risque.
+
 ## Étape 4 — Critères de réussite (avant de réaliser)
 3 à 5 critères **vérifiables** sur une planche contact ou une mesure, ex. :
 - « Le message est lisible à 2 s sans son. »

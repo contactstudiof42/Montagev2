@@ -43,6 +43,9 @@ Version 1 (session 17, 2026-10-10), demandée par l'utilisateur : une culture Yo
 
 19. **Le contexte de visionnage est une forme** *(examen n°10)* : une vidéo regardée le soir, au lit, au casque (vérifier les heures de visionnage dans les statistiques) peut être conçue pour cet état : luminosité, volume et rythme qui baissent avec le sujet, voix intelligible à faible volume. Ce n'est pas une contrainte technique, c'est une direction possible.
 
+20. **Densité décroissante quand le sujet est un manque** *(examen n°11, hypothèse non éprouvée au-delà d'1 min)* : dans un divertissement d'épreuve ou de privation (la maison qui se vide, l'attente, le froid), « aucun temps mort » ne veut pas dire « densité constante » : le montage peut perdre ses outils avec le sujet (captions → musique → bruitages → punch-ins → étalonnage correctif), le temps long placé **après** la 1re récompense (élimination) et jamais plus de ~4 min sans relance. Courbe visée et contrôle : `labo/youtube/densite.py`. Le passage de 25 à 20 min retire une relance, pas du rythme.
+21. **Un traitement de divertissement liste ses gags** *(examen n°11)* : régler la forme ne règle pas le rire. Écrire 5 à 10 gags de montage concrets (l'objet qui part filmé comme un enterrement, le compteur qui « hésite », le faux raccord comique, le contrechamp de silence) et les placer à la minute ; un gag par chute, jamais en couverture.
+
 ## Méthode pour une vidéo longue confiée
 1. Genre et contrat : divertissement (enjeu, progression), face caméra (personnalité), essai (argument), explicatif (question), vlog (journée racontée), motion (concept). Le genre fixe l'unité de rythme.
 2. Promesse : titre + miniature (au moins 2 variantes à tester : YouTube « Test & Compare » jusqu'à 3 variantes, choisit par **durée de visionnage par impression**, pas par clic ; titres testables depuis décembre 2025, source secondaire).

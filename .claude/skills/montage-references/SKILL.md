@@ -89,6 +89,8 @@ Et une cinquième, d'état : **la saturation** (Noé / Tom Kan, générique d'*E
 - **Une contrainte visible qu'on ne trahit jamais fait l'identité d'une série ; l'absence de montage prouve la performance** (COLORS, Tiny Desk, Blogothèque, `youtube-musique-live-sessions.md`). → Série de portraits corporate : un fond, un plan, une règle.
 - **Couper sur la réaction, pas sur l'action ; chaque extrait doit tenir seul** (gaming, Twitch, podcasts, `youtube-gaming-et-twitch.md`, `podcasts-video-et-clips-verticaux.md`).
 
+- **Ce qui endort sans ennuyer** (`culture/asmr-slow-tv-videos-pour-dormir.md`, session 21, sous-agent) : (a) **le temps réel calme** : peu ou pas de coupe (NRK *Hurtigruten* non resserré, Bob Ross sans coupe) ; chaque coupe réclame de l'attention ; (b) **une direction lente plutôt que le plat**, portée par le contenu (un train qui avance, un tableau qui se construit), sans climax ; lumière et volume peuvent rester constants (Bob Ross, Lofi Girl) ; (c) **la voix proche et basse d'abord** (Poerio et al. 2018 : voix douce 74 %, chuchotement 70 % des déclencheurs cités) ; (d) l'écran n'est jamais noir (NRK : archives dans les tunnels).
+
 ## Tensions entre principes (où mon regard doit trancher)
 - *Kinetic editing* (calage micro, SFX denses) contre *Ziak* (calage macro, aucun effet surligné) : l'utilisateur aime les deux, **pour des usages différents** (confirmé par lui, 2026-10-09). Le premier pour l'énergie et la rétention sur les réseaux ; le second pour la gravité et la menace dans un clip ou un film de marque. Choisir selon l'usage, sans mélanger les deux par défaut.
 - *Réduire à un signe* (Bass) contre *saturer de texture* (Cooper) : le signe pour une marque claire ; la texture pour un sujet trouble ou artisanal.
