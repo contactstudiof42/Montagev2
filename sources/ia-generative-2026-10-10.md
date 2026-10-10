@@ -239,3 +239,20 @@ Recherches du **2026-10-10 au soir** (WebSearch standard et étendu, WebFetch). 
 | OpenRouter, FLUX Video Upscale | https://openrouter.ai/black-forest-labs/flux-video-upscale | 2026-08-19 | via recherche | Dernier upscale vidéo trouvé, hors fenêtre |
 
 Recherches sans résultat neuf dans la fenêtre : Veo, Sora, Kling 4.0, Runway, Luma, Pika, Seedance, Hailuo, Wan, LTX, Midjourney, Topaz, Resolve, Premiere / AE, Blender, ElevenLabs, Suno (au-delà de la session 22).
+
+## Session 24
+Recherches du **2026-10-10 vers 19h35 UTC** (WebSearch standard, WebFetch). Fenêtre visée : 03/10 → 10/10/2026.
+
+| Source | URL | Date | Accès | Ce qu'elle confirme |
+|---|---|---|---|---|
+| Higgsfield, changelog (off.) | https://higgsfield.ai/creator-hub/changelog | consulté 2026-10-10 ~19h40 | ouverte | Dernière entrée 08/10 ; ni Kling 4.0 complet ni Vidu Q4 |
+| Runway, changelog (off.) | https://runway.com/changelog | consulté 2026-10-10 ~19h40 | ouverte | Dernière entrée 02/10 (Seedance 2.5 Draft, Ideogram 4.5 MCP) |
+| ElevenLabs, changelog (off.) | https://elevenlabs.io/docs/changelog | consulté 2026-10-10 ~19h40 | ouverte | Dernière entrée 05/10 (ElevenAgents, SDK) |
+| Atlas Cloud, Kling 4.0 | https://www.atlascloud.ai/it/blog/tips/kling-4-flash-vs-full | 2026-09/10 | via recherche | Toujours « octobre », sans jour (non retenu) |
+| fal.ai, Kling 4.0 | https://fal.ai/learn/tools/what-is-kling-4-0 | 2026 | via recherche | Présentation avant sortie (non retenu) |
+| gradually.ai, Kling 4.0 | https://www.gradually.ai/en/ai-models/kling-4-0/ | 2026 | via recherche | Statut « preview » (non retenu) |
+| You.com, Seedance 2.5 | https://for.you.com/posts/page/8 | non daté | via recherche | Non retenu |
+| AF.NET, tracker vidéo IA | https://af.net/cn/realtime/ai-video-model-release-tracker-2026-key-updates-and-their-significance/ | 2026-10-02 | via recherche | Recyclage d'un billet de juillet (non retenu) |
+| No Film School, Premiere Generative Media | https://nofilmschool.com/adobe-generative-media-tool | 2026-09 | via recherche | Déjà connu (Premiere 26.5, IBC) |
+
+Recherches sans résultat neuf dans la fenêtre : Veo 4, Sora, Midjourney vidéo, Seedance, Hailuo, Wan, LTX, Luma, Topaz, Resolve, Firefly / Premiere / AE, ElevenLabs.

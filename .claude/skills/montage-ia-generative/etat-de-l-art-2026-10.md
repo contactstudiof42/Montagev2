@@ -415,3 +415,12 @@ Fenêtre : 03/10 → 10/10/2026, cinquième passage du jour (WebSearch standard 
 - **Non retenu** : « Grok Imagine Video 1.5 Lite » (1 à 15 s, jusqu'à 1080p) ; il n'apparaît que dans des annuaires, sans annonce xAI, et ceux-ci le datent tantôt du 01/10, tantôt du 08/10.
 - **Rien de neuf vérifié** : Veo, Sora, Kling (4.0 complet toujours pas sorti ; Higgsfield sans entrée les 09 et 10/10), Runway, Luma (Ray3.2), Pika, Seedance, Hailuo (H3), Wan (poids : 2.2 max), LTX (2.5, 11/08), Midjourney, upscale et interpolation (Topaz, FLUX Video Upscale du 19/08), Resolve (21.1, 08/09), Premiere / AE, Blender, voix et musique (au-delà de Suno Speech / Studio).
 - **Pour le monteur** : la référence audio de Vidu Q4 sert à imposer **une voix ou une ambiance** sur un plan généré ; mais le son sort « cuit » dans la vidéo, donc il faut un export séparé ou le refaire au mixage. Le 4K à 16 s maximum convient à des plans d'insert, pas à des plans-séquences. Pas de texte seul : il faut une image de départ, ce qui oblige à préparer une vraie DA image avant de générer (c'est plutôt une bonne contrainte).
+
+### Veille 2026-10-10 (session 24)
+
+Fenêtre : 03/10 → 10/10/2026, sixième passage du jour (~19h35 UTC ; 7 WebSearch standard, 3 WebFetch). Rien testé. Sources : `sources/ia-generative-2026-10-10.md`, « Session 24 ».
+
+- **Rien de neuf depuis la session 23.** Higgsfield : dernière entrée toujours le 08/10, ni Kling 4.0 complet ni Vidu Q4. Runway : dernière entrée le 02/10. ElevenLabs : dernière entrée le 05/10 (agents seulement). [SOURCÉ] off. changelogs Higgsfield, Runway, ElevenLabs (consultés le 10/10 vers 19h40 UTC).
+- **Non retenu** : « Kling 4.0 arrive en octobre » (Atlas Cloud, fal.ai, gradually.ai : toujours sans jour ni annonce Kuaishou) ; « Seedance 2.5 pourrait sortir cette semaine » (you.com, non daté, modèle déjà sorti) ; récaps d'agrégateurs (af.net, frameo, segmind) qui recyclent des infos de mars à juillet.
+- **Rien de neuf vérifié** : Veo / Flow (pas de Veo 4), Sora (fermé), Luma, Seedance, Hailuo, Wan, LTX, Vidu (au-delà de Q4 Preview), Midjourney (pas de vidéo V2), Topaz, Firefly / Premiere / AE (rien depuis Premiere 26.5 et IBC, MAX le 10-12/11), Resolve (21.1), ElevenLabs, Suno (au-delà de Speech et Studio).
+- **Pour le monteur** : rien à changer dans les devis ni dans le choix d'outils de la session 23. Ne pas planifier de plans de 30 s Kling 4.0 tant que le modèle n'est pas listé chez Kling ou Higgsfield.

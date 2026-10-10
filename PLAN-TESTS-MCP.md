@@ -178,3 +178,9 @@ Le serveur `HIGGSFIELD_MCP` est toujours listé, **non appelé** (consigne phase
 - Sur un vrai objectif (phase 2 ou tournage) : la respiration de focale pendant la bascule (non simulée) ; vérifier que la plage perceptive 1,5 → 5-8 m tient avec un vrai 50 mm.
 - Flou de lentille à carte de profondeur dans After Effects (Camera Lens Blur) ou Resolve (Lens Blur de Fusion) contre gaussien : reproduire la planche v1 sur une vraie plaque nette.
 - Contrôle de photosensibilité d'un vrai rush de train en lisière de forêt (et comparer à un Harding si disponible).
+
+## 73. (session 24) Vérifier chaque export de montage avec `labo/outils/coupes.py` [TESTÉ sur banc synthétique, THÉORIQUE sur vrai export]
+- Exporter une séquence Premiere en EDL CMX3600 et en OTIO (ou XML → OTIO), et une séquence Resolve en EDL : `coupes.py export.mp4 --edl seq.edl --scdet 10 --sortie verif` doit donner 0 manqué, 0 fausse alerte ; sinon, lire la bande-film aux coupes en désaccord (raccord sur plan identique, fondu, image noire).
+- Vérifier le décalage de départ de timeline (01:00:00:00 ou 00:00:00:00) et les marqueurs exportés (`* LOC:` Premiere, marqueurs Resolve) : sont-ils relus à l'image près ?
+- Dissolves en EDL (`D nnn`) : à quelle image l'outil place la coupe (début du fondu) ; corriger si besoin.
+- Sur un vrai rush à grain (capteur poussé ou grain ajouté au grade) : comparer l'activité nette quadratique au jugement à l'œil.

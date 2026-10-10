@@ -1,0 +1,37 @@
+# labo/outils — regarder et mesurer un montage autour de ses coupes (session 24, 2026-10-10)
+
+Réponse à Y23 (lire un vrai découpage), Y26 (activité hors coupes, robuste au grain), Y29 (bande-film générale).
+Outil : `coupes.py` (Python 3, numpy, Pillow, ffmpeg ; `opentimelineio` pour l'OTIO, `pip install` 14 s).
+Banc : `fabrique_test.py` fabrique une vidéo de 9 plans (8 à 75 images, plans fixes et animés, un son par plan,
+un plan sur trois presque muet) avec l'EDL CMX3600 et l'OTIO exacts, et une variante à grain fort
+(`noise=alls=40:allf=t`). Durée de fabrication : 2 s. Mesure complète : ~3 s pour 11 s de vidéo 320×180.
+
+## Résultats [TESTÉ EN LABO]
+| Test | Résultat |
+|---|---|
+| EDL CMX3600 (record in, timeline à 01:00:00:00, `* LOC:` = marqueurs) | 8/8 coupes, 2/2 marqueurs |
+| OTIO (piste vidéo, marqueurs de piste) | 8/8, identique à l'EDL |
+| scdet seuil 10, image propre | 8/8, 1 fausse alerte (c+1 entre deux plans fixes) |
+| scdet seuil 10, grain fort | 8/8, **5 fausses alertes** : image 1 et c+1 |
+| scdet seuil 5, grain fort | 8/8, 9 fausses alertes (toutes à c+1 ou image 1) |
+| scdet + fusion des détections à 1 image d'écart (corrigé dans l'outil) | **8/8, 0 fausse alerte** propre et grain |
+
+Activité visuelle hors coupes (vérité = la vidéo propre) :
+| Mesure | propre | grain fort | erreur due au grain |
+|---|---|---|---|
+| YDIF plein cadre (signalstats) | 10,08 | 30,34 | **×3,0** |
+| YDIF image /8 + flou 3×3 | 0,895 | 1,635 | +83 % |
+| idem /16 | 0,533 | 0,893 | +68 % |
+| idem /32 | 0,377 | 0,579 | +54 % |
+| /8, moins le plancher (5e centile), linéaire | 0,895 | 0,506 | −43 % (surcorrige) |
+| /8, soustraction **quadratique** du plancher, image par image | 0,895 | 1,061 | **+19 %** (retenu) |
+
+## Ce que j'en retiens
+- **Ne jamais mesurer « ça bouge » en plein cadre sur un rush granuleux ou un film à grain ajouté** : le grain triple la mesure. Réduire l'image ne suffit pas (le grain de `alls=40` survit à /32).
+- Le grain s'ajoute en quadrature, pas linéairement : retirer le plancher mesuré sur les plans fixes par `√(a² − p²)`. Condition : le film contient au moins 5 % d'images sans mouvement (sinon le plancher est surestimé : le noter).
+- **scdet double les coupes sur image granuleuse** (c et c+1) : toujours fusionner les détections voisines d'une image. Une EDL ou un OTIO valent mieux qu'une détection : la détection sert à vérifier un export, pas à le remplacer.
+- La bande-film (6 images de part et d'autre, enveloppe du son sous chaque image, marqueurs en rouge) suffit pour juger un raccord à l'image près sans lecteur : c'est l'outil à lancer en phase 2 sur chaque export Premiere / Resolve (EDL ou OTIO) avant de le montrer.
+
+## Limites
+- EDL : seuls les événements vidéo `V` en cut sont lus ; dissolves (`D 012`) comptés comme coupes au début du fondu. Pas de pondération des événements (un rire ≠ un bruitage : reste dans `labo/youtube/densite.py`).
+- Pas encore testé sur un vrai export Premiere / Resolve (phase 2, PLAN-TESTS 73).
