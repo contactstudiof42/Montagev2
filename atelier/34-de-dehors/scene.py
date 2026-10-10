@@ -51,7 +51,12 @@ if LAMPE:                                                       # liseuse : chau
 if PHARES:                                                      # une voiture qui passe derrière la caméra : nappe qui balaie
     bpy.ops.object.light_add(type='SPOT', location=(-6, -9, 0.8)); p = bpy.context.object; p.data.energy = 2500; p.data.color = (1.0, 0.95, 0.85)
     p.data.spot_size = 0.35; p.data.spot_blend = 0.5; p.rotation_euler = (math.radians(88), 0, math.radians(-30))
-if VUE == 'ext':
+if VUE == 'large':                                              # v7 : plan d'ensemble, le parking entier, la voiture seule au loin
+    for i in range(1, 4):                                       # deux autres voitures éteintes, loin, pour dire « parking », sans concurrence
+        boite(f'autre{i}', (-9.0 * i + 4, 6 + 3 * i, 0.65), (1.8, 4.4, 1.0), carro)
+    bpy.ops.object.camera_add(location=(-14.0, -34.0, 3.2)); cam = bpy.context.object; cam.data.lens = 35
+    cam.rotation_euler = (math.radians(91), 0, math.radians(-20))
+elif VUE == 'ext':
     bpy.ops.object.camera_add(location=(-7.0, -16.0, 1.7)); cam = bpy.context.object; cam.data.lens = 45
     cam.rotation_euler = (math.radians(94), 0, math.radians(-20))
 else:                                                           # dedans : Karim de 3/4 face depuis le pare-brise côté conducteur
