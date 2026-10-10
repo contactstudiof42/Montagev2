@@ -59,7 +59,9 @@ def planifier(ex, version):
         dispo = [o for o in outils if o != "musique" and not (apres and o == part)]
         if part == "lumiere" and apres:
             dispo = ["coupe"]
-        if version != "v1" and tr is not None and tr - 3 <= t < tr:  # rafale : relance = pic
+        if version == "v4" and tr is not None and tr - 0.6 <= t < tr:  # un vide avant le coup
+            t = tr + 0.01; continue
+        if version != "v1" and tr is not None and tr - 3 <= t < tr - (0.6 if version == "v4" else 0):  # rafale
             d = d0 * 2.2
             if part in ("sfx", "punch"):
                 dispo = dispo + [part] * 3
@@ -97,7 +99,7 @@ def rendre_image(ex, ev, t, etat, version):
         yy, xx = np.mgrid[0:H, 0:W]
         cx, cy = 320, 270
         flick = 1.0
-        if version == "v3":
+        if version in ("v3", "v4"):
             flick = 0.85 + 0.15 * math.sin(t * 7.3) * math.sin(t * 2.1 + 1) + 0.05 * math.sin(t * 17)
             cx += 6 * math.sin(t * 0.15)  # la lumière dérive lentement (on déplace la bougie d'un rien)
         r = np.sqrt((xx - cx) ** 2 + (yy - cy) ** 2)
@@ -106,10 +108,10 @@ def rendre_image(ex, ev, t, etat, version):
         arr = arr * tint
         img = Image.fromarray(np.clip(arr, 0, 255).astype(np.uint8))
         dr = ImageDraw.Draw(img)
-        h = 14 * (flick if version == "v3" else 1)
+        h = 14 * (flick if version in ("v3", "v4") else 1)
         dr.rectangle([cx - 4, cy - 2, cx + 4, cy + 22], fill=(220, 210, 190))
         dr.ellipse([cx - 4, cy - 2 - h, cx + 4, cy - 2], fill=(255, 210, 120))
-        if version == "v3":  # souffles visibles dans le froid, un toutes les ~4 s par personne
+        if version in ("v3", "v4"):  # souffles visibles dans le froid, un toutes les ~4 s par personne
             for j, (x, y) in enumerate([PERSOS[1], PERSOS[3]]):
                 ph = (t + j * 1.9) % 4.0
                 if ph < 1.5:
@@ -117,6 +119,16 @@ def rendre_image(ex, ev, t, etat, version):
                     rr = 6 + 14 * ph
                     dr.ellipse([x + 20 + ph * 10 - rr, y - 44 - rr, x + 20 + ph * 10 + rr, y - 44 + rr],
                                outline=(a, a, a + 20), width=2)
+    # v4 : la relance 4 (triche) arrive par la caméra cachée : un autre régime d'image (IR, timecode) 6 s
+    if version == "v4" and nom == "12:50" and tr <= t < tr + 6:
+        g = np.asarray(img.convert("L")).astype(np.float32)
+        g = np.clip(g * 1.4 + rng.normal(0, 9, g.shape), 0, 255)
+        img = Image.fromarray(np.stack([g * 0.85, g, g * 0.85], -1).astype(np.uint8))
+        dr = ImageDraw.Draw(img)
+        dr.text((16, 330), f"CAM 07  03:12:{int(t * 10) % 60:02d}", font=font_cnt, fill=(230, 230, 230))
+        restants = round(n0 + (n1 - n0) * min(t / dur, 1))
+        dr.text((470, 14), f"OBJETS RESTANTS {restants:02d}", font=font_cnt, fill=(255, 255, 255))
+        return img
     # plan courant (coupes) et punch-in
     cx, cy, z = PLANS[etat["plan"]]
     if etat["punch_jusqua"] > t:
@@ -160,6 +172,11 @@ def synth(ex, ev, version):
             i = int(tr * SR); L = int(0.8 * SR)
             k = np.arange(L) / SR
             a[i:i + L] += 0.7 * np.sin(2 * np.pi * 40 * k) * np.exp(-k * 3)  # drop
+    if version == "v4" and tr is not None and part in ("lumiere", None) and nom in ("12:50", "16:50"):
+        i = int(tr * SR); L = int(0.05 * SR)
+        a[i:i + L] += 0.9 * rng.standard_normal(L) * np.exp(-np.arange(L) / SR * 80)  # clac
+        if nom == "12:50":
+            a[i:i + int(6 * SR)] *= 0.3  # le son de la caméra cachée : plus pauvre, plus loin
     for t, kind in ev:
         i = int(t * SR)
         if kind == "sfx":
