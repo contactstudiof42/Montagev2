@@ -40,7 +40,7 @@ Un artiste de la post-production avant d'être un technicien. Je sais **pourquoi
 | Skill | Domaine | Statut |
 |---|---|---|
 | `montage-expert` | rôle, consultation, autonomie, sommaire | v1 |
-| `montage-regard` | principes de jugement, grille d'autocritique | v1, éprouvé sur atelier 01 (4 versions) |
+| `montage-regard` | principes de jugement, grille d'autocritique, 12 règles d'atelier (journal : `journal.md`) | éprouvé sur 11 pièces ; règles distillées en session 8 |
 | `montage-direction-artistique` | brief → 3 directions → recommandation → critères | v1, corrigé après l'examen n°1 (13/20) |
 | `montage-rythme` | rythme, musicalité, durée des plans, détection de coupes | v1 théorique + mesure scdet testée en labo |
 | `montage-motion-design-principes` | sens du mouvement, typo animée, clichés | v1, nourri par atelier 01 |
@@ -48,8 +48,8 @@ Un artiste de la post-production avant d'être un technicien. Je sais **pourquoi
 | `montage-loudness-livraison` | loudness, normes plateformes, livraison ffmpeg, bandes dans les noirs, 5.1 et downmix | recettes testées en labo (mesure + gain ; 10 bits / grain ; Lo/Ro, Lt/Rt Hilbert, mono) |
 | `montage-after-effects` | easing, graphe de vitesse, expressions, rigs | v1, expressions testées en syntaxe/logique Node uniquement |
 | `montage-ia-generative` | état de l'art IA vidéo/image/son daté 2026-10, clichés, usages | v1 théorique, sources datées |
-| `montage-grammaire` | raccords, 180°, dialogue, J/L-cut, ellipse, montage son de base | v1 ; 180° mesuré en labo et J-cut éprouvé en atelier 08 (session 7), le reste théorique |
-| `montage-couleur-et-intention` | palette, intention d'étalonnage, clichés couleur, souvenir par le support | éprouvé en ateliers 05 (trois étalonnages) et 08 (souvenir) |
+| `montage-grammaire` | raccords, 180°, dialogue, J/L-cut, ellipse, montage son de base | 180° mesuré en labo, franchissement volontaire éprouvé (atelier 11), J-cut éprouvé (atelier 08) ; le reste théorique |
+| `montage-couleur-et-intention` | palette, intention d'étalonnage, clichés couleur, souvenir par le support | éprouvé en ateliers 05, 08 et 10 (froid dans un monde chaud, 20 rendus mesurés) |
 | `montage-references` | principes transférables tirés de `culture/`, tensions entre principes | 36 fiches (session 7 : Noé / Tom Kan, Kuntzel + Deygas) |
 | `montage-kinetic-editing` | montage social haute rétention, SFX hiérarchisés, hook, photosensibilité | calage et photosensibilité testés en labo, éprouvé en ateliers 02 et 09 |
 | `montage-couleur-pipeline` | espaces, log, LUT, ACES, OCIO | v1, conversions et LUT testées en labo |
@@ -58,7 +58,7 @@ Un artiste de la post-production avant d'être un technicien. Je sais **pourquoi
 | `montage-resolve` | nodes, RCM, Deliver, API de scripting Python | v1 théorique (README officiel 2022-2023 lu, rien exécuté) |
 | `montage-formats` | narration par format : pub, vertical, clip, corporate (dispositifs pour l'humain), doc, fiction, teaser | v1 synthèse (session 3) |
 | `montage-premiere` | Premiere (v26, 2026) : projet, proxies, multicam, musique, sous-titres, couleur, Generative Extend, export, trims, UXP | v1 théorique (session 3, recherche datée) |
-| `montage-workflows` | passages entre logiciels, EDL/XML/AAF/OTIO, poignées, pipelines types par format | v1 (session 4) : formats d'échange testés en labo (OTIO), passages théoriques |
+| `montage-workflows` | passages entre logiciels, EDL/XML/AAF/OTIO, poignées, pipelines types par format | formats d'échange (OTIO), VFR et proxies ffmpeg testés en labo (session 8) ; comportement des logiciels théorique |
 | `montage-pilotage-mcp` | méthode d'agent pour piloter AE/Premiere/Blender/Resolve : projet de test, un geste = une image, unités, rien de payant | v1 théorique (session 3) |
 
 ## Ressources du dépôt
@@ -69,5 +69,7 @@ Un artiste de la post-production avant d'être un technicien. Je sais **pourquoi
   - coupes, flashs, calage musical d'un clip : `python3 -I labo/analyse-clip/analyse_clip.py video sortie` ;
   - loudness : mesure ebur128 **sur le fichier encodé**, puis gain (`montage-loudness-livraison`) ;
   - 180° / regards à l'écran pour des plans Blender : `labo/grammaire/axe180.py` (projection tête / regard) ;
+  - cadence variable et synchro : `labo/vfr/mesure_vfr.py` ; proxies rattachables : `labo/proxies/verif_proxy.py` ;
+  - couleur d'un événement : `atelier/10-chaleur-partout/mesure_zone.py` (zone = différence allumé / éteint) ;
   - downmix 5.1 → stéréo / mono : `labo/surround/labo_surround.py`.
 - `PLAN-TESTS-MCP.md` : ce qui reste à valider sur les vrais logiciels.
