@@ -39,3 +39,6 @@ Mesures : `mesures.txt` (script `mesure.py` : aire du changement entre plan 1 et
 3. **Vérifier un raccord depuis la caméra** (deux objets alignés dans l'axe = un seul objet).
 4. **Le plan de retour plus long que le plan de départ** : l'asymétrie donne le temps de comparer.
 5. **Un plan fixe n'est pas une image figée** : grain temporel et air de pièce mesurés (un fond à −60 LUFS n'existe pas).
+
+## Contre-expertise (session 9, `labo/saillance/`)
+Un modèle publié (résidu spectral, Hou et Zhang 2007) confirme que la v4 est la pire (zone de l'anomalie au 63e centile), mais préfère la v3 (89e) à la v7 (75e) : la tasse blanche se détache mieux sur une table sombre que sur une table au soleil. **Éclairer la zone attire l'œil mais peut éteindre le contraste du détail.** v8 (BACKLOG 50) : flaque de lumière voisine, tasse à la lisière, sur fond plus sombre.

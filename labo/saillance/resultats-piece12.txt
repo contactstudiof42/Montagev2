@@ -1,0 +1,5 @@
+v1 {"pic": [99, 16], "dist_pic_anomalie_pct_diag": 29.9, "saillance_zone_sur_moyenne": 2.04, "centile_zone": 85.2}
+v2 {"pic": [304, 169], "dist_pic_anomalie_pct_diag": 12.4, "saillance_zone_sur_moyenne": 1.4, "centile_zone": 78.7}
+v3 {"pic": [175, 253], "dist_pic_anomalie_pct_diag": 26.1, "saillance_zone_sur_moyenne": 2.24, "centile_zone": 88.6}
+v4 {"pic": [320, 239], "dist_pic_anomalie_pct_diag": 23.8, "saillance_zone_sur_moyenne": 0.89, "centile_zone": 62.8}
+v7 {"pic": [349, 169], "dist_pic_anomalie_pct_diag": 19.3, "saillance_zone_sur_moyenne": 1.26, "centile_zone": 74.7}
