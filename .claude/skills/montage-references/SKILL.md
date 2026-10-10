@@ -59,7 +59,7 @@ Décision : plaisir → Bass ou Gondry ; tension → Cooper ; recul → contrepo
 31. **Clip rap FR** (PNL, Kekra, Ziak, Freeze Corleone) : un lieu ou un dispositif qui remplace la parole de l'artiste ; l'anonymat comme dispositif (regard de surveillance, retrait de la couleur sans écraser les noirs) ; l'énigme dans un seul canal (image ou texte). Montage non sourcé.
 32. **Interstellar : poser une règle du temps et la faire entendre** ; le son qui arrache. L'écart de deux temps ne se lit que si chaque ligne a un compteur visible et si l'ellipse est dans la coupe. [ÉPROUVÉ EN MAQUETTE] (pièce 29) Détail : `montage-rythme`.
 33. **Joker : garder la dominante « fausse » et faire mériter la couleur.**
-34. **EGO** (sources écrites et miniatures, aucune vidéo regardée) : un objet banal à une échelle démesurée ; la fable avant la thèse ; une couleur par film ou aucune ; une miniature, un signe ; la forme détournée ; l'artisanat comme argument. Le recul d'échelle ne marche que si l'objet de départ reste dans le cadre ; le chiffre se dit, ne s'écrit pas. [ÉPROUVÉ EN MAQUETTE] (pièce 22) Application YouTube : `montage-youtube`.
+34. **EGO** (sources écrites et miniatures, aucune vidéo regardée) : un objet banal à une échelle démesurée ; la fable avant la thèse ; une couleur par film ou aucune ; une miniature, un signe ; la forme détournée ; l'artisanat comme argument. Le recul d'échelle ne marche que si l'objet de départ reste dans le cadre ; le chiffre se dit, ne s'écrit pas, quand l'image le montre déjà. [ÉPROUVÉ EN MAQUETTE] (pièce 22) Application YouTube : `montage-youtube`.
 
 ## G. YouTube et internet (résumé ; fait foi : `montage-youtube`)
 La promesse avant le film ; « aucun temps mort », pas « couper vite » ; le regard caméra est un contrat ; montrer et dire au même instant ; un système plutôt qu'une séquence ; un effet violent est une ponctuation ; une contrainte visible jamais trahie fait l'identité d'une série (live sessions : le son ne se coupe jamais) ; couper sur la réaction ; ce qui endort sans ennuyer (temps réel calme, direction lente, voix proche et basse).
@@ -73,4 +73,4 @@ La promesse avant le film ; « aucun temps mort », pas « couper vite » ; le r
 - **Faire attendre** (Glazer) contre **les 2 premières secondes des réseaux** : l'attente ne marche que sur un public captif ou si elle intrigue dès l'image 1.
 
 ## Lacunes
-Aucune œuvre revue image par image (phase 2) ; durées de plans des clips rap non mesurées (`labo/analyse-clip/` si l'utilisateur fournit les fichiers). Couverts depuis : documentaire (Varda, Marker, Morris), studios de motion (Buck, ManvsMachine, Elastic).
+Aucune œuvre revue image par image avec le son, sauf le clip de Ziak (fichier fourni, coupes mesurées) : à faire en phase 2 ; durées de plans des clips rap non mesurées (`labo/analyse-clip/` si l'utilisateur fournit les fichiers). Couverts depuis : documentaire (Varda, Marker, Morris), studios de motion (Buck, ManvsMachine, Elastic).
