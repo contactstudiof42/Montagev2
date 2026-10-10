@@ -121,3 +121,6 @@ Démonstration produit, réaction en chaîne, gag mécanique, plan « Cog » : t
 - Monter un peu long, resserrer la mise en place sans toucher à l'ordre des mots, puis une passe finale « 5 images ici, 12 là » ; laisser respirer la chute.
 - Sur la chute, couper sur **celui qui écoute** (sa réaction autorise le rire), mais garder les yeux de celui qui parle au moment du mot.
 - Faux documentaire : chaque coupe doit pouvoir venir d'une caméra présente ; le talking head est une chute ou un démenti que la scène suivante contredit sans respiration.
+
+## Peu de coupes : chacune pèse (pièce 25 v4, session 23) [TESTÉ EN ATELIER, maquette mesurée]
+- Deux plans au lieu de six : la descente tient dans le plan (lumières qui s'éteignent une à une), mais l'unique coupe devient l'événement le plus fort du film (−40 % de luminance d'un coup). Dans une forme lente faite pour apaiser, la remplacer par un **fondu long** (12 s) : la courbe reste monotone, et la superposition peut porter du sens si les deux cadres sont composés pour se rencontrer (la lune qui apparaît dans le ciel de la fenêtre). Détails : `atelier/25-au-lit/CRITIQUE.md` v4.

@@ -37,3 +37,14 @@ Jugement sur bande-film et courbes, sans regarder en mouvement ni écouter ; « 
 - `culture/asmr-slow-tv-videos-pour-dormir.md` **confirme** : le changement causé par le monde (pas par un réglage) et le plancher au-dessus du noir (NRK évitait l'écran noir dans les tunnels).
 - Elle **contredit** deux choses : (1) 5 à 6 coupes en 60 s, c'est encore beaucoup pour ce registre (slow TV et Bob Ross ne coupent presque pas) → v4 à tester : 2 plans seulement, la descente portée par la lumière **dans** le plan ; (2) la descente simultanée de tous les canaux n'est pas nécessaire (Bob Ross garde lumière et volume constants) : une seule direction lente suffit. Le point le plus faible reste la **voix synthétique** neutre (la voix proche et basse est le premier déclencheur cité) : en phase 2, une vraie voix enregistrée près du micro.
 - Limite : une minute peut *signaler* l'endormissement, pas le provoquer (les formats réels durent 20 min à 134 h).
+
+## v4 (session 23, BACKLOG Y22) — deux plans seulement : F (coupe) et G (fondu de 12 s)
+Commandes : `python3 piece.py ../rendus/25 E,F,G` (7 s par version) puis `python3 mesure.py ../rendus/25 F,G v4-mesures.png`.
+| Version | YAVG par 5 s |
+|---|---|
+| E (6 plans, référence v3) | 49 43 40 39 38 33 27 26 21 21 20 20 |
+| F (fenêtre 35 s, coupe, étoiles + lune) | 44 43 41 40 38 36 35 **21** 21 21 20 20 |
+| G (même chose, fondu enchaîné 29-41 s) | 44 43 41 40 38 36 31 24 21 21 20 20 |
+- **F** : la fenêtre seule porte une descente parfaitement régulière (−1,5 par 5 s : les lumières qui s'éteignent une à une suffisent, aucune coupe n'est nécessaire pour dire le temps qui passe). Mais **la seule coupe devient l'événement le plus fort du film** : −40 % de luminance d'un coup. Moins il y a de coupes, plus chacune pèse : dans une forme lente, une coupe unique est une chute. On peut la vouloir (« la ville s'éteint lentement, puis le sommeil vient d'un coup »), pas dans un film fait pour endormir.
+- **G** : le fondu de 12 s rend la courbe monotone sans marche. Et il fabrique un accident juste : pendant le fondu, **la lune apparaît dans le ciel de la fenêtre** (double exposition) : le plan suivant entre dans le précédent au lieu de le remplacer. C'est la même figure que le reflet de la pièce 28 (deux images dans un cadre, révélées par la lumière).
+- **Référence : G.** Leçon : dans une forme lente, un fondu long n'est pas une transition décorative, c'est le moyen de ne pas créer d'événement ; et une superposition peut porter du sens (la lune dans la fenêtre) si les deux cadres ont été composés pour se rencontrer.

@@ -26,7 +26,7 @@ def courbe(version, x, chan):
     descente = {"lum": 1 - 0.6 * x, "vol": 10 ** (-10 * x / 20), "debit": 150 - 35 * x,
                 "pause": 0.4 + 2.1 * x, "plan": 3 + 7 * x}
     moyen = {"lum": 0.7, "vol": 10 ** (-5 / 20), "debit": 132, "pause": 1.45, "plan": 6.0}
-    if version in ("A", "D", "E"):
+    if version in ("A", "D", "E", "F", "G"):
         return descente[chan]
     if version == "B":
         return moyen[chan]
@@ -144,6 +144,13 @@ def main():
             VEILLEUSE = True
             cuts = [0, 5, 11, 19, 28, 40]
             ordre = [1, 0, 2, 0, 3, 4]
+        if version in ("F", "G"):
+            # v4 (session 23, fiche slow TV) : deux plans seulement, une seule direction lente
+            # portée par la lumière DANS le plan : la fenêtre dont les lumières s'éteignent une à une
+            # (35 s), puis les étoiles avec la lune non graduée (plancher).
+            VEILLEUSE = True
+            cuts = [0, 35]
+            ordre = [0, 4]
         p = subprocess.Popen(["ffmpeg", "-y", "-loglevel", "error", "-f", "rawvideo", "-pix_fmt", "rgb24",
                               "-s", f"{W}x{H}", "-r", str(FPS), "-i", "-", "-i", f"{out}/{version}.wav",
                               "-c:v", "libx264", "-crf", "20", "-pix_fmt", "yuv420p", "-c:a", "aac",
@@ -152,7 +159,11 @@ def main():
             tt = f / FPS
             k = max(i for i, c in enumerate(cuts) if c <= tt)
             kind = ordre[k] if ordre else k % 5
-            p.stdin.write(plan(kind, tt, courbe(version, tt / dur, "lum")).tobytes())
+            img = plan(kind, tt, courbe(version, tt / dur, "lum"))
+            if version == "G" and 29 <= tt < 41:  # v4b : fondu enchaîné de 12 s au lieu de la coupe
+                a = (tt - 29) / 12
+                img = Image.blend(plan(0, tt, courbe(version, tt / dur, "lum")), plan(4, tt, courbe(version, tt / dur, "lum")), a)
+            p.stdin.write(img.tobytes())
         p.stdin.close(); p.wait()
         print(version, "coupes :", [round(c, 1) for c in cuts])
 
