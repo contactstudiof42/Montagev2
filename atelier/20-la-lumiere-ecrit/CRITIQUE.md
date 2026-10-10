@@ -52,3 +52,27 @@ Chez Wong Kar-wai et Doyle, la saccade se combine à un **obturateur lent** : le
 - **v7b** (4 sous-poses par image) : la traînée devient presque continue, le flou d'un obturateur lent : la tête qui sautait laisse un sillage vers le bas. Photosensibilité inchangée (pire seconde 3, comme v2-v4 : coups sur les noires).
 - Choix pour « la lumière écrit » : **l'écho (v7)** sert mieux un festival (la foule de soi, chaque corps multiplié par le coup) ; la traînée (v7b) dit seulement « vitesse ». À juger en mouvement (PLAN-TESTS 59) ; v8 : écho + noires pointées + 20 noms variés (BACKLOG 80).
 - Coût : rendu numpy à 32 sous-poses par image ≈ 5-6 min pour 10 s (ne recalculer qu'une fois par noire la prochaine fois).
+
+## v8 (session 16) : écho + 20 noms hiérarchisés, contre un témoin uniforme (`v8.py`, `v8-planche.png`, `v8-uniforme-planche.png`)
+Planches : une image sur 6 (0,24 s), 14 × 6. Les deux versions gardent l'écho de la v7 (moyenne de 8 poses entières, calculée une fois par coup : rendu 40 s au lieu de 5 min) et les lasers continus.
+
+| | v8 hiérarchisée | v8-uniforme (témoin) |
+|---|---|---|
+| Structure | titre → 7 noms « niveau 2 » un par coup, taille 30-46 px et place qui changent → 12 noms « niveau 3 » en 4 paquets de 3 (colonne, 20 px, gauche/droite alternés) → trou d'une mesure → tête d'affiche tenue 8 images → carton-liste 4 s | titre → 19 noms un par coup, même taille, même place → trou → tête d'affiche (pas de carton) |
+| Photosensibilité (`flash_check.py`) | **12 flashs, pire seconde 2** | 20 flashs, pire seconde 2 |
+| Durée pour les 19 noms | 5,6 s (images 47 → 187 + 4 paquets) | **13,3 s** |
+
+Ce que montrent les planches :
+- **Le témoin uniforme est un papier peint** : 19 fois le même cycle blanc → nom → fondu, toujours au même endroit ; le nom suivant tombe là où le précédent s'éteint, ce qui se lit comme un **compteur** ou un générique qui défile, pas comme une programmation. Sur la planche, l'œil cesse de lire vers le 6e nom (rangée 3). La tête d'affiche, malgré ses 54 px, arrive après 13 s de même chose : elle est moins attendue que dans la v8.
+- **La hiérarchie raccourcit et respire** : 11 coups au lieu de 19 pour les mêmes noms, donc 40 % de flashs en moins **sans rien retirer** ; trois tailles = trois rangs lisibles d'un coup d'œil (seul / en paquet / énorme), c'est la règle d'affiche appliquée au temps.
+- **Les paquets de 3 ne se lisent pas, ils se repèrent** : 0,7 s pour 3 noms courts. C'est acceptable seulement parce que le carton-liste suit (lecture de repérage, BACKLOG 82) : le défilé donne l'énergie, le carton donne l'information. Sans carton, les 12 noms du niveau 3 seraient sacrifiés : il faut le dire au client avec ce chiffre.
+- **Défauts** : (1) après le 7e nom, 0,7 s de « HALOGÈNE » mourant en gris sombre avant le premier paquet (le dernier coup de la section tombe à l'image 170, la mesure suivante à 188) : un trou involontaire qui affaiblit le vrai trou de la mesure 7. Il faut caler la fin de section sur la barre (6 noires pointées + 1 noire, ou une noire pointée de plus). (2) Le carton-liste dure 4 s ; d'après la recherche de la session 15, trouver un nom dans 20 prend 3-4 s, conclure qu'il manque 6-7 s : **le carton doit durer 6 s** (film de 22 s) ou être doublé d'une sortie en carrousel. (3) Le « noir » du trou est un brun très sombre (couleur de base de la salle) : à vérifier sur un téléphone en luminosité basse, il peut lire « image » et non « noir ».
+
+Grille : **intention** servie (la lumière écrit, chaque rang a sa forme) ; **lisibilité** : niveau 2 et tête d'affiche oui, niveau 3 en repérage seulement ; **rythme** : la v8 a une forme (seul, paquets, silence, sommet, liste), le témoin n'en a pas ; **justesse** : aucun effet ajouté, la hiérarchie fait le travail que le volume ne fait pas ; **originalité** : le carton-liste final est un passage obligé, assumé comme tel.
+
+Leçons :
+1. **Hiérarchiser une liste, c'est économiser des coups** : grouper le bas de l'affiche en paquets divise le nombre d'événements (et de flashs) sans retirer un nom. Une liste longue montée « un nom = un coup » est un compteur.
+2. **Une section doit finir sur la barre** : un reste de 0,7 s entre la fin d'une section et la suivante fait un trou involontaire qui use le vrai silence.
+3. Coût : calculer l'écho une fois par coup (cache) et non par image : 40 s pour 20 s de film.
+
+À faire (v9) : fin de section calée, carton 6 s, son (kick + relais + impact, boucle R6), un « moment Muybridge » (la tête d'affiche en 4 phases côte à côte, fiche `culture/chronophotographie-marey-muybridge.md`) contre la trace superposée.
