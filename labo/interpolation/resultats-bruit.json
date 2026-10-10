@@ -1,0 +1,37 @@
+{
+ "dup": {
+  "psnr_y_inventees": 28.16,
+  "min_inventees": 22.46,
+  "psnr_y_origine": 99.0,
+  "coupe_i119": 22.5,
+  "i121": 29.11
+ },
+ "blend": {
+  "psnr_y_inventees": 29.94,
+  "min_inventees": 27.6,
+  "psnr_y_origine": 78.04,
+  "coupe_i119": 22.5,
+  "i121": 29.01
+ },
+ "mci": {
+  "psnr_y_inventees": 29.61,
+  "min_inventees": 25.68,
+  "psnr_y_origine": 78.47,
+  "coupe_i119": 22.5,
+  "i121": 28.41
+ },
+ "mci_aobmc_bidir": {
+  "psnr_y_inventees": 30.65,
+  "min_inventees": 27.61,
+  "psnr_y_origine": 78.64,
+  "coupe_i119": 22.5,
+  "i121": 29.61
+ },
+ "mci_noscd": {
+  "psnr_y_inventees": 29.61,
+  "min_inventees": 25.68,
+  "psnr_y_origine": 78.47,
+  "coupe_i119": 18.28,
+  "i121": 28.41
+ }
+}

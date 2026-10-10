@@ -1,0 +1,8 @@
+dup images 240
+dup PSNR zones en mouvement 14.28 dB ; part de l'image en mouvement 18.8 %
+blend images 236
+blend PSNR zones en mouvement 16.87 dB ; part de l'image en mouvement 18.8 %
+mci images 236
+mci PSNR zones en mouvement 16.1 dB ; part de l'image en mouvement 18.8 %
+mci_aobmc_bidir images 236
+mci_aobmc_bidir PSNR zones en mouvement 17.31 dB ; part de l'image en mouvement 18.8 %
