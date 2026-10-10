@@ -91,6 +91,10 @@ Règle : alterner ART et TECH. Réalimenter dès qu'il reste moins de 10 sujets 
 64. [ ] [ART] Examen n°7 (session 13) : brief de nuit ou de clip en basse lumière, pour mettre à l'épreuve la fiche Willis et la pièce 17.
 65. [ ] [TECH] Mesurer dans Blender le rendu « noir protégé » : exporter la pièce 17 en H.264 8 bits contre 10 bits + grain, compter les bandes dans le dégradé du mur (suite du labo encodage, session 2).
 
+66. [ ] [TECH] Mesurer la **continuité de direction** à la coupe (whip pan même sens / sens inverse, `labo/kinetic/whip/`) avec un vrai flot optique (RAFT CPU, ou vecteurs de `minterpolate`), la corrélation de phase ayant échoué ; puis l'appliquer au clip de Ziak et aux pièces kinetic.
+67. [ ] [ART] Pièce 17 v6 : un contrechamp (l'écran vu de près, une voix qui répond) pour que l'appel soit visiblement la cause du calme ; bébé modélisé lisible ; tester la version sans aucune image de l'écran (tout dans le son).
+68. [ ] [ART] Culture kinetic : chercher des sources solides (entretiens, breakdowns) sur les monteurs « edit » des réseaux (Kolder et successeurs, monteurs de sport, « velocity edits ») ; la fiche Kolder est de mémoire.
+
 ## Fait (trace)
 - [x] [ART] Session 11 : pièce 16 v4, pièce 17 « dans le noir », fiche Gordon Willis
 - [x] [TECH] Session 11 : labo recadrages / nests / audio multipiste dans l'échange ; labo AE bercement (phase intégrée)
