@@ -69,7 +69,7 @@ Règle : alterner ART et TECH. Réalimenter dès qu'il reste moins de 10 sujets 
 45. [x] [ART] (session 8 : 2 confirmés, 2 corrigés : chaînes de FELA, médiane de « Vrai/Faux ») Revérifier à la main un chiffre clé par fiche de la session 8 (Scott Pilgrim : 1 feuille d'acétate ≈ 1 s ; FELA : 301 épisodes ; « Vrai/Faux » : médiane 39/255).
 46. [ ] [TECH] VFR suite : interpolation par IA (RIFE ou équivalent libre) contre `minterpolate` sur le faux rush ; mesurer les traînées ; rush réel de téléphone CC0.
 47. [ ] [ART] Atelier « le fond raccorde » (leçon de la pièce 10 v6) : un champ / contrechamp où seul le fond change de couleur ; mesurer ce que le spectateur attribue au personnage.
-48. [ ] [TECH] Contrôle automatique des sauts de regard sur une EDL entière (outil de l'atelier 11 généralisé : JSON de plans + positions → liste des coupes fautives).
+48. [x] [TECH] (session 8 : `labo/grammaire/sauts_regard.py`, validé sur l atelier 11 et un franchissement partiel = 2 sauts) Contrôle automatique des sauts de regard sur une EDL entière (outil de l'atelier 11 généralisé : JSON de plans + positions → liste des coupes fautives).
 
 ## Fait (trace)
 - [x] [ART] Session 8 : pièce 10 v4-v6, pièce 11 « Dialogue », fiches Scott Pilgrim, génériques doc, drill FR ; `montage-regard` distillé
