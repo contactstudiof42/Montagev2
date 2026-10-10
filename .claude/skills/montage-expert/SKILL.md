@@ -42,10 +42,10 @@ Un artiste de la post-production avant d'être un technicien. Je sais **pourquoi
 |---|---|---|
 | `montage-expert` | rôle, consultation, autonomie, sommaire | v1 |
 | `montage-regard` | principes de jugement, grille d’autocritique, 20 règles d’atelier (journal : `journal.md`) | éprouvé sur 19 pièces ; règles distillées en session 8, enrichies jusqu’à la session 14 (courbe d’une lumière qui change) |
-| `montage-direction-artistique` | brief → 3 directions → recommandation → critères | corrigé après chacun des 10 examens (13 → 15/20 ; n°10 : faisabilité bloquante, sponsor dans le sujet) |
-| `montage-rythme` | rythme, musicalité, durée des plans, détection de coupes | v1 théorique + mesure scdet testée en labo |
+| `montage-direction-artistique` | brief → 3 directions → recommandation → critères | corrigé après chacun des 12 examens (13 → 15/20 ; n°12, 14/20 : test « mon propre système » symétrique, packshot pour public âgé) |
+| `montage-rythme` | rythme, musicalité, durée des plans, détection de coupes | mesure scdet testée en labo ; éprouvé en ateliers 03, 24, 26 (densité qui décroît), **27 (gag de contradiction à l'image près, règle de trois, bouton)** ; timing comique sitcom (fiche) |
 | `montage-motion-design-principes` | sens du mouvement, typo animée, clichés | v1, nourri par atelier 01 |
-| `montage-son-et-emotion` | silence, sound design, rapport image/son | v1, recettes forme d'onde/synthèse testées |
+| `montage-son-et-emotion` | silence, sound design, rapport image/son | recettes forme d'onde / synthèse testées ; silence-gag éprouvé (atelier 27) |
 | `montage-loudness-livraison` | loudness, normes plateformes, livraison ffmpeg, bandes dans les noirs, 5.1 et downmix | recettes testées en labo (mesure + gain ; 10 bits, grain non universel (s12) ; Lo/Ro, Lt/Rt Hilbert, mono) |
 | `montage-after-effects` | easing, graphe de vitesse, expressions, rigs | v1, expressions testées en syntaxe/logique Node uniquement |
 | `montage-ia-generative` | état de l'art IA vidéo/image/son daté 2026-10, clichés, usages | v1 théorique, sources datées |
@@ -55,7 +55,7 @@ Un artiste de la post-production avant d'être un technicien. Je sais **pourquoi
 | `montage-kinetic-editing` | montage social haute rétention, SFX hiérarchisés, hook, photosensibilité, transitions tournées (whip pan) | calage, photosensibilité et flou aux bords d'un plan (whip) testés en labo, éprouvé en ateliers 02 et 09 |
 | `montage-couleur-pipeline` | espaces, log, LUT, ACES, OCIO | v1, conversions et LUT testées en labo |
 | `montage-blender` | Blender pour la vidéo : plateau multi-caméras, EDL JSON, rendu CLI, corps rigides (déterministes), caméra portée | testé en ateliers 01-08 |
-| `montage-preparation-tournage-vfx` | préparer un tournage à effets : méthode, réglages caméra, fond vert, plaques, checklist | v1 théorique |
+| `montage-preparation-tournage-vfx` | préparer un tournage à effets : méthode, réglages caméra, fond vert, plaques, checklist, infrarouge, **flou optique contre flou de post, courbe d'une bascule de point, reflet dans une vitre** | méthode théorique ; flou, mise au point et reflet **testés dans Blender** (pièce 28, session 23) |
 | `montage-resolve` | nodes, RCM, Deliver, API de scripting Python, Fusion (quand plutôt qu'AE, titres maison), Fairlight (normalisation, Voice Isolation) | théorique (README 21.0.4 et guides 20 lus, rien exécuté) |
 | `montage-formats` | narration par format : pub, vertical, clip, corporate (dispositifs pour l'humain), doc, fiction, teaser | v1 synthèse (session 3) |
 | `montage-youtube` | YouTube long format : divertissement et rétention, face caméra, essai vidéo, doc explicatif, vulgarisation, vlog, motion de chaîne, cultures d'edit ; promesse titre + miniature, relances par minute, specs (chapitres, écran de fin, miniatures) | v1 (session 17) : 9 fiches sourcées (secondaires), validateur de chapitres et banc de miniatures testés en labo |
@@ -76,5 +76,7 @@ Un artiste de la post-production avant d'être un technicien. Je sais **pourquoi
   - downmix 5.1 → stéréo / mono : `labo/surround/labo_surround.py` ;
   - où va le regard / une anomalie d'un plan à l'autre (saillance grossière, aire du changement) : `atelier/12-inquietude-calme/mesure.py plan1.png plan3.png` ;
   - peau et fond en Lab, induction chromatique estimée : `atelier/13-fond-raccorde/mesure.py` (masque de peau rendu) ;
+  - une coupe à l'image près (bande-film image par image + enveloppe du son, repères mot-clé / coupe / réaction) : `atelier/27-jamais/bande.py` ;
+  - lisibilité d'un objet flou (corrélation à l'échelle de l'objet, pas variance du laplacien) : `atelier/28-flou-net/CRITIQUE.md` (code en v2) ;
   - qualité d'un ralenti interpolé contre vérité terrain : `labo/interpolation/` (`compare.sh`, `analyse.py`, `zones.py`, `rife60.py`).
 - `PLAN-TESTS-MCP.md` : ce qui reste à valider sur les vrais logiciels.
