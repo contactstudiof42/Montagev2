@@ -29,3 +29,8 @@ Avec le critère de surface juste (pire fenêtre de 1/3 × 1/3 de l'écran, WCAG
 
 ## v4 proposée
 Acteurs sur deux lignes géantes et fond commun ; ralentir le titre (apparition lettre à lettre sur le sous-grave) ; normaliser à -14 LUFS ; version 9:16 (la rupture d'échelle y est encore plus forte : un mot = l'écran).
+
+## v4 — le sommet change de règle (`v4-planche.png`)
+- Acteurs : **fond commun** (le même bleu nuit à luminance égale), **deux lignes géantes** (prénom / nom, 46 % de la hauteur chacune), même police noire, même jaune pâle. Après 28 cartons où tout change, quatre cartons où rien ne change sauf le nom : la stabilité dit « voilà ceux qui comptent ». C'est la première version où la courbe **arrive** au lieu de redescendre. Référence.
+- Quarts de temps : texte à valeur 0,72 au lieu de 1 pour gagner une marge de photosensibilité : **inutile** (5 flashs, pire seconde 3, comme v3). Le seuil est une variation de 10 % de luminance relative : un texte encore lisible le dépasse toujours. **Les leviers réels sont la surface (taille du mot dans sa fenêtre) et la fréquence, pas la luminosité.** À garder en tête pour la v5 : quelques quarts de temps en mots petits, ou fusionner deux quarts en un demi.
+- Son normalisé par mesure puis gain (+11,4 dB) et limiteur à 0,7 : **-14,5 LUFS, -1,3 dBTP mesurés sur le MP4** (deux essais ratés avant : -15,1 / -0,9 puis -14,9 / -1,5 : l'AAC remonte la crête de ~1 dB au-dessus du réglage du limiteur).

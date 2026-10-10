@@ -79,7 +79,8 @@ Sources du placement : crête du riser sur le moment clé (Epidemic Sound) ; son
 
 ## 3c. Leçon d'atelier (pièce 09 « Générique de l'équipe », session 7)
 - **Strobe sans risque** [TESTÉ EN ATELIER] : cartons de 3 images sur des fonds de teintes différentes à **luminance relative égale** (~0,03 ; recherche de la valeur HSV qui donne la luminance cible), texte clair : le fond ne flashe plus, mais **les grands mots clairs flashent localement** (critère WCAG de la fenêtre 1/3 × 1/3) : 6 flashs, pire seconde 3, à la limite ; marge : cartons de 4 images ou texte moins lumineux dans les passages les plus rapides. Les mêmes cartons sur fonds noir / blanc alternés : 16 flashs, pire seconde 5, inlivrable.
-- **Rupture de forme** : varier échelle (10 → 60 % de la hauteur), position et débord à chaque coupe ; la police ne compte qu'en grand. Le sommet (les noms qui comptent) doit changer de règle, pas seulement grossir.
+- **Rupture de forme** : varier échelle (10 → 60 % de la hauteur), position et débord à chaque coupe ; la police ne compte qu'en grand. Le sommet (les noms qui comptent) doit changer de règle, pas seulement grossir : v4 = fond commun, deux lignes géantes, même police pour les 4 acteurs, après 28 cartons où tout change.
+- **Photosensibilité : baisser la luminosité du texte ne sert à rien** (v4 : texte à 0,72, toujours pire seconde 3) ; les leviers sont la **surface** du mot dans sa fenêtre locale et la **fréquence**.
 
 ## 4. Recettes
 **R1 — Hook 0-3 s** [THÉORIQUE] : image 1 = l'image la plus forte (résultat, chiffre, action) + impact ou drop musical à l'image 1 ; captions dès la 1re syllabe ; 2 à 4 coupes dans les 3 premières secondes ; la promesse est dite avant la 3e seconde.

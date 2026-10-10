@@ -9,7 +9,7 @@ ffmpeg -y -loglevel error -f lavfi -i "color=black:s=320x180:r=25:d=2" -vf "geq=
 ffmpeg -y -loglevel error -f lavfi -i "color=black:s=320x180:r=25:d=2" -vf "format=rgb24,geq=r='if(mod(floor(N/2),2),230,40)':g='if(mod(floor(N/2),2),60,120)':b='if(mod(floor(N/2),2),200,255)'" -pix_fmt yuv420p $O/C.mp4
 # D : rouge saturé / noir toutes les 2 images -> doit échouer (général ET rouge)
 ffmpeg -y -loglevel error -f lavfi -i "color=black:s=320x180:r=25:d=2" -vf "format=rgb24,geq=r='255*mod(floor(N/2),2)':g=0:b=0" -pix_fmt yuv420p $O/D.mp4
-# E : noir/blanc toutes les 2 images mais sur un petit carré (10 % de l'écran) -> passe (surface)
+# E : noir/blanc toutes les 2 images sur un carré de 6 % de l'écran -> échoue avec la fenêtre WCAG 1/3 (passait avec --plein-ecran)
 ffmpeg -y -loglevel error -f lavfi -i "color=gray:s=320x180:r=25:d=2" -vf "drawbox=x=130:y=60:w=60:h=60:c=white:t=fill:enable='mod(floor(n/2),2)'" $O/E.mp4
 # F : flash blanc d'une image sur l'impact, un par seconde (recette R4 du kinetic) -> passe
 ffmpeg -y -loglevel error -f lavfi -i "color=0x303030:s=320x180:r=25:d=2" -vf "drawbox=c=white:t=fill:enable='eq(mod(n,25),12)'" $O/F.mp4

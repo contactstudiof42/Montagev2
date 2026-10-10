@@ -39,6 +39,8 @@ Et une cinquième, d'état : **la saturation** (Noé / Tom Kan, générique d'*E
 10c. **Le regard graphique avant la technique** (Buck, `culture/buck-studio.md`) : planche de style d'abord, puis mélanger dessin, 3D et stop-motion selon ce que chaque plan demande. **Quand une voix porte le film, l'image enchaîne par transformations plutôt que par coupes**, au rythme de la parole.
 11. **Les défauts d'un traitement poussé à l'extrême sont une matière**, s'ils correspondent au thème (Clair : ralenti extrême ; *The Hardest Part* : la dérive de l'IA comme sujet).
 
+- **La technique comme métaphore du sujet** (Kuntzel + Deygas, générique de *Catch Me If You Can*, `culture/kuntzel-deygas-catch-me-if-you-can.md`) : des tampons encreurs pour un faussaire, défauts gardés ; une silhouette sans visage pour un homme aux identités changeantes ; chaque aplat de couleur dit « ailleurs, plus tard » sans carton. **Hommage par la méthode, jamais par les motifs** : reprendre la logique de Bass (un signe, peu de couleurs, typo dans le décor) et trouver le signe dans son propre sujet. Test : si le générique marche aussi bien sur un autre film, c'est un pastiche. Pôle opposé de Noé / Kan : lisible, narratif, continu.
+
 ## E. Raccords et structure
 12. **Le son porte le raccord** (Murch) ; **la transition est une idée ou un gag** (Wright), jamais un fondu par défaut.
 13. **Une situation-cadre comme pivot** (déposition, interview) : raccords question/réponse entre présent et passé (*The Social Network*). → Documentaire corporate : l'interview pilote les allers-retours vers les images d'archives.

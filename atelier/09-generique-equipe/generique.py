@@ -55,6 +55,16 @@ def fond_lum(h, cible=.03):  # teinte h à luminance relative ~cible (recherche 
 
 
 def carton(i, typ, d):
+    V4 = "--v4" in sys.argv
+    if V4 and typ == "acteur":  # v4 : le sommet change de règle : fond commun, deux lignes géantes, même police
+        prenom, nomf = ACTEURS[i - 28][1].split(" ", 1)
+        im = Image.new("RGB", (W, H), fond_lum(.62)); dr = ImageDraw.Draw(im)
+        for k, mot in enumerate((prenom, nomf)):
+            t = int(H * .46)
+            ft = ImageFont.truetype(F + "opentype/inter/InterDisplay-Black.otf", t)
+            while dr.textlength(mot, font=ft) > W * .96: t -= 2; ft = ImageFont.truetype(F + "opentype/inter/InterDisplay-Black.otf", t)
+            dr.text(((W - dr.textlength(mot, font=ft)) / 2, 8 + k * H * .47), mot, font=ft, fill=(245, 225, 140))
+        return im, dict(police="InterDisplay-Black", fond=fond_lum(.62), echelle=.46)
     if typ == "titre":
         role, (pol, nom), echelle = "", (F + "opentype/inter/InterDisplay-Black.otf", TITRE), 0.55
     elif typ == "acteur":
@@ -71,7 +81,8 @@ def carton(i, typ, d):
         bg = (0, 0, 0) if i % 2 == 0 else (255, 255, 255)
         fg = (255, 255, 255) if i % 2 == 0 else (0, 0, 0)
     else:
-        bg = fond_lum(h); fg = tuple(int(255 * x) for x in colorsys.hsv_to_rgb((h + .5) % 1, .35, TXT_V))
+        tv = .72 if ("--v4" in sys.argv and typ == "vite") else TXT_V  # v4 : marge de photosensibilité au plus rapide
+        bg = fond_lum(h); fg = tuple(int(255 * x) for x in colorsys.hsv_to_rgb((h + .5) % 1, .35, tv))
     if typ == "titre": bg, fg = (0, 0, 0), (235, 235, 230)
     im = Image.new("RGB", (W, H), bg); dr = ImageDraw.Draw(im)
     taille = int(H * echelle)
