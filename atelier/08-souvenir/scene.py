@@ -63,6 +63,19 @@ faience = mat("faience", (0.85, 0.83, 0.78), 0.15)
 bpy.ops.mesh.primitive_cylinder_add(radius=0.04, depth=0.09, location=(0, 0.035, 0.045)); tasse = bpy.context.object
 bpy.ops.mesh.primitive_torus_add(major_radius=0.025, minor_radius=0.006, location=(0.045, 0.035, 0.05),
                                  rotation=(math.radians(90), 0, 0)); anse = bpy.context.object
+if P.get("cuillere"):  # v4 : un indice d'usage (quelqu'un buvait ce café)
+    bpy.ops.mesh.primitive_cylinder_add(radius=0.003, depth=0.10, location=(-0.018, 0.03, 0.095),
+                                        rotation=(math.radians(-30), math.radians(-35), 0))
+    cu = bpy.context.object; cu.data.materials.append(mat("inox", (0.8, 0.8, 0.82), 0.2))
+    cu.material_slots[0].material.node_tree.nodes["Principled BSDF"].inputs["Metallic"].default_value = 1
+    cu.parent = pivot; cu.hide_render = bool(P.get("sans_tasse"))
+    bpy.ops.mesh.primitive_cylinder_add(radius=0.036, depth=0.002, location=(0, 0.035, 0.0915))  # café resté dans la tasse
+    cafe = bpy.context.object; cafe.data.materials.append(mat("cafe", (0.03, 0.015, 0.006), 0.35))
+    cafe.parent = pivot; cafe.hide_render = bool(P.get("sans_tasse"))
+if P.get("trace") and P.get("sans_tasse"):  # le présent : la trace sèche d'un fond de tasse, là où elle était
+    bpy.ops.mesh.primitive_torus_add(major_radius=0.038, minor_radius=0.0025, location=(0.35, 0.005, 0.7605))
+    tr = bpy.context.object; tr.scale = (1, 1, 0.15); tr.data.materials.append(mat("trace", (0.07, 0.035, 0.015), 0.6))
+    tr.parent = table
 for o in (tasse, anse):
     o.data.materials.append(faience); o.parent = pivot
     o.hide_render = bool(P.get("sans_tasse"))
@@ -128,7 +141,12 @@ if P.get("camera", "large") == "large":
                               rotation=(math.radians(rx), math.radians(ry), math.radians(rz)))
     bpy.context.object.data.lens = P.get("cam_lens", 38)
 else:
-    bpy.ops.object.camera_add(location=(0.62, -0.42, 0.86), rotation=(math.radians(80), 0, math.radians(35)))
+    il = P.get("insert_loc", [0.62, -0.42, 0.86]); ir = P.get("insert_rot", [80, 0, 35])
+    bpy.ops.object.camera_add(location=tuple(il), rotation=tuple(math.radians(a) for a in ir))
+    if P.get("insert_cible"):  # viser un point (le haut de la tasse) plutôt que régler des angles à l'aveugle
+        from mathutils import Vector
+        cobj = bpy.context.object; d = Vector(P["insert_cible"]) - cobj.location
+        cobj.rotation_euler = d.to_track_quat("-Z", "Y").to_euler()
     bpy.context.object.data.lens = 85; bpy.context.object.data.dof.use_dof = True
     bpy.context.object.data.dof.focus_object = tasse; bpy.context.object.data.dof.aperture_fstop = 2.8
 sc.camera = bpy.context.object

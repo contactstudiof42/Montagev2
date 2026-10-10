@@ -29,3 +29,10 @@ Matériau : plateau Blender de la pièce 06 (créé par moi, aucun média tiers)
 
 ## v4 proposée
 Bord aligné au pixel (caméra portée seulement sur le plan large du passé) ; un indice d'usage sur la tasse (vapeur, ou une cuillère) ; grain très fin sur le présent ; tester 9:16.
+
+## v4 (`v4-planche.png`, `v4-raccord.png`) — l'absence a un sujet
+- **Trouvaille** : dans le présent, une **trace sèche de fond de tasse** sur la table, exactement là où la tasse était (même coordonnées dans la scène). Le plan de l'absence n'est plus abstrait : il montre une trace, donc un usage, donc quelqu'un. C'est la réponse au défaut n° 2 de v3 (« le passé n'a pas de regard ») trouvée **dans le présent** : l'indice d'usage le plus fort n'est pas dans le souvenir, c'est ce que le souvenir a laissé.
+- Bord aligné : l'insert du passé n'a plus de caméra portée (le large garde la sienne) et les deux inserts partagent la même caméra, visée par un point (`insert_cible`) au lieu d'angles réglés à l'aveugle (deux essais ratés avant : haut de la tasse coupé, puis tasse sortie du cadre). Le raccord tasse → trace tombe au même endroit. **Choix tranché : aligné.**
+- Passé insert et présent insert immobiles → **une image rendue chacun** ; la texture caméscope varie quand même à chaque image (bruit tiré à chaque image), le passé « vit » ; le présent reçoit un grain fin (σ = 2/255) pour ne plus faire « photo ».
+- **Ce qui reste faible** : la cuillère se lit **paille** (trop fine, sans cuilleron) ; la surface du café reste beige (le disque reflète la fenêtre) ; la trace est trop nette et grise, elle devrait être brune et irrégulière (un anneau plus foncé au bord, comme un vrai fond de café séché). Ce sont des défauts de fabrication, pas de direction.
+- Bilan de la pièce : v4 = **référence**. Ordre : présent large figé → passé large (J-cut d'oiseau) → la tasse, la cuillère → la trace, au même endroit → le présent large, relu.

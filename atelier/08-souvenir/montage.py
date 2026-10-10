@@ -48,8 +48,11 @@ for j, (src, f) in enumerate(frames):
     # plans du présent : caméra et décor immobiles -> une image rendue suffit (on prend la dernière disponible)
     dispo = sorted(os.listdir(f"{R}/{src}")); fn = f"{f:04d}.png"
     im = Image.open(f"{R}/{src}/{fn if fn in dispo else dispo[-1]}").convert("RGB")
-    if src.startswith("S_") and tex != "propre":
+    if src.startswith("S") and tex != "propre":
         im = camescope(im, j, date=(tex == "camescope_date"))
+    elif src.startswith("P") and E.get("grain_present"):  # v4 : le présent respire (grain fin, sinon « photo »)
+        v = np.asarray(im).astype(np.float32) + rng.normal(0, E["grain_present"], (H, W))[..., None]
+        im = Image.fromarray(np.clip(v, 0, 255).astype(np.uint8))
     im.save(f"{out}/{j:04d}.png")
 
 # Son : présent = ton de pièce (bruit brun très bas) ; passé = souffle de bande + oiseau lointain
@@ -60,9 +63,9 @@ hiss = rng.normal(0, 1, N); hiss = hiss - np.convolve(hiss, np.ones(8) / 8, "sam
 J, L = E.get("j", 0), E.get("l", 0)  # J-cut : le son du passé arrive J images avant l'image ; L-cut : traîne L images après
 for src, i0, n in segs:
     s0, s1 = i0 * SR // FPS, (i0 + n) * SR // FPS
-    if src.startswith("S_"):
+    if src.startswith("S"):
         s0, s1 = max(0, s0 - J * SR // FPS), min(N, s1 + L * SR // FPS)
-    if src.startswith("P_"):
+    if src.startswith("P"):
         a[s0:s1] += 0.02 * brown[s0:s1]
         continue
     else:
