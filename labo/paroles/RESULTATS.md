@@ -30,3 +30,13 @@ Question (BACKLOG 75, suite de la pièce 19) : quelle taille, quelle graisse et 
 
 ## Leçon artistique
 Le texte incrusté est une **image**, et il se décide avec le plan : sur une nuit de clip, du Medium à 2-2,6 % de la hauteur suffit et reste discret ; sur un plan clair et chargé, **soit on change de plan** pour le vers qui compte, **soit on assume une boîte** (qui devient un parti pris graphique, pas une rustine). Le Thin « élégant » est un choix de bureau qui meurt au téléphone.
+
+## Complément : contour net (`borderw=3`, noir) — même protocole (`STYLES=contour`, `resultats-contour.tsv`)
+| fond | 1,2 % | 1,6 % | 2,0 % | 2,6 % | 3,5 % |
+|---|---|---|---|---|---|
+| nuit (face) | 0 | 0,3 | 1 | 1 | 1 |
+| nuit (porte) | 0,3 | 1 | 0,9 | 1 | 1 |
+| texture claire | 0 | 0,1 | 0 | 0,1 | 0,1 |
+| uni clair | 0 | 0,3 | 0,6 | 0,9 | 0,9 |
+
+**Non concluant, et je le dis** : le contour de 3 px ne sauve pas la texture claire selon l'OCR, mais tesseract est connu pour mal lire les lettres détourées (il est entraîné sur du texte imprimé plein). Les captions détourées des réseaux (style Hormozi) sont faites pour l'œil, pas pour l'OCR. **Le proxy n'est valable que pour comparer des traitements « pleins » (nu, boîte)** ; contour et ombre se jugent à l'œil, en phase 2 (PLAN-TESTS 56).

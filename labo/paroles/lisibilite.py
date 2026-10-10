@@ -6,15 +6,16 @@ L'OCR est un proxy de lisibilité, pas un œil : il sert à classer les cas, pas
 import sys, subprocess, difflib, os, tempfile
 VERS = ["Les vitrines me rendent", "un type que je connais pas"]
 FONT = {"medium": "/usr/share/fonts/opentype/inter/Inter-Medium.otf", "thin": "/usr/share/fonts/opentype/inter/Inter-Thin.otf"}
-STYLES = {"nu": "", "ombre": ":shadowcolor=black@0.7:shadowx=3:shadowy=3", "boite": ":box=1:boxcolor=black@0.55:boxborderw=14", "boite85": ":box=1:boxcolor=black@0.85:boxborderw=14"}
+STYLES = {"nu": "", "ombre": ":shadowcolor=black@0.7:shadowx=3:shadowy=3", "boite": ":box=1:boxcolor=black@0.55:boxborderw=14", "boite85": ":box=1:boxcolor=black@0.85:boxborderw=14", "contour": ":borderw=3:bordercolor=black"}
 TAILLES = [1.2, 1.6, 2.0, 2.6, 3.5]          # % de la hauteur 1920
 tmp = tempfile.mkdtemp()
 def ocr(png):
     r = subprocess.run(["tesseract", png, "-", "-l", "fra", "--psm", "6"], capture_output=True, text=True); return " ".join(r.stdout.split())
 print("fond\tpolice\tstyle\ttaille_pct\ttaille_px_1920\ttaille_px_360\tscore\tlu")
+STY = os.environ.get("STYLES", ",".join(STYLES)).split(",")
 for fond in sys.argv[1:]:
     for police in ("medium", "thin"):
-        for style in STYLES:
+        for style in STY:
             if police == "thin" and style != "nu": continue
             for t in TAILLES:
                 px = round(1920 * t / 100); y0 = int(1920 * 0.62)    # au-dessus de la zone d'interface basse (~ 20 % du bas)
