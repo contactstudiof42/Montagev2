@@ -46,7 +46,7 @@ Règle : alterner ART et TECH. Réalimenter dès qu'il reste moins de 10 sujets 
 
 28. [ ] [ART] **Examen n°4** (session 6) : fiction courte ou documentaire long ; inclure une question d'étalonnage (appliquer les leçons de l'atelier 05).
 29. [ ] [ART] Culture : rap français proche de Ziak (réalisateurs de clips : Kourtrajmé au-delà de Gavras, clips de PNL, Freeze Corleone) ; clips Åkerlund et Gavras à confronter à Murai dans `montage-regard` (quand monter le choc).
-30. [ ] [TECH] Resolve : verser `sources/resolve-scripting-api-19-20.md` dans `montage-resolve` (session 5 : recherche lancée).
+30. [x] [TECH] Resolve API 19-21.1 versée dans `montage-resolve` (session 5 ; Graph, ColorGroup, dépréciations, Studio requis en 21.1). Reste [ ] : Fusion, Fairlight par script.
 31. [ ] [ART] Atelier « causalité » et atelier « le montage se retire » : réutiliser la scène de la pièce 06 (table, tasse) comme plateau.
 
 ## Fait (trace)

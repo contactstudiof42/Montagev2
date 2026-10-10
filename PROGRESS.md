@@ -7,7 +7,7 @@ _Lire en premier. Mis à jour à chaque fin de session._
 - **Culture** : 29 fiches. Nouveau en session 5 : Elastic (*Game of Thrones*), ManvsMachine, Buck, Åkerlund (« Smack My Bitch Up »), Gavras (« Stress », « Born Free »).
 - **Atelier** : 01 (v6 réf.), 02 (v6 réf.), 03 (v3), 04 (v2b mystère / v6 suspense ; `scene.py` accepte maintenant `rust_col`), **05 « Trois étalonnages »** (v1-v6 + test de scintillement ; `grade.py` = arbre de nodes numpy, `scintillement.py`), **06 « Versions »** (Morris ; `scene.py` 3 variantes seule/tremble/ombre + insert, `montage.py <v> <edl.json>`).
 - **Labo** : + `workflows/aaf_pistes.py` (AAF par familles, relu identique par pyaaf2 et OTIO).
-- **Sources** : + `mcp-etat-public-2026-10.md`, `resolve-scripting-api-19-20.md` (si l'agent a fini, sinon à refaire).
+- **Sources** : + `mcp-etat-public-2026-10.md`, `resolve-scripting-api-19-20.md` (versé dans `montage-resolve`).
 - **Examens** : n°1 (13/20), n°2 (14/20), n°3 (15/20). **N°4 en session 6.**
 
 ## Reprendre ici (session 6)
