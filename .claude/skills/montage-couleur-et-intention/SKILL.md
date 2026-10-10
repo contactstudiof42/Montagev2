@@ -80,6 +80,7 @@ La couleur n'est pas une finition : c'est **un sens**. Avant de toucher une roue
 - **Doyle / Wong** : la couleur dit ce que le texte tait ; un seul rouge saturé, le reste retenu ; le flou de mouvement montre le temps intérieur.
 - **Deakins** : une couleur par lieu ou chapitre ; une source crédible pour chaque lumière ; tenir le plan quand la silhouette parle.
 - **Willis** (`culture/gordon-willis-le-noir.md`) : décider **quoi** garder dans le noir (les yeux = le secret) avant **combien** de noir ; le noir n'existe que par opposition (le mariage au soleil) ; direction de la lumière = lecture morale (dessus : masque, dessous : menace, côté bas : confidence). En post, on ne crée pas ce noir, on le **protège** (10 bits, grain, pas de relevage des noirs).
+- **Young / van Hoytema** (`culture/bradford-young-van-hoytema-lumiere-basse.md`) : dans le noir, éclairer **par rebond** (la source éclaire un objet clair qui éclaire le visage) ; la **température d'une solitude est un jugement** (froid : on la plaint, chaud : on la respecte) ; motiver l'ambiance par le dehors.
 
 ## Format de sortie conseillé
 
