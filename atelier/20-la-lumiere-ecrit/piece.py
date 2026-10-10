@@ -5,6 +5,8 @@ import numpy as np
 from PIL import Image, ImageDraw, ImageFont
 
 V, OUT = sys.argv[1], sys.argv[2]
+# v7 : sous-échantillons par image pour la traînée (1 = poses fantômes discrètes, 4 = flou quasi continu)
+SUB = int(sys.argv[3]) if len(sys.argv) > 3 else 4
 W, H, FPS, N = 360, 640, 25, 250
 BEAT = 60 / 128 * FPS                                    # 11,72 images par noire
 rng = np.random.default_rng(7)
@@ -68,12 +70,15 @@ else:                                                   # coups choisis sur les 
         i = max(j for j, bt in enumerate(beats) if bt <= n)
         n0 = beats[i]; age = n - n0
         b, l = scene(n0, strobe=(age < 3))              # coup allumé tenu 3 images, puis la même pose dans le noir
-        if V in ("v3", "v4"):
+        if V == "v7":
+            # v7 : la pose tenue porte une traînée (obturateur lent façon step-printing) : moyenne de 8 poses consécutives
+            b = np.mean([scene(n0 + j / SUB, strobe=(age < 3))[0] for j in range(8 * SUB)], axis=0)
+        if V in ("v3", "v4", "v7"):
             _, l = scene(n)                              # les lasers continuent de bouger en continu
         nom = (NOMS[i % 16], POS[i % 8]) if i >= 1 else ("NUIT BASSE", (60, 150))
         alpha = 1.0 if age < 3 else max(0.0, 1 - (age - 3) / 9)   # le nom persiste et s'éteint en 9 images
         encre = None
-        if V == "v4" and age < 3:
+        if V in ("v4", "v7") and age < 3:
             encre = (20, 18, 22)                         # v4 : le nom en noir dans le coup (image rémanente : il s'inverse ensuite)
         frames.append(compo(b, l, nom, alpha, encre))
 subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{W}x{H}", "-r",

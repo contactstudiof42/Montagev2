@@ -2,17 +2,17 @@
 
 _Lire en premier. Mis à jour à chaque fin de session._
 
-## Où on en est (après la session 14, 2026-10-10 ~12:00 UTC)
-- **Skills (21)** : session 14 : `montage-regard` (règle 20 : la courbe d'une lumière qui change dit qui agit), `montage-couleur-et-intention` (lumière qui change dans le plan, recette par passes), `montage-preparation-tournage-vfx` (5 ter : plaques allumée / éteinte, gestes), `montage-direction-artistique` (les mains), `montage-kinetic-editing` (3f corrigé par des sources), `montage-expert` (sommaire).
-- **Culture** : 49 fiches (nouvelle : `culture/kinetic-edit-monteurs-reseaux-sources.md`, sous-agent ; corrige la fiche Kolder).
-- **Atelier** : 18 v4-v5 (extinction animée, `anime.py`) ; 19 v5-v8 (gestes ; v7 lisible, v8 non concluante, v6 invalidée).
-- **Labo** : `labo/paroles/ass_mot_a_mot.py` et `ass_pop.py` (ASS mot à mot à l'image près ; le pop dans une ligne fait glisser la ligne).
-- **Examens** : n°1 13, n°2 14, n°3 15, n°4 14, n°5 14, n°6 15, n°7 15 /20. **N°8 en session 15** (BACKLOG 78).
+## Où on en est (après la session 15, 2026-10-10 ~13:15 UTC)
+- **Skills (21)** : session 15 : `montage-direction-artistique` (texte = durée, « la technique du matin »), `montage-kinetic-editing` (R7b temps de lecture ; §6 rushes à strobe, 128 BPM noires = limite, sommet plus long pas plus fort), `montage-regard` (règle 21 : le texte prend la valeur opposée à l'image ; dispositif automatique), `montage-son-et-emotion` (13 : son d'un strobe), `montage-motion-design-principes` (6b : carton-liste en lecture de repérage).
+- **Culture** : 50 fiches (nouvelle : `culture/step-printing-wong-kar-wai-et-autres.md`).
+- **Atelier** : pièce 20 « La lumière écrit » v1-v7 (`atelier/20-la-lumiere-ecrit/`) ; pièce 18 v6 confiée à un sous-agent (voir le journal du RAPPORT pour l'état).
+- **Labo** : `labo/photosensibilite/strobe-rushes/` (rushes à strobe : saccade choisie = seul traitement qui garde le coup) ; `labo/paroles/temps_lecture.py`.
+- **Examens** : n°1 13, n°2 14, n°3 15, n°4 14, n°5 14, n°6 15, n°7 15, n°8 15 /20. **N°9 vers la session 18** (BACKLOG 85 : sans musique).
 
-## Reprendre ici (session 15)
+## Reprendre ici (session 16)
 1. Démarrage normal. Blender : `curl -sSL -o blender.tar.xz https://download.blender.org/release/Blender4.2/blender-4.2.3-linux-x64.tar.xz && tar xf blender.tar.xz` dans le scratchpad (30 s). `python3 -m pip install -q numpy pillow scipy colour-science opencolorio OpenEXR opentimelineio otio-fcp-adapter otio-cmx3600-adapter opencv-python-headless av`.
-2. Priorités : **examen n°8** (BACKLOG 78) ; 76 (rig à coude, plan taille) ; 77 (extinction avec cause montée) ; 72 (plan-séquence) ; 67 (pièce 17 v6) ; 51 (teaser 15 s) ; 79 (temps de lecture).
-3. Pièges : **`pkill -f motif` tue aussi le shell** → tuer par PID. **Plage limitée** : en `yuv*` / `gray16` lus par ffmpeg, le noir vaut 16 (×257). **PIL lit un PNG RGBA 16 bits en 8 bits**. **Commentaire au milieu d'une ligne remplacée par substitution Python = code désactivé** (deux fois : sessions 13 et 14, la seconde a figé une animation) : mettre le commentaire sur sa propre ligne, et regarder une image du milieu avant de juger. **OpenCV pip ne lit pas l'EXR** : utiliser `OpenEXR` (`OpenEXR.File(f).channels()["RGBA"].pixels`). Vue AgX hors Blender : `PyOpenColorIO`, config `blender/4.2/datafiles/colormanagement/config.ocio`, de `Linear Rec.709` vers `sRGB` / `AgX`. Rig Blender : vérifier le sens de chaque rotation sur une pose extrême avant d'animer. Wikimedia → HTTP 429 : passer par Internet Archive. Jamais d'e-mail dans un User-Agent.
+2. Priorités : 80 (pièce 20 v8 : traînée + lasers + 20 noms variés) ; 77 si la v6 de la pièce 18 n'est pas close ; 76 (rig à coude) ; 84 (vrai rush strobe CC0) ; 83 (fiche chronophotographie) ; 72 ; 51.
+3. Pièges : **`pkill -f motif` tue aussi le shell** → tuer par PID. **Plage limitée** : en `yuv*` / `gray16` lus par ffmpeg, le noir vaut 16 (×257). **PIL lit un PNG RGBA 16 bits en 8 bits**. **Commentaire au milieu d'une ligne remplacée = code désactivé** : commentaire sur sa propre ligne. **OpenCV pip ne lit pas l'EXR** : `OpenEXR`. Vue AgX hors Blender : `PyOpenColorIO` + config de Blender. Wikimedia → HTTP 429 : Internet Archive. Jamais d'e-mail dans un User-Agent. **Session 15** : `exec` d'un script qui lit `sys.argv` écrase les variables (réassigner après) ; **vérifier les listes de textes contre les doublons** ; `loudnorm` une passe sur 10 s à kicks reste à -18 LUFS : boucle R6 ; une moyenne de 8 poses à 1/25 s fait des **fantômes discrets**, pas un flou (sous-échantillonner) ; rendu numpy à 32 sous-poses par image : ~5 min pour 10 s.
 
 ## Environnement constaté
 - ffmpeg 6.1.1, Python 3, Node 22 préinstallés (numpy à installer en session 6). `apt-get update` puis `apt-get install libegl1` possible (10 s). Blender 4.2.3 LTS : téléchargement + décompression 30 s.
@@ -20,6 +20,7 @@ _Lire en premier. Mis à jour à chaque fin de session._
 - Un serveur MCP nommé `HIGGSFIELD_MCP` est listé dans l'environnement : non appelé (consigne phase 1). Noms observés dans `PLAN-TESTS-MCP.md`.
 
 ## Historique
+- Session 15 — 2026-10-10 12:30 → ~13:15 UTC : examen n°8 « Nuit Basse » (15/20), labo rushes à strobe, pièce 20 « La lumière écrit » v1-v7, fiche step-printing, sous-agents (vitesse de lecture FR vérifiée ; son d'un strobe et lecture de repérage ; pièce 18 v6) ; PLAN-TESTS 58-60.
 - Session 14 — 2026-10-10 11:29 → ~12:00 UTC : pièce 18 v4-v5 (extinction animée par passes EXR), pièce 19 v5-v8 (gestes), labo paroles ASS mot à mot, fiche monteurs d'edits (sous-agent) ; PLAN-TESTS 57.
 - Session 13 — 2026-10-10 10:30 → ~11:03 UTC : pièce 19 « Le texte et le corps » (v1-v3), labo flot optique à la coupe (sous-agent + validation Blender), labo paroles incrustées (OCR), fiche « illustrer ou contredire les paroles » ; PLAN-TESTS 54-56.
 - Session 12 — 2026-10-10 09:29 → ~10:15 UTC : examen n°7 « Heure creuse » (15/20), labo noir protégé (pièce 17 en 16 bits, fixe / panoramique), pièce 18 « Soustraction » v1-v3, fiche Natasha Braier (sous-agent) ; PLAN-TESTS 52-53.
