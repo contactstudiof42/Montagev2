@@ -12,7 +12,7 @@ Marqueurs : [SOURCÉ] lu dans une source citée · [TESTÉ EN LABO] fait techniq
 **Goût de l'utilisateur** : il AIME ce style ; ne pas le traiter comme un cliché. Ici **la densité de SFX est le langage** ; l'amateur et le pro se distinguent par **la précision à l'image, la variété, la hiérarchie et les respirations**. « Whoosh sur chaque transition = cliché » vaut pour la pub, le corporate et la fiction ; en kinetic, le cliché c'est le **même** whoosh, au **même** niveau, **en retard**. Contrepoint : Ziak fait l'inverse (`montage-rythme`) ; le kinetic est un choix, pas un réflexe.
 
 ## 1. Quand et pourquoi
-- Sur un fil, le spectateur décide en 1 à 3 s ; chaque coupe, zoom ou son est une petite relance (pattern interrupt). [SOURCÉ]
+- Sur un fil, le spectateur décide en 1 à 3 s ; chaque coupe, zoom ou son est une petite interruption d'attention (pattern interrupt), à ne pas confondre avec la **relance** d'une vidéo longue, qui est un coup qualitatif et non une rafale (`montage-youtube` § 18). [SOURCÉ]
 - **Le son est le moteur du rythme** : l'œil n'enregistre pas toutes les coupes, l'oreille si (whoosh = vitesse, impact = masse, click = précision). [THÉORIQUE]
 - **Respiration obligatoire** : accélérer puis relâcher, un trou de silence avant le gros impact, au moins un plan tenu par séquence de 5 à 8 s. [ÉPROUVÉ EN MAQUETTE]
 - **Quand ce style dessert** : deuil, témoignage intime, sujet grave, luxe lent, schéma à lire, humour de silence ; et **quand le sujet porte son propre tempo qui évolue** (balancier qui s'amortit, respiration qui ralentit) : la pulsation constante l'écrase ; couper sur les points morts de plus en plus espacés. [ÉPROUVÉ EN MAQUETTE] (pièce 14) Sinon : garder la précision, diviser la densité par 3.
