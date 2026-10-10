@@ -110,3 +110,8 @@ Demandes :
 - `montage-direction-artistique` : (1) **un texte à lire est une durée** : avant de proposer, compter les caractères et convertir en secondes (14-15 car./s ATAA ; 17 Netflix) ; si la somme dépasse le tiers de la durée du film, c'est une contradiction à dire au client ; (2) une technique découverte au labo dans la même journée ne peut pas porter seule une recommandation sans une pièce d'atelier qui la montre en mouvement.
 - `montage-kinetic-editing` §6 : rushes à strobe (labo `strobe-rushes`) : mesurer chaque plan ; saccade choisie à la main = seule façon de garder le coup ; la moyenne et `deflicker` effacent ou échouent.
 - BACKLOG 80 (pièce « La lumière écrit » : 10 s de saccade sur foule Blender + noms, juger « choix ou bug ») ; 81 (vrai son d'un stroboscope LED / xénon, sources) ; 82 (lecture de repérage dans une liste : sources de psychologie de la lecture, temps de recherche d'un nom connu).
+
+## Correction après l'atelier 20 (même session)
+- **Erreur de l'examen** : « un coup par noire = 2,13 flashs/s < 3 » ; mesuré sur la pièce 20 : **pire seconde 3**, la limite exacte (fenêtre glissante). Le traitement A doit passer aux noires pointées dans les mesures 4-7 (ce qui règle aussi le plancher de lecture de 16 images : 17,6 images par nom) et garder les noires seulement pour 2 mesures maximum, mesurées.
+- **Erreur de l'examen** : « le nom apparaît dans le coup » en blanc : **invisible**. Il doit être noir dans le coup et s'inverser en blanc dans le noir (pièce 20 v4).
+- La saccade automatique est exclue (v1 : aucun coup retenu sur 2,4 s). Note maintenue à 15/20 : l'examen a produit les bonnes questions, et l'atelier y a répondu le jour même ; mais deux erreurs de traitement sur six lignes de tableau.
