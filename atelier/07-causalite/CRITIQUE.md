@@ -48,7 +48,7 @@ Même simulation, même son (tiré de la simulation, attaques à ≤ 1 image des
 ## Prochaine version (v4, pour une session suivante)
 1. Allonger la fin (≈ 160 images) pour que la bille **atteigne** la tasse et s'y arrête : dernière image = la cause et l'effet côte à côte, immobiles. Vérifier que ce n'est pas trop « écrit » (le hasard qui fait trop bien les choses se voit).
 2. Écrire des respirations dans la mécanique elle-même (un domino plus espacé, une petite rampe) pour permettre un plan serré de la cascade sans couper sur un contact : en tournage réel, c'est au plateau que se décide le découpage d'une chaîne causale.
-3. Rendre A en 960×540 pour mesurer à partir de quelle taille la version plan unique devient lisible.
+3. ~~Rendre A en 960×540~~ : fait, voir le test de lisibilité ci-dessous ; à la place, un recadrage plus serré de A.
 
 ## Test de lisibilité de A : 480 contre 960 px (`lisibilite-480-vs-960.png`)
 Même image (50, la cascade en cours) ; en haut, recadrage du rendu 480×270 agrandi ×2 au plus proche voisin ; en bas, le même recadrage dans un rendu 960×540 (9 s en 4 processus).
