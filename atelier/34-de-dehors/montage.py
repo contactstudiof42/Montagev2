@@ -4,7 +4,7 @@ import sys, os, json, subprocess, wave, numpy as np
 V, R = sys.argv[1], sys.argv[2]; SR = 48000
 EVT = V != 'v1'                         # v2 et suivantes : événements internes (liseuse, phares)
 DUREE, CUT = 112.0, 100.0
-if V == 'v5': DUREE, CUT = 110.0, 999.0          # v5 = v4 sans la coupe dedans : la dernière réplique entendue à travers la buée
+if V in ('v5', 'v6'): DUREE, CUT = 110.0, 999.0          # v5 = v4 sans la coupe dedans : la dernière réplique entendue à travers la buée
 K = dict(v='fr+m3', p='25', s='135'); N = dict(v='fr+f2', p='55', s='150')
 DIAL = [(2.5, K, "Quatre euros vingt. Pour deux heures. Tu te rends compte ?"), (8.5, N, "Papa."),
         (10.0, K, "Non mais je dis ça. La prochaine fois, je me gare dans la rue."),
@@ -15,7 +15,7 @@ DIAL = [(2.5, K, "Quatre euros vingt. Pour deux heures. Tu te rends compte ?"), 
         (66.0, K, "Les résultats, ils ont dit dix jours."), (71.0, N, "Je serai là."), (74.0, K, "Bien sûr que tu seras là."),
         (97.0, N, "Tu dis rien ?"), (101.0, K, "Là-bas aussi, ils ont des parkings à ce prix-là ?")]
 LAMPE = [(3.0, 19.5), (99.5, None)] if EVT else []     # allumée pour lire le ticket ; éteinte juste après « je pars » ; rallumée avant la dernière réplique
-PHARES = (24.0, 28.5) if EVT else None
+PHARES = (24.0, 28.5) if EVT and V != 'v6' else None   # v6 : phares retirés (remplissage, voir CRITIQUE)
 tmp = os.path.join(R, 'tmp'); os.makedirs(tmp, exist_ok=True)
 def lire(f):
     raw = subprocess.run(['ffmpeg', '-loglevel', 'error', '-i', f, '-ar', str(SR), '-ac', '1', '-f', 'f32le', '-'], capture_output=True).stdout
@@ -32,7 +32,7 @@ for i, (t, who, txt) in enumerate(DIAL):
     x = lire(w); x /= np.abs(x).max() + 1e-9
     dedans = t >= CUT
     if not dedans:                      # à travers la carrosserie : bande étroite, petite réverbération de boîte, loin
-        x = filtre(x, 'highpass=f=220,lowpass=f=1000,aecho=0.8:0.5:12|19:0.35|0.25,volume=0.5')
+        x = filtre(x, ('highpass=f=200,lowpass=f=1800,' if V == 'v6' else 'highpass=f=220,lowpass=f=1000,') + 'aecho=0.8:0.5:12|19:0.35|0.25,volume=0.5')
     poser(x, t, 0.5)
     evts.append(dict(t=t, fin=t + len(x) / SR, type='replique', qui='K' if who is K else 'N', dedans=dedans))
 t = np.arange(len(mix)) / SR; rng = np.random.default_rng(34)
@@ -60,7 +60,7 @@ P = lambda n: os.path.join(R, n)
 inp = ['-loop', '1', '-t', str(CUT), '-i', P('ext.png'), '-loop', '1', '-t', str(CUT), '-i', P('ext_lampe.png'),
        '-loop', '1', '-t', str(CUT), '-i', P('ext_phares.png'), '-loop', '1', '-t', str(DUREE - CUT), '-i', P('int.png' if EVT else 'int_sans.png'), '-i', wav]
 if EVT:                                  # fondus alpha courts (0,12 s : une lampe s'allume net) ; phares en cloche de 4,5 s
-    (la, lb), (pa, pb), l2 = LAMPE[0], PHARES, LAMPE[1][0]; h = (pb - pa) / 2
+    (la, lb), (pa, pb), l2 = LAMPE[0], PHARES or (0.0, 1.0), LAMPE[1][0]; h = (pb - pa) / 2
     fc = (f"[1]format=rgba,fade=in:st={la}:d=0.12:alpha=1,fade=out:st={lb - 0.12}:d=0.12:alpha=1[l];"
           f"[1]format=rgba,fade=in:st={l2}:d=0.12:alpha=1[l2];"
           f"[2]format=rgba,fade=in:st={pa}:d={h}:alpha=1,fade=out:st={pa + h}:d={h}:alpha=1[p];"
@@ -68,14 +68,14 @@ if EVT:                                  # fondus alpha courts (0,12 s : une lam
 else:
     fc = "[0]fps=25,format=yuv420p[e];"
 fc += "[3]fps=25,format=yuv420p[i];[e][i]concat=n=2:v=1:a=0[v]"
-if V in ('v3', 'v4', 'v5'):                  # v4 = v3 + poussée lente de 100 s vers la voiture (images HD recadrées)                            # buée : image composée image par image (numpy), canal d'opacité de la buée b(t)
+if V in ('v3', 'v4', 'v5', 'v6'):                  # v4 = v3 + poussée lente de 100 s vers la voiture (images HD recadrées)                            # buée : image composée image par image (numpy), canal d'opacité de la buée b(t)
     from PIL import Image
-    HD = V in ('v4', 'v5'); Q = (lambda n: P(('hd/' if HD and n != 'int' else '') + n + '.png'))
+    HD = V in ('v4', 'v5', 'v6'); Q = (lambda n: P(('hd/' if HD and n != 'int' else '') + n + '.png'))
     im = {n: np.asarray(Image.open(Q(n)).convert('RGB'), np.float32) for n in ('ext', 'ext_lampe', 'ext_phares', 'ext_buee', 'ext_buee_lampe', 'int')}
     def cadre(f, tt):                    # zoom 1 → 2,4 avec accélération douce (t/100)^1,6 ; centre glisse vers la voiture (760, 450 en HD)
         if not HD: return f
-        u = min(1, tt / min(CUT, 100.0)) ** 1.6; z = 1 + 1.4 * u; w, h = 1280 / z, 540 / z
-        cx, cy = 640 + (760 - 640) * u, 270 + (450 - 270) * u
+        u = min(1, tt / min(CUT, 100.0)) ** 1.6; z = 1 + (1.1 if V == 'v6' else 1.4) * u; w, h = 1280 / z, 540 / z
+        cx, cy = 640 + ((800 if V == 'v6' else 760) - 640) * u, 270 + ((420 if V == 'v6' else 450) - 270) * u   # v6 : zoom 2,1 recentré, le mât reste dans le champ
         x0 = min(max(cx - w / 2, 0), 1280 - w); y0 = min(max(cy - h / 2, 0), 540 - h)
         return np.asarray(Image.fromarray(np.clip(f, 0, 255).astype(np.uint8)).resize((640, 270), Image.BILINEAR, box=(x0, y0, x0 + w, y0 + h)), np.float32)
     def b(tt):                           # 0 → 0,6 à 48 s (ils respirent, il fait froid) ; le chauffage dégage à 0,15 en 8 s ; remonte à 1 à 97 s
@@ -83,7 +83,7 @@ if V in ('v3', 'v4', 'v5'):                  # v4 = v3 + poussée lente de 100 s
         if tt < 56: return 0.6 - 0.45 * (tt - 48) / 8
         return min(1.0, 0.15 + 0.85 * (tt - 56) / 41)
     def lam(tt): return 1.0 if (LAMPE[0][0] <= tt < LAMPE[0][1]) or tt >= LAMPE[1][0] else 0.0
-    pa, pb = PHARES; H, W = im['int'].shape[:2]
+    pa, pb = PHARES or (0, 0); H, W = im['int'].shape[:2]
     pr = subprocess.Popen(['ffmpeg', '-loglevel', 'error', '-y', '-f', 'rawvideo', '-pix_fmt', 'rgb24', '-s', f'{W}x{H}', '-r', '25', '-i', '-', '-i', wav,
                            '-c:v', 'libx264', '-crf', '24', '-preset', 'veryfast', '-pix_fmt', 'yuv420p', '-af', 'loudnorm=I=-23:TP=-2', '-c:a', 'aac', '-b:a', '128k', '-shortest', P(f'{V}.mp4')], stdin=subprocess.PIPE)
     for k in range(int(DUREE * 25)):
@@ -93,7 +93,7 @@ if V in ('v3', 'v4', 'v5'):                  # v4 = v3 + poussée lente de 100 s
             bb, ll = b(tt), lam(tt)
             clair = im['ext'] * (1 - ll) + im['ext_lampe'] * ll; embue = im['ext_buee'] * (1 - ll) + im['ext_buee_lampe'] * ll
             f = clair * (1 - bb) + embue * bb
-            if pa <= tt <= pb: f = f + (im['ext_phares'] - im['ext']) * np.sin(np.pi * (tt - pa) / (pb - pa)) ** 2
+            if PHARES and pa <= tt <= pb: f = f + (im['ext_phares'] - im['ext']) * np.sin(np.pi * (tt - pa) / (pb - pa)) ** 2
             f = cadre(f, tt)
         pr.stdin.write(np.clip(f, 0, 255).astype(np.uint8).tobytes())
     pr.stdin.close(); pr.wait()

@@ -1,6 +1,6 @@
 """Pièce 34 : python3 mesure.py EVENEMENTS.json [DUREE] -> trous (s) sans aucun événement, par type."""
 import sys, json
-E = json.load(open(sys.argv[1])); D = float(sys.argv[2]) if len(sys.argv) > 2 else 112.0
+D = float(sys.argv[2]) if len(sys.argv) > 2 else 112.0; E = [e for e in json.load(open(sys.argv[1])) if e['t'] < D]
 def trous(types):
     occ = sorted((e['t'], e.get('fin', e['t'] + 0.3)) for e in E if e['type'] in types); out, fin = [], 0.0
     for a, b in occ:
