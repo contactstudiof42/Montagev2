@@ -1,0 +1,17 @@
+{
+ "A": {
+  "luminance": 0.573,
+  "chauds": 0.036,
+  "froids": 0.0
+ },
+ "B": {
+  "luminance": 0.405,
+  "chauds": 0.618,
+  "froids": 0.0
+ },
+ "C": {
+  "luminance": 0.407,
+  "chauds": 0.616,
+  "froids": 0.0
+ }
+}

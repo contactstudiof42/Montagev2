@@ -1,0 +1,21 @@
+# Pièce 10 « Chaleur partout » — critique (session 7, images fixes)
+
+Planches : `planche-ABC.png` (v1), `planche-B2C2C3.png` (v2) ; mesures `mesures-*.json` (`mesure.py` : luminance moyenne, part de pixels chauds R > B + 0,08, froids B > R + 0,08). Rendus : `atelier/rendus/10/` (un rendu Cycles 24 échantillons par version, ~10 s).
+
+## v1
+- **A (censé être mon système)** : raté comme démonstration : la tasse en faïence blanche n'est pas chaude (3,6 % de pixels chauds, tous dans le bois). Mon « une seule chaleur » n'existe que si l'objet chaud est **dans le décor** (leçon de l'atelier 05 retrouvée : la couleur se décide au tournage).
+- **B (renversé)** : **réussi** : lampe de bureau, nuit dehors, 62 % de pixels chauds ; on lit « le soir, chez quelqu'un », pas « sépia ». Ce qui l'évite : un **dégradé réel** de lumière (une source, des coins sombres, une ombre portée), là où le filtre de l'atelier 08 v1 teintait tout uniformément. Critère 1 tenu. Défaut : la sphère émissive de la lampe flotte dans le cadre comme une lune (aucun pied) → v2 : source hors champ.
+- **C (l'événement froid)** : **raté, et c'est la leçon** : l'écran du téléphone, en émission forte, sort **blanc** (0 % de pixels froids mesurés) : AgX désature les émissions intenses vers le blanc.
+
+## v2
+- B2 : lampe hors champ : meilleur, la chaleur est motivée sans objet parasite.
+- C2 / C3 (écran plus faible, lumière de débordement plus forte) : toujours **0 % de froid**. Deux causes, vues sur l'agrandissement : (1) le téléphone est à plat et la caméra à hauteur de table : on ne voit presque pas sa face ; (2) **une lumière froide qui tombe sur un bois brun déjà éclairé en orange donne du blanc, pas du bleu** : la couleur perçue est lumière × surface × ambiance. Le froid ne se lit que sur une surface neutre ou vu en direct.
+- Donc le critère 2 (le bleu attire l'œil à < 1 % du cadre) n'est pas testable tant que le bleu n'existe pas à l'image. Pièce à poursuivre.
+
+## Leçons (versées dans `montage-couleur-et-intention`)
+1. **La chaleur partout se lit « intime » si elle a une source et un dégradé** ; uniforme, elle se lit « filtre ancien ».
+2. **Un événement froid dans un monde chaud est plus difficile à fabriquer que l'inverse** : sous AgX, l'émission intense blanchit, et la lumière froide sur une matière chaude se neutralise. Il faut une **surface neutre** (papier, mur blanc, visage) pour recevoir le bleu, ou voir la source de face, et baisser la chaleur ambiante autour de l'événement.
+3. Mon système (« une seule chaleur ») a besoin d'un objet chaud **dans le décor** ; le renverser demande un objet froid **qui reçoive la lumière**. Dans les deux cas, la décision est au décor (tournage), pas à l'étalonnage.
+
+## v3 proposée
+Caméra plus haute (plongée sur la table), téléphone légèrement relevé sur la tasse ou posé sur une feuille blanche, écran en émission modérée (≈ 2) ; lampe baissée de 30 % autour ; puis un montage de 8 s : B tenu, le téléphone s'allume, rien d'autre ne bouge.
