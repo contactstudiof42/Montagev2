@@ -39,6 +39,8 @@ Pour chaque plan concerné, une ligne : n° de plan · ce qui change en post · 
 - **Références lumière** : une boule grise et une boule chromée (ou une HDRI 360°) à la place du futur objet 3D ; une charte couleur (Macbeth) en début de plan.
 - **Son seul** (« wild ») des objets filmés : ce seront les SFX à cause visible (atelier 02 ; examen n°2).
 
+- **Effacer une source de lumière, c'est effacer sa lumière portée** *(examen n°7, session 12)* [THÉORIQUE] : un lampadaire retiré laisse son halo sur le sol, les murs, les visages ; sur un plan où quelqu'un passe dessous, c'est une relumière complète. Préférer une source **lointaine** (au fond du cadre, halo petit) ou une **source contrôlée** qu'on éteint réellement (faux lampadaire : un tube sur un mât, une lampe de chantier) ; décider la courbe d'extinction d'après la technologie (LED : < 1 image ; lampe à décharge, sodium : décroissance en secondes, avec un changement de teinte). Plan fixe sur pied + plaque propre longue.
+
 ## 5 bis. Écrans dans le champ (téléphone, ordinateur, TV) — session 11 [THÉORIQUE, sources ci-dessous]
 **Quand et pourquoi** : d'abord se demander ce que l'écran doit faire. S'il **éclaire un visage** (la nuit, une confidence : atelier 17, fiche Willis), c'est la lumière qui compte : garder un **vrai écran allumé** (contenu de remplacement neutre, luminosité réglée) plutôt qu'un vert, car la lueur sur la peau est l'effet. Si le **contenu doit être lu** (texto, interface), il sera remplacé en post : alors préparer le remplacement.
 - **Exposer pour la pièce, régler l'écran** à part (luminosité baissée jusqu'à ce qu'il ne brûle pas) ; tester l'écran avant le plateau (PremiumBeat).
