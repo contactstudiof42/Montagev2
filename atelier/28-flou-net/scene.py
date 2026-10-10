@@ -3,6 +3,7 @@ reflets de soleil (points brillants) pour voir le bokeh. Rend des images fixes �
 usage : blender -b -P scene.py -- OUTDIR f1,f2,... [--f 1.4] [--sharp]   (--sharp = sans profondeur de champ = plaque nette)"""
 import bpy, sys, math
 a = sys.argv[sys.argv.index('--')+1:]; out = a[0]; focs = [float(x) for x in a[1].split(',')]
+REFLET = '--reflet' in a; ks = [float(x) for x in a[a.index('--reflet')+1].split(',')] if REFLET else [1]
 fst = float(a[a.index('--f')+1]) if '--f' in a else 1.4; sharp = '--sharp' in a
 bpy.ops.wm.read_factory_settings(use_empty=True)
 sc = bpy.context.scene; sc.render.engine = 'CYCLES'; sc.cycles.samples = 24; sc.cycles.device = 'CPU'
@@ -29,6 +30,18 @@ boite((0, 0.4, -0.06), (1, 0.02, 0.012), cadre)
 bpy.ops.object.light_add(type='SUN', rotation=(math.radians(50), 0, math.radians(30))); bpy.context.object.data.energy = 3
 bpy.ops.object.camera_add(location=(0, 0, 0), rotation=(math.radians(90), 0, 0)); cam = bpy.context.object; sc.camera = cam
 cam.data.lens = 50; cam.data.dof.use_dof = not sharp; cam.data.dof.aperture_fstop = fst
+if REFLET:   # v3 : vitre réelle, visage éclairé à côté de la caméra ; on assombrit l'extérieur (pont, forêt)
+    bpy.ops.mesh.primitive_plane_add(size=2, location=(0, 0.4, 0), rotation=(math.radians(90), 0, 0)); g = bpy.context.object
+    gm = bpy.data.materials.new('verre'); gm.use_nodes = True; gb = gm.node_tree.nodes['Principled BSDF']
+    gb.inputs['Transmission Weight'].default_value = 1; gb.inputs['Roughness'].default_value = 0; gb.inputs['IOR'].default_value = 1.5; g.data.materials.append(gm)
+    bpy.ops.mesh.primitive_uv_sphere_add(radius=0.07, location=(0.11, 0.0, 0.0)); bpy.context.object.data.materials.append(mat('peau', (0.8, 0.55, 0.42)))
+    bpy.ops.object.light_add(type='POINT', location=(0.02, 0.2, 0.1)); bpy.context.object.data.energy = 3   # le visage est éclairé côté vitre (lumière du compartiment)
+    sun = [o for o in bpy.data.objects if o.type == 'LIGHT' and o.data.type == 'SUN'][0]
+    cam.data.dof.use_dof = False
+    for k in ks:
+        w.node_tree.nodes['Background'].inputs[1].default_value = 1.2*k; sun.data.energy = 3*k
+        sc.render.filepath = f"{out}/reflet_{k:g}.png"; bpy.ops.render.render(write_still=True)
+    focs = []
 for f in focs:
     cam.data.dof.focus_distance = f
     sc.render.filepath = f"{out}/{'net' if sharp else f'foc_{f:g}'}.png"; bpy.ops.render.render(write_still=True)
