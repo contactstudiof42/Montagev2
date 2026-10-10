@@ -11,9 +11,9 @@ _Lire en premier. Mis à jour à chaque fin de session._
 
 ## Reprendre ici (session 9)
 1. Démarrage normal. Blender : `curl -sSL -o blender.tar.xz https://download.blender.org/release/Blender4.2/blender-4.2.3-linux-x64.tar.xz && tar xf blender.tar.xz` dans le scratchpad (30 s). `python3 -m pip install -q numpy pillow scipy`.
-2. Priorités : (pièce 10 close en v7) BACKLOG 47 « le fond raccorde » ; BACKLOG 33 (« inquiétude calme ») ; BACKLOG 42 suite (`montage-references` : annexes) ; revérifier 1 chiffre par fiche de la session 8.
+2. Priorités : (pièce 10 close en v7) BACKLOG 47 « le fond raccorde » ; BACKLOG 33 (« inquiétude calme ») ; BACKLOG 42 suite (`montage-references` : annexes).
 3. Pièges : **`pkill -f motif` tue le shell** → tuer par PID. Plans immobiles = une image. Viser une caméra par un point (`to_track_quat`). Ne pas couper un `for` de rendus avec `| head` (SIGPIPE arrête la boucle). Le paramètre `main` de `scene.py` (pièce 10) est la caméra portée ; la main/tête est `main_ecran` / `visage`. Concat ffmpeg d'images à durées libres : `option framerate 90000` + `-safe 0`.
-4. Sous-agents : 3 en session 8 (fiches), fiables ; chiffres pas encore revérifiés à la main.
+4. Sous-agents : 3 en session 8 (fiches) ; revérification à la main : 2 chiffres confirmés, 2 corrigés (un sous-agent a mal mesuré une vignette) → **toujours recontrôler une mesure d'image faite par un sous-agent**.
 
 ## Environnement constaté
 - ffmpeg 6.1.1, Python 3, Node 22 préinstallés (numpy à installer en session 6). `apt-get update` puis `apt-get install libegl1` possible (10 s). Blender 4.2.3 LTS : téléchargement + décompression 30 s.

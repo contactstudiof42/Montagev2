@@ -72,7 +72,7 @@ Art of the Title et Watch The Titles **n'ont pas de fiche** sur ces trois géné
 ### Pourquoi ça marche, et ce qui serait raté autrement
 - **Reconnaissable en 3 secondes** grâce au thème à la Legrand et à la pénombre. Le « son FELA » est devenu un code partagé, au point de servir d'ambiance pour les parodies.
 - **Supportable à la 300e écoute** parce que l'identité ne repose pas que sur la séquence d'ouverture. Elle se répartit en rituels courts : le mur d'indices, la sortie du présentateur, l'extinction des lumières. Ils encadrent l'émission sans l'alourdir.
-- **Changer de présentateur sans perdre l'émission.** Quatre présentateurs, trois chaînes, et l'identité tient parce que la musique et la grammaire (nuit, sortie de champ) restent les mêmes.
+- **Changer de présentateur sans perdre l'émission.** Quatre présentateurs, quatre chaînes de première diffusion (France 2, RMC Story, RMC Découverte, RMC Life ; Wikipédia FR, vérifié le 2026-10-10), et l'identité tient parce que la musique et la grammaire (nuit, sortie de champ) restent les mêmes.
 - **Un changement raté puis corrigé.** Le retour au logo d'origine en 2020, avec le passage sur RMC Story, montre qu'on a jugé le premier plus fort que son remplaçant.
 - Avec un habillage « enquête » à la mode (glitch, ruban de police, sound design de bande-annonce), l'émission aurait vieilli en cinq ans et basculé vers le sensationnalisme qu'elle évite par sa sobriété.
 
