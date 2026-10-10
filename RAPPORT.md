@@ -335,8 +335,8 @@ Session 6 : enrichis `montage-son-et-emotion` (hors champ, Chion, présence dans
 
 ## JOURNAL
 
-### Session 23 — 2026-10-10 18:29 UTC → 18:34, reprise 18:45 → ~19:15
-- Reprise (18:45-19:10) : pièce 25 v4 (2 plans : la coupe unique = chute de −40 %, fondu de 12 s = référence), pièce 26 v5 (temps long 10,7× plus calme), fiche pubs opticiens et primées (sous-agent : le flou → net n'est la base d'aucune des 17 campagnes trouvées), pièce 28 v4 (forêt vue d'un train = échec photosensibilité), pièce 27 v3-v4 (`trois.py`), fiche `culture/timing-comique-sitcom.md` (sous-agent), **examen n°12** (14/20), pièce 28 v1-v3 (Blender 4.2.3 : 30 s d'installation ; 40 rendus Cycles en 97 s), calcul de profondeur de champ (variante reflet), sommaire `montage-expert` ; skills rythme, son-et-emotion, direction-artistique, preparation-tournage-vfx.
+### Session 23 — 2026-10-10 18:29 UTC → 18:34, reprise 18:44 → 19:07 UTC (38 min au total)
+- Reprise (18:45-19:10) : pièce 25 v4 (2 plans : la coupe unique = chute de −40 %, fondu de 12 s = référence), pièce 26 v5 (temps long 10,7× plus calme), fiche pubs opticiens et primées (sous-agent : le flou → net n'est la base d'aucune des 17 campagnes trouvées), pièce 28 v4 (forêt vue d'un train = échec photosensibilité) et v5 (bascule en mouvement à 320×180 : un flou se dimensionne à l'écran de diffusion), pièce 27 v3-v4 (`trois.py`), fiche `culture/timing-comique-sitcom.md` (sous-agent), **examen n°12** (14/20), pièce 28 v1-v3 (Blender 4.2.3 : 30 s d'installation ; 40 rendus Cycles en 97 s), calcul de profondeur de champ (variante reflet), sommaire `montage-expert` ; skills rythme, son-et-emotion, direction-artistique, preparation-tournage-vfx.
 - **Erreur de méthode signalée par l'utilisateur** : clôture après 5 min, parce que je me fiais à une note fausse (« horloge peu fiable ») et à mon ressenti du temps. L'horloge est juste ; la note est corrigée dans PROGRESS.
 - Démarrage : anti-doublon OK (dernier commit 26 min avant).
 - Sous-agent : veille IA (Vidu Q4 Preview ; Grok Imagine 1.5 Lite écarté).

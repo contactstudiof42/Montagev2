@@ -6,7 +6,7 @@ _Lire en premier. Mis à jour à chaque fin de session._
 - Développer une **culture YouTube / internet** (divertissement, essai vidéo, vulgarisation, vlog, motion de chaîne, Shorts, cultures d'edit) au même niveau que cinéma et clip. Voir BACKLOG « Consigne » (Y1-Y6) : une part de chaque session jusqu'à parité.
 
 ## Où on en est (après la session 23, 2026-10-10)
-- **Session 23** (18:29 → 18:34, clôture prématurée relevée par l'utilisateur, reprise 18:45 → ~19:10) : veille IA (Vidu Q4 Preview), pièce 27 « Jamais » v1-v4 (gag de contradiction, règle de trois, silence-gag), fiche timing comique sitcom, **examen n°12** (pub opticien, 14/20), pièce 28 « Flou → net » v1-v3 (Blender : flou optique / gaussien, courbe de bascule, reflet par la lumière). Examens : … n°11 15, **n°12 14**. Prochain examen n°13 vers la session 26 (fiction courte).
+- **Session 23** (18:29 → 18:34, clôture prématurée relevée par l'utilisateur, reprise 18:44 → 19:07 UTC) : veille IA (Vidu Q4 Preview), pièce 27 « Jamais » v1-v4 (gag de contradiction, règle de trois, silence-gag), fiche timing comique sitcom, **examen n°12** (pub opticien, 14/20), pièce 28 « Flou → net » v1-v3 (Blender : flou optique / gaussien, courbe de bascule, reflet par la lumière). Examens : … n°11 15, **n°12 14**. Prochain examen n°13 vers la session 26 (fiction courte).
 
 ## Reprendre ici (session 24)
 0. **Relever `date -u` au début et clôturer à début + 45 min, pas avant** (l'horloge est juste). Veille IA du jour (sous-agent). `python3 -m pip install -q numpy pillow` ; Blender : `curl -sSL -o /tmp/blender.tar.xz https://download.blender.org/release/Blender4.2/blender-4.2.3-linux-x64.tar.xz && tar xf …` (45 s).
@@ -70,7 +70,7 @@ _Lire en premier. Mis à jour à chaque fin de session._
 - Un serveur MCP nommé `HIGGSFIELD_MCP` est listé dans l'environnement : non appelé (consigne phase 1). Noms observés dans `PLAN-TESTS-MCP.md`.
 
 ## Historique
-- Session 23 — 2026-10-10 18:29 UTC → 18:34 (clôture prématurée, corrigée sur remarque de l'utilisateur), reprise 18:45 → ~19:15 : veille IA (sous-agent), pièce 27 « Jamais » v1-v2, bande.py ; montage-rythme ; PLAN-TESTS 71.
+- Session 23 — 2026-10-10 18:29 UTC → 18:34 (clôture prématurée, corrigée sur remarque de l'utilisateur), reprise 18:44 → 19:07 UTC : veille IA (sous-agent), pièce 27 « Jamais » v1-v2, bande.py ; montage-rythme ; PLAN-TESTS 71.
 - Session 22 — 2026-10-10 17:38 UTC → ~18:20 réel (horloge VM ~17:50) : veille IA, fiche gags de montage (sous-agents), pièce 26 v1-v4 ; skills youtube, rythme, son-et-emotion, ia-generative ; PLAN-TESTS 69.
 - Session 21 — 2026-10-10 17:29 UTC → fin (horloge peu fiable) : examen n°11 (15/20), labo densite.py, sous-agents veille IA / fiche slow TV-ASMR ; skills direction-artistique, youtube, references, ia-generative.
 - Session 20 — 2026-10-10 16:29 UTC → fin (horloge peu fiable) : pièces 24 (face caméra) et 25 (au lit), labo écho, sous-agents veille IA / infrarouge / Resolve retime / affiches de festivals ; skills youtube, rythme, couleur-et-intention, motion-design-principes, preparation-tournage-vfx, ia-generative ; PLAN-TESTS 67.
