@@ -29,12 +29,21 @@ Limite : je ne peux pas écouter ; le son est jugé sur l'enveloppe et la positi
 - Prix payé : les derniers retours tombent tous les 31 images, c'est mécanique sur la fin ; les plans d'ici ne raccourcissent plus régulièrement (41, 43, 13, 17, 19). Acceptable : la mécanique est le sujet (une horloge).
 - Piège technique trouvé : un tic de 1,25 s à 25 i/s tombe toutes les **31,25 images**, donc à ±1 image de la coupe selon l'arrondi (visible dans la bande : le tic précède parfois la coupe d'une image). À 24 i/s, 1,25 s = 30 images pile. **Si l'on coupe sur une pulsation, choisir un tempo qui tombe sur des images entières à la cadence du projet** (à 25 i/s : 1,24 s = 31 images, 1,28 s = 32).
 
+## v6 — v5 + un bâton commencé, jamais fini (`v6-detail-baton.png` : avant / dernier retour, recadré ×2)
+- L'idée est juste (la phrase de l'histoire tient dans un trait de 7 px), mais **illisible au cadre** : à 480 px, le demi-bâton fait 7 px dans un plan large qui s'assombrit. Le détail qui porte la fin ne peut pas rester un détail.
+
+## v7 — v6 + poussée lente vers le mur pendant le dernier retour (`v7-fin.png`) → **nouvelle référence**
+- Poussée de ×1 à ×2,6 en 2,4 s (cosinus), centrée sur les bâtons : l'œil est conduit au trait inachevé **sans coupe**, la tenue est préservée. Fin lisible : plante morte + un bâton à moitié tracé.
+- 1er essai raté : la poussée dérivait et coupait le bâton au bord du cadre. Un mouvement de caméra qui désigne un détail se cadre sur la position **finale** du détail, pas sur sa trajectoire.
+- Photosensibilité OK. Prix : la poussée est un geste d'auteur qui « appuie ». Une coupe vers un insert serait plus sèche ; la poussée garde la tenue. J'assume la poussée, lente, une seule fois dans la pièce.
+
 ## Ce que la pièce m'apprend (versé dans `montage-rythme` et `montage-references`)
 1. Montage alterné à deux vitesses : l'ellipse est dans la coupe ; dans le plan, le temps des deux lignes doit presque s'arrêter (sinon on lit un accéléré, pas un écart, et un jour/nuit accéléré clignote).
 2. Chaque ligne a besoin de son **compteur visible** (goutte, bâtons, plante) ; sans compteur, l'écart n'est qu'une affirmation.
 3. Une pulsation sonore indépendante des coupes = pression. La même pulsation **sur** les coupes = causalité. Choisir selon qu'on veut l'angoisse diffuse ou la perte comptée.
 4. Pour un final par l'absence : enseigner une règle (tic = perte), puis la rompre au dernier retour.
 5. La fin d'un montage qui accélère doit être **tenue** (≥ 2 s) : l'accélération prépare, la tenue fait mal.
+6. Le détail qui porte la fin doit être **amené à la taille de lecture** (poussée lente ou insert) : une idée de 7 px n'existe pas.
 
 ## Reste (BACKLOG Y39)
-v6 : un bâton commencé et inachevé au dernier retour ; tester v4 / v5 sur un spectateur (phase 2) ; version 9:16 ; vraie matière (Blender, lumière de fenêtre physique).
+Tester v4 / v5 sur un spectateur (phase 2) ; version 9:16 ; vraie matière (Blender, lumière de fenêtre physique).

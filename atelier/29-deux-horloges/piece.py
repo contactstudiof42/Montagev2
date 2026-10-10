@@ -5,14 +5,14 @@ import sys, os, subprocess, wave, numpy as np
 from PIL import Image, ImageDraw
 V, D = sys.argv[1], sys.argv[2]; os.makedirs(D, exist_ok=True)
 W, H, FPS = 480, 270, 25
-N = 350 if V in ('v4', 'v5') else 300
+N = 350 if V in ('v4', 'v5', 'v6', 'v7') else 300
 
 
 def decoupage(v):
     """liste de (ligne, nb d'images) ; ligne 'A' ici, 'B' là-bas."""
     if v == 'v1':
         return [('A' if i % 2 == 0 else 'B', 30) for i in range(10)]
-    if v == 'v5':   # chaque retour à là-bas tombe sur un tic (tics à k×31,25 images)
+    if v in ('v5', 'v6', 'v7'):   # chaque retour à là-bas tombe sur un tic (tics à k×31,25 images)
         return [('A', 62), ('B', 22), ('A', 41), ('B', 20), ('A', 43), ('B', 18), ('A', 13), ('B', 14), ('A', 17), ('B', 12), ('A', 19), ('B', 69)]
     # v2 / v3 : les plans d'ici raccourcissent vers la chute, ceux de là-bas restent courts ; fin = B tenu
     a = [62, 44, 32, 24, 18, 14]; b = [22, 20, 18, 16, 14]
@@ -28,7 +28,7 @@ def decoupage(v):
 def ici(t, f_chute):
     """t = image globale. Goutte qui grossit jusqu'à f_chute puis tombe. v4 : macro (recadrage ×3 sur le bec)."""
     im = ici_large(t, f_chute)
-    return im.crop((160, 40, 320, 130)).resize((W, H), Image.BICUBIC) if V in ('v4', 'v5') else im
+    return im.crop((160, 40, 320, 130)).resize((W, H), Image.BICUBIC) if V in ('v4', 'v5', 'v6', 'v7') else im
 
 
 def ici_large(t, f_chute):
@@ -74,6 +74,9 @@ def labas(saut, k, gel=None):
             d.line([x0 + r * 5, y0, x0 + r * 5, y0 + 16], fill=(60, 40, 30), width=2)
         else:
             d.line([x0 - 2, y0 + 12, x0 + 19, y0 + 3], fill=(60, 40, 30), width=2)
+    if gel is not None and V in ('v6', 'v7'):                                 # v6 : un bâton commencé, jamais fini
+        g, r = divmod(n, 5); x0, y0 = 30 + (g % 9) * 28, 30 + (g // 9) * 26
+        d.line([x0 + r * 5, y0, x0 + r * 5, y0 + 7], fill=(60, 40, 30), width=2)
     return im
 
 
@@ -95,10 +98,14 @@ for ligne, n in seq:
         else:
             prec = saut
     for k in range(n):
-        gel = prec if (V in ('v4', 'v5') and ib == nb_b) else None
+        gel = prec if (V in ('v4', 'v5', 'v6', 'v7') and ib == nb_b) else None
         im = ici(t, f_chute) if ligne == 'A' else labas(saut, k, gel)
         if ligne == 'B' and ib == nb_b and V != 'v1':                     # dernier retour : la pièce est vide, le soir tombe
             im = Image.eval(im, lambda c: int(c * max(0.55, 1 - k / 120)))
+            if V == 'v7':                                                 # poussée lente vers les bâtons : l'œil va au bâton inachevé
+                u = 0.5 - 0.5 * np.cos(np.pi * min(1, k / 60)); z = 1 + 1.6 * u
+                cw, ch = W / z, H / z; cx, cy = 240 + (95 - 240) * u, 135 + (70 - 135) * u
+                im = im.crop((cx - cw / 2, cy - ch / 2, cx + cw / 2, cy + ch / 2)).resize((W, H), Image.BICUBIC)
         proc.stdin.write(im.tobytes()); t += 1
 proc.stdin.close(); proc.wait()
 
@@ -113,7 +120,7 @@ for ligne, n in seq:
     else:
         a[s0:s1] += 0.03 * np.convolve(rng.standard_normal(s1 - s0), np.ones(40) / 40, 'same') * 6   # air, dehors
     t0 += n
-if V in ('v3', 'v4', 'v5'):
+if V in ('v3', 'v4', 'v5', 'v6', 'v7'):
     fin = f_chute * SR // FPS
     for s in np.arange(0, fin, int(1.25 * SR)):                               # le tic d'ici, entendu partout
         L = int(0.03 * SR); e = np.exp(-np.arange(L) / (0.004 * SR))
