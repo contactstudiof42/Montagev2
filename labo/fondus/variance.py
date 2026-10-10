@@ -34,7 +34,7 @@ for t in sorted(hits):
     else: segs.append([t, t])
     prev = t
 det = [[round(a / FPS, 2), round(b / FPS, 2)] for a, b in segs]
-V = json.load(open(os.path.join(ICI, "resultats.json")))["verite"]
+V = json.load(open(os.path.join(ICI, os.environ.get("VERITE", "resultats.json"))))["verite"]
 def touche(seg, ver): return seg[0] <= ver[1] + 0.12 and seg[1] >= ver[0] - 0.12
 trouves = [v for v in V["fondus"] if any(touche(s, v) for s in det)]
 faux = [s for s in det if not any(touche(s, v) for v in V["fondus"])]

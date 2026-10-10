@@ -9,7 +9,12 @@ FPS, W, H = 25, 320, 180
 def run(c):
     r = subprocess.run(c, capture_output=True, text=True)
     if r.returncode: sys.exit(r.stderr[-1500:])
-srcs = [f"mandelbrot=s={W}x{H}:rate={FPS}", f"testsrc2=s={W}x{H}:rate={FPS}",
+import os as _os
+if _os.environ.get("JEU") == "2":   # 2e vérité terrain indépendante (session 4) : autres sources, autres durées
+    srcs = [f"testsrc2=s={W}x{H}:rate={FPS},hue=h=90", f"life=s={W}x{H}:rate={FPS}:mold=10:ratio=0.3", f"mandelbrot=s={W}x{H}:rate={FPS}:start_scale=1",
+            f"smptebars=s={W}x{H}:rate={FPS}", f"cellauto=s={W}x{H}:rate={FPS}:rule=110", f"rgbtestsrc=s={W}x{H}:rate={FPS},scroll=v=0.02", f"gradients=s={W}x{H}:rate={FPS}:speed=0.2:n=5"]
+else: srcs = None
+srcs = srcs or [f"mandelbrot=s={W}x{H}:rate={FPS}", f"testsrc2=s={W}x{H}:rate={FPS}",
         f"cellauto=s={W}x{H}:rate={FPS}:rule=30", f"gradients=s={W}x{H}:rate={FPS}:speed=0.05",
         # plan à mouvement rapide (piège à faux positifs) : mire qui défile vite
         f"testsrc=s={W}x{H}:rate={FPS},scroll=h=0.04", f"life=s={W}x{H}:rate={FPS}:mold=5", f"smptehdbars=s={W}x{H}:rate={FPS}"]
@@ -22,6 +27,8 @@ def charge(i):
 S = [charge(i) for i in range(7)]
 # (plan, transition vers le suivant : ("coupe",0) / ("fondu",n) / ("noir",n))
 PLAN = [(0, ("coupe", 0)), (1, ("fondu", 12)), (2, ("fondu", 25)), (3, ("coupe", 0)), (4, ("noir", 24)), (5, ("fondu", 6)), (6, None)]
+if _os.environ.get("JEU") == "2":
+    PLAN = [(0, ("fondu", 18)), (1, ("coupe", 0)), (2, ("fondu", 8)), (3, ("noir", 12)), (4, ("fondu", 30)), (5, ("coupe", 0)), (6, None)]
 out, VERITE = [], {"coupes": [], "fondus": []}
 for k, (p, tr) in enumerate(PLAN):
     clip = list(S[p])
@@ -75,5 +82,5 @@ while i < len(d):
     else: i += 1
 res["maison"] = {"coupes": coupes, "fondus": fondus, "mediane_diff": round(float(med), 2)}
 res["diff_par_image"] = [round(float(x), 1) for x in d]
-json.dump(res, open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "resultats.json"), "w"), indent=0)
+json.dump(res, open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "resultats2.json" if _os.environ.get("JEU") == "2" else "resultats.json"), "w"), indent=0)
 print(json.dumps({k: v for k, v in res.items() if k != "diff_par_image"}, indent=1))

@@ -39,3 +39,9 @@ Méthode de la courbe de variance (pendant un fondu, la variance de luminance de
 5. **Limite de rigueur** : les seuils sont réglés sur la même vérité terrain que celle qui les évalue (surapprentissage probable). Prochain test obligatoire : une autre chaîne (autres sources, autres durées), puis un extrait CC0 réel monté en fondus.
 
 Conséquence pour mes mesures de rythme : scdet pour les coupes + `variance.py` pour les fondus (3/4 ici), et toujours un contrôle visuel de la planche aux endroits détectés.
+
+### Contre-épreuve sur une 2e vérité terrain indépendante (session 4, `JEU=2 python3 test_fondus.py …`, `VERITE=resultats2.json python3 variance.py …`)
+Autres sources (mire teintée, life, mandelbrot, barres, cellauto 110, mire qui défile verticalement, dégradés rapides) et autres durées (fondus de 18, 8 et 30 images, noir de 12 images), **mêmes seuils, sans réglage** :
+- scdet (seuil 8) : 2/2 coupes, **0/4 fondus** (confirmé) ;
+- `variance.py` : **4/4 fondus, 0 faux positif** (le fondu au noir sort en deux segments, de part et d'autre de l'image noire : à fusionner). Résultat brut : `resultats_variance2.json`.
+Le soupçon de surapprentissage est levé pour ce type de matériau synthétique. Reste : un vrai film CC0 monté en fondus (mouvement de caméra réel, grain, compression).
