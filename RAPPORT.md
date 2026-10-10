@@ -53,5 +53,18 @@ Chacun a été vérifié au moins sur une maquette ; tous restent **à confirmer
 5. Préparer la phase 3 : `PLAN-TESTS-MCP.md` (tests d'import, d'export et de mesure dans les logiciels).
 La liste des vidéos à me fournir, les questions sur vos goûts et ma méthode d'analyse sont dans `PHASE-2-BESOINS.md`.
 
-## Audit de la session de clôture
-_(complété en fin de session)_
+## Audit de la session de clôture (2026-10-10)
+- **Tailles** : RAPPORT 616 → 70 lignes (168 → 10 Ko) ; PROGRESS 115 → 29 lignes ; BACKLOG 223 → 50 lignes ; les 22 SKILL.md 336 → 221 Ko (chacun entre 6 et 14 Ko, moins de 150 lignes). Le détail est parti dans des annexes (`details.md`, `regles-atelier.md`, `veilles-2026-10.md`…), qui gardent le texte d'origine : le total des skills avec annexes a donc grossi (419 → 489 Ko), mais seul le SKILL.md se charge à chaque fois.
+- **Marqueurs** après audit (occurrences) : 227 `[SOURCÉ]`, 96 `[TESTÉ EN LABO]`, 168 `[ÉPROUVÉ EN MAQUETTE]`, 93 `[THÉORIQUE]`, 6 `[À TRANCHER EN PHASE 2]`. Plus aucun `[TESTÉ EN ATELIER]`. Plusieurs principes perceptifs passés de « labo » à « maquette » (cécité au changement, 180°, échos de mouvement, flou optique, punch-in, captions, miniatures, motion blur).
+- **Erreurs ancrées corrigées** :
+  - « l'horloge de la VM est peu fiable » (fausse, a écourté les sessions 16 à 23) : retirée de PROGRESS ; la règle « regarder `date -u` » la remplace ;
+  - « finir vers 40 min à cause de l'anti-doublon » : retiré (consigne obsolète) ;
+  - `montage-rythme` et `montage-grammaire` se disaient « non encore éprouvés » ; plusieurs skills se disaient « version 1 » après 20 enrichissements ; `montage-direction-artistique` annonçait `montage-references` « à venir » et « aucune bibliothèque par format » ;
+  - « AgX blanchit le froid » (réfuté en session 8) réécrit en hypothèse réfutée ; « le grain protège le noir » remplacé par « le grain n'est pas une protection universelle » ;
+  - Kolder « une transition kinetic se tourne » : seule la forme nuancée reste (un point commun aux deux plans, tourné ou trouvé) ;
+  - « une relance est un pic » aligné sur « un coup qualitatif, pas une rafale » ; contradiction kinetic / youtube sur le punch-in tranchée (« changer d'échelle seulement là où l'on veut l'emphase ») ;
+  - Resolve : recette `TimelineItem.SetLUT` (dépréciée) remplacée par le graphe de nodes ; « Magic Mask 2.0 / IntelliTrack en 21.1 » déclaré faux ; workflows : « proxy H.264 » contre « jamais de long-GOP » tranché en « H.264 tout-intra » ;
+  - Premiere 26.5 et la sortie 8 bits de Generative Extend : marqués `[À TRANCHER EN PHASE 2]` (une seule source) ;
+  - `PLAN-TESTS-MCP.md` s'appelait « phase 2 » : renommé phase 3.
+- **Doublons fusionnés** : grammaire fait foi sur le raccord mouvement et les J/L-cut ; rythme sur le temps et la musique ; son-et-émotion sur le silence ; couleur-et-intention sur le sens, couleur-pipeline sur la technique ; formats sur les Shorts narratifs ; youtube sur le face caméra ; direction-artistique sur le test « mon propre système ». Tableau complet : sommaire de `montage-expert`.
+- **Doutes non tranchés** : seuil de durée retirée pour un jump cut et seuil des micro-sauts (2 %) ; « un geste naturel suffit en plan taille » ; whoosh 3 à 6 images avant la coupe ; loudness corporate hors plateformes ; vraie version de Premiere ; scripting dans Resolve gratuit. Chevauchements restants, signalés mais acceptables : Resolve ↔ couleur-pipeline (RCM), loudness ↔ kinetic / youtube (specs d'envoi), workflows ↔ formats (pipelines).
