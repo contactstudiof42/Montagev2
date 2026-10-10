@@ -5,7 +5,7 @@ _Lire en premier. Mis à jour à chaque fin de session._
 ## Où on en est (après la session 15, 2026-10-10 ~13:15 UTC)
 - **Skills (21)** : session 15 : `montage-direction-artistique` (texte = durée, « la technique du matin »), `montage-kinetic-editing` (R7b temps de lecture ; §6 rushes à strobe, 128 BPM noires = limite, sommet plus long pas plus fort), `montage-regard` (règle 21 : le texte prend la valeur opposée à l'image ; dispositif automatique), `montage-son-et-emotion` (13 : son d'un strobe), `montage-motion-design-principes` (6b : carton-liste en lecture de repérage).
 - **Culture** : 50 fiches (nouvelle : `culture/step-printing-wong-kar-wai-et-autres.md`).
-- **Atelier** : pièce 20 « La lumière écrit » v1-v7 (`atelier/20-la-lumiere-ecrit/`) ; pièce 18 v6 confiée à un sous-agent (voir le journal du RAPPORT pour l'état).
+- **Atelier** : pièce 20 « La lumière écrit » v1-v7 (`atelier/20-la-lumiere-ecrit/`) ; pièce 18 v6 A/B/C (+ B2, C2, C3) : la luminance de l insert fait partie de la cause.
 - **Labo** : `labo/photosensibilite/strobe-rushes/` (rushes à strobe : saccade choisie = seul traitement qui garde le coup) ; `labo/paroles/temps_lecture.py`.
 - **Examens** : n°1 13, n°2 14, n°3 15, n°4 14, n°5 14, n°6 15, n°7 15, n°8 15 /20. **N°9 vers la session 18** (BACKLOG 85 : sans musique).
 

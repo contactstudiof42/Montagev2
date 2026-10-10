@@ -61,3 +61,32 @@ Luminance du cadre : 21 → 4 (**−80 %**) quand le lampadaire 1 (41 % de la lu
 2. Une extinction sèche se lit comme un acte seulement si la cause est montée (image ou son) juste avant.
 3. Un fondu de lumière calculé en lumière de scène ne descend pas linéairement à l'écran (la vue le courbe) : faire le fondu là où il sera jugé, ou le dessiner à l'œil.
 4. Pour rendre de la lumière sans retirer la saillance du sujet, rallumer loin et petit.
+
+## v6 (session 15) — la cause montée : `v6-A-planche.png`, `v6-B-planche.png`, `v6-B2-planche.png`, `v6-C-planche.png`, `v6-C2-planche.png`, `v6-C3-planche.png`
+Méthode : `v6.py` (montage numpy + ffmpeg, 113 images = 4,5 s à 25 i/s, son synthétique mono 48 kHz) ; rue = les deux EXR du cadre v3 (`scene.py`, SERRE=1 LENS=35, Cycles 32 éch., lampadaire 1 allumé/éteint) vus en AgX par OCIO comme v4 ; insert = `insert.py` (Blender, 16 images, Cycles 12 éch.) : plaque d'interrupteur sur un mur, un index (trois cylindres : se lit « doigt » ou « bâton » selon la taille) appuie sur la bascule, qui claque sans interpolation à l'image 14. Même souffle de rue faible sur les trois ; le clac (transitoire de 3 ms + résonance courte à 2,3 kHz) seulement en B, sur la bascule. Vidéos dans `atelier/rendus/p18v6/out/` (non versionnées).
+- **A sans cause** : rue allumée 0-39, sèche à 40, noir tenu. Luminance 23 → 6 (−74 %).
+- **B cause avant** : rue 0-29, insert « presse » 30-45 (clac à 43), retour sur la rue **encore allumée** 46-47, extinction à 48.
+- **C cause après** : extinction sèche **muette** à 40, noir tenu 1,4 s, insert « lache » 75-90 (bascule déjà en bas, le doigt se retire, sans clac), retour sur la rue noire.
+- Contre-épreuves de lumière : **B2 / C2** = même montage, insert ramené par gain linéaire à la luminance du plan qui l'entoure (23 en B, visée 8 en C, obtenu 4-5) ; **C3** = insert C rendu `NUIT=1`, éclairé **seulement par sa lanterne**, basse et proche (luminance 39, flaque chaude sur le noir).
+
+Photosensibilité (`python3 -I labo/photosensibilite/flash_check.py`, fenêtre 1/3) : A 0 flash ; B 1 (pire seconde 1) ; C 1 ; B2 0 ; C2 0 ; C3 1. Tous **OK** (seuil : plus de 3 par seconde). Le flash compté en B, C, C3 est l'aller-retour de luminance que fait l'insert lui-même : un indice, pas un risque.
+
+| Montage | Intention (« il éteint la ville ») | Lisibilité | Rythme | Justesse | Se lit comme |
+|---|---|---|---|---|---|
+| A | absente : personne n'agit | forte (une marche, −74 %) | une marche dans un plan fixe : brutal, rien ne la prépare | physique juste (LED sèche) | **« coupure »** (comme v4 A) |
+| B (insert brut) | présente : geste → clac → rue | trouble : l'insert (55) est **2,4 fois plus clair** que la rue allumée (23) ; le retour sur la rue fait déjà −58 %, l'extinction n'est que la **seconde** chute en 5 images | geste 0,5 s, clac, 2 images d'attente, noir : la chaîne est courte et tenue | le clac sur la bascule est le bon son (un interrupteur, pas une panne) | **« il éteint »**, mais la coupe vole une part de la chute |
+| B2 (insert à la clé de la rue) | présente | **la meilleure** : la seule chute de luminance du film est l'extinction | idem | idem | **« il éteint »**, net sur la planche |
+| C (insert brut) | arrive après, mais l'insert (55) est l'image la plus claire du film juste après le noir : **il rallume le film** | forte pour l'insert, contradictoire pour la pièce | noir 1,4 s puis un plan clair : le noir est annulé | contredit « il ne reste que lui et une lumière » | « coupure », puis « il touche un interrupteur » : **ambigu entre « il a éteint » et « il va rallumer »** (aucun changement d'état n'est vu, seule la bascule en bas le dit, à peine lisible à 160 px) |
+| C2 (insert à la clé du noir) | perdue | **nulle** : à 4-5 de luminance l'interrupteur et le doigt disparaissent | — | juste en lumière, vide en sens | « coupure » puis un plan noir |
+| C3 (insert éclairé par sa seule lanterne) | **la plus proche de la phrase** : la lumière de l'insert est celle qui reste | bonne (flaque chaude, bords noirs) | noir, puis une petite lumière qui montre la main : lent, posé | la source est motivée (la sienne) | **« on comprend après »** : c'est lui ; mais le doigt qui se retire peut encore se lire « il vient de toucher » plutôt que « il a coupé » |
+
+### Ce qui ne se juge qu'en mouvement (phase 2)
+- Les **2 images de rue encore allumée** après le clac en B : délai de relais crédible, ou décalage perçu comme une erreur de synchro ? (80 ms, sous le seuil d'un son « en retard » d'environ 45-100 ms selon le sens.)
+- Si le clac est entendu **comme cause** en A (je ne l'y ai pas mis) : une variante A + clac seul, sans image d'insert, reste à monter (« un son de contacteur synthétique » de la ligne du BACKLOG) ; sur planche, impossible à juger.
+- Si 16 images d'insert suffisent à lire « un doigt » (et pas un bâton) en temps réel ; la planche lit la bascule, pas la main.
+- En C, si le spectateur relit l'extinction a posteriori (« ah, c'était lui ») ou s'il a déjà rangé l'événement en « coupure » : c'est une question de mémoire, la planche ne la pose pas.
+
+### Jugement
+- La cause **avant** donne l'auteur ; la cause **après** donne au mieux une découverte, et elle coûte le noir si l'insert est éclairé comme un plan normal.
+- La clé de lumière de l'insert fait partie de la cause : **avant**, à la clé du plan qu'il précède (sinon la coupe fait la chute à la place de l'extinction) ; **après**, éclairé par ce qui reste (sa lanterne), ni à la clé du noir (illisible) ni à la clé du jour (il rallume le film).
+- Pour la pièce : B2 si on veut l'acte ; C3 si on veut que le spectateur le comprenne en retard, avec un état de la bascule plus lisible (gros plan, ou bascule lumineuse témoin qui s'est éteinte elle aussi).
