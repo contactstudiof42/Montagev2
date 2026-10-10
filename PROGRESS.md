@@ -5,7 +5,15 @@ _Lire en premier. Mis à jour à chaque fin de session._
 ## Consigne durable de l'utilisateur (2026-10-10)
 - Développer une **culture YouTube / internet** (divertissement, essai vidéo, vulgarisation, vlog, motion de chaîne, Shorts, cultures d'edit) au même niveau que cinéma et clip. Voir BACKLOG « Consigne » (Y1-Y6) : une part de chaque session jusqu'à parité.
 
-## Où on en est (après la session 20, 2026-10-10)
+## Où on en est (après la session 21, 2026-10-10)
+- **Session 21** : examen n°11 (Y10, divertissement YouTube de groupe, 15/20), labo `labo/youtube/densite.py` (courbe d'événements/min, vérité terrain 3/3 ; la relance doit être un pic), sous-agents : veille IA (rien de neuf), fiche slow TV / ASMR (Y18). Examens : … n°10 15, **n°11 15**. Prochain examen n°12 vers la session 24-25 (sujet non YouTube : fiction ou pub, pour équilibrer).
+
+## Reprendre ici (session 22)
+0. Veille IA du jour (Y11, sous-agent dès le démarrage). `pip install pillow` (4 s) suffit pour `densite.py`.
+1. **Y20** maquette « densité décroissante » (3 min compressées du découpage B de l'examen n°11, plans Blender simples ou formes, avec la correction « relance = pic ») : la regarder et juger si ça décroche ; mesurer avec `densite.py`.
+2. **Y21** fiche « gags de montage » (sous-agent) ; **pièce 25 v4** (2 plans, une seule direction lente, d'après la fiche slow TV) ; Y16 (pièce 24 v4) ; Y9.
+
+## Ancien point (après la session 20, 2026-10-10)
 - **Session 20** : pièce 24 « Face caméra » (Y4, v1-v3, F = réf.), pièce 25 « Au lit » (Y14, v1-v3, E = réf.), labo écho de poses (88), sous-agents : veille IA, infrarouge sourcé (Y15), Resolve et saccade choisie (90), affiches de festivals (89). Examens : … n°10 15. **Prochain examen n°11 en session 21 ou 22** (Y10 : divertissement YouTube).
 
 ## Reprendre ici (session 21)
@@ -44,6 +52,7 @@ _Lire en premier. Mis à jour à chaque fin de session._
 - Un serveur MCP nommé `HIGGSFIELD_MCP` est listé dans l'environnement : non appelé (consigne phase 1). Noms observés dans `PLAN-TESTS-MCP.md`.
 
 ## Historique
+- Session 21 — 2026-10-10 17:29 UTC → fin (horloge peu fiable) : examen n°11 (15/20), labo densite.py, sous-agents veille IA / fiche slow TV-ASMR ; skills direction-artistique, youtube, references, ia-generative.
 - Session 20 — 2026-10-10 16:29 UTC → fin (horloge peu fiable) : pièces 24 (face caméra) et 25 (au lit), labo écho, sous-agents veille IA / infrarouge / Resolve retime / affiches de festivals ; skills youtube, rythme, couleur-et-intention, motion-design-principes, preparation-tournage-vfx, ia-generative ; PLAN-TESTS 67.
 - Session 19 — 2026-10-10 15:29 → ~16:00 UTC (horloge peu fiable) : veille IA (sous-agent), pièce 22 v3, examen n°10 (15/20), pièce 23 v1-v3 ; skills blender, couleur-et-intention, direction-artistique, youtube, preparation-tournage-vfx, ia-generative.
 - Session 18 — 2026-10-10 14:54 → ~15:40 UTC (horloge VM peu fiable ; relancée par l'utilisateur après un faux positif de l'anti-doublon) : pièce 22 v1-v2, fiche créateurs IA, MAJ IA générative au 2026-10-10 (sous-agent) ; skills references / youtube / motion-design-principes / blender ; PLAN-TESTS 64.

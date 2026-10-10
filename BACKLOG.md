@@ -174,10 +174,17 @@ Y15. [x] [TECH] (session 20, sous-agent : `sources/infrarouge-tournage-2026-10.m
 Y7. [ ] [ART] Pièce 21 v3 : même voix, même principe, **autre matière** que la grammaire Kurzgesagt (papier découpé filmé façon Johnny Harris, ou objets réels en Blender) pour vérifier que le principe tient sans le style ; et une version avec sound design (un son par changement de rôle, pas par mouvement).
 Y8. [~] [TECH] (session 20 : événements/min et déplacement aux coupes mesurés sur la pièce 24 : 8 à 17/min ; reste : relier à MrBeast avec captions et bruitages, 3 densités) Labo : mesurer la densité de coupes et de « ponctuations » (punch-in, insert, caption) d'un montage face caméra synthétique à 3 densités, et le nombre d'événements par minute ; relier aux chiffres MrBeast 2023 / 2024 (38 / 23 coupes/min).
 Y9. [ ] [ART] Atelier « une nuit entière sans musique » (examen n°9) : six plans fixes Blender d'un village de nuit (23 h → 5 h), ambiances synthétiques, un clac ; juger si 90 s sans voix tiennent et ce qui remplace la musique ; une version où le lieu est silencieux.
-Y10. [ ] [ART] Examen n°10 (vers la session 20) : brief YouTube **divertissement** (concept de groupe, 20 min, montage de réactions), pour mettre à l'épreuve le retention editing contre « aucun temps mort ».
+Y10. [x] [ART] (session 21 : examen n°11 « Chaque heure, on retire un objet », 15/20, `examens/11-divertissement-maison-qui-se-vide.md`) Examen n°10 (vers la session 20) : brief YouTube **divertissement** (concept de groupe, 20 min, montage de réactions), pour mettre à l'épreuve le retention editing contre « aucun temps mort ».
 
 ## Réalimentation (session 20)
 Y16. [ ] [ART] Pièce 24 v4 : extinction du REC calée sur le mot « rien » (un bruitage de l'image) ; version 9:16 (le punch-in vertical) ; une version « captions » (4-6 mots sur les chutes seulement) pour compter ce qu'elles ajoutent comme événements.
 Y17. [ ] [TECH] Labo : détecteur de micro-sauts pour un vrai rush face caméra (flot optique ou repères du visage de part et d'autre de chaque coupe : déplacement en % de largeur) ; seuil à confronter au jugement en phase 2.
-Y18. [ ] [ART] Culture : fiche « ASMR, vidéos pour dormir, slow TV (NRK *Slow TV*, Bob Ross) » : ce qui endort sans ennuyer, à confronter à la pièce 25.
+Y18. [x] [ART] (session 21, sous-agent : `culture/asmr-slow-tv-videos-pour-dormir.md`, confrontée à la pièce 25) Culture : fiche « ASMR, vidéos pour dormir, slow TV (NRK *Slow TV*, Bob Ross) » : ce qui endort sans ennuyer, à confronter à la pièce 25.
 Y19. [ ] [ART] Écho de poses en mouvement (suite labo 88) : 3 écarts × dégradé / uniforme, en animation, sur un rush à strobe ou un rendu Blender ; juger si la zone morte de 0,5 tête survit au mouvement.
+
+## Réalimentation (session 21)
+Y20. [ ] [ART] Maquette « densité décroissante » (examen n°11) : 3 min compressées du découpage B (28 → 4 év./min, outils retirés un à un, **relance = pic** puis retrait), Blender ou formes 2D + sons synthétiques ; planche + `labo/youtube/densite.py` ; juger le décrochage du milieu.
+Y21. [ ] [ART] Fiche « gags de montage » (sous-agent) : répertoire sourcé (Edgar Wright, divertissement FR, sitcom, YTP) : enterrement d'objet, compteur qui hésite, faux raccord comique, contrechamp de silence, smash cut, rule of three ; puis 10 gags écrits pour le brief de l'examen n°11.
+Y22. [ ] [ART] Pièce 25 v4 (fiche slow TV) : 2 plans seulement, une seule direction lente portée par la lumière dans le plan, comparée à E (5-6 coupes) ; mesurer avec `mesure.py`.
+Y23. [ ] [TECH] `densite.py` v2 : lire un EDL / XML FCP7 / OTIO réel (coupes) + marqueurs (relances) au lieu d'un JSON ; pondérer les événements (un rire seul ≠ un bruitage) ; police avec accents.
+Y24. [ ] [ART] Examen n°12 (vers la session 24-25) : **pas YouTube** (fiction courte ou pub 30 s) pour vérifier que la consigne YouTube n'a pas mangé le reste ; ne pas recommander d'hybride.
