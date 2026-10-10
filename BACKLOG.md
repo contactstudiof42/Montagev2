@@ -19,7 +19,7 @@ Règle : alterner ART et TECH. Réalimenter dès qu'il reste moins de 10 sujets 
 8. [~] [TECH] DaVinci Resolve → `montage-resolve` v1 (session 2 : nodes, RCM, API d'après le README 2022-2023). Reste : Fusion, Fairlight, README 19-20 (objets Graph ? ColorGroup ?), atelier couleur « même plan, trois étalonnages » traduit en arbre de nodes.
 9. [ ] [ART] Narration par format : pub 15/30 s, vertical, clip, corporate, doc, fiction → skill `montage-formats`
 10. [ ] [TECH] Premiere Pro (« Premiere 26 » depuis janv. 2026 selon sources) : projet, proxies, multicam, sous-titres, Lumetri, exports → skill `montage-premiere`
-11. [ ] [TECH] Préparer un tournage pour les effets → skill `montage-preparation-tournage-vfx`
+11. [ ] [TECH] **(remonté en priorité par l'examen n°2)** Préparer un tournage pour les effets → skill `montage-preparation-tournage-vfx`
 12. [ ] [TECH] Pilotage MCP : état public (Higgsfield et autres), méthode d'agent → `montage-pilotage-mcp` + compléter `PLAN-TESTS-MCP.md`
 13. [ ] [ART] Son : atelier « même image, trois bandes son » (avec, contre, silence) ; fiches Murch sound design, Ben Burtt, Gary Rydstrom
 14. [ ] [TECH] Compositing / keying / tracking / roto (AE, Fusion, Blender) — test keying sur image CC0 avec ffmpeg (`chromakey`) et Blender
@@ -29,7 +29,8 @@ Règle : alterner ART et TECH. Réalimenter dès qu'il reste moins de 10 sujets 
 18. [ ] [ART] IA : vérifier les faits incertains de `montage-ia-generative` (Sora, AI Act art. 50), ajouter des fiches d'œuvres IA, définir une grille « est-ce que ça fait IA ? »
 19. [ ] [ART] Relire les skills artistiques après l'examen n°1 ; fusionner les doublons (regard / motion-design / references se recoupent sur « un signe »)
 
-20. [ ] [ART] **Examen créatif n°2** (dû en session 3 ou 4) : un clip de rap français, à traiter en montage macro (goût de l'utilisateur), avec préparation du tournage.
+20. [x] [ART] Examen créatif n°2 « Marée basse » (clip de rap) : 14/20 (session 2). **Examen n°3 en session 5 ou 6** : documentaire ou corporate.
+20b. [ ] [ART] Atelier « ce que la marée découvre » : une image-concept propre au sujet (révélé par l'examen n°2), 10 s Blender, l'eau qui se retire et découvre un objet.
 21. [ ] [ART] Atelier « causalité » : reprendre le principe de Honda « Cog » (chaque coupe montre une cause et son effet) sur 10 s de Blender, sans musique, seulement les sons des objets.
 22. [x] [TECH] `montage-blender` v1 écrit (session 2) ; reste Eevee headless, geometry nodes, compositing, camera tracking — : consigner ce que l'atelier 02 a appris (cadre et fenêtres de source calculées depuis la cinématique, cache d'images par caméra, ~1 image/s en Cycles 270×480 12 échantillons + débruitage).
 

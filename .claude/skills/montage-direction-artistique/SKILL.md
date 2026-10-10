@@ -17,6 +17,9 @@ Remplir ces sept lignes ; si une ligne est vide, la déduire et l'écrire comme 
 6. **Ce que le projet ne doit surtout pas être** (souvent plus révélateur que ce qu'il doit être).
 7. **Contradictions du brief** : les nommer tout de suite (ex. « premium » + « tout dire en 6 s »).
 
+## Étape 1 bis — L'idée propre au sujet (ajout examen n°2)
+Avant d'ouvrir `montage-references` ou `GOUTS.md`, écrire **une image qui n'appartient qu'à ce sujet** (examen n°2 : la marée basse découvre ce qui était caché, une image-concept que j'ai ratée en appliquant directement le modèle Ziak). Les références et les goûts viennent ensuite pour la traiter, jamais pour la remplacer.
+
 ## Étape 2 — Trois directions contrastées
 Contrastées = elles diffèrent sur **l'axe principal** (pas trois variantes de la même idée). **Au moins une direction doit changer de registre** (ironique, fictionnel, graphique), pas seulement de rythme : à l'examen n°1, deux pistes sur trois étaient réalistes, nocturnes et domestiques. Axes utiles : retenue / spectaculaire ; réel / graphique ; lent / rapide ; chaud / froid ; sérieux / ironique.
 Pour chaque direction, fiche fixe :
@@ -30,7 +33,8 @@ Pour chaque direction, fiche fixe :
 - **Risque** : ce qui peut rater.
 - **Faisabilité** : jours de tournage, coût relatif, risques plateau (enfants, animaux, météo). *(ajout examen n°1)*
 - **Version muette et premier écran** : ce qu'on comprend sans son, et ce qu'on voit dans les 2 premières secondes. *(ajout examen n°1)*
-- **Test du cliché** : combien de films de la catégorie ont déjà fait ça ? Si beaucoup, qu'est-ce qui rend le nôtre différent ? *(ajout examen n°1)*
+- **Test du cliché** : combien de films de la catégorie ont déjà fait ça ? Si beaucoup, qu'est-ce qui rend le nôtre différent ? *(ajout examen n°1)* **Et mon propre système** : est-ce que je refais ma dernière pièce ou le goût du client comme une recette ? *(ajout examen n°2)*
+- **Pas de direction de paille** : chacune doit pouvoir gagner. Si je sais d'avance qu'elle sera écartée, la remplacer. *(ajout examen n°2)*
 
 ## Étape 3 — Recommander et défendre
 - Choisir une direction ; argumenter **contre l'intention** (étape 1), pas par goût.
@@ -43,6 +47,9 @@ Pour chaque direction, fiche fixe :
 - « Pas de plan de plus de 3 s avant la rupture à 0:12. »
 - « Loudness -14 LUFS intégré, dialogue intelligible au téléphone. »
 
+## Double livrable (clip + extraits verticaux) *(ajout examen n°2)*
+Un tournage, deux montages : macro (arrangement, gravité) pour le film, kinetic pour les extraits. Au tournage : 4K ou open gate pour recadrer en 9:16, zone verticale sûre au centre des plans clés, son seul (« wild ») des objets filmés pour fabriquer les SFX des extraits.
+
 ## Étape 5 — Savoir dire non
 Refuser (avec une alternative) :
 - **l'effet gratuit** : demander « qu'est-ce que l'effet dit que l'image ne dit pas ? » ; si rien, le retirer ;
@@ -54,5 +61,5 @@ Refuser (avec une alternative) :
 1. Reformulation de l'intention (7 lignes). 2. Trois directions (fiche fixe). 3. Recommandation argumentée. 4. Critères. 5. Points de vigilance (tournage, droits, livraison).
 
 ## Limites connues (à corriger par les examens)
-- Éprouvée une fois (examen n°1, 13/20) : audace insuffisante, clichés de la catégorie non vus. Les ajouts ci-dessus en viennent.
+- Éprouvée deux fois : examen n°1 (13/20 ; audace insuffisante, clichés de la catégorie non vus) et examen n°2 (14/20 ; goût du client plaqué comme une recette, direction de paille). Les ajouts ci-dessus en viennent.
 - Pas encore de bibliothèque de références par format : voir `BACKLOG.md`.

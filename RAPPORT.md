@@ -62,7 +62,9 @@ Je défends un travail **réduit à une idée**, où **le mouvement a une cause*
   Reste : vraie flamme, chaîne causale complète, variante en montage macro façon Ziak.
 
 ### Dernier examen créatif
-**N°1 — spot 30 s + vertical 15 s pour une mutuelle (offre jeunes parents)** : `examens/01-mutuelle-jeunes-parents.md`. Recommandation : montage de gestes de nuit en très gros plans, puis bascule vers un plan long de 9 s (le soulagement). **Autocritique : 13/20.**
+**N°2 — clip de rap « Marée basse » (clip 16:9 + 3 extraits verticaux)** : `examens/02-clip-rap-maree-basse.md`. Recommandation : montage macro avec une horloge-marée (un plan fixe du quai qui revient, l'eau plus basse à chaque retour) pour le clip, et des extraits en kinetic tirés des mêmes rushes. **Autocritique : 14/20.** Le double usage est bien résolu et la préparation du tournage est solide (4K pour le 9:16, log 10 bits, son seul, autorisations). Mais j'ai plaqué votre goût Ziak comme une recette et raté l'image propre au sujet (la marée basse découvre ce qui était caché), et la direction B était une direction de paille. `montage-direction-artistique` est corrigé (étape « idée propre au sujet », test de mon propre système).
+
+Précédent : **N°1 — spot 30 s + vertical 15 s pour une mutuelle (offre jeunes parents)** : `examens/01-mutuelle-jeunes-parents.md`. Recommandation : montage de gestes de nuit en très gros plans, puis bascule vers un plan long de 9 s (le soulagement). **Autocritique : 13/20.**
 - Deux directions sur trois étaient trop proches (réalistes, nocturnes).
 - Deux clichés de catégorie m'ont échappé (la boîte à musique, le montage de gestes du quotidien).
 - Je n'ai vérifié ni la faisabilité ni le réglementaire.
@@ -109,7 +111,8 @@ Techniques : `montage-grammaire` (théorique), `montage-loudness-livraison` (tes
 ### Autres questions et prochaines priorités
 - Questions : quelles normes de loudness pour vos livraisons TV (charte PAD de quelle chaîne) ? Avez-vous des rushes libres de droits à me donner pour l'atelier ?
 - Prochaines priorités :
-  - examen créatif n°2 (clip de rap français, montage macro) ;
+  - atelier « ce que la marée découvre » (révélé par l'examen n°2) ;
+  - skill `montage-preparation-tournage-vfx` ;
   - pièce 02 v7 : vraie flamme, chaîne causale complète, variante façon Ziak ;
   - atelier « direction A dans le noir » (la piste audacieuse de l'examen n°1) ;
   - atelier couleur « même plan, trois étalonnages » traduit en arbre de nodes Resolve ;
@@ -157,4 +160,5 @@ Techniques : `montage-grammaire` (théorique), `montage-loudness-livraison` (tes
 - **Œuvres analysées** : Hiro Murai « This Is America » (sources : PremiumBeat, entretien du monteur Ernie Gilbert ; The Fader), Honda « Cog » (Campaign, Autotrader, Wikipedia).
 - **Skills créés** : `montage-blender`, `montage-resolve` (README de l'API de scripting, copies 2022 et 2023).
 - **Skills modifiés** : `montage-regard` (critère « liaison », 3 leçons), `montage-kinetic-editing` (sujet lisible à la 1re image, SFX dont la cause est visible, leçon de l'atelier 02), `montage-references` (principe 15b de Murai, tension « monter le choc » / « le laisser arriver »), `montage-loudness-livraison` (bandes dans les noirs), `montage-expert` (sommaire).
+- **Examen n°2** : « Marée basse » (clip de rap), 14/20 ; corrections dans `montage-direction-artistique`.
 - **PLAN-TESTS-MCP** : tests 11 à 13 et observations du serveur Higgsfield (hôte `bs_*`, procédures « passport » et « audit », risque de crédits payants pour la génération). Le serveur n'a pas été appelé.
