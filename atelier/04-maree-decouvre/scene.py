@@ -38,7 +38,8 @@ def put(o, m): o.data.materials.append(m); return o
 bpy.ops.mesh.primitive_plane_add(size=P.get("sand_size", 200)); sable = bpy.context.object
 mod = sable.modifiers.new("sub", "SUBSURF"); mod.subdivision_type = "SIMPLE"; mod.levels = mod.render_levels = P.get("sand_levels", 8)
 tex = bpy.data.textures.new("rides", "WOOD"); tex.wood_type = "BANDNOISE"; tex.noise_scale = 0.35; tex.turbulence = 3
-d = sable.modifiers.new("disp", "DISPLACE"); d.texture = tex; d.strength = 0.04
+d = sable.modifiers.new("disp", "DISPLACE"); d.texture = tex; d.strength = P.get("ripple", 0.04)
+tex.noise_scale = P.get("ripple_scale", 0.35)
 put(sable, mat("sable", (0.20, 0.18, 0.15), 0.35))
 # pente douce vers le large (y positif = large) : l'eau découvre d'abord le premier plan
 sable.rotation_euler = (math.radians(-1.2), 0, 0)
