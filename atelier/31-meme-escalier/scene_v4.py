@@ -82,7 +82,9 @@ if 'murfou' in a:                                    # « mur volant » de studi
     o = bpy.data.objects['mur_d']; o.visible_camera = False
     for k in range(5): bpy.data.objects[f'fen{k}'].visible_camera = False
 if AZ:                                               # v4 : même distance, caméra tournée autour de la figure (0 = face, 90 = profil)
-    r = 3.0; th = math.radians(AZ[0]); cam.location = (0.1 + r * math.sin(th), y0 - r * math.cos(th), z0 + (2.2 if CAM == 'haute' else 0.5)); cible = (0.1, y0, z0 + 1.0)
+    LN = [float(x[5:]) for x in a if x.startswith('lens=')]; lens = LN[0] if LN else 28.0; cam.data.lens = lens
+    r = 3.0 * lens / 28; th = math.radians(AZ[0]);   # distance proportionnelle à la focale : la figure garde la même taille
+    cam.location = (0.1 + r * math.sin(th), y0 - r * math.cos(th), z0 + (2.2 if CAM == 'haute' else 0.5)); cible = (0.1, y0, z0 + 1.0)
 d = mathutils.Vector(cible) - cam.location; cam.rotation_euler = d.to_track_quat('-Z', 'Y').to_euler()
 if 'grue' in a:                                     # v3 : retour en grue montante (0,9 m → 2,8 m), 75 images, cadre qui suit la silhouette
     sc.render.resolution_x, sc.render.resolution_y = 320, 180; sc.cycles.samples = 12
