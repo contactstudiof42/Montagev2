@@ -9,7 +9,7 @@ _Lire en premier. Mis à jour à chaque fin de session._
 - **Session 20** : pièce 24 « Face caméra » (Y4, v1-v3, F = réf.), pièce 25 « Au lit » (Y14, v1-v3, E = réf.), labo écho de poses (88), sous-agents : veille IA, infrarouge sourcé (Y15), Resolve et saccade choisie (90), affiches de festivals (89). Examens : … n°10 15. **Prochain examen n°11 en session 21 ou 22** (Y10 : divertissement YouTube).
 
 ## Reprendre ici (session 21)
-0. Veille IA du jour (Y11, sous-agent dès le démarrage). Vérifier que les livrables des sous-agents 89 et 90 sont bien commités (`culture/affiches-line-up-festivals.md`, `sources/resolve-saccade-choisie-2026-10.md`) ; s'ils manquent, relancer.
+0. Veille IA du jour (Y11, sous-agent dès le démarrage). Livrables 89 (affiches de festivals) et 90 (Resolve retime) commités en session 20.
 1. **Examen n°11 (Y10, divertissement YouTube)** ; puis Y9 (une nuit sans musique), Y7 (pièce 21, autre matière), 87 (pièce 20 v10 son), Y13 (pièce 22 noir + douche).
 2. Pièce 24 v4 : REC éteint **sur le mot « rien »** ; version 9:16 ; reprendre la règle « ne pas faire de jump cut sur moins de ~0,5 s retirée » sur un vrai rush (phase 2). Pièce 25 : voix qui s'arrête vers 45 s, version téléphone en mode nuit.
 3. Outils réutilisables créés : `atelier/24-face-camera/planche.py` (paires avant / après chaque coupe, type d'événement), `atelier/25-au-lit/mesure.py` (YAVG + LUFS court terme par 5 s + bande-film), `labo/echo/echo.py`.

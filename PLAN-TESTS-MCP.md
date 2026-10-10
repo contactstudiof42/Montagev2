@@ -156,3 +156,7 @@ Le serveur `HIGGSFIELD_MCP` est toujours listé, **non appelé** (consigne phase
 - **Premiere, sur un vrai rush face caméra (projet de test)** : monter la même prise en (A) respirations coupées, (A0) ratés et silences seulement, (C) punch-in 130 % sur les seules chutes ; exporter la paire d'images autour de chaque coupe et mesurer le déplacement du visage en % de largeur. Vérifier si le seuil « < 2 % = panne » de la marionnette tient sur un vrai corps.
 - Vérifier que le punch-in (Échelle de l'effet Trajectoire) en 4K → séquence 1080 reste net à 130 % ; noter la limite de recadrage par définition source.
 - Outils : la liste d'outils exposée par le serveur Higgsfield dans l'environnement cloud contient des noms comme `pr_detect_silence`, `pr_apply_cut_plan`, `pr_export_sequence_frame` (**observés dans la liste, jamais appelés ; paramètres inconnus**) : à tester en phase 2 comme dérusheur de silences, puis comparer leur coupe à la règle « ne pas couper les respirations ».
+
+## 68. (session 20) Resolve : saccade choisie (`sources/resolve-saccade-choisie-2026-10.md`, montage-resolve § 4 ter) [THÉORIQUE]
+- Vérifier si Retime Frame accepte des clés Step In / Step Out (tenues de 2-4 images sans adoucissement) ; comparer à Clip > Freeze Frame segment par segment.
+- Vérifier la perte annoncée des Freeze Frames en XML FCP 7 vers Premiere (manuel 21) ; sinon rendre la saccade en média avant l'échange.
