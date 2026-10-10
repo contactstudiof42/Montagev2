@@ -37,3 +37,27 @@ Chaque étape retire **un lampadaire proche du personnage** (source contrôlée,
 - Mais avec le **même ordre mixte**, la courbe change : 45 → 31 → 15 → 7 (−32 %, −52 %, −53 %) : la chute du pont a disparu, remplacée par un escalier.
 - Mesure de la **part de chaque source** depuis cette caméra (`part.py` : chaque lampadaire rendu seul, moins le fond) : lampadaire 0 = **2 %** (il est au bord du cadre, derrière la caméra), lampadaires 1 et 2 = **41 % et 34 %**, les quatre lointains 2-13 %. Le lampadaire que j'avais gardé « pour la chute » n'éclaire plus rien dans ce cadre ; c'est le voisin du personnage qui porte la lumière.
 - **Leçon** : la part d'une source dépend du cadre, pas de la rue. **Mesurer la part de chaque source depuis la caméra** (au plateau : les allumer une par une devant le moniteur) avant de décider l'ordre d'extinction ; garder pour le moment montré celle qui porte le plus (ici le lampadaire 1, 41 %), et retirer d'abord les petites parts **par paires** pour que chaque étape dépasse le seuil de lecture.
+
+## v4-v5 (session 14) — l'extinction **montrée**, animée : `v4-planche.png`, `v5-planche.png`
+Méthode : `anime.py`. Deux rendus Cycles **EXR linéaires** (cadre v3), lampadaire 1 allumé / éteint ; la lumière étant additive, `L = avant − après`, et chaque image = `après + k(t)·teinte(t)·L`, vue AgX appliquée ensuite par OpenColorIO avec la config de Blender 4.2 (même rendu que Blender, 2 rendus au lieu de 100). 25 i/s, 4 s par variante, événement à l'image 40. Vidéos dans `atelier/rendus/p18v4/` (non versionnées).
+Luminance du cadre : 21 → 4 (**−80 %**) quand le lampadaire 1 (41 % de la lumière) s'éteint ; saillance du personnage (boîte autour de l'ambre / moyenne du cadre) : **5,8** après extinction.
+
+| Variante | Courbe | Ce que ça dit |
+|---|---|---|
+| A sèche (1 image) | marche | « ça s'éteint » ; **ambigu entre "il éteint" et "coupure"** : l'image seule ne donne pas de cause |
+| B fondu linéaire 1 s (en lumière de scène) | tient puis plonge (la vue AgX courbe la rampe : −10 % sur la première moitié, tout le reste après) | **un variateur** : quelqu'un règle la lumière d'une scène de théâtre. Faux pour un lampadaire public (aucun ne se fond), et ça dit « effet » |
+| C panne (2 rallumages de 1-2 images) | marche hachée | « panne », sans hésitation. Le contraire de l'intention : la ville lâche, il n'agit pas |
+| D sodium rallumé (proche, depuis le noir) | 4 → 17 sur 3 s | le virage rose → orange est **invisible** tant que l'intensité est sous ~25 % (Y 4 → 6 pendant 1,5 s) ; à la fin la rue entière est orange et **le personnage disparaît** (saillance 5,8 → **1,5**) |
+| E sodium rallumé **au loin** (lampadaire 4), départ à 25 % | 4 → 6 | une tache rose apparaît au fond (amorçage), vire à l'orange ; la ville « revient » loin de lui, **il reste le point** (saillance **3,7**). La tête de lampe reste blanche (AgX blanchit l'émission, cf. pièce 10) : **la teinte se lit sur la lumière portée au sol, pas sur la source** |
+
+### Jugement
+- **L'extinction juste est sèche** (vraie physique, session 12), mais **une extinction sèche n'a pas d'auteur** : c'est le montage qui la donne. Il faut une cause dans le plan précédent ou dans le son (le geste vers un interrupteur, le claquement d'un contacteur, un silence qui tombe avec la lumière), sinon le spectateur lit « coupure ». Le fondu n'est pas une solution : il remplace l'auteur par un régisseur.
+- La panne est un outil à part entière, pour un autre sens (le monde lâche le personnage).
+- **Rallumer la source qui portait la lumière annule la pièce** : on rend la ville et on reprend le personnage. Pour une outro, rallumer **une petite part** (lointaine) : la ville revient sans lui voler la place.
+- Un virage de teinte n'existe que dans la **plage visible** : partir d'au moins 25 % de l'intensité finale, sinon trois secondes de virage passent pour trois secondes de noir.
+
+### Leçons (versées dans `montage-couleur-et-intention`, `montage-regard`)
+1. Sèche = physique ; fondu = variateur (un humain règle) ; clignement = panne (le monde lâche). Choisir la courbe d'extinction pour **qui agit**.
+2. Une extinction sèche se lit comme un acte seulement si la cause est montée (image ou son) juste avant.
+3. Un fondu de lumière calculé en lumière de scène ne descend pas linéairement à l'écran (la vue le courbe) : faire le fondu là où il sera jugé, ou le dessiner à l'œil.
+4. Pour rendre de la lumière sans retirer la saillance du sujet, rallumer loin et petit.

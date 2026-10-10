@@ -6,6 +6,7 @@ bpy.ops.wm.read_factory_settings(use_empty=True)
 sc = bpy.context.scene; sc.render.engine = "CYCLES"; sc.cycles.device = "CPU"; sc.cycles.samples = int(os.environ.get("SPP", "48")); sc.cycles.use_denoising = True
 sc.render.resolution_x, sc.render.resolution_y = 640, 360; sc.view_settings.view_transform = "AgX"; sc.view_settings.exposure = float(os.environ.get("EXPO", "0"))
 sc.render.filepath = out; sc.render.image_settings.file_format = "PNG"
+if os.environ.get("EXR"): sc.render.image_settings.file_format = "OPEN_EXR"; sc.render.image_settings.color_depth = "32"   # v4 : linéaire, pour additionner les passes
 w = bpy.data.worlds.new("w"); sc.world = w; w.use_nodes = True
 w.node_tree.nodes["Background"].inputs[0].default_value = (0.02, 0.025, 0.04, 1); w.node_tree.nodes["Background"].inputs[1].default_value = float(os.environ.get("CIEL", "0.15"))
 def mat(n, c, r=0.8, em=None, es=0):
