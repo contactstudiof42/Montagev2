@@ -34,3 +34,8 @@ Marionnette 2D, voix synthétique, aucune écoute. Les seuils en % sont ceux d'u
 
 ## v3 (à faire)
 REC sur « rien ne l'enregistre » ; carnet remplacé ou supprimé ; décalage de coupe vers le clignement le plus proche, avant ou après ; version 9:16 (le punch-in vertical recadre autrement) ; même pièce avec `--sway 2.5` (corps plus mobile) pour voir si le seuil se déplace.
+
+## v3 (session 20) — `v3-F-coupes.png`
+- **F** = E avec le REC posé sur « Résultat : vous vivez le rêve, mais rien ne l'enregistre » (la phrase qui énonce la métaphore), sans carnet, et chaque coupe d'échelle déplacée (±0,4 s) pour que l'image qui la précède soit la fin d'un clignement. Planche : le voyant rouge entre avec la phrase et sort **gris** (éteint) : l'image fait la chute, le visage revient pour « Alors, un conseil ». Les deux punch-ins s'ouvrent yeux ouverts, juste après un clignement (7,22 s et 26,82 s). 14,7 événements/min, comme C : **la qualité ne vient pas du nombre d'événements mais de leur place.**
+- Reste faux : le REC s'éteint à 45 % de sa durée, pas **sur le mot « rien »** (l'extinction devrait être calée sur le mot, comme un bruitage) ; la 3e chute reste ouverte 0,24 s après le début de la phrase (le clignement le plus proche était après).
+- **Contre-épreuve « corps plus mobile »** (`--sway 2.5`, version A) : les coupes de respiration restent des micro-sauts (0,4-1,0 %) alors que les coupes de ratés passent à 7-11 %. **La taille d'un jump cut dépend de la durée retirée, pas de la mobilité du corps** : retirer 0,15 s de respiration ne déplace jamais assez le sujet. Règle plus solide que le seuil en % : ne pas faire de jump cut sur moins de ~0,5 s retirée sans changer d'échelle (hypothèse : un vrai corps qui gesticule pourrait la contredire, phase 2).

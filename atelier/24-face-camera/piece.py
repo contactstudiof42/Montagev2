@@ -186,10 +186,12 @@ def montage(version, segs, handle):
         z, br = 1.0, None
         if version == "B":
             z = 1.0 if k % 2 == 0 else 1.25
-        elif version in ("C", "D", "E") and s["flags"].get("chute"):
+        elif version in ("C", "D", "E", "F") and s["flags"].get("chute"):
             z = 1.3
         if version == "D" and s["flags"].get("broll"):
             br = s["flags"]["broll"]
+        if version == "F" and "rien ne l'enregistre" in s["texte"]:
+            br = "rec"  # v3 : le plan de coupe sur la phrase qui énonce la métaphore
         if serre or not prev_ok:
             t0 = s["t0"] - handle
         else:  # continuité de source avec le plan précédent
@@ -205,6 +207,17 @@ def montage(version, segs, handle):
             q[1] = p[1]
         else:
             fus.append(p)
+    if version == "F":
+        # v3 : coupe d'échelle déplacée (avant ou après) pour que l'image qui
+        # précède la coupe soit la fin d'un clignement (yeux qui se rouvrent).
+        for k in range(1, len(fus)):
+            p, q = fus[k], fus[k - 1]
+            if p[2] != q[2] and abs(p[0] - q[1]) < 1e-6 and not (p[3] or q[3]):
+                cands = [b + 0.08 for b in BLINKS if abs(b + 0.08 - p[0]) <= 0.4]
+                if cands:
+                    c = min(cands, key=lambda b: abs(b - p[0]))
+                    d = round((c - p[0]) * FPS) / FPS
+                    p[0] += d; q[1] += d
     if version == "E":
         # v2 : la 1re image d'un punch-in ne tombe jamais sur un clignement ;
         # si la coupe est dans la continuité de source, on la retarde au-delà.
