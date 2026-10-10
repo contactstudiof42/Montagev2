@@ -85,7 +85,7 @@ import math as m
 bpy.ops.object.empty_add(location=(0.0, 0.42, 2.4)); piv = bpy.context.object
 bpy.ops.mesh.primitive_cylinder_add(radius=0.004, depth=1.0, location=(0, 0.42, 1.9)); cable = bpy.context.object
 cable.data.materials.append(mat("cable", (0.02, 0.02, 0.02)))
-bpy.ops.mesh.primitive_cone_add(radius1=0.13, radius2=0.03, depth=0.12, location=(0, 0.42, 1.4)); abat = bpy.context.object
+bpy.ops.mesh.primitive_cone_add(radius1=0.13, radius2=0.03, depth=0.12, location=(0, 0.42, 1.4), end_fill_type="NOTHING"); abat = bpy.context.object
 abat.data.materials.append(mat("abat", (0.05, 0.05, 0.05), 0.4))
 bpy.ops.object.light_add(type="POINT", location=(0, 0.42, 1.36)); amp = bpy.context.object
 amp.data.energy = P.get("lampe", 150); amp.data.color = (1.0, 0.78, 0.5); amp.data.shadow_soft_size = 0.03
