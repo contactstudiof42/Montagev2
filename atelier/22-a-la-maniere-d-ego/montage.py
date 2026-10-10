@@ -1,4 +1,4 @@
-"""Pièce 22 — montage : python3 -I montage.py VERSION RENDUS_DIR VOIX_DIR OUT.mp4   (VERSION = A | B | B2)
+"""Pièce 22 — montage : python3 -I montage.py VERSION RENDUS_DIR VOIX_DIR OUT.mp4   (VERSION = A | B | B2 | B3)
 Les images du recul (r000…r095, paramètre u régulier) sont reprises par une courbe temps → u propre à chaque version :
 le même plan 3D, trois façons de le placer contre la voix.
 A  : « explicatif » — voix continue, recul continu, chiffre affiché en grand, nappe musicale sans interruption.
@@ -33,6 +33,9 @@ else:
     if V == "B2":
         VOIX = [0.8, 3.0, 5.0, 10.4, 18.4, 22.2]; DUR = 26.0; CUT = 21.6; MUS_TROU = (13.6, 18.4)
         COURBE = [(0, 0), (4.5, 0), (10.0, 0.30), (13.6, 0.36), (18.0, 1.0)]
+    if V == "B3":  # v3 : même placement que B2, mais la nappe MONTE pendant le recul (13,6 → 18,0) puis se coupe net
+        VOIX = [0.8, 3.0, 5.0, 10.4, 18.4, 22.2]; DUR = 26.0; CUT = 21.6; MUS_TROU = None
+        COURBE = [(0, 0), (4.5, 0), (10.0, 0.30), (13.6, 0.36), (18.0, 1.0)]
 
 tmp = OUT + ".d"; os.makedirs(tmp, exist_ok=True)
 final = Image.open(f"{R}/final.png").convert("RGB")
@@ -57,6 +60,8 @@ vol = "0.10"
 if MUS_TROU:
     a, b = MUS_TROU                                       # coupe franche à a, retour lent (2 s) à b
     vol = f"0.10*if(lt(t,{a}),1,if(lt(t,{b}),0,min(1,(t-{b})/2)))"
+if V == "B3":                                         # crescendo ×2,5 sur le recul, coupe à 18,0 (la voix tombe dans le vide), retour 21,6
+    vol = "0.10*if(lt(t,13.6),1,if(lt(t,18.0),1+1.5*(t-13.6)/4.4,if(lt(t,21.6),0,min(1,(t-21.6)/2))))"
 nappe = (f"aevalsrc='({vol})*(sin(2*PI*55*t)+0.6*sin(2*PI*82.4*t)+0.3*sin(2*PI*110.3*t))*(0.8+0.2*sin(2*PI*0.25*t))'"
          f":s=48000:d={DUR}[m]")
 air = f"anoisesrc=c=brown:a=0.004:d={DUR}:r=48000[n]"

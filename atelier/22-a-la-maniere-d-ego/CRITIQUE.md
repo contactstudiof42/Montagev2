@@ -33,3 +33,25 @@ _Planches : `v1-A-planche.png`, `v1-B-planche.png`, `v2-A-planche.png`, `v2-B2-p
 - **Pas encore** : YAVG médiane 197 (contre 188 en v1) : plus clair, mais toujours sous le blanc clinique visé (> 200, EGO 235-254). Il faut aussi éclaircir le sol (albédo 0,8 → 0,9) plutôt que de pousser encore l'exposition, qui brûlerait les chaises.
 - **Dernière image** : la silhouette est enfin petite, avec du vide devant elle, mais l'horizon coupe le cadre en deux et laisse une moitié basse de sol vide sans fonction. Le v3 la placera au tiers inférieur (caméra plus haute), pour que le blanc au-dessus devienne le « devant » vers lequel elle regarde.
 - Les images 8-9 (fin du recul) restent une texture grise uniforme : c'est voulu (l'échelle échappe), mais 2 images de planche sur 12, c'est long sans voix. Dans B2, ce passage tombe dans le silence de 4,8 s : il faudra l'écouter en phase 2 pour savoir s'il tient ou s'il traîne.
+
+## v3 (session 19 : `--v3`, `--v3b`, montage `B3`, planches `v3-B3-planche.png`, `v3c-B3-planche.png`, `v3n-B3-planche.png`, `v3bn-B3-planche.png`)
+Corrections tentées : sol 0,8 → 0,9 ; plan final recadré (5 candidats rendus en image fixe, 7 s chacun, avant de lancer le recul) ; nappe qui **monte** pendant le recul (×2,5 de 13,6 à 18,0 s) puis se coupe net sous la voix (« il y en aurait… » tombe dans le vide) ; variante `--noir`.
+
+**Le plan final est gagné.** Caméra latérale à 14 m, horizon au tiers haut : le champ entre en diagonale par la gauche et **s'arrête net**, la silhouette est assise sur la pointe, et tout le quart droit est du blanc vide vers lequel elle est tournée. On lit enfin « tout au bout » sans le dire : c'est le bord du champ qui le dit. Les candidats rejetés : silhouette de face (le vide passe derrière la caméra, on ne le voit pas), silhouette collée au bord droit (pas d'air devant), silhouette au milieu des rangées (on la perd dans la foule).
+
+**Le blanc : faux diagnostic deux fois, puis le vrai.** Sol plus clair : YAVG 197 → 199. Couleur de brume 0,93 → 1,0 : 199 → 199. Mesure du pixel le plus clair : **222-225 sur 255 dans TOUTES les images, ciel compris**. Le plafond ne vient pas de la scène, il vient de la **transformée de vue AgX**, qui compresse les hautes lumières et n'atteint le blanc qu'à des valeurs de scène très hautes. Correction au bon endroit, l'étalonnage : une courbe qui place le point blanc (0,87 → 0,985, ffmpeg `curves`) → **YAVG 226**, le blanc clinique d'EGO, et les ombres des chaises sont gardées (le milieu de courbe ne bouge presque pas). Leçon : **mesurer le maximum avant de toucher aux lumières** ; un plafond identique partout = un plafond de pipeline, pas d'éclairage.
+
+**Son (non écouté, placement seulement)** : B3 remplace le trou de B2 par une montée. Hypothèse à vérifier en phase 2 : la montée transforme le vertige en suspense (on attend quelque chose) alors que le silence de B2 le laissait en contemplation. EGO utilise les deux ; pour cette phrase, je parie que la coupe net APRÈS la montée (la voix seule dans le vide) est plus forte que le silence sans préparation, parce que le vide se mesure à ce qui vient de s'arrêter.
+
+**Variante noire** : 
+- v3n : la silhouette noire sur fond noir **disparaît** dans le plan final. Faute évidente sur le papier, invisible tant qu'on n'a pas inversé le monde.
+- v3bn : silhouette claire → elle n'est éclairée que par un liseré (la lumière froide vient de derrière), on voit un **contour fantôme**. C'est beau et juste pour « le dernier d'une lignée » (une présence fragile), mais trop petit : il faudra une lumière motivée sur elle seule (une douche) pour qu'elle devienne la seule chose éclairée du monde.
+- Le noir a un défaut que le blanc cache : en fin de recul, le champ lointain fait un **moiré** (8 échantillons, motif régulier plus fin que le pixel). Dans le blanc, la brume l'efface ; dans le noir, la lumière rasante le révèle. Correction : plus d'échantillons ou brume noire plus tôt, ou un léger flou de profondeur.
+- Laquelle choisir : le blanc dit « tous les humains » (une salle d'attente infinie, clinique, calme) ; le noir dit « les morts » (un cimetière de chaises). Le texte parle des mères : **le blanc**, parce que le ton est tendre, pas funèbre. Le noir serait juste pour une phrase sur la disparition.
+
+**Encore raté** : les trois premières images de la planche montrent un panneau blanc (le dossier vu de dos) : « Voici une chaise » tombe encore sur une forme ambiguë. v4 : départ de trois quarts face, ou une chaise moins schématique (un dossier ajouré).
+
+## Leçons v3 (reportées dans les skills)
+- **AgX plafonne le blanc** (~222/255 en sortie 8 bits avec Base Contrast) : le blanc pur se fait à l'étalonnage (point blanc), pas en ajoutant de la lumière. → `montage-blender`, `montage-couleur-et-intention`.
+- **Inverser le monde inverse le rôle du sujet** : dans le blanc, le sujet est la tache sombre ; dans le noir, il doit devenir la lumière. → `montage-couleur-et-intention`.
+- **Chercher le cadrage en image fixe avant de lancer l'animation** (5 essais × 7 s contre 3 min par recul). → `montage-blender`.

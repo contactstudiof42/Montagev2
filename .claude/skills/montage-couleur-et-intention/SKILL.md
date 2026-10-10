@@ -100,6 +100,11 @@ Quand on demande « quelle couleur pour ce film ? », rendre :
 - **Fondu de lumière** : une rampe linéaire en lumière de scène ne descend pas linéairement à l'écran (la vue la courbe : presque rien la première moitié, tout ensuite). Faire le fondu dans l'espace où il sera jugé, ou le dessiner à l'œil.
 - **Recette** : 2 rendus EXR linéaires (avant / après), la différence = la contribution de la source ; toute courbe d'extinction ou de rallumage se compose ensuite par addition, puis vue appliquée par OCIO (`atelier/18-soustraction/anime.py`). Même logique en compositing (AE en 32 bits linéaire, Fusion, Nuke) : une **passe par source** au rendu 3D permet de régler la dramaturgie de la lumière au montage.
 
+## Le blanc et le noir comme mondes (pièce 22 v3, session 19) [TESTÉ EN ATELIER, rendu Blender ; perception à valider]
+- **Inverser le monde inverse le rôle du sujet** : dans un monde blanc, le sujet est la tache sombre ; dans un monde noir, il doit devenir la lumière. Une silhouette noire sur fond noir disparaît (faute invisible tant qu'on n'a pas fait la variante). Dans le noir, éclairer le sujet seul (une douche motivée) ; un simple liseré en contre-jour donne une présence fantôme, juste pour la fragilité, trop faible pour un sujet principal.
+- **Blanc ou noir n'est pas une question de style** : le blanc clinique dit « tout le monde, calme, hors du temps » (salle d'attente, laboratoire) ; le noir à lumière froide dit « les morts, l'abîme ». Choisir selon le ton du texte (tendre → blanc ; funèbre → noir), pas selon la chaîne qu'on imite.
+- **Le blanc pur est un geste d'étalonnage** : une transformée filmique (AgX, ARRI, ACES) plafonne les hautes lumières sous le blanc ; le « blanc EGO » (luminance médiane 225+ en plage limitée) se pose avec un point blanc en grade, pas avec plus de lumière sur le plateau. Mesurer le maximum avant de corriger. Voir `montage-blender`.
+
 ## Limites
 
 - Les significations des couleurs varient selon cultures, marques et publics ; aucune table n'est universelle (même Storaro le reconnaît comme système personnel).

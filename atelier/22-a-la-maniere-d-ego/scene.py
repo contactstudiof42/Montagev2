@@ -66,7 +66,7 @@ sun.rotation_euler = (math.radians(50), 0, math.radians(200))
 if NOIR: sun.data.color = (0.6, 0.75, 1.0)
 
 if FIG:  # silhouette assise, noire, sur la chaise 1 (tête, buste, cuisses, tibias)
-    mf = mat("figure", (0.01, 0.01, 0.012), 0.8)
+    mf = mat("figure", (0.85, 0.88, 0.95) if (NOIR and "--v3b" in argv) else (0.01, 0.01, 0.012), 0.8)  # v3b noir : la silhouette devient la lumière
     bpy.ops.mesh.primitive_uv_sphere_add(radius=0.11, location=(0, -0.08, 1.32)); bpy.context.object.data.materials.append(mf)
     box("buste", (0, -0.1, 0.85), (0.34, 0.2, 0.62), mf); box("cuisses", (0, 0.1, 0.53), (0.3, 0.42, 0.14), mf)
     box("tibias", (0, 0.32, 0.25), (0.28, 0.1, 0.5), mf)
@@ -76,7 +76,7 @@ sc.view_layers[0].use_pass_mist = True
 w.mist_settings.start, w.mist_settings.depth, w.mist_settings.falloff = 18, 260, "QUADRATIC"
 sc.use_nodes = True; nt = sc.node_tree; nt.nodes.clear()
 rl = nt.nodes.new("CompositorNodeRLayers"); mix = nt.nodes.new("CompositorNodeMixRGB"); comp = nt.nodes.new("CompositorNodeComposite")
-mix.inputs[2].default_value = (0.93, 0.93, 0.94, 1) if not NOIR else (0, 0, 0, 1)
+mix.inputs[2].default_value = ((1.0, 1.0, 1.0, 1) if "--v3b" in argv else (0.93, 0.93, 0.94, 1)) if not NOIR else (0, 0, 0, 1)
 nt.links.new(rl.outputs["Mist"], mix.inputs[0]); nt.links.new(rl.outputs["Image"], mix.inputs[1]); nt.links.new(mix.outputs[0], comp.inputs[0])
 
 bpy.ops.object.camera_add(); cam = bpy.context.object; sc.camera = cam
