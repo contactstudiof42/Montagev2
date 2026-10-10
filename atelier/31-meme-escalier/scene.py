@@ -65,4 +65,15 @@ else:
         cam.location = (0.6, -2.4, 0.9); cible = (0.1, y0 + 0.6, z0 + 1.1)
 import mathutils
 d = mathutils.Vector(cible) - cam.location; cam.rotation_euler = d.to_track_quat('-Z', 'Y').to_euler()
-sc.render.filepath = OUT; bpy.ops.render.render(write_still=True)
+if 'grue' in a:                                     # v3 : retour en grue montante (0,9 m → 2,8 m), 75 images, cadre qui suit la silhouette
+    sc.render.resolution_x, sc.render.resolution_y = 320, 180; sc.cycles.samples = 12
+    sc.frame_start, sc.frame_end = 1, 75; sc.render.fps = 25
+    vise = bpy.data.objects.new('vise', None); sc.collection.objects.link(vise); vise.location = cible
+    tr = cam.constraints.new('TRACK_TO'); tr.target = vise; tr.track_axis = 'TRACK_NEGATIVE_Z'; tr.up_axis = 'UP_Y'
+    for f, loc in ((1, (0.6, -2.4, 0.9)), (75, (0.2, -0.6, 2.8))):
+        cam.location = loc; cam.keyframe_insert('location', frame=f)
+    for fc in cam.animation_data.action.fcurves:
+        for k in fc.keyframe_points: k.interpolation = 'SINE'; k.easing = 'EASE_IN_OUT'
+    sc.render.filepath = OUT; bpy.ops.render.render(animation=True)
+else:
+    sc.render.filepath = OUT; bpy.ops.render.render(write_still=True)

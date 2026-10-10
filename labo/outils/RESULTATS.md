@@ -40,3 +40,8 @@ Activité visuelle hors coupes (vérité = la vidéo propre) :
 ## Limites
 - EDL : événements vidéo `V` seulement ; un fondu compte comme une coupe en son milieu (décision arbitraire, notée dans le JSON sous `fondus`). Pas de pondération des événements (un rire ≠ un bruitage : reste dans `labo/youtube/densite.py`).
 - Pas encore testé sur un vrai export Premiere / Resolve (phase 2, PLAN-TESTS 73).
+
+## Pulsations et cadence (`tempos.py`, Y45) [TESTÉ EN LABO, calcul exact en fractions]
+- BPM entiers dont la noire tombe sur des images entières : **25 i/s → 60, 75, 100, 125, 150** ; **24 i/s → 60, 72, 80, 90, 96, 120, 144, 160, 180** ; 30 i/s → 60, 72, 75, 90, 100, 120, 150, 180 ; 50 i/s → 60, 75, 100, 120, 125, 150 ; **23,976 et 29,97 : aucun**.
+- **Piège** : à 25 i/s, 120 BPM = 12,5 images par temps. Couper « toutes les 12 images » dérive de **16 images (0,64 s) en 8 mesures** ; 128 BPM en coupant toutes les 12 : −9 images. Il faut couper sur la grille arrondie de chaque temps (12, 13, 12, 13…), jamais répéter une durée fixe. L'erreur d'arrondi par temps reste ≤ ½ image (invisible).
+- Le tic de 1,25 s (48 BPM) tombe pile à 24 i/s (30 images), pas à 25 (31,25) : c'est ce que la pièce 29 a rencontré.

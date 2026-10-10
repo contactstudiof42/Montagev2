@@ -53,6 +53,10 @@ Même musique drill synthétique (140 BPM, intro / couplet / coupure / reprise),
 - **Retirer le son juste avant l'impact** (logo, révélation, chute) : le silence multiplie l'impact (Schoonmaker).
 - Pour un clip ou une pub très synchronisée : verrouiller la musique **et ses droits** avant le tournage, et tourner sur playback (Wright, Baby Driver). La synchro se fabrique au tournage.
 
+### Tempo et cadence (labo `labo/outils/tempos.py`, session 24) [TESTÉ EN LABO]
+- À 25 i/s, seuls 60, 75, 100, 125, 150 BPM ont une noire en images entières ; à 24 i/s : 60, 72, 80, 90, 96, 120, 144, 160, 180 ; à 23,976 / 29,97 : aucun.
+- **Ne jamais couper « toutes les N images » sur une musique** : 120 BPM à 25 i/s = 12,5 images ; couper toutes les 12 dérive de 0,64 s en 8 mesures. Couper sur la grille arrondie de chaque temps (marqueurs de temps, `labo/marqueurs/beats_xml.py`).
+
 ## Ordres de grandeur (à affiner par mesures et atelier)
 | Usage | Durée de plan indicative | Remarque |
 |---|---|---|
