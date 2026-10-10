@@ -17,6 +17,8 @@ Version 1 (session 1, 2026-10-09). Sources : fiches `culture/saul-bass-generique
 6b. **Carton-liste (line-up, générique) : on balaie, on ne lit pas** [THÉORIQUE, `sources/strobe-son-et-lecture-reperage-2026-10.md`]. Trouver un mot connu coûte ~100 ms par élément dans un menu (Hornof & Kieras 1997) et jusqu'à ~250-300 ms par mot quand il faut fixer chaque mot (Boettcher & Wolfe 2015 : 3,5 s pour 16 mots). Pour **20-24 noms**, compter **au moins 4 s** de tenue immobile (le fan moyen a trouvé son nom) et **6-7 s** pour conclure « il n'y est pas » ou en repérer plusieurs. La lecture linéaire de tous les noms prend environ 18 s. Pour accélérer : un ordre connu, des groupes de 4-6 noms, les têtes d'affiche hors de la liste. Ces chiffres sont extrapolés de listes de 16 éléments au plus : les valider par un test chronométré.
 7. **Le silence visuel.** Un temps immobile, trop long, crée de la tension (rétention de l'atelier 01 v3) ; un temps immobile court se lit comme un arrêt. La durée fait la différence.
 
+- **La trace d'un mouvement** (McLaren, *Pas de deux* ; step-printing ; pièce 20 v7) [THÉORIQUE + atelier] : l'écart de temps entre les traces décide de la lecture : continu = vitesse (flou), quelques images = écho (durée, mémoire, corps multiplié), régulier et net = analyse (chronophotographie). Exige un fond qui disparaît (noir) et un sujet en contre-jour ; le nombre de traces est une courbe (`culture/mclaren-pas-de-deux-et-chronophotographie.md`).
+
 ## Clichés à refuser (sauf parti pris assumé)
 - Le zoom lent continu sur un carton centré.
 - Les particules et le glow « pour faire riche ».
