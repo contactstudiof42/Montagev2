@@ -27,6 +27,8 @@ Avant d'ouvrir `montage-references` ou `GOUTS.md`, écrire **une image qui n'app
 - **Faisabilité de l'idée d'abord** *(ajout examen n°3)* : si l'idée dépend d'une matière que je n'ai pas vérifiée (archives, traçabilité, accès à un lieu), la poser au client **en premier**, avant de développer les directions.
 - **L'humain par la compétence, pas par la biographie** *(ajout examen n°3)* : en corporate, montrer des gestes de métier précis plutôt que des parcours de vie ; ne jamais exposer une situation personnelle (insertion, santé) sans accord explicite. Chercher un dispositif qui fasse de l'humain le fil du film (un salarié = un objet qu'il raconte) plutôt qu'un intermède en interview.
 
+- **Contrainte « sans musique »** *(ajout examen n°9)* : désigner d'abord **le son récurrent qui jouera le rôle du refrain** (examen n°9 : le clac du contacteur à 23 h), les ambiances comme nappe, et prévoir le cas où le lieu est **silencieux** (nuit d'hiver sans vent) : sinon le film paraît nu.
+
 ## Étape 2 — Trois directions contrastées
 Contrastées = elles diffèrent sur **l'axe principal** (pas trois variantes de la même idée). **Au moins une direction doit changer de registre** (ironique, fictionnel, graphique), pas seulement de rythme : à l'examen n°1, deux pistes sur trois étaient réalistes, nocturnes et domestiques. Axes utiles : retenue / spectaculaire ; réel / graphique ; lent / rapide ; chaud / froid ; sérieux / ironique.
 Pour chaque direction, fiche fixe :
