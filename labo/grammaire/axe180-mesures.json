@@ -1,0 +1,93 @@
+{
+ "E": {
+  "cadre": null,
+  "A": {
+   "x_ecran": 0.36,
+   "regard": "droite",
+   "visible": true
+  },
+  "B": {
+   "x_ecran": 0.64,
+   "regard": "gauche",
+   "visible": true
+  }
+ },
+ "A1": {
+  "cadre": "A",
+  "A": {
+   "x_ecran": 0.5,
+   "regard": "droite",
+   "visible": true
+  },
+  "B": {
+   "x_ecran": 1.356,
+   "regard": "gauche",
+   "visible": false
+  }
+ },
+ "B1": {
+  "cadre": "B",
+  "A": {
+   "x_ecran": -0.356,
+   "regard": "droite",
+   "visible": false
+  },
+  "B": {
+   "x_ecran": 0.5,
+   "regard": "gauche",
+   "visible": true
+  }
+ },
+ "A2": {
+  "cadre": "A",
+  "A": {
+   "x_ecran": 0.5,
+   "regard": "gauche",
+   "visible": true
+  },
+  "B": {
+   "x_ecran": -0.356,
+   "regard": "droite",
+   "visible": false
+  }
+ },
+ "A1amorce": {
+  "cadre": "A",
+  "A": {
+   "x_ecran": 0.5,
+   "regard": "droite",
+   "visible": true
+  },
+  "B": {
+   "x_ecran": 1.104,
+   "regard": "gauche",
+   "visible": false
+  }
+ },
+ "B1amorce": {
+  "cadre": "B",
+  "A": {
+   "x_ecran": -0.104,
+   "regard": "droite",
+   "visible": false
+  },
+  "B": {
+   "x_ecran": 0.5,
+   "regard": "gauche",
+   "visible": true
+  }
+ },
+ "A2amorce": {
+  "cadre": "A",
+  "A": {
+   "x_ecran": 0.5,
+   "regard": "gauche",
+   "visible": true
+  },
+  "B": {
+   "x_ecran": -0.104,
+   "regard": "droite",
+   "visible": false
+  }
+ }
+}
