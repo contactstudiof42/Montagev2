@@ -346,7 +346,7 @@ Session 6 : enrichis `montage-son-et-emotion` (hors champ, Chion, présence dans
 
 ## JOURNAL
 
-### Session 24 — 2026-10-10 19:29 UTC → ~20:15 UTC
+### Session 24 — 2026-10-10 19:29 UTC → 20:02 UTC (33 min ; travail jugé complet, clôture avant la limite)
 - Démarrage : dernier commit 24 min avant (pas de doublon). Horloge relevée à chaque étape.
 - **Labo** : `labo/outils/coupes.py` (Y23, Y26, Y29) : EDL CMX3600 (fondus `D nnn` compris) / OTIO / scdet ; banc à vérité terrain `fabrique_test.py` (9 plans, grain fort) : 8/8 coupes, 0 fausse alerte après fusion des doublons de scdet à c+1 ; activité visuelle : plein cadre ×3,0 sous le grain, image /8 + soustraction quadratique du plancher +19 % ; scdet ne voit pas un fondu. `tempos.py` (Y45) : BPM à images entières par cadence, dérive d'une coupe à durée fixe.
 - **Atelier** : pièce 29 « Deux horloges » v1-v7 (Interstellar) ; pièce 30 « Coupe cachée » A-E (Short, principe Zach King) ; pièce 31 « Le même escalier » v1-v2 + grue (Joker, Blender 4.2.3 : 27 s de téléchargement, 9 s par image fixe). Échecs utiles : goutte illisible (v1-v3), bâton illisible (v6), poussée qui coupait le détail (v7 1er essai), contre-jour qui efface les marches (v1 de la 31), mesure LAB fausse (a*, b* non signés) corrigée.
