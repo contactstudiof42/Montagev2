@@ -50,6 +50,11 @@ Pour chaque plan concerné, une ligne : n° de plan · ce qui change en post · 
 - **Gros plans de doigts** : appareil calé (un support contre la main de l'acteur), mise au point qui tient à 2-3 cm près ; retirer les reflets au tournage (drapeau noir) plutôt qu'en post.
 - Sources (consultées le 2026-10-10, par résumés de recherche) : https://www.premiumbeat.com/blog/5-tips-for-shooting-digital-screens ; https://www.zerovfx.com/tips/how-to-shoot-monitor-composites ; https://forum.logik.tv/t/screen-replacement-advice-for-producers/1773
 
+## 5 ter. Une lumière qui s'éteint ou se rallume à l'écran — session 14 [TESTÉ EN ATELIER sur rendu 3D ; au tournage : THÉORIQUE]
+- **Tourner deux plaques verrouillées, source allumée et éteinte**, même exposition, même diaphragme. En post, après linéarisation (rush log → linéaire), la différence des deux est la contribution de la source ; la lumière s'additionne, donc **n'importe quelle courbe** (sèche, panne, rallumage lent avec virage de teinte) se compose ensuite au montage, sans refaire la prise (atelier 18 v4-v5, `atelier/18-soustraction/anime.py`). Limites : rien ne doit bouger dans le cadre entre les deux plaques (ou seulement le comédien, détouré), et la source ne doit pas brûler (une partie saturée ne s'additionne plus).
+- Décider avant le tournage **qui éteint** : une extinction sèche sans cause se lit « coupure » ; prévoir le plan ou le son qui donne la cause (geste, contacteur), à tourner ou à enregistrer.
+- **Les gestes à lire** (mains, signes) : les placer dans le plan de l'image, mains écartées du torse, fond plus sombre que le corps, et serrer le cadre plutôt que demander un geste plus grand (atelier 19 v7).
+
 ## 6. Checklist plateau (à remplir pour chaque plan à effets)
 - [ ] Focale, diaph, distance, hauteur, inclinaison, cadence, shutter notés.
 - [ ] Charte couleur + boule grise/chromée ou HDRI filmées.

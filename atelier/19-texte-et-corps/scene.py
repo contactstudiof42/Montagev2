@@ -72,6 +72,25 @@ elif plan == "gestes":   # v4 : silhouette en contre-jour, de profil, les bras q
     bpy.ops.object.light_add(type="AREA", location=(0, 16, 2.0)); L = bpy.context.object; L.data.energy = 600; L.data.size = 1.5; L.data.color = SODIUM
     L.rotation_euler = (math.radians(90), 0, math.radians(180))
     camera((0.4, 8.0, 1.3), (0, 12, 1.25), 45)   # v4b : dans l axe de la source, contre-jour (v4a de côté : éclairé, pas de silhouette)
+elif plan == "gestes2":  # v5 (session 14) : bras pivotés à l'épaule, mains au bout, gestes qui décollent du corps ; contre-jour ; YAW = 35 (trois quarts) ou 0 (face)
+    p = personnage(0, 12, math.radians(float(os.environ.get("YAW", "35"))))
+    for o in [o for o in p.children if abs(o.location.x) > 0.2 and o.location.z > 1.0]: bpy.data.objects.remove(o)
+    epaules = []
+    for s_ in (-1, 1):
+        bpy.ops.object.empty_add(location=(s_ * 0.24, 0, 1.40)); e = bpy.context.object; e.parent = p
+        b = cyl(0.05, 0.55, (0, 0, -0.275)); b.parent = e
+        m_ = sphere(0.055, (0, 0, -0.58), peau, (0.8, 0.5, 1.2)); m_.parent = e; epaules.append((e, s_))
+    # (abduction latérale en degrés, élévation avant en degrés) par image clé : mains au-dessus des épaules, bras écartés
+    POSES = ((10, 15), (70, 40), (35, 100), (95, 20), (40, 70)) if not os.environ.get("PLAN_IMAGE") else ((15, 10), (80, 20), (145, 10), (55, 30), (125, 0))   # v7 : gestes dans le plan de l'image (abduction), mains au-dessus des épaules
+    AV = float(os.environ.get("AV", "1"))   # AV = 1 : élévation vers l'arrière (dans l'axe objectif, elle aussi) ; -1 : vers l'objectif (v5)
+    for f, (ab, av) in zip((1, 6, 11, 16, 21), POSES):
+        for e, s_ in epaules:
+            k = 1 if s_ > 0 else 0.6   # la main gauche suit, moins haut : pas de symétrie de pantin
+            # v6 : -s_ = vers l'extérieur (v5 : les bras se croisaient)
+            e.rotation_euler = (math.radians(av * k * AV), math.radians(-s_ * ab * k), 0); e.keyframe_insert("rotation_euler", frame=f)
+    bpy.ops.object.light_add(type="AREA", location=(0.6, 15, 2.2)); L = bpy.context.object; L.data.energy = 700; L.data.size = 1.5; L.data.color = SODIUM
+    L.rotation_euler = (math.radians(90), 0, math.radians(180)); lumiere((-1.5, 9.5, 1.5), float(os.environ.get("FILL", "5")), LED)
+    camera((0.3, 8.6, 1.35), (0, 12, 1.3), 45)
 elif plan == "face":     # plan poitrine, regard caméra, léger travelling avant
     personnage(0, 10, 0, yeux=True); lumiere((0.9, 9.0, 2.2), 40, SODIUM); lumiere((-1.2, 9.6, 1.6), 6, LED)
     camera((0, 7.6, 1.62), (0, 10, 1.55), 50, fin=(0, 7.9, 1.62), ouverture=2.0, mise_au_point=2.3)
