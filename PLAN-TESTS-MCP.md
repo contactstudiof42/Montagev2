@@ -165,3 +165,6 @@ Le serveur `HIGGSFIELD_MCP` est toujours listé, **non appelé** (consigne phase
 - Premiere : sur un vrai divertissement de groupe, mesurer la loudness momentanée autour de chaque relance (export des stems) et vérifier que la musique qui part **sur** un drop ne se lit pas comme une coupure ; comparer à la coupure nette (v1).
 - Premiere / AE : construire la relance « caméra cachée » (changement de régime : monochrome, grain, timecode, son appauvri) en préréglage réutilisable ; vérifier à l'export que le grain ne ruine pas l'encodage (YDIF gonflé ×5 en labo).
 - Flamme de bougie réelle filmée : mesurer sa variation de luminance globale (objectif 3-5 %) et la passer à `flash_check.py`.
+
+## 70. (session 22) Regarder de vraies vidéos en phase 2
+- Sur le Mac, ouvrir une vidéo de référence (McFly et Carlito, Ziak, EGO) dans le navigateur ou en fichier local : images toutes les 0,1-0,5 s, coupes à l'image près (scdet), loudness ; première **vérité terrain réelle** pour `labo/youtube/densite.py` et les fiches de `culture/` (faits incertains à lever).
