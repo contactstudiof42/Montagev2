@@ -5,7 +5,16 @@ _Lire en premier. Mis à jour à chaque fin de session._
 ## Consigne durable de l'utilisateur (2026-10-10)
 - Développer une **culture YouTube / internet** (divertissement, essai vidéo, vulgarisation, vlog, motion de chaîne, Shorts, cultures d'edit) au même niveau que cinéma et clip. Voir BACKLOG « Consigne » (Y1-Y6) : une part de chaque session jusqu'à parité.
 
-## Où on en est (après la session 19, 2026-10-10)
+## Où on en est (après la session 20, 2026-10-10)
+- **Session 20** : pièce 24 « Face caméra » (Y4, v1-v3, F = réf.), pièce 25 « Au lit » (Y14, v1-v3, E = réf.), labo écho de poses (88), sous-agents : veille IA, infrarouge sourcé (Y15), Resolve et saccade choisie (90), affiches de festivals (89). Examens : … n°10 15. **Prochain examen n°11 en session 21 ou 22** (Y10 : divertissement YouTube).
+
+## Reprendre ici (session 21)
+0. Veille IA du jour (Y11, sous-agent dès le démarrage). Vérifier que les livrables des sous-agents 89 et 90 sont bien commités (`culture/affiches-line-up-festivals.md`, `sources/resolve-saccade-choisie-2026-10.md`) ; s'ils manquent, relancer.
+1. **Examen n°11 (Y10, divertissement YouTube)** ; puis Y9 (une nuit sans musique), Y7 (pièce 21, autre matière), 87 (pièce 20 v10 son), Y13 (pièce 22 noir + douche).
+2. Pièce 24 v4 : REC éteint **sur le mot « rien »** ; version 9:16 ; reprendre la règle « ne pas faire de jump cut sur moins de ~0,5 s retirée » sur un vrai rush (phase 2). Pièce 25 : voix qui s'arrête vers 45 s, version téléphone en mode nuit.
+3. Outils réutilisables créés : `atelier/24-face-camera/planche.py` (paires avant / après chaque coupe, type d'événement), `atelier/25-au-lit/mesure.py` (YAVG + LUFS court terme par 5 s + bande-film), `labo/echo/echo.py`.
+
+## Ancien point (après la session 19)
 - **Session 19** : veille IA (sous-agent, Y11 fait pour ce jour), pièce 22 v3-v5 (plafond AgX → blanc au grade ; plan final ; variante noire ; B3 ; v4 chaise isolée par l'espace ; v5 colonne de la lignée), **examen n°10** (15/20, vulgarisation sommeil), pièce 23 « Infrarouge de nuit » v1-v3. Examens : … n°9 14, **n°10 15**. Prochain examen vers la session 22-23 (Y10 : divertissement YouTube).
 
 ## Reprendre ici (session 20)
@@ -35,6 +44,7 @@ _Lire en premier. Mis à jour à chaque fin de session._
 - Un serveur MCP nommé `HIGGSFIELD_MCP` est listé dans l'environnement : non appelé (consigne phase 1). Noms observés dans `PLAN-TESTS-MCP.md`.
 
 ## Historique
+- Session 20 — 2026-10-10 16:29 UTC → fin (horloge peu fiable) : pièces 24 (face caméra) et 25 (au lit), labo écho, sous-agents veille IA / infrarouge / Resolve retime / affiches de festivals ; skills youtube, rythme, couleur-et-intention, motion-design-principes, preparation-tournage-vfx, ia-generative ; PLAN-TESTS 67.
 - Session 19 — 2026-10-10 15:29 → ~16:00 UTC (horloge peu fiable) : veille IA (sous-agent), pièce 22 v3, examen n°10 (15/20), pièce 23 v1-v3 ; skills blender, couleur-et-intention, direction-artistique, youtube, preparation-tournage-vfx, ia-generative.
 - Session 18 — 2026-10-10 14:54 → ~15:40 UTC (horloge VM peu fiable ; relancée par l'utilisateur après un faux positif de l'anti-doublon) : pièce 22 v1-v2, fiche créateurs IA, MAJ IA générative au 2026-10-10 (sous-agent) ; skills references / youtube / motion-design-principes / blender ; PLAN-TESTS 64.
 - Session 17 — 2026-10-10 13:41 → ~14:15 UTC : consigne YouTube de l'utilisateur ; 9 + 5 fiches YouTube / internet (sous-agents), skill `montage-youtube`, specs officielles YouTube, labo `labo/youtube/` (chapitres, miniatures), pièce 21 « L'objet qui change de rôle », examen n°9 (14/20) ; PLAN-TESTS 63.
