@@ -26,6 +26,9 @@ Et surtout : apprendre le goût de Diego et comprendre ce que fait Studio F42, p
 6. Films vague 3 : The Social Network, Spotlight (compare les deux), Aftersun, Spider-Man: Across the Spider-Verse. Bilan de vague.
 7. Synthèse finale : révision des skills, puis « PHASE 2 TERMINÉE » dans PROGRESS.md.
 
+## Avant chaque vidéo : repartir de la phase 1
+Relis le sommaire de `montage-expert`, la grille de `montage-regard`, les skills des domaines que la vidéo touche (rythme, couleur, son, formats, kinetic, youtube…) et les fiches de `culture/` liées à l'œuvre ou à son auteur. Tu analyses AVEC ce que tu sais déjà, pour le confirmer, le corriger ou le compléter : tu ne repars jamais de zéro. Chaque fiche cite les skills et fiches qu'elle confirme ou contredit.
+
 ## Méthode pour un film entier (deux passes)
 1. Passe globale, peu coûteuse : copie légère (480p) dans videos/_travail/, détection de toutes les coupes, courbe de densité de coupes par minute, courbe de volume, transcription ou sous-titres, planches contact basse résolution de tout le film (environ une vignette toutes les 10 s). Elle donne la forme et le rythme du film entier.
 2. Choix de 5 à 8 séquences clés, à partir de cette passe et des minutages de NOTES-DIEGO.md.
