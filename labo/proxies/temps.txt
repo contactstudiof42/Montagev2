@@ -1,0 +1,5 @@
+5.108677618 s : p1_h264_naif.mp4
+5.817301429 s : p2_prores_proxy.mov
+3.439187778 s : p3_h264_intra.mov
+6.770641387 s : p4_mauvais_rapport.mov
+6.679212879 s : p5_prores_sans_tc.mov

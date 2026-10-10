@@ -1,0 +1,6 @@
+ORIGINAL {"codec": "prores", "taille": "1920x1080", "cadence": "25/1", "images": 250, "rapport": "16/9", "pistes_audio": 2, "canaux": [1, 2], "timecode": "10:00:00:00", "Mo": 85.87}
+PROXY p1_h264_naif.mp4 {"codec": "h264", "taille": "960x540", "cadence": "25/1", "images": 250, "rapport": "16/9", "pistes_audio": 1, "canaux": [1], "timecode": "10:00:00:00", "Mo": 1.43} → ÉCART : pistes_audio, canaux
+PROXY p2_prores_proxy.mov {"codec": "prores", "taille": "960x540", "cadence": "25/1", "images": 250, "rapport": "16/9", "pistes_audio": 2, "canaux": [1, 2], "timecode": "10:00:00:00", "Mo": 12.96} → OK
+PROXY p3_h264_intra.mov {"codec": "h264", "taille": "960x540", "cadence": "25/1", "images": 250, "rapport": "16/9", "pistes_audio": 2, "canaux": [1, 2], "timecode": "10:00:00:00", "Mo": 4.8} → OK
+PROXY p4_mauvais_rapport.mov {"codec": "prores", "taille": "1024x540", "cadence": "25/1", "images": 250, "rapport": "256/135", "pistes_audio": 2, "canaux": [1, 2], "timecode": "10:00:00:00", "Mo": 13.44} → ÉCART : rapport
+PROXY p5_prores_sans_tc.mov {"codec": "prores", "taille": "960x540", "cadence": "25/1", "images": 250, "rapport": "16/9", "pistes_audio": 2, "canaux": [1, 2], "timecode": "10:00:00:00", "Mo": 12.96} → OK

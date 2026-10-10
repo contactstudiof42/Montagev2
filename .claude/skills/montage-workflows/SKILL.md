@@ -42,6 +42,8 @@ mais un logiciel peut l'accepter en silence). **Toujours mettre la cadence dans 
   - **Le choix artistique** : on ne peut pas inventer les images que le téléphone n'a pas prises. Saccade franche pour un rush documentaire (vérité du document), interpolation par mélange seulement pour un plan d'ambiance sans visage ni geste net, interpolation par IA (à tester) pour un plan qui doit être fluide. Toujours conformer **une fois, à l'ingest, à la cadence du projet** (25 en Europe), jamais dans la timeline.
   - Comportement de Premiere / Resolve face au VFR : [THÉORIQUE], à vérifier en phase 2 (`PLAN-TESTS-MCP.md`).
 
+- **Fabriquer des proxies avec ffmpeg** [TESTÉ EN LABO, session 8, `labo/proxies/` ; rattachement dans les logiciels THÉORIQUE] : `-map 0:v -map 0:a` obligatoire (**par défaut ffmpeg ne garde qu'une piste audio** : proxy refusé ou ambiance perdue), même cadence, même rapport d'image (1/2 ou 1/4 exact), timecode recopié. ProRes Proxy (`prores_ks -profile:v 0`) ou H.264 tout-intra (`-g 1`, 3× plus léger ici) ; jamais de long-GOP pour scrubber. Vérifier chaque lot avec `labo/proxies/verif_proxy.py`. Pourquoi ça compte artistiquement : un montage qui saccade fait couper trop tôt (on n'ose pas laisser vivre un plan qu'on ne voit pas en temps réel).
+
 ## 5. Pipelines types par format
 Chaque ligne : ce qui est verrouillé tôt (●) et ce qui reste ouvert longtemps (○).
 
