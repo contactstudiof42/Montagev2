@@ -19,3 +19,8 @@ Timeline de test à 25 i/s, 2 pistes : A normal, B ralenti 50 %, C accéléré 2
 - Un ralenti **interpolé** (Optical Flow, RIFE) se rend toujours avant l'envoi : l'interpolation ne se recalcule pas à l'identique chez un autre logiciel.
 - **Vérifier l'EDL à l'œil** : point source de sortie cohérent avec la vitesse (source = durée × vitesse), timecode de départ, vitesse des plans entrants dans un fondu.
 - Artistiquement : un ralenti qu'on a « réglé à l'oreille » dans le montage est une décision de rythme ; s'il se perd en route, le film revient à l'étalonnage avec un autre rythme sans que personne le voie. C'est la vidéo de référence qui protège la décision.
+
+## Vérificateur d'EDL (`../verif_edl.py fichier.edl cadence [départ]`, BACKLOG 58) — [TESTÉ EN LABO]
+- Sur `vitesses_25p.edl` (écrite par OTIO) : **4 alertes**, toutes réelles : départ à 00:00:00:00 au lieu de 01:00:00:00 ; B (50 %) 100 images source au lieu de 25 ; C (200 %) 25 au lieu de 100 ; **F (40 %, plan entrant du fondu) 56 images source pour 56 enregistrées** — l'adaptateur ignore la vitesse sur l'événement de fondu (deuxième défaut, distinct de l'inversion).
+- Sur `juste_25p.edl` (écrite à la main, source = enregistrement × vitesse, départ 01:00:00:00) : **aucune alerte** (pas de faux positif).
+- Limites : une seule convention vérifiée (source = enregistrement × vitesse) ; certains logiciels écrivent la source sans tenir compte de la vitesse : l'alerte dit alors « à vérifier », pas « faux ». Fondus : l'événement de départ de longueur nulle est ignoré. Pas de lecture des effets de recadrage (absents du CMX 3600).

@@ -81,7 +81,7 @@ Règle : alterner ART et TECH. Réalimenter dès qu'il reste moins de 10 sujets 
 55. [~] [ART] (session 10 : pièce 15 « Deux sonneries de trop » lancée) Atelier issu de l'examen n°6 : le même décroché en attente tenue (B), ralenti interpolé depuis 25 i/s (C) et ralenti vrai (D) ; mesurer C contre D, juger B contre D.
 56. [ ] [ART] Skill ou annexe « signature et cartons » (révélé par l'examen n°6 : « Devenez-la ») : écrire une phrase de fin, 3 variantes, critères (lisible en 2 s, sans ambiguïté, verbe d'action), exemples analysés.
 57. [ ] [ART] Atelier « la fable » (principe John Lewis *Man on the Moon*) : un sujet douloureux (solitude) grossi jusqu'à la fable en 10 s Blender, contre la version réaliste ; critique : la métaphore protège-t-elle du pathos ?
-58. [ ] [TECH] Écrire un vérificateur d'EDL (`labo/workflows/`) : cohérence source/record/vitesse M2, timecode de départ, plans entrants des fondus ; le passer sur les EDL de l'atelier.
+58. [x] [TECH] (session 10 : `labo/workflows/verif_edl.py`, 4/4 défauts, 0 faux positif ; reste : convention « source sans vitesse », vraies EDL de Premiere/Resolve en phase 2) Écrire un vérificateur d'EDL (`labo/workflows/`) : cohérence source/record/vitesse M2, timecode de départ, plans entrants des fondus ; le passer sur les EDL de l'atelier.
 59. [ ] [ART] Culture : fiche sur Dougal Wilson (*The Long Wait*, *Monty*, *Buster*) ou Kim Gehrig (*Man on the Moon*, « This Girl Can ») : la chute qui relit le film.
 
 ## Fait (trace)
