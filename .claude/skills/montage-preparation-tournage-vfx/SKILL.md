@@ -39,6 +39,15 @@ Pour chaque plan concerné, une ligne : n° de plan · ce qui change en post · 
 - **Références lumière** : une boule grise et une boule chromée (ou une HDRI 360°) à la place du futur objet 3D ; une charte couleur (Macbeth) en début de plan.
 - **Son seul** (« wild ») des objets filmés : ce seront les SFX à cause visible (atelier 02 ; examen n°2).
 
+## 5 bis. Écrans dans le champ (téléphone, ordinateur, TV) — session 11 [THÉORIQUE, sources ci-dessous]
+**Quand et pourquoi** : d'abord se demander ce que l'écran doit faire. S'il **éclaire un visage** (la nuit, une confidence : atelier 17, fiche Willis), c'est la lumière qui compte : garder un **vrai écran allumé** (contenu de remplacement neutre, luminosité réglée) plutôt qu'un vert, car la lueur sur la peau est l'effet. Si le **contenu doit être lu** (texto, interface), il sera remplacé en post : alors préparer le remplacement.
+- **Exposer pour la pièce, régler l'écran** à part (luminosité baissée jusqu'à ce qu'il ne brûle pas) ; tester l'écran avant le plateau (PremiumBeat).
+- **Remplacement** : écran gris moyen (~20 %) ou vert sombre peu lumineux, avec **4-5 petits marqueurs** dans les coins ; petits, car chaque marqueur est à effacer (praticien sur forum Logik : gris 20 % + 5 marqueurs). **Vert franc** seulement si le doigt ou la main couvre longtemps l'écran (ZeroVFX) : le vert lumineux déborde sur les doigts et le visage, il faut alors le baisser.
+- **Garder la lumière** quand l'écran est remplacé : ajouter une petite source (LED, panneau) **de la couleur et de la taille de l'écran** hors champ ou derrière l'appareil, sinon le visage n'est plus éclairé par ce qu'il regarde.
+- **Scintillement** : écrans à rafraîchissement ou gradation PWM (OLED en faible luminosité) peuvent battre avec la cadence et l'obturation ; tester à l'œil sur le moniteur de retour, monter la luminosité de l'écran et baisser l'ouverture, ou régler l'obturation (règle générale du scintillement des sources, à vérifier en phase 2 sur de vrais appareils).
+- **Gros plans de doigts** : appareil calé (un support contre la main de l'acteur), mise au point qui tient à 2-3 cm près ; retirer les reflets au tournage (drapeau noir) plutôt qu'en post.
+- Sources (consultées le 2026-10-10, par résumés de recherche) : https://www.premiumbeat.com/blog/5-tips-for-shooting-digital-screens ; https://www.zerovfx.com/tips/how-to-shoot-monitor-composites ; https://forum.logik.tv/t/screen-replacement-advice-for-producers/1773
+
 ## 6. Checklist plateau (à remplir pour chaque plan à effets)
 - [ ] Focale, diaph, distance, hauteur, inclinaison, cadence, shutter notés.
 - [ ] Charte couleur + boule grise/chromée ou HDRI filmées.

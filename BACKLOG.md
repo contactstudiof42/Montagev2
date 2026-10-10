@@ -87,7 +87,7 @@ Règle : alterner ART et TECH. Réalimenter dès qu'il reste moins de 10 sujets 
 60. [x] [ART] (session 11) Fiche Gordon Willis (`culture/gordon-willis-le-noir.md`) : quoi garder dans le noir ; le noir par opposition. Reste [ ] lire l'entretien ASC complet.
 61. [x] [TECH] (session 11) Labo AE « bercement qui ralentit » : phase intégrée, `labo/ae-expressions/bercement/test.js`.
 62. [ ] [ART] Culture : chefs opérateurs de la nuit et des sources pratiques (Bradford Young, *Ain't Them Bodies Saints* / *Arrival* ; Hoyte van Hoytema, *Her* et la nuit d'*Interstellar* ; Natasha Braier, *Neon Demon*) : comment une source dans le champ (écran, lampe, néon) éclaire sans faire « clip ».
-63. [ ] [TECH] Écrans dans le champ : tourner un écran de téléphone ou d'ordinateur (scintillement, shutter, remplacement d'écran en post, marqueurs de tracking sur l'écran, luminosité réglée pour l'exposition) → section de `montage-preparation-tournage-vfx`.
+63. [~] [TECH] (session 11 : section 5 bis écrite, théorique) Écrans dans le champ : tourner un écran de téléphone ou d'ordinateur (scintillement, shutter, remplacement d'écran en post, marqueurs de tracking sur l'écran, luminosité réglée pour l'exposition) → section de `montage-preparation-tournage-vfx`.
 64. [ ] [ART] Examen n°7 (session 13) : brief de nuit ou de clip en basse lumière, pour mettre à l'épreuve la fiche Willis et la pièce 17.
 65. [ ] [TECH] Mesurer dans Blender le rendu « noir protégé » : exporter la pièce 17 en H.264 8 bits contre 10 bits + grain, compter les bandes dans le dégradé du mur (suite du labo encodage, session 2).
 
