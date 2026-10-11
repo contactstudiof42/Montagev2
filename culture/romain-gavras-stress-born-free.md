@@ -40,3 +40,7 @@ Corollaire : la caméra peut devenir un personnage, et la retourner contre le re
 - Le moment exact où la musique entre dans « Stress » (une seule source, Numéro).
 - Année : « Stress » est mis en ligne le 1er mai 2008 (Time) ; certaines sources le datent de 2007 (année du morceau).
 - Le rapprochement de « Born Free » avec *Punishment Park* (Peter Watkins, 1971) vient de critiques, pas de Gavras.
+
+
+## Révision de la phase 2 (2026-10-11, clip vu)
+« Stress » vu et mesuré : la grammaire du reportage et l'absence de ralenti sont confirmées ; **« pas de coupes sur le beat » est à nuancer** (les coupes ne suivent pas les temps mais tombent sur les grands accents de la musique, 38 % contre 20 % au hasard) ; « la musique n'arrive qu'en cours de route » est **contredit** pour la version officielle (musique dès la première seconde). Détail : `analyses/clips/justice-stress.md`.

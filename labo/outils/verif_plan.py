@@ -14,6 +14,7 @@ def hist(x):
 dif = np.array([np.abs(hist(fr[i])-hist(fr[i-1])).mean() for i in range(1,len(fr))])
 med = np.array([np.median(dif[max(0,i-6):i+7]) for i in range(len(dif))])
 r = dif/(med+1e-3)
-fps=24000/1001
+n_, d_ = subprocess.run(["ffprobe","-v","error","-select_streams","v","-show_entries","stream=r_frame_rate","-of","csv=p=0",f],capture_output=True,text=True).stdout.strip().split(",")[0].split("/")
+fps=float(n_)/float(d_ or 1)   # lu dans le fichier (corrigé en session 3 : 23,976 était codé en dur, faux à 25 i/s)
 pk=[i for i in range(len(dif)) if r[i]>3.5 and dif[i]>0.25 and dif[i]==dif[max(0,i-3):i+4].max()]
 print(len(fr),"images ;", len(pk),"coupes probables :", " ".join(f"{a+(i+1)/fps:.1f}" for i in pk))
