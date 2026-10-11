@@ -108,3 +108,6 @@ GOUTS.md : la couleur et l'image ; « c'est un ensemble, le Joker […] l'équil
 - **Plans longs** : tous ceux que je cite (21,7 · 40,1 · 74 · 27 · 43,7 s) ont été vérifiés par au moins deux détecteurs et une tuile à intervalle fixe. Le plan de 74 s à 0:42:26, que je croyais faux en session 1, est un plan-séquence ; une coupe cachée reste possible dans les 15 s les plus sombres.
 - Le volume est mesuré, la musique n'est ni écoutée ni séparée : je ne sais pas si la danse des toilettes est montée sur la musique.
 - Mes seuils de couleur (« vert », « rouge saturé ») sont arbitraires. Les parts de pixels comparent les sections entre elles, ce ne sont pas des valeurs absolues.
+
+## Ajout (2026-10-11, session 3) : place du sujet dans le cadre [VU SUR IMAGES, échantillon]
+Sur 24 images de milieu de plan tirées au hasard (`labo/outils/echantillon_tiers.py`, graine 1), Arthur ou le sujet principal n'est dans le tiers central que pour environ 8 images (Mad Max : environ 20, Interstellar : environ 12). Joker décentre : le personnage au bord du cadre, du vide à côté, ce qui va avec ses plans tenus. Compté à l'œil, chiffres approximatifs. Voir `analyses/films/mad-max-fury-road.md`.

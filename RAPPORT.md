@@ -1,36 +1,53 @@
 # RAPPORT — synthèse de la phase 2 (en cours)
 
-_Réécrit à chaque session (dernière : 2026-10-11, session 2). La synthèse de fin de phase 1 (niveau par domaine, 10 principes, audits) est dans `archives/phase-1/RAPPORT-synthese-cloture-phase-1.md` ; le journal de la phase 1 dans `archives/phase-1/RAPPORT-journal.md`._
+_Réécrit à chaque session (dernière : 2026-10-11, session 3). Version précédente : `archives/phase-2/RAPPORT-session-2.md`. La synthèse de fin de phase 1 (niveau par domaine, 10 principes, audits) est dans `archives/phase-1/RAPPORT-synthese-cloture-phase-1.md` ; le journal de la phase 1 dans `archives/phase-1/RAPPORT-journal.md`._
 
 ## Où j'en suis
-- Vidéos analysées : SDM « #Malentouré » (test de méthode), **Interstellar** (passe globale + 4 séquences), **Joker** (passe globale + 7 séquences), **Whiplash** (passe globale + 6 séquences). Fiches dans `analyses/films/`. **Le Dîner de cons** (passe globale + 4 séquences + timing). Vague 1 : il reste Mad Max: Fury Road, puis le bilan de vague.
-- Outils de la phase 2 (`labo/outils/`) : `passe_globale.sh` (copie 480p, avec `HDR=1` pour les sources PQ), `courbes_film.py`, `couleur_film.py`, `sequence.py`, et cette session `verif_plan.py` (vérifier un plan long) `calage.py` (coupes contre musique, avec le hasard) et `coupes_parole.py` (coupes contre la parole).
+- **Vague 1 des films terminée** : Interstellar, Joker, Whiplash, Le Dîner de cons, Mad Max: Fury Road (fiches dans `analyses/films/`), plus SDM « #Malentouré » (test de méthode). Prochaine étape : les clips.
+- La mission a changé (modification de Diego dans `PROMPT-PHASE-2.md`, commitée en session 3) : une **passe de révision** (étape 7) viendra avant la synthèse finale, pour relancer les outils récents sur les premières vidéos.
+- Outils de la phase 2 (`labo/outils/`) : `passe_globale.sh` (avec `HDR=1`), `courbes_film.py`, `couleur_film.py`, `sequence.py`, `verif_plan.py`, `calage.py`, `coupes_parole.py`, et en session 3 `echantillon_tiers.py` (placement du sujet, à compter à l'œil). `centrage.py` (saillance automatique) a échoué à la calibration : ne pas citer ses chiffres.
 
-## Ce que les vrais films m'ont appris (par ordre de solidité)
-1. **Le climax ne coupe pas plus vite que le reste** (trois films sur trois). Interstellar : 12 à 18 coupes/min selon les actes ; Joker : environ 9 presque tout le film ; Whiplash : le maximum (36/min) est la première répétition, pas le final. La montée passe par le volume, le format, la fréquence de changement de ligne d'un alterné, les filés en caméra. [VU SUR IMAGES]
-2. **Les plans longs disent quelque chose de précis.** On ne coupe pas dans la preuve (l'alignement de l'amarrage ; Andrew qui joue vraiment, 9 à 14 s). Chez Joker, les plus longs plans sont les moments où le corps d'Arthur prend un espace (danse des toilettes 40 s, entrée à Pogo's 74 s, capot 43,7 s). Dans Le Dîner de cons, la tirade sincère de Pignon tient 28 à 33 s quand le film coupe toutes les 3 s, et les gags de situation se jouent en plans à deux ou à trois tenus (12 à 37 s). [VU SUR IMAGES]
-3. **La rafale va à l'acte voulu, la surprise arrive dans le plan.** Joker : rafales sur les coups de feu ; Whiplash : sur la chaise et la décision de revenir. Mais l'accident de voiture de Whiplash, la violence la plus brutale, est **un plan de 36 s sans coupe**. L'après est tenu plus longtemps que l'acte (Joker, Whiplash). [VU SUR IMAGES]
-4. **L'accélération du montage alterné (goût de Diego) est en deux temps, séparés par une rupture** (Interstellar) : la ligne passe de la scène à l'insert, l'alternance s'arrête pendant l'action la plus tendue, puis reprend à trois lignes par segments de 2-6 s. [VU SUR IMAGES]
-5. **Le silence a deux places** : après l'effort, pour le faire peser (Interstellar après l'amarrage, Joker après le capot : le plus fort suivi du plus grand vide) ; juste avant le dernier coup, pour le faire frapper (Whiplash, 10 s de silence puis coupe au noir sur le coup). [mesuré, pas écouté]
-6. **La couleur méritée** : Joker annonce le rouge par les lieux de spectacle puis le donne au corps, et le vert passe au décor au lieu de disparaître ; Whiplash code deux mondes (ambre de la musique, vert de la vie) et supprime le vert au final. [VU SUR IMAGES]
-7. **Même un film de musique n'est pas forcément monté « au beat »** : dans Whiplash, les coupes ne tombent pas sur les attaques fortes plus qu'au hasard ; au plus une légère tendance aux temps. Le calage est macro (instrument, rapport de force). [mesuré ; détection d'attaques sur le mixage complet]
-8. **Le timing comique sans public** (Le Dîner de cons) : 40 à 44 % des coupes tombent pendant la parole, les autres environ 0,35 s après la réplique ; l'air (1,5 à 3 s, sur le visage qui encaisse) est réservé aux chutes. Les gags de situation se jouent en plan à deux ou à trois tenu. [mesuré, VU SUR IMAGES]
-9. **Séparer par la coupe, réunir par le filé** (Whiplash) : le champ-contrechamp maître / élève devient, au final, des filés aller-retour dans un même plan. [VU SUR IMAGES]
+## Bilan de la vague 1 (cinq films)
+| Film | Plans (min.) | ASL / médiane | LUFS intégré | Forme de la densité | Couleur |
+|---|---|---|---|---|---|
+| Interstellar | 2 317 | 4,4 / 3,0 s | -15,4 | 12 à 18 coupes/min selon les actes | une matière par monde (ferme, glace, cockpit) |
+| Joker | 1 101 | 6,6 / 4,5 s | -16,2 | environ 9/min presque tout le film | vert puis rouge, mérités ; sujet décentré |
+| Whiplash | 1 511 | 4,2 / 2,4 s | -18,7 | maximum (36/min) à la première répétition | ambre (musique) / vert (vie), vert supprimé au final |
+| Le Dîner de cons | 1 051 | 4,6 / 3,0 s | -24,8 | plate (10 à 20/min), au tempo des répliques | beige constant, ne raconte rien |
+| Mad Max: Fury Road | 2 371 | 3,0 / 2,0 s | -16,0 | **vagues de 4 à 40/min** ; le final est la crête la plus longue | jour orange, nuit bleue, visions bleu-vert ; sujet centré |
 
-## Erreurs corrigées
-- Phase 1 : contraction 8 / 4 / 2 / 1 s (Interstellar) ; « extérieurs silencieux » (Interstellar) ; « l'image de Joker s'assombrit » ; « le rouge remplace le vert » à la fin de Joker ; « la danse des toilettes en un seul plan » (la danse oui, la scène en trois).
-- Session 1 : j'avais cru faux le plan de 74 s de Pogo's (c'est un plan-séquence) ; j'avais attribué à Diego une note sur l'amarrage d'Interstellar qui n'était qu'un exemple de format (retour de Diego du 2026-10-11, intégré).
+**Ce que la vague dit, du plus solide au moins solide :**
+1. **Le climax n'est pas plus rapide** (quatre films sur cinq ; le cinquième, Mad Max, l'est à peine : 34 contre 31 coupes/min). Ce qui marque le sommet, ce sont d'autres leviers : le volume, le format, la fréquence de changement de ligne d'un alterné (Interstellar), et **la durée de la crête** (Mad Max, 7 min d'affilée). [VU SUR IMAGES]
+2. **Les plans longs sont réservés à ce qui compte** : la preuve (l'amarrage, Andrew qui joue vraiment), le corps qui prend l'espace (Joker), la sincérité (Pignon, 28-33 s), la nouvelle la plus dure (Furiosa, 35,5 s). Cinq films sur cinq. [VU SUR IMAGES]
+3. **L'après est tenu, le plus fort est suivi du plus grand vide** : silence après l'amarrage, vide après le capot (Joker), creux après la tempête et 9 s de noir avec decrescendo après le sacrifice de Nux. Variante Whiplash : le silence juste **avant** le dernier coup. [VU SUR IMAGES ; son mesuré, pas écouté]
+4. **La rafale va à l'acte voulu, la surprise arrive dans le plan** (Joker, Whiplash : l'accident en un plan de 36 s). [VU SUR IMAGES]
+5. **Une couleur, une matière par monde** rend lisibles des plans de 0,5 à 2 s (Interstellar, Whiplash, Mad Max) ; la couleur se mérite et change de place (Joker). [VU SUR IMAGES]
+6. **La vitesse se paie en lisibilité, et trois outils la rachètent** (Mad Max) : sujet au centre (environ 20 images sur 24 au tiers central, contre 12 pour Interstellar et 8 pour Joker), un plan de géographie toutes les 5 à 10 coupes, une couleur par lieu. Inversement, le décentrage va avec les plans tenus (Joker). [VU SUR IMAGES, échantillon jugé à l'œil]
+7. **Plus un film coupe vite, plus il doit respirer** : Mad Max, le plus rapide, a le plus grand écart creux/crête (facteur 10). La règle « respiration obligatoire » du kinetic tient à l'échelle de deux heures. [VU SUR IMAGES]
+8. **Ce qui ne monte pas** : un film de musique n'est pas forcément monté au beat (Whiplash, calage = hasard) ; une comédie de dialogue a une densité plate (Dîner de cons). [mesuré]
+9. **Le timing comique sans public** (Dîner de cons) : 40-44 % des coupes pendant la parole, environ 0,35 s d'air sinon ; l'air (1,5-3 s) réservé aux chutes. [mesuré, VU SUR IMAGES]
+
+**Ce que la vague a corrigé de la phase 1** : la contraction 8 / 4 / 2 / 1 s d'Interstellar (fausse : deux temps et une rupture) ; « extérieurs silencieux » ; « l'image de Joker s'assombrit » ; « le rouge remplace le vert » ; « la danse des toilettes en un seul plan ». Cinq affirmations de phase 1 corrigées sur les deux films de Diego : les fiches écrites sur des textes étaient justes dans l'esprit, fausses dans les chiffres.
+
+**Pour Studio F42** (projets « souvent énergiques », GOUTS.md) : de cette vague, ce qui sert le plus vite est Mad Max pour le kinetic (respiration franche, sujet centré dans le 9:16, plan d'orientation), et Joker / Interstellar pour la retenue (plan tenu sur ce qui compte, couleur par monde). À éprouver en maquette avant d'en faire des règles de studio.
+
+## Erreurs corrigées (phase 2)
+- Session 1 : j'avais cru faux le plan de 74 s de Pogo's (c'est un plan-séquence) ; j'avais attribué à Diego une note sur l'amarrage qui n'était qu'un exemple de format (retour du 2026-10-11, intégré).
+- Session 3 : j'avais noté le pic de Mad Max à 0:27-0:30 (56 coupes/min) ; les éclairs le gonflent du double (environ 27/min réels). J'avais supposé qu'une mesure de saillance trouverait le sujet : calibrée, elle ne le trouve qu'une fois sur trois.
 
 ## Limites de ma méthode (inscrites dans `PROMPT-PHASE-2.md`)
-- Les détecteurs **ratent** les coupes des scènes sombres et celles cachées dans un filé ; ils **inventent** des coupes quand la lumière clignote. Une vignette par plan ne peut ni confirmer ni réfuter un plan long : il faut `verif_plan.py` et une tuile à intervalle fixe.
-- Une source HDR lue comme du SDR fausse toutes les mesures de couleur (vérifier `color_transfer`).
-- Le son est mesuré, **jamais écouté** ; la séparation (demucs) n'a pas encore servi. Le calage se mesure sur le mixage complet.
+- Les détecteurs ratent les coupes du sombre et de l'action accélérée (même `verif_plan.py`), inventent des coupes sur les éclairs ; les deux erreurs coexistent dans Mad Max. Recompter avant de citer un pic, tuile à 2-4 images/s sur tout plan long d'action.
+- Une vignette par plan ne juge pas un plan long ; une source HDR lue en SDR fausse la couleur.
+- Le son est mesuré, **jamais écouté** ; demucs n'a pas encore servi.
+- Le placement du sujet n'est mesurable qu'à l'œil, sur un petit échantillon.
 
 ## Doutes (à trancher plus tard, sans poser de question pendant une routine)
 - `.claude/settings.json` (modèle Opus, effort high), ajouté par Diego, **n'est pas commité** : le garde-fou de l'agent refuse ce commit. Diego peut le commiter lui-même.
+- J'ai commité la modification de `PROMPT-PHASE-2.md` (passe de révision) trouvée non commitée sur le disque : je la suppose de Diego, puisqu'elle est rédigée comme une consigne de mission.
 - Whiplash : combien de coupes cachent les filés des plans de 21 et 24 s ? L'hypothèse « on coupe sur l'instrument qui a la phrase » n'est pas mesurée.
+- Mad Max : les images accélérées n'ont pas été mesurées ; le chiffre d'environ 2 700 plans qui circule n'est pas vérifié.
 - Le plan du bus « en miroir » de Joker n'a pas été cherché.
 
 ## Hypothèses de goût (à confirmer par d'autres références)
-- Interstellar et Joker, les deux films cités par Diego, **ne coupent pas vite**. Ce qu'il aime chez eux tient à la structure (l'alternance, la rupture) et à l'équilibre de l'image, pas à la vitesse. Cela s'oppose à son goût pour le kinetic, qu'il réserve à « d'autres usages » (GOUTS.md, précision du 2026-10-09).
-- « L'équilibre de l'ensemble » de Joker (réponse 4 de Diego) se lit sur les images comme **une même règle appliquée par tous les leviers** : quand Arthur existe, la caméra tient et la couleur change de place ; quand il agit, le montage coupe. Hypothèse à tester sur les autres films : un film « équilibré » est un film où image, couleur, son et montage obéissent à la même logique.
+- Interstellar et Joker, les deux films cités par Diego, **ne coupent pas vite** ; ce qu'il aime chez eux tient à la structure (l'alternance, la rupture) et à l'équilibre de l'image. Son goût pour le kinetic est réservé à « d'autres usages » (GOUTS.md, 2026-10-09). Mad Max montre qu'un film peut tenir les deux : très rapide, mais structuré par ses respirations.
+- « L'équilibre de l'ensemble » de Joker (réponse 4) se lit comme **une même règle appliquée par tous les leviers**. Mad Max le confirme en partie : vitesse, cadre centré et couleur par lieu servent la même chose (qu'on suive), mais la nuit bleue ne coïncide pas exactement avec les creux de rythme (15,6 contre 21,8 coupes/min). À tester sur les clips : un clip « équilibré » obéit-il à une seule règle ?
