@@ -5,7 +5,7 @@ description: Couleur au service de l'émotion — choisir une palette et une int
 
 # Couleur et intention
 
-**Marqueurs** : [SOURCÉ] fiche ou source écrite · [THÉORIQUE] convention du métier non vérifiée ici · [TESTÉ EN LABO] fait technique mesuré · [ÉPROUVÉ EN MAQUETTE] vu sur maquette Blender / Pillow, hypothèse à confirmer sur de vraies images (phase 2).
+**Marqueurs** : [VU SUR IMAGES] mesuré ou vérifié sur de vraies vidéos (phase 2, `analyses/`) · [SOURCÉ] fiche ou source écrite · [THÉORIQUE] convention du métier non vérifiée ici · [TESTÉ EN LABO] fait technique mesuré · [ÉPROUVÉ EN MAQUETTE] vu sur maquette Blender / Pillow, hypothèse à confirmer sur de vraies images (phase 2).
 
 **Fait foi sur** : le sens de la couleur et de la lumière (palette, look, teal & orange comme choix, peau, noir, blanc). **Ailleurs** : espaces, log, LUT, ordre des transformations, comment fabriquer un look → `montage-couleur-pipeline` ; capter la lumière au tournage (écrans, sources à éteindre, plaques allumée / éteinte) → `montage-preparation-tournage-vfx` ; nodes Resolve → `montage-resolve`.
 
@@ -22,6 +22,18 @@ La couleur n'est pas une finition, c'est **un sens**. Avant de toucher une roue 
 - **Ziak** (mesuré sur le clip réel) : luminance médiane 8/255, quasi monochrome froid, une seule couleur chaude sur 0,16 % de l'image dans 24 s sur 229. Le noir est la matière, la couleur un événement compté.
 - **Proposition par défaut** quand le brief laisse le choix (hypothèse de goût) : images basses et denses, environnement froid, peau protégée, une seule chaleur réservée à des événements comptés. Jamais une recette plaquée.
 
+## Ce que 45 vraies vidéos confirment (phase 2) [VU SUR IMAGES]
+Mesuré sur une vignette toutes les 10 s par film (luminance, saturation, chaleur rouge - bleu), puis vérifié sur images extraites. Bilans : `RAPPORT.md`.
+1. **Une matière par monde est le principe de couleur le plus répandu du corpus** : dans au moins douze œuvres de toutes familles (*Interstellar*, *Whiplash*, *Mad Max*, *Spider-Verse*, *Aftersun*, *OSS 117*, *Forrest Gump*, HOUDI, Gare du Nord, adidas, « Conte de Noël », KAIZEN). Elle **rend lisibles des plans de 0,5 à 2 s** : on sait où l'on est avant de savoir ce qu'on voit. Le levier n'est pas que la teinte : **format d'image, support et texture** comptent autant (adidas : 4:3 chaud pour la légende, large et froid pour le présent ; *Aftersun* : MiniDV, 35 mm, rave noire, présent froid ; *OSS 117* : N&B pour 1945, nuit américaine bleue).
+2. **La couleur forte se mérite et change de place** (*Joker* : rouge presque absent 95 min, annoncé par des lieux de spectacle, puis porté par le corps ; le vert passe au décor). Variantes : la couleur **voyage** sur toute la durée (6G du froid au chaud, STORM se refroidit) ; dans un seul monde, elle **suit l'émotion plan par plan** (*Spider-Verse*, Gwen et son père). Confirme « couleur d'accent = ressource rare » (maquette).
+3. **Le monde de référence est le moins coloré** : Brooklyn, monde du héros de *Spider-Verse*, est le moins saturé ; *Spotlight* (saturation 0,26, la plus basse des films en couleur) efface l'image pour rendre l'enquête crédible. Le neutre est un choix, pas une absence.
+4. **Une couleur peut ne rien raconter** : *Le Dîner de cons* garde un beige constant ; la comédie de dialogue mise tout sur le jeu. Ne pas exiger une courbe de couleur de chaque film.
+5. **La nuit baisse plus qu'elle ne contraste** (*La Haine* : le noir est atteint partout, la nuit descend sans durcir ; *Mad Max* et *OSS 117* : la nuit est un bloc bleu, un monde de plus). Dans les trois, la lumière va à ce qu'il faut voir, ce qui rejoint la règle de nuit de l'utilisateur (rapprochement de ma part).
+6. **La marque est une couleur ou un costume dès la première image**, son nom à la fin (sept pubs sur sept) ; un événement à plusieurs équipes se lit par **paquets de couleur** (GP Explorer 3), ce qui manquait à une commande du studio (Sephora : un signe de couleur par équipe, à prévoir au tournage).
+7. **Une rafale tient en une seule couleur** (KAIZEN : l'entraînement en bleu ; Gare du Nord : 65 devantures de face à luminance voisine, conforme au contrôle de photosensibilité).
+8. **Le souvenir passe par le support et le format** (maquette, pièce 08) : confirmé par *Aftersun*, adidas et les archives de *Forrest Gump*.
+Pièges de mesure : une source HDR lue en SDR donne une image grise et des mesures fausses (vérifier `color_transfer`) ; une planche réduite en palette postérise les aplats saturés : juger la couleur fine sur une image extraite.
+
 ## Principes [SOURCÉ] (Storaro, Doyle / Wong, Deakins, Willis, Braier)
 1. **Couleur = sens** : chaque dominante rattachée à un état ou un lieu (code personnel, pas universel) ; l'écrire dans la note d'intention.
 2. **Palette réduite** : 1 dominante + 1 contrepoint + des neutres ; une palette se décide aussi **par exclusion** (nommer les couleurs interdites).
@@ -33,9 +45,9 @@ La couleur n'est pas une finition, c'est **un sens**. Avant de toucher une roue 
 8. **Décider avant de tourner** : décor, costume, gélatines, heure portent la palette ; l'étalonnage confirme, il ne sauve pas.
 
 ## Principes éprouvés en maquette [ÉPROUVÉ EN MAQUETTE]
-- **Couleur d'accent = ressource rare** : une seule apparition au moment clé ; répétée, elle devient décor. (pièces 02, 03)
+- **Couleur d'accent = ressource rare** : une seule apparition au moment clé ; répétée, elle devient décor. (pièces 02, 03) **[VU SUR IMAGES]** : *Joker*, Ziak (une seule chaleur sur 0,16 % de l'image, 24 s sur 229).
 - **La chaleur se tourne, l'étalonnage la protège** : la matière au décor **et** une clé au grade ; ce que le décor porte, toutes les directions en héritent. **Neutre ≠ froid** : annuler la dominante, ne pas ajouter du bleu. (pièce 05)
-- **Le souvenir passe par le support et le format** (4:3, texture caméscope, chaleur modérée) plus que par la couleur ; refuser la date incrustée. (pièce 08)
+- **Le souvenir passe par le support et le format** (4:3, texture caméscope, chaleur modérée) plus que par la couleur ; refuser la date incrustée. (pièce 08) **[VU SUR IMAGES]** : *Aftersun* (MiniDV), adidas (4:3 chaud).
 - **Chaleur partout** = « intime » si elle a une source et un dégradé, « filtre » si uniforme. **Un événement froid dans un monde chaud** : gélatiner la source plus bleue que nature ou une clé secondaire, sur une surface neutre ou habitée (main, visage) ; la saillance vient de la luminance. (pièce 10 v4 ; l'hypothèse « AgX blanchit le froid » est réfutée)
 - **Le fond est attribué au monde, la lumière au corps** : refroidir le mur isole le personnage, refroidir sa lumière change son corps. Un fond froid réchauffe la peau perçue (logique et piège du teal & orange : pour une peau plus chaude, refroidir le fond). (pièce 13)
 - **La température d'une source pratique change la matière** de ce qu'elle touche (peau → plâtre), plus que l'angoisse. (pièce 17)
@@ -73,4 +85,4 @@ La couleur n'est pas une finition, c'est **un sens**. Avant de toucher une roue 
 1. Émotion et courbe (2 lignes) ; 2. palette avec la raison de chaque couleur ; 3. curseurs par état ; 4. 2-3 références précises ; 5. ce qu'on refuse ; 6. un risque et son test (3 plans).
 
 ## Limites
-Les significations varient selon cultures et marques ; en format court, la courbe se réduit souvent à un seul basculement ; tous les principes « éprouvés en maquette » restent à voir sur de vrais rushes.
+Les significations varient selon cultures et marques ; en format court, la courbe se réduit souvent à un seul basculement ; les principes « éprouvés en maquette » sur la lumière (source, gélatine, descente, infrarouge) restent à voir sur de vrais rushes : la phase 2 a mesuré des films finis, pas des tournages ; la peau n'a pas été mesurée.
