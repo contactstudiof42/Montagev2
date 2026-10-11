@@ -1,10 +1,10 @@
 # RAPPORT — synthèse de la phase 2 (en cours)
 
-_Réécrit à chaque session (dernière : 2026-10-11, session 5). Version précédente : `archives/phase-2/RAPPORT-session-2.md`. La synthèse de fin de phase 1 (niveau par domaine, 10 principes, audits) est dans `archives/phase-1/RAPPORT-synthese-cloture-phase-1.md` ; le journal de la phase 1 dans `archives/phase-1/RAPPORT-journal.md`._
+_Réécrit à chaque session (dernière : 2026-10-11, session 6). Versions précédentes : `archives/phase-2/RAPPORT-session-5.md`, `archives/phase-2/RAPPORT-session-2.md`. La synthèse de fin de phase 1 (niveau par domaine, 10 principes, audits) est dans `archives/phase-1/RAPPORT-synthese-cloture-phase-1.md` ; le journal de la phase 1 dans `archives/phase-1/RAPPORT-journal.md`._
 
 ## Où j'en suis
 - **Vague 1 des films terminée** : Interstellar, Joker, Whiplash, Le Dîner de cons, Mad Max: Fury Road (fiches dans `analyses/films/`), plus SDM « #Malentouré » (test de méthode).
-- **Clips terminés** (sessions 3-4) et **pubs terminées** (session 4) : fiches dans `analyses/clips/` et `analyses/pubs/`, bilans ci-dessous. **YouTube : dix sur dix vus** (sessions 4-5) : B-roll, EGO, Tiger, CIA, les deux « Qui est l'imposteur » (une fiche), Boxho, YggTorrent, KAIZEN (cinq séquences) ; Popcorn (quatre séquences) ; voir « Constats YouTube ».
+- **Clips terminés** (sessions 3-4) et **pubs terminées** (session 4) : fiches dans `analyses/clips/` et `analyses/pubs/`, bilans ci-dessous. **YouTube terminé** (sessions 4 à 6) : dix fiches complètes, bilan définitif ci-dessous. **Prochaine étape : les projets Studio F42** (`videos/projets-f42/A-LIRE.md`).
 - La mission a changé (modification de Diego dans `PROMPT-PHASE-2.md`, commitée en session 3) : une **passe de révision** (étape 7) viendra avant la synthèse finale, pour relancer les outils récents sur les premières vidéos.
 - Outils de la phase 2 (`labo/outils/`) : `passe_globale.sh` (avec `HDR=1`), `courbes_film.py`, `couleur_film.py`, `sequence.py`, `verif_plan.py`, `calage.py`, `coupes_parole.py`, et en session 3 `echantillon_tiers.py` (placement du sujet, à compter à l'œil). `centrage.py` (saillance automatique) a échoué à la calibration : ne pas citer ses chiffres.
 
@@ -77,36 +77,44 @@ _Réécrit à chaque session (dernière : 2026-10-11, session 5). Version préc�
 
 **Pour Studio F42** : deux formules réutilisables tout de suite, à éprouver en maquette : (a) **la marque comme lieu ou costume** et le nom en signature ; (b) pour un événement de créateurs, **les noms par paquets de couleur** et un vol continu pour entrer et sortir.
 
-## Constats YouTube (dix vidéos, sessions 4-5 ; bilan définitif à rédiger en session 6)
-| Vidéo | Durée | Plans | Médiane | LUFS / LRA | Forme |
-|---|---|---|---|---|---|
-| B-roll (tutoriel) | 8:40 | — | — | -11,7 | interview couverte par du stock qui raconte |
-| EGO « Bibliothèque-Univers » | 23:22 | — | — | -21,3 | vagues de 3 à 29 coupes/min commandées par le texte ; chapitres par le noir et le silence |
-| « Les Jeux Tiger » | 31:02 | ≥ 569 | 2,2 s | -16,6 / 4,8 | doc à présentateur ; liste → rafale, thèse → tirade, preuve → test tenu |
-| « Le jour où la CIA… » | 48:58 | ≥ 930 | 2,2 s | -16,7 / 6 | doc-thriller ; un cadre par source ; schéma qui se transforme = plus long plan (46 s) |
-| « Qui est l'imposteur » × 2 | 57:19 / 54:38 | ≥ 1 590 / 1 426 | 2,0 s | **-12,0 / 3,8** | plateau multicaméra ; **densité plate, aucun silence** |
-| Philippe Boxho (LEGEND) | 1:07:44 | ≥ 929 | 3,4 s | **-24,0 / 9,7** | interview-conteur ; champ / contrechamp ; 308 silences gardés |
-| « Créer YggTorrent » | 1:11:20 | ≥ 651 | 4,8 s | -22,0 / 5,2 | enquête ; témoins anonymes = mannequin + couleur + police ; plans de 24-45 s |
-| « KAIZEN » (Everest) | 2:26:38 | ≥ 2 372 | 2,6 s | -17,0 / **12,3** | film de cinéma ; vagues de 3 à 50 coupes/min ; sommet lent après une rafale de souvenirs et 5 s de silence |
-| « POPCORN » | 2:32:06 | ≥ 2 450 | 2,5 s | -18,2 / 7,7 | talk-show de plateau ; 15-20 coupes/min ; les crêtes sont des inserts (rubrique d'extraits, jeu) |
+## Bilan YouTube (dix vidéos, sessions 4 à 6 : définitif)
+| Vidéo | Durée | Plans (min.) | Médiane | LUFS / LRA | Famille | Forme |
+|---|---|---|---|---|---|---|
+| B-roll (tutoriel) | 8:40 | — | — | -11,7 | tutoriel | interview couverte par du stock qui raconte |
+| EGO « Bibliothèque-Univers » | 23:22 | — | — | -21,3 | doc | vagues de 3 à 29 coupes/min commandées par le texte ; chapitres par le noir et le silence |
+| « Les Jeux Tiger » | 31:02 | 569 | 2,2 s | -16,6 / 4,8 | doc | présentateur ; liste → rafale, thèse → tirade, preuve → test tenu |
+| « Le jour où la CIA… » | 48:58 | 930 | 2,2 s | -16,7 / 6 | doc | doc-thriller ; un cadre par source ; schéma qui se transforme = plus long plan (46 s) |
+| « Créer YggTorrent » | 1:11:20 | 651 | 4,8 s | -22,0 / 5,2 | doc | enquête ; témoins anonymes = mannequin + couleur + police ; plans de 24-45 s |
+| « Qui est l'imposteur » × 2 | 57:19 / 54:38 | 1 590 / 1 426 | 2,0 s | **-12,0 / 3,8** | plateau | multicaméra ; **densité plate, aucun silence** |
+| « POPCORN » | 2:32:06 | 2 450 | 2,5 s | -18,2 / 7,7 | plateau | talk-show ; 15-20 coupes/min ; crêtes = inserts ; récits tenus |
+| Philippe Boxho (LEGEND) | 1:07:44 | 929 | 3,4 s | **-24,0 / 9,7** | conversation | interview-conteur ; champ / contrechamp ; 308 silences gardés |
+| « KAIZEN » (Everest) | 2:26:38 | 2 372 | 2,6 s | -17,0 / **12,3** | cinéma | vagues de 3 à 50 coupes/min ; sommet lent après une rafale de souvenirs et 5 s de silence |
 
-**Ce que les dix vidéos disent :**
-1. **Dans le documentaire et la vulgarisation, la densité suit le type de phrase** : une liste dite reçoit une image par élément (0,6 à 1,8 s ; EGO, Tiger, CIA), une thèse un plan tenu face caméra, une preuve un plan tenu en temps réel (le test du game.com, 12 à 19 s). Trois vidéos sur trois. Même geste que la rafale-inventaire des clips (Gare du Nord, 6G). [VU SUR IMAGES, mesuré]
-2. **Le plus long plan porte la thèse ou la preuve, et il change à l'intérieur** : schéma qui se transforme (CIA 46 s, EGO Vigenère), citation qui s'écrit ligne à ligne au rythme de la voix (Tiger 23-29 s), appel montré en relevé d'écoute (CIA 27 s), témoignage anonyme en sous-titre mot à mot, une police par voix (Ygg 24-45 s). Le plan long d'un doc YouTube n'est pas immobile ; **le texte qui s'écrit le tient** (trois vidéos sur trois). [VU SUR IMAGES]
-3. **Les chapitres se marquent par le noir et le silence**, pas par des cartons (EGO 2-4 s, CIA 3 s de noir + 2-3 s de silence, Tiger 0,6-1,4 s) ; les silences sont rares (11 en 31 min, 23 en 49 min), donc lisibles. [mesuré, pas écouté]
-4. **Quatre familles dans le choix de Diego** (la quatrième : le film de cinéma sur YouTube, KAIZEN, LRA 12,3 LU, qui suit les règles des films) : le doc à densité en vagues et à silences (EGO, Tiger, CIA, Ygg) ; le divertissement de plateau **à densité plate, sans silence, à -12 LUFS** (« Imposteur »), qui respire par les rires et les changements de décor ; l'interview-conteur (Boxho), plate elle aussi mais **calme et pleine de silences** (-24 LUFS, 308 pauses gardées). La règle « respirer par le montage » vaut pour la première famille seulement. [mesuré]
-5. **Sommet d'émotion lent, sommet d'information rapide** : KAIZEN suit les films (la crête de 45 coupes/min est **juste avant** le sommet, une rafale de souvenirs coupée par 5 s de silence ; le sommet est en plans larges de 3,6 à 22 s), alors que Tiger met sa partie la plus rapide au sommet de son récit (l'emballement Furby, 27-31 coupes/min). [VU SUR IMAGES]
-6. **Trois façons d'isoler un sponsor** : le jouer en sketch (Tiger), l'isoler par la forme et le silence (EGO), par le décor et le tempo (Imposteur : seul passage lent de l'heure). [VU SUR IMAGES]
-7. **Changer de cadre pour changer de régime** : archive dans un téléviseur arrondi (CIA), aparté en sépia (Tiger), un décor par lieu de jeu (Imposteur). Prolonge « une matière par monde » des films. [VU SUR IMAGES]
-8. **Un format de série est un système** : les deux « Imposteur » ont les mêmes chiffres à 10 % près (densité, LUFS, LRA) et le même habillage. [mesuré]
-9. **Le volume n'est pas une norme chez les créateurs** : de -24,0 (Boxho) à -11,6 (Imposteur), 12 LU d'écart. [mesuré]
-10. **Une voix sans visage = un avatar, une couleur, une police** (Ygg) ; ouvrir par la fin (Ygg, CIA). [VU SUR IMAGES]
-11. **Dans la conversation filmée, la coupe ignore la parole** : 82 % des coupes pendant la parole pour 80 % du temps (Popcorn), 71 % / 77 % (Boxho) : on coupe vers un visage au milieu d'une phrase. Le jeu (« Imposteur ») coupe un peu plus dans les trous (49 % / 77 %). À l'inverse du Dîner de cons (35 % / 60 %), où le timing comique cherche l'air. [mesuré, voix séparée pour Popcorn et Imposteur]
-12. **Des traces de montage automatique se mesurent** : Boxho a 89 plans de 1,52 s exactement et des pics de durée à 2, 4, 6, 8 s. Hypothèse, non prouvée ; si c'est le cas, c'est la limite à corriger à la main. [mesuré, interprétation DÉDUITE]
+**Ce que les dix vidéos disent, du plus solide au moins solide :**
+1. **La densité suit le type de phrase, dans toutes les familles.** Une liste dite reçoit une image par élément (0,5 à 1,8 s : EGO, Tiger, CIA, ouverture de KAIZEN) ; une thèse un plan tenu face caméra ; une preuve un plan tenu en temps réel (Tiger, 12-19 s) ; **un récit d'invité un gros plan tenu 5 à 16 s, un échange des plans de 1 à 4 s** (Popcorn). Cinq vidéos sur cinq où je l'ai cherché (EGO, Tiger, CIA, KAIZEN, Popcorn). C'est la règle la plus générale de la phase 2, et le même geste que la rafale-inventaire des clips (Gare du Nord, 6G). [VU SUR IMAGES, mesuré]
+2. **Le plus long plan porte la thèse, la preuve ou l'épreuve, et quelque chose change à l'intérieur** : schéma qui se transforme (CIA 46 s, EGO), citation qui s'écrit au rythme de la voix (Tiger 23-29 s), relevé d'écoute (CIA 27 s), sous-titre mot à mot d'un témoin (Ygg 24-45 s), **compte à rebours d'une manche de jeu** (Popcorn 62 et 68 s, écran partagé). **Le texte ou le compteur tient le plan long** ; le montage n'a pas à couper. [VU SUR IMAGES]
+3. **Quatre familles, quatre régimes de son et de rythme** : le **doc** (densité en vagues, chapitres par le noir et 2-4 s de silence, silences rares donc lisibles) ; le **plateau** (densité plate ; -12 LUFS sans aucun silence pour le jeu, -18 avec des récits tenus pour le talk-show) ; la **conversation** (Boxho : plate et calme, -24 LUFS, 308 pauses gardées) ; le **cinéma sur YouTube** (KAIZEN : règles des films, LRA 12,3 LU). La règle « respirer par le montage » vaut pour le doc et le cinéma ; le plateau respire par les rires, les décors et les récits. [mesuré]
+4. **Sommet d'émotion lent, sommet d'information rapide** : KAIZEN suit les films (la crête de 45 coupes/min est **juste avant** le sommet, une rafale de souvenirs coupée par 5 s de silence ; le sommet en plans larges de 3,6 à 22 s), Tiger met sa partie la plus rapide au sommet de son récit (l'emballement Furby). [VU SUR IMAGES]
+5. **Dans la conversation filmée, le changement d'angle ignore la parole** : 76 à 88 % des coupes pendant la parole pour environ 80 % du temps parlé (Popcorn, sur 9 min), 71 % / 77 % (Boxho) ; quand la coupe tombe dans un trou, c'est **0,1-0,2 s avant la reprise**, sur celui qui va parler. Le jeu coupe un peu plus dans les trous (Imposteur, 49 % / 77 %), la comédie de dialogue de cinéma cherche l'air (*Le Dîner de cons*, 40-44 %, au milieu d'un trou de 0,8 s). [mesuré ; voix séparée quand il y a un fond musical, mixage vérifié équivalent sans fond]
+6. **Changer de cadre ou de format pour changer de régime** : archive dans un téléviseur arrondi (CIA), aparté en sépia (Tiger), un décor par lieu de jeu (Imposteur), **un format par époque** (KAIZEN : archives N&B, webcam 4:3, défis 16:9, comme adidas), extrait en écran partagé avec la réaction (Popcorn). Prolonge « une matière par monde » des films. [VU SUR IMAGES]
+7. **Les crêtes de densité d'un format de plateau viennent des inserts** (rubrique d'extraits à 28-36 coupes/min, jeu), jamais de la conversation ; l'extrait n'est jamais montré seul : le visage qui le regarde reste à l'écran. [VU SUR IMAGES]
+8. **Les rafales ont un sens, et une seule couleur** : KAIZEN oppose deux rafales (le trop-plein de la vie de créateur à 1:08, l'entraînement à 1:12) ; celle de l'entraînement tient sous **une voix qui ordonne** (vocal du coach), d'une seule couleur (bleu), et le mot-clé reçoit son image littérale (« réveille-toi » → un œil qui s'ouvre). **Un voyage se compresse au métronome** de cartons « JOUR N », l'arrivée casse la cadence par le premier plan long. [VU SUR IMAGES]
+9. **Un format de série est un système** : les deux « Imposteur » ont les mêmes chiffres à 10 % près et le même habillage ; Popcorn a un décor, un logo permanent, des cartons nom et un générique en mise en page. [mesuré]
+10. **Trois façons d'isoler un sponsor** : le jouer en sketch (Tiger), l'isoler par la forme et le silence (EGO), par le décor et le tempo (Imposteur) ; Popcorn le garde pour la fin (26 s sur noir). [VU SUR IMAGES]
+11. **L'habillage vient du monde du sujet** : interface d'envoi de YouTube comme charnière vers le titre (KAIZEN), une voix sans visage = un avatar, une couleur, une police (Ygg) ; ouvrir par la fin (Ygg, CIA) ou par l'inventaire du décor (Popcorn). [VU SUR IMAGES]
+12. **Le volume n'est pas une norme chez les créateurs** : de -24,0 (Boxho) à -11,7 (B-roll), 12 LU d'écart ; la dynamique (LRA de 3,8 à 12,3) dit la famille mieux que le niveau. [mesuré]
+13. **Des traces de montage automatique se mesurent** : Boxho a 89 plans de 1,52 s exactement et des pics de durée à 2, 4, 6, 8 s. Hypothèse, non prouvée. [mesuré, interprétation DÉDUITE]
 
-**Pour Studio F42** : la règle « densité selon le type de phrase » et le schéma qui se transforme servent directement le corporate explicatif et le film de marque ; le système de série (cartons, couleur par décor, tempo fixe) sert toute commande récurrente ; « une voix sans visage = un avatar, une couleur, une police » sert le témoignage client anonyme ; « rafale de mémoire, puis plan tenu » sert la fin de tout film de marque. À éprouver en maquette.
+**Ce que YouTube a corrigé ou nuancé** : « respirer par le montage » ne vaut pas pour le plateau ; « couper à la fin d'une pensée » (montage-grammaire) ne vaut que pour ce qu'on retire, pas pour le changement d'angle ; « le climax n'est pas plus rapide » (films) ne vaut que pour le sommet d'émotion. Skills mis à jour : `montage-youtube` (16 à 16 sexies), `montage-grammaire` (conversation multicaméra), `montage-rythme` (KAIZEN).
+
+**Pour Studio F42** (à éprouver en maquette avant d'en faire des règles de studio) :
+- **Corporate explicatif et film de marque** : densité selon le type de phrase ; le schéma qui se transforme comme plan-thèse ; un format ou un cadre par époque pour un historique d'entreprise.
+- **Commande récurrente** (série, podcast de marque) : un système (cartons, couleur par décor, tempo fixe), un récit tenu, un extrait toujours avec le visage qui le regarde.
+- **Témoignage anonyme** : un avatar, une couleur, une police.
+- **Fin de film de marque ou d'événement** : rafale de mémoire d'une seule couleur, silence, puis plan tenu.
 
 ## Erreurs corrigées (phase 2)
+- Session 6 : j'avais écrit « *Le Dîner de cons* : 35 % des coupes pendant la parole pour 60 % du temps » dans les constats YouTube ; la fiche mesurée dit 40-44 % (21 % dans la scène sincère). Chiffre recopié de mémoire : toujours reprendre une mesure dans sa fiche, pas dans un résumé.
 - Session 1 : j'avais cru faux le plan de 74 s de Pogo's (c'est un plan-séquence) ; j'avais attribué à Diego une note sur l'amarrage qui n'était qu'un exemple de format (retour du 2026-10-11, intégré).
 - Session 5 : le « plan » de 19,7 s de Tiger (graphique puis présentateur, coupe ratée) ; « les deux extrémités les plus rapides » de CIA (la fin l'est surtout par son générique monté) ; « le témoin à la bougie » de CIA (deux témoins, deux lumières) ; la mesure coupes / parole sur un mixage avec fond musical (34 % de parole contre 77 % sur la voix séparée) ; un « plan » de 123 s de cartons de texte sur noir (YggTorrent) qui en contient au moins 20.
 - Session 4 : « 14 à 16 duos » dans GP Explorer 3 écrit sans compter (corrigé en « au moins une dizaine ») ; HOUDI semblait couper sur les temps (45 % contre 27 %) sur le mixage ; sur la musique séparée, rien (27 % contre 24 %).
