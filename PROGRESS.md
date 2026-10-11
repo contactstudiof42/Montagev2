@@ -2,13 +2,14 @@
 
 _Lire en premier. Seul l'état présent compte ici. L'état de clôture de la phase 1 est archivé dans `archives/phase-1/PROGRESS-cloture-phase-1.md`, et l'historique des sessions 1 à 25 dans `archives/phase-1/PROGRESS-historique.md`._
 
-## État (2026-10-11, session 3 de la phase 2)
+## État (2026-10-11, session 3 de la phase 2, 03:04-03:30)
 - **Phase 2 en cours** : mission `PROMPT-PHASE-2.md` (lire aussi « Avant chaque vidéo : repartir de la phase 1 », « Leçons de méthode », et la nouvelle « Passe de révision », étape 7, ajoutée par Diego). Démarrage de chaque session : `CLAUDE.md`.
 - Session 3 : aucun retour neuf, boîte vide. **Mad Max: Fury Road terminé** (`analyses/films/mad-max-fury-road.md`, 7 séquences : densité en vagues de 4 à 40 coupes/min, le final = crête la plus longue, sujet au centre ; pic de la tempête recompté, gonflé par les éclairs). **Bilan de la vague 1** écrit dans `RAPPORT.md`. Outils : `echantillon_tiers.py` (placement du sujet, compté à l'œil) ; `centrage.py` a échoué à la calibration (noté dans le fichier).
 - **Ziak terminé** (`analyses/clips/ziak-meme-pas-un-grincement.md`) : 109 plans et non 88 (coupes ratées dans le noir, retrouvées sur une copie éclaircie) ; pas de calage sur le beat (confirmé) ; 32 coupes/min avec la basse, 16 sans.
 - **Justice « Stress » terminé** (`analyses/clips/justice-stress.md`) : plans portés longs, coupes calées sur les grands accents (pas sur les temps), silence de 0,6 s avant la bagarre ; corrige la fiche de phase 1.
 - **PNL « Au DD » terminé** (`analyses/clips/pnl-au-dd.md`) : médiane 2,9 s, trois plans longs aux articulations (descente de 28 s, travelling arrière de 28,7 s), coupes au hasard, aube puis nuit, packshot d'album à la fin.
-- **Reprendre ici : les clips** (étape 2), les quatre restants (Booba, GENER8ION, HOUDI, Yvnnis) (SDM est le test de méthode, déjà fait). Pour un clip sombre : copie éclaircie avant la détection (voir « Leçons de méthode »). Méthode en une passe sur la vidéo entière : `passe_globale.sh` convient aussi à un clip ; `calage.py` pour la musique ; `echantillon_tiers.py` si le cadre compte.
+- **Booba « 6G » terminé** (`analyses/clips/booba-6g.md`) : cadre qui grandit en ouverture, une seule rafale, plans longs en mouvement, couleur du froid vers le chaud, coupes au hasard.
+- **Reprendre ici : les clips** (étape 2), les trois restants (GENER8ION « STORM », HOUDI « Belle chanson », Yvnnis « Gare du Nord »), puis un court bilan des clips dans RAPPORT.md, puis les pubs (SDM est le test de méthode, déjà fait). Pour un clip sombre : copie éclaircie avant la détection (voir « Leçons de méthode »). Méthode en une passe sur la vidéo entière : `passe_globale.sh` convient aussi à un clip ; `calage.py` pour la musique ; `echantillon_tiers.py` si le cadre compte.
 - `.claude/settings.json` (ajouté par Diego) n'est pas commité : le garde-fou de l'agent refuse ce commit. À laisser à Diego.
 
 ## Chaîne d'analyse d'un film (sessions 1-2)
@@ -47,7 +48,7 @@ _Lire en premier. Seul l'état présent compte ici. L'état de clôture de la ph
 | films | Spotlight (2015) | 2 h 09 min | |
 | films | The Social Network (2010) | 2 h 00 min | |
 | films | Whiplash (2014), 2160p HDR | 1 h 46 min | ✔ 2026-10-11 (6 séquences) |
-| clips | Booba — 6G | 3 min 39 s | |
+| clips | Booba — 6G | 3 min 39 s | ✔ 2026-10-11 |
 | clips | GENER8ION — STORM (starring Yung Lean) | 7 min 34 s | |
 | clips | HOUDI — Belle chanson | 3 min 37 s | |
 | clips | Justice — Stress | 6 min 44 s | ✔ 2026-10-11 |
