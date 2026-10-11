@@ -76,3 +76,16 @@ _Appels par `run_script` (bac à sable) ; aucun `run_script_unsafe`. Aucun proje
 | 54 | Titre | 2 `TextPlus` (SST Pro Medium / Light) sur `Background` transparent, `Blur` + `Transform` + `Merge` Blend animés ; **`SetTrackEnable` ne tient que sur la page Montage** | — | comparé à la DA Sony |
 | 55 | SFX | 64 retirés, 63 posés (`AppendToTimeline` `"mediaType": 2`, `SetProperty("AudioVolume", dB)`), crête calée | — | loudness |
 | 56 | Rendu final | `H265`, `EncodingProfile` Main10, `MultiPassEncode`, `VideoQuality` 40000 | HEVC Main 10 10 bits 39 Mb/s ; −14,0 LUFS, −1,1 dBTP | `qc_livraison.sh`, `flash_check.py`, PSNR 40,7 dB |
+
+## V5 (2026-10-11, sessions V5) — timeline `SONY_V5` (dupliquée de `SONY_V4`, qui reste intacte)
+_Appels par `run_script` (bac à sable) ; aucun `run_script_unsafe`. Gestes 57-60 : première session V5 (détail dans `PROGRESS.md` de cette session, commit 7889fa9) ; à partir de 61 : reprise du soir._
+
+| # | Geste | Appel / outil | Résultat | Contrôle |
+|---|---|---|---|---|
+| 57 | LUT V5 (pied de courbe) sur 83 plans | `look_sony_v5.py`, `SetLUT` | CDL des plans remplacés perdus (à refaire) | stills |
+| 58 | Ouverture plus rapide, remplacements (C6507, C6637, C6626, C6589/C6580, C6585, C6587, C6584, C6566) | `DeleteClips` + `AppendToTimeline` (`"mediaType": 1`) | plans « tête bizarre », tapis, panoramique flou retirés | `controle_plans.py` |
+| 59 | Collages A1 (281-293) et C1 (678-686) | `collage_v5.py` (BiRefNet) → ProRes 4444, posés sans LUT | variantes A2, A3, B1-B4, C2, C3 écartées | `controle_detourage.py` |
+| 60 | Packshots Gyroflow synchronisés | `gyro_sync.py` + `gyro_rendu.py` (décalage imposé) | C6725_gf_s0, C6723_gf_s12, C6723_gf_s27 | `*_preuve.json` |
+| 61 | Dernier pic, version b | `pic_v5.py` : parties recalées sur les attaques (837, 878, 901, 907, 931, 948), comptoir KORE −0,13 en log, P3 « net » contre « écho » (`variantes/pic_P3_net-contre-echo.jpg`), P4 sans rafale de négatifs, noir et blanc à luminance conservée sur le comptoir | 1er rendu : 6 flashs dans la pire seconde et 2 doublons (C6578, C6664) ; version b : 3 et 0 | `flash_check.py --detail` (option ajoutée) |
+| 62 | Doublons avec les plans calculés | `doublons_timeline.py` : liste `EXTRA` (sources des `*_sources.json`, converties par le `Start TC` du pool), plages `_gf_s*` dans `DECALAGES`, regroupement par identifiant de rush (les fichiers Gyroflow n'étaient comparés à rien) | 0 doublon sur 100 plans | — |
+| 63 | Pose du pic | `ImportMedia` (dossier `V4_ELEMENTS`), `DeleteClips` C6674 / C6672 / C6669 / C6566 (831-948), `AppendToTimeline` 0-117 à 831, piste 1, `"mediaType": 1` ; aucune LUT | projet enregistré | rendu de plage 806-960 : 3 flashs dans la pire seconde (blanc de 948 compris) |
