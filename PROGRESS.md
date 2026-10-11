@@ -2,12 +2,12 @@
 
 _Lire en premier. Seul l'état présent compte ici. L'état de clôture de la phase 1 est archivé dans `archives/phase-1/PROGRESS-cloture-phase-1.md`, et l'historique des sessions 1 à 25 dans `archives/phase-1/PROGRESS-historique.md`._
 
-## État (2026-10-11, session 4 de la phase 2, 04:04-04:38)
+## État (2026-10-11, session 5 de la phase 2, 05:04-05:5x)
 - **Phase 2 en cours** : mission `PROMPT-PHASE-2.md` (lire aussi « Avant chaque vidéo : repartir de la phase 1 », « Leçons de méthode », « Passe de révision », étape 7). Démarrage de chaque session : `CLAUDE.md`.
-- Session 4 : aucun retour neuf, boîte vide. **Clips terminés** (GENER8ION « STORM », HOUDI « Belle chanson », Yvnnis « Gare du Nord » ; bilan des huit clips dans `RAPPORT.md`). **Pubs terminées** (les sept, fiches dans `analyses/pubs/`, bilan dans `RAPPORT.md`).
-- Outil : `calage.py` lit la fréquence d'images et accepte `AUDIO=fichier` (musique séparée par demucs). Nouvelle leçon : **un calage mesuré sur le mixage peut être faux** (HOUDI) ; toujours confirmer sur la musique séparée.
-- **YouTube commencé** : B-roll et EGO terminés ; « Les Jeux Tiger » et « Le jour où la CIA a trahi la France » en **première passe** (fiches marquées comme telles : il manque l'analyse fine de 5 à 8 séquences, les silences, les plans longs). Passes globales et transcriptions prêtes dans `videos/_travail/tiger` et `videos/_travail/cia`.
-- **Reprendre ici** : compléter Tiger et CIA (séquences fines avec `sequence.py`, silences), puis les six autres YouTube (deux « Qui est l'imposteur », Philippe Boxho, YggTorrent, Kaizen 2 h 26, Popcorn 2 h 32) : lancer les passes en arrière-plan, deux à la fois ; pour les émissions de plus d'une heure, 5 à 8 séquences comme un film. Puis un bilan YouTube dans `RAPPORT.md`, puis les projets Studio F42 (`videos/projets-f42/A-LIRE.md`).
+- Session 5 : aucun retour neuf, boîte vide. **Tiger et CIA complétés** (six séquences fines chacun). **Nouvelles fiches** : « Qui est l'imposteur » (deux épisodes, une fiche), Philippe Boxho (LEGEND), « Créer YggTorrent », KAIZEN (première passe + cinq séquences), Popcorn (**première passe seulement**). Constats YouTube dans `RAPPORT.md`.
+- Nouvelles leçons (dans `PROMPT-PHASE-2.md`) : mesurer coupes / parole **sur la voix séparée** quand il y a un fond musical (34 % contre 77 %) ; générique monté et coupe graphique → visage ; cartons de texte sur noir (un « plan » de 123 s en contenait 20) ; durées trop régulières = indice (Boxho).
+- **Reprendre ici** : (1) Popcorn : 5 à 8 séquences (ouverture, crêtes 1:17-1:22 et 2:12-2:15, une rubrique, la fin), mesure coupes / parole sur voix séparée ; (2) KAIZEN : lire la transcription (`videos/_travail/kaizen/transcription.srt`, lancée en fin de session 5 ; si absente ou tronquée, relancer whisper en arrière-plan), ouverture et 1:12-1:15 en plan par plan ; (3) **bilan YouTube définitif** dans `RAPPORT.md` (réécrire « Constats YouTube ») ; (4) puis les projets Studio F42 (`videos/projets-f42/A-LIRE.md` : être exigeant, distinguer montage et tournage).
+- Passes globales prêtes (`videos/_travail/`) : `imposteur-er`, `imposteur-tg`, `boxho`, `ygg`, `kaizen`, `popcorn` (proxy, coupes, courbes, couleur, vignettes ; transcriptions sauf Popcorn).
 - `.claude/settings.json` (ajouté par Diego) n'est pas commité : le garde-fou de l'agent refuse ce commit. À laisser à Diego.
 
 ## Chaîne d'analyse d'un film (sessions 1-2)
@@ -61,15 +61,15 @@ _Lire en premier. Seul l'état présent compte ici. L'état de clôture de la ph
 | pubs | Lacoste — Life is a Beautiful Sport | 1 min 10 s | ✔ 2026-10-11 |
 | pubs | adidas — Backyard Legends | 5 min 05 s | ✔ 2026-10-11 |
 | pubs | iPhone 17 — 3x More Scratch Resistant | 0 min 35 s | ✔ 2026-10-11 |
-| youtube | Créer YggTorrent, puis le détruire (480p) | 1 h 11 min | |
-| youtube | KAIZEN : 1 an pour gravir l'Everest (480p) | 2 h 26 min | |
-| youtube | Les Jeux Tiger ! (720p) | 31 min 02 s | première passe 2026-10-11 |
+| youtube | Créer YggTorrent, puis le détruire (480p) | 1 h 11 min | ✔ 2026-10-11 |
+| youtube | KAIZEN : 1 an pour gravir l'Everest (480p) | 2 h 26 min | ✔ 2026-10-11 (5 séquences ; transcription à lire) |
+| youtube | Les Jeux Tiger ! (720p) | 31 min 02 s | ✔ 2026-10-11 (6 séquences) |
 | youtube | La seule façon de monter les B-roll | 8 min 40 s | ✔ 2026-10-11 |
-| youtube | Le jour où la CIA a trahi la France (720p) | 48 min 58 s | première passe 2026-10-11 |
-| youtube | Philippe Boxho, médecin légiste, partie 1 (480p) | 1 h 07 min | |
-| youtube | Popcorn avec Anyme, Léna Situations & Etoiles (480p) | 2 h 32 min | |
-| youtube | Qui est l'imposteur (ft Eric & Ramzy) (720p) | 57 min 19 s | |
-| youtube | Qui est l'imposteur (ft Theodora & Guy2Bezbar) (480p) | 54 min 38 s | |
+| youtube | Le jour où la CIA a trahi la France (720p) | 48 min 58 s | ✔ 2026-10-11 (6 séquences) |
+| youtube | Philippe Boxho, médecin légiste, partie 1 (480p) | 1 h 07 min | ✔ 2026-10-11 |
+| youtube | Popcorn avec Anyme, Léna Situations & Etoiles (480p) | 2 h 32 min | première passe 2026-10-11 |
+| youtube | Qui est l'imposteur (ft Eric & Ramzy) (720p) | 57 min 19 s | ✔ 2026-10-11 (fiche commune) |
+| youtube | Qui est l'imposteur (ft Theodora & Guy2Bezbar) (480p) | 54 min 38 s | ✔ 2026-10-11 (fiche commune) |
 | youtube | Visite extraordinaire d'une Bibliothèque-Univers (EGO, confirmé : vidéo du 23/09/2026) | 23 min 22 s | ✔ 2026-10-11 |
 | projets-f42 | Benefit — pub réseau (vertical) | 0 min 23 s | |
 | projets-f42 | Benefit — pub réseau 2 (vertical) | 0 min 26 s | |
