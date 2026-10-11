@@ -38,7 +38,7 @@ for i, ((s, e), v) in enumerate(zip(plans, vs)):
 # bas : durées + LUFS
 y0 = rang * HT + 10; X = lambda t: 10 + (col * w - 20) * (t - A) / (B - A)
 for s, e in plans:
-    hh = 60 * min(e - s, 15) / 15; d.rectangle([X(max(s, A)) + 1, y0 + 60 - hh, X(min(e, B)) - 1, y0 + 60], fill=(230, 140, 60))
+    hh = 60 * min(e - s, 15) / 15; x0 = X(max(s, A)) + 1; d.rectangle([x0, y0 + 60 - hh, max(x0, X(min(e, B)) - 1), y0 + 60], fill=(230, 140, 60))  # plan < 2 px : barre d'un pixel
 pts = []
 for l in open(os.path.join(D, 'ebur128.log')):
     m = re.search(r't:\s*([\d.]+).*?M:\s*(-?[\d.]+)', l) if MOM else re.search(r't:\s*([\d.]+).*?S:\s*(-?[\d.]+)', l)

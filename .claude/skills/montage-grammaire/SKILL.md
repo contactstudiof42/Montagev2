@@ -30,6 +30,7 @@ Une ligne imaginaire relie les deux personnages (ou un personnage et ce qu'il re
 
 ## Dialogue et interview
 - **Champ / contrechamp** : couper sur la **réaction** autant que sur la réplique ; le plus fort est souvent celui qui écoute. [THÉORIQUE]
+- **Séparer par la coupe, réunir par le filé** : *Whiplash* tient un champ-contrechamp strict entre l'élève et le maître pendant 1 h 35 (mêmes cadres à chaque retour), puis, au final, les relie par des filés aller-retour dans un même plan (environ toutes les 2 s, 1:36:14). Le mouvement de caméra dit qu'ils sont enfin accordés. Attention en analyse : un détecteur voit ces filés comme un seul plan long, et une coupe peut s'y cacher. [VU SUR IMAGES] (`analyses/films/whiplash.md`)
 - **J-cut / L-cut** : décaler image et son de quelques images à quelques secondes ; le dialogue coule. [THÉORIQUE]
   - **J-cut de mémoire** : le son du souvenir arrive ~12 images avant son image ; au retour, **pas de L-cut** : couper le son net, le silence du présent est le coup. [ÉPROUVÉ EN MAQUETTE] (pièce 08)
   - **Raccord dans l'axe du temps** (même cadre, deux époques) : aligné au pixel (magique) ou franchement décalé (mémoire qui flotte) ; à moitié aligné, il paraît raté. [ÉPROUVÉ EN MAQUETTE] (pièce 08)
