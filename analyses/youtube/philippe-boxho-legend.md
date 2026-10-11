@@ -35,5 +35,5 @@ Planches dans `videos/_travail/boxho/seq/` : 0:00-2:00, 44:00-45:00, 49:00-50:40
 Rien sur cette vidéo.
 
 ## Pas fait, doutes
-- Transcription Whisper en cours à la clôture (non lue). Le passage le plus fort du récit n'est pas localisé.
+- Transcription Whisper finie, sans boucle (`videos/_travail/boxho/transcription.srt`), non lue en entier. Le passage le plus fort du récit n'est pas localisé.
 - L'hypothèse du montage automatique n'est pas prouvée (je n'ai vérifié que deux plans de 1,52 s).

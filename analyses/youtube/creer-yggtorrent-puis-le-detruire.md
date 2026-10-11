@@ -37,5 +37,5 @@ Sur des cartons de texte sur fond noir, PySceneDetect ne voit pas les changement
 Rien sur cette vidéo.
 
 ## Pas fait, doutes
-- Transcription Whisper en cours à la clôture (non lue). Sponsor (1:15-2:15, hébergeur web, présentateur et captures d'interface) non analysé en détail.
+- Transcription Whisper finie (`videos/_travail/ygg/transcription.srt`) ; elle boucle sur la musique du générique final (« et puis de se sentir un peu plus de satisfaction » ×12 à 1:11:06). Sponsor (1:15-2:15, hébergeur web, présentateur et captures d'interface) non analysé en détail.
 - La durée d'un témoignage (un mannequin = un plan ?) n'est pas recomptée.
