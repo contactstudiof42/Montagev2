@@ -9,7 +9,7 @@ Marqueurs : **[SOURCÉ]** lu dans une source datée · **[TESTÉ EN LABO]** fait
 
 **Fait foi sur** : la méthode d'agent commune à tous les logiciels (sécurité du projet, un geste une image, journal, accord avant dépense). Les recettes propres à un logiciel restent dans son skill : `montage-after-effects`, `montage-premiere`, `montage-resolve` (API Python), `montage-blender` (rendu en ligne de commande, test d'une image par caméra).
 
-Statut : **[THÉORIQUE]** (phase 1, aucun appel MCP fait). Les noms d'outils observés et les tests à mener sont dans `PLAN-TESTS-MCP.md` à la racine du dépôt, **jamais ici** tant qu'ils ne sont pas validés en phase 3.
+Statut : **[THÉORIQUE]** (phase 1) pour la méthode générale ; premier pilotage réel de Resolve le 2026-10-11 (voir « Leçons du premier pilotage réel »). Les noms d'outils observés et les tests à mener sont dans `PLAN-TESTS-MCP.md` à la racine du dépôt, **jamais ici** tant qu'ils ne sont pas validés en phase 3.
 
 ## Pourquoi c'est un sujet artistique autant que technique
 Un agent qui pilote un logiciel perd ce qu'un monteur a en permanence : **l'œil sur le moniteur**. Chaque appel d'outil est une coupe faite les yeux fermés. Toute la méthode ci-dessous sert à rendre l'œil : une image de contrôle après chaque geste, comparée à une intention écrite avant.
@@ -43,6 +43,14 @@ L'erreur typique d'un agent n'est pas le bug, c'est la dérive : vingt appels co
 - Quand une décision dépend d'un goût non exprimé et coûteuse à défaire (direction couleur d'un film entier) : proposer des images de test d'abord.
 - Quand le geste à la main prend 10 s et que l'automatiser prend 10 appels : le dire, laisser l'humain faire.
 - Quand l'outil n'expose pas de moyen de vérifier le résultat (pas d'export d'image) : travailler à l'aveugle est interdit, signaler la limite.
+
+## Leçons du premier pilotage réel [TESTÉ EN CONDITIONS RÉELLES] (Resolve, 2026-10-11)
+- **Une base ou un projet de test, vérifié vide avant de s'en servir** : avant de créer un projet, lire la base courante, le projet ouvert et son contenu (timelines, médias). Créer un projet ferme celui qui est ouvert.
+- **Les fonctions « Insert… » d'une API de montage peuvent faire un montage par insertion** : elles coupent et poussent toute la timeline, son compris. Les essayer d'abord sur une timeline jetable ; sur une vraie timeline, préférer les gestes qui posent à une position absolue.
+- **Vérifier par l'image, pas par la valeur renvoyée** : un appel peut renvoyer True et exporter l'image d'avant ; un getter peut renvoyer le plan précédent. Comparer l'image exportée à l'image source extraite par ffmpeg suffit à prouver la précision à l'image.
+- **Concevoir le contrôle pour qu'il puisse échouer** : un masque testé sur un plan si zoomé qu'il tient entier dans le masque « réussit » toujours. Se demander, avant de regarder, à quoi ressemblerait l'échec.
+- **Fabriquer des médias de test qui portent la réponse** (un son externe décalé d'une valeur connue, un flash attendu à 255) : la mesure devient un oui ou un non.
+- **Classer chaque geste** : réussi, contourné (avec la recette), à la main (pourquoi). Les contournements vont dans le skill du logiciel, avec leurs limites.
 
 ## Ce que la phase 3 doit valider
 Voir `PLAN-TESTS-MCP.md` (tests 1 à 13 et suivants). Après validation, chaque recette passe ici ou dans le skill du logiciel avec la mention `[TESTÉ EN CONDITIONS RÉELLES]` et la date.

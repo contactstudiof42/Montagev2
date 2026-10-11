@@ -53,7 +53,7 @@ Différence avec le § 2 : **le look vient après la sortie** (look écrit pour 
 - Projet en **DaVinci YRGB Color Managed**, espace de traitement **DaVinci Wide Gamut / DaVinci Intermediate**, sortie Rec.709 Gamma 2.4 ; ou ACEScct pour un échange VFX ACES.
 - Vérifier le tag d'export (Gamma 2.4 contre Rec.709-A) avec ffprobe : test n° 9 de `PLAN-TESTS-MCP.md`.
 
-## 4. API de scripting Python [THÉORIQUE — doc officielle lue, rien exécuté : Resolve n'est pas installable dans la VM]
+## 4. API de scripting Python [THÉORIQUE pour le squelette ci-dessous ; les gestes vérifiés sont au § 4 ter]
 Source : README de scripting livré avec Resolve (Aide > Documentation > Developer) ; copies lues de 2022-2023 (Resolve 18), puis README et CHANGELOG 19 à 21.1 (`sources/resolve-scripting-api-19-20.md`). Lire le README de la version installée en phase 3.
 
 Prérequis : Resolve lancé (ou `-nogui`) ; Python 3 64 bits (Python 2 abandonné en 21). **« Advanced scripting now requires DaVinci Resolve Studio »** (page officielle 21.1 [V]) ; ce qui reste possible depuis la Console (Workspace > Console) en version gratuite est contradictoire selon les sources [A]. **Avant tout projet scripté : `resolve.IsStudio()` et `GetVersionString()`.** Depuis 21.1, Resolve Studio se pilote aussi par des assistants externes via un serveur MCP natif qui passe par cette API [SOURCÉ, 08/09/2026].
@@ -92,6 +92,18 @@ Autres méthodes (export `Timeline.Export` en EDL / XML FCP7 / FCPXML / AAF, `Im
 **Méthode d'agent** (cf. `PLAN-TESTS-MCP.md`) : projet de test dédié, une action à la fois, `ExportCurrentFrameAsStill` après chaque étape d'étalonnage et regarder l'image, journaliser.
 
 **Ce qui a changé de 19 à 21.1** (détail [details.md](details.md)) : classe **Graph** (`GetNodeGraph()` sur la timeline, le plan ou un ColorGroup ; LUT, DRX, activation des nodes) ; **on ne crée pas de node par script** : l'arbre se prépare dans un DRX ou une PowerGrade, le script l'applique. ColorGroups, `ExportLUT`, Quick Export, Voice Isolation et `NormalizeAudioLevel` scriptables, `TranscribeAudio`, `CreateMulticamClip`, `Get/SetSpeed`.
+
+## 4 ter. Piloter Resolve par son MCP natif [TESTÉ EN CONDITIONS RÉELLES] (2026-10-11, Resolve Studio 21.1.1)
+Détail appel par appel : `labo/mcp/journal-2026-10-11.md` ; capacités du serveur : `labo/mcp/resolve-mcp.md`.
+- **Tout passe par `run_script`** (Python sandboxé, `resolve` et `project` injectés, `result = …`). Pas de fichiers depuis Python, mais Resolve écrit où on lui dit.
+- **Œil** : `tl.SetCurrentTimecode(tc)` puis `project.ExportCurrentFrameAsStill(png)`, **depuis la page Edit** (sur la page Color, l'export prend l'image d'avant). Se fier à l'image, pas à `GetCurrentVideoItem()` (renvoie parfois le plan précédent).
+- **Poser** : `AppendToTimeline` avec `startFrame`/`endFrame` en images **de la source** (un rush 50p compte en images 50p), `endFrame` **exclusif**, `recordFrame` absolu (timeline à 90000 = 01:00:00:00). Monter = reconstruire : pas de lame ni de trim, on supprime (`DeleteClips`) et on repose.
+- **Ne jamais utiliser `InsertFusionTitleIntoTimeline` / `Insert…Generator…`** sur une timeline montée : montage par insertion sur la piste active, qui coupe et pousse tout, son compris. Texte, flash, aplat : **plan porteur** posé par `AppendToTimeline` sur une piste haute, puis `AddFusionComp()` et `TextPlus` / `Background` branché sur `MediaOut1` ; zoomer le porteur s'il n'a pas le format de la timeline.
+- **Vertical depuis UHD** : `tl.SetSetting("useCustomSettings","1")` puis 1080 / 1920 / 25 ; remplir = `ZoomX = ZoomY = 3,1605` ; `Pan` en pixels de timeline (+ = vers la droite, ±1166 px avant le bord).
+- **Vitesse** : `SetSpeed({"Percentage": 50, "RippleTimeline": False})` garde la durée et prend moitié moins de source ; un rush 50p à 50 % dans une timeline 25p donne un vrai ralenti image par image. Les clés Fusion (`BezierSpline`) ne prennent pas par ce pont : **rampe en paliers** (segments à 100 / 85 / 70 / 60 / 50 %) ou rampe lisse faite à la main.
+- **Son** : `SetProperties({"AudioVolume": dB})`, `SetFades({"FadeIn": n, "FadeOut": n})` (exacts au rendu) ; synchro double système `MediaPool.AutoSyncAudio([vidéo, wav], {"syncMode": resolve.AUDIO_SYNC_WAVEFORM})`, décalage lu dans `GetAudioMapping()`.
+- **Couleur** : `SetCDL` (nœud 1) ; LUT seulement depuis le dossier de LUT de Resolve, en chemin relatif ; une LUT de tirage (Kodak 2383, Fuji 3513) attend du **Cineon log** : sur du Rec.709 elle éclaircit et bleuit. Pas de création de nœud ni de Magic Mask par script (`CreateMagicMask` ne fait que suivre des traits déjà tracés à la main).
+- **Rendu** : `SetCurrentRenderFormatAndCodec("mp4","H264")` (codes : `GetRenderFormats()`, `GetRenderCodecs("mp4")`), `SetRenderSettings({"SelectAllFrames", "TargetDir", "CustomName", "AudioCodec": "aac", "AudioSampleRate": 48000})`, `AddRenderJob`, `StartRendering`, attendre dans le même script ; puis ffprobe et `qc_livraison.sh`.
 
 ## 4 bis. Fusion, Fairlight, saccade [THÉORIQUE ; détail : [details.md](details.md)]
 - **Fusion plutôt qu'After Effects** pour un effet plan par plan dans un montage qui vit dans Resolve (effacement, incrustation d'écran, keying, titre lié à un plan) : pas d'aller-retour, l'étalonnage passe après Fusion. **AE reste devant** pour le motion design et la typo animée (`montage-after-effects`). Piège : les Resolve FX posés dans Edit ne sont pas vus dans Fusion (faire un compound clip).

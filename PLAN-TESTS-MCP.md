@@ -4,6 +4,28 @@ Tout ce qui suit est **hypothèse à vérifier**. Rien ici n'est une recette val
 
 _Note de clôture (2026-10-10) : ce plan avait été écrit pour une « phase 2 » ; le découpage a changé. Phase 2 = analyse de vraies vidéos (`PHASE-2-BESOINS.md`), phase 3 = ce plan. Les mentions « phase 2 » ci-dessous désignent donc la phase 3, sauf les tests qui ne demandent que de regarder une vidéo ou un spectateur (44, 45, 47, 52, 62), qui peuvent se faire dès la phase 2._
 
+## Résultats de la phase 3, session 0 (Resolve, 2026-10-11) [TESTÉ EN CONDITIONS RÉELLES]
+Serveur MCP natif de Resolve Studio 21.1.1, base « TEST IA », projet `P3-BAC-A-SABLE`. Journal appel par appel : `labo/mcp/journal-2026-10-11.md` ; synthèse des capacités : `labo/mcp/resolve-mcp.md`.
+| Geste | Statut | Appel ou contournement |
+|---|---|---|
+| Importer, créer une timeline (résolution, cadence) | réussi | `ImportMedia`, `CreateEmptyTimeline`, `tl.SetSetting("useCustomSettings","1")` |
+| Poser à l'image près | réussi | `AppendToTimeline` ; `endFrame` exclusif, en images de la source |
+| Couper, raccourcir, déplacer | contourné | `DeleteClips` puis `AppendToTimeline` (pas de lame ni de trim) |
+| Musique, niveau, fondu | réussi | `SetProperties({"AudioVolume"})`, `SetFades` |
+| Texte (police SST) | contourné | plan porteur sur piste haute + Text+ dans `AddFusionComp()` ; **jamais `InsertFusionTitleIntoTimeline`** (insertion qui pousse tout) |
+| Nœud simple, LUT | réussi | `SetCDL` ; `GetNodeGraph().SetLUT(1, chemin relatif au dossier LUT)` ; LUT hors du dossier : échec |
+| Rendu H.264 et relecture | réussi | `SetCurrentRenderFormatAndCodec("mp4","H264")`, `AddRenderJob`, `StartRendering` ; ffprobe, `qc_livraison.sh` |
+| 1080x1920 25p depuis UHD 50p, recadrage | réussi | `ZoomX/Y` 3,1605, `Pan` |
+| Synchro son externe | réussi | `AutoSyncAudio` en `AUDIO_SYNC_WAVEFORM` (décalage exact) |
+| Flash blanc 1-2 images | contourné | porteur + Fusion Background blanc, porteur zoomé à 3,2 |
+| Ralenti | réussi | `SetSpeed({"Percentage": 50})` |
+| Rampe de vitesse | contourné | paliers de `SetSpeed` ; clés Fusion : échec ; rampe lisse : **à la main** |
+| Détourage | partiel | masque Fusion fixe : réussi ; Magic Mask : `CreateMagicMask` échoue sans traits **tracés à la main** |
+| SFX à l'image | réussi | `AppendToTimeline(mediaType 2, recordFrame)` |
+| Plan de fin ProRes alpha | réussi | piste V3, alpha respecté |
+| Fondu enchaîné | réussi | `AddTransition` |
+| Artlist dans Chrome | recherche réussie ; téléchargement en attente de l'accord de Diego | Claude in Chrome |
+
 ## Règles de pilotage (méthode, à appliquer dès le premier test)
 1. Ne jamais ouvrir ni modifier un projet client : créer un projet de test dédié (`TEST_MCP_<date>`), dans un dossier dédié.
 2. Avant toute action : vérifier quels hôtes sont connectés, lire la documentation/les skills que le serveur MCP expose lui-même.

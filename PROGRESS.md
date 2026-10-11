@@ -2,6 +2,12 @@
 
 _Lire en premier. Seul l'état présent compte ici. La chaîne d'analyse, les outils et les règles ci-dessous servent à analyser toute nouvelle référence. L'état de clôture de la phase 1 est archivé dans `archives/phase-1/PROGRESS-cloture-phase-1.md`, et l'historique des sessions 1 à 25 dans `archives/phase-1/PROGRESS-historique.md`._
 
+## PHASE 3 EN COURS (`PROMPT-PHASE-3.md`, sessions lancées par Diego seulement)
+- **Session 0 faite (2026-10-11)** : Resolve Studio 21.1.1 piloté par son MCP natif dans la base « TEST IA », projet `P3-BAC-A-SABLE` (timelines `T2_1080p25` et `V1_1080x1920_25`, enregistré). 22 gestes testés : journal `labo/mcp/journal-2026-10-11.md`, capacités et partage des tâches `labo/mcp/resolve-mcp.md`, tableau dans `PLAN-TESTS-MCP.md`, recettes dans `montage-resolve` § 4 ter et leçons dans `montage-pilotage-mcp`. Outil : `labo/outils/resolve/planche_controle.py`. Médias de test et images de contrôle : `videos/_travail/p3-bac-a-sable/` (non commités).
+- **Reste de l'étape 0** : télécharger un SFX sur Artlist et le ranger dans `videos/_travail/p3-bac-a-sable/sfx/` (recherche faite, téléchargement en attente de l'accord de Diego).
+- **Ensuite** : étape 1 du projet `videos/phase-3/sony-linkbuds/` (brief lu ; ce projet n'est pas parmi ceux de la phase 2, donc le test n'est pas biaisé). À trancher avec Diego : le brief demande des sous-titres de la parole, son retour du 11/10 dit « pas de sous-titre, que du visuel » pour la vidéo Sony.
+- Retour « Réponses aux hypothèses de goût » (11/10) non intégré : les cinq questions auxquelles il répond ne sont pas dans le dépôt ; Diego doit les redonner.
+
 ## PHASE 2 TERMINÉE (2026-10-11, session 11)
 - 45 vidéos analysées (fiches dans `analyses/`), passe de révision faite (`analyses/REVISION.md`), skills de création révisés (sessions 10-11 : regard, couleur-et-intention, expert, references, formats, rythme condensé à 13 Ko avec les preuves dans `details.md`, son-et-emotion, grammaire, youtube, kinetic-editing, motion-design-principes). **Synthèse de fin de phase dans `RAPPORT.md`** ; bilans détaillés archivés dans `archives/phase-2/RAPPORT-bilans-detailles-phase-2.md` ; état de session 10 dans `archives/phase-2/PROGRESS-session-10.md`.
 - **Désormais, chaque session ne fait que le démarrage de `CLAUDE.md`** : `git pull`, retours de Diego (`RETOURS-DIEGO.md`), boîte à références (`videos/a-traiter/`, `videos/NOTES-DIEGO.md`) avec le skill `montage-nouvelle-reference`. S'il n'y a rien de neuf : le dire en une ligne et s'arrêter.

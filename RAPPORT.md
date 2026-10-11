@@ -9,7 +9,9 @@ _Réécrit le 2026-10-11 (session 11, clôture de la phase 2) ; complété en se
 
 **Session 13** : Diego a déposé un tutoriel d'étalonnage (David Foxprod, « recréer la colo de *Seven* ») à lire comme une méthode : arbre de nœuds lu, apport de chaque nœud mesuré, méthode ajoutée à `montage-resolve` § 2 bis avec ses limites (fiche `analyses/methodes/david-foxprod-look-seven.md`).
 
-Désormais, chaque session ne fait que le démarrage de `CLAUDE.md` : retours de Diego, boîte à références (`montage-nouvelle-reference`).
+**Phase 3, session 0 (2026-10-11)** : premier pilotage réel de Resolve (Studio 21.1.1, MCP natif). Le montage à l'image près, le son (niveaux, fondus, synchro à la forme d'onde exacte), le recadrage vertical, les ralentis 50p, le flash, le SFX à l'image, le plan de fin avec alpha et le rendu contrôlé marchent par script. **Ce qui ne passe pas** : toute animation par clés (rampe lisse, texte ou zoom animé), la création d'un Magic Mask, la construction d'un arbre de nœuds. Deux pièges majeurs : `InsertFusionTitleIntoTimeline` fait un montage par insertion qui pousse toute la timeline ; l'export d'image depuis la page Color rend l'image d'avant. Détail : `labo/mcp/resolve-mcp.md`. Conséquence pour le projet Sony (kinetic à effets) : je peux livrer la structure, le rythme, le son et les effets statiques ; les effets animés seront soit en paliers, soit à faire à la main par Diego.
+
+Hors phase 3, chaque session ne fait que le démarrage de `CLAUDE.md` : retours de Diego, boîte à références (`montage-nouvelle-reference`).
 
 ## Ce que j'ai appris, par domaine
 Du plus solide au moins solide dans chaque domaine. Les principes vus sur plusieurs œuvres de familles différentes sont les plus fiables ; aucun d'eux n'est tombé à la révision.
