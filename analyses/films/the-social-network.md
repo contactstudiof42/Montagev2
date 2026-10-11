@@ -1,6 +1,6 @@
 # The Social Network (David Fincher, 2010 ; montage Kirk Baxter et Angus Wall)
 
-_Fiche ouverte le 2026-10-11 (phase 2, session 8, film vague 3 n°1). **État : passe globale + 3 séquences + coupes / parole de l'ouverture + calage d'Henley** ; restent les dépositions (raccords de parole) et la fin (voir « À faire »). Source : Blu-ray 1080p H.264 (SDR BT.709), **VO anglaise** (piste 3), sous-titres anglais complets (2 290). Travail dans `videos/_travail/socialnetwork/`. Planches commitées : `social-network-ouverture.png` (0:00-5:40), `social-network-facemash.png` (9:00-12:30), `social-network-henley.png` (1:24:10-1:26:20). Fiche de phase 1 confrontée : `culture/kirk-baxter-angus-wall-social-network.md`._
+_Fiche ouverte le 2026-10-11 (phase 2, session 8, film vague 3 n°1). **État : passe globale + 4 séquences + coupes / parole de l'ouverture + calage d'Henley** ; restent les dépositions (raccords de parole) et la trahison d'Eduardo (voir « À faire »). Source : Blu-ray 1080p H.264 (SDR BT.709), **VO anglaise** (piste 3), sous-titres anglais complets (2 290). Travail dans `videos/_travail/socialnetwork/`. Planches commitées : `social-network-ouverture.png` (0:00-5:40), `social-network-facemash.png` (9:00-12:30), `social-network-henley.png` (1:24:10-1:26:20), `social-network-fin.png` (1:53:00-1:56:30). Fiche de phase 1 confrontée : `culture/kirk-baxter-angus-wall-social-network.md`._
 
 Skills relus : `montage-rythme` (densité, liste dite, timing), `montage-grammaire` (champ-contrechamp, J-cut, montage parallèle), `montage-son-et-emotion`, `montage-couleur-et-intention`, grille de `montage-regard`, et la fiche de phase 1 ci-dessus.
 
@@ -33,11 +33,17 @@ Faire sentir une intelligence plus rapide que les autres, qui s'isole par sa vit
 - **Calage** [mesuré, musique séparée par demucs, `calage.py`] : **aucun**, ni sur les attaques fortes (45 % contre 43 % au hasard) ni sur les temps (31 % contre 35 %), ni sur la course entière ni sur ses 45 dernières secondes. Le montage suit **la courbe du Grieg** (le volume monte de -19 à -11,5 LUFS jusqu'à 1:25:30), pas ses temps : la densité suit l'arrangement, comme dans les clips (Ziak, SDM). Le calage « sur les coups de rame » (Moviegoings) est visuel et n'est pas mesuré ici.
 - **La fin** : le son retombe à l'arrivée (-17 puis -25/-30 dans le salon), un plan de paysage de 4,8 s, puis la réception en plans de 1 à 3 s et un plan de 13,9 s sur la conversation avec le prince : le vide après la course, puis l'humiliation en plan tenu.
 
+### La fin (1:52:55-1:55:34) [VU SUR IMAGES, `social-network-fin.png`]
+- La dernière conversation avec l'avocate est encore en champ-contrechamp de 1,1 à 4,6 s ; « You're not an asshole, Mark. You're just trying so hard to be » (3,3 et 3,6 s), elle sort (5,4 s).
+- Puis **le film change de norme** : Mark seul, 12,0 s ; le clavier (1,5 s), l'écran (2,6 s), son visage (7,5 s), la page Facebook d'Erica (6,0 s), et des plans de 4,4 à **21,5 et 20,6 s** pendant qu'il attend et rafraîchit la page. Les cartons d'épilogue (« le plus jeune milliardaire du monde ») s'inscrivent **sur son visage** (9,8 s), pas sur du noir. La parole cesse, la courbe de son devient une bande continue et basse.
+- Un film de médiane 2,2 s finit sur ses plans les plus longs : **l'écart à la norme** (bilan de la vague 2, *La Haine* à l'envers) dit la solitude que tout le débit préparait. La boucle est fermée avec l'ouverture (Erica, la rupture) sans un mot.
+
 ## Ce qui confirme, contredit ou complète mes skills et fiches
 - **Corrige** la fiche de phase 1 : l'ouverture dure 4 min 54 s de dialogue (pas 7 min) ; « la coupe tombe souvent pendant une réplique » ne vaut que pour un tiers des coupes, le chevauchement vient de l'absence de trous ; Henley n'atteint pas « plusieurs coupes par seconde » (plateau à 1 s) et ne coupe pas sur les temps de la musique.
 - **Confirme** « le climax n'est pas plus rapide » (dixième film) : les crêtes sont Facemash et Henley, des processus et une course, pas le sommet dramatique (les dépositions, la trahison d'Eduardo).
 - **Confirme** « une liste dite, une image par élément » (`montage-rythme`) : la nuit de Facemash.
 - **Confirme** « la densité suit l'arrangement, pas les temps » (bilan des clips) et « l'accélération adossée à une musique qui accélère » (fiche de phase 1, principe 3), en précisant : sur la courbe, pas sur la grille.
+- **Confirme** « l'écart à la norme » (vague 2) dans l'autre sens que *La Haine* : la vitesse est la norme, la fin la rompt par des plans de 12 à 21,5 s.
 - **Complète** « plus un film coupe vite, plus il doit respirer » (bilan vague 1) : *The Social Network* coupe vite **sans** creux ; il respire par le son (la sortie du bar, le noir avant Henley) plutôt que par le montage. Contre-exemple partiel, ou autre levier.
 
 ## Principes transférables
@@ -51,5 +57,5 @@ Rien (aucune note dans `NOTES-DIEGO.md`). Le film n'est pas dans GOUTS.md ; il e
 
 ## À faire
 - Les dépositions : compter les raccords de parole (question en déposition, réponse dans le passé) dans le premier tiers (repère de la fiche de phase 1).
-- La fin (Mark seul qui rafraîchit la page d'Erica, environ 1:53-1:56) et la trahison d'Eduardo (environ 1:43-1:45).
+- La trahison d'Eduardo (environ 1:43-1:45).
 - Couleur par lieu (Harvard d'hiver / Californie) sur images extraites, pas sur la planche.
