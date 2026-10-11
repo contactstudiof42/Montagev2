@@ -37,3 +37,9 @@ Rien sur cette vidéo.
 ## Pas fait, doutes
 - Transcription Whisper finie, sans boucle (`videos/_travail/boxho/transcription.srt`), non lue en entier. Le passage le plus fort du récit n'est pas localisé.
 - L'hypothèse du montage automatique n'est pas prouvée (je n'ai vérifié que deux plans de 1,52 s).
+
+## Révision (passe de révision, session 9, 2026-10-11)
+Outil apparu après l'analyse (session 5) : `spectro_coupes.py` (session 8). Pas de fond musical : spectrogramme du mixage (les deux panneaux sont identiques). Planche `boxho-revision-spectro.png` (30 coupes, une sur 2, 45:00-50:40).
+- Outil sur le mixage : 75 % (49:00-50:40, 16 coupes), 63 % (45:00-50:40, 59 coupes). **À l'œil : 14 coupes sur 30 au milieu d'une phrase (47 %), 10 au ras d'un mot (33 %), 6 dans un silence (20 %).**
+- **Corrigée** : « 71 % des coupes pendant la parole » ; borne haute, le chiffre vu est 47 %.
+- **Confirmée** : les coupes ne cherchent pas les pauses (une sur cinq seulement dans un silence) ; le récit de l'invité est tenu, la réaction de l'intervieweur brève.
