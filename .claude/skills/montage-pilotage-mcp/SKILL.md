@@ -52,5 +52,12 @@ L'erreur typique d'un agent n'est pas le bug, c'est la dérive : vingt appels co
 - **Fabriquer des médias de test qui portent la réponse** (un son externe décalé d'une valeur connue, un flash attendu à 255) : la mesure devient un oui ou un non.
 - **Classer chaque geste** : réussi, contourné (avec la recette), à la main (pourquoi). Les contournements vont dans le skill du logiciel, avec leurs limites.
 
+## Leçons du premier projet monté (Sony, 2026-10-11) [TESTÉ EN CONDITIONS RÉELLES]
+- **Lire les métadonnées des rushes avant tout** (`ffprobe` : rotation, transfert, cadence ; XML caméra : gamma) : les 252 rushes étaient **verticaux** (`rotation=90`) et en **S-Log3** ; un proxy `scale=640:360` forcé les écrasait sans erreur visible. Vingt minutes de proxies perdues.
+- **Une API qui « ne sait pas » peut savoir autrement** : les clés Fusion refusées par affectation (`spline[t]=v`) passent par `SetKeyFrames` en table ; demander « quelle autre porte ? » avant de déclarer un geste impossible (retour de Diego).
+- **Monter = calculer** : un montage musical, une crête de SFX, un raccord de voix se calculent en images (crête mesurée du fichier, temps de la musique en images du montage) ; on pose une fois, on vérifie par bandes d'images du rendu.
+- **Rendre tôt** : le premier rendu (V0, 16 s) a révélé une saturation (+4,4 dBTP) qu'aucune relecture de la timeline n'aurait montrée ; un rendu complet coûte moins qu'une image exportée par plan.
+- **Mesurer chaque plan sur le rendu** (luminance moyenne par plan) trouve les plans illisibles qu'une planche à 120 px fait passer.
+
 ## Ce que la phase 3 doit valider
 Voir `PLAN-TESTS-MCP.md` (tests 1 à 13 et suivants). Après validation, chaque recette passe ici ou dans le skill du logiciel avec la mention `[TESTÉ EN CONDITIONS RÉELLES]` et la date.

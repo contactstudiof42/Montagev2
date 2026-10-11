@@ -112,6 +112,16 @@ Détail appel par appel : `labo/mcp/journal-2026-10-11.md` ; capacités du serve
 - **Fairlight** : normalisation au rendu dans Deliver > Audio (EBU R128, ATSC A/85, préréglages) ; compteur, bus et stems non scriptables. Mesurer soi-même la sortie (`montage-loudness-livraison`).
 - **Saccade choisie** (garder quelques images d'un rush à strobe et les tenir 2-4 images) : **tenir, jamais fondre**. D'abord **Retime Process = Nearest** sur chaque clip (le réglage du clip l'emporte sur le projet), puis couper et **Freeze Frame (Shift-R)** image par image ; version la plus fidèle : Fusion **Time Stretcher** en Nearest, clés en Step. Les Freeze Frames ne passent **pas** en XML FCP7 vers Premiere : construire la saccade dans l'application qui finalise, ou la rendre en média avant l'échange.
 
+## 4 quater. Recettes du premier projet monté (Sony, 2026-10-11) [TESTÉ EN CONDITIONS RÉELLES]
+- **Rushes verticaux** (métadonnée `rotation=90`, Sony ZV-E1) : Resolve applique la rotation à l'import (2160x3840) ; dans une timeline 1080x1920, plein cadre à zoom 1 et 2× de marge pour les punch-ins.
+- **S-Log3 sans gestion des couleurs** : `GetNodeGraph().SetLUT(1, "Sony/SLog3SGamut3.CineToLC-709TypeA.cube")` sur chaque plan ; puis `SetCDL` sur le nœud 1 pour corriger : **le CDL et la LUT du même nœud se combinent** (pente 1,25 + décalage 0,02 : luminance moyenne 28 → 45 sur un plan sombre).
+- **Fichier son** dans `AppendToTimeline` : `startFrame`/`endFrame` en images de la **timeline** (25 i/s), quel que soit l'échantillonnage ; le son d'un **rush 50p** se compte en images 50p.
+- **Fondu enchaîné son** : `AddTransition({"type":"Cross Fade +3 dB","category":"audio",…})` ; il disparaît si l'on supprime l'un des deux plans (le reposer).
+- **Composition d'un plan** : temps de 0 à 2×(durée−1) pour un rush 50p à 100 % (`COMPN_RenderStart` = 0). Un `TextPlus` ajouté s'appelle `Text1` : le retrouver par `GetAttrs()["TOOLS_RegID"]`.
+- **Secousse amortie sans clés** : `Transform.Size = 1.06` et `Center.SetExpression("Point(0.5+0.025*sin(time*2.4)*max(0,1-time/10), 0.5+0.02*cos(time*3.1)*max(0,1-time/10))")`.
+- **Musique masterisée fort** (MP3 de banque) : posée à 0 dB elle sature le mix ; partir de -8 dB, mesurer le rendu (`qc_livraison.sh`), ajuster par pas de 1 dB.
+- Un rendu H.264 de 60 s en 1080x1920 depuis des rushes UHD HEVC 4:2:2 10 bits avec 68 compositions Fusion : **14 à 18 s**.
+
 ## 5. À vérifier en phase 3
 - README livré avec la version installée sur le Mac : ce qui reste scriptable en version gratuite.
 - Les codes exacts de `SetCurrentRenderFormatAndCodec` (lister avec `GetRenderFormats()`, `GetRenderCodecs()`).

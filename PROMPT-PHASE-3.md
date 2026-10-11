@@ -44,7 +44,7 @@ Diego dépose sa version dans `final-diego/` et note les versions dans `RETOURS-
 - Bilan court dans `RAPPORT.md`.
 
 ## Leçons de phase 3 (à enrichir à chaque projet)
-- (vide)
+- **Sony LinkBuds (2026-10-11, avant la comparaison avec Diego)** : lire rotation et gamma des rushes avant tout proxy ; dérusher en planches verticales de 8 vignettes par rush (25 min pour 252 rushes, 40 min de matière) ; le dérush trouve ce que le brief ne dit pas (les rushes donnent les oreilles et les bijoux, pas le geste de mettre l'écouteur ; un changement de lumière au rouge qui porte le sommet ; le décompte de la coach, un son sans besoin de sous-titre) ; la musique décide de la structure (un extrait continu de 60 s existait dans le morceau, avec un silence numérique avant le drop) ; rendre la V0 tôt, la mesurer (loudness, luminance par plan), corriger.
 
 ## Chaque session
 1. Démarrage de `CLAUDE.md` (git pull, retours, boîte à références).
