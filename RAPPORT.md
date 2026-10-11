@@ -4,7 +4,7 @@ _Réécrit à chaque session (dernière : 2026-10-11, session 5). Version préc�
 
 ## Où j'en suis
 - **Vague 1 des films terminée** : Interstellar, Joker, Whiplash, Le Dîner de cons, Mad Max: Fury Road (fiches dans `analyses/films/`), plus SDM « #Malentouré » (test de méthode).
-- **Clips terminés** (sessions 3-4) et **pubs terminées** (session 4) : fiches dans `analyses/clips/` et `analyses/pubs/`, bilans ci-dessous. **YouTube : dix sur dix vus** (sessions 4-5) : B-roll, EGO, Tiger, CIA, les deux « Qui est l'imposteur » (une fiche), Boxho, YggTorrent, KAIZEN (cinq séquences) ; **Popcorn en première passe seulement** ; voir « Constats YouTube ».
+- **Clips terminés** (sessions 3-4) et **pubs terminées** (session 4) : fiches dans `analyses/clips/` et `analyses/pubs/`, bilans ci-dessous. **YouTube : dix sur dix vus** (sessions 4-5) : B-roll, EGO, Tiger, CIA, les deux « Qui est l'imposteur » (une fiche), Boxho, YggTorrent, KAIZEN (cinq séquences) ; Popcorn (quatre séquences) ; voir « Constats YouTube ».
 - La mission a changé (modification de Diego dans `PROMPT-PHASE-2.md`, commitée en session 3) : une **passe de révision** (étape 7) viendra avant la synthèse finale, pour relancer les outils récents sur les premières vidéos.
 - Outils de la phase 2 (`labo/outils/`) : `passe_globale.sh` (avec `HDR=1`), `courbes_film.py`, `couleur_film.py`, `sequence.py`, `verif_plan.py`, `calage.py`, `coupes_parole.py`, et en session 3 `echantillon_tiers.py` (placement du sujet, à compter à l'œil). `centrage.py` (saillance automatique) a échoué à la calibration : ne pas citer ses chiffres.
 
@@ -77,7 +77,7 @@ _Réécrit à chaque session (dernière : 2026-10-11, session 5). Version préc�
 
 **Pour Studio F42** : deux formules réutilisables tout de suite, à éprouver en maquette : (a) **la marque comme lieu ou costume** et le nom en signature ; (b) pour un événement de créateurs, **les noms par paquets de couleur** et un vol continu pour entrer et sortir.
 
-## Constats YouTube (dix vidéos, sessions 4-5 ; Popcorn en première passe : bilan définitif à la session 6)
+## Constats YouTube (dix vidéos, sessions 4-5 ; bilan définitif à rédiger en session 6)
 | Vidéo | Durée | Plans | Médiane | LUFS / LRA | Forme |
 |---|---|---|---|---|---|
 | B-roll (tutoriel) | 8:40 | — | — | -11,7 | interview couverte par du stock qui raconte |
@@ -88,7 +88,7 @@ _Réécrit à chaque session (dernière : 2026-10-11, session 5). Version préc�
 | Philippe Boxho (LEGEND) | 1:07:44 | ≥ 929 | 3,4 s | **-24,0 / 9,7** | interview-conteur ; champ / contrechamp ; 308 silences gardés |
 | « Créer YggTorrent » | 1:11:20 | ≥ 651 | 4,8 s | -22,0 / 5,2 | enquête ; témoins anonymes = mannequin + couleur + police ; plans de 24-45 s |
 | « KAIZEN » (Everest) | 2:26:38 | ≥ 2 372 | 2,6 s | -17,0 / **12,3** | film de cinéma ; vagues de 3 à 50 coupes/min ; sommet lent après une rafale de souvenirs et 5 s de silence |
-| « POPCORN » (première passe) | 2:32:06 | ≥ 2 450 | 2,5 s | -18,2 / 7,7 | talk-show de plateau ; 15-20 coupes/min, deux crêtes à regarder |
+| « POPCORN » | 2:32:06 | ≥ 2 450 | 2,5 s | -18,2 / 7,7 | talk-show de plateau ; 15-20 coupes/min ; les crêtes sont des inserts (rubrique d'extraits, jeu) |
 
 **Ce que les dix vidéos disent :**
 1. **Dans le documentaire et la vulgarisation, la densité suit le type de phrase** : une liste dite reçoit une image par élément (0,6 à 1,8 s ; EGO, Tiger, CIA), une thèse un plan tenu face caméra, une preuve un plan tenu en temps réel (le test du game.com, 12 à 19 s). Trois vidéos sur trois. Même geste que la rafale-inventaire des clips (Gare du Nord, 6G). [VU SUR IMAGES, mesuré]
