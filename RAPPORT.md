@@ -1,11 +1,13 @@
 # RAPPORT — synthèse de fin de phase 2
 
-_Réécrit le 2026-10-11 (session 11, clôture de la phase 2) ; complété en session 12 (sept vidéos réseaux de Diego). **Les bilans détaillés** (tableaux et constats par vague, clips, pubs, YouTube, projets F42, révision, erreurs corrigées, version complète des doutes) sont archivés dans `archives/phase-2/RAPPORT-bilans-detailles-phase-2.md` ; les versions de session dans `archives/phase-2/RAPPORT-session-*.md`. Synthèse de fin de phase 1 : `archives/phase-1/RAPPORT-synthese-cloture-phase-1.md`._
+_Réécrit le 2026-10-11 (session 11, clôture de la phase 2) ; complété en session 12 (sept vidéos réseaux de Diego) et en session 13 (un tutoriel d'étalonnage). **Les bilans détaillés** (tableaux et constats par vague, clips, pubs, YouTube, projets F42, révision, erreurs corrigées, version complète des doutes) sont archivés dans `archives/phase-2/RAPPORT-bilans-detailles-phase-2.md` ; les versions de session dans `archives/phase-2/RAPPORT-session-*.md`. Synthèse de fin de phase 1 : `archives/phase-1/RAPPORT-synthese-cloture-phase-1.md`._
 
 ## Où j'en suis
 **Phase 2 terminée.** 45 vidéos vues et analysées (13 films, 8 clips, 7 pubs, 10 vidéos YouTube, 7 projets du studio), une fiche chacune dans `analyses/` ; passe de révision faite (45 conclusions revérifiées avec les outils récents) ; tous les skills de création révisés à la lumière de la phase 2 (sessions 10-11). Les skills techniques (After Effects, Blender, Resolve, Premiere, pipeline couleur, workflows, IA générative, pilotage MCP) n'ont rien reçu de la phase 2, qui portait sur le regard ; seul le QC de livraison est entré dans `montage-loudness-livraison`.
 
 **Session 12** : Diego a ajouté sept vidéos réseaux qu'il aime (`videos/reseaux/`) : analysées image par image, sept fiches dans `analyses/reseaux/`, bilan ci-dessous ; la lacune prioritaire de fin de phase (le kinetic de réseaux) est en partie comblée.
+
+**Session 13** : Diego a déposé un tutoriel d'étalonnage (David Foxprod, « recréer la colo de *Seven* ») à lire comme une méthode : arbre de nœuds lu, apport de chaque nœud mesuré, méthode ajoutée à `montage-resolve` § 2 bis avec ses limites (fiche `analyses/methodes/david-foxprod-look-seven.md`).
 
 Désormais, chaque session ne fait que le démarrage de `CLAUDE.md` : retours de Diego, boîte à références (`montage-nouvelle-reference`).
 
@@ -30,6 +32,7 @@ Du plus solide au moins solide dans chaque domaine. Les principes vus sur plusie
 
 ### Couleur et image (`montage-couleur-et-intention`)
 **Une matière par monde** (teinte, mais aussi format, support, texture) est le principe de couleur le plus répandu (au moins douze œuvres) et ce qui rend lisibles des plans de 0,5 à 2 s ; **la couleur forte se mérite et change de place** (*Joker*) ; **le monde de référence est le moins coloré** ; une couleur peut ne rien raconter (comédie) ; **la nuit baisse plus qu'elle ne contraste**, la lumière restant sur ce qu'il faut voir ; une rafale tient en une seule couleur ; le souvenir passe par le support. La vitesse se rachète par le sujet au centre (*Mad Max*), le décentrage va avec les plans tenus (*Joker*). [VU SUR IMAGES]
+**Reproduire un look de référence** (session 13, tutoriel Foxprod) : un arbre court et nommé (CST IN, exposition, balance, contraste, branche parallèle densité / fenêtres / qualifieur, masque, texture, CST OUT, deux looks en A / B) rattrape la teinte ; **la densité perdue au tournage ne revient pas** (son image finale reste bien plus claire que *Seven*). Le look d'une référence se prépare au tournage. [VU SUR IMAGES, mesuré sur la vidéo]
 
 ### Son (`montage-son-et-emotion`, `montage-loudness-livraison`)
 Le silence ouvre le sommet dans les mix en plateau (clips, pubs) ; un carton récurrent peut être un trou de son ; le son le plus fort peut marquer l'écart entre les personnages, pas la fête ; le niveau n'est une norme chez aucun créateur, la dynamique (LRA) dit la famille. **Tout a été mesuré, rien écouté.** [mesuré, pas écouté]
@@ -89,10 +92,12 @@ Détail et parades dans `PROMPT-PHASE-2.md` (« Leçons de méthode ») et `mont
 - Boxho : montage multicaméra automatique ou règle fixe du monteur, non prouvé.
 - `.claude/settings.json` (ajouté par Diego) n'est pas commité : le garde-fou de l'agent refuse ce commit. Diego peut le commiter lui-même.
 - Session 12 : `flash_check.py` fait échouer les sept vidéos réseaux, même la pub Sephora sans flash visible ; l'outil compte sans doute les coupes contrastées. À confronter à un vrai test (Harding) avant de s'y fier sur des coupes ordinaires. Les sept vidéos sont toutes à -14,0/-14,2 LUFS : probablement renormalisées par la plateforme ou le téléchargement, le mix d'origine n'est pas jugeable. Darius et lucasbosc ont des crêtes à +0,4 dBFS.
+- Session 13 (tutoriel Foxprod) : outils de chaque nœud, type des mélangeurs, contenu d'OVERLAY et de « LOOK K… » illisibles à 290 kb/s ; la branche DENSITÉ semble partir de la source log et être mélangée à une branche convertie (deux espaces différents ?) ; la numérotation des nœuds change en cours de vidéo (montage de deux captures ?). Rétention d'argent sur les copies de *Seven* : de mémoire, non vérifié.
 - Session 12 : même anomalie d'horloge (11:48 à environ 12:00 pour sept vidéos vues image par image et la mise à jour de cinq skills).
 - Session 11 : l'horloge système a très peu avancé (11:04 à environ 11:10) pour la révision de sept skills et la synthèse ; même anomalie qu'en session 10. Je la note sans pouvoir l'expliquer.
 
 ## Hypothèses de goût (à confirmer par d'autres références ou par Diego)
+- **Session 13** : après pasalu, darius et l'équipe de France, un tutoriel sur le look d'un film de pellicule (avec deux émulations Fuji / Kodak probables) : le **look film** revient pour la quatrième fois, ce qui va avec sa préférence dictée (« le grain et le look film »). Ce que Diego en attend ici est une méthode simple pour reproduire un look, pas un goût nouveau.
 - **Session 12** : ses sept vidéos réseaux suggèrent que son « kinetic » est **un montage calé à l'image, aux transitions variées, au look film, qui respire**, plutôt que le kinetic à whoosh et captions de mon skill ; deux traits reviennent dans au moins trois des sept : le look pellicule (pasalu, darius, équipe de France) et la typo serif fine (darius, équipe de France). Hypothèse, pas sa parole.
 - L'alterné par blocs d'*Avengers* est une alternative à l'accélération d'*Interstellar* quand il y a plus de trois lignes ; je ne sais pas si Diego l'aime.
 - *Interstellar* et *Joker* ne coupent pas vite ; son goût pour la vitesse est réservé au kinetic. *Mad Max* montre qu'un film peut tenir les deux.

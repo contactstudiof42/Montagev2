@@ -65,6 +65,7 @@ Pièges de mesure : une source HDR lue en SDR donne une image grise et des mesur
 5. **Contraintes** : charte, produit fidèle, diffusion, matière tournée.
 6. **Intention** en une demi-page : 2-3 références **précises** (un plan), ce qu'on refuse.
 7. **Tester sur 3 plans clés** (début, pic, fin), en mouvement et dans le montage.
+8. **Si le client montre un plan de référence** (« je veux la colo de *Seven* ») : le look d'une référence vient d'abord de sa **prise de vue** (contre-jour, valeur du ciel, cadre) ; l'étalonnage rattrape la teinte, pas une densité perdue au tournage [VU SUR IMAGES, David Foxprod, `analyses/methodes/david-foxprod-look-seven.md`]. Le dire avant le tournage ; la méthode d'arbre est dans `montage-resolve` § 2 bis.
 
 ### Traduire les mots entendus [THÉORIQUE]
 | Mot | Piste |

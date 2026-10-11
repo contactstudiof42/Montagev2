@@ -11,3 +11,4 @@ Une ligne par référence déposée dans `videos/a-traiter/` ou nommée dans `vi
 | malkimikee — Paris, tour Eiffel (11,9 s) | reseaux | 2026-10-11 | 2026-10-11 | `analyses/reseaux/malkimikee-paris.md` |
 | pasalu.jpg — chambre d'hôtel, look film (13,2 s) | reseaux | 2026-10-11 | 2026-10-11 | `analyses/reseaux/pasalu-chambre-annees-folles.md` |
 | yungchillyboy — fête foraine de nuit (13 s) | reseaux | 2026-10-11 | 2026-10-11 | `analyses/reseaux/yungchillyboy-fete-foraine.md` |
+| David Foxprod — « POV : tu essaies de recréer la colo de Seven » (12 s, 720x1280 ; méthode d'étalonnage, pas de fiche de montage) | methodes | 2026-10-11 | 2026-10-11 | `analyses/methodes/david-foxprod-look-seven.md` |

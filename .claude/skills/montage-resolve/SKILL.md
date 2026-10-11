@@ -1,6 +1,6 @@
 ---
 name: montage-resolve
-description: DaVinci Resolve — étalonnage par nodes (série, parallèle, layer mixer), gestion des couleurs (RCM, DaVinci Wide Gamut, ACEScct), Deliver et rendus en lot, Fusion, Fairlight, saccade et retime, scripting Python (GetNodeGraph, AppendToTimeline, AddRenderJob, export EDL/XML/AAF). Mots d'un étalonneur ou d'un monteur : « on passe en étalo », « arbre de nodes », « monter un look », « qualifier la peau », « power window », « rendu en lot », « automatiser l'export », « script Resolve », « je fais le plan dans Fusion ? ».
+description: DaVinci Resolve — étalonnage par nodes (série, parallèle, layer mixer), gestion des couleurs (RCM, DaVinci Wide Gamut, ACEScct), Deliver et rendus en lot, Fusion, Fairlight, saccade et retime, scripting Python (GetNodeGraph, AppendToTimeline, AddRenderJob, export EDL/XML/AAF). Mots d'un étalonneur ou d'un monteur : « on passe en étalo », « arbre de nodes », « monter un look », « recréer la colo de tel film », « reproduire le look de cette référence », « qualifier la peau », « power window », « rendu en lot », « automatiser l'export », « script Resolve », « je fais le plan dans Fusion ? ».
 ---
 
 # DaVinci Resolve
@@ -30,6 +30,24 @@ Pourquoi cet ordre : corriger avant de styliser ; un look appliqué sur une imag
 - Une secondaire qui doit faire vivre une couleur ne se place **ni avant** un node qui écrase (elle est écrasée avec le reste) **ni après** (la couleur à qualifier n'existe plus) : on prend la **clé sur l'entrée** (node parallèle ou clé externe branchée sur la source) et on mélange en sortie. Mesuré : 0 % → 1,7 % de pixels chauds, 0 % hors de l'objet.
 - Des gammas un peu différents par canal sur une image grise (0,75 / 0,80 / 0,78) fabriquent une dominante forte : préférer le gamma maître + une balance séparée.
 - Qualifier un objet fin et sombre (pieds de chaise rouillés à v ≈ 0,15) ne prend que ses **bords** : liseré coloré. Remèdes : remonter la matière au tournage, clean black / blur de la clé, ou fenêtre + qualifieur.
+
+## 2 bis. Reproduire un look d'après une image de référence : une méthode simple parmi d'autres
+Vue chez David Foxprod (« recréer la colo de *Seven* », fiche `analyses/methodes/david-foxprod-look-seven.md`). Arbre et ordre [VU SUR IMAGES], rôle de chaque nœud [THÉORIQUE] (outils illisibles à l'écran).
+1. **Retourner le plan comme la référence** (cadre, amorce, contre-jour, valeur du ciel) : la moitié du look se fait au tournage.
+2. **CST IN** → en série **EXPO** → **WB** → **CON / SAT** (une idée par nœud, nommé).
+3. En parallèle, depuis la source : **DENSITÉ** → correction localisée (fenêtres : jaunit le ciel sans toucher le visage) → **QUALIFIER** (visage). Mélangeur.
+4. **MASK** puis **OVERLAY** (texture), encore dans l'espace de travail.
+5. **CST OUT**, puis **deux looks en parallèle** (FUJI, K…), un seul actif : A / B immédiat.
+6. Juger : activer les nœuds un à un, puis tout désactiver d'un coup (avant / après), la référence à côté.
+
+Différence avec le § 2 : **le look vient après la sortie** (look écrit pour du Rec.709). Plus simple, mais à refaire pour une sortie HDR ou cinéma.
+
+**Quand elle ne suffit pas** [mesuré sur la vidéo, sinon THÉORIQUE] :
+- **La densité ne se rattrape pas** si le tournage l'a perdue : sur sa propre démonstration, la teinte est proche mais l'image finale reste bien plus claire (ciel 249 / 234 / 175 contre 184 / 167 / 106 pour *Seven*) ; un ciel brûlé ne redevient pas ocre.
+- **Une séquence** : elle règle un plan ; il faut ensuite apparier les autres (stills en galerie, split screen, parade RVB et vectorscope : aucun de ces outils n'est montré).
+- **Plans qui bougent** : fenêtres et qualifieur à suivre plan par plan.
+- **Référence = copie web compressée** : on copie aussi ses défauts ; chercher la meilleure source, juger sur les scopes plutôt qu'à l'œil sur un écran non calibré.
+- **Look qui vient du tirage ou de la lumière** (rétention d'argent, brume, décor) : aucun nœud primaire ne l'imite ; il faut un outil dédié (émulation de pellicule, Halation, grain) ou le tournage.
 
 ## 3. Gestion des couleurs (RCM) [THÉORIQUE]
 - Projet en **DaVinci YRGB Color Managed**, espace de traitement **DaVinci Wide Gamut / DaVinci Intermediate**, sortie Rec.709 Gamma 2.4 ; ou ACEScct pour un échange VFX ACES.

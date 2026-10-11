@@ -6,6 +6,7 @@ _Lire en premier. Seul l'état présent compte ici. La chaîne d'analyse, les ou
 - 45 vidéos analysées (fiches dans `analyses/`), passe de révision faite (`analyses/REVISION.md`), skills de création révisés (sessions 10-11 : regard, couleur-et-intention, expert, references, formats, rythme condensé à 13 Ko avec les preuves dans `details.md`, son-et-emotion, grammaire, youtube, kinetic-editing, motion-design-principes). **Synthèse de fin de phase dans `RAPPORT.md`** ; bilans détaillés archivés dans `archives/phase-2/RAPPORT-bilans-detailles-phase-2.md` ; état de session 10 dans `archives/phase-2/PROGRESS-session-10.md`.
 - **Désormais, chaque session ne fait que le démarrage de `CLAUDE.md`** : `git pull`, retours de Diego (`RETOURS-DIEGO.md`), boîte à références (`videos/a-traiter/`, `videos/NOTES-DIEGO.md`) avec le skill `montage-nouvelle-reference`. S'il n'y a rien de neuf : le dire en une ligne et s'arrêter.
 - **Session 12 (2026-10-11)** : retour de Diego intégré : 7 vidéos de `videos/reseaux/` analysées image par image (fiches `analyses/reseaux/`, bilan dans `RAPPORT.md`), `montage-kinetic-editing` et `montage-formats` mis à jour. Scripts de la méthode « toutes les images » : `labo/outils/reseaux/`.
+- **Session 13 (2026-10-11)** : retour de Diego intégré : vidéo de méthode d'étalonnage (David Foxprod, look de *Seven*) lue comme un tutoriel, fiche `analyses/methodes/`, méthode dans `montage-resolve` § 2 bis. Nouvelle catégorie `videos/methodes/` (tutoriels : on en tire une méthode, pas une analyse de montage).
 - **Lacunes restantes** si une référence arrive : face caméra en jump cuts et captions mot à mot (Hormozi, MrBeast), pub de 6 et 30 s, corporate classique ; écouter un kinetic (rien n'a été écouté).
 - `.claude/settings.json` (ajouté par Diego) n'est pas commité : le garde-fou de l'agent refuse ce commit. À laisser à Diego.
 
@@ -86,8 +87,9 @@ _Lire en premier. Seul l'état présent compte ici. La chaîne d'analyse, les ou
 | reseaux | malkimikee — Paris (4:3) | 0 min 12 s | ✔ 2026-10-11 (toutes les images) |
 | reseaux | pasalu.jpg — chambre, look film (16:9) | 0 min 13 s | ✔ 2026-10-11 (toutes les images) |
 | reseaux | yungchillyboy — fête foraine (16:9) | 0 min 13 s | ✔ 2026-10-11 (toutes les images) |
+| methodes | David Foxprod — recréer la colo de *Seven* (9:16, 530 Ko) | 0 min 12 s | ✔ 2026-10-11 (méthode d'étalonnage, pas de montage) |
 
-Total : 13 films (environ 26 h), 8 clips, 7 pubs, 10 vidéos YouTube (environ 10 h 40), 7 projets du studio, 7 vidéos réseaux (2 min 28 s, ajoutées par Diego le 2026-10-11, noms de fichiers laissés tels quels). `a-traiter/` et `_a-supprimer/` sont vides. `NOTES-DIEGO.md` ne contient que les titres des projets, sans commentaire : Diego n'a encore commenté aucun film (l'ancienne note sur l'amarrage d'Interstellar était un exemple de format, pas sa parole).
+Total : 13 films (environ 26 h), 8 clips, 7 pubs, 10 vidéos YouTube (environ 10 h 40), 7 projets du studio, 7 vidéos réseaux (2 min 28 s, ajoutées par Diego le 2026-10-11, noms de fichiers laissés tels quels), 1 tutoriel d'étalonnage (`methodes/`). `a-traiter/` et `_a-supprimer/` sont vides. `NOTES-DIEGO.md` ne contient que les titres des projets, sans commentaire : Diego n'a encore commenté aucun film (l'ancienne note sur l'amarrage d'Interstellar était un exemple de format, pas sa parole).
 
 ## Règles de session encore valables
 - Relever `date` au début de la session et le relire avant de clôturer : estimée « au ressenti », la durée écoulée est surévaluée d'un facteur 3 à 8.
