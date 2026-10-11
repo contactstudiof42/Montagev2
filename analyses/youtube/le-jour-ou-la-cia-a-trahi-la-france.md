@@ -1,6 +1,6 @@
 # « Le jour où la CIA a trahi la France » (documentaire YouTube)
 
-_Fiche ouverte le 2026-10-11 (phase 2, session 4, YouTube n°4). **État : complète** (première passe en session 4 ; six séquences fines, 194 plans regardés, silences et deux plans longs vérifiés en session 5). Source : 720p (1280×676), 25 i/s, 48 min 58. Chaîne et présentateur : non cherchés ; je ne nomme pas les personnes filmées. Carton-titre interne : « Gemplus : autopsie d'un pillage » (3:20) [VU SUR IMAGES]._
+_Fiche ouverte le 2026-10-11 (phase 2, session 4, YouTube n°4). **État : complète** (première passe en session 4 ; six séquences fines, 194 plans regardés, silences et deux plans longs vérifiés en session 5 ; en session 6, les sept citations de la fiche retrouvées mot pour mot dans la transcription refaite avec `-mc 0`, 647 segments, aucune ligne répétée plus de deux fois). Source : 720p (1280×676), 25 i/s, 48 min 58. Chaîne et présentateur : non cherchés ; je ne nomme pas les personnes filmées. Carton-titre interne : « Gemplus : autopsie d'un pillage » (3:20) [VU SUR IMAGES]._
 
 **Lu avant l'analyse** : `montage-youtube` (doc explicatif, principes 3, 7, 8), `culture/youtube-doc-explicatif-vox-johnny-harris.md`, `culture/youtube-fr-vulgarisation-et-info.md`, `montage-grammaire` (interview). Aucun goût de Diego sur cette vidéo.
 
