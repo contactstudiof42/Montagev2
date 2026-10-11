@@ -110,3 +110,6 @@ Note : le making of [1/2] a dépassé la vidéo elle-même en vues. Le public s'
 - Europe Échecs (résumé, page en 403) : https://www.europe-echecs.com/art/match-d-echecs-kasparov-deep-blue-9613.html
 - Blog : https://tontonfranck.com/actus/ego-youtube-devient-enfin-interessant/ · Guichet du savoir : https://www.guichetdusavoir.org/question/voir/138096 · Influenth : https://www.influenth.com/influenceurs/ego/
 - Forum (résumé) : https://www.jeuxvideo.com/forums/42-51-75626554-1-0-1-0-alerte-faites-tres-attention-avec-le-youtubeur-ego.htm
+
+## Révision de la phase 2 (2026-10-11, « Bibliothèque-Univers » vue et mesurée)
+Confirmé : voix off unique, allégorie avant le concept, « vous » dans le texte, rendu 3D volumétrique. À nuancer : la palette est ici surtout noire (luminance 30-68), le blanc pur ne vient que du sponsor. Nouveau (le « À VÉRIFIER À L'IMAGE » sur le montage) : densité en vagues réglée sur le texte (rafale sur les énumérations), plans d'une minute pour l'explication, chapitres par le noir et le silence, mix à -21 LUFS. Détail : `analyses/youtube/ego-bibliotheque-univers.md`.

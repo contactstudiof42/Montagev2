@@ -69,7 +69,7 @@ _Lire en premier. Seul l'état présent compte ici. L'état de clôture de la ph
 | youtube | Popcorn avec Anyme, Léna Situations & Etoiles (480p) | 2 h 32 min | |
 | youtube | Qui est l'imposteur (ft Eric & Ramzy) (720p) | 57 min 19 s | |
 | youtube | Qui est l'imposteur (ft Theodora & Guy2Bezbar) (480p) | 54 min 38 s | |
-| youtube | Visite extraordinaire d'une Bibliothèque-Univers (EGO, confirmé : vidéo du 23/09/2026) | 23 min 22 s | |
+| youtube | Visite extraordinaire d'une Bibliothèque-Univers (EGO, confirmé : vidéo du 23/09/2026) | 23 min 22 s | ✔ 2026-10-11 |
 | projets-f42 | Benefit — pub réseau (vertical) | 0 min 23 s | |
 | projets-f42 | Benefit — pub réseau 2 (vertical) | 0 min 26 s | |
 | projets-f42 | Fou rire — court métrage | 2 min 21 s | |
