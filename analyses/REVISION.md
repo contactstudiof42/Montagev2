@@ -29,7 +29,8 @@ _Ouverte le 2026-10-11 (session 9). Une ligne par vidéo à revoir : ce que les 
 | Boxho (5) | parole : spectrogramme (pas de fond musical) | **fait (session 9)** : 1 confirmée, 1 corrigée |
 | YggTorrent, EGO, B-roll (4-5) | transcription : boucles et phrases fantômes | à faire |
 | Clips (3-4) | séries saturées (Ziak éclairci) ; parole sans objet | à vérifier vite |
-| Projets F42 (6) | parole (Fou rire, Hirsingen) sur voix séparée | à faire |
+| Hirsingen (6) | parole : voix séparée + spectrogramme | **fait (session 9)** : 1 confirmée, 1 corrigée |
+| Fou rire (6) | parole si citée | à vérifier |
 | La Haine, Avengers, Forrest Gump (7) | parole si citée ; générique de fin | à vérifier vite |
 
 ## 3. Bilan chiffré (mis à jour à chaque vidéo révisée)
@@ -42,4 +43,7 @@ _Ouverte le 2026-10-11 (session 9). Une ligne par vidéo à revoir : ce que les 
 | Qui est l'imposteur | 2 | 1 | 1 | 0 |
 | POPCORN | 2 | 1 | 1 | 0 |
 | Boxho | 2 | 1 | 1 | 0 |
-| **Total** | 19 | 12 | 6 | 1 |
+| Hirsingen | 2 | 1 | 1 | 0 |
+| **Total** | 21 | 13 | 7 | 1 |
+
+**Lecture provisoire (session 9)** : sur les mesures de parole, **tous les pourcentages de l'outil étaient faux** (7 sur 7, toujours trop hauts, de 6 à 36 points), **toutes les conclusions qualitatives tiennent** (qui coupe au milieu des phrases, qui attend la fin). Plans longs et calage : 8 conclusions sur 9 confirmées. Le regard « à l'œil » sur images tient ; le chiffre automatique sur la parole ne tient pas sans spectrogramme.

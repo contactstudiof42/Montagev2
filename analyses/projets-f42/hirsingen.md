@@ -65,3 +65,9 @@ Planche : `videos/_travail/f42-hirsingen/seq/s1.png` (31 plans, moyenne 7,7 s).
 
 ## Ce que Diego en a dit
 Rien sur ce projet (titre seulement dans `NOTES-DIEGO.md`).
+
+## Révision (passe de révision, session 9, 2026-10-11)
+Outils apparus après l'analyse (session 6) : `SEUIL=haut`, `spectro_coupes.py` (session 8) ; voix séparée par demucs sur 3:10-10:45 (la fiche notait « fond musical non vérifié par séparation »). Planche `hirsingen-revision-spectro.png` (32 coupes, une sur 2).
+- Outil : 27 % et 42 % sur le mixage ; 23 % et 26 % sur la voix séparée (`SEUIL=haut`). **À l'œil : 2 coupes sur 32 au milieu d'une phrase (6 %), 12 au ras d'un mot (38 %, surtout juste après la fin d'une réplique), 18 dans un silence (56 %).**
+- **Corrigée** : les pourcentages (27 et 42 %) ; le second venait surtout de bruits et de fins de mots comptés comme parole.
+- **Confirmée et renforcée** : **la coupe attend la fin de la réplique**. C'est le film le plus « aéré » du corpus tranché à l'œil (POPCORN 60 %, adidas 48 %, Boxho 47 %, Imposteur 30 %, *Le Dîner de cons* 20 %, Hirsingen 6 %).
