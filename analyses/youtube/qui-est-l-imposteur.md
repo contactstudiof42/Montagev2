@@ -52,6 +52,6 @@ Planches dans `videos/_travail/imposteur-er/seq/` et `imposteur-tg/seq/` : ouver
 Rien sur ces vidéos. Elles font partie de ses dix vidéos YouTube.
 
 ## Pas fait, doutes
-- Transcriptions Whisper (lancées, non lues ; vérifier les boucles avant de citer).
+- Transcriptions Whisper finies (`videos/_travail/imposteur-*/transcription.srt`), sans boucle (répétitions = interjections, « Ouais », « Ok ») ; non lues en entier.
 - Le moment de la révélation de l'imposteur n'a pas été localisé ; la fin regardée est l'après.
 - Les rires sont-ils dans la piste « sans voix » de demucs ? Probablement en partie (fond « plein ») : non vérifié à l'oreille.

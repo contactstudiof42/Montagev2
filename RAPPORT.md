@@ -1,10 +1,10 @@
 # RAPPORT — synthèse de la phase 2 (en cours)
 
-_Réécrit à chaque session (dernière : 2026-10-11, session 4). Version précédente : `archives/phase-2/RAPPORT-session-2.md`. La synthèse de fin de phase 1 (niveau par domaine, 10 principes, audits) est dans `archives/phase-1/RAPPORT-synthese-cloture-phase-1.md` ; le journal de la phase 1 dans `archives/phase-1/RAPPORT-journal.md`._
+_Réécrit à chaque session (dernière : 2026-10-11, session 5). Version précédente : `archives/phase-2/RAPPORT-session-2.md`. La synthèse de fin de phase 1 (niveau par domaine, 10 principes, audits) est dans `archives/phase-1/RAPPORT-synthese-cloture-phase-1.md` ; le journal de la phase 1 dans `archives/phase-1/RAPPORT-journal.md`._
 
 ## Où j'en suis
 - **Vague 1 des films terminée** : Interstellar, Joker, Whiplash, Le Dîner de cons, Mad Max: Fury Road (fiches dans `analyses/films/`), plus SDM « #Malentouré » (test de méthode).
-- **Clips terminés** (sessions 3-4) et **pubs terminées** (session 4) : fiches dans `analyses/clips/` et `analyses/pubs/`, bilans ci-dessous. **YouTube commencé** (session 4) : B-roll, EGO « Bibliothèque-Univers », « Les Jeux Tiger » et « Le jour où la CIA a trahi la France » (ces deux en première passe) ; voir « Premiers constats YouTube ».
+- **Clips terminés** (sessions 3-4) et **pubs terminées** (session 4) : fiches dans `analyses/clips/` et `analyses/pubs/`, bilans ci-dessous. **YouTube : six sur dix** (sessions 4-5) : B-roll, EGO « Bibliothèque-Univers », « Les Jeux Tiger », « Le jour où la CIA a trahi la France », les deux « Qui est l'imposteur » (une fiche) ; voir « Constats YouTube ».
 - La mission a changé (modification de Diego dans `PROMPT-PHASE-2.md`, commitée en session 3) : une **passe de révision** (étape 7) viendra avant la synthèse finale, pour relancer les outils récents sur les premières vidéos.
 - Outils de la phase 2 (`labo/outils/`) : `passe_globale.sh` (avec `HDR=1`), `courbes_film.py`, `couleur_film.py`, `sequence.py`, `verif_plan.py`, `calage.py`, `coupes_parole.py`, et en session 3 `echantillon_tiers.py` (placement du sujet, à compter à l'œil). `centrage.py` (saillance automatique) a échoué à la calibration : ne pas citer ses chiffres.
 
@@ -77,16 +77,31 @@ _Réécrit à chaque session (dernière : 2026-10-11, session 4). Version préc�
 
 **Pour Studio F42** : deux formules réutilisables tout de suite, à éprouver en maquette : (a) **la marque comme lieu ou costume** et le nom en signature ; (b) pour un événement de créateurs, **les noms par paquets de couleur** et un vol continu pour entrer et sortir.
 
-## Premiers constats YouTube (quatre vidéos, session 4 ; à compléter)
-1. **La rafale suit une énumération** : EGO coupe à 0,67 s quand la voix énumère (« les textes sacrés…, les journaux intimes des rois… »), Yvnnis et 6G font leur seule rafale sur un inventaire (devantures, toits). C'est le même geste dans trois formats : une image par élément d'une liste. [VU SUR IMAGES, mesuré]
-2. **Le sponsor : sketch ou bloc isolé** : « Les Jeux Tiger » le joue en parodie de bande-annonce ; EGO l'isole par la forme (captures blanches) et l'encadre de silences. [VU SUR IMAGES]
-3. **Le volume n'est pas une norme chez les créateurs de référence** : EGO à -21,3 LUFS, le tutoriel B-roll à -11,7, Tiger à -16,6. YouTube baisse les vidéos trop fortes mais ne remonte pas les faibles : -21 est un choix de dynamique. [mesuré]
-4. **Expliquer par une surface qui se transforme** (EGO, chiffre de Vigenère en une minute) confirme sur une vraie vidéo un principe que je n'avais qu'éprouvé en maquette. [VU SUR IMAGES]
-5. **Couvrir une interview à une caméra par du stock qui raconte** (B-roll) : une illustration = un détail de plus, une métaphore pour l'indicible, retour au visage pour les chutes. Utile tout de suite pour le corporate de Studio F42. [VU SUR IMAGES]
-6. **Un cadre par source** dans le documentaire (« CIA » : présentateur devant un néon rouge, archives dans un cadre de téléviseur, témoin à la bougie, schémas sur fond bleu) : l'alternance rapide reste lisible, comme une matière par monde dans les films. [VU SUR IMAGES, vignettes]
+## Constats YouTube (six vidéos sur dix, sessions 4-5 ; bilan complet à venir)
+| Vidéo | Durée | Plans | Médiane | LUFS / LRA | Forme |
+|---|---|---|---|---|---|
+| B-roll (tutoriel) | 8:40 | — | — | -11,7 | interview couverte par du stock qui raconte |
+| EGO « Bibliothèque-Univers » | 23:22 | — | — | -21,3 | vagues de 3 à 29 coupes/min commandées par le texte ; chapitres par le noir et le silence |
+| « Les Jeux Tiger » | 31:02 | ≥ 569 | 2,2 s | -16,6 / 4,8 | doc à présentateur ; liste → rafale, thèse → tirade, preuve → test tenu |
+| « Le jour où la CIA… » | 48:58 | ≥ 930 | 2,2 s | -16,7 / 6 | doc-thriller ; un cadre par source ; schéma qui se transforme = plus long plan (46 s) |
+| « Qui est l'imposteur » × 2 | 57:19 / 54:38 | ≥ 1 590 / 1 426 | 2,0 s | **-12,0 / 3,8** | plateau multicaméra ; **densité plate, aucun silence** |
+
+**Ce que les six vidéos disent :**
+1. **Dans le documentaire et la vulgarisation, la densité suit le type de phrase** : une liste dite reçoit une image par élément (0,6 à 1,8 s ; EGO, Tiger, CIA), une thèse un plan tenu face caméra, une preuve un plan tenu en temps réel (le test du game.com, 12 à 19 s). Trois vidéos sur trois. Même geste que la rafale-inventaire des clips (Gare du Nord, 6G). [VU SUR IMAGES, mesuré]
+2. **Le plus long plan porte la thèse ou la preuve, et il change à l'intérieur** : schéma qui se transforme (CIA 46 s, EGO Vigenère), citation qui s'écrit ligne à ligne au rythme de la voix (Tiger 23-29 s), appel montré en relevé d'écoute (CIA 27 s). Le plan long d'un doc YouTube n'est pas immobile. [VU SUR IMAGES]
+3. **Les chapitres se marquent par le noir et le silence**, pas par des cartons (EGO 2-4 s, CIA 3 s de noir + 2-3 s de silence, Tiger 0,6-1,4 s) ; les silences sont rares (11 en 31 min, 23 en 49 min), donc lisibles. [mesuré, pas écouté]
+4. **Deux familles opposées dans le choix de Diego** : le doc à densité en vagues et à silences (EGO, Tiger, CIA) et le divertissement de plateau **à densité plate, sans silence, à -12 LUFS** (« Imposteur »), qui respire par les rires et les changements de décor, pas par le montage. La règle « respirer » vaut pour la première famille seulement. [mesuré]
+5. **Le sommet d'un doc d'information peut être sa partie la plus rapide** (Tiger : l'emballement Furby, 27-31 coupes/min), contrairement aux sommets d'émotion des films (bilan vague 1, n° 1). [VU SUR IMAGES]
+6. **Trois façons d'isoler un sponsor** : le jouer en sketch (Tiger), l'isoler par la forme et le silence (EGO), par le décor et le tempo (Imposteur : seul passage lent de l'heure). [VU SUR IMAGES]
+7. **Changer de cadre pour changer de régime** : archive dans un téléviseur arrondi (CIA), aparté en sépia (Tiger), un décor par lieu de jeu (Imposteur). Prolonge « une matière par monde » des films. [VU SUR IMAGES]
+8. **Un format de série est un système** : les deux « Imposteur » ont les mêmes chiffres à 10 % près (densité, LUFS, LRA) et le même habillage. [mesuré]
+9. **Le volume n'est pas une norme chez les créateurs** : de -21,3 (EGO) à -11,6 (Imposteur). [mesuré]
+
+**Pour Studio F42** : la règle « densité selon le type de phrase » et le schéma qui se transforme servent directement le corporate explicatif et le film de marque ; le système de série (cartons, couleur par décor, tempo fixe) sert toute commande récurrente. À éprouver en maquette.
 
 ## Erreurs corrigées (phase 2)
 - Session 1 : j'avais cru faux le plan de 74 s de Pogo's (c'est un plan-séquence) ; j'avais attribué à Diego une note sur l'amarrage qui n'était qu'un exemple de format (retour du 2026-10-11, intégré).
+- Session 5 : le « plan » de 19,7 s de Tiger (graphique puis présentateur, coupe ratée) ; « les deux extrémités les plus rapides » de CIA (la fin l'est surtout par son générique monté) ; « le témoin à la bougie » de CIA (deux témoins, deux lumières) ; la mesure coupes / parole sur un mixage avec fond musical (34 % de parole contre 77 % sur la voix séparée).
 - Session 4 : « 14 à 16 duos » dans GP Explorer 3 écrit sans compter (corrigé en « au moins une dizaine ») ; HOUDI semblait couper sur les temps (45 % contre 27 %) sur le mixage ; sur la musique séparée, rien (27 % contre 24 %).
 - Session 3 (clips) : 88 plans pour Ziak (en réalité environ 109) ; « Ziak évite les attaques fortes » (effet des coupes manquantes) ; quatre affirmations de phase 1 sur Stress et Au DD (voir ci-dessus).
 - Session 3 : j'avais noté le pic de Mad Max à 0:27-0:30 (56 coupes/min) ; les éclairs le gonflent du double (environ 27/min réels). J'avais supposé qu'une mesure de saillance trouverait le sujet : calibrée, elle ne le trouve qu'une fois sur trois.
