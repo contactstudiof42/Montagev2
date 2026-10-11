@@ -55,3 +55,10 @@ Rien sur ces vidéos. Elles font partie de ses dix vidéos YouTube.
 - Transcriptions Whisper finies (`videos/_travail/imposteur-*/transcription.srt`), sans boucle (répétitions = interjections, « Ouais », « Ok ») ; non lues en entier.
 - Le moment de la révélation de l'imposteur n'a pas été localisé ; la fin regardée est l'après.
 - Les rires sont-ils dans la piste « sans voix » de demucs ? Probablement en partie (fond « plein ») : non vérifié à l'oreille.
+
+## Révision (passe de révision, session 9, 2026-10-11)
+Outils apparus après l'analyse (session 5) : `SEUIL=haut` et `spectro_coupes.py` (session 8). Mesures refaites avant de relire la fiche ; planche `qui-est-l-imposteur-revision-spectro.png` (30 coupes, une sur 3, 10:00-13:00, Eric & Ramzy).
+- Outil, voix séparée : 49 % (ancien seuil), **63 %** avec `SEUIL=haut` (le seuil plus bas compte plus de parole). **À l'œil : 9 coupes sur 30 au milieu d'une phrase (30 %), 18 au ras d'un mot (60 %), 3 dans un silence (10 %).**
+- **Corrigée** : le chiffre « 49 % des coupes pendant la parole » ; aucun des deux réglages de l'outil ne le donne juste. Le geste dominant est la coupe **au ras d'un mot**.
+- **Confirmée** : on coupe **vers celui qui va parler**, dans des trous de 0,2 s : sur les 18 coupes au ras d'un mot, au moins 7 tombent exactement sur l'attaque de la réplique suivante.
+- Leçon : sur une conversation à plusieurs sous musique, `SEUIL=haut` peut **surcompter** (63 % contre 30 % à l'œil) ; aucun seuil ne remplace le spectrogramme pour ce chiffre.
