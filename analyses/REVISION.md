@@ -20,14 +20,14 @@ _Ouverte le 2026-10-11 (session 9). Une ligne par vidéo à revoir : ce que les 
 |---|---|---|
 | Le Dîner de cons (2) | parole : voix séparée `SEUIL=haut` + spectrogramme | **fait (session 9)** : 1 corrigée, 2 confirmées |
 | Interstellar (1) | `verif_plan.py` sur les plans longs sombres ; séries saturées ; générique | **fait (session 9)** : 3 confirmées |
-| Joker (1-2) | calage des escaliers sur musique séparée ; séries saturées | à faire |
+| Joker (1-2) | séries saturées : aucune (0 sur 1 101) ; calage des escaliers : 13 coupes seulement, mesure trop petite pour être refaite utilement | **vérifié (session 9)**, rien à changer |
 | Whiplash (2) | plans longs (`verif_plan.py` + tuile) ; séries saturées ; calage sur musique séparée (fait sur mixage) | **fait (session 9)** : 3 confirmées, 1 corrigée, 1 nouvelle |
-| Mad Max: Fury Road (3) | séries saturées ; générique | à faire |
+| Mad Max: Fury Road (3) | séries saturées : une seule (5 plans, 27:45) ; générique à 1:52:58, après le final cité | **vérifié (session 9)**, rien à changer |
 | adidas « Backyard Legends » (4) | parole : `SEUIL=haut` + spectrogramme (la mesure de session 4 était déjà sur voix séparée) | **fait (session 9)** : 1 confirmée, 1 corrigée |
 | Qui est l'imposteur (5) | parole : `SEUIL=haut` + spectrogramme | **fait (session 9)** : 1 confirmée, 1 corrigée |
 | POPCORN (5) | parole : `SEUIL=haut` + spectrogramme | **fait (session 9)** : 1 confirmée, 1 corrigée |
 | Boxho (5) | parole : spectrogramme (pas de fond musical) | **fait (session 9)** : 1 confirmée, 1 corrigée |
-| YggTorrent, EGO, B-roll (4-5) | transcription : boucles et phrases fantômes | à faire |
+| Toutes les transcriptions (27) | boucles et phrases fantômes (`uniq -c`, « Sous-titrage… ») | **fait (session 9)** : boucles dans adidas (×22, 4:44-5:02), Crunch Creator (×18, 1:31-1:59), YggTorrent (générique, déjà noté), KAIZEN (×19, 1:55:19-1:55:41, malgré `-mc 0`) ; **aucune fiche ne cite ces lignes**, aucune conclusion touchée |
 | Clips (3-4) | séries saturées (Ziak éclairci) ; parole sans objet | à vérifier vite |
 | Hirsingen (6) | parole : voix séparée + spectrogramme | **fait (session 9)** : 1 confirmée, 1 corrigée |
 | Fou rire (6) | parole si citée | à vérifier |

@@ -8,6 +8,13 @@ _Réécrit à chaque session (dernière : 2026-10-11, session 9). Versions préc
 - La mission a changé (modification de Diego dans `PROMPT-PHASE-2.md`, commitée en session 3) : une **passe de révision** (étape 7) viendra avant la synthèse finale, pour relancer les outils récents sur les premières vidéos.
 - Outils de la phase 2 (`labo/outils/`) : `passe_globale.sh` (avec `HDR=1`), `courbes_film.py`, `couleur_film.py`, `sequence.py`, `verif_plan.py`, `calage.py`, `coupes_parole.py`, en session 3 `echantillon_tiers.py` (placement du sujet, à compter à l'œil), en session 8 `spectro_coupes.py` (trancher à l'œil « coupe pendant la parole ») et l'option `SEUIL=haut` de `coupes_parole.py`. `centrage.py` (saillance automatique) a échoué à la calibration : ne pas citer ses chiffres.
 
+## Passe de révision (étape 7, en cours depuis la session 9 ; suivi détaillé dans `analyses/REVISION.md`)
+| Vidéos révisées | Conclusions vérifiées | Confirmées | Corrigées | Nouvelles |
+|---|---|---|---|---|
+| Dîner de cons, Interstellar, Whiplash, adidas, Imposteur, POPCORN, Boxho, Hirsingen | 21 | 13 | 7 | 1 |
+
+**Lecture provisoire** : les **7 corrections** sont toutes des pourcentages « coupes pendant la parole » mesurés par énergie, **toujours trop hauts** (de 6 à 36 points) ; tranchés à l'œil sur spectrogramme, ils donnent une échelle nette : Hirsingen 6 %, *Le Dîner de cons* 20 % (comique comme sincère), Imposteur 30 % (mais 60 % au ras d'un mot), Boxho 47 %, adidas 48 %, POPCORN 60 %. **Aucune conclusion qualitative n'est tombée** (qui attend la fin de la réplique, qui coupe au milieu, qui coupe vers celui qui va parler). Plans longs et calage : 8 sur 9 confirmés ; la seule correction est une « légère tendance aux temps » de *Whiplash* qui disparaît sur la musique séparée ; la seule nouveauté, les deux scènes avec Nicole tenues en plans de 85 et 69 + 55 s. **Ce que ça dit** : ce que j'ai vu sur les images tient ; un chiffre automatique sur le son ne tient pas sans contrôle à l'œil ou à l'oreille.
+
 ## Bilan de la vague 1 (cinq films)
 | Film | Plans (min.) | ASL / médiane | LUFS intégré | Forme de la densité | Couleur |
 |---|---|---|---|---|---|
