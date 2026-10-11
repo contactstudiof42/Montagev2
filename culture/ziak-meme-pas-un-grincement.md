@@ -159,3 +159,7 @@ J'ai regardé : 4 planches de 30 vignettes (une au milieu de chaque plan, éclai
 - Les mouvements de caméra sont estimés grossièrement (différence d'images), pas mesurés.
 - Le détecteur de coupes peut confondre un mouvement très rapide avec une coupe ; la planche montre une erreur probable (44,16 s : fin d'un flash comptée comme coupe).
 - **Contraste avec le goût « kinetic editing »** : ce clip est l'opposé d'un montage kinetic (pas de coupes sur le beat, pas de SFX surlignés). L'utilisateur aime les deux : question à lui poser (voir RAPPORT).
+
+
+## Révision de la phase 2 (2026-10-11)
+Le comptage de 88 plans est **faux de 20 %** : environ 109 plans, médiane 1,2 s (coupes de l'usine ratées dans le noir). Les conclusions sur le rythme tiennent (pas de calage ; 32 coupes/min avec la basse, 16 sans ; un plan long à chaque creux). La révélation n'est vue en pleine lumière que 0,6 s. Détail et mesures : `analyses/clips/ziak-meme-pas-un-grincement.md`.
