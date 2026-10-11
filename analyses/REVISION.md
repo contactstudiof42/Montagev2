@@ -23,7 +23,7 @@ _Ouverte le 2026-10-11 (session 9). Une ligne par vidéo à revoir : ce que les 
 | Joker (1-2) | calage des escaliers sur musique séparée ; séries saturées | à faire |
 | Whiplash (2) | plans longs (`verif_plan.py` + tuile) ; séries saturées ; calage sur musique séparée (fait sur mixage) | **fait (session 9)** : 3 confirmées, 1 corrigée, 1 nouvelle |
 | Mad Max: Fury Road (3) | séries saturées ; générique | à faire |
-| adidas « Backyard Legends » (4) | parole sur voix séparée (68 % mesuré sur mixage avec musique) | à faire |
+| adidas « Backyard Legends » (4) | parole : `SEUIL=haut` + spectrogramme (la mesure de session 4 était déjà sur voix séparée) | **fait (session 9)** : 1 confirmée, 1 corrigée |
 | POPCORN, Boxho, Qui est l'imposteur (5) | parole sur voix séparée avec `SEUIL=haut` + spectrogramme | à faire |
 | YggTorrent, EGO, B-roll (4-5) | transcription : boucles et phrases fantômes | à faire |
 | Clips (3-4) | séries saturées (Ziak éclairci) ; parole sans objet | à vérifier vite |
@@ -36,4 +36,5 @@ _Ouverte le 2026-10-11 (session 9). Une ligne par vidéo à revoir : ce que les 
 | Le Dîner de cons | 3 | 2 | 1 | 0 |
 | Interstellar | 3 | 3 | 0 | 0 |
 | Whiplash | 5 | 3 | 1 | 1 |
-| **Total** | 11 | 8 | 2 | 1 |
+| adidas « Backyard Legends » | 2 | 1 | 1 | 0 |
+| **Total** | 13 | 9 | 3 | 1 |

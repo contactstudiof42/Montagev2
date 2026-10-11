@@ -72,7 +72,7 @@ _Réécrit à chaque session (dernière : 2026-10-11, session 9). Versions préc
 3. **Les films longs (2 min 30 à 5 min) tiennent par une cadence régulière de 1 à 2 s et un récit**, pas par des variations de rythme ; la variation est réservée à la fin (un plan tenu) ou au gag (un plan large). [mesuré, VU SUR IMAGES]
 4. **Le silence ouvre le sommet** (Lacoste 2,4 s, Conte de Noël 0,5 s), comme dans les clips (STORM, Stress). [mesuré, pas écouté]
 5. **Une matière par monde, avec le format d'image en plus** : adidas (large froid / 4:3 chaud), Conte de Noël (réel / animation, forêt bleue / terrier orange), HOUDI (fiction froide / écran chaud). [VU SUR IMAGES]
-6. **Couper sur le mot** quand un conteur porte le film (adidas : 68 % des coupes pendant la parole, la voix est une bande continue) ; **tenir la tirade** quand la parole est le spectacle (Crunch Creator, 10 et 16 s). [mesuré]
+6. **Couper sur le mot** quand un conteur porte le film (adidas : environ la moitié des coupes au milieu d'une phrase et 85 % pendant ou au ras de la parole, à l'œil sur spectrogramme en révision ; la voix est une bande continue) ; **tenir la tirade** quand la parole est le spectacle (Crunch Creator, 10 et 16 s). [mesuré]
 7. **Deux familles dans le choix de Diego** : le récit de marque émotionnel ou comique à la française (deux Intermarché, Lacoste, adidas, iPhone) et la bande-annonce d'événement de créateurs (Crunch Creator, GP Explorer 3), qui ressemble le plus aux commandes probables du studio. [DÉDUIT, à confirmer avec les projets F42]
 
 **Pour Studio F42** : deux formules réutilisables tout de suite, à éprouver en maquette : (a) **la marque comme lieu ou costume** et le nom en signature ; (b) pour un événement de créateurs, **les noms par paquets de couleur** et un vol continu pour entrer et sortir.
@@ -224,7 +224,6 @@ La vague va des deux extrêmes du corpus : le film le plus lent et le plus calme
 - Whiplash : combien de coupes cachent les filés des plans de 21 et 24 s ? L'hypothèse « on coupe sur l'instrument qui a la phrase » n'est pas mesurée.
 - Mad Max : les images accélérées n'ont pas été mesurées ; le chiffre d'environ 2 700 plans qui circule n'est pas vérifié.
 - Le plan du bus « en miroir » de Joker n'a pas été cherché.
-- adidas « Backyard Legends » : « 68 % des coupes pendant la parole » a été mesuré sur le mixage avec musique ; à refaire sur la voix séparée en passe de révision.
 - Boxho : montage multicaméra automatique ou règle fixe du monteur ? Les durées le suggèrent, rien ne le prouve.
 
 ## Hypothèses de goût (à confirmer par d'autres références)

@@ -36,3 +36,9 @@ Rien sur cette pub. Elle fait partie de ses sept pubs de référence.
 ## Pas fait, doutes
 - Recherche documentaire (agence, réalisateur, casting).
 - La fin de la transcription Whisper (4:44-5:05) est une répétition inventée (hallucination sur la musique) : je n'en tiens pas compte.
+
+## Révision (passe de révision, session 9, 2026-10-11)
+Outils apparus après l'analyse (session 4) : `SEUIL=haut` et planche de spectrogrammes `spectro_coupes.py` (session 8). Mesures refaites avant de relire la fiche ; planche `adidas-revision-spectro.png` (27 coupes, une sur 6, 0:00-4:28).
+- Outil, voix séparée : 68 % (ancien seuil), 66 % (`SEUIL=haut`). **À l'œil sur spectrogramme : 13 coupes sur 27 au milieu d'une phrase (48 %), 10 au ras d'un mot (37 %), 4 seulement dans un silence (15 %).**
+- **Corrigée** : le chiffre de 68 % est une borne haute ; environ la moitié des coupes tombent franchement dans la parole. La comparaison avec *Le Dîner de cons* se renforce : environ 20 % là-bas (révisé lui aussi), 48 % ici.
+- **Confirmée** : la voix du conteur est **une bande continue sous laquelle l'image coupe**, comme une voix off : 85 % des coupes sont pendant la parole ou à son ras, 15 % seulement dans un silence.
