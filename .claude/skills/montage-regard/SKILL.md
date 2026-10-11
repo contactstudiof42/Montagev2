@@ -5,7 +5,7 @@ description: Juger un plan, une coupe, un montage, une animation ou un étalonna
 
 # Le regard : principes de jugement et grille d'autocritique
 
-Marqueurs : [SOURCÉ] lu dans une source citée · [TESTÉ EN LABO] fait technique mesuré · [ÉPROUVÉ EN MAQUETTE] vu seulement sur maquette Blender / Pillow / ffmpeg, hypothèse à confirmer sur vraies images en phase 2 · [THÉORIQUE] déduit, non vérifié.
+Marqueurs : [VU SUR IMAGES] vérifié sur de vraies vidéos (phase 2, fiches dans `analyses/`) · [SOURCÉ] lu dans une source citée · [TESTÉ EN LABO] fait technique mesuré · [ÉPROUVÉ EN MAQUETTE] vu seulement sur maquette Blender / Pillow / ffmpeg, hypothèse à confirmer sur vraies images en phase 2 · [THÉORIQUE] déduit, non vérifié.
 
 **Fait foi sur** : la grille d'autocritique, la méthode de visionnage (planches, mesures) et les règles de jugement. Pour la méthode des directions (dont « maquetter la direction qu'on écarte » et le test « mon propre système ») : `montage-direction-artistique`. Sources des principes d'auteurs : `montage-references`. Preuves détaillées par pièce : `regles-atelier.md` ; journal daté : `journal.md`.
 
@@ -32,7 +32,7 @@ Noter chaque critère de 0 à 3 avec **une phrase de preuve visuelle** (ce que j
 | Intention | La phrase d'intention se perçoit-elle sans explication ? | « Joli » mais neutre |
 | Lisibilité | L'information clé est-elle lue au premier regard, dans le temps imparti ? | Contraste, durée (≥ 2× le temps de lecture), signe trop petit |
 | Liaison | Qu'est-ce qui relie chaque plan au suivant, autre que le tempo ? | Cause, regard, mouvement, son ou idée absents |
-| Rythme | Les durées varient-elles avec une logique ? | Durées uniformes |
+| Rythme | Les durées varient-elles avec une logique ? Le sommet est-il marqué par autre chose que la vitesse ? | Durées uniformes ; accélérer au climax par réflexe (13 films sur 13 ne coupent pas plus vite à leur sommet ; ils le marquent par le volume, le format, la durée de la crête ou un plan tenu) [VU SUR IMAGES] |
 | Composition | Le cadre guide-t-il l'œil ? | Centrage par défaut ; la zone la plus claire vole le regard. Exception : en plans de 1 à 2 s, le centre est juste (l'œil n'a pas le temps de chercher : *Mad Max*) ; le décentrage va avec les plans tenus (*Joker*) [VU SUR IMAGES] |
 | Cohérence | Typo, couleur, mouvement parlent-ils la même langue ? Aucun levier ne tire seul (l'« ensemble » de *Joker*, goût de l'utilisateur) ? | Un élément « d'un autre film » ; un levier poussé au détriment des autres |
 | Couleur | La palette porte-t-elle l'émotion ? | Couleurs par défaut |
@@ -40,16 +40,27 @@ Noter chaque critère de 0 à 3 avec **une phrase de preuve visuelle** (ce que j
 | Originalité | Qu'est-ce qui la distingue de mille autres ? | Cliché du genre |
 | Justesse | Que peut-on enlever ? | Redondance image / son / effet |
 
-Verdict : **livrable** seulement si intention, lisibilité et justesse sont à 3 ; les autres peuvent être à 2.
+Verdict : **livrable** seulement si intention, lisibilité et justesse sont à 3 ; les autres peuvent être à 2 ; **et si le fichier passe `labo/outils/qc_livraison.sh`** (pistes, true peak ≤ -1 dBTP, noir de début et de fin) : six fichiers livrés du studio sur sept dépassaient -1 dBTP, un saturait (phase 2, projets F42). [VU SUR IMAGES, mesuré]
 
 ## Méthode de visionnage
 1. Planche à intervalle régulier avec numéro d'image : lire l'**arc**. [TESTÉ EN LABO]
    `ffmpeg -i v.mp4 -vf "select='not(mod(n\,20))',scale=320:-1,drawtext=text='%{n}':x=4:y=4:fontsize=12:fontcolor=yellow,tile=5x2" -frames:v 1 planche.png`
 2. Montage rapide : planche « 1re image de chaque plan » ; plan animé : 1re, dernière et image de l'événement, pas le milieu.
 3. Planche avant / après chaque coupe : un détecteur de coupe ne juge pas le raccord.
-4. Mesures quand c'est possible : luminance (`signalstats`), durées de plans (`scdet`), loudness (`ebur128`), saillance (`atelier/12-inquietude-calme/mesure.py`, `labo/saillance/`).
+4. Mesures quand c'est possible : luminance (`signalstats`), durées de plans (`scdet`, PySceneDetect), loudness (`ebur128`). Saillance : les outils de maquette (`atelier/12-inquietude-calme/mesure.py`, `labo/saillance/`) servent sur une image construite ; sur de vraies vidéos, la saillance automatique ne trouve le sujet qu'une fois sur trois (phase 2) : compter à l'œil (`labo/outils/echantillon_tiers.py`).
 5. Relire chaque planche **comme un inconnu** (« qu'est-ce que c'est ? » avant « est-ce que ça se voit ? »), puis contre l'intention écrite.
-6. Limite assumée : je juge sur planches, mesures et formes d'onde ; fluidité et son en temps réel restent à confirmer en phase 2.
+6. Limite assumée : je juge sur planches, mesures, formes d'onde et spectrogrammes ; **je n'écoute jamais le son** et ne vois pas la fluidité en temps réel. Après 45 vidéos réelles, cette limite tient toujours : ce que j'écris du son est une lecture de courbe.
+
+## Juger une vraie vidéo : règles de vérification (phase 2, passe de révision) [VU SUR IMAGES]
+Sur 45 conclusions d'analyse revérifiées avec de meilleurs instruments, 28 confirmées, 14 corrigées, 3 nouvelles (`analyses/REVISION.md`). Ce que j'avais **regardé** a tenu ; ce que j'avais **recopié d'un outil** s'est trompé une fois sur trois, toujours dans le même sens pour un même outil.
+1. **Regarder avant de nommer une cause.** Une rafale de « plans » de 0,5 s que j'avais annoncée comme les stroboscopes d'une rave était un magasin de tapis (*Aftersun*) ; une « rafale de panique » était un seul plan porté flou (« Fou-Rire ») ; une « rafale de réaction », un téléviseur dans le champ (*Forrest Gump*).
+2. **Une vignette par plan ne juge ni un plan long ni une rafale** : elle montre une image par plan *détecté*. Plan long : différence image par image + tuile à 1 image / 2 s (*Joker*, Pogo's : un vrai plan-séquence de 74 s que j'avais cru faux). Rafale : 6 images consécutives autour de chaque coupe (`labo/outils/bandes_coupes.py`) et, si les plans semblent à 2-3 images, toutes les images (Yvnnis « Gare du Nord » : la « rafale de huit devantures » en contenait environ 65 de 2 images).
+3. **Un détecteur se trompe dans les deux sens, de façon prévisible** : il fusionne le sombre, l'action accélérée, le texte sur noir et tout plan de moins de 0,6 s ; il invente des coupes sur les éclairs, les écrans dans le champ, les plans portés flous et l'animation par saccades. Un nombre de plans est un minimum ; une série de plans à la durée minimale est un soupçon.
+4. **Un pourcentage de parole ne se cite qu'après un spectrogramme** (25 à 30 coupes) : mesurée par l'énergie, la part des « coupes pendant la parole » était trop haute sept fois sur sept (de 6 à 36 points). La durée des silences (« l'air ») est plus robuste.
+5. **Un calage sur la musique ne se cite que contre le hasard, sur la musique séparée de la voix** (`calage.py`, demucs) : sur le mixage, la voix fabrique de faux calages (HOUDI : 45 % contre 27 % au hasard, puis rien sur la musique seule).
+6. **Retirer logos, générique monté et cartons avant toute statistique** (*Aftersun* : médiane 4,3 s brute, 5,5 s sur le film seul ; *Avengers* : ASL 4,0 s générique compris, 3,7 s sans).
+7. **Une fiche écrite sans voir est juste dans l'esprit, fausse dans les chiffres** : cinq affirmations de phase 1 corrigées sur les deux films préférés de l'utilisateur, quatre sur neuf sur deux clips. Une référence citée de mémoire se vérifie sur l'image avant d'entrer dans un argument.
+8. **N'attribuer un goût à l'utilisateur que s'il l'a dit** (`GOUTS.md`, `RETOURS-DIEGO.md`, une note de sa main) ; un exemple de format n'est pas un goût (retour du 2026-10-11).
 
 ## Règles de jugement (preuves : `regles-atelier.md`)
 Toutes [ÉPROUVÉ EN MAQUETTE] sauf mention ; numéro de pièce entre parenthèses.
