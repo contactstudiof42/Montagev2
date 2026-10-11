@@ -4,7 +4,7 @@ _Réécrit à chaque session (dernière : 2026-10-11, session 4). Version préc�
 
 ## Où j'en suis
 - **Vague 1 des films terminée** : Interstellar, Joker, Whiplash, Le Dîner de cons, Mad Max: Fury Road (fiches dans `analyses/films/`), plus SDM « #Malentouré » (test de méthode).
-- **Clips terminés** (sessions 3-4) : les huit fiches sont dans `analyses/clips/`, bilan ci-dessous. **Prochaine étape : les pubs** (SDM était le test de méthode).
+- **Clips terminés** (sessions 3-4) et **pubs terminées** (session 4) : fiches dans `analyses/clips/` et `analyses/pubs/`, bilans ci-dessous. **Prochaine étape : YouTube** (étape 3).
 - La mission a changé (modification de Diego dans `PROMPT-PHASE-2.md`, commitée en session 3) : une **passe de révision** (étape 7) viendra avant la synthèse finale, pour relancer les outils récents sur les premières vidéos.
 - Outils de la phase 2 (`labo/outils/`) : `passe_globale.sh` (avec `HDR=1`), `courbes_film.py`, `couleur_film.py`, `sequence.py`, `verif_plan.py`, `calage.py`, `coupes_parole.py`, et en session 3 `echantillon_tiers.py` (placement du sujet, à compter à l'œil). `centrage.py` (saillance automatique) a échoué à la calibration : ne pas citer ses chiffres.
 
@@ -54,6 +54,28 @@ _Réécrit à chaque session (dernière : 2026-10-11, session 4). Version préc�
 7. **Fiabilité de mes fiches de phase 1** : celles qui avaient mesuré tiennent (Ziak : seul le nombre de plans était faux) ; celles écrites sans voir avaient faux 4 affirmations sur 9 (Stress, Au DD). Et en phase 2 même, j'ai failli écrire un calage faux sur le mixage (HOUDI) : une mesure sans contrôle peut mentir autant qu'un souvenir.
 
 **Pour Studio F42** : le clip est peu demandé (GOUTS.md), mais trois principes passent au film de marque : la rafale-inventaire puis le plan tenu (présenter un lieu, une équipe), l'ouverture qui construit l'image, et le sommet porté par le cadre plutôt que par la coupe. À éprouver en maquette.
+
+## Bilan des pubs (sept, session 4)
+| Pub | Durée | Plans | Médiane | LUFS | Forme | Marque |
+|---|---|---|---|---|---|---|
+| Intermarché 2017 « L'amour » | 3:00 | 105 | 1,6 s | -23,1 | récit chanté, 90 % des plans de 0,9 à 2,6 s, fin qui ralentit | décor dès 0:00, nom à 2:55 |
+| Intermarché « Conte de Noël » | 2:30 | 98 | 1,2 s | -23,1 | réel → conte animé → réel ; silence avant l'acceptation | carton puis nom à 2:28 |
+| Lacoste « Life is a Beautiful Sport » | 1:11 | 47 | ~1,1 s | -23,2 | course à travers Paris, un plan long, 2,4 s de silence avant la fin | tenue dès 0:00, logo à 1:08 |
+| iPhone 17 « Scratch Resistant » | 0:35 | 18 | — (ASL 2 s) | -16,1 | gag de genre tenu en plan large silencieux | objet dès 0:00, texte à 0:26 |
+| Crunch Creator (bande-annonce) | 2:22 | 45 | — (ASL 3,2 s) | -15,7 | deux tirades en plans tenus encadrent l'action truquée | date à 2:02 |
+| GP Explorer 3 (bande-annonce) | 2:17 | 64 | 1,1-1,3 s | -10,0 | line-up par paquets entre deux vols continus | logo à la fin |
+| adidas « Backyard Legends » | 5:05 | 181 | ~1,1 s | -14,2 | narrateur peu fiable, format et couleur par époque | tenues, logo à 5:01 |
+
+**Ce que les pubs disent :**
+1. **Le nom de la marque arrive dans les dernières secondes dans les sept ; ce qui la représente (lieu, tenue, objet, couleur) est à l'écran dès la première image.** La règle télé « marque dans les 5 premières secondes » n'est tenue que par l'objet, jamais par le nom. [VU SUR IMAGES]
+2. **Aucune ne coupe sur les temps plus qu'au hasard** (Crunch Creator : légère tendance aux accents, à la limite du hasard). Quinze vidéos montées sur de la musique sur quinze, films compris : le calage sur les temps n'apparaît dans aucune œuvre de référence de Diego hors kinetic. [mesuré]
+3. **Les films longs (2 min 30 à 5 min) tiennent par une cadence régulière de 1 à 2 s et un récit**, pas par des variations de rythme ; la variation est réservée à la fin (un plan tenu) ou au gag (un plan large). [mesuré, VU SUR IMAGES]
+4. **Le silence ouvre le sommet** (Lacoste 2,4 s, Conte de Noël 0,5 s), comme dans les clips (STORM, Stress). [mesuré, pas écouté]
+5. **Une matière par monde, avec le format d'image en plus** : adidas (large froid / 4:3 chaud), Conte de Noël (réel / animation, forêt bleue / terrier orange), HOUDI (fiction froide / écran chaud). [VU SUR IMAGES]
+6. **Couper sur le mot** quand un conteur porte le film (adidas : 68 % des coupes pendant la parole, la voix est une bande continue) ; **tenir la tirade** quand la parole est le spectacle (Crunch Creator, 10 et 16 s). [mesuré]
+7. **Deux familles dans le choix de Diego** : le récit de marque émotionnel ou comique à la française (deux Intermarché, Lacoste, adidas, iPhone) et la bande-annonce d'événement de créateurs (Crunch Creator, GP Explorer 3), qui ressemble le plus aux commandes probables du studio. [DÉDUIT, à confirmer avec les projets F42]
+
+**Pour Studio F42** : deux formules réutilisables tout de suite, à éprouver en maquette : (a) **la marque comme lieu ou costume** et le nom en signature ; (b) pour un événement de créateurs, **les noms par paquets de couleur** et un vol continu pour entrer et sortir.
 
 ## Erreurs corrigées (phase 2)
 - Session 1 : j'avais cru faux le plan de 74 s de Pogo's (c'est un plan-séquence) ; j'avais attribué à Diego une note sur l'amarrage qui n'était qu'un exemple de format (retour du 2026-10-11, intégré).
