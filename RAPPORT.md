@@ -11,9 +11,9 @@ _Réécrit à chaque session (dernière : 2026-10-11, session 9). Versions préc
 ## Passe de révision (étape 7, en cours depuis la session 9 ; suivi détaillé dans `analyses/REVISION.md`)
 | Vidéos révisées | Conclusions vérifiées | Confirmées | Corrigées | Nouvelles |
 |---|---|---|---|---|
-| Dîner de cons, Interstellar, Whiplash, adidas, Imposteur, POPCORN, Boxho, Hirsingen | 21 | 13 | 7 | 1 |
+| Dîner de cons, Interstellar, Whiplash, adidas, Imposteur, POPCORN, Boxho, Hirsingen, Fou rire | 23 | 14 | 8 | 1 |
 
-**Lecture provisoire** : les **7 corrections** sont toutes des pourcentages « coupes pendant la parole » mesurés par énergie, **toujours trop hauts** (de 6 à 36 points) ; tranchés à l'œil sur spectrogramme, ils donnent une échelle nette : Hirsingen 6 %, *Le Dîner de cons* 20 % (comique comme sincère), Imposteur 30 % (mais 60 % au ras d'un mot), Boxho 47 %, adidas 48 %, POPCORN 60 %. **Aucune conclusion qualitative n'est tombée** (qui attend la fin de la réplique, qui coupe au milieu, qui coupe vers celui qui va parler). Plans longs et calage : 8 sur 9 confirmés ; la seule correction est une « légère tendance aux temps » de *Whiplash* qui disparaît sur la musique séparée ; la seule nouveauté, les deux scènes avec Nicole tenues en plans de 85 et 69 + 55 s. **Ce que ça dit** : ce que j'ai vu sur les images tient ; un chiffre automatique sur le son ne tient pas sans contrôle à l'œil ou à l'oreille.
+**Lecture provisoire** : une correction porte sur les images : la « rafale de panique » de « Fou-Rire » (plans de 0,6 s) est **un seul gros plan porté de 4,8 s**, tremblé et flou, où le détecteur voyait des coupes ; le principe « le sommet de panique se hache » est retiré de `montage-rythme`. Les **7 autres corrections** sont toutes des pourcentages « coupes pendant la parole » mesurés par énergie, **toujours trop hauts** (de 6 à 36 points) ; tranchés à l'œil sur spectrogramme, ils donnent une échelle nette : Hirsingen 6 %, *Le Dîner de cons* 20 % (comique comme sincère), Imposteur 30 % (mais 60 % au ras d'un mot), Boxho 47 %, adidas 48 %, POPCORN 60 %. **Aucune conclusion qualitative n'est tombée** (qui attend la fin de la réplique, qui coupe au milieu, qui coupe vers celui qui va parler). Plans longs et calage : 8 sur 9 confirmés ; la seule correction est une « légère tendance aux temps » de *Whiplash* qui disparaît sur la musique séparée ; la seule nouveauté, les deux scènes avec Nicole tenues en plans de 85 et 69 + 55 s. **Ce que ça dit** : ce que j'ai vu sur les images tient ; un chiffre automatique sur le son ne tient pas sans contrôle à l'œil ou à l'oreille.
 
 ## Bilan de la vague 1 (cinq films)
 | Film | Plans (min.) | ASL / médiane | LUFS intégré | Forme de la densité | Couleur |
@@ -128,7 +128,7 @@ _Réécrit à chaque session (dernière : 2026-10-11, session 9). Versions préc
 | Oney (intro quiz) | 1:1 mobile | 0:37 | ≥ 12 | — | -13,5 / 5,4 | **+3,1** | montage livrable, fichier non : son saturé ; 2,5 s de noir final ; HEVC 10 bits |
 | Swile « POW » | pub 16:9 | 1:19 | 26-38 | 2,6 s | **-11,1** / 5,0 | -0,8 | livrable après -14 LUFS et une piste stéréo ; le plus abouti des projets courts |
 | Sephora × Laneige | brand content 9:16 | 2:46 | 73 | 2,0 s | -17,1 / 7,0 | -0,1 | pas livrable muet : sous-titres fins à ~2,5:1 ; 45 s avant le jeu |
-| « Fou-Rire » | court métrage 2:1 | 2:21 | 47 | 1,9 s | -23,3 / 12,0 | -1,6 | livrable festival ; plans du public noirs, loge sans ambiance |
+| « Fou-Rire » | court métrage 2:1 | 2:21 | 42 (révisé ; 47 avec cinq fausses coupes) | 1,9 s | -23,3 / 12,0 | -1,6 | livrable festival ; plans du public noirs, loge sans ambiance |
 | « Hirsingen » | court métrage 2,35:1, 5.1 | 15:00 | ≥ 118 | 4,6 s | **-27,3 / 20,9** | 0,0 | image et montage maîtrisés ; mixage non diffusable hors salle |
 
 **Ce que les projets disent du studio, du plus solide au moins solide :**

@@ -15,7 +15,7 @@ _Fiche ouverte le 2026-10-11 (phase 2, session 6, projet Studio F42 n°6). **Ét
 - **Son** : -23,3 LUFS intégrés, **LRA 12,0 LU** (dynamique de cinéma), true peak -1,6 dBTP. La loge est presque muette entre les répliques (momentané de -50 à -68 LUFS) ; à partir de 0:48, un fond continu vers -25/-27 ; **crescendo jusqu'à -18 sous la voix du public (1:46-2:06)**, puis chute à -33 (2:12-2:16) avant le titre. [mesuré, pas écouté]
 
 ## Ce qui marche (avec la preuve)
-1. **Le rythme suit l'état intérieur** (`montage-regard`, Schoonmaker) : posé dans la loge (plans de 6 à 9 s, il est sûr de lui : « Je sais ce que j'ai à faire »), puis haché quand il perd pied (0,6 s par plan, 1:59-2:02) et flou (le point se perd sur ses gros plans, 2:00). Ici la partie la plus rapide est le sommet, et c'est juste : le sommet est une panique, pas une délivrance (les films de la vague 1 accélèrent avant le sommet d'émotion ; ici l'émotion est la perte de contrôle). [VU SUR IMAGES]
+1. **Le rythme suit l'état intérieur** (`montage-regard`, Schoonmaker) : posé dans la loge (plans de 6 à 9 s, il est sûr de lui : « Je sais ce que j'ai à faire »), puis, quand il perd pied, un gros plan porté qui tremble (révisé en session 9 : un seul plan d'environ 4,8 s, pas des plans de 0,6 s) et flou (le point se perd sur ses gros plans, 2:00). Ici la partie la plus rapide est le sommet, et c'est juste : le sommet est une panique, pas une délivrance (les films de la vague 1 accélèrent avant le sommet d'émotion ; ici l'émotion est la perte de contrôle). [VU SUR IMAGES]
 2. **Le passage vers la scène est muet et dure 16 s** (0:44-1:00) : couloir, public, projecteur, micro seul dans le néon. Le spectateur entre dans la salle avec lui ; c'est un plan d'orientation qui fait aussi monter l'attente. [VU SUR IMAGES]
 3. **Une couleur par monde** : vert et ampoules chaudes (la loge, l'intime), cyan et noir (la scène, l'exposition). La rupture de couleur à 0:48 dit le changement d'état sans un mot (« une matière par monde » des films). [VU SUR IMAGES]
 4. **Le silence est le sujet** : 13 s entre « Bonsoir à tous » et « Vous allez bien ? » (1:00-1:13), le public muet, quelqu’un sur son téléphone (vers 1:54). Le bide est montré par l'absence de son, et la phrase sur « les réseaux sociaux » trouve son image dans ce téléphone allumé. [VU SUR IMAGES, transcription]
@@ -55,10 +55,16 @@ _Fiche ouverte le 2026-10-11 (phase 2, session 6, projet Studio F42 n°6). **Ét
 - **Applique** la règle dictée par Diego (`GOUTS.md`, 8) comme critère de jugement : deux plans la manquent.
 
 ## Principes transférables (pour le studio)
-1. **Le sommet de panique se hache, le sommet de délivrance se tient.**
+1. **Le sommet de délivrance se tient ; la panique peut se jouer dans la caméra (tremblé, perte de point) sans couper** (corrigé en révision, session 9).
 2. **Faire entendre le sujet avant de le dire** : le public en rumeur dès la loge.
 3. **Le passage d'un lieu à l'autre en silence**, comme un plan d'orientation qui fait monter l'attente.
 4. **Deux masters** : festival (-23, dynamique) et web (-14/-16).
 
 ## Ce que Diego en a dit
 Rien sur ce projet (titre seulement dans `NOTES-DIEGO.md`). Le critère de lumière vient de `GOUTS.md` (réponse 8).
+
+## Révision (passe de révision, session 9, 2026-10-11)
+Leçon apparue après l'analyse (session 6) : séries de « plans » à la durée minimale = détecteur saturé (session 9). Le compte des séries a signalé 1:59-2:02 (trois « plans » de 0,6 s d'affilée). Vérifié avant de relire la fiche : `verif_plan.py` y voit 16 « coupes » en 12 s, mais une tuile à 10 images/s et des bandes de 6 images à 25 i/s autour de chaque coupe détectée (1:59,9, 2:00,6, 2:01,2, 2:01,8, 2:02,4) montrent **un seul gros plan porté continu de 1:58,8 à 2:03,5 (environ 4,8 s)** : la caméra tremble, se resserre, le point se perd et revient.
+- **Corrigée** : « haché quand il perd pied (0,6 s par plan, 1:59-2:02) » et le principe « le sommet de panique se hache ». La panique est jouée **dans la caméra** (tremblé, poussée, perte de point), pas par la coupe. C'est plus proche des films de référence (« la surprise arrive dans le plan », *Whiplash*) que je ne l'avais écrit. `verif_plan.py` échoue ici comme sur l'action accélérée : quand toute l'image bouge, il voit des coupes partout.
+- **Corrigée par conséquence** : le court métrage compte **42 plans** et non 47 (cinq fausses coupes retirées à 1:59,9-2:02,4).
+- **Confirmée** : l'après tenu (deux plans de 2,7 et 5,7 s et un creux de son avant le titre).
