@@ -66,3 +66,9 @@ Le film fait sentir **une intelligence qui va plus vite que les autres et qui s'
 - Le minutage précis de la scène d'ouverture (7 min selon The Ringer, relu le 2026-10-10 ; autour de 9-10 min selon d'autres, selon où l'on fixe la fin), et le nombre de plans de la scène.
 - Le flou de la séquence d'Henley : je n'ai pas vérifié s'il vient d'objectifs à bascule au tournage ou uniquement de la post-production chez a52 (les sources parlent surtout de post-production).
 - Le volume exact de rushes et le nombre total de plans du film.
+
+## Confrontation avec le film (phase 2, session 8, `analyses/films/the-social-network.md`)
+- **Ouverture** : 4 min 54 s de dialogue (0:21-5:15), pas 7 min ; environ 110 plans, champ-contrechamp strict. [VU SUR IMAGES]
+- **« La coupe tombe souvent pendant une réplique »** : à nuancer. Sur 23 coupes regardées sur spectrogramme, 7 sont pendant la parole (30 %), 4 à la reprise, 12 dans des trous de 0,1 à 0,3 s. Le chevauchement ressenti vient de l'absence de silences entre répliques. [VU SUR SPECTROGRAMME]
+- **Henley** : 96 s de course, environ 50 plans détectés + un travelling de 13,9 s (le chiffre de 57 reste plausible, non confirmé). Progression confirmée (médiane 2,5 → 1,0 s), mais **plateau à environ 1 s**, pas « plusieurs coupes par seconde ». **Aucun calage** sur les temps ni sur les attaques du Grieg (musique séparée, contre le hasard) : la cadence suit la montée du morceau, pas sa grille. [mesuré]
+- Principe 3 (« adosser une accélération à une musique qui accélère ») : **confirmé, précisé** — sur la courbe, pas sur les temps.
