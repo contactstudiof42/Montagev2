@@ -1,6 +1,6 @@
 # « POPCORN avec Anyme, Léna Situations & Etoiles » (talk-show, 2 h 32)
 
-_Fiche ouverte le 2026-10-11 (phase 2, session 5, YouTube n°10). **État : première passe + quatre séquences fines** (ouverture, crêtes de 1:20 et 2:12, fin ; 142 plans regardés) ; pas de transcription ni de mesure coupes / parole. Source : 480p, 25 i/s, 2 h 32 min 06. Les invités sont nommés par le titre et par leurs cartons à l'écran._
+_Fiche ouverte le 2026-10-11 (phase 2, session 5, YouTube n°10). **État : première passe + quatre séquences fines** (ouverture, crêtes de 1:20 et 2:12, fin ; 142 plans regardés) ; coupes / parole mesurées sur 3 min de conversation ; pas de transcription. Source : 480p, 25 i/s, 2 h 32 min 06. Les invités sont nommés par le titre et par leurs cartons à l'écran._
 
 **Lu avant l'analyse** : `montage-youtube` (14 : podcast filmé, live ; 16 ter : plateau multicaméra), fiche « Qui est l'imposteur ». Aucun goût de Diego sur cette vidéo.
 
@@ -20,11 +20,12 @@ Planches dans `videos/_travail/popcorn/seq/` : 0:00-1:45, 1:20:30-1:22:00, 2:12:
 4. **La fin** : rires au plateau en plans de 2 à 11 s, logo, générique en mise en page (l'image du plateau à gauche, la liste des noms à droite, sur la charte rouge), puis **26 s d'écran du sponsor** sur noir.
 
 ## Premiers constats
+- **Coupes et parole (40:00-43:00, voix séparée par demucs)** : pas de fond musical (piste sans voix à -44,9 LUFS) ; 50 coupes en 3 min ; **82 % des coupes pendant la parole pour 80 % du temps de parole** : les coupes ignorent les pauses, elles vont aux visages au milieu des phrases, comme Boxho (71 % / 77 %) et contrairement au jeu d'« Imposteur » (49 % / 77 %). [mesuré]
 - **L'arrivée d'un invité est un plan large** (entrée par la porte du décor) suivi de son carton nom : le format présente ses invités comme un plateau de télévision.
 - **Densité plus basse et plus variable qu'« Imposteur »** pour le même type de plateau : la conversation prime sur le jeu. À vérifier sur séquences.
 
 ## Pas fait
-- Une rubrique de conversation pure (milieu du film) en plan par plan ; transcription ; mesure coupes / parole (voix séparée) ; vérification des plans longs de l'animateur (45 et 67 s : coupes cachées ?).
+- Une rubrique de conversation pure (milieu du film) en plan par plan ; transcription ; vérification des plans longs de l'animateur (45 et 67 s : coupes cachées ?).
 
 ## Ce que Diego en a dit
 Rien sur cette vidéo.
