@@ -2,17 +2,18 @@
 
 _Lire en premier. Seul l'état présent compte ici. L'état de clôture de la phase 1 est archivé dans `archives/phase-1/PROGRESS-cloture-phase-1.md`, et l'historique des sessions 1 à 25 dans `archives/phase-1/PROGRESS-historique.md`._
 
-## État (2026-10-11, session 1 de la phase 2, 01:27-01:52)
+## État (2026-10-11, session 2 de la phase 2, 02:04-02:5x)
 - **Phase 2 en cours** : mission `PROMPT-PHASE-2.md` (lire aussi ses sections « Avant chaque vidéo : repartir de la phase 1 » et « Leçons de méthode »). Démarrage de chaque session : `CLAUDE.md`.
-- Session 1 : skill `montage-nouvelle-reference` et `REFERENCES.md` créés (étape 0) ; **Interstellar analysé** (`analyses/films/interstellar.md`) ; **Joker** : passe globale, puis métro, escaliers et plateau de Murray en passe fine (`analyses/films/joker.md`).
-- **Reprendre ici** : finir Joker (toilettes vers 0:33:30-0:35, Pogo's 0:42:40-0:44, montée des escaliers à situer, émeute et capot 1:46-1:53, plan du bus en miroir). Les fichiers de passe globale sont déjà dans `videos/_travail/joker/` (proxy, coupes.json, ebur128.log, vignettes, couleur.json) : pas besoin de les refaire. Ensuite : Whiplash, Le Dîner de cons, Mad Max: Fury Road, puis le bilan de la vague 1 dans RAPPORT.md.
+- Session 2 : retour de Diego du 2026-10-11 intégré (la note sur l'amarrage d'Interstellar n'était pas de lui) ; **Joker terminé** (7 séquences) ; **Whiplash analysé** (`analyses/films/whiplash.md`, 6 séquences) ; passe globale et transcription du **Dîner de cons** lancées (`videos/_travail/diner/`).
+- **Reprendre ici** : Le Dîner de cons. Si `videos/_travail/diner/coupes.json` n'existe pas, lancer `courbes_film.py` et `couleur_film.py` (la passe est faite si `passe.log` finit par « coupes: ») ; la transcription Whisper est `sous-titres.srt` (le film n'a que des sous-titres image). Séquences à viser : la présentation de Pignon, le coup de fil à Juste Leblanc, le contrôleur fiscal (Cheval), la fin. Mesurer le timing comique (air avant et après la chute, qui est à l'image sur la chute) contre `culture/timing-comique-sitcom.md`. Puis Mad Max: Fury Road (vérifier le HDR avec ffprobe), puis le **bilan de la vague 1** dans RAPPORT.md.
 - `.claude/settings.json` (ajouté par Diego) n'est pas commité : le garde-fou de l'agent refuse ce commit. À laisser à Diego.
 
-## Chaîne d'analyse d'un film (session 1)
-1. `labo/outils/passe_globale.sh FILM videos/_travail/<nom> <piste audio VO> <sous-titre>` en arrière-plan (6 à 8 min) ; repérer les pistes avec `ffprobe`.
-2. `courbes_film.py` (rythme et volume) et `couleur_film.py` (couleur) avec `--marques`.
-3. Repérer les scènes dans les sous-titres (`sous-titres.srt`), puis `LUFS=M sequence.py DOSSIER DEBUT FIN sortie.png [colonnes] [largeur]` pour chaque séquence (planche < 500 Ko).
-4. Vérifier à l'œil plans longs, pics et lignes d'alterné (tuile ffmpeg `fps=1/2,tile=15x14`).
+## Chaîne d'analyse d'un film (sessions 1-2)
+1. `ffprobe` : pistes audio et sous-titres, **et `color_transfer`** (si `smpte2084`, préfixer `HDR=1`). Puis `labo/outils/passe_globale.sh FILM videos/_travail/<nom> <piste audio VO> <sous-titre texte ou -1>` en arrière-plan (6 à 9 min). Sans sous-titres texte : `whisper-cli` sur l'audio 16 kHz.
+2. `courbes_film.py` (crée `coupes.json`, rythme et volume) et `couleur_film.py` (couleur).
+3. Repérer les scènes dans les sous-titres, puis `LUFS=M sequence.py DOSSIER DEBUT FIN sortie.png [colonnes] [largeur]` pour chaque séquence (planche < 500 Ko). Lancer les planches en parallèle (fonction shell : zsh ne découpe pas une commande rangée dans une variable).
+4. Vérifier tout plan long cité : `verif_plan.py` + tuile ffmpeg `fps=1/2` (puis 3 à 6 images/s sur le passage douteux) ; regarder s'il s'agit d'un filé.
+5. Musique : `calage.py DOSSIER DEBUT FIN 2 97` (coupes contre attaques fortes et temps, avec le hasard).
 
 ## Leçons de méthode (test sur SDM)
 - Les détecteurs de coupes (`analyse_clip.py` et PySceneDetect) **ratent les coupes cachées** par l'occlusion d'un corps ou par un filé, ainsi que les coupes des scènes sombres. Ils inventent aussi des coupes quand la lumière clignote (voir `PROMPT-PHASE-2.md`).
@@ -36,13 +37,13 @@ _Lire en premier. Seul l'état présent compte ici. L'état de clôture de la ph
 | films | Interstellar (2014), IMAX | 2 h 49 min | ✔ 2026-10-11 |
 | films | Joker (2019) | 2 h 01 min | ✔ 2026-10-11 (7 séquences) |
 | films | La Haine (1995) | 1 h 33 min | |
-| films | Le Dîner de cons (1998) | 1 h 20 min | |
+| films | Le Dîner de cons (1998) | 1 h 20 min | passe globale lancée (session 2) |
 | films | Mad Max: Fury Road (2015) | 2 h 00 min | |
 | films | OSS 117 : Le Caire, nid d'espions (2006) | 1 h 39 min | |
 | films | Spider-Man: Across the Spider-Verse (2023), HDR10, AV1 | 2 h 20 min | |
 | films | Spotlight (2015) | 2 h 09 min | |
 | films | The Social Network (2010) | 2 h 00 min | |
-| films | Whiplash (2014), 2160p HDR | 1 h 46 min | |
+| films | Whiplash (2014), 2160p HDR | 1 h 46 min | ✔ 2026-10-11 (6 séquences) |
 | clips | Booba — 6G | 3 min 39 s | |
 | clips | GENER8ION — STORM (starring Yung Lean) | 7 min 34 s | |
 | clips | HOUDI — Belle chanson | 3 min 37 s | |
