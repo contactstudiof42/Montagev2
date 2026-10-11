@@ -218,3 +218,10 @@ Diego demande de mettre en place, dès la V5 et pour tous les projets suivants, 
 3. **Le carnet de goût** (`CARNET-DE-GOUT.md`) : à créer en reprenant les retours des V2 à V4, puis à enrichir à chaque retour.
 Et pour tout : la **portée** de chaque leçon ([universel], [genre], [projet]), pour que ce qui vaut pour Sony ne devienne pas une règle partout.
 Ordre pour la prochaine session : carnet de goût (reprise des V2 à V4), puis `da.md` du projet Sony, puis la V5 avec les notes sur la V4.
+
+## 2026-10-11 — Deux retours de plus sur la V4, et deux règles (dictés en session V5)
+_Dictés par Diego dans la conversation, recopiés par l'agent. Le message s'arrête après « mise au point qui cherche, » : la suite de la liste des flous ratés n'est pas arrivée._
+- [projet] Vers 0:12 : un plan de tapis avec un bout de pied flou, puis une coupe. « Qu'est-ce que ça fout là ? »
+- [projet] Au début : le plan sur les trois écouteurs (le panoramique) : l'écouteur est flou, le plan n'est pas esthétique.
+- [universel] Règle : aucun plan de remplissage. Chaque plan de la timeline doit mériter sa place, même dans une rafale de 3 images. Avant chaque rendu, contrôle le passage exact utilisé (pas la vignette du dérush) : première, milieu et dernière image en pleine résolution, netteté du sujet, exposition, visages.
+- [universel] Un flou n'est pas forcément une faute. Pose-toi toujours la question : volontaire ou raté ? Volontaire = pose lente (slow shutter), bascule de point qui va quelque part, flou de mouvement qui sert l'énergie, flou qui se résout dans le plan. Raté = mise au point qui cherche, (… message coupé ; complété par l'agent, à confirmer : sujet principal hors du plan de netteté sans intention, bougé de la main qui n'est pas un geste.)

@@ -123,6 +123,12 @@ _https://eyecannndy.com/technique/… : chaque technique illustrée par des GIF.
 - **Variantes de hauteur** pour un son répété (montée d'un demi-ton à un ton par occurrence, `asetrate` à la vraie fréquence d'échantillonnage du fichier, ou `AudioPitchSemiTones` dans Resolve).
 - **Crête calée sur l'image** de l'événement (`labo/outils/phase3/v4/sfx_prep.py` → `crete.json`, `partition_sfx.py`).
 
+### Genre « after movie / événementiel kinetic » : notes de Diego sur la V4 Sony (2026-10-11) [genre : after movie kinetic] [TESTÉ EN CONDITIONS RÉELLES, non écouté]
+- **Un son sur chaque transition, ou aucun** : dans ce genre, mélanger des transitions sonorisées et des transitions muettes se lit comme un oubli. Sur Sony : toutes, chacune avec un son qui lui correspond (contrôle : liste des transitions de la timeline contre la liste des SFX, 0 transition muette). **Contre-indication** : les films où le son des coupes est la musique elle-même (plusieurs références réseaux de Diego : lucasbosc, pasalu, darius), les films de marque calmes, l'interview.
+- **Les inversions d'image changent des flashs** : « tu peux en faire un peu plus » (en alternance avec les flashs blancs, dans la limite de photosensibilité). **Contre-indication** : luxe, beauté douce, corporate.
+- **Le collage ou le détourage doit préparer le plan suivant** (piste de Diego : sujet détouré, le plan suivant se glisse derrière, puis elle disparaît par un glitch) ; fond et matière tirés de la DA (`da.md`), jamais d'une bibliothèque d'idées.
+- La table ci-dessus est un **répertoire, pas une liste à remplir** : une technique n'entre que si le genre, la DA et la matière la demandent (`PROMPT-PHASE-3.md`, « La portée d'une règle »).
+
 ## 5. Photosensibilité (obligatoire dès qu'il y a flash ou strobe) [TESTÉ EN LABO]
 - **Les sept références réseaux de Diego échouent toutes à `flash_check.py`** (pire seconde 4 à 6), y compris la pub Sephora qui n'a aucun flash visible : l'outil simplifié compte sans doute les coupes entre plans de luminances très différentes. Conséquence : ce genre ne respecte pas le seuil WCAG ; pour une diffusion qui l'exige (TV, pub UK), mesurer et adapter ; l'outil reste à confronter à un vrai test Harding avant de juger une coupe ordinaire. [mesuré, doute sur l'outil]
 - `python3 -I labo/photosensibilite/flash_check.py rendu.mp4` ; > 3 flashs dans une seconde = refus (WCAG 2.3.1, BT.1702) ; un flash d'1 image compte entier ; surface jugée dans la pire fenêtre de 1/3 × 1/3 de l'écran. Pub UK : test Harding.

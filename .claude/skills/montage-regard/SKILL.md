@@ -55,6 +55,21 @@ Ma V2 Sony passait tous mes contrôles chiffrés (loudness, crêtes, photosensib
 6. **L'ordre des plans a une raison, bloc par bloc** : ni l'heure de tournage (trop chronologique, défaut de Claude nu), ni un mélange sans logique (défaut de ma V2). Une progression qu'on comprend (où on est, ce qui se passe), et pour chaque bloc une phrase « pourquoi ces plans, dans cet ordre » dans `plan.md`. Aucun plan posé au hasard.
 7. **Quand un geste est bloqué, chercher le résultat, pas l'outil** : « pas de Magic Mask par script » ne voulait pas dire « pas de détourage » (Claude nu a seuillé la carte de profondeur de Resolve). Lister les autres chemins avant de déclarer une impossibilité.
 
+## Le goût de chaque plan (notes de Diego sur la V4 Sony, 2026-10-11) [universel] [TESTÉ EN CONDITIONS RÉELLES]
+V4 à 80 % livrable : la technique tient, ce qui reste est le goût. Toutes ces règles valent pour tout montage ; les cas Sony sont dans `CARNET-DE-GOUT.md` (images).
+1. **Aucun plan de remplissage**, même dans une rafale de 3 images (« qu'est-ce que ça fout là ? » : un tapis avec un bout de pied flou). **Avant chaque rendu, contrôler le passage exact utilisé** (pas la vignette du dérush) : première, milieu et dernière image en pleine résolution ; netteté du sujet, exposition, visages.
+2. **Un flou : volontaire ou raté ?** Volontaire : pose lente, bascule de point qui va quelque part, flou de mouvement qui sert l'énergie, flou qui se résout dans le plan. Raté : mise au point qui cherche ; sujet (surtout le produit) hors du plan de netteté sans intention ; bougé de main qui n'est pas un geste. Écrire la famille de chaque plan flou retenu.
+3. **Les visages, image par image** sur toute la durée utilisée : yeux mi-clos, bouche tordue, grimace. On garde le moment flatteur, sauf si le film veut l'effort.
+4. **Étalonner plan par plan**, pas par lot : chaque plan en pleine résolution (exposition, ombres, hautes lumières), puis à côté de ses voisins. Une LUT par lumière ne raccorde pas des plans exposés différemment.
+5. **Noirs denses, pas de bruit** : agrandir et amplifier les zones d'ombre ; des ombres relevées révèlent le bruit du capteur, et le grain ajouté s'y additionne.
+6. **Dans un mouvement continu (zoom, transition), l'exposition se règle sur tout le mouvement**, pas sur son début : première, milieu et dernière image.
+7. **Un blanc de produit garde sa matière** : le comparer à la photo produit de la marque, pas seulement compter les pixels à 250.
+8. **Chaque plan et chaque effet ont une raison** (servir ce qui vient après, le sens ou le rythme) ; une phrase « il est là parce que… » dans `plan.md`, sinon il sort.
+9. **Tout élément graphique (fond, texture, couleur, papier, cadre) vient de la direction artistique** (`montage-direction-artistique`, `da.md` écrit avant le premier effet). Un élément joli sans lien avec le film est une faute de goût.
+10. **Un détourage se juge au bord, à 200 %** : masque seul, sujet sur fond noir, blanc et couleur vive, bords difficiles agrandis (cheveux, épaules, mains) ; sinon autre outil, autre plan, ou pas de détourage.
+11. **Des variantes sur les moments clés** (ouverture, collages, transitions majeures, sommet, titre, fin) : 2 ou 3 idées réellement différentes, comparées en pleine résolution ; je juge mieux entre options que je ne réussis du premier coup.
+12. **Relire `CARNET-DE-GOUT.md`** (entrées [universel] et du genre) avant chaque livraison, et vérifier la version contre chacune.
+
 ## Méthode de visionnage
 1. Planche à intervalle régulier avec numéro d'image : lire l'**arc**. [TESTÉ EN LABO]
    `ffmpeg -i v.mp4 -vf "select='not(mod(n\,20))',scale=320:-1,drawtext=text='%{n}':x=4:y=4:fontsize=12:fontcolor=yellow,tile=5x2" -frames:v 1 planche.png`
