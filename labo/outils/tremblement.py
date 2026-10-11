@@ -1,4 +1,4 @@
-# tremblement.py VIDEO [debut_s] [fin_s] [--png sortie.png] [--fenetre 0.4]
+# tremblement.py VIDEO [debut_s] [fin_s] [--png sortie.png] [--fenetre 0.4] [--json reste.json]
 # Mesure le tremblement d'un plan : déplacement global du décor image par image (corrélation de phase sur l'image
 # en niveaux de gris, fenêtre de Hann), trajectoire cumulée de la caméra, trajectoire lissée (le mouvement voulu,
 # moyenne glissante gaussienne de `fenetre` secondes), reste = tremblement. Résultats en pixels ramenés à une image
@@ -82,8 +82,12 @@ if __name__ == "__main__":
     png = None; fen = 0.4
     if "--png" in a: i = a.index("--png"); png = a[i + 1]; del a[i:i + 2]
     if "--fenetre" in a: i = a.index("--fenetre"); fen = float(a[i + 1]); del a[i:i + 2]
+    jout = None
+    if "--json" in a: i = a.index("--json"); jout = a[i + 1]; del a[i:i + 2]
     v = a[0]; t0 = float(a[1]) if len(a) > 1 else None; t1 = float(a[2]) if len(a) > 2 else None
     fr, fps, w = lire(v, t0, t1)
     res, traj, lisse, reste = mesure(fr, fps, w, fen)
     print(json.dumps({"video": v.split("/")[-1], "debut": t0, "fin": t1, **res}, ensure_ascii=False))
     if png: courbe(png, traj, lisse, reste, v.split("/")[-1])
+    if jout:   # reste image par image (px, image de 1080 de large ; y vers le bas) : sert à stabiliser en compensant
+        json.dump({"fps": fps, "reste": np.round(reste, 2).tolist()}, open(jout, "w"))

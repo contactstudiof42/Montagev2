@@ -61,3 +61,8 @@ L'erreur typique d'un agent n'est pas le bug, c'est la dérive : vingt appels co
 
 ## Ce que la phase 3 doit valider
 Voir `PLAN-TESTS-MCP.md` (tests 1 à 13 et suivants). Après validation, chaque recette passe ici ou dans le skill du logiciel avec la mention `[TESTÉ EN CONDITIONS RÉELLES]` et la date.
+
+## Leçon de la V3 Sony (2026-10-11) [TESTÉ EN CONDITIONS RÉELLES]
+- **Relire ses propres recettes avant de recoder un geste** : les poignées de courbe relatives étaient écrites dans mon journal de la V2 ; je les ai reposées en absolu, et 30 zooms sont partis à 1,9×. Après tout geste animé : lire les valeurs calculées à quelques instants, pas seulement « l'appel a réussi ».
+- **Contrôler par plage** : rendre 5 à 70 images autour du geste, extraire des images, puis seulement rendre le tout. Un rendu complet peut passer de 15 s à 1 min 30 dès qu'il y a de l'IA (carte de profondeur).
+- **Un outil tiers en « bac à sable » (Gyroflow)** ne lit pas les disques externes en ligne de commande ; donner la marche à suivre à l'utilisateur, sans toucher soi-même aux réglages de sécurité.

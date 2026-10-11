@@ -1,23 +1,37 @@
-# Autocritique — Sony LinkBuds Clip
+# Autocritique — Sony LinkBuds Clip, V3
 
-_Phase 3, session 1 (2026-10-11). Regardé sur planches (milieu et première image de chaque plan), bandes image par image aux moments clés, luminance moyenne par plan, `qc_livraison.sh`, loudness par bloc, `flash_check.py`. **Rien n'a été écouté.**_
+_2026-10-11. Autocritique de la V2 : `archives/phase-3/sony-linkbuds/autocritique-V2.md`. Regardé : planches à 5 images par seconde, 6 images en pleine résolution à côté des références (`images/V3_6images.jpg`, `images/look_D.jpg`), courbes des zooms relues image par image, `tremblement.py`, `qc_livraison.sh`, `flash_check.py`. **Rien n'a été écouté.** Question posée à chaque image : « un monteur pro livrerait-il ça ? »_
 
-## V0 (brouillon, premier rendu)
-- **Son saturé** : -7,6 LUFS, true peak **+4,4 dBTP**, crêtes décodées au-dessus de 0 dBFS. La musique (master MP3 très fort) posée à 0 dB suffisait à dépasser -9 LUFS. → musique -8 dB, SFX -6 dB, logo sonore Sony +6 dB (il est à -23,7 LUFS dans le fichier fourni).
-- **Texte « LinkBuds Clip » trop petit** (taille 0,09 dans une composition 2160 de large) → 0,17, entrée de 0,153 à 0,17 en 4 images.
-- Corrigés avant la V1.
+## Mesures du rendu final (`rendus/sony_linkbuds_V3.mp4`)
+| | V2 | V3 | Claude nu | Références réseaux |
+|---|---|---|---|---|
+| Durée | 59,6 s | **44,6 s** | 54,9 s | 12-43 s |
+| Plans | 68 | **91** | 83 | — |
+| Flashs | 6 | 28 | ≈ 60 | — |
+| SFX | 19 | **64** | ≈ 55 | — |
+| Impacts / poussées / secousses | 4 / 1 / 1 | **19 / 11 / 2** (+ 1 punch-in) | ≈ 30 en tout | — |
+| Détourages | 0 | **3** | 3 | — |
+| Noirs (5e centile de luma) | 17 | **9** | 19 | 5-11 |
+| Contraste (95e − 5e centile) | 137 | **167** | 117 | 121-170 |
+| Saturation moyenne | 113 | 100 | 143 | 79-158 (médiane 115) |
+| Loudness / true peak | −14,5 / −1,4 | **−14,1 / −1,1** | −13,2 / −2,0 (crête) | — |
+| Photosensibilité (pire seconde) | 3 | 3 | non mesuré | — |
+| Tremblement des packshots (moyenne) | 4,3-4,7 px | **0,7-2,7 px** | ≈ tremble aussi | plan fixe < 1,5 |
 
-## V1 (`rendus/sony_linkbuds_V1.mp4`) — défauts par ordre de gravité
-1. **Plans trop sombres dans le sommet rouge** (luminance moyenne mesurée sur le rendu, sur 255) : C6662 à 1125 (31), C6664 à 1171 (28), C6672 à 1312 (27), et C6553 à 188 (38) dans l'ouverture. Ce sont des plans larges, sujets petits et décentrés : à 1 s sur un téléphone, on ne lit qu'une masse rouge. Le goût de Diego : « visages sombres, mais un minimum de lumière sur l'info à voir ». → CDL sur le nœud 1 (pente 1,25, décalage 0,02 : 28 → 45 mesuré sur C6664), et pente 1,15 sur C6665 (40).
-2. **Dernier packshot flou** : C6724 (0,5-2,2 s) est pris pendant que la caméra recule, la mise au point décroche ; c'est l'image qui porte le nom du produit juste avant le plan de fin. → C6723 à 29,0 s (les trois boîtiers ouverts, nets et fixes de 28,5 à 31,5 s).
-3. **Première image peu lisible** : la rafale s'ouvre sur C6660 (oreille en lumière rouge, très gros plan, à moitié dans le flou) : sur un fil, l'image 1 est une tache rouge. → ouvrir sur C6612 (écouteur net dans l'oreille, chouchou orange), puis rire, groupe, oreille rouge.
-4. **Niveau un peu bas** : -15,5 LUFS intégré, -2,4 dBTP (cible -14 / ≤ -1). → +1 dB sur toutes les pistes (≈ -14,5 LUFS, ≈ -1,4 dBTP attendus).
-5. **Le bloc C est une suite régulière de plans de 1 à 2 temps** (468-1030) : le « mur » est évité de justesse par quatre plans tenus (ralenti 562, souffle 656, groupe 796, néons 936, environ un toutes les 4 mesures). À surveiller à l'œil par Diego ; je ne change pas en V2.
-6. **Le monde produit (packshots blancs, lumière du jour) tranche** avec la salle chaude : voulu (c'est « l'objet » avant la marque), mais le passage du rouge au blanc par un Zoom In est brutal. Accepté pour la V2 ; à juger par Diego.
-7. Mineur : logo KORE lisible sur la sangle (C6632, 12 images) ; la marque du lieu reste discrète ailleurs.
+## Ce qui ne va pas encore, par ordre de gravité
+1. **Le son n'a pas été écouté.** 64 SFX choisis sur leur nom et leur forme d'onde, une coupure musicale (125,736 → 133,236 s) calée par la phase des temps forts : à valider à l'oreille avant tout. C'est le risque principal de la V3.
+2. **Packshot rose (C6725) : 2,7 px de tremblement moyen** après ma stabilisation (5,5 avant), au-dessus de mon seuil de 2 px ; pic 4,7 px. Il dure 1 s et commence sur un flash. Gyroflow ferait mieux s'il obtient l'accès au dossier.
+3. **Halo jaune autour des cheveux sur le premier détourage** (C6594, 281-293) : la carte de profondeur hésite sur les mèches éclairées par le néon. Visible sur image fixe ; sur 12 images en plein rythme, probablement pas. Le contour blanc ne suit pas une mèche.
+4. **Le titre est juste propre, pas remarquable.** SST Pro Roman qui monte sous un masque et dont l'interlettrage se resserre : c'est le geste standard d'une marque tech, sans idée propre au film. Mieux qu'un grossissement, en deçà des titres de mes références (darius, équipe de France). Alternative à juger par Diego : pas de titre (le plan de fin Sony suffit).
+5. **Le dernier packshot tient 3 s** (995-1072) avec une poussée lente et le titre : la plus longue tenue du film, voulue comme conclusion, mais après 40 s de rafales elle peut paraître longue.
+6. **Rupture de lumière salle rouge → packshots de jour.** Assumée (flash blanc, « après la séance, l'objet »), mais c'est un autre monde ; les boîtiers dans la salle noire (C6506-C6508) gardaient l'unité, en tremblant beaucoup plus (travellings rapides).
+7. **Look jugé seul.** D2 a le niveau de densité des références (noirs 9, contraste 167) ; la lumière des rushes reste une lumière d'ambiance, sans les contre-jours sculptés de mes références. Grain posé en Overlay à 35 %, à doser à l'œil sur un vrai écran.
+8. Les arrêts sur image et les détourages alourdissent le rendu (carte de profondeur par IA) : un rendu complet prend environ 1 min 30 au lieu de 15 s.
 
-## Ce qui marche (mesuré)
-- Calage : flashs exactement à 368, 374, 468 et 1078 ; noir de 415 à 418 sur le silence numérique de la musique ; drops coupés 0,4 image avant l'attaque (468,4) ; plan de fin à 1447 sur le dernier coup.
-- Produit porté visible dans 13 plans sur 68 (oreilles, boucles, chouchous) + 3 packshots ; nommé une fois.
-- Photosensibilité : `flash_check.py` OK (20 flashs généraux, pire seconde 3, fenêtre 1/3).
-- Fiche technique : H.264 1080x1920 25 i/s yuv420p, BT.709 ; AAC 48 kHz stéréo ; 59,56 s.
+## Ce qui marche (vérifié)
+- L'ouverture K-O-R-E : quatre lettres au même point du cadre, une par temps, puis le mot. On sait où l'on est en 2 s.
+- Les rafales reviennent quatre fois (199, 421, 609, 784), séparées par des plans tenus et des arrêts détourés : contraste vitesse / arrêt, ce que Diego avait aimé vers 15 s dans la V2.
+- Les détourages : propres sur C6566 et C6657, orange / noir / rouge, contour blanc net, figés pour de bon.
+- Les courbes de zoom : départ rapide, freinage long, flou de bougé ; relues image par image (1,25 → 1,008 dès la 2e image puis 1,0).
+- Aucune transition intégrée de type glissement, poussée ou volet.
+- Ordre des plans : chaque bloc a sa raison écrite dans `plan.md`.

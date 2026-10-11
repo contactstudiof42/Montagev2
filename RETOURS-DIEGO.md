@@ -82,11 +82,13 @@ Ton autocritique a contrôlé les chiffres (loudness, crêtes, photosensibilité
 1. Dès ta prochaine session, tire les leçons générales dans les skills (étalonnage, transitions, typographie, rythme, autocritique par comparaison d'images) et dans « Leçons de phase 3 » de `PROMPT-PHASE-3.md`.
 2. Ne retouche pas le montage tant que Diego ne t'a pas lancé sur la suite : il fait d'abord monter le même projet à un Claude sans formation (test comparatif).
 3. Ensuite viendra la V3, qui applique ces retours, dans une boucle de corrections où l'on comptera les allers-retours nécessaires pour livrer.
+**Intégré le 2026-10-11** (phase 3, session 2) : leçons dans `montage-regard` (« Juger sa propre version »), `montage-couleur-et-intention`, `montage-kinetic-editing` (transitions interdites, rafales), `montage-motion-design-principes` (19, titre) et « Leçons de phase 3 » ; appliqué dans la V3 (look fabriqué et comparé, aucune transition intégrée, nouveau titre, 4 rafales, 44,6 s, packshots mesurés et stabilisés).
 
 ## 2026-10-11 — Ton regard sur ta propre image (suite des notes sur la V2)
 Diego ajoute : « se comparer, ça ne veut pas dire se calquer ». Il ne veut pas valider ton look à mi-parcours : tu as assez de références pour savoir ce qu'est une belle image, à toi de te corriger seul, dans le style voulu par le brief. Il veut aussi que tu **voies le mouvement** (les packshots tremblants), et que tu utilises **Gyroflow**, installé sur son Mac.
 Les règles sont dans la nouvelle section « Ton regard sur ta propre image » de `PROMPT-PHASE-3.md` (look comparé aux références avant le montage et avant la livraison, mesure du tremblement avec un outil à construire, Gyroflow en ligne de commande). Applique-les dès la V3.
 - Précisions de Diego (même jour) : **ne copie pas les rushes** pour Gyroflow (le disque de travail n'aura pas toujours la place) : demande-lui l'accord d'écrire les fichiers stabilisés directement dans le dossier source. Et **garde Resolve léger** : le look décidé tôt ne doit pas alourdir tout le montage (section « Garder Resolve léger » de `PROMPT-PHASE-3.md`).
+**Intégré le 2026-10-11** (session 2) : `labo/outils/tremblement.py` construit et calibré (plan fixe < 1,5 px ; packshots V2 4,3-4,7 px ; seuil 2 px / 5 px de pic) ; look sur 6 images avant le montage (`projets-phase-3/sony-linkbuds/look.md`) ; Gyroflow : accord donné, bloqué par le bac à sable de macOS (accès au dossier à donner par Diego, marche à suivre fournie) ; repli : stabilisation par trajectoire mesurée. Look en un seul nœud, effets sur pistes à part (flashs V3, titre V4, grain V5).
 
 ## 2026-10-11 — Projet Sony : pas de version de Diego, comparaison avec Claude nu seulement
 Le brief Sony est **fictif** : les rushes sont réels, mais Diego avait livré à Sony une vidéo faite sur un autre brief. Il n'y aura donc **pas de dossier `final-diego/`** pour ce projet. L'étape 6 de `PROMPT-PHASE-3.md` se fait ainsi :
@@ -94,6 +96,7 @@ Le brief Sony est **fictif** : les rushes sont réels, mais Diego avait livré �
 - les notes de Diego sur les deux versions (dans ce fichier) servent de juge ;
 - `comparaison.md` dit ce que Claude nu a fait mieux que toi et pourquoi tu ne l'as pas fait (par exemple, il a réussi 3 détourages automatiques, que tu croyais impossibles par script), ce que tu as fait mieux que lui, et ce que ta formation a réellement apporté ;
 - puis tu enchaînes sur la V3, qui applique les retours de Diego et les règles de « Ton regard sur ta propre image ».
+**Intégré le 2026-10-11** (session 2) : `projets-phase-3/sony-linkbuds/comparaison.md` ; V3 rendue (`rendus/sony_linkbuds_V3.mp4`).
 
 ## 2026-10-11 — Projet Sony : comparaison de Diego, agent (V2) contre Claude nu (V1)
 _Dictée par Diego, mise en forme par l'assistant de configuration ; les phrases entre guillemets sont ses mots._
@@ -108,9 +111,11 @@ _Dictée par Diego, mise en forme par l'assistant de configuration ; les phrases
 - **Note de Diego : ta V2 livrable à 50 %, la V1 de Claude nu à 40 %.** C'est le point de départ chiffré : la V3 doit faire monter ce chiffre.
 - **[gros, pour les deux versions] L'intention du cadreur n'a pas été lue.** Dans le hall, le cadreur a filmé une série : un plan sur le K du logo KORE, puis le O, puis le R, puis le E, puis le logo en entier. C'est fait pour un raccord (match cut) qui épelle K-O-R-E avant d'afficher le mot entier. Claude nu ouvre sur le K puis passe directement au corps ; ton dérush avait vu « des lettres qui défilent » mais conseillait d'en garder un ou deux plans. « Un monteur humain aurait direct compris quelle était la volonté du cadreur. »
 - **Leçon générale (à inscrire dans `montage-regard` et dans les leçons de phase 3)** : au dérushage, cherche les **séries pensées pour être montées ensemble** : plans consécutifs au même cadre ou à la même valeur, éléments d'un même objet filmés un par un (lettres, détails d'un produit), mouvements qui se répondent d'un plan à l'autre (raccord de mouvement), même geste répété sous plusieurs angles. Pour chacune, écris dans `derush.md` l'intention probable du cadreur et le montage qu'elle appelle. Dans la V3, utilise la série KORE si elle sert le film.
+**Intégré le 2026-10-11** (session 2) : comparaison écrite ; scripts et notes de Claude nu lus ; détourage par carte de profondeur repris et corrigé (`montage-resolve` § 4 quinquies) ; leçons « séries du cadreur » et « le brief prime » dans `montage-regard` et `PROMPT-PHASE-3` ; série K-O-R-E en ouverture de la V3 et section « Séries » dans `derush.md`.
 
 ## 2026-10-11 — Projet Sony : l'ordre des plans (retour oublié, dicté en session)
 _Dicté par Diego dans la conversation, mis en forme par l'agent._
 - Sur l'ordre des plans, les deux versions ratent, **en sens opposés** : Claude nu est **trop chronologique** (il suit l'ordre de tournage des rushes) ; ta V2 est **trop désorganisée** (les plans semblent posés sans logique).
 - Attendu : un juste milieu. Une **progression cohérente** (on comprend où on est et ce qui se passe, chaque bloc a sa raison d'être là), sans être prisonnier de l'heure de tournage, et **sans jamais placer un plan au hasard**.
 - Pour chaque bloc de la V3, écris dans `plan.md` **pourquoi ces plans sont là et dans cet ordre**.
+**Intégré le 2026-10-11** (session 2) : règle dans `montage-regard` (point 6) ; `plan.md` V3 : 9 blocs, chacun avec « pourquoi ces plans, dans cet ordre » (le chemin d'une participante, le corps de bas en haut, les rafales comme matière).

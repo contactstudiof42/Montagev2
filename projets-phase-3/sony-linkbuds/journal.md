@@ -29,3 +29,28 @@ _Base « TEST IA », Resolve Studio 21.1.1. Chaque appel MCP (`run_script` sauf 
 | 23 | | Rendu V2 | 14 s ; projet enregistré | **-14,5 LUFS, -1,4 dBTP**, flash_check OK | QC |
 
 Aucun usage de `run_script_unsafe`. Aucun projet hors `P3-*` ouvert. Sources lues seulement (import = référence).
+
+## V3 (2026-10-11, 15:30-16:00) — timeline `SONY_V3`
+_Tous les appels par `run_script` (bac à sable, sans accès disque), aucun `run_script_unsafe`. Aucun projet hors `P3-*` ouvert. Rushes en lecture seule. Contrôle après chaque geste : rendu d'une plage (`MarkIn` / `MarkOut`) puis images extraites._
+
+| # | Geste | Appel | Résultat | Contrôle |
+|---|---|---|---|---|
+| 24 | Import SFX (19, copiés du dossier de Claude nu, licence Artlist de Diego) et éléments (blanc, grain) | `ImportMedia` | 33 SFX, GFX | comptes |
+| 25 | Timeline 1080x1920 25 i/s, 6 pistes vidéo, 8 audio | `CreateEmptyTimeline("SONY_V3")`, `SetSetting`, `AddTrack` | ok | réglages relus |
+| 26 | Musique en 2 segments | `AppendToTimeline` mp3 `2487-3143` puis `3331-3789` | 0-656, 656-1114 | positions |
+| 27 | 90 plans + LUT de look | `AppendToTimeline` (rush 50p : `endFrame = start + 2 × durée`), `SetSpeed` 0 / 50 / 150 / 200, `SetLUT(1,"P3/P3_sony_look_film_D.cube")` | 90/90, un seul trou voulu (179-185) | relecture des positions ; brouillon V3a |
+| 28 | Exposition par plan | `SetCDL` décalage sur le log (−0,065 à +0,05) | 27 plans | V3b |
+| 29 | Impacts, poussées, punch-in, secousses | Fusion : `Transform` + `BezierSpline.SetKeyFrames` ; secousse par expression | 30 plans ; **poignées passées en absolu par erreur** → zooms à 1,9× | valeurs relues (`tr.Size[t]`) → geste 35 |
+| 30 | Détourages | Fusion : `DepthMap` (aperçu de profondeur) → `BitmapMask` → `ErodeDilate` → fond → `Merge` ×2 | **dédoublés** : la composition d'un arrêt sur image n'est pas figée ; corrigé par `TimeSpeed` (vitesse 0) après `MediaIn` et sans flou de bougé | 3 rendus de plage par essai |
+| 31 | Fond et contour à travers la LUT | valeurs S-Log3 calculées en inversant la LUT (orange 0,58/0,42/0,0 ; blanc 0,80) | couleurs justes | images |
+| 32 | Flashs | **une image fixe (PNG) prend 125 images quoi qu'on demande** → courte vidéo blanche ProRes, 1 image, `Opacity`, `COMPOSITE_ADD` | 34 puis 28 | test de photosensibilité |
+| 33 | Grain | ProRes 4 s de bruit, piste V5, `COMPOSITE_OVERLAY`, 35 % | ok | — |
+| 34 | SFX | 64 `AppendToTimeline` audio, crête calée, répartis sur 6 pistes | 64 | loudness |
+| 35 | Clés corrigées | poignées **relatives** (`RH {1: Δt, 2: Δv}`) | impacts 1,25 → 1,0 en 5 images | valeurs relues |
+| 36 | Stabilisation Resolve | `TimelineItem.Stabilize()` | **recadrage énorme**, packshot illisible → plans reposés | image |
+| 37 | Stabilisation par la trajectoire mesurée | `tremblement.py --json` sur le rush (50p), `Transform` « Stab » (taille 1,04) avec `Center` clé à chaque image = −reste | 5,5 → 2,7 px ; 1,7 → 0,7 ; 3,8 → 1,8 | `tremblement.py` sur le rendu |
+| 38 | Titre | `TextPlus` SST Pro Roman 0,135, interlettrage 1,06 → 1,0, montée sous `RectangleMask`, flou de bougé, porteur sur V4 | lisible | 3 rendus d'essai |
+| 39 | Niveaux | +1,3 dB partout, impacts −2,5 dB ; 6 flashs retirés | −14,1 LUFS, −1,1 dBTP, photosensibilité OK | `qc_livraison.sh`, `flash_check.py` |
+| 40 | Look D2 | `SetLUT(1,"P3/P3_sony_look_film_D2.cube")` ×90 | saturation 89 → 100 | rendu final `sony_linkbuds_V3.mp4` ; projet enregistré |
+
+Gyroflow : essai en ligne de commande refusé par le bac à sable de macOS (« Unable to read the video file », l'app ne lit que `~/Library/Application Support/Gyroflow/`). Diego a choisi de lui donner l'accès au dossier `SONY copy` ; marche à suivre donnée dans la conversation, test à refaire après.

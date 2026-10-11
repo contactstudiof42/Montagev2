@@ -92,3 +92,12 @@ _Exercices lents et contrôlés (fentes, mains sur les hanches, équilibre), lum
 - **Forces** : des oreilles portant l'écouteur en très gros plan, nettes, avec bijoux et chouchous (C6559, C6560, C6561, C6612, C6657, C6660, C6566) ; des packshots ouverts propres (C6723-C6727) et fermés dans la salle noire (C6506-C6508) ; une salle très graphique (néons verticaux, tuyaux en diagonale) et deux lumières (blanc chaud, puis rouge) ; une coach visible et audible (décomptes « quatre, trois, deux, sur un » dans C6577, C6576, C6587).
 - **Faiblesses** : le pilates est lent (peu de gestes explosifs : l'énergie viendra du montage) ; beaucoup de plans de groupe tournés de biais, sujet décentré ; aucun plan où l'on voit **quelqu'un mettre ses écouteurs** de près (seulement les mains aux oreilles en plan large, C6553) ; la marque du lieu (KORE) est partout, celle du produit presque nulle part (le logo Sony est minuscule sur le boîtier).
 - **Écartés** : interviews et animatrice (parole), café et cookies, plans de boutique KORE, C6509 après 3,5 s (bascule vers le sol), C6571 (flou de mouvement, sauf éclairs), plans larges sombres sans sujet.
+
+## Séries pensées pour être montées ensemble (ajouté le 2026-10-11, après le retour de Diego)
+_Leçon : au dérush, chercher les séries du cadreur et écrire l'intention et le montage qu'elle appelle. Je n'ai pas encore repassé les 252 rushes avec ce regard ; ce qui suit vient du dérush existant et des contrôles de la V3._
+| Série | Rushes | Ce qu'a voulu le cadreur (probable) | Montage qu'elle appelle | Utilisée en V3 |
+|---|---|---|---|---|
+| **K-O-R-E** | C6491 (K), C6492 (O), C6493 (R), C6494 (E), puis C6495 / C6496 (KORE sur le comptoir) | chaque lettre filmée au même endroit du cadre (centre mesuré à 53 % de la largeur dans les quatre plans) | épeler la marque en raccords, une lettre par temps, puis le mot entier | oui, ouverture (0-48 puis 48-71) |
+| L'écouteur qui se rapproche | C6559 (la mise au point glisse vers l'oreille), C6560, C6561 (gros plans d'oreille) | du profil au détail du produit porté | resserrer en 2 ou 3 plans sur le temps, du large au macro | oui, 152-179 |
+| Packshots ouverts | C6723 (long, trois boîtiers), C6724, C6725 (rose), C6726, C6727 | les variantes d'un même packshot (couleurs, valeurs) | une petite suite de couleurs, rose → blanc → les trois | oui, 948-1072 |
+| Tirages aux sangles | C6618-C6622, C6627-C6630 | même exercice sous plusieurs angles et valeurs | raccords de mouvement sur le geste (bras qui tirent), coupes sur l'extension | en partie (515-562, rafale 609-656) |
