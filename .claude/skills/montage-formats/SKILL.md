@@ -5,12 +5,34 @@ description: Choisir la structure et les conventions d'un format — pub 6/15/30
 
 # Narration par format
 
-Marqueurs : [SOURCÉ] lu dans une source citée · [TESTÉ EN LABO] fait technique mesuré · [ÉPROUVÉ EN MAQUETTE] vu seulement sur maquette Blender / Pillow / ffmpeg, hypothèse à confirmer en phase 2 · [THÉORIQUE] déduit, non vérifié.
+Marqueurs : [VU SUR IMAGES] vérifié sur de vraies vidéos (phase 2, fiches dans `analyses/`) · [SOURCÉ] lu dans une source citée · [TESTÉ EN LABO] fait technique mesuré · [ÉPROUVÉ EN MAQUETTE] vu seulement sur maquette Blender / Pillow / ffmpeg · [THÉORIQUE] déduit, non vérifié.
 
-**Fait foi sur** : la structure et les conventions par format (pub, vertical et Shorts narratifs, clip, corporate, documentaire, fiction, teaser) et la grille de choix. Pour la vidéo YouTube longue : `montage-youtube` ; pour la grammaire du style kinetic (SFX, captions, punch-in) : `montage-kinetic-editing` ; pour l'intention (le « quoi ») : `montage-direction-artistique`. Les durées citées sont des repères de métier [THÉORIQUE], à mesurer sur des références avec `labo/analyse-clip/` avant de s'y fier.
+**Fait foi sur** : la structure et les conventions par format (pub, vertical et Shorts narratifs, clip, corporate, documentaire, fiction, teaser) et la grille de choix. Pour la vidéo YouTube longue : `montage-youtube` ; pour la grammaire du style kinetic (SFX, captions, punch-in) : `montage-kinetic-editing` ; pour l'intention (le « quoi ») : `montage-direction-artistique`. Les durées de structure (0-8 s, 8-22 s…) sont des repères de métier [THÉORIQUE] ; les **cadences mesurées** sur 45 vraies vidéos sont dans « Repères mesurés » ci-dessous.
 
 ## Principe général : le format est un contrat d'attention
 Spectateur captif (salle, TV), choisi (clip, YouTube), volé (fil d'actualité) ou professionnel (réunion). Le spectateur volé peut partir à chaque seconde ; le captif attend qu'on lui demande quelque chose.
+
+## Ce qui vaut pour tous les formats (45 vraies vidéos, phase 2)
+- **La densité suit le type de phrase** : une liste dite reçoit une image par élément (0,5 à 1,8 s), une thèse un plan tenu, une preuve un plan tenu en temps réel, un récit un gros plan tenu de 5 à 16 s. Vu en doc YouTube, en talk-show, au cinéma (*Forrest Gump*, *The Social Network*) et dans les clips (rafale-inventaire). La règle la plus générale du corpus. [VU SUR IMAGES]
+- **Le sommet n'est pas la partie la plus rapide** (13 films sur 13, les clips, KAIZEN) ; seul un sommet **d'information** peut l'être (« Les Jeux Tiger »). Le sommet d'émotion se porte par le volume, le cadre, le silence avant, la durée. [VU SUR IMAGES]
+- **Ce qui signale, c'est l'écart à la norme du film**, pas une durée absolue (*La Haine* signale par ses deux rafales, *Spider-Verse* par un plan de 4 s). [VU SUR IMAGES]
+- **La marque, le monde ou l'époque se reconnaissent à une matière** (couleur, format d'image, texture) avant d'être nommés : pubs, clips, YouTube (un format par époque), films. [VU SUR IMAGES]
+- **Personne ne coupe sur les temps plus qu'au hasard** hors kinetic des réseaux (non mesuré) : 8 clips, 5 pubs, *Whiplash*, *Spider-Verse*. Le calage sur le beat est un choix de genre, pas une convention de format. [mesuré, musique séparée]
+- **La finition son se vérifie avant d'envoyer, quel que soit le format** : six fichiers du studio sur sept dépassaient -1 dBTP (`labo/outils/qc_livraison.sh`, `montage-loudness-livraison`). [mesuré]
+
+## Repères mesurés par format (médianes de durée de plan ; minimums pour les montages rapides, le détecteur ne voit pas les plans de moins de 0,6 s)
+| Format | Médiane mesurée | Loudness mesuré | Vidéos |
+|---|---|---|---|
+| Pub longue (récit de marque, 1 à 5 min) | 1,1 à 1,6 s, cadence presque régulière | -23 (TV) ; -14 à -16 (web) | Intermarché ×2, Lacoste, adidas |
+| Bande-annonce d'événement de créateurs | 1,1 à 1,3 s (ASL 3,2 s avec tirades) | -10 à -16 | GP Explorer 3, Crunch Creator |
+| Pub réseau du studio (9:16) | ~2,2 s | -14,5 | Benefit ×2 |
+| Clip | 1,2 à 4,2 s | -10,9 à -12,9 (plateau) | 8 clips |
+| YouTube doc / plateau / conversation / cinéma | 2,2-4,8 / 2,0-2,5 / 3,4 / 2,6 s | -16 à -22 / -12 à -18 / -24 / -17 | 10 vidéos |
+| Film d'action ou d'animation rapide | 1,96 à 2,6 s | -16 à -25 | Mad Max, Avengers, Spider-Verse |
+| Film de dialogue, comédie | 2,2 à 4,5 s | -20 à -25 | Social Network, Spotlight, OSS 117, Dîner de cons |
+| Film d'auteur lent | 4,5 à 8,2 s | -16 à -26 | Joker, Forrest Gump, Aftersun (7,5 hors raves), La Haine |
+| Court métrage du studio | 1,9 (comédie) et 4,6 s (drame) | -23 et -27 | Fou-Rire, Hirsingen |
+Ces chiffres situent une norme ; ils ne la prescrivent pas : ce qui compte est l'écart à la norme aux moments qui comptent. [mesuré]
 
 ## Pub 30 s / 15 s / 6 s (TV, préroll, cinéma)
 - **30 s** : une idée, une seule. Installation (0-8 s), bascule (8-22 s), résolution + signature (22-30 s ; packshot 3-5 s). Deux blocs de cadence et une bascule valent mieux que trois idées (Glazer, `montage-references`). [THÉORIQUE]
@@ -41,6 +63,7 @@ Spectateur choisi mais révocable : promesse tenue avant 30 s, relances, voix d'
 
 ## Clip musical
 - La musique est le scénario : couper sur l'arrangement (macro) ou sur les temps (micro), le décider (`montage-rythme`). Ziak : macro ; Gondry : une couche sonore = une famille visuelle ; Jonze : quand le corps produit le rythme, le montage se retire.
+- **Vu sur huit clips** [VU SUR IMAGES] (`analyses/clips/`) : aucun ne coupe sur les temps plus qu'au hasard ; la densité suit l'arrangement (Ziak 32 / 16 coupes/min selon la basse) ou les rares coupes tombent sur les grands accents (Gavras). Les plans longs sont **des mouvements qui relient** (individu → foule, lieu → lieu), placés aux articulations ; entre eux, un rythme régulier ou **une seule rafale**, souvent un inventaire (Gare du Nord, 6G). **Le sommet est porté par le cadre**, pas par la coupe (STORM : 131 plans en 4 min 17, puis le sommet en 5 plans de 21 à 60 s). L'ouverture construit l'image ; l'habillage vient du sujet (plan de métro, interface de jeu), aucun carton décoratif.
 - Une idée de forme forte (concept, dispositif, plan-séquence) vaut mieux qu'un récit.
 - Déclinaisons verticales tirées des mêmes rushes : un tournage, deux montages (`montage-direction-artistique`).
 
@@ -49,6 +72,7 @@ Spectateur choisi mais révocable : promesse tenue avant 30 s, relances, voix d'
 - Durée : 1 min 30 à 3 min pour un film de présentation ; au-delà, chapitrer.
 - **Pièges** : ukulélé start-up, drone sur le siège, sourires face caméra, mains d'artisan au ralenti en lumière dorée, têtes parlantes en série, mots-valeurs à l'écran.
 - Son : dialogue au premier plan, musique basse ; loudness hors plateformes **à sourcer** (BACKLOG 0f).
+- **Vu sur des vidéos réelles** [VU SUR IMAGES] : le meilleur moment des commandes du studio est **quand la forme dit le bénéfice** (une seule carte au lieu d'un portefeuille chez Swile, les questions du jeu qui sont la formule du sérum chez Sephora) ; le défaut le plus fréquent est **la lisibilité muette** (sous-titres fins de Sephora). Emprunts au doc YouTube pour un film explicatif : densité selon le type de phrase, **le schéma qui se transforme comme plan-thèse** (CIA, 46 s), **un format ou un cadre par époque** pour un historique (KAIZEN, adidas), **un témoin anonyme = un avatar, une couleur, une police** (YggTorrent). Pour une série de marque : un système fixe (cartons, couleur par décor, tempo), comme les deux « Qui est l'imposteur » (mêmes chiffres à 10 % près).
 
 ### Dispositifs pour filmer l'humain (sans l'interview en intermède)
 1. **La compétence** : un geste de métier précis, filmé assez longtemps pour qu'on comprenne qu'il est difficile.
@@ -63,9 +87,11 @@ Spectateur choisi mais révocable : promesse tenue avant 30 s, relances, voix d'
 - Le récit se trouve au montage : dérushage complet, transcription, structure (`montage-premiere`).
 - **Le fil est une voix ou un regard**, pas un sujet (Varda) ; la voix off s'écrit après le montage, par passes.
 - Ne pas monter le choc quand le plan continu est la vérité du moment (Murai) ; ellipse, digression, rimes d'objets.
+- **Vu sur quatre docs YouTube et KAIZEN** [VU SUR IMAGES] : densité en vagues **commandées par le texte** (EGO, de 3 à 29 coupes/min) ; chapitres par le noir et 2 à 4 s de silence, silences rares donc lisibles ; **le plus long plan porte la thèse et quelque chose change dedans** (schéma, citation qui s'écrit, sous-titre d'un témoin) ; un cadre par source (archive dans un téléviseur, CIA) ; ouvrir par la fin (YggTorrent, CIA). Un voyage se compresse au métronome de cartons « JOUR N », l'arrivée casse la cadence par un plan long (KAIZEN).
 
 ## Fiction courte
 - L'émotion d'abord (Murch) ; couper à la fin d'une pensée ; tenir la tension tant que le rapport de force n'a pas basculé (Menke) ; le son peut porter les raccords. Pudeur : rester sur celui qui écoute (`montage-direction-artistique`).
+- **Vu sur 13 films et deux courts du studio** [VU SUR IMAGES] : le plan le plus long va **à la réception**, pas à l'information (*Spotlight*, appels de 67 et 115 s sur celui qui écoute) ; le plus fort est suivi du plus grand vide ; le climax n'accélère pas. Les deux courts de F42 tiennent ces règles ; ce qui leur manque est de finition : **une ambiance continue sous tout dialogue** et **un minimum de lumière sur l'info** (règle dictée par Diego, GOUTS.md) dans les plans très sombres.
 
 ## Teaser et bande-annonce
 Promettre sans raconter : poser le monde, la règle, le conflit, couper au sommet ; paliers de densité, un silence, une signature (`montage-references` § E).
@@ -84,4 +110,6 @@ Promettre sans raconter : poser le monde, la règle, le conflit, couper au somme
 | Fiction courte | captif | oui | faible | émotion, tension | tout expliquer |
 
 ## Lacunes
-Aucune mesure sur des références réelles par format (durées de plans médianes) ; pas d'atelier en documentaire ni en fiction longue. Voir BACKLOG.
+- Kinetic des réseaux (Reels, TikTok) : **aucune vidéo du genre dans le corpus** ; le calage sur les temps et la densité des SFX restent [THÉORIQUE] (`montage-kinetic-editing`).
+- Pub de 6, 15 et 30 s : aucune vue (les sept pubs font 35 s à 5 min) ; la structure 30 s reste [THÉORIQUE]. Corporate classique (interview de dirigeant, film de présentation) : aucun vu.
+- Le son est mesuré, jamais écouté. Médianes des montages rapides : des minimums.
