@@ -2,12 +2,12 @@
 
 _Lire en premier. Seul l'état présent compte ici. L'état de clôture de la phase 1 est archivé dans `archives/phase-1/PROGRESS-cloture-phase-1.md`, et l'historique des sessions 1 à 25 dans `archives/phase-1/PROGRESS-historique.md`._
 
-## État (2026-10-11, session 5 de la phase 2, 05:04-05:40)
+## État (2026-10-11, session 6 de la phase 2, 06:04-06:5x)
 - **Phase 2 en cours** : mission `PROMPT-PHASE-2.md` (lire aussi « Avant chaque vidéo : repartir de la phase 1 », « Leçons de méthode », « Passe de révision », étape 7). Démarrage de chaque session : `CLAUDE.md`.
-- Session 5 : aucun retour neuf, boîte vide. **Tiger et CIA complétés** (six séquences fines chacun). **Nouvelles fiches** : « Qui est l'imposteur » (deux épisodes, une fiche), Philippe Boxho (LEGEND), « Créer YggTorrent », KAIZEN (première passe + cinq séquences), Popcorn (première passe + quatre séquences). Constats YouTube dans `RAPPORT.md`.
-- Nouvelles leçons (dans `PROMPT-PHASE-2.md`) : mesurer coupes / parole **sur la voix séparée** quand il y a un fond musical (34 % contre 77 %) ; générique monté et coupe graphique → visage ; cartons de texte sur noir (un « plan » de 123 s en contenait 20) ; durées trop régulières = indice (Boxho).
-- **Reprendre ici** : (1) Popcorn : une rubrique de conversation en plan par plan, mesure coupes / parole sur voix séparée, transcription ; (2) KAIZEN et CIA : lire les transcriptions refaites avec `-mc 0` (`videos/_travail/{kaizen,cia}/transcription.srt` ; vérifier les répétitions), ouverture et 1:12-1:15 en plan par plan ; (3) **bilan YouTube définitif** dans `RAPPORT.md` (réécrire « Constats YouTube ») ; (4) puis les projets Studio F42 (`videos/projets-f42/A-LIRE.md` : être exigeant, distinguer montage et tournage).
-- Passes globales prêtes (`videos/_travail/`) : `imposteur-er`, `imposteur-tg`, `boxho`, `ygg`, `kaizen`, `popcorn` (proxy, coupes, courbes, couleur, vignettes ; transcriptions sauf Popcorn).
+- Session 6 : aucun retour neuf, boîte vide. **YouTube terminé** (KAIZEN : ouverture, rafale de 1:12, trek de 1:15 ; Popcorn complété avec transcription ; CIA : citations vérifiées ; **bilan YouTube définitif** dans `RAPPORT.md`). **Projets Studio F42 terminés** : sept fiches dans `analyses/projets-f42/` (Benefit ×2 en une fiche, Oney, Swile, Sephora, Fou-Rire, Hirsingen) et bilan dans `RAPPORT.md`. Constat principal : six fichiers livrés sur sept au-dessus de -1 dBTP.
+- Nouvel outil : `labo/outils/qc_livraison.sh FICHIER [cible_LUFS]` (pistes, codec et bits, intégré, LRA, true peak, crêtes décodées, noir de début et de fin).
+- Skills mis à jour : `montage-youtube` (16 quinquies, 16 sexies), `montage-grammaire` (conversation multicaméra), `montage-formats` (flou d'ouverture, cause avant effet), `montage-loudness-livraison` (QC), `montage-kinetic-editing` (onomatopée par chute), `montage-rythme` (sommet de panique).
+- **Reprendre ici** : **vague 2 des films** (étape 5) : La Haine (passe globale lancée en fin de session 6 dans `videos/_travail/haine/` : vérifier qu'elle est complète, sinon la relancer ; le film est en **noir et blanc** : la mesure couleur n'a pas de sens, mesurer plutôt la luminance et le contraste), puis Avengers: Infinity War, Forrest Gump (**HDR10 : `HDR=1`**), OSS 117. Puis bilan de vague dans `RAPPORT.md`.
 - `.claude/settings.json` (ajouté par Diego) n'est pas commité : le garde-fou de l'agent refuse ce commit. À laisser à Diego.
 
 ## Chaîne d'analyse d'un film (sessions 1-2)
@@ -27,7 +27,8 @@ _Lire en premier. Seul l'état présent compte ici. L'état de clôture de la ph
 - `brew install uv whisper-cpp` : **23 s**.
 - `uv venv --python 3.12 .venv` + `numpy pillow librosa scenedetect opencv-python-headless` : **5 s**. Lancer les scripts avec `.venv/bin/python -I`.
 - Modèle Whisper `ggml-large-v3-turbo.bin` (1,5 Go), dans `~/.cache/whisper-cpp/` : **9 s**. Transcription : `whisper-cli -m ~/.cache/whisper-cpp/ggml-large-v3-turbo.bin -l fr -osrt -mc 0 -ojf -of <sortie> -f <audio 16 kHz mono>`. Un clip de 3 min se transcrit en moins d'une minute (Metal).
-- `demucs` (séparation voix / musique) dans le même venv : **8 s**. Torch avec MPS disponible.
+- `demucs` (séparation voix / musique) dans le même venv : **8 s**.
+- QC d'un fichier livré : `labo/outils/qc_livraison.sh` (session 6, aucune installation). Torch avec MPS disponible.
 - Durée de toute la chaîne sur un clip de 3 min (fiche technique, loudness, coupes, tempo, transcription) : **60 s**.
 
 ## Inventaire de `videos/` (2026-10-11)
@@ -62,22 +63,22 @@ _Lire en premier. Seul l'état présent compte ici. L'état de clôture de la ph
 | pubs | adidas — Backyard Legends | 5 min 05 s | ✔ 2026-10-11 |
 | pubs | iPhone 17 — 3x More Scratch Resistant | 0 min 35 s | ✔ 2026-10-11 |
 | youtube | Créer YggTorrent, puis le détruire (480p) | 1 h 11 min | ✔ 2026-10-11 |
-| youtube | KAIZEN : 1 an pour gravir l'Everest (480p) | 2 h 26 min | ✔ 2026-10-11 (5 séquences ; transcription à lire) |
+| youtube | KAIZEN : 1 an pour gravir l'Everest (480p) | 2 h 26 min | ✔ 2026-10-11 (8 séquences) |
 | youtube | Les Jeux Tiger ! (720p) | 31 min 02 s | ✔ 2026-10-11 (6 séquences) |
 | youtube | La seule façon de monter les B-roll | 8 min 40 s | ✔ 2026-10-11 |
 | youtube | Le jour où la CIA a trahi la France (720p) | 48 min 58 s | ✔ 2026-10-11 (6 séquences) |
 | youtube | Philippe Boxho, médecin légiste, partie 1 (480p) | 1 h 07 min | ✔ 2026-10-11 |
-| youtube | Popcorn avec Anyme, Léna Situations & Etoiles (480p) | 2 h 32 min | ✔ 2026-10-11 (4 séquences, à compléter) |
+| youtube | Popcorn avec Anyme, Léna Situations & Etoiles (480p) | 2 h 32 min | ✔ 2026-10-11 (6 séquences) |
 | youtube | Qui est l'imposteur (ft Eric & Ramzy) (720p) | 57 min 19 s | ✔ 2026-10-11 (fiche commune) |
 | youtube | Qui est l'imposteur (ft Theodora & Guy2Bezbar) (480p) | 54 min 38 s | ✔ 2026-10-11 (fiche commune) |
 | youtube | Visite extraordinaire d'une Bibliothèque-Univers (EGO, confirmé : vidéo du 23/09/2026) | 23 min 22 s | ✔ 2026-10-11 |
-| projets-f42 | Benefit — pub réseau (vertical) | 0 min 23 s | |
-| projets-f42 | Benefit — pub réseau 2 (vertical) | 0 min 26 s | |
-| projets-f42 | Fou rire — court métrage | 2 min 21 s | |
-| projets-f42 | Hirsingen (5.1) | 14 min 59 s | |
-| projets-f42 | Oney — vidéo d'intro 16:9 V3 mobile | 0 min 37 s | |
-| projets-f42 | Sephora — brand content | 2 min 45 s | |
-| projets-f42 | Swile — POW 16:9 V5 | 1 min 19 s | |
+| projets-f42 | Benefit — pub réseau (vertical) | 0 min 23 s | ✔ 2026-10-11 (fiche commune) |
+| projets-f42 | Benefit — pub réseau 2 (vertical) | 0 min 26 s | ✔ 2026-10-11 (fiche commune) |
+| projets-f42 | Fou rire — court métrage | 2 min 21 s | ✔ 2026-10-11 |
+| projets-f42 | Hirsingen (5.1) | 14 min 59 s | ✔ 2026-10-11 |
+| projets-f42 | Oney — vidéo d’intro « 169 » V3 mobile (fichier en 1:1) | 0 min 37 s | ✔ 2026-10-11 |
+| projets-f42 | Sephora — brand content | 2 min 45 s | ✔ 2026-10-11 |
+| projets-f42 | Swile — POW 16:9 V5 | 1 min 19 s | ✔ 2026-10-11 |
 
 Total : 13 films (environ 26 h), 8 clips, 7 pubs, 10 vidéos YouTube (environ 10 h 40), 7 projets du studio. `a-traiter/` et `_a-supprimer/` sont vides. `NOTES-DIEGO.md` ne contient que les titres des projets, sans commentaire : Diego n'a encore commenté aucun film (l'ancienne note sur l'amarrage d'Interstellar était un exemple de format, pas sa parole).
 
