@@ -8,8 +8,10 @@ _Lire en premier. Seul l'état présent compte ici. L'état de clôture de la ph
 - **Vague 3 lancée** : *The Social Network* (ouverture, Facemash, Henley ; fiche de phase 1 confrontée) et *Spotlight* (ouverture 1976, appels à Sipe en plans de 67 et 115 s, dispute, cartons de fin) ; comparaison des deux dans `analyses/films/spotlight.md`. Chaque fiche a sa liste « À faire ».
 - **Méthode corrigée** : `coupes_parole.py` surestimait la parole (seuil « plancher + 10 dB », absurde sur une voix séparée) ; option `SEUIL=haut` et nouvel outil `labo/outils/spectro_coupes.py` (trancher à l'œil). « Coupes pendant la parole » ne distingue pas un style (30 % chez Fincher comme chez McCarthy) : mesurer plutôt les silences entre répliques. Les chiffres sur voix séparée de YouTube (POPCORN, Boxho, Imposteur) sont à refaire en passe de révision.
 - Skills mis à jour en session 8 : `montage-rythme` (accélérer sur la courbe, pas sur la grille ; timing comique : borne haute), `montage-grammaire` (le débit vient des trous retirés ; dispute montée par l'échelle), `montage-son-et-emotion` (révélation par une voix hors champ, plan tenu), `montage-youtube` (chiffres marqués À REVOIR).
-- Passes globales lancées en fin de session 8 : *Aftersun* (`videos/_travail/aftersun/`, VO, sous-titres anglais) et *Spider-Verse* (`videos/_travail/spiderverse/`, HDR10 **AV1** : nouveau chemin libdav1d dans `passe_globale.sh` ; pas de sous-titres texte : Whisper `-mc 0` sur la VO à faire). **Vérifier qu'elles sont complètes** (logs `videos/_travail/aftersun.log`, `spiderverse.log` : la dernière ligne doit être « coupes: … s ») ; sinon relancer (le proxy existant est réutilisé).
-- **Reprendre ici** : `courbes_film.py` et `couleur_film.py` sur *Aftersun* et *Spider-Verse*, puis leurs séquences ; finir les « À faire » de *Spotlight* (témoignages) et de *The Social Network* (dépositions, fin) si le temps le permet ; puis **bilan de la vague 3** dans `RAPPORT.md`. Ensuite, passe de révision (étape 7).
+- Passes globales d'*Aftersun* et de *Spider-Verse* faites en fin de session 8 (détails ci-dessous). Ne pas modifier `passe_globale.sh` pendant qu'il tourne : zsh lit le script au fil de l'exécution (erreur « unmatched " » en fin de passe d'*Aftersun*, sans effet sur les résultats).
+- **Aftersun : passe globale faite, courbes et couleur calculées** (`videos/_travail/aftersun/`) : au moins 553 plans, ASL 11,0 s, médiane 4,3 s, **-26,4 LUFS**. **Pièges attendus** : 150 « plans » de moins de 1 s, surtout aux minutes 44-47, 75, 90-91 et 100 (médiane 0,5 s) = **stroboscopes de la rave** (fausses coupes de lumière) ; « plans » de 210 s (7:03), 160 s (1:34), 272 s (1:37, sans doute le générique) = scènes sombres ou cartons à vérifier avec `verif_plan.py` et tuile. À confronter à `culture/aftersun-wells-mcclendon.md` : trois régimes d'image (35 mm / MiniDV / rave), plan sur la surface de l'eau, rave + « Under Pressure » en alterné, fin à l'aéroport, transitions par le son.
+- **Spider-Verse : passe globale faite** (HDR10 AV1 via libdav1d, 13 min), courbes et couleur calculées, transcription Whisper `-mc 0` de la VO lancée en fin de session 8 (`videos/_travail/spiderverse/transcription.srt` ; vérifier boucles et fantômes). Au moins 2 931 plans, ASL 2,9 s, médiane 1,96 s, -21,3 LUFS ; **566 « plans » de moins de 1 s** et une crête à 60 coupes/min (minute 2) : flashs et changements de style graphique probables, à trier à l'œil avant de citer.
+- **Reprendre ici** : *Aftersun* (séquences ci-dessus) ; *Spider-Verse* (séquences, après contrôle de la transcription) ; finir les « À faire » de *Spotlight* et *The Social Network* si le temps le permet ; puis **bilan de la vague 3** dans `RAPPORT.md`. Ensuite, passe de révision (étape 7).
 - `.claude/settings.json` (ajouté par Diego) n'est pas commité : le garde-fou de l'agent refuse ce commit. À laisser à Diego.
 
 ## Chaîne d'analyse d'un film (sessions 1-2)
@@ -36,7 +38,7 @@ _Lire en premier. Seul l'état présent compte ici. L'état de clôture de la ph
 ## Inventaire de `videos/` (2026-10-11)
 | Catégorie | Titre | Durée | Analysé |
 |---|---|---|---|
-| films | Aftersun (2022) | 1 h 41 min | |
+| films | Aftersun (2022) | 1 h 41 min | passe globale faite (session 8) |
 | films | Avengers: Infinity War (2018) | 2 h 29 min | ✔ 2026-10-11 (4 séquences + acte final ; couleur fine à faire) |
 | films | Forrest Gump (1994), 2160p HDR10 | 2 h 22 min | ✔ 2026-10-11 (4 séquences ; couleur et fin à faire) |
 | films | Interstellar (2014), IMAX | 2 h 49 min | ✔ 2026-10-11 |
@@ -45,7 +47,7 @@ _Lire en premier. Seul l'état présent compte ici. L'état de clôture de la ph
 | films | Le Dîner de cons (1998) | 1 h 20 min | ✔ 2026-10-11 (4 séquences + timing) |
 | films | Mad Max: Fury Road (2015) | 2 h 00 min | ✔ 2026-10-11 (7 séquences) |
 | films | OSS 117 : Le Caire, nid d'espions (2006) | 1 h 39 min | ✔ 2026-10-11 (4 séquences + nuits + coupes / parole tranchées) |
-| films | Spider-Man: Across the Spider-Verse (2023), HDR10, AV1 | 2 h 20 min | |
+| films | Spider-Man: Across the Spider-Verse (2023), HDR10, AV1 | 2 h 20 min | passe globale faite (session 8) |
 | films | Spotlight (2015) | 2 h 09 min | ✔ 2026-10-11 (4 séquences + comparaison ; témoignages à faire) |
 | films | The Social Network (2010) | 2 h 00 min | ✔ 2026-10-11 (3 séquences ; dépositions et fin à faire) |
 | films | Whiplash (2014), 2160p HDR | 1 h 46 min | ✔ 2026-10-11 (6 séquences) |
@@ -91,4 +93,5 @@ Total : 13 films (environ 26 h), 8 clips, 7 pubs, 10 vidéos YouTube (environ 10
 - `pkill -f motif` tue le shell appelant : tuer par PID. Les calculs longs se lancent avec `run_in_background`, pas avec `&`.
 - ffmpeg Homebrew sans `drawtext` (pas de texte sur les tuiles) : annoter avec Pillow. L'option `framelog=verbose` d'ebur128 ne sort rien sans `-v verbose` : utiliser `ebur128` simple.
 - ffmpeg en `yuv*` = plage limitée (noir = 16). PIL lit un PNG 16 bits en 8 bits.
+- Ne jamais modifier un script zsh pendant qu'une exécution le lit (zsh lit au fil de l'eau). Sortie `ffprobe -of csv=p=0` : peut finir par une virgule ; préférer `-of default=nw=1:nk=1`.
 - zsh : `====` en début de mot déclenche une erreur (« = not found ») ; écrire des séparateurs entre guillemets.
