@@ -1,5 +1,5 @@
 """Contrôle de photosensibilité simplifié (WCAG 2.1 SC 2.3.1, logique proche d'ITU-R BT.1702).
-python3 -I flash_check.py video.mp4 [--fps 25]
+python3 -I flash_check.py video.mp4 [--fps 25] [--detail]
 Par image (réduite à 64×36) : luminance relative linéaire (sRGB → linéaire, Rec.709), part de l'écran
 qui varie, et « rouge saturé » (R/(R+G+B) ≥ 0,8, variation de (R-G-B)×320 > 20, définition WCAG).
 Transition = variation ≥ 10 % de luminance relative avec l'état sombre < 0,80, sur ≥ 25 % de la PIRE
@@ -66,6 +66,8 @@ for nom, X, f in (("general", L, transitions), ("rouge", red, trans_rouge)):
     F = flashes(T); win = int(round(fps))
     pire = max((sum(1 for k in F if i <= k < i + win) for i in range(max(1, len(X) - win + 1))), default=0)
     res[nom] = (len(F), pire)
+    if "--detail" in sys.argv and F:   # images où se termine chaque flash (pour savoir quoi corriger)
+        print(nom, "flashs aux images", F)
 ok = all(p <= 3 for _, p in res.values())
 print(f"{src}: {len(L)} images ; flashs généraux {res['general'][0]} (pire seconde {res['general'][1]}) ; "
       f"flashs rouges {res['rouge'][0]} (pire seconde {res['rouge'][1]}) -> {'OK' if ok else 'ÉCHEC'} [{'fenêtre 1/3' if LOCAL else 'plein écran'}]")

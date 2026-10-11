@@ -5,7 +5,7 @@ Ta mémoire est dans ce dépôt : tu n'apprends que ce que tu écris, commites e
 
 ## Au début de chaque session, quelle que soit la demande
 1. `git pull` sur la branche `claude/expert-montage`. Ne travaille jamais sur une autre branche.
-2. Lis `PROGRESS.md`, la synthèse de `RAPPORT.md`, `GOUTS.md` et `CARNET-DE-GOUT.md`.
+2. Lis `PROGRESS.md`, la synthèse de `RAPPORT.md`, `GOUTS.md` et `CARNET-DE-GOUT.md`. **Lis-les un par un avec l'outil de lecture (Read)**, pas en une seule commande shell : sous zsh, un séparateur `=====` sans guillemets casse la commande (« = not found ») et tronque la lecture. Si tu dois enchaîner des fichiers dans le shell, mets les séparateurs entre guillemets (`echo "-----"`).
 3. Lis `RETOURS-DIEGO.md`. Chaque retour non marqué « intégré » : intègre-le dans les skills et fiches concernés, puis marque-le « intégré le <date> ».
 4. Regarde `videos/a-traiter/` et `videos/NOTES-DIEGO.md` (boîte à références). S'il y a une nouvelle vidéo ou un nouveau nom de référence : analyse-le avec le skill `montage-nouvelle-reference`, range la vidéo dans sa catégorie, inscris-la dans `REFERENCES.md` (titre, date d'ajout, date d'analyse, fiche).
 5. Puis fais ce qui t'est demandé. La phase 2 (`PROMPT-PHASE-2.md`) est terminée. L'ancien `PROMPT.md` (phase 1) est archivé : ne le suis plus.
