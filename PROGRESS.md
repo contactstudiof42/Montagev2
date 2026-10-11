@@ -2,10 +2,10 @@
 
 _Lire en premier. Seul l'état présent compte ici. L'état de clôture de la phase 1 est archivé dans `archives/phase-1/PROGRESS-cloture-phase-1.md`, et l'historique des sessions 1 à 25 dans `archives/phase-1/PROGRESS-historique.md`._
 
-## État (2026-10-11, session 2 de la phase 2, 02:04-02:40)
+## État (2026-10-11, session 2 de la phase 2, 02:04-02:42)
 - **Phase 2 en cours** : mission `PROMPT-PHASE-2.md` (lire aussi ses sections « Avant chaque vidéo : repartir de la phase 1 » et « Leçons de méthode »). Démarrage de chaque session : `CLAUDE.md`.
 - Session 2 : retour de Diego du 2026-10-11 intégré (la note sur l'amarrage d'Interstellar n'était pas de lui) ; **Joker terminé** (7 séquences) ; **Whiplash analysé** (`analyses/films/whiplash.md`, 6 séquences) ; **Le Dîner de cons analysé** (`analyses/films/diner-de-cons.md` : 4 séquences, coupes contre la parole, trois chutes) ; outils `verif_plan.py`, `calage.py`, `coupes_parole.py` et option `HDR=1` ajoutés.
-- **Reprendre ici** : Mad Max: Fury Road (vérifier le HDR avec `ffprobe`, puis la chaîne ci-dessous), puis le **bilan de la vague 1** dans RAPPORT.md (Interstellar, Joker, Whiplash, Le Dîner de cons, Mad Max ; les leçons communes sont déjà dans la synthèse).
+- **Reprendre ici** : Mad Max: Fury Road. **La passe globale et les courbes sont faites** (`videos/_travail/madmax/` : proxy, coupes.json, courbes.png, couleur.png, sous-titres anglais ; source SDR 1080p, VO = piste audio 1). Premier regard [mesuré, pas vérifié à l'œil] : 2 371 plans, ASL 3,0 s, médiane 2,0 s, -16 LUFS ; **contrairement aux trois autres films, la densité monte en vagues** : pics vers 0:27-0:30 (jusqu'à 56 coupes/min), 0:52-0:56 et 1:35-1:42, creux vers 0:30-0:33 et 1:13-1:25 (médianes de plan jusqu'à 10 s). Avant de citer le pic de 0:27-0:30 : vérifier sur la planche qu'il ne s'agit pas d'éclairs de la tempête (fausses coupes de lumière). Hypothèse à tester (souvent citée, non sourcée ici) : sujet tenu au centre du cadre pour que l'œil suive des plans très courts. Puis le **bilan de la vague 1** dans RAPPORT.md.
 - `.claude/settings.json` (ajouté par Diego) n'est pas commité : le garde-fou de l'agent refuse ce commit. À laisser à Diego.
 
 ## Chaîne d'analyse d'un film (sessions 1-2)
@@ -38,7 +38,7 @@ _Lire en premier. Seul l'état présent compte ici. L'état de clôture de la ph
 | films | Joker (2019) | 2 h 01 min | ✔ 2026-10-11 (7 séquences) |
 | films | La Haine (1995) | 1 h 33 min | |
 | films | Le Dîner de cons (1998) | 1 h 20 min | ✔ 2026-10-11 (4 séquences + timing) |
-| films | Mad Max: Fury Road (2015) | 2 h 00 min | |
+| films | Mad Max: Fury Road (2015) | 2 h 00 min | passe globale faite (session 2) |
 | films | OSS 117 : Le Caire, nid d'espions (2006) | 1 h 39 min | |
 | films | Spider-Man: Across the Spider-Verse (2023), HDR10, AV1 | 2 h 20 min | |
 | films | Spotlight (2015) | 2 h 09 min | |
