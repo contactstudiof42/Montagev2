@@ -3,8 +3,8 @@
 _Réécrit à chaque session (dernière : 2026-10-11, session 2). La synthèse de fin de phase 1 (niveau par domaine, 10 principes, audits) est dans `archives/phase-1/RAPPORT-synthese-cloture-phase-1.md` ; le journal de la phase 1 dans `archives/phase-1/RAPPORT-journal.md`._
 
 ## Où j'en suis
-- Vidéos analysées : SDM « #Malentouré » (test de méthode), **Interstellar** (passe globale + 4 séquences), **Joker** (passe globale + 7 séquences), **Whiplash** (passe globale + 6 séquences). Fiches dans `analyses/films/`. **Le Dîner de cons** en cours (passe globale + 4 séquences). Vague 1 : il reste à finir le Dîner de cons (timing comique) et Mad Max: Fury Road, puis le bilan de vague.
-- Outils de la phase 2 (`labo/outils/`) : `passe_globale.sh` (copie 480p, avec `HDR=1` pour les sources PQ), `courbes_film.py`, `couleur_film.py`, `sequence.py`, et cette session `verif_plan.py` (vérifier un plan long) et `calage.py` (coupes contre musique, avec le hasard).
+- Vidéos analysées : SDM « #Malentouré » (test de méthode), **Interstellar** (passe globale + 4 séquences), **Joker** (passe globale + 7 séquences), **Whiplash** (passe globale + 6 séquences). Fiches dans `analyses/films/`. **Le Dîner de cons** (passe globale + 4 séquences + timing). Vague 1 : il reste Mad Max: Fury Road, puis le bilan de vague.
+- Outils de la phase 2 (`labo/outils/`) : `passe_globale.sh` (copie 480p, avec `HDR=1` pour les sources PQ), `courbes_film.py`, `couleur_film.py`, `sequence.py`, et cette session `verif_plan.py` (vérifier un plan long) `calage.py` (coupes contre musique, avec le hasard) et `coupes_parole.py` (coupes contre la parole).
 
 ## Ce que les vrais films m'ont appris (par ordre de solidité)
 1. **Le climax ne coupe pas plus vite que le reste** (trois films sur trois). Interstellar : 12 à 18 coupes/min selon les actes ; Joker : environ 9 presque tout le film ; Whiplash : le maximum (36/min) est la première répétition, pas le final. La montée passe par le volume, le format, la fréquence de changement de ligne d'un alterné, les filés en caméra. [VU SUR IMAGES]
@@ -14,7 +14,8 @@ _Réécrit à chaque session (dernière : 2026-10-11, session 2). La synthèse d
 5. **Le silence a deux places** : après l'effort, pour le faire peser (Interstellar après l'amarrage, Joker après le capot : le plus fort suivi du plus grand vide) ; juste avant le dernier coup, pour le faire frapper (Whiplash, 10 s de silence puis coupe au noir sur le coup). [mesuré, pas écouté]
 6. **La couleur méritée** : Joker annonce le rouge par les lieux de spectacle puis le donne au corps, et le vert passe au décor au lieu de disparaître ; Whiplash code deux mondes (ambre de la musique, vert de la vie) et supprime le vert au final. [VU SUR IMAGES]
 7. **Même un film de musique n'est pas forcément monté « au beat »** : dans Whiplash, les coupes ne tombent pas sur les attaques fortes plus qu'au hasard ; au plus une légère tendance aux temps. Le calage est macro (instrument, rapport de force). [mesuré ; détection d'attaques sur le mixage complet]
-8. **Séparer par la coupe, réunir par le filé** (Whiplash) : le champ-contrechamp maître / élève devient, au final, des filés aller-retour dans un même plan. [VU SUR IMAGES]
+8. **Le timing comique sans public** (Le Dîner de cons) : 40 à 44 % des coupes tombent pendant la parole, les autres environ 0,35 s après la réplique ; l'air (1,5 à 3 s, sur le visage qui encaisse) est réservé aux chutes. Les gags de situation se jouent en plan à deux ou à trois tenu. [mesuré, VU SUR IMAGES]
+9. **Séparer par la coupe, réunir par le filé** (Whiplash) : le champ-contrechamp maître / élève devient, au final, des filés aller-retour dans un même plan. [VU SUR IMAGES]
 
 ## Erreurs corrigées
 - Phase 1 : contraction 8 / 4 / 2 / 1 s (Interstellar) ; « extérieurs silencieux » (Interstellar) ; « l'image de Joker s'assombrit » ; « le rouge remplace le vert » à la fin de Joker ; « la danse des toilettes en un seul plan » (la danse oui, la scène en trois).

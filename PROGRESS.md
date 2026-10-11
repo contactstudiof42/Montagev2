@@ -4,8 +4,8 @@ _Lire en premier. Seul l'état présent compte ici. L'état de clôture de la ph
 
 ## État (2026-10-11, session 2 de la phase 2, 02:04-02:40)
 - **Phase 2 en cours** : mission `PROMPT-PHASE-2.md` (lire aussi ses sections « Avant chaque vidéo : repartir de la phase 1 » et « Leçons de méthode »). Démarrage de chaque session : `CLAUDE.md`.
-- Session 2 : retour de Diego du 2026-10-11 intégré (la note sur l'amarrage d'Interstellar n'était pas de lui) ; **Joker terminé** (7 séquences) ; **Whiplash analysé** (`analyses/films/whiplash.md`, 6 séquences) ; **Le Dîner de cons** : passe globale, transcription Whisper et 4 séquences (`analyses/films/diner-de-cons.md`), timing comique à mesurer.
-- **Reprendre ici** : finir Le Dîner de cons (`analyses/films/diner-de-cons.md`, section « Reste à faire » : mesurer le timing comique avec les horodatages Whisper de `videos/_travail/diner/sous-titres.srt`, plus l'arrivée de Pignon vers 0:14-0:20 ; tous les fichiers de passe globale sont faits). Puis Mad Max: Fury Road (vérifier le HDR avec ffprobe), puis le **bilan de la vague 1** dans RAPPORT.md.
+- Session 2 : retour de Diego du 2026-10-11 intégré (la note sur l'amarrage d'Interstellar n'était pas de lui) ; **Joker terminé** (7 séquences) ; **Whiplash analysé** (`analyses/films/whiplash.md`, 6 séquences) ; **Le Dîner de cons analysé** (`analyses/films/diner-de-cons.md` : 4 séquences, coupes contre la parole, trois chutes) ; outils `verif_plan.py`, `calage.py`, `coupes_parole.py` et option `HDR=1` ajoutés.
+- **Reprendre ici** : Mad Max: Fury Road (vérifier le HDR avec `ffprobe`, puis la chaîne ci-dessous), puis le **bilan de la vague 1** dans RAPPORT.md (Interstellar, Joker, Whiplash, Le Dîner de cons, Mad Max ; les leçons communes sont déjà dans la synthèse).
 - `.claude/settings.json` (ajouté par Diego) n'est pas commité : le garde-fou de l'agent refuse ce commit. À laisser à Diego.
 
 ## Chaîne d'analyse d'un film (sessions 1-2)
@@ -13,7 +13,7 @@ _Lire en premier. Seul l'état présent compte ici. L'état de clôture de la ph
 2. `courbes_film.py` (crée `coupes.json`, rythme et volume) et `couleur_film.py` (couleur).
 3. Repérer les scènes dans les sous-titres, puis `LUFS=M sequence.py DOSSIER DEBUT FIN sortie.png [colonnes] [largeur]` pour chaque séquence (planche < 500 Ko). Lancer les planches en parallèle (fonction shell : zsh ne découpe pas une commande rangée dans une variable).
 4. Vérifier tout plan long cité : `verif_plan.py` + tuile ffmpeg `fps=1/2` (puis 3 à 6 images/s sur le passage douteux) ; regarder s'il s'agit d'un filé.
-5. Musique : `calage.py DOSSIER DEBUT FIN 2 97` (coupes contre attaques fortes et temps, avec le hasard).
+5. Musique : `calage.py DOSSIER DEBUT FIN 2 97` (coupes contre attaques fortes et temps, avec le hasard). Dialogue : `coupes_parole.py DOSSIER DEBUT FIN` (il faut `audio16k.wav` dans le dossier).
 
 ## Leçons de méthode (test sur SDM)
 - Les détecteurs de coupes (`analyse_clip.py` et PySceneDetect) **ratent les coupes cachées** par l'occlusion d'un corps ou par un filé, ainsi que les coupes des scènes sombres. Ils inventent aussi des coupes quand la lumière clignote (voir `PROMPT-PHASE-2.md`).
@@ -37,7 +37,7 @@ _Lire en premier. Seul l'état présent compte ici. L'état de clôture de la ph
 | films | Interstellar (2014), IMAX | 2 h 49 min | ✔ 2026-10-11 |
 | films | Joker (2019) | 2 h 01 min | ✔ 2026-10-11 (7 séquences) |
 | films | La Haine (1995) | 1 h 33 min | |
-| films | Le Dîner de cons (1998) | 1 h 20 min | en cours (passe globale + 4 séquences) |
+| films | Le Dîner de cons (1998) | 1 h 20 min | ✔ 2026-10-11 (4 séquences + timing) |
 | films | Mad Max: Fury Road (2015) | 2 h 00 min | |
 | films | OSS 117 : Le Caire, nid d'espions (2006) | 1 h 39 min | |
 | films | Spider-Man: Across the Spider-Verse (2023), HDR10, AV1 | 2 h 20 min | |

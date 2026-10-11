@@ -1,6 +1,6 @@
 # Le Dîner de cons (Francis Veber, 1998) — montage Georges Klotz
 
-_Fiche ouverte le 2026-10-11 (phase 2, session 2, film vague 1 n°4). **État : passe globale, 4 séquences et mesure des coupes contre la parole faites ; reste le timing de chutes précises, réplique par réplique.** Source : Blu-ray 1080p (1920×822, SDR), VF d'origine AC3, aucun sous-titre texte : transcription Whisper (large-v3-turbo) dans `videos/_travail/diner/sous-titres.srt`. Planches commitées : `diner-de-cons-courbes.png`, `diner-de-cons-couleur.png`, puis une image par plan avec le volume momentané en dessous : `diner-de-cons-ouverture.png` (0:03:20-0:08), `diner-de-cons-leblanc.png` (0:30:20-0:35), `diner-de-cons-cheval.png` (0:53-0:58), `diner-de-cons-final.png` (1:12:50-1:17:40)._
+_Fiche ouverte le 2026-10-11 (phase 2, session 2, film vague 1 n°4). **État : terminée** (passe globale, 4 séquences, coupes contre la parole, trois chutes mesurées une à une). Source : Blu-ray 1080p (1920×822, SDR), VF d'origine AC3, aucun sous-titre texte : transcription Whisper (large-v3-turbo) dans `videos/_travail/diner/sous-titres.srt`. Planches commitées : `diner-de-cons-courbes.png`, `diner-de-cons-couleur.png`, puis une image par plan avec le volume momentané en dessous : `diner-de-cons-ouverture.png` (0:03:20-0:08), `diner-de-cons-leblanc.png` (0:30:20-0:35), `diner-de-cons-cheval.png` (0:53-0:58), `diner-de-cons-final.png` (1:12:50-1:17:40)._
 
 **Lu avant l'analyse** : `culture/timing-comique-sitcom.md` (dont Kaamelott : dialogue frontal, deux caméras), `culture/gags-de-montage.md`, `montage-rythme` (timing comique), `montage-grammaire` (champ-contrechamp, couper sur la réaction), grille de `montage-regard`. Le film est une pièce de théâtre adaptée (Veber, 1993).
 
@@ -42,25 +42,29 @@ Faire rire d'un piège qui se retourne : celui qui voulait se moquer d'un « con
 | coup de fil final (sincère) | 47 | **21 %** | 0,28 / 0,48 / 0,94 s | 0,28 / 0,76 / 1,80 s |
 - **Dans les scènes comiques, quatre coupes sur dix tombent pendant que quelqu'un parle** (réaction prise sur la réplique, chevauchement). Les autres tombent dans des silences très courts : environ **0,35 s après la fin de la réplique**, à peu près au milieu d'un trou de 0,8 s. Il n'y a presque jamais d'air.
 - **Dans la scène sincère, deux fois moins de coupes sur la parole**, et plus d'air autour (la reprise vient 0,76 s après la coupe en médiane, 1,8 s au troisième quartile).
-- **Corrige l'estimation de phase 1** (`culture/timing-comique-sitcom.md`, « 1 à 3 s après la chute ») : elle vaut pour une sitcom avec rires enregistrés. Sans public, le film ne laisse presque pas d'air après les répliques ; l'air est réservé à l'émotion.
+- **Trois chutes mesurées une à une** (énergie de la voix par 100 ms, une image toutes les 0,5 s) [VU SUR IMAGES, mesuré] :
+  - « il n'a pas de prénom » (0:31:07) : la chute est dite **dans le plan à deux**, la coupe vers le gros plan de réaction de Brochant tombe environ 0,5 s après la fin de la réplique ;
+  - « Cheval en vin ? Ah oui, il s'y connaît » (0:54:14) : pendant la chute, on est **sur Cheval, la victime**, et son visage reste environ **2,5 s en silence** avant la coupe (0:54:19) ;
+  - « C'est le con de votre mari » (1:14:01) : la chute est dite **sur le visage de Pignon** (on voit les yeux de celui qui la dit), coupe 0,4 s après vers Brochant debout (1,5 s), puis retour.
+- **Nuance l'estimation de phase 1** (`culture/timing-comique-sitcom.md`, « 1 à 3 s après la chute ») : elle est juste **pour les chutes**, à condition que l'air soit sur un visage qui encaisse ; elle est fausse pour le dialogue courant, où le film ne laisse presque aucun air (0,35 s en médiane).
 
-## Confirme, contredit, complète (provisoire)
+## Confirme, contredit, complète
 - **Confirme** `culture/timing-comique-sitcom.md` (Kaamelott) : dialogue frontal, peu de valeurs de plan, un plan à deux pour situer. **Complète** : les **gags de situation** (la gaffe, le vin) sont tenus en plan à deux ou à trois (12 à 37 s), les **échanges verbaux** en champ-contrechamp rapide (1 à 4 s), et la réaction isolée vient **après** la chute.
 - **Confirme**, sur un quatrième film et dans un autre genre, la règle des plans longs : **quand le personnage est sincère** (la tirade de Pignon), le plan tient (28 à 33 s) alors que le film coupe toutes les 3 s.
 - **Complète** `montage-rythme` : une comédie de dialogue peut avoir une densité de coupes **plate du début à la fin** ; le rythme est celui des répliques, pas une forme qui monte.
 - Ne dit rien sur la couleur : elle ne raconte rien ici, et c'est juste pour une comédie de huis clos.
 
-## Principes transférables (provisoires)
+## Principes transférables
 1. **La gaffe en plan à deux** : cause et effet dans le même cadre ; la réaction isolée après, pas pendant.
 2. **Le gag de situation en plan fixe frontal à plusieurs** : quand le public en sait plus que les personnages, on lui laisse tout le monde dans le cadre.
 3. **Couper vite la parole, tenir la sincérité** : dans une comédie, le moment vrai se reconnaît à la durée du plan.
+4. **Pas d'air dans le dialogue, de l'air sur la chute** : couper environ 0,35 s après une réplique courante (ou pendant, sur la réaction) ; après une chute, couper vers la réaction 0,4 à 0,5 s après et la tenir 1,5 à 3 s en silence.
 
 ## Ce que Diego en a dit
 Rien pour l'instant (`GOUTS.md`, `NOTES-DIEGO.md`, `RETOURS-DIEGO.md`).
 
-## Reste à faire (session suivante)
-- **Timing de chutes précises** : choisir cinq chutes (« il n'a pas de prénom », « la boulette », « Cheval en vin »…), mesurer réplique par réplique la coupe, qui est à l'image sur la chute, et la durée de la réaction (horodatages Whisper à ±0,5 s, vérifier à l'image).
-- Une séquence de l'arrivée de Pignon (vers 0:14-0:20) pour voir comment le film installe le personnage.
+## Pas fait
+- L'arrivée de Pignon (vers 0:14-0:20) et la chute de « la boulette » mesurée image par image.
 
 ## Doutes
 - La transcription Whisper n'est pas vérifiée ligne à ligne ; elle a transcrit aussi les paroles de la chanson du générique.

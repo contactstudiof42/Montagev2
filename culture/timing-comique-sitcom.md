@@ -88,7 +88,7 @@
 9. **Ce qui tue le gag** : une réplique qui marche sur le rire ; un rire plus gros que la blague ; une mise en place paraphrasée ou réordonnée ; une coupe sur l'écoute pendant la chute (on perd les yeux) ; un silence coupé par habitude de rythme ; une musique ou un bruitage qui commente la gêne ; un plan impossible en faux documentaire ; un procédé (regard caméra, montage d'improvisations) qui devient un tic.
 10. **Le format court impose une seule tenue.** Dans 3 min 30 s, la seule pause longue est celle de la chute finale, suivie d'un noir. Tout le reste avance. Utile pour une pastille web ou un sketch vertical.
 
-**Confronté à un film le 2026-10-11** (*Le Dîner de cons*, `analyses/films/diner-de-cons.md`) [mesuré] : sans rires enregistrés, 40 à 44 % des coupes tombent pendant la parole et les autres environ 0,35 s après la fin de la réplique ; l'air de 1 à 3 s après la chute (principe 3) n'y existe pas, il est réservé à la scène sincère. Principes 4 et 5 confirmés : réaction isolée après la chute, gags de situation en plan à deux ou à trois tenu.
+**Confronté à un film le 2026-10-11** (*Le Dîner de cons*, `analyses/films/diner-de-cons.md`) [mesuré] : sans rires enregistrés, 40 à 44 % des coupes tombent pendant la parole et les autres environ 0,35 s après la fin de la réplique ; pas d'air dans le dialogue courant ; mais sur les chutes, la coupe vers la réaction tombe 0,4 à 0,5 s après la réplique et le visage qui encaisse est tenu 1,5 à 3 s en silence : le principe 3 tient pour les chutes, pas pour chaque réplique. Principes 4 et 5 confirmés : réaction isolée après la chute, gags de situation en plan à deux ou à trois tenu.
 
 ## Faits incertains
 
