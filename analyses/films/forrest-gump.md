@@ -29,7 +29,7 @@ Un homme simple raconte sa vie sur un banc ; à travers lui, trente ans d'histoi
 
 ### La course à travers l'Amérique (1:52:38-1:59:10) [VU SUR IMAGES, mesuré, `forrest-course.png`]
 - **Une liste qui s'agrandit** : la route, la ville, le comté, l'Alabama, l'océan, l'autre océan ; **un plan par étape** (4,4 à 12 s), la voix off en tête. Puis le temps passe par **la barbe et les saisons** (blé, rivière, automne), sans carton.
-- **Le seul passage à 0,5-1 s** de la séquence est comique : le visage de Forrest à la télé et la dame du banc qui réagit (« C'est pas possible ! », 1:55:08-1:55:13), un champ-contrechamp de cinq plans d'une demi-seconde. La vitesse est donnée à la réaction, pas à l'action.
+- ~~Le seul passage à 0,5-1 s de la séquence : un champ-contrechamp de cinq plans d'une demi-seconde entre Forrest à la télé et la dame du banc.~~ **Corrigé en révision (session 9)** : c'est **un seul plan d'environ 5,8 s** (1:55:07-1:55:13) d'une femme qui regarde Forrest sur un téléviseur de vitrine (« C'est pas possible ! ») ; les « coupes » détectées sont les changements d'image **sur l'écran du téléviseur** (tuile à 8 images/s, `forrest-revision-tele.png`). La réaction est tenue, l'événement passe à l'écran dans le cadre.
 - **La chute se dit dans le silence** : la musique s'arrête à 1:57:48 ; pendant 60 s, le son reste à -55 / -68 LUFS momentanés, sauf deux répliques : « Silence, il va dire quelque chose » (1:58:04) puis, **14 s plus tard**, « Je suis fatigué » (1:58:18, -44). Les plans sont tenus (10, 20 et 29 s), les suiveurs attendent avec le spectateur. Puis la musique ne revient pas tout de suite : un bulletin télé enchaîne (1:58:55).
 - C'est le **silence avant l'impact** de *Whiplash* (10 s avant le dernier coup), appliqué à une chute comique : plus le silence dure, plus la phrase banale pèse.
 
@@ -37,7 +37,7 @@ Un homme simple raconte sa vie sur un banc ; à travers lui, trente ans d'histoi
 - **Confirme** la règle « la densité suit le type de phrase » (`montage-youtube`, règle 16 ; RAPPORT, bilan YouTube point 1) **dans un film de cinéma** : les deux listes dites (pluies, course) reçoivent une image par élément, la relation et la chute reçoivent des plans tenus. Six œuvres sur six où je l'ai cherché.
 - **Confirme** « la rafale pour l'acte, le plan long pour le corps » (`montage-rythme`) : embuscade hachée, sauvetages tenus.
 - **Complète** le silence (`montage-son-et-emotion`, principe 2) : le silence avant l'impact vaut aussi pour la comédie. La phrase la plus banale, dite après 30 s de silence et 14 s d'attente, devient la chute.
-- **Complète** le timing comique (`montage-rythme`, *Le Dîner de cons*) : la vitesse (plans de 0,5 s) est donnée à **la réaction** des témoins, pas à l'événement.
+- ~~Complète le timing comique : la vitesse est donnée à la réaction des témoins.~~ Retiré en révision (session 9) : le passage est un seul plan (voir la course). Il confirme plutôt **la réaction tenue** (`montage-rythme`).
 - **Méthode** : `verif_plan.py` rate les coupes entre plans rapprochés de même lumière (la plume) ; la tuile à 1 image/s les trouve. Déjà écrit dans l'outil, à ne pas oublier sur les plans longs « truqués ».
 
 ## Principes transférables
@@ -52,3 +52,8 @@ Rien sur ce film (aucune note dans `NOTES-DIEGO.md`).
 - Couleur par époque (années 50, Vietnam vert, années 70, banc) avec `couleur_film.py` par séquence.
 - La fin (tombe de Jenny, l'arrêt de bus, la plume qui repart) et la scène de la mort de la mère.
 - Vérifier la crête de la minute 31 (archives des Kennedy) sur une planche.
+
+## Révision (passe de révision, session 9, 2026-10-11)
+Leçon apparue après l'analyse (session 7) : toute rafale de plans de moins de 1 s sur un même sujet se vérifie sur des images consécutives (session 9, « Fou-Rire »).
+- **Corrigée** : le « champ-contrechamp de cinq plans d'une demi-seconde » de la course (1:55:08) est un seul plan de 5,8 s d'une femme devant un téléviseur ; PySceneDetect a pris les changements d'image **de l'écran dans le champ** pour des coupes. Le principe qui en était tiré (« la vitesse va à la réaction ») est retiré de la fiche et de `montage-rythme`.
+- Les 8 séries saturées du film (31 « plans ») ne touchent aucune autre séquence citée.

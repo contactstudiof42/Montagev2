@@ -31,7 +31,8 @@ _Ouverte le 2026-10-11 (session 9). Une ligne par vidéo à revoir : ce que les 
 | Clips (3-4) | séries saturées (Ziak éclairci) ; parole sans objet | à vérifier vite |
 | Hirsingen (6) | parole : voix séparée + spectrogramme | **fait (session 9)** : 1 confirmée, 1 corrigée |
 | Fou rire (6) | série saturée signalée à 1:59-2:02 : tuile à 10 i/s + bandes à 25 i/s | **fait (session 9)** : 1 confirmée, 1 corrigée (la « rafale de panique » est un seul plan porté de 4,8 s) |
-| La Haine, Avengers, Forrest Gump (7) | parole si citée ; générique de fin | à vérifier vite |
+| Forrest Gump (7) | rafales de moins de 1 s citées : images consécutives | **fait (session 9)** : 1 corrigée (la « rafale de réaction » est un seul plan devant un téléviseur), 1 confirmée (séries saturées sans effet ailleurs) |
+| La Haine, Avengers (7) | parole si citée ; générique de fin | à vérifier vite |
 
 ## 3. Bilan chiffré (mis à jour à chaque vidéo révisée)
 | Vidéo | Conclusions vérifiées | Confirmées | Corrigées | Nouvelles |
@@ -45,6 +46,7 @@ _Ouverte le 2026-10-11 (session 9). Une ligne par vidéo à revoir : ce que les 
 | Boxho | 2 | 1 | 1 | 0 |
 | Hirsingen | 2 | 1 | 1 | 0 |
 | Fou rire | 2 | 1 | 1 | 0 |
-| **Total** | 23 | 14 | 8 | 1 |
+| Forrest Gump | 2 | 1 | 1 | 0 |
+| **Total** | 25 | 15 | 9 | 1 |
 
-**Lecture provisoire (session 9)** : une correction sur les images (Fou rire : fausse rafale sur un plan porté flou, trouvée par le comptage des séries saturées). Sur les mesures de parole, **tous les pourcentages de l'outil étaient faux** (7 sur 7, toujours trop hauts, de 6 à 36 points), **toutes les conclusions qualitatives tiennent** (qui coupe au milieu des phrases, qui attend la fin). Plans longs et calage : 8 conclusions sur 9 confirmées. Le regard « à l'œil » sur images tient ; le chiffre automatique sur la parole ne tient pas sans spectrogramme.
+**Lecture provisoire (session 9)** : deux corrections sur les images, toutes deux des **fausses rafales** (Fou rire : un plan porté flou ; *Forrest Gump* : un téléviseur dans le champ). Sur les mesures de parole, **tous les pourcentages de l'outil étaient faux** (7 sur 7, toujours trop hauts, de 6 à 36 points), **toutes les conclusions qualitatives tiennent** (qui coupe au milieu des phrases, qui attend la fin). Plans longs et calage : 8 conclusions sur 9 confirmées. Le regard « à l'œil » sur images tient ; le chiffre automatique sur la parole ne tient pas sans spectrogramme.
