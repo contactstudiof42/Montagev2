@@ -1,56 +1,50 @@
-# Plan de montage — Sony LinkBuds Clip × KORE (V3)
+# Plan de montage — Sony LinkBuds Clip × KORE (V4)
 
-_Phase 3, 2026-10-11, après les notes de Diego sur la V2 et la comparaison avec Claude nu (`comparaison.md`). Plan de la V2 : `archives/phase-3/sony-linkbuds/plan-V2.md`. Timeline Resolve : `SONY_V3` (projet `P3-sony-linkbuds-agent`). Rendu : `videos/phase-3/sony-linkbuds/rendus/sony_linkbuds_V3.mp4`._
+_Phase 3, 2026-10-11, après les notes de Diego sur la V3 (65 % livrable) et ses consignes dictées en session (Gyroflow, aucun moment répété). Plan V3 : `archives/phase-3/sony-linkbuds/plan-V3.md`. Timeline Resolve : `SONY_V4` (projet `P3-sony-linkbuds-agent`, dupliquée de `SONY_V3`). Temps des rushes en secondes depuis le début du rush (« rel »)._
 
-## Intention (une phrase)
-**On entre chez KORE, on met les LinkBuds Clip, et la séance monte jusqu'au rouge ; le produit se porte comme un bijou et tient la tête en bas.** Le brief demande l'excès (« kinetic, très rapide, beaucoup d'effets, beaucoup de SFX ») : cette fois je l'applique, puis je le rends propre.
+## Intention (inchangée)
+**On entre chez KORE, on met les LinkBuds Clip, et la séance monte jusqu'au rouge ; le produit se porte comme un bijou et tient la tête en bas.** Diego a validé le rythme et la compréhension de la V3 : la structure en 9 blocs et la musique restent. La V4 travaille la finition : chaque effet a une raison dans la matière, aucun n'est répété d'une rafale à l'autre, rien de cheap.
 
-## Ce qui change par rapport à la V2
-| Retour de Diego | Réponse dans la V3 |
+## Ce qui change par rapport à la V3
+| Note de Diego | Réponse dans la V4 |
 |---|---|
-| Rythme mou, rafale de 15 s à faire revenir | 44,6 s au lieu de 59,6 ; **4 rafales** (199-233, 421-468, 609-656, 784-807) ; 91 plans au lieu de 68 ; 19 impacts de zoom avec flou de bougé ; 3 accélérés |
-| Étalonnage « catastrophique » | Look fabriqué et jugé avant le montage (`look.md`) : S-Log3 → tirage Kodak 2383 → noirs écrasés, une seule LUT |
-| Transitions « PowerPoint » | **Aucune transition intégrée.** Coupes franches, flashs (28), arrêts sur image détourés, impacts |
-| Titre « PowerPoint » | Titre SST Pro Roman, révélé par le bas sous un masque, interlettrage qui se resserre, pas de grossissement |
-| Packshots qui tremblent | Mesurés (`labo/outils/tremblement.py`) et stabilisés par compensation de la trajectoire mesurée (Gyroflow bloqué, voir la note) |
-| Série K-O-R-E non lue | Ouverture : K, O, R, E sur les 4 temps de la première mesure, puis KORE entier |
-| Détourages déclarés impossibles | 3 arrêts sur image détourés par la carte de profondeur (idée de Claude nu, reprise : image figée dans Fusion, contour net, fond calculé à travers la LUT) |
-| Ordre des plans sans logique | Une progression en 9 blocs, chacun justifié ci-dessous |
+| Titre : police et animation « toujours pas ça » | Dessin de la DA Sony (`references/da-linkbuds-clip-reference.png`) : « **LinkBuds** » en SST Bold, « Clip » en SST Light, accolés, noir sur fond clair, beaucoup d'air. Apparition « à la Apple » : fondu et montée de quelques pixels, freinée, rien d'autre |
+| Effets répétitifs, sans folie (eyecannndy) | Une technique par moment, chacune tirée de la matière : épellation épinglée + **zoom infini** (E → KORE), **flash cut aligné** (les oreilles), rafale **qui monte**, rafale **qui descend en step-print**, **écran partagé** en trois bandes, rafale rouge à **inversions négatives**, **collages** sur arrêt sur image. Table des techniques : `montage-kinetic-editing` § 4 bis |
+| Zoom infini « s'il est bien exécuté » | La matière existe : les lettres et le mot KORE sont sur le même comptoir. Raccord d'échelle mesuré (points SIFT entre le E en gros plan et le E du plan large), recul continu, pas de flou de transition |
+| SFX répétitifs | Nouvelles familles (bande, papier, argentique, scratch, tonal, ressorts…) : une famille par technique ; variations de hauteur |
+| Couleur « bouillie », « pâté », produit surexposé | Séparation des teintes dans la LUT (peau isolée du décor, néons neutres, rouge gardé) ; packshots mesurés sur la forme d'onde et en fausses couleurs ; grain allégé ; export de qualité (`look.md`) |
+| Export | H.265 Main 10, débit élevé, multipass ; vérifié au ffprobe et à l'image |
+| Détourages « bizarres » | Collages sur arrêt sur image (captured-by-h) : détourage fait sur l'image figée en pleine résolution (carte de profondeur affinée), fond transformé, puis **le mouvement reprend** |
+| K-O-R-E : cadrage et flottement | Gyroflow, puis chaque lettre **épinglée au même point** (le cadreur voulait un fixe sans trépied) |
+| Packshots : stabilisation visible | Gyroflow (zoom fixe, lissage modéré) puis correction « rail » : on garde le travelling avant / arrière du cadreur, on retire la main (`montage-regard` point 3) |
+| Jamais deux fois le même moment d'un rush | 11 doublons de la V3 (dans les rafales) supprimés ; `labo/outils/doublons_timeline.py` avant chaque rendu : 0 doublon exigé |
 
-## Musique (montage musical)
-`messwave - easy.mp3` : **99,498 → 125,736 s** puis **133,236 → 150,5 s** (images 0-656, puis 656-1114). La coupure retire la phrase des mesures 63 à 66 et raccorde un temps fort à 125,25 s avec son équivalent à 132,75 s (même phase de 0,486 s) : appel contre appel. **À vérifier à l'oreille.** Repères mesurés (images de la V3) : coups 128 et 140 ; **silence numérique 179-185 (noir)** ; relance 187 ; **drop 233** ; appels sans basse 281, 468 et 656 ; **dernier drop 690** ; coups forts tous les 47 images ensuite (737, 784, 831, 878, 925, 972, 1019) ; dernier coup 1072 → plan de fin Sony (1072-1114).
+## Musique (inchangée)
+`messwave - easy.mp3` : 99,498 → 125,736 s puis 133,236 → 150,5 s. Repères (images) : coups 128 et 140 ; silence 179-185 ; relance 187 ; drop 233 ; appels sans basse 281, 468, 656 ; dernier drop 690 ; coups toutes les 47 images ensuite ; dernier coup 1072. Tempo 129,2 : un temps = 11,6 images.
 
-## Structure, et pourquoi ces plans dans cet ordre
-Règle (retour de Diego du 2026-10-11) : ni l'heure de tournage, ni le hasard. Le film suit **le chemin d'une participante** (dehors → dans la salle → la séance qui monte → la fin → l'objet), et à l'intérieur de la séance **le corps de bas en haut** (jambes → bras → tête en bas), parce que c'est l'ordre d'un cours de pilates et que l'épreuve du produit (tenir la tête en bas) vient en dernier. Les rafales, elles, puisent dans toute la séance : ce ne sont pas des plans à lire, mais une matière qui annonce ou résume.
-
-| # | Bloc | Images | Musique | Plans | Pourquoi ces plans, dans cet ordre |
-|---|---|---|---|---|---|
-| 1 | **Le lieu, épelé** | 0-94 | mesures 49-50, montée | C6491 K, C6492 O, C6493 R, C6494 E (un temps chacun, clic à chaque lettre), C6495 KORE entier (impact), C6540 elle entre et salue | Le cadreur a tourné chaque lettre au même endroit du cadre (centre à 53 % de la largeur, mesuré) pour qu'on épelle la marque en raccords. On sait où l'on est avant de savoir ce qu'on va voir ; la première personne nous accueille d'un signe de la main. |
-| 2 | **Entrer et s'équiper** | 94-179 | mesures 51-52, sans basse puis presque silence | C6505 l'allée de néons (accéléré 200 %), C6506 et C6507 les boîtiers posés sur la machine (« photos » : flash et déclencheur), C6553 toute la salle porte les mains aux oreilles, C6559 la mise au point glisse vers l'écouteur (ralenti), C6560 l'oreille et la boucle | On passe la porte : du hall clair au noir de la salle. Le produit attend sur le reformer, puis on le met. Ordre du geste : l'objet, le geste collectif, le détail sur une oreille. La musique se vide, l'image se resserre sur l'oreille. |
-| — | Silence | 179-185 | silence numérique | noir | Le trou de la musique est un noir : la respiration avant la séance. |
-| 3 | **La coach lance, rafale** | 185-233 | mesure 53, relance | C6550 la coach au micro (poussée lente), puis 9 plans de 6 à 2 images (sangles, pieds, fentes, écouteur, rouge, bras, souffle) | La relance musicale, c'est la coach qui démarre le cours. La rafale accélère sous le riser et montre en un éclair tout ce qui va venir (une bande-annonce de la séance), jusqu'au drop. |
-| 4 | **Le bas du corps** | 233-468 | mesures 54-58, drop | C6576 la coach démontre (drop : flash, secousse, impact), fentes C6583 et C6574, **arrêt détouré orange** C6594 (appel sans basse à 281), pieds C6589 et C6590, C6587, profil en effort au ralenti C6577 (écouteur porté), C6578, C6571, C6573, C6581 entre deux néons, puis rafale 421-468 | Le cours commence par les jambes et la machine, du plan d'ensemble au détail (la coach montre, les filles font, les pieds glissent sur le chariot). Au milieu, un plan tenu au ralenti sur un profil avec l'écouteur : le produit dans l'effort, sans démonstration. La rafale finale ramasse le bloc avant l'appel. |
-| 5 | **Reprendre son souffle** | 468-515 | mesure 59, appel sans basse | C6608 souffle et sourire (ralenti), **arrêt détouré sur fond noir** C6566 (sourire, écouteur) | La musique enlève la basse : on respire. Le visage humain du film, puis un portrait figé où l'écouteur se lit seul sur le noir. |
-| 6 | **Le haut du corps, puis la tête en bas** | 515-656 | mesures 60-62 | sangles C6619 et C6622, poignées C6632, bras qui montent C6624 (accéléré), C6637 bras en l'air, gainage tête en bas C6599, **punch-in sur l'écouteur tête en bas** C6612, puis rafale 609-656 (gainage, tirages, néons, la coach) | On remonte dans le corps : bras, puis tout le corps à l'envers. C'est là que le produit fait sa preuve (« la tête en bas, ça n'a pas bougé », disent les participantes) : le punch-in va chercher l'écouteur à ce moment précis. |
-| 7 | **La lumière passe au rouge** | 656-690 | mesure 67, appel | C6660 oreille dans la lumière rouge (ralenti, poussée), **arrêt détouré sur fond rouge** C6657 | Coupure musicale (la phrase retirée) et bascule de lumière : on entre dans le dernier effort. Le rouge arrive d'abord sur une oreille, puis sur la salle. |
-| 8 | **Le sommet rouge, puis la fin du cours** | 690-948 | dernier drop, coups toutes les 47 images | C6662 drop (secousse, impact), rires en rangée C6665, C6664, chouchou C6658, mini-rafale rouge 784-807, bras levés C6676, on se redresse C6674, le bras retombe C6672, **tout le monde allongé** C6669 (ralenti), C6566 profil apaisé | La salle entière dans le rouge, l'effort puis le rire, puis le corps qui se relâche : la séance finit sur les filles allongées et un profil calme. Les coupes tombent sur les coups forts. |
-| 9 | **L'objet** | 948-1072 | fin du morceau | flash, C6725 boîtier rose ouvert, C6723 boîtier blanc, C6723 les trois ouverts + titre « LinkBuds Clip » | Après la séance, l'objet seul, net, en plein jour : ce qu'elles portaient. Rupture de lumière voulue (flash blanc), puis le nom. |
-| 10 | Plan de fin Sony | 1072-1114 | dernier coup | fourni, tel quel, avec son logo sonore | — |
-
-## Effets (tous posés par le MCP, détail dans `journal.md`)
-- **Impacts de zoom** (19) : 1,08 à 1,25 → 1,0 en 5 images, départ rapide, freinage long, flou de bougé (obturateur 180°). **Poussées lentes** (11) : 1,0 → 1,06-1,12. **Punch-in** sur l'écouteur (597). **Secousses amorties** sur les deux drops (233, 690).
-- **Flashs blancs** (28, piste V3, mode Add) : 1 à 3 images, jamais plus de 3 par seconde (test de photosensibilité réussi).
-- **Arrêts sur image détourés** (281, 503, 678) : carte de profondeur → masque → contour blanc → fond orange, noir et blanc, rouge ; « pop » d'échelle à l'entrée.
-- **Grain** : piste V5, mode Overlay, opacité 35 %, désactivable.
-- **SFX** : 64 sons sur 6 pistes (clics par lettre, whooshs aux coupes, déclencheurs aux arrêts, glitchs dans les rafales, risers et aspirations vers les drops, impacts aux drops). Crête calée sur l'image de l'événement.
+## Structure, techniques, et pourquoi
+| # | Bloc | Images | Plans (rel) | Technique, et pourquoi elle est là |
+|---|---|---|---|---|
+| 1 | **Le lieu, épelé** | 0-94 | K C6491, O C6492, R C6493, E C6494 (Gyroflow, épinglées), **zoom infini** du E vers KORE C6495 (40-48), KORE tenu, C6540 salut (14,6) | Le cadreur a filmé chaque lettre pour qu'on épelle la marque : une lettre par temps, toutes au même point. Les lettres sont sur le comptoir du plan large : le recul du E jusqu'au mot entier est un vrai zoom infini (la matière le permet), qui tombe sur le coup 48. |
+| 2 | **Entrer et s'équiper** | 94-179 | allée C6505 (200 %), boîtiers dans la salle C6506 et C6507 (Gyroflow + rail), mains aux oreilles C6553, puis **flash cut des oreilles** 152-179 : C6555, C6628, C6611, C6630, C6559, C6561 | Après le geste collectif (tout le monde met ses écouteurs), on vérifie oreille par oreille : l'écouteur reste au même point du cadre pendant que le cadre se resserre d'une participante à l'autre, de plus en plus vite, jusqu'à la macro. Un tic par oreille. Puis le silence. |
+| — | Silence | 179-185 | noir | La respiration avant la séance. |
+| 3 | **La coach lance, tout monte** | 185-233 | coach C6550 (4,0), puis **rafale qui monte** : bras et corps qui se lèvent (C6624, C6627, C6578, C6636, C6646, C6633) | La musique monte (riser) : chaque plan est un mouvement vers le haut, coupé pendant le geste, le suivant le continue. La montée se voit autant qu'elle s'entend. |
+| 4 | **Le bas du corps** | 233-468 | drop sur la coach C6576, fentes, **collage** C6594 (281), pieds, profil en effort C6577 (ralenti), …, puis **rafale qui descend en step-print** 421-468 (C6587 24,2, C6590 2,1, C6568 1,3, C6569 0,7, C6571 1,5) | On travaille les jambes : la rafale finale est faite de mouvements vers le bas (la caméra descend aux pieds, on se penche aux ressorts), en step-print (chaque image tenue deux fois) : la saccade du run and gun devient un parti pris, et c'est l'inverse de la rafale 3. |
+| 5 | **Reprendre son souffle** | 468-515 | souffle C6608 (ralenti), **collage** C6566 (503) | La basse disparaît : un visage, puis un arrêt où le sujet se détache et l'écouteur se lit seul. Le mouvement reprend. |
+| 6 | **Le haut du corps, puis la tête en bas** | 515-656 | sangles C6619, C6622, poignées C6632, bras C6624 (9,0), C6637, tête en bas C6599, punch-in sur l'écouteur C6612, puis **écran partagé** 609-656 : trois bandes, trois participantes qui tirent leur sangle (C6618, C6621, C6629, C6620, C6631) | Le même exercice, fait par toute la salle en même temps : les bandes s'ouvrent une à une sur les temps, puis les trois tirent ensemble. Le format vertical sert l'idée (trois corps empilés). |
+| 7 | **La lumière passe au rouge** | 656-690 | oreille dans le rouge C6660 (ralenti), **collage** C6657 (678) | Bascule de lumière (color shift du tournage) : le rouge arrive d'abord sur une oreille. |
+| 8 | **Le sommet rouge, puis la fin du cours** | 690-948 | drop C6662, rires C6665, C6664, chouchou C6658, **rafale rouge à inversions** 784-807 (C6659, C6661 2,2, C6663, C6662 2,4, C6664 3,5 ; inversions d'une image à la place des flashs blancs), bras levés C6676, C6674, C6672, allongées C6669, profil apaisé C6566 | Dans le rouge, un flash blanc ne se voit plus : l'inversion (le rouge devient cyan une image) est le flash de ce monde, signature de captured-by-h. Puis le corps se relâche. |
+| 9 | **L'objet** | 948-1072 | flash, packshot rose C6725 (Gyroflow + rail), blanc C6723 (13,4), les trois C6723 (29,0) + titre | Après la séance, l'objet seul en plein jour. Les packshots gardent le travelling du cadreur, sans la main. Le titre dessiné comme la DA Sony, posé avec retenue : la vidéo est folle, la marque est calme. |
+| 10 | Plan de fin Sony | 1072-1114 | fourni | — |
 
 ## Critères de réussite (mesurés sur le rendu)
-| Critère | Cible | Mesure V3 |
-|---|---|---|
-| Durée | ≤ 60 s (45 s visés) | 44,6 s |
-| Format | 1080x1920, 25 i/s, H.264, BT.709 | conforme |
-| Loudness | -14 LUFS ±1, ≤ -1 dBTP | -14,1 LUFS, -1,1 dBTP |
-| Photosensibilité | ≤ 3 flashs par seconde | 3 au pire |
-| Première image | nette et lisible avant 0,2 s | le K, plein cadre, image 0 |
-| Tremblement des packshots | < 2 px de moyenne | 0,7 à 2,7 px (voir l'autocritique) |
-| Noirs (5e centile de luma) | 5 à 11, comme les références | voir `autocritique.md` |
+| Critère | Cible |
+|---|---|
+| Doublons (même moment d'un rush deux fois) | **0** (`doublons_timeline.py`) |
+| Tremblement (plans stabilisés) | K-O-R-E épinglées : < 1,5 px ; packshots : < 2 px autour de la trajectoire lissée, vitesse du geste gardée (0,8-1,3) |
+| Packshots | aucun blanc brûlé dans le boîtier (forme d'onde, fausses couleurs) |
+| Durée, format | 44,6 s ; 1080x1920, 25 i/s, **H.265 Main 10**, débit élevé, BT.709 |
+| Loudness | −14 LUFS ±1, ≤ −1 dBTP |
+| Photosensibilité | ≤ 3 flashs (blancs ou inversions) par seconde |
+| Titre | comparé en pleine résolution à la DA Sony |
+| Effets | comparés aux exemples d'eyecannndy |

@@ -99,6 +99,24 @@ Règles : un seul rang 1 par 5-10 s ; whoosh variés (3-5 variantes, **varier le
 - **R6 Loudness d'un mix chargé** [TESTÉ EN LABO] : ebur128 → gain → limiteur sur-échantillonné → re-mesurer ; l'AAC remonte le true peak (+1,9 dB) : limiteur à -3 dBFS avant encodage ; résultat -14,3 LUFS / -1,1 dBTP (`montage-loudness-livraison`).
 - **R7 Captions** : pop d'échelle 125 → 100 % sur la 1re image, click -20 dB sur les mots-clés seulement.
 
+## 4 bis. Bibliothèque de techniques : eyecannndy.com (lue le 2026-10-11, demandé par Diego)
+_https://eyecannndy.com/technique/… : chaque technique illustrée par des GIF. Lu : 56 pages ; GIF regardés pour Infinite Zoom, Flash Cut, Echo print, Match Cut [VU SUR IMAGES], le reste d'après définitions [NON VÉRIFIÉ]. Règle de Diego : **jamais cheap** ; un effet seulement si la matière le permet et s'il s'exécute proprement. Varier la technique d'une rafale à l'autre, chacune avec une raison dans la matière._
+
+| Technique (page) | Ce qui la rend propre | Matière nécessaire | Resolve par script |
+|---|---|---|---|
+| **Flash cut aligné** (`flash-cut`) | rafale de 2-4 images où **seul le sujet change, cadre et point focal strictement identiques** (le verrou d'alignement fait l'effet) | plusieurs plans de même échelle sur le même objet (oreilles, boîtiers, lettres) | facile : recadrage `Transform` calé sur le centre mesuré de l'objet |
+| **Match cut de forme / de mouvement** (`match-cut`, `match-motion`) | la forme ou le mouvement continue au même endroit, au même angle | une forme commune (rond de l'écouteur ↔ O), un mouvement dans la même direction | facile : alignement mesuré |
+| **Zoom infini** (`zoom-in#infinite-zoom`) | échelle continue qui accélère régulièrement, aucun à-coup ; **pas le flou « CapCut » qui laisse voir le plan suivant** | un détail du plan A qui est exactement le plan B (même objet à deux échelles, plans stables, 4K pour ×2) | possible avec soin : `Transform` chaînés, échelle exponentielle, raccord au point d'échelle égale |
+| **Crash zoom / cut-in** (`zoom-in#crash-zoom`, `cut-ins`) | 4-8 images, flou de bougé, coupe au maximum de vitesse ; cut-in = recadrage plus serré du même plan | sujet net et centré, source 4K | facile |
+| **Speed ramp** (`speed-ramping`) | ralenti posé sur l'instant clé du geste | 50p ou plus, un geste qui a un sommet | possible avec soin (`TimeSpeed` + clés ; l'interpolation abîme mains et câbles) |
+| **Step-print / echo print** (`step-printing`, `echo-printing`) | saccade traînante (Chungking Express) ou copies qui s'éventaillent sur fond uni | sujet qui bouge, caméra quasi fixe, fond sombre | facile (`Trails`, `TimeSpeed` + `floor`) ; cheap si la caméra bouge (tout bave) |
+| **Color shift + light flash** (`color-shift`, `light-flash`) | la bascule de couleur vient du tournage ; flash d'1-2 images motivé par une lumière | une bascule réelle (le passage au rouge) | facile |
+| **Split screen / match split** (`split-screen`) | bandes de même échelle qui composent une seule image | même échelle, même horizon | facile (`Merge` + masques `Rectangle`) |
+| **Arrêt sur image** (`freeze-frame`) + **collage** | rare ; dans un collage, l'arrêt porte une transformation puis **le mouvement reprend** (captured-by-h, choix de Diego) | une image nette, une pose lisible | facile ; détourage soigné sur l'image figée |
+| Double exposition, masques, portail d'objet | possible si la forme est forte | silhouette sur fond sombre, objet qui remplit le cadre | possible avec soin (pas de Magic Mask scriptable) |
+| Slit-scan | lourd | caméra fixe, mouvement régulier | difficile, plutôt hors de Resolve |
+| **À écarter** : stutter et boomerang (répètent un même moment : interdit dans un événementiel), datamosh (pas premium), kaléidoscope (cheap) | | | |
+
 ## 5. Photosensibilité (obligatoire dès qu'il y a flash ou strobe) [TESTÉ EN LABO]
 - **Les sept références réseaux de Diego échouent toutes à `flash_check.py`** (pire seconde 4 à 6), y compris la pub Sephora qui n'a aucun flash visible : l'outil simplifié compte sans doute les coupes entre plans de luminances très différentes. Conséquence : ce genre ne respecte pas le seuil WCAG ; pour une diffusion qui l'exige (TV, pub UK), mesurer et adapter ; l'outil reste à confronter à un vrai test Harding avant de juger une coupe ordinaire. [mesuré, doute sur l'outil]
 - `python3 -I labo/photosensibilite/flash_check.py rendu.mp4` ; > 3 flashs dans une seconde = refus (WCAG 2.3.1, BT.1702) ; un flash d'1 image compte entier ; surface jugée dans la pire fenêtre de 1/3 × 1/3 de l'écran. Pub UK : test Harding.

@@ -161,6 +161,7 @@ Le but n'est pas d'obtenir un plan statique, mais un mouvement fluide. On garde 
 - ne cherche pas la stabilité absolue : lissage modéré, pas d'annulation du mouvement, et le moins de recadrage possible ;
 - ne compare pas le déplacement total des pixels : mesure seulement le tremblement résiduel (le mouvement moins sa version lissée), et vérifie que la trajectoire voulue est conservée ;
 - juge surtout à l'œil, sur une bande d'images consécutives : le mouvement doit paraître régulier et naturel, pas figé.
+Précision dictée ensuite (même session) : « il y a un mouvement, on voit qu'il est volontaire » sur les packshots (zoomer, dézoomer, travelling avant et arrière des écouteurs) : « comme s'il y avait un rail », « il faut pas que ce soit fixe ». À l'inverse, sur les lettres KORE, « on voit très bien que le but du cadreur c'était d'avoir un plan fixe, mais qu'il n'avait pas de trépied ». Faire la part des choses entre une volonté de mouvement saccadée (main levée) et une volonté de fixe.
 **Intégré le 2026-10-11** (session V4) : `montage-regard` (point 3), `montage-resolve` (recette Gyroflow) ; `labo/outils/tremblement.py --avant ORIGINAL` (vitesse et forme du mouvement voulu conservées) et `--bande` (bande d'images pour juger à l'œil).
 
 ## 2026-10-11 — Ne jamais réutiliser deux fois le même passage d'un rush (dicté en session V4)
