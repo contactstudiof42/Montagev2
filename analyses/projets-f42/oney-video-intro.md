@@ -24,7 +24,7 @@ _Fiche ouverte le 2026-10-11 (phase 2, session 6, projet Studio F42 n°3). **Ét
 
 ## Ce qui pourrait être meilleur, et comment
 ### Montage et finition (corrigeable avec les mêmes rushes)
-1. **Le son sature** : true peak +3,1 dBTP, crêtes décodées au-dessus de 0 dBFS. Lu sur un téléphone en virgule fixe, les plosives et les rires peuvent craquer. C'est le défaut le plus grave du fichier, et le plus simple à corriger : limiteur à -1 dBTP, puis vérifier **sur le fichier encodé** (`ebur128=peak=true`). Deuxième livraison du studio sur trois au-dessus de -1 dBTP (Benefit : -0,6 et 0,0) : **c'est une habitude de chaîne, pas un accident** [mesuré].
+1. **Le son sature** : true peak +3,1 dBTP, crêtes décodées au-dessus de 0 dBFS. Lu sur un téléphone en virgule fixe, les plosives et les rires peuvent craquer. C'est le défaut le plus grave du fichier, et le plus simple à corriger : limiteur à -1 dBTP, puis vérifier **sur le fichier encodé** (`ebur128=peak=true`). Les cinq fichiers du studio vus en session 6 dépassent tous -1 dBTP (Benefit -0,6 et 0,0 ; Swile -0,8 ; Sephora -0,1) : **c'est une habitude de chaîne, pas un accident** [mesuré].
 2. **2,5 s de noir à la fin** (34,6-37,1 s) après « Allez, on se lance ? », sans logo ni bouton. Si l'application enchaîne sur le quiz, ce noir est un temps mort (le spectateur croit que c'est fini) ; s'il est demandé pour l'intégration, le remplacer par un carton « Jouer » ou par le dernier plan tenu. **À vérifier auprès du client** : je ne connais pas l'intégration.
 3. **Redondance des autocollants** : « Vous méritez une rentrée sereine ! » s'affiche pendant qu'il le dit, avec le sous-titre mot à mot en dessous : trois fois la même phrase (voix, autocollant, sous-titre). Garder l'autocollant pour les **informations** (20 000 €, un quiz par semaine) et le retirer des phrases de ton.
 4. **Sous-titres sur les jambes** : en 1:1, la ligne de sous-titres tombe sur ses genoux et son short (0,2 s : « la la… » blanc sur la peau claire). Un contour ou une ombre portée, ou remonter la ligne au niveau du torse sur les plans larges.
@@ -53,7 +53,7 @@ _Fiche ouverte le 2026-10-11 (phase 2, session 6, projet Studio F42 n°3). **Ét
 ## Confirme, contredit, complète
 - **Confirme** `montage-youtube` §5 (le punch-in sur l'emphase) et la règle des docs « une image par élément de liste », ici en graphisme.
 - **Nuance** la règle des pubs de référence « le nom de la marque à la fin » : elle vaut pour la conquête ; pour un message à des clients, le nom vient tôt.
-- **Complète** `montage-loudness-livraison` : deux livraisons du studio sur trois dépassent -1 dBTP (dont une au-dessus de 0 dBFS) ; le QC doit être une étape fixe de la chaîne.
+- **Complète** `montage-loudness-livraison` : les cinq livraisons du studio vues dépassent -1 dBTP (celle-ci au-dessus de 0 dBFS) ; le QC doit être une étape fixe de la chaîne.
 
 ## Principes transférables (pour le studio)
 1. **Une caméra, une liste : la liste se fait en graphisme sur le mot**, pas en coupes.
