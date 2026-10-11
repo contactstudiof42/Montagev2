@@ -30,12 +30,13 @@ La mesure : **le nombre et la gravité des retours** dont Diego aurait besoin po
 ## Étapes 1 à 5 — Monter un projet (`videos/phase-3/<projet>/`)
 Le dossier contient `brief.md`, et soit `rushes/` et `son/`, soit les chemins d'un dossier source externe (lis-les dans `brief.md`). Tes fichiers texte vont dans le dépôt, dans `projets-phase-3/<projet>/` (commités), jamais les médias.
 
-1. **Préparer** : relis `brief.md`, `GOUTS.md`, la synthèse de `RAPPORT.md`, `montage-formats`, `montage-regard`, et les skills du genre demandé. Si un élément du brief manque (durée, format, destination), choisis et note ton choix.
+1. **Préparer** : commence par écrire en tête de `plan.md` le **genre** du film (after movie, pub, interview, corporate, clip, fiction…), son **ton** et sa destination. Ce genre décide quelles règles [genre] de tes skills s'appliquent, et lesquelles ne s'appliquent pas. Puis : relis `brief.md`, `GOUTS.md`, la synthèse de `RAPPORT.md`, `montage-formats`, `montage-regard`, et les skills du genre demandé. Si un élément du brief manque (durée, format, destination), choisis et note ton choix.
 2. **Dérusher** → `derush.md` : inventaire (ffprobe, durées, cadences), copies légères, transcription de toute parole, planches. Pour chaque rush : ce qu'il contient, les bons moments avec timecodes, les prises à écarter et pourquoi (flou, jeu, son, raccord). C'est l'étape la plus importante : prends le temps.
 3. **Plan de montage** → `plan.md` : intention en une phrase, durée et format, structure minutée (ouverture, développement, sommet, fin), musique et calage, références de ton corpus qui guident, critères mesurables de réussite (durée, loudness, lisibilité muette, premier écran net avant 2 s…). En mode test, tu n'attends pas de validation. Plus tard, sur un vrai projet, Diego validera ce plan avant le montage.
+2 bis. **Direction artistique, avant le moindre effet** → `da.md` : voir « Ton regard sur ta propre image », point 5.
 3 bis. **Look et mouvement avant de monter** : voir « Ton regard sur ta propre image », points 1 à 3 (look comparé aux références, tremblement mesuré sur les plans retenus, Gyroflow si besoin).
 4. **Monter dans Resolve** : projet `P3-<projet>-agent`, timeline au format du brief. Un geste, une image de contrôle. Journal de chaque appel dans `journal.md`. Son : niveaux, fondus, ambiance continue sous la parole. Couleur : équilibre et raccord, look seulement si le brief ou les références le demandent. Textes et sous-titres si le format l'exige (lisibilité sur téléphone).
-5. **Juger et corriger** : rends la V1 dans `rendus/`, puis regarde-la comme en phase 2 (planche, courbes, `qc_livraison.sh`, grille de `montage-regard`). Écris `autocritique.md` (ce qui ne va pas, par ordre de gravité), corrige, rends la V2. Deux ou trois versions au plus. Termine par `note-de-livraison.md` : ce que tu as fait, tes choix, ce que Diego doit vérifier (surtout à l'oreille), ce que tu n'as pas su faire dans Resolve.
+5. **Juger et corriger** (avec le carnet de goût, point 7, et les variantes, point 6) : rends la V1 dans `rendus/`, puis regarde-la comme en phase 2 (planche, courbes, `qc_livraison.sh`, grille de `montage-regard`). Écris `autocritique.md` (ce qui ne va pas, par ordre de gravité), corrige, rends la V2. Deux ou trois versions au plus. Termine par `note-de-livraison.md` : ce que tu as fait, tes choix, ce que Diego doit vérifier (surtout à l'oreille), ce que tu n'as pas su faire dans Resolve.
 
 ## Ton regard sur ta propre image (ajouté le 2026-10-11, après la V2 Sony)
 La V2 Sony a montré trois angles morts : un étalonnage resté technique (simple conversion S-Log3 → 709, plate et lumineuse), des transitions intégrées « PowerPoint », et des packshots qui tremblent, choisis sur des images fixes. Tu savais juger tout ça chez les autres, tu ne l'as pas jugé chez toi. Ces règles s'appliquent à chaque projet, sans demander l'avis de Diego : tu te corriges seul.
@@ -70,6 +71,31 @@ Le look et les effets Fusion alourdissent Resolve : lecture saccadée pour Diego
 - **Les effets sur des pistes à eux** : flashs, textes et compositions Fusion sur des pistes hautes dédiées, que tu désactives pendant le montage et réactives pour vérifier ou rendre (activer ou désactiver une piste ou un plan par l'API, à vérifier dans `search_scripting_api`). Les effets posés sur les plans eux-mêmes (zoom, secousse) viennent en dernier, bloc par bloc.
 - **Vérifier un passage sans tout rendre** : rends seulement la plage concernée (points d'entrée et de sortie dans les réglages de rendu), en basse définition si tu ne juges que le rythme.
 - Note dans `montage-resolve` ce que l'API permet vraiment (activer une piste, contourner l'étalonnage, cache de rendu) et ce qui reste à faire à la main.
+
+### 5. La direction artistique avant les effets
+Les collages « photos de vacances » et le fond de papier millimétré de la V4 Sony ne venaient pas d'une mauvaise exécution, mais de l'absence de direction artistique : des idées jolies, piochées sans cadre.
+- **Recherche** : avant de concevoir le moindre effet graphique, ouvre Chrome et regarde ce qui se fait de mieux dans le domaine du film (pour du sport : campagnes et contenus de grandes marques de sport et de studios reconnus ; pour une marque : sa propre communication). Garde 8 à 12 images de référence pro dans `projets-phase-3/<projet>/da/` (images légères, moins de 300 Ko chacune ; note la source).
+- **Écris `da.md`** : palette (avec les couleurs de la marque), textures et matières, typographie, langage graphique (formes, cadres, fonds, façon dont le texte et les collages apparaissent), ce qui est exclu. Une page, pas plus.
+- **Ensuite seulement**, choisis tes techniques (eyecannndy, tes skills) : chaque fond, texture, couleur et élément graphique doit se justifier par `da.md`. Ce qui ne s'y rattache pas ne rentre pas dans le film, même si c'est joli.
+
+### 6. Des variantes sur les moments clés
+Tu juges mieux entre plusieurs options que tu ne réussis une option du premier coup.
+- Pour chaque **moment clé** (ouverture, chaque collage ou détourage, transition majeure, sommet, titre et fin), fabrique **2 ou 3 variantes réellement différentes** (pas trois réglages de la même idée).
+- Compare-les en pleine résolution, côte à côte avec tes références et `da.md`. Garde la meilleure et écris en deux lignes pourquoi dans `plan.md` (et pourquoi pas les autres).
+- Les variantes écartées ne vont pas dans la timeline finale ; garde leurs images dans `projets-phase-3/<projet>/variantes/` pour le carnet de goût.
+
+### 7. Le carnet de goût
+`CARNET-DE-GOUT.md`, à la racine du dépôt, est ta mémoire du goût. C'est lui qui doit devenir universel, plus que les règles.
+- **À chaque retour de Diego** qui porte sur le goût, ajoute une entrée : l'image ratée et l'image corrigée (ou la référence qui montre la bonne direction), sa phrase à lui, la raison en une ligne, et la **portée** ([universel], [genre : …] ou [projet]).
+- Images dans `carnet/` (JPG, moins de 200 Ko, côte à côte sur une seule image quand c'est possible).
+- **Avant de livrer chaque version**, relis le carnet (les entrées [universel] et celles du genre du film) et vérifie ta version contre chacune.
+
+### 8. La portée d'une règle
+Diego le dit : ce qui vaut pour Sony ne vaut pas forcément pour le projet suivant. Chaque leçon que tu écris, dans un skill, dans le carnet ou dans les leçons de phase 3, porte une portée :
+- **[universel]** : vaut pour tout montage (étalonner plan par plan, vérifier les visages, ne jamais réutiliser un même passage de rush sans raison de récit, jamais cheap, un élément graphique vient toujours de la DA). Va dans `montage-regard` et dans le carnet.
+- **[genre : …]** : vaut pour un type de film (ex. after movie kinetic : un son sur chaque transition, inversions et flashs, rafales). Va dans le skill du genre (`montage-kinetic-editing`, `montage-formats`…), **sous le nom du genre**, avec ses contre-indications (dans quels films ne pas le faire).
+- **[projet]** : vaut pour ce film seulement. Reste dans `projets-phase-3/<projet>/` et ne remonte jamais dans un skill.
+Au début de chaque projet, après avoir écrit le genre, relis seulement les règles [universel] et celles de ce genre. **Un flash, une inversion ou un collage ne s'emploie que si le genre et la DA le demandent.**
 
 ## Étape 6 — Comparaison (quand Diego a déposé sa version et ses notes)
 Diego dépose sa version dans `final-diego/` et note les versions dans `RETOURS-DIEGO.md`. Alors seulement :

@@ -169,3 +169,52 @@ Précision dictée ensuite (même session) : « il y a un mouvement, on voit qu'
 _Dicté par Diego dans la conversation, recopié par l'agent._
 Dans ce type de vidéo (after movie, événementiel, run and gun, montage dynamique), on ne réutilise jamais deux fois le même passage d'un même rush. Un rush peut fournir plusieurs plans différents (on ne coupe pas toujours en run and gun), mais jamais le même moment deux fois. C'est amateur. Seule exception : un ressort de récit qui le justifie (flashback, image d'illustration, rappel volontaire, podcast…). Avant chaque rendu, vérifie automatiquement la timeline : liste le rush source et les timecodes d'entrée et de sortie de chaque plan, et signale tout chevauchement entre deux plans du même rush. S'il y en a un dans la V3, corrige-le dans la V4.
 **Intégré le 2026-10-11** (session V4) : règle dans `montage-grammaire`, `montage-formats` et `montage-regard` (point 7) ; contrôle `labo/outils/doublons_timeline.py` (à coller dans `run_script`) : **11 doublons trouvés dans la V3**, corrigés dans la V4.
+
+## 2026-10-11 — Projet Sony, notes de Diego sur la V4
+_Dictées par Diego, mises en forme par l'assistant de configuration ; les phrases entre guillemets sont ses mots. Chaque point porte sa **portée** : [universel] = vaut pour tout montage ; [genre] = vaut pour ce type de vidéo (after movie, événementiel, kinetic) ; [projet] = vaut pour Sony seulement. Ne transforme jamais un point [projet] ou [genre] en règle générale._
+
+**V4 livrable à 80 %** (V2 : 50 %, V3 : 65 %). « Techniquement, il a l'air de s'améliorer vraiment. » Le chantier qui reste, c'est **le goût**.
+
+### Son
+- [genre] « En termes de son, on est vraiment bien. » Mais certaines transitions ont leur son et d'autres non. Dans ce genre de vidéo, il faut choisir : **soit chaque transition a son son, soit aucune**. Ici : toutes, chacune avec un son qui lui correspond. Les SFX déjà téléchargés suffisent pour ce projet (sur un autre projet, tu peux en retélécharger).
+
+### Stabilisation
+- [universel] Le dernier plan ressemble à une stabilisation par déformation, pas à Gyroflow. Vérifie et **prouve, plan par plan, que chaque plan stabilisé l'est par Gyroflow avec les données gyroscopiques** (synchronisation comprise) ; écris dans la note de livraison la méthode utilisée pour chaque plan.
+
+### Couleur et exposition : plan par plan
+- [universel] « Il y a du mieux, ce n'est pas encore 100 % ça. » Du **bruit visible** : des noirs et des zones d'ombre encore trop relevés.
+- [universel] **Étalonne plan par plan**, pas par lot : chaque plan vérifié en pleine résolution (exposition, ombres, hautes lumières), puis raccordé à ses voisins.
+- [projet] Zoom arrière du E vers le large : le large est « complètement surexposé ». Sous-expose un peu avant pour que le large soit bien exposé ([universel] : dans une transition continue, l'exposition se règle sur l'ensemble du mouvement, pas sur son début).
+- [projet] Plan vers 16-17 s (la fille en plein exercice) : « complètement surexposé, n'importe quoi ».
+- [projet] Plans d'écouteurs de la fin : encore trop surexposés.
+
+### Rythme
+- [projet] Le corps au début et la transition : « c'est cool », mais ça pourrait aller un peu plus vite, surtout le zoom arrière du E vers le large.
+
+### Visages
+- [universel] Plan vers 0:09 : la fille de face dans le miroir, tenue verte, « fait une tête bizarre ». **Analyse les visages de chaque plan retenu** (expression, yeux mi-clos, grimace, bouche tordue) image par image sur la durée utilisée, et écarte les moments peu flatteurs, sauf si le film les veut.
+
+### Collages et détourages : le bon goût
+- [projet] Collage vers 11 s : détourage « pas mal », mais **pourquoi ce plan-là ?** Il ne sert pas la transition suivante. La couleur du fond est « horrible ». Piste de Diego : elle détourée, le plan suivant vient se glisser derrière elle, puis elle disparaît (par un glitch, par exemple).
+- [projet] Collage vers 20-21 s : détourage « ignoble », fond de papier millimétré : « aucun rapport avec la direction artistique de la vidéo, aucun rapport avec le sport ».
+- [projet] Collage vers 27 s : l'idée de la photo n'est pas mauvaise, mais ça ressemble à « un photocollage de photos de vacances ». En revanche, **l'image inversée derrière, c'est cool**.
+- [genre] Les transitions par inversion de l'image changent des flashs : tu peux en faire un peu plus.
+- [universel] **Chaque élément graphique (fond, texture, couleur, papier, cadre) doit venir de la direction artistique du film** : la marque, le sujet (ici le sport), la palette. Un élément pris dans une bibliothèque d'idées parce qu'il est joli, sans lien avec le film, est une faute de goût.
+- [universel] **Avant de concevoir les effets graphiques, ouvre-toi à Internet** : regarde ce qui se fait de mieux dans le domaine du film (ici, les campagnes et contenus sportifs de marques et de studios reconnus), garde une dizaine d'images de référence, et écris la direction artistique (palette, textures, typographie, langage graphique) avant de créer le moindre collage.
+- [universel] **Chaque plan et chaque effet doit avoir une raison** : servir ce qui vient après, le sens ou le rythme. Si tu ne sais pas dire pourquoi ce plan est là, il n'a pas sa place.
+
+## 2026-10-11 — Détourages : un défaut technique, pas seulement de goût (complément aux notes V4)
+- [universel] Le collage sur papier millimétré (vers 20-21 s) est **techniquement raté**, « il n'y a pas besoin d'avoir du goût pour le voir » : sur une simple capture, le détourage coupe l'épaule, les cheveux sont mangés, le bord n'est pas lisse, « comme si elle était sur un fond vert mal réglé ». Diego : « soit il n'y a pas assez de concentration sur regarder ce qu'il fait, soit il n'en est pas capable ».
+- Ce que tu fais :
+    1. **Contrôle de chaque détourage avant de l'utiliser** : regarde le masque seul (noir et blanc) et le sujet détouré sur trois fonds (noir, blanc, couleur vive), en pleine résolution, puis **agrandi à 200 % sur les bords difficiles** (cheveux, épaules, mains, doigts, vêtements amples). Cherche : membres coupés, trous, bords crénelés ou baveux, halo de l'ancien fond, bord qui tremble d'une image à l'autre. Une capture par détourage dans `projets-phase-3/<projet>/detourages/`.
+    2. **Change d'outil si la qualité n'y est pas** : la carte de profondeur donne des bords grossiers, elle n'est pas faite pour ça. Teste de vrais modèles de segmentation de personnes, gratuits et locaux (sur le GPU du Mac), et le Magic Mask de Resolve ; compare leurs masques sur le même plan avec le contrôle ci-dessus et garde le meilleur. Note la recette dans `montage-resolve`.
+    3. **Si aucun outil ne donne un bord propre sur ce plan** : choisis un autre plan (silhouette nette, fond contrasté, cheveux attachés) ou renonce au détourage. Règle « jamais cheap ».
+- À ajouter au carnet de goût comme entrée [universel] : un détourage se juge au bord, à 200 %, pas en vignette.
+
+## 2026-10-11 — Trois outils pour le goût (validés par Diego)
+Diego demande de mettre en place, dès la V5 et pour tous les projets suivants, les trois mécanismes décrits dans `PROMPT-PHASE-3.md` (« Ton regard sur ta propre image », points 5 à 8) :
+1. **La direction artistique avant les effets** : recherche sur Internet de ce qui se fait de mieux dans le domaine, 8 à 12 images de référence, `da.md` écrit avant le premier effet.
+2. **Des variantes sur les moments clés** : 2 ou 3 variantes réellement différentes, comparées, la meilleure gardée et justifiée.
+3. **Le carnet de goût** (`CARNET-DE-GOUT.md`) : à créer en reprenant les retours des V2 à V4, puis à enrichir à chaque retour.
+Et pour tout : la **portée** de chaque leçon ([universel], [genre], [projet]), pour que ce qui vaut pour Sony ne devienne pas une règle partout.
+Ordre pour la prochaine session : carnet de goût (reprise des V2 à V4), puis `da.md` du projet Sony, puis la V5 avec les notes sur la V4.
