@@ -2,7 +2,7 @@
 
 _Lire en premier. Seul l'état présent compte ici. L'état de clôture de la phase 1 est archivé dans `archives/phase-1/PROGRESS-cloture-phase-1.md`, et l'historique des sessions 1 à 25 dans `archives/phase-1/PROGRESS-historique.md`._
 
-## État (2026-10-11, session 4 de la phase 2, début 04:04)
+## État (2026-10-11, session 4 de la phase 2, 04:04-04:38)
 - **Phase 2 en cours** : mission `PROMPT-PHASE-2.md` (lire aussi « Avant chaque vidéo : repartir de la phase 1 », « Leçons de méthode », « Passe de révision », étape 7). Démarrage de chaque session : `CLAUDE.md`.
 - Session 4 : aucun retour neuf, boîte vide. **Clips terminés** (GENER8ION « STORM », HOUDI « Belle chanson », Yvnnis « Gare du Nord » ; bilan des huit clips dans `RAPPORT.md`). **Pubs terminées** (les sept, fiches dans `analyses/pubs/`, bilan dans `RAPPORT.md`).
 - Outil : `calage.py` lit la fréquence d'images et accepte `AUDIO=fichier` (musique séparée par demucs). Nouvelle leçon : **un calage mesuré sur le mixage peut être faux** (HOUDI) ; toujours confirmer sur la musique séparée.
