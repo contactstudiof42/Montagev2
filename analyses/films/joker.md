@@ -43,7 +43,7 @@ Faire sentir physiquement une ville malade et un homme qui y étouffe, puis rend
 
 ### La descente des escaliers (1:30:36-1:31:35) [VU SUR IMAGES, `joker-escaliers.png`]
 - Environ 60 s, 16 plans courts (1,3 à 4,6 s), juste après le meurtre dans l'appartement (1:28-1:30) et un plan de 12 s d'Arthur maquillé dans le couloir (1:30:24).
-- La musique entre vers 1:30:56 (saut de volume visible sur la courbe ; calage sur le temps [NON VÉRIFIÉ]).
+- La musique entre vers 1:30:56 (saut de volume visible sur la courbe). Calage mesuré en session 2 (`labo/outils/calage.py`, tempo détecté 129 BPM) : 46 % des 13 coupes tombent à ±2 images d'une attaque forte, contre 38 % au hasard (95e centile 62 %). **Rien ne montre un calage sur la musique** ; avec 13 coupes, l'échantillon est trop petit pour l'exclure.
 - **Au milieu de la danse, un seul plan large et tenu** (plan 17, 10,7 s, en contre-plongée depuis le bas des marches) : on voit enfin tout le corps et tout l'escalier. Ensuite, gros plan de 8,9 s, puis les policiers et la fuite.
 - Jour gris et froid ; **le rouge du costume est la seule couleur saturée**. Le même décor qu'à l'aller (fiche de phase 1), inversé par la lumière et par la hauteur de caméra.
 - **Nuance de la règle du métro et de Murray** : la rafale de plans courts sert aussi **l'euphorie** (la danse), pas seulement la violence. Les deux sont, pour Arthur, des libérations.
