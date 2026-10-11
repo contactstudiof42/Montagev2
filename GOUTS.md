@@ -34,5 +34,13 @@ _Fichier dicté par l'utilisateur (2026-10-09). Claude le crée à sa demande, m
 ## Consigne (dictée le 2026-10-10)
 - Les questions pratiques (cadence, loudness, rushes de téléphone) « ne servent à rien, on ne sait jamais ce qui peut arriver ; à la fin tu devras savoir tout faire de toute manière ».
 
+## Réponses aux hypothèses de goût (dicté le 2026-10-11)
+_Hypothèses tirées de la synthèse de `RAPPORT.md` ; les réponses sont la parole de Diego, recopiées à sa demande._
+1. **Mon kinetic pour les réseaux** (montage calé à l'image sur la musique, transitions variées, look pellicule, typo serif fine, qui respire, contre le kinetic à whoosh et sous-titres mot à mot) : « Un mélange des deux. Mais là pas de sous-titre. QUE DU VISUEL pour la vidéo Sony. »
+2. **Interstellar et Joker** tiennent par la structure (l'alternance qui accélère, la rupture), pas par la vitesse ; la vitesse est réservée au kinetic : « Oui. »
+3. **L'équilibre de l'ensemble de Joker** = une seule idée servie à la fois par le rythme, le cadre, la couleur et le son : « Oui. »
+4. **Au-delà de trois lignes d'action en parallèle**, l'alterné par blocs d'Avengers convient aussi bien que l'accélération d'Interstellar : « Oui. »
+5. **Grain et look film** à utiliser quand ils racontent quelque chose, pas comme un filtre posé partout : « Oui, mais quand je n'ai pas d'idée ou que je dois livrer une vidéo rapidement, je mets du film look. »
+
 ## À venir
 D'autres références seront ajoutées bientôt.
