@@ -23,6 +23,8 @@ Spectateur captif (salle, TV), choisi (clip, YouTube), volé (fil d'actualité) 
 
 ## Vertical réseaux (Reels, TikTok, Shorts, LinkedIn)
 - **Premier écran = tout** : sujet lisible dès la 1re image de chaque plan, une question ou une tension avant 2 s. [ÉPROUVÉ EN MAQUETTE] (pièce 02 : 7 plans sur 19 illisibles à leur 1re image en v1)
+  - **Un flou d'ouverture n'est permis que s'il est l'idée** (révélation par la mise au point, net avant 2 s). Vu sur deux pubs réseau du studio (Benefit, 2026) : 4,4 s de flou sous le titre dans les deux ; dans l'une, la mise au point qui révèle dit le bénéfice du produit (« blur ») et le logo finit sur le flou, c'est le meilleur moment ; dans l'autre, deux plans flous sans révélation retardent le premier écran. [VU SUR IMAGES] (`analyses/projets-f42/benefit-pubs-reseau.md`)
+  - **Pub muette : l'ordre des plans est la seule phrase** ; le geste du produit doit précéder ce qu'il provoque (dans Benefit 1, le regard admiratif arrive avant le produit : la cause manque). [VU SUR IMAGES]
 - **Muet par défaut** : sous-titres incrustés, mots-clés à l'image, SFX à cause visible (`montage-kinetic-editing`).
 - **Structure hybride** : accroche forte, densité qui suit la musique par sections, une image d'exception sur le break, boucle ou chute à la fin. [ÉPROUVÉ EN MAQUETTE] (pièce 03)
 - Zones sûres : rien d'important en bas (légende) ni à droite (boutons).

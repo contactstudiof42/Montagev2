@@ -1,6 +1,6 @@
 # « POPCORN avec Anyme, Léna Situations & Etoiles » (talk-show, 2 h 32)
 
-_Fiche ouverte le 2026-10-11 (phase 2, session 5, YouTube n°10). **État : complète** (première passe + six séquences fines : ouverture, crêtes de 1:20 et 2:12, fin, et en session 6 deux passages de conversation, 45:50-47:30 et 50:00-52:00 ; 189 plans regardés ; quatre plans longs vérifiés ; coupes / parole mesurées sur 9 min de conversation ; transcription Whisper `-mc 0` en session 6). Source : 480p, 25 i/s, 2 h 32 min 06. Les invités sont nommés par le titre et par leurs cartons à l'écran._
+_Fiche ouverte le 2026-10-11 (phase 2, session 5, YouTube n°10). **État : complète** (première passe + six séquences fines : ouverture, crêtes de 1:20 et 2:12, fin, et en session 6 deux passages de conversation, 45:50-47:30 et 50:00-52:00 ; 189 plans regardés ; quatre plans longs vérifiés ; coupes / parole mesurées sur 9 min de conversation ; transcription Whisper `-mc 0` en session 6 : 5 399 segments, sans boucle, ligne la plus répétée « Ah ouais ? » ×9). Source : 480p, 25 i/s, 2 h 32 min 06. Les invités sont nommés par le titre et par leurs cartons à l'écran._
 
 **Lu avant l'analyse** : `montage-youtube` (14 : podcast filmé, live ; 16 ter : plateau multicaméra), fiche « Qui est l'imposteur ». Aucun goût de Diego sur cette vidéo.
 
@@ -15,7 +15,7 @@ Un talk-show de créateurs : un animateur à son bureau, des invités autour d'u
 ## Séquences fines [VU SUR IMAGES, son mesuré pas écouté]
 Planches dans `videos/_travail/popcorn/seq/` : 0:00-1:45, 1:20:30-1:22:00, 2:12:00-2:13:30, 2:30:00-fin.
 1. **L'ouverture fait l'inventaire du décor vide** (0:11-0:19) : boîte de pop-corn, néon, ampoules, téléphone rouge, enseigne, en plans de 0,6 à 1,5 s, puis le plateau en large et **l'animateur seul en deux plans de 45 et 67 s** (caméra tenue, aucune coupe pendant son monologue). Même geste que la rafale-inventaire des clips et de « CIA » : on présente un lieu par ses objets, puis on se pose.
-2. **La crête de 1:20-1:22 (28-36 coupes/min) n'est pas la conversation** : c'est une rubrique d'extraits (rétrospective jeu vidéo et e-sport : streamers, match, victoire en finale, cérémonie), 0,5 à 2,6 s par plan, avec les sous-titres criés des vidéos d'origine (« VOUS ÊTES TOUS MORTS ! »). **Les pics de densité d'un talk-show viennent des inserts, pas du plateau.**
+2. **La crête de 1:20-1:22 (28-36 coupes/min) n'est pas la conversation** : c'est une rubrique d'extraits (« Rewind » de la semaine, lu par une voix off de journal : « Les champions de la semaine, c'est… », transcription) (rétrospective jeu vidéo et e-sport : streamers, match, victoire en finale, cérémonie), 0,5 à 2,6 s par plan, avec les sous-titres criés des vidéos d'origine (« VOUS ÊTES TOUS MORTS ! »). **Les pics de densité d'un talk-show viennent des inserts, pas du plateau.**
 3. **La crête de 2:12 est un jeu** (invités les yeux bandés, compte à rebours à l'écran) : plans de 0,5 à 3 s qui alternent visages et **plans larges du plateau (1 s)** ; même grammaire qu'« Imposteur » (couper sur la réaction), dans un format de conversation.
 4. **La fin** : rires au plateau en plans de 2 à 11 s, logo, générique en mise en page (l'image du plateau à gauche, la liste des noms à droite, sur la charte rouge), puis **26 s d'écran du sponsor** sur noir.
 
