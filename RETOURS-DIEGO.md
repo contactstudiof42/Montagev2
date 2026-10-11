@@ -47,3 +47,70 @@ En dernier recours seulement : un élément pré-calculé avec ffmpeg ou Python 
 Note ce qui marche dans `labo/mcp/resolve-mcp.md` et `montage-resolve`, puis enchaîne sur l'étape 1.
 Pour les détourages (Magic Mask) : dans `plan.md`, liste tous les plans à détourer avec leurs timecodes, pour que Diego trace tous les traits en une seule fois.
 **Intégré le 2026-10-11** (phase 3, session 1) : pistes 1 et 3 réussies, piste 2 réussie sous une forme plus simple que le `.setting` (table de clés `BezierSpline.SetKeyFrames`, poignées d'easing comprises) ; contrôlées au rendu. Recettes dans `labo/mcp/journal-2026-10-11.md` (gestes 23-26), `labo/mcp/resolve-mcp.md` et `montage-resolve` § 4 ter. Plus besoin d'éléments pré-calculés. Les plans à détourer seront listés dans `plan.md`.
+
+## 2026-10-11 — Projet Sony, notes de Diego sur la V2 (première salve de retours)
+_Dictées par Diego, mises en forme et triées par l'assistant de configuration. Les phrases entre guillemets sont ses mots._
+
+**Version de l'agent (V2) : livrable à — non chiffré.** Jugement global de Diego : « très moyen, voire vachement nul ». « J'ai vraiment l'impression que toute cette phase d'entraînement qu'on a eue pour lui apprendre le bon goût, ce qu'est un joli plan, il n'a quasiment rien retenu. »
+
+### [gros] Étalonnage
+- « Catastrophique » : on dirait une simple conversion S-Log3 → Rec.709, « rien d'un look professionnel ou cinématique ». L'image est lumineuse, plate, sans contraste : « c'est pas beau ».
+- Attendu : un vrai look (contraste, noirs denses, couleurs choisies, même look sur tous les plans), au niveau de ses références réseaux (`analyses/reseaux/`).
+- Piste : l'API ne règle que le nœud 1 et charge une LUT ou un DRX. Fabrique donc toi-même une LUT de look (base : `labo/couleur/look_lut.py`) ou un DRX, applique-la après la conversion S-Log3, et juge-la sur des images avant / après, à côté des références.
+
+### [gros] Rythme
+- « On se fait un peu chier », « c'est encore trop mou ». Tu as compris en phase 2 la notion d'accélérer et de ralentir, mais tu ne l'as pas appliquée avec assez d'écart.
+- Ce qui marche : **le passage très rapide avec les flashs vers 15 s** (« c'est cool »). Ce genre de rafale doit **revenir plus souvent**, sans devenir toute la vidéo.
+- Durée : tu peux descendre à **45 s**, voire **30 s** si tu le juges nécessaire.
+
+### [gros] Texte de fin « LinkBuds Clip »
+- « On dirait un enfant de 6 ans qui a fait un PowerPoint », dans le dessin du texte comme dans sa façon d'apparaître. « Il voit bien, dans les références que je lui ai mises, comment les textes sont faits. »
+- Attendu : une typographie et une animation de niveau professionnel, à la manière de tes références réseaux, ou pas de texte du tout.
+
+### [gros] Transitions « PowerPoint »
+- La transition qui glisse vers la gauche, et celle entre le plan rouge et le premier packshot : « on ne peut pas faire des trucs comme ça ».
+- Règle à retenir : **jamais de transitions intégrées de type glissement, poussée ou volet**. À la place : coupe franche, flash, whip avec flou de mouvement, raccord de mouvement, zoom qui traverse.
+
+### [moyen] Packshots de fin qui tremblent
+- Bien choisis, mais ils tremblent : « esthétiquement, c'est cata ». Ce n'est pas ta faute au tournage, mais tu devais le voir et le traiter sans attendre Diego.
+- Piste : Diego stabilise avec **Gyroflow**, installé sur son Mac. Vérifie si tu peux l'utiliser en ligne de commande avec les données gyroscopiques de la caméra (Sony ZV-E1), rendu dans `_travail/`, sans toucher aux originaux. Sinon, la stabilisation de Resolve. Sinon, un autre plan.
+
+### Leçon de méthode (de l'assistant de configuration, à partir de ces retours)
+Ton autocritique a contrôlé les chiffres (loudness, crêtes, photosensibilité, plans sombres), pas la beauté. Avant toute livraison, mets **côte à côte six images de ta version et six images de tes références** (ouverture, produit, sommet, texte, transition, fin) et juge l'écart en monteur : look, contraste, typographie, transitions, énergie. Inscris cette règle dans `montage-regard` et dans les leçons de phase 3.
+
+### Ce que tu fais de ces notes
+1. Dès ta prochaine session, tire les leçons générales dans les skills (étalonnage, transitions, typographie, rythme, autocritique par comparaison d'images) et dans « Leçons de phase 3 » de `PROMPT-PHASE-3.md`.
+2. Ne retouche pas le montage tant que Diego ne t'a pas lancé sur la suite : il fait d'abord monter le même projet à un Claude sans formation (test comparatif).
+3. Ensuite viendra la V3, qui applique ces retours, dans une boucle de corrections où l'on comptera les allers-retours nécessaires pour livrer.
+
+## 2026-10-11 — Ton regard sur ta propre image (suite des notes sur la V2)
+Diego ajoute : « se comparer, ça ne veut pas dire se calquer ». Il ne veut pas valider ton look à mi-parcours : tu as assez de références pour savoir ce qu'est une belle image, à toi de te corriger seul, dans le style voulu par le brief. Il veut aussi que tu **voies le mouvement** (les packshots tremblants), et que tu utilises **Gyroflow**, installé sur son Mac.
+Les règles sont dans la nouvelle section « Ton regard sur ta propre image » de `PROMPT-PHASE-3.md` (look comparé aux références avant le montage et avant la livraison, mesure du tremblement avec un outil à construire, Gyroflow en ligne de commande). Applique-les dès la V3.
+- Précisions de Diego (même jour) : **ne copie pas les rushes** pour Gyroflow (le disque de travail n'aura pas toujours la place) : demande-lui l'accord d'écrire les fichiers stabilisés directement dans le dossier source. Et **garde Resolve léger** : le look décidé tôt ne doit pas alourdir tout le montage (section « Garder Resolve léger » de `PROMPT-PHASE-3.md`).
+
+## 2026-10-11 — Projet Sony : pas de version de Diego, comparaison avec Claude nu seulement
+Le brief Sony est **fictif** : les rushes sont réels, mais Diego avait livré à Sony une vidéo faite sur un autre brief. Il n'y aura donc **pas de dossier `final-diego/`** pour ce projet. L'étape 6 de `PROMPT-PHASE-3.md` se fait ainsi :
+- tu compares ta V2 et la V1 de Claude nu (`videos/phase-3/sony-linkbuds/rendus-nu/P3_sony_linkbuds_clip_9x16_v1.mp4`, faite sans skills, sans mémoire, sur le même brief) ;
+- les notes de Diego sur les deux versions (dans ce fichier) servent de juge ;
+- `comparaison.md` dit ce que Claude nu a fait mieux que toi et pourquoi tu ne l'as pas fait (par exemple, il a réussi 3 détourages automatiques, que tu croyais impossibles par script), ce que tu as fait mieux que lui, et ce que ta formation a réellement apporté ;
+- puis tu enchaînes sur la V3, qui applique les retours de Diego et les règles de « Ton regard sur ta propre image ».
+
+## 2026-10-11 — Projet Sony : comparaison de Diego, agent (V2) contre Claude nu (V1)
+_Dictée par Diego, mise en forme par l'assistant de configuration ; les phrases entre guillemets sont ses mots._
+- **À livrer, Diego prendrait plutôt la tienne** : « plus globalement plus propre ».
+- **Mais celle de Claude nu est plus impressionnante** : il a mieux compris la volonté d'être dynamique, kinetic, « quasiment épileptique ».
+- **Ses choix d'effets sont mieux posés** : « en toute honnêteté, ses choix d'effets sont mieux posés, ce qui est frustrant au vu de l'entraînement qu'a subi l'autre ».
+- **Détourage** : Claude nu a trouvé un contournement au Magic Mask, « audacieux », qui « mérite d'être repeaufiné parce que les masques sont un peu bizarres », mais qui « dans le rythme, rend bien ». Tu l'avais déclaré impossible par script. Le test à l'aveugle est fini : tu peux maintenant lire ses notes et ses scripts (`/Volumes/SSD FAST/Test-Claude-nu/NOTES.md` et `work/`, en lecture seule) pour comprendre comment il a fait, puis reprendre l'idée en mieux.
+- Ce que ça veut dire pour toi : ta formation t'a rendu propre et prudent ; sur un brief qui demande l'excès, tu es resté trop sage. Le brief prime sur tes habitudes : quand il dit « très rapide, beaucoup d'effets », ose autant qu'un monteur kinetic, puis rends-le propre.
+- **Étalonnage** : celui de Claude nu est meilleur que le tien, « même si c'est pas pro ». Aucun des deux n'a un look professionnel.
+- **Packshots de fin** : ils tremblent aussi chez Claude nu. Personne ne l'a vu : c'est bien un angle mort du « regard sur images fixes ».
+- **Titre et transitions** : aussi amateurs chez lui que chez toi.
+- **Note de Diego : ta V2 livrable à 50 %, la V1 de Claude nu à 40 %.** C'est le point de départ chiffré : la V3 doit faire monter ce chiffre.
+- **[gros, pour les deux versions] L'intention du cadreur n'a pas été lue.** Dans le hall, le cadreur a filmé une série : un plan sur le K du logo KORE, puis le O, puis le R, puis le E, puis le logo en entier. C'est fait pour un raccord (match cut) qui épelle K-O-R-E avant d'afficher le mot entier. Claude nu ouvre sur le K puis passe directement au corps ; ton dérush avait vu « des lettres qui défilent » mais conseillait d'en garder un ou deux plans. « Un monteur humain aurait direct compris quelle était la volonté du cadreur. »
+- **Leçon générale (à inscrire dans `montage-regard` et dans les leçons de phase 3)** : au dérushage, cherche les **séries pensées pour être montées ensemble** : plans consécutifs au même cadre ou à la même valeur, éléments d'un même objet filmés un par un (lettres, détails d'un produit), mouvements qui se répondent d'un plan à l'autre (raccord de mouvement), même geste répété sous plusieurs angles. Pour chacune, écris dans `derush.md` l'intention probable du cadreur et le montage qu'elle appelle. Dans la V3, utilise la série KORE si elle sert le film.
+
+## 2026-10-11 — Projet Sony : l'ordre des plans (retour oublié, dicté en session)
+_Dicté par Diego dans la conversation, mis en forme par l'agent._
+- Sur l'ordre des plans, les deux versions ratent, **en sens opposés** : Claude nu est **trop chronologique** (il suit l'ordre de tournage des rushes) ; ta V2 est **trop désorganisée** (les plans semblent posés sans logique).
+- Attendu : un juste milieu. Une **progression cohérente** (on comprend où on est et ce qui se passe, chaque bloc a sa raison d'être là), sans être prisonnier de l'heure de tournage, et **sans jamais placer un plan au hasard**.
+- Pour chaque bloc de la V3, écris dans `plan.md` **pourquoi ces plans sont là et dans cet ordre**.
