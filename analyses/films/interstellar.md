@@ -79,3 +79,9 @@ L'accélération que Diego aime, mesurée segment par segment (durée des passag
 - Son mesuré sur un mixage stéréo réduit, **jamais écouté** ; la musique et les effets des extérieurs n'ont pas été séparés (demucs possible plus tard).
 - La voix du décompte du départ (TARS ?) n'est toujours pas identifiée.
 - Le calage des coupes sur le tic de Miller n'est pas mesuré.
+
+## Révision (passe de révision, session 9, 2026-10-11)
+Outils apparus après l'analyse (session 1) : `verif_plan.py`, tuiles à 1 image / 2 s, comptage des séries saturées (session 9). Mesures refaites avant de relire la fiche.
+- **Confirmée** : le plan de 48 s sur Cooper devant les messages (1:18:41, après « 23 ans, 4 mois, 8 jours ») est un seul plan (`verif_plan.py` : 0 coupe ; tuile à 1 image / 2 s : même cadre, la lumière de l'écran varie).
+- **Confirmée** : les autres plans de 40 à 48 s (1:21:48, 1:36:22, 2:28:09) sont continus pour `verif_plan.py` ; le seul faux est celui de 37:45 (53 s, au moins trois plans), déjà corrigé en session 1.
+- **Confirmée** : 6 séries saturées seulement (23 « plans » sur 2 317), surtout dans le final (2:24-2:34) ; sans effet sur la densité citée.

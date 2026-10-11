@@ -95,3 +95,9 @@ Rien pour l'instant (`GOUTS.md`, `NOTES-DIEGO.md`, `RETOURS-DIEGO.md`). Le film 
 - **Calage** : la détection d'attaques porte sur le mixage complet (orchestre, cymbales, voix), pas sur la batterie seule. Une séparation (demucs) de la batterie permettrait un test plus juste.
 - La conversion HDR → SDR par VideoToolbox n'est pas l'étalonnage SDR officiel du film : les mesures de couleur comparent les sections entre elles, pas avec le Blu-ray SDR.
 - L'idée que la couleur « suit l'obsession » est déduite des mesures et de quelques images ; je n'ai pas lu de déclaration de l'équipe.
+
+## Révision (passe de révision, session 9, 2026-10-11)
+Outils apparus après l'analyse (session 2) : `verif_plan.py` systématique sur les plans de plus de 40 s, tuiles à 1 image / 2-3 s, comptage des séries de « plans » à la durée minimale (session 9). Mesures refaites avant de relire la fiche.
+- **Confirmée** : le plan d'ouverture de 55 s (1:37, la poussée dans le couloir jusqu'à Andrew à la batterie) est un seul plan (`verif_plan.py` : 0 coupe ; tuile à 1 image / 2 s continue).
+- **Confirmée** : le détecteur est fiable ici ; 6 séries saturées seulement (24 « plans » sur 1 511), sans effet sur les chiffres.
+- **Nouvelle** : les deux plus longs plans du film après l'ouverture sont **les deux scènes avec Nicole**. Andrew l'invite au comptoir du cinéma (13:12, **un plan de 84,9 s**, plan à deux de profil, `verif_plan.py` : 0 coupe, tuile continue, `whiplash-revision-nicole.png`) ; il la rappelle après son renvoi (1:23:35, **69,4 s puis un gros plan de 54,7 s**, « I'll have to check with my boyfriend » ; une coupe possible vers 1:24:05, passage du serré au large, non tranchée). La musique est hachée (0,5 à 2 s aux auditions), **la vie qu'Andrew sacrifie est tenue d'un bloc**, et la seconde scène rime avec la première (la pizza). C'est la règle « plan long réservé à ce qui compte » appliquée à ce que le personnage perd.

@@ -19,9 +19,9 @@ _Ouverte le 2026-10-11 (session 9). Une ligne par vidéo à revoir : ce que les 
 | Vidéo (session d'analyse) | À relancer | État |
 |---|---|---|
 | Le Dîner de cons (2) | parole : voix séparée `SEUIL=haut` + spectrogramme | **fait (session 9)** : 1 corrigée, 2 confirmées |
-| Interstellar (1) | `verif_plan.py` sur les plans longs sombres ; séries saturées ; générique | à faire |
+| Interstellar (1) | `verif_plan.py` sur les plans longs sombres ; séries saturées ; générique | **fait (session 9)** : 3 confirmées |
 | Joker (1-2) | calage des escaliers sur musique séparée ; séries saturées | à faire |
-| Whiplash (2) | calage sur musique séparée (fait sur mixage) ; plans à filés | à faire |
+| Whiplash (2) | plans longs (`verif_plan.py` + tuile) ; séries saturées ; calage sur musique séparée (fait sur mixage) | **plans longs faits (session 9)** : 2 confirmées, 1 nouvelle ; calage à faire |
 | Mad Max: Fury Road (3) | séries saturées ; générique | à faire |
 | adidas « Backyard Legends » (4) | parole sur voix séparée (68 % mesuré sur mixage avec musique) | à faire |
 | POPCORN, Boxho, Qui est l'imposteur (5) | parole sur voix séparée avec `SEUIL=haut` + spectrogramme | à faire |
@@ -34,4 +34,6 @@ _Ouverte le 2026-10-11 (session 9). Une ligne par vidéo à revoir : ce que les 
 | Vidéo | Conclusions vérifiées | Confirmées | Corrigées | Nouvelles |
 |---|---|---|---|---|
 | Le Dîner de cons | 3 | 2 | 1 | 0 |
-| **Total** | 3 | 2 | 1 | 0 |
+| Interstellar | 3 | 3 | 0 | 0 |
+| Whiplash (plans longs) | 3 | 2 | 0 | 1 |
+| **Total** | 9 | 7 | 1 | 1 |
