@@ -5,7 +5,9 @@ description: Montage kinetic / dynamique de format court vertical (Reels, TikTok
 
 # Kinetic editing (montage social « haute rétention »)
 
-Marqueurs : [SOURCÉ] lu dans une source citée · [TESTÉ EN LABO] fait technique mesuré · [ÉPROUVÉ EN MAQUETTE] vu seulement sur maquette Blender / Pillow / ffmpeg, hypothèse à confirmer en phase 2 · [THÉORIQUE] déduit, non vérifié.
+Marqueurs : [SOURCÉ] lu dans une source citée · [TESTÉ EN LABO] fait technique mesuré · [ÉPROUVÉ EN MAQUETTE] vu seulement sur maquette Blender / Pillow / ffmpeg · [VU SUR IMAGES] vérifié sur de vraies vidéos (phase 2) · [THÉORIQUE] déduit, non vérifié.
+
+**Statut après la phase 2** : le corpus (45 vidéos) **ne contenait aucun vrai kinetic de réseaux** (Reels, TikTok à SFX denses et captions mot à mot). Ce qui a été vu sur images vient de genres voisins : un clip pensé pour les réseaux (Yvnnis « Gare du Nord »), le film le plus rapide (*Spider-Verse*), la poursuite de *Mad Max*, un projet du studio (Swile « POW »). Les durées, le calage 3-6 images et la hiérarchie des SFX restent [SOURCÉ] ou [THÉORIQUE]. Ce que les vraies vidéos ajoutent : **la vitesse n'est pas le kinetic** ; **aucune œuvre mesurée ne coupe sur les temps plus qu'au hasard** (le calage micro est un choix de genre, à assumer comme tel, pas une loi du rythme) ; **une rafale tient par une structure** (un refrain de voix, un inventaire, une seule couleur) et **elle est unique** dans un clip ; **plus c'est rapide, plus il faut respirer franchement** ; **une matière par univers** rend lisibles des plans de 0,5 s.
 
 **Fait foi sur** : la grammaire du format court rapide (durées, SFX et leur hiérarchie, transitions, speed ramp, shake, flash, captions mot à mot, hook 0-3 s) et la photosensibilité des flashs. Pour le jump cut et le punch-in **en face caméra long**, la rétention en minutes : `montage-youtube` ; structure des formats verticaux et Shorts narratifs : `montage-formats` ; tension kinetic contre Ziak : `montage-references`. Leçons d'atelier, recettes complètes et checklist détaillée : `details.md`.
 
@@ -96,4 +98,4 @@ Règles : un seul rang 1 par 5-10 s ; whoosh variés (3-5 variantes, **varier le
 - [ ] Le style sert le sujet (sinon densité ÷ 3).
 
 ## 7. Outils, phases 2 et 3
-Premiere (Time Remapping, captions sur transcription, Essential Sound), After Effects (`wiggle` amorti, motion blur : `montage-after-effects`), CapCut, Resolve ; SFX : Sonniss GDC, Mixkit (lire les licences). À vérifier en phase 2 (vraies vidéos) : calage 3-6 images à l'oreille et à 24/25/30/60 i/s, rétention réelle de deux densités ; en phase 3 (logiciels) : décalage AAC réel, captions auto de Premiere, speed ramp Premiere contre AE. Labo : `labo/kinetic/` ; sources : `sources/kinetic-editing.md`.
+Premiere (Time Remapping, captions sur transcription, Essential Sound), After Effects (`wiggle` amorti, motion blur : `montage-after-effects`), CapCut, Resolve ; SFX : Sonniss GDC, Mixkit (lire les licences). Non vérifié en phase 2 (aucun kinetic de réseaux dans le corpus ; à faire dès que Diego en fournit un, ou sur un projet du studio) : calage 3-6 images à l'oreille et à 24/25/30/60 i/s, densité réelle des SFX, rétention réelle de deux densités ; en phase 3 (logiciels) : décalage AAC réel, captions auto de Premiere, speed ramp Premiere contre AE. Labo : `labo/kinetic/` ; sources : `sources/kinetic-editing.md`.

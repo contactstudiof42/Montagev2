@@ -5,11 +5,19 @@ description: Le son au service de l'émotion — intention sonore, sound design,
 
 # Son et émotion
 
-**Marqueurs** : [SOURCÉ] fiche ou source écrite · [THÉORIQUE] convention du métier non vérifiée ici · [TESTÉ EN LABO] fait technique mesuré · [ÉPROUVÉ EN MAQUETTE] vu sur maquette Blender / Pillow / ffmpeg (son jugé sur enveloppe ou voix de synthèse, pas écouté), hypothèse à confirmer en phase 2.
+**Marqueurs** : [SOURCÉ] fiche ou source écrite · [THÉORIQUE] convention du métier non vérifiée ici · [TESTÉ EN LABO] fait technique mesuré · [ÉPROUVÉ EN MAQUETTE] vu sur maquette Blender / Pillow / ffmpeg (son jugé sur enveloppe ou voix de synthèse, pas écouté) · [VU SUR IMAGES, mesuré, pas écouté] vérifié sur de vraies vidéos en phase 2 par les courbes de loudness, jamais à l'oreille.
 
 **Fait foi sur** : silence, sound design, musique avec ou contre l'image, hors champ, voix off. **Ailleurs** : où couper sur la musique, tempo et cadence → `montage-rythme` ; J/L-cut comme raccord de dialogue → `montage-grammaire` ; LUFS, true peak, downmix → `montage-loudness-livraison` ; SFX kinetic → `montage-kinetic-editing`.
 
 Sources : `culture/walter-murch-blink-of-an-eye.md`, `culture/thelma-schoonmaker-raging-bull.md`, `culture/edgar-wright-montage-comique.md`, fiches Burtt et Rydstrom (`culture/`).
+
+## Ce que 45 vraies vidéos confirment (phase 2 ; son mesuré, jamais écouté)
+- **Le plus fort est suivi du plus grand vide** : *Interstellar*, *Joker*, *Mad Max*, *Avengers*, *La Haine*, *Aftersun* ; le silence **avant** fait frapper l'impact ou la chute (*Whiplash*, *Forrest Gump*, KAIZEN 5 s avant le sommet). [VU SUR IMAGES, mesuré]
+- **Le silence ouvre le sommet** dans les formats en plateau sonore (clips à -10/-13 LUFS, pubs) : STORM, Stress, Lacoste, Conte de Noël. [VU SUR IMAGES, mesuré]
+- **Un carton récurrent peut être un trou de son** qui scande tout le film (*La Haine*, 13 cartons-horloge) ; un chapitre de doc s'ouvre par le noir et 2 à 4 s de silence (EGO). [VU SUR IMAGES, mesuré]
+- **Le régime de son dit la famille** (YouTube) : doc, silences rares donc lisibles ; jeu de plateau, -12 LUFS **sans aucun silence** (les rires et le décor respirent à la place) ; conversation, -24 LUFS et des centaines de pauses gardées ; cinéma sur YouTube, LRA 12 LU. La dynamique (LRA de 3,8 à 12,3) dit la famille mieux que le niveau, qui n'est une norme chez aucun créateur (-24 à -11,7). [mesuré]
+- **Le son le plus fort peut marquer l'écart entre les personnages, pas la fête** (*Aftersun*, voir 7). [mesuré]
+- **Dans les fictions du studio, l'ambiance tombe entre les répliques** (loge de « Fou-Rire », bougie de « Hirsingen ») : poser une ambiance continue sous tout dialogue. Et six fichiers sur sept dépassaient -1 dBTP : QC avant envoi (`montage-loudness-livraison`). [mesuré, à écouter]
 
 ## Principes
 1. **Le son fait la moitié de l'image, et souvent l'émotion entière.** On pardonne une image imparfaite, jamais un son faux. Penser le son dès l'intention, pas à la fin. [THÉORIQUE]
@@ -57,4 +65,4 @@ Sources : `culture/walter-murch-blink-of-an-eye.md`, `culture/thelma-schoonmaker
 - Souffle synthétique par bruit coloré filtré : `atelier/01-respiration/souffle_son.py`.
 
 ## Reste à faire
-Fiches Murch (*Apocalypse Now*), silence chez Kubrick / Bresson ; atelier « même image, trois bandes son (avec, contre, silence) » ; tout réécouter en phase 2.
+Fiches Murch (*Apocalypse Now*), silence chez Kubrick / Bresson ; atelier « même image, trois bandes son (avec, contre, silence) » ; **rien n'a encore été écouté** : tous les constats de phase 2 viennent des courbes de loudness, des spectrogrammes et de la voix séparée par demucs. Une écoute (par Diego, ou avec un outil d'écoute) reste à faire sur les passages cités : amarrage d'*Interstellar*, couloir final d'*Aftersun*, loge de « Fou-Rire ».
