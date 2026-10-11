@@ -1,10 +1,10 @@
 # RAPPORT — synthèse de la phase 2 (en cours)
 
-_Réécrit à chaque session (dernière : 2026-10-11, session 3, fin). Version précédente : `archives/phase-2/RAPPORT-session-2.md`. La synthèse de fin de phase 1 (niveau par domaine, 10 principes, audits) est dans `archives/phase-1/RAPPORT-synthese-cloture-phase-1.md` ; le journal de la phase 1 dans `archives/phase-1/RAPPORT-journal.md`._
+_Réécrit à chaque session (dernière : 2026-10-11, session 4). Version précédente : `archives/phase-2/RAPPORT-session-2.md`. La synthèse de fin de phase 1 (niveau par domaine, 10 principes, audits) est dans `archives/phase-1/RAPPORT-synthese-cloture-phase-1.md` ; le journal de la phase 1 dans `archives/phase-1/RAPPORT-journal.md`._
 
 ## Où j'en suis
 - **Vague 1 des films terminée** : Interstellar, Joker, Whiplash, Le Dîner de cons, Mad Max: Fury Road (fiches dans `analyses/films/`), plus SDM « #Malentouré » (test de méthode).
-- **Clips commencés** (session 3) : Ziak « Même pas un grincement », Justice « Stress », PNL « Au DD », Booba « 6G » (fiches dans `analyses/clips/`). Restent GENER8ION « STORM », HOUDI « Belle chanson », Yvnnis « Gare du Nord ».
+- **Clips terminés** (sessions 3-4) : les huit fiches sont dans `analyses/clips/`, bilan ci-dessous. **Prochaine étape : les pubs** (SDM était le test de méthode).
 - La mission a changé (modification de Diego dans `PROMPT-PHASE-2.md`, commitée en session 3) : une **passe de révision** (étape 7) viendra avant la synthèse finale, pour relancer les outils récents sur les premières vidéos.
 - Outils de la phase 2 (`labo/outils/`) : `passe_globale.sh` (avec `HDR=1`), `courbes_film.py`, `couleur_film.py`, `sequence.py`, `verif_plan.py`, `calage.py`, `coupes_parole.py`, et en session 3 `echantillon_tiers.py` (placement du sujet, à compter à l'œil). `centrage.py` (saillance automatique) a échoué à la calibration : ne pas citer ses chiffres.
 
@@ -32,22 +32,39 @@ _Réécrit à chaque session (dernière : 2026-10-11, session 3, fin). Version p
 
 **Pour Studio F42** (projets « souvent énergiques », GOUTS.md) : de cette vague, ce qui sert le plus vite est Mad Max pour le kinetic (respiration franche, sujet centré dans le 9:16, plan d'orientation), et Joker / Interstellar pour la retenue (plan tenu sur ce qui compte, couleur par monde). À éprouver en maquette avant d'en faire des règles de studio.
 
-## Ce que les quatre premiers clips ajoutent
-1. **Aucun des quatre clips de rap ne coupe sur les temps plus qu'au hasard** (Ziak, Stress, Au DD, 6G). Chacun a son rapport à la musique : la basse (Ziak : 32 coupes/min avec, 16 sans), les grands accents de l'arrangement (Stress : 38 % contre 20 % au hasard), rien de mesurable (Au DD, 6G). Le calage sur les temps est un trait du kinetic des réseaux, pas du clip. [mesuré]
-2. **La vitesse n'est pas le kinetic** : Ziak coupe plus vite que Mad Max (médiane 1,2 s) sans aucun signe kinetic. [VU SUR IMAGES]
-3. **Dans un mix en plateau (-10 LUFS), les rares silences sont des ponctuations** : avant le coup (Stress, 0,6 s), sur le titre (Au DD), après le plus fort (Stress, Mad Max), sur le noir final (6G). [mesuré, pas écouté]
-4. **Les plans longs d'un clip sont des mouvements qui relient** (la descente sur Paris, le travelling arrière qui révèle la foule, la pièce qui devient paysage), placés aux articulations ; entre eux, un rythme régulier ou une seule rafale. [VU SUR IMAGES]
-5. **Mes fiches de phase 1 tiennent quand elles ont mesuré, pas quand elles ont deviné** : Ziak (mesuré en phase 1) n'avait faux que le nombre de plans (20 % de trop peu, coupes ratées dans le noir) ; Stress et Au DD (écrites sans voir) avaient faux ou à nuancer 4 affirmations sur 9 (« pas de calage », « musique en cours de route », « plans longs », « nuit puis aube »). Ce qui venait de sources (intentions, équipes) tenait ; ce qui venait de « ma mémoire » ou d'une déduction sur l'esthétique, non. Cela compte pour la passe de révision (étape 7).
+## Bilan des clips (huit, terminés en session 4)
+| Clip | Plans (min.) | Médiane | LUFS | Calage (contre le hasard) | Forme |
+|---|---|---|---|---|---|
+| SDM « #Malentouré » | 28 | 3,9 s | — | non (structure du morceau) | plans-séquences de couplet, deux blocs découpés |
+| Ziak « Même pas un grincement » | ~109 | 1,2 s | — | non ; densité selon la basse (32 / 16 coupes/min) | rapide sans kinetic |
+| Justice « Stress » (Gavras) | 57 | 4,2 s | — | **grands accents** (38 % / 20 %) | plans portés longs, reportage |
+| PNL « Au DD » | 75 | 2,9 s | — | non | régulier, trois plans longs aux articulations |
+| Booba « 6G » | 74 | 1,7 s | — | non | intro trouée, une seule rafale, plans longs en mouvement |
+| GENER8ION « STORM » (Gavras) | 142 | 1,5 s | -12,9 | **grands accents** (30 % / 19 %) | 131 plans en 4 min 17, puis le sommet en 5 plans de 21 à 60 s |
+| HOUDI « Belle chanson » | 35 | — (ASL 6,2 s) | -10,9 | non (sur musique séparée) | niveau de jeu vidéo : traversées raccordées par le noir |
+| Yvnnis « Gare du Nord » | ≥ 60 | 2,4 s | -11,6 | non | réseaux : mosaïque, rafale-inventaire, carte finale |
+
+**Ce que les clips disent, du plus solide au moins solide :**
+1. **Personne ne coupe sur les temps plus qu'au hasard** (huit sur huit, contrôlé sur la musique séparée quand il le fallait). Le rapport à la musique est ailleurs : la densité suit l'arrangement (Ziak, SDM), ou les rares coupes tombent sur les grands accents (les deux Gavras, 10 à 18 points au-dessus du hasard). Le calage sur les temps reste un trait du kinetic des réseaux, que je n'ai pas encore mesuré sur une vraie vidéo. [mesuré]
+2. **Le sommet d'un clip n'est pas sa partie la plus rapide** : STORM le pousse au bout (33 coupes/min, puis 1 à 7 pendant la chorégraphie), comme les films de la vague 1. [VU SUR IMAGES]
+3. **Les plans longs d'un clip sont des mouvements qui relient** (individu → foule, pièce → paysage, lieu → lieu dans un jeu), placés aux articulations ; entre eux, un rythme régulier ou **une seule rafale**, souvent un inventaire (devantures de Gare du Nord, toits de 6G). [VU SUR IMAGES]
+4. **Dans un mix en plateau (-10 à -13 LUFS), les rares silences sont des ponctuations**, et le plus fort ouvre le sommet plutôt qu'il ne le clôt (Stress 0,6 s avant la bagarre, STORM 2 à 4 s quand Yung Lean se retourne). [mesuré, pas écouté]
+5. **L'ouverture construit l'image** (cadre qui grandit, mosaïque, cartons sur noir puis plans lents et muets) et **l'habillage vient du sujet** (plan de métro, interface de jeu) : aucun des huit clips n'a de carton décoratif. [VU SUR IMAGES]
+6. **Une couleur par monde, ou une couleur qui voyage** : froid → chaud (6G), horreur froide / écran chaud (HOUDI), refroidissement progressif (STORM). [mesuré]
+7. **Fiabilité de mes fiches de phase 1** : celles qui avaient mesuré tiennent (Ziak : seul le nombre de plans était faux) ; celles écrites sans voir avaient faux 4 affirmations sur 9 (Stress, Au DD). Et en phase 2 même, j'ai failli écrire un calage faux sur le mixage (HOUDI) : une mesure sans contrôle peut mentir autant qu'un souvenir.
+
+**Pour Studio F42** : le clip est peu demandé (GOUTS.md), mais trois principes passent au film de marque : la rafale-inventaire puis le plan tenu (présenter un lieu, une équipe), l'ouverture qui construit l'image, et le sommet porté par le cadre plutôt que par la coupe. À éprouver en maquette.
 
 ## Erreurs corrigées (phase 2)
 - Session 1 : j'avais cru faux le plan de 74 s de Pogo's (c'est un plan-séquence) ; j'avais attribué à Diego une note sur l'amarrage qui n'était qu'un exemple de format (retour du 2026-10-11, intégré).
+- Session 4 : HOUDI semblait couper sur les temps (45 % contre 27 %) sur le mixage ; sur la musique séparée, rien (27 % contre 24 %).
 - Session 3 (clips) : 88 plans pour Ziak (en réalité environ 109) ; « Ziak évite les attaques fortes » (effet des coupes manquantes) ; quatre affirmations de phase 1 sur Stress et Au DD (voir ci-dessus).
 - Session 3 : j'avais noté le pic de Mad Max à 0:27-0:30 (56 coupes/min) ; les éclairs le gonflent du double (environ 27/min réels). J'avais supposé qu'une mesure de saillance trouverait le sujet : calibrée, elle ne le trouve qu'une fois sur trois.
 
 ## Limites de ma méthode (inscrites dans `PROMPT-PHASE-2.md`)
 - Les détecteurs ratent les coupes du sombre et de l'action accélérée (même `verif_plan.py`), inventent des coupes sur les éclairs ; les deux erreurs coexistent dans Mad Max. Recompter avant de citer un pic, tuile à 2-4 images/s sur tout plan long d'action.
 - Une vignette par plan ne juge pas un plan long ; une source HDR lue en SDR fausse la couleur.
-- Le son est mesuré, **jamais écouté** ; demucs n'a pas encore servi.
+- Le son est mesuré, **jamais écouté** ; demucs sert désormais à confirmer tout calage (le mixage avec voix peut en fabriquer un faux).
 - Le placement du sujet n'est mesurable qu'à l'œil, sur un petit échantillon.
 - Clips très sombres : copie éclaircie avant la détection, puis tri à l'œil des coupes nouvelles (paires d'images). `verif_plan.py` lit désormais la fréquence d'images (il supposait 23,976 i/s).
 - Les plans portés à filés (Stress) peuvent cacher des coupes que ni les outils ni une tuile à 4 images/s ne tranchent.
