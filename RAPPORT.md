@@ -68,7 +68,7 @@ _Réécrit à chaque session (dernière : 2026-10-11, session 4). Version préc�
 
 **Ce que les pubs disent :**
 1. **Le nom de la marque arrive dans les dernières secondes dans les sept ; ce qui la représente (lieu, tenue, objet, couleur) est à l'écran dès la première image.** La règle télé « marque dans les 5 premières secondes » n'est tenue que par l'objet, jamais par le nom. [VU SUR IMAGES]
-2. **Aucune ne coupe sur les temps plus qu'au hasard** (Crunch Creator : légère tendance aux accents, à la limite du hasard). Quinze vidéos montées sur de la musique sur quinze, films compris : le calage sur les temps n'apparaît dans aucune œuvre de référence de Diego hors kinetic. [mesuré]
+2. **Aucune ne coupe sur les temps plus qu'au hasard** (Crunch Creator : légère tendance aux accents, à la limite du hasard). Treize vidéos testées sur treize (huit clips, cinq pubs ; adidas et iPhone non testés), plus Whiplash : le calage sur les temps n’apparaît dans aucune des œuvres de référence mesurées, hors kinetic (pas encore mesuré). [mesuré]
 3. **Les films longs (2 min 30 à 5 min) tiennent par une cadence régulière de 1 à 2 s et un récit**, pas par des variations de rythme ; la variation est réservée à la fin (un plan tenu) ou au gag (un plan large). [mesuré, VU SUR IMAGES]
 4. **Le silence ouvre le sommet** (Lacoste 2,4 s, Conte de Noël 0,5 s), comme dans les clips (STORM, Stress). [mesuré, pas écouté]
 5. **Une matière par monde, avec le format d'image en plus** : adidas (large froid / 4:3 chaud), Conte de Noël (réel / animation, forêt bleue / terrier orange), HOUDI (fiction froide / écran chaud). [VU SUR IMAGES]
