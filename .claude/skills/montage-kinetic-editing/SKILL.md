@@ -66,6 +66,7 @@ Règles : un seul rang 1 par 5-10 s ; whoosh variés (3-5 variantes, **varier le
 | Shake et zoom en continu | Effet = événement, amorti en 4-6 images |
 | Plan qui commence dans le noir ou vide | Sujet lisible **dès la 1re image** (pièce 02 : 4 plans noirs sur 19) |
 | Plans sans lien qui accélèrent (défilé) | Chaque plan montre une cause de l'événement final (une montée) [ÉPROUVÉ EN MAQUETTE] |
+| Rafale « montage-souvenir » sans structure | Rafale en strophes portée par un refrain de voix off (*Across the Spider-Verse*, 1:22-2:44 : 85 plans de 0,5-1,5 s sous « And he's not the only one » ×4 ; calage sur les temps = hasard) [VU SUR IMAGES, mesuré] |
 | SFX qui font le niveau | Voix d'abord, -14 LUFS mesuré sur le fichier encodé |
 
 ## 4. Recettes (code complet : `details.md`)

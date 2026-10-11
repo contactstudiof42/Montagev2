@@ -13,7 +13,7 @@ sec = lambda s: sum(float(x) * 60**i for i, x in enumerate(reversed(s.split(':')
 A, B = sec(a), sec(b)
 # Fréquence lue dans le fichier (session 4 : l'outil supposait 23,976 i/s, faux pour les clips à 25 i/s).
 r = subprocess.run(["ffprobe", "-v", "error", "-select_streams", "v:0", "-show_entries", "stream=r_frame_rate", "-of", "csv=p=0",
-                    os.path.join(D, "proxy.mp4")], capture_output=True, text=True).stdout.strip().split("/")
+                    os.path.join(D, "proxy.mp4")], capture_output=True, text=True).stdout.strip().strip(",").split("/")   # session 9 : la sortie csv peut finir par une virgule
 fps = float(r[0]) / float(r[1]) if len(r) == 2 else 24000 / 1001; tol = tol_i / fps
 # AUDIO=fichier (ex. musique sans voix de demucs) : remplace le son du proxy ; il doit commencer à 0:00 de la vidéo.
 src = os.environ.get("AUDIO") or os.path.join(D, "proxy.mp4")
