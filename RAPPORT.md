@@ -4,7 +4,7 @@ _Réécrit à chaque session (dernière : 2026-10-11, session 6). Versions préc
 
 ## Où j'en suis
 - **Vague 1 des films terminée** : Interstellar, Joker, Whiplash, Le Dîner de cons, Mad Max: Fury Road (fiches dans `analyses/films/`), plus SDM « #Malentouré » (test de méthode).
-- **Clips terminés** (sessions 3-4) et **pubs terminées** (session 4) : fiches dans `analyses/clips/` et `analyses/pubs/`, bilans ci-dessous. **YouTube terminé** (sessions 4 à 6) : dix fiches complètes, bilan définitif ci-dessous. **Prochaine étape : les projets Studio F42** (`videos/projets-f42/A-LIRE.md`).
+- **Clips terminés** (sessions 3-4) et **pubs terminées** (session 4) : fiches dans `analyses/clips/` et `analyses/pubs/`, bilans ci-dessous. **YouTube terminé** (sessions 4 à 6) : dix fiches complètes, bilan définitif ci-dessous. **Projets Studio F42 vus** (session 6) : sept fiches dans `analyses/projets-f42/` (Hirsingen : première passe + une séquence), bilan ci-dessous. **Prochaine étape** : finir Hirsingen (ouverture en forêt), puis les films de la vague 2.
 - La mission a changé (modification de Diego dans `PROMPT-PHASE-2.md`, commitée en session 3) : une **passe de révision** (étape 7) viendra avant la synthèse finale, pour relancer les outils récents sur les premières vidéos.
 - Outils de la phase 2 (`labo/outils/`) : `passe_globale.sh` (avec `HDR=1`), `courbes_film.py`, `couleur_film.py`, `sequence.py`, `verif_plan.py`, `calage.py`, `coupes_parole.py`, et en session 3 `echantillon_tiers.py` (placement du sujet, à compter à l'œil). `centrage.py` (saillance automatique) a échoué à la calibration : ne pas citer ses chiffres.
 
@@ -113,7 +113,31 @@ _Réécrit à chaque session (dernière : 2026-10-11, session 6). Versions préc
 - **Témoignage anonyme** : un avatar, une couleur, une police.
 - **Fin de film de marque ou d'événement** : rafale de mémoire d'une seule couleur, silence, puis plan tenu.
 
+## Bilan des projets Studio F42 (sept, session 6 ; Hirsingen à compléter)
+| Projet | Format | Durée | Plans | Médiane | LUFS / LRA | True peak | Verdict |
+|---|---|---|---|---|---|---|---|
+| Benefit 1 (café) | pub réseau 9:16 | 0:23 | 9 | ~2,2 s | -14,5 / 3,1 | -0,6 | pas livrable : le produit ne cause rien (le regard arrive avant le produit) |
+| Benefit 2 (roses) | pub réseau 9:16 | 0:26 | 7 | ~2,2 s | -14,7 / 3,3 | 0,0 | presque : le flou est l'idée (« blur »), mais 4,4 s avant le premier écran net |
+| Oney (intro quiz) | 1:1 mobile | 0:37 | ≥ 12 | — | -13,5 / 5,4 | **+3,1** | montage livrable, fichier non : son saturé ; 2,5 s de noir final ; HEVC 10 bits |
+| Swile « POW » | pub 16:9 | 1:19 | 26-38 | 2,6 s | **-11,1** / 5,0 | -0,8 | livrable après -14 LUFS et une piste stéréo ; le plus abouti des projets courts |
+| Sephora × Laneige | brand content 9:16 | 2:46 | 73 | 2,0 s | -17,1 / 7,0 | -0,1 | pas livrable muet : sous-titres fins à ~2,5:1 ; 45 s avant le jeu |
+| « Fou-Rire » | court métrage 2:1 | 2:21 | 47 | 1,9 s | -23,3 / 12,0 | -1,6 | livrable festival ; plans du public noirs, loge sans ambiance |
+| « Hirsingen » | court métrage 2,35:1, 5.1 | 15:00 | ≥ 118 | 4,6 s | **-27,3 / 20,9** | 0,0 | image et montage maîtrisés ; mixage non diffusable hors salle |
+
+**Ce que les projets disent du studio, du plus solide au moins solide :**
+1. **La finition son est le point faible commun, et il est mesurable** : **six fichiers sur sept au-dessus de -1 dBTP** (Oney à +3,1 avec des crêtes décodées au-dessus de 0 dBFS), des niveaux de -11 à -27 LUFS sans lien avec la destination, deux pistes mono au lieu d'une stéréo (Swile), une dynamique de 20,9 LU (Hirsingen). Seul « Fou-Rire » passe. C'est la correction la moins chère et la plus rentable : un QC fixe avant chaque envoi (`labo/outils/qc_livraison.sh`, créé en session 6). [mesuré]
+2. **Les fictions sont plus maîtrisées que les commandes courtes** : « Fou-Rire » et « Hirsingen » tiennent les principes des films de la vague 1 (plan long réservé à ce qui compte, rythme de l'état intérieur, couleur par lieu, le plus fort suivi du vide, changement de grammaire de caméra à la rupture). Les commandes ont de bonnes idées (le flou de Benefit 2, le POW de Swile, le jeu de Sephora) mais pèchent par **la lisibilité muette** (sous-titres de Sephora, flou d'ouverture de Benefit) et **la liaison** (Benefit 1). [VU SUR IMAGES]
+3. **Le meilleur moment de chaque commande est quand la forme dit le bénéfice** : le flou qui révèle pour un produit qui « floute » (Benefit 2), une seule carte au lieu d'un portefeuille (Swile), les questions du jeu qui sont la formule du sérum (Sephora), la liste des lots collée sur la chemise au mot (Oney). C'est la règle « le gag porte le bénéfice » des pubs de référence ; le studio l'applique quand il a une idée de forme. [VU SUR IMAGES]
+4. **Deux habitudes de son en fiction** : des dialogues sans ambiance continue (le son tombe au plancher entre les répliques dans la loge de « Fou-Rire » et à la bougie de « Hirsingen ») et des plans très sombres où l'information disparaît (le public de « Fou-Rire », Franz en plan large), alors que la règle dictée par Diego est « un minimum de lumière sur l'info ». [mesuré, VU SUR IMAGES ; son pas écouté]
+5. **Le montage coupe juste par rapport à la parole selon le genre** : la fiction grave laisse l'air (Hirsingen, 27-42 % des coupes pendant la parole), comme le cinéma de référence. [mesuré]
+6. **La marque est un lieu ou un objet dès le début dans les commandes** (table imprimée de Benefit, décor de Sephora, plateau de Swile), comme les sept pubs de référence ; le nom vient tôt seulement quand on parle à des clients déjà acquis (Oney), ce qui est juste. [VU SUR IMAGES]
+
+**Montage ou tournage** : presque tout ce qui manque se corrige **au montage et à la finition** (ordre des plans de Benefit 1, flou d'ouverture, sous-titres, QC son, ambiances, étalonnage des plans noirs). Au tournage, trois choses à préparer : l'insert produit et l'insert peau (Benefit), un signe de couleur par équipe (Sephora), la lumière du public et les ambiances de salle (« Fou-Rire »).
+
+**Pour le studio, dans l'ordre** : (1) QC son systématique ; (2) un passage « muet » de chaque commande réseau (sous-titres gras et contrastés, premier écran net avant 2 s) ; (3) vérifier que l'ordre des plans dit la cause dans les pubs sans voix ; (4) une ambiance continue sous tout dialogue de fiction.
+
 ## Erreurs corrigées (phase 2)
+- Session 6 (projets F42) : dans la fiche Swile, j'avais cité le true peak (-0,8 dBTP) sans le signaler ; en recoupant les fichiers, il dépasse lui aussi -1 dBTP (six fichiers sur sept). Et sur une tuile à 1 image / 2 s de Hirsingen, une grosse amorce (un manteau au premier plan) m'a fait croire à une alternance de plans : à 4 images/s, c'est un seul cadre.
 - Session 6 : j'avais écrit « *Le Dîner de cons* : 35 % des coupes pendant la parole pour 60 % du temps » dans les constats YouTube ; la fiche mesurée dit 40-44 % (21 % dans la scène sincère). Chiffre recopié de mémoire : toujours reprendre une mesure dans sa fiche, pas dans un résumé.
 - Session 1 : j'avais cru faux le plan de 74 s de Pogo's (c'est un plan-séquence) ; j'avais attribué à Diego une note sur l'amarrage qui n'était qu'un exemple de format (retour du 2026-10-11, intégré).
 - Session 5 : le « plan » de 19,7 s de Tiger (graphique puis présentateur, coupe ratée) ; « les deux extrémités les plus rapides » de CIA (la fin l'est surtout par son générique monté) ; « le témoin à la bougie » de CIA (deux témoins, deux lumières) ; la mesure coupes / parole sur un mixage avec fond musical (34 % de parole contre 77 % sur la voix séparée) ; un « plan » de 123 s de cartons de texte sur noir (YggTorrent) qui en contient au moins 20.
@@ -132,6 +156,7 @@ _Réécrit à chaque session (dernière : 2026-10-11, session 6). Versions préc
 - Les plans portés à filés (Stress) peuvent cacher des coupes que ni les outils ni une tuile à 4 images/s ne tranchent.
 
 ## Doutes (à trancher plus tard, sans poser de question pendant une routine)
+- Projets F42 : je n'ai aucun rush ni brief ; les intentions, contraintes et destinations (festival, application, réseau) sont déduites. Oney : les 2,5 s de noir final sont peut-être demandées par l'intégration. Hirsingen : Whisper écrit « Monsieur, vous m'entendez ? » aux débuts exacts des fenêtres de 30 s (0:30, 1:00, 1:30), phrase réelle répétée ou fantôme ? Le son n'est jamais écouté : les remarques « loge sans ambiance » sont des lectures de courbe.
 - `.claude/settings.json` (modèle Opus, effort high), ajouté par Diego, **n'est pas commité** : le garde-fou de l'agent refuse ce commit. Diego peut le commiter lui-même.
 - J'ai commité la modification de `PROMPT-PHASE-2.md` (passe de révision) trouvée non commitée sur le disque : je la suppose de Diego, puisqu'elle est rédigée comme une consigne de mission.
 - Whiplash : combien de coupes cachent les filés des plans de 21 et 24 s ? L'hypothèse « on coupe sur l'instrument qui a la phrase » n'est pas mesurée.

@@ -1,6 +1,6 @@
 # « Hirsingen » — court métrage d'époque (15 min, 5.1)
 
-_Fiche ouverte le 2026-10-11 (phase 2, session 6, projet Studio F42 n°7). **État : première passe** (vignettes toutes les 10 s, 118 plans détectés, le plus long « plan » vérifié de trois façons, loudness et QC du fichier 5.1, transcription Whisper lue). **À faire** : deux séquences en plan par plan (l'ouverture en forêt, un dialogue à la bougie), écoute impossible. Source : `HIRSINGEN 5.1 H265.mov`, HEVC 10 bits 3072×1306 (2,35:1), 25 i/s, 14 min 59, AAC 5.1. Je ne nomme pas les comédiens ; les prénoms des personnages viennent du dialogue. Pas de rushes._
+_Fiche ouverte le 2026-10-11 (phase 2, session 6, projet Studio F42 n°7). **État : première passe + une séquence fine** (vignettes toutes les 10 s, 118 plans détectés, le plus long « plan » vérifié de trois façons, loudness et QC du fichier 5.1, transcription Whisper lue ; dialogue à la bougie 3:10-6:45 en plan par plan, 31 plans ; coupes / parole sur 7 min). **À faire** : l'ouverture en forêt en plan par plan. Source : `HIRSINGEN 5.1 H265.mov`, HEVC 10 bits 3072×1306 (2,35:1), 25 i/s, 14 min 59, AAC 5.1. Je ne nomme pas les comédiens ; les prénoms des personnages viennent du dialogue. Pas de rushes._
 
 **Lu avant l'analyse** : `A-LIRE.md`, `montage-regard`, `montage-grammaire` (champ / contrechamp, dialogue), `montage-rythme`, `montage-son-et-emotion`, `montage-loudness-livraison` (cinéma, 5.1), bilan de la vague 1 (plans longs réservés à ce qui compte). Goût de Diego qui s'applique (`GOUTS.md`, 7 et 8) : grain et look film ; visages sombres avec un minimum de lumière sur l'info.
 
@@ -13,6 +13,13 @@ _Fiche ouverte le 2026-10-11 (phase 2, session 6, projet Studio F42 n°7). **Ét
 - **Le plus long « plan » (12:04-13:36, 91,7 s) est un plan-séquence porté** [vérifié : `verif_plan.py` ne trouve aucune coupe, PySceneDetect non plus sur une copie éclaircie ; tuile à 2 images/s sur 12:06-12:30 : la caméra suit la dispute des deux sœurs à travers le linge qui sèche, d'un bout à l'autre de la pièce, et finit fixe sur Marie à genoux près du corps]. Un filé vers 12:27 pourrait cacher une coupe (leçon de *Stress* et *Whiplash*), sans changer le geste.
 - **Son** (QC sur le 5.1 d'origine) : **-27,3 LUFS intégrés, LRA 20,9 LU, true peak 0,0 dBTP** ; un coup de feu à 6:50 [transcription].
 - **Image** : intérieurs à la bougie et à la fenêtre, bois sombre, mur rouge, robe bleue de Marie ; forêt froide ; l'épilogue en lumière de jour.
+
+## Le dialogue à la bougie, plan par plan (2:52-6:51) [VU SUR IMAGES, mesuré]
+Planche : `videos/_travail/f42-hirsingen/seq/s1.png` (31 plans, moyenne 7,7 s).
+- **La distance dans le cadre suit la confiance** : d'abord deux plans larges fixes qui alternent (Marie à la table près de la bougie, Franz assis par terre contre le mur, 3:56-4:45, sept retours aux mêmes cadres de 3 à 13 s) ; puis Marie s'assoit plus près, cadrée de face en plan moyen (6:16) ; puis **le premier gros plan de Franz, tenu 14,3 s**, quand il parle de sa fille (« J'imagine qu'elle a bien grandi maintenant », 6:36). On se rapproche quand ils se rapprochent. [VU SUR IMAGES]
+- **La coupe attend la fin de la réplique** : 27 % des coupes pendant la parole (3:10-6:45) et 42 % (7:20-10:45), pour 36 % du temps parlé ; les autres tombent dans le silence, environ 0,5-0,65 s après la réplique, la reprise 0,6 s plus tard. C'est l'inverse de la conversation filmée (« POPCORN » : 76-88 %) et proche de la scène sincère du *Dîner de cons* (21 %) : **le dialogue grave laisse l'air autour des mots**. [mesuré, énergie du mixage ; fond musical non vérifié par séparation]
+- **Entre les répliques, le son tombe au plancher** (courbe momentanée à -50 LUFS dans chaque trou) : comme dans la loge de « Fou-Rire », aucune ambiance continue ne tient la pièce. Une ferme isolée en hiver a un son (vent, bois qui craque, feu, horloge) ; à confirmer à l'écoute. [mesuré, pas écouté]
+- **Lumière** : Marie est lisible (fenêtre, bougie) ; Franz par terre en plan large (4:10, 4:18) est très sombre, son visage à peine dessiné : la règle de `GOUTS.md` (« un minimum de lumière sur l'info ») est tenue sur les gros plans, limite sur les larges. [VU SUR IMAGES]
 
 ## Ce qui marche (avec la preuve)
 1. **Le plan long est réservé à ce qui compte**, comme dans les cinq films de la vague 1 : les confidences de Franz sont tenues 15 à 30 s (sa femme, sa fille, la bougie, 4:59-6:36, 9:28-10:40), et **la rupture est un plan-séquence porté de 91,7 s** où la caméra cesse d'être posée : la forme change quand la confiance se brise. [VU SUR IMAGES, mesuré]
@@ -27,9 +34,10 @@ _Fiche ouverte le 2026-10-11 (phase 2, session 6, projet Studio F42 n°7). **Ét
 2. **Fichier de diffusion** : HEVC 10 bits + AAC 5.1 dans un .mov est un bon fichier de visionnage, pas un fichier de festival (DCP, ou ProRes + PCM selon le règlement). À livrer en plus.
 3. **Vérifier l'ouverture** : Whisper écrit « Monsieur, vous m'entendez ? » à 0:30, 1:00 et 1:30, exactement au début de ses fenêtres de 30 s ; c'est soit trois appels réels espacés de 30 s, soit une phrase fantôme répétée. À l'écoute : si l'appel n'est dit qu'une fois, rien à faire ; s'il y a trois appels identiques à 30 s d'écart, c'est un rythme mécanique à varier. [NON VÉRIFIÉ]
 
+4. **Une ambiance continue sous les dialogues** (voir plan par plan ci-dessus), même très basse : elle évite les trous de son entre les répliques et rendrait le mixage moins dynamique sans rien perdre.
+
 ### À regarder en plan par plan (session suivante)
-- Le dialogue à la bougie (3:10-6:40) : champ / contrechamp tenu ou coupé sur la réaction ? Où tombent les coupes par rapport à la parole (`coupes_parole.py`) ?
-- Les plans les plus sombres : la règle de `GOUTS.md` (« un minimum de lumière sur l'info ») tient-elle sur les visages à la bougie ?
+- L'ouverture en forêt (0:00-1:45).
 
 ## Grille (`montage-regard`, provisoire, sur la première passe)
 | Critère | Note | Preuve |
