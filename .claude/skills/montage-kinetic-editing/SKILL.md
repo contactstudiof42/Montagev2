@@ -55,6 +55,8 @@ Crête sur le moment clé [SOURCÉ] (Epidemic Sound, Morphic) ; la fourchette 3-
 
 Règles : un seul rang 1 par 5-10 s ; whoosh variés (3-5 variantes, **varier les durées avant les timbres**, longueur = longueur du mouvement, -10 à -14 dB sous l'impact) ; toutes les coupes n'ont pas de son ; **chaque SFX a une cause visible** et amplifie un événement qui existe [ÉPROUVÉ EN MAQUETTE] (pièce 02) ; voix intelligible (SFX baissés sous les consonnes, creux 1-4 kHz dans les whoosh) ; impacts sur les downbeats.
 
+**Onomatopée graphique plein cadre (rang 5 en image)** : une par chute, toutes les 6-7 s, elle peut devenir le nom de la campagne (Swile « POW », projet du studio : « POW ! » en 3D magenta qui clôt chaque sketch, revient dans le bandeau du faux numéro et nomme le produit fictif P.O.W.). [VU SUR IMAGES] (`analyses/projets-f42/swile-pow.md`)
+
 ## 3. Ce qui sépare le pro de l'amateur
 | Amateur | Pro |
 |---|---|
