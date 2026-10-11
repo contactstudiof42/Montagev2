@@ -225,3 +225,9 @@ _Dictés par Diego dans la conversation, recopiés par l'agent. Le message s'arr
 - [projet] Au début : le plan sur les trois écouteurs (le panoramique) : l'écouteur est flou, le plan n'est pas esthétique.
 - [universel] Règle : aucun plan de remplissage. Chaque plan de la timeline doit mériter sa place, même dans une rafale de 3 images. Avant chaque rendu, contrôle le passage exact utilisé (pas la vignette du dérush) : première, milieu et dernière image en pleine résolution, netteté du sujet, exposition, visages.
 - [universel] Un flou n'est pas forcément une faute. Pose-toi toujours la question : volontaire ou raté ? Volontaire = pose lente (slow shutter), bascule de point qui va quelque part, flou de mouvement qui sert l'énergie, flou qui se résout dans le plan. Raté = mise au point qui cherche, (… message coupé ; complété par l'agent, à confirmer : sujet principal hors du plan de netteté sans intention, bougé de la main qui n'est pas un geste.)
+
+## 2026-10-11 — La fin de la V4 est trop longue (dicté en session V5)
+_Dicté par Diego dans la conversation, recopié par l'agent._
+- [projet] La fin est trop longue : après tout le déferlement d'effets, ça s'arrête trop longtemps. Juste avant les packshots de fin, ajoute un dernier moment de 4 à 5 secondes, très accéléré, avec de gros effets tirés d'eyecannndy (toujours selon la matière et la DA, jamais cheap), puis enchaîne sur les packshots, qui restent sobres.
+- [genre : after movie kinetic] Un dernier pic d'énergie juste avant la signature de marque, puis une fin courte et propre.
+- Les idées que tu as tirées d'eyecannndy ont donné de bons résultats : continue à t'en servir comme source d'idées, en les rattachant toujours à la DA.
