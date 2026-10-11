@@ -231,3 +231,11 @@ _Dicté par Diego dans la conversation, recopié par l'agent._
 - [projet] La fin est trop longue : après tout le déferlement d'effets, ça s'arrête trop longtemps. Juste avant les packshots de fin, ajoute un dernier moment de 4 à 5 secondes, très accéléré, avec de gros effets tirés d'eyecannndy (toujours selon la matière et la DA, jamais cheap), puis enchaîne sur les packshots, qui restent sobres.
 - [genre : after movie kinetic] Un dernier pic d'énergie juste avant la signature de marque, puis une fin courte et propre.
 - Les idées que tu as tirées d'eyecannndy ont donné de bons résultats : continue à t'en servir comme source d'idées, en les rattachant toujours à la DA.
+
+## 2026-10-11 — Rien n'est figé dans un montage (dicté en session V5)
+_Dicté par Diego dans la conversation, recopié par l'agent._
+[universel] Rien n'est figé dans un montage. Un plan ou un bloc que je n'ai pas critiqué n'est pas validé pour autant : mon silence n'est pas une validation. À chaque version, après avoir appliqué mes retours, relis le film entier comme si tu le voyais pour la première fois : rythme d'ensemble, calage musical, enchaînements, équilibre entre les blocs. Si un changement en déséquilibre un autre (un ajout qui allonge, un plan retiré qui casse une transition), déplace, raccourcis, remplace ou supprime ce qu'il faut ailleurs, même dans un bloc déjà « réussi ». Seul ce que je valide explicitement est fixé, et même ça peut bouger si le film l'exige : dans ce cas, explique-le dans la note de livraison.
+
+## 2026-10-11 — Référence pour le dernier pic de la V5 (dicté en session V5)
+_Dicté par Diego dans la conversation, recopié par l'agent. Le message gardait des champs vides (« [nom du fichier] », « le passage de [début] à [fin] ») : un seul fichier venait d'être déposé, `videos/phase-3/sony-linkbuds/references/Video by foebusdelapaz.mp4` (9,8 s) ; faute de bornes, l'agent a retenu le passage le plus accéléré, 0,00-4,00 s, et l'a noté._
+Référence pour les 4-5 secondes accélérées avant les packshots : analyse-la image par image comme en phase 2 (durée des plans, effets, transitions, rapport à la musique et aux SFX) et inspire-t'en pour ce moment de la V5 : même niveau d'énergie et de finition, adapté à notre matière et à notre DA, sans la copier. Ajoute-la au carnet de goût comme référence [genre : after movie kinetic].

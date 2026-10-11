@@ -13,7 +13,7 @@ _Ma mémoire du goût, construite à partir des retours de Diego. Chaque entrée
 _Créé le 2026-10-11 (session V5) à partir des retours de Diego sur les V2, V3 et V4 du projet Sony LinkBuds (after movie kinetic d'un événement sportif, vertical). Les « corrigé » sont des versions que Diego a jugées meilleures ; quand il ne les a pas encore jugées, c'est écrit. Les retours purement techniques (réglages d'export, preuve Gyroflow, cases du rendu) sont dans les skills, pas ici._
 
 ### Lire le carnet en 30 secondes (à relire avant chaque livraison)
-**[universel]** 1 look, pas une conversion · 2 titre = DA de la marque, animé sobrement · 3 jamais de transition intégrée · 4 lire les séries du cadreur · 5 voir le mouvement · 6 le blanc du produit garde sa matière · 7 exposition réglée sur tout le mouvement · 8 étalonner plan par plan · 9 noirs denses, pas de bruit · 10 visages vérifiés image par image · 11 chaque plan et chaque effet ont une raison · 12 un élément graphique vient de la DA ; un détourage se juge au bord à 200 % · 15 aucun plan de remplissage · 16 un flou : volontaire ou raté ? · le brief prime, jamais cheap.
+**[universel]** 1 look, pas une conversion · 2 titre = DA de la marque, animé sobrement · 3 jamais de transition intégrée · 4 lire les séries du cadreur · 5 voir le mouvement · 6 le blanc du produit garde sa matière · 7 exposition réglée sur tout le mouvement · 8 étalonner plan par plan · 9 noirs denses, pas de bruit · 10 visages vérifiés image par image · 11 chaque plan et chaque effet ont une raison · 12 un élément graphique vient de la DA ; un détourage se juge au bord à 200 % · 15 aucun plan de remplissage · 16 un flou : volontaire ou raté ? · 17 rien n'est figé, relire le film entier · le brief prime, jamais cheap.
 **[genre : after movie / événementiel kinetic]** rafales qui reviennent, avec écart · un dernier pic juste avant la marque, puis une fin courte · techniques variées tirées de la matière · un son sur chaque transition (ou aucun) · jamais deux fois le même moment d'un rush · inversions à la place de certains flashs.
 
 ---
@@ -110,6 +110,18 @@ _Créé le 2026-10-11 (session V5) à partir des retours de Diego sur les V2, V3
 - Image : `carnet/16_panoramique-ecouteurs-flou.jpg` (panoramique sur les trois boîtiers, l'écouteur reste flou)
 - Diego (V4) : « L'écouteur est flou, le plan n'est pas esthétique. » Règle : volontaire = pose lente, bascule de point qui va quelque part, flou de mouvement qui sert l'énergie, flou qui se résout dans le plan ; raté = mise au point qui cherche (suite de sa liste coupée ; ajout de l'agent, à confirmer : sujet principal hors du plan de netteté sans intention, bougé de la main qui n'est pas un geste).
 - À vérifier : pour chaque plan flou, écrire laquelle des deux familles ; un produit doit être net quand il est le sujet.
+
+### 2026-10-11 — 17. Rien n'est figé ; mon silence n'est pas une validation — [universel]
+- Image : aucune (méthode).
+- Diego : « Un plan ou un bloc que je n'ai pas critiqué n'est pas validé pour autant : mon silence n'est pas une validation. »
+- Raison : chaque retour appliqué déplace l'équilibre du film ; un bloc bon dans la version précédente peut devenir trop long ou mal raccordé dans la suivante.
+- À vérifier : relecture du film entier, d'un œil neuf, après chaque série de corrections ; ce qui a bougé hors des retours est expliqué dans la note de livraison.
+
+### 2026-10-11 — 18. Référence : le dernier pic, par les états de l'image — [genre : after movie kinetic]
+- Image : `carnet/18_reference-dernier-pic.jpg` (foebusdelapaz, montage kinetic de basket : 20 images clés de 0 à 4 s)
+- Diego : « même niveau d'énergie et de finition, adapté à notre matière et à notre DA, sans la copier. »
+- Raison : la vitesse vient autant du **changement d'état** de l'image (naturel, duotone, seuil, négatif, blanc, une image chacun) que de la coupe ; deux plans tenus au milieu font respirer ; les grands changements tombent sur les attaques fortes, les micro-coupes sont libres.
+- À vérifier : le pic de la V5 à côté de cette planche (densité, respiration, finition) ; les états pris dans **notre** palette (noir et blanc, négatif, seuil, rouge réel), jamais ses aplats jaune-violet. Fiche : `analyses/reseaux/foebusdelapaz-nike-basket.md`.
 
 ### Rythme et son (sans image : ça se juge en mouvement ou à l'oreille)
 - **2026-10-11 — Écart de rythme, rafales qui reviennent — [genre : after movie kinetic]**. Diego (V2) : « On se fait un peu chier », « encore trop mou » ; le passage très rapide avec les flashs vers 15 s, « c'est cool ». (V3) : « Le rythme est mieux. » Raison : l'accélération se sent par l'écart avec le reste. Contre-indication : film de marque calme, portrait, interview.

@@ -70,6 +70,8 @@ V4 à 80 % livrable : la technique tient, ce qui reste est le goût. Toutes ces 
 11. **Des variantes sur les moments clés** (ouverture, collages, transitions majeures, sommet, titre, fin) : 2 ou 3 idées réellement différentes, comparées en pleine résolution ; je juge mieux entre options que je ne réussis du premier coup.
 12. **Relire `CARNET-DE-GOUT.md`** (entrées [universel] et du genre) avant chaque livraison, et vérifier la version contre chacune.
 
+13. **Rien n'est figé ; le silence du client n'est pas une validation** (Diego, 2026-10-11). À chaque version, après avoir appliqué les retours, relire le film entier comme si on le découvrait : rythme d'ensemble, calage musical, enchaînements, équilibre entre les blocs. Un ajout qui allonge, un plan retiré qui casse une transition : déplacer, raccourcir, remplacer ou supprimer ailleurs, même dans un bloc « réussi ». Seul ce qui est validé explicitement est fixé, et même ça peut bouger si le film l'exige (l'écrire dans la note de livraison).
+
 ## Méthode de visionnage
 1. Planche à intervalle régulier avec numéro d'image : lire l'**arc**. [TESTÉ EN LABO]
    `ffmpeg -i v.mp4 -vf "select='not(mod(n\,20))',scale=320:-1,drawtext=text='%{n}':x=4:y=4:fontsize=12:fontcolor=yellow,tile=5x2" -frames:v 1 planche.png`
