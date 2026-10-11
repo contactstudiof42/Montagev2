@@ -15,12 +15,15 @@
   - Costume : https://www.motionpictures.org/2019/10/joker-costume-designer-mark-bridges/ et https://highsnobiety.com/p/joaquin-phoenix-joker-suit-explained
   - Wikipédia (production, VFX, décors) : https://en.wikipedia.org/wiki/Joker_(2019_film) ; Scanline : https://digitalproduction.com/2020/08/21/joker-vfx-reel/
 
-## Confronté au film le 2026-10-11 (`analyses/films/joker.md`, passe globale) [VU SUR IMAGES]
+## Confronté au film le 2026-10-11 (`analyses/films/joker.md`, passe globale et sept séquences) [VU SUR IMAGES]
 - **Ratio 1,85:1 confirmé** (1920×1040).
 - **Tient** : le vert gardé (maximum dans le métro), le rouge privé pendant 95 min puis lâché sur le plateau de Murray.
 - **Nouveau** : avant 1:35, le rouge n'apparaît que dans des lieux de spectacle (scène de Pogo's à 0:42:40, ouvreurs et rideaux du théâtre à 1:03:10).
 - **Faux** : « l'image s'assombrit à mesure qu'Arthur change ». La luminance moyenne reste stable, puis monte (émeute, couloirs blancs de la fin).
 - Montage : environ 9 coupes/min presque tout le film, un seul pic dans le métro (20 coupes/min).
+- **Tient** (session 2, sept séquences) : la montée froide et lente avec un plan fixe en bas puis en haut ; la danse des toilettes en un plan (40 s) ; la position de force sur le capot (un plan de 43,7 s).
+- **Corrigé** : la scène des toilettes compte trois plans (40,1 · 18,1 · 34,5 s), seule la danse est d'un tenant ; à la fin, le rouge n'a pas « remplacé » le vert, il a pris le corps et le bleu-vert est resté dans le décor (fumée).
+- **Nouveau** : la première plage rouge est la lumière des coulisses de Pogo's, traversée dans un plan de 74 s ; l'escalier est inversé aussi par le montage (montée en un plan de dos, descente en 16 plans).
 
 ## Ce que l'œuvre cherche à faire ressentir ou comprendre
 

@@ -1,6 +1,6 @@
 # Joker (Todd Phillips, 2019) — image Lawrence Sher, étalonnage Jill Bogdanowicz
 
-_Fiche ouverte le 2026-10-11 (phase 2, session 1). **État : passe globale faite ; métro et plateau de Murray analysés finement ; quatre séquences restent à faire** (session suivante). Source : 1080p HDLight, 1920×1040, VO anglaise AC3 5.1 (mesures sur un mixage stéréo réduit), sous-titres français. Planches commitées : `joker-escaliers.png` (1:30:15-1:32), `joker-couleur.png` (couleur sur tout le film), `joker-metro.png` (0:30-0:34) et `joker-murray.png` (1:37:30-1:45:50), une image par plan avec le volume momentané en dessous. Fichiers de travail : `videos/_travail/joker/`._
+_Fiche ouverte et close le 2026-10-11 (phase 2, sessions 1 et 2). **État : terminée** (passe globale + 7 séquences). Source : 1080p HDLight, 1920×1040, VO anglaise AC3 5.1 (mesures sur un mixage stéréo réduit), sous-titres français. Planches commitées : `joker-couleur.png` (couleur sur tout le film) et une planche par séquence (une image par plan, volume momentané en dessous) : `joker-montee.png` (0:09:15-0:10:20), `joker-metro.png` (0:30-0:34), `joker-toilettes.png` (0:33-0:35:40), `joker-pogos.png` (0:42:15-0:44:20), `joker-escaliers.png` (1:30:15-1:32), `joker-murray.png` (1:37:30-1:45:50), `joker-emeute.png` (1:46-1:53). Fichiers de travail : `videos/_travail/joker/`._
 
 **Lu avant l'analyse** : `culture/joker-couleur-image.md`, `montage-couleur-et-intention`, grille de `montage-regard` (critère « Cohérence » : l'ensemble de *Joker*), `GOUTS.md` (couleur et image ; réponse 4 : « l'équilibre de l'ensemble »).
 
@@ -48,30 +48,63 @@ Faire sentir physiquement une ville malade et un homme qui y étouffe, puis rend
 - Jour gris et froid ; **le rouge du costume est la seule couleur saturée**. Le même décor qu'à l'aller (fiche de phase 1), inversé par la lumière et par la hauteur de caméra.
 - **Nuance de la règle du métro et de Murray** : la rafale de plans courts sert aussi **l'euphorie** (la danse), pas seulement la violence. Les deux sont, pour Arthur, des libérations.
 
-## Séquences restant à analyser (session suivante)
-2. Toilettes, danse lente (vers 0:33:30-0:35).
-3. Pogo's et la première apparition du rouge (0:42:40-0:44).
-4. Escaliers, la montée (à situer) pour la comparer à la descente.
-6. Émeute et capot de voiture (1:46-1:53), plan du bus « en miroir ».
+### La montée des escaliers (0:09:15-0:10:20) [VU SUR IMAGES, `joker-montee.png`]
+- 9 plans, durée moyenne 8,2 s. Nuit tombante, bleu-vert froid, aucun rouge. Volume bas et plat (-21 LUFS momentané en médiane, ambiance seule, pas de musique repérable sur la courbe).
+- **Le cœur est un seul plan de 21,7 s** (0:09:33) : la caméra accompagne Arthur le long d'un mur, le laisse passer, puis reste en bas pendant qu'il monte, de dos, lentement, dans l'axe de l'escalier. Vérifié par deux détecteurs et à l'œil (3 images/s autour du passage derrière le mur, 0:09:37-0:09:41) : pas de coupe cachée.
+- **Comparaison avec la descente (1:30:36)** : même décor, montage inversé. Montée = un plan long, de dos, sans musique, la caméra qui ne suit plus ; descente = 16 plans courts, de face, en musique, avec un seul plan large tenu. **Le fardeau est tenu, la libération est découpée.** Confirme la fiche de phase 1 (« même décor, lumière, hauteur et mouvement inversés ») et y ajoute l'inversion **du montage**.
 
-## Confirme, contredit, complète (provisoire)
+### Les toilettes, la danse lente (0:33:00-0:35:40) [VU SUR IMAGES, `joker-toilettes.png`]
+- La fuite après le métro (0:33:11-0:34:28) : 14 plans de 1 à 8 s dans l'orange sodium du quai et de la rue.
+- Puis les toilettes, retour au vert : **trois plans de 40,1 s, 18,1 s et 34,5 s** (0:34:41, 0:35:21, 0:35:39). La danse elle-même est **un plan-séquence de 40 s** : la caméra portée découpe le corps sans couper (les mains sur le mur, les pieds sur le carrelage, le visage en contre-plongée, puis le corps entier dans le miroir). Vérifié par trois méthodes (PySceneDetect, `scene` de ffmpeg à 0,10, pics de différence d'image) et à l'œil (une image toutes les 2 s, puis 3 images/s sur les pieds).
+- Volume bas (-29,5 LUFS momentané en médiane pendant les 40 s), sans pic.
+- **Le cadre fait le découpage à la place des coupes** : gros plans de mains, de pieds, de visage, mais dans la continuité d'un seul mouvement. Le corps prend la pièce sans que le montage l'interrompe.
+- **Corrige en partie la fiche de phase 1** (« une danse en un seul plan », Slashfilm) : la danse tient en un plan, la scène en trois.
+
+### Pogo's, la première scène (0:42:15-0:44:20) [VU SUR IMAGES, `joker-pogos.png`, une image toutes les 2 s]
+- **Un plan de 74 s** (0:42:26-0:43:40) : la caméra suit Arthur de dos depuis le couloir des coulisses (bleu-vert), **à travers une lumière rouge** (0:42:42-0:42:56, la première vraie plage rouge du film), dans le noir de la salle, puis jusqu'au micro, et le contourne jusqu'à le prendre de face. Les détecteurs ne voient aucune coupe ; la tuile montre un mouvement continu. Mon doute de la session 1 (« au moins quatre plans ») venait d'une vignette par plan, qui ne peut pas montrer un plan-séquence : **il est levé**. Coupe cachée encore possible dans le noir de la salle (0:42:56-0:43:10) : non vérifié image par image.
+- Puis 3,3 · 4,9 · 12,6 · 7,0 · 27,9 s : le numéro raté est tenu en plans longs sur son visage.
+- **Le rouge du film apparaît d'abord comme un passage** : la lumière rouge des coulisses, sur le chemin de la scène. Renforce la lecture « le rouge appartient au lieu de spectacle ».
+
+### L'émeute et le capot (1:46-1:53) [VU SUR IMAGES, `joker-emeute.png`]
+- 45 plans en 7 min, durée moyenne 9,6 s, en trois temps :
+  1. **La voiture de police** (1:46:35-1:47:56) : plans de 2 à 5 s (visage d'Arthur à la vitre, feux, foule), puis **la rafale de l'accident** (1:47:48-1:47:54 : 1,0 · 0,8 · 3,7 · 1,3 · 2,1 s), puis un plan tenu d'environ 27 s (1:48:09, vérifié : coupes suivantes à 1:48:36).
+  2. **Le meurtre des Wayne dans la ruelle** (1:49:28-1:50:02) : 11 · 4,8 · 5,1 · 8,7 · 1,1 (visage de l'enfant) · 3,5 s.
+  3. **Arthur relevé par la foule** (1:50:02-1:52:31) : 21,2 · 9,5 · 4,9 · 19,3 · 10,1 · 16,5 · 4,8 s, puis **le capot : un plan de 43,7 s** (1:51:29, vérifié : continu), Arthur se lève, dessine le sourire avec son sang, ouvre les bras ; la caméra tourne jusqu'à le prendre de dos face à la foule. Puis 18,3 s de foule.
+- **Couleur** : le costume rouge sur un fond de fumée **bleu-vert**. Le vert n'a pas disparu (part de vert 0,28 contre 0,17 sur le plateau de Murray) : il est passé du personnage au décor, et le rouge est sur le corps.
+- **Son** : le capot est l'un des moments les plus forts du film (-10,5 LUFS momentané en médiane). Suivent **10 s de noir** (1:52:31, -28 LUFS) et l'hôpital (-41 LUFS en médiane, rires isolés). **Le plus fort est suivi du plus grand vide.** Même structure qu'Interstellar après l'amarrage. [mesuré, pas écouté]
+- **Faux dans la fiche de phase 1** : « le rouge et l'orange ont remplacé le vert ». Le rouge a pris le corps ; le bleu-vert est resté autour.
+- Non fait : le plan du bus « en miroir » de la vitre de la voiture de police (fiche de phase 1). Le plan de la vitre est à 1:46:44 ; je n'ai pas cherché le plan du bus.
+
+### Ce que les sept séquences disent ensemble
+- **Les plans les plus longs du film sont des moments où le corps d'Arthur prend un espace** : la montée (21,7 s, il le subit), la danse des toilettes (40 s), l'entrée à Pogo's (74 s), le capot (43,7 s). **Les rafales sont réservées aux actes** (coups de feu, accident, coup de feu sur le plateau) et à la danse publique des escaliers.
+- **Deux danses, deux montages** : la danse intime (toilettes) en un plan, la danse publique (escaliers) découpée comme un clip. Nuance ce que j'écrivais en session 1 (« la rafale sert aussi l'euphorie ») : elle sert l'euphorie **montrée**, pas l'euphorie intime.
+- C'est une réponse possible au goût de Diego (« l'équilibre de l'ensemble ») : la couleur, la lumière et le montage obéissent à la même règle. Quand Arthur existe, la caméra tient et le décor change de couleur ; quand il agit, le montage coupe. Aucun levier ne fait l'effet seul. [DÉDUIT, à confronter aux autres films]
+
+## Confirme, contredit, complète
 - **Confirme** `montage-couleur-et-intention` (couleur méritée, une seule teinte forte après une longue privation) → [VU SUR IMAGES], avec un complément : **l'annoncer par de petites touches attachées à un lieu symbolique**.
 - **Contredit** « l'image s'assombrit » (fiche culture).
 - **Complète** `montage-rythme` : dans un film d'acteur, une densité de coupes plate et lente (environ 9 coupes/min) laisse **un seul pic** (le métro) ; l'accent vaut par sa rareté, à l'échelle du film entier.
 - **Complète** `montage-rythme` : la tension d'un dialogue peut monter par **l'allongement** des gros plans ; la rafale de plans courts est réservée à la violence, et elle est suivie du plan le plus long (métro, Murray).
 - **Nuance** `montage-references` A.2 (« la résolution est plus courte que l'attente ») : faux chez *Joker*, où l'après de la violence est tenu plus longtemps que l'acte. C'est un choix de malaise, pas de soulagement.
-- **Méthode** : un clignotement de lumière fait des fausses coupes (ajouté aux leçons de `PROMPT-PHASE-2.md`).
+- **Complète** `montage-rythme` : **le plan-séquence pour le corps qui prend l'espace, la rafale pour l'acte**. Dans un plan long, le cadre peut découper (mains, pieds, visage) sans couper (toilettes).
+- **Confirme** `montage-son-et-emotion` (le silence après l'effort, déjà vu sur Interstellar) : le capot, l'un des passages les plus forts, est suivi de 10 s de noir et du plus grand creux du film. Deux films sur deux. [mesuré, pas écouté]
+- **Corrige** la fiche de phase 1 : la danse des toilettes tient en un plan mais la scène en trois ; le vert n'est pas remplacé à la fin, il passe au décor.
+- **Méthode** : un clignotement de lumière fait des fausses coupes ; une vignette par plan ne peut pas révéler un plan-séquence, seule une tuile à intervalle fixe le peut (ajouté aux leçons de `PROMPT-PHASE-2.md`).
 
-## Principes transférables (provisoires)
+## Principes transférables
 1. **Une matière de couleur pour tout le film** (ici le vert des tubes), qu'on retire d'un coup à la bascule.
 2. **Annoncer la couleur méritée par de petites touches attachées à un lieu symbolique** (le rouge de la scène), puis la donner au personnage.
 3. **La rafale de coupes seulement sur l'acte** (violence ou euphorie), et l'après tenu plus longtemps que l'acte ; dans la rafale, un seul plan large tenu qui montre enfin tout le corps.
 4. **Faire monter un dialogue par l'allongement des gros plans**, sans couper plus vite.
 5. **La lumière qui clignote comme montage sans coupe** : elle donne le rythme de la panique sans fragmenter l'espace.
+6. **Le plan-séquence pour le moment où le personnage prend l'espace** (une entrée en scène, une danse, une montée sur un capot), le cadre découpant le corps sans coupe ; la rafale pour l'acte. En corporate ou en portrait : tenir le plan où la personne s'approprie le lieu.
+7. **Même décor, montage inversé** : un plan long de dos pour le fardeau, des plans courts de face pour la libération.
+8. **Le plus fort suivi du plus grand vide** (capot puis noir de 10 s et hôpital presque muet).
 
 ## Ce que Diego en a dit
 GOUTS.md : la couleur et l'image ; « c'est un ensemble, le Joker […] l'équilibre de l'ensemble ». NOTES-DIEGO.md : rien pour l'instant.
 
 ## Doutes
-- **Plans longs non fiables** : le détecteur annonce un plan de 74 s à 0:42:25, mais la planche montre au moins quatre plans différents dans cet intervalle (scène sombre). Même défaut que sur Interstellar (voir les leçons de méthode de `PROMPT-PHASE-2.md`). Aucun plan long n'est cité tant qu'il n'a pas été vérifié à l'œil.
+- **Plans longs** : tous ceux que je cite (21,7 · 40,1 · 74 · 27 · 43,7 s) ont été vérifiés par au moins deux détecteurs et une tuile à intervalle fixe. Le plan de 74 s à 0:42:26, que je croyais faux en session 1, est un plan-séquence ; une coupe cachée reste possible dans les 15 s les plus sombres.
+- Le volume est mesuré, la musique n'est ni écoutée ni séparée : je ne sais pas si la danse des toilettes est montée sur la musique.
 - Mes seuils de couleur (« vert », « rouge saturé ») sont arbitraires. Les parts de pixels comparent les sections entre elles, ce ne sont pas des valeurs absolues.

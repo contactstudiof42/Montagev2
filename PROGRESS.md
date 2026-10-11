@@ -34,7 +34,7 @@ _Lire en premier. Seul l'état présent compte ici. L'état de clôture de la ph
 | films | Avengers: Infinity War (2018) | 2 h 29 min | |
 | films | Forrest Gump (1994), 2160p HDR10 | 2 h 22 min | |
 | films | Interstellar (2014), IMAX | 2 h 49 min | ✔ 2026-10-11 |
-| films | Joker (2019) | 2 h 01 min | en cours (passe globale + 3 séquences) |
+| films | Joker (2019) | 2 h 01 min | ✔ 2026-10-11 (7 séquences) |
 | films | La Haine (1995) | 1 h 33 min | |
 | films | Le Dîner de cons (1998) | 1 h 20 min | |
 | films | Mad Max: Fury Road (2015) | 2 h 00 min | |
