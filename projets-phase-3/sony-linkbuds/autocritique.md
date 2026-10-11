@@ -1,34 +1,25 @@
-# Autocritique — Sony LinkBuds Clip, V4
+# Autocritique — Sony LinkBuds Clip, V5
 
-_2026-10-11. Autocritique V3 : `archives/phase-3/sony-linkbuds/autocritique-V3.md`. Regardé : planche de toute la vidéo (une image sur 8), 6 images en pleine résolution (`images/V4_6images.jpg`), chaque effet rendu par plage et relu image par image, titre comparé en pleine résolution à la DA Sony (`images/V4_titre_vs_ref.png`), flash cut comparé à l'exemple d'eyecannndy (vu moi-même). **Rien n'a été écouté.**_
+_2026-10-11. Rendu `videos/phase-3/sony-linkbuds/rendus/sony_linkbuds_V5.mp4`. Relu en entier d'un œil neuf (planche du film, une image sur six), carnet de goût relu entrée par entrée. Autocritique V4 : `archives/phase-3/sony-linkbuds/V4/autocritique.md`. Par ordre de gravité._
 
-## Mesures du rendu (`rendus/sony_linkbuds_V4.mp4`)
-| | V3 | V4 | Cible |
-|---|---|---|---|
-| Durée | 44,6 s | 44,6 s | ≤ 60 s |
-| Plans issus des rushes | 90 | 83 (63 rushes) | — |
-| **Doublons** (même moment d'un rush deux fois) | **11** | **0** | 0 |
-| Encodage | H.264, 11 Mb/s | **HEVC Main 10, yuv420p10le, 39 Mb/s**, BT.709 | Diego |
-| Loudness / true peak | −14,1 / −1,1 | **−14,0 LUFS / −1,1 dBTP**, LRA 3,1 | −14 ±1 / ≤ −1 |
-| Photosensibilité (pire seconde) | 3 | 3 (35 flashs ou inversions) | ≤ 3 |
-| Noirs (p5) / contraste / couleur des noirs | 9 / 167 / brun | 9 / 174 / **neutre** | — |
-| Tremblement des lettres K-O-R-E (rendu) | ~1,3-1,7 px | **0,18-0,34 px** | < 1,5 |
-| Packshot rose C6725 | 2,7 px | **0,89 px** (geste gardé) | < 2 |
-| Packshot C6723 (deux passages) | 0,7 / 1,8 px | **1,1 / 1,6 px** | < 2 |
-| SFX | 64, peu de familles | **63, une famille par technique**, hauteurs variées | varié |
+## Ce qui ne va pas encore
+1. **Le son n'a jamais été écouté.** Le pic (33,2-37,9 s) porte maintenant huit sons nouveaux par-dessus un riser de 4,7 s : la loudness et la crête tiennent (−13,9 LUFS, −1,1 dBTP), mais l'encombrement ne se mesure pas. Si c'est trop chargé, le riser (−16 dB) est le premier à baisser ou retirer.
+2. **Le bloc 4 (9,4-18,7 s) est le plus long et peut paraître répétitif** : six plans de fentes « mains sur les hanches » à la suite (C6576, C6583, C6594, collage A1, C6580, C6581). C'est l'exercice filmé chez plusieurs participantes, une raison de montage existe, mais je n'ai pas tranché sans toi.
+3. **Synchronisation Gyroflow de C6725 non prouvée** : le mouvement est trop faible pour mesurer le décalage gyroscope / image (corrélation faible) ; décalage imposé à 0. Le résultat, lui, est mesuré : 0,66 px de tremblement après le rail.
+4. **Mes deux mesures du tremblement se contredisent sur les packshots** (points suivis sur la texture contre centre des zones claires) : la seconde dépend de l'exposition, la première est réputée fragile sur le tapis en carbone. J'ai tranché avec la première et vérifié à l'image, mais aucun chiffre n'est sûr à 0,5 px près.
+5. **Le lavande du premier packshot tire un peu vers le rose** (LUT « jour ») ; l'exposition est juste (le boîtier garde sa matière), la teinte exacte du produit n'a pas été comparée à une photo Sony du coloris.
+6. **Le pic est calculé hors de Resolve** (ProRes 4444 posé tel quel) : impossible à retoucher dans Resolve sans relancer `labo/outils/phase3/v5/pic_v5.py`.
+7. Packshots : 5 s en tout, calés sur le dernier coup de la musique (1072). Si la fin te paraît encore longue, on peut retirer un coup (47 images) au dernier packshot, mais il faut alors couper la musique ailleurs.
 
-## Ce qui ne va pas encore, par ordre de gravité
-1. **Le son n'a pas été écouté.** 63 sons placés sur la crête, 25 nouveaux sons d'Artlist jamais entendus, variantes de hauteur fabriquées (tic de verre, armement argentique, glitch). Risques : un son « cheap » que les mots-clés ne révèlent pas (la clameur à 32 s, le carillon non utilisé), une densité trop forte entre 26 et 28 s (néon, Polaroid, rewind, drop).
-2. **Le flash cut des oreilles (6,1-7,2 s) n'est pas à échelle constante.** L'exemple d'eyecannndy (cartes de baseball) garde la même pose, la même place et la même échelle ; le mien garde la place de l'écouteur mais grossit d'une participante à l'autre (crescendo). Choix assumé (les plans moyens zoomés ×3 seraient sous la résolution native), mais c'est une variante, pas la technique pure. Les deux dernières macros (C6561, C6559) sont un peu molles.
-3. **Rafale 2 (16,8-18,7 s) : le plan C6571 (jambes sombres et floues) est faible**, et le step-print rend la descente un peu illisible sur les plans sombres. Remplaçable par C6587 plus longtemps.
-4. **Rafale 1 : C6624 revient deux fois** (7 s puis 17 s du rush) : la règle est respectée (moments différents), mais le cadrage identique peut se lire comme une répétition.
-5. **Les collages sont pré-calculés** (Python, ProRes 4444) : propres, mais non modifiables dans Resolve. Le collage C (photo sur fond inversé) est le plus « effet » des trois.
-6. **Le rouge** reste rouge-orangé : c'est la lumière réelle, mais moins spectaculaire que dans la V3 (où tout était rouge, y compris la peau).
-7. Les compositions (carte de profondeur supprimée, écran partagé, zoom infini) restent légères : un rendu complet prend 60 s.
+## Ce qui a bougé hors de tes retours (règle « rien n'est figé »)
+- **Packshots** : la V5 en cours les avait passés en Gyroflow seul (pour la preuve) ; ils tremblaient 3 à 6 fois plus que dans la V4. Correction « rail » rétablie après Gyroflow : 0,66 / 0,68 / 0,84 px.
+- **C6627 (7,96 s)** : yeux fermés et menton rentré sur 4 images sur 6 ; remplacé par un autre moment du même rush (12,3 s), yeux ouverts, la sangle KORE qui monte.
+- **Rafale rouge** : le troisième négatif (802) retiré, sinon 4 flashs dans une seconde avec le bras clair de C6676 juste après.
+- **Boîtiers (117)** : essai d'un rendu Gyroflow synchronisé : il tremblait 7 fois plus que le rush brut, déjà stable. Le brut reste.
+- **Grain** : 35 → 20 %.
 
-## Ce qui marche (vérifié)
-- **Ouverture** : K, O, R, E épinglées au même point et à la même hauteur (0,2-0,3 px de résidu), puis un vrai zoom infini du E au mot KORE (alignement SIFT, recul exponentiel freiné, bord fondu, 7 images) : aucun rectangle visible, aucun flou de transition.
-- **Une technique par moment** : zoom infini, flash cut aligné, rafale qui monte, step-print qui descend, écran partagé, inversions dans le rouge, trois collages différents. Aucune n'est répétée.
-- **Couleur séparée** : peau naturelle, écouteur crème, décor qui recule, noirs neutres ; le packshot garde le détail du boîtier.
-- **Titre** : dessin de la DA Sony (Medium + Light, espace 0,3 em), apparition sobre ; écart restant : la graisse exacte de la référence (entre Medium et Bold, image floue).
-- **Stabilisation** : Gyroflow synchronisé partout où il est utilisé, puis fixe (lettres) ou rail (packshots) selon l'intention du cadreur.
+## Contrôlé et juste
+0 doublon (99 plans, sources du pic comprises) ; photosensibilité ≤ 3 flashs par seconde sur tout le film ; noirs à 0 sur les plans de salle, ombres propres amplifiées ×4 ; aucun blanc brûlé dans les boîtiers hors flash ; ouverture : béton égal sur les quatre lettres et le large (0,36-0,37), large KORE sans blanc brûlé ; visages de tous les plans vus image par image ; chaque transition a son son, calé à l'image (`sfx.md`) ; le pic suit les attaques de la musique et la référence (états de l'image, respiration au milieu) dans notre palette.
+
+## Carnet de goût, entrée par entrée
+1 look ✔ · 2 titre (inchangé) ✔ · 3 aucune transition intégrée ✔ · 4 séries du cadreur ✔ · 5 mouvement vu et mesuré ✔ (packshots corrigés) · 6 blanc du produit ✔ · 7 exposition sur tout le mouvement ✔ (zoom E → KORE, crash zoom du pic) · 8 plan par plan ✔ · 9 noirs ✔ · 10 visages ✔ · 11 une raison par plan et par effet ✔ (`plan.md`) · 12 graphisme de la DA, détourages contrôlés ✔ · 13 pas de photo à bord blanc ✔ · 14 inversions ✔ · 15 aucun remplissage ✔ · 16 flous : C6612b (24 s) flou de mouvement qui se résout, gardé · 17 film relu en entier ✔ (point 2 ci-dessus) · 18 pic comparé à la référence ✔.

@@ -203,6 +203,8 @@ _Dictées par Diego, mises en forme par l'assistant de configuration ; les phras
 - [universel] **Avant de concevoir les effets graphiques, ouvre-toi à Internet** : regarde ce qui se fait de mieux dans le domaine du film (ici, les campagnes et contenus sportifs de marques et de studios reconnus), garde une dizaine d'images de référence, et écris la direction artistique (palette, textures, typographie, langage graphique) avant de créer le moindre collage.
 - [universel] **Chaque plan et chaque effet doit avoir une raison** : servir ce qui vient après, le sens ou le rythme. Si tu ne sais pas dire pourquoi ce plan est là, il n'a pas sa place.
 
+**Intégré le 2026-10-11** (sessions V5) : leçons [universel] dans `montage-regard` et le carnet, [genre] dans `montage-kinetic-editing`, [projet] dans `projets-phase-3/sony-linkbuds/` ; appliqué dans la V5 (`rendus/sony_linkbuds_V5.mp4`) : son sur chaque transition, preuve Gyroflow par plan dans la note de livraison, étalonnage plan par plan, visages, collages selon `da.md`, plus d'inversions.
+
 ## 2026-10-11 — Détourages : un défaut technique, pas seulement de goût (complément aux notes V4)
 - [universel] Le collage sur papier millimétré (vers 20-21 s) est **techniquement raté**, « il n'y a pas besoin d'avoir du goût pour le voir » : sur une simple capture, le détourage coupe l'épaule, les cheveux sont mangés, le bord n'est pas lisse, « comme si elle était sur un fond vert mal réglé ». Diego : « soit il n'y a pas assez de concentration sur regarder ce qu'il fait, soit il n'en est pas capable ».
 - Ce que tu fais :
@@ -210,6 +212,7 @@ _Dictées par Diego, mises en forme par l'assistant de configuration ; les phras
     2. **Change d'outil si la qualité n'y est pas** : la carte de profondeur donne des bords grossiers, elle n'est pas faite pour ça. Teste de vrais modèles de segmentation de personnes, gratuits et locaux (sur le GPU du Mac), et le Magic Mask de Resolve ; compare leurs masques sur le même plan avec le contrôle ci-dessus et garde le meilleur. Note la recette dans `montage-resolve`.
     3. **Si aucun outil ne donne un bord propre sur ce plan** : choisis un autre plan (silhouette nette, fond contrasté, cheveux attachés) ou renonce au détourage. Règle « jamais cheap ».
 - À ajouter au carnet de goût comme entrée [universel] : un détourage se juge au bord, à 200 %, pas en vignette.
+**Intégré le 2026-10-11** (sessions V5) : `montage-regard` et carnet (entrée 12) ; contrôle `controle_detourage.py` (masque seul, trois fonds, bords à 200 %), BiRefNet portrait retenu contre 3 modèles (`detourage_modeles.py`), recette dans `montage-resolve` ; collages A1 et C1 de la V5.
 
 ## 2026-10-11 — Trois outils pour le goût (validés par Diego)
 Diego demande de mettre en place, dès la V5 et pour tous les projets suivants, les trois mécanismes décrits dans `PROMPT-PHASE-3.md` (« Ton regard sur ta propre image », points 5 à 8) :
@@ -218,6 +221,7 @@ Diego demande de mettre en place, dès la V5 et pour tous les projets suivants, 
 3. **Le carnet de goût** (`CARNET-DE-GOUT.md`) : à créer en reprenant les retours des V2 à V4, puis à enrichir à chaque retour.
 Et pour tout : la **portée** de chaque leçon ([universel], [genre], [projet]), pour que ce qui vaut pour Sony ne devienne pas une règle partout.
 Ordre pour la prochaine session : carnet de goût (reprise des V2 à V4), puis `da.md` du projet Sony, puis la V5 avec les notes sur la V4.
+**Intégré le 2026-10-11** (sessions V5) : `CARNET-DE-GOUT.md` (18 entrées), `projets-phase-3/sony-linkbuds/da.md` avant les effets, variantes sur chaque moment clé (tableau dans `plan.md`, images dans `variantes/`), portée de chaque leçon.
 
 ## 2026-10-11 — Deux retours de plus sur la V4, et deux règles (dictés en session V5)
 _Dictés par Diego dans la conversation, recopiés par l'agent. Le message s'arrête après « mise au point qui cherche, » : la suite de la liste des flous ratés n'est pas arrivée._
@@ -225,17 +229,21 @@ _Dictés par Diego dans la conversation, recopiés par l'agent. Le message s'arr
 - [projet] Au début : le plan sur les trois écouteurs (le panoramique) : l'écouteur est flou, le plan n'est pas esthétique.
 - [universel] Règle : aucun plan de remplissage. Chaque plan de la timeline doit mériter sa place, même dans une rafale de 3 images. Avant chaque rendu, contrôle le passage exact utilisé (pas la vignette du dérush) : première, milieu et dernière image en pleine résolution, netteté du sujet, exposition, visages.
 - [universel] Un flou n'est pas forcément une faute. Pose-toi toujours la question : volontaire ou raté ? Volontaire = pose lente (slow shutter), bascule de point qui va quelque part, flou de mouvement qui sert l'énergie, flou qui se résout dans le plan. Raté = mise au point qui cherche, (… message coupé ; complété par l'agent, à confirmer : sujet principal hors du plan de netteté sans intention, bougé de la main qui n'est pas un geste.)
+**Intégré le 2026-10-11** (sessions V5) : carnet (entrées 15 et 16), `montage-regard` ; `controle_plans.py` (passage exact : 3 images par plan, netteté, exposition, visages image par image) ; tapis et panoramique flou retirés de la V5. La fin de la liste des flous ratés reste à confirmer par Diego.
 
 ## 2026-10-11 — La fin de la V4 est trop longue (dicté en session V5)
 _Dicté par Diego dans la conversation, recopié par l'agent._
 - [projet] La fin est trop longue : après tout le déferlement d'effets, ça s'arrête trop longtemps. Juste avant les packshots de fin, ajoute un dernier moment de 4 à 5 secondes, très accéléré, avec de gros effets tirés d'eyecannndy (toujours selon la matière et la DA, jamais cheap), puis enchaîne sur les packshots, qui restent sobres.
 - [genre : after movie kinetic] Un dernier pic d'énergie juste avant la signature de marque, puis une fin courte et propre.
 - Les idées que tu as tirées d'eyecannndy ont donné de bons résultats : continue à t'en servir comme source d'idées, en les rattachant toujours à la DA.
+**Intégré le 2026-10-11** (sessions V5) : carnet, `montage-kinetic-editing` (« Faire le dernier pic ») ; pic de 4,7 s (831-948) dans la V5, packshots sobres.
 
 ## 2026-10-11 — Rien n'est figé dans un montage (dicté en session V5)
 _Dicté par Diego dans la conversation, recopié par l'agent._
 [universel] Rien n'est figé dans un montage. Un plan ou un bloc que je n'ai pas critiqué n'est pas validé pour autant : mon silence n'est pas une validation. À chaque version, après avoir appliqué mes retours, relis le film entier comme si tu le voyais pour la première fois : rythme d'ensemble, calage musical, enchaînements, équilibre entre les blocs. Si un changement en déséquilibre un autre (un ajout qui allonge, un plan retiré qui casse une transition), déplace, raccourcis, remplace ou supprime ce qu'il faut ailleurs, même dans un bloc déjà « réussi ». Seul ce que je valide explicitement est fixé, et même ça peut bouger si le film l'exige : dans ce cas, explique-le dans la note de livraison.
+**Intégré le 2026-10-11** (sessions V5) : carnet (entrée 17), `montage-regard` ; V5 relue en entier, ce qui a bougé hors des retours est dans `autocritique.md` et la note de livraison.
 
 ## 2026-10-11 — Référence pour le dernier pic de la V5 (dicté en session V5)
 _Dicté par Diego dans la conversation, recopié par l'agent. Le message gardait des champs vides (« [nom du fichier] », « le passage de [début] à [fin] ») : un seul fichier venait d'être déposé, `videos/phase-3/sony-linkbuds/references/Video by foebusdelapaz.mp4` (9,8 s) ; faute de bornes, l'agent a retenu le passage le plus accéléré, 0,00-4,00 s, et l'a noté._
 Référence pour les 4-5 secondes accélérées avant les packshots : analyse-la image par image comme en phase 2 (durée des plans, effets, transitions, rapport à la musique et aux SFX) et inspire-t'en pour ce moment de la V5 : même niveau d'énergie et de finition, adapté à notre matière et à notre DA, sans la copier. Ajoute-la au carnet de goût comme référence [genre : after movie kinetic].
+**Intégré le 2026-10-11** (sessions V5) : fiche `analyses/reseaux/foebusdelapaz-nike-basket.md`, `REFERENCES.md`, carnet (entrée 18) ; pic de la V5 d'après ses principes, dans la palette de `da.md`.
