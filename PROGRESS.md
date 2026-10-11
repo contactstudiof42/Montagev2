@@ -76,7 +76,7 @@ _Lire en premier. Seul l'état présent compte ici. L'état de clôture de la ph
 | projets-f42 | Sephora — brand content | 2 min 45 s | |
 | projets-f42 | Swile — POW 16:9 V5 | 1 min 19 s | |
 
-Total : 13 films (environ 26 h), 8 clips, 7 pubs, 10 vidéos YouTube (environ 10 h 40), 7 projets du studio. `a-traiter/` et `_a-supprimer/` sont vides. Le contenu de `NOTES-DIEGO.md` se limite pour l'instant à l'exemple Interstellar (l'amarrage, vers 1 h 52) et aux titres des projets, sans commentaire.
+Total : 13 films (environ 26 h), 8 clips, 7 pubs, 10 vidéos YouTube (environ 10 h 40), 7 projets du studio. `a-traiter/` et `_a-supprimer/` sont vides. `NOTES-DIEGO.md` ne contient que les titres des projets, sans commentaire : Diego n'a encore commenté aucun film (l'ancienne note sur l'amarrage d'Interstellar était un exemple de format, pas sa parole).
 
 ## Règles de session encore valables
 - Relever `date` au début de la session et le relire avant de clôturer : estimée « au ressenti », la durée écoulée est surévaluée d'un facteur 3 à 8.

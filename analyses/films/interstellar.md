@@ -38,7 +38,7 @@ L'accélération que Diego aime, mesurée segment par segment (durée des passag
 - **Ce que ça corrige** : la phase 1 décrivait une contraction régulière « 8 / 4 / 2 / 1 s ». En réalité, l'accélération est **en deux temps, séparés par une rupture** : alternance qui se resserre (de la scène à l'insert), **suspension de l'alternance pendant l'action la plus tendue** (amarrage), puis reprise beaucoup plus serrée et à trois lignes. Et elle passe moins par la densité de coupes (14,6 puis 18 coupes/min) que par la **fréquence de changement de ligne**.
 
 ### 4. L'amarrage (2:08-2:12) [VU SUR IMAGES, planche `interstellar-amarrage.png`]
-- Note pour Diego : dans cette édition, l'amarrage est à **2:08-2:12** (réplique « Endurance rotation is 67, 68 RPM » à 2:08:14). Vers 1:52, c'est le combat avec Mann alterné avec la ferme.
+- Choix de séquence : le mien (Diego n'a commenté aucune scène du film ; voir RETOURS-DIEGO.md, 2026-10-11). Dans cette édition, l'amarrage est à **2:08-2:12** (réplique « Endurance rotation is 67, 68 RPM » à 2:08:14).
 - **89 plans en 4 min, durée moyenne 2,7 s.** Surtout des intérieurs : le visage de Cooper, le cockpit, les mains, les écrans. Les extérieurs sont en majorité des **caméras fixées sur la coque** (plans 2, 12, 13, 35, 47, 52-54). Seulement trois vues lointaines du vaisseau (plans 6, 15, 40, de 3,5 à 4,2 s) et une après l'amarrage (72). Cela **confirme** la consigne de Nolan rapportée en phase 1 (« as if you had no exterior shots »).
 - **Le plan le plus long est le geste décisif** : plan 33, 10,2 s (2:09:25), l'écoutille en rotation pendant l'alignement, suivi d'un plan de 5 s. **Le montage ne coupe pas dans la preuve** (principe 2 de la phase 1, désormais vu sur un vrai film).
 - **Son** : le volume momentané reste sur un plateau (-12 LUFS médians sur les intérieurs) **et les extérieurs ne sont pas silencieux** : -14 LUFS médians, la musique continue. La phase 1 affirmait (« [NON VÉRIFIÉ] ») que les extérieurs étaient « silencieux ou réduits à la musique ». **C'est faux pour le silence** ; il se peut qu'il n'y ait que la musique (non séparé, pas écouté). Le vrai silence arrive **après** : à 2:11:40 (« CASE, take the stick »), Cooper perd connaissance et le son s'effondre à -35 à -58 LUFS pendant environ 20 s. **Le silence ponctue la fin de l'effort, pas les plans extérieurs.**
@@ -71,7 +71,7 @@ L'accélération que Diego aime, mesurée segment par segment (durée des passag
 
 ## Ce que Diego en a dit
 - GOUTS.md : le film pour son **rythme** ; ce qui le tient d'abord, **« l'accélération du montage alterné »** (2026-10-10).
-- NOTES-DIEGO.md : « J'adore la scène de l'amarrage (vers 1h52) et le compte à rebours. » Dans cette édition, l'amarrage est à 2:08 ; le compte à rebours du départ est à 41:50 (un autre décompte, celui de l'autodestruction, est à 2:39:02).
+- NOTES-DIEGO.md : rien sur ce film. La note « l'amarrage (vers 1h52) et le compte à rebours » que j'avais citée ici n'était pas de Diego mais un exemple de format écrit par l'assistant de configuration (RETOURS-DIEGO.md, 2026-10-11). Le choix d'analyser l'amarrage, le combat avec Mann et le compte à rebours du départ (41:50) est le mien.
 
 ## Doutes
 - **Nombre de plans sous-estimé** : le « plan » de 53 s à 37:45 contient au moins trois plans (gros plan de Cooper, Murph allongée, plan à deux). Le détecteur rate les coupes dans les scènes sombres à faible contraste. L'ASL réelle est donc plus courte que 4,4 s ; c'est un ordre de grandeur, à comparer d'un film à l'autre avec le même outil.

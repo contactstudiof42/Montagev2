@@ -24,7 +24,6 @@ Contraction 8 / 4 / 2 / 1 s (Interstellar) ; « extérieurs silencieux » (Inter
 - Le son est mesuré, **jamais écouté**. La séparation musique / effets (demucs) n'a pas encore servi.
 
 ## Doutes (à trancher plus tard, sans poser de question pendant une routine)
-- Diego situe l'amarrage « vers 1 h 52 » ; dans son fichier, il est à 2:08. Vers 1:52, c'est l'alterné Mann / ferme. Je pense qu'il pensait à l'amarrage ; les deux sont analysés.
 - `.claude/settings.json` (modèle Opus, effort high), ajouté par Diego en cours de session, **n'est pas commité** : le garde-fou de l'agent a refusé ce commit (« modification de sa propre configuration »). Diego peut le commiter lui-même s'il le souhaite.
 - Le calage des coupes sur la musique (tic de Miller, entrée de la musique des escaliers de Joker) n'est pas mesuré.
 
