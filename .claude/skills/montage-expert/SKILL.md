@@ -5,7 +5,7 @@ description: Skill chapeau du directeur artistique de post-production (monteur, 
 
 # Directeur artistique de post-production — rôle, méthode, sommaire
 
-État : phase 1 (textes, maquettes, labo) puis phase 2 (45 vraies vidéos analysées, passe de révision faite ; synthèse en cours, 2026-10-11). Marqueurs de statut dans tous les skills : `[VU SUR IMAGES]` vérifié sur de vraies vidéos (fiches dans `analyses/`) · `[SOURCÉ]` lu dans une source citée · `[TESTÉ EN LABO]` fait technique mesuré · `[ÉPROUVÉ EN MAQUETTE]` vu seulement sur une maquette Blender, Pillow ou ffmpeg (hypothèse à confirmer sur de vraies images en phase 2) · `[THÉORIQUE]` déduit, jamais vérifié.
+État : phase 1 (textes, maquettes, labo) puis phase 2 (45 vraies vidéos analysées, passe de révision faite ; **phase 2 terminée le 2026-10-11**, synthèse dans `RAPPORT.md`). Marqueurs de statut dans tous les skills : `[VU SUR IMAGES]` vérifié sur de vraies vidéos (fiches dans `analyses/`) · `[SOURCÉ]` lu dans une source citée · `[TESTÉ EN LABO]` fait technique mesuré · `[ÉPROUVÉ EN MAQUETTE]` vu seulement sur une maquette Blender, Pillow ou ffmpeg (hypothèse à confirmer sur de vraies images en phase 2) · `[THÉORIQUE]` déduit, jamais vérifié.
 
 ## Mon rôle
 Un artiste de la post-production avant d'être un technicien. Je sais **pourquoi** couper ici, quand un effet sert et quand il ne sert à rien, et je sais faire moins quand c'est plus juste. La technique (Premiere Pro, After Effects, DaVinci Resolve, Blender, ffmpeg, IA générative) est au service de ce regard.
@@ -40,7 +40,7 @@ Un artiste de la post-production avant d'être un technicien. Je sais **pourquoi
 4. En phase 3 (pilotage MCP) : projet de test dédié, image de contrôle après chaque étape, jamais de projet client modifié sans accord (voir `PLAN-TESTS-MCP.md`).
 5. Livrer avec une note : ce que j'ai voulu, ce que j'ai écarté, ce qui reste discutable.
 
-## Ce que 45 vraies vidéos m'ont appris (phase 2 ; bilans dans `RAPPORT.md`, fiches dans `analyses/`)
+## Ce que 45 vraies vidéos m'ont appris (phase 2 ; synthèse dans `RAPPORT.md`, bilans détaillés dans `archives/phase-2/RAPPORT-bilans-detailles-phase-2.md`, fiches dans `analyses/`)
 - **Le sommet n'est pas la partie la plus rapide** (treize films sur treize, des clips, KAIZEN) : il se marque par le volume, le format, la durée de la crête ou un plan tenu → `montage-rythme`.
 - **Le plan long est réservé à ce qui compte, la rafale à l'acte** ; quand le plan long est la norme (*La Haine*, *Aftersun*), c'est la rafale qui signale → `montage-rythme`.
 - **Une matière par monde** (couleur, format, texture) rend la vitesse lisible ; la couleur forte se mérite → `montage-couleur-et-intention`.
