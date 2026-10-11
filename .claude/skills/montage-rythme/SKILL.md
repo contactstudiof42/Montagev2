@@ -21,7 +21,7 @@ Détail des mesures, des pièces et **toutes les preuves de phase 2 (minutages, 
 7. **Arbitrer par l'émotion** : un léger faux raccord sur le temps juste vaut mieux qu'un raccord parfait à contretemps. [SOURCÉ]
 
 ## Couper sur la musique
-- **Personne, dans les œuvres mesurées, ne coupe sur les temps plus qu'au hasard** : 8 clips, 5 pubs, *Whiplash*, *Spider-Verse*, Henley (*The Social Network*), contrôlés contre le hasard sur la musique séparée. Le rapport à la musique est ailleurs [VU SUR IMAGES, mesuré] :
+- **Hors vidéos réseaux, personne ne coupe sur les temps plus qu'au hasard** : 8 clips, 5 pubs, *Whiplash*, *Spider-Verse*, Henley (*The Social Network*), contrôlés contre le hasard sur la musique séparée. **Exception mesurée (2026-10-11)** : quatre des sept vidéos réseaux de Diego coupent sur les attaques à l'image près, ou 1 à 2 images avant (dont un éditorial lent sur une musique clairsemée : la coupe suit la note) ; détail dans `montage-kinetic-editing` § SFX. Hors de ce genre : Le rapport à la musique est ailleurs [VU SUR IMAGES, mesuré] :
   - **macro, la densité suit l'arrangement** : Ziak, 32 coupes/min avec la basse, 16 sans, un plan long immobile à chaque creux de basse ; Henley accélère sur la **courbe** du morceau (médiane 2,5 → 1,0 s pendant que le Grieg monte), pas sur sa grille ;
   - **sur les grands accents**, rares coupes où tout l'arrangement frappe : Gavras (Stress 38 % contre 20 % au hasard, STORM 30 % contre 19 %) ; le réel dans le plan, la musique dans la coupe ;
   - **par l'instrument qui a la phrase et le rapport de force** (*Whiplash*) ; **par la voix** (récapitulatif de *Spider-Verse* structuré par un refrain répété quatre fois).
@@ -67,4 +67,4 @@ Détail des mesures, des pièces et **toutes les preuves de phase 2 (minutages, 
 Sur une vraie vidéo (chaîne et pièges : `montage-regard`, « Juger une vraie vidéo ») : **PySceneDetect par défaut ne voit aucun plan de moins de 0,6 s** (médianes et rafales = minimums ; bandes de 6 images et tuile à pleine cadence avant de citer une rafale) ; il rate les coupes du sombre et invente des coupes sur les éclairs, les écrans et le plan porté flou ; `verif_plan.py` + tuile `fps=1/2` avant de citer un plan long ; générique et logos retirés avant toute statistique.
 
 ## Reste à faire
-Fiches Sally Menke, Kirk Baxter, clips (Gondry, Jonze). Mesurer un vrai kinetic de réseaux (calage micro, aucune vidéo du genre dans le corpus). Les durées fines de maquette (2 images après le mot-clé, plan de retour 4 puis 6 s) n'ont pas été vérifiées sur de vraies vidéos.
+Fiches Sally Menke, Kirk Baxter, clips (Gondry, Jonze). Kinetic de réseaux mesuré sur sept vidéos (`analyses/reseaux/`) ; reste à l'écouter. Les durées fines de maquette (2 images après le mot-clé, plan de retour 4 puis 6 s) n'ont pas été vérifiées sur de vraies vidéos.

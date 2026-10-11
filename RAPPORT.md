@@ -1,9 +1,11 @@
 # RAPPORT — synthèse de fin de phase 2
 
-_Réécrit le 2026-10-11 (session 11, clôture de la phase 2). **Les bilans détaillés** (tableaux et constats par vague, clips, pubs, YouTube, projets F42, révision, erreurs corrigées, version complète des doutes) sont archivés dans `archives/phase-2/RAPPORT-bilans-detailles-phase-2.md` ; les versions de session dans `archives/phase-2/RAPPORT-session-*.md`. Synthèse de fin de phase 1 : `archives/phase-1/RAPPORT-synthese-cloture-phase-1.md`._
+_Réécrit le 2026-10-11 (session 11, clôture de la phase 2) ; complété en session 12 (sept vidéos réseaux de Diego). **Les bilans détaillés** (tableaux et constats par vague, clips, pubs, YouTube, projets F42, révision, erreurs corrigées, version complète des doutes) sont archivés dans `archives/phase-2/RAPPORT-bilans-detailles-phase-2.md` ; les versions de session dans `archives/phase-2/RAPPORT-session-*.md`. Synthèse de fin de phase 1 : `archives/phase-1/RAPPORT-synthese-cloture-phase-1.md`._
 
 ## Où j'en suis
 **Phase 2 terminée.** 45 vidéos vues et analysées (13 films, 8 clips, 7 pubs, 10 vidéos YouTube, 7 projets du studio), une fiche chacune dans `analyses/` ; passe de révision faite (45 conclusions revérifiées avec les outils récents) ; tous les skills de création révisés à la lumière de la phase 2 (sessions 10-11). Les skills techniques (After Effects, Blender, Resolve, Premiere, pipeline couleur, workflows, IA générative, pilotage MCP) n'ont rien reçu de la phase 2, qui portait sur le regard ; seul le QC de livraison est entré dans `montage-loudness-livraison`.
+
+**Session 12** : Diego a ajouté sept vidéos réseaux qu'il aime (`videos/reseaux/`) : analysées image par image, sept fiches dans `analyses/reseaux/`, bilan ci-dessous ; la lacune prioritaire de fin de phase (le kinetic de réseaux) est en partie comblée.
 
 Désormais, chaque session ne fait que le démarrage de `CLAUDE.md` : retours de Diego, boîte à références (`montage-nouvelle-reference`).
 
@@ -17,7 +19,7 @@ Du plus solide au moins solide dans chaque domaine. Les principes vus sur plusie
 4. **Plan long pour ce qui compte (la preuve, le corps, la sincérité, la réception), rafale pour l'acte ; la surprise arrive dans le plan.** Le plan le plus long va à celui qui reçoit, pas à l'information. [VU SUR IMAGES]
 5. **Le plus fort est suivi du plus grand vide** (six films), ou précédé d'un silence (*Whiplash*, *Forrest Gump*, KAIZEN). **Plus on coupe vite, plus on doit respirer franchement** (*Mad Max*, facteur 10 entre creux et crêtes). [VU SUR IMAGES, son mesuré]
 6. **Alterner** : accélérer les changements de ligne jusqu'à trois lignes (*Interstellar*, le goût de Diego), suspendre l'alternance sur l'action la plus tendue ; au-delà, des blocs et un personnage qui passe d'une ligne à l'autre (*Avengers*). [VU SUR IMAGES]
-7. **Personne ne coupe sur les temps plus qu'au hasard** dans les œuvres mesurées (8 clips, 5 pubs, *Whiplash*, *Spider-Verse*, Henley), sur musique séparée. La musique commande la densité (arrangement, courbe du morceau) ou les rares coupes sur les grands accents. Le calage micro reste un trait de genre du kinetic, non mesuré. [mesuré]
+7. **Hors vidéos réseaux, personne ne coupe sur les temps plus qu'au hasard** (8 clips, 5 pubs, *Whiplash*, *Spider-Verse*, Henley), sur musique séparée ; **dans les vidéos réseaux de Diego, quatre sur sept coupent sur les attaques à l'image près** (session 12, voir le bilan). La musique commande la densité (arrangement, courbe du morceau) ou les rares coupes sur les grands accents. Le calage micro reste un trait de genre du kinetic, non mesuré. [mesuré]
 
 ### Formats (`montage-formats`, `montage-youtube`)
 - **Pub** : le nom de la marque arrive à la fin dans les sept, ce qui la représente (lieu, tenue, objet, couleur) dès la première image ; le gag porte le bénéfice ; les films longs tiennent par une cadence régulière de 1 à 2 s et un récit. [VU SUR IMAGES]
@@ -38,6 +40,22 @@ Le texte qui s'écrit au rythme de la voix tient un plan long ; une police et un
 ### Méthode d'analyse (`PROMPT-PHASE-2.md` § « Leçons de méthode », `montage-regard` § « Juger une vraie vidéo »)
 **Quand j'ai regardé une image et écrit ce qu'elle montrait, je ne me suis pas trompé dans la révision ; quand j'ai écrit un nombre d'outil sans le contrôler, je me suis trompé une fois sur trois** (45 conclusions revérifiées : 28 confirmées, 14 corrigées, 3 nouvelles). Les erreurs vont toujours dans le même sens pour un même outil : parole par énergie trop haute ; rafales vraies sous-comptées (PySceneDetect ignore les plans de moins de 0,6 s) ; rafales fausses sur-comptées (éclairs, écrans, plan porté flou, détecteur saturé) ; coupes du sombre ratées. D'où les contrôles obligatoires : spectrogramme avant tout pourcentage de parole, bandes de 6 images avant toute rafale, `verif_plan.py` + tuile avant tout plan long, musique séparée avant tout calage, générique retiré avant toute statistique, `color_transfer` avant toute mesure de couleur. Les fiches de phase 1 écrites sur des textes étaient justes dans l'esprit et souvent fausses dans les chiffres.
 
+## Bilan des sept vidéos réseaux (session 12, retour de Diego du 2026-10-11)
+Sept vidéos de 11 à 43 s que Diego « aimait beaucoup », avec « beaucoup de kinétique, mais pas que ». Toutes les images regardées (environ 3 900), spectrogramme mix / musique / voix, calage contre le hasard sur la musique séparée, écart signé. Rien écouté. À l'œil : **deux kinetic de rafales** (captured-by-h, malkimikee : médiane 2 à 3 images) ; **cinq qui n'en sont pas** au sens de mon skill : transitions variées (Sephora / lucasbosc, yungchillyboy), look film (pasalu, darius), film d'annonce en blocs (équipe de France).
+
+| Point du skill (avant) | Statut avant | Ce que montrent les sept | Statut après |
+|---|---|---|---|
+| Calage micro sur le beat | [THÉORIQUE] ; « personne ne cale » sur le reste du corpus | **4 sur 7 coupent sur les attaques à l'image** (40-53 % à ±1 image contre 19-26 % au hasard) ; écart médian 0 à +0,3 image, ou **1 à 2 images avant** (yungchillyboy) ; jamais après ; dans les rafales de 2 images, seuls mots et arrêts sont calés | **confirmé et précisé** [mesuré] ; synthèse de phase 2 corrigée |
+| Calage du whoosh 3-6 images avant | [TESTÉ EN LABO] / [THÉORIQUE] | pas de whoosh systématique au spectrogramme ; un balayage, un souffle, un riser de 6 s au drop | **non vérifié** (rien écouté), mais la densité de whoosh du skill n'est pas celle de ses références |
+| SFX denses, hiérarchie | [SOURCÉ] | le son des coupes est la musique ; SFX rares et causés (riser → drop, impacts d'ouverture, annonce de métro comme légende, compte à rebours dans le silence) | **corrigé** : densité de SFX ≠ goût de Diego en réseaux, à doser selon le client |
+| Captions mot à mot | [SOURCÉ] | **aucune** des sept ; mots seuls sur les accents, titres serif, claim dans le décor | **remplacé** pour son goût ; reste une demande client (face caméra) |
+| Hook 3 s : image 1 la plus forte + impact | [THÉORIQUE] | quatre formes : bande-annonce de 0,5 s, visage connu, phrase de coulisses, construction avec drop à 6 s | **corrigé** |
+| Plan éclair 4-8 images | [THÉORIQUE] | 2-3 images dans les rafales | **corrigé** [VU SUR IMAGES] |
+| Respiration, silence avant le fort | [ÉPROUVÉ EN MAQUETTE] | dans les sept ; l'arrêt porte une transformation | **confirmé** [VU SUR IMAGES] |
+| Vertical, 15-60 s | [THÉORIQUE] | 5 sur 7 horizontales ; 11-15 s pour une idée, ~40 s en blocs | **complété** |
+| Pub courte : marque à la fin (7 pubs longues) | [VU SUR IMAGES] | pub réseau 15 s : marque à 1,3 s | **complété** : dépend de la durée |
+Skills mis à jour : `montage-kinetic-editing`, `montage-formats` ; corrections reportées dans `montage-rythme`, `montage-expert`, `montage-references`.
+
 ## Ce que le goût de Diego et les projets F42 impliquent
 **Ce que Diego a dit** (GOUTS.md, seule source de sa parole) : *Interstellar* pour l'accélération du montage alterné, *Joker* pour l'équilibre de l'ensemble, Ziak (montage qui ne colle pas au beat) et le kinetic à SFX denses pour des usages différents, EGO pour YouTube, le grain et le look film en préférence personnelle, des visages sombres avec un minimum de lumière sur l'info, l'IA générative non assumée et sans « slop », des projets « souvent énergiques ».
 
@@ -54,7 +72,7 @@ Le texte qui s'écrit au rythme de la voix tient un plan long ; une police et un
 - **Références les plus utiles pour ses commandes probables** : *Spider-Verse* pour un kinetic de marque (une texture par univers, une voix en refrain pour structurer une rafale) ; GP Explorer 3 pour un événement de créateurs (noms par paquets de couleur, vol continu) ; Swile « POW » (son propre projet) pour l'onomatopée qui nomme la campagne ; EGO et « Le jour où la CIA… » pour un film explicatif ; *Aftersun* pour un portrait lent.
 
 ## Ce qui reste [THÉORIQUE] ou non vérifié
-- **Le kinetic de réseaux** (Reels, TikTok) : aucune vidéo du genre dans le corpus, alors que c'est le premier goût de Diego en réseaux. Calage 3-6 images, densité des SFX, captions mot à mot, hook des 3 s : tout reste [SOURCÉ] ou [THÉORIQUE]. **C'est la lacune la plus importante** : à combler dès qu'une référence arrive dans la boîte (ou sur un projet réel).
+- **Le kinetic de réseaux** : sept références vues (session 12) ; restent non vus le face caméra à captions mot à mot (format Hormozi), la densité de SFX à l'oreille et la rétention.
 - **Le face caméra en jump cuts et le format MrBeast** : non vus ; seuils de micro-saut et de durée retirée non tranchés.
 - **La pub courte (6, 15, 30 s)** et **le corporate classique** (interview de dirigeant, film de présentation) : non vus.
 - **Le son n'a jamais été écouté** : tous les constats sonores viennent des courbes, des spectrogrammes et de demucs.
@@ -70,9 +88,12 @@ Détail et parades dans `PROMPT-PHASE-2.md` (« Leçons de méthode ») et `mont
 - *Aftersun* : plan de nuit de 157 s (7:56) peut-être composé ; « Under Pressure » non écouté. *Spider-Verse* : film entier non recompté sans durée minimale de plan ; crédits écrits de mémoire. *Avengers* : lignes de l'acte final classées à ±10 s. *Forrest Gump* : son mesuré sur la VF.
 - Boxho : montage multicaméra automatique ou règle fixe du monteur, non prouvé.
 - `.claude/settings.json` (ajouté par Diego) n'est pas commité : le garde-fou de l'agent refuse ce commit. Diego peut le commiter lui-même.
+- Session 12 : `flash_check.py` fait échouer les sept vidéos réseaux, même la pub Sephora sans flash visible ; l'outil compte sans doute les coupes contrastées. À confronter à un vrai test (Harding) avant de s'y fier sur des coupes ordinaires. Les sept vidéos sont toutes à -14,0/-14,2 LUFS : probablement renormalisées par la plateforme ou le téléchargement, le mix d'origine n'est pas jugeable. Darius et lucasbosc ont des crêtes à +0,4 dBFS.
+- Session 12 : même anomalie d'horloge (11:48 à environ 12:00 pour sept vidéos vues image par image et la mise à jour de cinq skills).
 - Session 11 : l'horloge système a très peu avancé (11:04 à environ 11:10) pour la révision de sept skills et la synthèse ; même anomalie qu'en session 10. Je la note sans pouvoir l'expliquer.
 
 ## Hypothèses de goût (à confirmer par d'autres références ou par Diego)
+- **Session 12** : ses sept vidéos réseaux suggèrent que son « kinetic » est **un montage calé à l'image, aux transitions variées, au look film, qui respire**, plutôt que le kinetic à whoosh et captions de mon skill ; deux traits reviennent dans au moins trois des sept : le look pellicule (pasalu, darius, équipe de France) et la typo serif fine (darius, équipe de France). Hypothèse, pas sa parole.
 - L'alterné par blocs d'*Avengers* est une alternative à l'accélération d'*Interstellar* quand il y a plus de trois lignes ; je ne sais pas si Diego l'aime.
 - *Interstellar* et *Joker* ne coupent pas vite ; son goût pour la vitesse est réservé au kinetic. *Mad Max* montre qu'un film peut tenir les deux.
 - « L'équilibre de l'ensemble » = une même règle appliquée par tous les leviers ; *Mad Max* le confirme en partie (la nuit bleue ne coïncide pas exactement avec les creux de rythme).

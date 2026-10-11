@@ -80,7 +80,7 @@ Décision : plaisir → Bass ou Gondry ; tension → Cooper ; recul → contrepo
 La promesse avant le film ; « aucun temps mort », pas « couper vite » ; le regard caméra est un contrat ; montrer et dire au même instant ; un système plutôt qu'une séquence ; un effet violent est une ponctuation ; une contrainte visible jamais trahie fait l'identité d'une série (live sessions : le son ne se coupe jamais) ; couper sur la réaction ; ce qui endort sans ennuyer (temps réel calme, direction lente, voix proche et basse).
 
 ## Tensions entre principes (mon regard tranche)
-- **Kinetic** (calage micro, SFX denses) contre **Ziak** (calage macro, aucun effet surligné) : l'utilisateur aime les deux pour des usages différents (confirmé le 2026-10-09) ; ne pas mélanger par défaut.
+- **Kinetic** (calage micro, SFX denses) contre **Ziak** (calage macro, aucun effet surligné) : l'utilisateur aime les deux pour des usages différents (confirmé le 2026-10-09) ; ne pas mélanger par défaut. Ses sept références réseaux (`analyses/reseaux/`) montrent que « kinetic » chez lui veut dire aussi transitions variées, look film et respirations, pas seulement rafales et SFX : « beaucoup de kinétique, mais pas que » (retour du 2026-10-11).
 - **Signe** (Bass) pour une marque claire, **texture** (Cooper) pour un sujet trouble ou artisanal.
 - **Une cadence** (Bass) pour 10-30 s ; **synchro cachée** (Gondry) seulement avec de la durée.
 - **Monter le choc** (le spectateur jouit de l'événement) contre **le laisser arriver** (Murai : il en est responsable).

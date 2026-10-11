@@ -17,7 +17,7 @@ Spectateur captif (salle, TV), choisi (clip, YouTube), volé (fil d'actualité) 
 - **Le sommet n'est pas la partie la plus rapide** (13 films sur 13, les clips, KAIZEN) ; seul un sommet **d'information** peut l'être (« Les Jeux Tiger »). Le sommet d'émotion se porte par le volume, le cadre, le silence avant, la durée. [VU SUR IMAGES]
 - **Ce qui signale, c'est l'écart à la norme du film**, pas une durée absolue (*La Haine* signale par ses deux rafales, *Spider-Verse* par un plan de 4 s). [VU SUR IMAGES]
 - **La marque, le monde ou l'époque se reconnaissent à une matière** (couleur, format d'image, texture) avant d'être nommés : pubs, clips, YouTube (un format par époque), films. [VU SUR IMAGES]
-- **Personne ne coupe sur les temps plus qu'au hasard** hors kinetic des réseaux (non mesuré) : 8 clips, 5 pubs, *Whiplash*, *Spider-Verse*. Le calage sur le beat est un choix de genre, pas une convention de format. [mesuré, musique séparée]
+- **Le calage à l'image est une convention des vidéos réseaux, pas des autres formats** : 8 clips, 5 pubs longues, *Whiplash*, *Spider-Verse* ne coupent pas sur les temps plus qu'au hasard ; **4 vidéos réseaux de référence sur 7 coupent sur les attaques de la musique, à l'image près** (40 à 53 % des coupes à ±1 image, contre 19 à 26 % au hasard), une cinquième place seulement ses mots et ses arrêts sur les plus forts accents. Détail et décalages : `montage-kinetic-editing`. [mesuré, musique séparée] (`analyses/reseaux/`)
 - **La finition son se vérifie avant d'envoyer, quel que soit le format** : six fichiers du studio sur sept dépassaient -1 dBTP (`labo/outils/qc_livraison.sh`, `montage-loudness-livraison`). [mesuré]
 
 ## Repères mesurés par format (médianes de durée de plan ; minimums pour les montages rapides, le détecteur ne voit pas les plans de moins de 0,6 s)
@@ -26,6 +26,8 @@ Spectateur captif (salle, TV), choisi (clip, YouTube), volé (fil d'actualité) 
 | Pub longue (récit de marque, 1 à 5 min) | 1,1 à 1,6 s, cadence presque régulière | -23 (TV) ; -14 à -16 (web) | Intermarché ×2, Lacoste, adidas |
 | Bande-annonce d'événement de créateurs | 1,1 à 1,3 s (ASL 3,2 s avec tirades) | -10 à -16 | GP Explorer 3, Crunch Creator |
 | Pub réseau du studio (9:16) | ~2,2 s | -14,5 | Benefit ×2 |
+| Vidéo réseau de référence, kinetic (collage, ville) | **0,07 à 0,10 s (2-3 images)**, arrêts de 0,7 à 2,3 s | -14 (renormalisé ?) | captured-by-h, malkimikee |
+| Vidéo réseau de référence, transitions / look film | 0,40 à 1,16 s, plans tenus de 2 à 3,7 s | -14 | équipe de France, yungchillyboy, darius, pasalu, Sephora (lucasbosc) |
 | Clip | 1,2 à 4,2 s | -10,9 à -12,9 (plateau) | 8 clips |
 | YouTube doc / plateau / conversation / cinéma | 2,2-4,8 / 2,0-2,5 / 3,4 / 2,6 s | -16 à -22 / -12 à -18 / -24 / -17 | 10 vidéos |
 | Film d'action ou d'animation rapide | 1,96 à 2,6 s | -16 à -25 | Mad Max, Avengers, Spider-Verse |
@@ -44,6 +46,14 @@ Ces chiffres situent une norme ; ils ne la prescrivent pas : ce qui compte est l
 - **Vu sur les sept pubs de référence de Diego** [VU SUR IMAGES] (`analyses/pubs/`) : (1) **le nom ou le logo arrive dans les dernières secondes dans les sept** (Intermarché à 2:55 sur 3:00, Lacoste, iPhone, adidas…) ; mais **l'objet, la tenue ou le lieu de la marque est à l'écran dès la première image** (uniformes orange et rayons, polo blanc à col vert, téléphone orange). Le « logo trop tôt » est évité, la marque n'est pas absente pour autant. (2) **Le gag porte le bénéfice** confirmé : iPhone 17, un téléphone glissé sur une table de négociation (geste du drame judiciaire) prouve la résistance aux rayures, tenu en plan large de 5,4 s dans le silence. (3) Films longs (2 min 30 à 5 min) : **cadence presque régulière de 1 à 2,5 s** (Intermarché « L'amour » : 90 % des plans), la variation vient du récit ; un seul plan tenu pour la fin. (4) **Silence avant le sommet** : Lacoste, 2,4 s sur le plan large du court avant le geste final ; Intermarché « Conte de Noël », une demi-seconde avant l'acceptation, et musique retirée au retour au réel. (5) Aucune ne coupe sur les temps plus qu'au hasard.
 
 ## Vertical réseaux (Reels, TikTok, Shorts, LinkedIn)
+- **Vu sur les sept vidéos réseaux de référence de Diego** [VU SUR IMAGES, chaque image] (`analyses/reseaux/`, 11 à 43 s) :
+  - **Cinq sur sept sont horizontales** (16:9, 4:3) et une montre un film 4:3 dans un cadre vertical : le « vertical » n'est pas une obligation du genre qu'il aime.
+  - **Durée : 11 à 15 s** pour une idée (cinq sur sept) ; **38 à 43 s** quand il y a une histoire ou des informations (darius, équipe de France), en blocs nets.
+  - **Hook** : quatre façons, toutes lisibles avant 1 s : une rafale qui promet le film (yungchillyboy : 7 éclats tirés de la suite en 0,47 s ; captured, malkimikee) ; un visage connu (Sephora : l'égérie au 1er plan) ; une phrase de coulisses en face caméra (darius : « Client almost rejected this.. ») ; une construction (équipe de France : mosaïque de portraits qui se remplit sous la voix, **drop seulement à 6,1 s**). Personne ne met « l'image la plus forte + impact » à l'image 1 de façon systématique.
+  - **La densité suit encore le type de phrase** : l'équipe de France tient ses trois affiches de match 3 s chacune, musique coupée, puis repart plus vite que jamais.
+  - **Pub réseau de 15 s (Sephora Collection, lucasbosc)** : égérie (0 s) → **marque écrite à 1,3 s** sous son nom → produit (3,7 s) → bénéfice écrit (4,9 s) → démonstration → promesse chiffrée peinte sur la pelouse (9,6 s) → packshot (12,1 s) → logo sur noir (13,8 s). Contrairement aux pubs longues, **la marque arrive dès la première seconde**.
+  - **Aucune n'a de sous-titres mot à mot** : du texte rare, en mots seuls sur les accents (« EIFFEL », « TOWER », « PARIS »), en titres serif fins (darius, équipe de France), en claim dans le décor (Sephora).
+  - **Toutes finissent sur un plan tenu**, souvent après une coupure de musique (captured, darius, équipe de France).
 - **Premier écran = tout** : sujet lisible dès la 1re image de chaque plan, une question ou une tension avant 2 s. [ÉPROUVÉ EN MAQUETTE] (pièce 02 : 7 plans sur 19 illisibles à leur 1re image en v1)
   - **Un flou d'ouverture n'est permis que s'il est l'idée** (révélation par la mise au point, net avant 2 s). Vu sur deux pubs réseau du studio (Benefit, 2026) : 4,4 s de flou sous le titre dans les deux ; dans l'une, la mise au point qui révèle dit le bénéfice du produit (« blur ») et le logo finit sur le flou, c'est le meilleur moment ; dans l'autre, deux plans flous sans révélation retardent le premier écran. [VU SUR IMAGES] (`analyses/projets-f42/benefit-pubs-reseau.md`)
   - **Pub muette : l'ordre des plans est la seule phrase** ; le geste du produit doit précéder ce qu'il provoque (dans Benefit 1, le regard admiratif arrive avant le produit : la cause manque). [VU SUR IMAGES]
@@ -110,6 +120,6 @@ Promettre sans raconter : poser le monde, la règle, le conflit, couper au somme
 | Fiction courte | captif | oui | faible | émotion, tension | tout expliquer |
 
 ## Lacunes
-- Kinetic des réseaux (Reels, TikTok) : **aucune vidéo du genre dans le corpus** ; le calage sur les temps et la densité des SFX restent [THÉORIQUE] (`montage-kinetic-editing`).
-- Pub de 6, 15 et 30 s : aucune vue (les sept pubs font 35 s à 5 min) ; la structure 30 s reste [THÉORIQUE]. Corporate classique (interview de dirigeant, film de présentation) : aucun vu.
+- Kinetic des réseaux : **sept vidéos vues** (`analyses/reseaux/`, 2026-10-11) ; ce qui reste non vu : le face caméra à captions mot à mot (format Hormozi), la rétention réelle, les SFX à l'oreille.
+- Pub de 6 et 30 s : aucune vue ; **une pub réseau de 15 s vue** (Sephora Collection, lucasbosc) ; la structure 30 s reste [THÉORIQUE]. Corporate classique (interview de dirigeant, film de présentation) : aucun vu.
 - Le son est mesuré, jamais écouté. Médianes des montages rapides : des minimums.

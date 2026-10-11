@@ -5,7 +5,8 @@ _Lire en premier. Seul l'état présent compte ici. La chaîne d'analyse, les ou
 ## PHASE 2 TERMINÉE (2026-10-11, session 11)
 - 45 vidéos analysées (fiches dans `analyses/`), passe de révision faite (`analyses/REVISION.md`), skills de création révisés (sessions 10-11 : regard, couleur-et-intention, expert, references, formats, rythme condensé à 13 Ko avec les preuves dans `details.md`, son-et-emotion, grammaire, youtube, kinetic-editing, motion-design-principes). **Synthèse de fin de phase dans `RAPPORT.md`** ; bilans détaillés archivés dans `archives/phase-2/RAPPORT-bilans-detailles-phase-2.md` ; état de session 10 dans `archives/phase-2/PROGRESS-session-10.md`.
 - **Désormais, chaque session ne fait que le démarrage de `CLAUDE.md`** : `git pull`, retours de Diego (`RETOURS-DIEGO.md`), boîte à références (`videos/a-traiter/`, `videos/NOTES-DIEGO.md`) avec le skill `montage-nouvelle-reference`. S'il n'y a rien de neuf : le dire en une ligne et s'arrêter.
-- **Lacune prioritaire** si une référence arrive : un vrai kinetic de réseaux (aucun dans le corpus, alors que c'est le premier goût de Diego en réseaux). Ensuite : face caméra en jump cuts, pub de 6-30 s, corporate classique.
+- **Session 12 (2026-10-11)** : retour de Diego intégré : 7 vidéos de `videos/reseaux/` analysées image par image (fiches `analyses/reseaux/`, bilan dans `RAPPORT.md`), `montage-kinetic-editing` et `montage-formats` mis à jour. Scripts de la méthode « toutes les images » : `labo/outils/reseaux/`.
+- **Lacunes restantes** si une référence arrive : face caméra en jump cuts et captions mot à mot (Hormozi, MrBeast), pub de 6 et 30 s, corporate classique ; écouter un kinetic (rien n'a été écouté).
 - `.claude/settings.json` (ajouté par Diego) n'est pas commité : le garde-fou de l'agent refuse ce commit. À laisser à Diego.
 
 ## Chaîne d'analyse d'un film (sessions 1-2)
@@ -78,8 +79,15 @@ _Lire en premier. Seul l'état présent compte ici. La chaîne d'analyse, les ou
 | projets-f42 | Oney — vidéo d’intro « 169 » V3 mobile (fichier en 1:1) | 0 min 37 s | ✔ 2026-10-11 |
 | projets-f42 | Sephora — brand content | 2 min 45 s | ✔ 2026-10-11 |
 | projets-f42 | Swile — POW 16:9 V5 | 1 min 19 s | ✔ 2026-10-11 |
+| reseaux | captured-by-h — collage d'archives (16:9) | 0 min 14 s | ✔ 2026-10-11 (toutes les images) |
+| reseaux | dariusbuesch — Nike Air Max Muse (9:16, **360x640**) | 0 min 38 s | ✔ 2026-10-11 (toutes les images ; netteté non jugée) |
+| reseaux | Équipe de France — Coupe du monde 2026 (9:16) | 0 min 43 s | ✔ 2026-10-11 (toutes les images) |
+| reseaux | lucasbosc — Sephora Collection « Stretch » (16:9) | 0 min 15 s | ✔ 2026-10-11 (toutes les images) |
+| reseaux | malkimikee — Paris (4:3) | 0 min 12 s | ✔ 2026-10-11 (toutes les images) |
+| reseaux | pasalu.jpg — chambre, look film (16:9) | 0 min 13 s | ✔ 2026-10-11 (toutes les images) |
+| reseaux | yungchillyboy — fête foraine (16:9) | 0 min 13 s | ✔ 2026-10-11 (toutes les images) |
 
-Total : 13 films (environ 26 h), 8 clips, 7 pubs, 10 vidéos YouTube (environ 10 h 40), 7 projets du studio. `a-traiter/` et `_a-supprimer/` sont vides. `NOTES-DIEGO.md` ne contient que les titres des projets, sans commentaire : Diego n'a encore commenté aucun film (l'ancienne note sur l'amarrage d'Interstellar était un exemple de format, pas sa parole).
+Total : 13 films (environ 26 h), 8 clips, 7 pubs, 10 vidéos YouTube (environ 10 h 40), 7 projets du studio, 7 vidéos réseaux (2 min 28 s, ajoutées par Diego le 2026-10-11, noms de fichiers laissés tels quels). `a-traiter/` et `_a-supprimer/` sont vides. `NOTES-DIEGO.md` ne contient que les titres des projets, sans commentaire : Diego n'a encore commenté aucun film (l'ancienne note sur l'amarrage d'Interstellar était un exemple de format, pas sa parole).
 
 ## Règles de session encore valables
 - Relever `date` au début de la session et le relire avant de clôturer : estimée « au ressenti », la durée écoulée est surévaluée d'un facteur 3 à 8.
