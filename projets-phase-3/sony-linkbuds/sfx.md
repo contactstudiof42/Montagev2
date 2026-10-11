@@ -55,3 +55,33 @@ Familles ajoutées : clics et pops (lettres K-O-R-E, arrêts), déclencheurs («
 | Travsonic - Group Reactions - Group Cheers Whoo | Group Reactions | 2,07 s | clameur | (réserve) |
 | Vadi Sound - Focal - Camera Speedlight Flash Charge | Focal | 2,84 s | charge de flash | avant un arrêt |
 Liens : sur artlist.io/sfx (titre exact ci-dessus). Noms de fichiers laissés tels quels (deux espaces dans « Hits  Pieces », une espace avant « .wav » pour le Polaroid et l'ambiance).
+
+## V5 (2026-10-11) : un son sur chaque transition, recalé à l'image
+Aucun nouveau téléchargement (consigne de Diego : les SFX déjà téléchargés suffisent). Point de synchronisation de chaque son mesuré dans le fichier (attaque à −20 dB pour les clics, impacts et déclencheurs ; crête pour les whooshs, risers et aspirations ; `cretes_fich.json` dans le travail), puis position dans la timeline = début + point × 25 − décalage d'entrée.
+**Ce que j'appelle transition** (genre after movie kinetic, règle de Diego « chaque transition a son son ») : tout passage qui porte un effet (flash, inversion, zoom, punch-in, arrêt, glissement, balayage, écran partagé, changement d'état du pic) et tout changement de bloc. Les coupes franches à l'intérieur d'un bloc, sur la musique, n'ont pas de son à elles : elles sont portées par la musique ou par un son continu de rafale (bégaiement, risers). À confirmer par Diego.
+| Image | Transition | Son (point de synchro) | Changement V5 |
+|---|---|---|---|
+| 13, 24 | lettres O, R | Glassy Click (+2), (+4) | recalés de 2 images (ils tombaient avant la coupe) |
+| 83 | allée à 200 % | Fabric Whoosh (+0) | recalé de −11 images (l'allée commence plus tôt dans la V5) |
+| 152-165 | oreilles (flash cut) | 4 premiers Glassy Click | recalés de +1 à +2 images (attaque sur la coupe, comme les 3 suivants) |
+| 421-462 | step-print | 5 Konica | crête recalée sur chaque coupe (de −3 à −1 image) |
+| 281 | collage A1 : gel | **Digital Camera Shutter Sony α7 III** (nouveau) | remplace Paper Ripping (le papier est exclu de la DA) |
+| 284-289 | A1 : le plan suivant glisse du bas | **Thin Whoosh Fast Short** (crête 285) | remplace Turntable Scratch |
+| 290-292 | A1 : disparition par balayage | **Data Transfer Glitch** (crête 291) | nouveau : le balayage monochrome a son son |
+| 497, 515 | ancien collage B | Card Sliding, Swipe | **retirés** (plus de collage B) |
+| 656 | bascule au rouge | Neon Sign Flickering | crête recalée de +4 images |
+| 678 | collage C1 : gel, monde en négatif | Polaroid Shutter | attaque recalée de +12 images sur le gel ; raccourci à 52 images |
+| 784, 802 | inversions de la rafale rouge | Digital Whoosh Buzzing (+0), (−2) | crêtes recalées sur les négatifs (la 3e tombait à 795 au lieu de 802) |
+| 817-931 | tout le pic | **Sweet Riser** (crête 931, −16 dB) | nouveau : la tension monte jusqu'au mot KORE |
+| 837 | pic : la couleur arrive (attaque forte) | **Deep Hit Hard Impact** (344 Audio) | nouveau |
+| 849-878 | pic : rafale récapitulative | **Stuttering Whoosh** (même famille que la rafale 3) | nouveau |
+| 878 | pic : respiration (héros n&b) | **Female Breath – Huh Sharp Exhale** | nouveau |
+| 901 | pic : stroboscope rouge (attaque forte) | **Hard Cinematic Impact Reverberant** | nouveau |
+| 907 | pic : le négatif | Digital Whoosh Buzzing (+0) (famille des inversions) | nouveau |
+| 919 | pic : seuil + punch-in | Interference – Swipe | déplacé depuis 515 |
+| 931 | pic : crash zoom sur KORE (attaque forte) | **Cinematic Impact Drum Hit Pitching Down** | nouveau |
+| 942 | pic : négatif du mot | Digital Whoosh Buzzing (+3) | nouveau |
+| 945 | pic : balayage | Data Transfer Glitch (même son que le balayage de A1) | nouveau |
+| 851 | ancienne coupe du pic | Thin Whoosh | **retiré** |
+Inchangés et déjà calés : K, E, zoom E → KORE (aspiration + sub drop + clic sur 48), boîtiers 117, flash 129, mains 140, oreilles 169-175, aspiration avant le silence, rafale qui monte, drop 233 (inversion), 256, 268, 305, 363, 386, tape stop 465, sangles et écran partagé (538, 562, 597, 609, 621, 632), drop rouge 686-690, flash 737, packshots (948, 972), titre 1003.
+**À écouter par Diego** (rien n'a été écouté) : le pic entier (sept sons nouveaux + un riser de 4,7 s sous tout le passage : risque d'encombrement), le déclencheur Sony α7 du collage A1, le souffle de 878.

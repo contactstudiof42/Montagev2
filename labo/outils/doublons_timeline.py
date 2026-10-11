@@ -79,6 +79,9 @@ for r, L in par_rush.items():
             ai, ao = (a["src_in"] - .02, a["src_out"] + .02) if a["arret"] else (a["src_in"], a["src_out"])
             bi, bo = (b["src_in"] - .02, b["src_out"] + .02) if b["arret"] else (b["src_in"], b["src_out"])
             ch = min(ao, bo) - max(ai, bi)
+            # calque du même plan (inversion posée au-dessus, mêmes images source, même place) : pas une répétition
+            if a["debut"] is not None and a["debut"] == b["debut"] and abs(a["src_in"] - b["src_in"]) < 0.02:
+                continue
             if ch > TOL:
                 doublons.append(dict(rush=r, plan_a=[a["debut"], a["fin"]], plan_b=[b["debut"], b["fin"]],
                                      source_a=[a["src_in"], a["src_out"]], source_b=[b["src_in"], b["src_out"]],
