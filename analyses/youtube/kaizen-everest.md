@@ -45,3 +45,8 @@ Rien sur cette vidéo.
 
 ## Pas fait
 - Vérification des plans longs ; calage des rafales sur la musique (demucs puis `calage.py`). (Fait en session 6 : transcription lue autour des rafales, ouverture, 1:12 et 1:15 en plan par plan.)
+
+## Révision (2026-10-11, session 10 de la phase 2)
+Mesuré avant relecture : les deux rafales citées relancées sans durée minimale de plan (`scenedetect -m 1`), coupes nouvelles regardées sur des bandes de 6 images consécutives.
+- **Confirmée — le pic de 1:08** (une rafale de la vie publique, puis le calme) : 12 coupes de plus dans la minute 1:08-1:09, une dizaine vraies (régie, voiture, forêt, bus, plateau) : **environ 60 coupes/min au lieu de 50**, avec des plans de 0,16 à 0,3 s. Le dessin ne change pas, la crête est plus haute. [VU SUR IMAGES, bandes]
+- **Confirmée — la rafale-bilan de la fin** (2:23:38-2:24:05) : 3 coupes de plus, toutes vraies (montagne, intérieur, vélo d'appartement) : **33 plans** au lieu de 30. Le principe « la rafale résume, le plan tenu conclut » tient.

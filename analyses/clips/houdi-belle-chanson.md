@@ -8,9 +8,9 @@ _Fiche ouverte le 2026-10-11 (phase 2, session 4, clip n°6). **État : terminé
 Faire du clip **un niveau de jeu vidéo** d'horreur gothique : on traverse, en vue subjective ou en suivant un personnage, un manoir, des couloirs, une lande sous l'orage ; puis la caméra recule dans un bureau de vieux ordinateurs et entre dans un écran cathodique : c'était un jeu (« Mortal Hood »), et le clip finit sur « Level 2 ». [VU SUR IMAGES ; l'intention est DÉDUITE]
 
 ## Forme [mesuré, clip sombre : copie éclaircie et plans longs vérifiés]
-- **3 min 37, 35 plans, ASL 6,2 s**. Le clip est très sombre (luminance 33 à 48 sur 255) : selon la leçon de Ziak, j'ai relancé la détection sur une **copie éclaircie** ; elle trouve 35 plans contre 34, donc le compte tient.
+- **3 min 37, 35 plans détectés, au moins 44 réels (révision de session 10 : neuf plans de moins de 0,6 s), ASL 6,2 s sur les plans détectés**. Le clip est très sombre (luminance 33 à 48 sur 255) : selon la leçon de Ziak, j'ai relancé la détection sur une **copie éclaircie** ; elle trouve 35 plans contre 34, donc le compte tient.
 - **Plans longs = traversées** : 20,8 s (0:56, une façade de briques dont on longe les fenêtres, puis la lune), 16 s (1:33, un cavalier sous les éclairs), **37,6 s (2:03)** : galerie de portraits → noir → pièce carrelée et porte → un homme en gilet pare-balles qu'on suit → damier → couloir sombre → carré de lumière. `verif_plan.py` ne trouve aucune coupe et une tuile à 2 images/s montre une progression continue ; les passages d'un lieu à l'autre se font **par le noir ou par fondu**, comme les chargements d'un jeu. [VU SUR IMAGES]
-- **Rafales courtes entre les traversées** : 0:28-0:45 (onze plans de 0,7 à 2,8 s : masque de ski, couloirs, intérieurs rouges), 1:29-1:33, 1:57-2:02.
+- **Rafales courtes entre les traversées** : 0:28-0:45 (onze plans de 0,7 à 2,8 s et deux images-éclair de 0,16 et 0,24 s, vues en révision : masque de ski, couloirs, intérieurs rouges), 1:29-1:33, 1:57-2:02.
 - **La révélation finale** (2:40-3:08) : damier en fisheye → bureau de terminaux cathodiques → poussée dans un écran « SELECT PLAYER » (le personnage s'appelle HOUD1) → labyrinthe façon arcade → « STAGE CLEAR » → logo « Mortal Hood » → « Level 2 ». Puis 28,6 s de générique en police d'arcade.
 - **Son** : plateau de -10 à -11 LUFS du début à la fin (intégré -10,9), aucun trou. [mesuré, pas écouté]
 - **Couleur** : noir et sarcelle, accents rouges et orange (fenêtres, intérieurs) ; la chaleur monte quand le jeu apparaît (R-B par minute : -6,7, +6,1, +5,2, **+27,1**) : le monde de l'horreur est froid, le monde de l'écran est orange et violet. [mesuré, VU SUR IMAGES]
@@ -35,3 +35,9 @@ Rien (`GOUTS.md`, `NOTES-DIEGO.md`, `RETOURS-DIEGO.md`).
 - Recherche documentaire (réalisateur, part réelle de la 3D, moteur de jeu ou rendu précalculé). Je n'affirme pas qu'il s'agit d'Unreal ou d'un autre moteur.
 - Les fondus de la traversée de 37,6 s peuvent cacher de vraies coupes que `verif_plan.py` ne voit pas (passages au noir). Je parle de « traversée continue à l'œil », pas de plan-séquence prouvé.
 - Le calage n'a été testé qu'avec un seul estimateur de temps (librosa `beat_track`).
+
+## Révision (2026-10-11, session 10 de la phase 2)
+Mesuré avant relecture : détection sans durée minimale de plan (`scenedetect -m 1`) ; les 13 coupes nouvelles regardées sur des bandes de 6 images consécutives.
+- **Corrigée — le nombre de plans.** Environ 9 coupes nouvelles sont vraies (2 douteuses dans le noir à 1:32, 2 fausses) : **au moins 44 plans** au lieu de 35, ASL environ 4,9 s. La copie éclaircie n'y pouvait rien : ces plans durent moins de 0,6 s, durée sous laquelle PySceneDetect fusionne tout.
+- **Nouvelle — des éclats de 4 à 6 images dans la rafale 0:28-0:45** : une grille de manoir (0:35,9, 0,24 s), un intérieur vert éclairé (0:40,9, **0,16 s**, entre deux plans sombres). Ce sont des **images-éclair** d'horreur, presque subliminales, que je n'avais pas vues. La rafale est donc plus nerveuse qu'écrit (plans de 0,16 à 2,8 s). [VU SUR IMAGES, bandes de 6 images]
+- **Confirmée** : la traversée de 37,6 s (2:03) ne reçoit aucune coupe nouvelle, ni les plans de 20,8 s et 16 s.

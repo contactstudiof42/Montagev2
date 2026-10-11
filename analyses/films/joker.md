@@ -111,3 +111,6 @@ GOUTS.md : la couleur et l'image ; « c'est un ensemble, le Joker […] l'équil
 
 ## Ajout (2026-10-11, session 3) : place du sujet dans le cadre [VU SUR IMAGES, échantillon]
 Sur 24 images de milieu de plan tirées au hasard (`labo/outils/echantillon_tiers.py`, graine 1), Arthur ou le sujet principal n'est dans le tiers central que pour environ 8 images (Mad Max : environ 20, Interstellar : environ 12). Joker décentre : le personnage au bord du cadre, du vide à côté, ce qui va avec ses plans tenus. Compté à l'œil, chiffres approximatifs. Voir `analyses/films/mad-max-fury-road.md`.
+
+## Révision (2026-10-11, session 10 de la phase 2)
+- **Confirmée — la rafale de l'accident** (1:47:48-1:47:54 : 1,0 · 0,8 · 3,7 · 1,3 · 2,1 s) : même compte sans durée minimale de plan (`scenedetect -m 1`, 6 plans dans les deux cas) ; sur des bandes de 6 images consécutives, chaque coupe sépare deux images différentes (grille de la voiture de police, verre brisé, débris, carrefour en flammes). Pas de fausse rafale. Les séries saturées avaient déjà été cherchées en session 9 (aucune sur 1 101 plans). [VU SUR IMAGES, bandes]

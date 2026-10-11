@@ -68,3 +68,6 @@ Rien sur ce film (aucune note dans `NOTES-DIEGO.md`).
 ## Reste incertain
 - Le tronc d'arbre à 13:04 : coupe ou non (le plan suivi de la cité ferait alors 38 + 75 s).
 - `coupes_parole.py` n'a pas été lancé : les scènes coupées dans le dialogue sont sombres (voiture) et leurs coupes ne sont pas dans `coupes.json`. À faire en passe de révision si utile.
+
+## Révision (2026-10-11, session 10 de la phase 2)
+- **Vérifiée, rien à changer** : aucun pourcentage de parole n'est cité (`coupes_parole.py` n'avait pas été lancé) ; aucune série de « plans » à la durée minimale (plus court plan détecté : 0,76 s) ; les deux crêtes de densité (générique d'archives, mort d'Abdel) avaient été regardées sur planche en session 7, et les plans longs de nuit recomptés avec `verif_plan.py`. La passe de révision n'apporte pas d'instrument nouveau à ce film.

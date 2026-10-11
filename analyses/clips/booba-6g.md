@@ -11,7 +11,7 @@ Booba en souverain dans un Tokyo de cinéma (toits, maison traditionnelle, masqu
 - **3 min 40, 74 plans, ASL 3,0 s, médiane 1,7 s.** Histogramme : < 1 s : 24 · 1-2 s : 18 · 2-4 s : 16 · 4-8 s : 9 · 8-15 s : 7. Un tiers des plans dure moins d'une seconde, mais sept plans tenus de 9 à 15 s.
 - **Ouverture : le cadre grandit.** De 0:00 à 0:11, l'image de Tokyo de nuit commence en petite fenêtre au centre de l'écran noir, puis s'agrandit par paliers jusqu'au plein cadre. [VU SUR IMAGES, 1 image/s]
 - **Intro clairsemée, puis plateau** : jusqu'à 0:41 le son est troué (silences de 1 à 4 s, -28 LUFS et moins) ; la musique entre en plein vers 0:41 et reste en plateau jusqu'à 3:17. Le premier plan après l'entrée est Booba sur un toit sous un parapluie, dans **un plan de 14,9 s** qui part d'une femme de dos et glisse jusqu'à lui (vérifié : pas de coupe trouvée).
-- **Une rafale au milieu** : de 1:06 à 1:30, des plans de 0,5 à 0,8 s (drapeau noir, foule, toits, gratte-ciel en contre-plongée). C'est la seule rafale du clip.
+- **Une rafale au milieu** : de 1:06 à 1:30, 26 plans de 0,3 à 0,8 s (recompté en session 10) (drapeau noir, foule, toits, gratte-ciel en contre-plongée). C'est la seule rafale du clip.
 - **Plans longs = mouvements de caméra** : un travelling de 12,7 s à travers les pièces d'une maison japonaise (2:15, geishas puis une femme masquée, vérifié continu) ; un plan de 13,9 s (2:57) où la pièce sombre **se fond dans un paysage de crépuscule** sans coupe (un homme dans un fauteuil, qui se lève et s'éloigne).
 - **Fin** : 8 s de silence (3:17-3:25) sur le noir et une télévision allumée dans une pièce sombre, puis un dernier plan de nuit.
 - **Couleur : du froid vers le chaud.** Chaleur (R-B) par minute : -28, -6, -4, +9. Les extérieurs de Tokyo sont cyan-bleu ; les intérieurs (maison, tatamis, geishas en blanc et rouge) et le crépuscule final réchauffent l'image. Luminance 107, 49, 55, 79. [mesuré, VU SUR IMAGES]
@@ -36,3 +36,8 @@ Rien (`GOUTS.md`, `NOTES-DIEGO.md`, `RETOURS-DIEGO.md`).
 ## Pas fait
 - Recherche documentaire (réalisateur, monteur, date, tournage) ; nature du fondu pièce / paysage (truquage ou fondu enchaîné long).
 - Les plans de la rafale de 1:06-1:30 n'ont pas été vérifiés un par un (scènes claires, détecteur probablement juste).
+
+## Révision (2026-10-11, session 10 de la phase 2)
+Mesuré avant relecture : détection relancée sans durée minimale de plan (`scenedetect -m 1`, la passe globale ne voyait aucun plan de moins de 0,6 s), puis chaque coupe nouvelle regardée sur une bande de 6 images consécutives (`labo/outils/bandes_coupes.py`).
+- **Confirmée — une seule rafale, au milieu (1:06-1:30).** Elle compte **26 plans au lieu de 21** : cinq coupes de plus, toutes vraies (statue, façade, tours en contre-plongée), qui ajoutent des plans de 0,3 à 0,5 s. Le principe tient ; la rafale est un peu plus rapide qu'écrit. [VU SUR IMAGES, bandes de 6 images]
+- Sur tout le clip, 16 coupes de plus, dont 12 vraies et 4 fausses (éclair à 2:32,5, deux noirs sans changement, 1:55 et 1:59) : **au moins 86 plans** au lieu de 74 ; aucune ne tombe dans les plans longs cités (2:15, 2:57), qui restent continus.

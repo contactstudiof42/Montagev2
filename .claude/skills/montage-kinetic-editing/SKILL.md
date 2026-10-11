@@ -66,7 +66,8 @@ Règles : un seul rang 1 par 5-10 s ; whoosh variés (3-5 variantes, **varier le
 | Shake et zoom en continu | Effet = événement, amorti en 4-6 images |
 | Plan qui commence dans le noir ou vide | Sujet lisible **dès la 1re image** (pièce 02 : 4 plans noirs sur 19) |
 | Plans sans lien qui accélèrent (défilé) | Chaque plan montre une cause de l'événement final (une montée) [ÉPROUVÉ EN MAQUETTE] |
-| Rafale « montage-souvenir » sans structure | Rafale en strophes portée par un refrain de voix off (*Across the Spider-Verse*, 1:22-2:44 : 85 plans de 0,5-1,5 s sous « And he's not the only one » ×4 ; calage sur les temps = hasard) [VU SUR IMAGES, mesuré] |
+| Rafale-inventaire où chaque plan doit se lire | **Clignotement** de dizaines d'images de même cadre à 2 images chacune (une matière, pas une lecture), ponctué de 5-6 arrêts de 0,3-0,7 s qui seuls se lisent, puis un plan tenu (Yvnnis « Gare du Nord », 1:34-1:42 puis 13,3 s) [VU SUR IMAGES, chaque image] |
+| Rafale « montage-souvenir » sans structure | Rafale en strophes portée par un refrain de voix off (*Across the Spider-Verse*, 1:22-2:44 : environ 130 plans de 0,2-1,5 s, moyenne 0,63 s, recomptés image par image en révision, sous « And he's not the only one » ×4 ; calage sur les temps = hasard) [VU SUR IMAGES, mesuré] |
 | SFX qui font le niveau | Voix d'abord, -14 LUFS mesuré sur le fichier encodé |
 
 ## 4. Recettes (code complet : `details.md`)
@@ -80,7 +81,7 @@ Règles : un seul rang 1 par 5-10 s ; whoosh variés (3-5 variantes, **varier le
 ## 5. Photosensibilité (obligatoire dès qu'il y a flash ou strobe) [TESTÉ EN LABO]
 - `python3 -I labo/photosensibilite/flash_check.py rendu.mp4` ; > 3 flashs dans une seconde = refus (WCAG 2.3.1, BT.1702) ; un flash d'1 image compte entier ; surface jugée dans la pire fenêtre de 1/3 × 1/3 de l'écran. Pub UK : test Harding.
 - À ~140 BPM : **une transition de luminance par croche au plus** ; un coup par noire à 128 BPM tombe pile sur la limite (pire seconde 3).
-- Strobe sûr : changer **teinte et forme à luminance égale** (Noé / Kan) ; baisser la luminosité du texte ne sert à rien, les leviers sont la surface et la fréquence. [ÉPROUVÉ EN MAQUETTE] (pièce 09)
+- Strobe sûr : changer **teinte et forme à luminance égale** (Noé / Kan) ; baisser la luminosité du texte ne sert à rien, les leviers sont la surface et la fréquence. [ÉPROUVÉ EN MAQUETTE] (pièce 09) **[VU SUR IMAGES, mesuré]** sur Yvnnis « Gare du Nord » (1:33,7-1:41,8) : environ 65 devantures de 2 images chacune (12,5 changements par seconde), cadrées de face, de luminances voisines : pire seconde 2 flashs, conforme.
 - **Le sommet plus long, pas plus fort** : un coup clair tenu 8 images reste un seul flash et pèse plus. [ÉPROUVÉ EN MAQUETTE] (pièce 20)
 - Rushes avec stroboscope : mesurer chaque plan ; seul le tirage par saccade (image tenue ≥ 8 images à 25 i/s) garde le coup et passe toujours. Détail : `details.md`.
 

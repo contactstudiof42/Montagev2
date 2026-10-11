@@ -83,3 +83,6 @@ Rien pour l'instant (`GOUTS.md`, `NOTES-DIEGO.md`, `RETOURS-DIEGO.md`).
 ## Doutes
 - Le comptage du centrage est fait à l'œil par moi sur 24 images par film : l'ordre (Mad Max > Interstellar > Joker) est net, les chiffres sont approximatifs.
 - La date du noir après Nux (vers 1:46:58) est lue sur une tuile à 1 image/s : à une seconde près.
+
+## Révision (2026-10-11, session 10 de la phase 2)
+- **Confirmée — le combat de 0:36:00-0:37:30** (coupes toutes les 0,5 à 3 s, plan large qui revient) : sans durée minimale de plan (`scenedetect -m 1`), 3 coupes de plus sur 90 s, toutes vraies (chaîne, désert, camion) : 59 plans au lieu de 56. Le principe du plan de géographie régulier n'est pas touché. L'histogramme « < 1 s : 416 » est un minimum (PySceneDetect fusionne tout plan de moins de 0,6 s). Séries saturées : vérifiées en session 9 (une seule, 27:45). [VU SUR IMAGES, bandes de 6 images]

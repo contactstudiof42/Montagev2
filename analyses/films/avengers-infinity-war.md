@@ -8,7 +8,7 @@ Skills relus avant l'analyse : `montage-rythme` (dont la section *Interstellar*)
 Un film d'ensemble (une vingtaine de héros, cinq ou six lieux) dont le méchant est le personnage principal. Il doit rester lisible malgré la dispersion, et faire accepter une fin où le héros perd.
 
 ## Forme [mesuré]
-- **2 h 17 min 27 de film, puis 10 min 11 de générique** (fin à 2:29:17). **Au moins 2 237 plans, ASL 4,0 s, médiane 2,6 s** ; 176 plans de moins d'une seconde, 46 de 15 s ou plus.
+- **2 h 17 min 27 de film, puis 10 min 11 de générique** (fin à 2:29:17). **Au moins 2 237 plans, ASL 4,0 s, médiane 2,6 s** ; 176 plans de moins d’une seconde, 46 de 15 s ou plus (générique compris ; film seul : 2 229 plans, ASL 3,7 s, révision de session 10).
 - **Densité de 10 à 33 coupes/min pendant tout le film**, en vagues sans vrai creux (le creux le plus profond est le générique). Crêtes : **minutes 21-23 (32-33/min, combat de New York, recompté à 33 coupes en 60 s par `verif_plan.py`)**, minute 38, minutes 104, 110, 120-121 (acte final).
 - **-24,7 LUFS intégrés** (le plus bas de tous les films mesurés avec *Le Dîner de cons* : le mixage garde une grande marge pour les explosions).
 - Couleur : première moitié sombre et froide (espace, vaisseaux, Nidavellir), seconde moitié claire et chaude (Wakanda, Titan) ; voir `avengers-couleur.png`.
@@ -69,3 +69,7 @@ Rien sur ce film (aucune note dans `NOTES-DIEGO.md`). Le rapprochement avec *Int
 - Couleur par monde, plan par plan (Titan orange, Wakanda vert et clair, Vormir bleu nuit, Nidavellir bleu sombre et orange de forge) : `couleur_film.py` par séquence.
 - Calage musical (le thème des Avengers à l'arrivée de Thor, 1:45) contre le hasard, sur musique séparée.
 - Combat de New York (minutes 20-27) : planche, pour voir comment la plus forte densité du film reste lisible (sujet centré ? plans de géographie ?).
+
+## Révision (2026-10-11, session 10 de la phase 2)
+- **Corrigée (chiffre, sans effet sur les conclusions) — l'ASL.** Les statistiques de la forme comptaient les 10 min 11 de générique : **film seul (0:00-2:17:27), au moins 2 229 plans, ASL 3,7 s** (et non 4,0), médiane 2,6 s inchangée, 174 plans de moins d'une seconde (minimum : PySceneDetect fusionne les plans de moins de 0,6 s), 43 de 15 s ou plus. Mesuré sur `coupes.json`.
+- **Confirmée** : aucune série de « plans » à la durée minimale (détecteur saturé) ; aucun pourcentage de parole cité dans la fiche, rien à refaire.
