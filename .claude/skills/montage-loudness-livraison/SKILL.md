@@ -40,6 +40,8 @@ Marqueurs : **[SOURCÉ]** lu dans une source datée · **[TESTÉ EN LABO]** fait
 - Lecteur sans normalisation (site, lecteur intégré, AES TD1008) : parole **-18 LUFS**, musique **-16 LUFS**, -1 dBTP. Podcast Apple : -16 LKFS. Cinéma : pas de LUFS, plafonds en Leq(m) pour pubs et bandes-annonces.
 - **Film d'entreprise** [pratique de métier] : master web **-16 LUFS / -1 dBTP / LRA 6-10** ; version **salle/événement -18 LUFS, LRA ≤ 6-8**, toujours testée sur place ; version TV séparée à -23.
 
+**Ce que font les vidéos de référence (phase 2, mesuré sur les fichiers téléchargés)** : YouTube de 23 à 57 min de -21,3 (EGO) à **-11,6 / -12,0 LUFS** (« Qui est l'imposteur », LRA 3,6-3,8 LU, aucun silence) ; docs de créateurs -16,6 / -16,7 (Tiger, CIA) ; pubs TV françaises -23,1 à -23,2 (deux Intermarché, Lacoste) ; clips -10,9 à -12,9. Le divertissement et le clip sont plus forts que la référence de lecture : YouTube les baisse, ils gardent un son « plein » mais perdent leur dynamique. Rien de tout cela n'est une norme ; c'est le terrain.
+
 Ce que je conseille en pratique (choix, et non une norme) : **web/réseaux -14 LUFS / -1.5 dBTP** ; **TV FR/UE -23 / -1** (respecter la charte PAD de la chaîne, qui prime) ; **cinéma** : pas de cible LUFS, on mixe à l'étalonnage de la salle (85 dB SPL, Dolby). Voir references.md.
 
 ## 4. Recettes ffmpeg
