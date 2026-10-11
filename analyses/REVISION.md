@@ -25,7 +25,8 @@ _Ouverte le 2026-10-11 (session 9). Une ligne par vidéo à revoir : ce que les 
 | Mad Max: Fury Road (3) | séries saturées ; générique | à faire |
 | adidas « Backyard Legends » (4) | parole : `SEUIL=haut` + spectrogramme (la mesure de session 4 était déjà sur voix séparée) | **fait (session 9)** : 1 confirmée, 1 corrigée |
 | Qui est l'imposteur (5) | parole : `SEUIL=haut` + spectrogramme | **fait (session 9)** : 1 confirmée, 1 corrigée |
-| POPCORN, Boxho (5) | parole sur voix séparée avec `SEUIL=haut` + spectrogramme | à faire |
+| POPCORN (5) | parole : `SEUIL=haut` + spectrogramme | **fait (session 9)** : 1 confirmée, 1 corrigée |
+| Boxho (5) | parole sur voix séparée avec `SEUIL=haut` + spectrogramme | à faire |
 | YggTorrent, EGO, B-roll (4-5) | transcription : boucles et phrases fantômes | à faire |
 | Clips (3-4) | séries saturées (Ziak éclairci) ; parole sans objet | à vérifier vite |
 | Projets F42 (6) | parole (Fou rire, Hirsingen) sur voix séparée | à faire |
@@ -39,4 +40,5 @@ _Ouverte le 2026-10-11 (session 9). Une ligne par vidéo à revoir : ce que les 
 | Whiplash | 5 | 3 | 1 | 1 |
 | adidas « Backyard Legends » | 2 | 1 | 1 | 0 |
 | Qui est l'imposteur | 2 | 1 | 1 | 0 |
-| **Total** | 15 | 10 | 4 | 1 |
+| POPCORN | 2 | 1 | 1 | 0 |
+| **Total** | 17 | 11 | 5 | 1 |

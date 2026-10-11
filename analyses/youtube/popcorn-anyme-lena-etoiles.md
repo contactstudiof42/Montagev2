@@ -48,3 +48,9 @@ Planches dans `videos/_travail/popcorn/seq/` : 0:00-1:45, 1:20:30-1:22:00, 2:12:
 
 ## Ce que Diego en a dit
 Rien sur cette vidéo.
+
+## Révision (passe de révision, session 9, 2026-10-11)
+Outils apparus après l'analyse (session 5) : `SEUIL=haut` et `spectro_coupes.py` (session 8). Mesures refaites avant de relire la fiche ; planche `popcorn-revision-spectro.png` (25 coupes, une sur 2, 40:00-43:00).
+- Outil, voix séparée : 82 % (ancien seuil), 92 % (`SEUIL=haut`). **À l'œil : 15 coupes sur 25 au milieu d'une phrase (60 %), 10 au ras d'un mot (40 %), aucune dans un silence.**
+- **Corrigée** : « 76 à 88 % des coupes pendant la parole » ; c'est une borne haute, le chiffre vu est 60 %.
+- **Confirmée** : le changement d'angle **ignore les pauses** et va au visage au milieu des phrases ; c'est le taux le plus haut du corpus tranché à l'œil (Imposteur 30 %, adidas 48 %, *Le Dîner de cons* et *Spotlight* 20-30 %).
