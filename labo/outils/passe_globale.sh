@@ -10,7 +10,14 @@ t0=$(date +%s)
 # 1. Copie légère (VideoToolbox) + son VO stéréo
 # Source HDR (PQ / HLG) : HDR=1 → décodage et conversion en SDR BT.709 par VideoToolbox (scale_vt). Sans cela, l'image
 # PQ lue comme du SDR est grise et délavée (le ffmpeg Homebrew n'a ni zscale ni libplacebo). Testé sur Whiplash (session 2).
-if [ "${HDR:-0}" = 1 ]; then
+# Source HDR en AV1 (session 8, Spider-Verse) : la puce ne décode pas l'AV1 en matériel (« Function not implemented ») ;
+# décodage logiciel libdav1d, envoi des images à VideoToolbox (hwupload) puis même conversion scale_vt. Testé : image correcte, ~10x le temps réel.
+CODEC=$(ffprobe -v error -select_streams v:0 -show_entries stream=codec_name -of csv=p=0 "$FILM")
+if [ "${HDR:-0}" = 1 ] && [ "$CODEC" = av1 ]; then
+  [ -f "$OUT/proxy.mp4" ] || ffmpeg -v error -y -init_hw_device videotoolbox=vt -filter_hw_device vt -c:v libdav1d -i "$FILM" \
+    -map 0:v:0 -map 0:a:$A -vf "format=p010le,hwupload,scale_vt=w=-2:h=480:color_matrix=bt709:color_primaries=bt709:color_transfer=bt709,hwdownload,format=p010le,format=yuv420p" \
+    -c:v h264_videotoolbox -b:v 1200k -c:a aac -ac 2 -b:a 128k "$OUT/proxy.mp4"
+elif [ "${HDR:-0}" = 1 ]; then
   [ -f "$OUT/proxy.mp4" ] || ffmpeg -v error -y -hwaccel videotoolbox -hwaccel_output_format videotoolbox_vld -i "$FILM" \
     -map 0:v:0 -map 0:a:$A -vf "scale_vt=w=-2:h=480:color_matrix=bt709:color_primaries=bt709:color_transfer=bt709,hwdownload,format=p010le,format=yuv420p" \
     -c:v h264_videotoolbox -b:v 1200k -c:a aac -ac 2 -b:a 128k "$OUT/proxy.mp4"

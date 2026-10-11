@@ -2,12 +2,14 @@
 
 _Lire en premier. Seul l'état présent compte ici. L'état de clôture de la phase 1 est archivé dans `archives/phase-1/PROGRESS-cloture-phase-1.md`, et l'historique des sessions 1 à 25 dans `archives/phase-1/PROGRESS-historique.md`._
 
-## État (2026-10-11, session 7 de la phase 2, 07:04-07:40)
+## État (2026-10-11, session 8 de la phase 2, 08:04-08:50)
 - **Phase 2 en cours** : mission `PROMPT-PHASE-2.md` (lire aussi « Avant chaque vidéo : repartir de la phase 1 », « Leçons de méthode », « Passe de révision », étape 7). Démarrage de chaque session : `CLAUDE.md`.
-- Session 7 : aucun retour neuf, boîte vide. **Vague 2 des films presque finie** : *La Haine* terminée (5 séquences, 9 plans longs vérifiés, 13 cartons-horloge), *Avengers: Infinity War* (4 séquences + classement de l'acte final), *Forrest Gump* (4 séquences ; HDR converti). Fiches dans `analyses/films/`, chacune avec sa liste « À faire » (couleur fine, fin de *Forrest Gump*, combat de New York).
-- *OSS 117* : passe globale, transcription Whisper (`-mc 0`, deux boucles repérées), trois séquences (ouverture, poulets, fin), nuits bleues vérifiées et coupes / parole sur deux scènes faites en fin de session 7 ; fiche `analyses/films/oss117-le-caire-nid-d-espions.md` avec sa liste « À faire » (bagarre ; **mesure coupes / parole à trancher** : 57 % sur le mixage contre 90 % sur la voix séparée).
-- Skills mis à jour en session 7 : `montage-rythme` (plan long comme norme et rafale comme signal ; alterné par blocs puis jonction ; une liste dite = une image par élément au cinéma), `montage-son-et-emotion` (cartons-horloge = trous de son, crescendo final hors champ ; ralenti par paliers après le claquement ; silence avant une chute comique), `montage-grammaire` (raccorder deux plans suivis dans le noir). Leçon de méthode ajoutée : film N&B de nuit, `verif_plan.py` sur tout plan de nuit de plus de 60 s.
-- **Reprendre ici** : finir *OSS 117* (À faire de sa fiche ; marquer 20 coupes à la main pour trancher mix / voix séparée), puis **bilan définitif de la vague 2** dans `RAPPORT.md` (le bilan provisoire y est, avec OSS 117). Les « À faire » d'*Avengers* et *Forrest Gump* (couleur fine, fin de *Forrest Gump*) peuvent attendre la passe de révision. Puis vague 3 (*The Social Network*, *Spotlight*, *Aftersun*, *Spider-Verse* en HDR10 AV1 : `HDR=1`).
+- Session 8 : aucun retour neuf, boîte vide. **Vague 2 terminée** (*OSS 117* fini : bagarre du poulailler ; mesure coupes / parole tranchée sur spectrogramme) et **bilan définitif de la vague 2** dans `RAPPORT.md`.
+- **Vague 3 lancée** : *The Social Network* (ouverture, Facemash, Henley ; fiche de phase 1 confrontée) et *Spotlight* (ouverture 1976, appels à Sipe en plans de 67 et 115 s, dispute, cartons de fin) ; comparaison des deux dans `analyses/films/spotlight.md`. Chaque fiche a sa liste « À faire ».
+- **Méthode corrigée** : `coupes_parole.py` surestimait la parole (seuil « plancher + 10 dB », absurde sur une voix séparée) ; option `SEUIL=haut` et nouvel outil `labo/outils/spectro_coupes.py` (trancher à l'œil). « Coupes pendant la parole » ne distingue pas un style (30 % chez Fincher comme chez McCarthy) : mesurer plutôt les silences entre répliques. Les chiffres sur voix séparée de YouTube (POPCORN, Boxho, Imposteur) sont à refaire en passe de révision.
+- Skills mis à jour en session 8 : `montage-rythme` (accélérer sur la courbe, pas sur la grille ; timing comique : borne haute), `montage-grammaire` (le débit vient des trous retirés ; dispute montée par l'échelle), `montage-son-et-emotion` (révélation par une voix hors champ, plan tenu), `montage-youtube` (chiffres marqués À REVOIR).
+- Passes globales lancées en fin de session 8 : *Aftersun* (`videos/_travail/aftersun/`, VO, sous-titres anglais) et *Spider-Verse* (`videos/_travail/spiderverse/`, HDR10 **AV1** : nouveau chemin libdav1d dans `passe_globale.sh` ; pas de sous-titres texte : Whisper `-mc 0` sur la VO à faire). **Vérifier qu'elles sont complètes** (logs `videos/_travail/aftersun.log`, `spiderverse.log` : la dernière ligne doit être « coupes: … s ») ; sinon relancer (le proxy existant est réutilisé).
+- **Reprendre ici** : `courbes_film.py` et `couleur_film.py` sur *Aftersun* et *Spider-Verse*, puis leurs séquences ; finir les « À faire » de *Spotlight* (témoignages) et de *The Social Network* (dépositions, fin) si le temps le permet ; puis **bilan de la vague 3** dans `RAPPORT.md`. Ensuite, passe de révision (étape 7).
 - `.claude/settings.json` (ajouté par Diego) n'est pas commité : le garde-fou de l'agent refuse ce commit. À laisser à Diego.
 
 ## Chaîne d'analyse d'un film (sessions 1-2)
@@ -28,7 +30,7 @@ _Lire en premier. Seul l'état présent compte ici. L'état de clôture de la ph
 - `uv venv --python 3.12 .venv` + `numpy pillow librosa scenedetect opencv-python-headless` : **5 s**. Lancer les scripts avec `.venv/bin/python -I`.
 - Modèle Whisper `ggml-large-v3-turbo.bin` (1,5 Go), dans `~/.cache/whisper-cpp/` : **9 s**. Transcription : `whisper-cli -m ~/.cache/whisper-cpp/ggml-large-v3-turbo.bin -l fr -osrt -mc 0 -ojf -of <sortie> -f <audio 16 kHz mono>`. Un clip de 3 min se transcrit en moins d'une minute (Metal).
 - `demucs` (séparation voix / musique) dans le même venv : **8 s**.
-- QC d'un fichier livré : `labo/outils/qc_livraison.sh` (session 6, aucune installation). Torch avec MPS disponible.
+- QC d'un fichier livré : `labo/outils/qc_livraison.sh` (session 6, aucune installation). Coupes et parole à l'œil : `labo/outils/spectro_coupes.py` (session 8). Torch avec MPS disponible.
 - Durée de toute la chaîne sur un clip de 3 min (fiche technique, loudness, coupes, tempo, transcription) : **60 s**.
 
 ## Inventaire de `videos/` (2026-10-11)
@@ -42,10 +44,10 @@ _Lire en premier. Seul l'état présent compte ici. L'état de clôture de la ph
 | films | La Haine (1995) | 1 h 33 min | ✔ 2026-10-11 (5 séquences, 9 plans longs vérifiés) |
 | films | Le Dîner de cons (1998) | 1 h 20 min | ✔ 2026-10-11 (4 séquences + timing) |
 | films | Mad Max: Fury Road (2015) | 2 h 00 min | ✔ 2026-10-11 (7 séquences) |
-| films | OSS 117 : Le Caire, nid d'espions (2006) | 1 h 39 min | ✔ 2026-10-11 (3 séquences + nuits + coupes / parole ; bagarre à faire) |
+| films | OSS 117 : Le Caire, nid d'espions (2006) | 1 h 39 min | ✔ 2026-10-11 (4 séquences + nuits + coupes / parole tranchées) |
 | films | Spider-Man: Across the Spider-Verse (2023), HDR10, AV1 | 2 h 20 min | |
-| films | Spotlight (2015) | 2 h 09 min | |
-| films | The Social Network (2010) | 2 h 00 min | |
+| films | Spotlight (2015) | 2 h 09 min | ✔ 2026-10-11 (4 séquences + comparaison ; témoignages à faire) |
+| films | The Social Network (2010) | 2 h 00 min | ✔ 2026-10-11 (3 séquences ; dépositions et fin à faire) |
 | films | Whiplash (2014), 2160p HDR | 1 h 46 min | ✔ 2026-10-11 (6 séquences) |
 | clips | Booba — 6G | 3 min 39 s | ✔ 2026-10-11 |
 | clips | GENER8ION — STORM (starring Yung Lean) | 7 min 34 s | ✔ 2026-10-11 |
