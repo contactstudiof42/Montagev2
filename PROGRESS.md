@@ -2,14 +2,11 @@
 
 _Lire en premier. Seul l'état présent compte ici. L'état de clôture de la phase 1 est archivé dans `archives/phase-1/PROGRESS-cloture-phase-1.md`, et l'historique des sessions 1 à 25 dans `archives/phase-1/PROGRESS-historique.md`._
 
-## État (2026-10-11, session 3 de la phase 2, 03:04-03:30)
-- **Phase 2 en cours** : mission `PROMPT-PHASE-2.md` (lire aussi « Avant chaque vidéo : repartir de la phase 1 », « Leçons de méthode », et la nouvelle « Passe de révision », étape 7, ajoutée par Diego). Démarrage de chaque session : `CLAUDE.md`.
-- Session 3 : aucun retour neuf, boîte vide. **Mad Max: Fury Road terminé** (`analyses/films/mad-max-fury-road.md`, 7 séquences : densité en vagues de 4 à 40 coupes/min, le final = crête la plus longue, sujet au centre ; pic de la tempête recompté, gonflé par les éclairs). **Bilan de la vague 1** écrit dans `RAPPORT.md`. Outils : `echantillon_tiers.py` (placement du sujet, compté à l'œil) ; `centrage.py` a échoué à la calibration (noté dans le fichier).
-- **Ziak terminé** (`analyses/clips/ziak-meme-pas-un-grincement.md`) : 109 plans et non 88 (coupes ratées dans le noir, retrouvées sur une copie éclaircie) ; pas de calage sur le beat (confirmé) ; 32 coupes/min avec la basse, 16 sans.
-- **Justice « Stress » terminé** (`analyses/clips/justice-stress.md`) : plans portés longs, coupes calées sur les grands accents (pas sur les temps), silence de 0,6 s avant la bagarre ; corrige la fiche de phase 1.
-- **PNL « Au DD » terminé** (`analyses/clips/pnl-au-dd.md`) : médiane 2,9 s, trois plans longs aux articulations (descente de 28 s, travelling arrière de 28,7 s), coupes au hasard, aube puis nuit, packshot d'album à la fin.
-- **Booba « 6G » terminé** (`analyses/clips/booba-6g.md`) : cadre qui grandit en ouverture, une seule rafale, plans longs en mouvement, couleur du froid vers le chaud, coupes au hasard.
-- **Reprendre ici : les clips** (étape 2), les trois restants (GENER8ION « STORM », HOUDI « Belle chanson », Yvnnis « Gare du Nord »), puis un court bilan des clips dans RAPPORT.md, puis les pubs (SDM est le test de méthode, déjà fait). Pour un clip sombre : copie éclaircie avant la détection (voir « Leçons de méthode »). Méthode en une passe sur la vidéo entière : `passe_globale.sh` convient aussi à un clip ; `calage.py` pour la musique ; `echantillon_tiers.py` si le cadre compte.
+## État (2026-10-11, session 4 de la phase 2, début 04:04)
+- **Phase 2 en cours** : mission `PROMPT-PHASE-2.md` (lire aussi « Avant chaque vidéo : repartir de la phase 1 », « Leçons de méthode », « Passe de révision », étape 7). Démarrage de chaque session : `CLAUDE.md`.
+- Session 4 : aucun retour neuf, boîte vide. **Clips terminés** (GENER8ION « STORM », HOUDI « Belle chanson », Yvnnis « Gare du Nord » ; bilan des huit clips dans `RAPPORT.md`). **Pubs terminées** (les sept, fiches dans `analyses/pubs/`, bilan dans `RAPPORT.md`).
+- Outil : `calage.py` lit la fréquence d'images et accepte `AUDIO=fichier` (musique séparée par demucs). Nouvelle leçon : **un calage mesuré sur le mixage peut être faux** (HOUDI) ; toujours confirmer sur la musique séparée.
+- **Reprendre ici : YouTube** (étape 3). Passe globale et transcription lancées en session 4 pour « La seule façon de monter les B-roll » (`videos/_travail/broll`) et EGO « Bibliothèque-Univers » (`videos/_travail/ego`) : vérifier qu'elles sont complètes (proxy, coupes.json, transcription.srt), sinon relancer. Puis les huit autres (passes longues : lancer en arrière-plan, deux à la fois). Pour les longues émissions (Popcorn 2 h 32, Kaizen 2 h 26), une passe globale et 5 à 8 séquences, comme un film.
 - `.claude/settings.json` (ajouté par Diego) n'est pas commité : le garde-fou de l'agent refuse ce commit. À laisser à Diego.
 
 ## Chaîne d'analyse d'un film (sessions 1-2)
@@ -49,30 +46,30 @@ _Lire en premier. Seul l'état présent compte ici. L'état de clôture de la ph
 | films | The Social Network (2010) | 2 h 00 min | |
 | films | Whiplash (2014), 2160p HDR | 1 h 46 min | ✔ 2026-10-11 (6 séquences) |
 | clips | Booba — 6G | 3 min 39 s | ✔ 2026-10-11 |
-| clips | GENER8ION — STORM (starring Yung Lean) | 7 min 34 s | |
-| clips | HOUDI — Belle chanson | 3 min 37 s | |
+| clips | GENER8ION — STORM (starring Yung Lean) | 7 min 34 s | ✔ 2026-10-11 |
+| clips | HOUDI — Belle chanson | 3 min 37 s | ✔ 2026-10-11 |
 | clips | Justice — Stress | 6 min 44 s | ✔ 2026-10-11 |
 | clips | PNL — Au DD | 4 min 50 s | ✔ 2026-10-11 |
 | clips | SDM — #Malentouré | 2 min 54 s | ✔ 2026-10-11 (test de méthode) |
-| clips | Yvnnis — Gare du Nord | 3 min 09 s | |
+| clips | Yvnnis — Gare du Nord | 3 min 09 s | ✔ 2026-10-11 |
 | clips | Ziak — Même pas un grincement | 3 min 49 s | ✔ 2026-10-11 (recompté : 109 plans) |
-| pubs | Crunch Creator — bande-annonce | 2 min 22 s | |
-| pubs | GP Explorer 3 — bande-annonce | 2 min 17 s | |
-| pubs | Intermarché — Conte de Noël | 2 min 30 s | |
-| pubs | Intermarché 2017 — L'amour | 3 min 00 s | |
-| pubs | Lacoste — Life is a Beautiful Sport | 1 min 10 s | |
-| pubs | adidas — Backyard Legends | 5 min 05 s | |
-| pubs | iPhone 17 — 3x More Scratch Resistant | 0 min 35 s | |
+| pubs | Crunch Creator — bande-annonce | 2 min 22 s | ✔ 2026-10-11 |
+| pubs | GP Explorer 3 — bande-annonce | 2 min 17 s | ✔ 2026-10-11 |
+| pubs | Intermarché — Conte de Noël | 2 min 30 s | ✔ 2026-10-11 |
+| pubs | Intermarché 2017 — L'amour | 3 min 00 s | ✔ 2026-10-11 |
+| pubs | Lacoste — Life is a Beautiful Sport | 1 min 10 s | ✔ 2026-10-11 |
+| pubs | adidas — Backyard Legends | 5 min 05 s | ✔ 2026-10-11 |
+| pubs | iPhone 17 — 3x More Scratch Resistant | 0 min 35 s | ✔ 2026-10-11 |
 | youtube | Créer YggTorrent, puis le détruire (480p) | 1 h 11 min | |
 | youtube | KAIZEN : 1 an pour gravir l'Everest (480p) | 2 h 26 min | |
 | youtube | Les Jeux Tiger ! (720p) | 31 min 02 s | |
-| youtube | La seule façon de monter les B-roll | 8 min 40 s | |
+| youtube | La seule façon de monter les B-roll | 8 min 40 s | ✔ 2026-10-11 |
 | youtube | Le jour où la CIA a trahi la France (720p) | 48 min 58 s | |
 | youtube | Philippe Boxho, médecin légiste, partie 1 (480p) | 1 h 07 min | |
 | youtube | Popcorn avec Anyme, Léna Situations & Etoiles (480p) | 2 h 32 min | |
 | youtube | Qui est l'imposteur (ft Eric & Ramzy) (720p) | 57 min 19 s | |
 | youtube | Qui est l'imposteur (ft Theodora & Guy2Bezbar) (480p) | 54 min 38 s | |
-| youtube | Visite extraordinaire d'une Bibliothèque-Univers (EGO, à confirmer) | 23 min 22 s | |
+| youtube | Visite extraordinaire d'une Bibliothèque-Univers (EGO, confirmé : vidéo du 23/09/2026) | 23 min 22 s | |
 | projets-f42 | Benefit — pub réseau (vertical) | 0 min 23 s | |
 | projets-f42 | Benefit — pub réseau 2 (vertical) | 0 min 26 s | |
 | projets-f42 | Fou rire — court métrage | 2 min 21 s | |
