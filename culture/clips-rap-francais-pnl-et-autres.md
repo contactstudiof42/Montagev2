@@ -86,3 +86,7 @@ Recherches du 2026-10-10. Sources : Booska-P, Interlude, VL Média, Paris ZigZag
 - La durée des plans, les ralentis et le rapport au beat chez PNL, Kekra et dans « Akimbo » viennent de ma mémoire ou de déductions. À mesurer avec `labo/analyse-clip/analyse_clip.py` si l'utilisateur fournit les fichiers.
 - Freeze Corleone a été écarté, faute de sources sur la réalisation. Seul fait trouvé : « Polémique » (avec Central Cee) est réalisé par Kunography, à qui Freeze aurait cédé un pourcentage des droits (Booska-P, 2022).
 - Le noir et blanc de « Raspoutine », et le fait que Bleu Désert l'ait réalisé, reposent sur la seule mention de Raplume.
+
+
+## Révision de la phase 2 (2026-10-11, « Au DD » vu)
+« Au DD » mesuré : coupes au niveau du hasard (confirmé : le montage ne frappe pas les temps) ; mais **ce n'est pas un clip de plans longs** (médiane 2,9 s, trois plans longs aux articulations) et l'ordre est **l'aube puis la nuit**, pas l'inverse. Les affirmations « de mémoire » de cette fiche étaient fausses sur deux points sur trois. Détail : `analyses/clips/pnl-au-dd.md`.

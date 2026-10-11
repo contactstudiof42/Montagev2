@@ -7,7 +7,8 @@ _Lire en premier. Seul l'état présent compte ici. L'état de clôture de la ph
 - Session 3 : aucun retour neuf, boîte vide. **Mad Max: Fury Road terminé** (`analyses/films/mad-max-fury-road.md`, 7 séquences : densité en vagues de 4 à 40 coupes/min, le final = crête la plus longue, sujet au centre ; pic de la tempête recompté, gonflé par les éclairs). **Bilan de la vague 1** écrit dans `RAPPORT.md`. Outils : `echantillon_tiers.py` (placement du sujet, compté à l'œil) ; `centrage.py` a échoué à la calibration (noté dans le fichier).
 - **Ziak terminé** (`analyses/clips/ziak-meme-pas-un-grincement.md`) : 109 plans et non 88 (coupes ratées dans le noir, retrouvées sur une copie éclaircie) ; pas de calage sur le beat (confirmé) ; 32 coupes/min avec la basse, 16 sans.
 - **Justice « Stress » terminé** (`analyses/clips/justice-stress.md`) : plans portés longs, coupes calées sur les grands accents (pas sur les temps), silence de 0,6 s avant la bagarre ; corrige la fiche de phase 1.
-- **Reprendre ici : les clips** (étape 2), les cinq restants (Booba, GENER8ION, HOUDI, PNL, Yvnnis) (SDM est le test de méthode, déjà fait). Pour un clip sombre : copie éclaircie avant la détection (voir « Leçons de méthode »). Méthode en une passe sur la vidéo entière : `passe_globale.sh` convient aussi à un clip ; `calage.py` pour la musique ; `echantillon_tiers.py` si le cadre compte.
+- **PNL « Au DD » terminé** (`analyses/clips/pnl-au-dd.md`) : médiane 2,9 s, trois plans longs aux articulations (descente de 28 s, travelling arrière de 28,7 s), coupes au hasard, aube puis nuit, packshot d'album à la fin.
+- **Reprendre ici : les clips** (étape 2), les quatre restants (Booba, GENER8ION, HOUDI, Yvnnis) (SDM est le test de méthode, déjà fait). Pour un clip sombre : copie éclaircie avant la détection (voir « Leçons de méthode »). Méthode en une passe sur la vidéo entière : `passe_globale.sh` convient aussi à un clip ; `calage.py` pour la musique ; `echantillon_tiers.py` si le cadre compte.
 - `.claude/settings.json` (ajouté par Diego) n'est pas commité : le garde-fou de l'agent refuse ce commit. À laisser à Diego.
 
 ## Chaîne d'analyse d'un film (sessions 1-2)
@@ -50,7 +51,7 @@ _Lire en premier. Seul l'état présent compte ici. L'état de clôture de la ph
 | clips | GENER8ION — STORM (starring Yung Lean) | 7 min 34 s | |
 | clips | HOUDI — Belle chanson | 3 min 37 s | |
 | clips | Justice — Stress | 6 min 44 s | ✔ 2026-10-11 |
-| clips | PNL — Au DD | 4 min 50 s | |
+| clips | PNL — Au DD | 4 min 50 s | ✔ 2026-10-11 |
 | clips | SDM — #Malentouré | 2 min 54 s | ✔ 2026-10-11 (test de méthode) |
 | clips | Yvnnis — Gare du Nord | 3 min 09 s | |
 | clips | Ziak — Même pas un grincement | 3 min 49 s | ✔ 2026-10-11 (recompté : 109 plans) |
