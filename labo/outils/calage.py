@@ -10,8 +10,14 @@ rien ; seule la comparaison aux attaques fortes (accents) et au hasard compte.""
 import sys, json, os, subprocess, numpy as np, librosa
 D, a, b = sys.argv[1:4]; tol_i = int(sys.argv[4]) if len(sys.argv) > 4 else 2; pc = float(sys.argv[5]) if len(sys.argv) > 5 else 90
 sec = lambda s: sum(float(x) * 60**i for i, x in enumerate(reversed(s.split(':'))))
-A, B = sec(a), sec(b); fps = 24000 / 1001; tol = tol_i / fps
-raw = subprocess.run(["ffmpeg", "-v", "error", "-ss", str(A), "-t", str(B - A), "-i", os.path.join(D, "proxy.mp4"),
+A, B = sec(a), sec(b)
+# Fréquence lue dans le fichier (session 4 : l'outil supposait 23,976 i/s, faux pour les clips à 25 i/s).
+r = subprocess.run(["ffprobe", "-v", "error", "-select_streams", "v:0", "-show_entries", "stream=r_frame_rate", "-of", "csv=p=0",
+                    os.path.join(D, "proxy.mp4")], capture_output=True, text=True).stdout.strip().split("/")
+fps = float(r[0]) / float(r[1]) if len(r) == 2 else 24000 / 1001; tol = tol_i / fps
+# AUDIO=fichier (ex. musique sans voix de demucs) : remplace le son du proxy ; il doit commencer à 0:00 de la vidéo.
+src = os.environ.get("AUDIO") or os.path.join(D, "proxy.mp4")
+raw = subprocess.run(["ffmpeg", "-v", "error", "-ss", str(A), "-t", str(B - A), "-i", src,
                       "-vn", "-ac", "1", "-ar", "22050", "-f", "f32le", "-"], capture_output=True).stdout
 y = np.frombuffer(raw, np.float32); sr = 22050
 env = librosa.onset.onset_strength(y=y, sr=sr, hop_length=256)
