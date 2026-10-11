@@ -43,6 +43,7 @@ Une ligne imaginaire relie les deux personnages (ou un personnage et ce qu'il re
 - **Anomalie voulue** (inquiétude, indice) : la placer dans la zone que le plan précédent a déjà désignée (lumière, contraste, centre, regard), sans la désigner dans le plan où elle apparaît (pas de zoom, pas de son). Plan de retour plus long que le plan de départ (voir `montage-rythme`). [ÉPROUVÉ EN MAQUETTE] (pièce 12, mesures de saillance, pas de spectateur)
 - **Décor chargé** : désigner la zone par une couleur saturée au plan 1 et poser l'anomalie devant elle ; un seul leurre de même forme à proximité, pas trois. [ÉPROUVÉ EN MAQUETTE] (pièce 12 v8)
 - **Faux raccord à cacher** : l'inverse, hors de la zone saillante, ou couper sur un mouvement qui capte l'œil. [THÉORIQUE]
+- **Raccorder deux plans suivis dans le noir** pour faire un seul trajet : *La Haine* (12:26-15:17) suit les trois amis 113 s dans la cité, laisse Saïd disparaître derrière une vitre noire de cage d'escalier, et coupe sur lui sortant d'une trappe sur le toit, filmé d'au-dessus (14:19,9). Le noir efface la coupe, le geste continu (monter) fait le raccord : on croit à un plan de 171 s. Utile pour un faux plan-séquence. [VU SUR IMAGES] (`analyses/films/la-haine.md`)
 - Outil : `atelier/12-inquietude-calme/mesure.py` (aire du changement, distance à la zone saillante).
 
 ## Temps [THÉORIQUE]
