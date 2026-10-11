@@ -6,7 +6,7 @@ _Lire en premier. Seul l'état présent compte ici. L'état de clôture de la ph
 - **Phase 2 en cours** : mission `PROMPT-PHASE-2.md` (lire aussi « Avant chaque vidéo : repartir de la phase 1 », « Leçons de méthode », « Passe de révision », étape 7). Démarrage de chaque session : `CLAUDE.md`.
 - Session 5 : aucun retour neuf, boîte vide. **Tiger et CIA complétés** (six séquences fines chacun). **Nouvelles fiches** : « Qui est l'imposteur » (deux épisodes, une fiche), Philippe Boxho (LEGEND), « Créer YggTorrent », KAIZEN (première passe + cinq séquences), Popcorn (première passe + quatre séquences). Constats YouTube dans `RAPPORT.md`.
 - Nouvelles leçons (dans `PROMPT-PHASE-2.md`) : mesurer coupes / parole **sur la voix séparée** quand il y a un fond musical (34 % contre 77 %) ; générique monté et coupe graphique → visage ; cartons de texte sur noir (un « plan » de 123 s en contenait 20) ; durées trop régulières = indice (Boxho).
-- **Reprendre ici** : (1) Popcorn : une rubrique de conversation en plan par plan, mesure coupes / parole sur voix séparée, transcription ; (2) KAIZEN : lire la transcription (`videos/_travail/kaizen/transcription.srt`, lancée en fin de session 5 ; si absente ou tronquée, relancer whisper en arrière-plan), ouverture et 1:12-1:15 en plan par plan ; (3) **bilan YouTube définitif** dans `RAPPORT.md` (réécrire « Constats YouTube ») ; (4) puis les projets Studio F42 (`videos/projets-f42/A-LIRE.md` : être exigeant, distinguer montage et tournage).
+- **Reprendre ici** : (1) Popcorn : une rubrique de conversation en plan par plan, mesure coupes / parole sur voix séparée, transcription ; (2) KAIZEN et CIA : lire les transcriptions refaites avec `-mc 0` (`videos/_travail/{kaizen,cia}/transcription.srt` ; vérifier les répétitions), ouverture et 1:12-1:15 en plan par plan ; (3) **bilan YouTube définitif** dans `RAPPORT.md` (réécrire « Constats YouTube ») ; (4) puis les projets Studio F42 (`videos/projets-f42/A-LIRE.md` : être exigeant, distinguer montage et tournage).
 - Passes globales prêtes (`videos/_travail/`) : `imposteur-er`, `imposteur-tg`, `boxho`, `ygg`, `kaizen`, `popcorn` (proxy, coupes, courbes, couleur, vignettes ; transcriptions sauf Popcorn).
 - `.claude/settings.json` (ajouté par Diego) n'est pas commité : le garde-fou de l'agent refuse ce commit. À laisser à Diego.
 
@@ -26,7 +26,7 @@ _Lire en premier. Seul l'état présent compte ici. L'état de clôture de la ph
 - `brew install gh` (temps non mesuré) : connexion GitHub (compte contactstudiof42).
 - `brew install uv whisper-cpp` : **23 s**.
 - `uv venv --python 3.12 .venv` + `numpy pillow librosa scenedetect opencv-python-headless` : **5 s**. Lancer les scripts avec `.venv/bin/python -I`.
-- Modèle Whisper `ggml-large-v3-turbo.bin` (1,5 Go), dans `~/.cache/whisper-cpp/` : **9 s**. Transcription : `whisper-cli -m ~/.cache/whisper-cpp/ggml-large-v3-turbo.bin -l fr -osrt -ojf -of <sortie> -f <audio 16 kHz mono>`. Un clip de 3 min se transcrit en moins d'une minute (Metal).
+- Modèle Whisper `ggml-large-v3-turbo.bin` (1,5 Go), dans `~/.cache/whisper-cpp/` : **9 s**. Transcription : `whisper-cli -m ~/.cache/whisper-cpp/ggml-large-v3-turbo.bin -l fr -osrt -mc 0 -ojf -of <sortie> -f <audio 16 kHz mono>`. Un clip de 3 min se transcrit en moins d'une minute (Metal).
 - `demucs` (séparation voix / musique) dans le même venv : **8 s**. Torch avec MPS disponible.
 - Durée de toute la chaîne sur un clip de 3 min (fiche technique, loudness, coupes, tempo, transcription) : **60 s**.
 

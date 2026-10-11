@@ -36,4 +36,4 @@ Planches dans `videos/_travail/kaizen/seq/` : 1:07:50-1:09:20 (63 plans, moyenne
 Rien sur cette vidéo.
 
 ## Pas fait
-- Lire la transcription (lancée en fin de session 5, peut-être incomplète : vérifier `videos/_travail/kaizen/transcription.srt`) ; ouverture et 1:12-1:15 en plan par plan ; vérification des plans longs ; calage des rafales sur la musique (demucs puis `calage.py`).
+- Lire la transcription (refaite avec `whisper-cli -mc 0` en fin de session 5 : la première bouclait de 30:15 à la fin, gardée en `transcription-boucle.srt`) ; ouverture et 1:12-1:15 en plan par plan ; vérification des plans longs ; calage des rafales sur la musique (demucs puis `calage.py`).

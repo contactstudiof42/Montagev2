@@ -116,7 +116,7 @@ _Réécrit à chaque session (dernière : 2026-10-11, session 5). Version préc�
 ## Limites de ma méthode (inscrites dans `PROMPT-PHASE-2.md`)
 - Les détecteurs ratent les coupes du sombre et de l'action accélérée (même `verif_plan.py`), inventent des coupes sur les éclairs ; les deux erreurs coexistent dans Mad Max. Recompter avant de citer un pic, tuile à 2-4 images/s sur tout plan long d'action.
 - Une vignette par plan ne juge pas un plan long ; une source HDR lue en SDR fausse la couleur.
-- Whisper invente des phrases sur les pistes sans voix et boucle sur les longues vidéos : vérifier les répétitions avant de citer.
+- Whisper invente des phrases sur les pistes sans voix et boucle sur les longues vidéos : vérifier les répétitions avant de citer ; `-mc 0` corrige la boucle (testé sur KAIZEN, session 5).
 - La parole détectée par l'énergie se trompe sous une musique (34 % contre 77 %) : séparer la voix avant `coupes_parole.py`. Les cartons de texte sur noir cachent leurs coupes au détecteur.
 - Le son est mesuré, **jamais écouté** ; demucs sert désormais à confirmer tout calage (le mixage avec voix peut en fabriquer un faux).
 - Le placement du sujet n'est mesurable qu'à l'œil, sur un petit échantillon.
