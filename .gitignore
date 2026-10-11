@@ -8,3 +8,7 @@ __pycache__/
 videos/
 .DS_Store
 .venv/
+
+# Images de référence de tiers (DA) : gardées en local, jamais poussées
+projets-phase-3/*/da/*.jpg
+projets-phase-3/*/da/*.png
