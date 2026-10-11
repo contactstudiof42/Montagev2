@@ -21,7 +21,7 @@ _Ouverte le 2026-10-11 (session 9). Une ligne par vidéo à revoir : ce que les 
 | Le Dîner de cons (2) | parole : voix séparée `SEUIL=haut` + spectrogramme | **fait (session 9)** : 1 corrigée, 2 confirmées |
 | Interstellar (1) | `verif_plan.py` sur les plans longs sombres ; séries saturées ; générique | **fait (session 9)** : 3 confirmées |
 | Joker (1-2) | séries saturées : aucune (0 sur 1 101) ; calage des escaliers : 13 coupes seulement, mesure trop petite pour être refaite utilement | **vérifié (session 9)**, rien à changer |
-| Whiplash (2) | plans longs (`verif_plan.py` + tuile) ; séries saturées ; calage sur musique séparée (fait sur mixage) | **fait (session 9)** : 3 confirmées, 1 corrigée, 1 nouvelle |
+| Whiplash (2) | plans longs (`verif_plan.py` + tuile) ; séries saturées ; calage sur musique séparée (fait sur mixage) | **fait (session 9)** : 5 confirmées (dont les deux rafales, vraies), 1 corrigée, 1 nouvelle |
 | Mad Max: Fury Road (3) | séries saturées : une seule (5 plans, 27:45) ; générique à 1:52:58, après le final cité | **vérifié (session 9)**, rien à changer |
 | adidas « Backyard Legends » (4) | parole : `SEUIL=haut` + spectrogramme (la mesure de session 4 était déjà sur voix séparée) | **fait (session 9)** : 1 confirmée, 1 corrigée |
 | Qui est l'imposteur (5) | parole : `SEUIL=haut` + spectrogramme | **fait (session 9)** : 1 confirmée, 1 corrigée |
@@ -39,7 +39,7 @@ _Ouverte le 2026-10-11 (session 9). Une ligne par vidéo à revoir : ce que les 
 |---|---|---|---|---|
 | Le Dîner de cons | 3 | 2 | 1 | 0 |
 | Interstellar | 3 | 3 | 0 | 0 |
-| Whiplash | 5 | 3 | 1 | 1 |
+| Whiplash | 7 | 5 | 1 | 1 |
 | adidas « Backyard Legends » | 2 | 1 | 1 | 0 |
 | Qui est l'imposteur | 2 | 1 | 1 | 0 |
 | POPCORN | 2 | 1 | 1 | 0 |
@@ -47,6 +47,6 @@ _Ouverte le 2026-10-11 (session 9). Une ligne par vidéo à revoir : ce que les 
 | Hirsingen | 2 | 1 | 1 | 0 |
 | Fou rire | 2 | 1 | 1 | 0 |
 | Forrest Gump | 2 | 1 | 1 | 0 |
-| **Total** | 25 | 15 | 9 | 1 |
+| **Total** | 27 | 17 | 9 | 1 |
 
 **Lecture provisoire (session 9)** : deux corrections sur les images, toutes deux des **fausses rafales** (Fou rire : un plan porté flou ; *Forrest Gump* : un téléviseur dans le champ). Sur les mesures de parole, **tous les pourcentages de l'outil étaient faux** (7 sur 7, toujours trop hauts, de 6 à 36 points), **toutes les conclusions qualitatives tiennent** (qui coupe au milieu des phrases, qui attend la fin). Plans longs et calage : 8 conclusions sur 9 confirmées. Le regard « à l'œil » sur images tient ; le chiffre automatique sur la parole ne tient pas sans spectrogramme.
