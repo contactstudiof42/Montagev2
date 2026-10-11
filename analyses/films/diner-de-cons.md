@@ -1,6 +1,6 @@
 # Le Dîner de cons (Francis Veber, 1998) — montage Georges Klotz
 
-_Fiche ouverte le 2026-10-11 (phase 2, session 2, film vague 1 n°4). **État : passe globale et 4 séquences faites ; le timing comique fin (air avant et après la chute) reste à mesurer.** Source : Blu-ray 1080p (1920×822, SDR), VF d'origine AC3, aucun sous-titre texte : transcription Whisper (large-v3-turbo) dans `videos/_travail/diner/sous-titres.srt`. Planches commitées : `diner-de-cons-courbes.png`, `diner-de-cons-couleur.png`, puis une image par plan avec le volume momentané en dessous : `diner-de-cons-ouverture.png` (0:03:20-0:08), `diner-de-cons-leblanc.png` (0:30:20-0:35), `diner-de-cons-cheval.png` (0:53-0:58), `diner-de-cons-final.png` (1:12:50-1:17:40)._
+_Fiche ouverte le 2026-10-11 (phase 2, session 2, film vague 1 n°4). **État : passe globale, 4 séquences et mesure des coupes contre la parole faites ; reste le timing de chutes précises, réplique par réplique.** Source : Blu-ray 1080p (1920×822, SDR), VF d'origine AC3, aucun sous-titre texte : transcription Whisper (large-v3-turbo) dans `videos/_travail/diner/sous-titres.srt`. Planches commitées : `diner-de-cons-courbes.png`, `diner-de-cons-couleur.png`, puis une image par plan avec le volume momentané en dessous : `diner-de-cons-ouverture.png` (0:03:20-0:08), `diner-de-cons-leblanc.png` (0:30:20-0:35), `diner-de-cons-cheval.png` (0:53-0:58), `diner-de-cons-final.png` (1:12:50-1:17:40)._
 
 **Lu avant l'analyse** : `culture/timing-comique-sitcom.md` (dont Kaamelott : dialogue frontal, deux caméras), `culture/gags-de-montage.md`, `montage-rythme` (timing comique), `montage-grammaire` (champ-contrechamp, couper sur la réaction), grille de `montage-regard`. Le film est une pièce de théâtre adaptée (Veber, 1993).
 
@@ -33,6 +33,17 @@ Faire rire d'un piège qui se retourne : celui qui voulait se moquer d'un « con
 - 50 plans, **durée moyenne 6,2 s, deux fois la médiane du film**. La tirade sincère de Pignon est tenue en gros plans de **32,7 s** (1:14:41) et **28,2 s** (1:16:03), vérifiés : continus. Christine à l'hôpital en contrechamp (4 à 14 s).
 - Le film se termine par un plan large de 28,5 s (1:17:32) : la dernière gaffe et la réaction en un seul cadre.
 
+## Où tombent les coupes par rapport à la parole [mesuré, `labo/outils/coupes_parole.py`, énergie de la voix par 20 ms]
+| Passage | Coupes | Pendant la parole | Air depuis la fin de la réplique (quartiles) | Jusqu'à la reprise (quartiles) |
+|---|---|---|---|---|
+| huis clos 0:10-0:30 | 279 | **40 %** | 0,15 / 0,34 / 0,57 s | 0,20 / 0,42 / 0,83 s |
+| coup de fil à Leblanc | 67 | **43 %** | 0,21 / 0,37 / 0,61 s | 0,24 / 0,34 / 0,76 s |
+| Cheval | 54 | **44 %** | 0,21 / 0,43 / 0,73 s | 0,17 / 0,37 / 1,12 s |
+| coup de fil final (sincère) | 47 | **21 %** | 0,28 / 0,48 / 0,94 s | 0,28 / 0,76 / 1,80 s |
+- **Dans les scènes comiques, quatre coupes sur dix tombent pendant que quelqu'un parle** (réaction prise sur la réplique, chevauchement). Les autres tombent dans des silences très courts : environ **0,35 s après la fin de la réplique**, à peu près au milieu d'un trou de 0,8 s. Il n'y a presque jamais d'air.
+- **Dans la scène sincère, deux fois moins de coupes sur la parole**, et plus d'air autour (la reprise vient 0,76 s après la coupe en médiane, 1,8 s au troisième quartile).
+- **Corrige l'estimation de phase 1** (`culture/timing-comique-sitcom.md`, « 1 à 3 s après la chute ») : elle vaut pour une sitcom avec rires enregistrés. Sans public, le film ne laisse presque pas d'air après les répliques ; l'air est réservé à l'émotion.
+
 ## Confirme, contredit, complète (provisoire)
 - **Confirme** `culture/timing-comique-sitcom.md` (Kaamelott) : dialogue frontal, peu de valeurs de plan, un plan à deux pour situer. **Complète** : les **gags de situation** (la gaffe, le vin) sont tenus en plan à deux ou à trois (12 à 37 s), les **échanges verbaux** en champ-contrechamp rapide (1 à 4 s), et la réaction isolée vient **après** la chute.
 - **Confirme**, sur un quatrième film et dans un autre genre, la règle des plans longs : **quand le personnage est sincère** (la tirade de Pignon), le plan tient (28 à 33 s) alors que le film coupe toutes les 3 s.
@@ -48,7 +59,7 @@ Faire rire d'un piège qui se retourne : celui qui voulait se moquer d'un « con
 Rien pour l'instant (`GOUTS.md`, `NOTES-DIEGO.md`, `RETOURS-DIEGO.md`).
 
 ## Reste à faire (session suivante)
-- **Mesurer le timing comique** sur les chutes repérées : écart entre la fin de la réplique de chute et la coupe, qui est à l'image sur la chute, durée de la réaction (avec les horodatages de Whisper, à ±0,5 s ; vérifier à l'image). Comparer aux estimations de `culture/timing-comique-sitcom.md` (0 à 4 images avant la chute, 1 à 3 s après).
+- **Timing de chutes précises** : choisir cinq chutes (« il n'a pas de prénom », « la boulette », « Cheval en vin »…), mesurer réplique par réplique la coupe, qui est à l'image sur la chute, et la durée de la réaction (horodatages Whisper à ±0,5 s, vérifier à l'image).
 - Une séquence de l'arrivée de Pignon (vers 0:14-0:20) pour voir comment le film installe le personnage.
 
 ## Doutes
