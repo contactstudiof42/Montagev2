@@ -1,9 +1,14 @@
-# tremblement.py VIDEO [debut_s] [fin_s] [--png sortie.png] [--fenetre 0.4] [--json reste.json]
+# tremblement.py VIDEO [debut_s] [fin_s] [--png sortie.png] [--fenetre 0.4] [--json reste.json] [--avant ORIGINAL] [--bande sortie.png]
 # Mesure le tremblement d'un plan : déplacement global du décor image par image (corrélation de phase sur l'image
 # en niveaux de gris, fenêtre de Hann), trajectoire cumulée de la caméra, trajectoire lissée (le mouvement voulu,
 # moyenne glissante gaussienne de `fenetre` secondes), reste = tremblement. Résultats en pixels ramenés à une image
 # de 1080 px de large (quelle que soit la taille du fichier lu). Imprime : moyenne |reste|, pic |reste|, vitesse
 # voulue moyenne, et (option) une courbe PNG (trajectoire brute / lissée en x et y, reste dessous).
+# --avant ORIGINAL (même plage) : compare la trajectoire VOULUE (lissée) du plan stabilisé à celle de l'original. But de
+# Diego (2026-10-11) : un mouvement fluide, pas un plan figé ; on garde le travelling du cadreur, on retire les secousses.
+# Sort « vitesse_conservee » (rapport des vitesses voulues, 0,8-1,3 = gardé ; le zoom de stabilisation l'augmente un peu)
+# et « correlation_trajectoire » (forme du mouvement voulu, > 0,9 = même geste). Proche de 0 = mouvement annulé : trop lissé.
+# --bande sortie.png : 12 images consécutives recadrées au centre (40 %) + superposition de 5 images, pour JUGER À L'ŒIL.
 # Lancer avec .venv/bin/python -I. Seuils : voir montage-regard § « Voir le mouvement ».
 import sys, subprocess, json, numpy as np, cv2
 
@@ -83,11 +88,29 @@ if __name__ == "__main__":
     if "--png" in a: i = a.index("--png"); png = a[i + 1]; del a[i:i + 2]
     if "--fenetre" in a: i = a.index("--fenetre"); fen = float(a[i + 1]); del a[i:i + 2]
     jout = None
+    for opt in ("--avant", "--bande"):
+        if opt in a: i = a.index(opt); del a[i:i + 2]
     if "--json" in a: i = a.index("--json"); jout = a[i + 1]; del a[i:i + 2]
     v = a[0]; t0 = float(a[1]) if len(a) > 1 else None; t1 = float(a[2]) if len(a) > 2 else None
     fr, fps, w = lire(v, t0, t1)
     res, traj, lisse, reste = mesure(fr, fps, w, fen)
     print(json.dumps({"video": v.split("/")[-1], "debut": t0, "fin": t1, **res}, ensure_ascii=False))
     if png: courbe(png, traj, lisse, reste, v.split("/")[-1])
+    if "--avant" in sys.argv:
+        o = sys.argv[sys.argv.index("--avant") + 1]
+        fo, fpso, wo = lire(o, t0, t1)
+        _, trajo, lisseo, _ = mesure(fo, fpso, wo, fen)
+        n = min(len(lisse), len(lisseo))
+        vo = np.hypot(*np.diff(lisseo[:n], axis=0).T).mean(); vs = np.hypot(*np.diff(lisse[:n], axis=0).T).mean()
+        a_, b_ = (lisseo[:n] - lisseo[0]).ravel(), (lisse[:n] - lisse[0]).ravel()
+        cor = float(np.dot(a_, b_) / (np.linalg.norm(a_) * np.linalg.norm(b_) + 1e-9))
+        print(json.dumps({"vitesse_conservee": round(float(vs / max(vo, 1e-6)), 2), "correlation_trajectoire": round(cor, 2)}))
+    if "--bande" in sys.argv:
+        from PIL import Image
+        out = sys.argv[sys.argv.index("--bande") + 1]
+        H, Wd = fr.shape[1], fr.shape[2]; c = (int(H * .3), int(H * .7), int(Wd * .3), int(Wd * .7))
+        i0 = max(0, len(fr) // 2 - 6); seq = [fr[i][c[0]:c[1], c[2]:c[3]] for i in range(i0, min(len(fr), i0 + 12))]
+        sup = np.mean([fr[i] for i in range(i0, min(len(fr), i0 + 5))], axis=0)[c[0]:c[1], c[2]:c[3]]
+        Image.fromarray(np.hstack(seq + [sup]).astype(np.uint8)).resize((len(seq + [sup]) * 160, int(160 * (c[1] - c[0]) / (c[3] - c[2])))).save(out)
     if jout:   # reste image par image (px, image de 1080 de large ; y vers le bas) : sert à stabiliser en compensant
         json.dump({"fps": fps, "reste": np.round(reste, 2).tolist()}, open(jout, "w"))

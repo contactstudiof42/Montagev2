@@ -154,3 +154,16 @@ _Dictées par Diego, mises en forme par l'assistant de configuration ; les phras
 
 ### Suite
 V4 : applique ces notes. Avant de livrer, compare en pleine résolution ton titre à la référence Sony, et tes effets aux exemples d'eyecannndy.
+
+## 2026-10-11 — Gyroflow : un mouvement fluide, pas un plan statique (dicté en session V4)
+_Dicté par Diego dans la conversation, recopié par l'agent._
+Le but n'est pas d'obtenir un plan statique, mais un mouvement fluide. On garde le mouvement voulu du cadreur (travelling, glissement, approche), on retire seulement les secousses et les saccades. Donc :
+- ne cherche pas la stabilité absolue : lissage modéré, pas d'annulation du mouvement, et le moins de recadrage possible ;
+- ne compare pas le déplacement total des pixels : mesure seulement le tremblement résiduel (le mouvement moins sa version lissée), et vérifie que la trajectoire voulue est conservée ;
+- juge surtout à l'œil, sur une bande d'images consécutives : le mouvement doit paraître régulier et naturel, pas figé.
+**Intégré le 2026-10-11** (session V4) : `montage-regard` (point 3), `montage-resolve` (recette Gyroflow) ; `labo/outils/tremblement.py --avant ORIGINAL` (vitesse et forme du mouvement voulu conservées) et `--bande` (bande d'images pour juger à l'œil).
+
+## 2026-10-11 — Ne jamais réutiliser deux fois le même passage d'un rush (dicté en session V4)
+_Dicté par Diego dans la conversation, recopié par l'agent._
+Dans ce type de vidéo (after movie, événementiel, run and gun, montage dynamique), on ne réutilise jamais deux fois le même passage d'un même rush. Un rush peut fournir plusieurs plans différents (on ne coupe pas toujours en run and gun), mais jamais le même moment deux fois. C'est amateur. Seule exception : un ressort de récit qui le justifie (flashback, image d'illustration, rappel volontaire, podcast…). Avant chaque rendu, vérifie automatiquement la timeline : liste le rush source et les timecodes d'entrée et de sortie de chaque plan, et signale tout chevauchement entre deux plans du même rush. S'il y en a un dans la V3, corrige-le dans la V4.
+**Intégré le 2026-10-11** (session V4) : règle dans `montage-grammaire`, `montage-formats` et `montage-regard` (point 7) ; contrôle `labo/outils/doublons_timeline.py` (à coller dans `run_script`) : **11 doublons trouvés dans la V3**, corrigés dans la V4.
