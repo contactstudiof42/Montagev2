@@ -52,4 +52,4 @@ Rien sur cette vidéo. Elle fait partie de ses dix vidéos YouTube.
 
 ## Doutes
 - Le cadre arrondi semble rester sur certains plans de reconstitution (0:53-1:03) : la frontière archive / récit n'est peut-être pas absolue. Non tranché sur vignettes de 200 px.
-- La transcription Whisper boucle (une phrase répétée 25 fois vers 2:28-3:14 sur la musique du cold open, une autre sur le générique) : passages à retranscrire avant de citer le texte.
+- La première transcription bouclait (une phrase répétée 25 fois vers 2:28-3:14, une autre sur le générique) ; **refaite avec `whisper-cli -mc 0` en session 5** : 647 segments, plus de boucle (seules restent deux phrases fantômes sur la musique). L'ancienne est gardée en `transcription-boucle.srt`.
