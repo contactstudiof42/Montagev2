@@ -2,12 +2,12 @@
 
 _Lire en premier. Seul l'état présent compte ici. L'état de clôture de la phase 1 est archivé dans `archives/phase-1/PROGRESS-cloture-phase-1.md`, et l'historique des sessions 1 à 25 dans `archives/phase-1/PROGRESS-historique.md`._
 
-## État (2026-10-11, session 7 de la phase 2, 07:04-07:5x)
+## État (2026-10-11, session 7 de la phase 2, 07:04-07:42)
 - **Phase 2 en cours** : mission `PROMPT-PHASE-2.md` (lire aussi « Avant chaque vidéo : repartir de la phase 1 », « Leçons de méthode », « Passe de révision », étape 7). Démarrage de chaque session : `CLAUDE.md`.
 - Session 7 : aucun retour neuf, boîte vide. **Vague 2 des films presque finie** : *La Haine* terminée (5 séquences, 9 plans longs vérifiés, 13 cartons-horloge), *Avengers: Infinity War* (4 séquences + classement de l'acte final), *Forrest Gump* (4 séquences ; HDR converti). Fiches dans `analyses/films/`, chacune avec sa liste « À faire » (couleur fine, fin de *Forrest Gump*, combat de New York).
-- *OSS 117* : passe globale et transcription Whisper (`-mc 0`, pas de sous-titres complets dans le fichier) **lancées en fin de session 7** dans `videos/_travail/oss117/` (`transcription.srt`). Vérifier qu'elles sont complètes (`proxy-Scenes.csv`, `coupes` dans `courbes.log` après `courbes_film.py`), sinon relancer.
+- *OSS 117* : passe globale, transcription Whisper (`-mc 0`, deux boucles repérées), deux séquences (poulets, fin) et coupes / parole sur deux scènes faites en fin de session 7 ; fiche `analyses/films/oss117-le-caire-nid-d-espions.md` avec sa liste « À faire » (ouverture, nuit bleue, bagarre ; **mesure coupes / parole à trancher** : 57 % sur le mixage contre 90 % sur la voix séparée).
 - Skills mis à jour en session 7 : `montage-rythme` (plan long comme norme et rafale comme signal ; alterné par blocs puis jonction ; une liste dite = une image par élément au cinéma), `montage-son-et-emotion` (cartons-horloge = trous de son, crescendo final hors champ ; ralenti par paliers après le claquement ; silence avant une chute comique), `montage-grammaire` (raccorder deux plans suivis dans le noir). Leçon de méthode ajoutée : film N&B de nuit, `verif_plan.py` sur tout plan de nuit de plus de 60 s.
-- **Reprendre ici** : *OSS 117* (`courbes_film.py`, `couleur_film.py`, repérer les scènes dans `transcription.srt` après avoir cherché les répétitions et fantômes Whisper ; comédie : `coupes_parole.py` comme pour *Le Dîner de cons*, comparer les deux). Puis **bilan de la vague 2** dans `RAPPORT.md` (une ébauche y est déjà). Puis vague 3 (*The Social Network*, *Spotlight*, *Aftersun*, *Spider-Verse* en HDR10 AV1 : `HDR=1`).
+- **Reprendre ici** : finir *OSS 117* (À faire de sa fiche ; marquer 20 coupes à la main pour trancher mix / voix séparée), puis **bilan définitif de la vague 2** dans `RAPPORT.md` (le bilan provisoire y est, avec OSS 117). Les « À faire » d'*Avengers* et *Forrest Gump* (couleur fine, fin de *Forrest Gump*) peuvent attendre la passe de révision. Puis vague 3 (*The Social Network*, *Spotlight*, *Aftersun*, *Spider-Verse* en HDR10 AV1 : `HDR=1`).
 - `.claude/settings.json` (ajouté par Diego) n'est pas commité : le garde-fou de l'agent refuse ce commit. À laisser à Diego.
 
 ## Chaîne d'analyse d'un film (sessions 1-2)
@@ -42,7 +42,7 @@ _Lire en premier. Seul l'état présent compte ici. L'état de clôture de la ph
 | films | La Haine (1995) | 1 h 33 min | ✔ 2026-10-11 (5 séquences, 9 plans longs vérifiés) |
 | films | Le Dîner de cons (1998) | 1 h 20 min | ✔ 2026-10-11 (4 séquences + timing) |
 | films | Mad Max: Fury Road (2015) | 2 h 00 min | ✔ 2026-10-11 (7 séquences) |
-| films | OSS 117 : Le Caire, nid d'espions (2006) | 1 h 39 min | passe globale lancée (session 7) |
+| films | OSS 117 : Le Caire, nid d'espions (2006) | 1 h 39 min | ✔ 2026-10-11 (partiel : 2 séquences + coupes / parole) |
 | films | Spider-Man: Across the Spider-Verse (2023), HDR10, AV1 | 2 h 20 min | |
 | films | Spotlight (2015) | 2 h 09 min | |
 | films | The Social Network (2010) | 2 h 00 min | |

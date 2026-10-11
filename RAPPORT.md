@@ -136,12 +136,13 @@ _Réécrit à chaque session (dernière : 2026-10-11, session 7). Versions préc
 
 **Pour le studio, dans l'ordre** : (1) QC son systématique ; (2) un passage « muet » de chaque commande réseau (sous-titres gras et contrastés, premier écran net avant 2 s) ; (3) vérifier que l'ordre des plans dit la cause dans les pubs sans voix ; (4) une ambiance continue sous tout dialogue de fiction.
 
-## Bilan provisoire de la vague 2 (trois films sur quatre, session 7)
+## Bilan provisoire de la vague 2 (quatre films, OSS 117 partiel, session 7)
 | Film | Plans (min.) | ASL / médiane | LUFS intégré | Forme de la densité | Image |
 |---|---|---|---|---|---|
 | La Haine | ≥ 347 | ~16 / 8,2 s | -19,9 | sous 10 coupes/min, deux crêtes seulement (générique d'archives, mort d'Abdel) | N&B, noir toujours atteint ; la nuit baisse, ne contraste pas plus |
 | Avengers: Infinity War | ≥ 2 237 | 4,0 / 2,6 s | -24,7 | vagues de 10 à 33/min, crête à New York (minute 23), pas à la fin | sombre et froid puis clair et chaud |
 | Forrest Gump | ≥ 1 004 | 8,5 / 4,65 s | -25,4 (VF) | vagues courtes de 3 à 24/min, crête sur un résumé d'archives | à mesurer par époque |
+| OSS 117 : Le Caire | ≥ 1 317 | 4,5 / 2,9 s | -21,8 | plate, 10 à 22/min ; la crête finale (30/min) est fausse (explosions) | beige chaud, blocs de nuit bleue |
 
 **Ce que la vague dit déjà :**
 1. **Le climax n'est pas plus rapide** : trois films sur trois encore (huit sur huit avec la vague 1). La fin de *La Haine* a une durée moyenne de plan de 16 s, le claquement d'*Avengers* est à 10 coupes/min. [mesuré]
@@ -152,7 +153,9 @@ _Réécrit à chaque session (dernière : 2026-10-11, session 7). Versions préc
 6. **La rafale pour l'acte, le plan long pour la menace ou le corps** : ouverture d'*Avengers* (35 et 41 s, puis 1-2 s quand la violence commence), embuscade de *Forrest Gump* (attaque hachée, sauvetages tenus 19 à 40 s), comme *Joker*. [VU SUR IMAGES]
 7. **Le silence avant la chute vaut aussi pour la comédie** (*Forrest Gump*, « Je suis fatigué » après 30 s de quasi-silence) ; **un carton récurrent peut être un trou de son** qui scande le film (*La Haine*, 13 cartons-horloge, le dernier n'avance que d'une minute). [mesuré, pas écouté]
 
-**Pour Studio F42** (à éprouver en maquette) : l'horloge sur noir avec trou de son pour un film sur une journée (événement, making-of) ; l'alterné par blocs avec un personnage qui relie les lieux pour un événement multi-sites ; la liste dite illustrée au même rythme puis le plan tenu, pour tout film de marque à voix off.
+8. **Une comédie de dialogue a une densité plate** (*OSS 117* comme *Le Dîner de cons*) : échange en champ-contrechamp rapide, gag de situation dans un plan qui le contient ; et dans un pastiche, **l'habillage vient de l'époque imitée** (carton « FIN », casting nominatif). [mesuré, VU SUR IMAGES]
+
+**Pour Studio F42** (à éprouver en maquette) : pour une pub parodique, imiter le genre jusqu'au générique ; l'horloge sur noir avec trou de son pour un film sur une journée (événement, making-of) ; l'alterné par blocs avec un personnage qui relie les lieux pour un événement multi-sites ; la liste dite illustrée au même rythme puis le plan tenu, pour tout film de marque à voix off.
 
 ## Erreurs corrigées (phase 2)
 - Session 7 : le « plan suivi de 171,6 s » de *La Haine* (fiche de session 6) contient une coupe cachée dans le noir d'une cage d'escalier (113,5 + 57,7 s) ; deux « plans » de nuit de 173 et 195 s en contenaient 27 et 9 ; le « plan de la plume » de *Forrest Gump* (159 s) se termine par quatre ou cinq plans rapprochés que `verif_plan.py` n'a pas vus.
@@ -176,6 +179,7 @@ _Réécrit à chaque session (dernière : 2026-10-11, session 7). Versions préc
 - Les plans portés à filés (Stress) peuvent cacher des coupes que ni les outils ni une tuile à 4 images/s ne tranchent.
 
 ## Doutes (à trancher plus tard, sans poser de question pendant une routine)
+- *OSS 117* : coupes pendant la parole, 57 % sur le mixage contre 90 % sur la voix séparée par demucs (même scène). Je ne sais pas laquelle croire ; leçon inscrite, à trancher à la main.
 - *La Haine* : un tronc d'arbre passe devant l'objectif à 13:04 ; coupe cachée ou non, je ne peux pas trancher sur l'image. *Avengers* : le classement des lignes de l'acte final est fait à l'œil au pas de 2-3 s (±10 s). *Forrest Gump* : mesures de son sur la **version française** (choisie pour les sous-titres français complets) ; le silence de la fin de la course vaut pour la VF.
 - Projets F42 : je n'ai aucun rush ni brief ; les intentions, contraintes et destinations (festival, application, réseau) sont déduites. Oney : les 2,5 s de noir final sont peut-être demandées par l'intégration. Hirsingen : les appels « Monsieur, vous m'entendez ? » transcrits aux débuts des fenêtres de 30 s sont plausiblement réels (elle l'appelle plusieurs fois à l'image), non écoutés. Le son n'est jamais écouté : les remarques « loge sans ambiance » sont des lectures de courbe.
 - `.claude/settings.json` (modèle Opus, effort high), ajouté par Diego, **n'est pas commité** : le garde-fou de l'agent refuse ce commit. Diego peut le commiter lui-même.
