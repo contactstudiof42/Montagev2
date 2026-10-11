@@ -101,3 +101,13 @@ Outils apparus après l'analyse (session 2) : `verif_plan.py` systématique sur 
 - **Confirmée** : le plan d'ouverture de 55 s (1:37, la poussée dans le couloir jusqu'à Andrew à la batterie) est un seul plan (`verif_plan.py` : 0 coupe ; tuile à 1 image / 2 s continue).
 - **Confirmée** : le détecteur est fiable ici ; 6 séries saturées seulement (24 « plans » sur 1 511), sans effet sur les chiffres.
 - **Nouvelle** : les deux plus longs plans du film après l'ouverture sont **les deux scènes avec Nicole**. Andrew l'invite au comptoir du cinéma (13:12, **un plan de 84,9 s**, plan à deux de profil, `verif_plan.py` : 0 coupe, tuile continue, `whiplash-revision-nicole.png`) ; il la rappelle après son renvoi (1:23:35, **69,4 s puis un gros plan de 54,7 s**, « I'll have to check with my boyfriend » ; une coupe possible vers 1:24:05, passage du serré au large, non tranchée). La musique est hachée (0,5 à 2 s aux auditions), **la vie qu'Andrew sacrifie est tenue d'un bloc**, et la seconde scène rime avec la première (la pizza). C'est la règle « plan long réservé à ce qui compte » appliquée à ce que le personnage perd.
+- **Calage, refait sur la musique séparée par demucs** (`calage.py`, 97e centile, ±2 images ; la voix de Fletcher et les dialogues retirés) :
+
+| Passage | Coupes | Attaque forte (hasard, 95e c.) | Temps (hasard, 95e c.) |
+|---|---|---|---|
+| « Not quite my tempo », toute la scène (0:24:50-0:30:00) | 113 | 19 % (17 %, 22 %) | 35 % (33 %, 41 %) |
+| final avec l'orchestre (1:32:45-1:37:30) | 99 | 19 % (22 %, 28 %) | 44 % (39 %, 46 %) |
+| solo (1:37:30-1:41:30) | 75 | 15 % (16 %, 23 %) | 29 % (32 %, 41 %) |
+
+  - **Confirmée** : les coupes ne tombent pas sur les attaques fortes plus qu'au hasard (trois passages sur trois).
+  - **Corrigée** : « une légère tendance à couper sur les temps dans le final avec l'orchestre ». Sur la musique séparée comme sur le mixage remesuré, 44 % contre 39 % au hasard, **sous** le 95e centile (46 %) : rien de significatif. La mesure de session 2 (48 % contre 39 %, 95e centile 47 %) tenait à un découpage différent du passage. Pour les reprises seules de « Not quite my tempo », la mesure n'a pas été refaite (la scène entière ne montre rien).
