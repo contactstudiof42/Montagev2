@@ -26,7 +26,7 @@ _Réécrit à chaque session (dernière : 2026-10-11, session 9). Versions préc
 6. **La vitesse se paie en lisibilité, et trois outils la rachètent** (Mad Max) : sujet au centre (environ 20 images sur 24 au tiers central, contre 12 pour Interstellar et 8 pour Joker), un plan de géographie toutes les 5 à 10 coupes, une couleur par lieu. Inversement, le décentrage va avec les plans tenus (Joker). [VU SUR IMAGES, échantillon jugé à l'œil]
 7. **Plus un film coupe vite, plus il doit respirer** : Mad Max, le plus rapide, a le plus grand écart creux/crête (facteur 10). La règle « respiration obligatoire » du kinetic tient à l'échelle de deux heures. [VU SUR IMAGES]
 8. **Ce qui ne monte pas** : un film de musique n'est pas forcément monté au beat (Whiplash, calage = hasard) ; une comédie de dialogue a une densité plate (Dîner de cons). [mesuré]
-9. **Le timing comique sans public** (Dîner de cons) : 40-44 % des coupes pendant la parole, environ 0,35 s d'air sinon ; l'air (1,5-3 s) réservé aux chutes. [mesuré, VU SUR IMAGES]
+9. **Le timing comique sans public** (Dîner de cons) : environ 20 % des coupes au milieu d'une phrase (révisé en session 9 à l'œil ; l'outil disait 40-44 %, et autant dans la scène sincère), environ 0,35 s d'air sinon ; l'air (1,5-3 s) réservé aux chutes. [mesuré, VU SUR IMAGES]
 
 **Ce que la vague a corrigé de la phase 1** : la contraction 8 / 4 / 2 / 1 s d'Interstellar (fausse : deux temps et une rupture) ; « extérieurs silencieux » ; « l'image de Joker s'assombrit » ; « le rouge remplace le vert » ; « la danse des toilettes en un seul plan ». Cinq affirmations de phase 1 corrigées sur les deux films de Diego : les fiches écrites sur des textes étaient justes dans l'esprit, fausses dans les chiffres.
 

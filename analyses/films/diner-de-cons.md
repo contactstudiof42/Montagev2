@@ -69,3 +69,16 @@ Rien pour l'instant (`GOUTS.md`, `NOTES-DIEGO.md`, `RETOURS-DIEGO.md`).
 ## Doutes
 - La transcription Whisper n'est pas vérifiée ligne à ligne ; elle a transcrit aussi les paroles de la chanson du générique.
 - Un plan fixe de 37 s peut cacher une coupe de raccord dans l'axe ; `verif_plan.py` et une tuile toutes les 3 s n'en montrent pas.
+
+## Révision (passe de révision, session 9, 2026-10-11)
+Outils apparus après l'analyse (session 2) : séparation de la voix par demucs (session 3), seuil `SEUIL=haut` pour la voix séparée et planche de spectrogrammes `spectro_coupes.py` (session 8). Mesures refaites avant de relire la fiche. Planches : `diner-de-cons-revision-spectro-huis-clos.png` (24 coupes, une sur 12, 0:10-0:30), `diner-de-cons-revision-spectro-final.png` (25 coupes, une sur 2, 1:12:50-1:17:40).
+
+| Passage | `coupes_parole.py`, mixage (ancien seuil) | voix séparée, `SEUIL=haut` | **à l'œil, spectrogramme** : pendant / au bord d'un mot / silence |
+|---|---|---|---|
+| huis clos 0:10-0:30 (279 coupes) | 40 % | 36 % | **5 / 8 / 11 sur 24 (21 %)** |
+| coup de fil final, sincère (49 coupes) | 24 % | 24 % | **5 / 6 / 14 sur 25 (20 %)** |
+
+- **Corrigée** : « en scène comique, 40 à 44 % des coupes tombent pendant la parole, deux fois plus que dans la scène sincère ». À l'œil, **la part est la même (environ 20 %) dans les deux scènes** ; l'outil surcompte surtout dans le dialogue serré du huis clos, où les coupes au ras d'un mot (un tiers des coupes) passent pour « pendant ». Les chiffres de 43 % et 44 % (Leblanc, Cheval), mesurés de la même façon, sont à tenir pour des bornes hautes.
+- **Confirmée** : il y a **plus d'air dans la scène sincère**. Sur la voix séparée, la reprise vient 0,47 s après la coupe en médiane dans le huis clos, 0,88 s dans la scène sincère (troisième quartile 1,00 contre 2,08 s) ; à l'œil, 14 coupes sur 25 tombent dans un silence franc, contre 11 sur 24. **Ce qui sépare comique et sincère, c'est l'air et les coupes au ras des mots, pas les coupes au milieu des phrases** : même conclusion que *The Social Network* contre *Spotlight* (session 8).
+- **Confirmée** : environ 0,35 s depuis la fin de la réplique dans le huis clos (0,35 s voix séparée, 0,34 s mixage).
+- Une fenêtre plus courte du huis clos (0:15-0:18, 47 coupes) donne 23-26 % à l'outil : la moyenne de 20 minutes mélange des passages très serrés et d'autres non.
