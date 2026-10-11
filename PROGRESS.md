@@ -2,12 +2,12 @@
 
 _Lire en premier. Seul l'état présent compte ici. L'état de clôture de la phase 1 est archivé dans `archives/phase-1/PROGRESS-cloture-phase-1.md`, et l'historique des sessions 1 à 25 dans `archives/phase-1/PROGRESS-historique.md`._
 
-## État (2026-10-11, session 6 de la phase 2, 06:04-06:36)
+## État (2026-10-11, session 7 de la phase 2, 07:04-07:5x)
 - **Phase 2 en cours** : mission `PROMPT-PHASE-2.md` (lire aussi « Avant chaque vidéo : repartir de la phase 1 », « Leçons de méthode », « Passe de révision », étape 7). Démarrage de chaque session : `CLAUDE.md`.
-- Session 6 : aucun retour neuf, boîte vide. **YouTube terminé** (KAIZEN : ouverture, rafale de 1:12, trek de 1:15 ; Popcorn complété avec transcription ; CIA : citations vérifiées ; **bilan YouTube définitif** dans `RAPPORT.md`). **Projets Studio F42 terminés** : sept fiches dans `analyses/projets-f42/` (Benefit ×2 en une fiche, Oney, Swile, Sephora, Fou-Rire, Hirsingen) et bilan dans `RAPPORT.md`. Constat principal : six fichiers livrés sur sept au-dessus de -1 dBTP.
-- Nouvel outil : `labo/outils/qc_livraison.sh FICHIER [cible_LUFS]` (pistes, codec et bits, intégré, LRA, true peak, crêtes décodées, noir de début et de fin).
-- Skills mis à jour : `montage-youtube` (16 quinquies, 16 sexies), `montage-grammaire` (conversation multicaméra), `montage-formats` (flou d'ouverture, cause avant effet), `montage-loudness-livraison` (QC), `montage-kinetic-editing` (onomatopée par chute), `montage-rythme` (sommet de panique).
-- **Reprendre ici** : **vague 2 des films** (étape 5) : La Haine (**passe globale faite** en fin de session 6 dans `videos/_travail/haine/`, fiche ouverte `analyses/films/la-haine.md` avec sa liste « À faire » ; film en **noir et blanc** : pas de `couleur_film.py`, mesurer la luminance), puis Avengers: Infinity War, Forrest Gump (**HDR10 : `HDR=1`**), OSS 117. Puis bilan de vague dans `RAPPORT.md`.
+- Session 7 : aucun retour neuf, boîte vide. **Vague 2 des films presque finie** : *La Haine* terminée (5 séquences, 9 plans longs vérifiés, 13 cartons-horloge), *Avengers: Infinity War* (4 séquences + classement de l'acte final), *Forrest Gump* (4 séquences ; HDR converti). Fiches dans `analyses/films/`, chacune avec sa liste « À faire » (couleur fine, fin de *Forrest Gump*, combat de New York).
+- *OSS 117* : passe globale et transcription Whisper (`-mc 0`, pas de sous-titres complets dans le fichier) **lancées en fin de session 7** dans `videos/_travail/oss117/` (`transcription.srt`). Vérifier qu'elles sont complètes (`proxy-Scenes.csv`, `coupes` dans `courbes.log` après `courbes_film.py`), sinon relancer.
+- Skills mis à jour en session 7 : `montage-rythme` (plan long comme norme et rafale comme signal ; alterné par blocs puis jonction ; une liste dite = une image par élément au cinéma), `montage-son-et-emotion` (cartons-horloge = trous de son, crescendo final hors champ ; ralenti par paliers après le claquement ; silence avant une chute comique), `montage-grammaire` (raccorder deux plans suivis dans le noir). Leçon de méthode ajoutée : film N&B de nuit, `verif_plan.py` sur tout plan de nuit de plus de 60 s.
+- **Reprendre ici** : *OSS 117* (`courbes_film.py`, `couleur_film.py`, repérer les scènes dans `transcription.srt` après avoir cherché les répétitions et fantômes Whisper ; comédie : `coupes_parole.py` comme pour *Le Dîner de cons*, comparer les deux). Puis **bilan de la vague 2** dans `RAPPORT.md` (une ébauche y est déjà). Puis vague 3 (*The Social Network*, *Spotlight*, *Aftersun*, *Spider-Verse* en HDR10 AV1 : `HDR=1`).
 - `.claude/settings.json` (ajouté par Diego) n'est pas commité : le garde-fou de l'agent refuse ce commit. À laisser à Diego.
 
 ## Chaîne d'analyse d'un film (sessions 1-2)
@@ -35,14 +35,14 @@ _Lire en premier. Seul l'état présent compte ici. L'état de clôture de la ph
 | Catégorie | Titre | Durée | Analysé |
 |---|---|---|---|
 | films | Aftersun (2022) | 1 h 41 min | |
-| films | Avengers: Infinity War (2018) | 2 h 29 min | |
-| films | Forrest Gump (1994), 2160p HDR10 | 2 h 22 min | |
+| films | Avengers: Infinity War (2018) | 2 h 29 min | ✔ 2026-10-11 (4 séquences + acte final ; couleur fine à faire) |
+| films | Forrest Gump (1994), 2160p HDR10 | 2 h 22 min | ✔ 2026-10-11 (4 séquences ; couleur et fin à faire) |
 | films | Interstellar (2014), IMAX | 2 h 49 min | ✔ 2026-10-11 |
 | films | Joker (2019) | 2 h 01 min | ✔ 2026-10-11 (7 séquences) |
-| films | La Haine (1995) | 1 h 33 min | |
+| films | La Haine (1995) | 1 h 33 min | ✔ 2026-10-11 (5 séquences, 9 plans longs vérifiés) |
 | films | Le Dîner de cons (1998) | 1 h 20 min | ✔ 2026-10-11 (4 séquences + timing) |
 | films | Mad Max: Fury Road (2015) | 2 h 00 min | ✔ 2026-10-11 (7 séquences) |
-| films | OSS 117 : Le Caire, nid d'espions (2006) | 1 h 39 min | |
+| films | OSS 117 : Le Caire, nid d'espions (2006) | 1 h 39 min | passe globale lancée (session 7) |
 | films | Spider-Man: Across the Spider-Verse (2023), HDR10, AV1 | 2 h 20 min | |
 | films | Spotlight (2015) | 2 h 09 min | |
 | films | The Social Network (2010) | 2 h 00 min | |

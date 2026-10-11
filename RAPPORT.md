@@ -1,10 +1,10 @@
 # RAPPORT — synthèse de la phase 2 (en cours)
 
-_Réécrit à chaque session (dernière : 2026-10-11, session 6). Versions précédentes : `archives/phase-2/RAPPORT-session-5.md`, `archives/phase-2/RAPPORT-session-2.md`. La synthèse de fin de phase 1 (niveau par domaine, 10 principes, audits) est dans `archives/phase-1/RAPPORT-synthese-cloture-phase-1.md` ; le journal de la phase 1 dans `archives/phase-1/RAPPORT-journal.md`._
+_Réécrit à chaque session (dernière : 2026-10-11, session 7). Versions précédentes : `archives/phase-2/RAPPORT-session-6.md`, `archives/phase-2/RAPPORT-session-5.md`, `archives/phase-2/RAPPORT-session-2.md`. La synthèse de fin de phase 1 (niveau par domaine, 10 principes, audits) est dans `archives/phase-1/RAPPORT-synthese-cloture-phase-1.md` ; le journal de la phase 1 dans `archives/phase-1/RAPPORT-journal.md`._
 
 ## Où j'en suis
 - **Vague 1 des films terminée** : Interstellar, Joker, Whiplash, Le Dîner de cons, Mad Max: Fury Road (fiches dans `analyses/films/`), plus SDM « #Malentouré » (test de méthode).
-- **Clips terminés** (sessions 3-4) et **pubs terminées** (session 4) : fiches dans `analyses/clips/` et `analyses/pubs/`, bilans ci-dessous. **YouTube terminé** (sessions 4 à 6) : dix fiches complètes, bilan définitif ci-dessous. **Projets Studio F42 vus** (session 6) : sept fiches dans `analyses/projets-f42/` (Hirsingen : première passe + deux séquences), bilan ci-dessous. **Vague 2 commencée** : passe globale de *La Haine* (au moins 313 plans, médiane 8,2 s, 101 plans de 15 s ou plus : le film le plus lent mesuré). Puis Avengers: Infinity War, Forrest Gump, OSS 117.
+- **Clips terminés** (sessions 3-4) et **pubs terminées** (session 4) : fiches dans `analyses/clips/` et `analyses/pubs/`, bilans ci-dessous. **YouTube terminé** (sessions 4 à 6) : dix fiches complètes, bilan définitif ci-dessous. **Projets Studio F42 vus** (session 6) : sept fiches dans `analyses/projets-f42/` (Hirsingen : première passe + deux séquences), bilan ci-dessous. **Vague 2 presque finie** (session 7) : *La Haine*, *Avengers: Infinity War*, *Forrest Gump* analysés (bilan provisoire ci-dessous) ; *OSS 117* en cours (passe globale et transcription lancées).
 - La mission a changé (modification de Diego dans `PROMPT-PHASE-2.md`, commitée en session 3) : une **passe de révision** (étape 7) viendra avant la synthèse finale, pour relancer les outils récents sur les premières vidéos.
 - Outils de la phase 2 (`labo/outils/`) : `passe_globale.sh` (avec `HDR=1`), `courbes_film.py`, `couleur_film.py`, `sequence.py`, `verif_plan.py`, `calage.py`, `coupes_parole.py`, et en session 3 `echantillon_tiers.py` (placement du sujet, à compter à l'œil). `centrage.py` (saillance automatique) a échoué à la calibration : ne pas citer ses chiffres.
 
@@ -136,7 +136,26 @@ _Réécrit à chaque session (dernière : 2026-10-11, session 6). Versions préc
 
 **Pour le studio, dans l'ordre** : (1) QC son systématique ; (2) un passage « muet » de chaque commande réseau (sous-titres gras et contrastés, premier écran net avant 2 s) ; (3) vérifier que l'ordre des plans dit la cause dans les pubs sans voix ; (4) une ambiance continue sous tout dialogue de fiction.
 
+## Bilan provisoire de la vague 2 (trois films sur quatre, session 7)
+| Film | Plans (min.) | ASL / médiane | LUFS intégré | Forme de la densité | Image |
+|---|---|---|---|---|---|
+| La Haine | ≥ 347 | ~16 / 8,2 s | -19,9 | sous 10 coupes/min, deux crêtes seulement (générique d'archives, mort d'Abdel) | N&B, noir toujours atteint ; la nuit baisse, ne contraste pas plus |
+| Avengers: Infinity War | ≥ 2 237 | 4,0 / 2,6 s | -24,7 | vagues de 10 à 33/min, crête à New York (minute 23), pas à la fin | sombre et froid puis clair et chaud |
+| Forrest Gump | ≥ 1 004 | 8,5 / 4,65 s | -25,4 (VF) | vagues courtes de 3 à 24/min, crête sur un résumé d'archives | à mesurer par époque |
+
+**Ce que la vague dit déjà :**
+1. **Le climax n'est pas plus rapide** : trois films sur trois encore (huit sur huit avec la vague 1). La fin de *La Haine* a une durée moyenne de plan de 16 s, le claquement d'*Avengers* est à 10 coupes/min. [mesuré]
+2. **L'après est tenu, le plus fort suivi du vide** : *Avengers* ralentit par paliers après le claquement (médiane 1,8 → 2,3 → 4,6 → 23,8 s, son de -25 à -37/-42 LUFS) ; *La Haine* met un carton silencieux puis un plan de 25,6 s qui monte de 30 LU jusqu'à un coup de feu hors champ. Six films sur six pour la règle « après ». [mesuré, VU SUR IMAGES]
+3. **Le principe n'est pas « plan long = important », c'est l'écart à la norme** : dans *La Haine*, où le plan long est la règle (101 plans de 15 s ou plus), ce sont les deux seules rafales qui signalent. [VU SUR IMAGES]
+4. **Deux façons d'alterner** : *Interstellar* (le goût de Diego) accélère ses changements de ligne ; *Avengers*, avec cinq ou six lignes, monte par blocs de 1,5 à 7 min qui ne raccourcissent pas, et fait monter la tension en **faisant voyager un personnage d'une ligne à l'autre**. Pour un film d'événement à plusieurs lieux, la seconde forme est la plus utile. [VU SUR IMAGES, classement à l'œil à ±10 s]
+5. **Une liste dite, une image par élément** : la règle trouvée sur YouTube se vérifie au cinéma (*Forrest Gump* : cinq pluies, cinq plans ; la course, un plan par étape), suivie d'un plan tenu sur la relation (69 s). [VU SUR IMAGES, mesuré]
+6. **La rafale pour l'acte, le plan long pour la menace ou le corps** : ouverture d'*Avengers* (35 et 41 s, puis 1-2 s quand la violence commence), embuscade de *Forrest Gump* (attaque hachée, sauvetages tenus 19 à 40 s), comme *Joker*. [VU SUR IMAGES]
+7. **Le silence avant la chute vaut aussi pour la comédie** (*Forrest Gump*, « Je suis fatigué » après 30 s de quasi-silence) ; **un carton récurrent peut être un trou de son** qui scande le film (*La Haine*, 13 cartons-horloge, le dernier n'avance que d'une minute). [mesuré, pas écouté]
+
+**Pour Studio F42** (à éprouver en maquette) : l'horloge sur noir avec trou de son pour un film sur une journée (événement, making-of) ; l'alterné par blocs avec un personnage qui relie les lieux pour un événement multi-sites ; la liste dite illustrée au même rythme puis le plan tenu, pour tout film de marque à voix off.
+
 ## Erreurs corrigées (phase 2)
+- Session 7 : le « plan suivi de 171,6 s » de *La Haine* (fiche de session 6) contient une coupe cachée dans le noir d'une cage d'escalier (113,5 + 57,7 s) ; deux « plans » de nuit de 173 et 195 s en contenaient 27 et 9 ; le « plan de la plume » de *Forrest Gump* (159 s) se termine par quatre ou cinq plans rapprochés que `verif_plan.py` n'a pas vus.
 - Session 6 (projets F42) : dans la fiche Swile, j'avais cité le true peak (-0,8 dBTP) sans le signaler ; en recoupant les fichiers, il dépasse lui aussi -1 dBTP (six fichiers sur sept). Et sur une tuile à 1 image / 2 s de Hirsingen, une grosse amorce (un manteau au premier plan) m'a fait croire à une alternance de plans : à 4 images/s, c'est un seul cadre.
 - Session 6 : j'avais écrit « *Le Dîner de cons* : 35 % des coupes pendant la parole pour 60 % du temps » dans les constats YouTube ; la fiche mesurée dit 40-44 % (21 % dans la scène sincère). Chiffre recopié de mémoire : toujours reprendre une mesure dans sa fiche, pas dans un résumé.
 - Session 1 : j'avais cru faux le plan de 74 s de Pogo's (c'est un plan-séquence) ; j'avais attribué à Diego une note sur l'amarrage qui n'était qu'un exemple de format (retour du 2026-10-11, intégré).
@@ -146,6 +165,7 @@ _Réécrit à chaque session (dernière : 2026-10-11, session 6). Versions préc
 - Session 3 : j'avais noté le pic de Mad Max à 0:27-0:30 (56 coupes/min) ; les éclairs le gonflent du double (environ 27/min réels). J'avais supposé qu'une mesure de saillance trouverait le sujet : calibrée, elle ne le trouve qu'une fois sur trois.
 
 ## Limites de ma méthode (inscrites dans `PROMPT-PHASE-2.md`)
+- Film N&B de nuit (*La Haine*) : le détecteur fusionne des dizaines de plans ; `verif_plan.py` sur tout plan de nuit de plus de 60 s. Et `verif_plan.py` rate les coupes entre plans rapprochés de même lumière (*Forrest Gump*) : la tuile à 1 image/s reste obligatoire.
 - Les détecteurs ratent les coupes du sombre et de l'action accélérée (même `verif_plan.py`), inventent des coupes sur les éclairs ; les deux erreurs coexistent dans Mad Max. Recompter avant de citer un pic, tuile à 2-4 images/s sur tout plan long d'action.
 - Une vignette par plan ne juge pas un plan long ; une source HDR lue en SDR fausse la couleur.
 - Whisper invente des phrases sur les pistes sans voix et boucle sur les longues vidéos : vérifier les répétitions avant de citer ; `-mc 0` corrige la boucle (testé sur KAIZEN, session 5).
@@ -156,6 +176,7 @@ _Réécrit à chaque session (dernière : 2026-10-11, session 6). Versions préc
 - Les plans portés à filés (Stress) peuvent cacher des coupes que ni les outils ni une tuile à 4 images/s ne tranchent.
 
 ## Doutes (à trancher plus tard, sans poser de question pendant une routine)
+- *La Haine* : un tronc d'arbre passe devant l'objectif à 13:04 ; coupe cachée ou non, je ne peux pas trancher sur l'image. *Avengers* : le classement des lignes de l'acte final est fait à l'œil au pas de 2-3 s (±10 s). *Forrest Gump* : mesures de son sur la **version française** (choisie pour les sous-titres français complets) ; le silence de la fin de la course vaut pour la VF.
 - Projets F42 : je n'ai aucun rush ni brief ; les intentions, contraintes et destinations (festival, application, réseau) sont déduites. Oney : les 2,5 s de noir final sont peut-être demandées par l'intégration. Hirsingen : les appels « Monsieur, vous m'entendez ? » transcrits aux débuts des fenêtres de 30 s sont plausiblement réels (elle l'appelle plusieurs fois à l'image), non écoutés. Le son n'est jamais écouté : les remarques « loge sans ambiance » sont des lectures de courbe.
 - `.claude/settings.json` (modèle Opus, effort high), ajouté par Diego, **n'est pas commité** : le garde-fou de l'agent refuse ce commit. Diego peut le commiter lui-même.
 - J'ai commité la modification de `PROMPT-PHASE-2.md` (passe de révision) trouvée non commitée sur le disque : je la suppose de Diego, puisqu'elle est rédigée comme une consigne de mission.
@@ -166,5 +187,6 @@ _Réécrit à chaque session (dernière : 2026-10-11, session 6). Versions préc
 - Boxho : montage multicaméra automatique ou règle fixe du monteur ? Les durées le suggèrent, rien ne le prouve.
 
 ## Hypothèses de goût (à confirmer par d'autres références)
+- « L'accélération du montage alterné » (Diego, à propos d'*Interstellar*) n'est pas la seule façon de faire monter un alterné : *Avengers* monte par la jonction des lignes. Je ne sais pas si Diego aime aussi cette forme ; à garder comme alternative quand il y a plus de trois lignes, pas comme son goût.
 - Interstellar et Joker, les deux films cités par Diego, **ne coupent pas vite** ; ce qu'il aime chez eux tient à la structure (l'alternance, la rupture) et à l'équilibre de l'image. Son goût pour le kinetic est réservé à « d'autres usages » (GOUTS.md, 2026-10-09). Mad Max montre qu'un film peut tenir les deux : très rapide, mais structuré par ses respirations.
 - « L'équilibre de l'ensemble » de Joker (réponse 4) se lit comme **une même règle appliquée par tous les leviers**. Mad Max le confirme en partie : vitesse, cadre centré et couleur par lieu servent la même chose (qu'on suive), mais la nuit bleue ne coïncide pas exactement avec les creux de rythme (15,6 contre 21,8 coupes/min). À tester sur les clips : un clip « équilibré » obéit-il à une seule règle ?
