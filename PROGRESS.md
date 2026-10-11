@@ -2,12 +2,12 @@
 
 _Lire en premier. Seul l'état présent compte ici. L'état de clôture de la phase 1 est archivé dans `archives/phase-1/PROGRESS-cloture-phase-1.md`, et l'historique des sessions 1 à 25 dans `archives/phase-1/PROGRESS-historique.md`._
 
-## État (2026-10-11, session 6 de la phase 2, 06:04-06:5x)
+## État (2026-10-11, session 6 de la phase 2, 06:04-06:36)
 - **Phase 2 en cours** : mission `PROMPT-PHASE-2.md` (lire aussi « Avant chaque vidéo : repartir de la phase 1 », « Leçons de méthode », « Passe de révision », étape 7). Démarrage de chaque session : `CLAUDE.md`.
 - Session 6 : aucun retour neuf, boîte vide. **YouTube terminé** (KAIZEN : ouverture, rafale de 1:12, trek de 1:15 ; Popcorn complété avec transcription ; CIA : citations vérifiées ; **bilan YouTube définitif** dans `RAPPORT.md`). **Projets Studio F42 terminés** : sept fiches dans `analyses/projets-f42/` (Benefit ×2 en une fiche, Oney, Swile, Sephora, Fou-Rire, Hirsingen) et bilan dans `RAPPORT.md`. Constat principal : six fichiers livrés sur sept au-dessus de -1 dBTP.
 - Nouvel outil : `labo/outils/qc_livraison.sh FICHIER [cible_LUFS]` (pistes, codec et bits, intégré, LRA, true peak, crêtes décodées, noir de début et de fin).
 - Skills mis à jour : `montage-youtube` (16 quinquies, 16 sexies), `montage-grammaire` (conversation multicaméra), `montage-formats` (flou d'ouverture, cause avant effet), `montage-loudness-livraison` (QC), `montage-kinetic-editing` (onomatopée par chute), `montage-rythme` (sommet de panique).
-- **Reprendre ici** : **vague 2 des films** (étape 5) : La Haine (passe globale lancée en fin de session 6 dans `videos/_travail/haine/` : vérifier qu'elle est complète, sinon la relancer ; le film est en **noir et blanc** : la mesure couleur n'a pas de sens, mesurer plutôt la luminance et le contraste), puis Avengers: Infinity War, Forrest Gump (**HDR10 : `HDR=1`**), OSS 117. Puis bilan de vague dans `RAPPORT.md`.
+- **Reprendre ici** : **vague 2 des films** (étape 5) : La Haine (**passe globale faite** en fin de session 6 dans `videos/_travail/haine/`, fiche ouverte `analyses/films/la-haine.md` avec sa liste « À faire » ; film en **noir et blanc** : pas de `couleur_film.py`, mesurer la luminance), puis Avengers: Infinity War, Forrest Gump (**HDR10 : `HDR=1`**), OSS 117. Puis bilan de vague dans `RAPPORT.md`.
 - `.claude/settings.json` (ajouté par Diego) n'est pas commité : le garde-fou de l'agent refuse ce commit. À laisser à Diego.
 
 ## Chaîne d'analyse d'un film (sessions 1-2)
