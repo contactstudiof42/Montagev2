@@ -1,6 +1,6 @@
 # *OSS 117 : Le Caire, nid d'espions* (Michel Hazanavicius, 2006)
 
-_Fiche ouverte le 2026-10-11 (phase 2, session 7, film vague 2 n°4). **État : passe globale + 2 séquences + coupes / parole sur deux scènes** ; restent l'ouverture, une scène de nuit bleue et la comparaison complète avec *Le Dîner de cons* (voir « À faire »). Source : Blu-ray 1080p HEVC 10 bits (SDR BT.709), VF d'origine AC3 5.1. Pas de sous-titres texte complets : transcription Whisper `-mc 0` (`videos/_travail/oss117/transcription.srt`, 1 241 segments). **Fantômes et boucles repérés** : « Je n'ai pas vu ça » répété toutes les secondes de 54:23 à 54:41, « Allah est-ce que vous voyez ? » ×7 à 47:15-47:34 (l'appel à la prière), 34 « Sous-titrage… » sur les passages sans voix. Planches commitées : `oss117-courbes.png`, `oss117-couleur.png`, `oss117-poulets.png` (17:50-19:50), `oss117-fin.png` (1:30:30-1:34:30). Aucune fiche de phase 1 sur Hazanavicius._
+_Fiche ouverte le 2026-10-11 (phase 2, session 7, film vague 2 n°4). **État : passe globale + 3 séquences + nuits + coupes / parole sur deux scènes** ; restent la bagarre et la comparaison complète avec *Le Dîner de cons* (voir « À faire »). Source : Blu-ray 1080p HEVC 10 bits (SDR BT.709), VF d'origine AC3 5.1. Pas de sous-titres texte complets : transcription Whisper `-mc 0` (`videos/_travail/oss117/transcription.srt`, 1 241 segments). **Fantômes et boucles repérés** : « Je n'ai pas vu ça » répété toutes les secondes de 54:23 à 54:41, « Allah est-ce que vous voyez ? » ×7 à 47:15-47:34 (l'appel à la prière), 34 « Sous-titrage… » sur les passages sans voix. Planches commitées : `oss117-courbes.png`, `oss117-couleur.png`, `oss117-ouverture.png` (0:00-4:00), `oss117-poulets.png` (17:50-19:50), `oss117-fin.png` (1:30:30-1:34:30), `oss117-nuits.png` (quatre images de nuit : 36:00, 37:00, 51:30, 1:23:00). Aucune fiche de phase 1 sur Hazanavicius._
 
 Skills relus : `montage-rythme` (timing comique), `culture/timing-comique-sitcom.md`, `culture/gags-de-montage.md`, `analyses/films/diner-de-cons.md` (l'autre comédie française de la phase 2), grille de `montage-regard`.
 
@@ -11,9 +11,13 @@ Un pastiche des films d'espionnage des années 1950-60 (OSS 117, agent français
 - **1 h 39 min ; au moins 1 317 plans, ASL 4,5 s, médiane 2,9 s**, 54 plans de 15 s ou plus. **-21,8 LUFS intégrés.**
 - **Densité plate, de 10 à 22 coupes/min presque tout le film**, comme *Le Dîner de cons* (10 à 20) : la comédie de dialogue a une densité plate (deux films sur deux).
 - **La crête de 30 coupes/min (minute 91) est fausse** : à 1:31:42-1:31:52, dix-huit « plans » de 0,5 s exactement sont le même cadre éclairé par les explosions du bateau derrière la fenêtre pendant le baiser (leçon « fausses coupes de lumière », *Joker*, *Mad Max*). Sans eux, la fin n'est pas plus rapide que le reste.
-- Couleur : un beige sablé et chaud presque partout, et quelques blocs **bleu nuit saturé** (vers 0:35-0:39, 0:51-0:53, 1:23) : la « nuit américaine » des films d'époque. À vérifier sur images.
+- Couleur : un beige sablé et chaud presque partout, et quelques blocs **bleu nuit saturé** (vers 0:35-0:39, 0:51-0:53, 1:23) : la **nuit américaine** des films d'époque, vérifiée sur quatre images extraites (`oss117-nuits.png`) : arcades, barque sur l'eau, bureau aux fenêtres bleues, tout en bleu dense ; seuls les visages et une chambre restent chauds. [VU SUR IMAGES]
 
 ## Séquences
+
+### L'ouverture (0:00-3:22) [VU SUR IMAGES, `oss117-ouverture.png`]
+- Le **logo Gaumont d'époque**, puis un prologue **en noir et blanc** (1945, un avion, un officier allemand) monté en champ-contrechamp de 1 à 3 s ; OSS 117 se présente à 2:16,8 (plan de 6,5 s, le plus long de l'échange). Puis un plan de lune de 16,8 s et **le générique en couleur**, sur un motif de tissu à pois des années 1960.
+- **Un format et une couleur par époque** : N&B pour 1945, couleur saturée pour 1955. Même principe qu'adidas (4:3 chaud / large froid) et KAIZEN (archives N&B, webcam 4:3) : changer de matière pour changer d'époque.
 
 ### Les poulets (17:50-19:50) [VU SUR IMAGES, `oss117-poulets.png`]
 - Le gag de répétition (« Et ce bruit ? — C'est aussi le poulet ») est monté en **champ-contrechamp de 0,8 à 1,7 s**, une question et une réponse par plan ; puis le gag visuel (OSS allume et éteint la lumière, les poulets se taisent et reprennent) tient dans un plan de 3,1 s. La scène suivante (le patron, 18:35-19:57) revient à des plans de 2 à 8 s, et finit sur un plan de 30 s.
@@ -45,5 +49,5 @@ Un pastiche des films d'espionnage des années 1950-60 (OSS 117, agent français
 Rien sur ce film (aucune note dans `NOTES-DIEGO.md`). Le rapprochement avec la parodie vient de GOUTS.md (réponse 10).
 
 ## À faire
-- Ouverture (générique et flash-back), une scène de nuit bleue (couleur sur image extraite), la chorégraphie ou la bagarre (le gag dans le plan).
+- La chorégraphie ou la bagarre (le gag dans le plan).
 - Trancher la mesure coupes / parole (mix ou voix séparée) en marquant des coupes à la main.
