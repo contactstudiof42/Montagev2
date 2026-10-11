@@ -6,7 +6,8 @@ _Lire en premier. Seul l'état présent compte ici. L'état de clôture de la ph
 - **Phase 2 en cours** : mission `PROMPT-PHASE-2.md` (lire aussi « Avant chaque vidéo : repartir de la phase 1 », « Leçons de méthode », « Passe de révision », étape 7). Démarrage de chaque session : `CLAUDE.md`.
 - Session 4 : aucun retour neuf, boîte vide. **Clips terminés** (GENER8ION « STORM », HOUDI « Belle chanson », Yvnnis « Gare du Nord » ; bilan des huit clips dans `RAPPORT.md`). **Pubs terminées** (les sept, fiches dans `analyses/pubs/`, bilan dans `RAPPORT.md`).
 - Outil : `calage.py` lit la fréquence d'images et accepte `AUDIO=fichier` (musique séparée par demucs). Nouvelle leçon : **un calage mesuré sur le mixage peut être faux** (HOUDI) ; toujours confirmer sur la musique séparée.
-- **Reprendre ici : YouTube** (étape 3). Passe globale et transcription lancées en session 4 pour « La seule façon de monter les B-roll » (`videos/_travail/broll`) et EGO « Bibliothèque-Univers » (`videos/_travail/ego`) : vérifier qu'elles sont complètes (proxy, coupes.json, transcription.srt), sinon relancer. Puis les huit autres (passes longues : lancer en arrière-plan, deux à la fois). Pour les longues émissions (Popcorn 2 h 32, Kaizen 2 h 26), une passe globale et 5 à 8 séquences, comme un film.
+- **YouTube commencé** : B-roll et EGO terminés ; « Les Jeux Tiger » et « Le jour où la CIA a trahi la France » en **première passe** (fiches marquées comme telles : il manque l'analyse fine de 5 à 8 séquences, les silences, les plans longs). Passes globales et transcriptions prêtes dans `videos/_travail/tiger` et `videos/_travail/cia`.
+- **Reprendre ici** : compléter Tiger et CIA (séquences fines avec `sequence.py`, silences), puis les six autres YouTube (deux « Qui est l'imposteur », Philippe Boxho, YggTorrent, Kaizen 2 h 26, Popcorn 2 h 32) : lancer les passes en arrière-plan, deux à la fois ; pour les émissions de plus d'une heure, 5 à 8 séquences comme un film. Puis un bilan YouTube dans `RAPPORT.md`, puis les projets Studio F42 (`videos/projets-f42/A-LIRE.md`).
 - `.claude/settings.json` (ajouté par Diego) n'est pas commité : le garde-fou de l'agent refuse ce commit. À laisser à Diego.
 
 ## Chaîne d'analyse d'un film (sessions 1-2)
@@ -62,9 +63,9 @@ _Lire en premier. Seul l'état présent compte ici. L'état de clôture de la ph
 | pubs | iPhone 17 — 3x More Scratch Resistant | 0 min 35 s | ✔ 2026-10-11 |
 | youtube | Créer YggTorrent, puis le détruire (480p) | 1 h 11 min | |
 | youtube | KAIZEN : 1 an pour gravir l'Everest (480p) | 2 h 26 min | |
-| youtube | Les Jeux Tiger ! (720p) | 31 min 02 s | |
+| youtube | Les Jeux Tiger ! (720p) | 31 min 02 s | première passe 2026-10-11 |
 | youtube | La seule façon de monter les B-roll | 8 min 40 s | ✔ 2026-10-11 |
-| youtube | Le jour où la CIA a trahi la France (720p) | 48 min 58 s | |
+| youtube | Le jour où la CIA a trahi la France (720p) | 48 min 58 s | première passe 2026-10-11 |
 | youtube | Philippe Boxho, médecin légiste, partie 1 (480p) | 1 h 07 min | |
 | youtube | Popcorn avec Anyme, Léna Situations & Etoiles (480p) | 2 h 32 min | |
 | youtube | Qui est l'imposteur (ft Eric & Ramzy) (720p) | 57 min 19 s | |

@@ -4,7 +4,7 @@ _Réécrit à chaque session (dernière : 2026-10-11, session 4). Version préc�
 
 ## Où j'en suis
 - **Vague 1 des films terminée** : Interstellar, Joker, Whiplash, Le Dîner de cons, Mad Max: Fury Road (fiches dans `analyses/films/`), plus SDM « #Malentouré » (test de méthode).
-- **Clips terminés** (sessions 3-4) et **pubs terminées** (session 4) : fiches dans `analyses/clips/` et `analyses/pubs/`, bilans ci-dessous. **YouTube commencé** (session 4) : B-roll, EGO « Bibliothèque-Univers », « Les Jeux Tiger » (première passe) ; voir « Premiers constats YouTube ».
+- **Clips terminés** (sessions 3-4) et **pubs terminées** (session 4) : fiches dans `analyses/clips/` et `analyses/pubs/`, bilans ci-dessous. **YouTube commencé** (session 4) : B-roll, EGO « Bibliothèque-Univers », « Les Jeux Tiger » et « Le jour où la CIA a trahi la France » (ces deux en première passe) ; voir « Premiers constats YouTube ».
 - La mission a changé (modification de Diego dans `PROMPT-PHASE-2.md`, commitée en session 3) : une **passe de révision** (étape 7) viendra avant la synthèse finale, pour relancer les outils récents sur les premières vidéos.
 - Outils de la phase 2 (`labo/outils/`) : `passe_globale.sh` (avec `HDR=1`), `courbes_film.py`, `couleur_film.py`, `sequence.py`, `verif_plan.py`, `calage.py`, `coupes_parole.py`, et en session 3 `echantillon_tiers.py` (placement du sujet, à compter à l'œil). `centrage.py` (saillance automatique) a échoué à la calibration : ne pas citer ses chiffres.
 
@@ -77,12 +77,13 @@ _Réécrit à chaque session (dernière : 2026-10-11, session 4). Version préc�
 
 **Pour Studio F42** : deux formules réutilisables tout de suite, à éprouver en maquette : (a) **la marque comme lieu ou costume** et le nom en signature ; (b) pour un événement de créateurs, **les noms par paquets de couleur** et un vol continu pour entrer et sortir.
 
-## Premiers constats YouTube (trois vidéos, session 4 ; à compléter)
+## Premiers constats YouTube (quatre vidéos, session 4 ; à compléter)
 1. **La rafale suit une énumération** : EGO coupe à 0,67 s quand la voix énumère (« les textes sacrés…, les journaux intimes des rois… »), Yvnnis et 6G font leur seule rafale sur un inventaire (devantures, toits). C'est le même geste dans trois formats : une image par élément d'une liste. [VU SUR IMAGES, mesuré]
 2. **Le sponsor : sketch ou bloc isolé** : « Les Jeux Tiger » le joue en parodie de bande-annonce ; EGO l'isole par la forme (captures blanches) et l'encadre de silences. [VU SUR IMAGES]
 3. **Le volume n'est pas une norme chez les créateurs de référence** : EGO à -21,3 LUFS, le tutoriel B-roll à -11,7, Tiger à -16,6. YouTube baisse les vidéos trop fortes mais ne remonte pas les faibles : -21 est un choix de dynamique. [mesuré]
 4. **Expliquer par une surface qui se transforme** (EGO, chiffre de Vigenère en une minute) confirme sur une vraie vidéo un principe que je n'avais qu'éprouvé en maquette. [VU SUR IMAGES]
 5. **Couvrir une interview à une caméra par du stock qui raconte** (B-roll) : une illustration = un détail de plus, une métaphore pour l'indicible, retour au visage pour les chutes. Utile tout de suite pour le corporate de Studio F42. [VU SUR IMAGES]
+6. **Un cadre par source** dans le documentaire (« CIA » : présentateur devant un néon rouge, archives dans un cadre de téléviseur, témoin à la bougie, schémas sur fond bleu) : l'alternance rapide reste lisible, comme une matière par monde dans les films. [VU SUR IMAGES, vignettes]
 
 ## Erreurs corrigées (phase 2)
 - Session 1 : j'avais cru faux le plan de 74 s de Pogo's (c'est un plan-séquence) ; j'avais attribué à Diego une note sur l'amarrage qui n'était qu'un exemple de format (retour du 2026-10-11, intégré).
@@ -93,6 +94,7 @@ _Réécrit à chaque session (dernière : 2026-10-11, session 4). Version préc�
 ## Limites de ma méthode (inscrites dans `PROMPT-PHASE-2.md`)
 - Les détecteurs ratent les coupes du sombre et de l'action accélérée (même `verif_plan.py`), inventent des coupes sur les éclairs ; les deux erreurs coexistent dans Mad Max. Recompter avant de citer un pic, tuile à 2-4 images/s sur tout plan long d'action.
 - Une vignette par plan ne juge pas un plan long ; une source HDR lue en SDR fausse la couleur.
+- Whisper invente des phrases sur les pistes sans voix et boucle sur les longues vidéos : vérifier les répétitions avant de citer.
 - Le son est mesuré, **jamais écouté** ; demucs sert désormais à confirmer tout calage (le mixage avec voix peut en fabriquer un faux).
 - Le placement du sujet n'est mesurable qu'à l'œil, sur un petit échantillon.
 - Clips très sombres : copie éclaircie avant la détection, puis tri à l'œil des coupes nouvelles (paires d'images). `verif_plan.py` lit désormais la fréquence d'images (il supposait 23,976 i/s).
