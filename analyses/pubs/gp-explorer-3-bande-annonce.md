@@ -18,7 +18,7 @@ Présenter le **plateau** d'une course automobile entre créateurs : chaque équ
 - **Arrivée du message** : le nom de la course est sur le volant à 0:13 et en logo à la fin ; la date seulement dans le dernier carton.
 
 ## Confirme, contredit, complète
-- **Confirme** `montage-motion-design-principes` (carton-liste, principes 7-8) **et le corrige en partie** : un line-up de 14 à 16 duos ne passe pas en liste de noms, il est **hiérarchisé par paquets** (une équipe = un paquet de 4 à 7 plans, une couleur, un plan large nommé). Le nom reste à l'écran sur un plan large d'environ 1,5 à 2 s : bref, mais les noms sont déjà connus du public visé (on balaie, on ne lit pas).
+- **Confirme** `montage-motion-design-principes` (carton-liste, principes 7-8) **et le corrige en partie** : un line-up d’au moins une dizaine de duos (non comptés un par un) ne passe pas en liste de noms, il est **hiérarchisé par paquets** (une équipe = un paquet de 4 à 7 plans, une couleur, un plan large nommé). Le nom reste à l'écran sur un plan large d'environ 1,5 à 2 s : bref, mais les noms sont déjà connus du public visé (on balaie, on ne lit pas).
 - **Confirme** « une couleur par monde » (vague 1) à l'échelle d'une bande-annonce : une couleur par équipe.
 - **Confirme** le bilan des clips : pas de calage sur les temps, même dans une bande-annonce au mix « réseaux ».
 - **Complète** `montage-formats` (bande-annonce d'événement) : **entrer et sortir du monde par un plan-séquence de vol** (hélicoptère → cockpit → garage ; garage → circuit → logo) ; la vitesse du vol remplace le montage rapide pour l'ouverture.
