@@ -38,6 +38,11 @@ Sources : `culture/saul-bass-generiques.md`, `culture/kyle-cooper-se7en.md`, `cu
 - **Superposée** dans un cadre = une trajectoire (fond noir) ; **juxtaposée** (grille) = des phases (repère fixe). [SOURCÉ] (Marey / Muybridge)
 - Écart entre poses, en largeurs du membre qui bouge : < 0,3 traînée ; 1 trajectoire ; ≥ 2 écho ; > 4 plusieurs personnes ; **0,5 est une zone morte** ; et **le dégradé de mémoire fait l'identité plus que l'écart** (poses qui pâlissent = un seul corps ; égales = une file de personnes). Écart en images = têtes visées × largeur de tête (px) ÷ vitesse (px/image). [ÉPROUVÉ EN MAQUETTE] (`labo/echo/`, image fixe, et pièce 20)
 
+## Titre de marque : reprendre la DA, animer « à la Apple » (projet Sony, notes de Diego sur la V2 et la V3) [TESTÉ EN CONDITIONS RÉELLES 2026-10-11]
+- **Ne pas inventer un titre quand la marque a déjà un dessin** : reprendre sa DA (Sony : « **LinkBuds** » en graisse forte, « Clip » en maigre, accolés, noir sur fond clair, beaucoup d'air). Retrouver les graisses en superposant le titre rendu à la référence en pleine résolution (ici Medium + Light, espace 0,3 em ; Bold était trop gras).
+- **Animation sobre même dans une vidéo très dynamique** : fondu + montée de 15 à 20 px + léger flou qui se résorbe, 12-16 images, freinée à l'arrivée (ease-out cubique), le deuxième mot 2-3 images après. Pas de grossissement, pas de rebond, pas d'interlettrage animé. La folie est dans le montage ; la marque reste calme.
+- **Le placer là où l'image le permet** : zone uniforme claire pendant tout le plan (vérifiée sur les images de début, milieu et fin du mouvement de caméra).
+
 ## Clichés à refuser (sauf parti pris assumé)
 - Le zoom lent continu sur un carton centré ; particules et glow « pour faire riche ».
 - Le texte qui tape lettre à lettre avec une machine à écrire (sauf si l'écriture est le sujet).

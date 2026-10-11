@@ -59,6 +59,15 @@ Pièges de mesure : une source HDR lue en SDR donne une image grise et des mesur
 - **Descente de lumière** : ordonner les plans par leur luminance avant de graduer ; plancher au-dessus du noir, un dernier point vivant. (pièce 25)
 - **Lumière, hauteur de caméra, corps** disent chacun une chose ; la transformation se lit quand les trois vont dans le même sens. (pièce 31)
 
+## Séparer les teintes, pas seulement contraster (projet Sony, note de Diego sur la V3, 2026-10-11) [TESTÉ EN CONDITIONS RÉELLES]
+« Une bouillie de pixels », « trop pâté de couleurs » : un look peut avoir des noirs denses et un bon contraste et rester amateur si **tout tombe dans la même teinte**. Mesure qui l'a montré : peau, chouchou rose, écouteur blanc et fond entre 28° et 41° de teinte OkLCh, tous très saturés.
+- **Mesurer la teinte de points témoins** (peau, objet blanc, accessoire coloré, fond) en OkLCh avant de juger : peau naturelle ≈ 50-60°, chroma 0,06-0,09 ; un blanc doit rester presque neutre.
+- **Corriger la balance avant le tirage film** : une lumière tungstène gardée chaude ET magenta ; refroidir seul rend la peau plus rose (41 → 33°) : il fallait aussi remonter le vert.
+- **Puis séparer** : désaturer les tons sombres (le décor recule), désaturer les hautes lumières (blancs propres), plafonner la chroma de la peau, réduire l'ambre du décor ; une LUT par lumière (salle, jour, lumière rouge à garder rouge).
+- **Mesurer la couleur des noirs, pas seulement leur luminance** : deux refroidissements cumulés donnaient des noirs bleu canard (R 5, V 13, B 21), invisibles sur une vignette, visibles en amplifiant ×6. Viser des noirs presque neutres.
+- **Exposition d'un produit blanc** : part des pixels ≥ 97 % sur le produit et ≥ 250 / 255 sur l'image entière, en pleine résolution (équivalent fausses couleurs) ; viser des reflets seulement (< 2 %). Sony : −0,8 diaph sur les packshots.
+Outils : `labo/couleur/look_sony_v4.py`, `oklab.py`, `banc_look.py`, `planche_look4.py`.
+
 ## Méthode : du brief à l'intention couleur
 1. **Émotion cible** en 2-3 mots ; sinon demander « à la fin, le spectateur doit se sentir comment ? ».
 2. **Courbe** : état de départ → état d'arrivée (sans changement, la retenue compte double).

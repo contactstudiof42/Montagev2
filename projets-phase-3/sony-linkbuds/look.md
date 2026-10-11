@@ -1,23 +1,31 @@
-# Look — Sony LinkBuds Clip (V3)
+# Look — Sony LinkBuds Clip (V4)
 
-_2026-10-11, étape 3 bis de `PROMPT-PHASE-3.md`. Décidé seul, sans validation de Diego (« à toi de te corriger seul »). Planche : `images/look_D.jpg` (rangée du haut : les 6 images du film avec le look ; rangée du bas : 3 images des références réseaux, équipe de France, Nike de dariusbuesch, yungchillyboy). Fichiers de travail : `videos/phase-3/sony-linkbuds/_travail/look/`._
+_2026-10-11, après la note de Diego sur la V3 : « bouillie de pixels », « encore trop pâté de couleurs », « toujours pas assez pro », plans d'écouteurs surexposés. Look V3 : `archives/phase-3/sony-linkbuds/look-V3.md`. Planche finale : `images/V4_6images.jpg` (ouverture, écouteur, collage, sommet rouge, écran partagé, titre)._
 
-## Intention
-Une salle noire où seuls les corps sont éclairés : **noirs francs, peau chaude et dense, blancs des écouteurs propres**, la couleur du lieu (tungstène, néons, passage au rouge) gardée parce qu'elle raconte le lieu. Un tirage film (le goût de Diego par défaut), pas un filtre : pas de dominante ajoutée, pas de teal & orange plaqué.
+## Diagnostic de la V3 (mesuré sur une image en pleine résolution, OkLCh)
+Tout tombait dans la même teinte : joue 41°, chouchou rose 28° (devenu saumon), écouteur 32° avec une chroma de 0,137 (il devait être presque neutre), fond flou 37°. Une seule couleur ambre, saturée (×1,3) : c'est le « pâté ». S'y ajoutait l'encodage H.264 à 11 Mb/s.
 
-## Chaîne (une seule LUT, un seul nœud)
-`labo/couleur/look_sony.py` cuit tout en un `.cube` de 33 points : S-Log3 → linéaire, S-Gamut3.Cine → 709 (compression douce du gamut) → +0,25 diaph → **Cineon log → émulation de tirage Kodak 2383 D65 de Resolve** (`LUT/Film Looks/`) → saturation 1,1 des tons moyens (ombres non saturées) → **pied de courbe 0,08** (noirs écrasés) → **ombres neutralisées puis légèrement froides**. Installée : `LUT/P3/P3_sony_look_film_D.cube`. Réglage par plan : décalage CDL sur le log avant la LUT (1 diaph = 0,077 en S-Log3), par exemple −0,04 pour les packshots de jour.
+## Chaîne V4 (`labo/couleur/look_sony_v4.py`, une LUT par lumière, un seul nœud)
+1. **Balance avant le tirage** (gains linéaires R 0,79 / V 1,065 / B 0,97 pour la salle) : la lumière tungstène était gardée trop chaude **et trop magenta** (refroidir seul rendait la peau plus rose : 41 → 33°). Gains trouvés par recherche sur des points témoins (peau vers 50°, écouteur vers le crème).
+2. S-Log3 → tirage Kodak 2383 (comme la V3), saturation ramenée de 1,3 à 1,05.
+3. **Séparation en OkLCh** : chroma réduite dans les tons sombres (le décor recule), hautes lumières désaturées (écouteurs, néons, boîtiers propres), peau plafonnée en douceur (chroma 0,085) et ramenée vers 55°, ambre du décor réduit (×0,6), ombres à peine froides.
+4. Trois LUT : **salle**, **jour** (hall, packshots : sans la balance de salle), **rouge** (plans C6657 à C6681 : sans refroidissement, saturation 1,35, +0,15 diaph, pour que la bascule au rouge se lise). Plus **rouge négatif** (1 − rouge) pour les images d'inversion de la rafale 4.
 
-## Itérations (jugées en pleine résolution, à côté des références)
-| Version | Réglage | Verdict |
+## Résultat (mesuré)
+| | V3 | V4 |
 |---|---|---|
-| V2 | LUT Sony LC-709 TypeA | sépia, laiteux, noirs gris-brun (p5 de luma 34 sur le plan C6507) ; à vignette réduite elle paraissait correcte : **la vignette ment** |
-| A | 2383 pure, expo 0 | peau et couleurs plus riches, mais noirs encore bruns (t-shirt noir gris), blancs brûlés au packshot |
-| B, C | 2383 dosée à 80-85 %, +0,3 à +0,5 diaph, saturation 1,1-1,15 | plus claires, retombent vers le laiteux |
-| **D (retenue)** | 2383 pleine, +0,25 diaph, saturation 1,1, pied 0,08, ombres neutres | noirs francs avec texture, peau dense, écouteur blanc net, bijoux qui brillent ; rouge sombre mais lisible ; le niveau des références dans le style du brief |
-| E | D plus clair (+0,4, pied 0,12) | proche de D, un peu moins dense |
+| Peau (joue, OkLCh) | 41°, C 0,109 | **50°, C 0,085** |
+| Noirs (luma < 20), RVB moyen 8 bits | brun | **10,8 / 10,5 / 11,6** (neutres) |
+| Noirs (5e centile) / contraste | 9 / 167 | 9 / 174 |
+| Encodage | H.264 11 Mb/s | **H.265 Main 10, 39 Mb/s** ; PSNR 40,7 dB contre la même image rendue en PNG 16 bits, aucun bloc visible en noirs amplifiés ×6 |
 
-## Écart restant avec les références (honnête)
-- Les références sculptent la lumière au tournage (contre-jours, visage découpé sur noir) : un look ne crée pas cette lumière. Ici les rushes sont en lumière d'ambiance ; D les rend denses, pas sculptés.
-- Pas de grain dans la LUT : grain posé à la finition par une couche dédiée (voir `plan.md`), désactivable.
-- Les plans de jour (hall, packshots) n'ont pas la même lumière que la salle : même LUT, exposition par plan ; le passage salle → packshot reste une rupture voulue (flash).
+Vérifications : mon banc Python reproduit Resolve à 1 % près (moyennes 0,887 contre 0,875 sur le même packshot) ; chaque LUT jugée sur 8 images témoins (dont une peau foncée, C6628) à côté des références réseaux.
+
+## Erreur faite puis corrigée
+Premier rendu V4 : noirs **bleu canard** (R 5, V 13, B 21 sur 43 % des pixels d'un plan), parce que j'avais cumulé deux refroidissements (ombres de `look_sony.py` + ombres de la séparation). Vu seulement en amplifiant les noirs ×6 : à l'œil, sur une vignette, l'image paraissait juste. Corrigé (froid 0,006, ombres 0,2). Leçon : mesurer la couleur des noirs, pas seulement leur luminance.
+
+## Exposition des packshots (comment je l'ai mesurée)
+Sur l'image rendue en pleine résolution : histogramme de luma du boîtier (zone du produit) et part des pixels ≥ 97 % (équivalent fausses couleurs « blanc brûlé ») et ≥ 250 / 255 sur l'image entière. V3 : ~10 % du boîtier au-dessus de 97 %. V4 : décalage CDL de −0,8 diaph (−0,081 en S-Log3) sur les trois packshots → **0 à 1,8 % de pixels ≥ 250**, uniquement des reflets ponctuels ; le 95e centile plafonne à 245-249 grâce à l'épaule du 2383 : le boîtier garde son modelé et sa couleur.
+
+## Écart restant
+La lumière de la salle reste une lumière d'ambiance tungstène, sans contre-jours sculptés : le look la rend propre et séparée, pas sculptée. Le rouge reste un rouge-orangé (la lumière réelle) plutôt qu'un rouge pur.

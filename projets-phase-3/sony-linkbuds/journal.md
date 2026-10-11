@@ -54,3 +54,25 @@ _Tous les appels par `run_script` (bac à sable, sans accès disque), aucun `run
 | 40 | Look D2 | `SetLUT(1,"P3/P3_sony_look_film_D2.cube")` ×90 | saturation 89 → 100 | rendu final `sony_linkbuds_V3.mp4` ; projet enregistré |
 
 Gyroflow : essai en ligne de commande refusé par le bac à sable de macOS (« Unable to read the video file », l'app ne lit que `~/Library/Application Support/Gyroflow/`). Diego a choisi de lui donner l'accès au dossier `SONY copy` ; marche à suivre donnée dans la conversation, test à refaire après.
+
+## V4 (2026-10-11, session V4) — timeline `SONY_V4` (dupliquée de `SONY_V3`)
+_Appels par `run_script` (bac à sable) ; aucun `run_script_unsafe`. Aucun projet hors `P3-*`. Rushes en lecture seule ; fichiers Gyroflow `_stabilized*` écrits à côté des originaux (accord de Diego). Contrôle de chaque geste par un rendu de plage._
+
+| # | Geste | Appel / outil | Résultat | Contrôle |
+|---|---|---|---|---|
+| 41 | Gyroflow (CLI, version GitHub) | `-t _stabilized`, preset zoom fixe 115 %, ProRes HQ ; puis `do_autosync` sur plages courtes | 9 + 6 fichiers ; C6723 désynchronisé sans autosync (9,7 px), juste avec (1,9) | `tremblement.py --avant`, bandes |
+| 42 | Timeline V4 | `DuplicateTimeline("SONY_V4")` | V3 intacte | — |
+| 43 | LUT V4 salle / jour / rouge / rouge négatif | `look_sony_v4.py` ; `RefreshLUTList()` ; `SetLUT` | séparation des teintes | banc Python = Resolve à 1 % ; `ExportCurrentFrameAsStill` |
+| 44 | Ouverture K-O-R-E + zoom infini | `stabiliser.py --mode fixe`, Cale (lettres à 720 px), SIFT E → KORE, V1 + V2, `MatteControl` + fondu d'alpha | lettres 0,2-0,3 px ; recul continu | rendus de plage ; **`comp.Lock()` empêchait le rendu des clés** |
+| 45 | Flash cut des oreilles | 7 plans, `Transform` calé sur l'écouteur ; `AppendToTimeline` avec `"mediaType": 1` (sinon échec : conflit audio) | écouteur au même point | recadrages autour du point |
+| 46 | Boîtiers et packshots | fichiers Gyroflow synchronisés + `stabiliser.py --mode rail` (clés toutes les 2 images) ; CDL −0,081 | 0,89 / 1,1 / 1,6 px ; ≤ 1,8 % de pixels ≥ 250 | `tremblement.py` sur le rendu |
+| 47 | Rafale 1 (monte) | 9 plans, `SetSpeed` 300 %, glissement vertical | — | planche |
+| 48 | Rafale 2 (step-print) | `TimeStretcher` `SourceTime` = `floor(time/4)*4` | images tenues par deux (écart 0,0 / saut) | écarts entre images |
+| 49 | Rafale 3 (écran partagé) | 3 plans sur V1/V2/V3, `RectangleMask` + `MatteControl` par bande | bandes ouvertes sur les temps | images |
+| 50 | Rafale 4 (inversions) | segments d'une image avec la LUT « rouge négatif » | 3 inversions en 0,92 s | `flash_check.py` |
+| 51 | Collages ×3 | `TEST_GELS` : images figées + `ofx…DepthMap` rendus en PNG 16 bits ; `detourage.py` ; `collage.py` → ProRes 4444 | arrêt puis reprise du mouvement | aperçus pleine résolution |
+| 52 | **Resolve figé** | boucle `GetInput` sur l'outil OFX DepthMap | roue qui tourne ; `kill` avec l'accord de Diego, relance, `LoadProject` : rien perdu | timeline relue |
+| 53 | Doublons | `doublons_timeline.py` (+ table `DECALAGES` des plages Gyroflow) | 11 → 0 | — |
+| 54 | Titre | 2 `TextPlus` (SST Pro Medium / Light) sur `Background` transparent, `Blur` + `Transform` + `Merge` Blend animés ; **`SetTrackEnable` ne tient que sur la page Montage** | — | comparé à la DA Sony |
+| 55 | SFX | 64 retirés, 63 posés (`AppendToTimeline` `"mediaType": 2`, `SetProperty("AudioVolume", dB)`), crête calée | — | loudness |
+| 56 | Rendu final | `H265`, `EncodingProfile` Main10, `MultiPassEncode`, `VideoQuality` 40000 | HEVC Main 10 10 bits 39 Mb/s ; −14,0 LUFS, −1,1 dBTP | `qc_livraison.sh`, `flash_check.py`, PSNR 40,7 dB |

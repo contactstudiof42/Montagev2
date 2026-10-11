@@ -85,6 +85,11 @@ ffmpeg -i MASTER.mov -vf "scale=1920:1080:flags=lanczos,format=yuv420p" \
 ```
 Pour un débit cible, utiliser les 2 passes `-b:v 8M -maxrate 10M -bufsize 16M` : 7.90 Mb/s obtenus. Pour le vertical 1080x1920 (recadrage centré ou fond flou), voir references.md §3.
 
+### Master du studio depuis Resolve (réglages de Diego, 2026-10-11) [TESTÉ EN CONDITIONS RÉELLES]
+Par défaut pour tout rendu final : **H.265 Main 10 sur le GPU** (VideoToolbox), **débit élevé** (≈ 40 Mb/s en 1080x1920 25p, contre 11 Mb/s qui donnait une « bouillie »), **multipass**, « Bypass re-encode when possible » **désactivé**, « Force sizing / debayer to highest quality » **activés**. La qualité passe avant la vitesse (≈ 1 min pour 45 s).
+Par script : `SetCurrentRenderFormatAndCodec("mp4", "H265")` puis `SetRenderSettings({"EncodingProfile": "Main10", "MultiPassEncode": True, "VideoQuality": 40000, "NetworkOptimization": True, "AudioCodec": "aac", "AudioSampleRate": 48000})`. Les cases « Force… » et « Bypass… » **ne sont pas dans l'API** : un préréglage de rendu enregistré à la main, puis `LoadRenderPreset`.
+Vérifier : `ffprobe` (hevc, profil Main 10, `yuv420p10le`, BT.709, débit) ; une image du rendu contre la même image rendue en PNG 16 bits (PSNR ≥ 40 dB ; noirs amplifiés ×6 : aucun bloc ni aplat cassé). Sony V4 : 39 Mb/s, PSNR 40,7 dB, aucun bloc.
+
 ### Images sombres : éviter les bandes dans les dégradés [TESTÉ EN LABO, sur images synthétiques et rendus Blender]
 Pourquoi c'est artistique : un film bas et dense (goût de l'utilisateur : Joker, Ziak) vit dans les 5 % du bas de l'échelle, là où le 8 bits n'a qu'une vingtaine de niveaux. Des bandes dans un ciel nocturne ou un fond de studio détruisent la matière du noir.
 - Master et échanges en **10 bits** (ProRes 422 HQ, DNxHR HQX, ou `-pix_fmt yuv420p10le`) : indice de marches 1,6 contre 5,3 en 8 bits.

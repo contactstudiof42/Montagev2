@@ -115,7 +115,13 @@ _https://eyecannndy.com/technique/… : chaque technique illustrée par des GIF.
 | **Arrêt sur image** (`freeze-frame`) + **collage** | rare ; dans un collage, l'arrêt porte une transformation puis **le mouvement reprend** (captured-by-h, choix de Diego) | une image nette, une pose lisible | facile ; détourage soigné sur l'image figée |
 | Double exposition, masques, portail d'objet | possible si la forme est forte | silhouette sur fond sombre, objet qui remplit le cadre | possible avec soin (pas de Magic Mask scriptable) |
 | Slit-scan | lourd | caméra fixe, mouvement régulier | difficile, plutôt hors de Resolve |
+| **Exécutées dans la V4 Sony (2026-10-11)** : zoom infini E → KORE (SIFT), flash cut des oreilles (échelle en crescendo, variante), rafale qui monte (mouvements vers le haut, 300 %), step-print qui descend (`floor(time/4)*4`), écran partagé en 3 bandes, inversions d'une image dans le rouge (LUT négative), 3 collages sur arrêt (orange + cerne, papier millimétré, photo sur image inversée) | | | |
 | **À écarter** : stutter et boomerang (répètent un même moment : interdit dans un événementiel), datamosh (pas premium), kaléidoscope (cheap) | | | |
+
+### SFX : varier comme les effets (note de Diego sur la V3 : « SFX un peu répétitifs ») [TESTÉ EN CONDITIONS RÉELLES 2026-10-11, non écouté]
+- **Une famille de sons par technique visuelle** : tics de verre qui montent (flash cut), bégaiement + riser aspiré (rafale qui monte), armement d'appareil argentique (step-print), papier / scratch / Polaroid (collages), sangles et câbles (écran partagé), glitch (inversions), néon (bascule de lumière), whoosh tonal (packshot). Jamais deux fois le même son à la suite.
+- **Variantes de hauteur** pour un son répété (montée d'un demi-ton à un ton par occurrence, `asetrate` à la vraie fréquence d'échantillonnage du fichier, ou `AudioPitchSemiTones` dans Resolve).
+- **Crête calée sur l'image** de l'événement (`labo/outils/phase3/v4/sfx_prep.py` → `crete.json`, `partition_sfx.py`).
 
 ## 5. Photosensibilité (obligatoire dès qu'il y a flash ou strobe) [TESTÉ EN LABO]
 - **Les sept références réseaux de Diego échouent toutes à `flash_check.py`** (pire seconde 4 à 6), y compris la pub Sephora qui n'a aucun flash visible : l'outil simplifié compte sans doute les coupes entre plans de luminances très différentes. Conséquence : ce genre ne respecte pas le seuil WCAG ; pour une diffusion qui l'exige (TV, pub UK), mesurer et adapter ; l'outil reste à confronter à un vrai test Harding avant de juger une coupe ordinaire. [mesuré, doute sur l'outil]

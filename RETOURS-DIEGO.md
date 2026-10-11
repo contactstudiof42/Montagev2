@@ -154,6 +154,7 @@ _Dictées par Diego, mises en forme par l'assistant de configuration ; les phras
 
 ### Suite
 V4 : applique ces notes. Avant de livrer, compare en pleine résolution ton titre à la référence Sony, et tes effets aux exemples d'eyecannndy.
+**Intégré le 2026-10-11** (session V4) : V4 rendue (`rendus/sony_linkbuds_V4.mp4`, timeline `SONY_V4`). Titre d'après la DA Sony (Medium + Light, apparition sobre, comparé en pleine résolution : `images/V4_titre_vs_ref.png`) ; eyecannndy lu (table dans `montage-kinetic-editing` § 4 bis), 7 techniques différentes tirées de la matière, dont un vrai zoom infini ; SFX : une famille par technique, 25 nouveaux sons ; couleur : séparation des teintes en OkLCh, noirs neutres, packshots −0,8 diaph mesurés (`look.md`) ; export H.265 Main 10 39 Mb/s, multipass (cases « Force… » et « Bypass » hors API : préréglage à créer à la main) ; collages sur arrêt sur image avec reprise du mouvement ; K-O-R-E et packshots par Gyroflow. Leçons dans `montage-couleur-et-intention`, `montage-motion-design-principes`, `montage-kinetic-editing`, `montage-loudness-livraison`, `montage-resolve`, `montage-regard`, `PROMPT-PHASE-3`.
 
 ## 2026-10-11 — Gyroflow : un mouvement fluide, pas un plan statique (dicté en session V4)
 _Dicté par Diego dans la conversation, recopié par l'agent._
