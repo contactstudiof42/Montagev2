@@ -4,7 +4,7 @@ _Réécrit à chaque session (dernière : 2026-10-11, session 6). Versions préc
 
 ## Où j'en suis
 - **Vague 1 des films terminée** : Interstellar, Joker, Whiplash, Le Dîner de cons, Mad Max: Fury Road (fiches dans `analyses/films/`), plus SDM « #Malentouré » (test de méthode).
-- **Clips terminés** (sessions 3-4) et **pubs terminées** (session 4) : fiches dans `analyses/clips/` et `analyses/pubs/`, bilans ci-dessous. **YouTube terminé** (sessions 4 à 6) : dix fiches complètes, bilan définitif ci-dessous. **Projets Studio F42 vus** (session 6) : sept fiches dans `analyses/projets-f42/` (Hirsingen : première passe + une séquence), bilan ci-dessous. **Prochaine étape** : finir Hirsingen (ouverture en forêt), puis les films de la vague 2.
+- **Clips terminés** (sessions 3-4) et **pubs terminées** (session 4) : fiches dans `analyses/clips/` et `analyses/pubs/`, bilans ci-dessous. **YouTube terminé** (sessions 4 à 6) : dix fiches complètes, bilan définitif ci-dessous. **Projets Studio F42 vus** (session 6) : sept fiches dans `analyses/projets-f42/` (Hirsingen : première passe + deux séquences), bilan ci-dessous. **Prochaine étape** : les films de la vague 2 (Avengers: Infinity War, Forrest Gump, La Haine, OSS 117).
 - La mission a changé (modification de Diego dans `PROMPT-PHASE-2.md`, commitée en session 3) : une **passe de révision** (étape 7) viendra avant la synthèse finale, pour relancer les outils récents sur les premières vidéos.
 - Outils de la phase 2 (`labo/outils/`) : `passe_globale.sh` (avec `HDR=1`), `courbes_film.py`, `couleur_film.py`, `sequence.py`, `verif_plan.py`, `calage.py`, `coupes_parole.py`, et en session 3 `echantillon_tiers.py` (placement du sujet, à compter à l'œil). `centrage.py` (saillance automatique) a échoué à la calibration : ne pas citer ses chiffres.
 
@@ -113,7 +113,7 @@ _Réécrit à chaque session (dernière : 2026-10-11, session 6). Versions préc
 - **Témoignage anonyme** : un avatar, une couleur, une police.
 - **Fin de film de marque ou d'événement** : rafale de mémoire d'une seule couleur, silence, puis plan tenu.
 
-## Bilan des projets Studio F42 (sept, session 6 ; Hirsingen à compléter)
+## Bilan des projets Studio F42 (sept, session 6)
 | Projet | Format | Durée | Plans | Médiane | LUFS / LRA | True peak | Verdict |
 |---|---|---|---|---|---|---|---|
 | Benefit 1 (café) | pub réseau 9:16 | 0:23 | 9 | ~2,2 s | -14,5 / 3,1 | -0,6 | pas livrable : le produit ne cause rien (le regard arrive avant le produit) |
@@ -156,7 +156,7 @@ _Réécrit à chaque session (dernière : 2026-10-11, session 6). Versions préc
 - Les plans portés à filés (Stress) peuvent cacher des coupes que ni les outils ni une tuile à 4 images/s ne tranchent.
 
 ## Doutes (à trancher plus tard, sans poser de question pendant une routine)
-- Projets F42 : je n'ai aucun rush ni brief ; les intentions, contraintes et destinations (festival, application, réseau) sont déduites. Oney : les 2,5 s de noir final sont peut-être demandées par l'intégration. Hirsingen : Whisper écrit « Monsieur, vous m'entendez ? » aux débuts exacts des fenêtres de 30 s (0:30, 1:00, 1:30), phrase réelle répétée ou fantôme ? Le son n'est jamais écouté : les remarques « loge sans ambiance » sont des lectures de courbe.
+- Projets F42 : je n'ai aucun rush ni brief ; les intentions, contraintes et destinations (festival, application, réseau) sont déduites. Oney : les 2,5 s de noir final sont peut-être demandées par l'intégration. Hirsingen : les appels « Monsieur, vous m'entendez ? » transcrits aux débuts des fenêtres de 30 s sont plausiblement réels (elle l'appelle plusieurs fois à l'image), non écoutés. Le son n'est jamais écouté : les remarques « loge sans ambiance » sont des lectures de courbe.
 - `.claude/settings.json` (modèle Opus, effort high), ajouté par Diego, **n'est pas commité** : le garde-fou de l'agent refuse ce commit. Diego peut le commiter lui-même.
 - J'ai commité la modification de `PROMPT-PHASE-2.md` (passe de révision) trouvée non commitée sur le disque : je la suppose de Diego, puisqu'elle est rédigée comme une consigne de mission.
 - Whiplash : combien de coupes cachent les filés des plans de 21 et 24 s ? L'hypothèse « on coupe sur l'instrument qui a la phrase » n'est pas mesurée.

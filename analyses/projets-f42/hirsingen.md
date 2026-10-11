@@ -1,6 +1,6 @@
 # « Hirsingen » — court métrage d'époque (15 min, 5.1)
 
-_Fiche ouverte le 2026-10-11 (phase 2, session 6, projet Studio F42 n°7). **État : première passe + une séquence fine** (vignettes toutes les 10 s, 118 plans détectés, le plus long « plan » vérifié de trois façons, loudness et QC du fichier 5.1, transcription Whisper lue ; dialogue à la bougie 3:10-6:45 en plan par plan, 31 plans ; coupes / parole sur 7 min). **À faire** : l'ouverture en forêt en plan par plan. Source : `HIRSINGEN 5.1 H265.mov`, HEVC 10 bits 3072×1306 (2,35:1), 25 i/s, 14 min 59, AAC 5.1. Je ne nomme pas les comédiens ; les prénoms des personnages viennent du dialogue. Pas de rushes._
+_Fiche ouverte le 2026-10-11 (phase 2, session 6, projet Studio F42 n°7). **État : complète (première passe + deux séquences fines)** (vignettes toutes les 10 s, 118 plans détectés, le plus long « plan » vérifié de trois façons, loudness et QC du fichier 5.1, transcription Whisper lue ; dialogue à la bougie 3:10-6:45 en plan par plan, 31 plans ; coupes / parole sur 7 min). Ouverture 0:00-2:52 en plan par plan (35 plans) faite en fin de session 6. Source : `HIRSINGEN 5.1 H265.mov`, HEVC 10 bits 3072×1306 (2,35:1), 25 i/s, 14 min 59, AAC 5.1. Je ne nomme pas les comédiens ; les prénoms des personnages viennent du dialogue. Pas de rushes._
 
 **Lu avant l'analyse** : `A-LIRE.md`, `montage-regard`, `montage-grammaire` (champ / contrechamp, dialogue), `montage-rythme`, `montage-son-et-emotion`, `montage-loudness-livraison` (cinéma, 5.1), bilan de la vague 1 (plans longs réservés à ce qui compte). Goût de Diego qui s'applique (`GOUTS.md`, 7 et 8) : grain et look film ; visages sombres avec un minimum de lumière sur l'info.
 
@@ -13,6 +13,12 @@ _Fiche ouverte le 2026-10-11 (phase 2, session 6, projet Studio F42 n°7). **Ét
 - **Le plus long « plan » (12:04-13:36, 91,7 s) est un plan-séquence porté** [vérifié : `verif_plan.py` ne trouve aucune coupe, PySceneDetect non plus sur une copie éclaircie ; tuile à 2 images/s sur 12:06-12:30 : la caméra suit la dispute des deux sœurs à travers le linge qui sèche, d'un bout à l'autre de la pièce, et finit fixe sur Marie à genoux près du corps]. Un filé vers 12:27 pourrait cacher une coupe (leçon de *Stress* et *Whiplash*), sans changer le geste.
 - **Son** (QC sur le 5.1 d'origine) : **-27,3 LUFS intégrés, LRA 20,9 LU, true peak 0,0 dBTP** ; un coup de feu à 6:50 [transcription].
 - **Image** : intérieurs à la bougie et à la fenêtre, bois sombre, mur rouge, robe bleue de Marie ; forêt froide ; l'épilogue en lumière de jour.
+
+## L'ouverture, plan par plan (0:00-2:52) [VU SUR IMAGES, mesuré]
+Planche : `videos/_travail/f42-hirsingen/seq/s2.png` (35 plans, moyenne 4,9 s).
+- **Le lieu et la date d'abord, en petit** (carton en bas à gauche sur le premier plan, une tasse, la cuisine), puis la ferme à la bougie en plans tenus de 10 à 15 s, sans un mot (0:00-0:34). Le même système ferme le film (« Lienz, Autriche — 1952 ») : **deux cartons de lieu et de date encadrent le récit**.
+- **La découverte en forêt** (0:34-1:30) : Marie s'approche d'un homme couché, l'appelle plusieurs fois (« Monsieur ? », « Vous m'entendez ? ») ; plans de 2 à 20 s, le plus long sur la forêt où elle s'avance (19,9 s). Les appels de Whisper aux débuts des fenêtres de 30 s sont donc **plausiblement réels** (elle l'appelle à plusieurs reprises à l'image) ; à confirmer à l'écoute.
+- **L'interrogatoire** (1:43-2:52) : champ / contrechamp avec **le fusil en amorce**, plans de 1 à 4 s (la minute la plus coupée du film, 16 coupes/min), et **un seul plan tenu, 13,5 s, sur Franz qui se présente** (« Je m'appelle Franz, je suis autrichien… Laissez-moi partir », 2:16) : la peur hache, la supplique se tient. Même règle que les films de référence et que « Fou-Rire ».
 
 ## Le dialogue à la bougie, plan par plan (2:52-6:51) [VU SUR IMAGES, mesuré]
 Planche : `videos/_travail/f42-hirsingen/seq/s1.png` (31 plans, moyenne 7,7 s).
@@ -32,12 +38,10 @@ Planche : `videos/_travail/f42-hirsingen/seq/s1.png` (31 plans, moyenne 7,7 s).
 ### Finition (corrigeable sans retourner)
 1. **Le mixage n'est pas diffusable tel quel** : LRA 20,9 LU (le double d'un long métrage d'action, KAIZEN 12,3), -27,3 LUFS intégrés et **true peak à 0,0 dBTP**. Sur une télévision ou un ordinateur, les confidences à la bougie (minutes 7:00-8:00 et 11:00-12:00 à -50,6 et -53,3 LUFS de moyenne) seront inaudibles et le coup de feu saturera. Pour un festival : caler les dialogues (cible d'usage -27 LKFS mesurés sur le dialogue, ou -23/-24 LUFS en intégré selon le règlement), limiter à -1 dBTP (ou -2 en 5.1), et faire un **downmix stéréo** vérifié. Les six fichiers du studio sur sept dépassent -1 dBTP.
 2. **Fichier de diffusion** : HEVC 10 bits + AAC 5.1 dans un .mov est un bon fichier de visionnage, pas un fichier de festival (DCP, ou ProRes + PCM selon le règlement). À livrer en plus.
-3. **Vérifier l'ouverture** : Whisper écrit « Monsieur, vous m'entendez ? » à 0:30, 1:00 et 1:30, exactement au début de ses fenêtres de 30 s ; c'est soit trois appels réels espacés de 30 s, soit une phrase fantôme répétée. À l'écoute : si l'appel n'est dit qu'une fois, rien à faire ; s'il y a trois appels identiques à 30 s d'écart, c'est un rythme mécanique à varier. [NON VÉRIFIÉ]
+3. (Vérifié sur images : les appels de l'ouverture sont plausiblement réels, voir plan par plan.)
 
 4. **Une ambiance continue sous les dialogues** (voir plan par plan ci-dessus), même très basse : elle évite les trous de son entre les répliques et rendrait le mixage moins dynamique sans rien perdre.
 
-### À regarder en plan par plan (session suivante)
-- L'ouverture en forêt (0:00-1:45).
 
 ## Grille (`montage-regard`, provisoire, sur la première passe)
 | Critère | Note | Preuve |
