@@ -4,7 +4,7 @@ _Réécrit à chaque session (dernière : 2026-10-11, session 5). Version préc�
 
 ## Où j'en suis
 - **Vague 1 des films terminée** : Interstellar, Joker, Whiplash, Le Dîner de cons, Mad Max: Fury Road (fiches dans `analyses/films/`), plus SDM « #Malentouré » (test de méthode).
-- **Clips terminés** (sessions 3-4) et **pubs terminées** (session 4) : fiches dans `analyses/clips/` et `analyses/pubs/`, bilans ci-dessous. **YouTube : six sur dix** (sessions 4-5) : B-roll, EGO « Bibliothèque-Univers », « Les Jeux Tiger », « Le jour où la CIA a trahi la France », les deux « Qui est l'imposteur » (une fiche) ; voir « Constats YouTube ».
+- **Clips terminés** (sessions 3-4) et **pubs terminées** (session 4) : fiches dans `analyses/clips/` et `analyses/pubs/`, bilans ci-dessous. **YouTube : huit sur dix** (sessions 4-5) : B-roll, EGO « Bibliothèque-Univers », « Les Jeux Tiger », « Le jour où la CIA a trahi la France », les deux « Qui est l'imposteur » (une fiche), Philippe Boxho, « Créer YggTorrent » ; restent Kaizen et Popcorn (passes globales lancées en session 5) ; voir « Constats YouTube ».
 - La mission a changé (modification de Diego dans `PROMPT-PHASE-2.md`, commitée en session 3) : une **passe de révision** (étape 7) viendra avant la synthèse finale, pour relancer les outils récents sur les premières vidéos.
 - Outils de la phase 2 (`labo/outils/`) : `passe_globale.sh` (avec `HDR=1`), `courbes_film.py`, `couleur_film.py`, `sequence.py`, `verif_plan.py`, `calage.py`, `coupes_parole.py`, et en session 3 `echantillon_tiers.py` (placement du sujet, à compter à l'œil). `centrage.py` (saillance automatique) a échoué à la calibration : ne pas citer ses chiffres.
 
@@ -77,7 +77,7 @@ _Réécrit à chaque session (dernière : 2026-10-11, session 5). Version préc�
 
 **Pour Studio F42** : deux formules réutilisables tout de suite, à éprouver en maquette : (a) **la marque comme lieu ou costume** et le nom en signature ; (b) pour un événement de créateurs, **les noms par paquets de couleur** et un vol continu pour entrer et sortir.
 
-## Constats YouTube (six vidéos sur dix, sessions 4-5 ; bilan complet à venir)
+## Constats YouTube (huit vidéos sur dix, sessions 4-5 ; bilan complet après Kaizen et Popcorn)
 | Vidéo | Durée | Plans | Médiane | LUFS / LRA | Forme |
 |---|---|---|---|---|---|
 | B-roll (tutoriel) | 8:40 | — | — | -11,7 | interview couverte par du stock qui raconte |
@@ -85,23 +85,27 @@ _Réécrit à chaque session (dernière : 2026-10-11, session 5). Version préc�
 | « Les Jeux Tiger » | 31:02 | ≥ 569 | 2,2 s | -16,6 / 4,8 | doc à présentateur ; liste → rafale, thèse → tirade, preuve → test tenu |
 | « Le jour où la CIA… » | 48:58 | ≥ 930 | 2,2 s | -16,7 / 6 | doc-thriller ; un cadre par source ; schéma qui se transforme = plus long plan (46 s) |
 | « Qui est l'imposteur » × 2 | 57:19 / 54:38 | ≥ 1 590 / 1 426 | 2,0 s | **-12,0 / 3,8** | plateau multicaméra ; **densité plate, aucun silence** |
+| Philippe Boxho (LEGEND) | 1:07:44 | ≥ 929 | 3,4 s | **-24,0 / 9,7** | interview-conteur ; champ / contrechamp ; 308 silences gardés |
+| « Créer YggTorrent » | 1:11:20 | ≥ 651 | 4,8 s | -22,0 / 5,2 | enquête ; témoins anonymes = mannequin + couleur + police ; plans de 24-45 s |
 
-**Ce que les six vidéos disent :**
+**Ce que les huit vidéos disent :**
 1. **Dans le documentaire et la vulgarisation, la densité suit le type de phrase** : une liste dite reçoit une image par élément (0,6 à 1,8 s ; EGO, Tiger, CIA), une thèse un plan tenu face caméra, une preuve un plan tenu en temps réel (le test du game.com, 12 à 19 s). Trois vidéos sur trois. Même geste que la rafale-inventaire des clips (Gare du Nord, 6G). [VU SUR IMAGES, mesuré]
-2. **Le plus long plan porte la thèse ou la preuve, et il change à l'intérieur** : schéma qui se transforme (CIA 46 s, EGO Vigenère), citation qui s'écrit ligne à ligne au rythme de la voix (Tiger 23-29 s), appel montré en relevé d'écoute (CIA 27 s). Le plan long d'un doc YouTube n'est pas immobile. [VU SUR IMAGES]
+2. **Le plus long plan porte la thèse ou la preuve, et il change à l'intérieur** : schéma qui se transforme (CIA 46 s, EGO Vigenère), citation qui s'écrit ligne à ligne au rythme de la voix (Tiger 23-29 s), appel montré en relevé d'écoute (CIA 27 s), témoignage anonyme en sous-titre mot à mot, une police par voix (Ygg 24-45 s). Le plan long d'un doc YouTube n'est pas immobile ; **le texte qui s'écrit le tient** (trois vidéos sur trois). [VU SUR IMAGES]
 3. **Les chapitres se marquent par le noir et le silence**, pas par des cartons (EGO 2-4 s, CIA 3 s de noir + 2-3 s de silence, Tiger 0,6-1,4 s) ; les silences sont rares (11 en 31 min, 23 en 49 min), donc lisibles. [mesuré, pas écouté]
-4. **Deux familles opposées dans le choix de Diego** : le doc à densité en vagues et à silences (EGO, Tiger, CIA) et le divertissement de plateau **à densité plate, sans silence, à -12 LUFS** (« Imposteur »), qui respire par les rires et les changements de décor, pas par le montage. La règle « respirer » vaut pour la première famille seulement. [mesuré]
+4. **Trois familles dans le choix de Diego** : le doc à densité en vagues et à silences (EGO, Tiger, CIA, Ygg) ; le divertissement de plateau **à densité plate, sans silence, à -12 LUFS** (« Imposteur »), qui respire par les rires et les changements de décor ; l'interview-conteur (Boxho), plate elle aussi mais **calme et pleine de silences** (-24 LUFS, 308 pauses gardées). La règle « respirer par le montage » vaut pour la première famille seulement. [mesuré]
 5. **Le sommet d'un doc d'information peut être sa partie la plus rapide** (Tiger : l'emballement Furby, 27-31 coupes/min), contrairement aux sommets d'émotion des films (bilan vague 1, n° 1). [VU SUR IMAGES]
 6. **Trois façons d'isoler un sponsor** : le jouer en sketch (Tiger), l'isoler par la forme et le silence (EGO), par le décor et le tempo (Imposteur : seul passage lent de l'heure). [VU SUR IMAGES]
 7. **Changer de cadre pour changer de régime** : archive dans un téléviseur arrondi (CIA), aparté en sépia (Tiger), un décor par lieu de jeu (Imposteur). Prolonge « une matière par monde » des films. [VU SUR IMAGES]
 8. **Un format de série est un système** : les deux « Imposteur » ont les mêmes chiffres à 10 % près (densité, LUFS, LRA) et le même habillage. [mesuré]
-9. **Le volume n'est pas une norme chez les créateurs** : de -21,3 (EGO) à -11,6 (Imposteur). [mesuré]
+9. **Le volume n'est pas une norme chez les créateurs** : de -24,0 (Boxho) à -11,6 (Imposteur), 12 LU d'écart. [mesuré]
+10. **Une voix sans visage = un avatar, une couleur, une police** (Ygg) ; ouvrir par la fin (Ygg, CIA). [VU SUR IMAGES]
+11. **Des traces de montage automatique se mesurent** : Boxho a 89 plans de 1,52 s exactement et des pics de durée à 2, 4, 6, 8 s. Hypothèse, non prouvée ; si c'est le cas, c'est la limite à corriger à la main. [mesuré, interprétation DÉDUITE]
 
 **Pour Studio F42** : la règle « densité selon le type de phrase » et le schéma qui se transforme servent directement le corporate explicatif et le film de marque ; le système de série (cartons, couleur par décor, tempo fixe) sert toute commande récurrente. À éprouver en maquette.
 
 ## Erreurs corrigées (phase 2)
 - Session 1 : j'avais cru faux le plan de 74 s de Pogo's (c'est un plan-séquence) ; j'avais attribué à Diego une note sur l'amarrage qui n'était qu'un exemple de format (retour du 2026-10-11, intégré).
-- Session 5 : le « plan » de 19,7 s de Tiger (graphique puis présentateur, coupe ratée) ; « les deux extrémités les plus rapides » de CIA (la fin l'est surtout par son générique monté) ; « le témoin à la bougie » de CIA (deux témoins, deux lumières) ; la mesure coupes / parole sur un mixage avec fond musical (34 % de parole contre 77 % sur la voix séparée).
+- Session 5 : le « plan » de 19,7 s de Tiger (graphique puis présentateur, coupe ratée) ; « les deux extrémités les plus rapides » de CIA (la fin l'est surtout par son générique monté) ; « le témoin à la bougie » de CIA (deux témoins, deux lumières) ; la mesure coupes / parole sur un mixage avec fond musical (34 % de parole contre 77 % sur la voix séparée) ; un « plan » de 123 s de cartons de texte sur noir (YggTorrent) qui en contient au moins 20.
 - Session 4 : « 14 à 16 duos » dans GP Explorer 3 écrit sans compter (corrigé en « au moins une dizaine ») ; HOUDI semblait couper sur les temps (45 % contre 27 %) sur le mixage ; sur la musique séparée, rien (27 % contre 24 %).
 - Session 3 (clips) : 88 plans pour Ziak (en réalité environ 109) ; « Ziak évite les attaques fortes » (effet des coupes manquantes) ; quatre affirmations de phase 1 sur Stress et Au DD (voir ci-dessus).
 - Session 3 : j'avais noté le pic de Mad Max à 0:27-0:30 (56 coupes/min) ; les éclairs le gonflent du double (environ 27/min réels). J'avais supposé qu'une mesure de saillance trouverait le sujet : calibrée, elle ne le trouve qu'une fois sur trois.
@@ -110,6 +114,7 @@ _Réécrit à chaque session (dernière : 2026-10-11, session 5). Version préc�
 - Les détecteurs ratent les coupes du sombre et de l'action accélérée (même `verif_plan.py`), inventent des coupes sur les éclairs ; les deux erreurs coexistent dans Mad Max. Recompter avant de citer un pic, tuile à 2-4 images/s sur tout plan long d'action.
 - Une vignette par plan ne juge pas un plan long ; une source HDR lue en SDR fausse la couleur.
 - Whisper invente des phrases sur les pistes sans voix et boucle sur les longues vidéos : vérifier les répétitions avant de citer.
+- La parole détectée par l'énergie se trompe sous une musique (34 % contre 77 %) : séparer la voix avant `coupes_parole.py`. Les cartons de texte sur noir cachent leurs coupes au détecteur.
 - Le son est mesuré, **jamais écouté** ; demucs sert désormais à confirmer tout calage (le mixage avec voix peut en fabriquer un faux).
 - Le placement du sujet n'est mesurable qu'à l'œil, sur un petit échantillon.
 - Clips très sombres : copie éclaircie avant la détection, puis tri à l'œil des coupes nouvelles (paires d'images). `verif_plan.py` lit désormais la fréquence d'images (il supposait 23,976 i/s).
@@ -121,6 +126,8 @@ _Réécrit à chaque session (dernière : 2026-10-11, session 5). Version préc�
 - Whiplash : combien de coupes cachent les filés des plans de 21 et 24 s ? L'hypothèse « on coupe sur l'instrument qui a la phrase » n'est pas mesurée.
 - Mad Max : les images accélérées n'ont pas été mesurées ; le chiffre d'environ 2 700 plans qui circule n'est pas vérifié.
 - Le plan du bus « en miroir » de Joker n'a pas été cherché.
+- adidas « Backyard Legends » : « 68 % des coupes pendant la parole » a été mesuré sur le mixage avec musique ; à refaire sur la voix séparée en passe de révision.
+- Boxho : montage multicaméra automatique ou règle fixe du monteur ? Les durées le suggèrent, rien ne le prouve.
 
 ## Hypothèses de goût (à confirmer par d'autres références)
 - Interstellar et Joker, les deux films cités par Diego, **ne coupent pas vite** ; ce qu'il aime chez eux tient à la structure (l'alternance, la rupture) et à l'équilibre de l'image. Son goût pour le kinetic est réservé à « d'autres usages » (GOUTS.md, 2026-10-09). Mad Max montre qu'un film peut tenir les deux : très rapide, mais structuré par ses respirations.
