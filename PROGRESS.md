@@ -2,7 +2,7 @@
 
 _Lire en premier. Seul l'état présent compte ici. L'état de clôture de la phase 1 est archivé dans `archives/phase-1/PROGRESS-cloture-phase-1.md`, et l'historique des sessions 1 à 25 dans `archives/phase-1/PROGRESS-historique.md`._
 
-## État (2026-10-11, session 5 de la phase 2, 05:04-05:5x)
+## État (2026-10-11, session 5 de la phase 2, 05:04-05:40)
 - **Phase 2 en cours** : mission `PROMPT-PHASE-2.md` (lire aussi « Avant chaque vidéo : repartir de la phase 1 », « Leçons de méthode », « Passe de révision », étape 7). Démarrage de chaque session : `CLAUDE.md`.
 - Session 5 : aucun retour neuf, boîte vide. **Tiger et CIA complétés** (six séquences fines chacun). **Nouvelles fiches** : « Qui est l'imposteur » (deux épisodes, une fiche), Philippe Boxho (LEGEND), « Créer YggTorrent », KAIZEN (première passe + cinq séquences), Popcorn (première passe + quatre séquences). Constats YouTube dans `RAPPORT.md`.
 - Nouvelles leçons (dans `PROMPT-PHASE-2.md`) : mesurer coupes / parole **sur la voix séparée** quand il y a un fond musical (34 % contre 77 %) ; générique monté et coupe graphique → visage ; cartons de texte sur noir (un « plan » de 123 s en contenait 20) ; durées trop régulières = indice (Boxho).
