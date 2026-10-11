@@ -7,7 +7,10 @@
 TIMELINE = None          # nom de la timeline, ou None
 PISTES = None            # liste de pistes vidéo à contrôler, ou None = toutes
 TOL = 0.04               # tolérance en secondes (2 images à 50 i/s) : un contact bord à bord n'est pas un doublon
-IGNORER = ("blanc", "grain", "noir", "sony_white", "Fusion", "Text")   # flashs, grain, titres, plan de fin fourni
+IGNORER = ("blanc", "grain", "noir", "sony_white", "Fusion", "Text", "collage")   # flashs, grain, titres, plan de fin, éléments calculés
+# Fichiers rendus par Gyroflow sur une PLAGE (trim) : ils gardent le timecode de début du rush, il faut ajouter le début de la plage (s)
+DECALAGES = {"C6723_stabilized_s13": 12.5, "C6723_stabilized_s29": 27.5, "C6723_stabilized_sync": 12.0,
+             "C6507_stabilized_sync": 24.0, "C6507_stabilized": 24.0}
 
 pr = resolve.GetProjectManager().GetCurrentProject()
 tl = pr.GetCurrentTimeline()
@@ -23,11 +26,12 @@ for tr in (PISTES or range(1, tl.GetTrackCount("video") + 1)):
         if any(k.lower() in n.lower() for k in IGNORER) or it.GetMediaPoolItem() is None:
             continue
         s, e = it.GetSourceStartTime(), it.GetSourceEndTime()
+        dec = next((v for k, v in DECALAGES.items() if k in n), 0.0); s, e = s + dec, e + dec
         plans.append(dict(piste=tr, debut=it.GetStart() - t0, fin=it.GetEnd() - t0, rush=n,
                           src_in=round(s, 3), src_out=round(e, 3), arret=(e - s) < 0.05))
 par_rush = {}
 for p in plans:
-    par_rush.setdefault(p["rush"].replace("_stabilized", "").split(".")[0], []).append(p)
+    par_rush.setdefault(p["rush"].split("_stab")[0].split(".")[0], []).append(p)
 doublons = []
 for r, L in par_rush.items():
     L.sort(key=lambda p: p["src_in"])
