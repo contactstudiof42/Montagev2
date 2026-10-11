@@ -47,6 +47,9 @@ La V2 Sony a montré trois angles morts : un étalonnage resté technique (simpl
 - Ne juge jamais la couleur sur une vignette réduite ou une planche en palette : toujours une image extraite en pleine résolution.
 - **Transitions** : jamais de transitions intégrées de type glissement, poussée ou volet. Coupe franche, flash, whip avec flou de mouvement, raccord de mouvement, zoom qui traverse.
 
+- **Jamais cheap** (règle de Diego) : un effet se fait seulement si la matière le permet et s'il peut être exécuté proprement ; sinon, on ne le fait pas. Le brief prime sur les goûts de Diego, ses goûts priment sur les tiens.
+- **Bibliothèque d'idées** : https://eyecannndy.com/ (techniques de montage illustrées par des GIF), à consulter dans Chrome pour varier les effets.
+
 ### 2. Voir le mouvement
 Tu regardes des images fixes : un plan qui tremble y paraît parfait. Pour chaque plan retenu au montage, et sur chaque rendu :
 - **Mesure du tremblement** : construis `labo/outils/tremblement.py` (OpenCV, déjà dans le venv). Pour chaque paire d'images consécutives, mesure le déplacement global du décor (corrélation de phase ou flux optique sur le fond), trace la trajectoire de la caméra, retire sa version lissée (le mouvement voulu) et garde le reste : c'est le tremblement, en pixels (moyenne et pic, ramenés à une image 1080 de large). Sors un nombre par plan et une courbe. **Calibre le seuil** sur des plans que tu sais stables (pied, trépied) et sur les packshots tremblants de la V2 Sony, et note-le dans le skill.
@@ -81,6 +84,6 @@ Diego dépose sa version dans `final-diego/` et note les versions dans `RETOURS-
 
 ## Chaque session
 1. Démarrage de `CLAUDE.md` (git pull, retours, boîte à références).
-2. Reprends où `PROGRESS.md` s'est arrêté. 50 minutes au maximum ; enregistre le projet Resolve et le journal avant de finir.
+2. Reprends où `PROGRESS.md` s'est arrêté. **Pas de limite de temps en phase 3** (Diego : « je préfère que ça mette plus de temps et que le rendu soit propre ») ; arrête-toi à une étape propre, enregistre le projet Resolve et le journal avant de finir.
 3. Commit et push à chaque étape terminée (fichiers texte seulement, `git status` avant).
 4. Fin : `PROGRESS.md` (où reprendre), synthèse de `RAPPORT.md`, commit, push.

@@ -119,3 +119,38 @@ _Dicté par Diego dans la conversation, mis en forme par l'agent._
 - Attendu : un juste milieu. Une **progression cohérente** (on comprend où on est et ce qui se passe, chaque bloc a sa raison d'être là), sans être prisonnier de l'heure de tournage, et **sans jamais placer un plan au hasard**.
 - Pour chaque bloc de la V3, écris dans `plan.md` **pourquoi ces plans sont là et dans cet ordre**.
 **Intégré le 2026-10-11** (session 2) : règle dans `montage-regard` (point 6) ; `plan.md` V3 : 9 blocs, chacun avec « pourquoi ces plans, dans cet ordre » (le chemin d'une participante, le corps de bas en haut, les rafales comme matière).
+
+## 2026-10-11 — Projet Sony, notes de Diego sur la V3
+_Dictées par Diego, mises en forme par l'assistant de configuration ; les phrases entre guillemets sont ses mots._
+
+**V3 livrable à 65 %** (V2 : 50 %). « C'est beaucoup mieux, le rythme est mieux, c'est mieux compris. » Mais « pas parfait ».
+
+### Principes rappelés par Diego (valables pour tous les projets)
+- **Le brief prime** : « un brief, c'est un brief ; mes préférences, c'est mes préférences ». Ses goûts (`GOUTS.md`) servent quand le brief ne dit rien.
+- **Compare l'image, libère-toi du chiffre** : les mesures servent à vérifier, le jugement se fait en regardant ton image à côté d'images pro.
+- **Le temps ne compte pas** : « je préfère que ça mette plus de temps et que le rendu soit propre ». En phase 3, plus de limite de 50 minutes par session.
+- **Jamais cheap** : « on ne fait pas les choses de manière cheap ». Un effet se fait seulement si la matière le permet et s'il peut être exécuté proprement : « si c'est possible, on met ; s'il y a la matière, on met ; sinon, on fait pas ». Toujours se comparer visuellement à quelque chose de propre et de pro.
+
+### [gros] Texte de fin : police et animation, toujours pas ça
+- Référence : la direction artistique statique de Sony pour le produit, `projets-phase-3/sony-linkbuds/references/da-linkbuds-clip-reference.png`. « LinkBuds » en gras et « Clip » en maigre, accolés, noir sur fond clair, beaucoup d'air, le produit beige seul. Reprends ce dessin (graisses SST correspondantes) plutôt que d'inventer un titre.
+- Animation : « quelque chose d'assez simple et épuré, à la Apple », même si le reste de la vidéo est très dynamique. Pas d'effet, pas de « fou » : une apparition courte et douce (par exemple, une montée de quelques pixels avec un fondu, freinée en arrivant), parfaitement propre.
+
+### [moyen] Effets et transitions : plus nombreux, mais répétitifs et sans folie
+- « Il y en a beaucoup plus, ça marche bien. Maintenant, ils sont un peu répétitifs et ils manquent de folie. »
+- Source d'idées : **https://eyecannndy.com/**, une bibliothèque de techniques de tournage et de montage, chacune illustrée par des GIF. Parcours-la dans Chrome, garde les techniques de montage (zoom infini, crash zoom, flash cut, match cut, speed ramp, step-print, stutter, split screen, double exposition, collage, masques, datamosh, slit-scan, arrêt sur image, typographie…), regarde les exemples, et note dans `montage-kinetic-editing` celles que tu sais exécuter proprement dans Resolve.
+- **Zoom infini** : Diego le trouve pertinent « s'il est bien exécuté ». Pas le zoom cheap « à la CapCut », avec un simple flou qui laisse apparaître l'image d'après. Il faut la matière : un plan dont un détail devient exactement le plan suivant (alignement, échelle, mouvement continu). Si les rushes ne le permettent pas, on ne le fait pas.
+- Varie les techniques d'une rafale à l'autre ; chacune doit avoir une raison dans la matière.
+
+### Réponses de Diego aux questions complémentaires
+- **Son** : musique sans problème. **SFX un peu répétitifs** : varie-les (familles, textures, hauteurs), comme les effets visuels.
+- **[gros] Couleur** : « il y a du mieux », mais « toujours pas assez pro ».
+    - « Une bouillie de pixels », « encore trop pâté de couleurs » : les teintes **ne sont pas assez séparées** (peaux, décor, néons, produit se fondent). Travaille la séparation des couleurs (courbes teinte contre teinte et teinte contre saturation, peaux isolées du décor, contraste de couleur entre sujet et fond), pas seulement le contraste global.
+    - **Plans d'écouteurs un peu surexposés** : « je ne sais pas comment il a mesuré ça ». Le produit est blanc ou beige : vérifie ses hautes lumières sur l'oscilloscope (waveform) et en fausses couleurs, sur une image pleine résolution, et garde du détail dans le boîtier (pas de blanc brûlé). Explique dans ta note comment tu as mesuré l'exposition.
+    - Une partie de la « bouillie » vient aussi de l'encodage (voir le point suivant).
+- **[gros] Réglages d'export du rendu final** (Diego) : débit nettement plus élevé, encodage **H.265 Main 10** sur le GPU (VideoToolbox), **multipass activé**, **« Bypass re-encode when possible » désactivé**, et dans les réglages avancés tout en qualité maximale (« Force sizing to highest quality », « Force debayer to highest quality », rendu en qualité maximale). Ça ne doit pas prendre des heures, mais la qualité passe avant la vitesse. Vérifie ensuite avec ffprobe (profil, bits, débit) et compare une image du rendu à l'image de la timeline : aucun bloc, aucun aplat cassé. Note ces réglages dans `montage-loudness-livraison` comme réglages par défaut du studio.
+- **[moyen] Détourages** : « encore un peu bizarres ». Recommence tant que ce n'est pas propre. Et plutôt qu'un fond de couleur, inspire-toi de tes références : des **collages avec arrêt sur image puis reprise du mouvement**, comme dans les vidéos réseaux de Diego (`analyses/reseaux/`, notamment le collage de captured-by-h). Ce n'est pas une règle immuable, mais ici ça s'y prête mieux.
+- **[moyen] Ouverture K-O-R-E** : « c'est l'idée », mais revois le cadrage et la stabilisation pour que le raccord fonctionne (chaque lettre au même endroit, sans flottement).
+- **[gros] Packshots** : on voit la stabilisation numérique (recadrage, déformation). **« L'utilisation de Gyroflow est indispensable. »** Diego règle l'accès de macOS ; dès qu'il te le confirme, stabilise les packshots et les plans K-O-R-E avec Gyroflow (règle de sécurité 2 : fichiers `_stabilized` à côté des originaux, avec son accord).
+
+### Suite
+V4 : applique ces notes. Avant de livrer, compare en pleine résolution ton titre à la référence Sony, et tes effets aux exemples d'eyecannndy.
