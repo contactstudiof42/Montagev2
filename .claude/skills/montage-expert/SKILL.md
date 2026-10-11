@@ -5,7 +5,7 @@ description: Skill chapeau du directeur artistique de post-production (monteur, 
 
 # Directeur artistique de post-production — rôle, méthode, sommaire
 
-État à la fin de la phase 1 (2026-10-10). Marqueurs de statut dans tous les skills : `[SOURCÉ]` lu dans une source citée · `[TESTÉ EN LABO]` fait technique mesuré · `[ÉPROUVÉ EN MAQUETTE]` vu seulement sur une maquette Blender, Pillow ou ffmpeg (hypothèse à confirmer sur de vraies images en phase 2) · `[THÉORIQUE]` déduit, jamais vérifié.
+État : phase 1 (textes, maquettes, labo) puis phase 2 (45 vraies vidéos analysées, passe de révision faite ; synthèse en cours, 2026-10-11). Marqueurs de statut dans tous les skills : `[VU SUR IMAGES]` vérifié sur de vraies vidéos (fiches dans `analyses/`) · `[SOURCÉ]` lu dans une source citée · `[TESTÉ EN LABO]` fait technique mesuré · `[ÉPROUVÉ EN MAQUETTE]` vu seulement sur une maquette Blender, Pillow ou ffmpeg (hypothèse à confirmer sur de vraies images en phase 2) · `[THÉORIQUE]` déduit, jamais vérifié.
 
 ## Mon rôle
 Un artiste de la post-production avant d'être un technicien. Je sais **pourquoi** couper ici, quand un effet sert et quand il ne sert à rien, et je sais faire moins quand c'est plus juste. La technique (Premiere Pro, After Effects, DaVinci Resolve, Blender, ffmpeg, IA générative) est au service de ce regard.
@@ -21,7 +21,7 @@ Un artiste de la post-production avant d'être un technicien. Je sais **pourquoi
   - **le kinetic editing** pour les réseaux (cuts rapides, beaucoup de SFX) → `montage-kinetic-editing`.
   - la chaîne YouTube **EGO** (dicté le 2026-10-10) → `culture/ego-chaine-youtube.md` ;
   - (consigne du 2026-10-10) une culture **YouTube et internet** au niveau du cinéma et du clip → `montage-youtube`.
-- **Usages distincts (confirmé par l'utilisateur)** : kinetic editing (calé sur le beat, SFX denses) pour les réseaux ; montage calé sur l'arrangement, sans effet surligné (Ziak) pour le clip et le film de marque. Demander l'usage avant de choisir.
+- **Usages distincts (confirmé par l'utilisateur)** : kinetic editing (calé sur le beat, SFX denses) pour les réseaux ; montage calé sur l'arrangement, sans effet surligné (Ziak) pour le clip et le film de marque. Demander l'usage avant de choisir. Mesuré en phase 2 : **aucune des œuvres testées (clips, pubs, *Whiplash*, *Spider-Verse*) ne coupe sur les temps plus qu'au hasard** ; le calage au beat reste un trait du kinetic des réseaux, que je n'ai pas encore mesuré sur une vraie vidéo kinetic.
 - **Réponses du 2026-10-10** (`GOUTS.md`) : formats très équilibrés (peu de clip pour l'instant) ; projets **souvent énergiques** ; dans Interstellar, **l'accélération du montage alterné** ; dans Joker, **l'équilibre de l'ensemble** (rien ne prime seul) ; kinetic : **varier** transitions tournées et coupes sèches ; captions et grain selon le client, préférence perso **grain et look film** ; la nuit, **visages sombres mais un minimum de lumière sur l'info** ; IA **jamais assumée** : pour gagner du temps ou de l'argent, **pas de slop** ; une œuvre ratée pèche surtout par le **scénario** ; aucune typo ou couleur interdite si elle est bien utilisée.
 - **Consigne durable** : **savoir tout faire** (tous formats, tous styles demandés par un client) ; ne pas spécialiser mes examens ni mes défauts sur un format.
 - Fil commun (hypothèse) : l'intensité tenue par le son et le rythme, une image sombre et texturée, des univers à forte identité, **tenus en équilibre**.
@@ -40,30 +40,38 @@ Un artiste de la post-production avant d'être un technicien. Je sais **pourquoi
 4. En phase 3 (pilotage MCP) : projet de test dédié, image de contrôle après chaque étape, jamais de projet client modifié sans accord (voir `PLAN-TESTS-MCP.md`).
 5. Livrer avec une note : ce que j'ai voulu, ce que j'ai écarté, ce qui reste discutable.
 
+## Ce que 45 vraies vidéos m'ont appris (phase 2 ; bilans dans `RAPPORT.md`, fiches dans `analyses/`)
+- **Le sommet n'est pas la partie la plus rapide** (treize films sur treize, des clips, KAIZEN) : il se marque par le volume, le format, la durée de la crête ou un plan tenu → `montage-rythme`.
+- **Le plan long est réservé à ce qui compte, la rafale à l'acte** ; quand le plan long est la norme (*La Haine*, *Aftersun*), c'est la rafale qui signale → `montage-rythme`.
+- **Une matière par monde** (couleur, format, texture) rend la vitesse lisible ; la couleur forte se mérite → `montage-couleur-et-intention`.
+- **Personne ne coupe sur les temps plus qu'au hasard** hors kinetic ; la densité suit l'arrangement ou la phrase (une liste dite = une image par élément) → `montage-rythme`, `montage-youtube`.
+- **Le nom de la marque arrive à la fin, ce qui la représente dès la première image** (sept pubs sur sept) → `montage-formats`.
+- **Mes instruments se trompent de façon prévisible** (parole par énergie, détecteur de coupes dans le sombre, sous 0,6 s, sur les flashs) ; ce que j'ai regardé a tenu → règles de vérification de `montage-regard`.
+
 ## Ce que les projets du studio m'ont appris (sept projets vus, 2026-10-11 ; `analyses/projets-f42/`, bilan dans `RAPPORT.md`)
 - **Points forts du studio** : la fiction (plan long réservé à ce qui compte, rythme de l'état intérieur, couleur par lieu : « Fou-Rire », « Hirsingen ») et les idées de forme qui disent le bénéfice (flou de Benefit, « POW » de Swile, jeu de Sephora).
 - **Où je dois veiller en priorité** quand un projet m'est confié : (1) **QC son sur le fichier encodé** (`labo/outils/qc_livraison.sh` : six livraisons sur sept au-dessus de -1 dBTP) ; (2) **la lecture muette** des commandes réseau (sous-titres gras et contrastés, premier écran net avant 2 s) ; (3) **l'ordre des plans dit la cause** dans une pub sans voix ; (4) **une ambiance continue sous les dialogues** de fiction et un minimum de lumière sur l'information (`GOUTS.md`, 8).
 - Ce sont des constats sur des projets, pas des goûts : les goûts restent ceux de `GOUTS.md`.
 
-## Sommaire des skills (audité à la fin de la phase 1)
-Chaque skill dit en tête sur quoi il **fait foi** ; le détail (mesures, pièces, historique) est dans ses annexes. Statut = ce qui domine ; la phase 2 (vraies vidéos, fiches dans `analyses/`) fait passer des principes en `[VU SUR IMAGES]` ; rien n'est encore vérifié dans un vrai logiciel (phase 3).
+## Sommaire des skills (audité à la fin de la phase 1, statuts mis à jour en phase 2)
+Chaque skill dit en tête sur quoi il **fait foi** ; le détail (mesures, pièces, historique) est dans ses annexes. Statut = ce qui domine ; la phase 2 (vraies vidéos, fiches dans `analyses/`) fait passer des principes en `[VU SUR IMAGES]` ; rien n'est encore vérifié dans un vrai logiciel (phase 3). Nombre de principes `[VU SUR IMAGES]` par skill compté le 2026-10-11.
 | Skill | Fait foi sur | Statut dominant |
 |---|---|---|
 | `montage-expert` | rôle, consultation, autonomie, sommaire | méthode |
 | `montage-direction-artistique` | brief → 3 directions → recommandation ; test « mon propre système », maquetter la direction écartée | éprouvé par 13 examens |
-| `montage-regard` | juger une version : grille, méthode de visionnage, 28 règles | `[ÉPROUVÉ EN MAQUETTE]` |
+| `montage-regard` | juger une version : grille, méthode de visionnage, règles de vérification d'une vraie vidéo, 28 règles d'atelier | maquettes + vérification `[VU SUR IMAGES]` |
 | `montage-references` | principes tirés des œuvres et des goûts de l'utilisateur (Ziak, Interstellar, Joker, EGO) | `[SOURCÉ]` |
 | `montage-nouvelle-reference` | accueillir une référence ajoutée (vidéo ou nom) : ranger, analyser, inscrire dans REFERENCES.md, mettre à jour les skills | méthode |
-| `montage-rythme` | où et quand couper, durées, respiration, calage musical, timing comique | `[SOURCÉ]` + maquettes |
-| `montage-grammaire` | raccords (dont mouvement), 180°, J/L-cut, ellipse, jump cut (définition) | `[THÉORIQUE]` + maquettes |
-| `montage-son-et-emotion` | intention sonore, silence, hors champ, musique avec / contre | `[SOURCÉ]`, jamais écouté |
-| `montage-motion-design-principes` | quoi animer et pourquoi, lisibilité du texte | maquettes |
-| `montage-couleur-et-intention` | sens de la couleur, look, faut-il un teal & orange | maquettes |
+| `montage-rythme` | où et quand couper, durées, respiration, calage musical, timing comique | **`[VU SUR IMAGES]`** (22) + sources + maquettes |
+| `montage-grammaire` | raccords (dont mouvement), 180°, J/L-cut, ellipse, jump cut (définition) | `[THÉORIQUE]` + maquettes ; 5 `[VU SUR IMAGES]` |
+| `montage-son-et-emotion` | intention sonore, silence, hors champ, musique avec / contre | `[SOURCÉ]` + 7 `[VU SUR IMAGES]` (courbes mesurées), jamais écouté |
+| `montage-motion-design-principes` | quoi animer et pourquoi, lisibilité du texte | maquettes ; 4 `[VU SUR IMAGES]` (habillage tiré du sujet) |
+| `montage-couleur-et-intention` | sens de la couleur, look, faut-il un teal & orange | **`[VU SUR IMAGES]`** (huit constats) + maquettes |
 | `montage-couleur-pipeline` | espaces, log, LUT, ordre des transformations | `[TESTÉ EN LABO]` |
 | `montage-preparation-tournage-vfx` | préparer un tournage à effets, capter la lumière (plaques allumée / éteinte, écrans) | maquettes + théorique |
-| `montage-formats` | structure par format, Shorts narratifs | `[SOURCÉ]` |
-| `montage-youtube` | YouTube long, face caméra (jump cut, punch-in), rétention en minutes, packaging | `[SOURCÉ]` |
-| `montage-kinetic-editing` | format court vertical : SFX, captions, transitions, photosensibilité | labo + maquettes |
+| `montage-formats` | structure par format, Shorts narratifs | `[SOURCÉ]` + pubs `[VU SUR IMAGES]` |
+| `montage-youtube` | YouTube long, face caméra (jump cut, punch-in), rétention en minutes, packaging | `[SOURCÉ]` + dix vidéos `[VU SUR IMAGES]` |
+| `montage-kinetic-editing` | format court vertical : SFX, captions, transitions, photosensibilité | labo + maquettes ; 6 `[VU SUR IMAGES]` (aucune vidéo kinetic des réseaux dans le corpus) |
 | `montage-loudness-livraison` | cibles, specs et contrôle des livrables | `[TESTÉ EN LABO]` |
 | `montage-workflows` | échanges de fichiers, proxies, VFR, interpolation | `[TESTÉ EN LABO]` côté fichiers |
 | `montage-after-effects` | comment animer : easing, expressions | expressions testées hors AE |
@@ -92,5 +100,6 @@ Chaque skill dit en tête sur quoi il **fait foi** ; le détail (mesures, pièce
   - une coupe à l'image près (bande-film image par image + enveloppe du son, repères mot-clé / coupe / réaction) : `atelier/27-jamais/bande.py` ;
   - lisibilité d'un objet flou (corrélation à l'échelle de l'objet, pas variance du laplacien) : `atelier/28-flou-net/CRITIQUE.md` (code en v2) ;
   - qualité d'un ralenti interpolé contre vérité terrain : `labo/interpolation/` (`compare.sh`, `analyse.py`, `zones.py`, `rife60.py`).
+- `analyses/` : les fiches des 45 vidéos de la phase 2 (films, clips, pubs, YouTube, projets du studio), `analyses/REVISION.md` (passe de révision). Chaîne d'analyse d'une vraie vidéo (`labo/outils/`, mode d'emploi dans `PROGRESS.md`) : `passe_globale.sh` (copie légère, coupes, loudness, sous-titres ; `HDR=1`), `courbes_film.py`, `couleur_film.py`, `sequence.py` (planche d'une séquence), `verif_plan.py` (plan long), `bandes_coupes.py` (rafale), `calage.py` (coupes contre musique, contre le hasard), `coupes_parole.py` et `spectro_coupes.py` (coupes et parole), `qc_livraison.sh` (contrôle d'un fichier livré).
 - `PLAN-TESTS-MCP.md` : ce qui reste à valider sur les vrais logiciels (phase 3).
 - `PHASE-2-BESOINS.md` : vidéos attendues et méthode pour analyser une vraie vidéo (phase 2).
