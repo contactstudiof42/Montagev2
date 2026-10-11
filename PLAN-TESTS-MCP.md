@@ -24,7 +24,7 @@ Serveur MCP natif de Resolve Studio 21.1.1, base « TEST IA », projet `P3-BAC-A
 | SFX à l'image | réussi | `AppendToTimeline(mediaType 2, recordFrame)` |
 | Plan de fin ProRes alpha | réussi | piste V3, alpha respecté |
 | Fondu enchaîné | réussi | `AddTransition` |
-| Artlist dans Chrome | recherche réussie ; téléchargement en attente de l'accord de Diego | Claude in Chrome |
+| Artlist dans Chrome | réussi avec une main de Diego | recherche, « download » → « wav download » ; Chrome demande une confirmation native que l'extension ne voit pas : Diego confirme, ou désactive « Demander dans quel dossier enregistrer chaque fichier » ; puis `mv` vers `sfx/` |
 
 ## Règles de pilotage (méthode, à appliquer dès le premier test)
 1. Ne jamais ouvrir ni modifier un projet client : créer un projet de test dédié (`TEST_MCP_<date>`), dans un dossier dédié.
