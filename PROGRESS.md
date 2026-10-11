@@ -2,10 +2,10 @@
 
 _Lire en premier. Seul l'état présent compte ici. L'état de clôture de la phase 1 est archivé dans `archives/phase-1/PROGRESS-cloture-phase-1.md`, et l'historique des sessions 1 à 25 dans `archives/phase-1/PROGRESS-historique.md`._
 
-## État (2026-10-11, session 2 de la phase 2, 02:04-02:5x)
+## État (2026-10-11, session 2 de la phase 2, 02:04-02:40)
 - **Phase 2 en cours** : mission `PROMPT-PHASE-2.md` (lire aussi ses sections « Avant chaque vidéo : repartir de la phase 1 » et « Leçons de méthode »). Démarrage de chaque session : `CLAUDE.md`.
-- Session 2 : retour de Diego du 2026-10-11 intégré (la note sur l'amarrage d'Interstellar n'était pas de lui) ; **Joker terminé** (7 séquences) ; **Whiplash analysé** (`analyses/films/whiplash.md`, 6 séquences) ; passe globale et transcription du **Dîner de cons** lancées (`videos/_travail/diner/`).
-- **Reprendre ici** : Le Dîner de cons. Si `videos/_travail/diner/coupes.json` n'existe pas, lancer `courbes_film.py` et `couleur_film.py` (la passe est faite si `passe.log` finit par « coupes: ») ; la transcription Whisper est `sous-titres.srt` (le film n'a que des sous-titres image). Séquences à viser : la présentation de Pignon, le coup de fil à Juste Leblanc, le contrôleur fiscal (Cheval), la fin. Mesurer le timing comique (air avant et après la chute, qui est à l'image sur la chute) contre `culture/timing-comique-sitcom.md`. Puis Mad Max: Fury Road (vérifier le HDR avec ffprobe), puis le **bilan de la vague 1** dans RAPPORT.md.
+- Session 2 : retour de Diego du 2026-10-11 intégré (la note sur l'amarrage d'Interstellar n'était pas de lui) ; **Joker terminé** (7 séquences) ; **Whiplash analysé** (`analyses/films/whiplash.md`, 6 séquences) ; **Le Dîner de cons** : passe globale, transcription Whisper et 4 séquences (`analyses/films/diner-de-cons.md`), timing comique à mesurer.
+- **Reprendre ici** : finir Le Dîner de cons (`analyses/films/diner-de-cons.md`, section « Reste à faire » : mesurer le timing comique avec les horodatages Whisper de `videos/_travail/diner/sous-titres.srt`, plus l'arrivée de Pignon vers 0:14-0:20 ; tous les fichiers de passe globale sont faits). Puis Mad Max: Fury Road (vérifier le HDR avec ffprobe), puis le **bilan de la vague 1** dans RAPPORT.md.
 - `.claude/settings.json` (ajouté par Diego) n'est pas commité : le garde-fou de l'agent refuse ce commit. À laisser à Diego.
 
 ## Chaîne d'analyse d'un film (sessions 1-2)
@@ -37,7 +37,7 @@ _Lire en premier. Seul l'état présent compte ici. L'état de clôture de la ph
 | films | Interstellar (2014), IMAX | 2 h 49 min | ✔ 2026-10-11 |
 | films | Joker (2019) | 2 h 01 min | ✔ 2026-10-11 (7 séquences) |
 | films | La Haine (1995) | 1 h 33 min | |
-| films | Le Dîner de cons (1998) | 1 h 20 min | passe globale lancée (session 2) |
+| films | Le Dîner de cons (1998) | 1 h 20 min | en cours (passe globale + 4 séquences) |
 | films | Mad Max: Fury Road (2015) | 2 h 00 min | |
 | films | OSS 117 : Le Caire, nid d'espions (2006) | 1 h 39 min | |
 | films | Spider-Man: Across the Spider-Verse (2023), HDR10, AV1 | 2 h 20 min | |
