@@ -24,3 +24,34 @@ Les noms cherchés et les premiers résultats ont parfois différé (« Swoosh -
 ## Ajoutés pour la V3 (2026-10-11)
 19 sons **copiés** (pas retéléchargés) depuis `/Volumes/SSD FAST/Test-Claude-nu/sfx/` : téléchargés le même jour sur Artlist avec le compte de Diego par le Claude nu, lus en lecture seule après la fin du test à l'aveugle. Aucun nouveau téléchargement : le compte du jour reste à 13 (moi) + 24 (Claude nu) = 37 sur 100. Mesures début / crête : `videos/phase-3/sony-linkbuds/sfx/sfx_mesures.json`.
 Familles ajoutées : clics et pops (lettres K-O-R-E, arrêts), déclencheurs (« Chunky Camera Shutter », « Digital Camera Shutter Sony α7 III »), glitchs (« Data Transfer Glitch », « Impact Into Rewind Glitch »), whooshs (« Whoosh Quick », « Whoosh Powerful », « Thin Wire Whip », « Airy Whoosh Short and Fast »), aspirations (« Reverse Suckback », « Reverse Riser Airy Suction »), impacts (« Heavy Bass Drop », « Deep Hit Hard Impact », « Hard Cinematic Impact », « Cinematic Impact Drum Hit », « Short Fire Whoosh Blast », « Impact Whoosh Airy Thud »), riser (« Deep Swell Riser »).
+
+## Ajoutés pour la V4 (2026-10-11) : nouvelles familles contre la répétition
+25 sons téléchargés sur Artlist (compte de Diego, rien d'acheté, WAV 96 kHz / 24 bits) par un agent dans Chrome : **62 sur 100 ce jour-là**. Retour de Diego : SFX « un peu répétitifs ». Règle V4 : une famille de sons par technique visuelle, variations de hauteur.
+| Fichier | Pack | Durée | Famille | Usage prévu |
+|---|---|---|---|---|
+| Artlist Original - Tonal Downers - Tape Stop Short Downer | Tonal Downers | 2,49 s | arrêt de bande | arrêt sur image (collage) |
+| Bjorn Lynne - Mr DJ - Turntable Scratch | Mr DJ | 0,79 s | scratch | reprise du mouvement après un collage |
+| Artlist Foley - Vintage Devices - Film Projector Turning On | Vintage Devices | 0,97 s | projecteur | ouverture K-O-R-E (texture argentique) |
+| SoundBits - Tiny Transitions Vol 1 - Paper Ripping Crispy | Tiny Transitions | 0,97 s | papier | détourage qui se détache (collage) |
+| CB Sounddesign - Board Games - Picking Up a Card Sliding on Table | Board Games | 1,34 s | papier glissé | fragment de collage |
+| Artlist Original - Cymbal Risers - Reversed Sweep Crash | Cymbal Risers | 1,89 s | cymbale inversée | aspiration avant le rouge |
+| Artlist Foley - Vintage Cameras - Konica EE Matic Mechanical Lever Pull Film Advance | Vintage Cameras | 0,76 s | armement argentique | step-print (rafale qui descend) |
+| Artlist Foley - Vintage Cameras - Polaroid Sx70 Shutter Picture Printed out | Vintage Cameras | 2,39 s | Polaroid | collage (arrêt) |
+| Artlist Original - Hits  Pieces - Sub Drop | Hits & Pieces | 1,86 s | 808 | dernier drop |
+| DT Sound - Aural Impacts - Body Slam | Aural Impacts | 1,10 s | impact corporel | drop de la séance |
+| Vadi Sound - Practical Materials - Tightening Rope Pulling Streching Creaking | Practical Materials | 3,02 s | sangles | écran partagé des sangles |
+| BOOM Library - Adrenaline - Gym Pullup Machine Pulling Cables Fast | Adrenaline | 2,34 s | câbles | ouverture des bandes |
+| Echoto Sound - Streaming Logos - Refined Tonal Whoosh | Streaming Logos | 3,24 s | whoosh tonal | passage aux packshots |
+| Artlist Original - Interference - Swipe | Interference | 0,33 s | swipe | punch-in |
+| Effectsworks - Sounds From the Future - Short Tonal Riser | Sounds From the Future | 1,06 s | riser tonal | zoom infini E → KORE |
+| Sampletraxx - Stutter Matter - Stuttering Whoosh | Stutter Matter | 2,23 s | bégaiement | rafale qui monte |
+| DeanKR - Graphical Essence - Deep Bubble Pop Reverb | Graphical Essence | 2,20 s | pop grave | (réserve) |
+| Phil Michalski - UI - Glassy Click | UI | 0,47 s | tick de verre | titre, oreilles (flash cut) |
+| Slava Pogorelsky - Crystal Clear - Bright Glass Chimes | Crystal Clear | 1,79 s | carillon | (réserve, risque de cliché) |
+| Alan Dalcastagne - Getting Fit - Empty Gym Aerobic Machines Rumble | Getting Fit | 61,2 s | ambiance salle | sous les silences relatifs |
+| Airborne Sound - Electric Feel - Neon Sign Flickering | Electric Feel | 1,21 s | néon | bascule au rouge |
+| Artlist Foley - Female Breath - Huh Sharp Exhale | Female Breath | 0,41 s | souffle | effort (bloc 5) |
+| Artlist Original - Percussion Clap Single Reverberant | Percussion | 0,83 s | clap | (réserve) |
+| Travsonic - Group Reactions - Group Cheers Whoo | Group Reactions | 2,07 s | clameur | (réserve) |
+| Vadi Sound - Focal - Camera Speedlight Flash Charge | Focal | 2,84 s | charge de flash | avant un arrêt |
+Liens : sur artlist.io/sfx (titre exact ci-dessus). Noms de fichiers laissés tels quels (deux espaces dans « Hits  Pieces », une espace avant « .wav » pour le Polaroid et l'ambiance).
