@@ -38,7 +38,7 @@ _Lire en premier. Seul l'état présent compte ici. L'état de clôture de la ph
 ## Inventaire de `videos/` (2026-10-11)
 | Catégorie | Titre | Durée | Analysé |
 |---|---|---|---|
-| films | Aftersun (2022) | 1 h 41 min | passe globale faite (session 8) |
+| films | Aftersun (2022) | 1 h 41 min | ✔ 2026-10-11 (6 séquences, 14 plans longs vérifiés ; eau et miroir à faire) |
 | films | Avengers: Infinity War (2018) | 2 h 29 min | ✔ 2026-10-11 (4 séquences + acte final ; couleur fine à faire) |
 | films | Forrest Gump (1994), 2160p HDR10 | 2 h 22 min | ✔ 2026-10-11 (4 séquences ; couleur et fin à faire) |
 | films | Interstellar (2014), IMAX | 2 h 49 min | ✔ 2026-10-11 |

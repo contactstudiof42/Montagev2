@@ -50,6 +50,7 @@ Une ligne imaginaire relie les deux personnages (ou un personnage et ce qu'il re
 ## Temps [THÉORIQUE]
 - **Ellipse** : enlever ce que le spectateur peut reconstruire ; il préfère compléter que subir. (Dilater / compresser au service de l'émotion : `montage-rythme`.)
 - **Montage parallèle** : deux actions alternées créent une relation ; accélérer l'alternance fait monter la tension (détail et pièce 29 : `montage-rythme`). Donner à chaque ligne sa matière (couleur, lumière) pour qu'un insert de 2 s se lise sans contexte ; suspendre l'alternance sur l'action la plus tendue. [VU SUR IMAGES] (*Interstellar*, 1:50-2:27)
+- **Unir deux époques par un mouvement plutôt que par une coupe** : le dernier plan d'*Aftersun* (160 s, aucune coupe) part de l'archive MiniDV de l'aéroport, panoramique jusqu'à ce que l'image de la cassette glisse hors du cadre (elle était projetée dans l'appartement de Sophie adulte), traverse le présent, et finit dans le couloir où Calum tient le caméscope. La coupe aurait séparé les temps ; le mouvement les met dans la même pièce. Même film : **ouvrir sur la fin, rendue illisible** (la cassette de l'aéroport rembobinée, avec ses artefacts, à 2:46) ; le spectateur la reconnaît au dernier plan. **L'archive manipulée comme un objet** (rembobiner, accélérer) dit « souvenir » sans carton ni voix off. [VU SUR IMAGES] (`analyses/films/aftersun.md`)
 - **Montage-séquence** : une durée longue en quelques plans, souvent sur musique ; cliché de la « préparation » si mal utilisé (montage « hip-hop » de Wright).
 
 ## Montage son (bases) [THÉORIQUE]

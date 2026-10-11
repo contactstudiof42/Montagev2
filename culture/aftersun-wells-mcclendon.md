@@ -43,6 +43,9 @@ Corollaire 2 : on peut charger un plan après coup ; une coupe tenue un peu trop
 Corollaire 3 : défamiliariser un morceau connu (voix isolées, montage alterné) plutôt que de le laisser porter sa nostalgie.
 Corollaire 4 : quand le montage ne touche plus, revenir aux deux ou trois moments qui émeuvent encore et tout reconstruire autour.
 
+## Confronté au film (phase 2, 2026-10-11)
+Voir `analyses/films/aftersun.md` : aucune affirmation contredite par les images vues ; complété (un quatrième régime d'image, le présent froid ; le « panoramique circulaire » de la fin est un seul plan de 160 s qui part de l'image projetée de la cassette ; l'ouverture montre déjà la cassette de l'aéroport, rembobinée ; la rave apparaît quatre fois). Restent non vérifiés : la version désossée de « Under Pressure », le plan sur la surface de l'eau.
+
 ## Sources
 - https://en.wikipedia.org/wiki/Aftersun (crédits, dates, tournage en Turquie, morceaux, description des scènes de rave et de la fin)
 - https://www.bfi.org.uk/sight-and-sound/features/postcard-from-edge-charlotte-wells-aftersun (Wells : film sur le deuil, choix tardif de « Under Pressure », plan de l'eau trouvé au montage, rôle des chansons)
