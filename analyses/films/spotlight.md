@@ -1,6 +1,6 @@
 # Spotlight (Tom McCarthy, 2015 ; montage Tom McArdle)
 
-_Fiche ouverte le 2026-10-11 (phase 2, session 8, film vague 3 n°2). **État : passe globale + 2 séquences + 3 plans longs vérifiés + comparaison avec *The Social Network*** ; restent l'ouverture de 1976, les témoignages des victimes et l'impression (voir « À faire »). Source : 1080p H.264 (SDR BT.709), **VO anglaise** (piste 2), sous-titres anglais complets (2 321). Travail dans `videos/_travail/spotlight/`. Planches commitées : `spotlight-sipe.png` (46:30-50:00), `spotlight-colere.png` (1:36:30-1:38:30). Aucune fiche de phase 1 sur McCarthy ou McArdle._
+_Fiche ouverte le 2026-10-11 (phase 2, session 8, film vague 3 n°2). **État : passe globale + 4 séquences (ouverture, appels, colère, cartons de fin) + plans longs vérifiés + comparaison avec *The Social Network*** ; restent les témoignages des victimes et l'impression (voir « À faire »). Source : 1080p H.264 (SDR BT.709), **VO anglaise** (piste 2), sous-titres anglais complets (2 321). Travail dans `videos/_travail/spotlight/`. Planches commitées : `spotlight-ouverture.png` (0:00-4:30), `spotlight-sipe.png` (46:30-50:00), `spotlight-colere.png` (1:36:30-1:38:30). Aucune fiche de phase 1 sur McCarthy ou McArdle._
 
 Skills relus : `montage-rythme` (plan long, tension par l'allongement), `montage-grammaire` (dialogue, hors champ), `montage-son-et-emotion` (voix hors champ), `montage-couleur-et-intention`, grille de `montage-regard` ; et `analyses/films/the-social-network.md` pour la comparaison demandée par la mission.
 
@@ -14,6 +14,11 @@ Rendre crédible une enquête de journalistes : le spectateur doit sentir le tra
 
 ## Séquences
 
+### L'ouverture, 1976 (1:05-3:10) [VU SUR IMAGES, `spotlight-ouverture.png` ; plans vérifiés par `verif_plan.py` et tuile]
+- Après les logos et un carton « Based on Actual Events », **un plan suivi d'environ 22 s** : un policier de dos dans un couloir de commissariat (incrustation « Boston, MA – 1976 »), jusqu'au comptoir. Puis un champ-contrechamp de deux policiers (1,8 à 5,5 s) qui commentent à voix basse.
+- **Le crime n'est jamais montré, le système est vu de loin** : l'évêque qui parle à la mère est un **plan de 13,8 s à travers une porte**, au fond de la pièce, depuis la salle des policiers ; puis trois plans courts dans la pièce, et **un plan fixe de 28,2 s** sur la voiture qui emmène le prêtre dans la nuit (vrai plan). Le titre « SPOTLIGHT » sur noir (15,1 s), puis on saute à 2001 (le pot de départ au *Globe*, plans de 1,1 à 16,6 s).
+- Tout le film est dans ces deux minutes : **l'information se capte à distance**, par une porte ou une voix, et le plan tenu porte ce qu'on comprend sans voir.
+
 ### Les deux appels à Richard Sipe (47:21 et 1:00:05) [VU SUR IMAGES, plans vérifiés par `verif_plan.py` et tuile]
 - **47:21,5 : un plan fixe de 67,1 s**, avec une lente poussée : Rezendes seul à son bureau, la nuit, la lampe allumée, au téléphone. Sipe (l'ancien prêtre qui étudie les abus) est **une voix hors champ** qui donne pour la première fois l'idée du système. Juste avant, une conversation de couloir tenue 49 s (plus un plan de 8,5 s à travers la vitre : le détecteur avait fusionné les deux en 57,7 s) ; juste après, deux plans de 28,6 et 43,4 s (vrais) à la bibliothèque.
 - **1:00:05 : un plan de 115 s** (aucune coupe pour `verif_plan.py`, tuile à 1 image / 3 s cohérente) : l'équipe autour du haut-parleur, la caméra part d'un bureau et recadre lentement jusqu'au large de la pièce ; c'est l'appel où Sipe estime le nombre de prêtres (« Ninety fucking priests? In Boston? » à 1:02:00).
@@ -22,6 +27,9 @@ Rendre crédible une enquête de journalistes : le spectateur doit sentir le tra
 ### La colère de Mike (1:36:11-1:38:35) [VU SUR IMAGES, `spotlight-colere.png` ; spectrogramme]
 - Un large de 23,9 s pose le bureau, puis la dispute Rezendes / Robby en plans de 1,8 à 9,3 s. **La tension monte par l'échelle, pas par la vitesse** : les plans moyens deviennent des gros plans serrés (« It could've been you! », 1:37:45, deux gros plans de 2,0 et 5,3 s), sans que la durée des plans baisse vraiment (médiane environ 4 s du début à la fin). Puis **l'après tenu** : « You finished? » (2,8 s), le gros plan de Mike tenu 11,3 s (« This is bullshit »), Robby 5,8 s, et le son tombe (LUFS momentané de -17 à -36/-55 dans les secondes suivantes).
 - **Coupes et parole** (23 coupes de la dispute, toutes regardées sur spectrogramme) : 7 clairement pendant la parole (30 %), 7 au bord d'un mot, 9 dans un silence ; l'outil (`SEUIL=haut`, voix séparée) dit 41 %.
+
+### Les cartons de fin (2:00:32-2:01:29) [mesuré, `blackdetect` + tuile à 1 image / 6 s]
+- Après le dernier plan (les téléphones de l'équipe qui sonnent : les victimes appellent), 26 s de cartons de texte blanc sur noir (le nombre d'articles, 249 prêtres accusés, le nombre de victimes, la démission du cardinal Law), puis **quatre ou cinq cartons de listes de villes du monde** où des scandales ont été révélés, **4,1 s chacun, séparés par 0,9 s de noir**, au métronome. Le film qui n'a aucune rafale d'images finit par **une rafale écrite** : l'ampleur se dit par la liste, pas par l'image (« une liste, un élément par carton », version texte).
 
 ## Comparaison avec *The Social Network* [mesuré ; demandée par la mission]
 | | *The Social Network* | *Spotlight* |
@@ -54,5 +62,5 @@ Rendre crédible une enquête de journalistes : le spectateur doit sentir le tra
 Rien (aucune note dans `NOTES-DIEGO.md`).
 
 ## À faire
-- L'ouverture (1976, commissariat, environ 0:00-3:30 : plans de 22 à 40 s) et les témoignages des victimes (Saviano à 31:28, autres témoins).
-- L'impression du journal et la fin : les téléphones qui sonnent (2:00:00-2:00:30), puis les cartons sur noir (bilan chiffré, puis **quatre cartons de listes de villes** où des scandales ont été révélés) : compter les cartons et leurs durées (tuile à 1 image / 2 s).
+- Les témoignages des victimes (Saviano à 31:28, autres témoins) : comment sont filmés et montés les récits les plus durs.
+- L'impression du journal et les téléphones qui sonnent (2:00:00-2:00:30) : planche à faire.
