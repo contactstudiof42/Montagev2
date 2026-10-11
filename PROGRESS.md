@@ -2,7 +2,7 @@
 
 _Lire en premier. Seul l'état présent compte ici. L'état de clôture de la phase 1 est archivé dans `archives/phase-1/PROGRESS-cloture-phase-1.md`, et l'historique des sessions 1 à 25 dans `archives/phase-1/PROGRESS-historique.md`._
 
-## État (2026-10-11, session 8 de la phase 2, 08:04-08:50)
+## État (2026-10-11, session 8 de la phase 2, 08:04-08:45)
 - **Phase 2 en cours** : mission `PROMPT-PHASE-2.md` (lire aussi « Avant chaque vidéo : repartir de la phase 1 », « Leçons de méthode », « Passe de révision », étape 7). Démarrage de chaque session : `CLAUDE.md`.
 - Session 8 : aucun retour neuf, boîte vide. **Vague 2 terminée** (*OSS 117* fini : bagarre du poulailler ; mesure coupes / parole tranchée sur spectrogramme) et **bilan définitif de la vague 2** dans `RAPPORT.md`.
 - **Vague 3 lancée** : *The Social Network* (ouverture, Facemash, Henley ; fiche de phase 1 confrontée) et *Spotlight* (ouverture 1976, appels à Sipe en plans de 67 et 115 s, dispute, cartons de fin) ; comparaison des deux dans `analyses/films/spotlight.md`. Chaque fiche a sa liste « À faire ».
