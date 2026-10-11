@@ -33,7 +33,7 @@ Noter chaque critère de 0 à 3 avec **une phrase de preuve visuelle** (ce que j
 | Lisibilité | L'information clé est-elle lue au premier regard, dans le temps imparti ? | Contraste, durée (≥ 2× le temps de lecture), signe trop petit |
 | Liaison | Qu'est-ce qui relie chaque plan au suivant, autre que le tempo ? | Cause, regard, mouvement, son ou idée absents |
 | Rythme | Les durées varient-elles avec une logique ? | Durées uniformes |
-| Composition | Le cadre guide-t-il l'œil ? | Centrage par défaut ; la zone la plus claire vole le regard |
+| Composition | Le cadre guide-t-il l'œil ? | Centrage par défaut ; la zone la plus claire vole le regard. Exception : en plans de 1 à 2 s, le centre est juste (l'œil n'a pas le temps de chercher : *Mad Max*) ; le décentrage va avec les plans tenus (*Joker*) [VU SUR IMAGES] |
 | Cohérence | Typo, couleur, mouvement parlent-ils la même langue ? Aucun levier ne tire seul (l'« ensemble » de *Joker*, goût de l'utilisateur) ? | Un élément « d'un autre film » ; un levier poussé au détriment des autres |
 | Couleur | La palette porte-t-elle l'émotion ? | Couleurs par défaut |
 | Mouvement | Cause, courbe juste, fin ? | Easing par défaut |

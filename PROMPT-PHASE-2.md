@@ -24,7 +24,8 @@ Et surtout : apprendre le goût de Diego et comprendre ce que fait Studio F42, p
 4. Projets Studio F42.
 5. Films vague 2 : Avengers: Infinity War, Forrest Gump, La Haine, OSS 117 : Le Caire, nid d'espions. Bilan de vague.
 6. Films vague 3 : The Social Network, Spotlight (compare les deux), Aftersun, Spider-Man: Across the Spider-Verse. Bilan de vague.
-7. Synthèse finale : révision des skills, puis « PHASE 2 TERMINÉE » dans PROGRESS.md.
+7. Passe de révision (voir la section du même nom).
+8. Synthèse finale : révision des skills, puis « PHASE 2 TERMINÉE » dans PROGRESS.md.
 
 ## Avant chaque vidéo : repartir de la phase 1
 Relis le sommaire de `montage-expert`, la grille de `montage-regard`, les skills des domaines que la vidéo touche (rythme, couleur, son, formats, kinetic, youtube…) et les fiches de `culture/` liées à l'œuvre ou à son auteur. Tu analyses AVEC ce que tu sais déjà, pour le confirmer, le corriger ou le compléter : tu ne repars jamais de zéro. Chaque fiche cite les skills et fiches qu'elle confirme ou contredit.
@@ -44,7 +45,18 @@ Relis le sommaire de `montage-expert`, la grille de `montage-regard`, les skills
 - Sources HDR (session 2, *Whiplash*) : une source PQ (HDR10) lue comme du SDR donne des images grises et délavées, donc des mesures de couleur fausses. Vérifier `color_transfer` avec ffprobe ; si `smpte2084` ou `arib-std-b67`, lancer `HDR=1 passe_globale.sh` (conversion VideoToolbox, le ffmpeg Homebrew n'a ni zscale ni libplacebo).
 - Calage sur la musique : `labo/outils/calage.py` compare les coupes aux attaques fortes et aux temps **contre le hasard** (mêmes coupes décalées). Ne jamais écrire « calé sur le beat » sans ce contrôle : sur un tempo rapide, presque toute coupe tombe près d'un temps.
 - Parole de Diego (session 2, retour du 2026-10-11) : n'attribuer à Diego que ce qui vient de GOUTS.md, RETOURS-DIEGO.md ou d'une note de NOTES-DIEGO.md écrite par lui. Une ligne qui ressemble à un exemple de format (sous la consigne « Format : … ») n'est pas un goût. Dans le doute, l'écrire comme mon choix.
+- Les deux erreurs dans le même film (session 3, *Mad Max: Fury Road*) : les éclairs de la tempête doublent le compte (146 coupes détectées, 77 réelles en 170 s), alors que l'action accélérée et sombre en cache (un « plan » de 15,7 s qui en contient au moins 8). **`verif_plan.py` échoue aussi sur l'action accélérée** : quand toutes les images changent beaucoup, aucun pic ne ressort. Avant de citer un pic ou un creux de densité : recompter le passage avec `verif_plan.py`, et regarder une tuile à 2-4 images/s sur tout « plan » long d'une scène d'action.
+- Où est le sujet dans le cadre (session 3) : la saillance automatique (`centrage.py`, « spectral residual ») ne trouve pas le sujet (une fois sur trois) et donne le même chiffre pour tous les films. Ne pas l'utiliser. Compter à l'œil sur `echantillon_tiers.py` (24 images au hasard, tiers tracés) et comparer à un autre film avec la même graine.
 - Règle d'auto-correction : quand tu découvres une erreur ou une limite de ta méthode, inscris la correction ICI (ou dans le skill concerné), pas seulement dans la fiche de la vidéo. Sinon les sessions suivantes ne la connaîtront pas.
+
+## Passe de révision (étape 7, avant la synthèse)
+Tes outils et tes leçons de méthode se sont améliorés en cours de route ; les premières vidéos ont été analysées sans eux. Tu ne refais pas les analyses entières : tu vérifies ce que les nouveaux instruments peuvent changer.
+1. Liste les outils et les leçons de méthode apparus après chaque vidéo (dates des commits, `labo/outils/`, section « Leçons de méthode »).
+2. Pour chaque vidéo analysée avant leur apparition, relance-les seulement sur les séquences concernées (parole, musique, plans longs, scènes sombres, sources HDR…). Pas de nouvelle passe globale si la sienne est encore utilisable.
+3. Pars des mesures, pas de ta fiche : relis la fiche seulement après avoir mesuré, pour ne pas te confirmer toi-même.
+4. Dans la fiche, ajoute une section « Révision » : chaque conclusion vérifiée marquée confirmée, corrigée ou nouvelle, avec la mesure. Si une conclusion change, corrige aussi le skill concerné et inscris la leçon dans « Leçons de méthode ».
+5. Dans RAPPORT.md, donne le bilan chiffré : combien de conclusions confirmées, corrigées, nouvelles, et ce que ce taux dit de la fiabilité des analyses « à l'œil ».
+Commit et push après chaque vidéo révisée. Compte deux à trois sessions, pas plus.
 
 Clips, pubs et YouTube : la même méthode, en une passe, sur la vidéo entière. Pour une pub, regarde aussi comment le message et la marque arrivent en 15, 30 ou 60 secondes.
 Projets Studio F42 : suis A-LIRE.md. Quand des rushes sont fournis, compare rushes et montage final : ce qui a été gardé, coupé, raccourci, et pourquoi.
