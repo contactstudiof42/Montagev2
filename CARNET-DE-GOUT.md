@@ -13,7 +13,7 @@ _Ma mémoire du goût, construite à partir des retours de Diego. Chaque entrée
 _Créé le 2026-10-11 (session V5) à partir des retours de Diego sur les V2, V3 et V4 du projet Sony LinkBuds (after movie kinetic d'un événement sportif, vertical). Les « corrigé » sont des versions que Diego a jugées meilleures ; quand il ne les a pas encore jugées, c'est écrit. Les retours purement techniques (réglages d'export, preuve Gyroflow, cases du rendu) sont dans les skills, pas ici._
 
 ### Lire le carnet en 30 secondes (à relire avant chaque livraison)
-**[universel]** 1 look, pas une conversion · 2 titre = DA du client, animé sobrement · 3 jamais de transition intégrée (sauf parodie demandée) · 4 lire les séries du cadreur · 5 voir le mouvement · 6 aucun blanc brûlé (produit, peau, fenêtre), sauf brief · 7 exposition réglée sur tout le mouvement · 8 étalonner plan par plan · 9 pas d'ombres relevées qui montrent le bruit · 10 visages vérifiés image par image · 11 chaque plan et chaque effet ont une raison · 12 un élément graphique vient de la DA ; un détourage se juge au bord à 200 % · 15 aucun plan de remplissage · 16 un flou : volontaire ou raté ? · 17 rien n'est figé, relire le film entier · 19 la valeur humaine d'un plan (regard caméra, sourire, geste) se garde · 20 chaque plan montre ce que le plan dit ; un plan non critiqué ne se remplace pas sans l'écrire · 21 un plan bon seulement à la fin se coupe là où il est bon · 22 10 essais de stabilisation, puis on remplace · 23 couleurs clés constantes d'un plan à l'autre · 24 un plan produit se vérifie à 200 % · le brief prime, jamais cheap.
+**[universel]** 1 look, pas une conversion · 2 titre = DA du client, animé sobrement · 3 jamais de transition intégrée (sauf parodie demandée) · 4 lire les séries du cadreur · 5 voir le mouvement · 6 aucun blanc brûlé (produit, peau, fenêtre), sauf brief · 7 exposition réglée sur tout le mouvement · 8 étalonner plan par plan · 9 pas d'ombres relevées qui montrent le bruit · 10 visages vérifiés image par image · 11 chaque plan et chaque effet ont une raison · 12 un élément graphique vient de la DA ; un détourage se juge au bord à 200 % · 15 aucun plan de remplissage · 16 un flou : volontaire ou raté ? · 17 rien n'est figé, relire le film entier · 19 la valeur humaine d'un plan (regard caméra, sourire, geste) se garde · 20 chaque plan montre ce que le plan dit ; un plan non critiqué ne se remplace pas sans l'écrire · 21 un plan bon seulement à la fin se coupe là où il est bon · 22 10 essais de stabilisation, puis on remplace · 23 couleurs clés constantes d'un plan à l'autre · 24 un plan produit se vérifie à 200 % · 26 la parole se coupe au mot près et se relit re-transcrite · 27 le look et tout effet tiré d'une référence se jugent côte à côte avec la référence (pas contre soi-même) ; « cheap » = effet bas de gamme, pas seulement défaut · le brief prime, jamais cheap.
 **[genre : after movie / événementiel kinetic]** rafales qui reviennent, avec écart · un dernier pic juste avant la marque, puis une fin courte · techniques variées tirées de la matière · un son sur chaque transition (ou aucun ; transition = effet ou changement de bloc) · jamais deux fois le même moment d'un rush · inversions à la place de certains flashs · 25 traînées de hautes lumières au moment où ça accélère.
 
 ---
@@ -177,3 +177,46 @@ _Créé le 2026-10-11 (session V5) à partir des retours de Diego sur les V2, V3
 - **2026-10-11 — Jamais deux fois le même moment d'un rush — [genre : after movie, événementiel, run and gun]**. Diego : « C'est amateur. » Exception : un ressort de récit (flashback, rappel volontaire).
 - **2026-10-11 — Un dernier pic d'énergie juste avant la signature, puis une fin courte — [genre : after movie kinetic]** (cas Sony : [projet]). Diego (V4) : « La fin est trop longue : après tout le déferlement d'effets, ça s'arrête trop longtemps. » Raison : après un film qui accélère, un long relâchement avant la marque fait retomber l'énergie au moment où l'on doit retenir le produit ; le dernier pic porte l'élan jusqu'aux packshots, qui, eux, restent sobres. Contre-indication : film de marque calme, portrait, documentaire (là, la respiration avant la fin est juste). Acquis : les idées tirées d'eyecannndy « ont donné de bons résultats », toujours rattachées à la DA.
 - **2026-10-11 — Le début et sa transition : plus vite — [projet]**. Diego (V4) : « C'est cool », mais le zoom arrière du E vers le large pourrait aller un peu plus vite.
+
+### Entrées des notes sur la V3b du mariage-jo (2026-10-12 ; V3b notée 10 % par Diego ; images à faire avec la V4 : raté V3b à gauche, corrigé à droite)
+_Portées : une règle née sur un projet reste [projet] tant que Diego ne l'a pas classée ; ma proposition est entre parenthèses._
+
+### 2026-10-12 — 26. La parole hachée — [universel] (validé par Diego)
+- Diego : « Le maître de cérémonie qui parle, c'est complètement haché, on comprend rien. Des bouts de phrases, des phrases qui commencent au mauvais moment, qui s'arrêtent en plein milieu d'un mot. »
+- Raison : des temps de mots approximatifs (Whisper seul) et aucune relecture de ce que le spectateur entend.
+- À vérifier : alignement forcé (WhisperX) avant de couper ; re-transcription du rendu lue en phrases complètes (`montage-grammaire`, « Couper dans la parole »).
+
+### 2026-10-12 — 27. Se comparer à la référence, pas à soi-même ; « cheap » n'est pas « défectueux » — [universel] (retours du consultant validés par Diego)
+- Consultant : `contraste_test.jpg` compare deux réglages presque identiques, « tu te compares à toi-même » ; blancs brûlés, image laiteuse sans vrai noir, à l'inverse de shcreativedept et plustwofilms. Le kinetic : propre au bord, mais cheap.
+- Raison : j'ai optimisé ce que mon règlement mesure (bords, photosensibilité) au lieu de regarder l'image à côté de la référence.
+- À vérifier : planche côte à côte référence / rendu pour le look et chaque effet ; le directeur artistique à froid (`PROMPT-PHASE-3.md`, 6 bis).
+
+### 2026-10-12 — 28. Une ouverture s'installe — [projet : mariage-jo] (proposé : [universel] pour un film de plus d'une minute ; contre-indication : format court dont le hook est l'ouverture)
+- Diego : l'ouverture « trop brute » ; « peut-être commencer par un fade-in, par deux, trois plans de mise en contexte. Ce sont des notions de montage et de storytelling que tu es censé avoir. » L'idée d'ouvrir sur le panini, elle, était bonne : « c'est clair ».
+- Raison : la V3b plongeait dans la parole au premier plan, sans dire où l'on est.
+
+### 2026-10-12 — 29. Pas de titre sur du noir — [projet : mariage-jo] (proposé : [genre : mariage])
+- Diego : « Pourquoi sur du noir ? Dans la ref, il n'y a pas d'écran titre sur du noir. »
+- À vérifier : le titre se pose sur une image du film, comme dans les références.
+
+### 2026-10-12 — 30. Des plans qui tremblent, sans preuve de stabilisation — [universel pour la méthode, déjà dans `montage-regard` point 3]
+- Diego : « Ils sont tout tremblotants, ils sont nuls. Est-ce qu'il a essayé de les stabiliser ? Pourquoi il n'a pas essayé de les ralentir ? […] Est-ce qu'il a vraiment fait Gyroflow sur tout ça ? Moi, je lance Gyroflow et ça ne rend pas comme ça. »
+- À vérifier : média stabilisé lu dans la timeline pour chaque plan ; ralentir avant de remplacer ; plan rendu regardé en mouvement.
+
+### 2026-10-12 — 31. Le milieu ennuie — [projet : mariage-jo]
+- Diego : « On se fait chier globalement au milieu. »
+- Raison probable (à vérifier par Diego sur la V4) : cérémonie de près de 2 min de paroles à plat, puis un cocktail en inserts ; pas d'écart de rythme.
+
+### 2026-10-12 — 32. Une musique de fond sous les discours — [projet : mariage-jo] (proposé : [genre : mariage et films d'événement])
+- Diego : « Il faut une musique de fond quand il y a les discours. »
+
+### 2026-10-12 — 33. Le kinetic : « horrible, nul, nul, nul » — [genre : kinetic, passage court dans un autre film]
+- Raison et pistes : `montage-kinetic-editing` § 4, « Ce qui le rend cheap ». Le niveau de la référence, ou rien.
+
+### 2026-10-12 — 34. Le film finit sur les mariés — [projet : mariage-jo] (proposé : [genre : mariage, portrait])
+- Diego : « Des gens qui rigolent, certes, c'est bien, mais ce ne sont même pas les mariés. Pareil, une notion de storytelling. »
+
+### 2026-10-12 — 35. Les flashs de photographe se gardent — [projet : mariage-jo] (proposé : [genre : événement])
+- Diego : « Les flashs de photographes et les images à moitié éclairées, je les garde. Ça peut donner un look. Une image à moitié éclairée, si ça reste esthétique, pourquoi pas. »
+- Raison : j'avais remplacé de beaux moments du bal et du maillot pour des flashs isolés (`montage-kinetic-editing` § 5 précisé).
+
