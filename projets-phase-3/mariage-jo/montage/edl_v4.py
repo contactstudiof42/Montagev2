@@ -222,7 +222,7 @@ v("20260604_C4007", 31.0, 2.6, CO, note="Jonathan brandit le maillot devant la s
 v("20260604_C4008", 5.9, 2.6, CO, note="la salle exulte, serviette au vent")
 v("FX30.5871", 11.2, 3.6, CO, note="Jonathan, bras ouverts, grand sourire, le maillot à la main (Quentin, serré ; flashs de téléphones gardés)")
 G_MAIL = rec
-a(rush("20260604_C4007"), 16.0, G_MAIL - t_m, t_m, 2, gain=0.0, fin=0.05, fout=0.5, note="cris de la salle (son caméra)", role="salle_seule")
+a(rush("20260604_C4008"), 0.0, G_MAIL - t_m, t_m, 2, gain=0.0, fin=0.3, fout=0.5, note="cris de la salle (C4008 0-15 s : sans parole ; la V4 de contrôle prenait C4007, où l'ami parle : phrases hachées)", role="salle_seule")
 a(MUS["remix"], G_BAL - G0, G_MAIL - G_BAL, G_BAL, 3, gain=-26.0, fin=0.3, fout=0.3, note="remix très bas sous le maillot", role="musique_sous")
 G_FIN = rec
 MARK.append((G0, "G"))

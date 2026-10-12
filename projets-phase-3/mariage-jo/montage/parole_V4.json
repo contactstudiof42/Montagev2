@@ -50,10 +50,11 @@
  "pere": {
   "src": "HF",
   "fichier": "/Volumes/SSD FAST/MARIAGE JO/RUSH/SON HF/REC052.WAV",
-  "d": 1153.436,
+  "d": 1153.9,
   "f": 1163.615,
   "texte": "Mon père ne t'a pas connu. Je savais que ça allait être vraiment compliqué. Mais je sais qu'il serait fière de l'homme qui prend soin de moi.",
-  "alertes": []
+  "alertes": [],
+  "note_main": "début avancé à 1153,9 (re-transcription du rendu : la fin de « confiance » s'entendait en « Hein ? »)"
  },
  "naze": {
   "src": "HF",
@@ -222,12 +223,13 @@
  "ouvrir": {
   "src": "20260604_C4007",
   "fichier": "/Volumes/SSD FAST/MARIAGE JO/RUSH/DIEGO/private/M4ROOT/CLIP/20260604_C4007.MP4",
-  "d": 12.329,
-  "f": 15.518,
+  "d": 12.3,
+  "f": 13.55,
   "texte": "Alors tiens, je te laisse l'ouvrir.",
   "alertes": [
    "début dans un son (-28 dBFS)"
-  ]
+  ],
+  "note_main": "resserré sur la phrase seule (micro caméra lointain)"
  },
  "traiteur": {
   "src": "20260604_C3789",

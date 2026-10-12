@@ -16,6 +16,7 @@ assert p.GetName() == "P3-mariage-jo-agent", p.GetName()
 mp = p.GetMediaPool(); root = mp.GetRootFolder()
 def rf(t): return int(round(t * FPS))
 def fichier_video(e):
+    if e.get("gel"): return f"{TW}/gel/{e['nom']}_{e['src']:.2f}_16b.mov", 0.0      # arrêt sur image = plan fixe fabriqué (SetSpeed 0 ne tient pas la bonne image)
     s = e.get("stab")
     if s: return s["fichier"], e["src"] - s["debut_plage"]
     return f"{RUSH}/{INV[e['nom']]['fichier']}", e["src"]
@@ -37,9 +38,9 @@ if ETAPE == "import":
     FEN = json.load(open(f"{TW}/fenetres_v4/fenetres.json"))
     chemins = set(fichier_video(e)[0] for e in J["video"]) | set(a["fichier"] for a in J["audio"]) | set(v for v in EXTRA.values() if os.path.exists(v)) | set(f["mov"] for f in FEN.values())
     deja = tous_les_clips(); manquants = sorted(c for c in chemins if c not in deja)
-    par = {"RUSH": [], "STAB": [], "SON": [], "HABILLAGE": [], "FENETRES": []}
+    par = {"RUSH": [], "STAB": [], "SON": [], "HABILLAGE": [], "FENETRES": [], "GEL": []}
     for c in manquants:
-        k = "FENETRES" if "/fenetres_v4/" in c else "STAB" if "/stab/" in c else ("SON" if c.lower().endswith((".wav", ".mp3")) else ("HABILLAGE" if "/_travail/" in c else "RUSH"))
+        k = "GEL" if "/gel/" in c else "FENETRES" if "/fenetres_v4/" in c else "STAB" if "/stab/" in c else ("SON" if c.lower().endswith((".wav", ".mp3")) else ("HABILLAGE" if "/_travail/" in c else "RUSH"))
         par[k].append(c)
     for k, l in par.items():
         if not l: continue
@@ -64,15 +65,14 @@ elif ETAPE == "video":
         if "KINETIC" in e.get("note", "") and os.path.exists(EXTRA["kinetic"]):
             f, s = EXTRA["kinetic"], 0.0; fps_src = 25
         else:
-            f, s = fichier_video(e); fps_src = 50
+            f, s = fichier_video(e); fps_src = 25 if e.get("gel") else 50
         it = clips.get(f)
         r0 = rf(e["rec"]); n = rf(e["rec"] + e["dur"]) - r0
         sf = int(round(s * fps_src)); ef = sf + n * fps_src // FPS
         ti = mp.AppendToTimeline([{"mediaPoolItem": it, "startFrame": sf, "endFrame": ef, "recordFrame": T0 + r0, "trackIndex": 1, "mediaType": 1}]) if it else None
         if not ti: ko.append((e["rec"], e["nom"], sf, ef)); continue
         ti = ti[0]
-        if e.get("gel"): ti.SetSpeed({"Percentage": 0.0, "RippleTimeline": False})
-        elif e["vitesse"] != 1: ti.SetSpeed({"Percentage": 100.0 * e["vitesse"], "RippleTimeline": False})
+        if e["vitesse"] != 1 and not e.get("gel"): ti.SetSpeed({"Percentage": 100.0 * e["vitesse"], "RippleTimeline": False})
         if e.get("fondu_noir"): ti.AddTransition({"type": "Cross Dissolve", "category": "simple", "position": "start", "alignment": "right", "duration": rf(e["fondu_noir"])})
         if e.get("fondu_noir_fin"): ti.AddTransition({"type": "Cross Dissolve", "category": "simple", "position": "end", "alignment": "left", "duration": rf(e["fondu_noir_fin"])})
         if e.get("fondu_grade"): FG.append((ti, rf(e["fondu_grade"])))
