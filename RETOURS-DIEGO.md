@@ -23,13 +23,15 @@ Une section datée par retour. Claude marque chaque retour « intégré le <date
 - 2026-10-11 — La fin de la V4 est trop longue (dernier pic) [genre] → carnet, `montage-kinetic-editing` « Faire le dernier pic ».
 - 2026-10-11 — Rien n'est figé dans un montage → carnet 17, `montage-regard` « Le goût de chaque plan » 16, `CLAUDE.md` (principes de Diego).
 - 2026-10-11 — Référence pour le dernier pic de la V5 (foebusdelapaz) [genre] → `analyses/reseaux/foebusdelapaz-nike-basket.md`, `REFERENCES.md`, carnet 18.
+- 2026-10-12 — Technique pure (ma parole vaut la sienne, veille IA, ralentis), changer de look en cours de film, la danse → `montage-regard` (point 10), `montage-workflows`, `montage-couleur-et-intention`, `projets-phase-3/mariage-jo/regles-projet.md` (danse : [projet], portée à classer). Texte intégral : `archives/retours/RETOURS-DIEGO-2026-10-12-mariage-jo.md`. **Intégré le 2026-10-12.**
 
 ## Points ouverts (à compléter par Diego)
 - **La fin de la liste des flous ratés** (message coupé après « mise au point qui cherche, ») : la complétion de l'agent reste provisoire (sujet principal hors du plan de netteté sans intention ; bougé de la main qui n'est pas un geste).
 - **Images noir et blanc très contrastées « en mode hauteur »** (V5) : « font encore un peu cheap », [projet, à confirmer].
 - **DCTL** : Diego pourra peut-être en fournir ; à aborder plus tard.
 - **Seuils de tremblement** (2 px de moyenne / 5 px de pic) : calibrés sur les rushes Sony ZV-E1 ; à recalibrer sur un plan fixe de chaque nouveau projet.
-- **Projet test 2** : pas encore choisi.
+- **Projet test 2** : mariage-jo (lancé le 2026-10-12).
+- **La danse** (2026-10-12) : portée à classer ; proposition : [genre : mariage et films d'événement], sauf film dont la danse est le sujet.
 
 ## 2026-10-11 — Projet Sony, notes de Diego sur la V5 (fin du projet test 1)
 _Dictées par Diego à l'assistant de configuration, mises en forme par lui ; les phrases entre guillemets sont ses mots. Portées : [universel] / [genre : …] / [projet]. Ne transforme jamais un point [projet] ou [genre] en règle générale._
