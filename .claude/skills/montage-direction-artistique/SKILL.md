@@ -60,6 +60,14 @@ Tests à passer sur chaque direction :
 - **Le texte qu'on ne peut pas lire** : un texte est une durée (14-15 car./s ATAA, 17 Netflix FR, plancher 16 images) [SOURCÉ] ; chiffrer la contradiction (« 24 noms = 18 s de lecture sur 30 s ») puis hiérarchiser (`montage-references`, liste en rangs).
 - **La technique du matin** : une technique découverte au labo le jour même ne porte pas seule une recommandation sans une pièce qui la montre en mouvement.
 
+## La DA avant les effets, sur un projet monté (phase 3 ; règle de Diego, 2026-10-11) [universel] [TESTÉ EN CONDITIONS RÉELLES]
+_Fichier maître de cette règle (déplacée de `PROMPT-PHASE-3.md` à l'audit du 2026-10-12) ; `montage-regard` et le carnet y renvoient._
+Les collages « photos de vacances » et le fond de papier millimétré de la V4 Sony ne venaient pas d'une mauvaise exécution, mais de l'absence de direction artistique : des idées jolies, piochées sans cadre. Diego : « Chaque élément graphique (fond, texture, couleur, papier, cadre) doit venir de la direction artistique du film : la marque, le sujet, la palette. Un élément pris dans une bibliothèque d'idées parce qu'il est joli, sans lien avec le film, est une faute de goût. »
+1. **Recherche** : avant de concevoir le moindre effet graphique, regarder ce qui se fait de mieux dans le domaine du film (pour une marque : sa propre communication ; pour un sujet : les campagnes et contenus de marques et de studios reconnus dans ce domaine). Garder 8 à 12 images de référence pro dans `projets-phase-3/<projet>/da/` (légères, moins de 300 Ko chacune ; source notée ; images de tiers jamais poussées dans Git).
+2. **Écrire `da.md`**, une page au plus : palette (avec les couleurs du client), textures et matières, typographie, langage graphique (formes, cadres, fonds, façon dont le texte et les éléments apparaissent), **ce qui est exclu**.
+3. **Ensuite seulement**, choisir les techniques (skills du genre, bibliothèques d'idées) : chaque fond, texture, couleur et élément graphique doit se justifier par `da.md`. Ce qui ne s'y rattache pas ne rentre pas dans le film, même si c'est joli.
+4. Contrôle avant chaque rendu : chaque élément graphique a sa ligne dans `da.md` ; sinon il sort (`montage-regard`, « Le goût de chaque plan »).
+
 ## Double livrable (film + extraits verticaux)
 Un tournage, deux montages : macro pour le film, kinetic pour les extraits. Au tournage : 4K ou open gate, zone verticale sûre, son seul des objets pour les SFX (`montage-preparation-tournage-vfx`).
 
@@ -67,4 +75,4 @@ Un tournage, deux montages : macro pour le film, kinetic pour les extraits. Au t
 1. Intention (7 lignes). 2. Trois directions (fiche fixe). 3. Recommandation argumentée (ce qui a été maquetté). 4. Critères. 5. Vigilance (tournage, droits, livraison). Fiction dialoguée et autres exemples : `details.md`.
 
 ## Limites connues
-Éprouvée sur 13 examens fictifs (notes de 13 à 15/20 sur les n°1 à 8, détail dans `details.md`) ; tics récurrents : faisabilité tardive, dispositif favori recommandé, direction audacieuse écartée sans maquette. Jamais encore sur un vrai brief client.
+Éprouvée sur 13 examens fictifs (notes de 13 à 15/20 sur les n°1 à 8, détail dans `details.md`) ; tics récurrents : faisabilité tardive, dispositif favori recommandé, direction audacieuse écartée sans maquette. Un seul vrai projet monté (Sony, brief fictif sur de vrais rushes) ; jamais encore sur un vrai brief client.
