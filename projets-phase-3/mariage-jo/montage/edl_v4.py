@@ -126,15 +126,19 @@ bloc("promesse", [("FX30.5616", 1.0, 2.9, "TRICHE (70 s après) : les mariés ri
 bloc("pere", [("20260604_C3686", 174.5, 3.6, "TRICHE (≈ 20 s après) : deux invitées l'écoutent, émues, l'une avec un éventail"),
               ("20260604_C3686", "sync", 3.6, "Ornella lit : « …mais je sais qu'il serait fier… »"),
               ("FX30.5634", "sync", None, "Jonathan qui l'écoute (Quentin)")], gap=0.7)
-bloc("naze", [("FX30.5635", 177.5, 6.0, "TRICHE (≈ 1 s) : Ornella écoute"),
-              ("20260604_C3690", "sync", None, "Jonathan : « …viens, on va manger un McDo » (synchro)")], d=P["naze"]["d"], f=P["mcdo"]["f"])
+bloc("naze", [("FX30.5635", 177.5, 4.8, "TRICHE (≈ 1 s) : Ornella écoute « il y a onze ans… la façon la plus naze possible »"),
+              ("FX30.5635", 172.0, 3.4, "TRICHE (≈ 1 s) : un invité au crâne rasé sourit (voix posée)"),
+              ("FX30.5635", 98.5, 3.0, "TRICHE (≈ 1 min avant) : Ornella sourit, même discours (voix posée)"),
+              ("20260604_C3690", "sync", None, "Jonathan : « …viens, on va manger un McDo » (synchro sur la chute)")], d=P["naze"]["d"], f=P["mcdo"]["f"])
 texte(rec - 3.3, 2.8, "Comme pour aller manger un McDo.", "replique")
-bloc("demande", [("20260604_C3695", "sync", None, "la vraie demande, à genoux (Diego, large)")], gap=0.1)
+bloc("demande", [("20260604_C3695", "sync", 3.8, "« je vais te faire une vraie demande cette fois-ci » (Diego, synchro)"),
+                 ("FX30.5635", "sync", 3.6, "Ornella comprend et sourit (Quentin, synchro)"),
+                 ("20260604_C3695", "sync", None, "à genoux : « …ma femme pour les dix prochaines années » (synchro)")], gap=0.1)
 t_et = rec
 v("FX30.5635", 417.0, 4.8, NB, note="l'étreinte après la demande, fleurs derrière (Quentin, vrai moment, ≈ 4 s après la phrase)")
 zf, zs = zoom(1659.3); a(zf, zs, 5.0, t_et, 2, gain=-8.0, fin=0.1, fout=0.6, note="la salle applaudit la demande (Zoom)", role="salle_seule")
 bloc("collier", [("20260604_C3695", "sync", 1.8, "l'officiant : « dans dix ans, ce sera un collier »"),
-                 ("20260604_C3695", 116.3, None, "TRICHE (≈ 10 s après) : Naël apporte les bracelets")], d=1693.6, f=1696.6,
+                 ("20260604_C3695", 116.3, None, "TRICHE (≈ 10 s après) : Naël apporte les bracelets")], d=1693.6, f=1696.0,
      note="(fin fixée au spectrogramme : l'alignement s'étire dans les rires)")
 v("20260604_C3696", 4.0, 2.6, NB, note="TRICHE (1 min après) : le bracelet au poignet, les mains (insert)")
 bloc("remari", [("20260604_C3696", "sync", 3.2, "le couple écoute l'officiant (synchro ; coupé avant le panoramique de 53 s)"),
@@ -184,8 +188,8 @@ MARK.append((E0, "E"))
 
 # =============== F. L'orage ===============
 F0 = rec
-v("FX30.5805", 0.5, 3.4, CO, note="la terrasse déserte sous la pluie")
-a(rush("FX30.5805"), 0.5, 3.4, F0, 2, gain=0.0, fin=0.3, fout=0.2, note="pluie (son caméra)", role="salle_seule")
+v("FX30.5805", 0.5, 2.6, CO, note="la terrasse déserte sous la pluie")
+a(rush("FX30.5805"), 0.5, 2.6, F0, 2, gain=0.0, fin=0.3, fout=0.2, note="pluie (son caméra)", role="salle_seule")
 voix("flotte", F0 + 0.5, salle=False, note="rappel de l'officiant (17:36)")
 v("20260604_C3864", 2.8, 4.0, CO, vitesse=0.25, note="la dame danse sous la pluie, bras ouverts [ralenti x4, Speed Warp]")
 v("20260604_C3864", 8.8, 2.0, CO, note="puis les bras levés, temps réel")
@@ -207,17 +211,16 @@ rk("20260604_C3953", 0.3, 4, "le père de Jonathan danse (flashs de téléphone 
 rk("20260604_C3957", 46.0, 4, "Jonathan au milieu des amis")
 rk("FX30.5838", 31.0, 6, "l'accolade du père et du fils (Quentin ; temps à vérifier en lecture directe)")
 G_BAL = rec
-a(MUS["remix"], 0.0, G_BAL - G0 + 0.4, G0, 3, gain=-8.0, fin=0.0, fout=0.4, note="remix : le bal", role="musique")
+a(MUS["remix"], 0.0, G_BAL - G0, G0, 3, gain=-8.0, fin=0.0, fout=0.5, note="remix : le bal (s'éteint avant la voix du maillot)", role="musique")
 x = P["ouvrir"]
-v("20260604_C4007", x["d"], x["f"] - x["d"] - 0.3, CO, note="« alors tiens, je te laisse l'ouvrir » (synchro)")
-a(x["fichier"], x["d"], x["f"] - x["d"] - 0.3, rec - (x["f"] - x["d"] - 0.3), 1, gain=4.0, fin=0.05, fout=0.1, note="« Alors tiens, je te laisse l'ouvrir. »", role="voix")
+v("20260604_C4007", x["d"], x["f"] - x["d"], CO, note="« alors tiens, je te laisse l'ouvrir » (synchro ; la V4 de contrôle coupait « ouvrir » : corrigé)")
+a(x["fichier"], x["d"], x["f"] - x["d"], rec - (x["f"] - x["d"]), 1, gain=4.0, fin=0.05, fout=0.1, note="« Alors tiens, je te laisse l'ouvrir. »", role="voix")
 t_m = rec
-v("20260604_C4007", 24.8, 2.4, CO, note="le maillot se déplie")
-v("FX30.5871", 3.0, 3.0, CO, note="Jonathan le brandit (Quentin, serré ; flashs de téléphones gardés)")
+v("20260604_C4007", 24.8, 2.2, CO, note="le maillot se déplie")
+v("FX30.5871", 6.0, 3.2, CO, note="le visage de Jonathan : il regarde le maillot, sourit (Quentin, serré)")
 v("20260604_C4007", 31.0, 2.6, CO, note="Jonathan brandit le maillot devant la salle (Diego, large)")
 v("20260604_C4008", 5.9, 2.6, CO, note="la salle exulte, serviette au vent")
-v("20260604_C4007", 63.0, 3.0, CO, note="l'accolade avec l'ami qui l'offre")
-v("20260604_C4009", 0.3, 3.2, CO, note="Jonathan se penche vers Naël, le maillot sur la table")
+v("FX30.5871", 11.2, 3.6, CO, note="Jonathan, bras ouverts, grand sourire, le maillot à la main (Quentin, serré ; flashs de téléphones gardés)")
 G_MAIL = rec
 a(rush("20260604_C4007"), 16.0, G_MAIL - t_m, t_m, 2, gain=0.0, fin=0.05, fout=0.5, note="cris de la salle (son caméra)", role="salle_seule")
 a(MUS["remix"], G_BAL - G0, G_MAIL - G_BAL, G_BAL, 3, gain=-26.0, fin=0.3, fout=0.3, note="remix très bas sous le maillot", role="musique_sous")
@@ -242,7 +245,7 @@ RALENTIS = {("20260604_C3529", 1.0): "portrait (ralenti : tremblement de la main
             ("20260604_C3601", 1.0): "rire (ralenti)", ("20260604_C3820", 8.4): "la dame rit (ralenti)",
             ("FX30.5704", 1.0): "guitare (ralenti)", ("FX30.5720", 2.0): "Naël rit (ralenti)",
             ("20260604_C3954", 17.0): "danse du dîner (ralenti : main lissée)", ("20260604_C3952", 9.0): "Jonathan et son père (ralenti)",
-            ("20260604_C3953", 0.3): "le père danse (ralenti)", ("20260604_C3957", 46.0): "Jonathan et les amis (ralenti)", ("FX30.5838", 31.0): "l'accolade (ralenti)", ("FX30.5472", 0.4): "ils partent en courant", ("20260604_C3540", 3.0): "ils s'éloignent", ("20260604_C3894", 88.5): "le premier slow", ("20260604_C3894", 96.0): "le premier slow"}
+            ("20260604_C3953", 0.3): "le père danse (ralenti)", ("20260604_C3957", 46.0): "Jonathan et les amis (ralenti)", ("FX30.5838", 31.0): "l'accolade (ralenti)", ("FX30.5871", 11.2): "Jonathan bras ouverts (ralenti : joie tenue, main lissée)", ("FX30.5472", 0.4): "ils partent en courant", ("20260604_C3540", 3.0): "ils s'éloignent", ("20260604_C3894", 88.5): "le premier slow", ("20260604_C3894", 96.0): "le premier slow"}
 for e in V:
     if (e["nom"], e["src"]) in RALENTIS: e["vitesse"] = 0.5; e["note"] += " [ralenti x2 natif]"
 

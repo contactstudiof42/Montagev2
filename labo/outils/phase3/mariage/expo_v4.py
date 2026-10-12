@@ -13,7 +13,7 @@ from mediapipe.tasks import python as mpt
 from mediapipe.tasks.python import vision
 J = json.load(open(sys.argv[1])); R = "/Volumes/SSD FAST/MARIAGE JO/RUSH"
 INV = {x["nom"]: x for x in json.load(open("/Volumes/SSD FAST/Montage-IA/videos/phase-3/mariage-jo/_travail/inventaire.json"))}
-CIBLE_VISAGE = {"V4_couleur": 0.50, "V4_nb": 0.56}; CIBLE_MED = {"V4_couleur": 0.38, "V4_nb": 0.40}
+CIBLE_VISAGE = {"V4_couleur": 0.50, "V4_nb": 0.52}; CIBLE_MED = {"V4_couleur": 0.38, "V4_nb": 0.35}
 CIBLE_NUIT = 0.20; HAUT = 0.92; DIAPH = 0.07695
 CH = {x["nom"]: x for x in json.load(open("/Volumes/SSD FAST/Montage-IA/videos/phase-3/mariage-jo/_travail/chrono.json"))}
 def soir(nom): h = CH[nom]["t0"] % 86400; return h >= 21 * 3600 + 10 * 60 or h < 6 * 3600     # dîner et nuit : règle de Diego, visages sombres
@@ -28,6 +28,9 @@ def rend(lin, look): return (couleur_lin if look != "V4_nb" else nb_lin)(lin.res
 SOIR_SEUL = "--soir" in sys.argv
 # exceptions vues sur le rendu de contrôle (2026-10-12) : C4008, les lettres lumineuses jaunes prises pour du blanc → pas de balance
 SANS_BALANCE = {"20260604_C4008"}
+# DA avant livraison : blancs à caler sur ceux du bloc B (baiser, fin, salle d'Ornella, danse) → neutralisation complète comme le soir
+FORT = {("FX30.5635", 570, 600), ("20260604_C3697", 0, 20), ("20260604_C3695", 160, 175), ("20260604_C3813", 0, 60), ("20260604_C3894", 80, 110), ("20260604_C3957", 0, 90), ("FX30.5838", 0, 40)}
+def fort(e): return any(e["nom"] == n and a <= e["src"] <= b for n, a, b in FORT)
 out = json.load(open(sys.argv[1].replace("montage_V4.json", "cdl_V4.json"))) if SOIR_SEUL else {}
 for e in sorted([e for e in J["video"] if e["piste"] == 1 and (not SOIR_SEUL or soir(e["nom"]))], key=lambda e: e["rec"]):
     s0 = max(0, e["src"]); d = 0.04 if e.get("gel") else e["dur"] * e["vitesse"]
@@ -38,10 +41,10 @@ for e in sorted([e for e in J["video"] if e["piste"] == 1 and (not SOIR_SEUL or 
     gains = np.ones(3); bal = "—"
     if look == "V4_couleur" and e["nom"] not in SANS_BALANCE:
         y = lin @ Y; mx = lin.max(-1); mn = lin.min(-1); sat = (mx - mn) / np.maximum(mx, 1e-6)
-        m = (y > np.percentile(y, 80)) & (y < np.percentile(y, 99.7)) & (sat < (0.65 if soir(e["nom"]) else 0.30))   # le soir, les blancs sont teintés par la LED
+        m = (y > np.percentile(y, 80)) & (y < np.percentile(y, 99.7)) & (sat < (0.65 if soir(e["nom"]) or fort(e) else 0.30))   # le soir, les blancs sont teintés par la LED
         if m.sum() > 300:
             moy = np.array([np.median(lin[..., c][m]) for c in range(3)]); g = (moy @ Y) / np.maximum(moy, 1e-6)
-            k = (1.0, 1.5) if soir(e["nom"]) else (0.8, 2 / 3)       # DA appel 4 : même crème sur tous les plans couleur ; le soir, chemise = point blanc
+            k = (1.0, 1.5) if soir(e["nom"]) or fort(e) else (0.8, 2 / 3)       # DA appel 4 : même crème sur tous les plans couleur ; le soir, chemise = point blanc
             gains = np.clip(g ** k[0], 2 ** (-k[1]), 2 ** k[1]); gains /= (gains @ Y)
             bal = " ".join(f"{v:.2f}" for v in gains)
     base = (np.clip(rend(lin * gains, look), 0, 1) * 255).astype(np.uint8)

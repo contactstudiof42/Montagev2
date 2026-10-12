@@ -23,16 +23,20 @@ def rendu(nom, im, dur_s):
 def fabrique(t):
     im = Image.new("RGBA", (W, H), (0, 0, 0, 0)); d = ImageDraw.Draw(im)
     if t["style"] == "titre":
-        f = police(int(H * 0.115), 300); l1, l2 = t["texte"].split(" & ")[0] + " &", t["texte"].split(" & ")[1] + "."
+        f = police(int(H * 0.16), 300); l1, l2 = t["texte"].split(" & ")[0] + " &", t["texte"].split(" & ")[1] + "."
         tr = -int(H * 0.002); x = int(W * 0.94) - max(largeur(d, l1, f, tr), largeur(d, l2, f, tr)); y = int(H * 0.60)
-        trace(d, (x, y), l1, f, tr); trace(d, (x, y + int(H * 0.125)), l2, f, tr)
+        y = int(H * 0.52); trace(d, (x, y), l1, f, tr); trace(d, (x, y + int(H * 0.17)), l2, f, tr)
     elif t["style"] == "nom":
-        f = police(int(H * 0.085), 300); trace(d, (int(W * 0.06), int(H * 0.80)), t["texte"], f, int(H * 0.004))
+        f = police(int(H * 0.15), 300); trace(d, (int(W * 0.06), int(H * 0.70)), t["texte"], f, int(H * 0.006))
     elif t["style"] == "replique":
-        f = police(int(H * 0.058), 300); lw = largeur(d, t["texte"], f); trace(d, ((W - lw) / 2, int(H * 0.83)), t["texte"], f)
+        f = police(int(H * 0.095), 300); lw = largeur(d, t["texte"], f); trace(d, ((W - lw) / 2, int(H * 0.80)), t["texte"], f)
     else:
-        f = police(int(H * 0.07), 300); lw = largeur(d, t["texte"], f); trace(d, ((W - lw) / 2, int(H * 0.46)), t["texte"], f)
-    import hashlib; nom = f"{t['style']}_{hashlib.md5(t['texte'].encode()).hexdigest()[:8]}"
+        f = police(int(H * 0.10), 300); trace(d, (int(W * 0.06), int(H * 0.12)), t["texte"], f)     # en haut à gauche : jamais sur les visages
+    a_ = np.asarray(im)[..., 3].astype(float)
+    ombre = np.asarray(Image.fromarray(a_.astype(np.uint8)).filter(ImageFilter.GaussianBlur(H * 0.012)), float) * 0.45
+    fond = np.zeros((H, W, 4), np.uint8); fond[..., 3] = ombre.astype(np.uint8)
+    im = Image.alpha_composite(Image.fromarray(fond), im)                 # ombre portée douce : le crème se lit sur un fond clair
+    import hashlib; nom = f"{t['style']}_{hashlib.md5(np.asarray(im).tobytes() + str(t['dur']).encode()).hexdigest()[:8]}"   # nom = contenu : Resolve garde en mémoire un fichier remplacé sous le même nom
     return rendu(nom, im, t["dur"])
 if __name__ == "__main__":
     J = json.load(open(sys.argv[1])); res = {}

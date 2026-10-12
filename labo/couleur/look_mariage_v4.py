@@ -22,8 +22,8 @@ W = np.array([0.2126, 0.7152, 0.0722])
 # (diaphs autour de 0,18 ; valeur affichée Rec.709 gamma 2.4)
 COURBE = [(-9, 0.0), (-6.5, 0.006), (-5, 0.022), (-3.5, 0.075), (-2, 0.19), (0, 0.42), (1, 0.545), (2, 0.655),
           (3, 0.75), (4, 0.825), (5, 0.885), (6, 0.93), (7.5, 0.965), (10, 0.99)]       # essai e2 (2026-10-12), contre shcreativedept
-COURBE_NB = [(-9, 0.0), (-6, 0.002), (-4.5, 0.012), (-3, 0.055), (-1.5, 0.19), (0, 0.41), (1, 0.56), (2, 0.69),
-             (3, 0.785), (4, 0.85), (5, 0.895), (6, 0.925), (8, 0.95), (10, 0.97)]       # 2026-10-12 : noirs plus profonds, contre plustwofilms
+COURBE_NB = [(-9, 0.0), (-6, 0.0), (-4.5, 0.008), (-3, 0.04), (-1.5, 0.16), (0, 0.39), (1, 0.55), (2, 0.69),
+             (3, 0.79), (4, 0.86), (5, 0.905), (6, 0.935), (8, 0.96), (10, 0.975)]       # 2026-10-12 (DA avant livraison) : noirs pleins, contre plustwofilms
 COUL = dict(chaleur=(1.04, 1.0, 0.93), verts=1.0, inset=0.12, chroma=0.95, olive=0.016, olive_h=108.0, chaud=0.006, chaud_h=75.0, peau_c=0.085, peau_h=55.0,
             ombres_neutres=0.55, courbe=COURBE)
 NB = dict(mix=[0.42, 0.48, 0.10], courbe=COURBE_NB)
