@@ -98,3 +98,71 @@ _Dictées par Diego à l'assistant de configuration, mises en forme par lui ; le
 - [portée proposée par Diego : genre mariage et films d'événement ; contre-indication : reportage où la fidélité au moment compte ; à confirmer par lui] **La triche** : « Dans ce genre de montage, n'hésite pas à tricher. » Exemple : l'officiant parle de Naël, mais à ce moment-là le cadreur ne le filmait pas ; aller chercher un plan de Naël d'avant ou d'après et le poser sur la parole. La triche est permise si elle est bien exécutée et cohérente. En général, il faut que ce soit raccord (lumière, tenue, position, ce qu'il tient, ambiance autour) et qu'on ne voie pas que c'est un autre moment. Parfois, on peut le voir, si l'intention du montage l'assume. Chaque triche est notée dans la note de livraison : quel plan, d'où il vient.
 
 **Intégré le 2026-10-12** : `montage-grammaire` (« Tricher : un plan d'un autre moment sur une parole », portée proposée, à confirmer), `projets-phase-3/mariage-jo/regles-projet.md` (appliqué au projet), `projets-phase-3/mariage-jo/note-de-livraison.md` (liste des triches, à remplir).
+
+## 2026-10-12 — Retours pour la version suivante du mariage-jo (V3b vue par le consultant, validés par Diego)
+
+_Rédigés par le consultant de Diego, validés par Diego. Les mots de Diego sont entre guillemets. Diego ajoutera ensuite ses propres notes sur la V3b._
+
+### 1. Les flashs de photographe : on les garde
+- « Les flashs de photographes et les images à moitié éclairées, je les garde. Ça peut donner un look. Une image à moitié éclairée, si ça reste esthétique, pourquoi pas. »
+- Dans la V3b, tu as **remplacé** les passages pris dans les salves de flashs (bal, maillot) : reviens-y, et remets les plus beaux moments si tu les as perdus pour ça.
+- Préciser la règle de photosensibilité (née sur Sony pour les flashs **ajoutés** au montage) : contrôle obligatoire sur les effets ajoutés (flashs, fonds qui changent vite, passage kinetic). Les flashs réels des rushes ne se contrôlent que s'ils s'enchaînent à plus de 3 par seconde. Tu as passé de longues minutes sur des flashs isolés : inutile.
+
+### 2. L'étalonnage de base : les blancs sont brûlés [universel, règle déjà en place]
+- `_travail/contraste_test.jpg` : tu compares deux réglages presque identiques, donc tu te compares à toi-même, pas à la référence. Les deux sont délavés : ciels blancs purs, robe de la mariée et costume du marié sans texture, image laiteuse sans vrai noir. C'est l'inverse de `shcreativedept` (chaud, dense) et de `plustwofilms` (noir et blanc profond). Exposition inégale d'un plan à l'autre.
+- « Ne jamais brûler les blancs » est déjà une règle [universel]. Tes contrôles ne l'ont pas vu.
+- Cause probable : la conversion du S-Log3 par la LUT Sony de la carte (`SL3SG3Ctos709`) coupe les hautes lumières. Le S-Log3 garde les nuages et la dentelle. Remonter le contraste (ce que tu as fait sur 15 plans) ne les rend pas.
+- À faire : une vraie conversion d'espace couleur avec descente douce des hautes lumières, ciel et robe récupérés, exposition égalisée, puis 6 images du film contre 6 de `shcreativedept`, avant le reste.
+
+### 3. Le passage kinetic : techniquement propre, mais encore cheap
+- Le détourage est propre (vrai progrès depuis Sony), les couleurs viennent des néons, la structure reprend la référence. Mais c'est la version la plus simple de `pivetedomato`, avec un risque « filtre d'appli photobooth » :
+  1. les sujets sont presque figés (poses de photobooth, choisies parce que faciles à détourer) : dans la référence, le sujet **court**, son mouvement continue pendant que le monde change autour ;
+  2. les fonds sont des dégradés plats, sans matière, qui jurent avec le look pellicule et noir et blanc du film ; dans la référence, les fonds ont de la texture (glitch, trame, traînées de lumière) et le sujet se transforme lui aussi ;
+  3. effet de collage : sujets pâles devant des fonds saturés, léger halo sur les cheveux, aucune lumière du fond sur les bords ; rythme régulier, sans montée ni changement de taille.
+- Pistes : un sujet en mouvement (la piste de danse), des fonds tirés de la matière du film (bokeh des néons, grain, noir et blanc texturé), le sujet transformé lui aussi, une cadence qui monte. Si tu n'arrives pas au niveau de la référence, retire-le : le brief disait « le réussir vraiment ou ne pas le faire ».
+
+### 4. Les plans muets [genre : mariage, événementiel, after movie, run and gun]
+- « En mariage, événementiel, after movie, run and gun en général, la belle matière est souvent sur des plans sans dialogue. »
+- Ton dérush a tout regardé, mais en planches de 8 images par rush : un moment d'une seconde (regard, larme, éclat de rire) ou la beauté d'un mouvement peuvent t'échapper. Sur les moments forts, refais une passe plus serrée (tes vignettes à 1 image/s existent) et regarde les plans clés en mouvement.
+
+### 5. Pourquoi tu n'as pas vu ces problèmes, et ce qui change [universel]
+- Sur le kinetic et l'étalonnage, tu as optimisé ce que ton règlement mesure (bords, photosensibilité) et tu as compris « pas cheap » comme « pas de défaut technique ». « Jamais cheap » veut dire **pas d'effet bas de gamme**. Tu n'as pas appliqué ta propre règle « 6 images contre 6 images de références » à ces passages. Et ton autocritique est faite par la session qui a fabriqué le passage : on juge mal ce qu'on vient de faire.
+- **Planche côte à côte** obligatoire, la référence et toi, pour le look de base et pour tout effet inspiré d'une référence, avant de valider, en plus de tes contrôles techniques.
+- **Un directeur artistique** : sous-agent `directeur-artistique` (fichier `.claude/agents/directeur-artistique.md`, écrit par le consultant de Diego ; tu ne le modifies pas). Ajoute à `PROMPT-PHASE-3.md` l'étape qui dit quand l'appeler, toujours dans un appel neuf, sans lui donner ton raisonnement :
+
+| Moment | Ce qu'il reçoit | Sa question |
+|---|---|---|
+| Après `plan.md` | brief, goûts, références, plan | L'idée du film est-elle forte ? Qu'est-ce qui est banal ? |
+| Après le look de base | 6 images du film contre 6 de références | Est-ce au niveau ? Blancs, noirs, densité ? |
+| Après chaque moment clé | planche côte à côte : référence et rendu | Est-ce au niveau de la référence ? Qu'est-ce qui fait cheap ? |
+| Avant chaque livraison | brief, références, le film entier en planches | Qu'est-ce qu'un client exigeant reprocherait ? |
+
+- Tu réponds à **chacune** de ses remarques par écrit, dans `projets-phase-3/<projet>/da-retours.md` : « corrigé » ou « je garde, parce que… ». Les désaccords vont dans la note de livraison ; Diego tranche.
+- Pour la prochaine version du mariage, appelle-le dès maintenant sur la V3b (look de base, kinetic, film entier) avant de corriger.
+
+### 6. Une règle se gagne par une erreur [universel, principe de Diego pour le règlement]
+- Une règle s'écrit seulement (a) après une erreur observée, ou (b) parce qu'elle porte le goût de Diego, que tu ne peux pas deviner. Ce que tu fais déjà bien de toi-même ne s'écrit pas : une règle de trop dilue ton attention et te pousse à en faire trop (exemple : la photosensibilité). Applique ce principe quand tu intègres un retour et lors des audits.
+
+### Portées encore à classer par Diego
+- La triche raccord et la danse : propositions du consultant, [genre : mariage et films d'événement] (contre-indication pour la triche : reportage où la fidélité au moment compte ; pour la danse : film dont la danse est le sujet). En attente de Diego.
+
+## 2026-10-12 — Notes de Diego sur la V3b du mariage-jo (dictées au consultant)
+
+**Version de l'agent : livrable à 10 %, « même pas, je pense ».** « Dans la vraie vie, si je reprenais ce qu'il a fait pour venir le corriger, je mettrais plus de temps que partir de zéro. » Diego s'est arrêté au début (« ça me faisait mal »), puis a regardé la fin.
+
+- [bon] **Ouvrir sur l'anecdote du panini** : « Placer cette séquence en premier, c'était une bonne idée. C'est clair. »
+- [gros] **L'ouverture est trop brute** : « Peut-être commencer par un fade-in, par deux, trois plans de mise en contexte. Ce sont des notions de montage et de storytelling que tu es censé avoir. »
+- [moyen] **L'écran titre sur du noir** : « Pourquoi sur du noir ? Dans la ref, il n'y a pas d'écran titre sur du noir. »
+- [gros] **Le choix des plans après le titre** : « Ils sont tout tremblotants, ils sont nuls. Est-ce qu'il a essayé de les stabiliser ? Pourquoi il n'a pas essayé de les ralentir pour corriger la stabilisation ? Ce sont des techniques qu'il doit avoir tout seul. Est-ce qu'il a vraiment fait Gyroflow sur tout ça ? Moi, je lance Gyroflow et ça ne rend pas comme ça. Il y a un gros, gros souci. »
+- [gros] **Le milieu ennuie** : « On se fait chier globalement au milieu. »
+- [gros] **Pas de musique sous les discours** : « Il faut une musique de fond quand il y a les discours. »
+- [gros] **Le passage kinetic de la fin** : « C'est horrible. C'est nul, nul, nul. »
+- [moyen] **Le plan de fin** : « Des gens qui rigolent, certes, c'est bien, mais ce ne sont même pas les mariés. Pareil, une notion de storytelling. »
+- Remarque générale : « J'ai l'impression que j'ai beaucoup trop de choses à lui apprendre pour qu'il soit compétent. »
+- [gros] **Les paroles hachées** : « Le maître de cérémonie qui parle, c'est complètement haché, on comprend rien. Des bouts de phrases, des phrases qui commencent au mauvais moment, qui s'arrêtent en plein milieu d'un mot. » « Il ne peut pas se baser que sur des mesures, je comprends ses limites, mais il faut trouver une solution. » (Le consultant prépare une proposition : coupe au mot près par alignement forcé, relecture du montage par re-transcription, et un outil qui écoute vraiment.)
+
+### Paroles hachées : la solution (validée par Diego le 2026-10-12) [universel]
+Règle gagnée par une erreur : sur la V3b, les phrases de l'officiant commencent au mauvais moment et s'arrêtent au milieu d'un mot. Tes temps de mots (Whisper seul) sont approximatifs.
+1. **Couper au mot près par alignement forcé** : dès qu'on coupe dans la parole, transcrire le passage avec un alignement forcé (WhisperX, local, gratuit ; à installer sur le Mac si absent) pour recaler chaque mot sur le son. Ne couper que **dans un silence entre deux mots**, jamais dans un mot ; un extrait commence **au début d'une phrase** et finit **à la fin d'une phrase** ; laisser respirer quelques images avant et après. Plus la parole porte le film et plus on coupe dedans, plus le mot à mot s'étend (jusqu'à toute la parole pour un face caméra, une interview, un podcast).
+2. **Relire ce que le spectateur entend** : après chaque rendu, re-transcrire le son du film rendu et lire le texte comme un spectateur. Chaque passage parlé doit former des phrases complètes et compréhensibles, sans mot coupé ni phrase qui démarre au milieu. Tout passage qui se lit haché est à reprendre. Ce contrôle s'ajoute à `qc_livraison.sh`.
+(Un modèle qui écoute et regarde vraiment le rendu, par exemple Gemini, sera discuté plus tard avec Diego : confidentialité des images des clients et coût à trancher. Ne rien envoyer en ligne.)
