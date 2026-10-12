@@ -43,6 +43,12 @@ Sources : `culture/saul-bass-generiques.md`, `culture/kyle-cooper-se7en.md`, `cu
 - **Animation sobre par défaut, même dans une vidéo très dynamique** : fondu + montée de 15 à 20 px + léger flou qui se résorbe, 12-16 images, freinée à l'arrivée (ease-out cubique), le deuxième mot 2-3 images après. Pas de grossissement, pas de rebond, pas d'interlettrage animé. La folie est dans le montage ; la marque reste calme. « À la Apple » était la consigne de Diego pour Sony : **si la DA du client a son propre langage de mouvement, c'est elle qui décide.**
 - **Le placer là où l'image le permet** : zone uniforme claire pendant tout le plan (vérifiée sur les images de début, milieu et fin du mouvement de caméra).
 
+## Titres de film de mariage et titres-répliques (références de Diego du 2026-10-12) [genre : mariage, film d'événement drôle] [VU SUR IMAGES]
+- Les prénoms en grand, une seule fois, sur le premier plan du couple : serif fine crème en bas à gauche (shcreativedept), humaniste jaune moutarde sur trois lignes (noahlazoproductions).
+- **Titre-réplique** : un mot crié ou une réplique des mariés écrits en grand en bas de l'image, dans la couleur des titres (« MARRIEDDDDDD!!! ») : c'est un ressort comique, pas un sous-titre d'accessibilité ; il demande que le son direct soit entendu.
+- **Présentation de personnage sur arrêt en couleur** dans un film noir et blanc (« OLIVER / The Groom », plustwofilms) : code de comédie, à n'utiliser que si le ton du film est la comédie.
+- Une couleur de texte pour tout le film, deux familles au plus.
+
 ## Clichés à refuser (sauf parti pris assumé)
 - Le zoom lent continu sur un carton centré ; particules et glow « pour faire riche ».
 - Le texte qui tape lettre à lettre avec une machine à écrire (sauf si l'écriture est le sujet).
