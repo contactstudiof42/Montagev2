@@ -17,7 +17,7 @@ Un agent qui pilote un logiciel perd ce qu'un monteur a en permanence : **l'œil
 L'erreur typique d'un agent n'est pas le bug, c'est la dérive : vingt appels corrects qui produisent une image juste techniquement et morte artistiquement. Le garde-fou est le même qu'à l'atelier : intention écrite → planche → critique (`montage-regard`) → correction.
 
 ## Les règles (dans l'ordre)
-1. **Jamais de projet client.** Toujours un projet de test dédié (`TEST_<sujet>_<date>`), dans un dossier dédié, sur des copies des médias. Si l'utilisateur ouvre un projet réel et demande d'agir dessus : dupliquer d'abord (« Enregistrer sous » une version `_claude_v1`), et le dire.
+1. **Jamais de projet client.** Toujours un projet de test dédié (convention du studio : `P3-<projet>-agent` dans Resolve, `PROMPT-PHASE-3.md` ; même logique de préfixe dans les autres logiciels), dans un dossier dédié, sur des copies des médias. Si l'utilisateur ouvre un projet réel et demande d'agir dessus : dupliquer d'abord (« Enregistrer sous » une version `_claude_v1`), et le dire.
 2. **Diagnostic avant action.** Quels hôtes sont connectés, quelle version du logiciel, quelle doc le serveur expose lui-même (beaucoup de serveurs fournissent leurs propres « skills » ou procédures obligatoires : les lire et les suivre, elles priment sur mes habitudes pour ce qui concerne leurs outils).
 3. **Écrire l'intention et le plan avant le premier geste** : format (résolution, cadence, durée), liste des éléments, critères de réussite mesurables (ex. « coupes à ±1 image des temps », « -14 LUFS ±0,5 », « titre lisible en 1 s sur téléphone »).
 4. **Un geste, une image.** Après tout appel qui modifie : exporter une frame (ou une planche contact sur plusieurs instants) et la regarder vraiment. Si l'image ne correspond pas à ce que l'appel devait produire, s'arrêter et comprendre avant de continuer.
@@ -31,13 +31,7 @@ L'erreur typique d'un agent n'est pas le bug, c'est la dérive : vingt appels co
 12. **Sauvegarder par versions.** Une version enregistrée à chaque jalon (`_v1`, `_v2`) ; jamais d'écrasement de la seule copie.
 
 ## Boucle de travail sur un projet confié
-1. Brief → `montage-direction-artistique` (trois directions, recommandation, critères).
-2. Plan de construction écrit (ce document sert de « passeport » : formats, éléments, critères).
-3. Maquette grossière d'abord (blocage : placements, durées, coupes) → planche → critique. **On ne détaille pas une maquette dont le rythme ne marche pas.**
-4. Passes de détail (animation, couleur, son), une planche par passe.
-5. Audit final : critères mesurés + grille de `montage-regard`.
-6. Export selon `montage-loudness-livraison`, vérification ffprobe.
-7. Montrer à l'utilisateur 1 à 3 images + la vidéo, avec ce que j'ai choisi et pourquoi, et ce dont je doute. Ses retours vont (par lui) dans `GOUTS.md`.
+L'ordre de travail fait foi dans `PROMPT-PHASE-3.md` (genre → dérush → plan → DA → look et mouvement → montage → juger et corriger → livraison). Ce qui reste propre à l'agent : **maquette grossière d'abord** (blocage : placements, durées, coupes) → planche → critique, et **on ne détaille pas une maquette dont le rythme ne marche pas** ; une planche par passe de détail ; audit final = critères mesurés + grille de `montage-regard` ; export selon `montage-loudness-livraison`. À la livraison : 1 à 3 images + la vidéo, ce que j'ai choisi et pourquoi, ce dont je doute. **Les retours de Diego vont dans `RETOURS-DIEGO.md`** ; seuls ses goûts dictés vont dans `GOUTS.md` (`CLAUDE.md`).
 
 ## Quand ne pas piloter
 - Quand une décision dépend d'un goût non exprimé et coûteuse à défaire (direction couleur d'un film entier) : proposer des images de test d'abord.
