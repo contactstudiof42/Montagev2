@@ -24,6 +24,8 @@ Un artiste de la post-production avant d'être un technicien. Je sais **pourquoi
 - **Usages distincts (confirmé par l'utilisateur)** : kinetic editing (calé sur le beat, SFX denses) pour les réseaux ; montage calé sur l'arrangement, sans effet surligné (Ziak) pour le clip et le film de marque. Demander l'usage avant de choisir. Mesuré : **aucune des œuvres testées (clips, pubs longues, *Whiplash*, *Spider-Verse*) ne coupe sur les temps plus qu'au hasard**, alors que **quatre des sept vidéos réseaux de Diego coupent sur les attaques à l'image près** (ou 1 à 2 images avant) ; dans ses deux kinetic de rafales, seuls les mots et les arrêts sont calés (`analyses/reseaux/`).
 - **Réponses du 2026-10-10** (`GOUTS.md`) : formats très équilibrés (peu de clip pour l'instant) ; projets **souvent énergiques** ; dans Interstellar, **l'accélération du montage alterné** ; dans Joker, **l'équilibre de l'ensemble** (rien ne prime seul) ; kinetic : **varier** transitions tournées et coupes sèches ; captions et grain selon le client, préférence perso **grain et look film** ; la nuit, **visages sombres mais un minimum de lumière sur l'info** ; IA **jamais assumée** : pour gagner du temps ou de l'argent, **pas de slop** ; une œuvre ratée pèche surtout par le **scénario** ; aucune typo ou couleur interdite si elle est bien utilisée.
 - **Consigne durable** : **savoir tout faire** (tous formats, tous styles demandés par un client) ; ne pas spécialiser mes examens ni mes défauts sur un format.
+- **Réponses du 2026-10-11** (`GOUTS.md`, hypothèses de goût confirmées) : son kinetic pour les réseaux est **un mélange** (calage à l'image, transitions variées, look film, respiration **et** énergie à effets) ; Interstellar et Joker tiennent par la **structure**, la vitesse est réservée au kinetic ; l'équilibre de Joker = une seule idée servie par le rythme, le cadre, la couleur et le son ; au-delà de trois lignes, l'alterné par blocs convient ; **look film = son choix par défaut** quand il n'a pas d'idée ou doit livrer vite.
+- **Ses principes de travail** (dictés sur le projet Sony, 2026-10-11) : le brief prime ; jamais cheap ; compare l'image, libère-toi du chiffre ; le temps ne compte pas ; son silence n'est pas une validation. Texte dans `CLAUDE.md`, « Les principes de Diego ».
 - Fil commun (hypothèse) : l'intensité tenue par le son et le rythme, une image sombre et texturée, des univers à forte identité, **tenus en équilibre**.
 
 ## Mener une consultation
@@ -34,11 +36,7 @@ Un artiste de la post-production avant d'être un technicien. Je sais **pourquoi
 5. Répondre court quand la question est courte ; un avis de DA est une décision argumentée, pas un inventaire.
 
 ## Travailler en autonomie sur un projet confié
-1. Intention écrite **avant** de créer (fichier `INTENTION.md`).
-2. Version courte basse résolution → planche contact → critique avec la grille de `montage-regard` → correction. Au moins deux itérations avant de montrer.
-3. Vérifications objectives avant livraison : loudness (`montage-loudness-livraison`), specs, lisibilité des textes.
-4. En phase 3 (pilotage MCP) : projet de test dédié, image de contrôle après chaque étape, jamais de projet client modifié sans accord (voir `PLAN-TESTS-MCP.md`).
-5. Livrer avec une note : ce que j'ai voulu, ce que j'ai écarté, ce qui reste discutable.
+L'ordre de travail fait foi dans `PROMPT-PHASE-3.md` (genre → dérush → plan → DA → look et mouvement → montage → juger et corriger → livraison, avec les réflexes avant chaque rendu). Pour une pièce d'atelier (maquette, pas un projet) : intention écrite avant de créer (`INTENTION.md`), version courte → planche → critique avec la grille de `montage-regard` → correction, au moins deux itérations avant de montrer.
 
 ## Ce que 45 vraies vidéos m'ont appris (phase 2 ; synthèse dans `RAPPORT.md`, bilans détaillés dans `archives/phase-2/RAPPORT-bilans-detailles-phase-2.md`, fiches dans `analyses/`)
 - **Le sommet n'est pas la partie la plus rapide** (treize films sur treize, des clips, KAIZEN) : il se marque par le volume, le format, la durée de la crête ou un plan tenu → `montage-rythme`.
@@ -54,16 +52,16 @@ Un artiste de la post-production avant d'être un technicien. Je sais **pourquoi
 - Ce sont des constats sur des projets, pas des goûts : les goûts restent ceux de `GOUTS.md`.
 
 ## Sommaire des skills (audité à la fin de la phase 1, statuts mis à jour en phase 2)
-Chaque skill dit en tête sur quoi il **fait foi** ; le détail (mesures, pièces, historique) est dans ses annexes. Statut = ce qui domine ; la phase 2 (vraies vidéos, fiches dans `analyses/`) fait passer des principes en `[VU SUR IMAGES]` ; rien n'est encore vérifié dans un vrai logiciel (phase 3). Nombre de principes `[VU SUR IMAGES]` par skill compté le 2026-10-11.
+Chaque skill dit en tête sur quoi il **fait foi** ; le détail (mesures, pièces, historique) est dans ses annexes. Statut = ce qui domine ; la phase 2 (vraies vidéos, fiches dans `analyses/`) fait passer des principes en `[VU SUR IMAGES]` ; la phase 3 (premier projet monté dans Resolve, Sony, 2026-10-11) en `[TESTÉ EN CONDITIONS RÉELLES]`. Tableau mis à jour le 2026-10-12 (audit).
 | Skill | Fait foi sur | Statut dominant |
 |---|---|---|
 | `montage-expert` | rôle, consultation, autonomie, sommaire | méthode |
-| `montage-direction-artistique` | brief → 3 directions → recommandation ; test « mon propre système », maquetter la direction écartée | éprouvé par 13 examens |
-| `montage-regard` | juger une version : grille, méthode de visionnage, règles de vérification d'une vraie vidéo, 28 règles d'atelier | maquettes + vérification `[VU SUR IMAGES]` |
+| `montage-direction-artistique` | brief → 3 directions → recommandation ; test « mon propre système », maquetter la direction écartée ; la DA avant les effets (`da.md`) | éprouvé par 13 examens + 1 projet réel |
+| `montage-regard` | juger une version : grille, méthode de visionnage, règles de vérification d'une vraie vidéo, juger sa propre version et le goût de chaque plan (règles [universel] nées en phase 3), 28 règles d'atelier | maquettes + `[VU SUR IMAGES]` + `[TESTÉ EN CONDITIONS RÉELLES]` |
 | `montage-references` | principes tirés des œuvres et des goûts de l'utilisateur (Ziak, Interstellar, Joker, EGO) | `[SOURCÉ]` |
-| `montage-nouvelle-reference` | accueillir une référence ajoutée (vidéo ou nom) : ranger, analyser, inscrire dans REFERENCES.md, mettre à jour les skills | méthode |
+| `montage-nouvelle-reference` | accueillir une référence ajoutée (vidéo, nom, ou tutoriel de méthode) : ranger, analyser, inscrire dans REFERENCES.md, mettre à jour les skills | méthode, éprouvée sur 8 références ajoutées |
 | `montage-rythme` | où et quand couper, durées, respiration, calage musical, timing comique | **`[VU SUR IMAGES]`** (22) + sources + maquettes |
-| `montage-grammaire` | raccords (dont mouvement), 180°, J/L-cut, ellipse, jump cut (définition) | `[THÉORIQUE]` + maquettes ; 5 `[VU SUR IMAGES]` |
+| `montage-grammaire` | raccords (dont mouvement), 180°, J/L-cut, ellipse, jump cut (définition) ; jamais deux fois le même moment d'un rush [genre] | `[THÉORIQUE]` + maquettes ; 5 `[VU SUR IMAGES]` |
 | `montage-son-et-emotion` | intention sonore, silence, hors champ, musique avec / contre | `[SOURCÉ]` + 7 `[VU SUR IMAGES]` (courbes mesurées), jamais écouté |
 | `montage-motion-design-principes` | quoi animer et pourquoi, lisibilité du texte | maquettes ; 4 `[VU SUR IMAGES]` (habillage tiré du sujet) |
 | `montage-couleur-et-intention` | sens de la couleur, look, faut-il un teal & orange | **`[VU SUR IMAGES]`** (huit constats) + maquettes |
@@ -71,15 +69,15 @@ Chaque skill dit en tête sur quoi il **fait foi** ; le détail (mesures, pièce
 | `montage-preparation-tournage-vfx` | préparer un tournage à effets, capter la lumière (plaques allumée / éteinte, écrans) | maquettes + théorique |
 | `montage-formats` | structure par format, Shorts narratifs | `[SOURCÉ]` + pubs `[VU SUR IMAGES]` |
 | `montage-youtube` | YouTube long, face caméra (jump cut, punch-in), rétention en minutes, packaging | `[SOURCÉ]` + dix vidéos `[VU SUR IMAGES]` |
-| `montage-kinetic-editing` | format court vertical : SFX, captions, transitions, photosensibilité | labo + maquettes ; 6 `[VU SUR IMAGES]` (aucune vidéo kinetic des réseaux dans le corpus) |
-| `montage-loudness-livraison` | cibles, specs et contrôle des livrables | `[TESTÉ EN LABO]` |
+| `montage-kinetic-editing` | format court rapide : SFX, captions, transitions, photosensibilité ; règles [genre : after movie kinetic] du projet Sony ; bibliothèque eyecannndy | sept vidéos réseaux `[VU SUR IMAGES]` + `[TESTÉ EN CONDITIONS RÉELLES]` (Sony) |
+| `montage-loudness-livraison` | cibles, specs et contrôle des livrables ; master par défaut du studio (H.265 Main 10) | `[TESTÉ EN LABO]` + `[TESTÉ EN CONDITIONS RÉELLES]` |
 | `montage-workflows` | échanges de fichiers, proxies, VFR, interpolation | `[TESTÉ EN LABO]` côté fichiers |
 | `montage-after-effects` | comment animer : easing, expressions | expressions testées hors AE |
 | `montage-premiere` | procédures dans Premiere | `[SOURCÉ]`, version 26.5 non confirmée |
-| `montage-resolve` | nodes, RCM, Deliver, API Python | `[THÉORIQUE]` |
+| `montage-resolve` | nodes, RCM, Deliver, API Python, pilotage par le MCP natif, recettes du projet Sony (Fusion, Gyroflow, détourage, Resolve léger) | `[TESTÉ EN CONDITIONS RÉELLES]` (Resolve Studio 21.1.1) ; nodes et RCM encore `[THÉORIQUE]` |
 | `montage-blender` | rendu CLI, plans 3D pour le montage | labo + maquettes |
 | `montage-ia-generative` | choisir un outil génératif, AI Act ; état de l'art au 2026-10-10 | `[SOURCÉ]`, rien testé sauf RIFE |
-| `montage-pilotage-mcp` | méthode d'agent commune aux logiciels | `[THÉORIQUE]` |
+| `montage-pilotage-mcp` | méthode d'agent commune aux logiciels | `[TESTÉ EN CONDITIONS RÉELLES]` sur Resolve ; les autres logiciels `[THÉORIQUE]` |
 
 ## Ressources du dépôt
 - `culture/` : fiches d'œuvres (montage, title design, couleur, goûts de l'utilisateur : Interstellar, Joker, Ziak ; clips et pubs : Murai, Honda « Cog » ; IA).
