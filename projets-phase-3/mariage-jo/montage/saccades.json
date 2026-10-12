@@ -1,0 +1,1252 @@
+[
+{
+"rec": 0.0,
+"nom": "20260604_C3689",
+"src": 24.53,
+"dur": 3.2,
+"images": 161,
+"saccade": 0.176,
+"vitesse": 1.05,
+"note": "Jonathan au micro, large, mur de pierre "
+},
+{
+"rec": 3.2,
+"nom": "FX30.5635",
+"src": 115.65,
+"dur": 9.2,
+"images": 461,
+"saccade": 1.246,
+"vitesse": 1.783,
+"note": "Jonathan flou au premier plan, Ornella n"
+},
+{
+"rec": 12.4,
+"nom": "FX30.5635",
+"src": 105.2,
+"dur": 2.4,
+"images": 120,
+"saccade": 0.888,
+"vitesse": 2.175,
+"note": "TRICHE : invité chauve qui sourit, 36 s "
+},
+{
+"rec": 14.8,
+"nom": "20260604_C3689",
+"src": 39.33,
+"dur": 4.84,
+"images": 243,
+"saccade": 0.813,
+"vitesse": 1.727,
+"note": "Jonathan, large (synchro)"
+},
+{
+"rec": 19.64,
+"nom": "FX30.5635",
+"src": 129.9,
+"dur": 1.33,
+"images": 67,
+"saccade": 0.39,
+"vitesse": 0.721,
+"note": "TRICHE : Ornella main sur la poitrine, 7"
+},
+{
+"rec": 20.97,
+"nom": "20260604_C3689",
+"src": 45.5,
+"dur": 7.0,
+"images": 350,
+"saccade": 0.721,
+"vitesse": 2.741,
+"note": "Jonathan, plan moyen : « est-ce que tu v"
+},
+{
+"rec": 27.97,
+"nom": "FX30.5635",
+"src": 140.42,
+"dur": 5.5,
+"images": 275,
+"saccade": 0.205,
+"vitesse": 0.665,
+"note": "Ornella éclate de rire (synchro, vrai mo"
+},
+{
+"rec": 33.47,
+"nom": "20260604_C3689",
+"src": 58.0,
+"dur": 3.5,
+"images": 175,
+"saccade": 11.156,
+"vitesse": 12.147,
+"note": "couple d'invités qui sourit (synchro)"
+},
+{
+"rec": 36.97,
+"nom": "FX30.5635",
+"src": 155.0,
+"dur": 3.4,
+"images": 170,
+"saccade": 0.821,
+"vitesse": 2.306,
+"note": "TRICHE : homme aux lunettes sur la tête "
+},
+{
+"rec": 40.97,
+"nom": "20260604_C3576",
+"src": 23.0,
+"dur": 3.216,
+"images": 161,
+"saccade": 0.883,
+"vitesse": 3.312,
+"note": "travelling vers les lettres J&O (le chan"
+},
+{
+"rec": 44.186,
+"nom": "20260604_C3842",
+"src": 0.5,
+"dur": 3.68,
+"images": 184,
+"saccade": 0.629,
+"vitesse": 1.467,
+"note": "lettres J&O : TITRE « Jonathan & Ornella"
+},
+{
+"rec": 47.866,
+"nom": "20260604_C3562",
+"src": 16.0,
+"dur": 0.685,
+"images": 34,
+"saccade": 0.609,
+"vitesse": 2.438,
+"note": "chaise « Monsieur »"
+},
+{
+"rec": 48.551,
+"nom": "20260604_C3562",
+"src": 21.0,
+"dur": 0.616,
+"images": 31,
+"saccade": 1.298,
+"vitesse": 2.947,
+"note": "chaise « Madame »"
+},
+{
+"rec": 49.167,
+"nom": "20260604_C3564",
+"src": 3.0,
+"dur": 0.627,
+"images": 32,
+"saccade": 1.033,
+"vitesse": 5.366,
+"note": "pétales, ras du sol"
+},
+{
+"rec": 49.794,
+"nom": "FX30.5490",
+"src": 2.5,
+"dur": 0.545,
+"images": 27,
+"saccade": 2.596,
+"vitesse": 7.322,
+"note": "bougies"
+},
+{
+"rec": 50.339,
+"nom": "20260604_C3560",
+"src": 10.0,
+"dur": 0.685,
+"images": 35,
+"saccade": 0.678,
+"vitesse": 2.024,
+"note": "coupes"
+},
+{
+"rec": 51.024,
+"nom": "20260604_C3544",
+"src": 1.0,
+"dur": 0.604,
+"images": 30,
+"saccade": 2.888,
+"vitesse": 5.065,
+"note": "fleurs, bascule de point"
+},
+{
+"rec": 51.628,
+"nom": "20260604_C3546",
+"src": 7.5,
+"dur": 0.627,
+"images": 32,
+"saccade": 0.798,
+"vitesse": 3.081,
+"note": "rose sur une chaise"
+},
+{
+"rec": 52.255,
+"nom": "FX30.5475",
+"src": 2.0,
+"dur": 1.196,
+"images": 60,
+"saccade": 0.959,
+"vitesse": 1.521,
+"note": "nom du domaine"
+},
+{
+"rec": 53.451,
+"nom": "20260604_C3520",
+"src": 10.0,
+"dur": 1.788,
+"images": 45,
+"saccade": 2.114,
+"vitesse": 3.372,
+"note": "le couple marche vers nous, robe dans le"
+},
+{
+"rec": 55.239,
+"nom": "20260604_C3532",
+"src": 0.5,
+"dur": 1.904,
+"images": 95,
+"saccade": 0.997,
+"vitesse": 2.602,
+"note": "Ornella rit, Jonathan la regarde"
+},
+{
+"rec": 57.143,
+"nom": "20260604_C3537",
+"src": 8.5,
+"dur": 1.822,
+"images": 91,
+"saccade": 1.913,
+"vitesse": 4.858,
+"note": "portrait serré du couple"
+},
+{
+"rec": 58.965,
+"nom": "20260604_C3531",
+"src": 0.3,
+"dur": 1.15,
+"images": 58,
+"saccade": 1.442,
+"vitesse": 3.009,
+"note": "rire"
+},
+{
+"rec": 60.115,
+"nom": "20260604_C3533",
+"src": 9.0,
+"dur": 1.915,
+"images": 96,
+"saccade": 1.767,
+"vitesse": 2.508,
+"note": "les trois enlacés, Naël au milieu"
+},
+{
+"rec": 62.03,
+"nom": "20260604_C3538",
+"src": 12.0,
+"dur": 2.949,
+"images": 148,
+"saccade": 0.89,
+"vitesse": 2.878,
+"note": "Naël sourit : TITRE « Naël »"
+},
+{
+"rec": 64.979,
+"nom": "20260604_C3541",
+"src": 0.5,
+"dur": 2.485,
+"images": 62,
+"saccade": 13.409,
+"vitesse": 29.419,
+"note": "ils s'éloignent main dans la main, Naël "
+},
+{
+"rec": 67.464,
+"nom": "20260604_C3595",
+"src": 1.0,
+"dur": 1.265,
+"images": 63,
+"saccade": 1.319,
+"vitesse": 7.324,
+"note": "regard caméra, sourire"
+},
+{
+"rec": 68.729,
+"nom": "20260604_C3609",
+"src": 4.4,
+"dur": 1.185,
+"images": 60,
+"saccade": 3.249,
+"vitesse": 9.086,
+"note": "rire"
+},
+{
+"rec": 69.914,
+"nom": "20260604_C3597",
+"src": 1.0,
+"dur": 1.254,
+"images": 63,
+"saccade": 0.492,
+"vitesse": 2.274,
+"note": "accolade"
+},
+{
+"rec": 71.168,
+"nom": "FX30.5527",
+"src": 10.3,
+"dur": 1.149,
+"images": 58,
+"saccade": 1.68,
+"vitesse": 9.304,
+"note": "V face caméra"
+},
+{
+"rec": 72.317,
+"nom": "20260604_C3601",
+"src": 1.0,
+"dur": 1.3,
+"images": 65,
+"saccade": 0.824,
+"vitesse": 1.799,
+"note": "rire"
+},
+{
+"rec": 73.617,
+"nom": "20260604_C3627",
+"src": 1.0,
+"dur": 1.161,
+"images": 58,
+"saccade": 1.09,
+"vitesse": 3.615,
+"note": "rire"
+},
+{
+"rec": 74.778,
+"nom": "FX30.5544",
+"src": 2.0,
+"dur": 1.266,
+"images": 64,
+"saccade": 0.115,
+"vitesse": 0.438,
+"note": "fillette en rose"
+},
+{
+"rec": 76.044,
+"nom": "FX30.5577",
+"src": 2.0,
+"dur": 2.403,
+"images": 120,
+"saccade": 0.151,
+"vitesse": 0.634,
+"note": "silhouettes qui entrent dans la salle de"
+},
+{
+"rec": 78.447,
+"nom": "20260604_C3655",
+"src": 44.0,
+"dur": 2.415,
+"images": 121,
+"saccade": 0.361,
+"vitesse": 0.619,
+"note": "les mariés à la porte, bouquet coloré"
+},
+{
+"rec": 80.862,
+"nom": "FX30.5589",
+"src": 11.8,
+"dur": 3.0,
+"images": 150,
+"saccade": 2.827,
+"vitesse": 4.041,
+"note": "Ornella entre et éclate de rire (avant l"
+},
+{
+"rec": 83.862,
+"nom": "FX30.5590",
+"src": 1.0,
+"dur": 2.2,
+"images": 110,
+"saccade": 0.336,
+"vitesse": 0.758,
+"note": "les invités applaudissent, l'officiant"
+},
+{
+"rec": 86.062,
+"nom": "FX30.5591",
+"src": 0.0,
+"dur": 1.1,
+"images": 55,
+"saccade": 0.467,
+"vitesse": 1.737,
+"note": "« Il va y avoir plein de mauvaises blagu"
+},
+{
+"rec": 87.162,
+"nom": "FX30.5593",
+"src": 0.2,
+"dur": 1.45,
+"images": 73,
+"saccade": 25.457,
+"vitesse": 15.264,
+"note": "« Il va y avoir plein de mauvaises blagu"
+},
+{
+"rec": 88.612,
+"nom": "20260604_C3657",
+"src": 12.26,
+"dur": 3.45,
+"images": 173,
+"saccade": 0.484,
+"vitesse": 0.871,
+"note": "« …des excuses concernant la température"
+},
+{
+"rec": 92.062,
+"nom": "20260604_C3658",
+"src": 10.2,
+"dur": 4.7,
+"images": 235,
+"saccade": 0.874,
+"vitesse": 4.086,
+"note": "« certains détracteurs trouvaient que c'"
+},
+{
+"rec": 96.762,
+"nom": "20260604_C3657",
+"src": 23.66,
+"dur": 3.3,
+"images": 165,
+"saccade": 2.916,
+"vitesse": 5.011,
+"note": "« Donc il y aura de l'orage tout à l'heu"
+},
+{
+"rec": 100.062,
+"nom": "FX30.5592",
+"src": 1.0,
+"dur": 3.75,
+"images": 188,
+"saccade": 0.666,
+"vitesse": 3.371,
+"note": "« On n'a pas besoin de voir le ciel quan"
+},
+{
+"rec": 103.812,
+"nom": "20260604_C3658",
+"src": 19.99,
+"dur": 1.55,
+"images": 79,
+"saccade": 0.698,
+"vitesse": 1.262,
+"note": "« Nous, les célibataires, on va se faire"
+},
+{
+"rec": 105.362,
+"nom": "20260604_C3659",
+"src": 0.0,
+"dur": 3.5,
+"images": 175,
+"saccade": 0.383,
+"vitesse": 0.627,
+"note": "« Nous, les célibataires, on va se faire"
+},
+{
+"rec": 108.862,
+"nom": "FX30.5602",
+"src": 1.54,
+"dur": 1.5,
+"images": 75,
+"saccade": 0.323,
+"vitesse": 1.19,
+"note": "« …et surtout, ils ont eu Naël. » ; Naël"
+},
+{
+"rec": 110.362,
+"nom": "FX30.5599",
+"src": 0.3,
+"dur": 1.35,
+"images": 68,
+"saccade": 0.342,
+"vitesse": 0.872,
+"note": "« …et surtout, ils ont eu Naël. » ; Naël"
+},
+{
+"rec": 111.712,
+"nom": "FX30.5603",
+"src": 0.0,
+"dur": 2.5,
+"images": 125,
+"saccade": 0.438,
+"vitesse": 1.544,
+"note": "« Ce petit être céleste » ; Naël (synchr"
+},
+{
+"rec": 114.212,
+"nom": "FX30.5603",
+"src": 2.55,
+"dur": 3.47,
+"images": 175,
+"saccade": 0.353,
+"vitesse": 1.379,
+"note": "« Naël, je pense que tout le monde ici s"
+},
+{
+"rec": 117.682,
+"nom": "20260604_C3664",
+"src": 0.0,
+"dur": 2.38,
+"images": 119,
+"saccade": 0.88,
+"vitesse": 3.306,
+"note": "« Naël, je pense que tout le monde ici s"
+},
+{
+"rec": 120.062,
+"nom": "FX30.5612",
+"src": 0.3,
+"dur": 3.4,
+"images": 170,
+"saccade": 0.049,
+"vitesse": 0.046,
+"note": "« La première fois, on se marie sur une "
+},
+{
+"rec": 123.462,
+"nom": "20260604_C3661",
+"src": 2.0,
+"dur": 3.45,
+"images": 173,
+"saccade": 0.134,
+"vitesse": 0.387,
+"note": "« La première fois, on se marie sur une "
+},
+{
+"rec": 126.912,
+"nom": "FX30.5616",
+"src": 1.0,
+"dur": 4.15,
+"images": 208,
+"saccade": 0.201,
+"vitesse": 0.481,
+"note": "« On dit que l'amour rend aveugle. C'est"
+},
+{
+"rec": 131.062,
+"nom": "20260604_C3686",
+"src": 5.2,
+"dur": 4.8,
+"images": 240,
+"saccade": 4.452,
+"vitesse": 8.063,
+"note": "Ornella : « Mon mari, » TRICHE 4 s (même"
+},
+{
+"rec": 135.862,
+"nom": "20260604_C3686",
+"src": 10.23,
+"dur": 2.85,
+"images": 144,
+"saccade": 0.302,
+"vitesse": 0.358,
+"note": "« nous nous sommes rencontrés il y a 13 "
+},
+{
+"rec": 138.712,
+"nom": "FX30.5633",
+"src": 0.05,
+"dur": 1.95,
+"images": 99,
+"saccade": 0.153,
+"vitesse": 0.294,
+"note": "« nous nous sommes rencontrés il y a 13 "
+},
+{
+"rec": 140.662,
+"nom": "FX30.5634",
+"src": 8.05,
+"dur": 2.0,
+"images": 101,
+"saccade": 0.152,
+"vitesse": 0.508,
+"note": "« Et puis il y a Naël. Notre plus belle "
+},
+{
+"rec": 142.662,
+"nom": "FX30.5634",
+"src": 16.0,
+"dur": 2.0,
+"images": 100,
+"saccade": 0.93,
+"vitesse": 1.586,
+"note": "« Et puis il y a Naël. Notre plus belle "
+},
+{
+"rec": 144.662,
+"nom": "20260604_C3686",
+"src": 181.48,
+"dur": 3.0,
+"images": 150,
+"saccade": 12.383,
+"vitesse": 33.152,
+"note": "« Alors je redis oui. Un oui encore plus"
+},
+{
+"rec": 147.662,
+"nom": "FX30.5634",
+"src": 100.75,
+"dur": 3.2,
+"images": 161,
+"saccade": 0.277,
+"vitesse": 0.487,
+"note": "« Alors je redis oui. Un oui encore plus"
+},
+{
+"rec": 150.862,
+"nom": "20260604_C3695",
+"src": 9.22,
+"dur": 2.15,
+"images": 108,
+"saccade": 0.83,
+"vitesse": 1.26,
+"note": "« la femme parfaite n'existe pas, mais t"
+},
+{
+"rec": 153.012,
+"nom": "FX30.5635",
+"src": 358.6,
+"dur": 2.75,
+"images": 138,
+"saccade": 0.181,
+"vitesse": 0.435,
+"note": "« la femme parfaite n'existe pas, mais t"
+},
+{
+"rec": 155.762,
+"nom": "20260604_C3695",
+"src": 58.22,
+"dur": 3.75,
+"images": 188,
+"saccade": 0.206,
+"vitesse": 0.968,
+"note": "« je vais te faire une vraie demande cet"
+},
+{
+"rec": 159.512,
+"nom": "FX30.5635",
+"src": 404.65,
+"dur": 2.4,
+"images": 121,
+"saccade": 0.222,
+"vitesse": 0.226,
+"note": "« je vais te faire une vraie demande cet"
+},
+{
+"rec": 161.912,
+"nom": "20260604_C3695",
+"src": 64.37,
+"dur": 5.6,
+"images": 281,
+"saccade": 1.142,
+"vitesse": 3.146,
+"note": "« je vais te faire une vraie demande cet"
+},
+{
+"rec": 167.512,
+"nom": "FX30.5635",
+"src": 416.9,
+"dur": 4.8,
+"images": 240,
+"saccade": 0.745,
+"vitesse": 1.306,
+"note": "ils s'enlacent, la salle applaudit (Quen"
+},
+{
+"rec": 172.312,
+"nom": "20260604_C3695",
+"src": 104.52,
+"dur": 2.15,
+"images": 108,
+"saccade": 1.099,
+"vitesse": 2.571,
+"note": "« Dans dix ans, ce sera un collier. » (s"
+},
+{
+"rec": 174.462,
+"nom": "20260604_C3695",
+"src": 112.17,
+"dur": 8.1,
+"images": 406,
+"saccade": 2.108,
+"vitesse": 7.519,
+"note": "« à cette enfant céleste, Naël, de venir"
+},
+{
+"rec": 182.562,
+"nom": "20260604_C3696",
+"src": 32.79,
+"dur": 7.0,
+"images": 351,
+"saccade": 0.775,
+"vitesse": 1.586,
+"note": "« acceptes-tu de reprendre pour épouse O"
+},
+{
+"rec": 189.562,
+"nom": "FX30.5635",
+"src": 560.65,
+"dur": 4.4,
+"images": 221,
+"saccade": 0.177,
+"vitesse": 0.386,
+"note": "« Oui, pour les dix prochaines années. »"
+},
+{
+"rec": 193.962,
+"nom": "20260604_C3696",
+"src": 48.94,
+"dur": 5.05,
+"images": 253,
+"saccade": 0.85,
+"vitesse": 1.872,
+"note": "« je crois que j'ai l'honneur de vous dé"
+},
+{
+"rec": 199.012,
+"nom": "FX30.5635",
+"src": 576.55,
+"dur": 1.846,
+"images": 94,
+"saccade": 0.662,
+"vitesse": 2.328,
+"note": "LE BAISER (front) : la couleur revient ("
+},
+{
+"rec": 200.858,
+"nom": "FX30.5635",
+"src": 585.6,
+"dur": 1.718,
+"images": 86,
+"saccade": 0.284,
+"vitesse": 0.727,
+"note": "invités qui applaudissent"
+},
+{
+"rec": 202.576,
+"nom": "FX30.5638",
+"src": 2.0,
+"dur": 1.683,
+"images": 84,
+"saccade": 1.938,
+"vitesse": 6.269,
+"note": "Jonathan embrassé, sourire"
+},
+{
+"rec": 204.259,
+"nom": "20260604_C3704",
+"src": 0.0,
+"dur": 1.707,
+"images": 86,
+"saccade": 0.799,
+"vitesse": 2.321,
+"note": "cœur avec les mains face caméra"
+},
+{
+"rec": 205.966,
+"nom": "FX30.5639",
+"src": 16.0,
+"dur": 1.718,
+"images": 86,
+"saccade": 3.054,
+"vitesse": 3.74,
+"note": "Jonathan, grand sourire"
+},
+{
+"rec": 207.684,
+"nom": "FX30.5702",
+"src": 0.5,
+"dur": 0.848,
+"images": 43,
+"saccade": 1.895,
+"vitesse": 3.6,
+"note": "pieds bicolores qui battent la mesure"
+},
+{
+"rec": 208.532,
+"nom": "FX30.5698",
+"src": 12.0,
+"dur": 0.847,
+"images": 43,
+"saccade": 0.522,
+"vitesse": 0.701,
+"note": "caisse claire"
+},
+{
+"rec": 209.379,
+"nom": "FX30.5704",
+"src": 1.0,
+"dur": 0.859,
+"images": 43,
+"saccade": 0.825,
+"vitesse": 1.805,
+"note": "main sur la guitare"
+},
+{
+"rec": 210.238,
+"nom": "FX30.5698",
+"src": 49.0,
+"dur": 0.86,
+"images": 43,
+"saccade": 4.542,
+"vitesse": 8.59,
+"note": "contrebasse"
+},
+{
+"rec": 211.098,
+"nom": "FX30.5698",
+"src": 31.3,
+"dur": 0.847,
+"images": 43,
+"saccade": 3.899,
+"vitesse": 12.035,
+"note": "saxophone"
+},
+{
+"rec": 211.945,
+"nom": "FX30.5667",
+"src": 0.4,
+"dur": 1.672,
+"images": 84,
+"saccade": 0.93,
+"vitesse": 3.597,
+"note": "le guitariste sourit"
+},
+{
+"rec": 213.617,
+"nom": "FX30.5697",
+"src": 1.0,
+"dur": 1.66,
+"images": 83,
+"saccade": 0.56,
+"vitesse": 2.076,
+"note": "le saxophoniste rit"
+},
+{
+"rec": 215.277,
+"nom": "FX30.5743",
+"src": 9.6,
+"dur": 1.684,
+"images": 84,
+"saccade": 1.392,
+"vitesse": 4.562,
+"note": "la dame aux cheveux blancs danse"
+},
+{
+"rec": 216.961,
+"nom": "20260604_C3820",
+"src": 8.4,
+"dur": 1.683,
+"images": 42,
+"saccade": 2.997,
+"vitesse": 10.078,
+"note": "elle rit, bras levés [ralenti x2 natif]"
+},
+{
+"rec": 218.644,
+"nom": "FX30.5730",
+"src": 1.2,
+"dur": 1.672,
+"images": 84,
+"saccade": 0.273,
+"vitesse": 0.674,
+"note": "Naël reçoit sa caricature"
+},
+{
+"rec": 220.316,
+"nom": "FX30.5720",
+"src": 2.0,
+"dur": 1.672,
+"images": 84,
+"saccade": 0.354,
+"vitesse": 1.288,
+"note": "Naël rit"
+},
+{
+"rec": 221.988,
+"nom": "20260604_C3789",
+"src": 8.6,
+"dur": 6.35,
+"images": 318,
+"saccade": 1.553,
+"vitesse": 3.38,
+"note": "« Le traiteur est hyper bon, vous avez d"
+},
+{
+"rec": 228.338,
+"nom": "20260604_C3787",
+"src": 4.45,
+"dur": 3.25,
+"images": 164,
+"saccade": 2.279,
+"vitesse": 4.641,
+"note": "« Je vous aime. Merci pour ce buffet gra"
+},
+{
+"rec": 231.588,
+"nom": "20260604_C3797",
+"src": 10.5,
+"dur": 2.9,
+"images": 145,
+"saccade": 0.685,
+"vitesse": 1.859,
+"note": "Sylvain : « C'est grâce à qui un petit p"
+},
+{
+"rec": 234.488,
+"nom": "20260604_C3813",
+"src": 16.85,
+"dur": 1.45,
+"images": 74,
+"saccade": 2.272,
+"vitesse": 5.943,
+"note": "Ornella : « Ah, il faut que je sois une "
+},
+{
+"rec": 235.938,
+"nom": "20260604_C3813",
+"src": 24.45,
+"dur": 8.55,
+"images": 429,
+"saccade": 0.528,
+"vitesse": 1.358,
+"note": "Ornella en invitée : « Les mariés étaien"
+},
+{
+"rec": 244.488,
+"nom": "FX30.5805",
+"src": 0.5,
+"dur": 3.6,
+"images": 180,
+"saccade": 0.074,
+"vitesse": 0.682,
+"note": "la terrasse déserte sous la pluie"
+},
+{
+"rec": 248.088,
+"nom": "20260604_C3864",
+"src": 1.0,
+"dur": 9.0,
+"images": 450,
+"saccade": 1.034,
+"vitesse": 2.71,
+"note": "la dame danse sous la pluie, bras ouvert"
+},
+{
+"rec": 257.088,
+"nom": "20260604_C3894",
+"src": 27.0,
+"dur": 2.705,
+"images": 68,
+"saccade": 0.798,
+"vitesse": 2.364,
+"note": "ouverture du bal : le couple, face à fac"
+},
+{
+"rec": 259.793,
+"nom": "20260604_C3894",
+"src": 88.0,
+"dur": 1.916,
+"images": 96,
+"saccade": 0.474,
+"vitesse": 2.803,
+"note": "il l'embrasse sur la tempe"
+},
+{
+"rec": 261.709,
+"nom": "20260604_C3922",
+"src": 0.5,
+"dur": 1.915,
+"images": 96,
+"saccade": 6.894,
+"vitesse": 6.463,
+"note": "la piste explose, bras en l'air"
+},
+{
+"rec": 263.624,
+"nom": "20260604_C3899",
+"src": 6.0,
+"dur": 1.916,
+"images": 48,
+"saccade": 6.113,
+"vitesse": 6.404,
+"note": "un invité porté [ralenti x2 natif]"
+},
+{
+"rec": 265.54,
+"nom": "20260604_C3911",
+"src": 13.6,
+"dur": 2.891,
+"images": 145,
+"saccade": 3.934,
+"vitesse": 11.497,
+"note": "Jonathan rit, lunettes noires"
+},
+{
+"rec": 268.431,
+"nom": "FX30.5838",
+"src": 28.3,
+"dur": 2.879,
+"images": 144,
+"saccade": 3.079,
+"vitesse": 21.9,
+"note": "le père de Jonathan danse, bras levés, a"
+},
+{
+"rec": 271.31,
+"nom": "20260604_C4007",
+"src": 11.9,
+"dur": 1.8,
+"images": 90,
+"saccade": 1.11,
+"vitesse": 2.531,
+"note": "« alors tiens, je te laisse l'ouvrir » ("
+},
+{
+"rec": 273.11,
+"nom": "20260604_C4007",
+"src": 26.2,
+"dur": 2.8,
+"images": 140,
+"saccade": 0.579,
+"vitesse": 1.393,
+"note": "le maillot se déplie"
+},
+{
+"rec": 275.91,
+"nom": "FX30.5871",
+"src": 6.0,
+"dur": 1.8,
+"images": 90,
+"saccade": 0.127,
+"vitesse": 0.331,
+"note": "Jonathan tient le maillot (Quentin, serr"
+},
+{
+"rec": 277.71,
+"nom": "20260604_C4007",
+"src": 43.2,
+"dur": 1.6,
+"images": 80,
+"saccade": 5.298,
+"vitesse": 4.756,
+"note": "le maillot en gros plan"
+},
+{
+"rec": 279.31,
+"nom": "20260604_C4007",
+"src": 47.6,
+"dur": 5.9,
+"images": 295,
+"saccade": 0.622,
+"vitesse": 2.328,
+"note": "« si jamais il gagne, frérot, c'est enco"
+},
+{
+"rec": 285.21,
+"nom": "20260604_C4008",
+"src": 8.0,
+"dur": 2.4,
+"images": 120,
+"saccade": 2.973,
+"vitesse": 5.579,
+"note": "la salle exulte, serviette au vent"
+},
+{
+"rec": 287.61,
+"nom": "20260604_C4008",
+"src": 31.0,
+"dur": 2.4,
+"images": 120,
+"saccade": 3.165,
+"vitesse": 6.936,
+"note": "Jonathan brandit le maillot"
+},
+{
+"rec": 290.01,
+"nom": "20260604_C4009",
+"src": 0.3,
+"dur": 2.4,
+"images": 120,
+"saccade": 0.467,
+"vitesse": 1.254,
+"note": "Jonathan se penche vers Naël, le maillot"
+},
+{
+"rec": 292.41,
+"nom": "20260604_C4012",
+"src": 3.0,
+"dur": 1.934,
+"images": 97,
+"saccade": 0.852,
+"vitesse": 4.291,
+"note": "la pièce montée"
+},
+{
+"rec": 294.344,
+"nom": "20260604_C4016",
+"src": 47.0,
+"dur": 1.916,
+"images": 96,
+"saccade": 0.483,
+"vitesse": 0.975,
+"note": "la salle debout, bras levés, lumière vio"
+},
+{
+"rec": 296.26,
+"nom": "20260604_C4017",
+"src": 13.0,
+"dur": 1.927,
+"images": 97,
+"saccade": 1.823,
+"vitesse": 4.126,
+"note": "les mariés et la pièce montée"
+},
+{
+"rec": 298.187,
+"nom": "20260604_C4029",
+"src": 3.5,
+"dur": 7.686,
+"images": 385,
+"saccade": 1.935,
+"vitesse": 5.477,
+"note": "PASSAGE KINETIC (à construire) : photobo"
+},
+{
+"rec": 305.873,
+"nom": "20260604_C4077",
+"src": 1.2,
+"dur": 0.476,
+"images": 25,
+"saccade": 0.99,
+"vitesse": 2.101,
+"note": "rafale néon (un temps)"
+},
+{
+"rec": 306.349,
+"nom": "20260604_C4096",
+"src": 2.6,
+"dur": 0.476,
+"images": 25,
+"saccade": 0.508,
+"vitesse": 4.552,
+"note": "rafale néon (un temps)"
+},
+{
+"rec": 306.825,
+"nom": "20260604_C4106",
+"src": 3.6,
+"dur": 0.488,
+"images": 25,
+"saccade": 0.624,
+"vitesse": 1.791,
+"note": "rafale néon (un temps)"
+},
+{
+"rec": 307.313,
+"nom": "20260604_C4113",
+"src": 13.6,
+"dur": 0.464,
+"images": 25,
+"saccade": 1.391,
+"vitesse": 4.678,
+"note": "rafale néon (un temps)"
+},
+{
+"rec": 307.777,
+"nom": "20260604_C4126",
+"src": 1.0,
+"dur": 0.488,
+"images": 25,
+"saccade": 2.897,
+"vitesse": 2.607,
+"note": "rafale néon (un temps)"
+},
+{
+"rec": 308.265,
+"nom": "20260604_C4085",
+"src": 2.3,
+"dur": 0.487,
+"images": 25,
+"saccade": 1.582,
+"vitesse": 2.347,
+"note": "rafale néon (un temps)"
+},
+{
+"rec": 308.752,
+"nom": "FX30.5900",
+"src": 8.0,
+"dur": 3.832,
+"images": 192,
+"saccade": 0.158,
+"vitesse": 0.815,
+"note": "Jonathan et Naël à la fontaine à chocola"
+},
+{
+"rec": 312.584,
+"nom": "20260604_C3798",
+"src": 6.1,
+"dur": 1.85,
+"images": 93,
+"saccade": 0.216,
+"vitesse": 0.432,
+"note": "« …on se revoit dans dix ans »"
+},
+{
+"rec": 314.434,
+"nom": "20260604_C3787",
+"src": 14.25,
+"dur": 1.25,
+"images": 64,
+"saccade": 0.169,
+"vitesse": 0.269,
+"note": "« à vos dix ans dans dix ans »"
+},
+{
+"rec": 315.684,
+"nom": "20260604_C3704",
+"src": 7.1,
+"dur": 2.1,
+"images": 105,
+"saccade": 2.386,
+"vitesse": 4.965,
+"note": "« Dans dix ans, on se retrouve riche ! »"
+},
+{
+"rec": 317.784,
+"nom": "20260604_C3696",
+"src": 104.64,
+"dur": 4.3,
+"images": 215,
+"saccade": 0.293,
+"vitesse": 0.671,
+"note": "Jonathan : « Je jure, je rigole pas : da"
+},
+{
+"rec": 322.084,
+"nom": "20260604_C4169",
+"src": 0.0,
+"dur": 1.85,
+"images": 93,
+"saccade": 0.879,
+"vitesse": 1.504,
+"note": "rires sur la terrasse de nuit"
+},
+{
+"rec": 323.934,
+"nom": "20260604_C4166",
+"src": 4.5,
+"dur": 3.5,
+"images": 175,
+"saccade": 1.051,
+"vitesse": 3.135,
+"note": "rires sur la terrasse de nuit"
+}
+]

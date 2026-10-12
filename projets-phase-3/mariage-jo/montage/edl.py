@@ -34,7 +34,7 @@ hv("20260604_C3689", H0 + 14.8, 4.84, "Jonathan, large (synchro)")
 v("FX30.5635", 129.9, 1.33, "nb", note="TRICHE : Ornella main sur la poitrine, 7 s avant (raccord)")
 hv("20260604_C3689", H0 + 20.97, 7.0, "Jonathan, plan moyen : « est-ce que tu veux mon panini ? » (synchro)")
 hv("FX30.5635", H0 + 27.97, 5.5, "Ornella éclate de rire (synchro, vrai moment)")
-hv("20260604_C3689", H0 + 33.47, 3.5, "couple d'invités qui sourit (synchro)")
+v("20260604_C3689", 58.6, 3.5, "nb", note="couple d'invités qui sourit (1 s après la phrase)")
 v("FX30.5635", 155.0, 3.4, "nb", note="TRICHE : homme aux lunettes sur la tête et dame blonde qui rient, 5 s après")
 A_FIN = rec
 a(HF, H0, A_FIN + 0.6, A0, 1, gain=0.0, fin=0.15, fout=1.2, note="voix de Jonathan, HF")
@@ -46,13 +46,13 @@ rec = A_FIN + 0.6                                        # noir court
 B0 = rec; tb = G["I_Got_a_Woma"]["temps"]
 def bt(k): return B0 + tb[k]                             # temps du k-ième temps du morceau dans la timeline
 a(MUS["igot"], 0.0, 0, B0, 3, gain=-6.0, note="I Got a Woman : début")   # durée fixée plus bas
-v("20260604_C3576", 23.0, bt(0) - rec, "couleur", note="travelling vers les lettres J&O (le chant commence)")
+texte(B0 + 0.25, bt(0) - B0 - 0.35, "Jonathan & Ornella", "titre", "carton sur noir, pendant le premier vers du chant")
+rec = bt(0)
 k = 0
 def bk(nom, src, n, look="couleur", note="", vitesse=1.0):
     global k
     v(nom, src, bt(k + n) - rec, look, note=note, vitesse=vitesse); k += n
-bk("20260604_C3842", 0.5, 6, note="lettres J&O : TITRE « Jonathan & Ornella »")
-texte(bt(0) + 0.2, bt(6) - bt(0) - 0.4, "Jonathan & Ornella", "titre", "sur les lettres lumineuses")
+bk("20260604_C3842", 0.5, 6, note="lettres J&O lumineuses (le titre vient d'apparaître sur noir)")
 for nom, s, note in [("20260604_C3562", 16.0, "chaise « Monsieur »"), ("20260604_C3562", 21.0, "chaise « Madame »"),
                      ("20260604_C3564", 3.0, "pétales, ras du sol"), ("FX30.5490", 2.5, "bougies"), ("20260604_C3560", 10.0, "coupes"),
                      ("20260604_C3544", 1.0, "fleurs, bascule de point"), ("20260604_C3546", 7.5, "rose sur une chaise")]:
@@ -65,7 +65,7 @@ bk("20260604_C3531", 0.3, 2, note="rire")
 bk("20260604_C3533", 9.0, 3, note="les trois enlacés, Naël au milieu")
 bk("20260604_C3538", 12.0, 5, note="Naël sourit : TITRE « Naël »")
 texte(bt(k - 5) + 0.3, bt(k) - bt(k - 5) - 0.5, "Naël", "personnage")
-bk("20260604_C3541", 0.5, 4, note="ils s'éloignent main dans la main, Naël derrière")
+bk("20260604_C3541", 1.3, 4, note="ils s'éloignent main dans la main, Naël derrière")
 for nom, s, note in [("20260604_C3595", 1.0, "regard caméra, sourire"), ("20260604_C3609", 4.4, "rire"), ("20260604_C3597", 1.0, "accolade"),
                      ("FX30.5527", 10.3, "V face caméra"), ("20260604_C3601", 1.0, "rire"), ("20260604_C3627", 1.0, "rire"), ("FX30.5544", 2.0, "fillette en rose")]:
     bk(nom, s, 2, note=note)
@@ -93,7 +93,7 @@ def phrase(h0, h1, plans, gain_voix=0.0, salle=-13.0, note=""):
         v(nom, src, d, "nb", note=note + (" (synchro)" if isinstance(src, float) and False else ""), at=t); t += d
     rec = r0 + dur
 # entrée des mariés (salle et La Maritza en douceur)
-v("FX30.5589", 11.8, 3.0, "nb", note="Ornella entre et éclate de rire (avant le HF : son de la salle)")
+v("FX30.5589", 11.6, 3.0, "nb", note="Ornella entre et éclate de rire (avant le HF : son de la salle)")
 v("FX30.5590", 1.0, 2.2, "nb", note="les invités applaudissent, l'officiant")
 a(Z1, 146.0 + 4469.08, 5.4, C0, 2, gain=-8.0, fin=0.3, fout=0.4, note="applaudissements de l'entrée (Zoom)")
 a(MUS["maritza"], 0.0, 9.0, C0, 3, gain=-14.0, fin=0.5, fout=3.0, note="La Maritza, intro douce, s'éteint sous l'officiant")
@@ -112,7 +112,7 @@ phrase(508.15, 512.3, [("FX30.5616", 1.0, None)], note="« On dit que l'amour re
 phrase(1004.9, 1009.7, [("20260604_C3686", 5.2, None)], note="Ornella : « Mon mari, » TRICHE 4 s (même plan)")
 phrase(1014.05, 1018.85, [("20260604_C3686", "sync", 2.85), ("FX30.5633", 0.05, None)], note="« nous nous sommes rencontrés il y a 13 ans et depuis ce jour, on ne s'est plus lâchés. » (synchro)")
 phrase(1095.6, 1099.6, [("FX30.5634", "sync", 2.0), ("FX30.5634", 16.0, None)], note="« Et puis il y a Naël. Notre plus belle aventure. » ; Naël TRICHE (6 s après)")
-phrase(1185.3, 1191.5, [("20260604_C3686", "sync", 3.0), ("FX30.5634", "sync", None)], note="« Alors je redis oui. Un oui encore plus fort… qu'il y a dix ans. » (synchro)")
+phrase(1185.3, 1191.5, [("20260604_C3686", 184.0, 3.0), ("FX30.5634", "sync", None)], note="« Alors je redis oui. Un oui encore plus fort… qu'il y a dix ans. » (synchro)")
 # vœux de Jonathan, la demande
 phrase(1597.85, 1602.75, [("20260604_C3695", "sync", 2.15), ("FX30.5635", 358.6, None)], note="« la femme parfaite n'existe pas, mais toi, tu es la femme parfaite pour moi. » ; Ornella TRICHE (5 s après)")
 phrase(1646.85, 1658.6, [("20260604_C3695", "sync", 3.75), ("FX30.5635", "sync", 2.4), ("20260604_C3695", "sync", None)], note="« je vais te faire une vraie demande cette fois-ci… à genoux… ma femme pour les dix prochaines années » (synchro)")
@@ -175,8 +175,9 @@ F0 = rec
 v("FX30.5805", 0.5, 3.6, "couleur", note="la terrasse déserte sous la pluie")
 a(rush("FX30.5805"), 0.5, 3.6, F0, 2, gain=0.0, fin=0.3, fout=0.2, note="pluie (son caméra)")
 a(HF, 243.0, 5.8, F0 + 0.6, 1, gain=0.0, fin=0.05, fout=0.3, note="rappel : « Mariage sous la flotte, culotte qui gigote. » (officiant, 17:36)")
-v("20260604_C3864", 1.0, 9.0, "couleur", note="la dame danse sous la pluie, bras ouverts, puis bras levés")
-a(rush("20260604_C3864"), 1.0, 9.0, F0 + 3.6, 2, gain=0.0, fin=0.2, fout=0.4, note="pluie, rires (son caméra)")
+v("20260604_C3864", 2.8, 4.0, "couleur", vitesse=0.25, note="la dame danse sous la pluie, bras ouverts [ralenti x4, flux optique / Speed Warp, à vérifier image par image]")
+v("20260604_C3864", 8.8, 2.2, "couleur", note="puis les bras levés, temps réel")
+a(rush("20260604_C3864"), 1.0, 6.2, F0 + 3.6, 2, gain=0.0, fin=0.2, fout=0.4, note="pluie, rires (son caméra, décalé)")
 F_FIN = rec
 MARK.append((F0, "F"))
 
@@ -189,7 +190,7 @@ def rk(nom, src, n, note="", look="couleur"):
     v(nom, src, rt(k4 + n) - rec, look, note=note); k4 += n
 rk("20260604_C3894", 27.0, 6, "ouverture du bal : le couple, face à face")
 rk("20260604_C3894", 88.0, 4, "il l'embrasse sur la tempe")
-rk("20260604_C3922", 0.5, 4, "la piste explose, bras en l'air")
+rk("20260604_C3922", 1.0, 4, "la piste explose, bras en l'air")
 rk("20260604_C3899", 6.0, 4, "un invité porté")
 rk("20260604_C3911", 13.6, 6, "Jonathan rit, lunettes noires")
 rk("FX30.5838", 28.3, 6, "le père de Jonathan danse, bras levés, accolade")
@@ -239,6 +240,55 @@ texte(rec + 0.5, 3.5, "Rendez-vous en 2036.", "fin")
 rec += 4.5
 a(MUS["remix"], 183.5, rec - H0b, H0b, 3, gain=-18.0, fin=1.0, fout=2.5, note="fin du remix, très bas, sous les voix")
 MARK.append((H0b, "H"))
+
+# ---------------- Ralentis (x2 natif : rush 50p lu à 50 % dans une timeline 25p) ----------------
+RALENTIS = {("20260604_C3520", 10.0): "robe dans le vent", ("20260604_C3894", 27.0): "le couple qui danse", ("20260604_C3899", 6.0): "l'invité porté",
+            ("20260604_C3820", 8.4): "la dame rit, bras levés", ("20260604_C3541", 1.3): "ils s'éloignent"}
+for e in V:
+    if (e["nom"], e["src"]) in RALENTIS: e["vitesse"] = 0.5; e["note"] += " [ralenti x2 natif]"
+
+# ---------------- Niveaux : gains calculés sur la loudness mesurée de chaque extrait (cibles en LUFS, rien d'écouté) ----------------
+import subprocess, os
+CACHE_L = "/Volumes/SSD FAST/Montage-IA/videos/phase-3/mariage-jo/_travail/son/loudness_cache.json"
+LC = json.load(open(CACHE_L)) if os.path.exists(CACHE_L) else {}
+def loud(f, s, d):
+    k = f"{f}|{s:.2f}|{d:.2f}"
+    if k not in LC:
+        r = subprocess.run(["ffmpeg", "-nostats", "-ss", f"{s:.3f}", "-t", f"{max(d, 0.5):.3f}", "-i", f, "-af", "ebur128", "-f", "null", "-"], capture_output=True, text=True).stderr
+        try: LC[k] = float([l for l in r.split("Summary:")[1].splitlines() if "I:" in l][0].split()[1])
+        except Exception: LC[k] = -30.0
+        if LC[k] < -60: LC[k] = -60.0
+    return LC[k]
+CIBLE = {"voix": -17.0, "salle_seule": -21.0, "salle_sous": -31.0, "musique": -17.0, "musique_sous": -31.0}
+for x in A:
+    musique = x["piste"] == 3
+    if x["piste"] == 1: role = "voix"
+    elif musique: role = "musique" if x["gain"] >= -10 else "musique_sous"
+    else:
+        sous = any(y["piste"] == 1 and y["rec"] < x["rec"] + x["dur"] and y["rec"] + y["dur"] > x["rec"] for y in A)
+        role = "salle_sous" if (sous and x["gain"] <= -10) else "salle_seule"
+    l = loud(x["fichier"], x["src"], x["dur"] if x["dur"] < 60 else 60)
+    x["gain_brut"] = x["gain"]; x["role"] = role; x["loudness"] = l
+    x["gain"] = round(max(-40.0, min(18.0, CIBLE[role] - l)), 1)
+json.dump(LC, open(CACHE_L, "w"))
+
+# ---------------- Stabilisation (Gyroflow gardé seulement s'il réduit les saccades d'au moins 20 %) et exposition plan par plan ----------------
+MD = "/Volumes/SSD FAST/Montage-IA/projets-phase-3/mariage-jo/montage"
+def lit_jsonl(f):
+    try: return [json.loads(l) for l in open(f) if l.strip()]
+    except FileNotFoundError: return []
+STAB = {}
+for r in lit_jsonl(f"{MD}/stab.jsonl") + lit_jsonl(f"{MD}/stab_ralentis.jsonl"):
+    a, b = r.get("avant", {}).get("saccade"), r.get("apres", {}).get("saccade")
+    if r.get("fichier") and a and b is not None and b < 0.8 * a:
+        STAB[(r["nom"], round(r["src"], 2), r.get("lissage", 0.5))] = {"fichier": r["fichier"], "debut_plage": r["debut_plage"], "avant": a, "apres": b}
+CDL = json.load(open(f"{MD}/cdl.json")) if os.path.exists(f"{MD}/cdl.json") else {}
+for e in V:
+    if e["piste"] != 1: continue
+    k = (e["nom"], round(max(0, e["src"]), 2), 0.51 if e["vitesse"] != 1 else 0.5)
+    if k in STAB: e["stab"] = STAB[k]
+    o = CDL.get(f"{e['nom']}|{e['src']}")
+    if o: e["cdl"] = {"slope": "1.0 1.0 1.0", "offset": f"{o:.4f} {o:.4f} {o:.4f}", "power": "1.0 1.0 1.0", "sat": "1.0"}
 
 json.dump(dict(video=V, audio=A, textes=T, blocs=MARK, duree=round(rec, 3)), open(__file__.replace("edl.py", "montage.json"), "w"), indent=1, ensure_ascii=False)
 print("durée", round(rec, 2), "plans", len(V), "sons", len(A))
