@@ -1,0 +1,3046 @@
+{
+ "video": [
+  {
+   "piste": 1,
+   "nom": "20260604_C3689",
+   "src": 24.53,
+   "dur": 3.2,
+   "rec": 0.0,
+   "look": "nb",
+   "vitesse": 1.0,
+   "note": "Jonathan au micro, large, mur de pierre (synchro)",
+   "stab": {
+    "fichier": "/Volumes/SSD FAST/Montage-IA/videos/phase-3/mariage-jo/_travail/stab/20260604_C3689_24.53_0.5/20260604_C3689_stabilized_agent.mov",
+    "debut_plage": 24.03,
+    "avant": 0.176,
+    "apres": 0.061
+   }
+  },
+  {
+   "piste": 1,
+   "nom": "FX30.5635",
+   "src": 115.65,
+   "dur": 9.2,
+   "rec": 3.2,
+   "look": "nb",
+   "vitesse": 1.0,
+   "note": "Jonathan flou au premier plan, Ornella nette qui écoute (synchro)",
+   "cdl": {
+    "slope": "1.0 1.0 1.0",
+    "offset": "0.0200 0.0200 0.0200",
+    "power": "1.0 1.0 1.0",
+    "sat": "1.0"
+   }
+  },
+  {
+   "piste": 1,
+   "nom": "FX30.5635",
+   "src": 105.2,
+   "dur": 2.4,
+   "rec": 12.4,
+   "look": "nb",
+   "vitesse": 1.0,
+   "note": "TRICHE : invité chauve qui sourit, 36 s avant la phrase (même salle, même lumière)",
+   "stab": {
+    "fichier": "/Volumes/SSD FAST/Montage-IA/videos/phase-3/mariage-jo/_travail/stab/FX30.5635_105.20_0.5/FX30.5635_stabilized_agent.mov",
+    "debut_plage": 104.7,
+    "avant": 0.888,
+    "apres": 0.462
+   },
+   "cdl": {
+    "slope": "1.0 1.0 1.0",
+    "offset": "0.0585 0.0585 0.0585",
+    "power": "1.0 1.0 1.0",
+    "sat": "1.0"
+   }
+  },
+  {
+   "piste": 1,
+   "nom": "20260604_C3689",
+   "src": 39.33,
+   "dur": 4.84,
+   "rec": 14.8,
+   "look": "nb",
+   "vitesse": 1.0,
+   "note": "Jonathan, large (synchro)",
+   "stab": {
+    "fichier": "/Volumes/SSD FAST/Montage-IA/videos/phase-3/mariage-jo/_travail/stab/20260604_C3689_39.33_0.5/20260604_C3689_stabilized_agent.mov",
+    "debut_plage": 38.83,
+    "avant": 0.813,
+    "apres": 0.235
+   }
+  },
+  {
+   "piste": 1,
+   "nom": "FX30.5635",
+   "src": 129.9,
+   "dur": 1.33,
+   "rec": 19.64,
+   "look": "nb",
+   "vitesse": 1.0,
+   "note": "TRICHE : Ornella main sur la poitrine, 7 s avant (raccord)",
+   "stab": {
+    "fichier": "/Volumes/SSD FAST/Montage-IA/videos/phase-3/mariage-jo/_travail/stab/FX30.5635_129.90_0.5/FX30.5635_stabilized_agent.mov",
+    "debut_plage": 129.4,
+    "avant": 0.39,
+    "apres": 0.162
+   }
+  },
+  {
+   "piste": 1,
+   "nom": "20260604_C3689",
+   "src": 45.5,
+   "dur": 7.0,
+   "rec": 20.97,
+   "look": "nb",
+   "vitesse": 1.0,
+   "note": "Jonathan, plan moyen : « est-ce que tu veux mon panini ? » (synchro)",
+   "stab": {
+    "fichier": "/Volumes/SSD FAST/Montage-IA/videos/phase-3/mariage-jo/_travail/stab/20260604_C3689_45.50_0.5/20260604_C3689_stabilized_agent.mov",
+    "debut_plage": 45.0,
+    "avant": 0.721,
+    "apres": 0.397
+   },
+   "cdl": {
+    "slope": "1.0 1.0 1.0",
+    "offset": "0.0770 0.0770 0.0770",
+    "power": "1.0 1.0 1.0",
+    "sat": "1.0"
+   }
+  },
+  {
+   "piste": 1,
+   "nom": "FX30.5635",
+   "src": 140.42,
+   "dur": 5.5,
+   "rec": 27.97,
+   "look": "nb",
+   "vitesse": 1.0,
+   "note": "Ornella éclate de rire (synchro, vrai moment)",
+   "cdl": {
+    "slope": "1.0 1.0 1.0",
+    "offset": "0.0393 0.0393 0.0393",
+    "power": "1.0 1.0 1.0",
+    "sat": "1.0"
+   }
+  },
+  {
+   "piste": 1,
+   "nom": "20260604_C3689",
+   "src": 58.6,
+   "dur": 3.5,
+   "rec": 33.47,
+   "look": "nb",
+   "vitesse": 1.0,
+   "note": "couple d'invités qui sourit (1 s après la phrase)",
+   "stab": {
+    "fichier": "/Volumes/SSD FAST/Montage-IA/videos/phase-3/mariage-jo/_travail/stab/20260604_C3689_58.60_0.5/20260604_C3689_stabilized_agent.mov",
+    "debut_plage": 58.1,
+    "avant": 1.134,
+    "apres": 0.626
+   },
+   "cdl": {
+    "slope": "1.0 1.0 1.0",
+    "offset": "0.0393 0.0393 0.0393",
+    "power": "1.0 1.0 1.0",
+    "sat": "1.0"
+   }
+  },
+  {
+   "piste": 1,
+   "nom": "FX30.5635",
+   "src": 155.0,
+   "dur": 3.4,
+   "rec": 36.97,
+   "look": "nb",
+   "vitesse": 1.0,
+   "note": "TRICHE : homme aux lunettes sur la tête et dame blonde qui rient, 5 s après",
+   "cdl": {
+    "slope": "1.0 1.0 1.0",
+    "offset": "0.0200 0.0200 0.0200",
+    "power": "1.0 1.0 1.0",
+    "sat": "1.0"
+   }
+  },
+  {
+   "piste": 1,
+   "nom": "20260604_C3842",
+   "src": 0.5,
+   "dur": 3.68,
+   "rec": 44.186,
+   "look": "couleur",
+   "vitesse": 1.0,
+   "note": "lettres J&O lumineuses (le titre vient d'apparaître sur noir)"
+  },
+  {
+   "piste": 1,
+   "nom": "20260604_C3562",
+   "src": 16.0,
+   "dur": 0.685,
+   "rec": 47.866,
+   "look": "couleur",
+   "vitesse": 1.0,
+   "note": "chaise « Monsieur »",
+   "cdl": {
+    "slope": "1.0 1.0 1.0",
+    "offset": "0.0577 0.0577 0.0577",
+    "power": "1.0 1.0 1.0",
+    "sat": "1.0"
+   }
+  },
+  {
+   "piste": 1,
+   "nom": "20260604_C3562",
+   "src": 21.0,
+   "dur": 0.616,
+   "rec": 48.551,
+   "look": "couleur",
+   "vitesse": 1.0,
+   "note": "chaise « Madame »",
+   "stab": {
+    "fichier": "/Volumes/SSD FAST/Montage-IA/videos/phase-3/mariage-jo/_travail/stab/20260604_C3562_21.00_0.5/20260604_C3562_stabilized_agent.mov",
+    "debut_plage": 20.5,
+    "avant": 1.298,
+    "apres": 0.574
+   },
+   "cdl": {
+    "slope": "1.0 1.0 1.0",
+    "offset": "0.0577 0.0577 0.0577",
+    "power": "1.0 1.0 1.0",
+    "sat": "1.0"
+   }
+  },
+  {
+   "piste": 1,
+   "nom": "20260604_C3564",
+   "src": 3.0,
+   "dur": 0.627,
+   "rec": 49.167,
+   "look": "couleur",
+   "vitesse": 1.0,
+   "note": "pétales, ras du sol",
+   "stab": {
+    "fichier": "/Volumes/SSD FAST/Montage-IA/videos/phase-3/mariage-jo/_travail/stab/20260604_C3564_3.00_0.5/20260604_C3564_stabilized_agent.mov",
+    "debut_plage": 2.5,
+    "avant": 1.033,
+    "apres": 0.512
+   },
+   "cdl": {
+    "slope": "1.0 1.0 1.0",
+    "offset": "0.0577 0.0577 0.0577",
+    "power": "1.0 1.0 1.0",
+    "sat": "1.0"
+   }
+  },
+  {
+   "piste": 1,
+   "nom": "FX30.5490",
+   "src": 2.5,
+   "dur": 0.545,
+   "rec": 49.794,
+   "look": "couleur",
+   "vitesse": 1.0,
+   "note": "bougies",
+   "stab": {
+    "fichier": "/Volumes/SSD FAST/Montage-IA/videos/phase-3/mariage-jo/_travail/stab/FX30.5490_2.50_0.5/FX30.5490_stabilized_agent.mov",
+    "debut_plage": 2.0,
+    "avant": 2.557,
+    "apres": 0.851
+   },
+   "cdl": {
+    "slope": "1.0 1.0 1.0",
+    "offset": "0.0585 0.0585 0.0585",
+    "power": "1.0 1.0 1.0",
+    "sat": "1.0"
+   }
+  },
+  {
+   "piste": 1,
+   "nom": "20260604_C3560",
+   "src": 10.0,
+   "dur": 0.685,
+   "rec": 50.339,
+   "look": "couleur",
+   "vitesse": 1.0,
+   "note": "coupes",
+   "cdl": {
+    "slope": "1.0 1.0 1.0",
+    "offset": "-0.0385 -0.0385 -0.0385",
+    "power": "1.0 1.0 1.0",
+    "sat": "1.0"
+   }
+  },
+  {
+   "piste": 1,
+   "nom": "20260604_C3544",
+   "src": 1.0,
+   "dur": 0.604,
+   "rec": 51.024,
+   "look": "couleur",
+   "vitesse": 1.0,
+   "note": "fleurs, bascule de point",
+   "stab": {
+    "fichier": "/Volumes/SSD FAST/Montage-IA/videos/phase-3/mariage-jo/_travail/stab/20260604_C3544_1.00_0.5/20260604_C3544_stabilized_agent.mov",
+    "debut_plage": 0.5,
+    "avant": 2.888,
+    "apres": 0.653
+   }
+  },
+  {
+   "piste": 1,
+   "nom": "20260604_C3546",
+   "src": 7.5,
+   "dur": 0.627,
+   "rec": 51.628,
+   "look": "couleur",
+   "vitesse": 1.0,
+   "note": "rose sur une chaise"
+  },
+  {
+   "piste": 1,
+   "nom": "FX30.5475",
+   "src": 2.0,
+   "dur": 1.196,
+   "rec": 52.255,
+   "look": "couleur",
+   "vitesse": 1.0,
+   "note": "nom du domaine"
+  },
+  {
+   "piste": 1,
+   "nom": "20260604_C3520",
+   "src": 10.0,
+   "dur": 1.788,
+   "rec": 53.451,
+   "look": "couleur",
+   "vitesse": 0.5,
+   "note": "le couple marche vers nous, robe dans le vent [ralenti x2 natif]",
+   "stab": {
+    "fichier": "/Volumes/SSD FAST/Montage-IA/videos/phase-3/mariage-jo/_travail/stab/20260604_C3520_10.00_0.51/20260604_C3520_stabilized_agent.mov",
+    "debut_plage": 9.5,
+    "avant": 2.15,
+    "apres": 1.224
+   },
+   "cdl": {
+    "slope": "1.0 1.0 1.0",
+    "offset": "-0.0385 -0.0385 -0.0385",
+    "power": "1.0 1.0 1.0",
+    "sat": "1.0"
+   }
+  },
+  {
+   "piste": 1,
+   "nom": "20260604_C3532",
+   "src": 0.5,
+   "dur": 1.904,
+   "rec": 55.239,
+   "look": "couleur",
+   "vitesse": 1.0,
+   "note": "Ornella rit, Jonathan la regarde",
+   "cdl": {
+    "slope": "1.0 1.0 1.0",
+    "offset": "0.0200 0.0200 0.0200",
+    "power": "1.0 1.0 1.0",
+    "sat": "1.0"
+   }
+  },
+  {
+   "piste": 1,
+   "nom": "20260604_C3537",
+   "src": 8.5,
+   "dur": 1.822,
+   "rec": 57.143,
+   "look": "couleur",
+   "vitesse": 1.0,
+   "note": "portrait serré du couple",
+   "stab": {
+    "fichier": "/Volumes/SSD FAST/Montage-IA/videos/phase-3/mariage-jo/_travail/stab/20260604_C3537_8.50_0.5/20260604_C3537_stabilized_agent.mov",
+    "debut_plage": 8.0,
+    "avant": 1.913,
+    "apres": 1.134
+   },
+   "cdl": {
+    "slope": "1.0 1.0 1.0",
+    "offset": "0.0200 0.0200 0.0200",
+    "power": "1.0 1.0 1.0",
+    "sat": "1.0"
+   }
+  },
+  {
+   "piste": 1,
+   "nom": "20260604_C3531",
+   "src": 0.3,
+   "dur": 1.15,
+   "rec": 58.965,
+   "look": "couleur",
+   "vitesse": 1.0,
+   "note": "rire"
+  },
+  {
+   "piste": 1,
+   "nom": "20260604_C3533",
+   "src": 9.0,
+   "dur": 1.915,
+   "rec": 60.115,
+   "look": "couleur",
+   "vitesse": 1.0,
+   "note": "les trois enlacés, Naël au milieu",
+   "stab": {
+    "fichier": "/Volumes/SSD FAST/Montage-IA/videos/phase-3/mariage-jo/_travail/stab/20260604_C3533_9.00_0.5/20260604_C3533_stabilized_agent.mov",
+    "debut_plage": 8.5,
+    "avant": 1.767,
+    "apres": 0.21
+   },
+   "cdl": {
+    "slope": "1.0 1.0 1.0",
+    "offset": "0.0770 0.0770 0.0770",
+    "power": "1.0 1.0 1.0",
+    "sat": "1.0"
+   }
+  },
+  {
+   "piste": 1,
+   "nom": "20260604_C3538",
+   "src": 12.0,
+   "dur": 2.949,
+   "rec": 62.03,
+   "look": "couleur",
+   "vitesse": 1.0,
+   "note": "Naël sourit : TITRE « Naël »",
+   "cdl": {
+    "slope": "1.0 1.0 1.0",
+    "offset": "-0.0762 -0.0762 -0.0762",
+    "power": "1.0 1.0 1.0",
+    "sat": "1.0"
+   }
+  },
+  {
+   "piste": 1,
+   "nom": "20260604_C3541",
+   "src": 1.3,
+   "dur": 2.485,
+   "rec": 64.979,
+   "look": "couleur",
+   "vitesse": 0.5,
+   "note": "ils s'éloignent main dans la main, Naël derrière [ralenti x2 natif]",
+   "stab": {
+    "fichier": "/Volumes/SSD FAST/Montage-IA/videos/phase-3/mariage-jo/_travail/stab/20260604_C3541_1.30_0.51/20260604_C3541_stabilized_agent.mov",
+    "debut_plage": 0.8,
+    "avant": 5.93,
+    "apres": 1.574
+   }
+  },
+  {
+   "piste": 1,
+   "nom": "20260604_C3595",
+   "src": 1.0,
+   "dur": 1.265,
+   "rec": 67.464,
+   "look": "couleur",
+   "vitesse": 1.0,
+   "note": "regard caméra, sourire",
+   "cdl": {
+    "slope": "1.0 1.0 1.0",
+    "offset": "0.0585 0.0585 0.0585",
+    "power": "1.0 1.0 1.0",
+    "sat": "1.0"
+   }
+  },
+  {
+   "piste": 1,
+   "nom": "20260604_C3609",
+   "src": 4.4,
+   "dur": 1.185,
+   "rec": 68.729,
+   "look": "couleur",
+   "vitesse": 1.0,
+   "note": "rire",
+   "cdl": {
+    "slope": "1.0 1.0 1.0",
+    "offset": "0.0770 0.0770 0.0770",
+    "power": "1.0 1.0 1.0",
+    "sat": "1.0"
+   }
+  },
+  {
+   "piste": 1,
+   "nom": "20260604_C3597",
+   "src": 1.0,
+   "dur": 1.254,
+   "rec": 69.914,
+   "look": "couleur",
+   "vitesse": 1.0,
+   "note": "accolade",
+   "cdl": {
+    "slope": "1.0 1.0 1.0",
+    "offset": "0.0393 0.0393 0.0393",
+    "power": "1.0 1.0 1.0",
+    "sat": "1.0"
+   }
+  },
+  {
+   "piste": 1,
+   "nom": "FX30.5527",
+   "src": 10.3,
+   "dur": 1.149,
+   "rec": 71.168,
+   "look": "couleur",
+   "vitesse": 1.0,
+   "note": "V face caméra",
+   "stab": {
+    "fichier": "/Volumes/SSD FAST/Montage-IA/videos/phase-3/mariage-jo/_travail/stab/FX30.5527_10.30_0.5/FX30.5527_stabilized_agent.mov",
+    "debut_plage": 9.8,
+    "avant": 1.68,
+    "apres": 0.173
+   },
+   "cdl": {
+    "slope": "1.0 1.0 1.0",
+    "offset": "0.0200 0.0200 0.0200",
+    "power": "1.0 1.0 1.0",
+    "sat": "1.0"
+   }
+  },
+  {
+   "piste": 1,
+   "nom": "20260604_C3601",
+   "src": 1.0,
+   "dur": 1.3,
+   "rec": 72.317,
+   "look": "couleur",
+   "vitesse": 1.0,
+   "note": "rire",
+   "cdl": {
+    "slope": "1.0 1.0 1.0",
+    "offset": "0.0770 0.0770 0.0770",
+    "power": "1.0 1.0 1.0",
+    "sat": "1.0"
+   }
+  },
+  {
+   "piste": 1,
+   "nom": "20260604_C3627",
+   "src": 1.0,
+   "dur": 1.161,
+   "rec": 73.617,
+   "look": "couleur",
+   "vitesse": 1.0,
+   "note": "rire",
+   "stab": {
+    "fichier": "/Volumes/SSD FAST/Montage-IA/videos/phase-3/mariage-jo/_travail/stab/20260604_C3627_1.00_0.5/20260604_C3627_stabilized_agent.mov",
+    "debut_plage": 0.5,
+    "avant": 1.09,
+    "apres": 0.517
+   }
+  },
+  {
+   "piste": 1,
+   "nom": "FX30.5544",
+   "src": 2.0,
+   "dur": 1.266,
+   "rec": 74.778,
+   "look": "couleur",
+   "vitesse": 1.0,
+   "note": "fillette en rose",
+   "cdl": {
+    "slope": "1.0 1.0 1.0",
+    "offset": "0.0770 0.0770 0.0770",
+    "power": "1.0 1.0 1.0",
+    "sat": "1.0"
+   }
+  },
+  {
+   "piste": 1,
+   "nom": "FX30.5577",
+   "src": 2.0,
+   "dur": 2.403,
+   "rec": 76.044,
+   "look": "couleur",
+   "vitesse": 1.0,
+   "note": "silhouettes qui entrent dans la salle de pierre",
+   "cdl": {
+    "slope": "1.0 1.0 1.0",
+    "offset": "0.0577 0.0577 0.0577",
+    "power": "1.0 1.0 1.0",
+    "sat": "1.0"
+   }
+  },
+  {
+   "piste": 1,
+   "nom": "20260604_C3655",
+   "src": 44.0,
+   "dur": 2.415,
+   "rec": 78.447,
+   "look": "couleur",
+   "vitesse": 1.0,
+   "note": "les mariés à la porte, bouquet coloré",
+   "cdl": {
+    "slope": "1.0 1.0 1.0",
+    "offset": "-0.0385 -0.0385 -0.0385",
+    "power": "1.0 1.0 1.0",
+    "sat": "1.0"
+   }
+  },
+  {
+   "piste": 1,
+   "nom": "FX30.5589",
+   "src": 11.6,
+   "dur": 3.0,
+   "rec": 80.862,
+   "look": "nb",
+   "vitesse": 1.0,
+   "note": "Ornella entre et éclate de rire (avant le HF : son de la salle)"
+  },
+  {
+   "piste": 1,
+   "nom": "FX30.5590",
+   "src": 1.0,
+   "dur": 2.2,
+   "rec": 83.862,
+   "look": "nb",
+   "vitesse": 1.0,
+   "note": "les invités applaudissent, l'officiant"
+  },
+  {
+   "piste": 1,
+   "nom": "FX30.5591",
+   "src": 0.0,
+   "dur": 1.1,
+   "rec": 86.062,
+   "look": "nb",
+   "vitesse": 1.0,
+   "note": "« Il va y avoir plein de mauvaises blagues. » TRICHE : officiant bras tendu (HF 160) ; Jonathan plié de rire (HF 178)"
+  },
+  {
+   "piste": 1,
+   "nom": "FX30.5593",
+   "src": 0.2,
+   "dur": 1.45,
+   "rec": 87.162,
+   "look": "nb",
+   "vitesse": 1.0,
+   "note": "« Il va y avoir plein de mauvaises blagues. » TRICHE : officiant bras tendu (HF 160) ; Jonathan plié de rire (HF 178)",
+   "stab": {
+    "fichier": "/Volumes/SSD FAST/Montage-IA/videos/phase-3/mariage-jo/_travail/stab/FX30.5593_0.20_0.5/FX30.5593_stabilized_agent.mov",
+    "debut_plage": 0.0,
+    "avant": 25.457,
+    "apres": 1.905
+   }
+  },
+  {
+   "piste": 1,
+   "nom": "20260604_C3657",
+   "src": 12.26,
+   "dur": 3.45,
+   "rec": 88.612,
+   "look": "nb",
+   "vitesse": 1.0,
+   "note": "« …des excuses concernant la température et le temps, la météo. » (synchro)"
+  },
+  {
+   "piste": 1,
+   "nom": "20260604_C3658",
+   "src": 10.2,
+   "dur": 4.7,
+   "rec": 92.062,
+   "look": "nb",
+   "vitesse": 1.0,
+   "note": "« certains détracteurs trouvaient que c'était de ma faute. Ils n'ont pas tort. » TRICHE : invités qui rient (HF 249)"
+  },
+  {
+   "piste": 1,
+   "nom": "20260604_C3661",
+   "src": 10.0,
+   "dur": 3.3,
+   "rec": 96.762,
+   "look": "nb",
+   "vitesse": 1.0,
+   "note": "« Donc il y aura de l'orage tout à l'heure. Ne m'en voulez pas. » TRICHE : l'officiant de dos qui lit (HF 315), le synchro finissait sur un fouetté",
+   "stab": {
+    "fichier": "/Volumes/SSD FAST/Montage-IA/videos/phase-3/mariage-jo/_travail/stab/20260604_C3661_10.00_0.5/20260604_C3661_stabilized_agent.mov",
+    "debut_plage": 9.5,
+    "avant": 0.077,
+    "apres": 0.055
+   }
+  },
+  {
+   "piste": 1,
+   "nom": "FX30.5592",
+   "src": 1.0,
+   "dur": 3.75,
+   "rec": 100.062,
+   "look": "nb",
+   "vitesse": 1.0,
+   "note": "« On n'a pas besoin de voir le ciel quand on a quelqu'un à regarder. » TRICHE : Ornella et Jonathan (HF 176)",
+   "cdl": {
+    "slope": "1.0 1.0 1.0",
+    "offset": "0.0585 0.0585 0.0585",
+    "power": "1.0 1.0 1.0",
+    "sat": "1.0"
+   }
+  },
+  {
+   "piste": 1,
+   "nom": "20260604_C3658",
+   "src": 19.99,
+   "dur": 1.55,
+   "rec": 103.812,
+   "look": "nb",
+   "vitesse": 1.0,
+   "note": "« Nous, les célibataires, on va se faire foutre. » + rires (synchro)"
+  },
+  {
+   "piste": 1,
+   "nom": "20260604_C3659",
+   "src": 0.0,
+   "dur": 3.5,
+   "rec": 105.362,
+   "look": "nb",
+   "vitesse": 1.0,
+   "note": "« Nous, les célibataires, on va se faire foutre. » + rires (synchro)",
+   "cdl": {
+    "slope": "1.0 1.0 1.0",
+    "offset": "0.0770 0.0770 0.0770",
+    "power": "1.0 1.0 1.0",
+    "sat": "1.0"
+   }
+  },
+  {
+   "piste": 1,
+   "nom": "FX30.5602",
+   "src": 1.54,
+   "dur": 1.5,
+   "rec": 108.862,
+   "look": "nb",
+   "vitesse": 1.0,
+   "note": "« …et surtout, ils ont eu Naël. » ; Naël TRICHE (HF 320)"
+  },
+  {
+   "piste": 1,
+   "nom": "FX30.5599",
+   "src": 0.3,
+   "dur": 1.35,
+   "rec": 110.362,
+   "look": "nb",
+   "vitesse": 1.0,
+   "note": "« …et surtout, ils ont eu Naël. » ; Naël TRICHE (HF 320)",
+   "cdl": {
+    "slope": "1.0 1.0 1.0",
+    "offset": "-0.0762 -0.0762 -0.0762",
+    "power": "1.0 1.0 1.0",
+    "sat": "1.0"
+   }
+  },
+  {
+   "piste": 1,
+   "nom": "FX30.5603",
+   "src": 0.0,
+   "dur": 2.5,
+   "rec": 111.712,
+   "look": "nb",
+   "vitesse": 1.0,
+   "note": "« Ce petit être céleste » ; Naël (synchro à 1 s près)",
+   "cdl": {
+    "slope": "1.0 1.0 1.0",
+    "offset": "-0.0762 -0.0762 -0.0762",
+    "power": "1.0 1.0 1.0",
+    "sat": "1.0"
+   }
+  },
+  {
+   "piste": 1,
+   "nom": "FX30.5603",
+   "src": 2.55,
+   "dur": 3.47,
+   "rec": 114.212,
+   "look": "nb",
+   "vitesse": 1.0,
+   "note": "« Naël, je pense que tout le monde ici sera d'accord pour dire que c'est un enfant génial ? » TRICHE : Naël 13 s avant",
+   "cdl": {
+    "slope": "1.0 1.0 1.0",
+    "offset": "-0.0762 -0.0762 -0.0762",
+    "power": "1.0 1.0 1.0",
+    "sat": "1.0"
+   }
+  },
+  {
+   "piste": 1,
+   "nom": "20260604_C3664",
+   "src": 0.0,
+   "dur": 2.38,
+   "rec": 117.682,
+   "look": "nb",
+   "vitesse": 1.0,
+   "note": "« Naël, je pense que tout le monde ici sera d'accord pour dire que c'est un enfant génial ? » TRICHE : Naël 13 s avant",
+   "cdl": {
+    "slope": "1.0 1.0 1.0",
+    "offset": "0.0770 0.0770 0.0770",
+    "power": "1.0 1.0 1.0",
+    "sat": "1.0"
+   }
+  },
+  {
+   "piste": 1,
+   "nom": "FX30.5612",
+   "src": 0.3,
+   "dur": 3.4,
+   "rec": 120.062,
+   "look": "nb",
+   "vitesse": 1.0,
+   "note": "« La première fois, on se marie sur une promesse, et la deuxième fois, sur des preuves. » TRICHE : larges (HF 513 et 307)"
+  },
+  {
+   "piste": 1,
+   "nom": "20260604_C3661",
+   "src": 2.0,
+   "dur": 3.45,
+   "rec": 123.462,
+   "look": "nb",
+   "vitesse": 1.0,
+   "note": "« La première fois, on se marie sur une promesse, et la deuxième fois, sur des preuves. » TRICHE : larges (HF 513 et 307)"
+  },
+  {
+   "piste": 1,
+   "nom": "FX30.5616",
+   "src": 1.0,
+   "dur": 4.15,
+   "rec": 126.912,
+   "look": "nb",
+   "vitesse": 1.0,
+   "note": "« On dit que l'amour rend aveugle. C'est pour les célibataires. » TRICHE : les mariés rient (HF 575)"
+  },
+  {
+   "piste": 1,
+   "nom": "20260604_C3686",
+   "src": 5.2,
+   "dur": 4.8,
+   "rec": 131.062,
+   "look": "nb",
+   "vitesse": 1.0,
+   "note": "Ornella : « Mon mari, » TRICHE 4 s (même plan)",
+   "stab": {
+    "fichier": "/Volumes/SSD FAST/Montage-IA/videos/phase-3/mariage-jo/_travail/stab/20260604_C3686_5.20_0.5/20260604_C3686_stabilized_agent.mov",
+    "debut_plage": 4.7,
+    "avant": 4.452,
+    "apres": 1.348
+   },
+   "cdl": {
+    "slope": "1.0 1.0 1.0",
+    "offset": "0.0577 0.0577 0.0577",
+    "power": "1.0 1.0 1.0",
+    "sat": "1.0"
+   }
+  },
+  {
+   "piste": 1,
+   "nom": "20260604_C3686",
+   "src": 10.23,
+   "dur": 2.85,
+   "rec": 135.862,
+   "look": "nb",
+   "vitesse": 1.0,
+   "note": "« nous nous sommes rencontrés il y a 13 ans et depuis ce jour, on ne s'est plus lâchés. » (synchro)",
+   "cdl": {
+    "slope": "1.0 1.0 1.0",
+    "offset": "0.0577 0.0577 0.0577",
+    "power": "1.0 1.0 1.0",
+    "sat": "1.0"
+   }
+  },
+  {
+   "piste": 1,
+   "nom": "FX30.5633",
+   "src": 0.05,
+   "dur": 1.95,
+   "rec": 138.712,
+   "look": "nb",
+   "vitesse": 1.0,
+   "note": "« nous nous sommes rencontrés il y a 13 ans et depuis ce jour, on ne s'est plus lâchés. » (synchro)"
+  },
+  {
+   "piste": 1,
+   "nom": "FX30.5634",
+   "src": 8.05,
+   "dur": 2.0,
+   "rec": 140.662,
+   "look": "nb",
+   "vitesse": 1.0,
+   "note": "« Et puis il y a Naël. Notre plus belle aventure. » ; Naël TRICHE (6 s après)"
+  },
+  {
+   "piste": 1,
+   "nom": "FX30.5634",
+   "src": 16.0,
+   "dur": 2.0,
+   "rec": 142.662,
+   "look": "nb",
+   "vitesse": 1.0,
+   "note": "« Et puis il y a Naël. Notre plus belle aventure. » ; Naël TRICHE (6 s après)",
+   "cdl": {
+    "slope": "1.0 1.0 1.0",
+    "offset": "-0.0185 -0.0185 -0.0185",
+    "power": "1.0 1.0 1.0",
+    "sat": "1.0"
+   }
+  },
+  {
+   "piste": 1,
+   "nom": "20260604_C3686",
+   "src": 184.4,
+   "dur": 3.0,
+   "rec": 144.662,
+   "look": "nb",
+   "vitesse": 1.0,
+   "note": "« Alors je redis oui. Un oui encore plus fort… qu'il y a dix ans. » (synchro)",
+   "stab": {
+    "fichier": "/Volumes/SSD FAST/Montage-IA/videos/phase-3/mariage-jo/_travail/stab/20260604_C3686_184.40_0.5/20260604_C3686_stabilized_agent.mov",
+    "debut_plage": 183.9,
+    "avant": 1.163,
+    "apres": 0.585
+   },
+   "cdl": {
+    "slope": "1.0 1.0 1.0",
+    "offset": "0.0770 0.0770 0.0770",
+    "power": "1.0 1.0 1.0",
+    "sat": "1.0"
+   }
+  },
+  {
+   "piste": 1,
+   "nom": "FX30.5634",
+   "src": 100.75,
+   "dur": 3.2,
+   "rec": 147.662,
+   "look": "nb",
+   "vitesse": 1.0,
+   "note": "« Alors je redis oui. Un oui encore plus fort… qu'il y a dix ans. » (synchro)"
+  },
+  {
+   "piste": 1,
+   "nom": "20260604_C3695",
+   "src": 9.22,
+   "dur": 2.15,
+   "rec": 150.862,
+   "look": "nb",
+   "vitesse": 1.0,
+   "note": "« la femme parfaite n'existe pas, mais toi, tu es la femme parfaite pour moi. » ; Ornella TRICHE (5 s après)"
+  },
+  {
+   "piste": 1,
+   "nom": "FX30.5635",
+   "src": 358.6,
+   "dur": 2.75,
+   "rec": 153.012,
+   "look": "nb",
+   "vitesse": 1.0,
+   "note": "« la femme parfaite n'existe pas, mais toi, tu es la femme parfaite pour moi. » ; Ornella TRICHE (5 s après)",
+   "cdl": {
+    "slope": "1.0 1.0 1.0",
+    "offset": "0.0200 0.0200 0.0200",
+    "power": "1.0 1.0 1.0",
+    "sat": "1.0"
+   }
+  },
+  {
+   "piste": 1,
+   "nom": "20260604_C3695",
+   "src": 58.22,
+   "dur": 3.75,
+   "rec": 155.762,
+   "look": "nb",
+   "vitesse": 1.0,
+   "note": "« je vais te faire une vraie demande cette fois-ci… à genoux… ma femme pour les dix prochaines années » (synchro)"
+  },
+  {
+   "piste": 1,
+   "nom": "FX30.5635",
+   "src": 404.65,
+   "dur": 2.4,
+   "rec": 159.512,
+   "look": "nb",
+   "vitesse": 1.0,
+   "note": "« je vais te faire une vraie demande cette fois-ci… à genoux… ma femme pour les dix prochaines années » (synchro)",
+   "cdl": {
+    "slope": "1.0 1.0 1.0",
+    "offset": "0.0393 0.0393 0.0393",
+    "power": "1.0 1.0 1.0",
+    "sat": "1.0"
+   }
+  },
+  {
+   "piste": 1,
+   "nom": "20260604_C3695",
+   "src": 64.37,
+   "dur": 5.6,
+   "rec": 161.912,
+   "look": "nb",
+   "vitesse": 1.0,
+   "note": "« je vais te faire une vraie demande cette fois-ci… à genoux… ma femme pour les dix prochaines années » (synchro)",
+   "stab": {
+    "fichier": "/Volumes/SSD FAST/Montage-IA/videos/phase-3/mariage-jo/_travail/stab/20260604_C3695_64.37_0.5/20260604_C3695_stabilized_agent.mov",
+    "debut_plage": 63.870000000000005,
+    "avant": 1.142,
+    "apres": 0.862
+   },
+   "cdl": {
+    "slope": "1.0 1.0 1.0",
+    "offset": "0.0585 0.0585 0.0585",
+    "power": "1.0 1.0 1.0",
+    "sat": "1.0"
+   }
+  },
+  {
+   "piste": 1,
+   "nom": "FX30.5635",
+   "src": 416.9,
+   "dur": 4.8,
+   "rec": 167.512,
+   "look": "nb",
+   "vitesse": 1.0,
+   "note": "ils s'enlacent, la salle applaudit (Quentin, synchro)"
+  },
+  {
+   "piste": 1,
+   "nom": "20260604_C3695",
+   "src": 104.52,
+   "dur": 2.15,
+   "rec": 172.312,
+   "look": "nb",
+   "vitesse": 1.0,
+   "note": "« Dans dix ans, ce sera un collier. » (synchro)",
+   "stab": {
+    "fichier": "/Volumes/SSD FAST/Montage-IA/videos/phase-3/mariage-jo/_travail/stab/20260604_C3695_104.52_0.5/20260604_C3695_stabilized_agent.mov",
+    "debut_plage": 104.02,
+    "avant": 1.099,
+    "apres": 0.864
+   }
+  },
+  {
+   "piste": 1,
+   "nom": "20260604_C3695",
+   "src": 112.17,
+   "dur": 8.1,
+   "rec": 174.462,
+   "look": "nb",
+   "vitesse": 1.0,
+   "note": "« à cette enfant céleste, Naël, de venir leur donner leur bracelet… On applaudit Naël » (synchro)",
+   "stab": {
+    "fichier": "/Volumes/SSD FAST/Montage-IA/videos/phase-3/mariage-jo/_travail/stab/20260604_C3695_112.17_0.5/20260604_C3695_stabilized_agent.mov",
+    "debut_plage": 111.67,
+    "avant": 2.108,
+    "apres": 1.624
+   }
+  },
+  {
+   "piste": 1,
+   "nom": "20260604_C3696",
+   "src": 32.79,
+   "dur": 7.0,
+   "rec": 182.562,
+   "look": "nb",
+   "vitesse": 1.0,
+   "note": "« acceptes-tu de reprendre pour épouse Ornella » (synchro)"
+  },
+  {
+   "piste": 1,
+   "nom": "FX30.5635",
+   "src": 560.65,
+   "dur": 4.4,
+   "rec": 189.562,
+   "look": "nb",
+   "vitesse": 1.0,
+   "note": "« Oui, pour les dix prochaines années. » Ornella rit (synchro)"
+  },
+  {
+   "piste": 1,
+   "nom": "20260604_C3696",
+   "src": 48.94,
+   "dur": 5.05,
+   "rec": 193.962,
+   "look": "nb",
+   "vitesse": 1.0,
+   "note": "« je crois que j'ai l'honneur de vous déclarer re-mari et re-femme. » (synchro)"
+  },
+  {
+   "piste": 1,
+   "nom": "FX30.5635",
+   "src": 576.9,
+   "dur": 1.846,
+   "rec": 199.012,
+   "look": "couleur",
+   "vitesse": 1.0,
+   "note": "LE BAISER (front) : la couleur revient (synchro)",
+   "cdl": {
+    "slope": "1.0 1.0 1.0",
+    "offset": "0.0770 0.0770 0.0770",
+    "power": "1.0 1.0 1.0",
+    "sat": "1.0"
+   }
+  },
+  {
+   "piste": 1,
+   "nom": "FX30.5635",
+   "src": 585.6,
+   "dur": 1.718,
+   "rec": 200.858,
+   "look": "couleur",
+   "vitesse": 1.0,
+   "note": "invités qui applaudissent",
+   "cdl": {
+    "slope": "1.0 1.0 1.0",
+    "offset": "0.0770 0.0770 0.0770",
+    "power": "1.0 1.0 1.0",
+    "sat": "1.0"
+   }
+  },
+  {
+   "piste": 1,
+   "nom": "FX30.5638",
+   "src": 2.0,
+   "dur": 1.683,
+   "rec": 202.576,
+   "look": "couleur",
+   "vitesse": 1.0,
+   "note": "Jonathan embrassé, sourire",
+   "cdl": {
+    "slope": "1.0 1.0 1.0",
+    "offset": "-0.0185 -0.0185 -0.0185",
+    "power": "1.0 1.0 1.0",
+    "sat": "1.0"
+   }
+  },
+  {
+   "piste": 1,
+   "nom": "20260604_C3704",
+   "src": 0.0,
+   "dur": 1.707,
+   "rec": 204.259,
+   "look": "couleur",
+   "vitesse": 1.0,
+   "note": "cœur avec les mains face caméra",
+   "cdl": {
+    "slope": "1.0 1.0 1.0",
+    "offset": "0.0770 0.0770 0.0770",
+    "power": "1.0 1.0 1.0",
+    "sat": "1.0"
+   }
+  },
+  {
+   "piste": 1,
+   "nom": "FX30.5639",
+   "src": 16.0,
+   "dur": 1.718,
+   "rec": 205.966,
+   "look": "couleur",
+   "vitesse": 1.0,
+   "note": "Jonathan, grand sourire",
+   "cdl": {
+    "slope": "1.0 1.0 1.0",
+    "offset": "0.0770 0.0770 0.0770",
+    "power": "1.0 1.0 1.0",
+    "sat": "1.0"
+   }
+  },
+  {
+   "piste": 1,
+   "nom": "FX30.5702",
+   "src": 0.5,
+   "dur": 0.848,
+   "rec": 207.684,
+   "look": "couleur",
+   "vitesse": 1.0,
+   "note": "pieds bicolores qui battent la mesure"
+  },
+  {
+   "piste": 1,
+   "nom": "FX30.5698",
+   "src": 12.0,
+   "dur": 0.847,
+   "rec": 208.532,
+   "look": "couleur",
+   "vitesse": 1.0,
+   "note": "caisse claire"
+  },
+  {
+   "piste": 1,
+   "nom": "FX30.5704",
+   "src": 1.0,
+   "dur": 0.859,
+   "rec": 209.379,
+   "look": "couleur",
+   "vitesse": 1.0,
+   "note": "main sur la guitare"
+  },
+  {
+   "piste": 1,
+   "nom": "FX30.5698",
+   "src": 49.0,
+   "dur": 0.86,
+   "rec": 210.238,
+   "look": "couleur",
+   "vitesse": 1.0,
+   "note": "contrebasse",
+   "stab": {
+    "fichier": "/Volumes/SSD FAST/Montage-IA/videos/phase-3/mariage-jo/_travail/stab/FX30.5698_49.00_0.5/FX30.5698_stabilized_agent.mov",
+    "debut_plage": 48.5,
+    "avant": 4.542,
+    "apres": 1.591
+   },
+   "cdl": {
+    "slope": "1.0 1.0 1.0",
+    "offset": "-0.0185 -0.0185 -0.0185",
+    "power": "1.0 1.0 1.0",
+    "sat": "1.0"
+   }
+  },
+  {
+   "piste": 1,
+   "nom": "FX30.5698",
+   "src": 31.3,
+   "dur": 0.847,
+   "rec": 211.098,
+   "look": "couleur",
+   "vitesse": 1.0,
+   "note": "saxophone",
+   "stab": {
+    "fichier": "/Volumes/SSD FAST/Montage-IA/videos/phase-3/mariage-jo/_travail/stab/FX30.5698_31.30_0.5/FX30.5698_stabilized_agent.mov",
+    "debut_plage": 30.8,
+    "avant": 3.899,
+    "apres": 2.203
+   }
+  },
+  {
+   "piste": 1,
+   "nom": "FX30.5667",
+   "src": 0.4,
+   "dur": 1.672,
+   "rec": 211.945,
+   "look": "couleur",
+   "vitesse": 1.0,
+   "note": "le guitariste sourit",
+   "cdl": {
+    "slope": "1.0 1.0 1.0",
+    "offset": "0.0770 0.0770 0.0770",
+    "power": "1.0 1.0 1.0",
+    "sat": "1.0"
+   }
+  },
+  {
+   "piste": 1,
+   "nom": "FX30.5697",
+   "src": 1.0,
+   "dur": 1.66,
+   "rec": 213.617,
+   "look": "couleur",
+   "vitesse": 1.0,
+   "note": "le saxophoniste rit",
+   "cdl": {
+    "slope": "1.0 1.0 1.0",
+    "offset": "0.0200 0.0200 0.0200",
+    "power": "1.0 1.0 1.0",
+    "sat": "1.0"
+   }
+  },
+  {
+   "piste": 1,
+   "nom": "FX30.5743",
+   "src": 9.6,
+   "dur": 1.684,
+   "rec": 215.277,
+   "look": "couleur",
+   "vitesse": 1.0,
+   "note": "la dame aux cheveux blancs danse"
+  },
+  {
+   "piste": 1,
+   "nom": "20260604_C3820",
+   "src": 8.4,
+   "dur": 1.683,
+   "rec": 216.961,
+   "look": "couleur",
+   "vitesse": 0.5,
+   "note": "elle rit, bras levés [ralenti x2 natif]",
+   "cdl": {
+    "slope": "1.0 1.0 1.0",
+    "offset": "-0.0570 -0.0570 -0.0570",
+    "power": "1.0 1.0 1.0",
+    "sat": "1.0"
+   }
+  },
+  {
+   "piste": 1,
+   "nom": "FX30.5730",
+   "src": 1.2,
+   "dur": 1.672,
+   "rec": 218.644,
+   "look": "couleur",
+   "vitesse": 1.0,
+   "note": "Naël reçoit sa caricature",
+   "cdl": {
+    "slope": "1.0 1.0 1.0",
+    "offset": "0.0200 0.0200 0.0200",
+    "power": "1.0 1.0 1.0",
+    "sat": "1.0"
+   }
+  },
+  {
+   "piste": 1,
+   "nom": "FX30.5720",
+   "src": 2.0,
+   "dur": 1.672,
+   "rec": 220.316,
+   "look": "couleur",
+   "vitesse": 1.0,
+   "note": "Naël rit",
+   "cdl": {
+    "slope": "1.0 1.0 1.0",
+    "offset": "-0.0185 -0.0185 -0.0185",
+    "power": "1.0 1.0 1.0",
+    "sat": "1.0"
+   }
+  },
+  {
+   "piste": 1,
+   "nom": "20260604_C3789",
+   "src": 8.6,
+   "dur": 6.35,
+   "rec": 221.988,
+   "look": "couleur",
+   "vitesse": 1.0,
+   "note": "« Le traiteur est hyper bon, vous avez dû payer ça très cher. Perso, j'aurais jamais pu faire ça, moi. »",
+   "cdl": {
+    "slope": "1.0 1.0 1.0",
+    "offset": "-0.0762 -0.0762 -0.0762",
+    "power": "1.0 1.0 1.0",
+    "sat": "1.0"
+   }
+  },
+  {
+   "piste": 1,
+   "nom": "20260604_C3787",
+   "src": 4.45,
+   "dur": 3.25,
+   "rec": 228.338,
+   "look": "couleur",
+   "vitesse": 1.0,
+   "note": "« Je vous aime. Merci pour ce buffet gratuit. »",
+   "cdl": {
+    "slope": "1.0 1.0 1.0",
+    "offset": "0.0585 0.0585 0.0585",
+    "power": "1.0 1.0 1.0",
+    "sat": "1.0"
+   }
+  },
+  {
+   "piste": 1,
+   "nom": "20260604_C3797",
+   "src": 10.5,
+   "dur": 2.9,
+   "rec": 231.588,
+   "look": "couleur",
+   "vitesse": 1.0,
+   "note": "Sylvain : « C'est grâce à qui un petit peu ? C'est moi qui t'emmenais avec ton panini. »"
+  },
+  {
+   "piste": 1,
+   "nom": "20260604_C3813",
+   "src": 16.85,
+   "dur": 1.45,
+   "rec": 234.488,
+   "look": "couleur",
+   "vitesse": 1.0,
+   "note": "Ornella : « Ah, il faut que je sois une invitée ? »",
+   "cdl": {
+    "slope": "1.0 1.0 1.0",
+    "offset": "-0.0770 -0.0770 -0.0770",
+    "power": "1.0 1.0 1.0",
+    "sat": "1.0"
+   }
+  },
+  {
+   "piste": 1,
+   "nom": "20260604_C3813",
+   "src": 24.45,
+   "dur": 8.55,
+   "rec": 235.938,
+   "look": "couleur",
+   "vitesse": 1.0,
+   "note": "Ornella en invitée : « Les mariés étaient super, surtout la mariée… jolie robe, joli make-up, belle coiffure. Le marié était aussi très beau. »",
+   "cdl": {
+    "slope": "1.0 1.0 1.0",
+    "offset": "-0.0762 -0.0762 -0.0762",
+    "power": "1.0 1.0 1.0",
+    "sat": "1.0"
+   }
+  },
+  {
+   "piste": 1,
+   "nom": "FX30.5805",
+   "src": 0.5,
+   "dur": 3.6,
+   "rec": 244.488,
+   "look": "couleur",
+   "vitesse": 1.0,
+   "note": "la terrasse déserte sous la pluie",
+   "cdl": {
+    "slope": "1.0 1.0 1.0",
+    "offset": "-0.0385 -0.0385 -0.0385",
+    "power": "1.0 1.0 1.0",
+    "sat": "1.0"
+   }
+  },
+  {
+   "piste": 1,
+   "nom": "20260604_C3864",
+   "src": 2.8,
+   "dur": 4.0,
+   "rec": 248.088,
+   "look": "couleur",
+   "vitesse": 0.25,
+   "note": "la dame danse sous la pluie, bras ouverts [ralenti x4, flux optique / Speed Warp, à vérifier image par image]",
+   "stab": {
+    "fichier": "/Volumes/SSD FAST/Montage-IA/videos/phase-3/mariage-jo/_travail/stab/20260604_C3864_2.80_0.51/20260604_C3864_stabilized_agent.mov",
+    "debut_plage": 2.3,
+    "avant": 1.154,
+    "apres": 0.376
+   },
+   "cdl": {
+    "slope": "1.0 1.0 1.0",
+    "offset": "-0.0385 -0.0385 -0.0385",
+    "power": "1.0 1.0 1.0",
+    "sat": "1.0"
+   }
+  },
+  {
+   "piste": 1,
+   "nom": "20260604_C3864",
+   "src": 8.8,
+   "dur": 2.2,
+   "rec": 252.088,
+   "look": "couleur",
+   "vitesse": 1.0,
+   "note": "puis les bras levés, temps réel",
+   "stab": {
+    "fichier": "/Volumes/SSD FAST/Montage-IA/videos/phase-3/mariage-jo/_travail/stab/20260604_C3864_8.80_0.5/20260604_C3864_stabilized_agent.mov",
+    "debut_plage": 8.3,
+    "avant": 0.812,
+    "apres": 0.349
+   },
+   "cdl": {
+    "slope": "1.0 1.0 1.0",
+    "offset": "-0.0385 -0.0385 -0.0385",
+    "power": "1.0 1.0 1.0",
+    "sat": "1.0"
+   }
+  },
+  {
+   "piste": 1,
+   "nom": "20260604_C3894",
+   "src": 27.0,
+   "dur": 2.705,
+   "rec": 254.288,
+   "look": "couleur",
+   "vitesse": 0.5,
+   "note": "ouverture du bal : le couple, face à face [ralenti x2 natif]",
+   "stab": {
+    "fichier": "/Volumes/SSD FAST/Montage-IA/videos/phase-3/mariage-jo/_travail/stab/20260604_C3894_27.00_0.51/20260604_C3894_stabilized_agent.mov",
+    "debut_plage": 26.5,
+    "avant": 1.018,
+    "apres": 0.387
+   }
+  },
+  {
+   "piste": 1,
+   "nom": "20260604_C3894",
+   "src": 88.0,
+   "dur": 1.916,
+   "rec": 256.993,
+   "look": "couleur",
+   "vitesse": 1.0,
+   "note": "il l'embrasse sur la tempe",
+   "cdl": {
+    "slope": "1.0 1.0 1.0",
+    "offset": "0.0770 0.0770 0.0770",
+    "power": "1.0 1.0 1.0",
+    "sat": "1.0"
+   }
+  },
+  {
+   "piste": 1,
+   "nom": "20260604_C3922",
+   "src": 1.0,
+   "dur": 1.915,
+   "rec": 258.909,
+   "look": "couleur",
+   "vitesse": 1.0,
+   "note": "la piste explose, bras en l'air",
+   "cdl": {
+    "slope": "1.0 1.0 1.0",
+    "offset": "0.0770 0.0770 0.0770",
+    "power": "1.0 1.0 1.0",
+    "sat": "1.0"
+   }
+  },
+  {
+   "piste": 1,
+   "nom": "20260604_C3936",
+   "src": 1.8,
+   "dur": 1.916,
+   "rec": 260.824,
+   "look": "couleur",
+   "vitesse": 1.0,
+   "note": "deux femmes dansent, bras levés"
+  },
+  {
+   "piste": 1,
+   "nom": "20260604_C3911",
+   "src": 13.6,
+   "dur": 2.891,
+   "rec": 262.74,
+   "look": "couleur",
+   "vitesse": 1.0,
+   "note": "Jonathan rit, lunettes noires",
+   "stab": {
+    "fichier": "/Volumes/SSD FAST/Montage-IA/videos/phase-3/mariage-jo/_travail/stab/20260604_C3911_13.60_0.5/20260604_C3911_stabilized_agent.mov",
+    "debut_plage": 13.1,
+    "avant": 3.934,
+    "apres": 3.077
+   },
+   "cdl": {
+    "slope": "1.0 1.0 1.0",
+    "offset": "0.0770 0.0770 0.0770",
+    "power": "1.0 1.0 1.0",
+    "sat": "1.0"
+   }
+  },
+  {
+   "piste": 1,
+   "nom": "FX30.5838",
+   "src": 8.8,
+   "dur": 2.879,
+   "rec": 265.631,
+   "look": "couleur",
+   "vitesse": 1.0,
+   "note": "le père de Jonathan danse, bras levés"
+  },
+  {
+   "piste": 1,
+   "nom": "20260604_C4007",
+   "src": 11.9,
+   "dur": 1.8,
+   "rec": 268.51,
+   "look": "couleur",
+   "vitesse": 1.0,
+   "note": "« alors tiens, je te laisse l'ouvrir » (synchro)",
+   "stab": {
+    "fichier": "/Volumes/SSD FAST/Montage-IA/videos/phase-3/mariage-jo/_travail/stab/20260604_C4007_11.90_0.5/20260604_C4007_stabilized_agent.mov",
+    "debut_plage": 11.4,
+    "avant": 1.11,
+    "apres": 0.27
+   }
+  },
+  {
+   "piste": 1,
+   "nom": "20260604_C4007",
+   "src": 26.2,
+   "dur": 2.8,
+   "rec": 270.31,
+   "look": "couleur",
+   "vitesse": 1.0,
+   "note": "le maillot se déplie",
+   "cdl": {
+    "slope": "1.0 1.0 1.0",
+    "offset": "0.0770 0.0770 0.0770",
+    "power": "1.0 1.0 1.0",
+    "sat": "1.0"
+   }
+  },
+  {
+   "piste": 1,
+   "nom": "FX30.5871",
+   "src": 6.0,
+   "dur": 1.8,
+   "rec": 273.11,
+   "look": "couleur",
+   "vitesse": 1.0,
+   "note": "Jonathan tient le maillot (Quentin, serré)",
+   "cdl": {
+    "slope": "1.0 1.0 1.0",
+    "offset": "0.0577 0.0577 0.0577",
+    "power": "1.0 1.0 1.0",
+    "sat": "1.0"
+   }
+  },
+  {
+   "piste": 1,
+   "nom": "20260604_C4007",
+   "src": 43.2,
+   "dur": 1.6,
+   "rec": 274.91,
+   "look": "couleur",
+   "vitesse": 1.0,
+   "note": "le maillot en gros plan",
+   "cdl": {
+    "slope": "1.0 1.0 1.0",
+    "offset": "0.0577 0.0577 0.0577",
+    "power": "1.0 1.0 1.0",
+    "sat": "1.0"
+   }
+  },
+  {
+   "piste": 1,
+   "nom": "20260604_C4007",
+   "src": 47.6,
+   "dur": 5.9,
+   "rec": 276.51,
+   "look": "couleur",
+   "vitesse": 1.0,
+   "note": "« si jamais il gagne, frérot, c'est encore plus stylé… et donc vraisemblablement il gagne samedi soir » (synchro)",
+   "cdl": {
+    "slope": "1.0 1.0 1.0",
+    "offset": "0.0770 0.0770 0.0770",
+    "power": "1.0 1.0 1.0",
+    "sat": "1.0"
+   }
+  },
+  {
+   "piste": 1,
+   "nom": "20260604_C4008",
+   "src": 8.0,
+   "dur": 2.4,
+   "rec": 282.41,
+   "look": "couleur",
+   "vitesse": 1.0,
+   "note": "la salle exulte, serviette au vent",
+   "stab": {
+    "fichier": "/Volumes/SSD FAST/Montage-IA/videos/phase-3/mariage-jo/_travail/stab/20260604_C4008_8.00_0.5/20260604_C4008_stabilized_agent.mov",
+    "debut_plage": 7.5,
+    "avant": 2.973,
+    "apres": 1.688
+   },
+   "cdl": {
+    "slope": "1.0 1.0 1.0",
+    "offset": "0.0770 0.0770 0.0770",
+    "power": "1.0 1.0 1.0",
+    "sat": "1.0"
+   }
+  },
+  {
+   "piste": 1,
+   "nom": "20260604_C4008",
+   "src": 31.0,
+   "dur": 2.4,
+   "rec": 284.81,
+   "look": "couleur",
+   "vitesse": 1.0,
+   "note": "Jonathan brandit le maillot"
+  },
+  {
+   "piste": 1,
+   "nom": "20260604_C4009",
+   "src": 0.3,
+   "dur": 2.4,
+   "rec": 287.21,
+   "look": "couleur",
+   "vitesse": 1.0,
+   "note": "Jonathan se penche vers Naël, le maillot sur la table",
+   "cdl": {
+    "slope": "1.0 1.0 1.0",
+    "offset": "0.0770 0.0770 0.0770",
+    "power": "1.0 1.0 1.0",
+    "sat": "1.0"
+   }
+  },
+  {
+   "piste": 1,
+   "nom": "20260604_C4012",
+   "src": 3.0,
+   "dur": 1.934,
+   "rec": 289.61,
+   "look": "couleur",
+   "vitesse": 1.0,
+   "note": "la pièce montée",
+   "cdl": {
+    "slope": "1.0 1.0 1.0",
+    "offset": "0.0577 0.0577 0.0577",
+    "power": "1.0 1.0 1.0",
+    "sat": "1.0"
+   }
+  },
+  {
+   "piste": 1,
+   "nom": "20260604_C4016",
+   "src": 47.0,
+   "dur": 1.916,
+   "rec": 291.544,
+   "look": "nuit",
+   "vitesse": 1.0,
+   "note": "la salle debout, bras levés, lumière violette"
+  },
+  {
+   "piste": 1,
+   "nom": "20260604_C4017",
+   "src": 13.0,
+   "dur": 1.927,
+   "rec": 293.46,
+   "look": "nuit",
+   "vitesse": 1.0,
+   "note": "les mariés et la pièce montée",
+   "stab": {
+    "fichier": "/Volumes/SSD FAST/Montage-IA/videos/phase-3/mariage-jo/_travail/stab/20260604_C4017_13.00_0.5/20260604_C4017_stabilized_agent.mov",
+    "debut_plage": 12.5,
+    "avant": 1.823,
+    "apres": 0.528
+   },
+   "cdl": {
+    "slope": "1.0 1.0 1.0",
+    "offset": "0.0577 0.0577 0.0577",
+    "power": "1.0 1.0 1.0",
+    "sat": "1.0"
+   }
+  },
+  {
+   "piste": 1,
+   "nom": "20260604_C4029",
+   "src": 3.5,
+   "dur": 7.686,
+   "rec": 295.387,
+   "look": "nuit",
+   "vitesse": 1.0,
+   "note": "PASSAGE KINETIC (à construire) : photobooth, détourage, fonds qui changent"
+  },
+  {
+   "piste": 1,
+   "nom": "20260604_C4077",
+   "src": 1.2,
+   "dur": 0.476,
+   "rec": 303.073,
+   "look": "nuit",
+   "vitesse": 1.0,
+   "note": "rafale néon (un temps)",
+   "cdl": {
+    "slope": "1.0 1.0 1.0",
+    "offset": "0.0770 0.0770 0.0770",
+    "power": "1.0 1.0 1.0",
+    "sat": "1.0"
+   }
+  },
+  {
+   "piste": 1,
+   "nom": "20260604_C4096",
+   "src": 2.6,
+   "dur": 0.476,
+   "rec": 303.549,
+   "look": "nuit",
+   "vitesse": 1.0,
+   "note": "rafale néon (un temps)"
+  },
+  {
+   "piste": 1,
+   "nom": "20260604_C4106",
+   "src": 3.6,
+   "dur": 0.488,
+   "rec": 304.025,
+   "look": "nuit",
+   "vitesse": 1.0,
+   "note": "rafale néon (un temps)",
+   "cdl": {
+    "slope": "1.0 1.0 1.0",
+    "offset": "0.0770 0.0770 0.0770",
+    "power": "1.0 1.0 1.0",
+    "sat": "1.0"
+   }
+  },
+  {
+   "piste": 1,
+   "nom": "20260604_C4113",
+   "src": 13.6,
+   "dur": 0.464,
+   "rec": 304.513,
+   "look": "nuit",
+   "vitesse": 1.0,
+   "note": "rafale néon (un temps)",
+   "stab": {
+    "fichier": "/Volumes/SSD FAST/Montage-IA/videos/phase-3/mariage-jo/_travail/stab/20260604_C4113_13.60_0.5/20260604_C4113_stabilized_agent.mov",
+    "debut_plage": 13.1,
+    "avant": 1.417,
+    "apres": 1.035
+   },
+   "cdl": {
+    "slope": "1.0 1.0 1.0",
+    "offset": "0.0770 0.0770 0.0770",
+    "power": "1.0 1.0 1.0",
+    "sat": "1.0"
+   }
+  },
+  {
+   "piste": 1,
+   "nom": "20260604_C4126",
+   "src": 1.0,
+   "dur": 0.488,
+   "rec": 304.977,
+   "look": "nuit",
+   "vitesse": 1.0,
+   "note": "rafale néon (un temps)",
+   "stab": {
+    "fichier": "/Volumes/SSD FAST/Montage-IA/videos/phase-3/mariage-jo/_travail/stab/20260604_C4126_1.00_0.5/20260604_C4126_stabilized_agent.mov",
+    "debut_plage": 0.5,
+    "avant": 2.897,
+    "apres": 1.935
+   },
+   "cdl": {
+    "slope": "1.0 1.0 1.0",
+    "offset": "0.0770 0.0770 0.0770",
+    "power": "1.0 1.0 1.0",
+    "sat": "1.0"
+   }
+  },
+  {
+   "piste": 1,
+   "nom": "20260604_C4085",
+   "src": 2.3,
+   "dur": 0.487,
+   "rec": 305.465,
+   "look": "nuit",
+   "vitesse": 1.0,
+   "note": "rafale néon (un temps)",
+   "cdl": {
+    "slope": "1.0 1.0 1.0",
+    "offset": "0.0770 0.0770 0.0770",
+    "power": "1.0 1.0 1.0",
+    "sat": "1.0"
+   }
+  },
+  {
+   "piste": 1,
+   "nom": "FX30.5900",
+   "src": 8.0,
+   "dur": 3.832,
+   "rec": 305.952,
+   "look": "nuit",
+   "vitesse": 1.0,
+   "note": "Jonathan et Naël à la fontaine à chocolat"
+  },
+  {
+   "piste": 1,
+   "nom": "20260604_C3798",
+   "src": 6.1,
+   "dur": 1.85,
+   "rec": 309.784,
+   "look": "couleur",
+   "vitesse": 1.0,
+   "note": "« …on se revoit dans dix ans »"
+  },
+  {
+   "piste": 1,
+   "nom": "20260604_C3787",
+   "src": 14.25,
+   "dur": 1.25,
+   "rec": 311.634,
+   "look": "couleur",
+   "vitesse": 1.0,
+   "note": "« à vos dix ans dans dix ans »",
+   "cdl": {
+    "slope": "1.0 1.0 1.0",
+    "offset": "0.0200 0.0200 0.0200",
+    "power": "1.0 1.0 1.0",
+    "sat": "1.0"
+   }
+  },
+  {
+   "piste": 1,
+   "nom": "20260604_C3704",
+   "src": 7.1,
+   "dur": 2.1,
+   "rec": 312.884,
+   "look": "couleur",
+   "vitesse": 1.0,
+   "note": "« Dans dix ans, on se retrouve riche ! »",
+   "cdl": {
+    "slope": "1.0 1.0 1.0",
+    "offset": "0.0770 0.0770 0.0770",
+    "power": "1.0 1.0 1.0",
+    "sat": "1.0"
+   }
+  },
+  {
+   "piste": 1,
+   "nom": "20260604_C3696",
+   "src": 104.64,
+   "dur": 4.3,
+   "rec": 314.984,
+   "look": "couleur",
+   "vitesse": 1.0,
+   "note": "Jonathan : « Je jure, je rigole pas : dans dix ans, on refait la même chose ! » (synchro)",
+   "cdl": {
+    "slope": "1.0 1.0 1.0",
+    "offset": "0.0577 0.0577 0.0577",
+    "power": "1.0 1.0 1.0",
+    "sat": "1.0"
+   }
+  },
+  {
+   "piste": 1,
+   "nom": "20260604_C4169",
+   "src": 0.0,
+   "dur": 1.85,
+   "rec": 319.284,
+   "look": "nuit",
+   "vitesse": 1.0,
+   "note": "rires sur la terrasse de nuit",
+   "cdl": {
+    "slope": "1.0 1.0 1.0",
+    "offset": "0.0393 0.0393 0.0393",
+    "power": "1.0 1.0 1.0",
+    "sat": "1.0"
+   }
+  },
+  {
+   "piste": 1,
+   "nom": "20260604_C4166",
+   "src": 4.5,
+   "dur": 3.5,
+   "rec": 321.134,
+   "look": "nuit",
+   "vitesse": 1.0,
+   "note": "rires sur la terrasse de nuit"
+  }
+ ],
+ "audio": [
+  {
+   "piste": 1,
+   "fichier": "/Volumes/SSD FAST/MARIAGE JO/RUSH/SON HF/REC052.WAV",
+   "src": 1358.4,
+   "dur": 40.97,
+   "rec": 0.0,
+   "gain": 7.1,
+   "fin": 0.15,
+   "fout": 1.2,
+   "note": "voix de Jonathan, HF",
+   "gain_brut": 0.0,
+   "role": "voix",
+   "loudness": -24.1
+  },
+  {
+   "piste": 2,
+   "fichier": "/Volumes/SSD FAST/MARIAGE JO/RUSH/SON ZOOM/040626-175038.WAV",
+   "src": 235.42,
+   "dur": 40.97,
+   "rec": 0.0,
+   "gain": -6.7,
+   "fin": 0.3,
+   "fout": 1.2,
+   "note": "salle (Zoom) : rires",
+   "gain_brut": -12.0,
+   "role": "salle_sous",
+   "loudness": -24.3
+  },
+  {
+   "piste": 3,
+   "fichier": "/Volumes/SSD FAST/MARIAGE JO/MUSIQUE/I Got a Woman (Remastered)_320k.mp3",
+   "src": 0.0,
+   "dur": 39.932,
+   "rec": 40.97,
+   "gain": -1.3,
+   "fin": 0.0,
+   "fout": 0.04,
+   "note": "I Got a Woman : début",
+   "gain_brut": -6.0,
+   "role": "musique",
+   "loudness": -15.7
+  },
+  {
+   "piste": 2,
+   "fichier": "/Volumes/SSD FAST/MARIAGE JO/RUSH/SON ZOOM/040626-161726.WAV",
+   "src": 4615.08,
+   "dur": 5.4,
+   "rec": 80.862,
+   "gain": -2.6,
+   "fin": 0.3,
+   "fout": 0.4,
+   "note": "applaudissements de l'entrée (Zoom)",
+   "gain_brut": -8.0,
+   "role": "salle_seule",
+   "loudness": -18.4
+  },
+  {
+   "piste": 3,
+   "fichier": "/Volumes/SSD FAST/MARIAGE JO/MUSIQUE/la-maritza-instrumental-skdr-22.wav",
+   "src": 0.0,
+   "dur": 9.0,
+   "rec": 80.862,
+   "gain": -16.9,
+   "fin": 0.5,
+   "fout": 3.0,
+   "note": "La Maritza, intro douce, s'éteint sous l'officiant",
+   "gain_brut": -14.0,
+   "role": "musique_sous",
+   "loudness": -14.1
+  },
+  {
+   "piste": 1,
+   "fichier": "/Volumes/SSD FAST/MARIAGE JO/RUSH/SON HF/REC052.WAV",
+   "src": 181.35,
+   "dur": 2.55,
+   "rec": 86.062,
+   "gain": 0.1,
+   "fin": 0.06,
+   "fout": 0.08,
+   "note": "« Il va y avoir plein de mauvaises blagues. » TRICHE : officiant bras tendu (HF 160) ; Jonathan plié de rire (HF 178)",
+   "gain_brut": 0.0,
+   "role": "voix",
+   "loudness": -17.1
+  },
+  {
+   "piste": 2,
+   "fichier": "/Volumes/SSD FAST/MARIAGE JO/RUSH/SON ZOOM/040626-161726.WAV",
+   "src": 4650.18,
+   "dur": 3.05,
+   "rec": 85.812,
+   "gain": -13.1,
+   "fin": 0.25,
+   "fout": 0.25,
+   "note": "salle",
+   "gain_brut": -13.0,
+   "role": "salle_sous",
+   "loudness": -17.9
+  },
+  {
+   "piste": 1,
+   "fichier": "/Volumes/SSD FAST/MARIAGE JO/RUSH/SON HF/REC052.WAV",
+   "src": 218.3,
+   "dur": 3.45,
+   "rec": 88.612,
+   "gain": 9.0,
+   "fin": 0.06,
+   "fout": 0.08,
+   "note": "« …des excuses concernant la température et le temps, la météo. » (synchro)",
+   "gain_brut": 0.0,
+   "role": "voix",
+   "loudness": -26.0
+  },
+  {
+   "piste": 2,
+   "fichier": "/Volumes/SSD FAST/MARIAGE JO/RUSH/SON ZOOM/040626-161726.WAV",
+   "src": 4687.13,
+   "dur": 3.95,
+   "rec": 88.362,
+   "gain": -8.9,
+   "fin": 0.25,
+   "fout": 0.25,
+   "note": "salle",
+   "gain_brut": -13.0,
+   "role": "salle_sous",
+   "loudness": -22.1
+  },
+  {
+   "piste": 1,
+   "fichier": "/Volumes/SSD FAST/MARIAGE JO/RUSH/SON HF/REC052.WAV",
+   "src": 223.95,
+   "dur": 4.7,
+   "rec": 92.062,
+   "gain": 6.6,
+   "fin": 0.06,
+   "fout": 0.08,
+   "note": "« certains détracteurs trouvaient que c'était de ma faute. Ils n'ont pas tort. » TRICHE : invités qui rient (HF 249)",
+   "gain_brut": 0.0,
+   "role": "voix",
+   "loudness": -23.6
+  },
+  {
+   "piste": 2,
+   "fichier": "/Volumes/SSD FAST/MARIAGE JO/RUSH/SON ZOOM/040626-161726.WAV",
+   "src": 4692.78,
+   "dur": 5.2,
+   "rec": 91.812,
+   "gain": -12.6,
+   "fin": 0.25,
+   "fout": 0.25,
+   "note": "salle",
+   "gain_brut": -13.0,
+   "role": "salle_sous",
+   "loudness": -18.4
+  },
+  {
+   "piste": 1,
+   "fichier": "/Volumes/SSD FAST/MARIAGE JO/RUSH/SON HF/REC052.WAV",
+   "src": 229.7,
+   "dur": 3.3,
+   "rec": 96.762,
+   "gain": 6.4,
+   "fin": 0.06,
+   "fout": 0.08,
+   "note": "« Donc il y aura de l'orage tout à l'heure. Ne m'en voulez pas. » TRICHE : l'officiant de dos qui lit (HF 315), le synchro finissait sur un fouetté",
+   "gain_brut": 0.0,
+   "role": "voix",
+   "loudness": -23.4
+  },
+  {
+   "piste": 2,
+   "fichier": "/Volumes/SSD FAST/MARIAGE JO/RUSH/SON ZOOM/040626-161726.WAV",
+   "src": 4698.53,
+   "dur": 3.8,
+   "rec": 96.512,
+   "gain": -11.6,
+   "fin": 0.25,
+   "fout": 0.25,
+   "note": "salle",
+   "gain_brut": -13.0,
+   "role": "salle_sous",
+   "loudness": -19.4
+  },
+  {
+   "piste": 1,
+   "fichier": "/Volumes/SSD FAST/MARIAGE JO/RUSH/SON HF/REC052.WAV",
+   "src": 254.55,
+   "dur": 3.75,
+   "rec": 100.062,
+   "gain": 5.6,
+   "fin": 0.06,
+   "fout": 0.08,
+   "note": "« On n'a pas besoin de voir le ciel quand on a quelqu'un à regarder. » TRICHE : Ornella et Jonathan (HF 176)",
+   "gain_brut": 0.0,
+   "role": "voix",
+   "loudness": -22.6
+  },
+  {
+   "piste": 2,
+   "fichier": "/Volumes/SSD FAST/MARIAGE JO/RUSH/SON ZOOM/040626-161726.WAV",
+   "src": 4723.38,
+   "dur": 4.25,
+   "rec": 99.812,
+   "gain": -11.5,
+   "fin": 0.25,
+   "fout": 0.25,
+   "note": "salle",
+   "gain_brut": -13.0,
+   "role": "salle_sous",
+   "loudness": -19.5
+  },
+  {
+   "piste": 1,
+   "fichier": "/Volumes/SSD FAST/MARIAGE JO/RUSH/SON HF/REC052.WAV",
+   "src": 259.55,
+   "dur": 5.05,
+   "rec": 103.812,
+   "gain": 7.3,
+   "fin": 0.06,
+   "fout": 0.08,
+   "note": "« Nous, les célibataires, on va se faire foutre. » + rires (synchro)",
+   "gain_brut": 0.0,
+   "role": "voix",
+   "loudness": -24.3
+  },
+  {
+   "piste": 2,
+   "fichier": "/Volumes/SSD FAST/MARIAGE JO/RUSH/SON ZOOM/040626-161726.WAV",
+   "src": 4728.38,
+   "dur": 5.55,
+   "rec": 103.562,
+   "gain": -11.5,
+   "fin": 0.25,
+   "fout": 0.25,
+   "note": "salle",
+   "gain_brut": -13.0,
+   "role": "salle_sous",
+   "loudness": -19.5
+  },
+  {
+   "piste": 1,
+   "fichier": "/Volumes/SSD FAST/MARIAGE JO/RUSH/SON HF/REC052.WAV",
+   "src": 351.8,
+   "dur": 2.85,
+   "rec": 108.862,
+   "gain": 6.1,
+   "fin": 0.06,
+   "fout": 0.08,
+   "note": "« …et surtout, ils ont eu Naël. » ; Naël TRICHE (HF 320)",
+   "gain_brut": 0.0,
+   "role": "voix",
+   "loudness": -23.1
+  },
+  {
+   "piste": 2,
+   "fichier": "/Volumes/SSD FAST/MARIAGE JO/RUSH/SON ZOOM/040626-161726.WAV",
+   "src": 4820.63,
+   "dur": 3.35,
+   "rec": 108.612,
+   "gain": -12.6,
+   "fin": 0.25,
+   "fout": 0.25,
+   "note": "salle",
+   "gain_brut": -13.0,
+   "role": "salle_sous",
+   "loudness": -18.4
+  },
+  {
+   "piste": 1,
+   "fichier": "/Volumes/SSD FAST/MARIAGE JO/RUSH/SON HF/REC052.WAV",
+   "src": 358.1,
+   "dur": 2.5,
+   "rec": 111.712,
+   "gain": 4.6,
+   "fin": 0.06,
+   "fout": 0.08,
+   "note": "« Ce petit être céleste » ; Naël (synchro à 1 s près)",
+   "gain_brut": 0.0,
+   "role": "voix",
+   "loudness": -21.6
+  },
+  {
+   "piste": 2,
+   "fichier": "/Volumes/SSD FAST/MARIAGE JO/RUSH/SON ZOOM/040626-161726.WAV",
+   "src": 4826.93,
+   "dur": 3.0,
+   "rec": 111.462,
+   "gain": -12.7,
+   "fin": 0.25,
+   "fout": 0.25,
+   "note": "salle",
+   "gain_brut": -13.0,
+   "role": "salle_sous",
+   "loudness": -18.3
+  },
+  {
+   "piste": 1,
+   "fichier": "/Volumes/SSD FAST/MARIAGE JO/RUSH/SON HF/REC052.WAV",
+   "src": 372.15,
+   "dur": 5.85,
+   "rec": 114.212,
+   "gain": 4.1,
+   "fin": 0.06,
+   "fout": 0.08,
+   "note": "« Naël, je pense que tout le monde ici sera d'accord pour dire que c'est un enfant génial ? » TRICHE : Naël 13 s avant",
+   "gain_brut": 0.0,
+   "role": "voix",
+   "loudness": -21.1
+  },
+  {
+   "piste": 2,
+   "fichier": "/Volumes/SSD FAST/MARIAGE JO/RUSH/SON ZOOM/040626-161726.WAV",
+   "src": 4840.98,
+   "dur": 6.35,
+   "rec": 113.962,
+   "gain": -13.2,
+   "fin": 0.25,
+   "fout": 0.25,
+   "note": "salle",
+   "gain_brut": -13.0,
+   "role": "salle_sous",
+   "loudness": -17.8
+  },
+  {
+   "piste": 1,
+   "fichier": "/Volumes/SSD FAST/MARIAGE JO/RUSH/SON HF/REC052.WAV",
+   "src": 501.3,
+   "dur": 6.85,
+   "rec": 120.062,
+   "gain": 7.3,
+   "fin": 0.06,
+   "fout": 0.08,
+   "note": "« La première fois, on se marie sur une promesse, et la deuxième fois, sur des preuves. » TRICHE : larges (HF 513 et 307)",
+   "gain_brut": 0.0,
+   "role": "voix",
+   "loudness": -24.3
+  },
+  {
+   "piste": 2,
+   "fichier": "/Volumes/SSD FAST/MARIAGE JO/RUSH/SON ZOOM/040626-161726.WAV",
+   "src": 4970.13,
+   "dur": 7.35,
+   "rec": 119.812,
+   "gain": -9.1,
+   "fin": 0.25,
+   "fout": 0.25,
+   "note": "salle",
+   "gain_brut": -13.0,
+   "role": "salle_sous",
+   "loudness": -21.9
+  },
+  {
+   "piste": 1,
+   "fichier": "/Volumes/SSD FAST/MARIAGE JO/RUSH/SON HF/REC052.WAV",
+   "src": 508.15,
+   "dur": 4.15,
+   "rec": 126.912,
+   "gain": 8.4,
+   "fin": 0.06,
+   "fout": 0.08,
+   "note": "« On dit que l'amour rend aveugle. C'est pour les célibataires. » TRICHE : les mariés rient (HF 575)",
+   "gain_brut": 0.0,
+   "role": "voix",
+   "loudness": -25.4
+  },
+  {
+   "piste": 2,
+   "fichier": "/Volumes/SSD FAST/MARIAGE JO/RUSH/SON ZOOM/040626-161726.WAV",
+   "src": 4976.98,
+   "dur": 4.65,
+   "rec": 126.662,
+   "gain": -8.5,
+   "fin": 0.25,
+   "fout": 0.25,
+   "note": "salle",
+   "gain_brut": -13.0,
+   "role": "salle_sous",
+   "loudness": -22.5
+  },
+  {
+   "piste": 1,
+   "fichier": "/Volumes/SSD FAST/MARIAGE JO/RUSH/SON HF/REC052.WAV",
+   "src": 1004.9,
+   "dur": 4.8,
+   "rec": 131.062,
+   "gain": 18.0,
+   "fin": 0.06,
+   "fout": 0.08,
+   "note": "Ornella : « Mon mari, » TRICHE 4 s (même plan)",
+   "gain_brut": 0.0,
+   "role": "voix",
+   "loudness": -42.6
+  },
+  {
+   "piste": 2,
+   "fichier": "/Volumes/SSD FAST/MARIAGE JO/RUSH/SON ZOOM/040626-161726.WAV",
+   "src": 5473.73,
+   "dur": 5.3,
+   "rec": 130.812,
+   "gain": 10.3,
+   "fin": 0.25,
+   "fout": 0.25,
+   "note": "salle",
+   "gain_brut": -13.0,
+   "role": "salle_sous",
+   "loudness": -41.3
+  },
+  {
+   "piste": 1,
+   "fichier": "/Volumes/SSD FAST/MARIAGE JO/RUSH/SON HF/REC052.WAV",
+   "src": 1014.05,
+   "dur": 4.8,
+   "rec": 135.862,
+   "gain": 18.0,
+   "fin": 0.06,
+   "fout": 0.08,
+   "note": "« nous nous sommes rencontrés il y a 13 ans et depuis ce jour, on ne s'est plus lâchés. » (synchro)",
+   "gain_brut": 0.0,
+   "role": "voix",
+   "loudness": -37.0
+  },
+  {
+   "piste": 2,
+   "fichier": "/Volumes/SSD FAST/MARIAGE JO/RUSH/SON ZOOM/040626-161726.WAV",
+   "src": 5482.88,
+   "dur": 5.3,
+   "rec": 135.612,
+   "gain": 5.5,
+   "fin": 0.25,
+   "fout": 0.25,
+   "note": "salle",
+   "gain_brut": -13.0,
+   "role": "salle_sous",
+   "loudness": -36.5
+  },
+  {
+   "piste": 1,
+   "fichier": "/Volumes/SSD FAST/MARIAGE JO/RUSH/SON HF/REC052.WAV",
+   "src": 1095.6,
+   "dur": 4.0,
+   "rec": 140.662,
+   "gain": 16.7,
+   "fin": 0.06,
+   "fout": 0.08,
+   "note": "« Et puis il y a Naël. Notre plus belle aventure. » ; Naël TRICHE (6 s après)",
+   "gain_brut": 0.0,
+   "role": "voix",
+   "loudness": -33.7
+  },
+  {
+   "piste": 2,
+   "fichier": "/Volumes/SSD FAST/MARIAGE JO/RUSH/SON ZOOM/040626-161726.WAV",
+   "src": 5564.43,
+   "dur": 4.5,
+   "rec": 140.412,
+   "gain": 4.0,
+   "fin": 0.25,
+   "fout": 0.25,
+   "note": "salle",
+   "gain_brut": -13.0,
+   "role": "salle_sous",
+   "loudness": -35.0
+  },
+  {
+   "piste": 1,
+   "fichier": "/Volumes/SSD FAST/MARIAGE JO/RUSH/SON HF/REC052.WAV",
+   "src": 1185.3,
+   "dur": 6.2,
+   "rec": 144.662,
+   "gain": 17.4,
+   "fin": 0.06,
+   "fout": 0.08,
+   "note": "« Alors je redis oui. Un oui encore plus fort… qu'il y a dix ans. » (synchro)",
+   "gain_brut": 0.0,
+   "role": "voix",
+   "loudness": -34.4
+  },
+  {
+   "piste": 2,
+   "fichier": "/Volumes/SSD FAST/MARIAGE JO/RUSH/SON ZOOM/040626-175038.WAV",
+   "src": 62.07,
+   "dur": 6.7,
+   "rec": 144.412,
+   "gain": 4.9,
+   "fin": 0.25,
+   "fout": 0.25,
+   "note": "salle",
+   "gain_brut": -13.0,
+   "role": "salle_sous",
+   "loudness": -35.9
+  },
+  {
+   "piste": 1,
+   "fichier": "/Volumes/SSD FAST/MARIAGE JO/RUSH/SON HF/REC052.WAV",
+   "src": 1597.85,
+   "dur": 4.9,
+   "rec": 150.862,
+   "gain": 13.0,
+   "fin": 0.06,
+   "fout": 0.08,
+   "note": "« la femme parfaite n'existe pas, mais toi, tu es la femme parfaite pour moi. » ; Ornella TRICHE (5 s après)",
+   "gain_brut": 0.0,
+   "role": "voix",
+   "loudness": -30.0
+  },
+  {
+   "piste": 2,
+   "fichier": "/Volumes/SSD FAST/MARIAGE JO/RUSH/SON ZOOM/040626-175038.WAV",
+   "src": 474.62,
+   "dur": 5.4,
+   "rec": 150.612,
+   "gain": -1.3,
+   "fin": 0.25,
+   "fout": 0.25,
+   "note": "salle",
+   "gain_brut": -13.0,
+   "role": "salle_sous",
+   "loudness": -29.7
+  },
+  {
+   "piste": 1,
+   "fichier": "/Volumes/SSD FAST/MARIAGE JO/RUSH/SON HF/REC052.WAV",
+   "src": 1646.85,
+   "dur": 11.75,
+   "rec": 155.762,
+   "gain": 6.5,
+   "fin": 0.06,
+   "fout": 0.08,
+   "note": "« je vais te faire une vraie demande cette fois-ci… à genoux… ma femme pour les dix prochaines années » (synchro)",
+   "gain_brut": 0.0,
+   "role": "voix",
+   "loudness": -23.5
+  },
+  {
+   "piste": 2,
+   "fichier": "/Volumes/SSD FAST/MARIAGE JO/RUSH/SON ZOOM/040626-175038.WAV",
+   "src": 523.62,
+   "dur": 12.25,
+   "rec": 155.512,
+   "gain": -5.8,
+   "fin": 0.25,
+   "fout": 0.25,
+   "note": "salle",
+   "gain_brut": -13.0,
+   "role": "salle_sous",
+   "loudness": -25.2
+  },
+  {
+   "piste": 1,
+   "fichier": "/Volumes/SSD FAST/MARIAGE JO/RUSH/SON HF/REC052.WAV",
+   "src": 1658.6,
+   "dur": 4.8,
+   "rec": 167.512,
+   "gain": 2.5,
+   "fin": 0.06,
+   "fout": 0.08,
+   "note": "ils s'enlacent, la salle applaudit (Quentin, synchro)",
+   "gain_brut": -6.0,
+   "role": "voix",
+   "loudness": -19.5
+  },
+  {
+   "piste": 2,
+   "fichier": "/Volumes/SSD FAST/MARIAGE JO/RUSH/SON ZOOM/040626-175038.WAV",
+   "src": 535.37,
+   "dur": 5.3,
+   "rec": 167.262,
+   "gain": -14.3,
+   "fin": 0.25,
+   "fout": 0.25,
+   "note": "salle",
+   "gain_brut": -6.0,
+   "role": "salle_seule",
+   "loudness": -6.7
+  },
+  {
+   "piste": 1,
+   "fichier": "/Volumes/SSD FAST/MARIAGE JO/RUSH/SON HF/REC052.WAV",
+   "src": 1693.15,
+   "dur": 2.15,
+   "rec": 172.312,
+   "gain": 17.8,
+   "fin": 0.06,
+   "fout": 0.08,
+   "note": "« Dans dix ans, ce sera un collier. » (synchro)",
+   "gain_brut": 0.0,
+   "role": "voix",
+   "loudness": -34.8
+  },
+  {
+   "piste": 2,
+   "fichier": "/Volumes/SSD FAST/MARIAGE JO/RUSH/SON ZOOM/040626-175038.WAV",
+   "src": 569.92,
+   "dur": 2.65,
+   "rec": 172.062,
+   "gain": 1.0,
+   "fin": 0.25,
+   "fout": 0.25,
+   "note": "salle",
+   "gain_brut": -13.0,
+   "role": "salle_sous",
+   "loudness": -32.0
+  },
+  {
+   "piste": 1,
+   "fichier": "/Volumes/SSD FAST/MARIAGE JO/RUSH/SON HF/REC052.WAV",
+   "src": 1700.8,
+   "dur": 8.1,
+   "rec": 174.462,
+   "gain": 3.4,
+   "fin": 0.06,
+   "fout": 0.08,
+   "note": "« à cette enfant céleste, Naël, de venir leur donner leur bracelet… On applaudit Naël » (synchro)",
+   "gain_brut": 0.0,
+   "role": "voix",
+   "loudness": -20.4
+  },
+  {
+   "piste": 2,
+   "fichier": "/Volumes/SSD FAST/MARIAGE JO/RUSH/SON ZOOM/040626-175038.WAV",
+   "src": 577.57,
+   "dur": 8.6,
+   "rec": 174.212,
+   "gain": -11.5,
+   "fin": 0.25,
+   "fout": 0.25,
+   "note": "salle",
+   "gain_brut": -13.0,
+   "role": "salle_sous",
+   "loudness": -19.5
+  },
+  {
+   "piste": 1,
+   "fichier": "/Volumes/SSD FAST/MARIAGE JO/RUSH/SON HF/REC052.WAV",
+   "src": 1797.15,
+   "dur": 7.0,
+   "rec": 182.562,
+   "gain": 7.0,
+   "fin": 0.06,
+   "fout": 0.08,
+   "note": "« acceptes-tu de reprendre pour épouse Ornella » (synchro)",
+   "gain_brut": 0.0,
+   "role": "voix",
+   "loudness": -24.0
+  },
+  {
+   "piste": 2,
+   "fichier": "/Volumes/SSD FAST/MARIAGE JO/RUSH/SON ZOOM/040626-175038.WAV",
+   "src": 673.92,
+   "dur": 7.5,
+   "rec": 182.312,
+   "gain": -10.9,
+   "fin": 0.25,
+   "fout": 0.25,
+   "note": "salle",
+   "gain_brut": -13.0,
+   "role": "salle_sous",
+   "loudness": -20.1
+  },
+  {
+   "piste": 1,
+   "fichier": "/Volumes/SSD FAST/MARIAGE JO/RUSH/SON HF/REC052.WAV",
+   "src": 1806.6,
+   "dur": 4.4,
+   "rec": 189.562,
+   "gain": 2.7,
+   "fin": 0.06,
+   "fout": 0.08,
+   "note": "« Oui, pour les dix prochaines années. » Ornella rit (synchro)",
+   "gain_brut": 0.0,
+   "role": "voix",
+   "loudness": -19.7
+  },
+  {
+   "piste": 2,
+   "fichier": "/Volumes/SSD FAST/MARIAGE JO/RUSH/SON ZOOM/040626-175038.WAV",
+   "src": 683.37,
+   "dur": 4.9,
+   "rec": 189.312,
+   "gain": -11.2,
+   "fin": 0.25,
+   "fout": 0.25,
+   "note": "salle",
+   "gain_brut": -13.0,
+   "role": "salle_sous",
+   "loudness": -19.8
+  },
+  {
+   "piste": 1,
+   "fichier": "/Volumes/SSD FAST/MARIAGE JO/RUSH/SON HF/REC052.WAV",
+   "src": 1813.3,
+   "dur": 5.05,
+   "rec": 193.962,
+   "gain": -2.3,
+   "fin": 0.06,
+   "fout": 0.08,
+   "note": "« je crois que j'ai l'honneur de vous déclarer re-mari et re-femme. » (synchro)",
+   "gain_brut": 0.0,
+   "role": "voix",
+   "loudness": -14.7
+  },
+  {
+   "piste": 2,
+   "fichier": "/Volumes/SSD FAST/MARIAGE JO/RUSH/SON ZOOM/040626-175038.WAV",
+   "src": 690.07,
+   "dur": 5.55,
+   "rec": 193.712,
+   "gain": -17.3,
+   "fin": 0.25,
+   "fout": 0.25,
+   "note": "salle",
+   "gain_brut": -13.0,
+   "role": "salle_sous",
+   "loudness": -13.7
+  },
+  {
+   "piste": 1,
+   "fichier": "/Volumes/SSD FAST/MARIAGE JO/RUSH/SON HF/REC052.WAV",
+   "src": 1822.5,
+   "dur": 3.5,
+   "rec": 199.012,
+   "gain": -5.0,
+   "fin": 0.05,
+   "fout": 1.0,
+   "note": "« Bravo ! »",
+   "gain_brut": -4.0,
+   "role": "voix",
+   "loudness": -12.0
+  },
+  {
+   "piste": 2,
+   "fichier": "/Volumes/SSD FAST/MARIAGE JO/RUSH/SON ZOOM/040626-175038.WAV",
+   "src": 699.52,
+   "dur": 9.0,
+   "rec": 199.012,
+   "gain": -14.9,
+   "fin": 0.1,
+   "fout": 2.5,
+   "note": "applaudissements (Zoom)",
+   "gain_brut": -7.0,
+   "role": "salle_seule",
+   "loudness": -6.1
+  },
+  {
+   "piste": 3,
+   "fichier": "/Volumes/SSD FAST/MARIAGE JO/MUSIQUE/la-maritza-instrumental-skdr-22.wav",
+   "src": 23.708,
+   "dur": 23.276,
+   "rec": 199.012,
+   "gain": -4.6,
+   "fin": 0.0,
+   "fout": 0.3,
+   "note": "La Maritza depuis le temps fort (23,5 s), sous le baiser, les applaudissements et le cocktail ; baissée sous les petits mots (gain réglé au mixage)",
+   "gain_brut": -9.0,
+   "role": "musique",
+   "loudness": -12.4
+  },
+  {
+   "piste": 1,
+   "fichier": "/Volumes/SSD FAST/MARIAGE JO/RUSH/DIEGO/private/M4ROOT/CLIP/20260604_C3789.MP4",
+   "src": 8.6,
+   "dur": 6.35,
+   "rec": 221.988,
+   "gain": 1.2,
+   "fin": 0.05,
+   "fout": 0.12,
+   "note": "petit mot (son caméra)",
+   "gain_brut": 2.0,
+   "role": "voix",
+   "loudness": -18.2
+  },
+  {
+   "piste": 1,
+   "fichier": "/Volumes/SSD FAST/MARIAGE JO/RUSH/DIEGO/private/M4ROOT/CLIP/20260604_C3787.MP4",
+   "src": 4.45,
+   "dur": 3.25,
+   "rec": 228.338,
+   "gain": 2.9,
+   "fin": 0.05,
+   "fout": 0.12,
+   "note": "petit mot (son caméra)",
+   "gain_brut": 2.0,
+   "role": "voix",
+   "loudness": -19.9
+  },
+  {
+   "piste": 1,
+   "fichier": "/Volumes/SSD FAST/MARIAGE JO/RUSH/DIEGO/private/M4ROOT/CLIP/20260604_C3797.MP4",
+   "src": 10.5,
+   "dur": 2.9,
+   "rec": 231.588,
+   "gain": -0.8,
+   "fin": 0.05,
+   "fout": 0.12,
+   "note": "petit mot (son caméra)",
+   "gain_brut": 2.0,
+   "role": "voix",
+   "loudness": -16.2
+  },
+  {
+   "piste": 1,
+   "fichier": "/Volumes/SSD FAST/MARIAGE JO/RUSH/DIEGO/private/M4ROOT/CLIP/20260604_C3813.MP4",
+   "src": 16.85,
+   "dur": 1.45,
+   "rec": 234.488,
+   "gain": -0.3,
+   "fin": 0.05,
+   "fout": 0.12,
+   "note": "petit mot (son caméra)",
+   "gain_brut": 2.0,
+   "role": "voix",
+   "loudness": -16.7
+  },
+  {
+   "piste": 1,
+   "fichier": "/Volumes/SSD FAST/MARIAGE JO/RUSH/DIEGO/private/M4ROOT/CLIP/20260604_C3813.MP4",
+   "src": 24.45,
+   "dur": 8.55,
+   "rec": 235.938,
+   "gain": 3.4,
+   "fin": 0.05,
+   "fout": 0.12,
+   "note": "petit mot (son caméra)",
+   "gain_brut": 2.0,
+   "role": "voix",
+   "loudness": -20.4
+  },
+  {
+   "piste": 3,
+   "fichier": "/Volumes/SSD FAST/MARIAGE JO/MUSIQUE/la-maritza-instrumental-skdr-22.wav",
+   "src": 46.684,
+   "dur": 23.0,
+   "rec": 221.988,
+   "gain": -18.4,
+   "fin": 0.3,
+   "fout": 0.5,
+   "note": "La Maritza baissée sous les petits mots",
+   "gain_brut": -24.0,
+   "role": "musique_sous",
+   "loudness": -12.6
+  },
+  {
+   "piste": 2,
+   "fichier": "/Volumes/SSD FAST/MARIAGE JO/RUSH/QUENTIN/PRIVATE/M4ROOT/CLIP/FX30.5805.MP4",
+   "src": 0.5,
+   "dur": 3.6,
+   "rec": 244.488,
+   "gain": -6.1,
+   "fin": 0.3,
+   "fout": 0.2,
+   "note": "pluie (son caméra)",
+   "gain_brut": 0.0,
+   "role": "salle_seule",
+   "loudness": -14.9
+  },
+  {
+   "piste": 1,
+   "fichier": "/Volumes/SSD FAST/MARIAGE JO/RUSH/SON HF/REC052.WAV",
+   "src": 243.0,
+   "dur": 5.8,
+   "rec": 245.088,
+   "gain": 4.8,
+   "fin": 0.05,
+   "fout": 0.3,
+   "note": "rappel : « Mariage sous la flotte, culotte qui gigote. » (officiant, 17:36)",
+   "gain_brut": 0.0,
+   "role": "voix",
+   "loudness": -21.8
+  },
+  {
+   "piste": 2,
+   "fichier": "/Volumes/SSD FAST/MARIAGE JO/RUSH/DIEGO/private/M4ROOT/CLIP/20260604_C3864.MP4",
+   "src": 1.0,
+   "dur": 6.2,
+   "rec": 248.088,
+   "gain": -2.8,
+   "fin": 0.2,
+   "fout": 0.4,
+   "note": "pluie, rires (son caméra, décalé)",
+   "gain_brut": 0.0,
+   "role": "salle_seule",
+   "loudness": -18.2
+  },
+  {
+   "piste": 3,
+   "fichier": "/Volumes/SSD FAST/MARIAGE JO/MUSIQUE/youtube video #U2ClfSuxjhU_320k.mp3",
+   "src": 0.0,
+   "dur": 14.622,
+   "rec": 254.288,
+   "gain": -7.1,
+   "fin": 0.0,
+   "fout": 0.4,
+   "note": "remix : le bal",
+   "gain_brut": -8.0,
+   "role": "musique",
+   "loudness": -9.9
+  },
+  {
+   "piste": 1,
+   "fichier": "/Volumes/SSD FAST/MARIAGE JO/RUSH/DIEGO/private/M4ROOT/CLIP/20260604_C4007.MP4",
+   "src": 11.9,
+   "dur": 1.8,
+   "rec": 268.51,
+   "gain": 4.8,
+   "fin": 0.05,
+   "fout": 0.1,
+   "note": "son direct",
+   "gain_brut": 4.0,
+   "role": "voix",
+   "loudness": -21.8
+  },
+  {
+   "piste": 1,
+   "fichier": "/Volumes/SSD FAST/MARIAGE JO/RUSH/DIEGO/private/M4ROOT/CLIP/20260604_C4007.MP4",
+   "src": 17.4,
+   "dur": 4.2,
+   "rec": 269.71,
+   "gain": -3.4,
+   "fin": 0.05,
+   "fout": 0.2,
+   "note": "« mais il a été signé par … » (son décalé sur l'image : triche son)",
+   "gain_brut": 4.0,
+   "role": "voix",
+   "loudness": -13.6
+  },
+  {
+   "piste": 1,
+   "fichier": "/Volumes/SSD FAST/MARIAGE JO/RUSH/DIEGO/private/M4ROOT/CLIP/20260604_C4007.MP4",
+   "src": 47.6,
+   "dur": 5.9,
+   "rec": 276.51,
+   "gain": 0.2,
+   "fin": 0.05,
+   "fout": 0.15,
+   "note": "son direct",
+   "gain_brut": 4.0,
+   "role": "voix",
+   "loudness": -17.2
+  },
+  {
+   "piste": 2,
+   "fichier": "/Volumes/SSD FAST/MARIAGE JO/RUSH/DIEGO/private/M4ROOT/CLIP/20260604_C4008.MP4",
+   "src": 8.0,
+   "dur": 2.4,
+   "rec": 282.41,
+   "gain": -7.7,
+   "fin": 0.05,
+   "fout": 0.2,
+   "note": "cris",
+   "gain_brut": 0.0,
+   "role": "salle_seule",
+   "loudness": -13.3
+  },
+  {
+   "piste": 3,
+   "fichier": "/Volumes/SSD FAST/MARIAGE JO/MUSIQUE/youtube video #U2ClfSuxjhU_320k.mp3",
+   "src": 14.222,
+   "dur": 21.1,
+   "rec": 268.51,
+   "gain": -20.1,
+   "fin": 0.3,
+   "fout": 0.3,
+   "note": "remix très bas sous le maillot",
+   "gain_brut": -26.0,
+   "role": "musique_sous",
+   "loudness": -10.9
+  },
+  {
+   "piste": 3,
+   "fichier": "/Volumes/SSD FAST/MARIAGE JO/MUSIQUE/youtube video #U2ClfSuxjhU_320k.mp3",
+   "src": 35.322,
+   "dur": 20.674,
+   "rec": 289.61,
+   "gain": -7.6,
+   "fin": 0.4,
+   "fout": 0.5,
+   "note": "remix : la fête",
+   "gain_brut": -8.0,
+   "role": "musique",
+   "loudness": -9.4
+  },
+  {
+   "piste": 1,
+   "fichier": "/Volumes/SSD FAST/MARIAGE JO/RUSH/DIEGO/private/M4ROOT/CLIP/20260604_C3798.MP4",
+   "src": 6.1,
+   "dur": 1.85,
+   "rec": 309.784,
+   "gain": 0.3,
+   "fin": 0.05,
+   "fout": 0.12,
+   "note": "petit mot (son caméra)",
+   "gain_brut": 2.0,
+   "role": "voix",
+   "loudness": -17.3
+  },
+  {
+   "piste": 1,
+   "fichier": "/Volumes/SSD FAST/MARIAGE JO/RUSH/DIEGO/private/M4ROOT/CLIP/20260604_C3787.MP4",
+   "src": 14.25,
+   "dur": 1.25,
+   "rec": 311.634,
+   "gain": 2.5,
+   "fin": 0.05,
+   "fout": 0.12,
+   "note": "petit mot (son caméra)",
+   "gain_brut": 2.0,
+   "role": "voix",
+   "loudness": -19.5
+  },
+  {
+   "piste": 1,
+   "fichier": "/Volumes/SSD FAST/MARIAGE JO/RUSH/DIEGO/private/M4ROOT/CLIP/20260604_C3704.MP4",
+   "src": 7.1,
+   "dur": 2.1,
+   "rec": 312.884,
+   "gain": -0.4,
+   "fin": 0.05,
+   "fout": 0.12,
+   "note": "petit mot (son caméra)",
+   "gain_brut": 2.0,
+   "role": "voix",
+   "loudness": -16.6
+  },
+  {
+   "piste": 1,
+   "fichier": "/Volumes/SSD FAST/MARIAGE JO/RUSH/SON HF/REC052.WAV",
+   "src": 1869.0,
+   "dur": 4.3,
+   "rec": 314.984,
+   "gain": 7.3,
+   "fin": 0.05,
+   "fout": 0.4,
+   "note": "Jonathan",
+   "gain_brut": 0.0,
+   "role": "voix",
+   "loudness": -24.3
+  },
+  {
+   "piste": 2,
+   "fichier": "/Volumes/SSD FAST/MARIAGE JO/RUSH/SON ZOOM/040626-175038.WAV",
+   "src": 746.02,
+   "dur": 6.5,
+   "rec": 314.984,
+   "gain": -25.7,
+   "fin": 0.1,
+   "fout": 1.5,
+   "note": "salle",
+   "gain_brut": -10.0,
+   "role": "salle_sous",
+   "loudness": -5.3
+  },
+  {
+   "piste": 2,
+   "fichier": "/Volumes/SSD FAST/MARIAGE JO/RUSH/DIEGO/private/M4ROOT/CLIP/20260604_C4166.MP4",
+   "src": 4.5,
+   "dur": 3.5,
+   "rec": 321.134,
+   "gain": -4.1,
+   "fin": 0.2,
+   "fout": 1.5,
+   "note": "rires",
+   "gain_brut": -4.0,
+   "role": "salle_seule",
+   "loudness": -16.9
+  },
+  {
+   "piste": 3,
+   "fichier": "/Volumes/SSD FAST/MARIAGE JO/MUSIQUE/youtube video #U2ClfSuxjhU_320k.mp3",
+   "src": 183.5,
+   "dur": 19.35,
+   "rec": 309.784,
+   "gain": -20.3,
+   "fin": 1.0,
+   "fout": 2.5,
+   "note": "fin du remix, très bas, sous les voix",
+   "gain_brut": -18.0,
+   "role": "musique_sous",
+   "loudness": -10.7
+  }
+ ],
+ "textes": [
+  {
+   "rec": 41.22,
+   "dur": 2.866000000000001,
+   "texte": "Jonathan & Ornella",
+   "style": "titre",
+   "note": "carton sur noir, pendant le premier vers du chant"
+  },
+  {
+   "rec": 62.33,
+   "dur": 2.448999999999998,
+   "texte": "Naël",
+   "style": "personnage",
+   "note": ""
+  },
+  {
+   "rec": 325.134,
+   "dur": 3.5,
+   "texte": "Rendez-vous en 2036.",
+   "style": "fin",
+   "note": ""
+  }
+ ],
+ "blocs": [
+  [
+   0.0,
+   "A"
+  ],
+  [
+   40.97,
+   "B"
+  ],
+  [
+   80.862,
+   "C"
+  ],
+  [
+   199.01200000000046,
+   "D"
+  ],
+  [
+   207.68400000000045,
+   "E"
+  ],
+  [
+   244.48800000000045,
+   "F"
+  ],
+  [
+   254.28800000000044,
+   "G"
+  ],
+  [
+   309.78400000000045,
+   "H"
+  ]
+ ],
+ "duree": 329.134
+}

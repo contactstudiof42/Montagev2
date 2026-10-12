@@ -6,7 +6,7 @@ sys.path.insert(0, "/Volumes/SSD FAST/Montage-IA/labo/outils/phase3/mariage")
 from sync_fin import sync
 M = "/Volumes/SSD FAST/Montage-IA/videos/phase-3/mariage-jo/_travail/musique"
 G = json.load(open(f"{M}/grilles.json"))
-HF = "/Volumes/SSD FAST/MARIAGE JO/RUSH/SON HF/REC052.WAV"
+HF = "/Volumes/SSD FAST/Montage-IA/videos/phase-3/mariage-jo/_travail/son/REC052_traite.wav"   # HF compressé (passe-haut 80 Hz, compresseur 3:1, limiteur -6 dBFS) ; mêmes temps que REC052.WAV
 Z2 = "/Volumes/SSD FAST/MARIAGE JO/RUSH/SON ZOOM/040626-175038.WAV"
 MUS = {"igot": "/Volumes/SSD FAST/MARIAGE JO/MUSIQUE/I Got a Woman (Remastered)_320k.mp3",
        "remix": "/Volumes/SSD FAST/MARIAGE JO/MUSIQUE/youtube video #U2ClfSuxjhU_320k.mp3",
@@ -100,7 +100,7 @@ a(MUS["maritza"], 0.0, 9.0, C0, 3, gain=-14.0, fin=0.5, fout=3.0, note="La Marit
 phrase(181.35, 183.9, [("FX30.5591", 0.0, 1.1), ("FX30.5593", 0.2, None)], note="« Il va y avoir plein de mauvaises blagues. » TRICHE : officiant bras tendu (HF 160) ; Jonathan plié de rire (HF 178)")
 phrase(218.3, 221.75, [("20260604_C3657", "sync", None)], note="« …des excuses concernant la température et le temps, la météo. » (synchro)")
 phrase(223.95, 228.65, [("20260604_C3658", 10.2, None)], note="« certains détracteurs trouvaient que c'était de ma faute. Ils n'ont pas tort. » TRICHE : invités qui rient (HF 249)")
-phrase(229.7, 233.0, [("20260604_C3657", "sync", None)], note="« Donc il y aura de l'orage tout à l'heure. Ne m'en voulez pas. » (synchro)")
+phrase(229.7, 233.0, [("20260604_C3661", 10.0, None)], note="« Donc il y aura de l'orage tout à l'heure. Ne m'en voulez pas. » TRICHE : l'officiant de dos qui lit (HF 315), le synchro finissait sur un fouetté")
 phrase(254.55, 258.3, [("FX30.5592", 1.0, None)], note="« On n'a pas besoin de voir le ciel quand on a quelqu'un à regarder. » TRICHE : Ornella et Jonathan (HF 176)")
 phrase(259.55, 264.6, [("20260604_C3658", "sync", 1.55), ("20260604_C3659", 0.0, None)], note="« Nous, les célibataires, on va se faire foutre. » + rires (synchro)")
 phrase(351.8, 354.65, [("FX30.5602", "sync", 1.5), ("FX30.5599", 0.3, None)], note="« …et surtout, ils ont eu Naël. » ; Naël TRICHE (HF 320)")
@@ -112,7 +112,7 @@ phrase(508.15, 512.3, [("FX30.5616", 1.0, None)], note="« On dit que l'amour re
 phrase(1004.9, 1009.7, [("20260604_C3686", 5.2, None)], note="Ornella : « Mon mari, » TRICHE 4 s (même plan)")
 phrase(1014.05, 1018.85, [("20260604_C3686", "sync", 2.85), ("FX30.5633", 0.05, None)], note="« nous nous sommes rencontrés il y a 13 ans et depuis ce jour, on ne s'est plus lâchés. » (synchro)")
 phrase(1095.6, 1099.6, [("FX30.5634", "sync", 2.0), ("FX30.5634", 16.0, None)], note="« Et puis il y a Naël. Notre plus belle aventure. » ; Naël TRICHE (6 s après)")
-phrase(1185.3, 1191.5, [("20260604_C3686", 184.0, 3.0), ("FX30.5634", "sync", None)], note="« Alors je redis oui. Un oui encore plus fort… qu'il y a dix ans. » (synchro)")
+phrase(1185.3, 1191.5, [("20260604_C3686", 184.4, 3.0), ("FX30.5634", "sync", None)], note="« Alors je redis oui. Un oui encore plus fort… qu'il y a dix ans. » (synchro)")
 # vœux de Jonathan, la demande
 phrase(1597.85, 1602.75, [("20260604_C3695", "sync", 2.15), ("FX30.5635", 358.6, None)], note="« la femme parfaite n'existe pas, mais toi, tu es la femme parfaite pour moi. » ; Ornella TRICHE (5 s après)")
 phrase(1646.85, 1658.6, [("20260604_C3695", "sync", 3.75), ("FX30.5635", "sync", 2.4), ("20260604_C3695", "sync", None)], note="« je vais te faire une vraie demande cette fois-ci… à genoux… ma femme pour les dix prochaines années » (synchro)")
@@ -130,7 +130,7 @@ MARK.append((C0, "C"))
 D0 = rec; tm = G["la-maritza-i"]["temps"]
 km = min(range(len(tm)), key=lambda i: abs(tm[i] - 23.5)); MZ0 = tm[km]          # le temps fort où le morceau démarre
 def mt(i): return D0 + tm[km + i] - MZ0
-v("FX30.5635", hf_rush("FX30.5635", 1822.5), mt(4) - rec, "couleur", note="LE BAISER (front) : la couleur revient (synchro)")
+v("FX30.5635", hf_rush("FX30.5635", 1822.85), mt(4) - rec, "couleur", note="LE BAISER (front) : la couleur revient (synchro)")
 a(HF, 1822.5, 3.5, D0, 1, gain=-4.0, fin=0.05, fout=1.0, note="« Bravo ! »")
 zf, zs = zoom_de_hf(1822.5); a(zf, zs, 9.0, D0, 2, gain=-7.0, fin=0.1, fout=2.5, note="applaudissements (Zoom)")
 km2 = 4
@@ -191,16 +191,16 @@ def rk(nom, src, n, note="", look="couleur"):
 rk("20260604_C3894", 27.0, 6, "ouverture du bal : le couple, face à face")
 rk("20260604_C3894", 88.0, 4, "il l'embrasse sur la tempe")
 rk("20260604_C3922", 1.0, 4, "la piste explose, bras en l'air")
-rk("20260604_C3899", 6.0, 4, "un invité porté")
+rk("20260604_C3936", 1.8, 4, "deux femmes dansent, bras levés")
 rk("20260604_C3911", 13.6, 6, "Jonathan rit, lunettes noires")
-rk("FX30.5838", 28.3, 6, "le père de Jonathan danse, bras levés, accolade")
+rk("FX30.5838", 8.8, 6, "le père de Jonathan danse, bras levés")
 G_BAL = rec
 a(MUS["remix"], 0.0, G_BAL - G0 + 0.4, G0, 3, gain=-8.0, fin=0.0, fout=0.4, note="remix : le bal")
 # le maillot (son direct, remix très bas)
 v("20260604_C4007", 11.9, 1.8, "couleur", note="« alors tiens, je te laisse l'ouvrir » (synchro)")
 a(rush("20260604_C4007"), 11.9, 1.8, rec - 1.8, 1, gain=4.0, fin=0.05, fout=0.1, note="son direct")
 v("20260604_C4007", 26.2, 2.8, "couleur", note="le maillot se déplie")
-a(rush("20260604_C4007"), 17.4, 4.2, rec - 2.8 - 0.6, 1, gain=4.0, fin=0.05, fout=0.2, note="« mais il a été signé par Marquinhos » (son décalé sur l'image : triche son)")
+a(rush("20260604_C4007"), 17.4, 4.2, rec - 2.8 - 0.6, 1, gain=4.0, fin=0.05, fout=0.2, note="« mais il a été signé par … » (son décalé sur l'image : triche son)")
 v("FX30.5871", 6.0, 1.8, "couleur", note="Jonathan tient le maillot (Quentin, serré)")
 v("20260604_C4007", 43.2, 1.6, "couleur", note="le maillot en gros plan")
 v("20260604_C4007", 47.6, 5.9, "couleur", note="« si jamais il gagne, frérot, c'est encore plus stylé… et donc vraisemblablement il gagne samedi soir » (synchro)")
@@ -242,7 +242,7 @@ a(MUS["remix"], 183.5, rec - H0b, H0b, 3, gain=-18.0, fin=1.0, fout=2.5, note="f
 MARK.append((H0b, "H"))
 
 # ---------------- Ralentis (x2 natif : rush 50p lu à 50 % dans une timeline 25p) ----------------
-RALENTIS = {("20260604_C3520", 10.0): "robe dans le vent", ("20260604_C3894", 27.0): "le couple qui danse", ("20260604_C3899", 6.0): "l'invité porté",
+RALENTIS = {("20260604_C3520", 10.0): "robe dans le vent", ("20260604_C3894", 27.0): "le couple qui danse",
             ("20260604_C3820", 8.4): "la dame rit, bras levés", ("20260604_C3541", 1.3): "ils s'éloignent"}
 for e in V:
     if (e["nom"], e["src"]) in RALENTIS: e["vitesse"] = 0.5; e["note"] += " [ralenti x2 natif]"
