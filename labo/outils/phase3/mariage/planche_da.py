@@ -14,11 +14,27 @@ def frame(src, t, h):
                          capture_output=True, check=True).stdout
     return Image.open(io.BytesIO(out)).convert("RGB")
 
+def rogne(im, seuil=18):
+    # garde l'image active (retire les bandes noires et le texte posé dessus : la plus longue suite de lignes non noires)
+    import numpy as np
+    a = np.asarray(im.convert("L"), float)
+    ligne = (a > seuil).mean(1) > 0.5
+    best, cur, start = (0, 0, 0), 0, 0
+    for i, v in enumerate(ligne):
+        if v:
+            if cur == 0: start = i
+            cur += 1
+            if cur > best[0]: best = (cur, start, i + 1)
+        else: cur = 0
+    return im.crop((0, best[1], im.width, best[2])) if best[0] > 20 else im
+
 def charge(e, h):
     if "img" in e:
         im = Image.open(e["img"]).convert("RGB")
-        return im.resize((round(im.width * h / im.height), h), Image.LANCZOS)
-    return frame(e["src"], e["t"], h)
+    else:
+        im = frame(e["src"], e["t"], 1080 if e.get("rogne") else h)
+    if e.get("rogne"): im = rogne(im)
+    return im.resize((round(im.width * h / im.height), h), Image.LANCZOS)
 
 def main(spec):
     h = spec.get("hauteur", 540)
