@@ -89,5 +89,12 @@ Une règle, un fichier maître ; ce prompt ne les répète pas.
 - Un son par transition (effet ou changement de bloc), calé sur l'attaque ou la crête du fichier.
 - Stabiliser selon l'intention du cadreur (fixe ou rail) ; Gyroflow d'abord quand les rushes ont des données gyroscopiques, toujours synchronisé, sur une plage courte.
 
+**[projet : mariage-jo]** (2026-10-12 ; portées proposées entre crochets, à classer par Diego)
+- Un film de 5 min tient par une idée qui revient (« dans dix ans »), deux rappels comiques tirés de la matière (le panini, l'orage annoncé par l'officiant) et un seul changement de look qui a un sens (le oui rallume la couleur) [proposé : genre mariage].
+- Dérusher le son autant que l'image : transcrire tout l'enregistreur et le son de chaque rush concaténé par caméra a trouvé les « petits mots », le maillot, le rappel du panini par Sylvain [proposé : universel, films avec parole].
+- Caler les horloges par corrélation audio avant tout ; synchro fine plan par plan sur le HF [technique, déjà dans `montage-workflows`].
+- Les flashs des photographes et des téléphones sont dans les rushes d'événement : chercher les salves (bandes horizontales, volet roulant) avant de choisir un moment de bal, de gâteau, de cadeau [proposé : genre événement].
+- Construire le montage comme un programme (`edl.py` → JSON → Resolve) : chaque plan porte sa raison, chaque triche est listée d'office, la reconstruction d'une version prend quelques minutes [méthode].
+
 **[projet : Sony LinkBuds]**
 - Le zoom infini E → KORE, le flash cut des sept oreilles, la rafale « glisse » abandonnée (les pieds ne glissaient pas), le passage au rouge comme sommet, le plan de la dame qui fait coucou : des exemples, pas des règles. Détail : `projets-phase-3/sony-linkbuds/`.
