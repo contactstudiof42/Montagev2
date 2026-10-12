@@ -89,3 +89,5 @@ _Dictées par Diego à l'assistant de configuration, mises en forme par lui ; le
 
 ### Remarque générale
 « J'ai l'impression qu'on rame, que c'est long à obtenir de bons résultats. »
+
+**Intégré le 2026-10-12** (session d'audit) : [universel] dans `montage-regard` (« Juger sa propre version » 1-3, « Le goût de chaque plan » 3-8, 10, 13) et `CARNET-DE-GOUT.md` (entrées 19-24) ; [genre : kinetic] dans `montage-kinetic-editing` (traînées de hautes lumières, portée des flashs et inversions, définition de « transition ») et le carnet (25) ; [projet] dans `projets-phase-3/sony-linkbuds/retours-V5.md` ; la liste « Portée des règles nées sur Sony » a servi de juge à `AUDIT.md` (point 2). Points restés ouverts : section « Points ouverts » ci-dessus.
