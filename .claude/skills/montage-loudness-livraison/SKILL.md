@@ -43,7 +43,7 @@ Marqueurs : **[SOURCÉ]** lu dans une source datée · **[TESTÉ EN LABO]** fait
 
 **Ce que font les vidéos de référence (phase 2, mesuré sur les fichiers téléchargés)** : YouTube de 23 à 57 min de -21,3 (EGO) à **-11,6 / -12,0 LUFS** (« Qui est l'imposteur », LRA 3,6-3,8 LU, aucun silence) ; docs de créateurs -16,6 / -16,7 (Tiger, CIA) ; pubs TV françaises -23,1 à -23,2 (deux Intermarché, Lacoste) ; clips -10,9 à -12,9. Le divertissement et le clip sont plus forts que la référence de lecture : YouTube les baisse, ils gardent un son « plein » mais perdent leur dynamique. Rien de tout cela n'est une norme ; c'est le terrain.
 
-Ce que je conseille en pratique (choix, et non une norme) : **web/réseaux -14 LUFS / -1.5 dBTP** ; **TV FR/UE -23 / -1** (respecter la charte PAD de la chaîne, qui prime) ; **cinéma** : pas de cible LUFS, on mixe à l'étalonnage de la salle (85 dB SPL, Dolby). Voir references.md.
+Ce que je conseille en pratique (choix, et non une norme) : **web/réseaux -14 LUFS ; crête visée -1,5 dBTP, acceptée jusqu'à -1 dBTP** (une seule cible : c'est le seuil du verdict « livrable » de `montage-regard` et de `qc_livraison.sh` ; Sony V4-V5 livrées à -1,1) ; **TV FR/UE -23 / -1** (respecter la charte PAD de la chaîne, qui prime) ; **cinéma** : pas de cible LUFS, on mixe à l'étalonnage de la salle (85 dB SPL, Dolby). Voir references.md.
 
 ## 4. Recettes ffmpeg
 
@@ -85,8 +85,8 @@ ffmpeg -i MASTER.mov -vf "scale=1920:1080:flags=lanczos,format=yuv420p" \
 ```
 Pour un débit cible, utiliser les 2 passes `-b:v 8M -maxrate 10M -bufsize 16M` : 7.90 Mb/s obtenus. Pour le vertical 1080x1920 (recadrage centré ou fond flou), voir references.md §3.
 
-### Master du studio depuis Resolve (réglages de Diego, 2026-10-11) [TESTÉ EN CONDITIONS RÉELLES]
-Par défaut pour tout rendu final : **H.265 Main 10 sur le GPU** (VideoToolbox), **débit élevé** (≈ 40 Mb/s en 1080x1920 25p, contre 11 Mb/s qui donnait une « bouillie »), **multipass**, « Bypass re-encode when possible » **désactivé**, « Force sizing / debayer to highest quality » **activés**. La qualité passe avant la vitesse (≈ 1 min pour 45 s).
+### Master du studio depuis Resolve (réglages de Diego, 2026-10-11) [TESTÉ EN CONDITIONS RÉELLES] [universel : réglage par défaut du studio ; la spec du client prime]
+Par défaut pour tout rendu final **quand aucune spec ne l'interdit** (une chaîne TV, une plateforme, une agence qui exige H.264 8 bits ou un ProRes : sa spec prime et le « Master web H.264 » ci-dessus s'applique) : **H.265 Main 10 sur le GPU** (VideoToolbox), **débit élevé** (≈ 40 Mb/s en 1080x1920 25p, contre 11 Mb/s qui donnait une « bouillie »), **multipass**, « Bypass re-encode when possible » **désactivé**, « Force sizing / debayer to highest quality » **activés**. La qualité passe avant la vitesse (≈ 1 min pour 45 s).
 Par script : `SetCurrentRenderFormatAndCodec("mp4", "H265")` puis `SetRenderSettings({"EncodingProfile": "Main10", "MultiPassEncode": True, "VideoQuality": 40000, "NetworkOptimization": True, "AudioCodec": "aac", "AudioSampleRate": 48000})`. Les cases « Force… » et « Bypass… » **ne sont pas dans l'API** : un préréglage de rendu enregistré à la main, puis `LoadRenderPreset`.
 Vérifier : `ffprobe` (hevc, profil Main 10, `yuv420p10le`, BT.709, débit) ; une image du rendu contre la même image rendue en PNG 16 bits (PSNR ≥ 40 dB ; noirs amplifiés ×6 : aucun bloc ni aplat cassé). Sony V4 : 39 Mb/s, PSNR 40,7 dB, aucun bloc.
 
@@ -102,7 +102,7 @@ Détail et mesures : `labo/encodage/RESULTATS.md`, `labo/encodage/noir-protege/R
 ```bash
 ffprobe -v error -select_streams v:0 -show_entries stream=profile,level,width,height,pix_fmt,sample_aspect_ratio,r_frame_rate,color_range,color_space,color_transfer,color_primaries,bit_rate -of default=nw=1 OUT.mp4
 ```
-Attendu : `High`, `yuv420p`, `tv/bt709` ×3, SAR `1:1` ; faststart = atome `moov` avant `mdat`.
+Attendu, selon le master choisi : **H.264 (spec client)** : `High`, `yuv420p` ; **H.265 Main 10 (défaut du studio)** : `hevc`, `Main 10`, `yuv420p10le`, débit ≈ 40 Mb/s en 1080x1920. Dans les deux cas : `tv/bt709` ×3, SAR `1:1` ; faststart = atome `moov` avant `mdat` ; crête ≤ -1 dBTP mesurée sur le fichier encodé (`qc_livraison.sh`).
 
 ### Mesure dialogue-gated (Netflix) [THÉORIQUE]
 ffmpeg n'a pas de gating sur le dialogue. Il faut un compteur dédié (Dolby Media Meter, NUGEN VisLM, RX Loudness Control). À défaut, on peut seulement approcher en mesurant le stem dialogue seul.
