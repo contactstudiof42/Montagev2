@@ -30,15 +30,16 @@ def tous_les_clips():
         for s in f.GetSubFolderList(): parc(s)
     parc(root); return out
 TIT = json.load(open(f"{TW}/titres_v4/fichiers.json")) if os.path.exists(f"{TW}/titres_v4/fichiers.json") else {}
-EXTRA = {"grain": f"{TW}/grain/grain_1080_20s.mov", "kinetic": f"{TW}/kinetic_v4/kinetic_V4.mov"}
+EXTRA = {"grain": f"{TW}/grain/grain_1080_20s.mov", "kinetic": f"{TW}/kinetic_v4/kinetic_V4.mov", "vignettage": f"{TW}/vignettage/vignettage_20s.mov"}
 for k, f in TIT.items(): EXTRA["t:" + k] = f
 res = {}
 if ETAPE == "import":
-    chemins = set(fichier_video(e)[0] for e in J["video"]) | set(a["fichier"] for a in J["audio"]) | set(v for v in EXTRA.values() if os.path.exists(v))
+    FEN = json.load(open(f"{TW}/fenetres_v4/fenetres.json"))
+    chemins = set(fichier_video(e)[0] for e in J["video"]) | set(a["fichier"] for a in J["audio"]) | set(v for v in EXTRA.values() if os.path.exists(v)) | set(f["mov"] for f in FEN.values())
     deja = tous_les_clips(); manquants = sorted(c for c in chemins if c not in deja)
-    par = {"RUSH": [], "STAB": [], "SON": [], "HABILLAGE": []}
+    par = {"RUSH": [], "STAB": [], "SON": [], "HABILLAGE": [], "FENETRES": []}
     for c in manquants:
-        k = "STAB" if "/stab/" in c else ("SON" if c.lower().endswith((".wav", ".mp3")) else ("HABILLAGE" if "/_travail/" in c else "RUSH"))
+        k = "FENETRES" if "/fenetres_v4/" in c else "STAB" if "/stab/" in c else ("SON" if c.lower().endswith((".wav", ".mp3")) else ("HABILLAGE" if "/_travail/" in c else "RUSH"))
         par[k].append(c)
     for k, l in par.items():
         if not l: continue
@@ -54,7 +55,7 @@ elif ETAPE == "video":
     p.SetCurrentTimeline(tl)
     while tl.GetTrackCount("video") < 4: tl.AddTrack("video")
     while tl.GetTrackCount("audio") < 4: tl.AddTrack("audio", "stereo")
-    for i, n in enumerate(["PLANS", "TITRES", "GRAIN", "EFFETS"], 1): tl.SetTrackName("video", i, n)
+    for i, n in enumerate(["PLANS", "VIGNETTAGE", "TITRES", "GRAIN"], 1): tl.SetTrackName("video", i, n)
     for i, n in enumerate(["VOIX", "SALLE", "MUSIQUE", "LIT"], 1): tl.SetTrackName("audio", i, n)
     ok = 0; ko = []
     deb, fin = globals().get("DEB", 0), globals().get("FIN", 10**6)
@@ -98,16 +99,23 @@ elif ETAPE == "habillage":
     for t in J["textes"]:
         f = EXTRA.get("t:" + t["texte"])
         it = clips.get(f); r0 = rf(t["rec"]); n = rf(t["rec"] + t["dur"]) - r0
-        ti = mp.AppendToTimeline([{"mediaPoolItem": it, "startFrame": 0, "endFrame": n, "recordFrame": T0 + r0, "trackIndex": 2, "mediaType": 1}])
+        ti = mp.AppendToTimeline([{"mediaPoolItem": it, "startFrame": 0, "endFrame": n, "recordFrame": T0 + r0, "trackIndex": 3, "mediaType": 1}])
         out.append((t["texte"], bool(ti)))
+    FEN = json.load(open(f"{TW}/fenetres_v4/fenetres.json")); nv = 0
+    for e in sorted([e for e in J["video"] if e["piste"] == 1], key=lambda e: e["rec"]):
+        fe = FEN.get(f"{e['rec']:.3f}")
+        if not fe: continue
+        it = clips.get(fe["mov"]); r0 = rf(e["rec"]); n = rf(e["rec"] + e["dur"]) - r0
+        ti = mp.AppendToTimeline([{"mediaPoolItem": it, "startFrame": 0, "endFrame": n, "recordFrame": T0 + r0, "trackIndex": 2, "mediaType": 1}]) if it else None
+        if ti and ti[0]: ti[0].SetProperty("CompositeMode", resolve.COMPOSITE_MULTIPLY); nv += 1
     g = clips.get(EXTRA["grain"]); fin = rf(J["duree"]); r = 0; ng = 0
     while r < fin:
         n = min(500, fin - r)
-        ti = mp.AppendToTimeline([{"mediaPoolItem": g, "startFrame": 0, "endFrame": n, "recordFrame": T0 + r, "trackIndex": 3, "mediaType": 1}])
-        if ti:
+        ti = mp.AppendToTimeline([{"mediaPoolItem": g, "startFrame": 0, "endFrame": n, "recordFrame": T0 + r, "trackIndex": 4, "mediaType": 1}])
+        if ti and ti[0]:
             ti[0].SetProperty("CompositeMode", resolve.COMPOSITE_OVERLAY); ti[0].SetProperty("Opacity", 22.0); ti[0].SetProperty("ZoomX", 2.0); ti[0].SetProperty("ZoomY", 2.0); ng += 1
         r += n
-    res = {"titres": out, "grain": ng}
+    res = {"titres": out, "grain": ng, "fenetres": nv}
 elif ETAPE == "lut":
     p.RefreshLUTList(); tl = p.GetCurrentTimeline(); ok = 0; ko = []
     looks = {}
@@ -116,7 +124,9 @@ elif ETAPE == "lut":
     for ti in tl.GetItemListInTrack("video", 1):
         e = looks.get(ti.GetStart())
         if not e or "KINETIC" in e.get("note", ""): continue
-        ng = ti.GetNodeGraph(); r1 = ng.SetLUT(1, f"P3/P3_mariage_{e['look']}.cube")
+        ng = ti.GetNodeGraph()
+        if ng is None: ko.append(("sans graphe", e["nom"], e["rec"])); continue
+        r1 = ng.SetLUT(1, f"P3/P3_mariage_{e['look']}.cube")
         cdl = e.get("cdl")
         if cdl: ti.SetCDL({"NodeIndex": "1", "Slope": cdl["slope"], "Offset": cdl["offset"], "Power": cdl["power"], "Saturation": cdl.get("sat", "1.0")})
         ok += int(bool(r1))

@@ -56,12 +56,15 @@ H = lambda rec_t: P["panini_a"]["d"] + (rec_t - VA0)      # temps HF d'un instan
 v("20260604_C3689", hf_rush("20260604_C3689", H(rec)), 3.4, NB, note="Jonathan au micro, large (synchro)")
 v("FX30.5635", 114.0, 3.8, NB, note="TRICHE (≈ 3 s) : Jonathan flou au premier plan, Ornella nette qui écoute ; même discours")
 v("FX30.5635", 105.3, 2.2, NB, note="TRICHE : un invité sourit (même salle, même discours, 30 s avant ; temps vérifié en lecture directe)")
-v("20260604_C3689", hf_rush("20260604_C3689", H(rec)), f_a - rec + 0.05, NB, note="Jonathan au micro (synchro) : « …cinq ans après, on se recroise… »")
+# C3689 : zoom rapide à 44,2-45,4 s et invité devant l'objectif à 49-50 s (vu image par image) : on n'en garde que 45,5-48,9 s
+v("FX30.5635", 121.0, f_a - rec + 0.05, NB, note="TRICHE (≈ 10 s) : Jonathan flou au premier plan, Ornella écoute")
 d_b, f_b, _ = voix("panini_b", f_a + (P["panini_b"]["d"] - P["panini_a"]["f"]))   # l'air naturel entre les deux phrases est gardé
-v("20260604_C3689", hf_rush("20260604_C3689", P["panini_b"]["d"] + (rec - d_b)), (d_b + 6.3) - rec, NB, note="Jonathan (synchro) : « …les premiers mots que je lui ai prononcés… »")
+r_45 = d_b + (45.5 - hf_rush("20260604_C3689", P["panini_b"]["d"]))
+v("FX30.5635", 110.0, r_45 - rec, NB, note="TRICHE (≈ 20 s avant) : un invité à casquette sourit")
+v("20260604_C3689", 45.5, 3.4, NB, note="Jonathan au micro, plan moyen (synchro) : « …vous allez être servis… »")
 t_pan = rec
-v("FX30.5635", hf_rush("FX30.5635", P["panini_b"]["d"] + (rec - d_b)), 7.0, NB, note="Ornella écoute la chute, puis éclate de rire (synchro, vrai moment : 143-147 s du rush)")
-texte(t_pan + 1.6, 2.6, "Un acheté, un offert.", "replique")
+v("FX30.5635", 137.9, (d_b + 6.3 + 7.0) - rec, NB, note="TRICHE (1 s d'avance : un bras passe devant l'objectif à 137,6 s) : Ornella écoute « est-ce que tu veux mon panini ? », puis éclate de rire")
+texte(d_b + 8.3, 2.6, "Un acheté, un offert.", "replique")
 v("FX30.5635", 155.2, 2.4, NB, note="TRICHE : invités qui rient (≈ 10 s après, même salle)")
 A_FIN = rec
 a(Z2, d_a - 1122.98 - 2.0, 2.2, A0, 2, gain=-12.0, fin=1.0, fout=0.3, note="murmures de la salle avant la voix", role="salle_seule")
@@ -131,10 +134,11 @@ t_et = rec
 v("FX30.5635", 417.0, 4.8, NB, note="l'étreinte après la demande, fleurs derrière (Quentin, vrai moment, ≈ 4 s après la phrase)")
 zf, zs = zoom(1659.3); a(zf, zs, 5.0, t_et, 2, gain=-8.0, fin=0.1, fout=0.6, note="la salle applaudit la demande (Zoom)", role="salle_seule")
 bloc("collier", [("20260604_C3695", "sync", 1.8, "l'officiant : « dans dix ans, ce sera un collier »"),
-                 ("20260604_C3695", 116.5, None, "TRICHE (≈ 10 s après) : Naël apporte les bracelets")], d=1693.6, f=1696.6,
+                 ("20260604_C3695", 116.3, None, "TRICHE (≈ 10 s après) : Naël apporte les bracelets")], d=1693.6, f=1696.6,
      note="(fin fixée au spectrogramme : l'alignement s'étire dans les rires)")
 v("20260604_C3696", 4.0, 2.6, NB, note="TRICHE (1 min après) : le bracelet au poignet, les mains (insert)")
-bloc("remari", [("20260604_C3696", "sync", None, "l'officiant : « je vous déclare re-mari et re-femme » (synchro)")], gap=0.05, salle=True)
+bloc("remari", [("20260604_C3696", "sync", 3.2, "le couple écoute l'officiant (synchro ; coupé avant le panoramique de 53 s)"),
+                ("FX30.5635", "sync", None, "Ornella et Jonathan, « re-mari et re-femme » (Quentin, synchro ; enchaîne sans coupure sur le baiser)")], gap=0.05, salle=True)
 C_FIN = rec
 MARK.append((C0, "C"))
 
@@ -162,7 +166,7 @@ def mk(nom, src, n, note=""):
     global k3
     v(nom, src, mt(k3 + n) - rec, CO, note=note); k3 += n
 for nom, src, n, note in [("FX30.5702", 0.5, 2, "pieds bicolores qui battent la mesure"), ("20260604_C3820", 8.4, 4, "la dame aux cheveux blancs rit, bras levés"), ("FX30.5704", 1.0, 2, "main sur la guitare"),
-                          ("FX30.5698", 49.0, 2, "contrebasse"), ("FX30.5698", 31.3, 2, "saxophone"), ("FX30.5667", 0.4, 4, "le guitariste sourit"),
+                          ("FX30.5697", 1.0, 4, "le saxophoniste rit (remplace contrebasse et saxophone : panoramiques rapides)"), ("FX30.5667", 0.4, 4, "le guitariste sourit"),
                           ("FX30.5743", 9.6, 4, "la dame aux cheveux blancs danse"), ("FX30.5730", 1.2, 4, "Naël reçoit sa caricature"), ("FX30.5720", 2.0, 4, "Naël rit")]:
     mk(nom, src, n, note)
 MUS_E = rec
@@ -233,7 +237,12 @@ a(MUS["remix"], 183.0, rec - H0, H0, 3, gain=-20.0, fin=1.0, fout=2.5, note="fin
 MARK.append((H0, "H"))
 
 # Ralentis x2 natifs (rush 50p lu à 50 % dans la timeline 25p)
-RALENTIS = {("FX30.5472", 0.4): "ils partent en courant", ("20260604_C3540", 3.0): "ils s'éloignent", ("20260604_C3894", 88.5): "le premier slow", ("20260604_C3894", 96.0): "le premier slow"}
+RALENTIS = {("20260604_C3529", 1.0): "portrait (ralenti : tremblement de la main lissé)", ("20260604_C3545", 1.0): "chaises (ralenti)",
+            ("FX30.5490", 3.0): "bougies (ralenti)", ("20260604_C3546", 9.5): "rose (ralenti)", ("20260604_C3595", 1.0): "regard caméra (ralenti)",
+            ("20260604_C3601", 1.0): "rire (ralenti)", ("20260604_C3820", 8.4): "la dame rit (ralenti)",
+            ("FX30.5704", 1.0): "guitare (ralenti)", ("FX30.5720", 2.0): "Naël rit (ralenti)",
+            ("20260604_C3954", 17.0): "danse du dîner (ralenti : main lissée)", ("20260604_C3952", 9.0): "Jonathan et son père (ralenti)",
+            ("20260604_C3953", 0.3): "le père danse (ralenti)", ("20260604_C3957", 46.0): "Jonathan et les amis (ralenti)", ("FX30.5838", 31.0): "l'accolade (ralenti)", ("FX30.5472", 0.4): "ils partent en courant", ("20260604_C3540", 3.0): "ils s'éloignent", ("20260604_C3894", 88.5): "le premier slow", ("20260604_C3894", 96.0): "le premier slow"}
 for e in V:
     if (e["nom"], e["src"]) in RALENTIS: e["vitesse"] = 0.5; e["note"] += " [ralenti x2 natif]"
 
@@ -254,6 +263,8 @@ for x in A:
     l = loud(x["fichier"], x["src"], min(x["dur"], 60)); x["loudness"] = l; x["gain_brut"] = x["gain"]
     x["gain"] = round(max(-40.0, min(18.0, CIBLE[x["role"]] - l)), 1)
 json.dump(LC, open(CACHE_L, "w"))
+for x in A:
+    if x["note"].startswith("[pelles]"): x["gain"] = round(x["gain"] + 4.0, 1)     # la réplique est couverte par les cris : +4 dB (à vérifier à l'oreille)
 
 # Lit musical sous la parole de la cérémonie : La Maritza sans batterie ni basse, en continu de C0 à la fin de C
 a(MUS["maritza_lit"], 30.0, C_FIN - C0 + 0.5, C0, 4, gain=0.0, fin=1.5, fout=0.8, note="La Maritza sans batterie ni basse (demucs), lit sous la cérémonie", role="lit")

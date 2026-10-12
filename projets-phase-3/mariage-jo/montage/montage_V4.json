@@ -12,12 +12,13 @@
    "fondu_noir": 1.2,
    "cdl": {
     "slope": "1.0 1.0 1.0",
-    "offset": "0.0577 0.0577 0.0577",
+    "offset": "0.0385 0.0385 0.0385",
     "power": "1.0 1.0 1.0",
     "sat": "1.0",
-    "diaph": 0.75,
+    "diaph": 0.5,
     "balance": "—",
-    "visages": 0
+    "visages": 0,
+    "boites": []
    }
   },
   {
@@ -57,12 +58,13 @@
    },
    "cdl": {
     "slope": "1.0 1.0 1.0",
-    "offset": "0.1154 0.1154 0.1154",
+    "offset": "0.0385 0.0385 0.0385",
     "power": "1.0 1.0 1.0",
     "sat": "1.0",
-    "diaph": 1.5,
+    "diaph": 0.5,
     "balance": "—",
-    "visages": 0
+    "visages": 0,
+    "boites": []
    }
   },
   {
@@ -107,7 +109,8 @@
     "sat": "1.0",
     "diaph": 0.5,
     "balance": "—",
-    "visages": 0
+    "visages": 0,
+    "boites": []
    }
   },
   {
@@ -152,7 +155,8 @@
     "sat": "1.0",
     "diaph": 0.0,
     "balance": "—",
-    "visages": 0
+    "visages": 0,
+    "boites": []
    }
   },
   {
@@ -166,12 +170,20 @@
    "note": "TRICHE (≈ 3 s) : Jonathan flou au premier plan, Ornella nette qui écoute ; même discours",
    "cdl": {
     "slope": "1.0 1.0 1.0",
-    "offset": "0.0000 0.0000 0.0000",
+    "offset": "0.0192 0.0192 0.0192",
     "power": "1.0 1.0 1.0",
     "sat": "1.0",
-    "diaph": 0.0,
+    "diaph": 0.25,
     "balance": "—",
-    "visages": 1
+    "visages": 1,
+    "boites": [
+     [
+      0.059,
+      0.197,
+      0.209,
+      0.372
+     ]
+    ]
    }
   },
   {
@@ -216,18 +228,26 @@
     "sat": "1.0",
     "diaph": 0.25,
     "balance": "—",
-    "visages": 1
+    "visages": 1,
+    "boites": [
+     [
+      0.37,
+      0.078,
+      0.463,
+      0.822
+     ]
+    ]
    }
   },
   {
    "piste": 1,
-   "nom": "20260604_C3689",
-   "src": 39.543,
+   "nom": "FX30.5635",
+   "src": 121.0,
    "dur": 3.701,
    "rec": 19.0,
    "look": "V4_nb",
    "vitesse": 1.0,
-   "note": "Jonathan au micro (synchro) : « …cinq ans après, on se recroise… »",
+   "note": "TRICHE (≈ 10 s) : Jonathan flou au premier plan, Ornella écoute",
    "cdl": {
     "slope": "1.0 1.0 1.0",
     "offset": "0.0000 0.0000 0.0000",
@@ -235,37 +255,80 @@
     "sat": "1.0",
     "diaph": 0.0,
     "balance": "—",
-    "visages": 0
-   }
-  },
-  {
-   "piste": 1,
-   "nom": "20260604_C3689",
-   "src": 43.244,
-   "dur": 7.173,
-   "rec": 22.701,
-   "look": "V4_nb",
-   "vitesse": 1.0,
-   "note": "Jonathan (synchro) : « …les premiers mots que je lui ai prononcés… »",
-   "cdl": {
-    "slope": "1.0 1.0 1.0",
-    "offset": "-0.0385 -0.0385 -0.0385",
-    "power": "1.0 1.0 1.0",
-    "sat": "1.0",
-    "diaph": -0.5,
-    "balance": "—",
-    "visages": 0
+    "visages": 1,
+    "boites": [
+     [
+      0.102,
+      0.15,
+      0.208,
+      0.369
+     ]
+    ]
    }
   },
   {
    "piste": 1,
    "nom": "FX30.5635",
-   "src": 138.337,
-   "dur": 7.0,
-   "rec": 29.874,
+   "src": 110.0,
+   "dur": 2.256,
+   "rec": 22.701,
    "look": "V4_nb",
    "vitesse": 1.0,
-   "note": "Ornella écoute la chute, puis éclate de rire (synchro, vrai moment : 143-147 s du rush)",
+   "note": "TRICHE (≈ 20 s avant) : un invité à casquette sourit",
+   "cdl": {
+    "slope": "1.0 1.0 1.0",
+    "offset": "0.0385 0.0385 0.0385",
+    "power": "1.0 1.0 1.0",
+    "sat": "1.0",
+    "diaph": 0.5,
+    "balance": "—",
+    "visages": 1,
+    "boites": [
+     [
+      0.522,
+      0.317,
+      0.219,
+      0.389
+     ]
+    ]
+   }
+  },
+  {
+   "piste": 1,
+   "nom": "20260604_C3689",
+   "src": 45.5,
+   "dur": 3.4,
+   "rec": 24.957,
+   "look": "V4_nb",
+   "vitesse": 1.0,
+   "note": "Jonathan au micro, plan moyen (synchro) : « …vous allez être servis… »",
+   "cdl": {
+    "slope": "1.0 1.0 1.0",
+    "offset": "0.0385 0.0385 0.0385",
+    "power": "1.0 1.0 1.0",
+    "sat": "1.0",
+    "diaph": 0.5,
+    "balance": "—",
+    "visages": 1,
+    "boites": [
+     [
+      0.32,
+      0.139,
+      0.133,
+      0.236
+     ]
+    ]
+   }
+  },
+  {
+   "piste": 1,
+   "nom": "FX30.5635",
+   "src": 137.9,
+   "dur": 8.517,
+   "rec": 28.357,
+   "look": "V4_nb",
+   "vitesse": 1.0,
+   "note": "TRICHE (1 s d'avance : un bras passe devant l'objectif à 137,6 s) : Ornella écoute « est-ce que tu veux mon panini ? », puis éclate de rire",
    "cdl": {
     "slope": "1.0 1.0 1.0",
     "offset": "-0.0192 -0.0192 -0.0192",
@@ -273,7 +336,15 @@
     "sat": "1.0",
     "diaph": -0.25,
     "balance": "—",
-    "visages": 1
+    "visages": 1,
+    "boites": [
+     [
+      0.434,
+      0.269,
+      0.173,
+      0.308
+     ]
+    ]
    }
   },
   {
@@ -285,6 +356,32 @@
    "look": "V4_nb",
    "vitesse": 1.0,
    "note": "TRICHE : invités qui rient (≈ 10 s après, même salle)",
+   "stab": {
+    "rec": 36.874,
+    "avant": {
+     "video": "FX30.5635.MP4",
+     "debut": 155.2,
+     "fin": 157.6,
+     "images": 120,
+     "fps": 50.0,
+     "moyenne": 5.36,
+     "pic": 13.88,
+     "vitesse_voulue_px_s": 56.8
+    },
+    "garder": true,
+    "fichier": "/Volumes/SSD FAST/Montage-IA/videos/phase-3/mariage-jo/_travail/stab/FX30.5635_155.20_0.5/FX30.5635_stabilized_agent.mov",
+    "debut_plage": 154.7,
+    "apres": {
+     "video": "FX30.5635_stabilized_agent.mov",
+     "debut": 0.5,
+     "fin": 2.9,
+     "images": 120,
+     "fps": 50.0,
+     "moyenne": 4.0,
+     "pic": 9.24,
+     "vitesse_voulue_px_s": 42.0
+    }
+   },
    "cdl": {
     "slope": "1.0 1.0 1.0",
     "offset": "0.0000 0.0000 0.0000",
@@ -292,7 +389,15 @@
     "sat": "1.0",
     "diaph": 0.0,
     "balance": "—",
-    "visages": 1
+    "visages": 1,
+    "boites": [
+     [
+      0.347,
+      0.289,
+      0.242,
+      0.431
+     ]
+    ]
    }
   },
   {
@@ -304,14 +409,41 @@
    "look": "V4_couleur",
    "vitesse": 1.0,
    "note": "le couple enlacé au bord du lac, large, pins parasols : TITRE",
+   "stab": {
+    "rec": 39.274,
+    "avant": {
+     "video": "FX30.5456.MP4",
+     "debut": 11.0,
+     "fin": 17.9,
+     "images": 345,
+     "fps": 50.0,
+     "moyenne": 11.57,
+     "pic": 70.58,
+     "vitesse_voulue_px_s": 67.8
+    },
+    "garder": true,
+    "fichier": "/Volumes/SSD FAST/Montage-IA/videos/phase-3/mariage-jo/_travail/stab/FX30.5456_11.00_0.5/FX30.5456_stabilized_agent.mov",
+    "debut_plage": 10.5,
+    "apres": {
+     "video": "FX30.5456_stabilized_agent.mov",
+     "debut": 0.5,
+     "fin": 7.4,
+     "images": 345,
+     "fps": 50.0,
+     "moyenne": 7.52,
+     "pic": 70.04,
+     "vitesse_voulue_px_s": 57.4
+    }
+   },
    "cdl": {
     "slope": "1.0 1.0 1.0",
-    "offset": "-0.1807 -0.1959 -0.1948",
+    "offset": "-0.1800 -0.1960 -0.1956",
     "power": "1.0 1.0 1.0",
     "sat": "1.0",
     "diaph": -2.5,
-    "balance": "1.11 0.97 0.98",
-    "visages": 0
+    "balance": "1.12 0.97 0.97",
+    "visages": 0,
+    "boites": []
    }
   },
   {
@@ -323,14 +455,41 @@
    "look": "V4_couleur",
    "vitesse": 1.0,
    "note": "le couple serré, bouquet, ils se regardent",
+   "stab": {
+    "rec": 46.17,
+    "avant": {
+     "video": "20260604_C3524.MP4",
+     "debut": 3.0,
+     "fin": 5.47,
+     "images": 124,
+     "fps": 50.0,
+     "moyenne": 9.82,
+     "pic": 18.33,
+     "vitesse_voulue_px_s": 80.4
+    },
+    "garder": true,
+    "fichier": "/Volumes/SSD FAST/Montage-IA/videos/phase-3/mariage-jo/_travail/stab/20260604_C3524_3.00_0.5/20260604_C3524_stabilized_agent.mov",
+    "debut_plage": 2.5,
+    "apres": {
+     "video": "20260604_C3524_stabilized_agent.mov",
+     "debut": 0.5,
+     "fin": 2.97,
+     "images": 124,
+     "fps": 50.0,
+     "moyenne": 2.08,
+     "pic": 5.39,
+     "vitesse_voulue_px_s": 49.7
+    }
+   },
    "cdl": {
     "slope": "1.0 1.0 1.0",
-    "offset": "-0.2336 -0.2294 -0.2371",
+    "offset": "-0.2333 -0.2295 -0.2377",
     "power": "1.0 1.0 1.0",
     "sat": "1.0",
     "diaph": -3.0,
-    "balance": "0.98 1.01 0.95",
-    "visages": 0
+    "balance": "0.98 1.01 0.94",
+    "visages": 0,
+    "boites": []
    }
   },
   {
@@ -340,16 +499,24 @@
    "dur": 2.45,
    "rec": 48.643,
    "look": "V4_couleur",
-   "vitesse": 1.0,
-   "note": "portrait du couple, sourires",
+   "vitesse": 0.5,
+   "note": "portrait du couple, sourires [ralenti x2 natif]",
    "cdl": {
     "slope": "1.0 1.0 1.0",
-    "offset": "-0.0982 -0.0949 -0.1033",
+    "offset": "-0.1758 -0.1716 -0.1812",
     "power": "1.0 1.0 1.0",
     "sat": "1.0",
-    "diaph": -1.25,
-    "balance": "0.98 1.01 0.94",
-    "visages": 0
+    "diaph": -2.25,
+    "balance": "0.98 1.01 0.93",
+    "visages": 1,
+    "boites": [
+     [
+      0.531,
+      0.275,
+      0.138,
+      0.244
+     ]
+    ]
    }
   },
   {
@@ -361,14 +528,41 @@
    "look": "V4_couleur",
    "vitesse": 1.0,
    "note": "la famille : Ornella la tête sur l'épaule de Jonathan, Naël devant avec le bouquet",
+   "stab": {
+    "rec": 51.093,
+    "avant": {
+     "video": "20260604_C3533.MP4",
+     "debut": 1.5,
+     "fin": 3.95,
+     "images": 123,
+     "fps": 50.0,
+     "moyenne": 10.79,
+     "pic": 20.34,
+     "vitesse_voulue_px_s": 66.9
+    },
+    "garder": true,
+    "fichier": "/Volumes/SSD FAST/Montage-IA/videos/phase-3/mariage-jo/_travail/stab/20260604_C3533_1.50_0.5/20260604_C3533_stabilized_agent.mov",
+    "debut_plage": 1.0,
+    "apres": {
+     "video": "20260604_C3533_stabilized_agent.mov",
+     "debut": 0.5,
+     "fin": 2.95,
+     "images": 123,
+     "fps": 50.0,
+     "moyenne": 2.88,
+     "pic": 5.52,
+     "vitesse_voulue_px_s": 37.6
+    }
+   },
    "cdl": {
     "slope": "1.0 1.0 1.0",
-    "offset": "-0.2261 -0.2310 -0.2449",
+    "offset": "-0.2245 -0.2312 -0.2476",
     "power": "1.0 1.0 1.0",
     "sat": "1.0",
     "diaph": -3.0,
-    "balance": "1.04 1.00 0.88",
-    "visages": 0
+    "balance": "1.06 1.00 0.86",
+    "visages": 0,
+    "boites": []
    }
   },
   {
@@ -380,14 +574,48 @@
    "look": "V4_couleur",
    "vitesse": 1.0,
    "note": "Naël sourit",
+   "stab": {
+    "rec": 53.543,
+    "avant": {
+     "video": "20260604_C3538.MP4",
+     "debut": 10.0,
+     "fin": 11.3,
+     "images": 65,
+     "fps": 50.0,
+     "moyenne": 6.87,
+     "pic": 15.85,
+     "vitesse_voulue_px_s": 100.6
+    },
+    "garder": true,
+    "fichier": "/Volumes/SSD FAST/Montage-IA/videos/phase-3/mariage-jo/_travail/stab/20260604_C3538_10.00_0.5/20260604_C3538_stabilized_agent.mov",
+    "debut_plage": 9.5,
+    "apres": {
+     "video": "20260604_C3538_stabilized_agent.mov",
+     "debut": 0.5,
+     "fin": 1.8,
+     "images": 65,
+     "fps": 50.0,
+     "moyenne": 3.57,
+     "pic": 5.54,
+     "vitesse_voulue_px_s": 75.4
+    }
+   },
    "cdl": {
     "slope": "1.0 1.0 1.0",
-    "offset": "-0.1057 -0.0939 -0.0923",
+    "offset": "-0.1074 -0.0935 -0.0913",
     "power": "1.0 1.0 1.0",
     "sat": "1.0",
     "diaph": -1.25,
-    "balance": "0.92 1.02 1.04",
-    "visages": 1
+    "balance": "0.90 1.02 1.04",
+    "visages": 1,
+    "boites": [
+     [
+      0.222,
+      0.264,
+      0.169,
+      0.3
+     ]
+    ]
    }
   },
   {
@@ -402,12 +630,20 @@
    "gel": true,
    "cdl": {
     "slope": "1.0 1.0 1.0",
-    "offset": "-0.0869 -0.0743 -0.0752",
+    "offset": "-0.0883 -0.0740 -0.0749",
     "power": "1.0 1.0 1.0",
     "sat": "1.0",
     "diaph": -1.0,
-    "balance": "0.91 1.02 1.02",
-    "visages": 1
+    "balance": "0.90 1.03 1.02",
+    "visages": 1,
+    "boites": [
+     [
+      0.308,
+      0.256,
+      0.138,
+      0.244
+     ]
+    ]
    }
   },
   {
@@ -419,14 +655,41 @@
    "look": "V4_couleur",
    "vitesse": 1.0,
    "note": "les trois au bord du lac, feuillage flou au premier plan",
+   "stab": {
+    "rec": 56.666,
+    "avant": {
+     "video": "FX30.5467.MP4",
+     "debut": 15.5,
+     "fin": 17.95,
+     "images": 123,
+     "fps": 50.0,
+     "moyenne": 6.66,
+     "pic": 16.0,
+     "vitesse_voulue_px_s": 52.8
+    },
+    "garder": true,
+    "fichier": "/Volumes/SSD FAST/Montage-IA/videos/phase-3/mariage-jo/_travail/stab/FX30.5467_15.50_0.5/FX30.5467_stabilized_agent.mov",
+    "debut_plage": 15.0,
+    "apres": {
+     "video": "FX30.5467_stabilized_agent.mov",
+     "debut": 0.5,
+     "fin": 2.95,
+     "images": 123,
+     "fps": 50.0,
+     "moyenne": 1.85,
+     "pic": 3.76,
+     "vitesse_voulue_px_s": 49.6
+    }
+   },
    "cdl": {
     "slope": "1.0 1.0 1.0",
-    "offset": "-0.2199 -0.2341 -0.2325",
+    "offset": "-0.2200 -0.2342 -0.2321",
     "power": "1.0 1.0 1.0",
     "sat": "1.0",
     "diaph": -3.0,
     "balance": "1.10 0.97 0.99",
-    "visages": 0
+    "visages": 0,
+    "boites": []
    }
   },
   {
@@ -438,14 +701,41 @@
    "look": "V4_couleur",
    "vitesse": 1.0,
    "note": "les trois au loin, cadrés par le tronc d'un arbre",
+   "stab": {
+    "rec": 59.115,
+    "avant": {
+     "video": "FX30.5464.MP4",
+     "debut": 6.0,
+     "fin": 8.41,
+     "images": 121,
+     "fps": 50.0,
+     "moyenne": 1.79,
+     "pic": 4.19,
+     "vitesse_voulue_px_s": 22.2
+    },
+    "garder": true,
+    "fichier": "/Volumes/SSD FAST/Montage-IA/videos/phase-3/mariage-jo/_travail/stab/FX30.5464_6.00_0.5/FX30.5464_stabilized_agent.mov",
+    "debut_plage": 5.5,
+    "apres": {
+     "video": "FX30.5464_stabilized_agent.mov",
+     "debut": 0.5,
+     "fin": 2.92,
+     "images": 121,
+     "fps": 50.0,
+     "moyenne": 0.38,
+     "pic": 0.66,
+     "vitesse_voulue_px_s": 39.7
+    }
+   },
    "cdl": {
     "slope": "1.0 1.0 1.0",
-    "offset": "-0.0643 -0.0806 -0.0808",
+    "offset": "-0.0441 -0.0616 -0.0627",
     "power": "1.0 1.0 1.0",
     "sat": "1.0",
-    "diaph": -1.0,
-    "balance": "1.12 0.97 0.97",
-    "visages": 0
+    "diaph": -0.75,
+    "balance": "1.13 0.97 0.96",
+    "visages": 0,
+    "boites": []
    }
   },
   {
@@ -459,12 +749,13 @@
    "note": "ils partent en courant, main dans la main, robe dans le vent [ralenti x2 natif]",
    "cdl": {
     "slope": "1.0 1.0 1.0",
-    "offset": "-0.1846 -0.1951 -0.1891",
+    "offset": "-0.1258 -0.1378 -0.1310",
     "power": "1.0 1.0 1.0",
     "sat": "1.0",
-    "diaph": -2.5,
-    "balance": "1.07 0.98 1.03",
-    "visages": 0
+    "diaph": -1.75,
+    "balance": "1.08 0.97 1.03",
+    "visages": 0,
+    "boites": []
    }
   },
   {
@@ -476,14 +767,41 @@
    "look": "V4_couleur",
    "vitesse": 0.5,
    "note": "ils s'éloignent, de dos, au ras du sol, la robe dans le vent [ralenti x2 natif]",
+   "stab": {
+    "rec": 63.98,
+    "avant": {
+     "video": "20260604_C3540.MP4",
+     "debut": 3.0,
+     "fin": 4.21,
+     "images": 61,
+     "fps": 50.0,
+     "moyenne": 6.93,
+     "pic": 14.33,
+     "vitesse_voulue_px_s": 33.7
+    },
+    "garder": true,
+    "fichier": "/Volumes/SSD FAST/Montage-IA/videos/phase-3/mariage-jo/_travail/stab/20260604_C3540_3.00_0.5/20260604_C3540_stabilized_agent.mov",
+    "debut_plage": 2.5,
+    "apres": {
+     "video": "20260604_C3540_stabilized_agent.mov",
+     "debut": 0.5,
+     "fin": 1.71,
+     "images": 61,
+     "fps": 50.0,
+     "moyenne": 1.2,
+     "pic": 2.3,
+     "vitesse_voulue_px_s": 30.1
+    }
+   },
    "cdl": {
     "slope": "1.0 1.0 1.0",
-    "offset": "-0.1713 -0.1729 -0.1812",
+    "offset": "-0.1511 -0.1538 -0.1636",
     "power": "1.0 1.0 1.0",
     "sat": "1.0",
-    "diaph": -2.25,
-    "balance": "1.02 1.00 0.93",
-    "visages": 0
+    "diaph": -2.0,
+    "balance": "1.03 1.00 0.92",
+    "visages": 0,
+    "boites": []
    }
   },
   {
@@ -493,16 +811,17 @@
    "dur": 1.23,
    "rec": 66.407,
    "look": "V4_couleur",
-   "vitesse": 1.0,
-   "note": "chaises « Madame » / « Monsieur », bougies",
+   "vitesse": 0.5,
+   "note": "chaises « Madame » / « Monsieur », bougies [ralenti x2 natif]",
    "cdl": {
     "slope": "1.0 1.0 1.0",
-    "offset": "0.0192 0.0192 0.0192",
+    "offset": "0.0385 0.0385 0.0385",
     "power": "1.0 1.0 1.0",
     "sat": "1.0",
-    "diaph": 0.25,
+    "diaph": 0.5,
     "balance": "—",
-    "visages": 0
+    "visages": 0,
+    "boites": []
    }
   },
   {
@@ -512,8 +831,8 @@
    "dur": 1.231,
    "rec": 67.637,
    "look": "V4_couleur",
-   "vitesse": 1.0,
-   "note": "bougies",
+   "vitesse": 0.5,
+   "note": "bougies [ralenti x2 natif]",
    "cdl": {
     "slope": "1.0 1.0 1.0",
     "offset": "0.1154 0.1154 0.1154",
@@ -521,7 +840,8 @@
     "sat": "1.0",
     "diaph": 1.5,
     "balance": "—",
-    "visages": 0
+    "visages": 0,
+    "boites": []
    }
   },
   {
@@ -531,16 +851,17 @@
    "dur": 1.207,
    "rec": 68.868,
    "look": "V4_couleur",
-   "vitesse": 1.0,
-   "note": "roses sur les chaises, bascule de point",
+   "vitesse": 0.5,
+   "note": "roses sur les chaises, bascule de point [ralenti x2 natif]",
    "cdl": {
     "slope": "1.0 1.0 1.0",
-    "offset": "-0.2233 -0.2091 -0.2040",
+    "offset": "-0.2242 -0.2089 -0.2039",
     "power": "1.0 1.0 1.0",
     "sat": "1.0",
     "diaph": -2.75,
-    "balance": "0.90 1.02 1.07",
-    "visages": 0
+    "balance": "0.89 1.02 1.07",
+    "visages": 0,
+    "boites": []
    }
   },
   {
@@ -550,16 +871,24 @@
    "dur": 1.231,
    "rec": 70.075,
    "look": "V4_couleur",
-   "vitesse": 1.0,
-   "note": "un invité, regard caméra, sourire",
+   "vitesse": 0.5,
+   "note": "un invité, regard caméra, sourire [ralenti x2 natif]",
    "cdl": {
     "slope": "1.0 1.0 1.0",
-    "offset": "0.0258 0.0180 0.0112",
+    "offset": "0.0262 0.0181 0.0094",
     "power": "1.0 1.0 1.0",
     "sat": "1.0",
     "diaph": 0.25,
-    "balance": "1.06 0.99 0.93",
-    "visages": 1
+    "balance": "1.06 0.99 0.92",
+    "visages": 1,
+    "boites": [
+     [
+      0.175,
+      0.136,
+      0.244,
+      0.433
+     ]
+    ]
    }
   },
   {
@@ -569,16 +898,24 @@
    "dur": 1.231,
    "rec": 71.306,
    "look": "V4_couleur",
-   "vitesse": 1.0,
-   "note": "un invité rit",
+   "vitesse": 0.5,
+   "note": "un invité rit [ralenti x2 natif]",
    "cdl": {
     "slope": "1.0 1.0 1.0",
-    "offset": "0.0327 0.0154 0.0142",
+    "offset": "0.0151 -0.0044 -0.0055",
     "power": "1.0 1.0 1.0",
     "sat": "1.0",
-    "diaph": 0.25,
-    "balance": "1.13 0.97 0.96",
-    "visages": 1
+    "diaph": 0.0,
+    "balance": "1.15 0.96 0.95",
+    "visages": 1,
+    "boites": [
+     [
+      0.23,
+      0.25,
+      0.164,
+      0.292
+     ]
+    ]
    }
   },
   {
@@ -592,12 +929,13 @@
    "note": "les invités entrent dans la salle de pierre (contre-jour)",
    "cdl": {
     "slope": "1.0 1.0 1.0",
-    "offset": "0.0153 0.0198 0.0246",
+    "offset": "0.0147 0.0199 0.0253",
     "power": "1.0 1.0 1.0",
     "sat": "1.0",
     "diaph": 0.25,
-    "balance": "0.97 1.01 1.05",
-    "visages": 0
+    "balance": "0.96 1.01 1.06",
+    "visages": 0,
+    "boites": []
    }
   },
   {
@@ -611,12 +949,13 @@
    "note": "Ornella entre et éclate de rire (son de la salle)",
    "cdl": {
     "slope": "1.0 1.0 1.0",
-    "offset": "-0.2116 -0.2116 -0.2116",
+    "offset": "-0.1924 -0.1924 -0.1924",
     "power": "1.0 1.0 1.0",
     "sat": "1.0",
-    "diaph": -2.75,
+    "diaph": -2.5,
     "balance": "—",
-    "visages": 0
+    "visages": 0,
+    "boites": []
    }
   },
   {
@@ -635,7 +974,8 @@
     "sat": "1.0",
     "diaph": -0.5,
     "balance": "—",
-    "visages": 0
+    "visages": 0,
+    "boites": []
    }
   },
   {
@@ -647,6 +987,32 @@
    "look": "V4_nb",
    "vitesse": 1.0,
    "note": "[orage] l'officiant : « il y aura de l'orage tout à l'heure » (synchro)",
+   "stab": {
+    "rec": 80.937,
+    "avant": {
+     "video": "20260604_C3657.MP4",
+     "debut": 24.07,
+     "fin": 25.87,
+     "images": 90,
+     "fps": 50.0,
+     "moyenne": 3.9,
+     "pic": 10.5,
+     "vitesse_voulue_px_s": 62.7
+    },
+    "garder": true,
+    "fichier": "/Volumes/SSD FAST/Montage-IA/videos/phase-3/mariage-jo/_travail/stab/20260604_C3657_24.07_0.5/20260604_C3657_stabilized_agent.mov",
+    "debut_plage": 23.569,
+    "apres": {
+     "video": "20260604_C3657_stabilized_agent.mov",
+     "debut": 0.5,
+     "fin": 2.3,
+     "images": 90,
+     "fps": 50.0,
+     "moyenne": 2.38,
+     "pic": 3.93,
+     "vitesse_voulue_px_s": 53.1
+    }
+   },
    "cdl": {
     "slope": "1.0 1.0 1.0",
     "offset": "-0.0192 -0.0192 -0.0192",
@@ -654,7 +1020,8 @@
     "sat": "1.0",
     "diaph": -0.25,
     "balance": "—",
-    "visages": 0
+    "visages": 0,
+    "boites": []
    }
   },
   {
@@ -668,12 +1035,20 @@
    "note": "[orage] TRICHE (≈ 20 s après) : les invités rient",
    "cdl": {
     "slope": "1.0 1.0 1.0",
-    "offset": "0.1154 0.1154 0.1154",
+    "offset": "0.0385 0.0385 0.0385",
     "power": "1.0 1.0 1.0",
     "sat": "1.0",
-    "diaph": 1.5,
+    "diaph": 0.5,
     "balance": "—",
-    "visages": 1
+    "visages": 1,
+    "boites": [
+     [
+      0.384,
+      0.225,
+      0.172,
+      0.306
+     ]
+    ]
    }
   },
   {
@@ -692,7 +1067,15 @@
     "sat": "1.0",
     "diaph": -1.5,
     "balance": "—",
-    "visages": 1
+    "visages": 1,
+    "boites": [
+     [
+      0.448,
+      0.214,
+      0.191,
+      0.339
+     ]
+    ]
    }
   },
   {
@@ -706,12 +1089,13 @@
    "note": "[promesse] TRICHE (70 s après) : les mariés rient, serrés",
    "cdl": {
     "slope": "1.0 1.0 1.0",
-    "offset": "-0.0577 -0.0577 -0.0577",
+    "offset": "-0.0385 -0.0385 -0.0385",
     "power": "1.0 1.0 1.0",
     "sat": "1.0",
-    "diaph": -0.75,
+    "diaph": -0.5,
     "balance": "—",
-    "visages": 0
+    "visages": 0,
+    "boites": []
    }
   },
   {
@@ -730,7 +1114,8 @@
     "sat": "1.0",
     "diaph": -1.5,
     "balance": "—",
-    "visages": 0
+    "visages": 0,
+    "boites": []
    }
   },
   {
@@ -742,14 +1127,48 @@
    "look": "V4_nb",
    "vitesse": 1.0,
    "note": "[pere] TRICHE (≈ 20 s après) : deux invitées l'écoutent, émues, l'une avec un éventail",
+   "stab": {
+    "rec": 93.251,
+    "avant": {
+     "video": "20260604_C3686.MP4",
+     "debut": 174.5,
+     "fin": 178.1,
+     "images": 180,
+     "fps": 50.0,
+     "moyenne": 2.37,
+     "pic": 6.45,
+     "vitesse_voulue_px_s": 36.8
+    },
+    "garder": true,
+    "fichier": "/Volumes/SSD FAST/Montage-IA/videos/phase-3/mariage-jo/_travail/stab/20260604_C3686_174.50_0.5/20260604_C3686_stabilized_agent.mov",
+    "debut_plage": 174.0,
+    "apres": {
+     "video": "20260604_C3686_stabilized_agent.mov",
+     "debut": 0.5,
+     "fin": 4.1,
+     "images": 180,
+     "fps": 50.0,
+     "moyenne": 1.12,
+     "pic": 2.99,
+     "vitesse_voulue_px_s": 33.8
+    }
+   },
    "cdl": {
     "slope": "1.0 1.0 1.0",
-    "offset": "0.1154 0.1154 0.1154",
+    "offset": "0.0385 0.0385 0.0385",
     "power": "1.0 1.0 1.0",
     "sat": "1.0",
-    "diaph": 1.5,
+    "diaph": 0.5,
     "balance": "—",
-    "visages": 1
+    "visages": 1,
+    "boites": [
+     [
+      0.381,
+      0.317,
+      0.195,
+      0.347
+     ]
+    ]
    }
   },
   {
@@ -768,7 +1187,8 @@
     "sat": "1.0",
     "diaph": 0.5,
     "balance": "—",
-    "visages": 0
+    "visages": 0,
+    "boites": []
    }
   },
   {
@@ -787,7 +1207,8 @@
     "sat": "1.0",
     "diaph": -0.75,
     "balance": "—",
-    "visages": 0
+    "visages": 0,
+    "boites": []
    }
   },
   {
@@ -801,12 +1222,20 @@
    "note": "[naze] TRICHE (≈ 1 s) : Ornella écoute",
    "cdl": {
     "slope": "1.0 1.0 1.0",
-    "offset": "0.0577 0.0577 0.0577",
+    "offset": "-0.0192 -0.0192 -0.0192",
     "power": "1.0 1.0 1.0",
     "sat": "1.0",
-    "diaph": 0.75,
+    "diaph": -0.25,
     "balance": "—",
-    "visages": 0
+    "visages": 1,
+    "boites": [
+     [
+      0.45,
+      0.289,
+      0.164,
+      0.292
+     ]
+    ]
    }
   },
   {
@@ -820,12 +1249,20 @@
    "note": "[naze] Jonathan : « …viens, on va manger un McDo » (synchro) (synchro)",
    "cdl": {
     "slope": "1.0 1.0 1.0",
-    "offset": "0.0962 0.0962 0.0962",
+    "offset": "0.0385 0.0385 0.0385",
     "power": "1.0 1.0 1.0",
     "sat": "1.0",
-    "diaph": 1.25,
+    "diaph": 0.5,
     "balance": "—",
-    "visages": 1
+    "visages": 1,
+    "boites": [
+     [
+      0.283,
+      0.139,
+      0.156,
+      0.278
+     ]
+    ]
    }
   },
   {
@@ -837,14 +1274,41 @@
    "look": "V4_nb",
    "vitesse": 1.0,
    "note": "[demande] la vraie demande, à genoux (Diego, large) (synchro)",
+   "stab": {
+    "rec": 118.234,
+    "avant": {
+     "video": "20260604_C3695.MP4",
+     "debut": 59.62,
+     "fin": 70.76,
+     "images": 557,
+     "fps": 50.0,
+     "moyenne": 5.77,
+     "pic": 26.52,
+     "vitesse_voulue_px_s": 75.3
+    },
+    "garder": true,
+    "fichier": "/Volumes/SSD FAST/Montage-IA/videos/phase-3/mariage-jo/_travail/stab/20260604_C3695_59.62_0.5/20260604_C3695_stabilized_agent.mov",
+    "debut_plage": 59.123,
+    "apres": {
+     "video": "20260604_C3695_stabilized_agent.mov",
+     "debut": 0.5,
+     "fin": 11.63,
+     "images": 557,
+     "fps": 50.0,
+     "moyenne": 3.89,
+     "pic": 13.8,
+     "vitesse_voulue_px_s": 77.0
+    }
+   },
    "cdl": {
     "slope": "1.0 1.0 1.0",
-    "offset": "0.1154 0.1154 0.1154",
+    "offset": "0.0192 0.0192 0.0192",
     "power": "1.0 1.0 1.0",
     "sat": "1.0",
-    "diaph": 1.5,
+    "diaph": 0.25,
     "balance": "—",
-    "visages": 1
+    "visages": 0,
+    "boites": []
    }
   },
   {
@@ -858,12 +1322,13 @@
    "note": "l'étreinte après la demande, fleurs derrière (Quentin, vrai moment, ≈ 4 s après la phrase)",
    "cdl": {
     "slope": "1.0 1.0 1.0",
-    "offset": "-0.0962 -0.0962 -0.0962",
+    "offset": "-0.0770 -0.0770 -0.0770",
     "power": "1.0 1.0 1.0",
     "sat": "1.0",
-    "diaph": -1.25,
+    "diaph": -1.0,
     "balance": "—",
-    "visages": 0
+    "visages": 0,
+    "boites": []
    }
   },
   {
@@ -875,20 +1340,54 @@
    "look": "V4_nb",
    "vitesse": 1.0,
    "note": "[collier] l'officiant : « dans dix ans, ce sera un collier » (synchro)",
+   "stab": {
+    "rec": 134.169,
+    "avant": {
+     "video": "20260604_C3695.MP4",
+     "debut": 104.97,
+     "fin": 106.77,
+     "images": 90,
+     "fps": 50.0,
+     "moyenne": 9.17,
+     "pic": 17.56,
+     "vitesse_voulue_px_s": 70.7
+    },
+    "garder": true,
+    "fichier": "/Volumes/SSD FAST/Montage-IA/videos/phase-3/mariage-jo/_travail/stab/20260604_C3695_104.97_0.5/20260604_C3695_stabilized_agent.mov",
+    "debut_plage": 104.47,
+    "apres": {
+     "video": "20260604_C3695_stabilized_agent.mov",
+     "debut": 0.5,
+     "fin": 2.3,
+     "images": 90,
+     "fps": 50.0,
+     "moyenne": 3.95,
+     "pic": 7.42,
+     "vitesse_voulue_px_s": 86.4
+    }
+   },
    "cdl": {
     "slope": "1.0 1.0 1.0",
-    "offset": "0.0000 0.0000 0.0000",
+    "offset": "0.0385 0.0385 0.0385",
     "power": "1.0 1.0 1.0",
     "sat": "1.0",
-    "diaph": 0.0,
+    "diaph": 0.5,
     "balance": "—",
-    "visages": 0
+    "visages": 1,
+    "boites": [
+     [
+      0.547,
+      0.133,
+      0.15,
+      0.267
+     ]
+    ]
    }
   },
   {
    "piste": 1,
    "nom": "20260604_C3695",
-   "src": 116.5,
+   "src": 116.3,
    "dur": 1.65,
    "rec": 135.969,
    "look": "V4_nb",
@@ -896,12 +1395,13 @@
    "note": "[collier] TRICHE (≈ 10 s après) : Naël apporte les bracelets",
    "cdl": {
     "slope": "1.0 1.0 1.0",
-    "offset": "-0.0577 -0.0577 -0.0577",
+    "offset": "-0.0385 -0.0385 -0.0385",
     "power": "1.0 1.0 1.0",
     "sat": "1.0",
-    "diaph": -0.75,
+    "diaph": -0.5,
     "balance": "—",
-    "visages": 0
+    "visages": 0,
+    "boites": []
    }
   },
   {
@@ -915,23 +1415,24 @@
    "note": "TRICHE (1 min après) : le bracelet au poignet, les mains (insert)",
    "cdl": {
     "slope": "1.0 1.0 1.0",
-    "offset": "-0.0577 -0.0577 -0.0577",
+    "offset": "-0.0385 -0.0385 -0.0385",
     "power": "1.0 1.0 1.0",
     "sat": "1.0",
-    "diaph": -0.75,
+    "diaph": -0.5,
     "balance": "—",
-    "visages": 0
+    "visages": 0,
+    "boites": []
    }
   },
   {
    "piste": 1,
    "nom": "20260604_C3696",
    "src": 49.347,
-   "dur": 5.676,
+   "dur": 3.2,
    "rec": 140.219,
    "look": "V4_nb",
    "vitesse": 1.0,
-   "note": "[remari] l'officiant : « je vous déclare re-mari et re-femme » (synchro) (synchro)",
+   "note": "[remari] le couple écoute l'officiant (synchro ; coupé avant le panoramique de 53 s) (synchro)",
    "cdl": {
     "slope": "1.0 1.0 1.0",
     "offset": "0.0000 0.0000 0.0000",
@@ -939,7 +1440,28 @@
     "sat": "1.0",
     "diaph": 0.0,
     "balance": "—",
-    "visages": 0
+    "visages": 0,
+    "boites": []
+   }
+  },
+  {
+   "piste": 1,
+   "nom": "FX30.5635",
+   "src": 570.957,
+   "dur": 2.476,
+   "rec": 143.419,
+   "look": "V4_nb",
+   "vitesse": 1.0,
+   "note": "[remari] Ornella et Jonathan, « re-mari et re-femme » (Quentin, synchro ; enchaîne sans coupure sur le baiser) (synchro)",
+   "cdl": {
+    "slope": "1.0 1.0 1.0",
+    "offset": "-0.0577 -0.0577 -0.0577",
+    "power": "1.0 1.0 1.0",
+    "sat": "1.0",
+    "diaph": -0.75,
+    "balance": "—",
+    "visages": 0,
+    "boites": []
    }
   },
   {
@@ -954,12 +1476,13 @@
    "fondu_grade": 1.0,
    "cdl": {
     "slope": "1.0 1.0 1.0",
-    "offset": "-0.0962 -0.0962 -0.0962",
+    "offset": "-0.0770 -0.0770 -0.0770",
     "power": "1.0 1.0 1.0",
     "sat": "1.0",
-    "diaph": -1.25,
+    "diaph": -1.0,
     "balance": "—",
-    "visages": 0
+    "visages": 0,
+    "boites": []
    }
   },
   {
@@ -973,12 +1496,13 @@
    "note": "… la couleur revient dans le même plan : Jonathan l'attire contre lui (fondu de grade, suite exacte du rush)",
    "cdl": {
     "slope": "1.0 1.0 1.0",
-    "offset": "0.0604 0.0821 0.0696",
+    "offset": "-0.0575 -0.0326 -0.0469",
     "power": "1.0 1.0 1.0",
     "sat": "1.0",
-    "diaph": 1.0,
-    "balance": "0.86 1.05 0.94",
-    "visages": 1
+    "diaph": -0.5,
+    "balance": "0.84 1.05 0.93",
+    "visages": 0,
+    "boites": []
    }
   },
   {
@@ -993,12 +1517,13 @@
    "gel": true,
    "cdl": {
     "slope": "1.0 1.0 1.0",
-    "offset": "-0.0547 -0.0333 -0.0463",
+    "offset": "-0.0571 -0.0327 -0.0475",
     "power": "1.0 1.0 1.0",
     "sat": "1.0",
     "diaph": -0.5,
-    "balance": "0.86 1.05 0.93",
-    "visages": 0
+    "balance": "0.85 1.05 0.92",
+    "visages": 0,
+    "boites": []
    }
   },
   {
@@ -1012,12 +1537,26 @@
    "note": "les invités applaudissent (Quentin, ≈ 6 s après le baiser)",
    "cdl": {
     "slope": "1.0 1.0 1.0",
-    "offset": "0.0385 0.0385 0.0385",
+    "offset": "0.0577 0.0577 0.0577",
     "power": "1.0 1.0 1.0",
     "sat": "1.0",
-    "diaph": 0.5,
+    "diaph": 0.75,
     "balance": "—",
-    "visages": 2
+    "visages": 2,
+    "boites": [
+     [
+      0.27,
+      0.244,
+      0.167,
+      0.297
+     ],
+     [
+      0.491,
+      0.167,
+      0.209,
+      0.372
+     ]
+    ]
    }
   },
   {
@@ -1029,14 +1568,48 @@
    "look": "V4_couleur",
    "vitesse": 1.0,
    "note": "Jonathan embrassé par un ami (synchro à quelques secondes)",
+   "stab": {
+    "rec": 154.095,
+    "avant": {
+     "video": "20260604_C3697.MP4",
+     "debut": 5.0,
+     "fin": 7.6,
+     "images": 130,
+     "fps": 50.0,
+     "moyenne": 9.85,
+     "pic": 24.12,
+     "vitesse_voulue_px_s": 128.9
+    },
+    "garder": true,
+    "fichier": "/Volumes/SSD FAST/Montage-IA/videos/phase-3/mariage-jo/_travail/stab/20260604_C3697_5.00_0.5/20260604_C3697_stabilized_agent.mov",
+    "debut_plage": 4.5,
+    "apres": {
+     "video": "20260604_C3697_stabilized_agent.mov",
+     "debut": 0.5,
+     "fin": 3.1,
+     "images": 130,
+     "fps": 50.0,
+     "moyenne": 2.84,
+     "pic": 4.71,
+     "vitesse_voulue_px_s": 109.0
+    }
+   },
    "cdl": {
     "slope": "1.0 1.0 1.0",
-    "offset": "0.1154 0.1154 0.1154",
+    "offset": "0.0962 0.0962 0.0962",
     "power": "1.0 1.0 1.0",
     "sat": "1.0",
-    "diaph": 1.5,
+    "diaph": 1.25,
     "balance": "—",
-    "visages": 1
+    "visages": 1,
+    "boites": [
+     [
+      0.414,
+      0.025,
+      0.159,
+      0.283
+     ]
+    ]
    }
   },
   {
@@ -1050,12 +1623,13 @@
    "note": "pieds bicolores qui battent la mesure",
    "cdl": {
     "slope": "1.0 1.0 1.0",
-    "offset": "-0.2365 -0.2303 -0.2201",
+    "offset": "-0.2374 -0.2303 -0.2186",
     "power": "1.0 1.0 1.0",
     "sat": "1.0",
     "diaph": -3.0,
-    "balance": "0.95 1.00 1.10",
-    "visages": 0
+    "balance": "0.94 1.01 1.12",
+    "visages": 0,
+    "boites": []
    }
   },
   {
@@ -1065,16 +1639,24 @@
    "dur": 1.777,
    "rec": 157.623,
    "look": "V4_couleur",
-   "vitesse": 1.0,
-   "note": "la dame aux cheveux blancs rit, bras levés",
+   "vitesse": 0.5,
+   "note": "la dame aux cheveux blancs rit, bras levés [ralenti x2 natif]",
    "cdl": {
     "slope": "1.0 1.0 1.0",
-    "offset": "-0.1235 -0.1115 -0.1337",
+    "offset": "-0.1025 -0.0926 -0.1164",
     "power": "1.0 1.0 1.0",
     "sat": "1.0",
-    "diaph": -1.5,
-    "balance": "0.93 1.04 0.85",
-    "visages": 1
+    "diaph": -1.25,
+    "balance": "0.94 1.03 0.83",
+    "visages": 1,
+    "boites": [
+     [
+      0.423,
+      0.119,
+      0.234,
+      0.417
+     ]
+    ]
    }
   },
   {
@@ -1084,54 +1666,44 @@
    "dur": 0.859,
    "rec": 159.4,
    "look": "V4_couleur",
-   "vitesse": 1.0,
-   "note": "main sur la guitare",
+   "vitesse": 0.5,
+   "note": "main sur la guitare [ralenti x2 natif]",
    "cdl": {
     "slope": "1.0 1.0 1.0",
-    "offset": "-0.1010 -0.0957 -0.0873",
-    "power": "1.0 1.0 1.0",
-    "sat": "1.0",
-    "diaph": -1.25,
-    "balance": "0.96 1.00 1.08",
-    "visages": 0
-   }
-  },
-  {
-   "piste": 1,
-   "nom": "FX30.5698",
-   "src": 49.0,
-   "dur": 0.836,
-   "rec": 160.259,
-   "look": "V4_couleur",
-   "vitesse": 1.0,
-   "note": "contrebasse",
-   "cdl": {
-    "slope": "1.0 1.0 1.0",
-    "offset": "-0.0821 -0.0765 -0.0666",
+    "offset": "-0.0822 -0.0765 -0.0668",
     "power": "1.0 1.0 1.0",
     "sat": "1.0",
     "diaph": -1.0,
     "balance": "0.95 1.00 1.10",
-    "visages": 1
+    "visages": 0,
+    "boites": []
    }
   },
   {
    "piste": 1,
-   "nom": "FX30.5698",
-   "src": 31.3,
-   "dur": 0.847,
-   "rec": 161.095,
+   "nom": "FX30.5697",
+   "src": 1.0,
+   "dur": 1.683,
+   "rec": 160.259,
    "look": "V4_couleur",
    "vitesse": 1.0,
-   "note": "saxophone",
+   "note": "le saxophoniste rit (remplace contrebasse et saxophone : panoramiques rapides)",
    "cdl": {
     "slope": "1.0 1.0 1.0",
-    "offset": "-0.0266 -0.0411 -0.0500",
+    "offset": "-0.0203 -0.0193 -0.0153",
     "power": "1.0 1.0 1.0",
     "sat": "1.0",
-    "diaph": -0.5,
-    "balance": "1.11 0.98 0.90",
-    "visages": 1
+    "diaph": -0.25,
+    "balance": "0.99 1.00 1.04",
+    "visages": 1,
+    "boites": [
+     [
+      0.398,
+      0.403,
+      0.195,
+      0.347
+     ]
+    ]
    }
   },
   {
@@ -1145,12 +1717,20 @@
    "note": "le guitariste sourit",
    "cdl": {
     "slope": "1.0 1.0 1.0",
-    "offset": "0.0859 0.0751 0.0670",
+    "offset": "0.0871 0.0748 0.0656",
     "power": "1.0 1.0 1.0",
     "sat": "1.0",
     "diaph": 1.0,
-    "balance": "1.08 0.98 0.91",
-    "visages": 1
+    "balance": "1.10 0.98 0.90",
+    "visages": 1,
+    "boites": [
+     [
+      0.405,
+      0.303,
+      0.177,
+      0.314
+     ]
+    ]
    }
   },
   {
@@ -1162,14 +1742,41 @@
    "look": "V4_couleur",
    "vitesse": 1.0,
    "note": "la dame aux cheveux blancs danse",
+   "stab": {
+    "rec": 163.649,
+    "avant": {
+     "video": "FX30.5743.MP4",
+     "debut": 9.6,
+     "fin": 11.32,
+     "images": 86,
+     "fps": 50.0,
+     "moyenne": 9.8,
+     "pic": 18.18,
+     "vitesse_voulue_px_s": 244.8
+    },
+    "garder": true,
+    "fichier": "/Volumes/SSD FAST/Montage-IA/videos/phase-3/mariage-jo/_travail/stab/FX30.5743_9.60_0.5/FX30.5743_stabilized_agent.mov",
+    "debut_plage": 9.1,
+    "apres": {
+     "video": "FX30.5743_stabilized_agent.mov",
+     "debut": 0.5,
+     "fin": 2.22,
+     "images": 86,
+     "fps": 50.0,
+     "moyenne": 6.13,
+     "pic": 9.23,
+     "vitesse_voulue_px_s": 207.2
+    }
+   },
    "cdl": {
     "slope": "1.0 1.0 1.0",
-    "offset": "-0.1816 -0.1712 -0.1686",
+    "offset": "-0.1830 -0.1710 -0.1669",
     "power": "1.0 1.0 1.0",
     "sat": "1.0",
     "diaph": -2.25,
-    "balance": "0.93 1.02 1.04",
-    "visages": 0
+    "balance": "0.92 1.02 1.06",
+    "visages": 0,
+    "boites": []
    }
   },
   {
@@ -1183,12 +1790,13 @@
    "note": "Naël reçoit sa caricature",
    "cdl": {
     "slope": "1.0 1.0 1.0",
-    "offset": "-0.1529 -0.1524 -0.1732",
+    "offset": "-0.1528 -0.1522 -0.1760",
     "power": "1.0 1.0 1.0",
     "sat": "1.0",
     "diaph": -2.0,
-    "balance": "1.01 1.01 0.84",
-    "visages": 0
+    "balance": "1.01 1.02 0.82",
+    "visages": 0,
+    "boites": []
    }
   },
   {
@@ -1198,16 +1806,30 @@
    "dur": 1.719,
    "rec": 167.062,
    "look": "V4_couleur",
-   "vitesse": 1.0,
-   "note": "Naël rit",
+   "vitesse": 0.5,
+   "note": "Naël rit [ralenti x2 natif]",
    "cdl": {
     "slope": "1.0 1.0 1.0",
-    "offset": "-0.0623 -0.0567 -0.0546",
+    "offset": "-0.0630 -0.0563 -0.0563",
     "power": "1.0 1.0 1.0",
     "sat": "1.0",
     "diaph": -0.75,
-    "balance": "0.96 1.01 1.03",
-    "visages": 2
+    "balance": "0.95 1.01 1.01",
+    "visages": 2,
+    "boites": [
+     [
+      0.483,
+      0.353,
+      0.167,
+      0.297
+     ],
+     [
+      0.0,
+      0.147,
+      0.258,
+      0.458
+     ]
+    ]
    }
   },
   {
@@ -1221,12 +1843,20 @@
    "note": "[panini2] Sylvain : « c'est moi qui t'emmenais avec ton panini » (le rappel)",
    "cdl": {
     "slope": "1.0 1.0 1.0",
-    "offset": "-0.0342 -0.0382 -0.0559",
+    "offset": "-0.0336 -0.0381 -0.0584",
     "power": "1.0 1.0 1.0",
     "sat": "1.0",
     "diaph": -0.5,
-    "balance": "1.04 1.00 0.85",
-    "visages": 1
+    "balance": "1.05 1.00 0.84",
+    "visages": 1,
+    "boites": [
+     [
+      0.347,
+      0.222,
+      0.191,
+      0.339
+     ]
+    ]
    }
   },
   {
@@ -1240,12 +1870,20 @@
    "note": "[buffet] « je vous aime, merci pour ce buffet gratuit »",
    "cdl": {
     "slope": "1.0 1.0 1.0",
-    "offset": "-0.0096 -0.0211 -0.0315",
+    "offset": "-0.0082 -0.0214 -0.0332",
     "power": "1.0 1.0 1.0",
     "sat": "1.0",
     "diaph": -0.25,
-    "balance": "1.09 0.98 0.90",
-    "visages": 1
+    "balance": "1.10 0.98 0.88",
+    "visages": 1,
+    "boites": [
+     [
+      0.469,
+      0.286,
+      0.212,
+      0.378
+     ]
+    ]
    }
   },
   {
@@ -1259,12 +1897,20 @@
    "note": "[invitee] Ornella déguisée en invitée : « les mariés étaient super, surtout la mariée… »",
    "cdl": {
     "slope": "1.0 1.0 1.0",
-    "offset": "-0.1172 -0.1132 -0.1343",
+    "offset": "-0.1175 -0.1129 -0.1370",
     "power": "1.0 1.0 1.0",
     "sat": "1.0",
     "diaph": -1.5,
-    "balance": "0.98 1.02 0.84",
-    "visages": 1
+    "balance": "0.98 1.02 0.82",
+    "visages": 1,
+    "boites": [
+     [
+      0.403,
+      0.167,
+      0.17,
+      0.303
+     ]
+    ]
    }
   },
   {
@@ -1283,7 +1929,8 @@
     "sat": "1.0",
     "diaph": -3.0,
     "balance": "—",
-    "visages": 0
+    "visages": 0,
+    "boites": []
    }
   },
   {
@@ -1297,12 +1944,20 @@
    "note": "la dame danse sous la pluie, bras ouverts [ralenti x4, Speed Warp]",
    "cdl": {
     "slope": "1.0 1.0 1.0",
-    "offset": "-0.2308 -0.2308 -0.2308",
+    "offset": "-0.0962 -0.0962 -0.0962",
     "power": "1.0 1.0 1.0",
     "sat": "1.0",
-    "diaph": -3.0,
+    "diaph": -1.25,
     "balance": "—",
-    "visages": 0
+    "visages": 1,
+    "boites": [
+     [
+      0.459,
+      0.347,
+      0.113,
+      0.2
+     ]
+    ]
    }
   },
   {
@@ -1316,12 +1971,13 @@
    "note": "puis les bras levés, temps réel",
    "cdl": {
     "slope": "1.0 1.0 1.0",
-    "offset": "-0.1924 -0.1924 -0.1924",
+    "offset": "-0.2308 -0.2308 -0.2308",
     "power": "1.0 1.0 1.0",
     "sat": "1.0",
-    "diaph": -2.5,
+    "diaph": -3.0,
     "balance": "—",
-    "visages": 1
+    "visages": 0,
+    "boites": []
    }
   },
   {
@@ -1335,12 +1991,20 @@
    "note": "le domaine à l'heure bleue, la salle éclairée (un invité au premier plan)",
    "cdl": {
     "slope": "1.0 1.0 1.0",
-    "offset": "0.1018 0.1194 0.1129",
+    "offset": "0.0286 0.0658 0.0498",
     "power": "1.0 1.0 1.0",
     "sat": "1.0",
-    "diaph": 1.5,
-    "balance": "0.88 1.04 0.98",
-    "visages": 1
+    "diaph": 0.75,
+    "balance": "0.77 1.08 0.93",
+    "visages": 1,
+    "boites": [
+     [
+      0.414,
+      0.261,
+      0.166,
+      0.294
+     ]
+    ]
    }
   },
   {
@@ -1350,16 +2014,24 @@
    "dur": 1.904,
    "rec": 196.831,
    "look": "V4_couleur",
-   "vitesse": 1.0,
-   "note": "la salle danse entre les plats, fenêtres bleues du crépuscule",
+   "vitesse": 0.5,
+   "note": "la salle danse entre les plats, fenêtres bleues du crépuscule [ralenti x2 natif]",
    "cdl": {
     "slope": "1.0 1.0 1.0",
-    "offset": "-0.0962 -0.0972 -0.0862",
+    "offset": "-0.0726 -0.0080 -0.0116",
     "power": "1.0 1.0 1.0",
     "sat": "1.0",
-    "diaph": -1.25,
-    "balance": "1.00 0.99 1.09",
-    "visages": 0
+    "diaph": -0.25,
+    "balance": "0.62 1.11 1.07",
+    "visages": 1,
+    "boites": [
+     [
+      0.37,
+      0.558,
+      0.155,
+      0.275
+     ]
+    ]
    }
   },
   {
@@ -1369,16 +2041,30 @@
    "dur": 1.916,
    "rec": 198.735,
    "look": "V4_couleur",
-   "vitesse": 1.0,
-   "note": "Jonathan et son père dansent ensemble",
+   "vitesse": 0.5,
+   "note": "Jonathan et son père dansent ensemble [ralenti x2 natif]",
    "cdl": {
     "slope": "1.0 1.0 1.0",
-    "offset": "0.0192 0.0192 0.0192",
+    "offset": "-0.0709 0.0124 0.0216",
     "power": "1.0 1.0 1.0",
     "sat": "1.0",
-    "diaph": 0.25,
-    "balance": "—",
-    "visages": 4
+    "diaph": 0.0,
+    "balance": "0.53 1.12 1.21",
+    "visages": 2,
+    "boites": [
+     [
+      0.244,
+      0.172,
+      0.136,
+      0.242
+     ],
+     [
+      0.516,
+      0.175,
+      0.188,
+      0.333
+     ]
+    ]
    }
   },
   {
@@ -1388,16 +2074,56 @@
    "dur": 1.927,
    "rec": 200.651,
    "look": "V4_couleur",
-   "vitesse": 1.0,
-   "note": "le père de Jonathan danse (flashs de téléphone gardés)",
+   "vitesse": 0.5,
+   "note": "le père de Jonathan danse (flashs de téléphone gardés) [ralenti x2 natif]",
+   "stab": {
+    "rec": 200.651,
+    "avant": {
+     "video": "20260604_C3953.MP4",
+     "debut": 0.3,
+     "fin": 2.23,
+     "images": 97,
+     "fps": 50.0,
+     "moyenne": 19.91,
+     "pic": 53.52,
+     "vitesse_voulue_px_s": 233.6
+    },
+    "garder": true,
+    "fichier": "/Volumes/SSD FAST/Montage-IA/videos/phase-3/mariage-jo/_travail/stab/20260604_C3953_0.30_0.5/20260604_C3953_stabilized_agent.mov",
+    "debut_plage": 0.0,
+    "apres": {
+     "video": "20260604_C3953_stabilized_agent.mov",
+     "debut": 0.3,
+     "fin": 2.23,
+     "images": 97,
+     "fps": 50.0,
+     "moyenne": 13.02,
+     "pic": 30.35,
+     "vitesse_voulue_px_s": 262.5
+    }
+   },
    "cdl": {
     "slope": "1.0 1.0 1.0",
-    "offset": "0.1156 0.1154 0.1154",
+    "offset": "-0.0363 -0.0110 -0.0662",
     "power": "1.0 1.0 1.0",
     "sat": "1.0",
-    "diaph": 1.5,
-    "balance": "1.00 1.00 1.00",
-    "visages": 2
+    "diaph": -0.25,
+    "balance": "0.86 1.08 0.65",
+    "visages": 2,
+    "boites": [
+     [
+      0.502,
+      0.028,
+      0.178,
+      0.317
+     ],
+     [
+      0.111,
+      0.2,
+      0.142,
+      0.253
+     ]
+    ]
    }
   },
   {
@@ -1407,16 +2133,17 @@
    "dur": 1.916,
    "rec": 202.578,
    "look": "V4_couleur",
-   "vitesse": 1.0,
-   "note": "Jonathan au milieu des amis",
+   "vitesse": 0.5,
+   "note": "Jonathan au milieu des amis [ralenti x2 natif]",
    "cdl": {
     "slope": "1.0 1.0 1.0",
-    "offset": "-0.0577 -0.0577 -0.0577",
+    "offset": "-0.1154 -0.1154 -0.1154",
     "power": "1.0 1.0 1.0",
     "sat": "1.0",
-    "diaph": -0.75,
+    "diaph": -1.5,
     "balance": "—",
-    "visages": 0
+    "visages": 0,
+    "boites": []
    }
   },
   {
@@ -1426,16 +2153,43 @@
    "dur": 2.879,
    "rec": 204.494,
    "look": "V4_couleur",
-   "vitesse": 1.0,
-   "note": "l'accolade du père et du fils (Quentin ; temps à vérifier en lecture directe)",
+   "vitesse": 0.5,
+   "note": "l'accolade du père et du fils (Quentin ; temps à vérifier en lecture directe) [ralenti x2 natif]",
+   "stab": {
+    "rec": 204.494,
+    "avant": {
+     "video": "FX30.5838.MP4",
+     "debut": 31.0,
+     "fin": 33.88,
+     "images": 144,
+     "fps": 50.0,
+     "moyenne": 25.9,
+     "pic": 40.64,
+     "vitesse_voulue_px_s": 205.0
+    },
+    "garder": true,
+    "fichier": "/Volumes/SSD FAST/Montage-IA/videos/phase-3/mariage-jo/_travail/stab/FX30.5838_31.00_0.5/FX30.5838_stabilized_agent.mov",
+    "debut_plage": 30.5,
+    "apres": {
+     "video": "FX30.5838_stabilized_agent.mov",
+     "debut": 0.5,
+     "fin": 3.38,
+     "images": 144,
+     "fps": 50.0,
+     "moyenne": 16.06,
+     "pic": 27.34,
+     "vitesse_voulue_px_s": 193.0
+    }
+   },
    "cdl": {
     "slope": "1.0 1.0 1.0",
-    "offset": "-0.0962 -0.0962 -0.0962",
+    "offset": "-0.1379 -0.0666 -0.0503",
     "power": "1.0 1.0 1.0",
     "sat": "1.0",
-    "diaph": -1.25,
-    "balance": "—",
-    "visages": 0
+    "diaph": -1.0,
+    "balance": "0.58 1.10 1.27",
+    "visages": 0,
+    "boites": []
    }
   },
   {
@@ -1449,12 +2203,13 @@
    "note": "« alors tiens, je te laisse l'ouvrir » (synchro)",
    "cdl": {
     "slope": "1.0 1.0 1.0",
-    "offset": "-0.0192 -0.0192 -0.0192",
+    "offset": "-0.1149 -0.0515 -0.0042",
     "power": "1.0 1.0 1.0",
     "sat": "1.0",
-    "diaph": -0.25,
-    "balance": "—",
-    "visages": 0
+    "diaph": -0.75,
+    "balance": "0.60 1.06 1.62",
+    "visages": 0,
+    "boites": []
    }
   },
   {
@@ -1468,12 +2223,20 @@
    "note": "le maillot se déplie",
    "cdl": {
     "slope": "1.0 1.0 1.0",
-    "offset": "-0.0385 -0.0385 -0.0385",
+    "offset": "0.0480 0.1009 0.1492",
     "power": "1.0 1.0 1.0",
     "sat": "1.0",
-    "diaph": -0.5,
-    "balance": "—",
-    "visages": 0
+    "diaph": 1.25,
+    "balance": "0.65 1.04 1.61",
+    "visages": 1,
+    "boites": [
+     [
+      0.166,
+      0.0,
+      0.144,
+      0.256
+     ]
+    ]
    }
   },
   {
@@ -1487,12 +2250,13 @@
    "note": "Jonathan le brandit (Quentin, serré ; flashs de téléphones gardés)",
    "cdl": {
     "slope": "1.0 1.0 1.0",
-    "offset": "0.0577 0.0577 0.0577",
+    "offset": "-0.0453 0.0050 0.0474",
     "power": "1.0 1.0 1.0",
     "sat": "1.0",
-    "diaph": 0.75,
-    "balance": "—",
-    "visages": 0
+    "diaph": 0.0,
+    "balance": "0.66 1.05 1.53",
+    "visages": 0,
+    "boites": []
    }
   },
   {
@@ -1504,14 +2268,41 @@
    "look": "V4_couleur",
    "vitesse": 1.0,
    "note": "Jonathan brandit le maillot devant la salle (Diego, large)",
+   "stab": {
+    "rec": 215.662,
+    "avant": {
+     "video": "20260604_C4007.MP4",
+     "debut": 31.0,
+     "fin": 33.6,
+     "images": 130,
+     "fps": 50.0,
+     "moyenne": 8.34,
+     "pic": 24.27,
+     "vitesse_voulue_px_s": 113.2
+    },
+    "garder": true,
+    "fichier": "/Volumes/SSD FAST/Montage-IA/videos/phase-3/mariage-jo/_travail/stab/20260604_C4007_31.00_0.5/20260604_C4007_stabilized_agent.mov",
+    "debut_plage": 30.5,
+    "apres": {
+     "video": "20260604_C4007_stabilized_agent.mov",
+     "debut": 0.5,
+     "fin": 3.1,
+     "images": 130,
+     "fps": 50.0,
+     "moyenne": 5.79,
+     "pic": 12.05,
+     "vitesse_voulue_px_s": 89.4
+    }
+   },
    "cdl": {
     "slope": "1.0 1.0 1.0",
-    "offset": "-0.0192 -0.0192 -0.0192",
+    "offset": "-0.0577 -0.0577 -0.0577",
     "power": "1.0 1.0 1.0",
     "sat": "1.0",
-    "diaph": -0.25,
+    "diaph": -0.75,
     "balance": "—",
-    "visages": 0
+    "visages": 0,
+    "boites": []
    }
   },
   {
@@ -1525,12 +2316,13 @@
    "note": "la salle exulte, serviette au vent",
    "cdl": {
     "slope": "1.0 1.0 1.0",
-    "offset": "-0.2300 -0.2049 -0.2319",
+    "offset": "-0.2308 -0.2308 -0.2308",
     "power": "1.0 1.0 1.0",
     "sat": "1.0",
-    "diaph": -2.75,
-    "balance": "0.85 1.06 0.83",
-    "visages": 0
+    "diaph": -3.0,
+    "balance": "—",
+    "visages": 0,
+    "boites": []
    }
   },
   {
@@ -1544,12 +2336,13 @@
    "note": "l'accolade avec l'ami qui l'offre",
    "cdl": {
     "slope": "1.0 1.0 1.0",
-    "offset": "-0.0962 -0.0962 -0.0962",
+    "offset": "-0.1821 -0.1298 -0.0842",
     "power": "1.0 1.0 1.0",
     "sat": "1.0",
-    "diaph": -1.25,
-    "balance": "—",
-    "visages": 0
+    "diaph": -1.75,
+    "balance": "0.65 1.05 1.58",
+    "visages": 0,
+    "boites": []
    }
   },
   {
@@ -1561,14 +2354,41 @@
    "look": "V4_couleur",
    "vitesse": 1.0,
    "note": "Jonathan se penche vers Naël, le maillot sur la table",
+   "stab": {
+    "rec": 223.862,
+    "avant": {
+     "video": "20260604_C4009.MP4",
+     "debut": 0.3,
+     "fin": 3.5,
+     "images": 160,
+     "fps": 50.0,
+     "moyenne": 5.13,
+     "pic": 12.26,
+     "vitesse_voulue_px_s": 40.9
+    },
+    "garder": true,
+    "fichier": "/Volumes/SSD FAST/Montage-IA/videos/phase-3/mariage-jo/_travail/stab/20260604_C4009_0.30_0.5/20260604_C4009_stabilized_agent.mov",
+    "debut_plage": 0.0,
+    "apres": {
+     "video": "20260604_C4009_stabilized_agent.mov",
+     "debut": 0.3,
+     "fin": 3.5,
+     "images": 160,
+     "fps": 50.0,
+     "moyenne": 1.37,
+     "pic": 3.69,
+     "vitesse_voulue_px_s": 18.7
+    }
+   },
    "cdl": {
     "slope": "1.0 1.0 1.0",
-    "offset": "0.0192 0.0192 0.0192",
+    "offset": "-0.0385 -0.0385 -0.0385",
     "power": "1.0 1.0 1.0",
     "sat": "1.0",
-    "diaph": 0.25,
+    "diaph": -0.5,
     "balance": "—",
-    "visages": 0
+    "visages": 0,
+    "boites": []
    }
   },
   {
@@ -1582,12 +2402,20 @@
    "note": "[riche] « Dans dix ans, on se retrouve riche ! »",
    "cdl": {
     "slope": "1.0 1.0 1.0",
-    "offset": "0.1084 0.1173 0.1168",
+    "offset": "0.0882 0.0983 0.0978",
     "power": "1.0 1.0 1.0",
     "sat": "1.0",
-    "diaph": 1.5,
-    "balance": "0.94 1.02 1.01",
-    "visages": 1
+    "diaph": 1.25,
+    "balance": "0.93 1.02 1.01",
+    "visages": 1,
+    "boites": [
+     [
+      0.43,
+      0.217,
+      0.2,
+      0.356
+     ]
+    ]
    }
   },
   {
@@ -1601,12 +2429,20 @@
    "note": "[dixans1] « On se revoit dans dix ans, les mariés. »",
    "cdl": {
     "slope": "1.0 1.0 1.0",
-    "offset": "-0.0304 -0.0155 -0.0263",
+    "offset": "-0.0320 -0.0149 -0.0273",
     "power": "1.0 1.0 1.0",
     "sat": "1.0",
     "diaph": -0.25,
-    "balance": "0.90 1.03 0.94",
-    "visages": 1
+    "balance": "0.89 1.04 0.93",
+    "visages": 1,
+    "boites": [
+     [
+      0.423,
+      0.239,
+      0.181,
+      0.322
+     ]
+    ]
    }
   },
   {
@@ -1625,7 +2461,15 @@
     "sat": "1.0",
     "diaph": -0.25,
     "balance": "1.00 1.00 1.00",
-    "visages": 1
+    "visages": 1,
+    "boites": [
+     [
+      0.377,
+      0.267,
+      0.148,
+      0.264
+     ]
+    ]
    }
   },
   {
@@ -1645,7 +2489,15 @@
     "sat": "1.0",
     "diaph": 0.75,
     "balance": "1.00 1.00 1.00",
-    "visages": 1
+    "visages": 1,
+    "boites": [
+     [
+      0.491,
+      0.261,
+      0.184,
+      0.328
+     ]
+    ]
    }
   }
  ],
@@ -2048,7 +2900,7 @@
    "src": 1820.15,
    "dur": 2.45,
    "rec": 145.895,
-   "gain": 0.6,
+   "gain": 4.6,
    "fin": 0.04,
    "fout": 0.06,
    "note": "[pelles] « Vous pouvez vous rouler des » (fin fixée au spectrogramme)",
@@ -2324,7 +3176,7 @@
  ],
  "textes": [
   {
-   "rec": 31.474,
+   "rec": 31.874,
    "dur": 2.6,
    "texte": "Un acheté, un offert.",
    "style": "replique",
@@ -2415,6 +3267,24 @@
    "TRICHE : un invité sourit (même salle, même discours, 30 s avant ; temps vérifié en lecture directe)"
   ],
   [
+   19.0,
+   "FX30.5635",
+   121.0,
+   "TRICHE (≈ 10 s) : Jonathan flou au premier plan, Ornella écoute"
+  ],
+  [
+   22.7,
+   "FX30.5635",
+   110.0,
+   "TRICHE (≈ 20 s avant) : un invité à casquette sourit"
+  ],
+  [
+   28.36,
+   "FX30.5635",
+   137.9,
+   "TRICHE (1 s d'avance : un bras passe devant l'objectif à 137,6 s) : Ornella écoute « est-ce que tu veux mon panini ? », puis éclate de rire"
+  ],
+  [
    36.87,
    "FX30.5635",
    155.2,
@@ -2465,7 +3335,7 @@
   [
    135.97,
    "20260604_C3695",
-   116.5,
+   116.3,
    "[collier] TRICHE (≈ 10 s après) : Naël apporte les bracelets"
   ],
   [

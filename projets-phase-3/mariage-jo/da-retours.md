@@ -53,3 +53,14 @@ Verdict : **pas au niveau** (« la base est saine : blancs, ciel, matière de la
 | L3 | Baiser : saturation « bonbon », mur saumon plat | D'accord. **Corrigé** : saturation de pellicule dans la LUT (au-delà d'un seuil, la chroma est tassée et la couleur s'assombrit) ; vignettage et haut du cadre assombris. |
 | L4 | Verts chartreuse, ciel sans densité | D'accord ; je les avais tournés vers le jaune, à l'envers. **Corrigé** : verts saturés tournés vers l'émeraude, assombris de 28 %, chroma réduite ; le haut du cadre (ciel) assombri par le vignettage. Je n'invente pas de ciel chaud : il était gris ce jour-là. |
 | L5 | Peaux qui changent, aucune texture de pellicule | En partie. **Corrigé** : grain fin sur tout le film (piste à part), balance sur les blancs réels de chaque plan, peau tenue par la LUT. **Limite** : le halo des hautes lumières n'est pas faisable proprement par script (pas d'effet ResolveFX posable par l'API) ; je ne le fais pas plutôt que de le faire mal. |
+
+## Appel 4 — le look corrigé (2026-10-12)
+Verdict : **presque** (« le problème des blancs est réglé ; la salle N&B et le baiser sont proches de la référence »).
+
+| # | Remarque | Réponse |
+|---|---|---|
+| L1 | N&B de près gris, mur dominant, peau terne | **Corrigé en partie** : fenêtre plan par plan (pleine lumière sur le visage et l'épaule, le reste baissé de 30 %), le visage d'Ornella posé à la main (le détecteur ne le trouvait pas, tête baissée). **Limite** : sans fenêtre de Resolve par script, la fenêtre est une image en multiplication ; elle ne suit pas le mouvement (bord très fondu pour que ça ne se voie pas). |
+| L2 | Soirée laiteuse et rose | **Corrigé** : la chemise du marié sert de point blanc (neutre à 100 %, jusqu'à 1,5 diaph par canal), visages du soir plus bas, fenêtre sur les visages. Le polo du père est réellement rose. Je ne passe pas la soirée en N&B : la couleur de la nuit suit la journée, et le N&B est réservé à la cérémonie. |
+| L3 | Vignettage uniforme, visible, « filtre d'application » | D'accord. **Corrigé** : supprimé, remplacé par des fenêtres plan par plan sur les visages (et un dégradé sur les ciels clairs des extérieurs de jour). |
+| L4 | Verts émeraude, numériques | D'accord. **Corrigé** : verts tirés vers l'olive, désaturés d'un quart, assombris ; ciel densifié par dégradé sur les extérieurs. |
+| L5 | Couleurs clés qui changent (costume crème, jaune, rose) | **Corrigé** : balance sur les blancs réels de chaque plan, plus franche (80 % le jour, 100 % le soir), puis la même chaleur olive de la LUT sur tous les plans couleur. À vérifier par Diego en lecture. |

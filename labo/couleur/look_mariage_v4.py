@@ -54,7 +54,7 @@ def couleur_lin(lin, p=COUL):
     C = np.where(C > p["peau_c"], C + wp * (plaf - C), C); h = h + wp * 0.4 * ((p["peau_h"] - h + 180) % 360 - 180)
     C = C * (1 - p["ombres_neutres"] * (1 - lisse(0.06, 0.30, L)))    # ombres neutres
     vg = bande(h, 135, 40) * lisse(0.03, 0.07, C) * (1 - lisse(0.70, 0.85, L)) * p.get("verts", 0.0)   # verts saturés seulement (feuillage), pas le ciel ni la robe
-    L = L * (1 - 0.28 * vg); h = h + 8 * vg; C = C * (1 - 0.12 * vg)          # DA 2026-10-12 : pas de chartreuse, verts profonds
+    L = L * (1 - 0.28 * vg); h = h - 14 * vg; C = C * (1 - 0.25 * vg)         # DA appel 4 : verts olive, désaturés d'un quart, assombris
     gen = np.maximum(C - 0.09, 0)                                       # couleurs vives (fleurs) : chroma tassée et densifiée
     C = C - gen * 0.45; L = L * (1 - np.minimum(gen * 1.6, 0.18))
     a, b = C * np.cos(np.radians(h)), C * np.sin(np.radians(h))
