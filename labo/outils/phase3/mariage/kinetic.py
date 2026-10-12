@@ -6,7 +6,7 @@ K = "/Volumes/SSD FAST/Montage-IA/videos/phase-3/mariage-jo/_travail/kinetic"; R
 LUT = "/Library/Application Support/Blackmagic Design/DaVinci Resolve/LUT/P3/P3_mariage_photobooth.cube"
 BEAT = 60 / 126.048; FPS = 25
 # (rush, début source s, nb d'images de timeline, détourer ?)
-SEGMENTS = [("C4040", 12.0, 12, False), ("C4040", 14.0, 48, True), ("C4029", 6.0, 47, True), ("C4135", 1.2, 48, True), ("C4028", 3.6, 24, True), ("C4028", 4.56, 11, False)]
+SEGMENTS = [("C4040", 12.0, 12, False), ("C4040", 14.0, 48, True), ("C4029", 6.0, 47, True), ("C4135", 1.2, 48, True), ("C4028", 3.6, 24, True), ("C4028", 4.56, 13, False)]
 def images():
     n = 0
     for rush, s, nb, det in SEGMENTS:

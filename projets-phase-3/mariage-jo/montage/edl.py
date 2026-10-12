@@ -188,37 +188,36 @@ k4 = 0
 def rk(nom, src, n, note="", look="couleur"):
     global k4
     v(nom, src, rt(k4 + n) - rec, look, note=note); k4 += n
-rk("20260604_C3894", 27.0, 6, "ouverture du bal : le couple, face à face")
-rk("20260604_C3894", 88.0, 4, "il l'embrasse sur la tempe")
+rk("20260604_C3894", 30.0, 6, "ouverture du bal : le couple, face à face")
+rk("20260604_C3894", 85.0, 4, "elle contre lui (sans flash de photographe)")
 rk("20260604_C3922", 1.0, 4, "la piste explose, bras en l'air")
 rk("20260604_C3936", 1.8, 4, "deux femmes dansent, bras levés")
 rk("20260604_C3911", 13.6, 6, "Jonathan rit, lunettes noires")
-rk("FX30.5838", 8.8, 6, "le père de Jonathan danse, bras levés")
+rk("20260604_C3953", 0.3, 6, "le père de Jonathan danse (sans flash)")
 G_BAL = rec
 a(MUS["remix"], 0.0, G_BAL - G0 + 0.4, G0, 3, gain=-8.0, fin=0.0, fout=0.4, note="remix : le bal")
 # le maillot (son direct, remix très bas)
 v("20260604_C4007", 11.9, 1.8, "couleur", note="« alors tiens, je te laisse l'ouvrir » (synchro)")
 a(rush("20260604_C4007"), 11.9, 1.8, rec - 1.8, 1, gain=4.0, fin=0.05, fout=0.1, note="son direct")
-v("20260604_C4007", 26.2, 2.8, "couleur", note="le maillot se déplie")
-a(rush("20260604_C4007"), 17.4, 4.2, rec - 2.8 - 0.6, 1, gain=4.0, fin=0.05, fout=0.2, note="« mais il a été signé par … » (son décalé sur l'image : triche son)")
+v("20260604_C4007", 25.9, 1.95, "couleur", note="le maillot se déplie (entre deux salves de flashs de téléphones)")
+a(rush("20260604_C4007"), 17.4, 4.2, rec - 1.95 - 0.6, 1, gain=4.0, fin=0.05, fout=0.2, note="« mais il a été signé par … » (son décalé sur l'image : triche son)")
 v("FX30.5871", 6.0, 1.8, "couleur", note="Jonathan tient le maillot (Quentin, serré)")
 v("20260604_C4007", 43.2, 1.6, "couleur", note="le maillot en gros plan")
 v("20260604_C4007", 47.6, 5.9, "couleur", note="« si jamais il gagne, frérot, c'est encore plus stylé… et donc vraisemblablement il gagne samedi soir » (synchro)")
 a(rush("20260604_C4007"), 47.6, 5.9, rec - 5.9, 1, gain=4.0, fin=0.05, fout=0.15, note="son direct")
-v("20260604_C4008", 8.0, 2.4, "couleur", note="la salle exulte, serviette au vent")
-a(rush("20260604_C4008"), 8.0, 2.4, rec - 2.4, 2, gain=0.0, fin=0.05, fout=0.2, note="cris")
-v("20260604_C4008", 31.0, 2.4, "couleur", note="Jonathan brandit le maillot")
-v("20260604_C4009", 0.3, 2.4, "couleur", note="Jonathan se penche vers Naël, le maillot sur la table")
+v("20260604_C4008", 5.9, 2.4, "couleur", note="la salle exulte, serviette au vent (sans flash)")
+a(rush("20260604_C4008"), 5.9, 2.4, rec - 2.4, 2, gain=0.0, fin=0.05, fout=0.2, note="cris")
+v("20260604_C4009", 0.3, 3.6, "couleur", note="Jonathan se penche vers Naël, le maillot sur la table (le plan « Jonathan brandit le maillot » retiré : flashs de téléphones en salves)")
 G_MAIL = rec
 a(MUS["remix"], G_BAL - G0, G_MAIL - G_BAL, G_BAL, 3, gain=-26.0, fin=0.3, fout=0.3, note="remix très bas sous le maillot")
 # la pièce montée, la salle passe au violet, rafale néon, le père et le fils
 gi = min(range(len(tr)), key=lambda i: abs(G0 + tr[i] - G_MAIL - 1.7)); k4 = gi
 v("20260604_C4012", 3.0, rt(k4) - rec, "couleur", note="la pièce montée"); 
 rk("20260604_C4016", 47.0, 4, "la salle debout, bras levés, lumière violette", "nuit")
-rk("20260604_C4017", 13.0, 4, "les mariés et la pièce montée", "nuit")
+rk("FX30.5883", 5.95, 4, "les mariés et la pièce montée (11 mm, entre deux salves de flashs)", "nuit")
 K0 = rec
 rk("20260604_C4029", 3.5, 16, "PASSAGE KINETIC (à construire) : photobooth, détourage, fonds qui changent", "nuit")
-for nom, src in [("20260604_C4077", 1.2), ("20260604_C4096", 2.6), ("20260604_C4106", 3.6), ("20260604_C4113", 13.6), ("20260604_C4126", 1.0), ("20260604_C4085", 2.3)]:
+for nom, src in [("20260604_C4077", 1.2), ("20260604_C4096", 2.6), ("20260604_C4060", 0.85), ("20260604_C4113", 13.6), ("20260604_C4126", 1.0), ("20260604_C4085", 2.3)]:
     rk(nom, src, 1, "rafale néon (un temps)", "nuit")
 rk("FX30.5900", 8.0, 8, "Jonathan et Naël à la fontaine à chocolat", "nuit")
 G_FIN = rec
@@ -242,7 +241,7 @@ a(MUS["remix"], 183.5, rec - H0b, H0b, 3, gain=-18.0, fin=1.0, fout=2.5, note="f
 MARK.append((H0b, "H"))
 
 # ---------------- Ralentis (x2 natif : rush 50p lu à 50 % dans une timeline 25p) ----------------
-RALENTIS = {("20260604_C3520", 10.0): "robe dans le vent", ("20260604_C3894", 27.0): "le couple qui danse",
+RALENTIS = {("20260604_C3520", 10.0): "robe dans le vent", ("20260604_C3894", 30.0): "le couple qui danse",
             ("20260604_C3820", 8.4): "la dame rit, bras levés", ("20260604_C3541", 1.3): "ils s'éloignent"}
 for e in V:
     if (e["nom"], e["src"]) in RALENTIS: e["vitesse"] = 0.5; e["note"] += " [ralenti x2 natif]"
@@ -289,6 +288,20 @@ for e in V:
     if k in STAB: e["stab"] = STAB[k]
     o = CDL.get(f"{e['nom']}|{e['src']}")
     if o: e["cdl"] = {"slope": "1.0 1.0 1.0", "offset": f"{o:.4f} {o:.4f} {o:.4f}", "power": "1.0 1.0 1.0", "sat": "1.0"}
+
+# ---------------- Contraste des plans laiteux (jour blanc couvert) : mesuré sur le rendu V3 (stats_plans.json, image du milieu) ----------------
+# CDL avant la LUT (S-Log3) : x' = s.x + o, pivot 0,55 (gris clair d'un plan high key) : les ombres descendent, les blancs restent.
+SP = json.load(open(f"{MD}/stats_plans.json")) if os.path.exists(f"{MD}/stats_plans.json") else {}
+for e in V:
+    st = SP.get(f"{e['nom']}|{e['src']}")
+    if e["piste"] != 1 or not st or e["look"] == "nuit": continue
+    p2 = st[0]
+    if p2 <= 35: continue
+    sl = 1.18 if p2 <= 60 else 1.28
+    o0 = float(e["cdl"]["offset"].split()[0]) if e.get("cdl") else 0.0
+    o = o0 + 0.55 * (1 - sl)
+    e["cdl"] = {"slope": f"{sl} {sl} {sl}", "offset": f"{o:.4f} {o:.4f} {o:.4f}", "power": "1.0 1.0 1.0", "sat": "1.0"}
+    e["note"] += f" [contraste CDL {sl}, p2 {p2:.0f} sur V3]"
 
 json.dump(dict(video=V, audio=A, textes=T, blocs=MARK, duree=round(rec, 3)), open(__file__.replace("edl.py", "montage.json"), "w"), indent=1, ensure_ascii=False)
 print("durée", round(rec, 2), "plans", len(V), "sons", len(A))

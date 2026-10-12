@@ -29,7 +29,7 @@ def tous_les_clips():
         for s in f.GetSubFolderList(): parc(s)
     parc(root); return out
 EXTRA = {"titre": f"{TW}/titres/titre.mov", "personnage": f"{TW}/titres/personnage_nael.mov", "fin": f"{TW}/titres/fin.mov",
-         "grain": f"{TW}/grain/grain_1080_20s.mov", "kinetic": f"{TW}/kinetic/kinetic_V1.mov"}
+         "grain": f"{TW}/grain/grain_1080_20s.mov", "kinetic": f"{TW}/kinetic/kinetic_V2.mov"}
 res = {}
 if ETAPE == "import":
     chemins = set(fichier_video(e)[0] for e in J["video"]) | set(a["fichier"] for a in J["audio"]) | set(v for v in EXTRA.values() if os.path.exists(v))

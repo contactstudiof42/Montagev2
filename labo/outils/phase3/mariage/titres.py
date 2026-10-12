@@ -28,12 +28,12 @@ if __name__ == "__main__":
     for t in T:
         nom = {"titre": "titre", "personnage": "nael", "fin": "fin"}[t["style"]] if t["style"] != "personnage" else "personnage_" + t["texte"].lower().replace("ë", "e")
         if t["style"] == "titre":
-            f1 = police(int(H * 0.085)); f2 = police(int(H * 0.026))
+            f1 = police(int(H * 0.12)); f2 = police(int(H * 0.032))
             bb = mesure(t["texte"], f1); x0, y0 = (W - bb[2]) // 2, int(H * 0.44)
             sous = "LE REMARIAGE  ·  4 JUIN 2026"; tr = int(H * 0.008); d0 = ImageDraw.Draw(Image.new("RGB", (10, 10))); ls = sum(d0.textlength(c, font=f2) + tr for c in sous) - tr
             im = calque([(t["texte"], f1, (x0, y0), 0), (sous, f2, ((W - int(ls)) // 2, y0 + bb[3] + int(H * 0.035)), tr)])
         elif t["style"] == "personnage":
-            f1 = police(int(H * 0.055)); im = calque([(t["texte"], f1, (int(W * 0.06), int(H * 0.80)), 0)])
+            f1 = police(int(H * 0.085)); im = calque([(t["texte"], f1, (int(W * 0.06), int(H * 0.76)), 0)])
         else:
-            f1 = police(int(H * 0.06)); bb = mesure(t["texte"], f1); im = calque([(t["texte"], f1, ((W - bb[2]) // 2, (H - bb[3]) // 2), 0)])
+            f1 = police(int(H * 0.075)); bb = mesure(t["texte"], f1); im = calque([(t["texte"], f1, ((W - bb[2]) // 2, (H - bb[3]) // 2), 0)])
         rendu(nom, im, t["dur"])

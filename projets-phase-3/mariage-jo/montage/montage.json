@@ -294,7 +294,13 @@
    "rec": 51.628,
    "look": "couleur",
    "vitesse": 1.0,
-   "note": "rose sur une chaise"
+   "note": "rose sur une chaise [contraste CDL 1.18, p2 44 sur V3]",
+   "cdl": {
+    "slope": "1.18 1.18 1.18",
+    "offset": "-0.0990 -0.0990 -0.0990",
+    "power": "1.0 1.0 1.0",
+    "sat": "1.0"
+   }
   },
   {
    "piste": 1,
@@ -304,7 +310,13 @@
    "rec": 52.255,
    "look": "couleur",
    "vitesse": 1.0,
-   "note": "nom du domaine"
+   "note": "nom du domaine [contraste CDL 1.28, p2 86 sur V3]",
+   "cdl": {
+    "slope": "1.28 1.28 1.28",
+    "offset": "-0.1540 -0.1540 -0.1540",
+    "power": "1.0 1.0 1.0",
+    "sat": "1.0"
+   }
   },
   {
    "piste": 1,
@@ -314,7 +326,7 @@
    "rec": 53.451,
    "look": "couleur",
    "vitesse": 0.5,
-   "note": "le couple marche vers nous, robe dans le vent [ralenti x2 natif]",
+   "note": "le couple marche vers nous, robe dans le vent [ralenti x2 natif] [contraste CDL 1.28, p2 76 sur V3]",
    "stab": {
     "fichier": "/Volumes/SSD FAST/Montage-IA/videos/phase-3/mariage-jo/_travail/stab/20260604_C3520_10.00_0.51/20260604_C3520_stabilized_agent.mov",
     "debut_plage": 9.5,
@@ -322,8 +334,8 @@
     "apres": 1.224
    },
    "cdl": {
-    "slope": "1.0 1.0 1.0",
-    "offset": "-0.0385 -0.0385 -0.0385",
+    "slope": "1.28 1.28 1.28",
+    "offset": "-0.1925 -0.1925 -0.1925",
     "power": "1.0 1.0 1.0",
     "sat": "1.0"
    }
@@ -374,7 +386,13 @@
    "rec": 58.965,
    "look": "couleur",
    "vitesse": 1.0,
-   "note": "rire"
+   "note": "rire [contraste CDL 1.18, p2 39 sur V3]",
+   "cdl": {
+    "slope": "1.18 1.18 1.18",
+    "offset": "-0.0990 -0.0990 -0.0990",
+    "power": "1.0 1.0 1.0",
+    "sat": "1.0"
+   }
   },
   {
    "piste": 1,
@@ -384,7 +402,7 @@
    "rec": 60.115,
    "look": "couleur",
    "vitesse": 1.0,
-   "note": "les trois enlacés, Naël au milieu",
+   "note": "les trois enlacés, Naël au milieu [contraste CDL 1.18, p2 53 sur V3]",
    "stab": {
     "fichier": "/Volumes/SSD FAST/Montage-IA/videos/phase-3/mariage-jo/_travail/stab/20260604_C3533_9.00_0.5/20260604_C3533_stabilized_agent.mov",
     "debut_plage": 8.5,
@@ -392,8 +410,8 @@
     "apres": 0.21
    },
    "cdl": {
-    "slope": "1.0 1.0 1.0",
-    "offset": "0.0770 0.0770 0.0770",
+    "slope": "1.18 1.18 1.18",
+    "offset": "-0.0220 -0.0220 -0.0220",
     "power": "1.0 1.0 1.0",
     "sat": "1.0"
    }
@@ -454,10 +472,10 @@
    "rec": 68.729,
    "look": "couleur",
    "vitesse": 1.0,
-   "note": "rire",
+   "note": "rire [contraste CDL 1.28, p2 65 sur V3]",
    "cdl": {
-    "slope": "1.0 1.0 1.0",
-    "offset": "0.0770 0.0770 0.0770",
+    "slope": "1.28 1.28 1.28",
+    "offset": "-0.0770 -0.0770 -0.0770",
     "power": "1.0 1.0 1.0",
     "sat": "1.0"
    }
@@ -508,10 +526,10 @@
    "rec": 72.317,
    "look": "couleur",
    "vitesse": 1.0,
-   "note": "rire",
+   "note": "rire [contraste CDL 1.18, p2 40 sur V3]",
    "cdl": {
-    "slope": "1.0 1.0 1.0",
-    "offset": "0.0770 0.0770 0.0770",
+    "slope": "1.18 1.18 1.18",
+    "offset": "-0.0220 -0.0220 -0.0220",
     "power": "1.0 1.0 1.0",
     "sat": "1.0"
    }
@@ -572,10 +590,10 @@
    "rec": 78.447,
    "look": "couleur",
    "vitesse": 1.0,
-   "note": "les mariés à la porte, bouquet coloré",
+   "note": "les mariés à la porte, bouquet coloré [contraste CDL 1.18, p2 51 sur V3]",
    "cdl": {
-    "slope": "1.0 1.0 1.0",
-    "offset": "-0.0385 -0.0385 -0.0385",
+    "slope": "1.18 1.18 1.18",
+    "offset": "-0.1375 -0.1375 -0.1375",
     "power": "1.0 1.0 1.0",
     "sat": "1.0"
    }
@@ -912,7 +930,13 @@
    "rec": 147.662,
    "look": "nb",
    "vitesse": 1.0,
-   "note": "« Alors je redis oui. Un oui encore plus fort… qu'il y a dix ans. » (synchro)"
+   "note": "« Alors je redis oui. Un oui encore plus fort… qu'il y a dix ans. » (synchro) [contraste CDL 1.18, p2 42 sur V3]",
+   "cdl": {
+    "slope": "1.18 1.18 1.18",
+    "offset": "-0.0990 -0.0990 -0.0990",
+    "power": "1.0 1.0 1.0",
+    "sat": "1.0"
+   }
   },
   {
    "piste": 1,
@@ -1258,10 +1282,10 @@
    "rec": 216.961,
    "look": "couleur",
    "vitesse": 0.5,
-   "note": "elle rit, bras levés [ralenti x2 natif]",
+   "note": "elle rit, bras levés [ralenti x2 natif] [contraste CDL 1.18, p2 56 sur V3]",
    "cdl": {
-    "slope": "1.0 1.0 1.0",
-    "offset": "-0.0570 -0.0570 -0.0570",
+    "slope": "1.18 1.18 1.18",
+    "offset": "-0.1560 -0.1560 -0.1560",
     "power": "1.0 1.0 1.0",
     "sat": "1.0"
    }
@@ -1322,10 +1346,10 @@
    "rec": 228.338,
    "look": "couleur",
    "vitesse": 1.0,
-   "note": "« Je vous aime. Merci pour ce buffet gratuit. »",
+   "note": "« Je vous aime. Merci pour ce buffet gratuit. » [contraste CDL 1.28, p2 62 sur V3]",
    "cdl": {
-    "slope": "1.0 1.0 1.0",
-    "offset": "0.0585 0.0585 0.0585",
+    "slope": "1.28 1.28 1.28",
+    "offset": "-0.0955 -0.0955 -0.0955",
     "power": "1.0 1.0 1.0",
     "sat": "1.0"
    }
@@ -1338,7 +1362,13 @@
    "rec": 231.588,
    "look": "couleur",
    "vitesse": 1.0,
-   "note": "Sylvain : « C'est grâce à qui un petit peu ? C'est moi qui t'emmenais avec ton panini. »"
+   "note": "Sylvain : « C'est grâce à qui un petit peu ? C'est moi qui t'emmenais avec ton panini. » [contraste CDL 1.28, p2 91 sur V3]",
+   "cdl": {
+    "slope": "1.28 1.28 1.28",
+    "offset": "-0.1540 -0.1540 -0.1540",
+    "power": "1.0 1.0 1.0",
+    "sat": "1.0"
+   }
   },
   {
    "piste": 1,
@@ -1396,7 +1426,7 @@
    "rec": 248.088,
    "look": "couleur",
    "vitesse": 0.25,
-   "note": "la dame danse sous la pluie, bras ouverts [ralenti x4, flux optique / Speed Warp, à vérifier image par image]",
+   "note": "la dame danse sous la pluie, bras ouverts [ralenti x4, flux optique / Speed Warp, à vérifier image par image] [contraste CDL 1.18, p2 48 sur V3]",
    "stab": {
     "fichier": "/Volumes/SSD FAST/Montage-IA/videos/phase-3/mariage-jo/_travail/stab/20260604_C3864_2.80_0.51/20260604_C3864_stabilized_agent.mov",
     "debut_plage": 2.3,
@@ -1404,8 +1434,8 @@
     "apres": 0.376
    },
    "cdl": {
-    "slope": "1.0 1.0 1.0",
-    "offset": "-0.0385 -0.0385 -0.0385",
+    "slope": "1.18 1.18 1.18",
+    "offset": "-0.1375 -0.1375 -0.1375",
     "power": "1.0 1.0 1.0",
     "sat": "1.0"
    }
@@ -1435,34 +1465,22 @@
   {
    "piste": 1,
    "nom": "20260604_C3894",
-   "src": 27.0,
+   "src": 30.0,
    "dur": 2.705,
    "rec": 254.288,
    "look": "couleur",
    "vitesse": 0.5,
-   "note": "ouverture du bal : le couple, face à face [ralenti x2 natif]",
-   "stab": {
-    "fichier": "/Volumes/SSD FAST/Montage-IA/videos/phase-3/mariage-jo/_travail/stab/20260604_C3894_27.00_0.51/20260604_C3894_stabilized_agent.mov",
-    "debut_plage": 26.5,
-    "avant": 1.018,
-    "apres": 0.387
-   }
+   "note": "ouverture du bal : le couple, face à face [ralenti x2 natif]"
   },
   {
    "piste": 1,
    "nom": "20260604_C3894",
-   "src": 88.0,
+   "src": 85.0,
    "dur": 1.916,
    "rec": 256.993,
    "look": "couleur",
    "vitesse": 1.0,
-   "note": "il l'embrasse sur la tempe",
-   "cdl": {
-    "slope": "1.0 1.0 1.0",
-    "offset": "0.0770 0.0770 0.0770",
-    "power": "1.0 1.0 1.0",
-    "sat": "1.0"
-   }
+   "note": "elle contre lui (sans flash de photographe)"
   },
   {
    "piste": 1,
@@ -1472,10 +1490,10 @@
    "rec": 258.909,
    "look": "couleur",
    "vitesse": 1.0,
-   "note": "la piste explose, bras en l'air",
+   "note": "la piste explose, bras en l'air [contraste CDL 1.28, p2 62 sur V3]",
    "cdl": {
-    "slope": "1.0 1.0 1.0",
-    "offset": "0.0770 0.0770 0.0770",
+    "slope": "1.28 1.28 1.28",
+    "offset": "-0.0770 -0.0770 -0.0770",
     "power": "1.0 1.0 1.0",
     "sat": "1.0"
    }
@@ -1514,13 +1532,19 @@
   },
   {
    "piste": 1,
-   "nom": "FX30.5838",
-   "src": 8.8,
+   "nom": "20260604_C3953",
+   "src": 0.3,
    "dur": 2.879,
    "rec": 265.631,
    "look": "couleur",
    "vitesse": 1.0,
-   "note": "le père de Jonathan danse, bras levés"
+   "note": "le père de Jonathan danse (sans flash)",
+   "stab": {
+    "fichier": "/Volumes/SSD FAST/Montage-IA/videos/phase-3/mariage-jo/_travail/stab/20260604_C3953_0.30_0.5/20260604_C3953_stabilized_agent.mov",
+    "debut_plage": 0.0,
+    "avant": 3.198,
+    "apres": 1.672
+   }
   },
   {
    "piste": 1,
@@ -1541,25 +1565,19 @@
   {
    "piste": 1,
    "nom": "20260604_C4007",
-   "src": 26.2,
-   "dur": 2.8,
+   "src": 25.9,
+   "dur": 1.95,
    "rec": 270.31,
    "look": "couleur",
    "vitesse": 1.0,
-   "note": "le maillot se déplie",
-   "cdl": {
-    "slope": "1.0 1.0 1.0",
-    "offset": "0.0770 0.0770 0.0770",
-    "power": "1.0 1.0 1.0",
-    "sat": "1.0"
-   }
+   "note": "le maillot se déplie (entre deux salves de flashs de téléphones)"
   },
   {
    "piste": 1,
    "nom": "FX30.5871",
    "src": 6.0,
    "dur": 1.8,
-   "rec": 273.11,
+   "rec": 272.26,
    "look": "couleur",
    "vitesse": 1.0,
    "note": "Jonathan tient le maillot (Quentin, serré)",
@@ -1575,7 +1593,7 @@
    "nom": "20260604_C4007",
    "src": 43.2,
    "dur": 1.6,
-   "rec": 274.91,
+   "rec": 274.06,
    "look": "couleur",
    "vitesse": 1.0,
    "note": "le maillot en gros plan",
@@ -1591,7 +1609,7 @@
    "nom": "20260604_C4007",
    "src": 47.6,
    "dur": 5.9,
-   "rec": 276.51,
+   "rec": 275.66,
    "look": "couleur",
    "vitesse": 1.0,
    "note": "« si jamais il gagne, frérot, c'est encore plus stylé… et donc vraisemblablement il gagne samedi soir » (synchro)",
@@ -1605,44 +1623,28 @@
   {
    "piste": 1,
    "nom": "20260604_C4008",
-   "src": 8.0,
+   "src": 5.9,
    "dur": 2.4,
-   "rec": 282.41,
+   "rec": 281.56,
    "look": "couleur",
    "vitesse": 1.0,
-   "note": "la salle exulte, serviette au vent",
+   "note": "la salle exulte, serviette au vent (sans flash)",
    "stab": {
-    "fichier": "/Volumes/SSD FAST/Montage-IA/videos/phase-3/mariage-jo/_travail/stab/20260604_C4008_8.00_0.5/20260604_C4008_stabilized_agent.mov",
-    "debut_plage": 7.5,
-    "avant": 2.973,
-    "apres": 1.688
-   },
-   "cdl": {
-    "slope": "1.0 1.0 1.0",
-    "offset": "0.0770 0.0770 0.0770",
-    "power": "1.0 1.0 1.0",
-    "sat": "1.0"
+    "fichier": "/Volumes/SSD FAST/Montage-IA/videos/phase-3/mariage-jo/_travail/stab/20260604_C4008_5.90_0.5/20260604_C4008_stabilized_agent.mov",
+    "debut_plage": 5.4,
+    "avant": 2.111,
+    "apres": 1.28
    }
-  },
-  {
-   "piste": 1,
-   "nom": "20260604_C4008",
-   "src": 31.0,
-   "dur": 2.4,
-   "rec": 284.81,
-   "look": "couleur",
-   "vitesse": 1.0,
-   "note": "Jonathan brandit le maillot"
   },
   {
    "piste": 1,
    "nom": "20260604_C4009",
    "src": 0.3,
-   "dur": 2.4,
-   "rec": 287.21,
+   "dur": 3.6,
+   "rec": 283.96,
    "look": "couleur",
    "vitesse": 1.0,
-   "note": "Jonathan se penche vers Naël, le maillot sur la table",
+   "note": "Jonathan se penche vers Naël, le maillot sur la table (le plan « Jonathan brandit le maillot » retiré : flashs de téléphones en salves)",
    "cdl": {
     "slope": "1.0 1.0 1.0",
     "offset": "0.0770 0.0770 0.0770",
@@ -1654,8 +1656,8 @@
    "piste": 1,
    "nom": "20260604_C4012",
    "src": 3.0,
-   "dur": 1.934,
-   "rec": 289.61,
+   "dur": 1.593,
+   "rec": 287.56,
    "look": "couleur",
    "vitesse": 1.0,
    "note": "la pièce montée",
@@ -1670,40 +1672,28 @@
    "piste": 1,
    "nom": "20260604_C4016",
    "src": 47.0,
-   "dur": 1.916,
-   "rec": 291.544,
+   "dur": 1.915,
+   "rec": 289.153,
    "look": "nuit",
    "vitesse": 1.0,
    "note": "la salle debout, bras levés, lumière violette"
   },
   {
    "piste": 1,
-   "nom": "20260604_C4017",
-   "src": 13.0,
-   "dur": 1.927,
-   "rec": 293.46,
+   "nom": "FX30.5883",
+   "src": 5.95,
+   "dur": 1.916,
+   "rec": 291.068,
    "look": "nuit",
    "vitesse": 1.0,
-   "note": "les mariés et la pièce montée",
-   "stab": {
-    "fichier": "/Volumes/SSD FAST/Montage-IA/videos/phase-3/mariage-jo/_travail/stab/20260604_C4017_13.00_0.5/20260604_C4017_stabilized_agent.mov",
-    "debut_plage": 12.5,
-    "avant": 1.823,
-    "apres": 0.528
-   },
-   "cdl": {
-    "slope": "1.0 1.0 1.0",
-    "offset": "0.0577 0.0577 0.0577",
-    "power": "1.0 1.0 1.0",
-    "sat": "1.0"
-   }
+   "note": "les mariés et la pièce montée (11 mm, entre deux salves de flashs)"
   },
   {
    "piste": 1,
    "nom": "20260604_C4029",
    "src": 3.5,
    "dur": 7.686,
-   "rec": 295.387,
+   "rec": 292.984,
    "look": "nuit",
    "vitesse": 1.0,
    "note": "PASSAGE KINETIC (à construire) : photobooth, détourage, fonds qui changent"
@@ -1713,7 +1703,7 @@
    "nom": "20260604_C4077",
    "src": 1.2,
    "dur": 0.476,
-   "rec": 303.073,
+   "rec": 300.67,
    "look": "nuit",
    "vitesse": 1.0,
    "note": "rafale néon (un temps)",
@@ -1728,34 +1718,28 @@
    "piste": 1,
    "nom": "20260604_C4096",
    "src": 2.6,
-   "dur": 0.476,
-   "rec": 303.549,
+   "dur": 0.464,
+   "rec": 301.146,
    "look": "nuit",
    "vitesse": 1.0,
    "note": "rafale néon (un temps)"
   },
   {
    "piste": 1,
-   "nom": "20260604_C4106",
-   "src": 3.6,
-   "dur": 0.488,
-   "rec": 304.025,
+   "nom": "20260604_C4060",
+   "src": 0.85,
+   "dur": 0.499,
+   "rec": 301.61,
    "look": "nuit",
    "vitesse": 1.0,
-   "note": "rafale néon (un temps)",
-   "cdl": {
-    "slope": "1.0 1.0 1.0",
-    "offset": "0.0770 0.0770 0.0770",
-    "power": "1.0 1.0 1.0",
-    "sat": "1.0"
-   }
+   "note": "rafale néon (un temps)"
   },
   {
    "piste": 1,
    "nom": "20260604_C4113",
    "src": 13.6,
-   "dur": 0.464,
-   "rec": 304.513,
+   "dur": 0.477,
+   "rec": 302.109,
    "look": "nuit",
    "vitesse": 1.0,
    "note": "rafale néon (un temps)",
@@ -1776,8 +1760,8 @@
    "piste": 1,
    "nom": "20260604_C4126",
    "src": 1.0,
-   "dur": 0.488,
-   "rec": 304.977,
+   "dur": 0.487,
+   "rec": 302.586,
    "look": "nuit",
    "vitesse": 1.0,
    "note": "rafale néon (un temps)",
@@ -1798,8 +1782,8 @@
    "piste": 1,
    "nom": "20260604_C4085",
    "src": 2.3,
-   "dur": 0.487,
-   "rec": 305.465,
+   "dur": 0.476,
+   "rec": 303.073,
    "look": "nuit",
    "vitesse": 1.0,
    "note": "rafale néon (un temps)",
@@ -1814,8 +1798,8 @@
    "piste": 1,
    "nom": "FX30.5900",
    "src": 8.0,
-   "dur": 3.832,
-   "rec": 305.952,
+   "dur": 3.843,
+   "rec": 303.549,
    "look": "nuit",
    "vitesse": 1.0,
    "note": "Jonathan et Naël à la fontaine à chocolat"
@@ -1825,7 +1809,7 @@
    "nom": "20260604_C3798",
    "src": 6.1,
    "dur": 1.85,
-   "rec": 309.784,
+   "rec": 307.392,
    "look": "couleur",
    "vitesse": 1.0,
    "note": "« …on se revoit dans dix ans »"
@@ -1835,7 +1819,7 @@
    "nom": "20260604_C3787",
    "src": 14.25,
    "dur": 1.25,
-   "rec": 311.634,
+   "rec": 309.242,
    "look": "couleur",
    "vitesse": 1.0,
    "note": "« à vos dix ans dans dix ans »",
@@ -1851,13 +1835,13 @@
    "nom": "20260604_C3704",
    "src": 7.1,
    "dur": 2.1,
-   "rec": 312.884,
+   "rec": 310.492,
    "look": "couleur",
    "vitesse": 1.0,
-   "note": "« Dans dix ans, on se retrouve riche ! »",
+   "note": "« Dans dix ans, on se retrouve riche ! » [contraste CDL 1.18, p2 42 sur V3]",
    "cdl": {
-    "slope": "1.0 1.0 1.0",
-    "offset": "0.0770 0.0770 0.0770",
+    "slope": "1.18 1.18 1.18",
+    "offset": "-0.0220 -0.0220 -0.0220",
     "power": "1.0 1.0 1.0",
     "sat": "1.0"
    }
@@ -1867,7 +1851,7 @@
    "nom": "20260604_C3696",
    "src": 104.64,
    "dur": 4.3,
-   "rec": 314.984,
+   "rec": 312.592,
    "look": "couleur",
    "vitesse": 1.0,
    "note": "Jonathan : « Je jure, je rigole pas : dans dix ans, on refait la même chose ! » (synchro)",
@@ -1883,7 +1867,7 @@
    "nom": "20260604_C4169",
    "src": 0.0,
    "dur": 1.85,
-   "rec": 319.284,
+   "rec": 316.892,
    "look": "nuit",
    "vitesse": 1.0,
    "note": "rires sur la terrasse de nuit",
@@ -1899,7 +1883,7 @@
    "nom": "20260604_C4166",
    "src": 4.5,
    "dur": 3.5,
-   "rec": 321.134,
+   "rec": 318.742,
    "look": "nuit",
    "vitesse": 1.0,
    "note": "rires sur la terrasse de nuit"
@@ -2835,7 +2819,7 @@
    "fichier": "/Volumes/SSD FAST/MARIAGE JO/RUSH/DIEGO/private/M4ROOT/CLIP/20260604_C4007.MP4",
    "src": 47.6,
    "dur": 5.9,
-   "rec": 276.51,
+   "rec": 275.66,
    "gain": 0.2,
    "fin": 0.05,
    "fout": 0.15,
@@ -2847,37 +2831,37 @@
   {
    "piste": 2,
    "fichier": "/Volumes/SSD FAST/MARIAGE JO/RUSH/DIEGO/private/M4ROOT/CLIP/20260604_C4008.MP4",
-   "src": 8.0,
+   "src": 5.9,
    "dur": 2.4,
-   "rec": 282.41,
-   "gain": -7.7,
+   "rec": 281.56,
+   "gain": -5.6,
    "fin": 0.05,
    "fout": 0.2,
    "note": "cris",
    "gain_brut": 0.0,
    "role": "salle_seule",
-   "loudness": -13.3
+   "loudness": -15.4
   },
   {
    "piste": 3,
    "fichier": "/Volumes/SSD FAST/MARIAGE JO/MUSIQUE/youtube video #U2ClfSuxjhU_320k.mp3",
    "src": 14.222,
-   "dur": 21.1,
+   "dur": 19.05,
    "rec": 268.51,
-   "gain": -20.1,
+   "gain": -19.9,
    "fin": 0.3,
    "fout": 0.3,
    "note": "remix très bas sous le maillot",
    "gain_brut": -26.0,
    "role": "musique_sous",
-   "loudness": -10.9
+   "loudness": -11.1
   },
   {
    "piste": 3,
    "fichier": "/Volumes/SSD FAST/MARIAGE JO/MUSIQUE/youtube video #U2ClfSuxjhU_320k.mp3",
-   "src": 35.322,
-   "dur": 20.674,
-   "rec": 289.61,
+   "src": 33.272,
+   "dur": 20.332,
+   "rec": 287.56,
    "gain": -7.6,
    "fin": 0.4,
    "fout": 0.5,
@@ -2891,7 +2875,7 @@
    "fichier": "/Volumes/SSD FAST/MARIAGE JO/RUSH/DIEGO/private/M4ROOT/CLIP/20260604_C3798.MP4",
    "src": 6.1,
    "dur": 1.85,
-   "rec": 309.784,
+   "rec": 307.392,
    "gain": 0.3,
    "fin": 0.05,
    "fout": 0.12,
@@ -2905,7 +2889,7 @@
    "fichier": "/Volumes/SSD FAST/MARIAGE JO/RUSH/DIEGO/private/M4ROOT/CLIP/20260604_C3787.MP4",
    "src": 14.25,
    "dur": 1.25,
-   "rec": 311.634,
+   "rec": 309.242,
    "gain": 2.5,
    "fin": 0.05,
    "fout": 0.12,
@@ -2919,7 +2903,7 @@
    "fichier": "/Volumes/SSD FAST/MARIAGE JO/RUSH/DIEGO/private/M4ROOT/CLIP/20260604_C3704.MP4",
    "src": 7.1,
    "dur": 2.1,
-   "rec": 312.884,
+   "rec": 310.492,
    "gain": -0.4,
    "fin": 0.05,
    "fout": 0.12,
@@ -2933,7 +2917,7 @@
    "fichier": "/Volumes/SSD FAST/Montage-IA/videos/phase-3/mariage-jo/_travail/son/REC052_traite.wav",
    "src": 1869.0,
    "dur": 4.3,
-   "rec": 314.984,
+   "rec": 312.592,
    "gain": 8.2,
    "fin": 0.05,
    "fout": 0.4,
@@ -2947,7 +2931,7 @@
    "fichier": "/Volumes/SSD FAST/MARIAGE JO/RUSH/SON ZOOM/040626-175038.WAV",
    "src": 746.02,
    "dur": 6.5,
-   "rec": 314.984,
+   "rec": 312.592,
    "gain": -25.7,
    "fin": 0.1,
    "fout": 1.5,
@@ -2961,7 +2945,7 @@
    "fichier": "/Volumes/SSD FAST/MARIAGE JO/RUSH/DIEGO/private/M4ROOT/CLIP/20260604_C4166.MP4",
    "src": 4.5,
    "dur": 3.5,
-   "rec": 321.134,
+   "rec": 318.742,
    "gain": -4.1,
    "fin": 0.2,
    "fout": 1.5,
@@ -2975,7 +2959,7 @@
    "fichier": "/Volumes/SSD FAST/MARIAGE JO/MUSIQUE/youtube video #U2ClfSuxjhU_320k.mp3",
    "src": 183.5,
    "dur": 19.35,
-   "rec": 309.784,
+   "rec": 307.392,
    "gain": -20.3,
    "fin": 1.0,
    "fout": 2.5,
@@ -3001,7 +2985,7 @@
    "note": ""
   },
   {
-   "rec": 325.134,
+   "rec": 322.742,
    "dur": 3.5,
    "texte": "Rendez-vous en 2036.",
    "style": "fin",
@@ -3038,9 +3022,9 @@
    "G"
   ],
   [
-   309.78400000000045,
+   307.39200000000045,
    "H"
   ]
  ],
- "duree": 329.134
+ "duree": 326.742
 }
