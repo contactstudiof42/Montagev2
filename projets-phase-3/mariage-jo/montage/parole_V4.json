@@ -1,0 +1,255 @@
+{
+ "panini_a": {
+  "src": "HF",
+  "fichier": "/Volumes/SSD FAST/MARIAGE JO/RUSH/SON HF/REC052.WAV",
+  "d": 1356.813,
+  "f": 1377.064,
+  "texte": "Et vous ne le savez peut-être pas, mais en fait, dans notre histoire avec Lala, on s'est rencontrés, sans se calculer, il y a plus de 20 ans, dans une soirée, et là, rien, on ne se parle pas, on ne se remarque même pas. Pourtant, 5 ans après, on se recroise dans une autre soirée sans savoir qu'on s'était déjà vus.",
+  "alertes": []
+ },
+ "panini_b": {
+  "src": "HF",
+  "fichier": "/Volumes/SSD FAST/MARIAGE JO/RUSH/SON HF/REC052.WAV",
+  "d": 1377.987,
+  "f": 1388.039,
+  "texte": "Et là, si vous voulez du romantisme, du coup, vous allez être servis, puisque les premiers mots que je lui ai prononcés, c'est « Est-ce que tu veux mon panini ? » C'était un acheter, un offert, j'ai plus faim.",
+  "alertes": []
+ },
+ "blagues": {
+  "src": "HF",
+  "fichier": "/Volumes/SSD FAST/MARIAGE JO/RUSH/SON HF/REC052.WAV",
+  "d": 182.232,
+  "f": 184.968,
+  "texte": "Il va y avoir plein de mauvaises blingues.",
+  "alertes": []
+ },
+ "orage": {
+  "src": "HF",
+  "fichier": "/Volumes/SSD FAST/MARIAGE JO/RUSH/SON HF/REC052.WAV",
+  "d": 230.109,
+  "f": 233.263,
+  "texte": "Donc il y aura de l'orage tout à l'heure. Ne m'en voulez pas.",
+  "alertes": []
+ },
+ "nael": {
+  "src": "HF",
+  "fichier": "/Volumes/SSD FAST/MARIAGE JO/RUSH/SON HF/REC052.WAV",
+  "d": 357.951,
+  "f": 360.264,
+  "texte": "Ce petit être céleste.",
+  "alertes": []
+ },
+ "promesse": {
+  "src": "HF",
+  "fichier": "/Volumes/SSD FAST/MARIAGE JO/RUSH/SON HF/REC052.WAV",
+  "d": 503.714,
+  "f": 509.211,
+  "texte": "La première fois, on se marie sur une promesse. Et la deuxième fois, on se marie sur des preuves.",
+  "alertes": []
+ },
+ "pere": {
+  "src": "HF",
+  "fichier": "/Volumes/SSD FAST/MARIAGE JO/RUSH/SON HF/REC052.WAV",
+  "d": 1153.436,
+  "f": 1163.615,
+  "texte": "Mon père ne t'a pas connu. Je savais que ça allait être vraiment compliqué. Mais je sais qu'il serait fière de l'homme qui prend soin de moi.",
+  "alertes": []
+ },
+ "naze": {
+  "src": "HF",
+  "fichier": "/Volumes/SSD FAST/MARIAGE JO/RUSH/SON HF/REC052.WAV",
+  "d": 1418.901,
+  "f": 1424.716,
+  "texte": "Et il y a 11 ans, quand j'ai demandé de l'aller en mariage, je l'ai fait de la façon la plus naze possible.",
+  "alertes": []
+ },
+ "mcdo": {
+  "src": "HF",
+  "fichier": "/Volumes/SSD FAST/MARIAGE JO/RUSH/SON HF/REC052.WAV",
+  "d": 1427.159,
+  "f": 1432.555,
+  "texte": "En gros, je lui ai fait une demande en mariage comme si je lui disais « Viens, on va manger un McDo ».",
+  "alertes": []
+ },
+ "demande": {
+  "src": "HF",
+  "fichier": "/Volumes/SSD FAST/MARIAGE JO/RUSH/SON HF/REC052.WAV",
+  "d": 1648.253,
+  "f": 1659.288,
+  "texte": "Donc j'en profite, je vais te faire une vraie demande cette fois-ci. Alors je vais me mettre à genoux et je vais demander si tu veux être ma femme pour les dix prochaines années.",
+  "alertes": []
+ },
+ "collier": {
+  "src": "HF",
+  "fichier": "/Volumes/SSD FAST/MARIAGE JO/RUSH/SON HF/REC052.WAV",
+  "d": 1693.425,
+  "f": 1694.785,
+  "texte": "Dans dix ans, ce sera un",
+  "alertes": [
+   "fin sans ponctuation forte"
+  ]
+ },
+ "oui": {
+  "src": "HF",
+  "fichier": "/Volumes/SSD FAST/MARIAGE JO/RUSH/SON HF/REC052.WAV",
+  "d": 1805.876,
+  "f": 1806.238,
+  "texte": "Oui, pour les dix",
+  "alertes": [
+   "fin sans ponctuation forte"
+  ]
+ },
+ "remari": {
+  "src": "HF",
+  "fichier": "/Volumes/SSD FAST/MARIAGE JO/RUSH/SON HF/REC052.WAV",
+  "d": 1813.707,
+  "f": 1819.333,
+  "texte": "Eh bien, je crois que j'ai l'honneur de vous déclarer remarie et refemme.",
+  "alertes": [
+   "début dans un son (-29 dBFS)",
+   "fin dans un son (-34 dBFS)"
+  ]
+ },
+ "pelles": {
+  "src": "HF",
+  "fichier": "/Volumes/SSD FAST/MARIAGE JO/RUSH/SON HF/REC052.WAV",
+  "d": 1819.746,
+  "f": 1821.878,
+  "texte": "Vous pouvez vous rouler des",
+  "alertes": [
+   "début dans un son (-31 dBFS)",
+   "fin dans un son (-12 dBFS)",
+   "fin sans ponctuation forte"
+  ]
+ },
+ "jure": {
+  "src": "HF",
+  "fichier": "/Volumes/SSD FAST/MARIAGE JO/RUSH/SON HF/REC052.WAV",
+  "d": 1868.966,
+  "f": 1873.675,
+  "texte": "et je jure je rigole pas dans dix ans on refait la même chose",
+  "alertes": [
+   "début sans majuscule",
+   "fin sans ponctuation forte"
+  ]
+ },
+ "flotte": {
+  "src": "HF",
+  "fichier": "/Volumes/SSD FAST/MARIAGE JO/RUSH/SON HF/REC052.WAV",
+  "d": 245.697,
+  "f": 248.417,
+  "texte": "Mariage sous la flotte, culotte qui gigote.",
+  "alertes": []
+ },
+ "panini2": {
+  "src": "20260604_C3797",
+  "fichier": "/Volumes/SSD FAST/MARIAGE JO/RUSH/DIEGO/private/M4ROOT/CLIP/20260604_C3797.MP4",
+  "d": 8.086,
+  "f": 13.136,
+  "texte": "Moi, je dirais, t'as pas oublié, mais tu sais, c'est grâce à acquis un petit peu. C'est moi qui t'emmenais avec ton panini.",
+  "alertes": [
+   "début dans un son (-32 dBFS)",
+   "fin dans un son (-33 dBFS)"
+  ]
+ },
+ "buffet": {
+  "src": "20260604_C3787",
+  "fichier": "/Volumes/SSD FAST/MARIAGE JO/RUSH/DIEGO/private/M4ROOT/CLIP/20260604_C3787.MP4",
+  "d": 4.395,
+  "f": 8.798,
+  "texte": "Je vous aime. Merci pour ce buffet gratuit.",
+  "alertes": [
+   "début dans un son (-35 dBFS)",
+   "fin dans un son (-25 dBFS)"
+  ]
+ },
+ "invitee_q": {
+  "src": "20260604_C3813",
+  "fichier": "/Volumes/SSD FAST/MARIAGE JO/RUSH/DIEGO/private/M4ROOT/CLIP/20260604_C3813.MP4",
+  "d": 16.428,
+  "f": 21.885,
+  "texte": "Ah, il faut que je sois une invitée ? C'est",
+  "alertes": [
+   "début dans un son (-26 dBFS)",
+   "fin dans un son (-27 dBFS)",
+   "fin sans ponctuation forte"
+  ]
+ },
+ "invitee": {
+  "src": "20260604_C3813",
+  "fichier": "/Volumes/SSD FAST/MARIAGE JO/RUSH/DIEGO/private/M4ROOT/CLIP/20260604_C3813.MP4",
+  "d": 24.272,
+  "f": 31.716,
+  "texte": "Les mariés étaient super. Surtout la mariée, je trouve qu'elle avait une jolie robe, un joli make-up, une belle coiffure.",
+  "alertes": [
+   "fin dans un son (-18 dBFS)"
+  ]
+ },
+ "dixans1": {
+  "src": "20260604_C3798",
+  "fichier": "/Volumes/SSD FAST/MARIAGE JO/RUSH/DIEGO/private/M4ROOT/CLIP/20260604_C3798.MP4",
+  "d": 12.095,
+  "f": 18.674,
+  "texte": "On se revoit dans 10 ans les mariés.",
+  "alertes": [
+   "début dans un son (-25 dBFS)",
+   "fin dans un son (-27 dBFS)"
+  ]
+ },
+ "dixans2": {
+  "src": "20260604_C3791",
+  "fichier": "/Volumes/SSD FAST/MARIAGE JO/RUSH/DIEGO/private/M4ROOT/CLIP/20260604_C3791.MP4",
+  "d": 4.829,
+  "f": 16.748,
+  "texte": "Félicitations, gros bisous à tous les deux et on se revoit dans 10 ans. Et",
+  "alertes": [
+   "début dans un son (-22 dBFS)",
+   "fin dans un son (-29 dBFS)",
+   "fin sans ponctuation forte"
+  ]
+ },
+ "riche": {
+  "src": "20260604_C3704",
+  "fichier": "/Volumes/SSD FAST/MARIAGE JO/RUSH/DIEGO/private/M4ROOT/CLIP/20260604_C3704.MP4",
+  "d": 6.766,
+  "f": 9.714,
+  "texte": "Dans dix ans, on se retrouve riche.",
+  "alertes": [
+   "début dans un son (-32 dBFS)",
+   "fin dans un son (-23 dBFS)"
+  ]
+ },
+ "ouvrir": {
+  "src": "20260604_C4007",
+  "fichier": "/Volumes/SSD FAST/MARIAGE JO/RUSH/DIEGO/private/M4ROOT/CLIP/20260604_C4007.MP4",
+  "d": 12.329,
+  "f": 15.518,
+  "texte": "Alors tiens, je te laisse l'ouvrir.",
+  "alertes": [
+   "début dans un son (-28 dBFS)"
+  ]
+ },
+ "traiteur": {
+  "src": "20260604_C3789",
+  "fichier": "/Volumes/SSD FAST/MARIAGE JO/RUSH/DIEGO/private/M4ROOT/CLIP/20260604_C3789.MP4",
+  "d": 4.5,
+  "f": 16.242,
+  "texte": "Merci pour l'invitation, c'est super, le traiteur est hyper bon, vous avez dû payer ça très cher. Perso, j'aurais jamais pu faire ça moi.",
+  "alertes": [
+   "début dans un son (-25 dBFS)",
+   "fin dans un son (-27 dBFS)"
+  ]
+ },
+ "dix_premieres": {
+  "src": "20260604_C3791",
+  "fichier": "/Volumes/SSD FAST/MARIAGE JO/RUSH/DIEGO/private/M4ROOT/CLIP/20260604_C3791.MP4",
+  "d": 16.407,
+  "f": 19.869,
+  "texte": "ans. Et que ces 10 années se passent aussi bien que les 10 premières.",
+  "alertes": [
+   "début dans un son (-20 dBFS)",
+   "fin dans un son (-30 dBFS)",
+   "début sans majuscule"
+  ]
+ }
+}

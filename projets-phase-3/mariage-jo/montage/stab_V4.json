@@ -1,0 +1,304 @@
+{
+ "FX30.5486|2.0": {
+  "rec": 0.0,
+  "avant": {
+   "video": "FX30.5486.MP4",
+   "debut": 2.0,
+   "fin": 6.2,
+   "images": 210,
+   "fps": 50.0,
+   "moyenne": 0.42,
+   "pic": 1.07,
+   "vitesse_voulue_px_s": 13.1
+  },
+  "garder": false
+ },
+ "FX30.5483|2.5": {
+  "rec": 4.2,
+  "avant": {
+   "video": "FX30.5483.MP4",
+   "debut": 2.5,
+   "fin": 5.3,
+   "images": 140,
+   "fps": 50.0,
+   "moyenne": 11.49,
+   "pic": 34.14,
+   "vitesse_voulue_px_s": 84.1
+  },
+  "garder": true,
+  "fichier": "/Volumes/SSD FAST/Montage-IA/videos/phase-3/mariage-jo/_travail/stab/FX30.5483_2.50_0.5/FX30.5483_stabilized_agent.mov",
+  "debut_plage": 2.0,
+  "apres": {
+   "video": "FX30.5483_stabilized_agent.mov",
+   "debut": 0.5,
+   "fin": 3.3,
+   "images": 140,
+   "fps": 50.0,
+   "moyenne": 3.02,
+   "pic": 7.05,
+   "vitesse_voulue_px_s": 75.3
+  }
+ },
+ "20260604_C3651|41.0": {
+  "rec": 7.0,
+  "avant": {
+   "video": "20260604_C3651.MP4",
+   "debut": 41.0,
+   "fin": 43.6,
+   "images": 130,
+   "fps": 50.0,
+   "moyenne": 3.58,
+   "pic": 9.19,
+   "vitesse_voulue_px_s": 37.1
+  },
+  "garder": true,
+  "fichier": "/Volumes/SSD FAST/Montage-IA/videos/phase-3/mariage-jo/_travail/stab/20260604_C3651_41.00_0.5/20260604_C3651_stabilized_agent.mov",
+  "debut_plage": 40.5,
+  "apres": {
+   "video": "20260604_C3651_stabilized_agent.mov",
+   "debut": 0.5,
+   "fin": 3.1,
+   "images": 130,
+   "fps": 50.0,
+   "moyenne": 2.25,
+   "pic": 4.19,
+   "vitesse_voulue_px_s": 22.1
+  }
+ },
+ "20260604_C3689|30.143": {
+  "rec": 9.6,
+  "avant": {
+   "video": "20260604_C3689.MP4",
+   "debut": 30.14,
+   "fin": 33.54,
+   "images": 170,
+   "fps": 50.0,
+   "moyenne": 2.38,
+   "pic": 7.17,
+   "vitesse_voulue_px_s": 29.9
+  },
+  "garder": true,
+  "fichier": "/Volumes/SSD FAST/Montage-IA/videos/phase-3/mariage-jo/_travail/stab/20260604_C3689_30.14_0.5/20260604_C3689_stabilized_agent.mov",
+  "debut_plage": 29.643,
+  "apres": {
+   "video": "20260604_C3689_stabilized_agent.mov",
+   "debut": 0.5,
+   "fin": 3.9,
+   "images": 170,
+   "fps": 50.0,
+   "moyenne": 0.99,
+   "pic": 3.26,
+   "vitesse_voulue_px_s": 15.2
+  }
+ },
+ "FX30.5635|114.0": {
+  "rec": 13.0,
+  "avant": {
+   "video": "FX30.5635.MP4",
+   "debut": 114.0,
+   "fin": 117.8,
+   "images": 190,
+   "fps": 50.0,
+   "moyenne": 19.86,
+   "pic": 57.95,
+   "vitesse_voulue_px_s": 134.8
+  },
+  "garder": false
+ },
+ "FX30.5635|105.3": {
+  "rec": 16.8,
+  "avant": {
+   "video": "FX30.5635.MP4",
+   "debut": 105.3,
+   "fin": 107.5,
+   "images": 110,
+   "fps": 50.0,
+   "moyenne": 8.98,
+   "pic": 21.78,
+   "vitesse_voulue_px_s": 65.8
+  },
+  "garder": true,
+  "fichier": "/Volumes/SSD FAST/Montage-IA/videos/phase-3/mariage-jo/_travail/stab/FX30.5635_105.30_0.5/FX30.5635_stabilized_agent.mov",
+  "debut_plage": 104.8,
+  "apres": {
+   "video": "FX30.5635_stabilized_agent.mov",
+   "debut": 0.5,
+   "fin": 2.7,
+   "images": 110,
+   "fps": 50.0,
+   "moyenne": 5.93,
+   "pic": 8.99,
+   "vitesse_voulue_px_s": 62.4
+  }
+ },
+ "20260604_C3689|39.543": {
+  "rec": 19.0,
+  "avant": {
+   "video": "20260604_C3689.MP4",
+   "debut": 39.54,
+   "fin": 43.24,
+   "images": 185,
+   "fps": 50.0,
+   "moyenne": 3.17,
+   "pic": 12.67,
+   "vitesse_voulue_px_s": 46.9
+  },
+  "garder": false,
+  "fichier": "/Volumes/SSD FAST/Montage-IA/videos/phase-3/mariage-jo/_travail/stab/20260604_C3689_39.54_0.5/20260604_C3689_stabilized_agent.mov",
+  "debut_plage": 39.043,
+  "apres": {
+   "video": "20260604_C3689_stabilized_agent.mov",
+   "debut": 0.5,
+   "fin": 4.2,
+   "images": 185,
+   "fps": 50.0,
+   "moyenne": 2.78,
+   "pic": 12.33,
+   "vitesse_voulue_px_s": 60.4
+  }
+ },
+ "20260604_C3689|43.244": {
+  "rec": 22.701,
+  "avant": {
+   "video": "20260604_C3689.MP4",
+   "debut": 43.24,
+   "fin": 50.42,
+   "images": 359,
+   "fps": 50.0,
+   "moyenne": 22.19,
+   "pic": 117.11,
+   "vitesse_voulue_px_s": 168.8
+  },
+  "garder": false,
+  "fichier": "/Volumes/SSD FAST/Montage-IA/videos/phase-3/mariage-jo/_travail/stab/20260604_C3689_43.24_0.5/20260604_C3689_stabilized_agent.mov",
+  "debut_plage": 42.744,
+  "apres": {
+   "video": "20260604_C3689_stabilized_agent.mov",
+   "debut": 0.5,
+   "fin": 7.67,
+   "images": 359,
+   "fps": 50.0,
+   "moyenne": 21.61,
+   "pic": 112.99,
+   "vitesse_voulue_px_s": 191.1
+  }
+ },
+ "FX30.5635|138.337": {
+  "rec": 29.874,
+  "avant": {
+   "video": "FX30.5635.MP4",
+   "debut": 138.34,
+   "fin": 145.34,
+   "images": 350,
+   "fps": 50.0,
+   "moyenne": 3.08,
+   "pic": 14.76,
+   "vitesse_voulue_px_s": 34.3
+  },
+  "garder": false
+ },
+ "FX30.5635|155.2": {
+  "rec": 36.874,
+  "avant": {
+   "video": "FX30.5635.MP4",
+   "debut": 155.2,
+   "fin": 157.6,
+   "images": 120,
+   "fps": 50.0,
+   "moyenne": 5.36,
+   "pic": 13.88,
+   "vitesse_voulue_px_s": 56.8
+  },
+  "garder": true,
+  "fichier": "/Volumes/SSD FAST/Montage-IA/videos/phase-3/mariage-jo/_travail/stab/FX30.5635_155.20_0.5/FX30.5635_stabilized_agent.mov",
+  "debut_plage": 154.7,
+  "apres": {
+   "video": "FX30.5635_stabilized_agent.mov",
+   "debut": 0.5,
+   "fin": 2.9,
+   "images": 120,
+   "fps": 50.0,
+   "moyenne": 4.0,
+   "pic": 9.24,
+   "vitesse_voulue_px_s": 42.0
+  }
+ },
+ "FX30.5456|11.0": {
+  "rec": 39.274,
+  "avant": {
+   "video": "FX30.5456.MP4",
+   "debut": 11.0,
+   "fin": 17.9,
+   "images": 345,
+   "fps": 50.0,
+   "moyenne": 11.57,
+   "pic": 70.58,
+   "vitesse_voulue_px_s": 67.8
+  },
+  "garder": true,
+  "fichier": "/Volumes/SSD FAST/Montage-IA/videos/phase-3/mariage-jo/_travail/stab/FX30.5456_11.00_0.5/FX30.5456_stabilized_agent.mov",
+  "debut_plage": 10.5,
+  "apres": {
+   "video": "FX30.5456_stabilized_agent.mov",
+   "debut": 0.5,
+   "fin": 7.4,
+   "images": 345,
+   "fps": 50.0,
+   "moyenne": 7.52,
+   "pic": 70.04,
+   "vitesse_voulue_px_s": 57.4
+  }
+ },
+ "20260604_C3524|3.0": {
+  "rec": 46.17,
+  "avant": {
+   "video": "20260604_C3524.MP4",
+   "debut": 3.0,
+   "fin": 5.47,
+   "images": 124,
+   "fps": 50.0,
+   "moyenne": 9.82,
+   "pic": 18.33,
+   "vitesse_voulue_px_s": 80.4
+  },
+  "garder": true,
+  "fichier": "/Volumes/SSD FAST/Montage-IA/videos/phase-3/mariage-jo/_travail/stab/20260604_C3524_3.00_0.5/20260604_C3524_stabilized_agent.mov",
+  "debut_plage": 2.5,
+  "apres": {
+   "video": "20260604_C3524_stabilized_agent.mov",
+   "debut": 0.5,
+   "fin": 2.97,
+   "images": 124,
+   "fps": 50.0,
+   "moyenne": 2.08,
+   "pic": 5.39,
+   "vitesse_voulue_px_s": 49.7
+  }
+ },
+ "20260604_C3529|1.0": {
+  "rec": 48.643,
+  "avant": {
+   "video": "20260604_C3529.MP4",
+   "debut": 1.0,
+   "fin": 3.45,
+   "images": 123,
+   "fps": 50.0,
+   "moyenne": 4.02,
+   "pic": 11.22,
+   "vitesse_voulue_px_s": 63.8
+  },
+  "garder": false,
+  "fichier": "/Volumes/SSD FAST/Montage-IA/videos/phase-3/mariage-jo/_travail/stab/20260604_C3529_1.00_0.5/20260604_C3529_stabilized_agent.mov",
+  "debut_plage": 0.5,
+  "apres": {
+   "video": "20260604_C3529_stabilized_agent.mov",
+   "debut": 0.5,
+   "fin": 2.95,
+   "images": 123,
+   "fps": 50.0,
+   "moyenne": 11.68,
+   "pic": 38.44,
+   "vitesse_voulue_px_s": 154.7
+  }
+ }
+}

@@ -1,0 +1,106 @@
+{
+ "20260604_C3894|96.0": {
+  "rec": 242.589,
+  "avant": {
+   "video": "20260604_C3894.MP4",
+   "debut": 96.0,
+   "fin": 98.2,
+   "images": 110,
+   "fps": 50.0,
+   "moyenne": 9.4,
+   "pic": 18.94,
+   "vitesse_voulue_px_s": 125.6
+  },
+  "garder": false,
+  "fichier": "/Volumes/SSD FAST/Montage-IA/videos/phase-3/mariage-jo/_travail/stab/20260604_C3894_96.00_0.5/20260604_C3894_stabilized_agent.mov",
+  "debut_plage": 95.5,
+  "apres": {
+   "video": "20260604_C3894_stabilized_agent.mov",
+   "debut": 0.5,
+   "fin": 2.7,
+   "images": 110,
+   "fps": 50.0,
+   "moyenne": 12.8,
+   "pic": 24.48,
+   "vitesse_voulue_px_s": 185.9
+  }
+ },
+ "20260604_C3894|88.5": {
+  "rec": 236.589,
+  "avant": {
+   "video": "20260604_C3894.MP4",
+   "debut": 88.5,
+   "fin": 91.5,
+   "images": 150,
+   "fps": 50.0,
+   "moyenne": 7.83,
+   "pic": 16.89,
+   "vitesse_voulue_px_s": 90.8
+  },
+  "garder": false,
+  "fichier": "/Volumes/SSD FAST/Montage-IA/videos/phase-3/mariage-jo/_travail/stab/20260604_C3894_88.50_0.5/20260604_C3894_stabilized_agent.mov",
+  "debut_plage": 88.0,
+  "apres": {
+   "video": "20260604_C3894_stabilized_agent.mov",
+   "debut": 0.5,
+   "fin": 3.5,
+   "images": 150,
+   "fps": 50.0,
+   "moyenne": 11.21,
+   "pic": 24.4,
+   "vitesse_voulue_px_s": 113.9
+  }
+ },
+ "20260604_C3798|12.095": {
+  "rec": 230.01,
+  "avant": {
+   "video": "20260604_C3798.MP4",
+   "debut": 12.1,
+   "fin": 18.67,
+   "images": 329,
+   "fps": 50.0,
+   "moyenne": 22.12,
+   "pic": 117.49,
+   "vitesse_voulue_px_s": 319.1
+  },
+  "garder": false,
+  "fichier": "/Volumes/SSD FAST/Montage-IA/videos/phase-3/mariage-jo/_travail/stab/20260604_C3798_12.10_0.5/20260604_C3798_stabilized_agent.mov",
+  "debut_plage": 11.595,
+  "apres": {
+   "video": "20260604_C3798_stabilized_agent.mov",
+   "debut": 0.5,
+   "fin": 7.08,
+   "images": 329,
+   "fps": 50.0,
+   "moyenne": 31.63,
+   "pic": 144.57,
+   "vitesse_voulue_px_s": 397.9
+  }
+ },
+ "20260604_C3704|6.766": {
+  "rec": 227.062,
+  "avant": {
+   "video": "20260604_C3704.MP4",
+   "debut": 6.77,
+   "fin": 9.71,
+   "images": 147,
+   "fps": 50.0,
+   "moyenne": 4.57,
+   "pic": 9.68,
+   "vitesse_voulue_px_s": 33.0
+  },
+  "garder": false,
+  "fichier": "/Volumes/SSD FAST/Montage-IA/videos/phase-3/mariage-jo/_travail/stab/20260604_C3704_6.77_0.5/20260604_C3704_stabilized_agent.mov",
+  "debut_plage": 6.266,
+  "apres": {
+   "video": "20260604_C3704_stabilized_agent.mov",
+   "debut": 0.5,
+   "fin": 3.45,
+   "images": 148,
+   "fps": 50.0,
+   "moyenne": 12.96,
+   "pic": 36.08,
+   "vitesse_voulue_px_s": 109.1
+  }
+ }
+}

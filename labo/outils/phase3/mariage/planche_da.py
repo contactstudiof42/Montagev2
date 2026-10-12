@@ -33,7 +33,8 @@ def charge(e, h):
         im = Image.open(e["img"]).convert("RGB")
     else:
         im = frame(e["src"], e["t"], 1080 if e.get("rogne") else h)
-    if e.get("rogne"): im = rogne(im)
+    if isinstance(e.get("rogne"), list): y0, y1 = e["rogne"]; im = im.crop((0, int(y0 * im.height), im.width, int(y1 * im.height)))
+    elif e.get("rogne"): im = rogne(im)
     return im.resize((round(im.width * h / im.height), h), Image.LANCZOS)
 
 def main(spec):

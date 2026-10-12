@@ -20,11 +20,11 @@ from oklab import vers_lch, depuis_lch
 
 W = np.array([0.2126, 0.7152, 0.0722])
 # (diaphs autour de 0,18 ; valeur affichée Rec.709 gamma 2.4)
-COURBE = [(-9, 0.0), (-6.5, 0.012), (-5, 0.035), (-3.5, 0.10), (-2, 0.215), (0, 0.42), (1, 0.53), (2, 0.635),
-          (3, 0.73), (4, 0.81), (5, 0.875), (6, 0.925), (7.5, 0.965), (10, 0.99)]
-COURBE_NB = [(-9, 0.0), (-6, 0.006), (-4.5, 0.03), (-3, 0.10), (-1.5, 0.24), (0, 0.42), (1, 0.545), (2, 0.66),
-             (3, 0.755), (4, 0.83), (5, 0.88), (6, 0.915), (8, 0.95), (10, 0.97)]
-COUL = dict(inset=0.12, chroma=0.82, olive=0.010, olive_h=108.0, chaud=0.010, chaud_h=75.0, peau_c=0.085, peau_h=55.0,
+COURBE = [(-9, 0.0), (-6.5, 0.006), (-5, 0.022), (-3.5, 0.075), (-2, 0.19), (0, 0.42), (1, 0.545), (2, 0.655),
+          (3, 0.75), (4, 0.825), (5, 0.885), (6, 0.93), (7.5, 0.965), (10, 0.99)]       # essai e2 (2026-10-12), contre shcreativedept
+COURBE_NB = [(-9, 0.0), (-6, 0.002), (-4.5, 0.012), (-3, 0.055), (-1.5, 0.19), (0, 0.41), (1, 0.56), (2, 0.69),
+             (3, 0.785), (4, 0.85), (5, 0.895), (6, 0.925), (8, 0.95), (10, 0.97)]       # 2026-10-12 : noirs plus profonds, contre plustwofilms
+COUL = dict(chaleur=(1.04, 1.0, 0.93), verts=1.0, inset=0.12, chroma=0.95, olive=0.016, olive_h=108.0, chaud=0.006, chaud_h=75.0, peau_c=0.085, peau_h=55.0,
             ombres_neutres=0.55, courbe=COURBE)
 NB = dict(mix=[0.42, 0.48, 0.10], courbe=COURBE_NB)
 
@@ -38,9 +38,12 @@ def bande(h, c, d):
     x = np.clip(1 - np.abs((h - c + 180) % 360 - 180) / d, 0, 1); return x * x * (3 - 2 * x)
 
 def scene(x, expo=0.0):
-    return compresse_gamut(slog3_vers_lin(x) @ M.T) * (2 ** expo)
+    with np.errstate(invalid="ignore"):
+        lin = compresse_gamut(slog3_vers_lin(x) @ M.T)
+    return np.nan_to_num(lin, nan=0.0) * (2 ** expo)
 
 def couleur_lin(lin, p=COUL):
+    ch = np.array(p.get("chaleur", (1, 1, 1))); lin = lin * ch / (ch @ W)          # balance du look (plus chaud que la scène)
     y = (lin @ W)[..., None]
     lin = lin * (1 - p["inset"]) + y * p["inset"]                     # inset : la courbe par canal ne vire pas les teintes
     out = fabrique_courbe(p["courbe"])(lin)
@@ -50,6 +53,10 @@ def couleur_lin(lin, p=COUL):
     plaf = p["peau_c"] * (1 + 0.5 * np.log1p(np.maximum(C / p["peau_c"] - 1, 0)))
     C = np.where(C > p["peau_c"], C + wp * (plaf - C), C); h = h + wp * 0.4 * ((p["peau_h"] - h + 180) % 360 - 180)
     C = C * (1 - p["ombres_neutres"] * (1 - lisse(0.06, 0.30, L)))    # ombres neutres
+    vg = bande(h, 135, 40) * lisse(0.03, 0.07, C) * (1 - lisse(0.70, 0.85, L)) * p.get("verts", 0.0)   # verts saturés seulement (feuillage), pas le ciel ni la robe
+    L = L * (1 - 0.28 * vg); h = h + 8 * vg; C = C * (1 - 0.12 * vg)          # DA 2026-10-12 : pas de chartreuse, verts profonds
+    gen = np.maximum(C - 0.09, 0)                                       # couleurs vives (fleurs) : chroma tassée et densifiée
+    C = C - gen * 0.45; L = L * (1 - np.minimum(gen * 1.6, 0.18))
     a, b = C * np.cos(np.radians(h)), C * np.sin(np.radians(h))
     wo = lisse(0.10, 0.35, L) * (1 - lisse(0.55, 0.80, L)) * (1 - 0.7 * bande(h, 52, 26))   # olive dans les tons moyens
     wc = lisse(0.65, 0.90, L)                                                                # chaleur dans les hautes lumières
