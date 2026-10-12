@@ -11,17 +11,17 @@ Une section datée par retour. Claude marque chaque retour « intégré le <date
 - 2026-10-11 — Notes sur la V2 (étalonnage, rythme, titre, transitions, packshots) → `montage-regard` « Juger sa propre version », `montage-couleur-et-intention`, `montage-kinetic-editing`, `montage-motion-design-principes`, carnet 1-3, 5.
 - 2026-10-11 — Ton regard sur ta propre image (se comparer, voir le mouvement, Gyroflow, Resolve léger) → `montage-regard` 1-3, `montage-resolve`, `labo/outils/tremblement.py`.
 - 2026-10-11 — Pas de version de Diego, comparaison avec Claude nu seulement → `projets-phase-3/sony-linkbuds/comparaison.md`.
-- 2026-10-11 — Comparaison agent (V2) / Claude nu (V1), séries du cadreur → `montage-regard` 2, 5, 7 ; `montage-resolve` (détourage) ; carnet 4 ; `PROMPT-PHASE-3` A4.
-- 2026-10-11 — L'ordre des plans : ni chronologique, ni au hasard → `montage-regard` 6, carnet (rythme et son).
+- 2026-10-11 — Comparaison agent (V2) / Claude nu (V1), séries du cadreur → `montage-regard` 2, 6, 8 ; `montage-resolve` (détourage) ; carnet 4 ; `PROMPT-PHASE-3` A4.
+- 2026-10-11 — L'ordre des plans : ni chronologique, ni au hasard → `montage-regard` 7, carnet (rythme et son).
 - 2026-10-11 — Notes sur la V3 (principes rappelés, titre Sony, eyecannndy, couleur séparée, export, détourages, Gyroflow indispensable) → `CLAUDE.md` (principes de Diego), `montage-motion-design-principes` (titre de marque), `montage-kinetic-editing` § 4 bis, `montage-couleur-et-intention` (séparer les teintes), `montage-loudness-livraison` (master du studio), `montage-resolve`.
 - 2026-10-11 — Gyroflow : un mouvement fluide, pas un plan statique ; fixe ou rail → `montage-regard` 3, `montage-resolve`, `tremblement.py --avant --bande`.
 - 2026-10-11 — Jamais deux fois le même passage d'un rush [genre : after movie] → `montage-grammaire`, `montage-formats`, `montage-regard`, `labo/outils/doublons_timeline.py`.
 - 2026-10-11 — Notes sur la V4 (son par transition, preuve Gyroflow, plan par plan, visages, collages, DA, chaque plan a une raison) → `montage-regard` « Le goût de chaque plan », `montage-kinetic-editing` [genre], carnet 6-14, `projets-phase-3/sony-linkbuds/`.
-- 2026-10-11 — Détourages : un défaut technique → `montage-regard` 10, carnet 12, `controle_detourage.py`, `montage-resolve` (BiRefNet).
-- 2026-10-11 — Trois outils pour le goût (DA avant les effets, variantes, carnet) → `CARNET-DE-GOUT.md`, `montage-direction-artistique`, `montage-regard` 9, 11, 12.
+- 2026-10-11 — Détourages : un défaut technique → `montage-regard` « Le goût de chaque plan » 13, carnet 12, `controle_detourage.py`, `montage-resolve` (BiRefNet).
+- 2026-10-11 — Trois outils pour le goût (DA avant les effets, variantes, carnet) → `CARNET-DE-GOUT.md`, `montage-direction-artistique`, `montage-regard` « Le goût de chaque plan » 12, 14, 15.
 - 2026-10-11 — Deux retours de plus sur la V4 (tapis, panoramique flou) et deux règles (aucun plan de remplissage ; flou volontaire ou raté) → `montage-regard` « Le goût de chaque plan » 1-2, carnet 15-16, `controle_plans.py`.
 - 2026-10-11 — La fin de la V4 est trop longue (dernier pic) [genre] → carnet, `montage-kinetic-editing` « Faire le dernier pic ».
-- 2026-10-11 — Rien n'est figé dans un montage → carnet 17, `montage-regard` 13, `CLAUDE.md` (principes de Diego).
+- 2026-10-11 — Rien n'est figé dans un montage → carnet 17, `montage-regard` « Le goût de chaque plan » 16, `CLAUDE.md` (principes de Diego).
 - 2026-10-11 — Référence pour le dernier pic de la V5 (foebusdelapaz) [genre] → `analyses/reseaux/foebusdelapaz-nike-basket.md`, `REFERENCES.md`, carnet 18.
 
 ## Points ouverts (à compléter par Diego)
