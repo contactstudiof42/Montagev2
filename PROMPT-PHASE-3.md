@@ -12,6 +12,7 @@ Livrer dans le logiciel une version que Diego n'aurait plus qu'à peaufiner : Re
 4. `run_script_unsafe` seulement si aucun outil dédié ne le permet, jamais pour supprimer ; chaque usage au journal.
 5. Sons : Artlist (ou une banque indiquée par Diego), avec son compte ; rien d'acheté ; 100 téléchargements par jour au plus ; chaque son noté dans `sfx.md`.
 6. Un doute qui peut abîmer quelque chose : demander. Pour le reste : décider et noter.
+7. **Higgsfield** (MCP d'After Effects relayé par ses serveurs : ce qu'il lit ou montre d'un projet y passe) : aucun crédit de génération (images ou vidéos IA) sans demander à Diego, coût estimé à l'appui ; aucun fichier de client envoyé à Higgsfield sans son accord, donc le MCP ne lit ni ne rend rien d'un projet qui contient de la matière d'un client tant que Diego n'a pas dit oui (Diego, 2026-10-13).
 
 ## Au début de chaque projet ou exercice : la liste des moyens
 Ce qui manque pour faire au mieux (logiciel, serveur MCP, plugin, modèle IA, licence, autorisation de macOS, réglage d'un logiciel), avec pour chaque élément : à quoi il sert, gratuit ou payant, officiel ou communautaire. Diego valide ; j'installe ce qui s'installe sans compte, sans achat et sans autorisation de macOS ; il fait le reste (principe de Diego du 2026-10-13, `CLAUDE.md`).
