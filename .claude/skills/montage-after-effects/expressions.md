@@ -1,6 +1,62 @@
 # Expressions After Effects
 
-Annexe de `SKILL.md` : code complet des recettes, saccade, pièges en détail et vérifications de phase 3 (le SKILL.md fait foi ; les principes et réglages qui y sont déjà ne sont pas répétés ici).
+## Durées types à 25 i/s (points de départ, à juger à l'œil)
+
+| Usage | Durée | Remarque |
+|---|---|---|
+| Micro-interaction UI (bouton, toggle) | 4 à 8 i (160 à 320 ms) | Au-delà, l'UI paraît lente |
+| Apparition d'un panneau / carte UI | 8 à 12 i | Sortie plus courte que l'entrée (≈ 70 %) |
+| Lettre par lettre (décalage entre lettres) | 1 à 2 i | 3 i et plus : effet « machine à écrire » |
+| Entrée d'un mot ou d'une ligne de titre | 10 à 18 i | Décaler les lignes de 3 à 5 i |
+| Lower third (entrée) | 12 à 20 i, tenue ≥ 3 s | La tenue doit permettre deux lectures du nom |
+| Révélation de logo | 30 à 75 i (1,2 à 3 s) | Plus le logo est « premium », plus l'arrivée est longue et sans overshoot |
+| Anticipation | 2 à 4 i | Rarement plus de 15 % de l'amplitude |
+| Overshoot / rebond qui se pose | 8 à 20 i | Au-delà, ça devient du cartoon |
+| Transition plein cadre | 8 à 16 i | Sur le temps fort de la musique |
+
+Ces chiffres sont des **conventions de métier**, pas des normes. Pour l'UI, ils rejoignent les guides de motion des systèmes de design (100 à 500 ms).
+
+## 4. Recettes
+
+Code complet et commentaires : [expressions.md](expressions.md). Fichiers : `labo/ae-expressions/NN-*.js`.
+
+| # | Recette | Usage motion | Statut |
+|---|---|---|---|
+| 01 | `wiggle(freq, amp)` piloté par deux sliders | Caméra à l'épaule, tremblement, flottement | **[TESTÉ EN LABO, syntaxe/logique Node uniquement]** (bornes vérifiées avec un faux wiggle) |
+| 02 | `loopOut("cycle")` | Boucle de fond, rotation infinie, GIF | **[TESTÉ EN LABO, syntaxe uniquement]** (le comportement testé est celui du mock) |
+| 03 | `loopOut("pingpong")` | Balancier, respiration simple | **[TESTÉ EN LABO, syntaxe uniquement]** |
+| 04 | Boucle manuelle `valueAtTime(t0 + (time - t1) % d)` | Boucler une portion choisie | **[TESTÉ EN LABO, syntaxe/logique Node uniquement]** |
+| 05 | Overshoot inertiel (principe Dan Ebberts) | Arrivée élastique sur n'importe quelle propriété | **[TESTÉ EN LABO, syntaxe/logique Node uniquement]** : pic à 107 pour une cible de 100, posé en 3 s |
+| 06 | Écho / suiveur `valueAtTime(time - retard)` | Traînées, cascades, essaims | **[TESTÉ EN LABO, syntaxe/logique Node uniquement]** |
+| 07 | `ease(p, 20, 60, 0, 100)` | Piloter une propriété par une autre (« progression ») | **[TESTÉ EN LABO, syntaxe/logique Node uniquement]** (courbe exacte d'`ease` non reproduite) |
+| 08 | Time remap à vitesse constante | Ralenti/accéléré propre d'un clip | **[TESTÉ EN LABO, syntaxe/logique Node uniquement]** |
+| 09 | Compteur de texte avec séparateur de milliers | Chiffres clés, data, infographie | **[TESTÉ EN LABO, syntaxe/logique Node uniquement]** |
+| 10 | `posterizeTime(8)` + wiggle | Effet stop motion, image par image dessinée | **[TESTÉ EN LABO, syntaxe/logique Node uniquement]** |
+| 11 | Rig respiration asymétrique (inspiration/rétention/expiration/pause) | Logo vivant, attente, ambiance | **[TESTÉ EN LABO, syntaxe/logique Node uniquement]** |
+| 12 | Rebond avec gravité (bounce back, Ebberts) | Objet qui tombe et rebondit | **[THÉORIQUE]** |
+| 13 | `loopOut("offset")` / `("continue")` | Escalier qui monte, mouvement qui continue sur sa lancée | **[THÉORIQUE]** |
+| 14 | Animateur de texte + sélecteur de plage « Expression » | Décalage lettre par lettre piloté | **[THÉORIQUE]** |
+
+### Réglages qui comptent
+
+- **Overshoot (05)** : `freq` règle la raideur, `decay` la rapidité de stabilisation. L'amplitude n'est pas un réglage : elle vient de **la vitesse d'arrivée** (vitesse ÷ 2π·freq). Pour plus de rebond, on arrive plus vite ou on baisse `freq`. Les clés doivent arriver **avec de la vitesse** (sortie linéaire ou peu amortie) : une clé en Easy Ease arrive à vitesse nulle, donc il n'y a pas d'overshoot.
+- **Wiggle (01)** : fréquence 0,5 à 2 pour un flottement, 3 à 8 pour une caméra à l'épaule, au-delà c'est une vibration. Amplitude caméra : 2 à 8 px en HD. Sur une seule dimension : séparer les dimensions, ou ne garder qu'un axe du résultat.
+- **pingpong (03)** : au retour, l'easing est inversé. Une arrivée longue devient un départ long. Si l'asymétrie compte, faire un cycle complet et utiliser `cycle`.
+- **cycle (02)** : la dernière clé doit avoir la même valeur que la première, avec des tangentes compatibles, sinon un « hoquet » apparaît à chaque tour.
+
+- **Saccade (step-printing)** : régulière = `posterizeTime(8);` sur le Time Remap d'une précomp [THÉORIQUE] ; **choisie** = Time Remap en clés maintenues (Hold) sur les images voulues, Frame Blending coupé. La saccade régulière laisse le hasard choisir les images et rate le coup de lumière [ÉPROUVÉ EN MAQUETTE] (pièce 20 v1). Recette tableau, pièges et traînée : [expressions.md](expressions.md#saccade).
+
+## Pièges (résumé de l'ancien SKILL.md ; détail plus bas)
+
+- **Moteur** : écrire pour le moteur JavaScript (accolades, points-virgules, `thisLayer`, `thisComp`) et fixer le moteur dans le cahier des charges ; un poste en ExtendScript hérité affiche des erreurs en série.
+- **Expressions lentes** (`sampleImage`, `valueAtTime` en boucle, échos sur 50 calques) : convertir en images clés une fois figé, `posterizeTime` pour ce qui n'a pas besoin de 25 i/s.
+- **Vitesse d'arrivée nulle = pas d'overshoot** : cause n° 1 de « mon expression ne fait rien ». `exp()` explose sans coupure (`t < 3`).
+- **Bézier spatial non voulu** : le calque boucle ou dépasse dans l'espace ; Interpolation spatiale > Linéaire.
+- **Overshoot trop rapide** (freq > 6) : tombe entre les images à 25 i/s ; juger à 25, pas à 50.
+- **Période qui varie dans un `sin`** (ou `wiggle` à `freq` animée) : le geste hésite et repart au lieu de s'apaiser ; intégrer la phase [TESTÉ EN LABO] (sous Node, `labo/ae-expressions/bercement/test.js`).
+- **Wiggle et duplication** : tirages différents d'un calque à l'autre ; `seedRandom()` pour figer (à vérifier en phase 3).
+
+Annexe de `SKILL.md` : code complet des recettes, durées types, table des recettes et réglages, saccade, pièges (le SKILL.md fait foi). Durées, table et pièges déplacés du SKILL.md à l'audit 2 (2026-10-13).
 
 Chaque bloc est copié depuis `labo/ae-expressions/`. Écrit pour le **moteur JavaScript** (par défaut depuis AE 16.0). Statut : **[TESTÉ EN LABO, syntaxe/logique Node uniquement]** veut dire que le code a passé `node --check` et des évaluations dans `mock.js`, **pas** qu'il a tourné dans AE. Résultats : `labo/ae-expressions/RESULTATS.md`.
 
@@ -209,20 +265,8 @@ Ne jamais écrire `Math.sin(2*Math.PI*time/P)` avec `P` qui varie (voir Pièges)
 - **Ce qui fond les tenues** : Frame Mix et Pixel Motion (Frame Blending à couper sur le calque saccadé).
 - **Traînée façon Wong Kar-wai** : CC Force Motion Blur ou Pixel Motion Blur **avant** le maintien ; ou Echo (Echo Time négatif), CC Wide Time sur une précomp **au-dessus** du calque saccadé.
 
-<a id="phase-2"></a>
-## À vérifier en phase 3, dans After Effects (déplacé de SKILL.md)
-
-1. Les 11 expressions du labo collées sur de vrais calques (moteur JavaScript **et** ExtendScript hérité) : aucune erreur, valeurs proches de celles du labo.
-2. Overshoot 05 : sur des clés linéaires 0 → 100 en 12 i, le pic doit être d'environ 107 vers 1 à 2 images après la clé. Vérifier aussi sur Position 2D non séparée, Rotation et Échelle.
-3. La courbe exacte d'`ease()`, d'`easeIn()` et d'`easeOut()` dans AE (le mock utilise des cosinus/sinus) : comparer les valeurs à mi-course (07, 09, 11).
-4. Easy Ease (F9) : lire dans « Vitesse de l'image clé » l'influence réelle (33 % ou 33,33 %) et la vitesse (0), en entrée et en sortie.
-5. `loopOut("pingpong")` : confirmer l'inversion de l'easing au retour.
-6. `posterizeTime(8)` à 25 i/s : relever le nombre d'images de chaque tenue (3 ou 4 i, puisque 25/8 n'est pas entier).
-7. Compteur 09 : l'espace fine insécable ` ` s'affiche-t-elle dans la police choisie ? Sinon, utiliser ` `.
-8. Time remap 08 : comportement avec un clip plus court que le calque, et avec un slider animé (non intégré par la recette).
-9. Coût en aperçu : 30 calques d'écho (06) et un `sampleImage` ; noter le temps de rendu par image.
-10. Le comportement de `wiggle` sur des calques dupliqués (tirages différents ou identiques) et l'effet de `seedRandom`.
-11. Le message d'erreur exact d'AE quand un slider référencé est renommé (diagnostic courant chez les clients).
+## À vérifier dans After Effects
+La liste des onze vérifications est devenue les exercices E0 à E2 de `PLAN-TESTS.md` (audit 2, 2026-10-13) ; texte d'origine : `archives/audit-2/skills/montage-after-effects/expressions.md`.
 
 <a id="pieges"></a>
 ## Pièges : précisions (les règles sont dans `SKILL.md` § 6)

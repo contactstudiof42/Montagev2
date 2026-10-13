@@ -53,3 +53,35 @@ Macro = arrangement, gravité ; zone verticale sûre au centre des plans clés ;
 
 ## Notes des examens (origine des ajouts)
 n°1 13/20 (audace insuffisante, clichés de la catégorie non vus) ; n°2 14/20 (goût du client plaqué, direction de paille) ; n°3 15/20, corporate (idée propre trouvée avant les références ; humain réduit à l'interview, faisabilité non vérifiée, loudness hors plateformes non sourcée) ; n°4 14/20, fiction (contradiction bien résolue ; Morris et « une seule chaleur » reviennent après l'alerte, hors-champ sonore manqué) ; n°6 15/20, spot associatif sur rushes tournés (tic renversé ; faisabilité encore tardive, dispositif d'atelier recyclé) ; n°7 15/20, clip de nuit avant tournage (faisabilité en tête, « Joker » traduit en principe, photosensibilité anticipée ; dispositif favori recommandé, effacement de lumière sous-estimé, interprète non dirigé) ; n°8 15/20, Reel de festival (contradiction de lecture chiffrée, strobe transformé en idée ; technique non vue en mouvement, hiérarchie des impacts tardive, temps de lecture sous les planchers cités).
+
+## Déplacé du SKILL.md à l'audit 2 (2026-10-13) : cas particuliers, tests et refus en détail
+
+### Étape 1 — Cas particuliers de l'idée propre au sujet
+**1 bis — L'idée propre au sujet** (et d'abord l'histoire : pour l'utilisateur, une œuvre ratée pèche surtout par le **scénario** ; vérifier ce que le film raconte avant sa forme) : avant `montage-references` ou `GOUTS.md`, écrire une image qui n'appartient qu'à ce sujet ; les références la traitent, ne la remplacent pas. Cas particuliers (détail : `details.md`) :
+- Corporate : **l'humain par la compétence, pas par la biographie** ; aucune situation personnelle exposée sans accord (dispositifs : `montage-formats`).
+- **« Sans musique »** : désigner le son récurrent qui fera le refrain, et prévoir le lieu silencieux.
+- **Sponsor dans le sujet** : registre habituel du créateur, coupe franche, aucune affirmation du film ne touche le produit, placé après la première récompense.
+- **Public âgé** : texte fixe, corps ≥ 5 % de la hauteur, téléphone seul 3-4 s, un carton = une information.
+
+### Étape 2 — Les tests à passer sur chaque direction (texte complet)
+- **Cliché** : combien de films de la catégorie l'ont fait ? (`culture/cliches-de-secteur.md`)
+- **Mon propre système**, appliqué aussi à la direction **recommandée** : est-ce que je refais ma dernière pièce, mon dispositif favori (le cadre qui revient avec un détail changé, « une seule chaleur méritée », le hors-champ) ou le goût du client comme une recette ? Si oui, l'écrire, donner l'argument contre, et qu'une direction le **renverse**.
+- **Le rythme du sujet** : sa dramaturgie physique existe-t-elle déjà ? La cadrer avant d'inventer.
+- **Révélation** : mystère (cacher) ou suspense (montrer d'abord) ; ne pas confondre avec le choc.
+- **Ne pas montrer** (présence, menace, doute) : envisager le **hors-champ sonore** comme direction à part entière.
+- **Ne citer que ce qu'on a analysé** ; une référence citée doit agir dans le découpage, sinon la retirer.
+- **Ralenti sur rushes à cadence normale** : mains, cheveux, eau, occlusions = l'interpolation fabrique des monstres (`labo/interpolation/`) [TESTÉ EN LABO] ; proposer d'abord le ralenti **du temps**, habité par un geste. [ÉPROUVÉ EN MAQUETTE] (pièce 15)
+- **Le coupable désigné** quand le brief dit « pas culpabilisant » : le retirer de l'image, le garder au son.
+- **Clip** : dire comment l'artiste est filmé et quelles phrases tombent sur quels plans ; illustrer l'ancrage et le seul geste physique, laisser le reste à la musique ou au concept ; contrepoint de sens, continuité d'espace ; un regard caméra sur le vers où le « je » parle d'être vu. [ÉPROUVÉ EN MAQUETTE] (pièce 19) Geste naturel suffisant en plan taille : [À TRANCHER EN PHASE 2].
+- **Générique de série** : prévoir une version courte ; il se juge au 4e visionnage.
+- **Lumières qui clignotent dans le sujet** : contrôle de photosensibilité dès le traitement (`labo/photosensibilite/flash_check.py`) [TESTÉ EN LABO].
+
+### Étape 5 — Savoir dire non (texte complet)
+- **L'effet gratuit** : « qu'est-ce que l'effet dit que l'image ne dit pas ? » ; si rien, le retirer.
+- **La mode** qui ne sert pas le projet ; **le « plus »** (texte, plans, musique) : proposer d'enlever.
+- **Le brief contradictoire** : faire choisir, avec une version de chaque si nécessaire.
+- **Le texte qu'on ne peut pas lire** : un texte est une durée (14-15 car./s ATAA, 17 Netflix FR, plancher 16 images) [SOURCÉ] ; chiffrer la contradiction (« 24 noms = 18 s de lecture sur 30 s ») puis hiérarchiser (`montage-references`, liste en rangs).
+- **La technique du matin** : une technique découverte au labo le jour même ne porte pas seule une recommandation sans une pièce qui la montre en mouvement.
+
+### Double livrable (film + extraits verticaux)
+Un tournage, deux montages : macro pour le film, kinetic pour les extraits. Au tournage : 4K ou open gate, zone verticale sûre, son seul des objets pour les SFX (`montage-preparation-tournage-vfx`).

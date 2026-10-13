@@ -9,7 +9,9 @@ Marqueurs : **[SOURCÉ]** lu dans une source datée · **[TESTÉ EN LABO]** fait
 
 **Fait foi sur** : le choix d'un outil génératif, son usage artistique, les clichés « look IA », le juridique (AI Act, droits, consentement). **Pour** les réglages de Generative Extend et de l'Object Mask dans Premiere, voir `montage-premiere` ; Magic Mask et l'API Resolve, `montage-resolve` ; l'interpolation (RIFE, fondu, `minterpolate`), `montage-workflows` ; piloter Higgsfield par MCP, `montage-pilotage-mcp`.
 
-Faits outils à jour au **2026-10-10**, tirés de sources web (aucun modèle génératif n'a été testé ici). État détaillé et sources : [`etat-de-l-art-2026-10.md`](etat-de-l-art-2026-10.md) (prime sur le journal) ; journal historique des veilles, qui ne fait pas foi : [`veilles-2026-10.md`](veilles-2026-10.md). Ce marché change chaque mois : **toute info outil de plus de 3 mois est à revérifier avant un devis**.
+_Audit 2 (2026-10-13) : rien n'est encore testé ici (aucune génération faite) ; aucune règle de ce skill n'a été gagnée en projet. Version d'avant : `archives/audit-2/skills/montage-ia-generative/`._
+
+Faits outils à jour au **2026-10-10**, tirés de sources web (aucun modèle génératif n'a été testé ici). État détaillé et sources : [`etat-de-l-art-2026-10.md`](etat-de-l-art-2026-10.md) (prime sur le journal) ; le journal historique des veilles, qui ne faisait pas foi, est archivé (`archives/audit-2/skills/montage-ia-generative/veilles-2026-10.md`). Ce marché change chaque mois : **toute info outil de plus de 3 mois est à revérifier avant un devis**.
 
 ## 1. Ce que l'IA permet vraiment, artistiquement [THÉORIQUE]
 
@@ -45,7 +47,7 @@ Faits outils à jour au **2026-10-10**, tirés de sources web (aucun modèle gé
 - **Un traitement unificateur** : même grain, même LUT, même halation sur réel et IA ; remettre du défaut (bougé, instabilité).
 - **Le son réel** (bruitage, ambiance, voix humaine) ancre un plan généré mieux qu'un upscale.
 - **Assumer ou cacher, mais choisir** : langage du film (rêve, mémoire) ou raccord invisible. Le pire est le milieu.
-- **Règle du studio (dictée le 2026-10-10)** : l'IA n'est **pas assumée** ; elle sert à **réduire les coûts ou aller plus vite** (plan manquant, extension, nettoyage), jamais à produire du « slop ». Par défaut : raccord invisible ; une IA visible seulement si le client la demande explicitement.
+- **La règle de Diego est dans `GOUTS.md`** (« pas assumée ! » ; pour réduire les coûts ou aller plus vite, « mais pas de slop ») : par défaut, l'IA comble un plan manquant, rallonge ou nettoie, en raccord invisible ; une IA visible seulement si le client la demande explicitement.
 
 ## 4. Quand NE PAS l'utiliser
 
@@ -74,7 +76,7 @@ Dates, prix et sources : `etat-de-l-art-2026-10.md` (tableau « Quel outil pour 
 | **LTX-2.5** | Poids ouverts, 4K, audio, multi-plans, local | Licence communautaire (< 10 M$), pas OSI |
 | **Vidu Q4 Preview** (07/10) | Références vers vidéo, 4K, 3-16 s | Pas de texte seul ; son mélangé à l'image |
 | **Higgsfield** | Agrégateur, API, plugins AE/Premiere/Blender, MCP | Pas un modèle ; crédits payants |
-| **Premiere : Generative Media Tool, Paper Edit, Generative Extend** | Vidéo et SFX dans la timeline ; +2 s vidéo / +10 s audio | Annoncés pour **26.5 [NON CONFIRMÉ — À TRANCHER EN PHASE 3]** ; détail : `montage-premiere` |
+| **Premiere : Generative Media Tool, Paper Edit, Generative Extend** | Vidéo et SFX dans la timeline ; +2 s vidéo / +10 s audio | Annoncés pour **26.5 [NON CONFIRMÉ ; installée : 26.3.0]** ; détail : `montage-premiere` |
 | **Midjourney V8.2** | Esthétique, DA (défaut depuis le 24/07/2026) | Pas d'API ; vidéo = image vers vidéo |
 | **Nano Banana 2.1** (06/10) | Image 4K, texte, 14 références, formats 8:1 à 1:8 | NB2 déprécié |
 | **FLUX 3 Image** (01/10) | Composition par boîtes de placement, retouches locales | Poids ouverts promis, pas sortis |
@@ -92,7 +94,7 @@ Dates, prix et sources : `etat-de-l-art-2026-10.md` (tableau « Quel outil pour 
 
 **A. Le plan manquant (raccord)** : exporter la dernière image du plan réel, étalonnée neutre → image vers vidéo (Veo « Frames to Video », Kling, Seedance), prompt court sur le mouvement, « caméra fixe » ou le mouvement du plan précédent → garder 1-3 s, couper avant la dérive → même grain, même LUT que le réel, upscale seulement si nécessaire → son réel (ambiance du tournage).
 
-**B. Rallonger un plan de 2 s** : Generative Extend de Premiere (réglages et limites : `montage-premiere`). Les frames générées sortiraient en 8 bits SDR, 30 i/s au plus [À TRANCHER EN PHASE 3] : pour un master 10 bits, HDR ou 50p, comparer avec une autre voie (vidéo vers vidéo Aleph, ou le workflow A). Vérifier le raccord de lumière à l'image près.
+**B. Rallonger un plan de 2 s** : Generative Extend de Premiere (réglages et limites : `montage-premiere`). Les frames générées sortiraient en 8 bits SDR, 30 i/s au plus [À VÉRIFIER DANS LE LOGICIEL] : pour un master 10 bits, HDR ou 50p, comparer avec une autre voie (vidéo vers vidéo Aleph, ou le workflow A). Vérifier le raccord de lumière à l'image près.
 
 **C. Le plan impossible porteur de sens** : planche de 5 à 10 références (Midjourney V8.2, Nano Banana 2.1, FLUX 3) validée avec le réalisateur dans l'univers couleur du tournage → 3 à 5 variantes par plan avec les mêmes références → montage serré, plans IA courts entourés de réel → Topaz Starlight ou Astra pour la texture (à comparer au grain seul, qui suffit parfois) → étalonnage et grain communs.
 

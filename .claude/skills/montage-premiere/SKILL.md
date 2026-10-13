@@ -5,9 +5,9 @@ description: Adobe Premiere (ex-Premiere Pro, « Premiere » depuis la version 2
 
 # Premiere — le logiciel de montage au quotidien
 
-Marqueurs : **[SOURCÉ]** lu dans une source datée · **[TESTÉ EN LABO]** fait technique mesuré (ffmpeg, scripts) · **[ÉPROUVÉ EN MAQUETTE]** principe tiré d'une maquette Blender/Pillow/ffmpeg, hypothèse à confirmer en phase 2 · **[THÉORIQUE]** doc ou pratique, jamais exécuté · ici aussi **[INCERTAIN]** : sources contradictoires, à vérifier en phase 3 dans le logiciel.
+Marqueurs : **[SOURCÉ]** lu dans une source datée · **[TESTÉ EN LABO]** fait technique mesuré (ffmpeg, scripts) · **[ÉPROUVÉ EN MAQUETTE]** principe tiré d'une maquette Blender/Pillow/ffmpeg, hypothèse à confirmer en phase 2 · **[THÉORIQUE]** doc ou pratique, jamais exécuté · ici aussi **[INCERTAIN]** : sources contradictoires, à vérifier dans le logiciel.
 
-Ensemble **[THÉORIQUE]** : recherche du 2026-10-10 (pages d'aide Adobe lues par extraits, `sources/premiere-2026.md`) ; Premiere n'est pas installable dans la VM. Vérifications : `PLAN-TESTS-MCP.md`, test 14 et suivants.
+**Statut honnête** (audit 2, 2026-10-13) : jamais ouvert ni piloté ; ensemble **[THÉORIQUE]** ou **[SOURCÉ]** (pages d'aide Adobe lues le 2026-10-10, `sources/premiere-2026.md`). **Installé sur le Mac : Premiere 26.3.0** (« Adobe Premiere Pro 2026 » dans le dossier Applications, relevé le 2026-10-13) ; la 26.5 annoncée n'y est pas. Aucune règle de ce skill n'a encore été gagnée en projet. Version d'avant : `archives/audit-2/skills/montage-premiere/`.
 
 **Fait foi sur** : les procédures dans Premiere (menus, réglages, raccourcis), y compris Generative Extend et Object Mask. Pour les formats d'échange, la fabrication et les règles générales des proxies : `montage-workflows` ; pour les cibles de loudness, les specs et la vérification d'un livrable : `montage-loudness-livraison` ; pour le choix d'un outil génératif et l'éthique : `montage-ia-generative` ; pour l'étalonnage poussé : `montage-resolve`.
 
@@ -19,7 +19,7 @@ Ensemble **[THÉORIQUE]** : recherche du 2026-10-10 (pages d'aide Adobe lues par
 
 ## Version et nouveautés (datées)
 - **Version 26.0 (janvier 2026)** : le logiciel s'appelle « Adobe Premiere » (le « Pro » disparaît) ; numérotation alignée sur l'année. 25.x = dernière branche « Premiere Pro ». [SOURCÉ]
-- 26.0 : masquage d'objets par IA avec suivi en un clic, masques repensés. 26.2 (avril 2026) : effets et transitions Film Impact intégrés, Content Credentials à l'export. 26.3 (juin 2026) : **légendes animées mot à mot** (style réseaux). 26.5 (annoncée le 10/09/2026) : Generative Media Tool (vidéo et SFX générés dans la timeline), **Paper Edit** (monter depuis le texte de la transcription), Object Mask Sharp/Smooth. [SOURCÉ pour 26.0 à 26.3] **[26.5 NON CONFIRMÉ — À TRANCHER EN PHASE 3]** : une seule annonce lue (communauté Adobe), notes de version en 403 ; relever le numéro dans la version installée.
+- 26.0 : masquage d'objets par IA avec suivi en un clic, masques repensés. 26.2 (avril 2026) : effets et transitions Film Impact intégrés, Content Credentials à l'export. 26.3 (juin 2026) : **légendes animées mot à mot** (style réseaux). 26.5 (annoncée le 10/09/2026) : Generative Media Tool (vidéo et SFX générés dans la timeline), **Paper Edit** (monter depuis le texte de la transcription), Object Mask Sharp/Smooth. [SOURCÉ pour 26.0 à 26.3] **[26.5 NON CONFIRMÉ ; la version installée est la 26.3.0]** : une seule annonce lue (communauté Adobe), notes de version en 403 ; relever le numéro dans la version installée.
 - Depuis 25.2 (avril 2025) : Generative Extend, Media Intelligence (recherche en langage naturel, en anglais), traduction des sous-titres, nouvelle gestion des couleurs. [SOURCÉ]
 - **Color mode** (espace d'étalonnage 32 bits flottants, distinct de Lumetri) : bêta publique NAB 2026, sortie stable non confirmée ; ne pas mélanger avec Lumetri sur un même clip. [INCERTAIN]
 
@@ -52,11 +52,11 @@ Ensemble **[THÉORIQUE]** : recherche du 2026-10-10 (pages d'aide Adobe lues par
 ## Couleur dans Premiere
 - Presets de séquence : **Direct Rec.709 (SDR, défaut)** — le log et la gamme large sont « tone mappés » à l'entrée ; Direct HLG / PQ ; **Wide Gamut** (Tone Mapped / Minimal / No Tone Mapping) ; ou gestion désactivée. [SOURCÉ]
 - **Ne jamais changer l'espace de travail une fois l'étalonnage commencé** ; l'espace de sortie peut changer. [SOURCÉ]
-- Log détecté automatiquement seulement pour certaines caméras : sinon assigner l'espace du clip à la main (sinon image délavée). Diagnostic « délavé / trop contrasté » : cf. `montage-couleur-pipeline`.
+- Log détecté automatiquement seulement pour certaines caméras : sinon assigner l'espace du clip à la main (sinon image délavée). Diagnostic « délavé / trop contrasté » : cf. `montage-couleur`.
 - Tags couleur écrits dans le fichier exporté : [INCERTAIN] → toujours vérifier avec `ffprobe` (color_primaries, transfer, matrix).
 
 ## Generative Extend et IA (2026-10)
-- Rallonger un plan (respiration avant une coupe, fin trop courte) : **+2 s de vidéo, +10 s d'audio** ; passage par le cloud, consomme des crédits [SOURCÉ]. Sources acceptées 360p à 4K, 12 à 60 i/s, 8 à 16 bits, SDR ou HDR (notes 26.5 : non confirmé). **Sortie générée en 8 bits SDR, 30 i/s au plus** selon une FAQ et un blog vendeur [À TRANCHER EN PHASE 3]. En attendant : acceptable pour du social ; **à éviter sur un master 10 bits / HDR / 50p** (rupture visible à l'étalonnage). Toujours dire au client quel plan est généré (`montage-ia-generative`).
+- Rallonger un plan (respiration avant une coupe, fin trop courte) : **+2 s de vidéo, +10 s d'audio** ; passage par le cloud, consomme des crédits [SOURCÉ]. Sources acceptées 360p à 4K, 12 à 60 i/s, 8 à 16 bits, SDR ou HDR (notes 26.5 : non confirmé). **Sortie générée en 8 bits SDR, 30 i/s au plus** selon une FAQ et un blog vendeur [À VÉRIFIER DANS LE LOGICIEL]. En attendant : acceptable pour du social ; **à éviter sur un master 10 bits / HDR / 50p** (rupture visible à l'étalonnage). Toujours dire au client quel plan est généré (`montage-ia-generative`).
 - Media Intelligence : chercher un plan par description (en anglais), « Search Similar Frames ». Utile pour dérusher un documentaire.
 
 ## Saccade (step-printing) et images tenues [THÉORIQUE, 2026-10-10, `sources/premiere-ae-saccade-choisie-2026-10.md`]

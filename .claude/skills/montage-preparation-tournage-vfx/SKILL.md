@@ -7,7 +7,9 @@ description: Préparer un tournage qui aura des effets (supervision VFX légère
 
 **Marqueurs** : [SOURCÉ] fiche ou source écrite · [THÉORIQUE] pratique de plateau courante, non vérifiée ici (défaut de ce skill) · [TESTÉ EN LABO] fait technique mesuré · [ÉPROUVÉ EN MAQUETTE] vu sur maquette Blender / Pillow / ffmpeg, hypothèse à confirmer sur un vrai plateau (phase 2).
 
-**Fait foi sur** : ce qu'il faut capter au tournage pour la post (réglages, fond vert, plaques, références lumière, écrans, sources à éteindre). **Ailleurs** : le sens d'une couleur ou d'une lumière → `montage-couleur-et-intention` ; espaces et log → `montage-couleur-pipeline` ; plans générés → `montage-ia-generative` ; vertical → `montage-formats`.
+**Fait foi sur** : ce qu'il faut capter au tournage pour la post (réglages, fond vert, plaques, références lumière, écrans, sources à éteindre). **Ailleurs** : le sens d'une couleur ou d'une lumière, espaces et log → `montage-couleur` ; plans générés → `montage-ia-generative` ; vertical → `montage-formats`.
+
+**Statut honnête** (audit 2, 2026-10-13) : jamais pratiqué sur un plateau ; savoir sourcé et maquettes, aucune règle encore gagnée en projet. Version d'avant : `archives/audit-2/skills/montage-preparation-tournage-vfx/`.
 
 Le but n'est pas de tout prévoir, mais d'éviter les deux phrases qui coûtent le plus cher : « on verra en post » et « on n'a pas de plaque ». Détails des maquettes : [`details.md`](details.md) ; nuit infrarouge : [`infrarouge.md`](infrarouge.md).
 
@@ -50,7 +52,7 @@ Pour chaque plan concerné, une ligne : n° de plan · ce qui change en post · 
 - **Exposer pour la pièce, régler l'écran** à part (luminosité baissée jusqu'à ce qu'il ne brûle pas) ; tester l'écran avant le plateau (PremiumBeat).
 - **Remplacement** : écran gris moyen (~20 %) ou vert sombre peu lumineux, avec **4-5 petits marqueurs** dans les coins ; petits, car chaque marqueur est à effacer (praticien sur forum Logik : gris 20 % + 5 marqueurs). **Vert franc** seulement si le doigt ou la main couvre longtemps l'écran (ZeroVFX) : le vert lumineux déborde sur les doigts et le visage, il faut alors le baisser.
 - **Garder la lumière** quand l'écran est remplacé : ajouter une petite source (LED, panneau) **de la couleur et de la taille de l'écran** hors champ ou derrière l'appareil, sinon le visage n'est plus éclairé par ce qu'il regarde.
-- **Scintillement** : écrans à rafraîchissement ou gradation PWM (OLED en faible luminosité) peuvent battre avec la cadence et l'obturation ; tester à l'œil sur le moniteur de retour, monter la luminosité de l'écran et baisser l'ouverture, ou régler l'obturation (règle générale du scintillement des sources, à vérifier en phase 2 sur de vrais appareils).
+- **Scintillement** : écrans à rafraîchissement ou gradation PWM (OLED en faible luminosité) peuvent battre avec la cadence et l'obturation ; tester à l'œil sur le moniteur de retour, monter la luminosité de l'écran et baisser l'ouverture, ou régler l'obturation (règle générale du scintillement des sources, à vérifier sur de vrais appareils).
 - **Gros plans de doigts** : appareil calé (un support contre la main de l'acteur), mise au point qui tient à 2-3 cm près ; retirer les reflets au tournage (drapeau noir) plutôt qu'en post.
 - Sources (PremiumBeat, ZeroVFX, forum Logik, consultées le 2026-10-10) : liens dans `details.md`.
 
@@ -72,13 +74,13 @@ Seulement si l'effet voulu est la **continuité** (sinon une coupe sèche dans l
 - [ ] Marge de recadrage vérifiée sur le moniteur avec la grille 9:16 si un vertical est prévu.
 - [ ] Autorisations pour les effets pratiques (fumigènes, flammes, drone) : capitainerie, mairie, pompiers.
 
-## 7. À vérifier en phase 3
+## 7. À vérifier dans les logiciels ou sur un plateau
 - Keying des cheveux fins : `chromakey` ffmpeg les perd (≈ 42 % d'erreur sur les bords, labo) ; comparer Keylight / Resolve 3D Keyer / Delta Keyer avec le même protocole à vérité terrain.
 - Keying sur un vrai plan fond vert CC0 (ffmpeg `chromakey`, AE Keylight, Resolve 3D Keyer) : effet de la distance au fond et du shutter sur le bord.
 - Camera tracking d'un plan à marqueurs (Blender, AE 3D Camera Tracker) ; erreur de reprojection obtenue.
 
 ## Filmer la nuit à l'infrarouge [ÉPROUVÉ EN MAQUETTE] (pièce 23 ; à valider sur une vraie caméra IR)
-Jamais l'illuminateur intégré (signature « surveillance ») ; un projecteur IR 850 nm décalé, motivé, étroit et faible ; filtre coupe-IR retiré, balance fixe, trépied. Grade : `montage-couleur-et-intention`. Recettes et sources : [`infrarouge.md`](infrarouge.md).
+Jamais l'illuminateur intégré (signature « surveillance ») ; un projecteur IR 850 nm décalé, motivé, étroit et faible ; filtre coupe-IR retiré, balance fixe, trépied. Grade : `montage-couleur`. Recettes et sources : [`infrarouge.md`](infrarouge.md).
 
 ## Optique, buée, décor : préparer l'image elle-même (détail : `details.md`)
 - **Flou optique plutôt que flou de post** : l'optique agrandit les hautes lumières en disques (monde flou lumineux), le gaussien les éteint (monde terne) ; en post, flou de lentille à carte de profondeur, jamais un gaussien. Une bascule de point se programme sur la plage perceptive (silhouette → lisible), pas sur la distance. Un flou se dimensionne à l'écran de diffusion (moitié moins de pixels sur mobile). [ÉPROUVÉ EN MAQUETTE] (pièce 28)

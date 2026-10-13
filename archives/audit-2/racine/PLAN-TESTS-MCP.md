@@ -1,0 +1,220 @@
+# PLAN DE TESTS MCP — Phase 3 (pilotage des logiciels, sur le Mac)
+
+Tout ce qui suit est **hypothèse à vérifier**. Rien ici n'est une recette validée.
+
+_Note de clôture (2026-10-10) : ce plan avait été écrit pour une « phase 2 » ; le découpage a changé. Phase 2 = analyse de vraies vidéos (`PHASE-2-BESOINS.md`), phase 3 = ce plan. Les mentions « phase 2 » ci-dessous désignent donc la phase 3, sauf les tests qui ne demandent que de regarder une vidéo ou un spectateur (44, 45, 47, 52, 62), qui peuvent se faire dès la phase 2._
+
+## Résultats de la phase 3, session 0 (Resolve, 2026-10-11) [TESTÉ EN CONDITIONS RÉELLES]
+Serveur MCP natif de Resolve Studio 21.1.1, base « TEST IA », projet `P3-BAC-A-SABLE`. Journal appel par appel : `labo/mcp/journal-2026-10-11.md` ; synthèse des capacités : `labo/mcp/resolve-mcp.md`.
+| Geste | Statut | Appel ou contournement |
+|---|---|---|
+| Importer, créer une timeline (résolution, cadence) | réussi | `ImportMedia`, `CreateEmptyTimeline`, `tl.SetSetting("useCustomSettings","1")` |
+| Poser à l'image près | réussi | `AppendToTimeline` ; `endFrame` exclusif, en images de la source |
+| Couper, raccourcir, déplacer | contourné | `DeleteClips` puis `AppendToTimeline` (pas de lame ni de trim) |
+| Musique, niveau, fondu | réussi | `SetProperties({"AudioVolume"})`, `SetFades` |
+| Texte (police SST) | contourné | plan porteur sur piste haute + Text+ dans `AddFusionComp()` ; **jamais `InsertFusionTitleIntoTimeline`** (insertion qui pousse tout) |
+| Nœud simple, LUT | réussi | `SetCDL` ; `GetNodeGraph().SetLUT(1, chemin relatif au dossier LUT)` ; LUT hors du dossier : échec |
+| Rendu H.264 et relecture | réussi | `SetCurrentRenderFormatAndCodec("mp4","H264")`, `AddRenderJob`, `StartRendering` ; ffprobe, `qc_livraison.sh` |
+| 1080x1920 25p depuis UHD 50p, recadrage | réussi | `ZoomX/Y` 3,1605, `Pan` |
+| Synchro son externe | réussi | `AutoSyncAudio` en `AUDIO_SYNC_WAVEFORM` (décalage exact) |
+| Flash blanc 1-2 images | contourné | porteur + Fusion Background blanc, porteur zoomé à 3,2 |
+| Ralenti | réussi | `SetSpeed({"Percentage": 50})` |
+| Rampe de vitesse | contourné | paliers de `SetSpeed` ; clés Fusion : échec ; rampe lisse : **à la main** |
+| Détourage | partiel | masque Fusion fixe : réussi ; Magic Mask : `CreateMagicMask` échoue sans traits **tracés à la main** |
+| SFX à l'image | réussi | `AppendToTimeline(mediaType 2, recordFrame)` |
+| Plan de fin ProRes alpha | réussi | piste V3, alpha respecté |
+| Fondu enchaîné | réussi | `AddTransition` |
+| Artlist dans Chrome | réussi avec une main de Diego | recherche, « download » → « wav download » ; Chrome demande une confirmation native que l'extension ne voit pas : Diego confirme, ou désactive « Demander dans quel dossier enregistrer chaque fichier » ; puis `mv` vers `sfx/` |
+
+## Règles de pilotage (méthode, à appliquer dès le premier test)
+1. Ne jamais ouvrir ni modifier un projet client : créer un projet de test dédié (`TEST_MCP_<date>`), dans un dossier dédié.
+2. Avant toute action : vérifier quels hôtes sont connectés, lire la documentation/les skills que le serveur MCP expose lui-même.
+3. Après chaque étape qui modifie quelque chose : exporter une image (frame ou planche contact) et la regarder avant de continuer.
+4. Une action à la fois au début ; regrouper les appels seulement quand chaque type d'appel a été validé seul.
+5. Journaliser chaque appel (outil, paramètres, résultat, image de contrôle) dans `labo/mcp/journal-<date>.md`.
+
+## Observation de la session 1 (2026-10-09)
+La liste d'outils de l'environnement cloud affichait un serveur nommé `HIGGSFIELD_MCP`, **non appelé** pendant cette phase (consigne : pas de pilotage en phase 1).
+Noms observés (préfixes : `ae_` After Effects, `pr_` Premiere Pro, `bl_` Blender, `get_host_status`). Ce sont des noms **lus dans la liste, pas testés** ; leurs paramètres sont inconnus.
+Les instructions du serveur indiquent (à vérifier) : couleurs AE en RGB 0-1, positions en px avec Y vers le bas, temps en secondes ; Blender en mètres, Z vers le haut, radians ; une procédure obligatoire qui commence par charger des skills fournis par le serveur (`ae_get_skill` avec « ae-clean-rig », `bl_get_skill` avec « blender-scene »), puis mesurer une référence, construire, auditer.
+
+Exemples de noms observés, à confirmer en phase 2 :
+- Diagnostic : `get_host_status`, `ae_get_skill`, `pr_get_skill`, `bl_get_skill`, `ae_describe_tool`
+- After Effects : `ae_create_composition`, `ae_add_text_layer`, `ae_set_keyframes`, `ae_set_temporal_ease`, `ae_set_expression`, `ae_export_frame`, `ae_export_contact_sheet`, `ae_audit_frame`, `ae_audit_motion`
+- Premiere : `pr_create_sequence`, `pr_import_media`, `pr_add_to_timeline`, `pr_detect_beats`, `pr_apply_cut_plan`, `pr_duck_music`, `pr_create_caption_track`, `pr_export_sequence`, `pr_export_sequence_frame`
+- Blender : `bl_get_scene_summary`, `bl_execute`, `bl_render`, `bl_screenshot`, `bl_set_material`
+
+## Tests prioritaires (à détailler au fil des sessions)
+| # | Logiciel | Test | Critère de réussite | Lien skill |
+|---|----------|------|---------------------|------------|
+| 1 | tous | `get_host_status` puis lecture des skills serveur | liste des hôtes + doc lue et résumée dans `labo/mcp/` | montage-pilotage-mcp |
+| 2 | AE | créer une comp 1920×1080 25 i/s 5 s, un texte, 2 clés d'opacité avec easing, exporter une frame à 0, 1, 2 s | frames conformes, easing visible sur la courbe (`ae_get_keyframes`) | montage-after-effects (à créer) |
+| 3 | Premiere | séquence test, import d'un média CC0, coupe sur beats détectés, export frame | coupes alignées sur les beats à ±1 image | montage-rythme (à créer) |
+| 4 | Premiere | loudness : export d'un mix et mesure ffmpeg ebur128 | écart ≤ 0,5 LU avec la cible demandée | montage-loudness-livraison |
+| 5 | Blender | refaire la pièce d'atelier 01 (script `v5.py`) dans le Blender du Mac et comparer au rendu cloud | rendu identique à `atelier/01-respiration/v5-planche.png` | montage-blender (à créer) |
+| 6 | AE | coller les 11 expressions de `labo/ae-expressions/` (moteur JavaScript puis ExtendScript hérité) et comparer aux valeurs Node (ex. overshoot : pic ≈ 107 pour des clés linéaires 0→100 en 12 images) | écart < 1 % ; noter les différences de courbe `ease()` | montage-after-effects |
+| 7 | AE | Easy Ease (F9) : lire l'influence réelle (33 % ou 33,33 %) ; `posterizeTime(8)` à 25 i/s : compter les images par palier | valeurs relevées dans `labo/mcp/` | montage-after-effects |
+| 8 | Premiere / Resolve | mesurer `labo/loudness/` (signal_test, signal_calme, cal_1k_m23) avec les compteurs du logiciel ; la normalisation à l'export fait-elle un gain ou une compression (LRA avant/après) ? | écart ≤ 0,5 LU avec ebur128 ; type de normalisation identifié | montage-loudness-livraison |
+| 9 | Resolve | RCM (DaVinci Wide Gamut / Intermediate → Rec.709 Gamma 2.4), puis ACEScct ; charger la LUT de `labo/couleur/look_lut.py` et comparer au rendu ffmpeg ; tags d'export Gamma 2.4 contre Rec.709-A | écart < 1 code 8 bits ; tags lus par ffprobe | montage-couleur-pipeline |
+| 10 | AE | gestion des couleurs OCIO (config ACES), espace de travail ACEScg, une seule transformation de sortie | pas de double conversion (vérifier sur une mire) | montage-couleur-pipeline |
+| 11 | Premiere | refaire le montage de la pièce 02 « Étincelle » à partir de ses images (`atelier/02-etincelle/edl_v*.json` = liste de plans) : séquence 1080×1920 30 i/s, plans posés à l'image près, piste SFX importée, export | coupes aux mêmes numéros d'image que `v*-mesures.json` (±0) ; SFX synchrone à ±1 image ; -14 LUFS ±0,5 mesuré par ebur128 sur l'export | montage-kinetic-editing |
+| 12 | Premiere / AE | export d'un dégradé sombre (`labo/encodage/`) en H.264 8 bits, H.264/HEVC 10 bits et ProRes ; puis avec grain (Add Grain AE / Film Grain Resolve) σ ≈ 2/255 ; mesurer avec `banding.py` (fonction `mesure`) | 10 bits ≤ 2 ; grain : ≤ 3,5 après ré-encode 8 bits CRF 23 | montage-loudness-livraison |
+| 13 | Blender (Mac) | relancer `atelier/02-etincelle/scene.py` sur le Mac (GPU Metal ?) et comparer temps et rendu au cloud (CPU, ~1-1,5 s/image en 270×480, 12 échantillons) ; tester Eevee Next | temps noté ; écart visuel nul en Cycles | montage-blender (à créer) |
+| 14 | Premiere | version exacte (« Premiere 26.x » ?) ; créer une séquence depuis un clip 25p ; vérifier les presets de gestion des couleurs (Direct Rec.709, Wide Gamut) ; exporter en H.264 « Adaptive High Bitrate » et lire les tags avec ffprobe | version notée ; tags color_primaries/transfer/matrix lus et consignés | montage-premiere |
+| 15 | Premiere | détection de beats : existe-t-il un outil natif sur desktop ? (`pr_detect_beats` a été observé dans le MCP : le comparer aux temps de `atelier/03-rythme-macro/` musique 140 BPM) | écart ≤ 1 image sur 20 temps | montage-premiere, montage-rythme |
+| 16 | Premiere | refaire le montage C de l'atelier 03 (`v3-mesures.json`) : coupes posées à l'image près sur la musique, scdet sur l'export | écart max ≤ 20 ms comme dans la VM | montage-rythme |
+| 18 | Premiere / Resolve | importer `labo/marqueurs/kick128.xml` (généré par `beats_xml.py` sur la musique de test) : Premiere Fichier > Importer ; Resolve Import Timeline > XML | 42 marqueurs présents, aux images du CSV (±0), noms M1… lisibles ; comparer à `pr_detect_beats` (±1 image) | montage-premiere, montage-kinetic-editing |
+| 19 | Premiere ↔ Resolve | importer `labo/rendus/workflows/etincelle_v6.xml` (régénérer avec `labo/workflows/otio_aller_retour.py`) puis l'EDL avec cadence 30 réglée avant ; ajouter un changement de vitesse, un recadrage, un nest, et refaire l'aller-retour XML Premiere → Resolve → Premiere | coupes identiques (±0 image) ; noter précisément ce qui saute (vitesse ? recadrage ? nest aplati ?) dans `montage-workflows` | montage-workflows |
+| 20 | Blender | relancer `atelier/04-maree-decouvre/scene.py` avec `v2b.json` sur le Mac (via `bl_execute` ou en ligne de commande) : vérifier d'abord la caméra au-dessus de l'eau aux images 1 et 250 (`bl_set_frame` + `bl_screenshot`), puis rendre ; tester le volume sous-marin `v5-sous-eau.json` en GPU | images 1, 140, 222 identiques au cloud ; temps par image noté (cloud CPU : ~1,2 s en 480×270, 8 échantillons) | montage-blender |
+| 17 | Premiere | raccourcis Q/W, Y (slip), U (slide) : confirmer les défauts | liste confirmée dans `montage-premiere` | montage-premiere |
+
+## Observation de la session 2 (2026-10-09, ~23:55 UTC)
+Le serveur `HIGGSFIELD_MCP` est de nouveau listé (non appelé). Ses instructions publiques, lues dans l'environnement, ajoutent (hypothèses) : un hôte `bs_*` « Blocking Studio » 3D dans le navigateur, découvert dynamiquement ; pour Blender, charger d'abord `blender-scene` puis seulement les modules utiles, écrire un « Scene Passport », passer une « camera-read gate » avant le détail, et finir par un audit ; pour AE, mesurer la référence avec `ae_measure_reference` avant toute construction, construire en calques natifs (le passage par HTML est optionnel). D'autres noms observés : `ae_create_logo_reveal`, `ae_create_lower_third`, `ae_create_transition`, `ae_set_motion_blur`, `pr_detect_silence`, `pr_audit_audio_gaps`, `pr_build_multicam_video`, `pr_set_clip_speed`, `bl_import_motion`, `bl_generate_3d`, `bl_image_to_3d`. **Attention** : les outils `bl_generate_*` et toute génération Higgsfield peuvent consommer des crédits payants : ne jamais les lancer sans accord explicite de l'utilisateur.
+
+## Observation de la session 3 (2026-10-10, ~00:35 UTC)
+Le serveur `HIGGSFIELD_MCP` est toujours listé (non appelé). La méthode générale d'un agent qui pilote un logiciel est désormais dans le skill `montage-pilotage-mcp` (projet de test, un geste = une image, lire avant d'écrire, unités, rien de payant). Noms supplémentaires observés, utiles aux tests 15-16 : `pr_detect_beats`, `pr_apply_cut_plan`, `pr_assemble_edit`, `pr_set_sequence_format`, `pr_extract_frames`, `ae_audit_motion`, `ae_export_contact_sheet`. Paramètres inconnus : lire `pr_get_skill` / `ae_describe_tool` avant tout appel.
+
+## Observation de la session 4 (2026-10-10, ~01:35 UTC)
+Serveur `HIGGSFIELD_MCP` toujours listé, **non appelé** (consigne phase 1). Noms supplémentaires observés : `pr_render_audio_edl`, `pr_compare_angles`, `pr_recompact_audio`, `ae_build_liquid_glass`, `ae_reveal_floor`, `ae_rig_rebase`, `ae_finalize_build`. Le catalogue est maintenant identique d'une session à l'autre : je ne le recopierai plus, sauf changement.
+Sources publiques (vérification du 2026-10-10, `sources/ia-verif-2026-10-10.md`, **hypothèses**) : un plugin Higgsfield unique pour After Effects et Premiere présenté le 21/07/2026 ; un serveur MCP officiel dit « bridge » ; un add-on Blender piloté par MCP (lancement le 25/08/2026 selon une source tierce). À vérifier en phase 2 : version du plugin installée, hôtes réellement connectés (`get_host_status`), et quels outils consomment des crédits.
+
+## Observation de la session 5 (2026-10-10, ~02:35 UTC) — état public des MCP
+Source : `sources/mcp-etat-public-2026-10.md` (recherche web datée, [V] vérifié sur la page / [A] annoncé). Rien n'a été appelé ni installé. Tout ce qui suit est **hypothèse à vérifier**.
+
+**Conflit de règle à trancher avec l'utilisateur** : les instructions publiques du serveur Higgsfield disent qu'une demande explicite de génération autorise l'envoi immédiat (crédits payants) sans seconde confirmation. Ma règle 9 (`montage-pilotage-mcp`) exige une estimation puis un oui. **Je garde ma règle** tant que l'utilisateur ne l'a pas assouplie par écrit.
+
+Tests 21-30 (à faire après les tests 1-5, toujours dans un projet `TEST_MCP_<date>`) :
+21. `get_host_status` liste les hôtes réellement connectés (ae, pr, bl, bs) avec leur version ; un outil `bl_*` est refusé proprement si Blender n'est pas connecté.
+22. Le panneau Higgsfield AE/Premiere est une extension CEP : chercher `com.higgsfield*` dans `~/Library/Application Support/Adobe/CEP/extensions` ; noter la version minimale d'AE/Premiere qui l'ouvre.
+23. Estimation de coût d'une génération (`bl_generate_*` et équivalents) : appeler seulement l'estimation, vérifier que le solde de crédits ne bouge pas. Aucune génération réelle sans accord.
+24. Le Bridge Blender exige Blender 5.1 [A] : noter la version installée et le comportement si elle est plus ancienne ; `bl_execute` en lecture seule (`result = bpy.app.version`).
+25. Cohabitation avec ahujasid/blender-mcp (socket TCP 9876 sans authentification, `execute_blender_code` arbitraire, télémétrie par défaut) : à n'installer que si utile, port et pare-feu vérifiés.
+26. DaVinci Resolve (samuelgursky/davinci-resolve-mcp, MIT) : noter l'édition (gratuite / Studio) et la version ; Studio requis pour le scripting externe « Local », pont fragile en gratuit. Lire un projet de test sans le modifier.
+27. Coupes à l'image près dans Premiere : `pr_apply_cut_plan` sur la séquence du test 11, comparer aux numéros d'image de `atelier/03-rythme-macro/v2-mesures.json` (écart attendu 0).
+28. Ponts ExtendScript AE (kumoproductions) : préférence « Allow Scripts to Write Files and Access Network » décochée puis cochée, noter les erreurs.
+29. Télémétrie des ponts communautaires : `DISABLE_TELEMETRY=true` (blender-mcp), `PREMIERE_MCP_TELEMETRY=0` (hetpatel-11) ; observer les connexions sortantes (`lsof -i`) pendant un appel.
+30. MCP Adobe officiel distant (`adobe-creativity.adobe.io/mcp`) : agit-il sur le Premiere desktop ouvert ? Demander la liste des séquences du projet de test.
+31. (Pièce 05) Étalonnage : appliquer les arbres de `atelier/05-trois-etalonnages/v4.json` dans Resolve (nodes série + node parallèle à clé sur l'entrée) et comparer les mesures (`v4-mesures.json`) à celles de numpy ; écart attendu faible mais non nul (modèles Lift/Gamma/Gain différents).
+32. (Labo AAF) Importer `labo/rendus/aaf/mix_familles.aaf` (régénérer avec `labo/workflows/aaf_pistes.py`) dans Resolve/Fairlight (Fichier > Importer > Timeline AAF) et, si disponible, Pro Tools : 3 pistes DIAL / MUS / SFX, 6 clips aux images prévues (±0), essence lue sans relink.
+33. (Resolve, API 19-21) `GetVersionString()`, `IsStudio()` ; sur un clip de test : `item.GetNodeGraph().GetNumNodes()`, `SetLUT(1, lut)`, `GetToolsInNode(1)` contre l'ancien `item.SetLUT` (déprécié) ; `Timeline.ApplyGradeFromDRX` existe-t-il encore ?
+34. (Resolve) `AddColorGroup("TEST")`, deux clips assignés, LUT sur `GetPreClipNodeGraph()`, puis `item.ExportLUT(resolve.EXPORT_LUT_33PTCUBE, chemin)` : ouvrir le .cube et l'appliquer avec ffmpeg `lut3d` pour comparer (méthode de `labo/couleur`).
+35. (Resolve) Même script lancé depuis la Console, Workspace > Scripts et un processus externe, préférence « Local » puis « Network », en gratuit et en Studio : noter ce qui renvoie None/False.
+36. (Pièce 07, Blender) Relancer `atelier/07-causalite/scene.py` (mode `sim`, `params-base.json`) dans le Blender du Mac par le pont Blender : les images de contact (`evenements.json` : bille 41, dominos 41-60, tasse 63, sol 76) sont-elles identiques ? (Bullet est déterministe à paramètres égaux, mais la version de Blender peut changer le résultat.) Si l'écart dépasse 1 image, le son tiré de la simulation est à régénérer.
+37. (Blender, Mac) Mesurer Eevee contre Cycles sur la même image de la pièce 07 (480×270) : en VM, Eevee logiciel ≈ 7 s/image contre ~2 s pour Cycles 8 échantillons. Sur GPU, Eevee devrait être plus rapide : à mesurer avant de choisir le moteur des ateliers de phase 2.
+38. (After Effects / Premiere, session 7) **Photosensibilité de bout en bout** : exporter une séquence kinetic de test (flash d'1 image sur 1 puis 4 impacts par seconde, comme les cas F et G de `labo/photosensibilite/tests.sh`) depuis AE (`ae_export_frame` / rendu) et Premiere (`pr_export_sequence`), puis lancer `python3 -I labo/photosensibilite/flash_check.py`. Attendu : F passe, G échoue, comme en VM. Vérifier si un outil d'audit du MCP (`ae_audit_motion` observé) signale déjà les flashs : comparer, ne pas supposer.
+39. (Blender, pièce 08) Rendre `atelier/08-souvenir/scene.py` sur le Mac (GPU) avec les `p-*.json` : comparer le temps par image (VM : ~20 s/image avec 4 rendus et un sous-agent en parallèle) et vérifier que la caméra portée (`main`) et le zoom (`zoom`) donnent la même trajectoire (images 1, 35, 70 identiques à la VM).
+
+40. (Premiere / Resolve, session 8) **Rush VFR** : régénérer `labo/rendus/vfr/vfr.mp4` (`python3 labo/vfr/fabrique_vfr.py labo/rendus/vfr`), l'importer dans Premiere (`pr_import_media`, puis `pr_probe_media` s'il renvoie la cadence) et dans Resolve ; poser sur une séquence 30 i/s ; exporter une image autour de 5 s (`pr_export_sequence_frame`) et l'audio : le flash et le clic tombent-ils ensemble (vérité : +4 ms) ou à −400 ms comme la lecture naïve (`C_naif30.mp4`) ? Ne pas supposer que l'outil gère le VFR : mesurer.
+41. (Blender, pièce 10, session 8) Rendre `atelier/10-chaleur-partout/scene.py` avec `p-C15.json` et `p-C8.json` sur le Mac : la feuille est-elle plus chaude en vue Standard qu'en AgX comme en VM (zone B − R −0,18 contre −0,09) ? Ce test valide la méthode « zone de l'événement » (`mesure_zone.py`) sur un autre build.
+
+42. (Premiere, session 8) **Proxies** : régénérer `labo/rendus/proxies/` (commandes de `labo/proxies/README.md`), importer `original.mov`, rattacher p2, p3 (attendu : OK), p1 (attendu : refus ou piste audio manquante), p4 (attendu : refus pour rapport d'image). Noter le message exact. Même essai dans Resolve (« Link Proxy Media »).
+
+## Observation de la session 7 (2026-10-10, ~04:35 UTC)
+Le serveur `HIGGSFIELD_MCP` est toujours listé, **non appelé** (consigne phase 1). Ses instructions de serveur (texte fourni par le serveur lui-même, à confirmer à l'usage) annoncent une **procédure obligatoire** : charger d'abord un skill d'entrée par host avant toute construction (`ae_get_skill` avec `ae-clean-rig` pour After Effects ; `bl_get_skill` avec `blender-scene` pour Blender), mesurer une référence (`ae_measure_reference`) avant de construire, et ne déclarer un rendu fini qu'après audit (`ae_audit_frame`, `ae_audit_motion`, `ae_finalize_build`). Conventions annoncées : AE couleurs RVB 0-1, positions en px (Y vers le bas), temps en secondes ; Blender Z vers le haut, mètres, radians. **Hypothèses à vérifier au test 1** (lire `get_host_status`, puis les skills d'entrée, avant tout geste). Autres noms observés : `ae_build_scene_from_html`, `ae_build_scene_from_lottie`, `pr_build_multicam_video`, `pr_render_audio_edl`, `bl_generate_3d`, `bl_image_to_3d` (génération : peut consommer des crédits Higgsfield, donc **jamais sans accord explicite**).
+
+43. (Premiere / Resolve / AE, session 9) **Interpolation de ralenti contre vérité terrain** : régénérer `labo/rendus/interpolation-lisse/` (`python3 labo/interpolation/fabrique.py <dossier> lisse`), importer `source30.mkv` (ou un ProRes converti) et le ralentir à 50 % en Optical Flow (Premiere), Speed Warp et Optical Flow (Resolve), Pixel Motion (AE) ; exporter en 60 i/s sans perte et mesurer avec `compare.sh`/`analyse.py`/`zones.py` (ajouter le nom de fichier). Attendu : Speed Warp ≥ RIFE 4.25 (41,2 dB) ; Optical Flow entre mci (37,2) et RIFE ; **vérifier l'image à la coupe (i=119)** : les logiciels détectent-ils la coupe d'un clip aplati ? Outils précis à découvrir par `pr_get_skill` / `ae_get_skill`, ne pas supposer de nom.
+44. (Blender, pièce 12, session 9) Rendre `atelier/12-inquietude-calme/scene.py` avec `p-L1b.json`, `p-L2b.json`, `p-F.json` sur le Mac, monter v7 (`montage.sh`, 4/3/6 s) et **montrer le montage à l'utilisateur sans prévenir** : voit-il la seconde tasse ? À quel moment ? (seul test réel de la cécité au changement, mesurée en VM par un simple modèle de saillance).
+45. (Blender, pièce 13, session 9) Même question pour « Le fond raccorde » : montrer v1 et v4 à l'utilisateur et lui demander ce qui arrive à B. Attendu (modèle) : v1 « il est seul / le monde se ferme », v4 « il pâlit / il se ferme ». Valide ou réfute la règle « le fond est attribué au monde, la lumière au corps ».
+
+46. (Premiere / Resolve, session 10) **Vitesses dans l'échange** : importer `labo/workflows/vitesses/vitesses_25p.xml` et `.edl` (médias factices : créer six clips de 80 s nommés `A_normal.mov`… avec `ffmpeg -f lavfi -i testsrc2=r=25 -t 80`, timecode incrusté) dans Premiere (`pr_import_media`) et Resolve. Vérifier, image de sortie à l'appui (`pr_export_frame`) : le ralenti 50 % est-il appliqué (XML : attendu non, EDL : selon l'interprétation de la ligne M2 ou des points source) ? L'arrêt sur image ? L'inversion ? Le timecode de départ ? Le ralenti 40 % du plan entrant du fondu ? Puis faire l'inverse : exporter depuis Premiere un XML avec ralenti réel et le relire avec `vitesses.py` (adapter) pour voir si Premiere écrit un `timeremap`.
+47. (Blender, pièce 12 v8, session 10) Même test spectateur que le 44 sur la v8 (`scene_v8.py`, `p-v8c-L1.json`, `p-v8c-F.json`, `p-v8c-L2.json`, 4/3/6 s) : dans un décor encombré, la seconde tasse devant le gilet rouge est-elle trouvée ? Le pot à sucre (leurre) retarde-t-il la découverte ? Comparer au temps de découverte de la v7 (pièce nue).
+
+48. (Premiere / Resolve, session 11) **Recadrages, nests, stéréo dans l'échange** : importer `labo/workflows/recadrages/verite_fcp7.xml` (médias factices aux noms indiqués) dans Premiere puis exporter en XML ; importer ce XML dans Resolve **directement** (sans OTIO). Vérifier : Basic Motion et Crop traduits (coordonnées FCP7 centre −1…1 et échelle % → pixels et zoom × de Resolve), nest conservé ou aplati, paire stéréo G/D (2 pistes ou 1 ?), niveaux de clip. Comparer à `verite_recadrages.csv`. Puis AAF Premiere → Fairlight : nombre de pistes et canaux.
+
+49. (After Effects, session 11) **Flou de bougé aux bords d'un calque** : un calque qui file (position ou rotation rapide), motion blur activé, clés qui s'arrêtent exactement au point de sortie, contre clés prolongées de 2 images ; exporter les deux dernières images (`ae_export_frame` si l'outil existe) et comparer la netteté (cf. `labo/kinetic/whip/mesure.py`).
+50. (After Effects, session 11) **Bercement à phase intégrée** : coller l'expression de `montage-after-effects/expressions.md` (« Bercement qui ralentit ») sur la rotation d'un calque avec un marqueur ; exporter la valeur image par image et comparer à `labo/ae-expressions/bercement/test.js`.
+
+51. (Resolve, session 11) **Fusion et Fairlight par script** : `AddTool` / `ConnectInput` / `SetInput` en Python sur la version installée (relever les noms d'outils avec `GetAttrs()`) ; valeurs de pixel d'un MediaIn avec et sans RCM / ACES ; insérer une macro par `InsertFusionTitleIntoTimeline` ; `NormalizeAudioLevel` mesuré à ffmpeg contre la normalisation de Deliver ; stems via un préréglage de rendu chargé par `LoadRenderPreset` ; Voice Isolation en version gratuite contre Studio.
+52. (Livraison, session 12) **Noir protégé sur une vraie plateforme** : téléverser en non répertorié (compte de l'utilisateur, avec son accord) trois versions d'un plan sombre **en mouvement** (master 8 bits, master 10 bits, 10 bits + grain σ 2) ; télécharger ou capturer le flux rendu et mesurer la pénombre avec `labo/encodage/noir-protege/mesure.py` adapté. Attendu (labo) : 10 bits ≥ 8 bits ; grain inutile ou nuisible sur une image surtout noire. Skill : montage-loudness-livraison.
+53. (Tournage / AE ou Blender, session 12, examen n°7) **Extinction d'une source** : sur un plan de nuit, éteindre un lampadaire en post (effacer la source et sa lumière portée) contre éteindre une source réelle contrôlée ; mesurer le temps de retouche par plan et juger la crédibilité ; extinction sèche dans les deux cas (corrigé : c'est l'allumage du sodium qui est lent, 2-10 min). Skill : montage-preparation-tournage-vfx.
+
+54. (Premiere / AE, session 13) **Direction du filé perçue** : monter dans Premiere les paires whip de `labo/kinetic/whip/scene.py` (VMAX 8 et 30, même sens / sens inverse / perpendiculaire), les regarder à vitesse réelle et dire laquelle « raccorde », « rebondit », « change d'espace » ; comparer à la décision de `labo/kinetic/whip-flot/mesure_flot.py`. Hypothèse : au-delà d'un quart de cadre par image, le sens ne se lit que dans les images lentes autour du filé.
+55. (Premiere, pièce 19, session 13) **Texte et corps** : monter A (illustré) et B2 (contrepoint sur trajet) avec une vraie voix sur une instru, montrer les deux à l'utilisateur sans explication et lui demander « qui est cette personne, qu'est-ce qui lui est arrivé ? ». Attendu (modèle) : B2 fait dire « quelqu'un est parti », A ne le fait pas dire. Tester aussi la scansion (le vers qui tombe avant / sur / après la coupe), non testée en phase 1.
+56. (Premiere, session 13) **Paroles incrustées au téléphone** : exporter en 9:16 les cas de `labo/paroles/lisibilite.py` (Medium 1,6 / 2 / 2,6 %, Thin 2 %, boîte 55 / 85 % sur fond clair chargé), les regarder sur un vrai téléphone après passage par une plateforme (non répertorié, avec accord), et comparer à l'OCR ; vérifier surtout le faux positif « blanc sur uni clair ».
+
+## 57. Texte animé mot à mot : la mise en page reste-t-elle fixe ? (session 14, `labo/paroles/RESULTATS.md`)
+- Hypothèse [THÉORIQUE] : dans After Effects, un animateur de texte (échelle par mot, sélecteur de plage par mot, ease) agit sur les glyphes sans recalculer la mise en page ; les mots voisins ne bougent pas. En ASS (libass), au contraire, une échelle par mot dans une seule ligne fait glisser toute la ligne (110 px mesurés).
+- Vérifier en phase 2 : un calque texte AE de 8 mots, animateur d'échelle 70 → 100 % par mot ; exporter une planche de 10 images ; mesurer le bord gauche du 1er mot. Idem avec les sous-titres / légendes animés de Premiere et un MOGRT.
+- Vérifier aussi que des marqueurs de temps par mot (importés depuis un fichier) tombent sur `ceil(t × cadence)` comme en ASS.
+
+## 58. Rushes à stroboscope : saccade choisie à la main (session 15, `labo/photosensibilite/strobe-rushes/RESULTATS.md`, examen n°8)
+- Hypothèse [TESTÉ EN LABO sur rush synthétique] : un strobe de scène filmé donne 4 à 9 flashs/s selon l'obturateur ; seul un tirage par saccade (image tenue ≥ 8 images à 25 i/s), **images allumées choisies à la main**, garde le coup intact et passe WCAG ; `tmix` / `deflicker` effacent ou échouent.
+- Vérifier en phase 2 : dans Premiere, sur un vrai rush de concert avec strobe (fourni par l'utilisateur, ou CC0), faire la saccade par **Frame Hold** sur des images choisies (noms d'outils observés dans la liste du serveur : `pr_split_clip`, `pr_set_clip_speed`, `pr_export_frame` ; à confirmer avec `pr_get_skill` avant tout usage) ; exporter, mesurer avec `flash_check.py` ; comparer à l'effet Deflicker / Flicker Removal de Resolve (Studio) sur le même rush. Puis un vrai test Harding si une diffusion DOOH ou TV est en jeu.
+
+## 59. Pièce 20 « La lumière écrit » regardée en mouvement (session 15, `atelier/20-la-lumiere-ecrit/`)
+- Régénérer `atelier/rendus/20/` (`python3 -I atelier/20-la-lumiere-ecrit/piece.py v2|v3|v4 sortie.mp4`, puis `v5.py <dossier> --v6`). Montrer v2 et v3 à l'utilisateur sans explication : « la vidéo a-t-elle un problème ? » (hypothèse : v2, tout figé = bug ; v3, lasers continus = choix). Puis v6 avec le son, au téléphone : les noms en noires pointées sonnent-ils groove ou décalage ? Le trou d'une mesure se lit-il comme une fin ?
+- Reconstruire v6 dans After Effects (calques texte, opacité, inversion de couleur sur l'image de flash) : la persistance par opacité et l'inversion noir → blanc tiennent-elles à l'image près ? (noms d'outils observés : `ae_add_text_layer`, `ae_set_keyframes`, `ae_export_contact_sheet`, `ae_audit_motion` ; procédure obligatoire annoncée par le serveur : charger d'abord son skill d'entrée, cf. observation de la session 7.)
+
+## 60. Temps de lecture d'un vers ou d'une liste (session 15, `labo/paroles/temps_lecture-resultats.md`, examen n°8)
+- Règle [TESTÉ EN LABO pour le calcul seulement] : tenue après le dernier mot = max(0, car./15 − durée d'apparition) ; en mot à mot à ~0,3 s/mot, 12 à 25 images suffisent. Normes vérifiées : Netflix FR 17 car./s, ATAA 14-15, charte CSA 12 car. = 1 s.
+- Vérifier en phase 2 avec l'utilisateur (lecteur réel) : 3 vers de 30 / 50 / 70 caractères apparus mot à mot dans Premiere (légendes) ou AE, tenues de 6 / 12 / 25 images après le dernier mot ; « avez-vous lu la phrase entière ? ». Et un carton de 24 noms tenu 2 / 4 / 6 s : « trouvez X » (lecture de repérage).
+
+## 61. Saccade choisie dans Premiere et After Effects (session 16, `sources/premiere-ae-saccade-choisie-2026-10.md`, BACKLOG 86)
+- Tout est [THÉORIQUE]. Vérifier en phase 2 sur un projet de test : (1) Premiere, Posterize Time à 12 sur séquence 25 et 24 i/s : compter les images répétées (motif 2-2-…-3 attendu à 25) ; (2) Premiere, saccade choisie par coupes + Frame Hold Options (Hold On : In Point), puis export avec Time Interpolation en Optical Flow : la saccade survit-elle ? (3) AE, expression tableau `holds[]` sur Time Remap, export PNG image par image, puis Frame Blending Frame Mix / Pixel Motion pour constater l'annulation ; (4) AE, noms exacts des paramètres de CC Wide Time contre Echo (Echo Time négatif) posé au-dessus de la saccade ; (5) AE, `posterizeTime(8); value;` sur Time Remap contre effet Posterize Time contre cadence de précomp (Preserve frame rate) dans une précomp imbriquée.
+- Les outils MCP observés comprennent des fonctions de keyframes et d'expressions (`ae_set_expression`, `ae_set_keyframe_advanced`, `pr_set_clip_speed`) : vérifier d'abord avec `ae_describe_tool` ce qu'ils acceptent (interpolation Hold ? Time Remap ?) avant de s'en servir ; rien n'est supposé ici.
+
+## 62. Pièce 20 v8 en mouvement (session 16, `atelier/20-la-lumiere-ecrit/CRITIQUE.md`)
+- Regarder `atelier/rendus/20/v8.mp4` contre `v8-uniforme.mp4` (régénérables par `v8.py`, 40 s chacun) sur un téléphone : le témoin uniforme se lit-il comme un compteur ? les paquets de 3 noms (0,7 s) sont-ils repérés ? le brun du trou lit-il « noir » en luminosité basse ? Carton-liste : chronométrer « trouvez X » à 4 s puis 6 s.
+
+## 63. YouTube : promesse, chapitres, écran de fin, miniatures (session 17, `montage-youtube`, `labo/youtube/`)
+- Sur une vidéo de test non répertoriée **de l'utilisateur** (jamais une chaîne client sans accord) : coller la description produite et validée par `chapitres.py` : les chapitres apparaissent-ils ? Un chapitre de 9 s est-il refusé comme l'aide l'annonce ?
+- Écran de fin : réserver la zone libre dans le montage Premiere (gabarit 16:9, 4 éléments) et vérifier qu'aucun texte n'est caché.
+- Miniatures : comparer à l'œil les cas du banc (`labo/youtube/RESULTATS.md`) aux tailles réelles de l'interface (suggestions, accueil, recherche, téléviseur) ; relever ces tailles en pixels CSS (mes valeurs 168 / 246 / 360 px viennent de la mémoire).
+- Pièce 21 : regarder `atelier/rendus/21/A.mp4`, `B2.mp4`, `C.mp4` avec le son : l'avance de 0,4-0,6 s de C se sent-elle comme une contradiction ? Reconstruire B v2 dans After Effects (calques de forme, secteurs animés, trim paths) pour vérifier que la transformation tient avec les outils natifs (noms d'outils observés : `ae_add_shape_layer`, `ae_set_keyframes`, `ae_export_contact_sheet` ; à décrire d'abord avec `ae_describe_tool`).
+
+## 64. Pièce 22 « Cent dix-sept milliards » : un seul mouvement 3D, plusieurs placements contre la voix (session 18, `atelier/22-a-la-maniere-d-ego/`)
+- Dans Blender (via MCP) : reconstruire la scène (une chaise, champ par modificateurs Array 241 × 260, brume en compositing) et mesurer le temps de rendu Eevee sur le Mac contre ~3 s/image en Cycles CPU dans la VM.
+- Dans After Effects : importer la séquence d'images du recul (u régulier) et refaire les versions A et B par **Remappage temporel** (time remap) au lieu de rendre deux fois : vérifier que les courbes du Graph Editor reproduisent la courbe temps → u de `montage.py` (paliers lissés) et qu'aucune image ne saute à la reprise rapide de B.
+- Dans Premiere : poser la voix (6 lignes) et la nappe ; vérifier que la coupe franche de la musique à 13,6 s et son retour en 2 s se font proprement avec des images clés de volume (pas de clic).
+
+## 65. Resolve 21.1 : pilotage par assistants via un serveur MCP (source : communiqué Blackmagic, relevé par la veille IA du 2026-10-10, `sources/ia-generative-2026-10-10.md`) [HYPOTHÈSE À VÉRIFIER]
+- Vérifier sur le Mac si ce serveur existe dans la version installée, ce qu'il expose réellement (aucun nom d'outil supposé ici), et s'il se limite à un projet de test. Comparer avec l'API Python documentée dans `montage-resolve`.
+
+## 66. (session 19) Blanc pur sous transformée filmique et infrarouge — à vérifier sur les vrais logiciels
+- **Blender (GUI, phase 2)** : confirmer que la vue AgX « Base Contrast » plafonne la sortie 8 bits vers 222/255 (mesuré en CLI, pièce 22 v3) ; comparer looks « Punchy » / « High Contrast » et courbes RGB du compositor placées après la vue. Vérifier l'image en sortie, pas l'aperçu du viewport.
+- **Resolve** : sur un rendu EXR de la pièce 22, poser le point blanc après la transformée (ACES ou DaVinci Wide Gamut → Rec.709) et vérifier sur scope que le fond atteint ~95-100 % sans brûler les chaises.
+- **Premiere / AE** : reproduire le grade « infrarouge intime » de la pièce 23 (monochrome, noir à 3 %, grain fin mono) et le grade « surveillance » ; vérifier que le bruit ajouté survit à l'export H.264 YouTube (débit).
+- Méthode agent : chaque étape vérifiée par une image exportée et une mesure (pixel max, YAVG), sur un projet de test uniquement.
+
+## 67. (session 20) Face caméra : seuil du jump cut et punch-in hiérarchique (`atelier/24-face-camera/`)
+- **Premiere, sur un vrai rush face caméra (projet de test)** : monter la même prise en (A) respirations coupées, (A0) ratés et silences seulement, (C) punch-in 130 % sur les seules chutes ; exporter la paire d'images autour de chaque coupe et mesurer le déplacement du visage en % de largeur. Vérifier si le seuil « < 2 % = panne » de la marionnette tient sur un vrai corps.
+- Vérifier que le punch-in (Échelle de l'effet Trajectoire) en 4K → séquence 1080 reste net à 130 % ; noter la limite de recadrage par définition source.
+- Outils : la liste d'outils exposée par le serveur Higgsfield dans l'environnement cloud contient des noms comme `pr_detect_silence`, `pr_apply_cut_plan`, `pr_export_sequence_frame` (**observés dans la liste, jamais appelés ; paramètres inconnus**) : à tester en phase 2 comme dérusheur de silences, puis comparer leur coupe à la règle « ne pas couper les respirations ».
+
+## 68. (session 20) Resolve : saccade choisie (`sources/resolve-saccade-choisie-2026-10.md`, montage-resolve § 4 ter) [THÉORIQUE]
+- Vérifier si Retime Frame accepte des clés Step In / Step Out (tenues de 2-4 images sans adoucissement) ; comparer à Clip > Freeze Frame segment par segment.
+- Vérifier la perte annoncée des Freeze Frames en XML FCP 7 vers Premiere (manuel 21) ; sinon rendre la saccade en média avant l'échange.
+
+## 69. (session 22) Pièce 26 « Densité décroissante » sur de vrais rushes [THÉORIQUE pour les logiciels]
+- Premiere : sur un vrai divertissement de groupe, mesurer la loudness momentanée autour de chaque relance (export des stems) et vérifier que la musique qui part **sur** un drop ne se lit pas comme une coupure ; comparer à la coupure nette (v1).
+- Premiere / AE : construire la relance « caméra cachée » (changement de régime : monochrome, grain, timecode, son appauvri) en préréglage réutilisable ; vérifier à l'export que le grain ne ruine pas l'encodage (YDIF gonflé ×5 en labo).
+- Flamme de bougie réelle filmée : mesurer sa variation de luminance globale (objectif 3-5 %) et la passer à `flash_check.py`.
+
+## 70. (session 22) Regarder de vraies vidéos en phase 2
+- Sur le Mac, ouvrir une vidéo de référence (McFly et Carlito, Ziak, EGO) dans le navigateur ou en fichier local : images toutes les 0,1-0,5 s, coupes à l'image près (scdet), loudness ; première **vérité terrain réelle** pour `labo/youtube/densite.py` et les fiches de `culture/` (faits incertains à lever).
+
+## 71. (session 23) Gag de contradiction sur une vraie prise (`atelier/27-jamais/`) [THÉORIQUE pour les logiciels]
+- Sur une vraie voix dans Premiere : mesurer la queue de voyelle du mot-clé et refaire les écarts −4 / 0 / 2 / 4 / 8 images ; vérifier que « 2 images après la fin audible » reste le point sec avec une respiration réelle.
+- Faire juger les versions par l'utilisateur (à l'écoute, en temps réel) : c'est la seule validation du ressenti comique.
+- Vérifier qu'un export de bande-film (images autour d'une coupe) est possible depuis l'outil d'export d'image du MCP, sinon via ffmpeg sur l'export.
+
+## 72. (session 23) Flou, mise au point et reflet (`atelier/28-flou-net/`) [TESTÉ dans Blender, THÉORIQUE en tournage]
+- Sur un vrai objectif (phase 2 ou tournage) : la respiration de focale pendant la bascule (non simulée) ; vérifier que la plage perceptive 1,5 → 5-8 m tient avec un vrai 50 mm.
+- Flou de lentille à carte de profondeur dans After Effects (Camera Lens Blur) ou Resolve (Lens Blur de Fusion) contre gaussien : reproduire la planche v1 sur une vraie plaque nette.
+- Contrôle de photosensibilité d'un vrai rush de train en lisière de forêt (et comparer à un Harding si disponible).
+
+## 73. (session 24) Vérifier chaque export de montage avec `labo/outils/coupes.py` [TESTÉ sur banc synthétique, THÉORIQUE sur vrai export]
+- Exporter une séquence Premiere en EDL CMX3600 et en OTIO (ou XML → OTIO), et une séquence Resolve en EDL : `coupes.py export.mp4 --edl seq.edl --scdet 10 --sortie verif` doit donner 0 manqué, 0 fausse alerte ; sinon, lire la bande-film aux coupes en désaccord (raccord sur plan identique, fondu, image noire).
+- Vérifier le décalage de départ de timeline (01:00:00:00 ou 00:00:00:00) et les marqueurs exportés (`* LOC:` Premiere, marqueurs Resolve) : sont-ils relus à l'image près ?
+- Dissolves en EDL (`D nnn`) : à quelle image l'outil place la coupe (début du fondu) ; corriger si besoin.
+- Sur un vrai rush à grain (capteur poussé ou grain ajouté au grade) : comparer l'activité nette quadratique au jugement à l'œil.
+
+## 74. (session 24) Pièces 29-31 en conditions réelles [TESTÉ en maquette, THÉORIQUE en vrai]
+- Pièce 29 « Deux horloges » : **écouter** v4 (tic libre) contre v7 / v9 (retours sur le tic, fin sans tic) avec l'utilisateur : le tic posé sur les retours se sent-il comme une cause ou comme une mécanique ? (jugé sur enveloppe seulement en phase 1). Refaire le montage alterné dans Premiere avec marqueurs de tic et vérifier par `coupes.py --xml`.
+- Pièce 30 « Coupe cachée » : tourner la vraie coupe cachée au téléphone sur pied (tasse → plante, torchon), en lumière du jour puis en lumière de studio ; mesurer avec `atelier/30-coupe-cachee/mesure.py` adapté (écart hors objet) ; tester le flou de bougé réel du torchon et le recalage en post (gain + stabilisation) dans Premiere.
+- Pièce 31 « Le même escalier » : reproduire aller / retour dans Blender via le MCP (si les outils `bl_*` le permettent, à vérifier) avec une figure articulée ; dans After Effects, tester si une caméra 3D en grue sur une plaque fixe peut simuler la découverte des marches (probablement non : la lumière rasante ne se fabrique pas en 2,5D).
+
+## 75. (session 25) Micro-sauts et pièce 34 en conditions réelles [TESTÉ en labo synthétique / maquette ; à valider]
+- `labo/micro-sauts/micro_sauts.py` sur un vrai montage face caméra (export Premiere, coupes lues par `coupes.py`) : les coupes que je juge « image qui saute » ont-elles échelle 1,00 et décalage < 2 % ? Mesurer sur la zone du visage et sur le fond séparément (la tête bouge, le fond non).
+- Pièce 34 « De dehors » : montrer v4 (coupe dedans) et v5 (sans coupe) à l'utilisateur ; noter à quel moment il décroche pendant le silence de 21 s, et s'il sent la buée comme un rideau. Dans Blender via le MCP (outils `bl_*` observés, non appelés en phase 1) : remplacer la voiture-boîte par un modèle et refaire la buée par un matériau animé (rugosité de la vitre keyframée) plutôt que deux rendus fondus.
+- Voix « à travers la carrosserie » : comparer passe-bas 1 / 1,5 / 2 kHz sur une vraie voix (intelligibilité des consonnes) dans Premiere (Essential Sound) ou Fairlight.

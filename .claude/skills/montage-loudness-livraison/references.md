@@ -1,4 +1,99 @@
-# Loudness et livraison : détails
+Annexe de `SKILL.md` : vocabulaire, nuances des cibles, pourquoi, recettes ffmpeg, mesures des vidéos de référence, images sombres, pièges en détail, livraison 5.1 et cibles hors plateformes (le SKILL.md fait foi). Les sections « Quand », « Pourquoi », « Recettes », « Pièges » et l'ancienne checklist ont été déplacées du SKILL.md à l'audit 2 (2026-10-13).
+
+## 1. Quand s'en servir
+
+- À la **fin** du mix, quand l'équilibre dialogue/musique/effets est validé à l'oreille. La norme corrige un niveau global, elle ne remplace pas un mix.
+- Avant chaque export de livrable (web, réseaux, TV, plateforme), et à chaque fois qu'un client dit « c'est moins fort que les autres vidéos ».
+- Au QC d'un fichier reçu : on mesure avant de juger.
+
+## 2. Pourquoi : ce qui compte artistiquement
+
+- **Le loudness n'est pas le volume de la musique.** Un nombre en LUFS est la moyenne pondérée d'un programme entier. Deux films à -23 LUFS peuvent avoir un dialogue de niveau très différent si l'un a 10 minutes d'explosions.
+- **Les plateformes normalisent.** YouTube, Spotify et les autres baissent ce qui est trop fort (et Spotify remonte ce qui est trop faible). Une pub écrasée par un limiteur pour sonner à -9 LUFS sera ramenée vers -14 : elle ne sera pas plus forte que le reste, mais **plus plate**. Elle aura perdu ses transitoires, son impact et son contraste, sans rien gagner en échange.
+- **La dynamique sert l'émotion.** Le silence avant le coup, la musique qui monte, le chuchotement sont des écarts de niveau. Un LRA de 6 à 12 LU pour un documentaire ou une fiction web, et plus encore pour le cinéma, laisse respirer le récit. Ne compressez pas pour atteindre un chiffre.
+- **Le dialogue est l'ancre.** On cale d'abord la voix à un niveau stable et intelligible, puis on place la musique et les effets autour. Netflix mesure d'ailleurs le loudness *sur le dialogue seulement* (dialogue-gated) : l'action peut monter sans que le dialogue soit écrasé.
+- **Le true peak protège la diffusion.** Les codecs avec perte (AAC, Opus, Vorbis) recréent des crêtes entre les échantillons. Un fichier à -0.1 dBFS « propre » peut saturer une fois encodé. On laisse donc de la marge (-1 à -2 dBTP).
+  - **Vu sur cinq livraisons du studio** (fiches dans `analyses/projets-f42/`) : deux pubs réseau à l'intégré juste (-14,5 et -14,7 LUFS) mais au true peak de -0,6 et 0,0 dBTP ; les trois autres de +3,1 (crêtes décodées au-dessus de 0 dBFS) à -0,8 dBTP : cinq fichiers sur cinq au-dessus de -1 dBTP. Outil : `labo/outils/qc_livraison.sh FICHIER [cible]` (pistes, codec et bits, intégré, LRA, true peak, crêtes décodées, noir de début et de fin). Le QC mesure les deux, sur le fichier encodé : `ffmpeg -i f -map 0:a -af ebur128=peak=true -f null -`. [TESTÉ EN LABO]
+- **Un seul mix ne sert pas toutes les sorties.** Un master TV R128 (-23) mis en ligne tel quel n'est pas « faux » : YouTube ne le remonte pas, il paraîtra simplement plus faible que les autres vidéos. Pour les réseaux sociaux, on fait une déclinaison plus dense, mais pas écrasée.
+
+## Ce que font les vidéos de référence
+**Ce que font les vidéos de référence (phase 2, mesuré sur les fichiers téléchargés)** : YouTube de 23 à 57 min de -21,3 (EGO) à **-11,6 / -12,0 LUFS** (« Qui est l'imposteur », LRA 3,6-3,8 LU, aucun silence) ; docs de créateurs -16,6 / -16,7 (Tiger, CIA) ; pubs TV françaises -23,1 à -23,2 (deux Intermarché, Lacoste) ; clips -10,9 à -12,9. Le divertissement et le clip sont plus forts que la référence de lecture : YouTube les baisse, ils gardent un son « plein » mais perdent leur dynamique. Rien de tout cela n'est une norme ; c'est le terrain.
+
+## 4. Recettes ffmpeg
+
+### Mesurer (toujours, avant et après) [TESTÉ EN LABO]
+```bash
+ffmpeg -nostats -i IN -af ebur128=peak=true:framelog=quiet -f null -
+```
+Lire le bloc `Summary` : `I` (intégré), `LRA` et `True peak`. Le compteur a été étalonné avec le cas 1 de l'EBU 3341 : exact à 0.0 LU près.
+
+### Normaliser par gain statique (méthode la plus juste) [TESTÉ EN LABO]
+Calculer gain = cible - I mesuré, puis :
+```bash
+ffmpeg -i IN -af volume=-3.70dB -c:a pcm_s24le OUT.wav
+```
+Résultat au labo : écart de 0.0 à 0.2 LU, dynamique (LRA) intacte, 0.2 s pour 30 s d'audio. Si le TP prévu (TP mesuré + gain) dépasse la cible, ajouter un limiteur sur-échantillonné, puis re-mesurer :
+```bash
+-af "volume=9.9dB,aresample=192000,alimiter=limit=0.8414:attack=1:release=50:level=false,aresample=48000"
+```
+(0.8414 = -1.5 dBFS ; alimiter limite le pic échantillon, d'où le sur-échantillonnage et la marge. Résultat : -14.1 LUFS / -1.5 dBTP.)
+
+### loudnorm en deux passes [TESTÉ EN LABO]
+```bash
+# Passe 1 : mesure
+ffmpeg -nostats -i IN -af loudnorm=I=-23:TP=-1.5:LRA=20:print_format=json -f null -
+# Passe 2 : réinjecter input_i, input_tp, input_lra, input_thresh, target_offset
+ffmpeg -i IN -af "loudnorm=I=-23:TP=-1.5:LRA=<≥ input_lra>:measured_I=..:measured_TP=..:measured_LRA=..:measured_thresh=..:offset=..:linear=true:print_format=json" -ar 48000 -c:a pcm_s24le OUT.wav
+```
+**Lire `normalization_type` dans le JSON de la passe 2.** Si on obtient `dynamic` alors qu'on a demandé `linear`, loudnorm a compressé le programme. C'est arrivé dans 3 essais sur 4 du comparatif principal du labo, avec des écarts jusqu'à +1.0 LU (et jusqu'à +1.9 LU, LRA réduit de 26 à 18, dans les variantes).
+
+### loudnorm en une passe [TESTÉ EN LABO, déconseillé pour un livrable]
+Écarts mesurés de -1.0 à +2.8 LU. Acceptable seulement pour un aperçu.
+
+### Master web H.264 [TESTÉ EN LABO]
+```bash
+ffmpeg -i MASTER.mov -vf "scale=1920:1080:flags=lanczos,format=yuv420p" \
+  -c:v libx264 -preset slow -crf 18 -profile:v high -level:v 4.1 -g 50 \
+  -color_primaries bt709 -color_trc bt709 -colorspace bt709 -color_range tv \
+  -c:a aac -b:a 320k -ar 48000 -ac 2 -movflags +faststart OUT.mp4
+```
+Pour un débit cible, utiliser les 2 passes `-b:v 8M -maxrate 10M -bufsize 16M` : 7.90 Mb/s obtenus. Pour le vertical 1080x1920 (recadrage centré ou fond flou), voir references.md §3.
+
+### Images sombres : éviter les bandes dans les dégradés [TESTÉ EN LABO, sur images synthétiques et rendus Blender]
+Pourquoi c'est artistique : un film bas et dense (goût de l'utilisateur : Joker, Ziak) vit dans les 5 % du bas de l'échelle, là où le 8 bits n'a qu'une vingtaine de niveaux. Des bandes dans un ciel nocturne ou un fond de studio détruisent la matière du noir.
+- Master et échanges en **10 bits** (ProRes 422 HQ, DNxHR HQX, ou `-pix_fmt yuv420p10le`) : indice de marches 1,6 contre 5,3 en 8 bits.
+- Le tramage ±1 niveau et `-tune grain` ne survivent pas à x264 dans les noirs (mesuré : aucun gain, même à CRF 16).
+- Livraison réseaux (la plateforme ré-encode en 8 bits) : **le 10 bits survit à un ré-encodage à débit correct** (rendu Blender en panoramique : 0,007 de marches visibles contre 0,037 pour un master 8 bits) ; **pas de grain par défaut** : sur une image majoritairement noire, un grain σ 2 consomme le débit et fait **pire** à débit plafonné (0,16). Grain fin (`noise=c0s=4:allf=t`) seulement pour un **dégradé long et doux** (ciel de nuit, brume, mur en rebond) et après un essai **en mouvement** ré-encodé (3,2 au lieu de 5,2 sur un dégradé plein cadre). **Ne jamais juger l'encodage d'un plan sombre sur une image fixe** : immobile, 8 et 10 bits sont identiques.
+- Artistiquement : un noir dur (Willis : on décide quoi garder, le reste est noir) encaisse mieux la plateforme qu'un clair-obscur laiteux [ÉPROUVÉ EN MAQUETTE].
+Détail et mesures : `labo/encodage/RESULTATS.md`, `labo/encodage/noir-protege/RESULTATS.md`.
+
+### Mesure dialogue-gated (Netflix) [THÉORIQUE]
+ffmpeg n'a pas de gating sur le dialogue. Il faut un compteur dédié (Dolby Media Meter, NUGEN VisLM, RX Loudness Control). À défaut, on peut seulement approcher en mesurant le stem dialogue seul.
+
+## 5. Pièges (tous constatés au labo sauf mention)
+
+1. **Passer de mono à stéréo coûte 3 dB.** `-ac 2` ou `aformat=stereo` placent le mono au centre à -3 dB par canal (mesuré : -26 au lieu de -23). Pour dupliquer, utiliser `pan=stereo|c0=c0|c1=c0`.
+2. **loudnorm sort en 192 kHz** si on n'ajoute pas `-ar 48000`.
+3. **`linear=true` repasse en dynamique sans prévenir** quand LRA mesuré > LRA cible, ou quand le gain ferait dépasser le TP. Prendre un LRA cible ≥ LRA mesuré.
+4. **TP à -1 donne -0.9** après loudnorm (rééchantillonnage). Viser -1.5 pour sortir sous -1.
+5. **loudnorm et ebur128 peuvent différer de 0.4 LU** sur un programme compressé. Le rapport de QC se fait avec ebur128 (ou le compteur du client), jamais avec le JSON de loudnorm.
+6. **Un mix dynamique ne monte pas à -14 sans limiteur.** Il faut le décider au mix, et non le laisser à loudnorm.
+7. **Sans tags couleur, ffprobe affiche `unknown`.** Il faut les écrire. Rendu réel sur QuickTime et sur les plateformes : non testé.
+8. Le débit AAC affiché est inférieur au débit demandé sur un signal simple. Ce n'est pas un défaut.
+9. [THÉORIQUE] Normaliser **après** le dernier changement de montage : un plan ajouté décale l'intégré.
+
+## Ancienne checklist de livraison (le SKILL.md fait foi)
+
+- [ ] Mix validé à l'oreille, dialogue stable et intelligible
+- [ ] Cible connue **par écrit** (spec client, charte de la chaîne, plateforme) et datée
+- [ ] Mesure ebur128 : I dans ±0.5 LU de la cible, TP ≤ cible, LRA noté
+- [ ] `normalization_type` = linear (si loudnorm), sinon on comprend pourquoi
+- [ ] Audio 48 kHz, 24 bits pour le master (AAC 48 kHz pour le web), canaux conformes (stéréo / 5.1, ordre des pistes)
+- [ ] Vidéo : résolution, cadence et SAR 1:1 conformes ; yuv420p et High pour le web ; tags BT.709
+- [ ] MP4 web : `+faststart` vérifié
+- [ ] Vertical : zones de sécurité de l'interface (texte hors du bas et de la droite) vérifiées à l'œil
+- [ ] Relecture complète du fichier exporté (et non de la timeline) : synchro, coupures, glitchs, début et fin
+- [ ] Nom de fichier + fiche (I, TP, LRA, codec, débit, date) jointe au livrable
 
 Annexe de `SKILL.md` : vocabulaire, nuances des cibles, recettes complémentaires, livraison 5.1 et cibles hors plateformes en détail (le SKILL.md fait foi). Tout ce qui est marqué [TESTÉ EN LABO] a été exécuté le 2026-10-09 avec ffmpeg 6.1.1 ; voir `labo/loudness/RESULTATS.md` et `labo/livraison/RESULTATS.md`.
 

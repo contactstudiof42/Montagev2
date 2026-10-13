@@ -1,78 +1,31 @@
 ---
 name: montage-direction-artistique
-description: Passer d'un brief à une direction créative de post-production, avant de monter — « quelle direction pour ce film ? », « propose-moi des pistes », « fais-moi une note d'intention », « c'est quoi le parti pris ? », « le client veut premium et tout dire en 6 s », « on peut faire un truc moins attendu ? », « il veut un effet à la mode », moodboard, traitement d'une pub, d'un clip, d'un corporate ou d'un générique, défendre une recommandation, refuser un effet gratuit ou un brief contradictoire. Pour juger une version déjà montée : `montage-regard`.
+description: Passer d'un brief à une direction créative de post-production, avant de monter — « quelle direction pour ce film ? », « propose-moi des pistes », « fais-moi une note d'intention », « c'est quoi le parti pris ? », « par où on commence ? », « le client veut premium et tout dire en 6 s », « on peut faire un truc moins attendu ? », « il veut un effet à la mode », moodboard, `da.md`, traitement d'une pub, d'un clip, d'un corporate ou d'un générique, défendre une recommandation, refuser un effet gratuit ou un brief contradictoire. Pour juger une version déjà montée : `montage-regard`.
 ---
 
-# Méthode de direction artistique (brief → direction → critères)
+# Direction artistique : du brief à la direction, puis la DA avant les effets
 
-Marqueurs : [SOURCÉ] lu dans une source citée · [TESTÉ EN LABO] fait technique mesuré · [ÉPROUVÉ EN MAQUETTE] vu seulement sur maquette Blender / Pillow / ffmpeg, hypothèse à confirmer en phase 2 · [THÉORIQUE] déduit, non vérifié. Sans marqueur ici : leçon de méthode tirée d'un examen (consultation fictive notée).
+_Réécrit le 2026-10-13 (audit 2) : chaque règle cite l'erreur qui l'a gagnée ou le mot de Diego qu'elle porte. Exemples, origines, cas particuliers et tests de chaque étape : [details.md](details.md) ; carton de fin : [signature-et-cartons.md](signature-et-cartons.md). Version d'avant : `archives/audit-2/skills/montage-direction-artistique/`._
 
-**Fait foi sur** : la méthode de consultation (inventaire, intention, trois directions, recommandation, critères, refus), les tests « cliché » et « mon propre système », « maquetter la direction qu'on écarte ». Pour juger le résultat : `montage-regard` ; principes d'auteurs : `montage-references` ; conventions par format : `montage-formats`. **Quand `GOUTS.md` s'applique, le goût du client prime sur le mien.** Détail et exemples de chaque examen : `details.md` ; carton de fin : `signature-et-cartons.md`.
+**Fait foi sur** : la méthode de consultation (inventaire, intention, trois directions, recommandation, critères, refus), les tests « mon propre système » et « maquetter la direction qu'on écarte », et la DA d'un projet monté (`da.md`). Juger le résultat : `montage-regard` ; principes d'auteurs : `montage-references` ; conventions par format : `montage-formats`. Quand le goût de Diego s'applique, la hiérarchie du goût de `CLAUDE.md` tranche.
 
-## Étape 0 — Inventaire et faisabilité
-- **Film tourné** : lister ce que la matière contient vraiment (cadres répétés, prises longues, cadence, marge de recadrage 9:16, son seul, plans de coupe). Une direction qui exige une matière absente est écartée ou posée en tête comme question au client.
-- **Avant tournage** : repérage (sources de lumière réelles, sodium ou LED, ce qu'on peut allumer ou éteindre, autorisations) ; la direction couleur se décide après la photo de repérage de nuit.
-- **Case « Ce qui doit exister pour que l'idée tienne »** (un tiers qui accepte, une archive, un lieu) : si l'idée en dépend, la direction est **conditionnelle** (le dire dans son nom) et une direction sans cette dépendance est obligatoire. (Quatre récidives : examens n°3, 5, 6, 10.)
+## 1. La DA avant les effets, sur un projet monté [universel]
+1. **Recherche** : avant le moindre effet graphique, ce qui se fait de mieux dans le domaine du film (pour une marque : sa propre communication ; pour un sujet : les campagnes et contenus de studios reconnus). 8 à 12 images de référence pro dans `projets-phase-3/<projet>/da/` (légères, moins de 300 Ko, source notée, jamais poussées dans Git).
+2. **`da.md`, une page** : palette (avec les couleurs du client), textures et matières, typographie, langage graphique (formes, cadres, fonds, façon dont le texte apparaît), ce qui est exclu.
+3. **Chaque ligne de `da.md` dit sa source** : brief, Diego (`GOUTS.md`, ses retours, `videos/NOTES-DIEGO.md`), référence, ou moi. Une exclusion « de moi » ne touche jamais ce que Diego a dit aimer : avant de valider `da.md`, relire ses notes sur chaque référence. (Gagnée : au mariage, `da.md` excluait le jaune des titres de noahlazo, alors que la note de Diego sur cette référence cite « les titres » ; retour du 2026-10-13.)
+4. **Ensuite seulement**, choisir les techniques : chaque fond, texture, couleur et élément graphique se justifie par une ligne de `da.md`, sinon il sort, même s'il est joli. Contrôle avant chaque rendu : `montage-regard`, liste maître, point 8.
+(Gagnée : V4 du film de marque kinetic, collages « photos de vacances » et fond de papier millimétré piochés sans cadre ; Diego : « chaque élément graphique doit venir de la direction artistique du film ».)
 
-## Étape 1 — Comprendre l'intention (rien proposer avant)
-Sept lignes ; une ligne vide se déduit et s'écrit comme hypothèse :
-1. **Émotion visée** (un mot + une nuance). 2. **Message** unique. 3. **Public** et son état (pressé, captif, sceptique). 4. **Diffusion** (plateforme, durée, son ou non, premier écran). 5. **Contraintes** (budget, délais, charte, rushes, droits, règles du secteur : santé, finance, alcool, enfants). 6. **Ce que le projet ne doit pas être**. 7. **Contradictions du brief**, nommées tout de suite.
+## 2. La consultation, en cinq étapes
+0. **Inventaire et faisabilité** : ce que la matière contient vraiment (ou, avant tournage, le repérage) ; la case « ce qui doit exister pour que l'idée tienne » ; une direction qui dépend d'une matière absente est conditionnelle, et une direction sans cette dépendance est obligatoire. (Gagnée : quatre récidives en examens, n°3, 5, 6, 10.)
+1. **L'intention en sept lignes** (émotion, message, public, diffusion, contraintes, ce que le projet ne doit pas être, contradictions du brief), puis **l'idée propre au sujet**, avant les références : une image qui n'appartient qu'à ce sujet, et d'abord l'histoire (pour Diego, une œuvre ratée pèche surtout par le scénario).
+2. **Trois directions contrastées**, sur l'axe principal, dont une qui change de registre ; pas de direction de paille, chacune doit pouvoir gagner. **Test « mon propre système »**, appliqué aussi à la direction recommandée : est-ce que je refais ma dernière pièce, mon dispositif favori, ou le goût du client comme une recette ? Si oui, l'écrire, donner l'argument contre, et qu'une direction le renverse. (Gagnées : examens n°2, 5, 6, 7, 12.)
+3. **Recommander et défendre** : argumenter contre l'intention, pas par goût ; dire ce qu'on perd. **Maquetter la direction qu'on écarte** (10 à 20 min) avant d'écarter la plus audacieuse : deux fois, la piste refusée sur le papier a donné en maquette la meilleure image du projet (examens n°1 et 13). Pas d'hybride par prudence ; chaque « peut-être » tranché ou écrit comme option.
+4. **Trois à cinq critères vérifiables** sur planche ou mesure, avant de réaliser.
+5. **Savoir dire non, avec une alternative** : « qu'est-ce que l'effet dit que l'image ne dit pas ? » ; si rien, le retirer.
 
-**1 bis — L'idée propre au sujet** (et d'abord l'histoire : pour l'utilisateur, une œuvre ratée pèche surtout par le **scénario** ; vérifier ce que le film raconte avant sa forme) : avant `montage-references` ou `GOUTS.md`, écrire une image qui n'appartient qu'à ce sujet ; les références la traitent, ne la remplacent pas. Cas particuliers (détail : `details.md`) :
-- Corporate : **l'humain par la compétence, pas par la biographie** ; aucune situation personnelle exposée sans accord (dispositifs : `montage-formats`).
-- **« Sans musique »** : désigner le son récurrent qui fera le refrain, et prévoir le lieu silencieux.
-- **Sponsor dans le sujet** : registre habituel du créateur, coupe franche, aucune affirmation du film ne touche le produit, placé après la première récompense.
-- **Public âgé** : texte fixe, corps ≥ 5 % de la hauteur, téléphone seul 3-4 s, un carton = une information.
-
-## Étape 2 — Trois directions contrastées
-Elles diffèrent sur **l'axe principal** (retenue / spectaculaire, réel / graphique, lent / rapide, chaud / froid, sérieux / ironique) ; **au moins une change de registre** ; si deux reposent sur un dispositif, la troisième s'en passe. **Pas de direction de paille** : chacune doit pouvoir gagner.
-
-Fiche fixe : nom + parti pris en une phrase · références (principe emprunté, 2-3) · rythme · palette · typographie · son (et place du silence) · effets (chacun justifié) · risque · faisabilité (jours, coût, enfants, animaux, météo) · version muette et 2 premières secondes.
-
-Tests à passer sur chaque direction :
-- **Cliché** : combien de films de la catégorie l'ont fait ? (`culture/cliches-de-secteur.md`)
-- **Mon propre système**, appliqué aussi à la direction **recommandée** : est-ce que je refais ma dernière pièce, mon dispositif favori (le cadre qui revient avec un détail changé, « une seule chaleur méritée », le hors-champ) ou le goût du client comme une recette ? Si oui, l'écrire, donner l'argument contre, et qu'une direction le **renverse**.
-- **Le rythme du sujet** : sa dramaturgie physique existe-t-elle déjà ? La cadrer avant d'inventer.
-- **Révélation** : mystère (cacher) ou suspense (montrer d'abord) ; ne pas confondre avec le choc.
-- **Ne pas montrer** (présence, menace, doute) : envisager le **hors-champ sonore** comme direction à part entière.
-- **Ne citer que ce qu'on a analysé** ; une référence citée doit agir dans le découpage, sinon la retirer.
-- **Ralenti sur rushes à cadence normale** : mains, cheveux, eau, occlusions = l'interpolation fabrique des monstres (`labo/interpolation/`) [TESTÉ EN LABO] ; proposer d'abord le ralenti **du temps**, habité par un geste. [ÉPROUVÉ EN MAQUETTE] (pièce 15)
-- **Le coupable désigné** quand le brief dit « pas culpabilisant » : le retirer de l'image, le garder au son.
-- **Clip** : dire comment l'artiste est filmé et quelles phrases tombent sur quels plans ; illustrer l'ancrage et le seul geste physique, laisser le reste à la musique ou au concept ; contrepoint de sens, continuité d'espace ; un regard caméra sur le vers où le « je » parle d'être vu. [ÉPROUVÉ EN MAQUETTE] (pièce 19) Geste naturel suffisant en plan taille : [À TRANCHER EN PHASE 2].
-- **Générique de série** : prévoir une version courte ; il se juge au 4e visionnage.
-- **Lumières qui clignotent dans le sujet** : contrôle de photosensibilité dès le traitement (`labo/photosensibilite/flash_check.py`) [TESTÉ EN LABO].
-
-## Étape 3 — Recommander et défendre
-- Choisir une direction ; argumenter **contre l'intention**, pas par goût ; dire ce qu'on perd.
-- **Maquetter la direction qu'on écarte** : avant d'écarter la plus audacieuse (« trop sombre », « trop anxiogène »), 10 à 20 min de maquette. Deux fois (examens n°1 et n°13), la piste refusée sur le papier a donné en maquette la meilleure image du projet ; son vrai risque était ailleurs et se corrigeait. Dans la consultation, dire ce qui a été maquetté. [ÉPROUVÉ EN MAQUETTE] (pièces 17, 34)
-- **Tic de l'hybride** (« B + un morceau de C ») : écrire la version pure et dire ce que l'emprunt ajoute ; sinon le retirer.
-- **Sécurité des personnes filmées** : un concept qui prive (froid, sommeil, nourriture, hauteur) exige un protocole écrit, sinon refuser l'élément.
-- **Relecture « tranché ? »** : chaque « peut-être » est tranché ou écrit comme option explicite pour le client.
-- Si `GOUTS.md` contredit la recommandation : le signaler, proposer la version conforme, garder mon argument en une ligne.
-
-## Étape 4 — Critères de réussite (avant de réaliser)
-3 à 5 critères vérifiables sur planche ou mesure : « message lisible à 2 s sans son » ; « pas de plan > 3 s avant la rupture à 0:12 » ; « -14 LUFS intégré, dialogue intelligible au téléphone ».
-
-## Étape 5 — Savoir dire non (avec une alternative)
-- **L'effet gratuit** : « qu'est-ce que l'effet dit que l'image ne dit pas ? » ; si rien, le retirer.
-- **La mode** qui ne sert pas le projet ; **le « plus »** (texte, plans, musique) : proposer d'enlever.
-- **Le brief contradictoire** : faire choisir, avec une version de chaque si nécessaire.
-- **Le texte qu'on ne peut pas lire** : un texte est une durée (14-15 car./s ATAA, 17 Netflix FR, plancher 16 images) [SOURCÉ] ; chiffrer la contradiction (« 24 noms = 18 s de lecture sur 30 s ») puis hiérarchiser (`montage-references`, liste en rangs).
-- **La technique du matin** : une technique découverte au labo le jour même ne porte pas seule une recommandation sans une pièce qui la montre en mouvement.
-
-## La DA avant les effets, sur un projet monté (phase 3 ; règle de Diego, 2026-10-11) [universel] [TESTÉ EN CONDITIONS RÉELLES]
-_Fichier maître de cette règle (déplacée de `PROMPT-PHASE-3.md` à l'audit du 2026-10-12) ; `montage-regard` et le carnet y renvoient._
-Les collages « photos de vacances » et le fond de papier millimétré de la V4 Sony ne venaient pas d'une mauvaise exécution, mais de l'absence de direction artistique : des idées jolies, piochées sans cadre. Diego : « Chaque élément graphique (fond, texture, couleur, papier, cadre) doit venir de la direction artistique du film : la marque, le sujet, la palette. Un élément pris dans une bibliothèque d'idées parce qu'il est joli, sans lien avec le film, est une faute de goût. »
-1. **Recherche** : avant de concevoir le moindre effet graphique, regarder ce qui se fait de mieux dans le domaine du film (pour une marque : sa propre communication ; pour un sujet : les campagnes et contenus de marques et de studios reconnus dans ce domaine). Garder 8 à 12 images de référence pro dans `projets-phase-3/<projet>/da/` (légères, moins de 300 Ko chacune ; source notée ; images de tiers jamais poussées dans Git).
-2. **Écrire `da.md`**, une page au plus : palette (avec les couleurs du client), textures et matières, typographie, langage graphique (formes, cadres, fonds, façon dont le texte et les éléments apparaissent), **ce qui est exclu**.
-3. **Ensuite seulement**, choisir les techniques (skills du genre, bibliothèques d'idées) : chaque fond, texture, couleur et élément graphique doit se justifier par `da.md`. Ce qui ne s'y rattache pas ne rentre pas dans le film, même si c'est joli.
-4. Contrôle avant chaque rendu : chaque élément graphique a sa ligne dans `da.md` ; sinon il sort (`montage-regard`, « Le goût de chaque plan »).
-
-## Double livrable (film + extraits verticaux)
-Un tournage, deux montages : macro pour le film, kinetic pour les extraits. Au tournage : 4K ou open gate, zone verticale sûre, son seul des objets pour les SFX (`montage-preparation-tournage-vfx`).
-
-## Format de rendu d'une consultation
-1. Intention (7 lignes). 2. Trois directions (fiche fixe). 3. Recommandation argumentée (ce qui a été maquetté). 4. Critères. 5. Vigilance (tournage, droits, livraison). Fiction dialoguée et autres exemples : `details.md`.
+## 3. Format de rendu d'une consultation
+1. Intention (sept lignes). 2. Trois directions (fiche fixe : parti pris, références, rythme, palette, typographie, son, effets justifiés, risque, faisabilité, version muette et deux premières secondes). 3. Recommandation argumentée (ce qui a été maquetté). 4. Critères. 5. Vigilance (tournage, droits, livraison).
 
 ## Limites connues
-Éprouvée sur 13 examens fictifs (notes de 13 à 15/20 sur les n°1 à 8, détail dans `details.md`) ; tics récurrents : faisabilité tardive, dispositif favori recommandé, direction audacieuse écartée sans maquette. Un seul vrai projet monté (Sony, brief fictif sur de vrais rushes) ; jamais encore sur un vrai brief client.
+Éprouvée sur 13 examens fictifs (notes de 13 à 15 sur 20) et sur deux projets réels montés (un film de marque kinetic, un film de mariage) ; jamais encore sur un vrai brief client avec retour du client.

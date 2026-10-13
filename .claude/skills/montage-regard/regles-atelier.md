@@ -1,4 +1,37 @@
-Annexe de `SKILL.md` : preuves par pièce des règles de jugement (versions, mesures, sessions) et précisions de la grille ; les principes eux-mêmes ne sont pas répétés ici (le SKILL.md fait foi).
+Annexe de `SKILL.md` : énoncés des règles de jugement nées en atelier (maquettes de phase 1) et leurs preuves par pièce ; savoir consultable, pas des règles gagnées en conditions réelles (audit 2, 2026-10-13). Ce qui vit ailleurs : la règle 1 (mesurer avant de corriger) → SKILL.md § 7 ; la 2 (isoler la variable) → `CLAUDE.md`, conventions ; la 15 (une correction locale casse ailleurs) → SKILL.md § 6 ; la 27 (le temps se mesure) → `PROGRESS.md`, règles de session.
+
+# montage-regard — règles d'atelier et preuves
+
+## Les règles (énoncés ; preuves plus bas)
+Toutes [ÉPROUVÉ EN MAQUETTE] sauf mention ; numéro de pièce entre parenthèses.
+1. **Mesurer avant de corriger**, et vérifier l'outil de mesure quand il me donne raison trop facilement (01, 05).
+2. **Une explication n'entre dans un skill qu'après un essai qui isole la variable** (10 : l'hypothèse « AgX blanchit » réfutée par un rendu en Standard). [TESTÉ EN LABO]
+3. **Corriger à l'étage où le défaut naît** : un blanc gris venait de la transformée de vue, pas de la lumière (22-23).
+4. **Une mesure ne voit que l'échelle qu'elle mesure** : pour la lisibilité d'une forme, mesurer à l'échelle de l'objet et calibrer à l'œil (28). [TESTÉ EN LABO]
+5. **Mon œil se trompe sur la saillance** : le plus clair et le plus contrasté gagne le regard ; mesurer avant de croire qu'on guide l'œil. Éclairer une zone attire l'œil mais peut éteindre le détail : garder le détail contrasté dedans (12).
+6. **L'œil lit l'énergie lumineuse autour du sujet**, pas le nombre de sources : pour qu'un monde s'éteigne, éteindre autour du sujet d'abord ; rallumer loin et petit pour ne pas lui reprendre la saillance (18).
+7. **Un signe qui n'a pas la taille de lecture n'existe pas** à l'écran de diffusion, sauf s'il est singulier (seule teinte chaude, seule valeur claire) ; sinon l'amener (macro, poussée, insert) (29, 34). Compter les sources chaudes **à la taille de lecture** (16).
+8. **Le plan d'arrivée d'abord** : il doit se lire en moins d'une demi-seconde avant tout réglage fin de la coupe (27).
+9. **Ce qui relie un plan au suivant doit être autre chose que le tempo** (02 ; Honda « Cog »).
+10. **Chercher le rythme que le sujet impose** avant d'en plaquer un (04).
+11. **Déplacer le mouvement vers le paramètre qui porte le sens** plutôt que réduire l'amplitude du mauvais (01).
+12. **Un effet a besoin de ce qu'il imite** ; une image fixe donne un registre, le sens vient du montage (05).
+13. **Le cadre contient la conséquence** ; la lisibilité dépend de la part du cadre, pas de la résolution (07).
+14. **Le sens en retard a besoin d'un retour** (reprise d'une image déjà vue) (08).
+15. **Une correction locale peut casser ailleurs** : relire toute la planche (07).
+16. **Casser une règle complètement, une fois, au bon endroit** ; à moitié, c'est une erreur (11, 180°).
+17. **Vérifier un raccord depuis la caméra** : deux objets alignés dans l'axe se lisent comme un seul ; une ligne qui traverse une surface se lit fissure, qui la touche au bord se lit lien (12, 16).
+18. **Pour tuer une lecture parasite d'échelle, changer l'échelle par rapport au cadre** (objet coupé par le bord = plus grand que l'image) (16).
+19. **Une source dans le champ** centrée et symétrique fait une icône ; trop forte, elle tue le noir ; décentrée et basse, elle éclaire ce qu'on tient (17).
+20. **La courbe d'une lumière qui change dit qui agit** : sèche = la physique, fondu = un régisseur, clignement = la panne ; la cause montrée **avant** donne l'auteur ; l'insert de la cause garde la clé du plan qu'il précède (18).
+21. **Texte et image : sens en contrepoint, espace en continuité** ; un geste ne se lit que s'il sort de la silhouette (19). Détail clip : `montage-direction-artistique`.
+22. **Le texte prend la valeur opposée à l'image** au moment où il apparaît (noir dans un flash blanc, puis inversé) ; un dispositif automatique (saccade, aléa, preset) ne porte pas une direction (20).
+23. **Chaque levier ne dit que ce qu'il dit** : lumière = heure et valeur, hauteur de caméra = rapport de force, focale = l'espace dont dispose le personnage ; pour « il a changé », les trois dans le même sens (31).
+24. **Une posture a son axe de lecture** : flexion en profil, ouverture de face ou de dos ; vérifier l'angle avant de dire qu'un corps « ne joue pas » (31).
+25. **L'image peut fabriquer la pudeur seule** : un écran naturel (buée, reflet, rideau) qui se ferme à mesure que la caméra approche ; forcer l'entrée ensuite se décide sur le jeu réel (34).
+26. **Une règle sonore apprise se rompt pour faire entendre l'absence** : enseigner, puis retirer (30).
+27. **Le temps aussi se mesure** : mon estimation de la durée d'un travail se trompe d'un facteur 3 à 8 ; lire l'horloge plutôt que l'estimer.
+28. **Une direction écartée sans maquette n'a pas été jugée** : voir `montage-direction-artistique` (fait foi).
 
 # montage-regard — preuves et précisions
 
@@ -19,7 +52,7 @@ Toutes [ÉPROUVÉ EN MAQUETTE] (maquette Blender / Pillow / ffmpeg, à confirmer
 
 ## Preuves par règle (numéros des « Règles de jugement » du SKILL.md)
 1. **Mesurer** : 01 v6 (bruit de rendu imaginaire, en fait l'encodage H.264 du dégradé), 05 (« neutre » vérifié au biais R-B : mon premier constat était bleu à −19), contrôle de flashs de la session 7 (outil « plein écran » trop indulgent contre la fenêtre locale du WCAG). Détail : `journal.md`.
-2. **Isoler la variable** : 10 v4, un seul rendu en vue Standard (feuille *plus* chaude) a réfuté « AgX blanchit le froid ». Vraie cause : une source à 3 cm de la surface (sature ou disparaît) et une couleur d'écran réaliste trop pâle à côté d'une lampe orangée saturée. Seul fait mesuré sur AgX : il plafonne le blanc vers 222/255 (règle 3). Détail couleur : `montage-couleur-et-intention/details.md`.
+2. **Isoler la variable** : 10 v4, un seul rendu en vue Standard (feuille *plus* chaude) a réfuté « AgX blanchit le froid ». Vraie cause : une source à 3 cm de la surface (sature ou disparaît) et une couleur d'écran réaliste trop pâle à côté d'une lampe orangée saturée. Seul fait mesuré sur AgX : il plafonne le blanc vers 222/255 (règle 3). Détail couleur : `montage-couleur/intention.md`.
 3. **Étage du défaut** (22 v3-v4 et 23, session 19) : blanc gris = transformée de vue (pixel max 222 partout, ciel compris), pas la lumière ; une chaise noyée parmi d'autres se sépare par l'**espace** (écart de 4 m), pas par la profondeur de champ (invisible à 1,25 m) ; l'image « surveillance » vient de l'illuminateur dans l'axe et du grade vert, pas du noir et blanc. Et **chaque écart d'espace a un sens** : isoler la chaise l'a rendue lisible mais a dit « à part » au lieu de « au bout d'une lignée » ; relire la correction contre le texte.
 4. **Échelle de la mesure** (28, session 23) : la variance du laplacien déclarait « aussi flou » un cheval effacé par l'optique et un cheval lisible sous un gaussien de 2 px ; mesurer par corrélation sur l'image réduite et calibrer les seuils à l'œil sur une bande.
 5. **Saillance** (12 v4) : j'étais satisfait, la mesure a placé l'attention à 34 % de la diagonale de l'anomalie (confirmé par un modèle publié, `labo/saillance/`) ; une fenêtre dans le champ vole l'attention à tout le reste. Détail éteint par l'éclairage : tasse blanche sur table au soleil.
