@@ -72,11 +72,11 @@ _Préparée le 2026-10-13, après l'application de l'audit 2. Relevé fait sur l
 | Blender 5.2.2 LTS | Cycles réglé sur **METAL** (le GPU du Mac). |
 | Module « MCP » dans Blender (Blender Lab, v1.0.3) | **Installé et activé** depuis le 5 octobre (dépôt `lab.blender.org` ajouté). Il ouvre un pont sur `localhost:9876` ; **Auto Start** coché : le pont démarre seul une seconde après l'ouverture de Blender. |
 | Blender : **Edit → Preferences → System → Network → Allow Online Access** | **Coché.** Le module refuse de démarrer sans lui. |
-| Extension « Blender » dans Claude (Blender Lab, serveur v1.0.1) | **Installée le 5 octobre, mais désactivée** : c'est pour ça qu'aucune de mes sessions ne la voit (les extensions activées, comme Resolve Studio, y apparaissent). |
+| Extension « Blender » dans Claude (Blender Lab, serveur v1.0.1) | **Activée** (constaté en E0, 2026-10-13) : 26 outils visibles ; compatible avec le module v1.0.3 (lecture, capture, script et rendu essayés). Le pont ne répond que si Blender est ouvert. Outils « _for_cli » : lanceur `/opt/homebrew/bin/blender` ajouté en E0 (6.8). |
 | After Effects 26.3 : **Settings → Scripting & Expressions → Allow Scripts to Write Files and Access Network** (en français : Paramètres → Scripts et expressions → Autoriser les scripts à écrire des fichiers et à accéder au réseau) | **Coché** (`Pref_SCRIPTING_FILE_NETWORK_SECURITY = 1` dans les préférences 26.3). C'est le seul réglage d'After Effects dont j'ai besoin. |
 | `aerender` | Présent (`/Applications/Adobe After Effects 2026/aerender`). |
 | Plugin Higgsfield dans After Effects (extension `ai.higgsfield.cep` v1.0.57, installée le 8 octobre, pour After Effects et Premiere) et outil en ligne de commande `higgsfield` 1.1.26 | **Installés.** Son pont s'est connecté à `wss://bridge.higgsfield.ai` le 11 octobre (journal du plugin). |
-| Connecteur « HIGGSFIELD MCP » dans Claude (`https://bridge.higgsfield.ai/mcp`) | **Pas visible dans mes sessions** : le répertoire de Claude l'indique « non connecté » pour ce compte (relevé le 2026-10-13 dans l'après-midi). |
+| Connecteur « HIGGSFIELD MCP » dans Claude (`https://bridge.higgsfield.ai/mcp`) | **Pas connecté à ce compte** (revérifié en E0, 2026-10-13, 15:05) : à brancher par Diego (6.8). Le plugin, lui, est connecté côté After Effects. |
 | Node 25.6.1, `npx`, `uv` 0.12.23 | Présents (le serveur d'After Effects demande Node 24 ou plus). |
 | Python du dépôt (`.venv`) | numpy, OpenCV, Pillow, SciPy, scikit-image, imageio : de quoi tout mesurer. |
 | Polices | Inter (famille complète), Helvetica Neue, Avenir Next. SF Pro absente, inutile depuis le choix de la référence A. |
@@ -141,15 +141,43 @@ Planche : `projets-phase-3/tests-techniques/references-E1-E3.png` (une image par
 
 Si aucune ne te va pour E3 : le film officiel d'Apple « Introducing iPhone 17 Pro » (pas vu ; à toi de le déposer si tu le veux, je ne télécharge rien).
 
-### 6.7 Le MCP de Higgsfield, vérifié en E0 (à remplir avant tout exercice)
-| Action | Réellement fait sur ce Mac ? | Crédits Higgsfield ? | Ce qui transite par ses serveurs |
-|---|---|---|---|
-| Lire le projet (compositions, calques, images clés) | | | |
-| Créer une composition | | | |
-| Créer des calques (texte, solide, forme) | | | |
-| Poser des images clés et leurs influences | | | |
-| Écrire une expression | | | |
-| Exécuter un script ExtendScript | | | |
-| Rendre une image pour la voir | | | |
-| Rendre une séquence ou un fichier | | | |
-| Outils de génération IA (images, vidéos) | jamais appelés sans l'accord de Diego, coût estimé à l'appui | | |
+### 6.7 Le MCP de Higgsfield, vérifié en E0 (2026-10-13 : connecteur absent, rien n'a pu être appelé)
+Le connecteur « HIGGSFIELD MCP » n'est pas branché sur mes sessions : le registre de Claude le donne « non connecté » pour ce compte (il l'a été un jour : `claudeAiMcpEverConnected`). Côté After Effects, le plugin est prêt : son pont s'est connecté à `wss://bridge.higgsfield.ai/plugin/ws` à 15:04:26 (journal du plugin). **Aucun outil n'a donc été appelé, aucun crédit relevé, aucun trafic observé.** Ce qui suit vient du code du plugin v1.0.57 installé sur le Mac (`jsx/index.js`, sources de `bridgehost`), lu en local [NON VÉRIFIÉ en conditions réelles] ; la colonne « réellement fait » se remplit au début de E1, une fois le connecteur branché (méthode inchangée : un appel par type, composition de test, solde avant et après, réseau observé).
+
+| Action | Outil du plugin (code lu) | Réellement fait sur ce Mac ? | Crédits Higgsfield ? | Ce qui transite par ses serveurs |
+|---|---|---|---|---|
+| Lire le projet (compositions, calques, images clés) | `list_project_items`, `list_compositions`, `get_composition_info`, `list_layers`, `get_layer_info`, `get_keyframes`, `list_effects` | non testé | probablement non (aucun coût dans ces outils) [NON VÉRIFIÉ] | la commande et la réponse (noms, valeurs, clés) : relais `bridge.higgsfield.ai` dans les deux sens |
+| Créer une composition | `create_composition`, `modify_composition`, `duplicate_composition`, `set_work_area` | non testé | probablement non | la commande et le résultat |
+| Créer des calques (texte, solide, forme) | `add_text_layer`, `add_solid_layer`, `add_shape_layer`, `add_null_layer`, `add_adjustment_layer`, `add_mask`, `set_shape_fill`, `precompose_layers`, `set_track_matte`, `split_layer`, `trim_layer` ; gabarits `create_title_card`, `create_lower_third`, `create_logo_reveal`, `create_transition`, `create_text_animator` | non testé | probablement non | la commande (le texte du calque compris) |
+| Poser des images clés et leurs influences | `set_keyframe`, `set_keyframes`, `set_keyframe_advanced`, `set_temporal_ease`, `apply_easy_ease`, `set_motion_blur` | non testé | probablement non | la commande |
+| Écrire une expression | `set_expression`, `apply_expression_template`, `add_expression_control`, `link_properties` | non testé | probablement non | le texte de l'expression |
+| Exécuter un script ExtendScript | `execute_script` (accepte aussi des `downloadUrls` : le plugin télécharge des fichiers avant d'exécuter) | non testé | probablement non | le script entier et son résultat |
+| Rendre une image pour la voir | `export_frame` (une image par la file de rendu d'AE, dans un PNG temporaire, encodée en base64 puis effacée) ; `export_contact_sheet` (planche de plusieurs images) | non testé | probablement non | **l'image elle-même** (base64), donc tout ce qui est à l'écran de la composition |
+| Rendre une séquence ou un fichier | aucun outil dédié ; seulement par `execute_script` (file de rendu dans AE, qui bloque l'interface) | non testé | non | le script ; le fichier rendu reste sur le Mac |
+| Envoyer un fichier | `upload_media` (lit un fichier local et l'envoie vers une URL de stockage fournie par le serveur), `import_image` (télécharge une image par URL) | **jamais appelé** sans l'accord de Diego, et jamais sur un fichier de client | dépend de l'usage | **le fichier entier** |
+| Outils de génération IA (images, vidéos) | côté serveur, pas dans le plugin (l'interface du panneau affiche des coûts en crédits) | jamais appelés sans l'accord de Diego, coût estimé à l'appui | oui | les invites et les médias fournis |
+
+Conséquences pour les exercices [THÉORIQUE, d'après le code] : (1) lire et construire par le MCP fait passer par Higgsfield le contenu du projet, textes compris : seulement de la matière créée pour l'occasion ; (2) voir une image par le MCP envoie cette image à Higgsfield : jamais une composition qui contient une référence ou un plan de client ; (3) le MCP ne rend pas de séquence : les rendus mesurés sortent d'`aerender`, comme prévu.
+
+### 6.8 Résultat de E0 (2026-10-13, 15:04-15:12)
+Une ligne par outil. Fichiers : `videos/phase-3/tests-techniques/_travail/` (non versionné) ; scripts rejouables : `labo/outils/e0_blender_cube.py`, `labo/outils/e0_ae_comp.jsx`.
+
+| Outil | Résultat | Détail |
+|---|---|---|
+| Serveurs MCP visibles | — | **Blender** (extension, 26 outils) ; **DaVinci Resolve Studio** (extension, 14 outils) et **DaVinci Resolve** (`~/.claude.json`, les 14 mêmes outils : doublon) ; **HIGGSFIELD MCP : absent**. Outils Blender : résumés du fichier (blocs de données, chemins, fichiers manquants, bibliothèques liées, usage), `get_objects_summary`, `get_object_detail_summary`, captures (zone, fenêtre, fenêtre en JSON), `jump_to_*` (onglet, objet), `render_viewport_to_path`, `render_thumbnail_to_path`, `execute_blender_code`, la documentation (`get_python_api_docs`, `search_api_docs`, `search_manual_docs`) ; la plupart en double « _for_cli » (Blender en arrière-plan sur un `.blend`). Outils Resolve : `get_resolve_status`, `launch_resolve`, `run_script`, `run_script_unsafe`, `get_scripting_api`, `search_scripting_api`, `get_scripting_docs`, `get_whats_new`, LUT (`generate_lut`, `list_luts`, `delete_lut`), DCTL (`list_dctls`, `update_dctl`, `delete_dctl`) |
+| Blender, MCP, Blender ouvert | **marche** | Il fallait lancer Blender (pont fermé sinon : « Cannot connect to Blender at localhost:9876 ») ; je l'ai lancé, le pont a démarré seul. Scène lue (scène de démarrage, sans fichier : `Camera`, `Cube`, `Light`), capture de la vue 3D, script exécuté dans une scène séparée « E0 », rendu Cycles METAL en 4,4 s (960×540, 64 échantillons). Piège : ne jamais lancer `read_factory_settings` dans le Blender ouvert (remet les préférences d'usine, donc coupe le module MCP) |
+| Blender, ligne de commande (`Blender -b -P`) | **marche** | Blender 5.2.2, Cycles sur METAL (GPU 32 cœurs du M1 Max), 10,8 s le premier rendu (compilation des noyaux comprise), `.blend` enregistré |
+| Blender, MCP en arrière-plan (`*_for_cli`) | **contourné, puis marche** | Échouait : « Blender executable not found at 'blender' » (l'extension n'a pas de réglage `BLENDER_PATH`). Réglé : un lanceur `/opt/homebrew/bin/blender` (script de trois lignes qui lance le binaire de l'app ; un lien symbolique ne suffit pas, Blender ne trouve plus son Python). Rendu en 1,9 s. Pour l'enlever : `rm /opt/homebrew/bin/blender` |
+| Les trois rendus Blender comparés | **identiques** | Écart moyen 0,00, maximal 4 sur 255 (bruit d'échantillonnage) [VU SUR IMAGES, mesuré] |
+| After Effects, `osascript` + ExtendScript | **marche** | L'autorisation d'automatisation est passée. `DoScript` ne renvoie que « 0 » : le script écrit son résultat dans un fichier. Projet ouvert lu : vide, sans fichier, non modifié. Composition `E0_Texte` créée (2 s, 1920×1080, 25 i/s, « Essai technique » en Inter blanc sur noir), mise dans la file de rendu, `.aep` enregistré dans `_travail/` |
+| After Effects, rendu par `aerender` | **contourné** | 50 images 1920×1080 en 1 à 2 s ; texte centré à (959,5 ; 539,5). Le format de sortie n'est **pas réglable par script** dans AE 26.3 (`Format` en lecture seule) et aucun modèle PNG n'existe : rendu en « TIFF Sequence with Alpha » (sans perte), converti en PNG hors d'AE. Le script prend un modèle PNG dès qu'il existe (réglage ci-dessous) |
+| After Effects, police par script | **piège trouvé et corrigé** | `font = "Inter-Regular"` est **remplacé en silence par Helvetica** (`fontObject.isSubstitute = true`) : Inter est installée en coupes statiques `Inter18pt-`, `Inter24pt-`, `Inter28pt-` (display). Et le texte sortait en capitales : le panneau Caractère déteint sur les textes créés par script (`allCaps` en lecture seule ; régler `fontCapsOption`). Le script s'arrête désormais si la police est remplacée. Vérifié sur l'image en pleine résolution : Inter, bas de casse, blanc 255 [VU SUR IMAGES] |
+| After Effects, MCP de Higgsfield | **ne marche pas (non branché)** | Connecteur absent de la session (6.7) ; plugin prêt et connecté côté After Effects |
+| DaVinci Resolve, MCP | **marche** | `get_resolve_status` : Resolve Studio 21.1.1 lancé et joignable (lecture seule ; rien d'autre n'a été touché) |
+| `labo/outils/courbe_mouvement.py` | **pas fait** | Prévu en E0 par ce plan, mais hors du périmètre de cette session (vérifier les outils seulement) : à écrire et vérifier sur un rendu synthétique au début de E1 |
+
+**Ce que Diego doit régler avant E1**
+1. **Le connecteur HIGGSFIELD MCP** (indispensable pour la table 6.7) : dans l'app Claude, **Settings… (⌘,) → Connectors**, trouver **HIGGSFIELD MCP** (ou l'ajouter depuis **Browse connectors**), **Connect**, puis se connecter au compte Higgsfield dans la fenêtre qui s'ouvre (`clerk.higgsfield.ai`) ; même chose possible sur claude.ai → Settings → Connectors. Ensuite, dans la session de E1 : bouton **+** sous le champ de saisie → **Connectors** → activer **HIGGSFIELD MCP**. After Effects ouvert, panneau Higgsfield connecté (il l'est déjà).
+2. **Un modèle de sortie PNG dans After Effects** (une fois, 30 secondes ; utile, pas bloquant) : **Edit → Templates → Output Module…** → **New** → nom exact `PNG Sequence` → **Format: PNG Sequence** → **Format Options…** : **Video Output → Channels: RGB**, **Depth: Millions of Colors** → **OK**, **OK**. Mon script le prendra seul ; je passerai en 16 bits (Trillions of Colors) dans un second modèle si une mesure l'exige.
+3. **Rien pour Blender** : le lanceur `/opt/homebrew/bin/blender` est en place. Garder Blender ouvert pendant E3 (le pont ne démarre qu'avec lui).
+4. Facultatif : le doublon Resolve (extension « DaVinci Resolve Studio » et serveur « DaVinci Resolve » de `~/.claude.json`) ne gêne pas ; pour n'en garder qu'un : `claude mcp remove "DaVinci Resolve" -s user` dans un terminal.
