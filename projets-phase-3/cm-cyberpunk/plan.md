@@ -14,8 +14,9 @@
 2. **Bible de look** : palette, focale, un seul type de mouvement, et le parti pris qui évite le cliché cyberpunk.
 3. **Blender** : décor en volumes gris + caméra + sujets en boîtes de couleur (code couleur écrit dans le prompt). Rendu vidéo de chaque plan → `03_blender/previz/`.
 4. **GPT** : une plaque par plan, faite à partir d'une image du rendu Blender (cadrage et disposition seulement), sans personnage ; une fiche personnage (face, profil, dos, tenue). Les enseignes lisibles se font ici, pas dans la vidéo.
-5. **Seedance 2.5 Reference to Video** (Oxen) : `@Video1` = la previz, `@Image` = la plaque et la fiche personnage. Audio coupé (`generate_audio: false`) : le son se fait au montage, avec de vrais sons.
-6. **Topaz Video AI 7.1.4** (local, gratuit) pour l'upscale ; étalonnage commun, grain et halation dans Resolve (projet `P3-`). Son dans Resolve/Fairlight.
+5. **Seedance 2.5 Reference to Video** (Oxen) : `@Video1` = la previz, `@Image` = la plaque et la fiche personnage. Audio généré **gardé** comme base (Diego, 2026-10-23) : ambiance et bruitages dans le prompt, « no music, no subtitles » ; musique et éléments ajoutés en post.
+6. **Son** : le son généré sert de base ; une nappe d'ambiance continue posée en post sous tous les plans (chaque prise a son propre son, les coupes sauteraient sinon), musique, renforts de bruitages ; séparation des pistes si une prise mélange trop. Coût du son sur Oxen : à vérifier (non documenté).
+7. **Topaz Video AI 7.1.4** (local, gratuit) pour l'upscale ; étalonnage commun, grain et halation dans Resolve (projet `P3-`). Son dans Resolve/Fairlight.
 
 ## Budget (prix Oxen lus le 2026-10-23 ; estimations à tenir dans un `journal.md`)
 | Résolution | Prix | 25 $ donnent |
@@ -36,7 +37,7 @@ Répartition prévue : calibrage 2 × 5 s en 480p (1,20 $) · brouillons 480p, e
 6. Plaques faites depuis le rendu Blender (cadrage et disposition seulement, couleurs et lumière ignorées).
 
 ## Gabarit des prompts Seedance (repris des films du festival Higgsfield, annexe `montage-ia-generative/prompts-seedance-pros.md`)
-Un prompt par plan, en anglais, dans cet ordre : SCENE CONTEXT · ACTIVE REFERENCES (pour chaque `@`, ce qu'on en prend et ce qu'on n'en prend pas ; la previz Blender : trajectoire, vitesse, positions des sujets, jamais les matières grises, la lumière ni les visages) · LOCATION MAP · FIRST FRAME AND SPATIAL BLOCKING · OPTICS (angle de champ, distance et hauteur de caméra lus dans Blender) · ACTION TIMING (minuté, une action par segment) · PHYSICS · LIGHTING (une source nommée, pas de lumière de cinéma ajoutée) · STYLE (pellicule de nuit, palette en proportions et en codes hexadécimaux) · POSITIVE CONSTRAINTS (compter personnages et objets ; aucun texte hors des enseignes voulues). Audio coupé. Prompts versionnés (`LOCK v01`…) et rangés ici.
+Un prompt par plan, en anglais, dans cet ordre : SCENE CONTEXT · ACTIVE REFERENCES (pour chaque `@`, ce qu'on en prend et ce qu'on n'en prend pas ; la previz Blender : trajectoire, vitesse, positions des sujets, jamais les matières grises, la lumière ni les visages) · LOCATION MAP · FIRST FRAME AND SPATIAL BLOCKING · OPTICS (angle de champ, distance et hauteur de caméra lus dans Blender) · ACTION TIMING (minuté, une action par segment) · PHYSICS · LIGHTING (une source nommée, pas de lumière de cinéma ajoutée) · STYLE (pellicule de nuit, palette en proportions et en codes hexadécimaux) · POSITIVE CONSTRAINTS (compter personnages et objets ; aucun texte hors des enseignes voulues). Section AUDIO : ambiance et bruitages voulus, « no music, no dialogue » sauf réplique écrite. Prompts versionnés (`LOCK v01`…) et rangés ici.
 Ratio observé chez eux : 3 à 5 secondes générées par seconde gardée, soit 90 à 150 s pour nos 30 s ; cohérent avec le budget ci-dessus.
 Piste de DA à discuter : le cyberpunk sans néon (tubes fluorescents verdâtres, comme un des films de nuit du festival) pour sortir du cliché.
 
