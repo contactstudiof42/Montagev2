@@ -1,3 +1,7 @@
 date,id,modele,qualite,resolution,prix_estime_usd,duree_s,fichier
 2026-10-24T01:04:32,F1,gpt-image-2-5-sunburst,high,2K,0.0517,29,F1_v1.png
 2026-10-24T01:05:20,F1,gpt-image-2-5-sunburst,high,2K,0.0517,29,F1_v2.png
+2026-10-24T01:07:09,F2,gpt-image-2-5-sunburst,high,2K,0.0517,31,F2_v1.png
+2026-10-24T01:07:51,F3,gpt-image-2-5-sunburst,high,2K,0.0517,27,F3_v1.png
+2026-10-24T01:08:32,F4,gpt-image-2-5-sunburst,high,2K,0.0517,30,F4_v1.png
+2026-10-24T01:09:11,F5,gpt-image-2-5-sunburst,high,2K,0.0517,32,F5_v1.png

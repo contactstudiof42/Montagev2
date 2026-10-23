@@ -61,3 +61,11 @@ _Résumé : les deux côte à côte, en pied ; le haut de son voile arrive au mi
 2. F3, puis F4 à partir de F3 jointe.
 3. F5 avec F1 et F3 jointes.
 4. Contrôle à l'œil, en pleine résolution, avant de passer aux décors : même visage entre les vues ; ni tatouage, ni menotte ; montre à aiguilles visible ; chemise boutonnée jusqu'au col ; le type de visage demandé par Diego, sans en faire un sosie ; écart de taille juste sur F5.
+
+## Résultats des fiches (2026-10-24)
+_Images dans `CM TEST /04_gpt/fiches/`, chacune avec ses réglages en JSON ; dépenses dans `journal-oxen.csv` (6 images Oxen, 0,31 $)._
+- **F1 retenue : `F1_chatgpt.png`**, générée dans ChatGPT (choix de Diego). Les deux versions Oxen sont écartées : v1 au col ouvert ; v2 au col fermé, mais avec un visage plus lourd, moins proche du type demandé.
+- **F2 : `F2_v1.png`**, faite avec F1 jointe. Même visage, col fermé. [VU SUR IMAGES]
+- **F3 : `F3_v1.png`**. Même visage dans les quatre vues ; montre à aiguilles et bracelet de cuir au poignet gauche ; chapelet de bois. [VU SUR IMAGES]
+- **F4 : `F4_v1.png`**, faite avec F3 jointe. Même visage. Écart : elle sourit un peu au lieu de pincer les lèvres. [VU SUR IMAGES]
+- **F5 : `F5_v1.png`**, faite avec F1 et F3 jointes. Écarts notés, sans reprise faute d'accord de Diego : elle mesure 0,70 fois sa taille à lui, soit 1,37 m s'il fait 1,95 m (cible : 0,77, soit 1,50 m) ; il est moins massif que sur F1. Correction possible : « the top of her veil reaches his collarbone; he is as broad and heavy as in @Image1 ». [mesure faite à l'œil sur les pixels, à ± 10 px]
