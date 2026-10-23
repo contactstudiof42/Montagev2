@@ -44,7 +44,7 @@ Le futur n'entre jamais dans la pièce, qui reste analogique (parpaing, bois, bo
 | Ce qu'il veut | lui apprendre à siffler (en dessous : lui laisser quelque chose, ne pas entendre ce qu'elle doit dire) | faire son office : lui dire ce qu'elle doit lui dire (en dessous : ne pas le lui dire) |
 
 ## Le décor (un seul lieu)
-Une petite aumônerie de prison d'un futur proche, sans signe de prison visible et sans rien de technologique, sauf un petit dôme de caméra recouvert d'un linge blanc plié, dans un angle du plafond, lisible dans les plans larges : murs de parpaing peints en beige, une croix de bois, une table, deux chaises, une bougie dans un verre ; au bord de la table, un plateau-repas intact (le « dernier repas », lisible seulement après la fin). Une seule source de lumière : une fenêtre haute et étroite en verre dépoli, lumière pâle et **douce** (pas de pénombre bleue : une religieuse dans le noir, c'est le code du film d'horreur pour une cible jeune). La porte, hors champ jusqu'au plan 6.
+Une petite aumônerie de prison d'un futur proche, sans signe de prison visible et sans rien de technologique, sauf un petit dôme de caméra recouvert d'un linge blanc plié, dans un angle du plafond, lisible dans les plans larges : murs de parpaing peints en beige, une croix de bois, une table, deux chaises, une bougie dans un verre ; au bord de la table, un plateau-repas intact (le « dernier repas », lisible seulement après la fin). Lumière (bible de look, `da.md`, 2026-10-24) : une fenêtre haute et étroite en verre dépoli, à travers laquelle passe le **magenta d'un néon de la ville, doux et immobile** ; la bougie donne l'ambre ; noirs profonds dans les angles. Les visages restent lisibles (pas de visage dans le noir ni dans une lumière bleue : une religieuse dans le noir, c'est le code du film d'horreur pour une cible jeune). La porte, hors champ jusqu'au plan 6.
 
 ## L'air
 « À la claire fontaine » (chanson traditionnelle, domaine public), seulement sifflée, jamais chantée. Ceux qui connaissent les paroles entendent le refrain (« il y a longtemps que je t'aime, jamais je ne t'oublierai ») ; les autres entendent un air simple. Le film ne dépend pas de ce code.
@@ -101,7 +101,7 @@ Aligné le 2026-10-23 sur `montage.md` (V2 du découpage de montage, écrit par 
 - Son : silence ; la ventilation, très loin. Sa première note sifflée commence sur ses mains arrêtées.
 
 **Plan 8b — 0:41 à 0:46 — elle, de profil, devant la chaise vide**
-- Image : la fenêtre pâle derrière elle ; la lumière du dôme éteinte ; la flamme de la bougie tremble à peine.
+- Image : la fenêtre magenta derrière elle ; la lumière du dôme éteinte ; la flamme de la bougie tremble à peine.
 - Son : elle siffle la première phrase de l'air (post), juste cette fois, fragile, jusqu'au bout. La dernière note résonne une seconde sur le noir.
 
 **Fin — après 0:46**

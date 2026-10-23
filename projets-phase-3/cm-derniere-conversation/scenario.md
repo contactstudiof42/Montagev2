@@ -6,7 +6,7 @@ _Court métrage de fiction, 45 s environ. V3, version moderne (piste A, choisie 
 
 **1. INT. AUMÔNERIE — JOUR**
 
-Une petite pièce sans âge. Murs de parpaing peints en beige, une croix de bois. Tout en haut, une fenêtre étroite en verre dépoli laisse passer une lumière pâle.
+Une petite pièce sans âge. Murs de parpaing peints en beige, une croix de bois. Tout en haut, une fenêtre étroite en verre dépoli ; derrière, le néon d'une ville teinte la pièce d'un magenta doux. Sur la table, la bougie met de l'ambre sur les visages.
 
 Dans l'angle du plafond, un petit dôme de caméra, recouvert d'un linge blanc plié.
 
@@ -105,7 +105,7 @@ Ses mains cherchent le chapelet. Commencent à se joindre.
 
 S'arrêtent.
 
-Elle lève les yeux vers la fenêtre pâle. Pince les lèvres.
+Elle lève les yeux vers la fenêtre. Pince les lèvres.
 
 Et siffle. La première phrase de l'air, juste cette fois. Fragile. Jusqu'au bout.
 
