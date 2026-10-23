@@ -1,7 +1,7 @@
 # oxen_image.py : génère une image de « L'Air » avec GPT Image 2.5 Sunburst sur Oxen, à partir d'un prompt de prompts-gpt.md.
 # .venv/bin/python -I oxen_image.py ID SORTIE.png [--ref IMAGE.png ...] [--aspect 3:2] [--res 2K] [--quality high]
 # ID = titre de section de prompts-gpt.md (F1, F2…) ; les références deviennent @Image1, @Image2… dans l'ordre donné.
-# La clé est lue dans launchctl (OXEN_API_KEY), jamais affichée. Chaque appel est noté dans journal-oxen.csv (budget).
+# La clé est lue dans OXEN_API_KEY (environnement ou launchctl) ou dans ~/.config/oxen/api_key, jamais affichée. Chaque appel est noté dans journal-oxen.csv (budget).
 import argparse, base64, csv, datetime, json, os, re, subprocess, sys, urllib.request
 ICI = os.path.dirname(os.path.abspath(__file__))
 PRIX = {("high", "1K"): 0.0369, ("high", "2K"): 0.0517, ("xhigh", "2K"): 0.0919, ("medium", "2K"): 0.0134}  # catalogue Oxen, 2026-10-24
@@ -14,7 +14,9 @@ bloc = re.search(rf"^### {re.escape(a.id)} .*?$(.*?)(?=^##)", md, re.S | re.M)
 if not bloc: sys.exit(f"prompt {a.id} introuvable")
 prompt = " ".join(l[2:].strip() for l in bloc.group(1).splitlines() if l.startswith("> "))
 if "[" in prompt: sys.exit("le prompt contient encore un renvoi entre crochets")
-cle = os.environ.get("OXEN_API_KEY") or subprocess.run(["launchctl", "getenv", "OXEN_API_KEY"], capture_output=True, text=True).stdout.strip()
+FICHIER_CLE = os.path.expanduser("~/.config/oxen/api_key")   # chmod 600, hors du dépôt
+cle = (os.environ.get("OXEN_API_KEY") or subprocess.run(["launchctl", "getenv", "OXEN_API_KEY"], capture_output=True, text=True).stdout.strip()
+       or (open(FICHIER_CLE).read().strip() if os.path.exists(FICHIER_CLE) else ""))
 if not cle: sys.exit("OXEN_API_KEY absente")
 corps = {"model": "gpt-image-2-5-sunburst", "prompt": prompt, "aspect_ratio": a.aspect, "resolution": a.res,
          "quality": a.quality, "output_format": "png", "background": "opaque", "moderation": "low", "response_format": "b64_json"}
