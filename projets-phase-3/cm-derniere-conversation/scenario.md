@@ -1,12 +1,14 @@
 # L'AIR
 
-_Court métrage de fiction, 45 s environ. V3, version moderne (piste A, choisie par Diego le 2026-10-23 : le couloir de la mort), relue à froid par le directeur artistique et corrigée. Dialogues en anglais (choix de Diego, 2026-10-23), traduction française en italique pour la lecture ; l'air reste *À la claire fontaine*. Le découpage minuté pour la génération est dans `script.md`. La V2 (1914-1918) est dans l'historique Git (commit `df5b5b0`)._
+_Court métrage de fiction, 45 s environ. V3, version moderne (piste A, choisie par Diego le 2026-10-23 : le couloir de la mort), relue à froid par le directeur artistique et corrigée. Dialogues en anglais (choix de Diego, 2026-10-23), traduction française en italique pour la lecture ; l'air reste *À la claire fontaine*. V4 : futur proche discret, « la dernière pièce sans micro » (choix de Diego, 2026-10-23 ; proposition détaillée dans `adaptation-futur-proche.md`), corrigée après la relecture du directeur artistique : une seule lumière, celle du dôme. Le découpage minuté pour la génération est dans `script.md`. La V2 (1914-1918) est dans l'historique Git (commit `df5b5b0`)._
 
 ---
 
 **1. INT. AUMÔNERIE — JOUR**
 
 Une petite pièce sans âge. Murs de parpaing peints en beige, une croix de bois. Tout en haut, une fenêtre étroite en verre dépoli laisse passer une lumière pâle.
+
+Dans l'angle du plafond, un petit dôme de caméra, recouvert d'un linge blanc plié.
 
 Une table, deux chaises face à face. Sur la table, une bougie dans un verre. Au bord, un plateau : une assiette pleine, à laquelle personne n'a touché.
 
@@ -70,7 +72,7 @@ _(doucement)_
 
 _(Plus tard.)_
 
-Un bourdonnement électrique. Derrière la porte, le pêne d'une serrure claque.
+Un bourdonnement électrique. Derrière la porte, le pêne d'une serrure claque. Dans l'angle du plafond, sous le linge, une petite lumière rouge s'allume.
 
 Ils se figent. Elle regarde la porte. Lui ne regarde qu'elle.
 
@@ -87,9 +89,13 @@ _(Je prierai pour vous.)_
 
 Il ne répond pas. Il la regarde et siffle trois notes de l'air, tout bas.
 
-Puis il sort, à petits pas. Entre ses chevilles, une chaîne courte traîne sur le sol.
+La porte s'ouvre sur un couloir clair et froid, flou. Le bruit du dehors entre d'un coup : une ventilation qui souffle, des pas lointains, une porte métallique qui résonne quelque part.
 
-La porte se referme. Le bourdonnement. Le pêne qui claque.
+Il sort, à petits pas. À ses chevilles, des entraves d'acier ; entre elles, une chaîne courte traîne sur le sol.
+
+La porte se referme. Le bruit du dehors se coupe net. Le pêne qui claque.
+
+Sous le linge, la lumière rouge s'éteint.
 
 Silence.
 
