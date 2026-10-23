@@ -1,6 +1,6 @@
 # « L'Air » — préparation de la génération
 
-_Le scénario et le découpage font foi (`script.md`, `scenario.md`) ; ce fichier ne garde que les choix de génération. Remplace le projet `cm-cyberpunk` (Diego, 2026-10-23), dont il reprend la chaîne (Blender → GPT → génération sur Oxen) et les leçons. Médias : `/Volumes/SSD FAST/CM TEST /`._
+_Le scénario et le découpage font foi (`script.md`, `scenario.md`) ; ce fichier ne garde que les choix de génération. Depuis le 2026-10-23 (Diego), toute la suite du projet, scénario et découpage compris, se fait dans cette session ; `script.md` est aligné sur `montage.md` V2 (commit a37cd47). Remplace le projet `cm-cyberpunk` (Diego, 2026-10-23), dont il reprend la chaîne (Blender → GPT → génération sur Oxen) et les leçons. Médias : `/Volumes/SSD FAST/CM TEST /`._
 
 ## Décisions de Diego (2026-10-23)
 - Budget de génération : **25 $ sur Oxen**, stratégie économe. Compte ElevenLabs disponible (plan B des voix, bruitages).
