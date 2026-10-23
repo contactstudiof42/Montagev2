@@ -31,3 +31,9 @@ Budget estimé : test 2 $ · Seedance 480p pour régler les prompts ≈ 2,60 $ �
 - Le plan 7b est le plus chargé (trois notes, la porte s'ouvre, la sortie à petits pas avec les entraves, la porte se referme, la lumière s'éteint) en 4 s : risque d'actions oubliées (leçon de studiof42-rise). Proposition : générer 6 s, n'y garder que l'ouverture et la sortie ; la porte qui se referme et la lumière qui s'éteint peuvent passer par le son et par le début du 8b.
 - Le couloir : clair et froid, flou, sans personne, sans blanc brûlé.
 
+## Découpage V2 de `montage.md` (Diego : plus de caméra sur lui, « Later. » sur lui, sa sortie sur lui) : budget recalculé
+- 13 plans. Seedance (répliques à l'écran) : prise continue sur lui ≈ 20 s, sur elle ≈ 16 s, plan 7a ≈ 5 s, soit 41 s. Sans réplique du modèle (1, 6, 7b, 8a, 8b) : 27 s, candidats à Omni Flash.
+- Un passage de réglage (Seedance 480p + Omni 360p) ≈ 6,00 $ ; un passage final (Seedance 720p + Omni 720p) ≈ 14,20 $ ; reste ≈ 4,80 $, dont le test comparatif ≈ 2 $.
+- Si Omni ne passe pas le test, tout en Seedance : 25,80 $ pour deux passages, donc au-dessus du budget ; il faudra alors garder en 480p agrandi les plans sans visage proche (8a, 6, 1).
+- Une prise continue sur lui coûte 4,70 $ en 720p : on la règle en 480p jusqu'à ce que « Later. » soit juste, avant de payer le 720p.
+
