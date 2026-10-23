@@ -24,8 +24,8 @@ _Résumé : le même homme quatre fois (face, trois-quarts, profil, dos), en pie
 
 ### F2 — Lui, le visage
 
-> Character reference sheet, live-action photograph. The same man's head and shoulders shown three times side by side: front view, three-quarter view, side profile. Same scale, eyes at the same height.
-> [Même description du corps et du visage que F1, de « The man » à « not threatening ».] White shirt buttoned to the collar.
+> Character reference sheet, live-action photograph. The exact same man as in @Image1, same face, same hair, same beard: his head and shoulders shown three times side by side: front view, three-quarter view, side profile. Same scale, eyes at the same height.
+> About 30 years old, a giant with a thick neck and very broad shoulders. A Latin American man with warm olive skin. Short dark brown hair, slightly wavy, a little tousled. Thick dark eyebrows, warm dark brown eyes with deep laugh lines at the corners, a strong straight nose, a short trimmed dark beard shadow. A calm, slightly ironic face, a hint of melancholy, not threatening. White shirt buttoned to the collar.
 > Neutral expression, mouth closed, looking straight ahead in each view.
 > Plain mid-grey seamless studio background, soft even studio lighting, neutral white balance. Natural skin texture with pores, real skin, no retouching. 85mm lens. Not CGI, not a 3D render, not an illustration. No text, no labels.
 
@@ -43,8 +43,8 @@ _Résumé : la même religieuse quatre fois, en pied. 75 ans, anglaise, minuscul
 
 ### F4 — Elle, le visage
 
-> Character reference sheet, live-action photograph. The same woman's head and shoulders shown three times side by side: front view, three-quarter view, side profile. Same scale, eyes at the same height.
-> [Même description que F3, de « The woman » à « quietly kind face ».] Dark veil over a white coif framing the face.
+> Character reference sheet, live-action photograph. The exact same woman as in @Image1, same face, same habit: her head and shoulders shown three times side by side: front view, three-quarter view, side profile. Same scale, eyes at the same height.
+> A Catholic nun about 75 years old, tiny, thin, slightly hunched. A deeply wrinkled face. An English woman with very fair, thin, papery skin. A fine, delicate bone structure, high cheekbones, a small straight nose, thin lips. Pale grey-blue eyes, sharp and attentive, with a gentle warmth behind them. A dignified, quietly kind face. Very dark navy veil over a white coif framing the face.
 > Neutral expression, lips pressed together, looking straight ahead in each view.
 > Plain mid-grey seamless studio background, soft even studio lighting, neutral white balance. Natural skin texture, every wrinkle visible, no retouching. 85mm lens. Not CGI, not a 3D render, not an illustration. No text, no labels.
 
@@ -52,7 +52,7 @@ _Résumé : son visage en trois vues, lèvres pincées, même fond gris et même
 
 ### F5 — Les deux, pour l'échelle
 
-> Live-action photograph, scale reference. The man and the woman from the attached reference sheets standing side by side, full body, both facing the camera, on a plain mid-grey seamless studio background. He is 1.95 m tall, she is 1.50 m: the top of her veil reaches the middle of his chest. Same wardrobe as the reference sheets. Soft even studio lighting, neutral white balance, 35mm lens at chest height, both fully in frame with feet visible. Not CGI, no text.
+> Live-action photograph, scale reference. The man from @Image1 and the woman from @Image2, exact same faces, standing side by side, full body, both facing the camera, on a plain mid-grey seamless studio background. He is 1.95 m tall, she is 1.50 m: the top of her veil reaches the middle of his chest. Same wardrobe as the reference sheets. Soft even studio lighting, neutral white balance, 35mm lens at chest height, both fully in frame with feet visible. Not CGI, no text.
 
 _Résumé : les deux côte à côte, en pied ; le haut de son voile arrive au milieu de la poitrine de lui. Se génère après F1 à F4, en joignant F1 et F3 comme références._
 
