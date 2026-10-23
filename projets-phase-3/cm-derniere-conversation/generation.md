@@ -24,3 +24,10 @@ Budget estimé : test 2 $ · Seedance 480p pour régler les prompts ≈ 2,60 $ �
 
 ## Question ouverte
 - Univers : **futur proche discret, « la dernière pièce sans micro »** (Diego, 2026-10-23). Changements proposés à la conversation d'écriture : `adaptation-futur-proche.md` ; à intégrer au scénario et à faire relire par le directeur artistique avant les prompts.
+
+## V4 lue (commit 842184c, 2026-10-23) : points de génération
+- Le dôme couvert doit être dans le cadre des plans 1, 6, 7b et 8b, en un seul exemplaire. Au plan 6 (plan à deux), le cadre doit montrer l'angle du plafond sans montrer les jambes : caméra à hauteur de table, bas du cadre au plateau. À vérifier dans Blender avant toute génération.
+- La lumière rouge sous le linge (allumée du plan 6 au plan 7b, éteinte en 8b) : en post d'office, plan fixe, simple à poser ; le prompt demande le dôme éteint partout.
+- Le plan 7b est le plus chargé (trois notes, la porte s'ouvre, la sortie à petits pas avec les entraves, la porte se referme, la lumière s'éteint) en 4 s : risque d'actions oubliées (leçon de studiof42-rise). Proposition : générer 6 s, n'y garder que l'ouverture et la sortie ; la porte qui se referme et la lumière qui s'éteint peuvent passer par le son et par le début du 8b.
+- Le couloir : clair et froid, flou, sans personne, sans blanc brûlé.
+
