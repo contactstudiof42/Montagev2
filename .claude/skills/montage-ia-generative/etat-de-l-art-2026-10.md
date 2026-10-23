@@ -264,6 +264,33 @@ Liens consultés : `/home/user/Montagev2/sources/ia-generative-2026-10-10.md`. V
 
 ---
 
+## 6. Mise à jour du 2026-10-23 : modèles sortis et workflows de court métrage
+
+Recherche web + catalogue Higgsfield lu par le MCP (`models_explore`, lecture seule) + catalogue Oxen lu dans le navigateur. Rien généré.
+
+### Ce qui a bougé depuis le 10/10
+| Fait | Statut |
+|---|---|
+| **Kling 4.0 sorti** pour tous le 15/10/2026 (communiqué du 16/10) : 3-30 s, 720p à 4K, jusqu'à 15 références (10 images, 5 vidéos ≤ 30 s cumulées, voix, 7 « elements »), 10 images clés, montage d'une vidéo existante (expression, caméra, décor, style). **HDR 10 bits et 4K en 21:9 « bientôt »** ; API en accès anticipé, sans prix. Chez Higgsfield le 21/10 (modes texte, image, références, `video-edit` ; 720p/1080p seulement dans le catalogue). | [SOURCÉ] sec. globenewswire (16/10), orcarouter (22/10) ; off. changelog Higgsfield (21/10) ; catalogue MCP (23/10). |
+| **Seedance 2.5 4K** annoncé le 23/10/2026 (Volcano Engine) : 4K, 10 bits, mode brouillon 480p ; réservé à des entreprises en essai. | [SOURCÉ] sec. technode (23/10/2026). Ne pas le promettre. |
+| Seedance 2.5 chez Higgsfield : modes `t2v`, `omni_reference` (image, vidéo, son), `video_edit`, `video_extension` ; 4-30 s ; 480p-1080p ; **`draft` 480p puis `draft_job_id` pour finaliser la même prise en 1080p sous 7 jours**. Cinema Studio 4.0 expose exactement les mêmes paramètres, plus caméra, objectif, ouverture, époque, rythme, lumière et palette. | [SOURCÉ] catalogue MCP Higgsfield (23/10). « Cinema Studio 4.0 = Seedance 2.5 habillé » : [NON VÉRIFIÉ], déduit des paramètres identiques. |
+| **Genjutsu** (Higgsfield) : transfert de mouvement (`hf_mult_motion_control`) et remplacement d'objet (`hf_mult_replace_object`) ; vidéo de 4 à 30 s + jusqu'à 30 images de référence ; sortie ≤ 1080p ; 15 s = 40 crédits en 480p, 104 en 720p, 144 en 1080p (≈ 7,20 $). **Genjutsu Lite** (19/10) : moins cher, ≤ 15 s, sur Wan 3.0. **Genjutsu Styles** : redessine chaque image d'une vidéo dans un look, mouvement et cadrage gardés. | [SOURCÉ] off. higgsfield.ai/blog/higgsfield-genjutsu (31/08, prix « vérifiés en septembre ») ; changelog (19/10) ; catalogue MCP. |
+| Higgsfield : **Draw To Video** (une vidéo + références), **3D Angles** (19/10), **3D Jutsu** (scène Blender hébergée, `bpy` 5.2, rendu → Seedance 2.5 en image de départ). Compte connecté au MCP : **0 crédit, plan gratuit** (23/10). | [SOURCÉ] catalogue et instructions MCP (23/10). |
+| **Oxen.ai** (compte de Diego, 46 $ au 23/10) : Seedance 2.5 réf. vers vidéo 0,12 $/s, image ou texte vers vidéo 0,11 $/s ; Gemini Omni 1.1 Flash 0,04 $/s ; Wan 3.0 0,06 $/s ; MiniMax H3 Max 0,06-0,09 $/s ; Luma Ray 3.2 vidéo vers vidéo 0,10 $/s ; Kling O3 Omni 0,11 $/s ; Kling 3.0 Motion Control 0,17 $/s ; LTX 2.5 0,17 $/s ; Depth Anything Video 0,05 $/s ; LTX-2.3 IC-LoRA Union Control (profondeur, contours, pose) affiché 0,0028 $/s ; FLUX 3 Image 0,06 $ ; Topaz Starlight Precise 2.6 dès 0,10 $/s. **Ni Kling 4.0 ni Genjutsu.** | [SOURCÉ] off. oxen.ai/ai/models (lu le 23/10). Le 0,0028 $/s : [À VÉRIFIER] (unité douteuse). |
+| Runway (03-23/10) : rien de neuf en génération vidéo (SFX, voix, détourage, plafonds de crédits). | [SOURCÉ] off. runway.com/changelog. |
+
+### Les familles de workflows d'un court métrage IA (oct. 2026) [THÉORIQUE sauf mention]
+1. **Images clés puis image vers vidéo** : bible de look en images fixes (Nano Banana 2.1, FLUX 3, Seedream 5, Midjourney), puis première et dernière image vers vidéo (Kling 4.0, Seedance 2.5, Veo 3.1). Le plus rapide ; caméra approximative, cohérence fragile d'un plan à l'autre.
+2. **Brouillon bon marché, rendu cher** : deux variantes. (a) Même modèle : brouillon 480p de Seedance 2.5 puis finalisation de la même prise en 1080p (paramètre documenté, voir plus haut). (b) Modèle bon marché (Omni Flash, Wan 3.0) pour l'animatique, puis le brouillon sert de référence vidéo au modèle cher : le mouvement passe à peu près, le look change.
+3. **Prévisualisation Blender vers vidéo** : décor en volumes gris et caméra animée dans Blender, rendu passé en référence vidéo (Seedance 2.5 `omni_reference`, Kling 4.0) avec une image de départ pour le look ; variante libre : passe de profondeur vers LTX IC-LoRA. Sources : billets de créateurs et de vendeurs (dev.to, invideo, X) ; « suit la caméra image par image » n'est mesuré nulle part.
+4. **Prise de vue « croquis » vers vidéo à vidéo** (performance filmée, monde remplacé) : Genjutsu, Kling 4.0 `video-edit`, Seedance 2.5 `video_edit`, Luma Ray 3.2, Runway Aleph 2.0. [VU SUR IMAGES] juice.ext (réalisateur IA, Amsterdam, partenaire Higgsfield), reel « Drivers License » (16/10/2026) : trois bandes superposées, rush tourné dans un salon (acteurs assis sur un canapé, lampe, plantes), sortie Genjutsu (même jeu, même cadrage, devenus une voiture dans la campagne irlandaise, puis un bar vu dans un rétroviseur), puis « final : colour & grain » (contraste et densité plus forts, grain, sous-titres). Le jeu, les regards et le rythme viennent du rush. Un commentateur relève que la scène du rétroviseur est inversée. tseily (partenaire Higgsfield, 22/10) : elle se filme chez elle, crée le décor (un wagon de train de luxe) en image fixe avec Seedream 5 Pro, puis Genjutsu Motion Transfer (rush + planche du personnage + image du décor).
+5. **Vrai tournage + décor IA** (VFX classique) : acteur filmé proprement (log, 10 bits, lumière de couleur réelle), décor généré en plaques, compositing ; Beeble SwitchLight 3 pour relighter. La plus chère en travail, la seule dont le visage reste une vraie image.
+6. **En local** : sur le Mac du studio (M1 Max, 32 Go), les modèles ouverts récents (LTX 2.5 : 22 Md de paramètres + encodeur 12 Md) sont hors de portée [THÉORIQUE, déduit des tailles] ; passer par Oxen ou une API.
+
+Sources : globenewswire.com (16/10), orcarouter.ai/blog/kling-4-0-general-availability, technode.com (23/10), higgsfield.ai/blog/higgsfield-genjutsu, higgsfield.ai/creator-hub/changelog, runway.com/changelog, oxen.ai/ai/models, dev.to/glglgl (Blender vers Seedance 2.5, billet promotionnel), docs.ltx.io (Union Control IC-LoRA), cgchannel (SwitchLight 3.0, 11/2025), instagram.com/juice.ext et instagram.com/p/DezKr6EoKSc (vus le 23/10).
+
+---
+
 ## 7. Ce que cette recherche n'a pas couvert
 
 - Le texte EUR-Lex des lignes directrices C(2026) 5054 (lu via cabinets d'avocats seulement).

@@ -11,7 +11,7 @@ Marqueurs : **[SOURCÉ]** lu dans une source datée · **[TESTÉ EN LABO]** fait
 
 _Audit 2 (2026-10-13) : rien n'est encore testé ici (aucune génération faite) ; aucune règle de ce skill n'a été gagnée en projet. Version d'avant : `archives/audit-2/skills/montage-ia-generative/`._
 
-Faits outils à jour au **2026-10-10**, tirés de sources web (aucun modèle génératif n'a été testé ici). État détaillé et sources : [`etat-de-l-art-2026-10.md`](etat-de-l-art-2026-10.md) (prime sur le journal) ; le journal historique des veilles, qui ne faisait pas foi, est archivé (`archives/audit-2/skills/montage-ia-generative/veilles-2026-10.md`). Ce marché change chaque mois : **toute info outil de plus de 3 mois est à revérifier avant un devis**.
+Faits outils à jour au **2026-10-10**, complétés le **2026-10-23** (Kling 4.0, Seedance 2.5, Genjutsu, Oxen, familles de workflows de court métrage : annexe § 6), tirés de sources web (aucun modèle génératif n'a été testé ici). État détaillé et sources : [`etat-de-l-art-2026-10.md`](etat-de-l-art-2026-10.md) (prime sur le journal) ; le journal historique des veilles, qui ne faisait pas foi, est archivé (`archives/audit-2/skills/montage-ia-generative/veilles-2026-10.md`). Ce marché change chaque mois : **toute info outil de plus de 3 mois est à revérifier avant un devis**.
 
 ## 1. Ce que l'IA permet vraiment, artistiquement [THÉORIQUE]
 
@@ -67,8 +67,9 @@ Dates, prix et sources : `etat-de-l-art-2026-10.md` (tableau « Quel outil pour 
 | **Veo 3.1** (Flow, Gemini API) | Généraliste, audio natif, références, extension, insertion/retrait d'objet, 4K | 8 s par clip ; 0,40 $/s en 1080p. **Pas de Veo 4** |
 | **Gemini Omni 1.1 Flash** | Montage conversationnel (texte, image, vidéo, audio) | 3-10 s, 720p (sec.) |
 | **Sora** | — | **Fermé** : appli 26/04/2026, API 24/09/2026, sans successeur |
-| **Kling 3.0 / 4.0** | 4.0 : 30 s, 10 images clés, 4K HDR annoncés | **4.0 complet non sorti au 10/10** (Flash seule, accès anticipé) : ne pas le promettre |
-| **Seedance 2.5** | 30 s en une passe, audio | Mises en demeure Disney/MPA sur la 2.0 |
+| **Kling 4.0** (sorti le 15/10) | 3-30 s, 4K, 15 références dont 5 vidéos, 10 images clés, montage d'une vidéo existante | HDR 10 bits et 21:9 « bientôt » ; API sans prix (annexe § 6) |
+| **Seedance 2.5** | 30 s en une passe, audio ; brouillon 480p puis même prise finalisée en 1080p ; références vidéo, montage, extension | Version 4K/10 bits annoncée le 23/10 pour quelques entreprises seulement ; mises en demeure Disney/MPA sur la 2.0 |
+| **Genjutsu** (Higgsfield) | Rush filmé « croquis » → personnages et décor remplacés, jeu et cadrage gardés | ≤ 30 s, ≤ 1080p ; Lite (Wan 3.0) ≤ 15 s |
 | **Runway Gen-4.5 / Aleph 2.0** | Retoucher une image, propager sur le plan ; ProRes 4444 ; plugins Premiere, AE, Resolve | Pas de Gen-5 |
 | **Hailuo H3** (MiniMax) | 15 s, 2K, son stéréo | Poids ouverts contradictoires |
 | **Luma Ray3.2** | 20 s 1080p, **HDR natif, EXR 16 bits** | Audio non mentionné |
