@@ -37,3 +37,8 @@ Budget estimé : test 2 $ · Seedance 480p pour régler les prompts ≈ 2,60 $ �
 - Si Omni ne passe pas le test, tout en Seedance : 25,80 $ pour deux passages, donc au-dessus du budget ; il faudra alors garder en 480p agrandi les plans sans visage proche (8a, 6, 1).
 - Une prise continue sur lui coûte 4,70 $ en 720p : on la règle en 480p jusqu'à ce que « Later. » soit juste, avant de payer le 720p.
 
+
+## Retouches prévues en post (décisions de Diego, 2026-10-24)
+- **Magenta poussé à l'étalonnage**, la même correction sur toutes les plaques et tous les plans : D1 v2 garde du brun en bas des murs (mesures dans `prompts-gpt.md`).
+- **Plaque D4 (plan 6)** : effacer le panneau de bois appuyé contre le bas de la porte, qu'on pourrait prendre pour une troisième chaise (plan fixe, détail immobile).
+- À surveiller sur chaque plan généré : l'objectif du dôme qui dépasse sous le linge (D1 v2), la croix qui reprend un ornement ou un Christ.
