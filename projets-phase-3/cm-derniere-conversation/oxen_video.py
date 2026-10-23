@@ -2,7 +2,7 @@
 # .venv/bin/python -I oxen_video.py ID MODELE SORTIE.mp4 [--first IMG] [--face IMG ...] [--img IMG ...] [--video MP4 ...]
 #   [--duree 6] [--res 720p] [--aspect 16:9]
 # MODELE : seedance (bytedance-seedance-2-5-reference-to-video) ou omni (gemini-omni-1-1-flash).
-# Seedance : --face → input_face_images (numérotées d'abord), --img → input_images, --video → input_videos.
+# Seedance : --face → input_face_images (numérotées d'abord), --img → input_images, --face-video → input_face_videos (numérotées d'abord), --video → input_videos.
 # Omni : --first → input_image (première image), --img → input_images (3 au plus).
 # Médias envoyés en data URI. Clé et journal comme oxen_image.py.
 import argparse, base64, csv, datetime, json, mimetypes, os, re, subprocess, sys, urllib.request
@@ -13,7 +13,7 @@ PRIX = {("seedance", "480p"): 0.117, ("seedance", "720p"): 0.263, ("seedance", "
 p = argparse.ArgumentParser()
 p.add_argument("id"); p.add_argument("modele", choices=MODELES); p.add_argument("sortie")
 p.add_argument("--first"); p.add_argument("--face", action="append", default=[]); p.add_argument("--img", action="append", default=[])
-p.add_argument("--video", action="append", default=[]); p.add_argument("--duree", type=int, default=6)
+p.add_argument("--video", action="append", default=[]); p.add_argument("--face-video", action="append", default=[]); p.add_argument("--duree", type=int, default=6)
 p.add_argument("--res", default="720p"); p.add_argument("--aspect", default="16:9")
 a = p.parse_args()
 md = open(os.path.join(ICI, "prompts-video.md"), encoding="utf-8").read()
@@ -30,6 +30,7 @@ corps = {"model": MODELES[a.modele], "prompt": prompt, "duration": a.duree, "res
 if a.modele == "seedance":
     if a.face: corps["input_face_images"] = [uri(f) for f in a.face]
     if a.img: corps["input_images"] = [uri(f) for f in a.img]
+    if a.face_video: corps["input_face_videos"] = [uri(f) for f in a.face_video]
     if a.video: corps["input_videos"] = [uri(f) for f in a.video]
     corps["generate_audio"] = True
 else:
@@ -48,7 +49,7 @@ data = base64.b64decode(v["b64_json"]) if v.get("b64_json") else urllib.request.
 open(a.sortie, "wb").write(data)
 duree = (datetime.datetime.now() - debut).seconds
 prix = round(PRIX.get((a.modele, a.res), 0) * a.duree, 3)
-json.dump({"id": a.id, "prompt": prompt, "first": a.first, "face": a.face, "img": a.img, "video": a.video,
+json.dump({"id": a.id, "prompt": prompt, "first": a.first, "face": a.face, "img": a.img, "video": a.video, "face_video": a.face_video,
            **{k: v2 for k, v2 in corps.items() if k.startswith(("model", "duration", "resolution", "aspect", "generate"))}},
           open(os.path.splitext(a.sortie)[0] + ".json", "w"), ensure_ascii=False, indent=1)
 j = os.path.join(ICI, "journal-oxen.csv")

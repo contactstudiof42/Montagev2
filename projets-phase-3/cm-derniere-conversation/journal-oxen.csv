@@ -20,3 +20,4 @@ date,id,modele,qualite,resolution,prix_estime_usd,duree_s,fichier
 2026-10-24T01:20:31,S1,gpt-image-2-5-sunburst,high,2K,0.0517,38,S1_v1.png
 2026-10-24T01:24:38,V1-OMNI,gemini-omni-1-1-flash,6s,720p,0.78,37,P01_omni_720p.mp4
 2026-10-24T01:24:39,V1-SEEDANCE,bytedance-seedance-2-5-reference-to-video,6s,720p,1.578,194,P01_seedance_720p.mp4
+2026-10-24T01:41:11,T1-SEEDANCE,bytedance-seedance-2-5-reference-to-video,5s,480p,0.585,156,T1_seedance_480p.mp4

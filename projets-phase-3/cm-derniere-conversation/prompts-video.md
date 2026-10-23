@@ -35,3 +35,18 @@ _Résumé : première image S1 tenue tout le plan ; caméra fixe ; 0-4 s il siff
 > POSITIVE CONSTRAINTS: their legs and feet stay hidden under the table the whole time; the dome stays covered by the white cloth, its light off; no handcuffs, no shackles, no tattoos; the cross is a plain wooden cross; no text.
 
 _Résumé : même action et même minutage qu'Omni. S1 en référence d'autorité, les quatre fiches pour les visages, D1 v2 pour la pièce, la previz pour la caméra et les positions seulement. Optique de Blender, lumière nommée, son d'ambiance seul._
+
+## Test de transfert de jeu (2026-10-24, demandé par Diego)
+
+_Diego a déjà essayé le mode « Edit » de Seedance : des morceaux de son visage passaient sur le personnage. Ce qui marchait pour lui : un prompt en mode référence, qu'il a donné, recopié ci-dessous. Rush : les 5 dernières secondes de `IMG_8221.MOV` (Diego face caméra : il siffle, sourit, penche la tête, dit quelques mots), converties en 720p SDR : `CM TEST /05_video/refs/diego_essai_5s.mp4`. Seedance 2.5 en 480p, 5 s. Seul ajout au modèle de Diego : la pièce en troisième image._
+
+### T1-SEEDANCE — Transfert de jeu, Seedance 2.5
+
+> A new video of the character from @Image1 and @Image2, in the room from @Image3, performing exactly the same movements, gestures, timing and camera motion as in @Video1.
+
+### Résultat de T1 (2026-10-24)
+_`CM TEST /05_video/test/T1_seedance_480p.mp4` et `T1_rush_gauche_seedance_droite.mp4` ; 156 s de calcul, 0,59 $ ; total Oxen du projet : 3,93 $._
+- **Le jeu passe** [VU SUR IMAGES, 10 instants comparés au rush] : les lèvres en sifflet de 0 à 1 s, le sourire et la tête qui se relève vers 2 s, le cadrage en contre-plongée de la prise. Les écouteurs et le pull de Diego ne sont pas repris : chemise blanche fermée au col, carrure de colosse, magenta et ambre.
+- **Écarts** : le visage dérive d'un instant à l'autre (plus rond à 2 s qu'à 0 s), moins fidèle à F1 que dans le test du plan 1 ; la pièce n'est qu'un mur magenta, sans la porte ni la table de D3 (la prise ne montre qu'un mur, le modèle a suivi le cadre de la prise) ; vers 3,5 s, Diego parle, le personnage sourit bouche fermée.
+- **Ce que ça dit pour la suite** [hypothèses à vérifier] : la prise de Diego doit être cadrée comme le plan voulu (le modèle reprend le cadre et les mouvements de caméra) ; une image de départ du plan (comme S1) en plus des fiches devrait tenir le lieu et le visage ; le 720p devrait aider le visage.
+- **Pour l'œil de Diego** : la fluidité du sourire vers 2 s ; la bouche entre 3 et 4,5 s, qui doit suivre la parole.
