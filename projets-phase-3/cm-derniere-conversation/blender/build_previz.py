@@ -256,10 +256,12 @@ def pose_assis(j, frame, x, face, seat=0.45, lean=0.0, hands="table"):
         k(j[f"hp_{side}"], "rotation_euler", frame, Euler((R(-82), 0, 0)))          # cuisse vers l'avant
         k(j[f"kn_{side}"], "rotation_euler", frame, Euler((R(82), 0, 0)))           # tibia vertical
         k(j[f"an_{side}"], "rotation_euler", frame, Euler((0, 0, 0)))
-        if hands == "table":   # avant-bras posés à plat vers la table
-            k(j[f"sh_{side}"], "rotation_euler", frame, Euler((R(-35), 0, R(4) if side == "g" else R(-4))))
-            k(j[f"el_{side}"], "rotation_euler", frame, Euler((R(-50), 0, 0)))
-            k(j[f"wr_{side}"], "rotation_euler", frame, Euler((R(-5), 0, 0)))
+        if hands == "table":   # avant-bras posés à plat sur le plateau (angles cherchés par le calcul : dessous de l'avant-bras à 0,775 m)
+            shx, elx, wrx = (-64, -34, 5) if j is lui else (-82, -18, -5)   # avant-bras à plat sur le plateau (recherche par le calcul)
+            shx -= 1.3 * math.degrees(lean)   # penché en avant, le buste emporte les bras vers l'arrière : l'épaule compense, l'avant-bras reste sur le plateau
+            k(j[f"sh_{side}"], "rotation_euler", frame, Euler((R(shx), 0, R(4) if side == "g" else R(-4))))
+            k(j[f"el_{side}"], "rotation_euler", frame, Euler((R(elx), 0, 0)))
+            k(j[f"wr_{side}"], "rotation_euler", frame, Euler((R(wrx), 0, 0)))
         else:                  # mains sur les genoux
             k(j[f"sh_{side}"], "rotation_euler", frame, Euler((R(-20), 0, 0)))
             k(j[f"el_{side}"], "rotation_euler", frame, Euler((R(-80), 0, R(-15) if side == "g" else R(15))))
@@ -293,37 +295,45 @@ pose_assis(elle, F(16.4), XE, -1, lean=R(8)); pose_assis(elle, F(18.2), XE, -1)
 tete(lui, F(19.2), 0, -8); tete(lui, F(19.6), 35, 8); tete(lui, F(20.6), 35, 8); tete(lui, F(21.0), 0, -6)
 # 5a : elle regarde sa montre (22,4-23,6) en levant le poignet gauche, puis se tourne vers lui
 tete(elle, F(22.2), 0, -3); tete(elle, F(22.6), -10, -35); tete(elle, F(23.6), -10, -35); tete(elle, F(24.1), 0, -2)
-k(elle["el_g"], "rotation_euler", F(22.3), Euler((R(-50), 0, 0))); k(elle["el_g"], "rotation_euler", F(22.7), Euler((R(-95), 0, R(-25))))
-k(elle["el_g"], "rotation_euler", F(23.6), Euler((R(-95), 0, R(-25)))); k(elle["el_g"], "rotation_euler", F(24.0), Euler((R(-50), 0, 0)))
+k(elle["el_g"], "rotation_euler", F(22.3), Euler((R(-18), 0, 0))); k(elle["el_g"], "rotation_euler", F(22.7), Euler((R(-110), 0, R(-25))))
+k(elle["el_g"], "rotation_euler", F(23.6), Euler((R(-110), 0, R(-25)))); k(elle["el_g"], "rotation_euler", F(24.0), Euler((R(-18), 0, 0)))
 # 5b : sa main glisse vers la sienne, sans la toucher (25,4-26,6)
-k(lui["sh_d"], "rotation_euler", F(25.4), Euler((R(-35), 0, R(-4)))); k(lui["sh_d"], "rotation_euler", F(26.6), Euler((R(-62), 0, R(-14))))
-k(lui["el_d"], "rotation_euler", F(25.4), Euler((R(-50), 0, 0))); k(lui["el_d"], "rotation_euler", F(26.6), Euler((R(-25), 0, 0)))
-k(lui["sh_d"], "rotation_euler", F(30.8), Euler((R(-62), 0, R(-14)))); k(lui["el_d"], "rotation_euler", F(30.8), Euler((R(-25), 0, 0)))
+k(lui["sh_d"], "rotation_euler", F(25.4), Euler((R(-64), 0, R(-4)))); k(lui["sh_d"], "rotation_euler", F(26.6), Euler((R(-70), 0, R(-14))))
+k(lui["el_d"], "rotation_euler", F(25.4), Euler((R(-34), 0, 0))); k(lui["el_d"], "rotation_euler", F(26.6), Euler((R(-22), 0, 0)))
+k(lui["sh_d"], "rotation_euler", F(30.8), Euler((R(-70), 0, R(-14)))); k(lui["el_d"], "rotation_euler", F(30.8), Euler((R(-22), 0, 0)))
 # 6 : elle tourne la tête vers la porte (28,3) ; lui la regarde ; la diode rouge s'allume au pêne (28,4)
 tete(elle, F(28.2), 0, -2); tete(elle, F(28.7), -14, 4); tete(elle, F(31.0), -14, 4)   # vers la porte, derrière lui
 led_m = M["led"].node_tree.nodes["Principled BSDF"].inputs["Emission Strength"]
 for t, v in ((0, 0), (28.35, 0), (28.45, 30), (38.9, 30), (39.0, 0)): led_m.default_value = v; led_m.keyframe_insert("default_value", frame=F(t))
 # 7a : raccord dans le mouvement : il commence à se lever à la fin du plan 6 (30,8), on coupe à 31,0 pendant le lever,
 # il est debout à 32,0 ; elle se lève (32,3-33,3) et lui arrive à la poitrine
-pose_assis(lui, F(30.8), XL, +1); pose_debout(lui, F(32.0), XL + 0.10, +1)
-k(lui["sh_d"], "rotation_euler", F(30.8), Euler((R(-62), 0, R(-14)))); k(lui["el_d"], "rotation_euler", F(30.8), Euler((R(-25), 0, 0)))
-pose_assis(elle, F(32.3), XE, -1); pose_debout(elle, F(33.3), XE - 0.10, -1)
+pose_assis(lui, F(30.8), XL, +1); pose_debout(lui, F(32.0), XL + 0.08, +1)
+k(lui["sh_d"], "rotation_euler", F(30.8), Euler((R(-70), 0, R(-14)))); k(lui["el_d"], "rotation_euler", F(30.8), Euler((R(-22), 0, 0)))
+for side in ("g", "d"):
+    k(lui[f"sh_{side}"], "rotation_euler", F(31.2), Euler((R(-12), 0, 0))); k(lui[f"el_{side}"], "rotation_euler", F(31.2), Euler((R(-30), 0, 0)))
+pose_assis(elle, F(32.3), XE, -1); pose_debout(elle, F(33.3), XE - 0.06, -1)
+k(ch_elle, "location", F(32.3), Vector((XE, 0, 0))); k(ch_elle, "location", F(33.0), Vector((XE + 0.25, 0, 0)))   # elle recule sa chaise en se levant
 tete(lui, F(32.0), 0, -25); tete(elle, F(33.3), 0, 28)
-k(ch_lui, "location", F(30.8), Vector((XL, 0, 0))); k(ch_lui, "location", F(31.6), Vector((XL - 0.18, 0, 0)))
-# 7b : la porte s'ouvre (35,0-36,0) ; il se tourne (36,0-36,6) et sort à petits pas (36,6-38,8) par la porte
+k(ch_lui, "location", F(30.8), Vector((XL, 0, 0))); k(ch_lui, "location", F(31.6), Vector((XL - 0.33, 0, 0)))   # il recule sa chaise en se levant : il se tient entre la table et la chaise
+# 7b : la porte s'ouvre (35,0-36,0)
 hinge.rotation_euler = (0, 0, 0); hinge.keyframe_insert("rotation_euler", frame=F(35.0))
 hinge.rotation_euler = (0, 0, R(-100)); hinge.keyframe_insert("rotation_euler", frame=F(36.0))
 hinge.keyframe_insert("rotation_euler", frame=F(39.0)); hinge.rotation_euler = (0, 0, 0); hinge.keyframe_insert("rotation_euler", frame=F(39.6))
-pose_debout(lui, F(35.8), XL + 0.10, +1); pose_debout(lui, F(36.4), XL + 0.10, +1, zr=R(150))
-path = [(36.4, XL + 0.10, 0.0), (37.0, -1.10, 0.18), (37.6, -1.45, 0.42), (38.1, -1.95, 0.55), (38.6, -2.6, 0.55)]
-for i, (t, x, y) in enumerate(path):
-    pose_debout(lui, F(t), x, +1, y=y, zr=R(150))
-    if i < len(path) - 1:     # petits pas : chaque demi-pas lève un pied de quelques centimètres seulement (chaîne courte)
-        tm = (t + path[i + 1][0]) / 2; side = "g" if i % 2 else "d"
-        k(lui[f"hp_{side}"], "rotation_euler", F(tm), Euler((R(-12), 0, 0))); k(lui[f"kn_{side}"], "rotation_euler", F(tm), Euler((R(18), 0, 0)))
+# il se dégage de côté entre la table et sa chaise, face à elle (35,8-36,6), se tourne vers la porte une fois sorti de
+# l'espace étroit (36,6-37,0), puis sort à petits pas (37,0-38,5) ; il passe la porte vers 38,1, le cadre reste vide ensuite
+ZD = R(95)                      # face à la porte (vers -X)
+pose_debout(lui, F(35.8), XL + 0.08, +1)
+etapes = [(36.2, XL + 0.08, 0.25, None), (36.6, XL + 0.06, 0.52, None), (37.0, XL + 0.02, 0.55, ZD),
+          (37.5, -1.25, 0.55, ZD), (38.0, -1.85, 0.55, ZD), (38.5, -2.60, 0.55, ZD)]
+prev = 35.8
+for i, (t, x, y, zr) in enumerate(etapes):
+    pose_debout(lui, F(t), x, +1, y=y, zr=zr)
+    tm = (prev + t) / 2; side = "g" if i % 2 else "d"   # petits pas : chaque demi-pas lève un pied de quelques centimètres (chaîne courte)
+    k(lui[f"hp_{side}"], "rotation_euler", F(tm), Euler((R(-12), 0, 0))); k(lui[f"kn_{side}"], "rotation_euler", F(tm), Euler((R(18), 0, 0)))
+    prev = t
 # elle reste debout, puis se rassoit pendant qu'il sort (38,8-39,6) ; mains sur les genoux pour 8a
-pose_debout(elle, F(37.8), XE - 0.10, -1); pose_assis(elle, F(38.6), XE + 0.22, -1, hands="genoux")
-k(ch_elle, "location", F(37.8), Vector((XE, 0, 0))); k(ch_elle, "location", F(38.4), Vector((XE + 0.22, 0, 0)))
+pose_debout(elle, F(37.8), XE - 0.06, -1); pose_assis(elle, F(38.6), XE + 0.22, -1, hands="genoux")
+k(ch_elle, "location", F(37.8), Vector((XE + 0.25, 0, 0))); k(ch_elle, "location", F(38.4), Vector((XE + 0.22, 0, 0)))
 # 8a : ses mains cherchent le chapelet, commencent à se joindre (40,0-40,6), s'arrêtent (40,8)
 k(elle["el_g"], "rotation_euler", F(39.8), Euler((R(-80), 0, R(-15)))); k(elle["el_d"], "rotation_euler", F(39.8), Euler((R(-80), 0, R(15))))
 k(elle["el_g"], "rotation_euler", F(40.6), Euler((R(-88), 0, R(-38)))); k(elle["el_d"], "rotation_euler", F(40.6), Euler((R(-88), 0, R(38))))
