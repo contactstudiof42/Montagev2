@@ -7,7 +7,7 @@ description: Le son au service de l'émotion — intention sonore, sound design,
 
 _Réécrit le 2026-10-13 (audit 2) : chaque règle cite l'erreur qui l'a gagnée ou le mot de Diego qu'elle porte. Savoir (constats mesurés sur 45 vraies vidéos, principes vus sur les films, hors champ, voix off, clichés, recettes) : [savoir.md](savoir.md). Version d'avant : `archives/audit-2/skills/montage-son-et-emotion/`._
 
-**Fait foi sur** : l'intention sonore, le silence, la musique avec ou contre l'image, le hors champ, la voix off, et la compensation de l'écoute. Où couper sur la musique : `montage-rythme` ; couper dans la parole : `montage-grammaire` ; LUFS, crête, downmix : `montage-loudness-livraison` ; SFX kinetic : `montage-kinetic-editing`.
+**Fait foi sur** : l'intention sonore, le silence, la musique avec ou contre l'image, le hors champ, la voix off, et la compensation de l'écoute. Où couper sur la musique : `montage-rythme` ; couper dans la parole : `montage-grammaire` ; LUFS, crête, downmix : `montage-loudness-livraison` ; SFX kinetic : `montage-kinetic-editing` ; écrire le texte d'une voix off : `montage-ecriture-scenario`.
 
 ## 1. Je n'entends rien : ce que je mesure, ce que Diego écoute [universel]
 - **Je mesure** : la re-transcription du son rendu, lue comme un spectateur (phrases complètes, aucun mot coupé) ; l'alignement mot à mot avant toute coupe dans la parole ; l'écart entre la voix et la musique en dB (voix et musique séparées par demucs) ; les trous et les crêtes (spectrogramme, `ebur128`) ; l'attaque ou la crête de chaque son posé contre l'image de son événement.

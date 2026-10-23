@@ -18,6 +18,11 @@ Une ligne par référence déposée dans `videos/a-traiter/` ou nommée dans `vi
 | noahlazoproductions — mariage Nikolas & Faith, titres-répliques (49,3 s, vertical, film en 16:9) ; référence du projet mariage-jo | reseaux | 2026-10-12 | 2026-10-12 | `analyses/reseaux/noahlazoproductions-mariage-nikolas-faith.md` |
 | pivetedomato — détourage et fonds qui changent (7,5 s, 16:9, hors mariage) ; effet voulu pour 5-10 s du mariage-jo | reseaux | 2026-10-12 | 2026-10-12 | `analyses/reseaux/pivetedomato-detourage-fonds.md` |
 
+## Livres fournis par Diego
+| Titre | Ajouté le | Lu le | Ressource |
+|---|---|---|---|
+| Robert McKee, *Story* (1997), PDF scanné ; texte reconnu par OCR dans `videos/livres/mckee-story/` (hors Git) | 2026-10-23 | 2026-10-23 (en entier, 19 chapitres) | `culture/livres/mckee-story/README.md` ; skill `montage-ecriture-scenario` |
+
 ## Inventaire du matériel de la phase 2 dans `videos/` (2026-10-11)
 | Catégorie | Titre | Durée | Analysé |
 |---|---|---|---|

@@ -7,7 +7,7 @@ description: Choisir la structure et les conventions d'un format, et retrouver l
 
 _Réécrit le 2026-10-13 (audit 2) : chaque règle cite l'erreur qui l'a gagnée ou le mot de Diego qu'elle porte. Savoir par format (ce qui vaut pour tous les formats, repères mesurés, pub, vertical, Shorts, clip, corporate, documentaire, fiction, film de mariage, teaser, lacunes) : [savoir.md](savoir.md). Version d'avant : `archives/audit-2/skills/montage-formats/`._
 
-**Fait foi sur** : la structure par format, l'ouverture et la fin d'un film, l'index des règles de chaque genre. YouTube long : `montage-youtube` ; grammaire du kinetic : `montage-kinetic-editing` ; l'intention (le « quoi ») : `montage-direction-artistique`.
+**Fait foi sur** : la structure par format, l'ouverture et la fin d'un film, l'index des règles de chaque genre. YouTube long : `montage-youtube` ; grammaire du kinetic : `montage-kinetic-editing` ; l'intention (le « quoi ») : `montage-direction-artistique` ; écrire l'histoire (script, séquencier, voix off) : `montage-ecriture-scenario`.
 
 ## 1. Le genre d'abord, et une référence de même genre et de même durée
 En tête de `plan.md` : le genre, le ton, la destination ; ils décident quelles règles de genre s'appliquent (`PROMPT-PHASE-3.md`, étape 0). Se comparer suppose une référence du même genre **et de la même durée** : sans elle, le dire à Diego avant de monter. (Gagnée : au mariage, des références de 45 s pour un film de 5 min ; le DA réclamait un titre à 10 s, comme dans les verticaux.)
