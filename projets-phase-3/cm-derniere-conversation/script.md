@@ -1,6 +1,6 @@
-# « L'Air » — court métrage de fiction IA, découpage V4 (futur proche discret)
+# « L'Air » — court métrage de fiction IA, découpage V4 (futur proche discret, 13 plans)
 
-_Écrit le 2026-10-23 avec le skill `montage-ecriture-scenario` (premier script du skill). V1 et V2 (1914-1918) relues à froid par le directeur artistique ; V3 = la piste A choisie par Diego (« le couloir de la mort »), parce qu'il craint que sa cible n'ait pas les codes de 14-18 ; relue à froid par le directeur artistique (« presque ») et corrigée (voir en bas). V4 = la V3 dans un futur proche discret, « la dernière pièce sans micro » (choix de Diego, 2026-10-23 ; proposition de la session de génération : `adaptation-futur-proche.md`). Le même texte en format scénario : `scenario.md`. Statut : à lire par Diego ; rien n'est généré._
+_Écrit le 2026-10-23 avec le skill `montage-ecriture-scenario` (premier script du skill). V1 et V2 (1914-1918) relues à froid par le directeur artistique ; V3 = la piste A choisie par Diego (« le couloir de la mort »), parce qu'il craint que sa cible n'ait pas les codes de 14-18 ; relue à froid par le directeur artistique (« presque ») et corrigée (voir en bas). Découpage aligné le même jour sur `montage.md` (13 plans, environ 46 s). V4 = la V3 dans un futur proche discret, « la dernière pièce sans micro » (choix de Diego, 2026-10-23 ; proposition de la session de génération : `adaptation-futur-proche.md`). Le même texte en format scénario : `scenario.md`. Statut : à lire par Diego ; rien n'est généré._
 
 ## Le brief (Diego, 2026-10-23)
 - Fiction, 45 s au plus (souple). Registre : mystère, peine. Diffusion : pas encore décidée.
@@ -49,54 +49,67 @@ Une petite aumônerie de prison d'un futur proche, sans signe de prison visible 
 ## L'air
 « À la claire fontaine » (chanson traditionnelle, domaine public), seulement sifflée, jamais chantée. Ceux qui connaissent les paroles entendent le refrain (« il y a longtemps que je t'aime, jamais je ne t'oublierai ») ; les autres entendent un air simple. Le film ne dépend pas de ce code.
 
-## Le découpage (plan par plan, minuté)
-Dialogues en anglais (choix de Diego, 2026-10-23), traduction entre parenthèses ; l'air reste *À la claire fontaine*.
+## Le découpage (13 plans, minuté)
+Aligné le 2026-10-23 sur `montage.md` (V2 du découpage de montage, écrit par la session de génération d'après les corrections de Diego : plus de plans sur lui, « Later. » à l'écran sur lui, sa sortie sur lui en pied). Les raccords (J-cut, L-cut, coupes sèches) et la façon de tourner les champs-contrechamps sont détaillés dans `montage.md`. Dialogues en anglais, traduction entre parenthèses ; l'air reste *À la claire fontaine*.
 
 **Plan 1 — 0:00 à 0:05 — plan large, fixe, à hauteur de table**
 - Image : l'aumônerie. Le colosse, en chemise blanche, et la religieuse assis face à face, de profil, la bougie entre eux, le plateau intact au bord de la table ; dans l'angle du plafond, petit mais lisible, le dôme couvert du linge. La table et l'ombre cachent leurs jambes. Il siffle, la tête un peu penchée vers elle.
-- Son : il siffle la première phrase de l'air, doucement. Ambiance de pièce close, ventilation lointaine.
+- Son : il siffle la première phrase de l'air, doucement (post). Ambiance de pièce close, ventilation lointaine.
 
-**Plan 2 — 0:05 à 0:09 — plan rapproché sur elle**
+**Plan 2a — 0:05 à 0:08 — plan rapproché sur elle**
 - Image : elle pince les lèvres et souffle ; la flamme de la bougie se couche.
-- Son : un souffle, pas une note. Lui, hors champ : *« No. That's how you blow out a candle. »* (Non. Ça, c'est pour éteindre une bougie.)
+- Son : un souffle, pas une note. Le début de sa réplique à lui arrive déjà sur la flamme couchée.
 
-**Plan 3 — 0:09 à 0:15 — plan à deux, serré, au-dessus de la table**
-- Image : il lui montre, la bouche exagérément arrondie. Elle le regarde, raide. Il tapote la table du bout des doigts, impatient.
-- Son : elle, *« Nuns don't whistle. »* (Les sœurs, ça ne siffle pas.) Lui, *« Nobody'll hear. »* (Personne n'entendra.)
+**Plan 2b — 0:08 à 0:11 — sur lui**
+- Image : il la regarde, puis arrondit la bouche, exagérément.
+- Son : lui, à l'écran : *« No. That's how you blow out a candle. »* (Non. Ça, c'est pour éteindre une bougie.)
 
-**Plan 4 — 0:15 à 0:20 — plan rapproché sur elle, puis raccord sur lui**
-- Image : elle réessaie ; une note grêle sort, cassée ; ses sourcils se lèvent, surprise. Lui : un coup d'œil vers la croix.
-- Son : la note grêle. Lui, *« See? He didn't strike you down. »* (Vous voyez ? Il ne vous a pas foudroyée.)
+**Plan 3 — 0:11 à 0:16 — sur lui, par-dessus l'épaule d'elle (son voile en amorce, flou)**
+- Image : il lui montre la bouche ronde, puis tapote la table du bout des doigts, impatient.
+- Son : elle, hors champ : *« Nuns don't whistle. »* (Les sœurs, ça ne siffle pas.) Lui, à l'écran : *« Nobody'll hear. »* (Personne n'entendra.)
 
-**Plan 5 — 0:20 à 0:25 — plan rapproché sur elle**
-- Image : elle ne sourit pas ; ses yeux tombent sur sa montre ; elle se tourne vers lui, la gorge serrée. Il pose sa grosse main sur la table, près de la sienne, sans la toucher.
-- Son : elle, *« There's something I have to tell you… »* (Il faut que je vous dise quelque chose…) Lui, doucement : *« Later. »* (Plus tard.)
+**Plan 4a — 0:16 à 0:19 — plan rapproché sur elle**
+- Image : elle réessaie ; une note grêle sort, cassée ; ses sourcils se lèvent, surprise.
+- Son : la note grêle (post).
 
-**Plan 6 — 0:25 à 0:28 — plan à deux**
-- Image : ils se figent. Elle regarde vers la porte ; lui ne regarde qu'elle.
-- Son : hors champ, un bourdonnement électrique, puis le pêne de la serrure qui claque.
-- Lumière : dans l'angle du plafond, sous le linge, une petite lumière rouge s'allume et se voit à travers le tissu (en post si le modèle la rate). Le dôme doit être dans le cadre de ce plan.
+**Plan 4b — 0:19 à 0:22 — sur lui**
+- Image : un coup d'œil vers la croix.
+- Son : lui, à l'écran : *« See? He didn't strike you down. »* (Vous voyez ? Il ne vous a pas foudroyée.) La fin de la phrase déborde sur le plan suivant.
 
-**Plan 7a — 0:28 à 0:31 — plan à deux, cadré à la taille**
-- Image : il se lève et la domine de toute sa taille ; elle se lève, lui arrive à la poitrine.
-- Son : le cliquetis du métal quand il se lève. Elle, *« I'll pray for you. »* (Je prierai pour vous.)
+**Plan 5a — 0:22 à 0:25 — plan rapproché sur elle**
+- Image : elle ne sourit pas ; ses yeux tombent sur sa montre ; elle se tourne vers lui, la gorge serrée.
+- Son : elle, à l'écran : *« There's something I have to tell you… »* (Il faut que je vous dise quelque chose…)
 
-**Plan 7b — 0:31 à 0:35 — plan large, fixe**
-- Image : il la regarde, siffle trois notes, tout bas. La porte s'ouvre sur un couloir clair et froid, flou, sans personne, qui garde de la matière (pas de blanc brûlé). Il sort à petits pas : à ses chevilles, des entraves d'acier, une chaîne courte qui traîne sur le sol. On les voit en marchant, sans insert. Quand la porte se referme, sous le linge, la lumière rouge s'éteint.
-- Son : les trois notes sifflées (il ne répond pas autrement). La porte s'ouvre et le dehors entre d'un coup : une ventilation forte, des pas lointains, une porte métallique qui résonne ; la chaîne qui traîne. La porte se referme : tout se coupe net. Le pêne.
+**Plan 5b — 0:25 à 0:28 — sur lui**
+- Image : il l'écoute, pose sa grosse main sur la table, vers elle, sans la toucher (la main peut sortir du cadre par le bas).
+- Son : lui, doucement, à l'écran : *« Later. »* (Plus tard.) Juste après, le bourdonnement de la serrure commence sur son visage.
 
-**Plan 8a — 0:35 à 0:38 — gros plan sur ses mains à elle**
+**Plan 6 — 0:28 à 0:31 — plan à deux**
+- Image : ils se figent. Elle regarde vers la porte ; lui ne regarde qu'elle. Dans l'angle du plafond, sous le linge, une petite lumière rouge s'allume et se voit à travers le tissu (en post si le modèle la rate). Le dôme est dans le cadre.
+- Son : le pêne de la serrure qui claque, hors champ.
+
+**Plan 7a — 0:31 à 0:34 — plan à deux, cadré à la taille**
+- Image : il se lève et la domine de toute sa taille ; elle se lève à son tour, lui arrive à la poitrine.
+- Son : le cliquetis du métal quand il se lève. Elle, à l'écran : *« I'll pray for you. »* (Je prierai pour vous.)
+
+**Plan 7b — 0:34 à 0:39 — sur lui, en pied, fixe**
+- Image : il la regarde et siffle trois notes, tout bas. La porte s'ouvre à côté de lui sur un couloir clair et froid, flou, sans personne, qui garde de la matière (pas de blanc brûlé). Il se tourne et sort du cadre à petits pas : on voit les entraves d'acier et la chaîne courte qui traîne pendant qu'il marche, sans insert. Le cadre reste vide un instant, la lumière froide du couloir sur le sol.
+- Son : les trois notes sifflées (post ; il ne répond pas autrement). La porte s'ouvre et le dehors entre d'un coup : une ventilation forte, des pas lointains, une porte métallique qui résonne ; la chaîne qui traîne. Coupe sèche : la porte se referme hors champ et tout le bruit se coupe net sur la coupe. La lumière rouge du dôme s'éteint avec la porte.
+
+**Plan 8a — 0:39 à 0:41 — gros plan sur ses mains à elle**
 - Image : sur ses genoux, ses mains cherchent le chapelet, commencent à se joindre, puis s'arrêtent.
-- Son : silence ; la ventilation, très loin.
+- Son : silence ; la ventilation, très loin. Sa première note sifflée commence sur ses mains arrêtées.
 
-**Plan 8b — 0:38 à 0:43 — elle, de profil, devant la chaise vide**
+**Plan 8b — 0:41 à 0:46 — elle, de profil, devant la chaise vide**
 - Image : la fenêtre pâle derrière elle ; la lumière du dôme éteinte ; la flamme de la bougie tremble à peine.
-- Son : elle siffle la première phrase de l'air, juste cette fois, fragile, jusqu'au bout. Coupe au noir sur la dernière note.
+- Son : elle siffle la première phrase de l'air (post), juste cette fois, fragile, jusqu'au bout. La dernière note résonne une seconde sur le noir.
 
-**Fin — 0:43 à 0:45**
-- Noir. Titre : L'AIR (en anglais, *AIR* garderait le double sens : un air, et le souffle).
+**Fin — après 0:46**
+- Noir, puis le titre : L'AIR (en anglais, *AIR* garderait le double sens : un air, et le souffle).
 
-**Durée** : 45 s. **Dialogue** : 30 mots anglais en 7 répliques, soit 0,7 mot par seconde de film, sous le débit mesuré (voir plus bas).
+Répartition : sur lui 2b, 3, 4b, 5b, 7b (environ 19 s) ; sur elle 2a, 4a, 5a, 8a, 8b (environ 15 s) ; à deux 1, 6, 7a (environ 11 s).
+
+**Durée** : environ 46 s, souple. **Dialogue** : 31 mots anglais en 7 répliques, soit 0,7 mot par seconde de film, sous le débit mesuré (voir plus bas).
 
 ## Ce qui se relit après la fin (préparations et récompenses)
 - « Nobody'll hear. » : c'est littéral (le dôme couvert, dont la lumière ne s'allume qu'au plan 6) ; et plus personne n'entendra rien de lui.
@@ -123,17 +136,17 @@ Débit du dialogue de fiction (français, puis anglais), mesuré le 2026-10-23 p
 | *Le Dîner de cons*, 4 min (comédie) | 3,2 | 4,9 |
 | *Aftersun*, version originale anglaise, mêmes 10 min | 1,4 | 2,4 |
 
-Le registre de *L'Air* est celui d'*Aftersun* : en anglais, 1,4 mot par seconde de film sur ce passage intime. Avec 30 mots en 45 s (0,7), il reste de la place pour les silences.
+Le registre de *L'Air* est celui d'*Aftersun* : en anglais, 1,4 mot par seconde de film sur ce passage intime. Avec 31 mots en 46 s (0,7), il reste de la place pour les silences.
 
 ## Faisabilité en génération (à transmettre à la session qui prépare l'IA)
-- **Dix plans de 3 à 6 s**, une action principale par plan (le plan 7 est scindé en 7a, se lever, et 7b, sortir) : dans les durées sûres de Seedance 2.5. Générer 4 à 5 s et couper.
-- **Les entraves invisibles jusqu'au plan 7b** : cadrages à hauteur de table ou au-dessus, jamais sur les jambes. À vérifier à chaque prise : le modèle peut montrer les jambes ou ajouter des menottes aux poignets (ce qui éventerait tout).
-- **Aucun tatouage** : c'est aussi ce qui dérive le plus d'une prise à l'autre [THÉORIQUE]. **Le plateau intact et le dôme couvert** doivent rester identiques dans chaque plan large (1, 6, 7b, 8b), le dôme en un seul exemplaire, couvert d'un linge, sans cage ni objet ajouté.
+- **Treize plans de 2 à 5 s**, une action principale par plan. Les échanges se tournent en champ-contrechamp : une prise continue sur lui (2b, 3, 4b, 5b) et une sur elle (2a, 4a, 5a), les plans seuls avec 1 s de marge (détail : `montage.md`, « Ce que ça demande à la génération »).
+- **Les entraves invisibles jusqu'au plan 7b** : cadrages à hauteur de table ou au-dessus, jamais sur les jambes ; le 7a est cadré à la taille ; seule la prise du 7b, en pied, montre le sol. À vérifier à chaque prise : le modèle peut montrer les jambes ou ajouter des menottes aux poignets (ce qui éventerait tout).
+- **Aucun tatouage** : c'est aussi ce qui dérive le plus d'une prise à l'autre [THÉORIQUE]. **Le plateau intact et le dôme couvert** doivent rester identiques dans chaque plan où ils sont dans le cadre (au moins 1, 6 et 8b), le dôme en un seul exemplaire, couvert d'un linge, sans cage ni objet ajouté.
 - **La lumière rouge du dôme** (plans 6 à 7b) : en post si le modèle la rate. Le couloir du plan 7b est généré, sinon remplacé en post ; il garde de la matière (pas de blanc brûlé, règle de Diego, carnet entrée 6). Les entraves d'acier sont décrites dans le seul prompt du plan 7b.
 - **L'émotion ne repose pas sur le jeu** (`montage-ia-generative` : l'IA ne joue pas). Les moments forts passent par des actions et des objets : souffler, la note, la montre, la serrure, les entraves, les mains, l'air sifflé. Aucun gros plan de larmes.
-- **Le sifflement et l'air ne doivent pas venir du modèle** : enregistrés (une vraie personne) ou composés en post. Plans où l'on voit siffler (1, 4, 7b, 8b) courts, bouche de profil ou partiellement cachée.
+- **Le sifflement et l'air ne doivent pas venir du modèle** : enregistrés (une vraie personne) ou composés en post. Plans où l'on voit siffler (1, 4a, 7b, 8b) courts, bouche de profil, partiellement cachée ou petite dans le cadre (le 7b est en pied).
 - **Les sons de la révélation** (bourdonnement, pêne, cliquetis, chaîne qui traîne, le dehors qui entre puis se coupe net) : en post, précis et secs ; ce sont eux qui font comprendre. Une ambiance continue sous tout le film pour que les coupes entre prises ne sautent pas.
-- **La voix** : la justesse de « Later » décide du film ; générer plusieurs prises, ou une voix dédiée posée sur l'image.
+- **La voix** : « Later. » est dit à l'écran, sur lui (plan 5b, choix de Diego) ; sa justesse décide du film. Générer plusieurs prises, et garder le plan B : la réplique faite dans ElevenLabs, puis synchronisée sur les lèvres.
 
 ## Note pour Diego
 **À lire à voix haute, ou à faire lire, avant de générer** :
