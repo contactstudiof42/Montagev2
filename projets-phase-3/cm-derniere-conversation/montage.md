@@ -42,7 +42,7 @@ Il l'écoute, pose sa grosse main sur la table, vers elle (la main peut sortir d
 
 **6 — 0:28 à 0:31 — plan à deux**
 Ils se figent ; elle regarde la porte, lui ne regarde qu'elle. Sous le linge, la lumière rouge s'allume (post).
-→ **coupe franche sur le mouvement** : il commence à se lever ; le cliquetis du métal tombe sur son lever.
+→ **raccord dans le mouvement** : il commence à se lever dans les 4 dernières images du 6, on coupe pendant le lever ; au 7a la caméra l'accompagne en remontant jusqu'au cadre à la taille (corrigé le 2026-10-24 : un cadre fixe à la taille coupait leurs têtes assises en bas de l'image). Le cliquetis du métal tombe sur son lever.
 
 **7a — 0:31 à 0:34 — plan à deux, cadré à la taille**
 Il se lève et la domine ; elle se lève à son tour : « I'll pray for you. » (à l'écran).

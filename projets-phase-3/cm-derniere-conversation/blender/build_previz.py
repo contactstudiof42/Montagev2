@@ -303,11 +303,13 @@ k(lui["sh_d"], "rotation_euler", F(30.8), Euler((R(-62), 0, R(-14)))); k(lui["el
 tete(elle, F(28.2), 0, -2); tete(elle, F(28.7), -14, 4); tete(elle, F(31.0), -14, 4)   # vers la porte, derrière lui
 led_m = M["led"].node_tree.nodes["Principled BSDF"].inputs["Emission Strength"]
 for t, v in ((0, 0), (28.35, 0), (28.45, 30), (38.9, 30), (39.0, 0)): led_m.default_value = v; led_m.keyframe_insert("default_value", frame=F(t))
-# 7a : il se lève (31,2-32,4), elle se lève (32,6-33,6) ; elle lui arrive à la poitrine
-pose_assis(lui, F(31.2), XL, +1); pose_debout(lui, F(32.4), XL + 0.10, +1)
-pose_assis(elle, F(32.6), XE, -1); pose_debout(elle, F(33.6), XE - 0.10, -1)
-tete(lui, F(32.4), 0, -25); tete(elle, F(33.6), 0, 28)
-k(ch_lui, "location", F(31.2), Vector((XL, 0, 0))); k(ch_lui, "location", F(32.0), Vector((XL - 0.18, 0, 0)))
+# 7a : raccord dans le mouvement : il commence à se lever à la fin du plan 6 (30,8), on coupe à 31,0 pendant le lever,
+# il est debout à 32,0 ; elle se lève (32,3-33,3) et lui arrive à la poitrine
+pose_assis(lui, F(30.8), XL, +1); pose_debout(lui, F(32.0), XL + 0.10, +1)
+k(lui["sh_d"], "rotation_euler", F(30.8), Euler((R(-62), 0, R(-14)))); k(lui["el_d"], "rotation_euler", F(30.8), Euler((R(-25), 0, 0)))
+pose_assis(elle, F(32.3), XE, -1); pose_debout(elle, F(33.3), XE - 0.10, -1)
+tete(lui, F(32.0), 0, -25); tete(elle, F(33.3), 0, 28)
+k(ch_lui, "location", F(30.8), Vector((XL, 0, 0))); k(ch_lui, "location", F(31.6), Vector((XL - 0.18, 0, 0)))
 # 7b : la porte s'ouvre (35,0-36,0) ; il se tourne (36,0-36,6) et sort à petits pas (36,6-38,8) par la porte
 hinge.rotation_euler = (0, 0, 0); hinge.keyframe_insert("rotation_euler", frame=F(35.0))
 hinge.rotation_euler = (0, 0, R(-100)); hinge.keyframe_insert("rotation_euler", frame=F(36.0))
@@ -331,10 +333,10 @@ tete(elle, F(41.2), 0, -10); tete(elle, F(41.9), -25, 18); tete(elle, F(46), -25
 # la jupe suit la position assise ou debout
 def jupe_assise(f): k(jupe, "rotation_euler", f, Euler((R(-82), 0, 0))); k(jupe, "location", f, Vector((0, 0.24, -0.04)))
 def jupe_debout(f): k(jupe, "rotation_euler", f, Euler((0, 0, 0))); k(jupe, "location", f, Vector((0, 0, -0.30)))
-jupe_assise(F(0)); jupe_assise(F(32.6)); jupe_debout(F(33.6)); jupe_debout(F(37.8)); jupe_assise(F(38.6))
+jupe_assise(F(0)); jupe_assise(F(32.3)); jupe_debout(F(33.3)); jupe_debout(F(37.8)); jupe_assise(F(38.6))
 # la chaîne reste entre les chevilles : basse quand il est assis comme debout
-k(chain_root, "location", F(0), Vector((0, 0.45, -0.55))); k(chain_root, "location", F(31.2), Vector((0, 0.45, -0.55)))
-k(chain_root, "location", F(32.4), Vector((0, 0.05, -0.97)))
+k(chain_root, "location", F(0), Vector((0, 0.45, -0.55))); k(chain_root, "location", F(30.8), Vector((0, 0.45, -0.55)))
+k(chain_root, "location", F(32.0), Vector((0, 0.05, -0.97)))
 for o in bpy.data.objects:
     if o.animation_data and o.animation_data.action:
         for fc in o.animation_data.action.fcurves if hasattr(o.animation_data.action, "fcurves") else []:
@@ -362,7 +364,10 @@ cam("CAM_01_large", (0.0, -1.72, 0.95), (0.0, 0.8, 0.95), 24, shift_y=0.14)
 cam("CAM_ELLE", (-0.50, -0.45, 1.18), (0.80, 0.02, 1.16), 50)
 cam("CAM_LUI", (1.70, -0.48, 1.22), (-0.82, 0.02, 1.12), 40)   # par-dessus son épaule droite à elle, côté caméra (axe des 180° : y < 0)
 cam("CAM_06_deux", (1.25, -1.62, 0.92), (-0.6, 1.4, 1.15), 26, shift_y=0.10)
-cam("CAM_07a_taille", (0.0, -1.75, 1.70), (0.0, 0.0, 1.70), 24)
+c7 = cam("CAM_07a_taille", (0.0, -1.75, 1.70), (0.0, 0.0, 1.70), 24)
+# la caméra l'accompagne quand il se lève : elle part de leurs têtes assises (31,0) et remonte au cadre à la taille (32,1)
+c7.rotation_euler = (Vector((0.0, 0.0, 1.42)) - c7.location).to_track_quat("-Z", "Y").to_euler(); c7.keyframe_insert("rotation_euler", frame=F(31.0))
+c7.rotation_euler = (Vector((0.0, 0.0, 1.70)) - c7.location).to_track_quat("-Z", "Y").to_euler(); c7.keyframe_insert("rotation_euler", frame=F(32.1))
 cam("CAM_07b_en_pied", (0.45, -1.62, 1.00), (-1.45, 0.40, 1.0), 18, shift_y=0.07)
 cam("CAM_08a_mains", (0.42, -0.70, 0.98), (0.72, 0.0, 0.63), 55)
 cam("CAM_08b_profil", (0.20, -1.72, 1.05), (0.0, 1.6, 1.30), 20, shift_y=0.05)

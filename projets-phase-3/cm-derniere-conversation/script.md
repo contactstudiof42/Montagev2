@@ -85,11 +85,11 @@ Aligné le 2026-10-23 sur `montage.md` (V2 du découpage de montage, écrit par 
 - Son : lui, doucement, à l'écran : *« Later. »* (Plus tard.) Juste après, le bourdonnement de la serrure commence sur son visage.
 
 **Plan 6 — 0:28 à 0:31 — plan à deux**
-- Image : ils se figent. Elle regarde vers la porte ; lui ne regarde qu'elle. Dans l'angle du plafond, sous le linge, une petite lumière rouge s'allume et se voit à travers le tissu (en post si le modèle la rate). Le dôme est dans le cadre.
+- Image : ils se figent. Elle regarde vers la porte, derrière lui ; lui ne regarde qu'elle. Dans les dernières images, il commence à se lever (raccord dans le mouvement avec le 7a). Dans l'angle du plafond, sous le linge, une petite lumière rouge s'allume et se voit à travers le tissu (en post si le modèle la rate). Le dôme est dans le cadre.
 - Son : le pêne de la serrure qui claque, hors champ.
 
-**Plan 7a — 0:31 à 0:34 — plan à deux, cadré à la taille**
-- Image : il se lève et la domine de toute sa taille ; elle se lève à son tour, lui arrive à la poitrine.
+**Plan 7a — 0:31 à 0:34 — plan à deux, la caméra l'accompagne en remontant jusqu'au cadre à la taille**
+- Image : on entre pendant son lever ; la caméra monte avec lui ; debout, il la domine de toute sa taille ; elle se lève à son tour, lui arrive à la poitrine.
 - Son : le cliquetis du métal quand il se lève. Elle, à l'écran : *« I'll pray for you. »* (Je prierai pour vous.)
 
 **Plan 7b — 0:34 à 0:39 — sur lui, en pied, fixe**
