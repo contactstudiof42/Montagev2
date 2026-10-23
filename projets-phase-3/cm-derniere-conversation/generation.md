@@ -23,4 +23,4 @@ _Le scénario et le découpage font foi (`script.md`, `scenario.md`) ; ce fichie
 Budget estimé : test 2 $ · Seedance 480p pour régler les prompts ≈ 2,60 $ · Seedance 720p, deux prises ≈ 11,40 $ · Omni 360p pour régler ≈ 1 $ · Omni 720p, deux à trois prises ≈ 7,50 $. Total ≈ 24,50 $, sans réserve : les plans ratés deux fois passent en 480p agrandi avec Topaz.
 
 ## Question ouverte
-- Adapter « L'Air » à un univers cyberpunk : piste proposée à Diego le 2026-10-23 (futur proche discret), non tranchée.
+- Univers : **futur proche discret, « la dernière pièce sans micro »** (Diego, 2026-10-23). Changements proposés à la conversation d'écriture : `adaptation-futur-proche.md` ; à intégrer au scénario et à faire relire par le directeur artistique avant les prompts.
