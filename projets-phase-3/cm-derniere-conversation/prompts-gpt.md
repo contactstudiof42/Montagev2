@@ -205,7 +205,7 @@ _`CM TEST /04_gpt/decors/`, 8 images, 0,41 $ ; planche : `planche_decors_v1.jpg`
 - **Écarts notés, sans reprise faute d'accord de Diego** :
   - D4 (plan à deux) : **trois chaises** au lieu de deux (une de trop à gauche, devant la porte). Correction : « exactly two chairs in the room, one on each side of the table ».
   - D7 (porte ouverte) : la chaise a perdu son dossier et devient un tabouret ; le couloir est d'un bleu-vert sombre, pas « clair et froid », et le coin de lumière cyan au sol manque. Correction : « the same wooden chair with a backrest as in the closed-door plate » ; « the corridor is brightly lit, much brighter than the room, a clean white-cyan light that spills a sharp cyan wedge across the floor ».
-  - La croix dérive : un petit ornement de métal au centre sur D4, D5, D6 et D9, et un petit Christ sur D7, alors que le scénario veut une croix de bois nue. Correction : « a plain bare wooden cross, no figure, no metal ornament ». Se corrige aussi en post (retouche d'un détail fixe).
+  - La croix dérive : un petit ornement de métal au centre sur D4, D5, D6 et D9, et peut-être un petit Christ sur D7 [NON VÉRIFIÉ : vu sur l'image réduite], alors que le scénario veut une croix de bois nue. Correction : « a plain bare wooden cross, no figure, no metal ornament ». Se corrige aussi en post (retouche d'un détail fixe).
 
 ## Résultats de D4 v2 et D7 v2 (2026-10-24, corrections demandées par Diego)
 _0,10 $ ; total Oxen du projet : 0,93 $._
@@ -216,7 +216,5 @@ _0,10 $ ; total Oxen du projet : 0,93 $._
 ## Résultat de S1 (2026-10-24)
 _`CM TEST /04_gpt/departs/S1_v1.png`, 1920 × 1088, 0,05 $ ; total Oxen du projet : 0,98 $._
 - **Ce qui tient** [VU SUR IMAGES, recadrages des visages en pleine résolution] : la composition de la previz (lui à gauche tourné vers la droite, elle à droite tournée vers la gauche, donc l'axe de la previz) ; les deux visages fidèles aux fiches ; l'écart de taille (elle lève les yeux vers lui) ; sa bouche arrondie, ses mains à plat ; jambes et chevilles invisibles ; le dôme couvert, sans objectif visible ; visages lisibles, magenta en contre-jour.
-- **Écarts notés, sans reprise faute d'accord de Diego** :
-  - **Son col est ouvert** : le dernier bouton n'est pas fermé, alors que la chemise boutonnée jusqu'au col fait partie du personnage (F1, `script.md`). Correction : reprendre la phrase de F1 (« every button fastened, including the top collar button: the collar is closed tight around his thick neck »).
-  - **La croix porte un petit Christ**, malgré « plain bare wooden cross, no figure » dans le prompt ; la plaque D1 v2 jointe porte déjà un petit ornement au centre, que GPT a pu prendre pour un Christ. Correction : joindre D9 ou D4 v2 (croix nue) comme plaque au lieu de D1 v2, et garder la phrase.
+- **Retenue par Diego** (« le col est fermé et pas de Christ, garde S1 »). Mes deux écarts étaient faux : vérifiés au zoom ×3, le col monte fermé contre le cou et la croix porte un petit anneau usé, pas un Christ. Je les avais jugés sur des recadrages trop petits.
   - L'ambre de la bougie éclaire peu les visages par en dessous ; le magenta domine. Sans gravité, l'étalonnage pousse déjà le magenta.
