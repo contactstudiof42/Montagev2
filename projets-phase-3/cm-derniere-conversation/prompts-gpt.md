@@ -81,6 +81,81 @@ _Résumé : les deux côte à côte, en pied ; le haut de son voile arrive au mi
 
 _Résumé : la pièce vide, cadrée comme le plan large Blender. Parpaing beige sali, croix de bois patinée, fenêtre haute en verre dépoli. Table abîmée, deux chaises vides, bougie dans un verre, plateau-repas intact. Dôme couvert du linge blanc, éteint, dans l'angle du plafond. Seules lumières : le magenta doux et immobile du néon de la ville à travers la fenêtre, avec une légère brume, et l'ambre de la bougie. Noirs profonds qui gardent de la matière. Pellicule 35 mm, grain fin, halos._
 
+### Plaques D2 à D9 (2026-10-24)
+_Chacune se génère avec son rendu Blender (`CM TEST /03_blender/decors_v11/`) en `@Image1` et D1 v2 en `@Image2`. Le plan 8a (D8) suit la sortie : porte refermée, lumière de la pièce seulement, alors que le rendu Blender garde la lumière du couloir._
+
+### D2 — Plan rapproché sur elle (plans 2a, 4a, 5a)
+_Rendu Blender : `decor_P02a_CAM_ELLE.png`._
+
+> Live-action film still, 16:9, an empty room, no people. Use @Image1 only for the geometry: camera position, lens, framing, perspective and the placement of every object; do not copy its flat colors or smooth 3D materials. Use @Image2 as the authority for the look: the same room, the same dirty beige cinder block walls, the same wood, the same magenta key light from the frosted window, the same amber candle, the same haze, grain and deep blacks.
+> 50mm lens at seated eye height, close view: the cinder block wall behind the place where she sits, out of focus, and the top of her empty wooden chair at the bottom of the frame. The wall is lit softly in magenta from the side, falling to black at the left edge.
+> Light, the only two sources: the soft static magenta glow (#C2185B) of a city neon behind the frosted window, washing the walls and ceiling from above, the paint dusty magenta where the light falls and near-black elsewhere; the candle (#FF9F43) as the only warm source. Deep blacks (#0B0A10) still holding texture. Shot on 35mm film, fine grain, gentle halation. Not a video game render, not CGI, live-action cinema. No people, no text, no logos, no screens, no holograms.
+
+_Résumé : Le mur derrière elle, flou, et le haut de sa chaise vide ; magenta latéral._
+
+### D3 — Contrechamp sur lui (plans 2b, 3, 4b, 5b)
+_Rendu Blender : `decor_P02b_CAM_LUI.png`._
+
+> Live-action film still, 16:9, an empty room, no people. Use @Image1 only for the geometry: camera position, lens, framing, perspective and the placement of every object; do not copy its flat colors or smooth 3D materials. Use @Image2 as the authority for the look: the same room, the same dirty beige cinder block walls, the same wood, the same magenta key light from the frosted window, the same amber candle, the same haze, grain and deep blacks.
+> 40mm lens at seated eye height, over the empty place across the table: the wall with the closed metal door behind his empty wooden chair, the table corner in the foreground with the candle in its glass and the untouched meal tray, a dark out-of-focus shape at the right edge of the frame.
+> Light, the only two sources: the soft static magenta glow (#C2185B) of a city neon behind the frosted window, washing the walls and ceiling from above, the paint dusty magenta where the light falls and near-black elsewhere; the candle (#FF9F43) as the only warm source. Deep blacks (#0B0A10) still holding texture. Shot on 35mm film, fine grain, gentle halation. Not a video game render, not CGI, live-action cinema. No people, no text, no logos, no screens, no holograms.
+
+_Résumé : La porte fermée derrière sa chaise vide, la bougie et le plateau au premier plan._
+
+### D4 — Plan à deux, angle du plafond (plan 6)
+_Rendu Blender : `decor_P06_CAM_06_deux.png`._
+
+> Live-action film still, 16:9, an empty room, no people. Use @Image1 only for the geometry: camera position, lens, framing, perspective and the placement of every object; do not copy its flat colors or smooth 3D materials. Use @Image2 as the authority for the look: the same room, the same dirty beige cinder block walls, the same wood, the same magenta key light from the frosted window, the same amber candle, the same haze, grain and deep blacks.
+> 26mm lens at table height, low wide angle toward the corner: the closed door on the left wall, the ceiling corner with the covered dome, the cross and the high frosted window on the back wall, the table with candle and tray, both chairs empty. The bottom of the frame stops at the table top level so no floor is seen in front of the table. In the top left corner of the ceiling, the security camera dome is only a white cloth shape hanging over it: no lens visible, its light off.
+> Light, the only two sources: the soft static magenta glow (#C2185B) of a city neon behind the frosted window, washing the walls and ceiling from above, the paint dusty magenta where the light falls and near-black elsewhere; the candle (#FF9F43) as the only warm source. Deep blacks (#0B0A10) still holding texture. Shot on 35mm film, fine grain, gentle halation. Not a video game render, not CGI, live-action cinema. No people, no text, no logos, no screens, no holograms.
+
+_Résumé : L'angle de la porte et du dôme, la croix, la fenêtre, la table ; sol caché devant la table._
+
+### D5 — Lui debout, cadré à la taille (plan 7a)
+_Rendu Blender : `decor_P07a_CAM_07a_taille.png`._
+
+> Live-action film still, 16:9, an empty room, no people. Use @Image1 only for the geometry: camera position, lens, framing, perspective and the placement of every object; do not copy its flat colors or smooth 3D materials. Use @Image2 as the authority for the look: the same room, the same dirty beige cinder block walls, the same wood, the same magenta key light from the frosted window, the same amber candle, the same haze, grain and deep blacks.
+> 24mm lens at standing eye height, 1.70 m, looking at the back wall: the cross and the bottom of the high frosted window, the table seen slightly from above with the candle and the untouched tray, the two empty chairs on each side.
+> Light, the only two sources: the soft static magenta glow (#C2185B) of a city neon behind the frosted window, washing the walls and ceiling from above, the paint dusty magenta where the light falls and near-black elsewhere; the candle (#FF9F43) as the only warm source. Deep blacks (#0B0A10) still holding texture. Shot on 35mm film, fine grain, gentle halation. Not a video game render, not CGI, live-action cinema. No people, no text, no logos, no screens, no holograms.
+
+_Résumé : Le mur du fond vu debout, la table vue d'un peu au-dessus._
+
+### D6 — En pied vers la porte, porte fermée (plan 7b, début)
+_Rendu Blender : `decor_P07b_CAM_07b_en_pied.png`._
+
+> Live-action film still, 16:9, an empty room, no people. Use @Image1 only for the geometry: camera position, lens, framing, perspective and the placement of every object; do not copy its flat colors or smooth 3D materials. Use @Image2 as the authority for the look: the same room, the same dirty beige cinder block walls, the same wood, the same magenta key light from the frosted window, the same amber candle, the same haze, grain and deep blacks.
+> 18mm lens at waist height, full-height wide view toward the left wall: the closed metal door with its electric lock plate, an empty wooden chair pushed back from the table, the table with candle and tray on the right, the floor visible, the cross and the window on the back wall. In the top left corner of the ceiling, the security camera dome is only a white cloth shape hanging over it: no lens visible, its light off.
+> Light, the only two sources: the soft static magenta glow (#C2185B) of a city neon behind the frosted window, washing the walls and ceiling from above, the paint dusty magenta where the light falls and near-black elsewhere; the candle (#FF9F43) as the only warm source. Deep blacks (#0B0A10) still holding texture. Shot on 35mm film, fine grain, gentle halation. Not a video game render, not CGI, live-action cinema. No people, no text, no logos, no screens, no holograms.
+
+_Résumé : La porte fermée, la chaise reculée, la table ; sol visible._
+
+### D7 — En pied, porte ouverte sur le couloir (plan 7b)
+_Rendu Blender : `decor_P07b_porte_ouverte_CAM_07b_en_pied.png`._
+
+> Live-action film still, 16:9, an empty room, no people. Use @Image1 only for the geometry: camera position, lens, framing, perspective and the placement of every object; do not copy its flat colors or smooth 3D materials. Use @Image2 as the authority for the look: the same room, the same dirty beige cinder block walls, the same wood, the same magenta key light from the frosted window, the same amber candle, the same haze, grain and deep blacks.
+> 18mm lens at waist height, the same view as the closed-door plate but the metal door is wide open onto a corridor. The corridor is bright, clean and cold: a white-cyan light (#B8F3FF), out of focus, empty, no people, still holding texture, no burnt-out white. A cold cyan wedge of light falls through the doorway onto the floor of the room. The rest of the room keeps its magenta and amber light. In the top left corner of the ceiling, the security camera dome is only a white cloth shape hanging over it: no lens visible, its light off.
+> Light, the only two sources: the soft static magenta glow (#C2185B) of a city neon behind the frosted window, washing the walls and ceiling from above, the paint dusty magenta where the light falls and near-black elsewhere; the candle (#FF9F43) as the only warm source. Deep blacks (#0B0A10) still holding texture. Shot on 35mm film, fine grain, gentle halation. Not a video game render, not CGI, live-action cinema. No people, no text, no logos, no screens, no holograms.
+
+_Résumé : La porte ouverte sur un couloir cyan froid, flou, vide ; un coin de lumière cyan au sol._
+
+### D8 — Les mains, bord de la table (plan 8a)
+_Rendu Blender : `decor_P08a_CAM_08a_mains.png`._
+
+> Live-action film still, 16:9, an empty room, no people. Use @Image1 only for the geometry: camera position, lens, framing, perspective and the placement of every object; do not copy its flat colors or smooth 3D materials. Use @Image2 as the authority for the look: the same room, the same dirty beige cinder block walls, the same wood, the same magenta key light from the frosted window, the same amber candle, the same haze, grain and deep blacks.
+> 55mm lens, close, slightly from above: the near corner of the scratched wooden table and the empty seat of the chair beside it, the dark floor between them. Only the room light: magenta from above, a little amber from the candle out of frame, deep blacks under the table.
+> Light, the only two sources: the soft static magenta glow (#C2185B) of a city neon behind the frosted window, washing the walls and ceiling from above, the paint dusty magenta where the light falls and near-black elsewhere; the candle (#FF9F43) as the only warm source. Deep blacks (#0B0A10) still holding texture. Shot on 35mm film, fine grain, gentle halation. Not a video game render, not CGI, live-action cinema. No people, no text, no logos, no screens, no holograms.
+
+_Résumé : Le coin de la table et l'assise de la chaise, en gros plan ; lumière de la pièce seulement._
+
+### D9 — Plan large de fin, profil (plan 8b)
+_Rendu Blender : `decor_P08b_CAM_08b_profil.png`._
+
+> Live-action film still, 16:9, an empty room, no people. Use @Image1 only for the geometry: camera position, lens, framing, perspective and the placement of every object; do not copy its flat colors or smooth 3D materials. Use @Image2 as the authority for the look: the same room, the same dirty beige cinder block walls, the same wood, the same magenta key light from the frosted window, the same amber candle, the same haze, grain and deep blacks.
+> 20mm lens at table height, wide view of the whole room from the front: the cross and the high frosted window on the back wall, the table with candle and untouched tray, both chairs, the closed door at the left edge. In the top left corner of the ceiling, the security camera dome is only a white cloth shape hanging over it: no lens visible, its light off.
+> Light, the only two sources: the soft static magenta glow (#C2185B) of a city neon behind the frosted window, washing the walls and ceiling from above, the paint dusty magenta where the light falls and near-black elsewhere; the candle (#FF9F43) as the only warm source. Deep blacks (#0B0A10) still holding texture. Shot on 35mm film, fine grain, gentle halation. Not a video game render, not CGI, live-action cinema. No people, no text, no logos, no screens, no holograms.
+
+_Résumé : La pièce entière, de face, au 20 mm ; porte fermée à gauche._
+
 ## Résultats des fiches (2026-10-24)
 _Images dans `CM TEST /04_gpt/fiches/`, chacune avec ses réglages en JSON ; dépenses dans `journal-oxen.csv` (6 images Oxen, 0,31 $)._
 - **F1 retenue : `F1_chatgpt.png`**, générée dans ChatGPT (choix de Diego). Les deux versions Oxen sont écartées : v1 au col ouvert ; v2 au col fermé, mais avec un visage plus lourd, moins proche du type demandé.
@@ -105,3 +180,11 @@ _`CM TEST /04_gpt/decors/D1_v2.png`, 0,05 $. Le prompt de D1 ci-dessus contient 
 - **Mesure** (part de l'image, pixels rosés contre pixels bruns, seuils maison) : rose et magenta passent de 5,2 à 8,7 % ; brun et ambre, de 46,8 à 38,7 %. Les noirs sous 0,06 passent de 19,5 à 20,8 %. Le brun domine encore le bas des murs.
 - **Écarts restants** : l'objectif du dôme dépasse encore sous le linge ; une petite pièce de métal est apparue au centre de la croix.
 - **Pistes, sans reprise faute d'accord** : pousser le magenta et baisser les noirs à l'étalonnage, sur toutes les plaques à la fois (une seule correction, la même partout) ; ou une troisième version avec « the lower walls fall into near-black, no brown » et « the dome is a white cloth shape only, no lens visible », sans garantie que GPT pousse plus loin.
+
+## Résultats des plaques D2 à D9 (2026-10-24)
+_`CM TEST /04_gpt/decors/`, 8 images, 0,41 $ ; planche : `planche_decors_v1.jpg`. Total Oxen du projet : 0,83 $._
+- **Bonnes, sans écart notable** [VU SUR IMAGES] : D2 (mur derrière elle), D3 (porte derrière lui), D5 (vue debout), D6 (porte fermée, chaise reculée), D8 (coin de table), D9 (plan large de fin). Le look de D1 v2 est repris partout : même parpaing, même table, même magenta en haut, même bougie, même gobelet.
+- **Écarts notés, sans reprise faute d'accord de Diego** :
+  - D4 (plan à deux) : **trois chaises** au lieu de deux (une de trop à gauche, devant la porte). Correction : « exactly two chairs in the room, one on each side of the table ».
+  - D7 (porte ouverte) : la chaise a perdu son dossier et devient un tabouret ; le couloir est d'un bleu-vert sombre, pas « clair et froid », et le coin de lumière cyan au sol manque. Correction : « the same wooden chair with a backrest as in the closed-door plate » ; « the corridor is brightly lit, much brighter than the room, a clean white-cyan light that spills a sharp cyan wedge across the floor ».
+  - La croix dérive : un petit ornement de métal au centre sur D4, D5, D6 et D9, et un petit Christ sur D7, alors que le scénario veut une croix de bois nue. Correction : « a plain bare wooden cross, no figure, no metal ornament ». Se corrige aussi en post (retouche d'un détail fixe).

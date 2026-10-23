@@ -7,3 +7,11 @@ date,id,modele,qualite,resolution,prix_estime_usd,duree_s,fichier
 2026-10-24T01:09:11,F5,gpt-image-2-5-sunburst,high,2K,0.0517,32,F5_v1.png
 2026-10-24T01:11:03,D1,gpt-image-2-5-sunburst,high,2K,0.0517,31,D1_v1.png
 2026-10-24T01:12:57,D1,gpt-image-2-5-sunburst,high,2K,0.0517,30,D1_v2.png
+2026-10-24T01:14:53,D9,gpt-image-2-5-sunburst,high,2K,0.0517,32,D9_v1.png
+2026-10-24T01:14:53,D4,gpt-image-2-5-sunburst,high,2K,0.0517,32,D4_v1.png
+2026-10-24T01:14:53,D3,gpt-image-2-5-sunburst,high,2K,0.0517,34,D3_v1.png
+2026-10-24T01:14:53,D7,gpt-image-2-5-sunburst,high,2K,0.0517,35,D7_v1.png
+2026-10-24T01:14:53,D2,gpt-image-2-5-sunburst,high,2K,0.0517,35,D2_v1.png
+2026-10-24T01:14:53,D6,gpt-image-2-5-sunburst,high,2K,0.0517,36,D6_v1.png
+2026-10-24T01:14:53,D8,gpt-image-2-5-sunburst,high,2K,0.0517,36,D8_v1.png
+2026-10-24T01:14:53,D5,gpt-image-2-5-sunburst,high,2K,0.0517,36,D5_v1.png
