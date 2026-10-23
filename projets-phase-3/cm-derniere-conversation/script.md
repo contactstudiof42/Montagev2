@@ -46,7 +46,7 @@ Une petite pièce chaulée, presque vide : une table de bois, deux chaises face 
 | 8b | 0:38–0:43 | Elle, de profil, à contre-jour de la fenêtre blanche, devant la chaise vide. La flamme de la bougie tremble à peine. | Elle siffle la première phrase de l'air, juste cette fois, fragile, jusqu'au bout. Coupe au noir sur la dernière note. |
 | — | 0:43–0:45 | Noir. Titre : L'AIR. | Silence. |
 
-**Durée** : 45 s. **Dialogue** : 27 mots en 7 répliques, soit 0,6 mot par seconde de film. Le plafond que je me suis fixé, d'après la mesure, est de 2 mots par seconde de film sur les passages dialogués : la scène respire largement (voir « Ce que j'ai mesuré »).
+**Durée** : 45 s. **Dialogue** : 28 mots en 7 répliques, soit 0,6 mot par seconde de film. Le plafond que je me suis fixé, d'après la mesure, est de 2 mots par seconde de film sur les passages dialogués : la scène respire largement (voir « Ce que j'ai mesuré »).
 
 ## Ce qui se relit après la fin (préparations et récompenses)
 - « Personne n'entendra. » : dans cette pièce, plus personne n'entendra rien de lui.
@@ -77,7 +77,7 @@ Débit du dialogue français de fiction, mesuré le 2026-10-23 par re-transcript
 | *La Haine*, 4 min (dispute) | 2,6 | 4,6 |
 | *Le Dîner de cons*, 4 min (comédie) | 3,2 | 4,9 |
 
-Le registre de *L'Air* est celui d'*Aftersun* : au plus 2 mots par seconde de film. Avec 27 mots en 45 s, il reste de la place pour les silences ; chaque réplique tient largement dans son plan.
+Le registre de *L'Air* est celui d'*Aftersun* : au plus 2 mots par seconde de film. Avec 28 mots en 45 s, il reste de la place pour les silences ; chaque réplique tient largement dans son plan.
 
 ## Faisabilité en génération (à transmettre à la session qui prépare l'IA)
 - **Neuf plans de 3 à 6 s**, une action principale par plan : dans les durées sûres de Seedance 2.5 (4 à 30 s par passe, la dérive croît avec la durée). Générer 4 à 5 s et couper. Le plan 7 a deux actions (enfiler la vareuse, siffler et sortir) : à scinder en deux prises si le modèle en oublie une.
