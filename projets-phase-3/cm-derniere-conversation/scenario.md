@@ -1,6 +1,6 @@
 # L'AIR
 
-_Court métrage de fiction, 45 s environ. V3, version moderne (piste A, choisie par Diego le 2026-10-23 : le couloir de la mort), relue à froid par le directeur artistique et corrigée. Le découpage minuté pour la génération est dans `script.md`. La V2 (1914-1918) est dans l'historique Git (commit `df5b5b0`)._
+_Court métrage de fiction, 45 s environ. V3, version moderne (piste A, choisie par Diego le 2026-10-23 : le couloir de la mort), relue à froid par le directeur artistique et corrigée. Dialogues en anglais (choix de Diego, 2026-10-23), traduction française en italique pour la lecture ; l'air reste *À la claire fontaine*. Le découpage minuté pour la génération est dans `script.md`. La V2 (1914-1918) est dans l'historique Git (commit `df5b5b0`)._
 
 ---
 
@@ -23,19 +23,25 @@ Elle pince les lèvres. Souffle. Rien qu'un souffle.
 La flamme de la bougie se couche.
 
 **LE COLOSSE**
-> Non. Là, vous éteignez une bougie.
+> No. That's how you blow out a candle.
+
+_(Non. Ça, c'est pour éteindre une bougie.)_
 
 Il arrondit la bouche, exagérément, pour lui montrer.
 
 Elle le regarde, raide.
 
 **LA RELIGIEUSE**
-> Une sœur, ça ne siffle pas.
+> Nuns don't whistle.
+
+_(Les sœurs, ça ne siffle pas.)_
 
 Il tapote la table du bout des doigts, impatient.
 
 **LE COLOSSE**
-> Personne n'entendra.
+> Nobody'll hear.
+
+_(Personne n'entendra.)_
 
 Elle hésite. Réessaie.
 
@@ -43,20 +49,26 @@ Une note sort. Grêle, cassée. Ses sourcils se lèvent : surprise d'elle-même.
 
 **LE COLOSSE**
 _(un coup d'œil vers la croix)_
-> Voilà. Et il ne vous a pas foudroyée.
+> See? He didn't strike you down.
+
+_(Vous voyez ? Il ne vous a pas foudroyée.)_
 
 Elle ne sourit pas. Ses yeux tombent sur la petite montre à son poignet.
 
 Elle se tourne vers lui. Sa gorge se serre.
 
 **LA RELIGIEUSE**
-> Il faut que je vous dise…
+> There's something I have to tell you…
+
+_(Il faut que je vous dise quelque chose…)_
 
 Il pose sa grosse main sur la table, tout près de la sienne. Sans la toucher.
 
 **LE COLOSSE**
 _(doucement)_
-> Après.
+> Later.
+
+_(Plus tard.)_
 
 Un bourdonnement électrique. Derrière la porte, le pêne d'une serrure claque.
 
@@ -69,7 +81,9 @@ Debout, il la domine de toute sa taille.
 La religieuse se lève à son tour. Elle lui arrive à la poitrine.
 
 **LA RELIGIEUSE**
-> Je prierai pour vous.
+> I'll pray for you.
+
+_(Je prierai pour vous.)_
 
 Il ne répond pas. Il la regarde et siffle trois notes de l'air, tout bas.
 

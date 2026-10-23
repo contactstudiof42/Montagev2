@@ -13,7 +13,7 @@ Celui qui part console celle qui devait le consoler, en lui laissant un air.
 (Valeur : impuissance → transmission ; cause : le don. Fin ironique : il disparaît, l'air reste.)
 
 ## Synopsis
-Dans une petite aumônerie, un colosse en chemise blanche boutonnée jusqu'au col apprend à siffler à une religieuse minuscule. Elle n'y arrive pas, il s'impatiente, elle finit par sortir une note ; il la taquine d'un regard vers la croix. Elle regarde sa montre et veut lui dire quelque chose ; il l'arrête : « Après. » Une serrure électrique claque. Il se lève dans un cliquetis de métal. Elle promet de prier pour lui ; il lui répond en sifflant trois notes, et sort à petits pas, la chaîne traînant au sol. Restée seule, elle commence à joindre les mains, s'arrête, et siffle l'air qu'il lui a appris.
+Dans une petite aumônerie, un colosse en chemise blanche boutonnée jusqu'au col apprend à siffler à une religieuse minuscule. Elle n'y arrive pas, il s'impatiente, elle finit par sortir une note ; il la taquine d'un regard vers la croix. Elle regarde sa montre et veut lui dire quelque chose ; il l'arrête : « Later. » (plus tard) Une serrure électrique claque. Il se lève dans un cliquetis de métal. Elle promet de prier pour lui ; il lui répond en sifflant trois notes, et sort à petits pas, la chaîne traînant au sol. Restée seule, elle commence à joindre les mains, s'arrête, et siffle l'air qu'il lui a appris.
 
 ## Ce qui change par rapport à la V2, et pourquoi
 | V2 (1914-1918) | V3 (moderne) | Raison |
@@ -23,7 +23,7 @@ Dans une petite aumônerie, un colosse en chemise blanche boutonnée jusqu'au co
 | Pièce chaulée, fenêtre qui blanchit | Aumônerie en parpaing, fenêtre en verre dépoli ; elle regarde sa montre | L'heure passe sans souligner « l'aube » |
 | Une religieuse auprès d'un soldat : licence | Une religieuse accompagne un condamné : pratique réelle (sœur Helen Prejean, histoire portée à l'écran dans *La Dernière Marche*, 1995) | La licence historique disparaît |
 
-Tout le reste est inchangé : la leçon de sifflement, les répliques, « Après », la prière remplacée par l'air.
+Tout le reste est inchangé : la leçon de sifflement, « Après » (en anglais : « Later »), la prière remplacée par l'air.
 
 ## Les personnages (pour les fiches de génération)
 | | LE COLOSSE | LA RELIGIEUSE |
@@ -40,30 +40,61 @@ Une petite aumônerie de prison, sans signe de prison visible : murs de parpaing
 ## L'air
 « À la claire fontaine » (chanson traditionnelle, domaine public), seulement sifflée, jamais chantée. Ceux qui connaissent les paroles entendent le refrain (« il y a longtemps que je t'aime, jamais je ne t'oublierai ») ; les autres entendent un air simple. Le film ne dépend pas de ce code.
 
-## Le découpage (deux colonnes, minuté)
-| Plan | Temps | Image | Son |
-|---|---|---|---|
-| 1 | 0:00–0:05 | Plan large, fixe, à hauteur de table. L'aumônerie. Le colosse, en chemise blanche, et la religieuse assis face à face, de profil, la bougie entre eux, le plateau intact au bord de la table. La table et l'ombre cachent leurs jambes. Il siffle, la tête un peu penchée vers elle. | Il siffle la première phrase de l'air, doucement. Ambiance : pièce close, un bourdonnement lointain de ventilation. |
-| 2 | 0:05–0:09 | Plan rapproché sur elle. Elle pince les lèvres et souffle : la flamme de la bougie se couche. | Un souffle, pas une note. LE COLOSSE (hors champ) : « Non. Là, vous éteignez une bougie. » |
-| 3 | 0:09–0:15 | Plan à deux, serré, au-dessus de la table. Il lui montre, la bouche exagérément arrondie. Elle le regarde, raide. Il tapote la table du bout des doigts, impatient. | LA RELIGIEUSE : « Une sœur, ça ne siffle pas. » LE COLOSSE : « Personne n'entendra. » |
-| 4 | 0:15–0:20 | Plan rapproché sur elle. Elle réessaie. Une note grêle sort, cassée. Ses sourcils se lèvent, surprise. Raccord sur lui : un coup d'œil vers la croix. | La note grêle. LE COLOSSE : « Voilà. Et il ne vous a pas foudroyée. » |
-| 5 | 0:20–0:25 | Plan rapproché sur elle. Elle ne sourit pas. Ses yeux tombent sur sa montre. Elle se tourne vers lui, la gorge serrée. Il pose sa grosse main sur la table, près de la sienne, sans la toucher. | LA RELIGIEUSE : « Il faut que je vous dise… » LE COLOSSE, doucement : « Après. » |
-| 6 | 0:25–0:28 | Plan à deux. Ils se figent. Elle regarde vers la porte ; lui ne regarde qu'elle. | Hors champ : un bourdonnement électrique, puis le pêne de la serrure qui claque. |
-| 7a | 0:28–0:31 | Plan à deux, cadré à la taille : il se lève, il la domine de toute sa taille ; elle se lève, lui arrive à la poitrine. | Le cliquetis du métal quand il se lève. LA RELIGIEUSE : « Je prierai pour vous. » |
-| 7b | 0:31–0:35 | Plan large, fixe : il la regarde, siffle trois notes, tout bas, et sort à petits pas ; entre ses chevilles, la chaîne courte traîne sur le sol. On la voit en marchant, sans insert. | Lui ne répond pas : les trois notes sifflées. La chaîne qui traîne, la porte, le bourdonnement, le pêne. |
-| 8a | 0:35–0:38 | Gros plan sur ses mains à elle, sur ses genoux : elles cherchent le chapelet, commencent à se joindre, puis s'arrêtent. | Silence. La ventilation, très loin. |
-| 8b | 0:38–0:43 | Elle, de profil, devant la chaise vide, la fenêtre pâle derrière elle. La flamme de la bougie tremble à peine. | Elle siffle la première phrase de l'air, juste cette fois, fragile, jusqu'au bout. Coupe au noir sur la dernière note. |
-| — | 0:43–0:45 | Noir. Titre : L'AIR. | Silence. |
+## Le découpage (plan par plan, minuté)
+Dialogues en anglais (choix de Diego, 2026-10-23), traduction entre parenthèses ; l'air reste *À la claire fontaine*.
 
-**Durée** : 45 s. **Dialogue** : 34 mots en 7 répliques, soit 0,8 mot par seconde de film, sous le plafond de 2 mots par seconde de film tiré de la mesure (voir plus bas).
+**Plan 1 — 0:00 à 0:05 — plan large, fixe, à hauteur de table**
+- Image : l'aumônerie. Le colosse, en chemise blanche, et la religieuse assis face à face, de profil, la bougie entre eux, le plateau intact au bord de la table. La table et l'ombre cachent leurs jambes. Il siffle, la tête un peu penchée vers elle.
+- Son : il siffle la première phrase de l'air, doucement. Ambiance de pièce close, ventilation lointaine.
+
+**Plan 2 — 0:05 à 0:09 — plan rapproché sur elle**
+- Image : elle pince les lèvres et souffle ; la flamme de la bougie se couche.
+- Son : un souffle, pas une note. Lui, hors champ : *« No. That's how you blow out a candle. »* (Non. Ça, c'est pour éteindre une bougie.)
+
+**Plan 3 — 0:09 à 0:15 — plan à deux, serré, au-dessus de la table**
+- Image : il lui montre, la bouche exagérément arrondie. Elle le regarde, raide. Il tapote la table du bout des doigts, impatient.
+- Son : elle, *« Nuns don't whistle. »* (Les sœurs, ça ne siffle pas.) Lui, *« Nobody'll hear. »* (Personne n'entendra.)
+
+**Plan 4 — 0:15 à 0:20 — plan rapproché sur elle, puis raccord sur lui**
+- Image : elle réessaie ; une note grêle sort, cassée ; ses sourcils se lèvent, surprise. Lui : un coup d'œil vers la croix.
+- Son : la note grêle. Lui, *« See? He didn't strike you down. »* (Vous voyez ? Il ne vous a pas foudroyée.)
+
+**Plan 5 — 0:20 à 0:25 — plan rapproché sur elle**
+- Image : elle ne sourit pas ; ses yeux tombent sur sa montre ; elle se tourne vers lui, la gorge serrée. Il pose sa grosse main sur la table, près de la sienne, sans la toucher.
+- Son : elle, *« There's something I have to tell you… »* (Il faut que je vous dise quelque chose…) Lui, doucement : *« Later. »* (Plus tard.)
+
+**Plan 6 — 0:25 à 0:28 — plan à deux**
+- Image : ils se figent. Elle regarde vers la porte ; lui ne regarde qu'elle.
+- Son : hors champ, un bourdonnement électrique, puis le pêne de la serrure qui claque.
+
+**Plan 7a — 0:28 à 0:31 — plan à deux, cadré à la taille**
+- Image : il se lève et la domine de toute sa taille ; elle se lève, lui arrive à la poitrine.
+- Son : le cliquetis du métal quand il se lève. Elle, *« I'll pray for you. »* (Je prierai pour vous.)
+
+**Plan 7b — 0:31 à 0:35 — plan large, fixe**
+- Image : il la regarde, siffle trois notes, tout bas, et sort à petits pas ; entre ses chevilles, la chaîne courte traîne sur le sol. On la voit en marchant, sans insert.
+- Son : les trois notes sifflées (il ne répond pas autrement). La chaîne qui traîne, la porte, le bourdonnement, le pêne.
+
+**Plan 8a — 0:35 à 0:38 — gros plan sur ses mains à elle**
+- Image : sur ses genoux, ses mains cherchent le chapelet, commencent à se joindre, puis s'arrêtent.
+- Son : silence ; la ventilation, très loin.
+
+**Plan 8b — 0:38 à 0:43 — elle, de profil, devant la chaise vide**
+- Image : la fenêtre pâle derrière elle ; la flamme de la bougie tremble à peine.
+- Son : elle siffle la première phrase de l'air, juste cette fois, fragile, jusqu'au bout. Coupe au noir sur la dernière note.
+
+**Fin — 0:43 à 0:45**
+- Noir. Titre : L'AIR (en anglais, *AIR* garderait le double sens : un air, et le souffle).
+
+**Durée** : 45 s. **Dialogue** : 30 mots anglais en 7 répliques, soit 0,7 mot par seconde de film, sous le débit mesuré (voir plus bas).
 
 ## Ce qui se relit après la fin (préparations et récompenses)
-- « Personne n'entendra. » : dans cette pièce, plus personne n'entendra rien de lui.
-- « Après. » : il sait qu'il n'y a pas d'après ; ce qu'elle devait dire, c'était l'heure. La montre qu'elle regarde juste avant ; le plateau-repas intact : un dernier repas.
+- « Nobody'll hear. » : dans cette pièce, plus personne n'entendra rien de lui.
+- « Later. » (plus tard) : il sait qu'il n'y a pas de plus tard ; ce qu'elle devait dire, c'était l'heure. La montre qu'elle regarde juste avant ; le plateau-repas intact : un dernier repas.
 - Les mains posées à plat, le corps qui ne bouge pas, la caméra qui ne descend jamais sous la table : il était entravé depuis le début.
 - La chemise blanche boutonnée jusqu'au col : il s'est habillé pour ce jour-là.
-- « Et il ne vous a pas foudroyée » : l'homme qui plaisante avec Dieu est celui qui va le rencontrer.
-- « Une sœur, ça ne siffle pas » ; « Je prierai pour vous », auquel il répond par trois notes : au plan 8, elle choisit l'air plutôt que la prière. C'est le climax, sans un mot.
+- « He didn't strike you down » : l'homme qui plaisante avec Dieu est celui qui va le rencontrer.
+- « Nuns don't whistle » ; « I'll pray for you », auquel il répond par trois notes : au plan 8, elle choisit l'air plutôt que la prière. C'est le climax, sans un mot.
 - La bougie : son souffle la couche au plan 2 ; au plan 8b, son sifflement la fait à peine trembler.
 
 ## Diagnostic (questions du skill, `savoir.md` § 5)
@@ -80,7 +111,9 @@ Débit du dialogue français de fiction, mesuré le 2026-10-23 par re-transcript
 | *La Haine*, 4 min (dispute) | 2,6 | 4,6 |
 | *Le Dîner de cons*, 4 min (comédie) | 3,2 | 4,9 |
 
-Le registre de *L'Air* est celui d'*Aftersun* : au plus 2 mots par seconde de film. Avec 28 mots en 45 s, il reste de la place pour les silences.
+| *Aftersun*, version originale anglaise, mêmes 10 min | 1,4 | 2,4 |
+
+Le registre de *L'Air* est celui d'*Aftersun* : en anglais, 1,4 mot par seconde de film sur ce passage intime. Avec 30 mots en 45 s (0,7), il reste de la place pour les silences.
 
 ## Faisabilité en génération (à transmettre à la session qui prépare l'IA)
 - **Dix plans de 3 à 6 s**, une action principale par plan (le plan 7 est scindé en 7a, se lever, et 7b, sortir) : dans les durées sûres de Seedance 2.5. Générer 4 à 5 s et couper.
@@ -89,18 +122,18 @@ Le registre de *L'Air* est celui d'*Aftersun* : au plus 2 mots par seconde de fi
 - **L'émotion ne repose pas sur le jeu** (`montage-ia-generative` : l'IA ne joue pas). Les moments forts passent par des actions et des objets : souffler, la note, la montre, la serrure, les entraves, les mains, l'air sifflé. Aucun gros plan de larmes.
 - **Le sifflement et l'air ne doivent pas venir du modèle** : enregistrés (une vraie personne) ou composés en post. Plans où l'on voit siffler (1, 4, 7b, 8b) courts, bouche de profil ou partiellement cachée.
 - **Les sons de la révélation** (bourdonnement, pêne, cliquetis, chaîne qui traîne) : en post, précis et secs ; ce sont eux qui font comprendre. Une ambiance continue sous tout le film pour que les coupes entre prises ne sautent pas.
-- **La voix** : la justesse de « Après » décide du film ; générer plusieurs prises, ou une voix dédiée posée sur l'image.
+- **La voix** : la justesse de « Later » décide du film ; générer plusieurs prises, ou une voix dédiée posée sur l'image.
 
 ## Note pour Diego
 **À lire à voix haute, ou à faire lire, avant de générer** :
-1. « Non. Là, vous éteignez une bougie. » : drôle et tendre, ou condescendant ?
-2. « Une sœur, ça ne siffle pas. » : sèche avec une pointe d'humour, pas revêche.
-3. « Après. » : douce, pas autoritaire. C'est la réplique dont tout dépend.
-4. « Voilà. Et il ne vous a pas foudroyée. » (nouvelle) : ironique et tendre, ou trop écrite ?
+1. « No. That's how you blow out a candle. » : drôle et tendre, ou condescendant ?
+2. « Nuns don't whistle. » : sèche avec une pointe d'humour, pas revêche.
+3. « Later. » : douce, pas autoritaire. C'est la réplique dont tout dépend.
+4. « See? He didn't strike you down. » : ironique et tendre, ou trop écrite ?
 5. Les trois notes sifflées du plan 7b : se comprennent-elles comme une réponse à « Je prierai pour vous » ?
 
 **Mes doutes** :
-- **La langue, à trancher par toi.** Le couloir de la mort est un code américain ; des voix françaises et *À la claire fontaine* (une comptine d'école française) situent le film en France, où la peine de mort n'existe plus. Le directeur artistique y voit plus qu'un doute : une cible sans codes peut sentir le faux. Deux choix : passer en anglais avec un air traditionnel américain du domaine public, ou assumer un lieu qui n'existe pas (français, pays jamais nommé).
+- **La langue : tranchée par Diego le 2026-10-23** : dialogues en anglais, l'air reste *À la claire fontaine*. Les répliques anglaises n'ont pas été relues par le directeur artistique ; leur naturel et l'accent sont à écouter dès les premières générations.
 - **Les ressemblances** : un colosse doux condamné à mort, c'est John Coffey dans *La Ligne verte* (1999) ; une religieuse auprès d'un condamné, *La Dernière Marche* (1995). La chemise blanche, les cheveux, l'absence de tatouage et l'ironie du personnage l'éloignent de Coffey ; à vérifier sur les premières images.
 - **Le mystère peut tomber plus tôt** si le décor fait trop « prison » (néons, portes métalliques, barreaux). Le décor reste une petite pièce avec une croix, rien d'autre.
 
