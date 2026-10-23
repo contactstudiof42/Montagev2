@@ -1,18 +1,18 @@
 # L'AIR
 
-_Court métrage de fiction, 45 s environ. La V2 de `script.md`, mise en format scénario (le découpage minuté reste dans `script.md`). 2026-10-23._
+_Court métrage de fiction, 45 s environ. V3, version moderne (piste A, choisie par Diego le 2026-10-23 : le couloir de la mort), relue à froid par le directeur artistique et corrigée. Le découpage minuté pour la génération est dans `script.md`. La V2 (1914-1918) est dans l'historique Git (commit `df5b5b0`)._
 
 ---
 
-**1. INT. PIÈCE CHAULÉE — PETIT JOUR**
+**1. INT. AUMÔNERIE — JOUR**
 
-Une pièce nue. Murs blanchis à la chaux, sol de pierre. Une table de bois, deux chaises face à face. Sur la table, une bougie presque consumée.
+Une petite pièce sans âge. Murs de parpaing peints en beige, une croix de bois. Tout en haut, une fenêtre étroite en verre dépoli laisse passer une lumière pâle.
 
-Tout en haut du mur, une fenêtre étroite laisse entrer une lumière grise.
+Une table, deux chaises face à face. Sur la table, une bougie dans un verre. Au bord, un plateau : une assiette pleine, à laquelle personne n'a touché.
 
-D'un côté, un COLOSSE (25 ans) : crâne rasé, épaules de déménageur, mains énormes. Chemise de grosse toile, bretelles. Sur le dossier de sa chaise, dans l'ombre, une veste pliée.
+D'un côté, un COLOSSE (30 ans) : épaules de déménageur, mains énormes posées à plat sur la table, cheveux courts. Une chemise blanche, propre, boutonnée jusqu'au col, comme pour une occasion.
 
-En face, une RELIGIEUSE (75 ans), si petite que ses pieds touchent à peine le sol. Habit noir, guimpe blanche, un chapelet de bois à la ceinture.
+En face, une RELIGIEUSE (75 ans), si petite que ses pieds touchent à peine le sol. Habit et voile, un chapelet de bois à la ceinture.
 
 Il siffle. Doucement, la tête penchée vers elle. Les premières notes d'*À la claire fontaine*.
 
@@ -25,12 +25,14 @@ La flamme de la bougie se couche.
 **LE COLOSSE**
 > Non. Là, vous éteignez une bougie.
 
-Il arrondit la bouche, exagérément, pour lui montrer. Il sourit.
+Il arrondit la bouche, exagérément, pour lui montrer.
 
 Elle le regarde, raide.
 
 **LA RELIGIEUSE**
 > Une sœur, ça ne siffle pas.
+
+Il tapote la table du bout des doigts, impatient.
 
 **LE COLOSSE**
 > Personne n'entendra.
@@ -40,10 +42,10 @@ Elle hésite. Réessaie.
 Une note sort. Grêle, cassée. Ses sourcils se lèvent : surprise d'elle-même.
 
 **LE COLOSSE**
-_(ravi)_
-> Voilà ! Encore.
+_(un coup d'œil vers la croix)_
+> Voilà. Et il ne vous a pas foudroyée.
 
-Mais elle ne recommence pas. Son regard monte vers la fenêtre. La lumière a blanchi.
+Elle ne sourit pas. Ses yeux tombent sur la petite montre à son poignet.
 
 Elle se tourne vers lui. Sa gorge se serre.
 
@@ -56,15 +58,13 @@ Il pose sa grosse main sur la table, tout près de la sienne. Sans la toucher.
 _(doucement)_
 > Après.
 
-Dehors, une clé tourne dans la serrure. Lentement.
+Un bourdonnement électrique. Derrière la porte, le pêne d'une serrure claque.
 
 Ils se figent. Elle regarde la porte. Lui ne regarde qu'elle.
 
-Il se lève. Debout, il la domine de toute sa taille.
+Il se lève. Un cliquetis de métal.
 
-Il prend la veste sur le dossier de sa chaise et l'enfile. Une vareuse bleu horizon, usée. Il la boutonne jusqu'au col.
-
-Un soldat.
+Debout, il la domine de toute sa taille.
 
 La religieuse se lève à son tour. Elle lui arrive à la poitrine.
 
@@ -73,9 +73,9 @@ La religieuse se lève à son tour. Elle lui arrive à la poitrine.
 
 Il ne répond pas. Il la regarde et siffle trois notes de l'air, tout bas.
 
-Puis il sort.
+Puis il sort, à petits pas. Entre ses chevilles, une chaîne courte traîne sur le sol.
 
-La porte grince. Un souffle d'air froid. La porte se referme. La clé, de nouveau.
+La porte se referme. Le bourdonnement. Le pêne qui claque.
 
 Silence.
 
@@ -85,7 +85,7 @@ Ses mains cherchent le chapelet. Commencent à se joindre.
 
 S'arrêtent.
 
-Elle lève les yeux vers la fenêtre blanche. Pince les lèvres.
+Elle lève les yeux vers la fenêtre pâle. Pince les lèvres.
 
 Et siffle. La première phrase de l'air, juste cette fois. Fragile. Jusqu'au bout.
 
