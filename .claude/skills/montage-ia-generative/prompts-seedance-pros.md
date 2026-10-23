@@ -42,6 +42,13 @@ Cette grille identique d'un film à l'autre vient probablement de l'assistant de
 14. **Deux façons de découper** : une génération = un plan (le plus courant), ou une génération de 30 s avec des coupes internes de 3 à 5 s (The Breach). Les plans trop courts se rallongent par extension avant ou arrière (The Breach : 84 extensions arrière).
 15. **Raccorder plusieurs générations en un faux plan continu** (défi « Impossible Camera », 21-28/10) : cacher les coupes dans le noir, derrière un objet qui passe, dans un changement d'échelle ou un filé.
 
+## Les scènes de dialogue (1 679 prompts sur 3 482 contiennent des répliques)
+- **La scène écrite déjà montée, dans une seule génération** : la méthode dominante (1 279 prompts de dialogue parlent de coupes, de champ-contrechamp ou d'amorce). Exemple, Count of Three : 16 s en quatre blocs minutés (plan très bas dans l'herbe, contrechamp à travers le feu, plan à deux de profil, gros plan), chaque réplique placée dans son bloc. Le son reste continu d'un plan à l'autre puisqu'il sort d'une seule prise.
+- **Des générations chaînées** : la dernière image du plan précédent, jointe en vidéo, devient la première du suivant (229 prompts, surtout Mercy Ledger).
+- **Des références de voix** : un fichier son par personnage, « WHO speaks, never what is said » (150 prompts) ; les voix restent les mêmes d'une génération à l'autre.
+- **Une bande de dialogue verrouillée** : les répliques sont faites d'abord (ElevenLabs), et chaque plan est généré en synchronisation labiale sur ce fichier, « use it as-is », lèvres immobiles dans les silences (CONTROL, 42 prompts). C'est la seule façon de faire une vraie couverture (même son pour chaque axe) et de choisir les axes au montage.
+- Densité : médiane de 1,6 mot par seconde de génération ; des silences écrits. Les durées des générations de dialogue : 30 s et 20 s le plus souvent.
+
 ## Images de référence
 - Fiches personnage : vues de face, trois-quarts, profil, dos, sur fond blanc uni, parfois une grille d'expressions, « no text » (500YEN).
 - Plaques de décor : « no people » (509 prompts d'images), longues descriptions de l'usure et des sources de lumière réelles ; une plaque de base sert « d'autorité » pour la géométrie et la couleur des plaques suivantes (A Long Lunch).

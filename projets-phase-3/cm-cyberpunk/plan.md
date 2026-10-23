@@ -42,6 +42,13 @@ Un prompt par plan, en anglais, dans cet ordre : SCENE CONTEXT · ACTIVE REFEREN
 Ratio observé chez eux : 3 à 5 secondes générées par seconde gardée, soit 90 à 150 s pour nos 30 s ; cohérent avec le budget ci-dessus.
 Piste de DA à discuter : le cyberpunk sans néon (tubes fluorescents verdâtres, comme un des films de nuit du festival) pour sortir du cliché.
 
+## Le dialogue (Diego, 2026-10-23 : 30 s de dialogue, un plan large, un champ-contrechamp)
+- **Pas de couverture par axe** (30 s de plan large + 30 s par contrechamp) : 90 s générées pour 30 s, soit 23 $ en 720p pour un seul passage, et chaque génération invente son propre rythme et ses propres voix, donc on ne peut pas couper d'un axe à l'autre au milieu d'une réplique.
+- **Retenu** : la scène écrite déjà montée, en deux générations d'environ 15 s (plan large et contrechamps minutés dans le prompt, une réplique par bloc), la seconde chaînée sur la dernière image de la première ; une référence de voix par personnage pour garder les mêmes voix ; previz Blender avec trois caméras (large, champ, contrechamp) montée selon le même minutage, en `@Video1` pour la composition de chaque bloc (axe et regards respectés).
+- Coût d'un passage complet : 3,60 $ en 480p, 7,80 $ en 720p. Le choix au montage se fait entre les prises de chaque bloc, plus de petits décalages de coupe ; la nappe d'ambiance en post cache les différences de son entre prises.
+- Références de voix : extraites de la première prise réussie (3 à 10 s par personnage), ou enregistrées par de vraies personnes qui y consentent. Plan B si les voix générées déçoivent : bande de dialogue faite d'abord, puis plans synchronisés dessus (méthode de CONTROL, plus chère).
+- Pour l'écriture : environ 45 à 50 mots de dialogue pour 30 s (1,6 mot/s chez les films du festival), avec des silences écrits. Sur Oxen, les images de visages passent dans `input_face_images` (sinon le filtre peut bloquer) ; les voix dans `input_audios` (2 à 30 s chacune).
+
 ## Moyens
 - Clé API Oxen : à venir (Diego). En attendant, Diego génère dans le Workbench d'Oxen.
 - GPT : Diego génère, ou je passe par son profil Chrome « robot » s'il y est connecté (à confirmer).
