@@ -1,0 +1,3 @@
+date,id,modele,qualite,resolution,prix_estime_usd,duree_s,fichier
+2026-10-24T01:04:32,F1,gpt-image-2-5-sunburst,high,2K,0.0517,29,F1_v1.png
+2026-10-24T01:05:20,F1,gpt-image-2-5-sunburst,high,2K,0.0517,29,F1_v2.png

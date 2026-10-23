@@ -18,6 +18,8 @@ FICHIER_CLE = os.path.expanduser("~/.config/oxen/api_key")   # chmod 600, hors d
 cle = (os.environ.get("OXEN_API_KEY") or subprocess.run(["launchctl", "getenv", "OXEN_API_KEY"], capture_output=True, text=True).stdout.strip()
        or (open(FICHIER_CLE).read().strip() if os.path.exists(FICHIER_CLE) else ""))
 if not cle: sys.exit("OXEN_API_KEY absente")
+for n in (3, 2):                                            # clé collée plusieurs fois de suite : un seul exemplaire
+    if len(cle) % n == 0 and cle[:len(cle) // n] * n == cle: cle = cle[:len(cle) // n]; break
 corps = {"model": "gpt-image-2-5-sunburst", "prompt": prompt, "aspect_ratio": a.aspect, "resolution": a.res,
          "quality": a.quality, "output_format": "png", "background": "opaque", "moderation": "low", "response_format": "b64_json"}
 if a.ref:
