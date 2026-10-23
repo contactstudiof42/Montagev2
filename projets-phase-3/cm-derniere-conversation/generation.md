@@ -42,3 +42,14 @@ Budget estimé : test 2 $ · Seedance 480p pour régler les prompts ≈ 2,60 $ �
 - **Magenta poussé à l'étalonnage**, la même correction sur toutes les plaques et tous les plans : D1 v2 garde du brun en bas des murs (mesures dans `prompts-gpt.md`).
 - **Plaque D4 (plan 6)** : effacer le panneau de bois appuyé contre le bas de la porte, qu'on pourrait prendre pour une troisième chaise (plan fixe, détail immobile).
 - À surveiller sur chaque plan généré : l'objectif du dôme qui dépasse sous le linge (D1 v2), la croix qui reprend un ornement ou un Christ.
+
+## Les deux modèles vidéo sur Oxen (API lue le 2026-10-24)
+- **Seedance 2.5 Reference to Video** (`bytedance-seedance-2-5-reference-to-video`) : 0,117 $/s en 480p, 0,263 $/s en 720p, 0,647 $/s en 1080p. 4 à 30 s. Jusqu'à 30 images, 10 vidéos (2 à 30 s, 30 s en tout), 10 sons. Les images de visages vont dans `input_face_images`, sinon le filtre peut bloquer ; dans le prompt, les médias avec visage sont numérotés avant les autres. Son généré par défaut. Mode brouillon 480p, puis rendu final 1080p ou 4K du même brouillon sous 7 jours. Pas de première image : l'image de départ passe en référence.
+- **Gemini Omni 1.1 Flash** (`gemini-omni-1-1-flash`) : 0,039 $/s en 360p, 0,13 $/s en 720p, 0,195 $/s en 1080p (agrandi). 3 à 10 s, 24 i/s, 16:9. Première image (`input_image`) et dernière image (`tail_image_url`) ; 3 images et 3 vidéos de référence (3 s au plus chacune). Son toujours généré, décrit dans le prompt.
+- Appel : `POST https://hub.oxen.ai/api/ai/videos/generate`, bloquant (1 à 10 minutes) ; file d'attente asynchrone `/ai/queue` pour les lots. Les médias passent par URL publique ou par data URI.
+
+## Test Seedance contre Omni (proposé le 2026-10-24, à lancer avec l'accord de Diego)
+- **Plan 1** (0:00 à 0:05, plan large, sans réplique du modèle, sifflement en post) : il montre les deux visages, les matières, le dôme et les jambes cachées, ce qui teste tout ce qui peut lâcher.
+- **Omni Flash, 720p, 6 s** : première image S1 (`prompts-gpt.md`), références F2 et F4 (visages) et D1 v2. ≈ 0,78 $.
+- **Seedance 2.5, 720p, 6 s** : S1, F1 à F4 en images de visages, D1 v2 en image, la previz du plan 1 en `@Video1` (« lis-y la caméra et les positions, pas les couleurs ni les matières »). ≈ 1,58 $.
+- Total ≈ 2,36 $. Jugement : les deux côte à côte, image par image en pleine résolution, avec S1 comme référence de look ; visages fidèles aux fiches, mains, matière, jambes cachées, rien qui apparaît ou disparaît. Le mouvement et le son : liste minutée pour l'œil et l'oreille de Diego.

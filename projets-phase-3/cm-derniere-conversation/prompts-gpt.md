@@ -156,6 +156,24 @@ _Rendu Blender : `decor_P08b_CAM_08b_profil.png`._
 
 _Résumé : La pièce entière, de face, au 20 mm ; porte fermée à gauche._
 
+## Images de départ des plans
+
+### Ce qu'on attend des images de départ
+- **La première image d'un plan**, avec les personnages, dans le décor et le look des plaques. Elle sert de première image à Omni Flash, et de référence à Seedance.
+- **Références jointes** : `@Image1` l'image de la previz à cet instant (positions, cadre, gestes) ; `@Image2` la plaque du décor (lieu, lumière) ; `@Image3` F1, lui ; `@Image4` F3, elle ; `@Image5` F5, l'écart de taille.
+- **Jambes cachées** avant le plan 7b : la table et l'ombre les cachent (`script.md`).
+
+### S1 — Plan 1, première image (0:00)
+
+> Live-action film still, 16:9, wide shot. Recreate exactly the composition of @Image1: camera position, framing, the two people's positions, poses and head angles; replace its grey 3D mannequins with the two real people. The room, its light and its look come from @Image2: same walls, cross, frosted window, table, candle, meal tray, covered camera dome.
+> On the left, seated in profile facing right: the man from @Image3, same face, same curly dark hair and short beard, same white shirt buttoned up to the collar. A giant, broad and heavy. His enormous hands lie flat on the table. His head is tilted slightly toward her, lips softly rounded as he starts to whistle.
+> On the right, seated in profile facing left: the old nun from @Image4, same face, same dark navy habit, veil and white coif, wooden rosary at her waist. She is tiny: seated, her head is far below his, as in @Image5. Her thin hands rest on the table. She watches him, lips pressed, a little stiff.
+> Between them, the candle in its glass; at the near edge of the table, the untouched meal tray. In the top left ceiling corner, the white cloth over the camera dome, no lens visible, its light off. The cross is a plain bare wooden cross, no figure.
+> Exactly one man and one woman in the frame. The table and the shadows below it hide their legs and feet completely: nothing below the table top is visible. No handcuffs, no shackles, no tattoos.
+> Light: the soft static magenta glow (#C2185B) from the frosted window behind them, rim-lighting their profiles from above and behind; the amber candlelight (#FF9F43) lighting their faces softly from below. Both faces clearly readable, never lost in darkness, no blue light on faces. Deep blacks with texture, light haze. Shot on 35mm film, 24mm lens at table height, fine grain, gentle halation. Not a video game render, not CGI, live-action cinema. No text.
+
+_Résumé : la composition de la previz au début du plan 1, avec les vrais personnages (F1, F3) dans la plaque D1 v2. Lui à gauche, de profil, mains à plat, la tête penchée vers elle, la bouche qui s'arrondit ; elle à droite, minuscule, lèvres pincées. Jambes cachées par la table et l'ombre ; magenta en contre-jour, ambre de la bougie par en dessous ; visages lisibles._
+
 ## Résultats des fiches (2026-10-24)
 _Images dans `CM TEST /04_gpt/fiches/`, chacune avec ses réglages en JSON ; dépenses dans `journal-oxen.csv` (6 images Oxen, 0,31 $)._
 - **F1 retenue : `F1_chatgpt.png`**, générée dans ChatGPT (choix de Diego). Les deux versions Oxen sont écartées : v1 au col ouvert ; v2 au col fermé, mais avec un visage plus lourd, moins proche du type demandé.
@@ -194,3 +212,11 @@ _0,10 $ ; total Oxen du projet : 0,93 $._
 - **D7 v2 : retenue.** La chaise a retrouvé son dossier (D6 jointe en `@Image3`) ; la croix est nue ; le couloir est clair, blanc-cyan, flou et vide ; une lueur cyan entre sur le sol. Le battant de la porte s'ouvre vers la pièce. [VU SUR IMAGES]
 - **D4 v2 : à moitié corrigée.** La croix est nue et il n'y a plus que deux chaises. Mais un panneau de bois sombre, de la taille d'un dossier de chaise, reste appuyé contre le bas de la porte, derrière la chaise de gauche : on peut le lire comme une troisième chaise. [VU SUR IMAGES, recadrage en pleine résolution]
 - **Correction possible, sans reprise faute d'accord** : « nothing leans against the door, the door is a plain flat metal door down to the floor » ; ou effacer le panneau en post (détail fixe, plan fixe).
+
+## Résultat de S1 (2026-10-24)
+_`CM TEST /04_gpt/departs/S1_v1.png`, 1920 × 1088, 0,05 $ ; total Oxen du projet : 0,98 $._
+- **Ce qui tient** [VU SUR IMAGES, recadrages des visages en pleine résolution] : la composition de la previz (lui à gauche tourné vers la droite, elle à droite tournée vers la gauche, donc l'axe de la previz) ; les deux visages fidèles aux fiches ; l'écart de taille (elle lève les yeux vers lui) ; sa bouche arrondie, ses mains à plat ; jambes et chevilles invisibles ; le dôme couvert, sans objectif visible ; visages lisibles, magenta en contre-jour.
+- **Écarts notés, sans reprise faute d'accord de Diego** :
+  - **Son col est ouvert** : le dernier bouton n'est pas fermé, alors que la chemise boutonnée jusqu'au col fait partie du personnage (F1, `script.md`). Correction : reprendre la phrase de F1 (« every button fastened, including the top collar button: the collar is closed tight around his thick neck »).
+  - **La croix porte un petit Christ**, malgré « plain bare wooden cross, no figure » dans le prompt ; la plaque D1 v2 jointe porte déjà un petit ornement au centre, que GPT a pu prendre pour un Christ. Correction : joindre D9 ou D4 v2 (croix nue) comme plaque au lieu de D1 v2, et garder la phrase.
+  - L'ambre de la bougie éclaire peu les visages par en dessous ; le magenta domine. Sans gravité, l'étalonnage pousse déjà le magenta.
