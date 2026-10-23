@@ -27,6 +27,7 @@
 
 Répartition prévue : calibrage 2 × 5 s en 480p (1,20 $) · brouillons 480p, environ 2,5 essais par plan (≈ 10,50 $) · finals en 720p, 7 × 5 s (≈ 9,10 $) · réserve ≈ 4 $. **Le 1080p est hors budget**, sauf pour un plan héros. Le finalisé 1080p d'un brouillon (`draft_task_id`) coûte 0,65 $/s ; un final en 720p est une nouvelle prise, pas celle du brouillon.
 À tester sur un plan avant de décider : 480p + Topaz contre 720p + Topaz, comparés en pleine résolution.
+**Règle retenue (Diego, 2026-10-23 : « générer direct en 720p ? »)** : une prise de 480p ne peut pas être refaite en 720p (seulement finalisée en 1080p à 0,65 $/s), et son son est perdu avec elle. Passer par le 480p ne paie que si l'essai fait presque doubler le taux de réussite en 720p (0,12/p + 0,26/p' < 0,26/p ⇔ p'/p > 1,86). Donc : 480p seulement pour les 1 ou 2 premiers essais d'un plan, tant que le prompt a des erreurs visibles (placement, objets en trop, caméra) ; dès qu'il se comporte, 720p direct. Si le test 480p + Topaz tient, une bonne prise en 480p est gardée telle quelle.
 
 ## Leçons reprises du projet « studiof42-rise » (2026-10-05/06, même chaîne Blender → plaques → Seedance 2.5 sur Oxen) [projet : studiof42-rise]
 1. Sans fiche personnage, les visages changent d'un plan à l'autre (Diego).
