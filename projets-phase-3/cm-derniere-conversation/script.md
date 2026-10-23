@@ -30,7 +30,7 @@ Le futur n'entre jamais dans la pièce, qui reste analogique (parpaing, bois, bo
 - **Décor** : dans un angle du plafond, un petit dôme de caméra de surveillance recouvert d'un linge blanc plié, **lisible** dans les plans larges (petit, mais pas caché dans l'ombre). Rien d'autre de technologique dans la pièce.
 - **Plan 6** : quand le pêne claque, une petite lumière rouge s'allume sous le linge et se voit à travers le tissu. La machine entre au tournant, sans un mot ; « Nobody'll hear » devient littéral après coup.
 - **Plan 7b** : la porte s'ouvre sur un couloir clair et froid, flou, sans personne, qui garde de la matière (pas de blanc brûlé) ; le dehors entre par le son (ventilation forte, pas lointains, une porte métallique qui résonne) et se coupe net quand la porte se referme ; entraves d'acier, comme en V3.
-- **Après la sortie** : sous le linge, la lumière rouge s'éteint. Elle siffle donc hors de tout enregistrement (voir « Note pour Diego » : l'autre sens possible).
+- **Après la sortie** : sous le linge, la lumière rouge s'éteint. Elle siffle donc hors de tout enregistrement (choix de Diego, 2026-10-23).
 - **Retiré de la proposition** (`adaptation-futur-proche.md`), après la relecture du directeur artistique : la lueur de couleur derrière la fenêtre (lue comme un gyrophare ou un défaut d'étalonnage), la lueur verte du plan 6 (code du film d'horreur sur le visage d'une vieille religieuse), les bracelets noirs à diode (pour un public français, le bracelet électronique, donc l'assignation à résidence, et le cliché le plus bas de gamme du futur), les bips et l'annonce du couloir (un hôpital d'aujourd'hui). Trois lumières remplacées par une seule.
 - **Écarté** : le coup d'œil vers le dôme sur « Nobody'll hear. » au plan 3 (option de la proposition). Il montrerait la surveillance avant le tournant et ferait doublon avec le regard vers la croix au plan 4 (avis concordant du directeur artistique).
 
@@ -148,7 +148,7 @@ Le registre de *L'Air* est celui d'*Aftersun* : en anglais, 1,4 mot par seconde 
 - **Les ressemblances** : un colosse doux condamné à mort, c'est John Coffey dans *La Ligne verte* (1999) ; une religieuse auprès d'un condamné, *La Dernière Marche* (1995). La chemise blanche, les cheveux, l'absence de tatouage et l'ironie du personnage l'éloignent de Coffey ; à vérifier sur les premières images.
 - **Le mystère peut tomber plus tôt** si le décor fait trop « prison » (néons, portes métalliques, barreaux). Le décor reste une petite pièce avec une croix ; le seul ajout, le dôme couvert, est à faire juger (fait-il penser à la prison dès le plan 1 ?).
 - **Le futur se lit-il assez ?** Le directeur artistique répondait non pour la proposition (signes vagues, l'idée n'existait que dans le document). Avec une seule lumière, le futur reste discret : il se lit dans l'idée d'une pièce où l'on couvre la caméra, pas dans le décor. Si ta cible a besoin d'un futur plus visible, il faudra un signe concret, pas une diode.
-- **Le sens du plan 8b, à trancher par toi** : par défaut, la lumière rouge s'éteint quand la porte se referme, et elle siffle hors de tout enregistrement (l'idée de la V4). Autre possibilité : la lumière reste allumée, et son sifflement devient un défi à la machine.
+- **Le sens du plan 8b, tranché par Diego le 2026-10-23** : la lumière rouge s'éteint quand la porte se referme ; elle siffle hors de tout enregistrement.
 
 ## Sources
 - McKee, *Story* : `culture/livres/mckee-story/` (fiches 06, 07, 09, 10, 13, 15 et 18) ; outils et questions : `.claude/skills/montage-ecriture-scenario/savoir.md`.
