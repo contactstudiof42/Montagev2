@@ -127,4 +127,4 @@ Dates, prix et sources : `etat-de-l-art-2026-10.md` (tableau « Quel outil pour 
 - [ ] Droits, consentement et mention (AI Act) en règle ?
 - [ ] Prompts, modèle, version et date archivés ?
 
-Voir aussi : `montage-regard` (grille de jugement), `/culture/ia-oeuvres-remarquables.md`.
+Voir aussi : `prompts-seedance-pros.md` (structure et tournures des prompts Seedance 2.5 de 23 films sélectionnés au festival Higgsfield, lues le 2026-10-23), `montage-regard` (grille de jugement), `/culture/ia-oeuvres-remarquables.md`.

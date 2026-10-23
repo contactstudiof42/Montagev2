@@ -35,6 +35,11 @@ Répartition prévue : calibrage 2 × 5 s en 480p (1,20 $) · brouillons 480p, e
 5. Pas de noms de marques dans les prompts d'images : décrire la forme. Phrase « Do not reproduce any reference 1:1 ».
 6. Plaques faites depuis le rendu Blender (cadrage et disposition seulement, couleurs et lumière ignorées).
 
+## Gabarit des prompts Seedance (repris des films du festival Higgsfield, annexe `montage-ia-generative/prompts-seedance-pros.md`)
+Un prompt par plan, en anglais, dans cet ordre : SCENE CONTEXT · ACTIVE REFERENCES (pour chaque `@`, ce qu'on en prend et ce qu'on n'en prend pas ; la previz Blender : trajectoire, vitesse, positions des sujets, jamais les matières grises, la lumière ni les visages) · LOCATION MAP · FIRST FRAME AND SPATIAL BLOCKING · OPTICS (angle de champ, distance et hauteur de caméra lus dans Blender) · ACTION TIMING (minuté, une action par segment) · PHYSICS · LIGHTING (une source nommée, pas de lumière de cinéma ajoutée) · STYLE (pellicule de nuit, palette en proportions et en codes hexadécimaux) · POSITIVE CONSTRAINTS (compter personnages et objets ; aucun texte hors des enseignes voulues). Audio coupé. Prompts versionnés (`LOCK v01`…) et rangés ici.
+Ratio observé chez eux : 3 à 5 secondes générées par seconde gardée, soit 90 à 150 s pour nos 30 s ; cohérent avec le budget ci-dessus.
+Piste de DA à discuter : le cyberpunk sans néon (tubes fluorescents verdâtres, comme un des films de nuit du festival) pour sortir du cliché.
+
 ## Moyens
 - Clé API Oxen : à venir (Diego). En attendant, Diego génère dans le Workbench d'Oxen.
 - GPT : Diego génère, ou je passe par son profil Chrome « robot » s'il y est connecté (à confirmer).
