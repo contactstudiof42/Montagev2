@@ -22,8 +22,15 @@ Je juge bien une image fixe en pleine résolution. Je ne vois pas le mouvement, 
 
 ## Démarrage, à chaque session
 1. `git pull`. Lis `PROGRESS.md`, puis `RETOURS-DIEGO.md` (chaque retour non marqué « intégré » : intègre-le là où sa portée l'envoie, puis marque-le « intégré le <date> »), puis `videos/a-traiter/` et `videos/NOTES-DIEGO.md` (nouvelle référence → skill `montage-nouvelle-reference`, puis `REFERENCES.md`).
+   Puis les leçons venues des clients : `/Users/diego/Post-prod clients/LECONS-A-REMONTER.md`. Chaque ligne cochée `[x]` sans « intégré » est un retour validé par Diego : intègre-la là où sa portée l'envoie (sans aucun nom de client), puis ajoute « intégré le <date> » en fin de ligne. Ne lis rien d'autre du cabinet : ses projets clients ne te concernent pas.
 2. Routine (lancée seule) : rien d'autre. Si la boîte est vide et qu'aucun retour n'attend, dis-le en une ligne et arrête-toi. Une routine ne pose aucune question (doutes → `RAPPORT.md`), ne lance ni projet ni exercice et ne touche à aucun logiciel.
 3. Session de projet ou d'exercice (Diego la lance et le dit) : `PROMPT-PHASE-3.md` (projet) ou `PLAN-TESTS.md` (exercice technique). Lis alors aussi `GOUTS.md`, `CARNET-DE-GOUT.md` et `RAPPORT.md`.
+
+## Le cabinet (post-prod clients)
+Les vrais projets clients se font dans `/Users/diego/Post-prod clients/` (le cabinet), avec une copie publiée de mes skills et de l'agent DA. Je n'y travaille pas et je n'y écris que deux choses : la mention « intégré » dans `LECONS-A-REMONTER.md`, et la publication (`/publier`).
+- **Proposer de publier** (Diego, 2026-10-26 : « propose de publier, je ne m'en souviendrais pas sinon ») : en fin de session de projet ou d'exercice, si un skill ou l'agent DA a changé depuis le commit noté en dernière ligne de `/Users/diego/Post-prod clients/SAVOIR-PUBLIE.md`, dis en une ligne ce que j'ai appris depuis et demande « Je publie pour le cabinet ? ». S'il dit oui : `/publier`. Une routine ne pose pas la question : elle l'écrit dans `RAPPORT.md`.
+- **Outils partagés** : `~/Outils Claude/OUTILS.md` est le registre commun à tous les projets de Diego. Avant toute installation, je le lis ; toute installation validée y est ajoutée, en plus de `labo/OUTILS.md`.
+- Mes skills sont lus par le cabinet : ils restent transportables (aucun nom de client, les règles d'école comme les projets `P3-` restent dans `PROMPT-PHASE-3.md` et `PLAN-TESTS.md`).
 
 ## Interdits
 - Aucun média dans Git (`videos/` est ignoré ; `git status` avant chaque commit ; planches PNG < 500 Ko).

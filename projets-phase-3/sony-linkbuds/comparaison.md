@@ -1,6 +1,6 @@
 # Comparaison — Sony LinkBuds Clip : agent (V2) contre Claude nu (V1)
 
-_Étape 6, phase 3, 2026-10-11. Pas de version de Diego (brief fictif) : le juge, ce sont ses notes dans `RETOURS-DIEGO.md` (sections du 2026-10-11 « notes sur la V2 », « comparaison » et « ordre des plans »). Fichiers comparés : `rendus/sony_linkbuds_V2.mp4` et `rendus-nu/P3_sony_linkbuds_clip_9x16_v1.mp4`. Le dossier de Claude nu (`/Volumes/SSD FAST/Test-Claude-nu/`, `NOTES.md` et `work/`) a été lu après la fin du test à l'aveugle, en lecture seule._
+_Étape 6, phase 3, 2026-10-11. Pas de version de Diego (brief fictif) : le juge, ce sont ses notes dans `RETOURS-DIEGO.md` (sections du 2026-10-11 « notes sur la V2 », « comparaison » et « ordre des plans »). Fichiers comparés : `rendus/sony_linkbuds_V2.mp4` et `rendus-nu/P3_sony_linkbuds_clip_9x16_v1.mp4`. Le dossier de Claude nu (`/Volumes/SSD FAST/Montage-IA/videos/archives/Test-Claude-nu/`, `NOTES.md` et `work/`) a été lu après la fin du test à l'aveugle, en lecture seule._
 
 ## Le verdict de Diego
 | | Agent V2 | Claude nu V1 |
