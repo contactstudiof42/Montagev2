@@ -22,7 +22,9 @@ _Réécrit le 2026-10-13 (audit 2). La synthèse de fin de phase 2 et du début 
 ## Doutes
 - **Rien n'a jamais été écouté** : tout jugement sonore vient de mesures, de spectrogrammes et de re-transcriptions.
 - **La conversion du log qui garde les blancs** (V4 du mariage) est validée par le directeur artistique, pas par Diego.
-- **After Effects et Blender n'ont jamais été pilotés sur ce Mac** : les recettes After Effects ne sont vérifiées que sous Node ; Blender ne l'a été qu'en VM Linux (4.2.3, CPU), et le Mac a la 5.2.2.
+- **After Effects** a été piloté sur des projets du cabinet (leçons intégrées le 2026-10-29, `montage-after-effects` § 6), pas encore dans mes exercices ; Blender ne l'a été qu'en E0 (cube de test).
 - **`flash_check.py`** échoue sur des coupes contrastées sans flash (les sept références réseaux) : à confronter à un vrai test Harding avant de juger une coupe ordinaire.
 - **Les seuils de tremblement** se recalibrent sur un plan stable de chaque projet ; je ne sais pas encore les fixer pour un tournage à la main en run and gun.
 - **Un modèle qui regarde et écoute vraiment le rendu** reste à discuter avec Diego (confidentialité, coût).
+- **Deux leçons du cabinet se contredisent sur les sous-titres** (intégrées le 2026-10-29) : la première déclinaison 9:16 → 16:9 regroupait les sous-titres en phrases complètes d'environ 60 caractères sur une ligne ; une leçon plus générale dit 17 caractères au plus, une ligne, même en 16:9. J'applique les 17 caractères (`montage-formats` § 5) ; à trancher par Diego.
+- **`MarkIn` / `MarkOut` au rendu** : ont marché le 2026-10-11, ont fait échouer `StartRendering` le 2026-10-22 ; cause non isolée (`montage-resolve` § 2).

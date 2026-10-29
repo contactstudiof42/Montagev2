@@ -128,3 +128,8 @@ Dates, prix et sources : `etat-de-l-art-2026-10.md` (tableau « Quel outil pour 
 - [ ] Prompts, modèle, version et date archivés ?
 
 Voir aussi : `prompts-seedance-pros.md` (structure et tournures des prompts Seedance 2.5 de 23 films sélectionnés au festival Higgsfield, lues le 2026-10-23), `montage-regard` (grille de jugement), `/culture/ia-oeuvres-remarquables.md`.
+
+## 9. Ce que les projets du cabinet ont appris (2026-10-29) [TESTÉ EN CONDITIONS RÉELLES (2026-10-29)]
+Leçons validées par Diego (`/Users/diego/Post-prod clients/LECONS-A-REMONTER.md`).
+- **Passer un motion IA vertical (9:16) en 16:9 sans regénérer** [universel] : quand il anime les éléments d'un visuel de charte qui existe aussi en 16:9, caler la vidéo sur le visuel 16:9 par appariement de points (SIFT, transformation à l'échelle près, erreur sous le pixel), poser dessous le fond de la charte au même cadrage, fondre les bords, puis finir par un fondu enchaîné court vers le visuel net. Aucun crédit, et l'image finale est exactement celle de la charte. Corriger seulement la luminosité de la vidéo, jamais teinte par teinte sur un fond sombre (le vert dérive et verdit le verre).
+- **Motion IA livré en petite définition (720 px) à intégrer en 1080p ou en UHD** [genre : IA générative, upscale] : le passer d'abord dans Topaz en local (Proteus ; départ : détails 0,3, netteté 0,2, compression 0,3 ; le réglage final est choisi par le monteur ; ligne de commande : `~/Outils Claude/OUTILS.md`), avant tout recalage ou composite. Sinon l'animation reste molle tout le temps où elle occupe l'écran.

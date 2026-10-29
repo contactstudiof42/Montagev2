@@ -24,6 +24,9 @@ En tête de `plan.md` : le genre, le ton, la destination ; ils décident quelles
   - **Tricher un plan d'un autre moment sur une parole** → `montage-grammaire` (contre-indication : reportage où la fidélité au moment compte).
   - **Les moments forts revus de près** (une image par seconde, bandes ; aussi en after movie et en run and gun) → `PROMPT-PHASE-3.md`, étape 1.
 - **[genre : film de marque]** : reprendre la DA du client pour le titre, animer sobrement → `montage-motion-design-principes`.
+- **[genre : film de marque B2B, teaser d'événement, teaser anniversaire]** : voix off qui dialogue avec les archives, fausse tension, écrire pour l'oreille → `montage-ecriture-scenario` § 4.
+- **[genre : motion design, carton titre, frise, parallaxe photo]** → `montage-motion-design-principes` § 5. **[genre : archives, intégration écran]** → `montage-resolve`, recettes. **[genre : sound design, coupes rapides]** → `montage-son-et-emotion` § 5. **[genre : IA générative, upscale]** → `montage-ia-generative` § 9.
+- **[genre : déclinaison verticale]** et **[genre : série de films, déclinaisons]**, **[genre : audit de rushs]** : § 5 ci-dessous.
 - Les conventions vues sur les références de chaque genre (sans être des règles gagnées) : [savoir.md](savoir.md).
 
 ## 4. Grille rapide
@@ -38,3 +41,10 @@ En tête de `plan.md` : le genre, le ton, la destination ; ils décident quelles
 | Documentaire | choisi, patient | oui | faible | voix / regard | commenter au lieu de montrer |
 | Fiction courte | captif | oui | faible | émotion, tension | tout expliquer |
 | Film de mariage (4-6 min) | choisi, ému | oui (voix, musique) | moyen | récit en actes, respirations | milieu qui ennuie, paroles hachées |
+
+## 5. Ce que les projets du cabinet ont appris (2026-10) [TESTÉ EN CONDITIONS RÉELLES]
+Leçons validées par Diego (`/Users/diego/Post-prod clients/LECONS-A-REMONTER.md`), intégrées le 2026-10-29.
+- **Déclinaison verticale d'un film (Reel)** [genre : déclinaison verticale] : un montage par script à partir de l'export posé à plat, ou de clips composés, est jugé « catastrophique » et « amateur ». Attendu : une copie de la timeline du film (toutes pistes, rushs, étalonnage, ralentis, mixage) aux mêmes timecodes, passée en 2160x3840, chaque plan simplement recadré (environ un quart décalés, les autres centrés), la suite de l'extrait supprimée, une fin propre au vertical, les sous-titres repris et juste scindés. Je propose passages et découpage ; le montage reste au monteur. (2026-10-22 ; méthode de déclinaison : `montage-resolve` § 2 bis.)
+- **Sous-titres : 17 caractères au plus, sur une seule ligne, même en 16:9**, pour qu'ils servent tels quels en 9:16 sans redécoupe ; couper sur une pause naturelle, jamais après un article ou une préposition. [universel] (2026-10) Une première déclinaison 9:16 → 16:9 avait regroupé les sous-titres en phrases complètes d'environ 60 caractères : à trancher par Diego (`RAPPORT.md`) ; jusque-là, la règle des 17 caractères.
+- **Plusieurs films tirés du même fonds de rushs** [genre : série de films, déclinaisons ; contre-indication : un film unique] : jamais les mêmes personnes qu'un film déjà sorti (vérifier les visages dans son export, pas seulement les noms de fichiers), éviter la même machine, jamais un plan déjà utilisé. Un clin d'œil amusant peut revenir d'un film à l'autre. Un film encore en maquette, pas publié, peut partager ses plans.
+- **Audit de rushs avant de les remettre à une autre production** [genre : audit de rushs] : ne relever que les paroles de l'équipe (micros lancés avant l'arrivée des invités, discussions entre les prises et pendant les plans de coupe). Les propos des invités ne comptent pas : ils savaient qu'ils étaient équipés. (Gagnée : un rapport qui mélangeait les deux, « chargé de ouf ».)

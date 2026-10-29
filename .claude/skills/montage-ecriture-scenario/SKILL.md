@@ -26,6 +26,15 @@ Un texte, je le lis bien. Mais je n'entends pas une voix, je ne sens pas la dur�
 - **Les sections « Pour le studio » des fiches et tout [savoir.md](savoir.md) § 2 à 4 sont [THÉORIQUE]** : ma transposition, jamais éprouvée sur un projet. Elles deviennent des règles ici seulement après une erreur observée ou un mot de Diego.
 - McKee parle du long métrage de fiction. Pour une pub, un portrait ou un mariage, partir du tableau par format ([savoir.md](savoir.md), § 2), pas des chiffres du livre (40 à 60 scènes, trois actes, incident déclencheur dans le premier quart).
 
+## 4. Voix off : ce que les projets du cabinet ont appris (2026-10-29) [TESTÉ EN CONDITIONS RÉELLES (2026-10-29)]
+Leçons validées par Diego (`/Users/diego/Post-prod clients/LECONS-A-REMONTER.md`), nées sur un teaser d'événement avec archives télé.
+- **Transcrire toutes les archives avant d'écrire la voix off.** (Gagnée : un texte écrit trop tôt, retoqué par le monteur.) [universel]
+- **Faire dialoguer la voix off avec les archives** plutôt que raconter à leur place : le JT d'époque pose la question, la voix off répond trente ans plus tard. La réponse tombe **juste après** la phrase d'archive, sans rien entre les deux (une phrase intercalée casse le rythme). [genre : film de marque, teaser anniversaire, voix off ; contre-indication : film sans archives parlées]
+- **Une voix off épique suit l'énergie de la musique** : sur les percussions, des mots seuls posés sur les frappes ; une seule phrase douce juste avant le sommet ; une adversité nommée, sinon rien n'est épique. Une liste d'exposition (« ceux qui produisent… », « le salon grandit ») fait retomber l'intensité. [universel]
+- **L'épique en B2B est une « fausse tension », jamais une vraie menace** : pas de liste de problèmes du secteur (crises, climat, énergie) qui rappelle le quotidien du client ou frôle la polémique ; une course contre soi-même (« Plus vite. Plus précis. Plus loin. ») ; on donne envie de venir. Pas de vocabulaire de compétition (« course », « se joue ») quand on montre une filière en famille. [genre : film de marque B2B, teaser d'événement ; contre-indication : un sujet dont la menace est réelle et voulue par le brief]
+- **Écrire pour l'oreille** : un chiffre seul (« Deux mille. ») ne se comprend pas, dire ce qu'il compte ou le remplacer par une réponse à une phrase entendue avant ; pas de phrases courtes en rafale qui saccadent ; pas de répétition d'un même mot dans la phrase (« grandi à côté des grands »). Je ne l'entends pas : la voix témoin le montre (`montage-son-et-emotion`, § 5), Diego l'écoute. [universel pour la voix off]
+- **Aucun point-virgule dans un texte qui part chez un client** (script, mail, PDF) : « c'est flag IA », comme les tirets longs. Deux phrases, une virgule ou deux-points. [universel] (Diego, 2026-10-29)
+
 ## Limites connues
-- Jamais éprouvé : aucun script écrit avec ce skill, aucun retour de Diego.
+- Éprouvé une seule fois, sur des voix off de teaser (§ 4) ; aucun script de fiction ou de pub écrit avec ce skill.
 - Une seule source, centrée sur la fiction de long métrage. Il manque une source sur l'écriture publicitaire, une sur le documentaire, et des scénarios de références réelles du studio.

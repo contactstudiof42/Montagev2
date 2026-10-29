@@ -5,7 +5,7 @@ description: Faire bouger juste dans After Effects, et piloter After Effects par
 
 # After Effects : le mouvement d'abord
 
-_Réécrit le 2026-10-13 (audit 2). **Statut honnête : rien n'a encore tourné dans After Effects.** Les expressions 01 à 11 sont vérifiées sous Node avec un faux After Effects (syntaxe et maths, `labo/ae-expressions/RESULTATS.md`), pas dans le logiciel ; tout le reste est [THÉORIQUE] jusqu'aux exercices E0 à E2 de `PLAN-TESTS.md`. Recettes, durées types, réglages, saccade et pièges : [expressions.md](expressions.md). Version d'avant : `archives/audit-2/skills/montage-after-effects/`._
+_Réécrit le 2026-10-13 (audit 2). **Statut honnête** : After Effects a été piloté en conditions réelles sur des projets du cabinet (2026-10-21 à 2026-10-29) ; ce qui y a été appris est au § 6. Hors l'E0 (une composition de test) et ce § 6, le reste du skill n'a pas encore été confronté au logiciel. Les expressions 01 à 11 sont vérifiées sous Node avec un faux After Effects (syntaxe et maths, `labo/ae-expressions/RESULTATS.md`), pas dans le logiciel ; tout le reste est [THÉORIQUE] jusqu'aux exercices E0 à E2 de `PLAN-TESTS.md`. Recettes, durées types, réglages, saccade et pièges : [expressions.md](expressions.md). Version d'avant : `archives/audit-2/skills/montage-after-effects/`._
 
 **Fait foi sur** : la technique du mouvement dans After Effects (courbes, expressions, rigs) et son pilotage sur ce Mac. Quoi animer : `montage-motion-design-principes` ; méthode générale de pilotage : `montage-pilotage-mcp` ; saccade dans Premiere ou Resolve : `montage-premiere`, `montage-resolve`.
 
@@ -44,3 +44,11 @@ _Réécrit le 2026-10-13 (audit 2). **Statut honnête : rien n'a encore tourné 
 - **Vitesse d'arrivée nulle = pas d'overshoot** : une clé en Easy Ease arrive à vitesse nulle ; l'overshoot inertiel exige une arrivée avec de la vitesse (clés linéaires ou sortie peu amortie). Cause n° 1 de « mon expression ne fait rien ».
 - **Bézier spatial non voulu** : le calque boucle ou dépasse dans l'espace ; interpolation spatiale linéaire.
 Les autres pièges (moteur, expressions lentes, `exp()` qui explose, période qui varie dans un `sin`, wiggle dupliqué) : [expressions.md](expressions.md).
+
+## 6. Ce que le pilotage réel a appris (projets du cabinet, 2026-10) [TESTÉ EN CONDITIONS RÉELLES]
+Leçons validées par Diego (`/Users/diego/Post-prod clients/LECONS-A-REMONTER.md`), intégrées le 2026-10-29. Ce qu'il faut animer (carton titre, frise) : `montage-motion-design-principes` § 5.
+- **Frise ou défilement à plusieurs jalons** : un null de travelling, parent de nulls de jalon qui portent un curseur « focus » calculé par expression (distance au centre de l'image), pilote d'un coup taille, position, flou et luminosité de chaque date et image. Une précomp par jalon, dupliquée, dont la date vient du nom de la comp (`thisComp.name`).
+- **Pièges du MCP** : `replace_source` garde le point d'ancrage et la durée de l'ancien rush (les recaler) ; « Output White » des Niveaux n'accepte pas d'expression (passer par un effet Exposition) ; le tracé d'un calque de forme ne se modifie pas après coup (recréer le calque) ; un calque dupliqué se place sous l'original ; le rendu emporte le son de tous les rushs (rendre ou exporter sans son).
+- **Allonger une comp par script** : changer la durée de la comp ne rallonge pas les calques ; repousser aussi le point de sortie de tous les calques, dans chaque précomp. Décaler une fin déjà animée sans retoucher les clés : `valueAtTime(linear(time, nouveau_début, nouvelle_fin, ancien_début, ancienne_fin))` rejoue les anciennes clés aux nouveaux temps.
+- **Retiming par time remap décalé** (« début + time ») [universel] : quand le rythme change, chaque jalon apparaît à un autre moment, donc pioche un autre passage de la source. Revérifier chaque jalon après un retiming : un extrait peut tomber avant le début du fichier (image noire), sur une coupe, ou sur un plan à bandes noires.
+- **SFX calés sur le mouvement** : la vitesse se lit image par image dans les clés ou la table d'expression du travelling (`montage-son-et-emotion` § 5).

@@ -42,3 +42,4 @@ Sources : `culture/walter-murch-blink-of-an-eye.md`, `culture/thelma-schoonmaker
 ## Recettes [TESTÉ EN LABO]
 - Forme d'onde lisible (fond opaque) : `ffmpeg -i son.wav -filter_complex "[0]showwavespic=s=1000x160:colors=white:scale=sqrt[w];color=c=0x101820:s=1000x160[b];[b][w]overlay=format=auto" -frames:v 1 onde.png`
 - Souffle synthétique par bruit coloré filtré : `atelier/01-respiration/souffle_son.py`.
+- **Trier les whooshs sans écouter** [TESTÉ EN CONDITIONS RÉELLES (2026-10-29), projet du cabinet] : les souffles « naturels » sont des bruits (planéité spectrale au moins 0,15) ; les whooshs tonals ou « classic », « dessin animé », sont sifflés (planéité autour de 0,03).
