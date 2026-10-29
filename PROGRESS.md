@@ -20,7 +20,6 @@ _Lire en premier. Seul l'état présent compte ici. Historique : `archives/` (cl
 - Accords de Diego encore valables : `PROMPT-PHASE-3.md`. Pièges de Resolve : `montage-resolve` (SKILL.md et `recettes.md`).
 
 ## Règles de session encore valables
-- `/usr/bin/git` refuse de tourner tant que la licence Xcode n'est pas acceptée (`sudo xcodebuild -license`, à faire par Diego) : en attendant, `/Library/Developer/CommandLineTools/usr/bin/git`.
 - Relever `date` au début de la session et le relire avant de clôturer : estimée « au ressenti », la durée écoulée est surévaluée d'un facteur 3 à 8.
 - Jamais d'identifiant personnel (adresse e-mail…) dans un en-tête de requête.
 - Un serveur MCP de génération (comme `HIGGSFIELD_MCP`) peut consommer des crédits payants : ne rien générer sans accord explicite.
