@@ -20,5 +20,8 @@ Je ne sens ni l'ennui ni l'élan (carte des sens de `CLAUDE.md`). Donc :
 ## 2. Couper en numéro d'image absolu
 Poser les marqueurs de temps et couper sur l'image la plus proche, en numéro d'image absolu (`round(t × cadence)`), jamais en additionnant des durées arrondies (dérive mesurée : −460 ms sur 24 s). À 25 i/s, seuls 60, 75, 100, 125 et 150 BPM tombent en images entières ; à 24 i/s : 60, 72, 80, 90, 96, 120, 144, 160, 180. [TESTÉ EN LABO]
 
+## 2 bis. Caler des coupes sur une musique, par script [universel] (leçon validée par Diego, 2026-10-31)
+Suivre les temps de la musique (méthode : [details.md](details.md), « Mesurer le rythme »), accrocher 3 ou 4 phrases-clés sur les creux et les grandes entrées, puis donner à chaque plan un nombre entier d'unités de grille (2 temps, 1, 1/2, 1/4, 1/8 dans les rafales). Des plans tenus avant la rafale du sommet : si tout le milieu est à la même unité courte (0,44 s), la rafale ne ressort plus. (Gagnée : remarque du directeur artistique sur un projet du cabinet.) Couper dans la musique elle-même reste interdit (`montage-son-et-emotion` § 4).
+
 ## 3. Les goûts de Diego qui touchent au rythme
 Dans `GOUTS.md` : *Interstellar* (« l'accélération du montage alterné »), *Joker* (« l'équilibre de l'ensemble »), le clip de Ziak (un montage qui ne colle pas au beat) et le kinetic, pour des usages différents ; l'alterné par blocs d'*Avengers* au-delà de trois lignes (« oui »). Ce que ces films montrent, mesuré sur l'image : [savoir.md](savoir.md).

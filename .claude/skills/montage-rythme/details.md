@@ -43,6 +43,7 @@ Analyse : `culture/ziak-meme-pas-un-grincement.md`, chronologie `culture/ziak-ch
   `ffmpeg -i film.mp4 -vf "scdet=threshold=10,metadata=print:key=lavfi.scd.time:file=-" -f null - 2>/dev/null | grep -o "lavfi.scd.time=[0-9.]*" | cut -d= -f2`
   → temps des coupes → durées → histogramme. 8/8 au centième sur coupes franches ; entre plans très proches, seuil 3 (risque de faux positifs, à tester sur matériau réel).
 - **Fondus** [TESTÉ EN LABO, session 4, `labo/fondus/variance.py`] : « écart au milieu » (l'image du milieu ≈ moyenne de ses voisines à ±L/2) + détection du noir : 3/4 sans faux positif, puis 4/4 sans faux positif sur une 2e vérité terrain indépendante (mêmes seuils). Rate les fondus entre deux plans pauvres et proches en luminance, peut confondre un mouvement lent et régulier : contrôler à l'œil.
+- **Suivi de temps sans logiciel dédié** [TESTÉ EN CONDITIONS RÉELLES 2026-10-31, projet du cabinet] : flux spectral + programmation dynamique d'Ellis (numpy seul) donne le tempo et la grille à 30 ms près, tempo local compris. Sur une musique « preview » de banque, le tatouage sonore fait de fausses attaques : `montage-son-et-emotion` § 5.
 - **Grille de temps** : `labo/marqueurs/beats_xml.py` produit des marqueurs XML FCP7 [détection TESTÉE EN LABO, session 4].
 
 ## Pièce 04 : le rythme que le sujet impose [ÉPROUVÉ EN MAQUETTE]

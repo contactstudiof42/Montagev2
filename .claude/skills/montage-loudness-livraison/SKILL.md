@@ -40,6 +40,7 @@ Attendu : **H.264 (spec client)** : `High`, `yuv420p` ; **H.265 Main 10 (défaut
 - **Passer de mono à stéréo coûte 3 dB** avec `-ac 2` : dupliquer par `pan=stereo|c0=c0|c1=c0`.
 - **loudnorm passe en dynamique sans prévenir** (3 essais sur 4 au labo) : lire `normalization_type`, prendre un LRA cible ≥ LRA mesuré ; préférer le gain statique (`volume=`), puis un limiteur sur-échantillonné si la crête dépasse.
 - loudnorm sort en 192 kHz sans `-ar 48000` ; une crête visée à -1 sort à -0,9 : viser -1,5.
+- **Un AAC 5.1 encodé par ffmpeg (v8) dans un .mov se lit dans le mauvais ordre sur Mac** : ffmpeg écrit l'atome `chan` en bitmap (tag 65536, bitmap 63), que QuickTime et tout le décodage Apple lisent décalé d'un cran (la voix du centre part à gauche). ffprobe et ffmpeg ne voient rien. Après tout encodage 5.1 par ffmpeg, relire avec AVFoundation (petit script Swift `AVAssetReader` qui mesure le niveau de chaque canal) contre le master : voix au centre, caisson à sa place. Correction sans réencoder : remplacer les 8 octets de `chan` par tag 8126470 (AAC_5_1, celui des .mov de Resolve), bitmap 0. (Gagnée : projet du cabinet, 2026-11-03.)
 
 ## 6. Avant d'envoyer
 - Cible connue par écrit (spec du client, charte de la chaîne, plateforme) et datée.

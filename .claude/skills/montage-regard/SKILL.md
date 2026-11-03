@@ -37,6 +37,7 @@ Sur le passage exact de chaque plan (première, milieu et dernière image, plein
 11. Parole coupée au mot près ; la re-transcription du rendu se lit en phrases complètes. (26)
 12. Photosensibilité : tout effet ajouté (flash, inversion, fonds rapides) ; les flashs réels des rushes seulement en salve de plus de 3 par seconde ; un flash isolé ne fait jamais retirer un beau moment. (Diego, 2026-10-12 ; carnet 35)
 13. Les règles du genre (doublons de moment, un son par transition…) : skill du genre (`montage-formats` en donne l'index).
+14. Aucun plan proposé (archive surtout) n'est déjà dans le film : comparaison par empreinte d'image contre tout le film (`labo/outils/doublons_timeline.py`), à chaque proposition. (Gagnée : projet du cabinet, 2026-10-31 : une photo noir et blanc tirée d'un film anniversaire était le scan couleur déjà monté, et le même reportage VHS revenait à 18 s d'écart ; ni le DA ni moi ne l'avions vu, l'outil l'a vu.)
 
 Puis, sur le fichier encodé : loudness et crête (`qc_livraison.sh`).
 
@@ -45,6 +46,8 @@ Livrable seulement si : (1) le directeur artistique dit « au niveau », ou chaq
 
 ## 5. L'autocritique montre ou doute ; elle ne coche pas
 Pour chaque point qui compte : l'image ou la mesure qui le prouve (chemin du fichier), sinon « à vérifier » et ce qu'il faudrait pour le savoir. En tête : ce que je n'ai pas pu percevoir (mouvement, son, durée), minuté, qui passe tel quel dans la note de livraison. Le jugement de niveau est celui du directeur artistique, pas le mien : on juge mal ce qu'on vient de faire. (Gagnée : V3b du film de mariage, vingt coches du carnet pour un film noté 10 %.)
+
+**Des regards de spectateurs** [universel] (leçon validée par Diego, 2026-10-31) : faire critiquer le montage par des agents qui ne voient pas la vidéo, chacun dans la peau d'un spectateur (inconnu, cible, client), à partir d'un dossier de perception et pas d'un résumé ; méthode : [savoir.md](savoir.md), « Panel de regards ». Ils trouvent des erreurs que le monteur ne voit plus (dates d'une ancienne édition sur un écran en fond, nom incrusté). Chaque fait qu'ils signalent se vérifie sur l'image pleine taille avant d'être transmis : ils prennent la transcription pour des sous-titres et se trompent parfois de repère.
 
 ## 6. Rien n'est figé
 Après chaque série de corrections, relire le film entier comme si on le découvrait : rythme d'ensemble, calage, enchaînements, équilibre des blocs ; une correction locale peut casser ailleurs. Seul ce que Diego a validé explicitement est fixé, et même ça peut bouger si le film l'exige. Tout plan remplacé hors de ses retours s'écrit dans la note de livraison : quel plan, pourquoi, par quoi. (Diego : « mon silence n'est pas une validation » ; gagnée : V5 du film de marque, un plan d'ouverture remplacé sans le dire.)
